@@ -41,6 +41,8 @@ export function buildOrganizationSchema() {
       areaServed: 'MX',
       availableLanguage: 'Spanish',
     },
+    // TODO: Agregar URLs de redes sociales cuando estén disponibles
+    // Ejemplo: sameAs: ['https://facebook.com/gamademexico', 'https://instagram.com/gamademexico']
     sameAs: [],
   };
 }

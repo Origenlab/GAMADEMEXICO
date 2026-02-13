@@ -59,7 +59,9 @@ export const GEO = {
 
 // -- Brand --
 export const BRAND_COLOR = '#C41E3A';
-export const OG_IMAGE_DEFAULT = '/img/og-image.jpg';
+// TODO: Crear imagen OG de 1200x630px para mejor rendimiento en redes sociales
+// Por ahora usa icon.png como fallback
+export const OG_IMAGE_DEFAULT = '/icon.png';
 export const LOGO_PATH = '/img/gama-de-mexico.avif';
 
 // -- Marcas distribuidas --

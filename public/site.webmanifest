@@ -1,12 +1,27 @@
 {
   "short_name": "Gama MX",
-  "name": "Gama de M\u00e9xico - Equipos Contra Incendios",
-  "icons": [{
-    "src": "icon.png",
-    "type": "image/png",
-    "sizes": "192x192"
-  }],
-  "start_url": "/?utm_source=homescreen",
+  "name": "Gama de México - Equipos Contra Incendios",
+  "description": "Distribuidor autorizado Elkhart Brass en México. Venta de equipos contra incendios certificados UL y FM.",
+  "icons": [
+    {
+      "src": "/icon.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/?utm_source=pwa",
+  "display": "standalone",
+  "orientation": "portrait-primary",
   "background_color": "#ffffff",
-  "theme_color": "#C41E3A"
+  "theme_color": "#C41E3A",
+  "categories": ["business", "shopping"],
+  "lang": "es-MX",
+  "dir": "ltr"
 }
