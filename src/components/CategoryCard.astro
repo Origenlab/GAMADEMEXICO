@@ -1,0 +1,133 @@
+---
+// CategoryCard component - Card con subcategorías y botón principal
+interface Subcategoria {
+  nombre: string;
+  enlace: string;
+}
+
+interface Props {
+  titulo: string;
+  subtitulo: string;
+  enlace: string;
+  subcategorias: Subcategoria[];
+}
+
+const { titulo, subtitulo, enlace, subcategorias } = Astro.props;
+---
+
+<article class="category-card">
+  <div class="category-card__image"></div>
+  <div class="category-card__body">
+    <h3 class="category-card__title">{titulo}</h3>
+    <p class="category-card__sub">{subtitulo}</p>
+    <div class="category-card__products">
+      {subcategorias.map((sub) => (
+        <a href={sub.enlace} class="category-card__product-btn">{sub.nombre}</a>
+      ))}
+    </div>
+    <a href={enlace} class="category-card__btn">{titulo}</a>
+  </div>
+</article>
+
+<style>
+  .category-card {
+    background: var(--color-white);
+    border-radius: var(--border-radius-lg, 12px);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.04);
+  }
+
+  .category-card__image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: var(--color-accent);
+  }
+
+  .category-card__body {
+    padding: var(--spacing-lg);
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: var(--spacing-sm);
+  }
+
+  .category-card__title {
+    font-size: var(--font-size-lg);
+    font-weight: 700;
+    color: var(--color-secondary);
+    line-height: var(--line-height-tight);
+    margin: 0;
+  }
+
+  .category-card__sub {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
+    margin: 0;
+  }
+
+  .category-card__products {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    flex: 1;
+    margin-top: var(--spacing-xs);
+  }
+
+  .category-card__product-btn {
+    display: block;
+    font-size: var(--font-size-sm);
+    color: var(--color-text);
+    text-decoration: none;
+    padding: 0.5rem 0;
+    padding-left: 1rem;
+    border-bottom: 1px solid var(--color-accent);
+    position: relative;
+  }
+
+  .category-card__product-btn::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--color-primary);
+    font-weight: 700;
+  }
+
+  .category-card__product-btn:last-child {
+    border-bottom: none;
+  }
+
+  .category-card__product-btn:hover {
+    color: var(--color-primary);
+  }
+
+  .category-card__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    padding: 0.875rem 1.5rem;
+    margin-top: auto;
+    border-radius: var(--border-radius);
+    background: var(--color-primary);
+    color: var(--color-white);
+    text-decoration: none;
+    text-align: center;
+    transition: all var(--transition-fast);
+    box-shadow: 0 2px 4px rgba(199, 22, 29, 0.2);
+  }
+
+  .category-card__btn:hover {
+    background: var(--color-primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(199, 22, 29, 0.3);
+  }
+
+  .category-card__btn:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 2px rgba(199, 22, 29, 0.2);
+  }
+</style>

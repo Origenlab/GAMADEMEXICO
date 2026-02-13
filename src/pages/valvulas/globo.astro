@@ -1,0 +1,187 @@
+---
+import Layout from '../../layouts/Base.astro';
+import '../../styles/subcategory.css';
+import { getCollection } from 'astro:content';
+import SubcategoryProductCard from '../../components/SubcategoryProductCard.astro';
+import ProductSidebar from '../../components/ProductSidebar.astro';
+import RelatedProductsGrid from '../../components/RelatedProductsGrid.astro';
+import CotizacionForm from '../../components/CotizacionForm.astro';
+
+// 1. Obtener todos los productos de la categoría válvulas
+const todosProductos = (await getCollection('productos', ({ data }) =>
+  data.categoria === 'valvulas'
+)).sort((a, b) => a.data.orden - b.data.orden);
+
+// 2. Filtrar por subcategoría: Válvula de Globo
+const productosSubcategoria = todosProductos.filter(p => p.data.subcategoria === 'globo');
+
+// 3. Obtener otros productos para sección de relacionados
+const otrosProductos = todosProductos.filter(p => !productosSubcategoria.includes(p));
+
+// 4. Definir subcategorías para navegación
+const subcategorias = [
+  { slug: 'compuerta', nombre: 'Válvula de Compuerta OS&Y', descripcion: 'Aislamiento en líneas principales', activo: false },
+  { slug: 'globo', nombre: 'Válvula de Globo', descripcion: 'Control preciso de presión', activo: true },
+  { slug: 'retencion', nombre: 'Válvula de Retención', descripcion: 'Prevención de reflujo', activo: false },
+  { slug: 'mariposa', nombre: 'Válvula Mariposa', descripcion: 'Apertura rápida 90°', activo: false },
+];
+---
+
+<Layout
+  title="Válvula de Globo Industrial | México"
+  description="Válvula de globo hierro fundido para control de flujo industrial. Patrones angular y recto, hasta 300 PSI. Certificadas UL/FM. México."
+  activePage="equipos"
+  heroTitle="Válvula de Globo"
+  heroIntro="Válvulas de globo para regulación precisa de flujo y presión en sistemas contra incendio. Su diseño con asiento cónico permite ajuste fino del caudal, ideal para líneas de prueba, drenajes y aplicaciones donde se requiere control gradual en lugar de apertura total."
+  heroBadge="Válvulas Contra Incendios"
+  heroMetrics={[
+    { valor: "300", texto: "PSI máxima" },
+    { valor: "Angular/Recto", texto: "Patrones" },
+    { valor: "UL/FM", texto: "Certificación" }
+  ]}
+  heroPrimaryText="Ver Catálogo"
+  heroPrimaryLink="#catalogo"
+  heroSecondaryText="Solicitar Cotización"
+  heroSecondaryLink="#cotizar"
+  heroShowRightContent={true}
+>
+
+  <!-- HERO CONTENT -->
+  <Fragment slot="hero-content">
+    <p>La <strong>válvula de globo</strong> utiliza un disco móvil que asienta sobre un anillo cónico para regular el flujo con precisión. A diferencia de las válvulas de compuerta que solo ofrecen apertura total o cierre, las válvulas de globo permiten posiciones intermedias estables para control de caudal. Disponibles en patrón recto para instalación en línea y patrón angular (45° o 90°) para cambios de dirección que también funcionan como punto de regulación.</p>
+    <p><strong>Gama de México</strong> distribuye válvulas de globo certificadas UL/FM en hierro fundido, bronce y acero inoxidable para aplicaciones específicas. Manejamos conexiones roscadas NPT, bridadas ANSI y ranuradas Victaulic en diámetros de 1/2" a 6". Ideales para conexiones de manguera en gabinetes, líneas de prueba de rociadores, drenajes de sistema y puntos de control en cuartos de bombas.</p>
+  </Fragment>
+
+  <!-- CONTENT + SIDEBAR -->
+  <section class="subcat-content">
+    <div class="container">
+      <div class="subcat-layout">
+
+        <!-- MAIN CONTENT -->
+        <main class="subcat-main">
+          <div class="catalog-header">
+            <div class="catalog-header__text">
+              <h2 class="catalog-header__title">Catálogo de Válvulas de Globo</h2>
+              <p class="catalog-header__desc">Selecciona el modelo que mejor se adapte a tu sistema contra incendios</p>
+            </div>
+            <div class="catalog-header__count">
+              <span class="catalog-header__number">{productosSubcategoria.length}</span>
+              <span class="catalog-header__label">producto{productosSubcategoria.length !== 1 ? 's' : ''}</span>
+            </div>
+          </div>
+
+          <!-- Products Grid -->
+          <div class="categories__grid">
+            {productosSubcategoria.map((producto) => (
+              <SubcategoryProductCard
+                title={producto.data.title}
+                description={producto.data.description}
+                brand={producto.data.marca}
+                image={producto.data.imagen}
+                productSlug={producto.id}
+                flow={producto.data.flujo}
+                material={producto.data.material}
+                certifications={producto.data.certificaciones}
+              />
+            ))}
+          </div>
+
+          <!-- Empty State -->
+          {productosSubcategoria.length === 0 && (
+            <div class="catalog-empty">
+              <div class="catalog-empty__icon">🔍</div>
+              <h3 class="catalog-empty__title">Próximamente más opciones</h3>
+              <p class="catalog-empty__text">Estamos agregando más válvulas de globo de diferentes marcas y especificaciones. Mientras tanto, solicita una cotización personalizada.</p>
+              <a href="#cotizar" class="btn btn--primary">Solicitar Cotización</a>
+            </div>
+          )}
+
+          <!-- Tech Info -->
+          <div class="tech-info">
+            <h3 class="tech-info__title">Especificaciones Técnicas de Válvulas de Globo</h3>
+            <div class="tech-info__grid">
+              <div class="tech-info__item">
+                <span class="tech-info__label">Presión de trabajo</span>
+                <span class="tech-info__value">Hasta 300 PSI</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Presión industrial</span>
+                <span class="tech-info__value">Hasta 2,500 PSI</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Diámetros disponibles</span>
+                <span class="tech-info__value">0.5" a 2"</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Patrones</span>
+                <span class="tech-info__value">Angular y Recto</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Material cuerpo</span>
+                <span class="tech-info__value">Bronce / Latón forjado</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Conexión</span>
+                <span class="tech-info__value">Roscada NPT</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA Final -->
+          <div class="subcat-cta-final">
+            <div class="subcat-cta-final__content">
+              <h3 class="subcat-cta-final__title">¿No encuentras el diámetro o patrón que necesitas?</h3>
+              <p class="subcat-cta-final__desc">Tenemos acceso al catálogo completo de Elkhart Brass. Contáctanos para válvulas en configuraciones especiales o alta presión industrial.</p>
+            </div>
+            <a href="#cotizar" class="btn btn--primary">Solicitar Cotización Especial</a>
+          </div>
+        </main>
+
+        <!-- SIDEBAR -->
+        <ProductSidebar
+          navTitulo="Tipos de Válvulas"
+          subcategorias={subcategorias}
+          baseUrl="/valvulas"
+          backLinkHref="/valvulas-contra-incendios"
+          backLinkTexto="Ver todas las válvulas"
+          certificaciones={[
+            { siglas: "FM", nombre: "Factory Mutual" },
+            { siglas: "UL", nombre: "UL Listed" },
+            { siglas: "NOM", nombre: "NOM-002-STPS" }
+          ]}
+          marcas={["Nibco", "Kennedy", "Milwaukee", "Apollo"]}
+          aplicaciones={[
+            "Regulación de caudal",
+            "Sistemas de hidrantes",
+            "Plantas industriales",
+            "Control de presión"
+          ]}
+          productosRelacionados={[
+            { href: "/gabinetes-hidrantes-contra-incendios", nombre: "Gabinetes e Hidrantes" },
+            { href: "/mangueras-contra-incendios", nombre: "Mangueras Contra Incendios" },
+            { href: "/boquillas-contra-incendios", nombre: "Boquillas Contra Incendios" },
+            { href: "/conexiones-herrajes-contra-incendios", nombre: "Conexiones y Herrajes" }
+          ]}
+        />
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RELATED PRODUCTS -->
+  <RelatedProductsGrid
+    titulo="Otras Válvulas Contra Incendios"
+    subtitulo="Explora más opciones para tu sistema de protección"
+    productos={otrosProductos}
+    maxProductos={3}
+    verTodosLink="/valvulas-contra-incendios"
+    verTodosTexto="Ver todas las válvulas"
+  />
+
+  <CotizacionForm
+    titulo="Cotiza Válvulas de Globo"
+    tipoEquipo="Válvulas"
+    pagina="Válvulas de Globo"
+  />
+
+</Layout>

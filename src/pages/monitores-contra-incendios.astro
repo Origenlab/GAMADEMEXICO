@@ -1,0 +1,561 @@
+---
+import Layout from '../layouts/Base.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+import { getCollection } from 'astro:content';
+
+const productos = (await getCollection('productos', ({ data }) => data.categoria === 'monitores')).sort((a, b) => a.data.orden - b.data.orden);
+---
+
+<Layout
+  title="Monitores Contra Incendios | Venta México"
+  description="Monitores contra incendio tipo corazón y cuello de cisne. Elkhart Brass, Akron. Caudal hasta 2000 GPM, rotación 360°. Certificación FM/UL. México."
+  activePage="equipos"
+  heroTitle="Monitores Contra Incendios para Protección Industrial"
+  heroIntro="Soluciones de alto caudal para protección perimetral, tanques y áreas críticas. Equipos tipo corazón, cuello de cisne, FM y UL para proyectos con exigencia operativa y normativa."
+  heroBadge="Monitores Contra Incendios"
+  heroMetrics={[
+    { valor: "360°", texto: "Cobertura horizontal" },
+    { valor: "2,000", texto: "GPM máximo" },
+    { valor: "FM/UL", texto: "Certificaciones disponibles" }
+  ]}
+  heroPrimaryText="Ver Catálogo"
+  heroPrimaryLink="#monitores"
+  heroSecondaryText="Solicitar Cotización"
+  heroSecondaryLink="#cotizar"
+  heroShowRightContent={true}
+>
+  <Fragment slot="hero-content">
+    <p>Integramos monitores contra incendio para escenarios de alto riesgo en refinerías, terminales de almacenamiento, plantas químicas, industrias de proceso y complejos logísticos. Nuestro catálogo cubre configuraciones para ataque perimetral, enfriamiento de equipos críticos y protección de tanques elevados.</p>
+    <p>Te apoyamos en la selección técnica por caudal, presión, certificación y tipo de montaje para asegurar compatibilidad con tu red contra incendio y cumplimiento con requerimientos de aseguradora, Protección Civil y normativa aplicable.</p>
+  </Fragment>
+
+  <!-- PRODUCTOS DINAMICOS -->
+  <section class="categories" id="monitores">
+    <div class="container">
+      <SectionHeader
+        titulo="Catálogo de Monitores Contra Incendios por Tipo"
+        subtitulo="Selecciona un tipo de monitor para conocer especificaciones técnicas y solicitar cotización"
+        idTitulo="monitores-title"
+        parrafo1="Nuestro catálogo integra monitores contra incendio de marcas líderes como Elkhart Brass, Akron Brass, Potter Roemer y Task Force Tips. Cada tipo de monitor está diseñado para aplicaciones específicas: protección perimetral, enfriamiento de tanques, o instalaciones que requieren certificaciones FM y UL."
+        parrafo2="Trabajamos con refinerías, plantas petroquímicas, terminales de almacenamiento, firmas de ingeniería e instaladores certificados que requieren equipos con documentación completa para cumplimiento normativo y verificaciones de Protección Civil."
+      />
+      <div class="categories__grid">
+        <article class="category-card">
+          <div class="category-card__image" role="img" aria-label="Monitor Tipo Corazón" style="background-image: url('/img/monitores-contra-incendios/monitor-contra-incendio-tipo-corazon-giro-360-bronce.avif'); background-size: cover; background-position: center;"></div>
+          <div class="category-card__body">
+            <h3 class="category-card__title">Monitor Tipo Corazón</h3>
+            <p class="category-card__sub">Protección perimetral con rotación 360° y caudales hasta 2,000 GPM</p>
+            <ul class="category-card__products">
+              <li class="category-card__product">Rotación horizontal 360°</li>
+              <li class="category-card__product">Caudal: 500 - 2,000 GPM</li>
+              <li class="category-card__product">Certificaciones: FM, UL</li>
+              <li class="category-card__product">Multimarca disponible</li>
+            </ul>
+            <div class="category-card__ctas">
+              <a href="/monitores/tipo-corazon" class="btn btn--primary btn--sm">Ver catálogo</a>
+              <a href="#cotizar" class="btn btn--outline btn--sm">Cotizar</a>
+            </div>
+          </div>
+        </article>
+        <article class="category-card">
+          <div class="category-card__image" role="img" aria-label="Monitor Cuello de Cisne" style="background-image: url('/img/monitores-contra-incendios/monitor-cuello-cisne-vista-frontal-bronce.avif'); background-size: cover; background-position: center;"></div>
+          <div class="category-card__body">
+            <h3 class="category-card__title">Monitor Cuello de Cisne</h3>
+            <p class="category-card__sub">Protección de tanques elevados con proyección desde arriba</p>
+            <ul class="category-card__products">
+              <li class="category-card__product">Elevación 10 - 111 pies</li>
+              <li class="category-card__product">Caudal: 500 - 2,000 GPM</li>
+              <li class="category-card__product">Certificaciones: FM, UL</li>
+              <li class="category-card__product">Control desde piso</li>
+            </ul>
+            <div class="category-card__ctas">
+              <a href="/monitores/cuello-cisne" class="btn btn--primary btn--sm">Ver catálogo</a>
+              <a href="#cotizar" class="btn btn--outline btn--sm">Cotizar</a>
+            </div>
+          </div>
+        </article>
+        <article class="category-card">
+          <div class="category-card__image" role="img" aria-label="Monitor Certificado FM" style="background-image: url('/img/monitores-contra-incendios/monitor-st611-fm-approved-vista-frontal.avif'); background-size: cover; background-position: center;"></div>
+          <div class="category-card__body">
+            <h3 class="category-card__title">Monitor Certificado FM</h3>
+            <p class="category-card__sub">Aprobación Factory Mutual para instalaciones de alto riesgo</p>
+            <ul class="category-card__products">
+              <li class="category-card__product">Estándar FM 1421</li>
+              <li class="category-card__product">Inspección trimestral en fábrica</li>
+              <li class="category-card__product">Requerido por aseguradoras</li>
+              <li class="category-card__product">Certificado original incluido</li>
+            </ul>
+            <div class="category-card__ctas">
+              <a href="/monitores/certificado-fm" class="btn btn--primary btn--sm">Ver catálogo</a>
+              <a href="#cotizar" class="btn btn--outline btn--sm">Cotizar</a>
+            </div>
+          </div>
+        </article>
+        <article class="category-card">
+          <div class="category-card__image" role="img" aria-label="Monitor UL Listed" style="background-image: url('/img/monitores-contra-incendios/monitor-ul-listed-fixed-flow-vista-frontal.avif'); background-size: cover; background-position: center;"></div>
+          <div class="category-card__body">
+            <h3 class="category-card__title">Monitor UL Listed</h3>
+            <p class="category-card__sub">Certificación Underwriters Laboratories para máxima confiabilidad</p>
+            <ul class="category-card__products">
+              <li class="category-card__product">Pruebas integrales UL</li>
+              <li class="category-card__product">Reconocido por Protección Civil</li>
+              <li class="category-card__product">Facilita obtención de seguros</li>
+              <li class="category-card__product">Documentación en español</li>
+            </ul>
+            <div class="category-card__ctas">
+              <a href="/monitores/ul-listed" class="btn btn--primary btn--sm">Ver catálogo</a>
+              <a href="#cotizar" class="btn btn--outline btn--sm">Cotizar</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCT DETAILS -->
+  <section class="service-details" aria-labelledby="service-details-title">
+    <div class="container">
+      <SectionHeader
+        titulo="Detalle de Cada Tipo de Monitor Contra Incendios"
+        subtitulo="Conoce las características técnicas y aplicaciones de cada configuración"
+        idTitulo="service-details-title"
+      />
+
+      <div class="service-detail" id="detalle-corazon">
+        <div class="service-detail__content">
+          <h3 class="service-detail__title">Monitor Tipo Corazón — Protección Perimetral de Alto Caudal</h3>
+          <p class="service-detail__text">Los monitores contra incendio tipo corazón son equipos de protección perimetral con base fija que permite <strong>rotación horizontal de 360°</strong> y ajuste vertical desde -45° hasta +90°. Ofrecemos modelos de marcas líderes como Elkhart Brass, Akron Brass y Potter Roemer, todos con construcción robusta en latón forjado de una sola pieza, resistencia a la corrosión y control preciso del flujo de agua.</p>
+          <ul class="service-detail__list">
+            <li class="service-detail__list-item">Caudal de 500 a 2,000 GPM según modelo</li>
+            <li class="service-detail__list-item">Presión de trabajo de 200 a 300 PSI</li>
+            <li class="service-detail__list-item">Rotación horizontal 360° y movimiento vertical -45° a +90°</li>
+            <li class="service-detail__list-item">Construcción en latón forjado (bronce) de alta calidad</li>
+            <li class="service-detail__list-item">Conexiones de entrada 2.5" y 3" NPT o NH</li>
+            <li class="service-detail__list-item">Marcas: Elkhart Brass, Akron, Potter Roemer, Task Force Tips</li>
+          </ul>
+          <div class="service-detail__ctas">
+            <a href="/monitores/tipo-corazon" class="btn btn--primary">Ver catálogo completo</a>
+            <a href="#cotizar" class="btn btn--outline">Cotizar</a>
+          </div>
+        </div>
+        <div class="service-detail__image" role="img" aria-label="Monitor tipo corazón para protección industrial" style="background-image: url('/img/monitores-contra-incendios/monitor-corazon-una-cremallera-vistas-multiples.avif'); background-size: cover; background-position: center;"></div>
+      </div>
+
+      <div class="service-detail" id="detalle-cuello-cisne">
+        <div class="service-detail__content">
+          <h3 class="service-detail__title">Monitor Tipo Cuello de Cisne — Protección de Tanques Elevados</h3>
+          <p class="service-detail__text">Los monitores contra incendio tipo cuello de cisne son sistemas fijos elevados diseñados para <strong>protección de tanques de almacenamiento</strong> y estructuras altas, permitiendo proyectar un chorro de agua desde arriba hacia abajo para combatir incendios de gran escala. Disponibles en versión autosoportada (freestanding) y soportada, con control manual desde nivel de piso. Múltiples marcas disponibles con precio bajo cotización.</p>
+          <ul class="service-detail__list">
+            <li class="service-detail__list-item">Caudal de 500 a 2,000 GPM según modelo para alta capacidad</li>
+            <li class="service-detail__list-item">Elevación disponible de 10 a 111 pies</li>
+            <li class="service-detail__list-item">Control desde nivel de piso sin necesidad de subir</li>
+            <li class="service-detail__list-item">Versión autosoportada (freestanding) y soportada</li>
+            <li class="service-detail__list-item">Marcas: Elkhart Brass, Akron, Potter Roemer</li>
+            <li class="service-detail__list-item">Ideal para tanques GLP, líquidos inflamables y esferas</li>
+          </ul>
+          <div class="service-detail__ctas">
+            <a href="/monitores/cuello-cisne" class="btn btn--primary">Ver catálogo completo</a>
+            <a href="#cotizar" class="btn btn--outline">Cotizar</a>
+          </div>
+        </div>
+        <div class="service-detail__image" role="img" aria-label="Monitor tipo cuello de cisne para tanques industriales" style="background-image: url('/img/monitores-contra-incendios/monitor-cuello-cisne-perfil-completo.avif'); background-size: cover; background-position: center;"></div>
+      </div>
+
+      <div class="service-detail" id="detalle-fm">
+        <div class="service-detail__content">
+          <h3 class="service-detail__title">Monitor Certificado FM — Aprobación Factory Mutual Industrial</h3>
+          <p class="service-detail__text">La <strong>certificación FM (Factory Mutual)</strong> es el estándar de aprobación más riguroso para equipos de protección contra incendios en instalaciones industriales de alto riesgo. Los monitores certificados FM cumplen estándar FM 1421 y son sometidos a inspecciones trimestrales de calidad en fábrica. Disponemos monitores FM de múltiples fabricantes reconocidos.</p>
+          <ul class="service-detail__list">
+            <li class="service-detail__list-item">Cumplimiento de estándar FM 1421 para monitores</li>
+            <li class="service-detail__list-item">Inspecciones trimestrales en fábrica del fabricante</li>
+            <li class="service-detail__list-item">Obligatorio para aseguradoras en riesgo industrial alto</li>
+            <li class="service-detail__list-item">Certificado FM original incluido con cada unidad</li>
+            <li class="service-detail__list-item">Compatible con NOM-002-STPS-2010 y códigos NFPA</li>
+            <li class="service-detail__list-item">Marcas certificadas FM: Elkhart Brass, Akron, Potter Roemer</li>
+          </ul>
+          <div class="service-detail__ctas">
+            <a href="/monitores/certificado-fm" class="btn btn--primary">Ver catálogo completo</a>
+            <a href="#cotizar" class="btn btn--outline">Cotizar</a>
+          </div>
+        </div>
+        <div class="service-detail__image" role="img" aria-label="Monitor certificado FM Factory Mutual" style="background-image: url('/img/monitores-contra-incendios/monitor-st611-fm-approved-perfil-profesional.avif'); background-size: cover; background-position: center;"></div>
+      </div>
+
+      <div class="service-detail" id="detalle-ul">
+        <div class="service-detail__content">
+          <h3 class="service-detail__title">Monitor UL Listed — Certificación Underwriters Laboratories</h3>
+          <p class="service-detail__text">La <strong>certificación UL Listed</strong> es otorgada por Underwriters Laboratories tras pruebas integrales de seguridad, rendimiento y durabilidad. En México, la certificación UL es ampliamente aceptada por autoridades de Protección Civil y facilita trámites de permisos y dictámenes para proyectos comerciales e industriales. Ofrecemos monitores UL de diversas marcas reconocidas.</p>
+          <ul class="service-detail__list">
+            <li class="service-detail__list-item">Certificación UL Listed con pruebas integrales</li>
+            <li class="service-detail__list-item">Reconocido por Protección Civil en toda la República</li>
+            <li class="service-detail__list-item">Compatible con NOM-002-STPS-2010 y códigos NFPA</li>
+            <li class="service-detail__list-item">Certificado UL y fichas técnicas en español incluidos</li>
+            <li class="service-detail__list-item">Facilita obtención de seguros y reduce primas</li>
+            <li class="service-detail__list-item">Marcas UL Listed: Elkhart Brass, Akron, Task Force Tips</li>
+          </ul>
+          <div class="service-detail__ctas">
+            <a href="/monitores/ul-listed" class="btn btn--primary">Ver catálogo completo</a>
+            <a href="#cotizar" class="btn btn--outline">Cotizar</a>
+          </div>
+        </div>
+        <div class="service-detail__image" role="img" aria-label="Monitor UL Listed Underwriters Laboratories" style="background-image: url('/img/monitores-contra-incendios/monitor-ul-listed-fixed-flow-perfil-completo.avif'); background-size: cover; background-position: center;"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TRUST -->
+  <section class="trust" aria-labelledby="trust-title">
+    <div class="container">
+      <SectionHeader
+        titulo="Por Qué Comprar Monitores Contra Incendios en Gama de México"
+        subtitulo="Calidad certificada, inventario disponible y asesoría técnica especializada"
+        idTitulo="trust-title"
+      />
+      <div class="trust__grid">
+        <div class="trust__item">
+          <h3 class="trust__item-title">Construcción Robusta en Latón Forjado</h3>
+          <p class="trust__item-desc">Monitores contra incendio fabricados en latón (bronce) forjado de una sola pieza con alta resistencia a la corrosión, garantizando operación libre de fugas durante décadas.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Doble Certificación FM y UL</h3>
+          <p class="trust__item-desc">Todos nuestros monitores cuentan con certificación FM Approved y UL Listed. Incluimos certificados originales y documentación en español.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Venta con Disponibilidad Inmediata</h3>
+          <p class="trust__item-desc">Stock permanente para venta de monitores en México. Precio competitivo y entregas en 24-48 horas. Evita importaciones de 8-12 semanas con nuestro inventario local.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Asesoría y Cotización Profesional</h3>
+          <p class="trust__item-desc">Experiencia profesional para seleccionar el monitor contra incendio correcto. Cotización detallada con especificaciones técnicas y precio sin compromiso.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Materiales Confiables para Cada Entorno</h3>
+          <p class="trust__item-desc">Equipos de alta confiabilidad: bronce para ambientes marinos, acero inoxidable para espuma. Ideal para aplicaciones industriales exigentes.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Documentación para Auditorías</h3>
+          <p class="trust__item-desc">Certificados FM/UL originales, fichas técnicas en español, manuales y cartas de conformidad con NOM-002-STPS incluidos.</p>
+        </div>
+      </div>
+
+      <SectionHeader
+        titulo="Lo que dicen nuestros clientes"
+        subtitulo="Empresas de todo México confían en nuestros monitores contra incendios"
+        idTitulo="testimonials-title"
+      />
+      <div class="trust__testimonials">
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"Instalamos 8 monitores tipo corazón en el perímetro de nuestra planta petroquímica. La construcción forjada y la certificación FM fueron requisitos de nuestra aseguradora. Gama de México nos asesoró con las mejores opciones del mercado y entregó en 48 horas con toda la documentación."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Ing. Ricardo Mendoza L.</span>
+              <span class="testimonial__role">Gerente de Seguridad Industrial</span>
+              <span class="testimonial__company">Planta Petroquímica, Veracruz</span>
+            </div>
+          </div>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"Necesitábamos monitores tipo cuello de cisne para protección de tanques de 80 pies de altura. El modelo autosoportado que nos recomendaron fue la solución perfecta - se controla desde piso sin necesidad de subir. La asesoría técnica de Gama fue fundamental para seleccionar entre las diferentes marcas disponibles."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Ing. Luis Alberto Ríos T.</span>
+              <span class="testimonial__role">Superintendente de Operaciones</span>
+              <span class="testimonial__company">Terminal de Almacenamiento, Tabasco</span>
+            </div>
+          </div>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"La certificación FM es obligatoria en nuestra refinería por requisito de la aseguradora. Gama de México nos proporcionó monitores certificados FM con documentación original y toda la documentación traducida. El proceso de auditoría fue impecable gracias a la calidad de los documentos."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Lic. Carolina Estrada P.</span>
+              <span class="testimonial__role">Directora de Administración de Riesgos</span>
+              <span class="testimonial__company">Refinería, Tamaulipas</span>
+            </div>
+          </div>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"Para nuestro nuevo data center requeríamos monitores UL Listed por solicitud de Protección Civil del estado. Los monitores que nos vendió Gama cumplieron perfectamente - la certificación UL fue aceptada sin observaciones y obtuvimos el dictamen en tiempo récord."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Ing. Patricia Rojas S.</span>
+              <span class="testimonial__role">Coordinadora de Infraestructura</span>
+              <span class="testimonial__company">Data Center, Querétaro</span>
+            </div>
+          </div>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"Como firma de ingeniería especificamos monitores certificados FM para todos nuestros proyectos industriales. Gama de México siempre tiene stock de diferentes marcas y sus precios son muy competitivos. Nos ofrecen opciones de Elkhart Brass, Akron y Potter Roemer según el proyecto."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Ing. Carlos Vega R.</span>
+              <span class="testimonial__role">Líder de Proyectos</span>
+              <span class="testimonial__company">Firma de Ingeniería, CDMX</span>
+            </div>
+          </div>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"En nuestra planta química manejamos vapores corrosivos y necesitábamos monitores de bronce. Gama nos asesoró perfectamente con varias opciones de marcas premium - los monitores en bronce han operado sin problema durante 3 años en este ambiente tan agresivo. Cero corrosión, cero fugas."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Ing. Fernando García M.</span>
+              <span class="testimonial__role">Jefe de Seguridad</span>
+              <span class="testimonial__company">Planta Química, Estado de México</span>
+            </div>
+          </div>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"Compramos 12 monitores para una terminal portuaria. La disponibilidad inmediata en México fue clave - otros proveedores nos cotizaban 10 semanas de importación. Gama nos entregó todo en una semana y el proyecto no se retrasó. Además el precio fue excelente."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Lic. Andrea Torres G.</span>
+              <span class="testimonial__role">Gerente de Compras</span>
+              <span class="testimonial__company">Constructora Naval, Campeche</span>
+            </div>
+          </div>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"Teníamos monitores genéricos que presentaban fugas en las juntas. Los reemplazamos con monitores de construcción forjada que nos recomendó Gama y el cambio fue notable - cero mantenimiento en 2 años. La certificación UL además nos ayudó a reducir la prima del seguro."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Ing. Roberto Salinas D.</span>
+              <span class="testimonial__role">Superintendente de Seguridad</span>
+              <span class="testimonial__company">Minera, Sonora</span>
+            </div>
+          </div>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"Como empresa instaladora, la calidad del equipo define nuestra reputación. Los monitores que compramos en Gama de México son de las mejores marcas - construcción premium, certificación dual FM/UL, y nunca hemos tenido una devolución. Nos dan opciones de varias marcas según presupuesto."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Téc. Miguel Ángel Ortiz</span>
+              <span class="testimonial__role">Director Técnico</span>
+              <span class="testimonial__company">Instalaciones CI, Jalisco</span>
+            </div>
+          </div>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEAD CAPTURE -->
+  <section class="lead-capture" id="cotizar" aria-labelledby="lead-title">
+    <div class="container">
+      <SectionHeader
+        titulo="Cotiza tus monitores contra incendios ahora"
+        subtitulo="Precios competitivos, asesoría técnica y envío a toda la República"
+        idTitulo="lead-title"
+      />
+      <div class="lead-capture__bullets">
+        <span class="lead-capture__bullet">Precios y disponibilidad en menos de 24 horas</span>
+        <span class="lead-capture__bullet">Asesoría técnica para selección del modelo correcto</span>
+        <span class="lead-capture__bullet">Envíos a toda la República Mexicana</span>
+      </div>
+      <form class="lead-capture__form" id="cotizar-form" aria-label="Formulario de cotización por WhatsApp">
+        <input type="text" class="lead-capture__input" id="lead-nombre" name="nombre" placeholder="Nombre completo" required aria-label="Nombre completo" autocomplete="name">
+        <input type="text" class="lead-capture__input" id="lead-contacto" name="contacto" placeholder="Teléfono o Email" required aria-label="Teléfono o correo electrónico" autocomplete="tel">
+        <select class="lead-capture__select" id="lead-equipo" name="tipo_equipo" required aria-label="Tipo de monitor que necesitas">
+          <option value="" disabled selected>Tipo de monitor</option>
+          <option value="Monitor tipo corazón (Copperhead)">Monitor tipo corazón (Copperhead)</option>
+          <option value="Monitor tipo cuello de cisne">Monitor tipo cuello de cisne</option>
+          <option value="Monitor certificado FM">Monitor certificado FM</option>
+          <option value="Monitor UL Listed">Monitor UL Listed</option>
+          <option value="Varios monitores / proyecto completo">Varios monitores / proyecto completo</option>
+          <option value="Asesoría para selección">Necesito asesoría para seleccionar</option>
+          <option value="Otro">Otro (especificar)</option>
+        </select>
+        <button type="submit" class="btn btn--primary lead-capture__submit">Enviar por WhatsApp</button>
+      </form>
+      <p class="lead-capture__trust">Sin compromiso · Atención personalizada · Te respondemos al instante</p>
+      <p class="lead-capture__alt">También puedes escribirnos directo: <a href="https://wa.me/5215565298240" target="_blank" rel="noopener">WhatsApp: 55 6529 8240</a> | Email: <a href="mailto:ventas@gamademexico.com">ventas@gamademexico.com</a></p>
+    </div>
+  </section>
+
+  <!-- EQUIPOS COMPLEMENTARIOS - CROSS-LINKING SEO -->
+  <section class="complementary" aria-labelledby="complementary-title">
+    <div class="container">
+      <SectionHeader
+        titulo="Equipos Complementarios para Sistemas con Monitores"
+        subtitulo="Completa tu sistema contra incendios con equipos certificados compatibles"
+        idTitulo="complementary-title"
+      />
+      <div class="complementary__grid">
+        <a href="/boquillas-contra-incendios" class="complementary__card">
+          <div class="complementary__icon">💧</div>
+          <h3 class="complementary__title">Boquillas Contra Incendios</h3>
+          <p class="complementary__desc">Boquillas tipo pistola y turbo jet certificadas para descarga de alto caudal. Complemento ideal para monitores en operaciones manuales y de brigada.</p>
+          <span class="complementary__link">Ver boquillas →</span>
+        </a>
+        <a href="/valvulas-contra-incendios" class="complementary__card">
+          <div class="complementary__icon">🔩</div>
+          <h3 class="complementary__title">Válvulas Contra Incendios</h3>
+          <p class="complementary__desc">Válvulas de compuerta OS&Y y mariposa indicadoras para control de flujo hacia monitores. Certificadas UL/FM con supervisión tamper.</p>
+          <span class="complementary__link">Ver válvulas →</span>
+        </a>
+        <a href="/mangueras-contra-incendios" class="complementary__card">
+          <div class="complementary__icon">🔴</div>
+          <h3 class="complementary__title">Mangueras Contra Incendios</h3>
+          <p class="complementary__desc">Mangueras de alta presión para alimentación de monitores portátiles. Millhose y Blindex certificadas NFPA para máximo flujo.</p>
+          <span class="complementary__link">Ver mangueras →</span>
+        </a>
+        <a href="/conexiones-herrajes-contra-incendios" class="complementary__card">
+          <div class="complementary__icon">🔧</div>
+          <h3 class="complementary__title">Conexiones y Herrajes</h3>
+          <p class="complementary__desc">Siamesas FDC, adaptadores y acoples para integración de monitores al sistema hidráulico. Bronce y aluminio certificado.</p>
+          <span class="complementary__link">Ver conexiones →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEO CONTENT -->
+  <section class="seo-content" aria-labelledby="seo-title">
+    <div class="container">
+      <SectionHeader
+        titulo="Monitores Contra Incendio: Guía Completa para Protección Industrial en México"
+        subtitulo="Todo lo que necesitas saber sobre tipos, certificaciones y aplicaciones"
+        idTitulo="seo-title"
+      />
+      <div class="seo-content__body">
+
+        <p class="seo-content__text">Los <strong>monitores contra incendio</strong> son equipos estacionarios de proyección de agua o espuma diseñados para la extinción y control de incendios en instalaciones industriales de alto riesgo. A diferencia de las mangueras manuales, los monitores permiten <strong>control preciso a distancia</strong>, proyectando un chorro de agua de alta capacidad (500 a 2,000 GPM) para combatir incendios de gran escala en refinerías, plantas petroquímicas, terminales de almacenamiento de hidrocarburos y plantas químicas. Su construcción robusta en <strong>bronce forjado o latón de una sola pieza</strong> garantiza operación continua durante horas sin fugas ni pérdida de presión, característica crítica en situaciones de emergencia donde la fiabilidad salva vidas y protege activos.</p>
+
+        <h3>Monitor Tipo Corazón vs Monitor Cuello de Cisne: Aplicaciones Industriales</h3>
+        <p class="seo-content__text">La selección entre <strong>monitor tipo corazón y monitor cuello de cisne</strong> depende de la aplicación específica. El <strong>monitor tipo corazón</strong> (heart-shaped monitor) se caracteriza por su base con forma distintiva que permite <strong>rotación horizontal de 360°</strong> y movimiento vertical de -45° a +90°. Es ideal para protección perimetral en refinerías, terminales y muelles, instalándose fijo en puntos estratégicos para cubrir grandes áreas desde una posición. El <strong>monitor cuello de cisne</strong> (gooseneck monitor) está diseñado para protección de tanques de almacenamiento elevados, proyectando agua desde arriba hacia abajo. Se monta sobre torres autosoportadas o estructuras existentes, con elevaciones de 10 a 111 pies, permitiendo control desde nivel de piso sin exponer al operador a riesgos de altura.</p>
+
+        <h3>Certificación FM y UL: Requisitos para Monitores Contra Incendio</h3>
+        <p class="seo-content__text">La <strong>certificación FM (Factory Mutual)</strong> cumple el estándar FM 1421 y es obligatoria para instalaciones de alto riesgo como refinerías, petroquímicas y terminales de almacenamiento. Factory Mutual realiza inspecciones trimestrales en fábrica, verificando materiales, procesos y pruebas hidrostáticas de cada monitor. Es el estándar exigido por aseguradoras internacionales para proyectos PEMEX, CFE y empresas transnacionales. La <strong>certificación UL Listed</strong> (Underwriters Laboratories) valida seguridad y rendimiento mediante pruebas integrales, siendo ampliamente reconocida por Protección Civil en México y facilitando dictámenes técnicos y permisos de operación. Ofrecemos monitores de marcas reconocidas con <strong>doble certificación FM y UL</strong>, incluyendo certificados originales y fichas técnicas en español.</p>
+
+        <h3>Materiales de Fabricación: Bronce Forjado y Acero Inoxidable</h3>
+        <p class="seo-content__text">Los monitores contra incendio profesionales utilizan <strong>bronce forjado (latón) de una sola pieza</strong>, eliminando juntas soldadas que representan puntos débiles ante corrosión y presión. El bronce ofrece resistencia excepcional en ambientes marinos, plantas químicas con vapores corrosivos y aplicaciones donde el agua contiene minerales agresivos. Para aplicaciones con <strong>espuma AFFF o concentrados químicos</strong>, recomendamos monitores en <strong>acero inoxidable 316</strong> que resiste la acción corrosiva de estos agentes extintores. Ambos materiales garantizan décadas de operación sin fugas, soportando presiones de trabajo de 200-300 PSI y caudales continuos de hasta 2,000 GPM en condiciones de emergencia prolongada.</p>
+
+        <h3>Distribuidor de Monitores Contra Incendio en México</h3>
+        <p class="seo-content__text">Como <strong>distribuidor de marcas líderes</strong> con más de 15 años de experiencia, Gama de México ofrece ventajas únicas: <strong>stock permanente</strong> de monitores tipo corazón, cuello de cisne y modelos certificados FM/UL de marcas como Elkhart Brass, Akron, Potter Roemer y Task Force Tips para entrega en 24-48 horas; precios competitivos directos de fábrica sin intermediarios; asesoría técnica especializada para selección del modelo correcto según NFPA 15, NFPA 11 y NOM-002-STPS; documentación completa para auditorías de Protección Civil y aseguradoras incluyendo certificados FM/UL originales, fichas técnicas en español y cartas de conformidad; y cobertura nacional con envíos a toda la República Mexicana. Solicita cotización sin compromiso para tu proyecto industrial.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq" aria-labelledby="faq-title">
+    <div class="container">
+      <SectionHeader
+        titulo="Preguntas Frecuentes sobre Monitores Contra Incendios"
+        subtitulo="Resolvemos las dudas más comunes sobre tipos, certificaciones y selección"
+        idTitulo="faq-title"
+      />
+      <div class="faq__list">
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false" aria-controls="faq-mon-1" id="faq-m-q1">¿Qué tipos de monitores contra incendios vende Gama de México?<span class="faq__icon" aria-hidden="true">+</span></button>
+          <div class="faq__answer" id="faq-mon-1" role="region" aria-labelledby="faq-m-q1">
+            <p>Distribuimos cuatro tipos principales de monitores de marcas líderes como Elkhart Brass, Akron, Potter Roemer y Task Force Tips: <strong>1) Monitores tipo corazón</strong>, ideales para protección perimetral con rotación 360° y caudales hasta 2,000 GPM; <strong>2) Monitores tipo cuello de cisne</strong> en versión autosoportada y soportada para protección de tanques desde arriba, con caudales de 500-2,000 GPM; <strong>3) Monitores certificados FM</strong> que cumplen estándar FM 1421 para instalaciones de alto riesgo; y <strong>4) Monitores UL Listed</strong> reconocidos por Protección Civil en México. Todos tienen construcción forjada de una pieza e incluyen certificación y documentación completa.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false" aria-controls="faq-mon-2" id="faq-m-q2">¿Cuál es la diferencia entre un monitor certificado FM y uno UL Listed?<span class="faq__icon" aria-hidden="true">+</span></button>
+          <div class="faq__answer" id="faq-mon-2" role="region" aria-labelledby="faq-m-q2">
+            <p>La <strong>certificación FM (Factory Mutual)</strong> es el estándar más riguroso para equipos en instalaciones industriales de alto riesgo - cumple estándar FM 1421, requiere inspecciones trimestrales en fábrica, y es exigido por aseguradoras para refinerías, petroquímicas y terminales de almacenamiento. La <strong>certificación UL Listed</strong> (Underwriters Laboratories) certifica seguridad y rendimiento mediante pruebas integrales y es ampliamente aceptado por autoridades de Protección Civil en México para aplicaciones comerciales e industriales. Muchos monitores Elkhart Brass tienen doble certificación FM y UL, ofreciendo máxima flexibilidad.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false" aria-controls="faq-mon-3" id="faq-m-q3">¿Qué caudal manejan los monitores contra incendios?<span class="faq__icon" aria-hidden="true">+</span></button>
+          <div class="faq__answer" id="faq-mon-3" role="region" aria-labelledby="faq-m-q3">
+            <p>Los monitores que distribuimos manejan caudales desde <strong>500 hasta 2,000 GPM</strong> (1,893 a 7,571 litros por minuto) según el modelo. Los monitores tipo corazón Copperhead tienen capacidad hasta 1,250 GPM, ideales para la mayoría de aplicaciones de protección perimetral. Los monitores tipo cuello de cisne están disponibles en diferentes alturas y caudales - los modelos para tanques grandes pueden alcanzar hasta 2,000 GPM. El caudal necesario se determina según el riesgo a proteger, la distancia de proyección requerida y los códigos NFPA aplicables. Nuestros ingenieros te ayudan a calcular el caudal correcto sin costo.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false" aria-controls="faq-mon-4" id="faq-m-q4">¿De qué materiales están fabricados los monitores?<span class="faq__icon" aria-hidden="true">+</span></button>
+          <div class="faq__answer" id="faq-mon-4" role="region" aria-labelledby="faq-m-q4">
+            <p>Los monitores que distribuimos están disponibles en tres materiales según el ambiente de operación: <strong>1) Bronce forjado</strong> - recomendado para ambientes marinos, plantas químicas con vapores corrosivos, y aplicaciones donde se requiere máxima resistencia a corrosión; <strong>2) Acero inoxidable 316</strong> - para aplicaciones con espuma o agentes químicos que pueden atacar el bronce; y <strong>3) Hierro dúctil</strong> - para aplicaciones con agua dulce donde la corrosión no es preocupación. Todas las marcas que manejamos tienen construcción forjada de una sola pieza sin juntas débiles. Te asesoramos en la selección del material correcto.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false" aria-controls="faq-mon-5" id="faq-m-q5">¿En qué tipo de aplicaciones se utilizan los monitores contra incendios?<span class="faq__icon" aria-hidden="true">+</span></button>
+          <div class="faq__answer" id="faq-mon-5" role="region" aria-labelledby="faq-m-q5">
+            <p>Los <strong>monitores tipo corazón</strong> se utilizan en protección perimetral de áreas de proceso en refinerías de petróleo, plantas petroquímicas, terminales de almacenamiento de hidrocarburos, muelles de carga/descarga de líquidos inflamables, hangares de aviación, y almacenes de productos químicos. Los <strong>monitores tipo cuello de cisne</strong> se utilizan específicamente para protección de tanques atmosféricos de almacenamiento, tanques de GLP, esferas de almacenamiento, y recipientes a presión elevados. En general, cualquier instalación con riesgo de incendio clase B que requiera proyección de grandes volúmenes de agua a distancia.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false" aria-controls="faq-mon-6" id="faq-m-q6">¿Cómo sé qué tipo de monitor necesito para mi aplicación?<span class="faq__icon" aria-hidden="true">+</span></button>
+          <div class="faq__answer" id="faq-mon-6" role="region" aria-labelledby="faq-m-q6">
+            <p>La selección del monitor correcto depende de varios factores: <strong>1)</strong> Tipo de riesgo a proteger - corazón para perímetro horizontal, cuello de cisne para tanques; <strong>2)</strong> Caudal requerido según códigos NFPA y tamaño del riesgo; <strong>3)</strong> Alcance de proyección necesario; <strong>4)</strong> Requisitos de certificación - FM para instalaciones de alto riesgo, UL para aplicaciones generales; <strong>5)</strong> Material según ambiente corrosivo o no; y <strong>6)</strong> Operación manual o remota. Nuestros ingenieros realizan esta evaluación sin costo - compártenos detalles de tu aplicación y te recomendamos el modelo óptimo.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false" aria-controls="faq-mon-7" id="faq-m-q7">¿Los monitores incluyen documentación para trámites con Protección Civil?<span class="faq__icon" aria-hidden="true">+</span></button>
+          <div class="faq__answer" id="faq-mon-7" role="region" aria-labelledby="faq-m-q7">
+            <p>Sí, cada monitor incluye documentación completa aceptada por autoridades mexicanas: <strong>certificado FM original o UL Listed</strong> según modelo, fichas técnicas en español con especificaciones completas, manuales de instalación y operación traducidos, cartas de conformidad con NOM-002-STPS-2010, y dibujos dimensionales. Esta documentación es exactamente lo que solicitan en auditorías de Protección Civil, verificaciones de aseguradoras, y dictámenes de unidades de verificación. Muchos clientes nos comentan que la calidad de nuestra documentación facilita enormemente los trámites.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<script>
+  // FAQ Accordion
+  document.addEventListener('DOMContentLoaded', () => {
+    const faqQuestions = document.querySelectorAll('.faq__question');
+
+    faqQuestions.forEach(button => {
+      button.addEventListener('click', () => {
+        const expanded = button.getAttribute('aria-expanded') === 'true';
+        const icon = button.querySelector('.faq__icon');
+
+        // Close all other items
+        faqQuestions.forEach(otherButton => {
+          if (otherButton !== button) {
+            otherButton.setAttribute('aria-expanded', 'false');
+            const otherIcon = otherButton.querySelector('.faq__icon');
+            if (otherIcon) otherIcon.textContent = '+';
+            const otherAnswer = document.getElementById(otherButton.getAttribute('aria-controls') || '');
+            if (otherAnswer) otherAnswer.style.display = 'none';
+          }
+        });
+
+        // Toggle current item
+        button.setAttribute('aria-expanded', (!expanded).toString());
+        if (icon) icon.textContent = expanded ? '+' : '−';
+        const answer = document.getElementById(button.getAttribute('aria-controls') || '');
+        if (answer) {
+          answer.style.display = expanded ? 'none' : 'block';
+        }
+      });
+    });
+
+    // WhatsApp Form Handler
+    const cotizarForm = document.getElementById('cotizar-form');
+    if (cotizarForm) {
+      cotizarForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const nombre = (document.getElementById('lead-nombre') as HTMLInputElement)?.value || '';
+        const contacto = (document.getElementById('lead-contacto') as HTMLInputElement)?.value || '';
+        const tipoEquipo = (document.getElementById('lead-equipo') as HTMLSelectElement)?.value || '';
+
+        const mensaje = `Hola, me interesa cotizar monitores contra incendios:%0A%0ANombre: ${encodeURIComponent(nombre)}%0AContacto: ${encodeURIComponent(contacto)}%0ATipo de monitor: ${encodeURIComponent(tipoEquipo)}`;
+
+        window.open(`https://wa.me/5215565298240?text=${mensaje}`, '_blank');
+      });
+    }
+  });
+</script>

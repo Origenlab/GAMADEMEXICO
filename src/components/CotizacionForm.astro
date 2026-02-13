@@ -1,0 +1,282 @@
+---
+// CotizacionForm - Componente unificado de cotización por WhatsApp
+// Funciona para páginas de producto individual y subcategorías
+
+interface Props {
+  // Título personalizado (ej: "Cotiza Monitor Tipo Corazón")
+  titulo?: string;
+  // Producto preseleccionado (si se pasa, oculta el dropdown)
+  producto?: string;
+  // Tipo de equipo (para subcategorías: "Monitores", "Boquillas", etc.)
+  tipoEquipo?: string;
+  // Bullets personalizados
+  bullets?: string[];
+  // Nombre de página para tracking en WhatsApp
+  pagina?: string;
+}
+
+const {
+  titulo = "Cotiza tu equipo contra incendios",
+  producto,
+  tipoEquipo,
+  bullets = [
+    "Precio y disponibilidad en menos de 24 horas",
+    "Asesoría técnica sin costo",
+    "Envíos a toda la República Mexicana"
+  ],
+  pagina = "general"
+} = Astro.props;
+
+const whatsappNumber = "5215565298240";
+const formId = `cotizar-form-${Math.random().toString(36).substr(2, 9)}`;
+---
+
+<section class="cotizacion-form" id="cotizar" aria-labelledby="cotizacion-title">
+  <div class="container">
+    <h2 id="cotizacion-title" class="cotizacion-form__title">{titulo}</h2>
+
+    <div class="cotizacion-form__bullets">
+      {bullets.map((bullet) => (
+        <span class="cotizacion-form__bullet">{bullet}</span>
+      ))}
+    </div>
+
+    <form
+      class="cotizacion-form__form"
+      id={formId}
+      data-producto={producto || ""}
+      data-tipo-equipo={tipoEquipo || ""}
+      data-pagina={pagina}
+      data-whatsapp={whatsappNumber}
+      aria-label="Formulario de cotización por WhatsApp"
+    >
+      <input
+        type="text"
+        class="cotizacion-form__input"
+        name="nombre"
+        placeholder="Nombre completo"
+        required
+        aria-label="Nombre completo"
+        autocomplete="name"
+      />
+
+      <input
+        type="text"
+        class="cotizacion-form__input"
+        name="contacto"
+        placeholder="Teléfono o Email"
+        required
+        aria-label="Teléfono o correo electrónico"
+        autocomplete="tel"
+      />
+
+      {/* Si hay producto preseleccionado, mostrar campo de cantidad. Si no, mostrar dropdown */}
+      {producto ? (
+        <input
+          type="text"
+          class="cotizacion-form__input"
+          name="cantidad"
+          placeholder="Cantidad requerida (opcional)"
+          aria-label="Cantidad requerida"
+        />
+      ) : (
+        <select
+          class="cotizacion-form__select"
+          name="tipo_equipo"
+          required
+          aria-label="Tipo de equipo que necesitas"
+        >
+          <option value="" disabled selected>Tipo de equipo</option>
+          <option value="Monitores">Monitores</option>
+          <option value="Boquillas">Boquillas</option>
+          <option value="Mangueras">Mangueras</option>
+          <option value="Válvulas">Válvulas</option>
+          <option value="Conexiones y herrajes">Conexiones y herrajes</option>
+          <option value="Gabinetes e hidrantes">Gabinetes e hidrantes</option>
+          <option value="Varios equipos">Varios equipos</option>
+          <option value="Otro">Otro (especificar)</option>
+        </select>
+      )}
+
+      <button type="submit" class="btn btn--primary cotizacion-form__submit">
+        Enviar por WhatsApp
+      </button>
+    </form>
+
+    <p class="cotizacion-form__trust">Sin compromiso · Atención personalizada · Te respondemos al instante</p>
+    <p class="cotizacion-form__alt">
+      También puedes escribirnos directo:
+      <a href={`https://wa.me/${whatsappNumber}`} target="_blank" rel="noopener">WhatsApp: 55 6529 8240</a>
+    </p>
+  </div>
+</section>
+
+<style>
+  .cotizacion-form {
+    padding: var(--spacing-2xl, 3rem) 0;
+    background: var(--color-accent, #F5F5F5);
+    border-top: 1px solid var(--color-border, #E0E0E0);
+    border-bottom: 1px solid var(--color-border, #E0E0E0);
+  }
+
+  .cotizacion-form .container {
+    max-width: 1060px;
+  }
+
+  .cotizacion-form__title {
+    font-size: var(--font-size-xl, 1.75rem);
+    font-weight: 700;
+    color: var(--color-secondary, #1A1A2E);
+    text-align: center;
+    margin-bottom: var(--spacing-md, 1.5rem);
+  }
+
+  .cotizacion-form__bullets {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-lg, 2rem);
+    margin-bottom: var(--spacing-lg, 2rem);
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .cotizacion-form__bullet {
+    font-size: var(--font-size-sm, 0.875rem);
+    color: var(--color-text-light, #666);
+  }
+
+  .cotizacion-form__bullet::before {
+    content: "\2713  ";
+    color: var(--color-primary, #C41E3A);
+    font-weight: 700;
+  }
+
+  .cotizacion-form__form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-sm, 1rem);
+    margin-bottom: var(--spacing-md, 1.5rem);
+  }
+
+  .cotizacion-form__input,
+  .cotizacion-form__select {
+    padding: 0.875rem var(--spacing-sm, 1rem);
+    border: 1px solid var(--color-border, #E0E0E0);
+    border-radius: var(--border-radius, 8px);
+    font-size: var(--font-size-base, 1rem);
+    background: var(--color-white, #FFFFFF);
+    color: var(--color-text, #333);
+    transition: border-color 0.2s ease;
+  }
+
+  .cotizacion-form__input:focus,
+  .cotizacion-form__select:focus {
+    border-color: var(--color-primary, #C41E3A);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(196, 30, 58, 0.15);
+  }
+
+  .cotizacion-form__input::placeholder {
+    color: #999;
+  }
+
+  .cotizacion-form__submit {
+    width: 100%;
+  }
+
+  .cotizacion-form__trust {
+    text-align: center;
+    font-size: var(--font-size-xs, 0.8125rem);
+    color: var(--color-text-light, #666);
+    margin-bottom: var(--spacing-sm, 1rem);
+  }
+
+  .cotizacion-form__alt {
+    text-align: center;
+    font-size: var(--font-size-sm, 0.875rem);
+    color: var(--color-text-light, #666);
+  }
+
+  .cotizacion-form__alt a {
+    color: var(--color-primary, #C41E3A);
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .cotizacion-form__alt a:hover {
+    text-decoration: underline;
+  }
+
+  /* Tablet */
+  @media (min-width: 768px) {
+    .cotizacion-form__form {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .cotizacion-form__submit {
+      grid-column: 1 / -1;
+      width: auto;
+      justify-self: center;
+      min-width: 280px;
+    }
+  }
+
+  /* Desktop */
+  @media (min-width: 1024px) {
+    .cotizacion-form__form {
+      grid-template-columns: 1fr 1fr 1fr auto;
+    }
+
+    .cotizacion-form__submit {
+      grid-column: auto;
+      min-width: auto;
+    }
+  }
+</style>
+
+<script>
+  // WhatsApp Form Handler - Universal
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.cotizacion-form__form').forEach((form) => {
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const f = e.target as HTMLFormElement;
+
+        const nombre = (f.querySelector('[name="nombre"]') as HTMLInputElement)?.value.trim() || '';
+        const contacto = (f.querySelector('[name="contacto"]') as HTMLInputElement)?.value.trim() || '';
+        const cantidad = (f.querySelector('[name="cantidad"]') as HTMLInputElement)?.value.trim() || '';
+        const tipoEquipo = (f.querySelector('[name="tipo_equipo"]') as HTMLSelectElement)?.value || '';
+
+        const productoData = f.dataset.producto;
+        const tipoEquipoData = f.dataset.tipoEquipo;
+        const pagina = f.dataset.pagina;
+        const whatsapp = f.dataset.whatsapp;
+
+        if (!nombre || !contacto) return;
+
+        let mensaje = `Hola, me interesa cotizar`;
+
+        // Si hay producto específico
+        if (productoData) {
+          mensaje += `: *${productoData}*`;
+        } else if (tipoEquipo) {
+          mensaje += `: ${tipoEquipo}`;
+        } else if (tipoEquipoData) {
+          mensaje += ` ${tipoEquipoData}`;
+        }
+
+        mensaje += `\n\nNombre: ${nombre}\nContacto: ${contacto}`;
+
+        if (cantidad) {
+          mensaje += `\nCantidad: ${cantidad} unidades`;
+        }
+
+        if (pagina && pagina !== 'general') {
+          mensaje += `\n\n(Desde: ${pagina})`;
+        }
+
+        window.open(`https://wa.me/${whatsapp}?text=${encodeURIComponent(mensaje)}`, '_blank');
+      });
+    });
+  });
+</script>

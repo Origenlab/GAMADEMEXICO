@@ -1,0 +1,880 @@
+---
+import Layout from '../../layouts/Base.astro';
+import '../../styles/services-shared.css';
+import Faq from '../../components/Faq.astro';
+import SectionHeader from '../../components/SectionHeader.astro';
+import LeadCapture from '../../components/LeadCapture.astro';
+
+const faqItems = [
+  {
+    pregunta: '¿Cómo puedo solicitar una cotización de equipos contra incendios en Gama de México?',
+    respuesta: 'Puedes solicitar tu cotización a través de nuestro formulario en línea (se envía directo a WhatsApp), escribiéndonos al WhatsApp 55 6529 8240, o llamando al 55 1543 7164. Solo necesitamos el tipo de equipo, las cantidades aproximadas y la ubicación de entrega. Respondemos en menos de 24 horas.',
+  },
+  {
+    pregunta: '¿Qué tipos de equipos contra incendios venden?',
+    respuesta: 'Manejamos un catálogo completo en seis categorías: Monitores (tipo corazón, cuello de cisne, certificados y UL Listed), Boquillas (tipo pistola, turbo jet y certificadas), Mangueras (millhose, blindex y de succión), Válvulas (compuerta, globo y angular), Conexiones y herrajes de bronce (chiflones, adaptadores, coples, toma siamesa, conexión Y), y Gabinetes e hidrantes (tipo 30ME e hidrante de banqueta).',
+  },
+  {
+    pregunta: '¿Realizan envíos de equipos contra incendios a todo México?',
+    respuesta: 'Sí, realizamos envíos a toda la República Mexicana. Operamos desde Ciudad de México (Santa Fe) y Querétaro, lo que permite coordinar logística eficiente al centro, norte y sureste del país.',
+  },
+  {
+    pregunta: '¿Ofrecen asesoría técnica para elegir equipos contra incendios?',
+    respuesta: 'Sí. Nuestros asesores técnicos evalúan tipo de riesgo, normativa aplicable (NOM-002-STPS, protección civil), especificaciones hidráulicas y de diseño para recomendarte los componentes exactos. La asesoría es gratuita y sin compromiso.',
+  },
+  {
+    pregunta: '¿Los equipos contra incendios que venden tienen certificaciones?',
+    respuesta: 'Sí. Como distribuidores autorizados de Elkhart Brass contamos con monitores y boquillas certificados UL (Underwriters Laboratories) y FM (Factory Mutual). Proporcionamos documentación técnica para verificaciones de protección civil.',
+  },
+  {
+    pregunta: '¿Dónde se ubican las sucursales de Gama de México?',
+    respuesta: 'Tenemos dos sucursales: Prol. Paseo de la Reforma 1015, Piso 1, Santa Fe, 01376 Ciudad de México, y Avenida Constituyentes 120, Santiago de Querétaro, 76030. Horario: lunes a domingo de 6:00 a 16:00 horas.',
+  },
+  {
+    pregunta: '¿Qué sectores o industrias atiende Gama de México?',
+    respuesta: 'Atendemos plantas manufactureras, industria química y petroquímica, terminales de almacenamiento, centros de datos, constructoras, hospitales, hoteles, corporativos, firmas de ingeniería, instaladores certificados y brigadas de protección civil. Ofrecemos venta unitaria y cotizaciones corporativas.',
+  },
+];
+---
+
+<Layout
+  title="Suministro para Mantenimiento | Refacciones Contra Incendios | Gama de México"
+  description="Refacciones y accesorios para mantenimiento de sistemas contra incendios. Válvulas, conexiones, mangueras y herrajes de bronce. Disponibilidad inmediata para reparaciones."
+  activePage="servicios"
+  heroTitle="Mantenimiento de Equipos"
+  heroIntro="Servicios de mantenimiento preventivo y correctivo para equipos contra incendios. Inspección, pruebas hidrostáticas, recarga y reparación de mangueras, válvulas y monitores."
+  heroBadge="Servicios"
+  heroMetrics={[
+    { valor: "Preventivo", texto: "Tipo de servicio" },
+    { valor: "NFPA", texto: "Cumplimiento norma" },
+    { valor: "Certificado", texto: "Técnicos capacitados" }
+  ]}
+  heroPrimaryText="Solicitar Mantenimiento"
+  heroPrimaryLink="#solicitar"
+  heroSecondaryText="Ver Servicios"
+  heroSecondaryLink="/servicios"
+  heroShowRightContent={true}
+>
+  <Fragment slot="hero-content">
+    <p>Nuestro equipo de técnicos certificados realiza mantenimiento preventivo y correctivo de equipos contra incendios conforme a las normas NFPA. Ofrecemos inspección periódica, pruebas hidrostáticas, recarga de extintores y reparación especializada de mangueras, válvulas y monitores para garantizar el funcionamiento óptimo de sus sistemas de protección.</p>
+    <p>Contamos con la experiencia y el equipamiento necesario para atender proyectos industriales, comerciales e institucionales en toda la República Mexicana. Cada servicio incluye documentación técnica completa y certificados de cumplimiento para verificaciones de Protección Civil.</p>
+  </Fragment>
+
+  <!-- SUBSECCIONES DE MANTENIMIENTO -->
+  <section class="service-sections" id="servicios-mantenimiento" aria-labelledby="sections-title">
+    <div class="container">
+      <SectionHeader
+        titulo="Refacciones y Componentes Disponibles"
+        subtitulo="Inventario completo para el mantenimiento de sistemas contra incendios"
+        idTitulo="sections-title"
+        parrafo1="Los sistemas contra incendios requieren mantenimiento periódico y reemplazo de componentes según las normas NFPA. Manejamos un inventario completo de válvulas, conexiones, mangueras y accesorios para que puedas mantener tus equipos en óptimas condiciones."
+        parrafo2="Nuestros asesores técnicos te ayudan a identificar la refacción exacta que necesitas según modelo, diámetro, tipo de conexión y certificaciones requeridas. Envíanos foto o especificación y te cotizamos de inmediato."
+      />
+
+      <!-- Válvulas de Reposición -->
+      <div class="service-block" id="valvulas-reposicion">
+        <div class="service-block__header">
+          <div class="service-block__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <div class="service-block__title-wrap">
+            <h3 class="service-block__title">Válvulas de Reposición</h3>
+            <p class="service-block__subtitle">Válvulas para sistemas de rociadores, hidrantes y redes contra incendios</p>
+          </div>
+        </div>
+        <div class="service-block__content">
+          <div class="service-block__text">
+            <p>Las válvulas son componentes críticos que requieren <strong>reemplazo periódico</strong> o cuando presentan fugas, corrosión o mal funcionamiento. Manejamos válvulas de compuerta OS&Y, mariposa, globo, retención y control para sistemas contra incendios.</p>
+            <p>Todas nuestras válvulas cumplen con <strong>certificaciones UL/FM</strong> y estándares NFPA. Te ayudamos a identificar el modelo exacto que necesitas según diámetro, tipo de conexión, presión de trabajo y certificación requerida.</p>
+          </div>
+          <div class="service-block__features">
+            <div class="feature-card">
+              <h4 class="feature-card__title"><a href="/valvulas/compuerta">Válvulas OS&Y</a></h4>
+              <p class="feature-card__desc">Válvulas de compuerta con vástago exterior para control principal de sistemas. Diámetros de 2" a 12".</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title"><a href="/valvulas/mariposa">Válvulas Mariposa</a></h4>
+              <p class="feature-card__desc">Válvulas de mariposa con supervisión para sistemas de rociadores. Montaje wafer o ranurado.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title"><a href="/valvulas/globo">Válvulas de Globo</a></h4>
+              <p class="feature-card__desc">Válvulas angulares y rectas para gabinetes y estaciones de manguera. Bronce o hierro.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title"><a href="/valvulas/retencion">Válvulas Check</a></h4>
+              <p class="feature-card__desc">Válvulas de retención para evitar reflujo en sistemas presurizados. Swing, wafer y bridadas.</p>
+            </div>
+          </div>
+          <div class="service-block__cta">
+            <p class="service-block__cta-text">¿Necesitas identificar una válvula específica?</p>
+            <a href="https://wa.me/5215565298240?text=Hola,%20necesito%20identificar%20una%20válvula%20para%20reposición" class="btn btn--primary btn--sm" target="_blank" rel="noopener">Enviar foto o especificación</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Conexiones y Herrajes -->
+      <div class="service-block" id="conexiones-herrajes">
+        <div class="service-block__header">
+          <div class="service-block__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m7 10 2 2 6-6"/><path d="m7 16 2 2 2-2"/></svg>
+          </div>
+          <div class="service-block__title-wrap">
+            <h3 class="service-block__title">Conexiones y Herrajes</h3>
+            <p class="service-block__subtitle">Adaptadores, coples, reducciones y accesorios de bronce</p>
+          </div>
+        </div>
+        <div class="service-block__content">
+          <div class="service-block__text">
+            <p>Los <strong>herrajes de bronce</strong> son esenciales para conectar, adaptar y reparar sistemas contra incendios. Manejamos adaptadores, coples, reducciones, tapones, niples y conexiones especiales en roscas NST, Storz y NPT.</p>
+            <p>Nuestros herrajes son de <strong>bronce fundido de alta calidad</strong>, resistentes a la corrosión y compatibles con agua, espuma AFFF y otros agentes extintores. Disponibles para diámetros de 1" a 6".</p>
+          </div>
+          <div class="service-block__features">
+            <div class="feature-card">
+              <h4 class="feature-card__title"><a href="/conexiones/adaptadores">Adaptadores</a></h4>
+              <p class="feature-card__desc">Adaptadores macho-hembra, doble macho, doble hembra y swivel. Roscas NST, Storz y NPT.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title"><a href="/conexiones/coples">Coples y Reducciones</a></h4>
+              <p class="feature-card__desc">Coples Storz, reducciones campana y reducciones swivel para diferentes diámetros.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title"><a href="/conexiones/wye">Conexiones Wye</a></h4>
+              <p class="feature-card__desc">Divisores de flujo con válvulas de bola para distribución de agua en mangueras.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title"><a href="/conexiones/accesorios">Accesorios</a></h4>
+              <p class="feature-card__desc">Tapones, niples, llaves de hidrante, soportes y herramientas para mangueras.</p>
+            </div>
+          </div>
+          <div class="service-block__list">
+            <h4 class="service-block__list-title">Conexiones más solicitadas para mantenimiento:</h4>
+            <ul class="check-list">
+              <li class="check-list__item">Adaptador 2.5" NH macho x 1.5" NH hembra</li>
+              <li class="check-list__item">Reducción campana 2.5" x 1.5" bronce</li>
+              <li class="check-list__item">Cople Storz 2.5" aluminio o bronce</li>
+              <li class="check-list__item">Tapón ciego 2.5" NH con cadena</li>
+              <li class="check-list__item">Llave pentagonal para hidrante</li>
+              <li class="check-list__item">Niple caña 2.5" NPT x NH</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mangueras Certificadas -->
+      <div class="service-block" id="mangueras-certificadas">
+        <div class="service-block__header">
+          <div class="service-block__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <div class="service-block__title-wrap">
+            <h3 class="service-block__title">Mangueras Certificadas</h3>
+            <p class="service-block__subtitle">Mangueras para gabinetes, hidrantes y brigadas de emergencia</p>
+          </div>
+        </div>
+        <div class="service-block__content">
+          <div class="service-block__text">
+            <p>Las mangueras contra incendios tienen una <strong>vida útil limitada</strong> y requieren reemplazo periódico según las normas NFPA. Manejamos mangueras de 1.5" y 2.5" para gabinetes, rack de mangueras y uso en brigadas industriales.</p>
+            <p>Todas nuestras mangueras están <strong>certificadas y probadas</strong> a la presión de servicio indicada. Disponibles en diferentes longitudes (15m, 30m) y con acoples NST o Storz según tu sistema existente.</p>
+          </div>
+          <div class="service-block__features">
+            <div class="feature-card">
+              <h4 class="feature-card__title"><a href="/mangueras/blindex">Manguera Blindex</a></h4>
+              <p class="feature-card__desc">Manguera de poliéster con forro de nitrilo. Alta resistencia a abrasión y químicos. Gabinetes industriales.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title"><a href="/mangueras/millhose">Manguera Millhose</a></h4>
+              <p class="feature-card__desc">Manguera de poliéster tejido doble. Uso general en gabinetes y sistemas de hidrantes.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title"><a href="/mangueras/forestal">Manguera Forestal</a></h4>
+              <p class="feature-card__desc">Manguera ligera de 1" y 1.5" para brigadas de emergencia y uso en campo.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title"><a href="/mangueras/succion">Manguera de Succión</a></h4>
+              <p class="feature-card__desc">Manguera rígida para succión de agua desde cisternas, pozos o fuentes abiertas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Componentes para Pruebas -->
+      <div class="service-block" id="componentes-pruebas">
+        <div class="service-block__header">
+          <div class="service-block__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><path d="m9 15 2 2 4-4"/></svg>
+          </div>
+          <div class="service-block__title-wrap">
+            <h3 class="service-block__title">Componentes para Pruebas</h3>
+            <p class="service-block__subtitle">Accesorios para pruebas hidrostáticas y verificaciones</p>
+          </div>
+        </div>
+        <div class="service-block__content">
+          <div class="service-block__text">
+            <p>Las <strong>pruebas periódicas</strong> de sistemas contra incendios requieren componentes específicos: manómetros, tapones de prueba, conexiones temporales y accesorios de medición. Suministramos todo lo necesario para realizar verificaciones según norma.</p>
+            <p>También proporcionamos <strong>documentación técnica</strong> y certificados de los equipos instalados para presentar en verificaciones de Protección Civil y auditorías de aseguradoras.</p>
+          </div>
+          <div class="service-block__features">
+            <div class="feature-card">
+              <h4 class="feature-card__title">Manómetros</h4>
+              <p class="feature-card__desc">Manómetros de 0-300 PSI para verificación de presión en sistemas y pruebas hidrostáticas.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Tapones de Prueba</h4>
+              <p class="feature-card__desc">Tapones ciegos con conexión para manómetro para pruebas de presión en redes.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Pitot y Medidores</h4>
+              <p class="feature-card__desc">Tubos pitot y medidores de flujo para pruebas de caudal en hidrantes y monitores.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Documentación</h4>
+              <p class="feature-card__desc">Fichas técnicas, certificados y formatos para verificaciones de Protección Civil.</p>
+            </div>
+          </div>
+          <div class="service-block__contact">
+            <h4 class="service-block__contact-title">¿Necesitas refacciones urgentes?</h4>
+            <div class="contact-channels">
+              <a href="https://wa.me/5215565298240" class="contact-channel" target="_blank" rel="noopener">
+                <span class="contact-channel__icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                </span>
+                <span class="contact-channel__info">
+                  <span class="contact-channel__label">WhatsApp</span>
+                  <span class="contact-channel__value">55 6529 8240</span>
+                </span>
+              </a>
+              <a href="tel:+525515437164" class="contact-channel">
+                <span class="contact-channel__icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </span>
+                <span class="contact-channel__info">
+                  <span class="contact-channel__label">Teléfono</span>
+                  <span class="contact-channel__value">55 1543 7164</span>
+                </span>
+              </a>
+              <a href="mailto:ventas@gamademexico.com" class="contact-channel">
+                <span class="contact-channel__icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </span>
+                <span class="contact-channel__info">
+                  <span class="contact-channel__label">Email</span>
+                  <span class="contact-channel__value">ventas@gamademexico.com</span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESO DE SUMINISTRO -->
+  <section class="process" aria-labelledby="process-title">
+    <div class="container">
+      <SectionHeader
+        titulo="Proceso de Suministro"
+        subtitulo="Cómo te ayudamos a obtener las refacciones que necesitas"
+        idTitulo="process-title"
+        parrafo1="Hemos simplificado el proceso de identificación y suministro de refacciones para que puedas resolver tus necesidades de mantenimiento de manera rápida y confiable. Solo necesitas enviarnos la información que tengas disponible."
+        parrafo2="Nuestro equipo técnico verifica compatibilidad, confirma disponibilidad y te entrega cotización en menos de 24 horas. Si tienes urgencia, podemos priorizar tu pedido para entrega el mismo día en CDMX y Querétaro."
+      />
+      <div class="process__steps">
+        <div class="process__step">
+          <div class="process__number" aria-hidden="true">1</div>
+          <h3 class="process__step-title">Identificación</h3>
+          <p class="process__step-desc">Envíanos foto, modelo o especificación de la pieza que necesitas. Te ayudamos a identificarla.</p>
+        </div>
+        <div class="process__step">
+          <div class="process__number" aria-hidden="true">2</div>
+          <h3 class="process__step-title">Verificación</h3>
+          <p class="process__step-desc">Confirmamos disponibilidad, compatibilidad y especificaciones técnicas de la refacción.</p>
+        </div>
+        <div class="process__step">
+          <div class="process__number" aria-hidden="true">3</div>
+          <h3 class="process__step-title">Cotización</h3>
+          <p class="process__step-desc">Te enviamos cotización con precio, tiempo de entrega y opciones de envío disponibles.</p>
+        </div>
+        <div class="process__step">
+          <div class="process__number" aria-hidden="true">4</div>
+          <h3 class="process__step-title">Entrega</h3>
+          <p class="process__step-desc">Enviamos tu pedido con embalaje protector. Entrega en CDMX/Querétaro o envío nacional.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATÁLOGO DE REFACCIONES -->
+  <section class="catalog" aria-labelledby="catalog-title">
+    <div class="container">
+      <SectionHeader
+        titulo="Explora Nuestro Catálogo"
+        subtitulo="Encuentra las refacciones que necesitas por categoría"
+        idTitulo="catalog-title"
+        parrafo1="Nuestro catálogo incluye válvulas, conexiones, mangueras, boquillas, gabinetes y monitores de las principales marcas del mercado. Cada categoría cuenta con múltiples opciones según aplicación, certificación y presupuesto."
+        parrafo2="Si no encuentras exactamente lo que buscas, contáctanos. Tenemos acceso a líneas adicionales de producto y podemos ayudarte a localizar componentes específicos o descontinuados."
+      />
+      <div class="catalog-grid">
+        <a href="/valvulas-contra-incendios" class="catalog-card">
+          <div class="catalog-card__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <h3 class="catalog-card__title">Válvulas</h3>
+          <p class="catalog-card__desc">Compuerta, mariposa, globo, retención</p>
+          <span class="catalog-card__link">Ver catálogo &rarr;</span>
+        </a>
+        <a href="/conexiones-herrajes-contra-incendios" class="catalog-card">
+          <div class="catalog-card__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m7 10 2 2 6-6"/></svg>
+          </div>
+          <h3 class="catalog-card__title">Conexiones</h3>
+          <p class="catalog-card__desc">Adaptadores, coples, wye, siamesas</p>
+          <span class="catalog-card__link">Ver catálogo &rarr;</span>
+        </a>
+        <a href="/mangueras-contra-incendios" class="catalog-card">
+          <div class="catalog-card__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <h3 class="catalog-card__title">Mangueras</h3>
+          <p class="catalog-card__desc">Blindex, Millhose, forestal, succión</p>
+          <span class="catalog-card__link">Ver catálogo &rarr;</span>
+        </a>
+        <a href="/boquillas-contra-incendios" class="catalog-card">
+          <div class="catalog-card__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M2 12h20"/></svg>
+          </div>
+          <h3 class="catalog-card__title">Boquillas</h3>
+          <p class="catalog-card__desc">Certificadas, industriales, turbo jet</p>
+          <span class="catalog-card__link">Ver catálogo &rarr;</span>
+        </a>
+        <a href="/gabinetes-hidrantes-contra-incendios" class="catalog-card">
+          <div class="catalog-card__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><path d="M12 8v8"/><path d="M8 12h8"/></svg>
+          </div>
+          <h3 class="catalog-card__title">Gabinetes</h3>
+          <p class="catalog-card__desc">Gabinetes, hidrantes, estaciones</p>
+          <span class="catalog-card__link">Ver catálogo &rarr;</span>
+        </a>
+        <a href="/monitores-contra-incendios" class="catalog-card">
+          <div class="catalog-card__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+          </div>
+          <h3 class="catalog-card__title">Monitores</h3>
+          <p class="catalog-card__desc">Tipo corazón, cuello cisne, certificados</p>
+          <span class="catalog-card__link">Ver catálogo &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST / POR QUÉ ELEGIRNOS -->
+  <section class="trust" aria-labelledby="trust-title">
+    <div class="container">
+      <SectionHeader
+        titulo="Por Qué Elegirnos para Mantenimiento"
+        subtitulo="Beneficios de trabajar con Gama de México"
+        idTitulo="trust-title"
+        parrafo1="Como distribuidores autorizados de Elkhart Brass y otras marcas reconocidas, garantizamos que todas nuestras refacciones son productos originales con la calidad y certificaciones que requieren los sistemas de protección contra incendios."
+        parrafo2="Nuestro inventario local en CDMX y Querétaro nos permite ofrecer disponibilidad inmediata de las refacciones más solicitadas. Para componentes especiales, coordinamos importación directa con tiempos de entrega competitivos."
+      />
+      <div class="trust__grid">
+        <div class="trust__item">
+          <h3 class="trust__item-title">Disponibilidad inmediata</h3>
+          <p class="trust__item-desc">Inventario en CDMX y Querétaro para entregas rápidas. Stock de las refacciones más solicitadas.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Refacciones originales</h3>
+          <p class="trust__item-desc">Solo manejamos productos originales de fabricantes reconocidos. Garantía de compatibilidad.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Identificación de piezas</h3>
+          <p class="trust__item-desc">Te ayudamos a identificar refacciones por foto, modelo o especificación técnica.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Asesoría técnica</h3>
+          <p class="trust__item-desc">Orientación sobre compatibilidad, alternativas y especificaciones correctas.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Envíos nacionales</h3>
+          <p class="trust__item-desc">Entregamos en toda la República Mexicana con embalaje protector.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Documentación completa</h3>
+          <p class="trust__item-desc">Fichas técnicas y certificados para verificaciones de Protección Civil.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEAD CAPTURE -->
+  <LeadCapture />
+
+  <!-- FAQ -->
+  <section class="faq" id="faq" aria-labelledby="faq-title">
+    <div class="container">
+      <SectionHeader
+        titulo="Preguntas Frecuentes sobre Equipos Contra Incendios"
+        subtitulo="Resolvemos las dudas más comunes sobre cotización, tipos de equipos, envíos y certificaciones"
+        idTitulo="faq-title"
+        parrafo1="Entendemos que la adquisición de equipos contra incendios involucra decisiones técnicas importantes: compatibilidad con sistemas existentes, cumplimiento normativo, certificaciones requeridas y logística de entrega. Hemos compilado las consultas más frecuentes de nuestros clientes para facilitar tu proceso de compra."
+        parrafo2="Si tu pregunta no aparece aquí, nuestro equipo de asesores técnicos está disponible vía WhatsApp, teléfono o correo electrónico para resolver cualquier duda específica sobre especificaciones, disponibilidad o requerimientos de instalación."
+      />
+      <Faq items={faqItems} id="faq" />
+    </div>
+  </section>
+
+  <!-- SERVICIOS RELACIONADOS -->
+  <section class="related-services" aria-labelledby="related-title">
+    <div class="container">
+      <SectionHeader
+        titulo="Otros Servicios"
+        subtitulo="Conoce todos los servicios que ofrecemos para tu proyecto contra incendios"
+        idTitulo="related-title"
+        parrafo1="Además del suministro de refacciones para mantenimiento, ofrecemos un ecosistema completo de servicios diseñados para acompañarte en todas las etapas de tu proyecto: desde la asesoría técnica inicial hasta la garantía y soporte postventa."
+        parrafo2="Cada servicio está pensado para facilitar tu proceso de compra, garantizar el cumplimiento normativo y maximizar la vida útil de tu inversión en equipos contra incendios."
+      />
+      <div class="related-services__grid">
+        <div class="related-service">
+          <h3 class="related-service__title">Garantía y Respaldo</h3>
+          <p class="related-service__desc">Garantía del fabricante, certificados UL/FM y documentación completa para verificaciones.</p>
+          <a href="/servicios/garantia" class="related-service__link">Ver servicio →</a>
+        </div>
+        <div class="related-service">
+          <h3 class="related-service__title">Asesoría Técnica</h3>
+          <p class="related-service__desc">Orientación especializada para seleccionar equipos según tu tipo de riesgo y normativa.</p>
+          <a href="/servicios/asesoria" class="related-service__link">Ver servicio →</a>
+        </div>
+        <div class="related-service">
+          <h3 class="related-service__title">Atención Empresarial</h3>
+          <p class="related-service__desc">Cuentas corporativas con ejecutivo dedicado, precios preferenciales y atención prioritaria.</p>
+          <a href="/servicios/empresas" class="related-service__link">Ver servicio →</a>
+        </div>
+        <div class="related-service">
+          <h3 class="related-service__title">Logística y Envíos</h3>
+          <p class="related-service__desc">Entregas a toda la República Mexicana con embalaje especializado y seguimiento.</p>
+          <a href="/servicios/envios" class="related-service__link">Ver servicio →</a>
+        </div>
+        <div class="related-service">
+          <h3 class="related-service__title">Cotizaciones Corporativas</h3>
+          <p class="related-service__desc">Cotizaciones formales para licitaciones, compras corporativas y proyectos gubernamentales.</p>
+          <a href="/servicios/cotizaciones" class="related-service__link">Ver servicio →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta-section" aria-labelledby="cta-title">
+    <div class="container">
+      <div class="cta-section__content">
+        <h2 id="cta-title" class="cta-section__title">¿Necesitas refacciones para tu sistema?</h2>
+        <p class="cta-section__text">Contáctanos hoy y recibe cotización rápida con disponibilidad confirmada.</p>
+        <div class="cta-section__buttons">
+          <a href="https://wa.me/5215565298240" class="btn btn--white" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+          <a href="/equipos" class="btn btn--outline btn--white-outline">Ver catálogo completo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  /* Service Sections */
+  .service-sections {
+    padding: var(--spacing-3xl) 0;
+    background: var(--color-white);
+  }
+
+  .service-block {
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    margin-bottom: var(--spacing-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+  }
+
+  .service-block__header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-lg);
+    background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-white) 100%);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .service-block__icon {
+    flex-shrink: 0;
+    width: 56px;
+    height: 56px;
+    background: var(--color-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+  }
+
+  .service-block__icon svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .service-block__title-wrap {
+    flex: 1;
+  }
+
+  .service-block__title {
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin-bottom: 0.25rem;
+  }
+
+  .service-block__subtitle {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
+  }
+
+  .service-block__content {
+    padding: var(--spacing-lg);
+  }
+
+  .service-block__text {
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .service-block__text p {
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-text);
+    line-height: var(--line-height-base);
+  }
+
+  .service-block__text p:last-child {
+    margin-bottom: 0;
+  }
+
+  .service-block__features {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+  }
+
+  .feature-card {
+    background: var(--color-accent);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius-sm);
+    border-left: 3px solid var(--color-primary);
+  }
+
+  .feature-card__title {
+    font-size: var(--font-size-base);
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin-bottom: 0.5rem;
+  }
+
+  .feature-card__title a {
+    color: inherit;
+    transition: color var(--transition-fast);
+  }
+
+  .feature-card__title a:hover {
+    color: var(--color-primary);
+  }
+
+  .feature-card__desc {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
+    line-height: 1.5;
+  }
+
+  .service-block__list {
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-md);
+    background: var(--color-accent);
+    border-radius: var(--border-radius-sm);
+  }
+
+  .service-block__list-title {
+    font-size: var(--font-size-base);
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .check-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .check-list__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    font-size: var(--font-size-sm);
+    color: var(--color-text);
+  }
+
+  .check-list__item::before {
+    content: "✓";
+    color: var(--color-primary);
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  .service-block__cta {
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-md);
+    background: var(--color-secondary);
+    border-radius: var(--border-radius-sm);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-sm);
+    text-align: center;
+  }
+
+  .service-block__cta-text {
+    color: var(--footer-text-90);
+    font-size: var(--font-size-sm);
+  }
+
+  .service-block__contact {
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-lg);
+    background: var(--color-accent);
+    border-radius: var(--border-radius-sm);
+  }
+
+  .service-block__contact-title {
+    font-size: var(--font-size-base);
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin-bottom: var(--spacing-md);
+    text-align: center;
+  }
+
+  .contact-channels {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
+  }
+
+  .contact-channel {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm) var(--spacing-md);
+    background: var(--color-white);
+    border-radius: var(--border-radius-sm);
+    border: 1px solid var(--color-border);
+    transition: all var(--transition-fast);
+  }
+
+  .contact-channel:hover {
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-md);
+  }
+
+  .contact-channel__icon {
+    width: 40px;
+    height: 40px;
+    background: var(--color-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    flex-shrink: 0;
+  }
+
+  .contact-channel__icon svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .contact-channel__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-channel__label {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-light);
+  }
+
+  .contact-channel__value {
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    color: var(--color-secondary);
+  }
+
+  /* Process Section */
+  .process {
+    padding: var(--spacing-3xl) 0;
+    background: var(--color-accent);
+  }
+
+  .process__steps {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+
+  .process__step {
+    background: var(--color-white);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-md);
+    text-align: center;
+    position: relative;
+  }
+
+  .process__number {
+    width: 48px;
+    height: 48px;
+    background: var(--color-primary);
+    color: var(--color-white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    margin: 0 auto var(--spacing-sm);
+  }
+
+  .process__step-title {
+    font-size: var(--font-size-lg);
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin-bottom: 0.5rem;
+  }
+
+  .process__step-desc {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
+    line-height: 1.5;
+  }
+
+  /* Catalog */
+  .catalog {
+    padding: var(--spacing-3xl) 0;
+    background: var(--color-white);
+  }
+
+  .catalog-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .catalog-card {
+    background: var(--color-accent);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius);
+    text-align: center;
+    border: 1px solid var(--color-border);
+    transition: all var(--transition-fast);
+    display: block;
+  }
+
+  .catalog-card:hover {
+    box-shadow: var(--shadow-md);
+    border-color: var(--color-primary);
+    transform: translateY(-2px);
+  }
+
+  .catalog-card__icon {
+    width: 56px;
+    height: 56px;
+    background: var(--color-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto var(--spacing-sm);
+    color: var(--color-white);
+  }
+
+  .catalog-card__icon svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .catalog-card__title {
+    font-size: var(--font-size-lg);
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin-bottom: 0.25rem;
+  }
+
+  .catalog-card__desc {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .catalog-card__link {
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    color: var(--color-primary);
+  }
+
+  /* Responsive */
+  @media (min-width: 640px) {
+    .service-block__features {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .check-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-channels {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .process__steps {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .catalog-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cta-section__buttons {
+      flex-direction: row;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .service-block__header {
+      padding: var(--spacing-xl);
+    }
+
+    .service-block__content {
+      padding: var(--spacing-xl);
+    }
+
+    .service-block__features {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .process__steps {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .catalog-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .cta-section__title {
+      font-size: var(--font-size-3xl);
+    }
+  }
+</style>
+

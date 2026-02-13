@@ -1,0 +1,489 @@
+---
+import Layout from '../layouts/Base.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+import { getCollection } from 'astro:content';
+
+const productos = (await getCollection('productos', ({ data }) => data.categoria === 'gabinetes-hidrantes')).sort((a, b) => a.data.orden - b.data.orden);
+---
+
+<Layout
+  title="Gabinetes e Hidrantes Contra Incendio | México"
+  description="Gabinetes e hidrantes contra incendio. Tipo 30ME, empotrado, estación manguera e hidrante banqueta. NOM-002-STPS y NFPA 14. México."
+  activePage="equipos"
+  heroTitle="Gabinetes e Hidrantes"
+  heroBadge="Equipos Contra Incendios"
+  heroShowRightContent={true}
+>
+  <Fragment slot="hero-content">
+    <p>Distribuimos gabinetes e hidrantes contra incendios certificados para edificios comerciales, instalaciones industriales y desarrollos residenciales. Nuestra linea incluye gabinetes tipo 30ME equipados con manguera y chiflon, gabinetes empotrados en acero inoxidable, estaciones de manguera con carrete oscilante e hidrantes de banqueta certificados UL 246.</p>
+    <p>Todos nuestros equipos cumplen con NOM-002-STPS-2010 y NFPA 14, proporcionando la primera linea de defensa para atacar incendios en sus etapas iniciales. Te asesoramos en el diseno del sistema completo, incluyendo ubicacion estrategica, espaciamiento y seleccion del equipamiento correcto.</p>
+  </Fragment>
+
+  <!-- PRODUCTOS DINAMICOS -->
+  <section class="categories" id="gabinetes">
+    <div class="container">
+      <SectionHeader
+        titulo="Tipos de Gabinete Incendio Hidrante y Manguera"
+        subtitulo="Selecciona un tipo de gabinete para conocer especificaciones técnicas y solicitar cotización"
+        parrafo1="Te mostramos opciones para gabinetes tipo 30ME, gabinetes empotrados, estaciones de manguera e hidrantes de banqueta con enfoque en cumplimiento NOM-002-STPS y NFPA 14. Cada alternativa está pensada para facilitar selección técnica, integración al sistema hidráulico y operación segura en emergencia."
+        parrafo2="Nuestro equipo te ayuda a definir el modelo correcto según tipo de inmueble, nivel de riesgo, presión disponible, materiales de fabricación y requerimientos de inspección. Así obtienes un gabinete o hidrante alineado con normativa, disponibilidad real y tiempos de entrega para tu proyecto."
+      />
+      <div class="categories__grid">
+        {productos.map((producto) => (
+          <article class="category-card">
+            <div class="category-card__image" role="img" aria-label={producto.data.title}></div>
+            <div class="category-card__body">
+              <h3 class="category-card__title">{producto.data.title}</h3>
+              <p class="category-card__sub">{producto.data.description}</p>
+              <ul class="category-card__products">
+                {producto.data.material && <li class="category-card__product">{producto.data.material}</li>}
+                {producto.data.flujo && <li class="category-card__product">{producto.data.flujo}</li>}
+                {producto.data.certificaciones && producto.data.certificaciones.length > 0 && <li class="category-card__product">Certificaciones: {producto.data.certificaciones.join(', ')}</li>}
+                <li class="category-card__product">Marca: {producto.data.marca}</li>
+              </ul>
+              <div class="category-card__ctas">
+                <a href={`/productos/${producto.id}`} class="btn btn--primary btn--sm">Ver especificaciones</a>
+                <a href="#cotizar" class="btn btn--outline btn--sm">Cotizar</a>
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE DETAILS -->
+  <section class="service-details" aria-labelledby="service-details-title">
+    <div class="container">
+      <div class="section-header">
+        <h2 id="service-details-title" class="section-title">Detalle de Cada Gabinete Incendio Hidrante y Equipo</h2>
+      </div>
+
+      <div class="service-detail" id="detalle-30me">
+        <div class="service-detail__content">
+          <h3 class="service-detail__title">Gabinete Contra Incendios Tipo 30ME</h3>
+          <p class="service-detail__text">El <strong>gabinete tipo 30ME</strong> es el estándar en instalaciones comerciales e industriales en México. Se fabrica en lámina de acero calibre 22 con acabado en pintura electrostática roja RAL 3000, e incluye manguera de 1.5" x 30 metros, válvula angular de 1.5", rack portamanguera y chiflón de tres posiciones. Cumple con NOM-002-STPS-2010. Venta con precio competitivo y cotización inmediata.</p>
+          <ul class="service-detail__list">
+            <li class="service-detail__list-item">Material: Lámina de acero calibre 22</li>
+            <li class="service-detail__list-item">Acabado: Pintura electrostática roja RAL 3000</li>
+            <li class="service-detail__list-item">Manguera: 1.5" x 30 metros tipo I o II</li>
+            <li class="service-detail__list-item">Válvula: Angular de bronce 1.5" con volante</li>
+            <li class="service-detail__list-item">Chiflón: Tres posiciones (chorro, neblina, cerrado)</li>
+            <li class="service-detail__list-item">Certificación: NOM-002-STPS-2010</li>
+          </ul>
+          <div class="service-detail__ctas">
+            <a href="#cotizar" class="btn btn--primary">Cotizar gabinete 30ME</a>
+            <a href="/gabinetes/tipo-30me" class="btn btn--outline">Ver catálogo completo →</a>
+          </div>
+        </div>
+        <div class="service-detail__image" role="img" aria-label="Gabinete Contra Incendios 30ME"></div>
+      </div>
+
+      <div class="service-detail" id="detalle-hidrante">
+        <div class="service-detail__content">
+          <h3 class="service-detail__title">Hidrante de Banqueta Certificado</h3>
+          <p class="service-detail__text">Los <strong>hidrantes de banqueta</strong> son puntos de conexión externos para el cuerpo de bomberos. Fabricados en hierro dúctil ASTM A-536, soportan presiones de trabajo de 250-350 PSI. Incluyen dos salidas laterales de 2.5" y una salida superior de 4.5" con roscas NST. Certificación <strong>UL 246</strong>. Costo competitivo con documentación completa.</p>
+          <ul class="service-detail__list">
+            <li class="service-detail__list-item">Material: Hierro dúctil ASTM A-536</li>
+            <li class="service-detail__list-item">Presión de trabajo: 250-350 PSI</li>
+            <li class="service-detail__list-item">Salidas laterales: 2 de 2.5" con roscas NST</li>
+            <li class="service-detail__list-item">Salida superior: 1 de 4.5" con rosca NST</li>
+            <li class="service-detail__list-item">Válvula: Apertura total con indicador de posición</li>
+            <li class="service-detail__list-item">Certificación: UL 246</li>
+          </ul>
+          <div class="service-detail__ctas">
+            <a href="#cotizar" class="btn btn--primary">Cotizar hidrante de banqueta</a>
+            <a href="/gabinetes/hidrante-banqueta" class="btn btn--outline">Ver catálogo completo →</a>
+          </div>
+        </div>
+        <div class="service-detail__image" role="img" aria-label="Hidrante de Banqueta UL 246"></div>
+      </div>
+
+      <div class="service-detail" id="detalle-empotrado">
+        <div class="service-detail__content">
+          <h3 class="service-detail__title">Gabinete Empotrado Contra Incendios</h3>
+          <p class="service-detail__text">Los <strong>gabinetes empotrados</strong> se instalan al ras de la pared, proporcionando solución estética sin perder funcionalidad. Disponibles en acero al carbón o acero inoxidable T430 con acabado espejo. Ideales para hoteles, hospitales y edificios corporativos. Incluyen equipamiento completo. Certificación NOM-002-STPS-2010. Precio disponible bajo cotización.</p>
+          <ul class="service-detail__list">
+            <li class="service-detail__list-item">Instalación: Empotrado al ras de pared</li>
+            <li class="service-detail__list-item">Materiales: Acero al carbón o inoxidable T430</li>
+            <li class="service-detail__list-item">Acabado: Pintura electrostática o espejo pulido</li>
+            <li class="service-detail__list-item">Equipamiento: Manguera, válvula y chiflón completo</li>
+            <li class="service-detail__list-item">Aplicaciones: Hoteles, hospitales, corporativos</li>
+            <li class="service-detail__list-item">Normativa: NOM-002-STPS-2010</li>
+          </ul>
+          <div class="service-detail__ctas">
+            <a href="#cotizar" class="btn btn--primary">Cotizar gabinete empotrado</a>
+            <a href="/gabinetes/gabinete-empotrado" class="btn btn--outline">Ver catálogo completo →</a>
+          </div>
+        </div>
+        <div class="service-detail__image" role="img" aria-label="Gabinete Empotrado Contra Incendios"></div>
+      </div>
+
+      <div class="service-detail" id="detalle-estacion">
+        <div class="service-detail__content">
+          <h3 class="service-detail__title">Estación de Manguera con Carrete</h3>
+          <p class="service-detail__text">Las <strong>estaciones de manguera</strong> con carrete oscilante 180° permiten despliegue automático sin enredos. Incluyen carrete giratorio de acero, manguera de 1.5" x 30 metros y chiflón regulable. Ideales para respuesta rápida. Cumplen con NFPA 14 Clase II y III. Beneficios de operación sencilla. Cotización inmediata disponible.</p>
+          <ul class="service-detail__list">
+            <li class="service-detail__list-item">Carrete: Oscilante 180° con giro libre</li>
+            <li class="service-detail__list-item">Despliegue: Automático sin enredos</li>
+            <li class="service-detail__list-item">Manguera: 1.5" x 30 metros alta presión</li>
+            <li class="service-detail__list-item">Chiflón: Regulable con palanca de control</li>
+            <li class="service-detail__list-item">Montaje: Gabinete sobrepuesto o empotrado</li>
+            <li class="service-detail__list-item">Normativa: NFPA 14 Clase II/III</li>
+          </ul>
+          <div class="service-detail__ctas">
+            <a href="#cotizar" class="btn btn--primary">Cotizar estación de manguera</a>
+            <a href="/gabinetes/estacion-manguera" class="btn btn--outline">Ver catálogo completo →</a>
+          </div>
+        </div>
+        <div class="service-detail__image" role="img" aria-label="Estación de Manguera con Carrete"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TRUST -->
+  <section class="trust" aria-labelledby="trust-title">
+    <div class="container">
+      <div class="section-header">
+        <h2 id="trust-title" class="section-title">Por Qué Comprar Gabinetes e Hidrantes en Gama de México</h2>
+        <p class="section-subtitle">Calidad certificada, inventario disponible y asesoría técnica especializada</p>
+      </div>
+      <div class="trust__grid">
+        <div class="trust__item">
+          <h3 class="trust__item-title">Certificaciones NOM y NFPA</h3>
+          <p class="trust__item-desc">Todos nuestros gabinetes e hidrantes cuentan con certificación NOM-002-STPS-2010, UL 246 y NFPA 14, garantizando cumplimiento normativo total.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Venta con Stock Inmediato</h3>
+          <p class="trust__item-desc">Inventario permanente de gabinetes 30ME, hidrantes y estaciones de manguera para venta inmediata y entrega cerca de tu ubicación.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Cotización y Precio Competitivo</h3>
+          <p class="trust__item-desc">Cotización inmediata con precio y costo competitivo. Precios especiales por volumen para proyectos de gran escala y compras recurrentes.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Asesoría Técnica Profesional</h3>
+          <p class="trust__item-desc">Experiencia de ingenieros especializados para seleccionar el gabinete o hidrante correcto según tu instalación y normativa aplicable.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Documentación para Protección Civil</h3>
+          <p class="trust__item-desc">Fichas técnicas, certificados, planos de instalación y memorias de cálculo para cumplimiento de protección civil y auditorías.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Soporte Post-Venta y Refacciones</h3>
+          <p class="trust__item-desc">Capacitación en uso correcto, servicio de mantenimiento preventivo y venta de refacciones originales con garantía.</p>
+        </div>
+      </div>
+
+      <div class="trust__testimonials-header">
+        <h3 class="trust__testimonials-title">Lo que dicen nuestros clientes</h3>
+        <p class="trust__testimonials-subtitle">Empresas de todo México confían en nuestros gabinetes e hidrantes</p>
+      </div>
+      <div class="trust__testimonials">
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"Instalamos 24 gabinetes 30ME en nuestra planta industrial. Excelente calidad, llegaron completos y certificados. Pasamos la inspección de protección civil sin observaciones. Precio muy competitivo."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Ing. Ricardo Hernández</span>
+              <span class="testimonial__role">Gerente de Seguridad</span>
+              <span class="testimonial__company">Industrias del Bajío</span>
+            </div>
+          </div>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"Los gabinetes empotrados en acero inoxidable quedaron perfectos en nuestro hotel boutique. Se ven elegantes y discretos. El asesoramiento técnico fue fundamental. Cotización rápida y costo accesible."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Arq. Patricia Montoya</span>
+              <span class="testimonial__role">Directora de Proyecto</span>
+              <span class="testimonial__company">Hotel Reforma</span>
+            </div>
+          </div>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"Compramos 8 hidrantes de banqueta para plaza comercial. Material de primera, cumplen UL 246 y fueron aceptados inmediatamente por bomberos. Beneficios de comprar con proveedor profesional."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Ing. José Luis Martínez</span>
+              <span class="testimonial__role">Jefe de Obra</span>
+              <span class="testimonial__company">Constructora Meridiano</span>
+            </div>
+          </div>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"Las estaciones de manguera con carrete funcionan de maravilla en nuestro hospital. El despliegue es súper rápido y sin enredos. Capacitaron a nuestro personal sin costo adicional. Venta excelente."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Dr. Fernando Ruiz</span>
+              <span class="testimonial__role">Director de Infraestructura</span>
+              <span class="testimonial__company">Hospital San Rafael</span>
+            </div>
+          </div>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"Necesitábamos gabinetes certificados urgente para auditoría. Gama de México tenía stock y nos entregaron en 48 horas en Guadalajara. Salvaron nuestro proyecto. Experiencia profesional impecable."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Lic. Ana Torres</span>
+              <span class="testimonial__role">Gerente de Operaciones</span>
+              <span class="testimonial__company">Corporativo GDL</span>
+            </div>
+          </div>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"Compramos gabinetes 30ME para 5 sucursales. Todos llegaron perfectamente empacados con certificados y manuales en español. La relación precio-calidad es inmejorable. Proveedor muy recomendable."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Ing. Roberto Sánchez</span>
+              <span class="testimonial__role">Coordinador de Mantenimiento</span>
+              <span class="testimonial__company">Cadena Retail</span>
+            </div>
+          </div>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"Los hidrantes que instalamos han resistido 3 años sin problemas. Cuando necesitamos refacciones para mantenimiento, Gama tenía todo en stock. Excelente soporte post-venta."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Ing. Carlos Domínguez</span>
+              <span class="testimonial__role">Jefe de Mantenimiento</span>
+              <span class="testimonial__company">Parque Industrial MTY</span>
+            </div>
+          </div>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"Necesitábamos gabinetes con manguera tipo II para zona de alta presión. El ingeniero de Gama nos asesoró correctamente y funcionan perfecto. Cumplen todas las pruebas. Cotización clara."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Ing. Miguel Ángel Rivas</span>
+              <span class="testimonial__role">Responsable de Seguridad</span>
+              <span class="testimonial__company">Planta Automotriz</span>
+            </div>
+          </div>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"Instalamos estaciones de manguera en nuestra universidad. Los estudiantes practican con ellas y el mecanismo ha resistido uso intenso sin problemas. Muy buena inversión con precio accesible."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Mtro. Luis Enrique Paz</span>
+              <span class="testimonial__role">Coordinador de Seguridad</span>
+              <span class="testimonial__company">Universidad Tecnológica</span>
+            </div>
+          </div>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEAD CAPTURE -->
+  <section class="lead-capture" id="cotizar" aria-labelledby="lead-title">
+    <div class="container">
+      <h2 id="lead-title" class="lead-capture__title">Cotiza tus gabinetes e hidrantes ahora</h2>
+      <div class="lead-capture__bullets">
+        <span class="lead-capture__bullet">Precios y disponibilidad en menos de 24 horas</span>
+        <span class="lead-capture__bullet">Asesoría técnica para selección del equipo correcto</span>
+        <span class="lead-capture__bullet">Envíos a toda la República Mexicana</span>
+      </div>
+      <form class="lead-capture__form" id="cotizar-form" aria-label="Formulario de cotización por WhatsApp">
+        <input type="text" class="lead-capture__input" id="lead-nombre" name="nombre" placeholder="Nombre completo" required aria-label="Nombre completo" autocomplete="name">
+        <input type="text" class="lead-capture__input" id="lead-contacto" name="contacto" placeholder="Teléfono o Email" required aria-label="Teléfono o correo electrónico" autocomplete="tel">
+        <select class="lead-capture__select" id="lead-equipo" name="tipo_gabinete" required aria-label="Tipo de gabinete que necesitas">
+          <option value="" disabled selected>Tipo de gabinete o hidrante</option>
+          <option value="Gabinete 30ME">Gabinete Contra Incendios 30ME</option>
+          <option value="Hidrante de banqueta">Hidrante de Banqueta</option>
+          <option value="Gabinete empotrado">Gabinete Empotrado</option>
+          <option value="Estación de manguera">Estación de Manguera con Carrete</option>
+          <option value="Varios productos">Varios Productos / Proyecto completo</option>
+          <option value="Asesoría para selección">Necesito asesoría para seleccionar</option>
+        </select>
+        <button type="submit" class="btn btn--primary lead-capture__submit">Enviar por WhatsApp</button>
+      </form>
+      <p class="lead-capture__trust">Sin compromiso · Atención personalizada · Te respondemos al instante</p>
+      <p class="lead-capture__alt">También puedes escribirnos directo: <a href="https://wa.me/5215565298240" target="_blank" rel="noopener">WhatsApp: 55 6529 8240</a> | Email: <a href="mailto:ventas@gamademexico.com">ventas@gamademexico.com</a></p>
+    </div>
+  </section>
+
+  <!-- EQUIPOS COMPLEMENTARIOS - CROSS-LINKING SEO -->
+  <section class="complementary" aria-labelledby="complementary-title">
+    <div class="container">
+      <div class="section-header">
+        <h2 id="complementary-title" class="section-title">Equipos para Completar tu Sistema de Gabinetes</h2>
+        <p class="section-subtitle">Los gabinetes requieren mangueras, boquillas y válvulas de calidad para máxima efectividad</p>
+      </div>
+      <div class="complementary__grid">
+        <a href="/mangueras-contra-incendios" class="complementary__card">
+          <div class="complementary__icon">🔴</div>
+          <h3 class="complementary__title">Mangueras Contra Incendios</h3>
+          <p class="complementary__desc">Mangueras Millhose de 1.5" y 2.5" para equipar gabinetes clase II y III. Certificadas NFPA con acoples incluidos.</p>
+          <span class="complementary__link">Ver mangueras →</span>
+        </a>
+        <a href="/boquillas-contra-incendios" class="complementary__card">
+          <div class="complementary__icon">💧</div>
+          <h3 class="complementary__title">Boquillas Contra Incendios</h3>
+          <p class="complementary__desc">Boquillas tipo pistola para gabinetes de uso ocupante. Control de patrón y flujo para respuesta rápida antes de bomberos.</p>
+          <span class="complementary__link">Ver boquillas →</span>
+        </a>
+        <a href="/valvulas-contra-incendios" class="complementary__card">
+          <div class="complementary__icon">🔩</div>
+          <h3 class="complementary__title">Válvulas Contra Incendios</h3>
+          <p class="complementary__desc">Válvulas de globo angulares para gabinetes clase III. Control de flujo individual por piso con indicación visual.</p>
+          <span class="complementary__link">Ver válvulas →</span>
+        </a>
+        <a href="/conexiones-herrajes-contra-incendios" class="complementary__card">
+          <div class="complementary__icon">🔧</div>
+          <h3 class="complementary__title">Conexiones y Herrajes</h3>
+          <p class="complementary__desc">Adaptadores y acoples para integrar gabinetes al standpipe. Siamesas FDC para alimentación de bomberos.</p>
+          <span class="complementary__link">Ver conexiones →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEO CONTENT -->
+  <section class="seo-content" aria-labelledby="seo-title">
+    <div class="container">
+      <div class="seo-content__body">
+        <h2 id="seo-title" class="seo-content__title">Venta de Gabinetes e Hidrantes Contra Incendios: Guía Técnica y Precio en México</h2>
+
+        <h3 class="seo-content__subtitle">Sistemas de protección contra incendios para edificios comerciales, industriales y residenciales</h3>
+        <p class="seo-content__text">Los <strong>gabinetes e hidrantes contra incendios</strong> constituyen la primera línea de defensa en sistemas de protección contra incendios en México y CDMX. Como <strong>proveedor autorizado</strong>, ofrecemos venta de equipos diseñados y fabricados bajo los más altos estándares de calidad para uso comercial, residencial, urbano e industrial, con precio competitivo y cotización inmediata. Estos equipos proporcionan acceso inmediato al suministro de agua, permitiendo que personal capacitado pueda atacar un incendio en sus etapas iniciales antes de que se propague. Los gabinetes incluyen vidrio de seguridad, puerta roja y accesorios completos. A diferencia de extintores portátiles, están conectados al sistema de tubería vertical o red municipal para suministro ilimitado de agua durante emergencias prolongadas.</p>
+
+        <h3 class="seo-content__subtitle">Gabinete Tipo 30ME: Estándar en México para Edificios y Comercio</h3>
+        <p class="seo-content__text">La <strong>NOM-002-STPS-2010</strong> establece requisitos específicos para gabinetes contra incendios, incluyendo ubicación estratégica, espaciamiento máximo de 30 metros, alturas de instalación y equipamiento mínimo obligatorio. Los gabinetes tipo 30ME fabricados en acero calibre 22 son los más utilizados en instalaciones comerciales, residenciales, urbanas e industriales en todo México. El equipamiento estándar debe incluir: gabinete para hidrante con puerta roja y vidrio de seguridad de 4mm, manguera de 1.5 pulgadas por 30 metros certificada, válvula angular de bronce para control de flujo, rack o carrete para almacenamiento ordenado, y chiflón de tres posiciones (chorro directo, neblina y cerrado). Disponibles en versión para empotrar al ras de muro o sobreponer en superficie. Las medidas estándar son 21 x 70 x 88 cm aproximadamente.</p>
+
+        <h3 class="seo-content__subtitle">Hidrantes de Banqueta Certificados UL 246 para Zonas Urbanas</h3>
+        <p class="seo-content__text">Los <strong>hidrantes de banqueta</strong> son puntos de conexión exteriores diseñados específicamente para uso del cuerpo de bomberos en zonas urbanas, áreas comerciales e instalaciones industriales. Fabricados en hierro dúctil de alta resistencia conforme a ASTM A-536, estos equipos soportan presiones de trabajo de 250 a 350 PSI y están equipados con múltiples salidas: dos conexiones laterales de 2.5 pulgadas y una salida superior de 4.5 pulgadas, todas con roscas NST estándar compatibles con equipos de bomberos en México y Estados Unidos. La certificación <strong>UL 246</strong> garantiza que cada hidrante ha sido probado exhaustivamente para cumplir su función crítica durante emergencias. Venta con costo competitivo y documentación técnica completa para protección civil.</p>
+
+        <h3 class="seo-content__subtitle">Cómo Diseñar un Sistema de Gabinetes Contra Incendios</h3>
+        <p class="seo-content__text">Para diseñar correctamente un sistema de gabinetes contra incendios, es fundamental considerar varios factores técnicos. La norma establece que cualquier punto del área protegida debe estar a no más de 30 metros de un gabinete (medidos por camino real, no en línea recta). Se deben elegir ubicaciones estratégicas cerca de rutas de evacuación, escaleras y zonas de alto tránsito. Es necesario proteger cada nivel del edificio de forma independiente. El sistema hidráulico debe diseñar la presión y caudal adecuados para alimentar simultáneamente los gabinetes más alejados. Nuestros ingenieros pueden ayudarte a diseñar el sistema óptimo como parte de la asesoría técnica incluida en la cotización.</p>
+
+        <h3 class="seo-content__subtitle">¿Por Qué Comprar Gabinetes e Hidrantes con Gama de México?</h3>
+        <p class="seo-content__text">Nuestra <strong>experiencia de más de 25 años</strong> en el mercado mexicano de protección contra incendios nos permite ofrecer múltiples beneficios profesionales: venta de gabinetes e hidrantes certificados con garantía de fábrica, costo competitivo directo de distribuidor autorizado, cotización inmediata con especificaciones técnicas detalladas, stock permanente para entrega cerca de tu ubicación en CDMX y toda la República en 24-48 horas, asesoría profesional para selección del modelo correcto según normativa aplicable, y documentación completa para protección civil, auditorías y verificaciones. Cada gabinete incluye accesorios originales y certificados de conformidad. Somos el proveedor que empresas líderes eligen por calidad, precio y servicio.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq" aria-labelledby="faq-title">
+    <div class="container">
+      <div class="section-header">
+        <h2 id="faq-title" class="section-title">Preguntas Frecuentes sobre Gabinetes e Hidrantes</h2>
+        <p class="section-subtitle">Resolvemos las dudas más comunes sobre tipos, normativas y mantenimiento</p>
+      </div>
+      <div class="faq__list">
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false" aria-controls="faq-gab-1" id="faq-g-q1">¿Cuál es la diferencia entre gabinete tipo 30ME y estación de manguera?<span class="faq__icon" aria-hidden="true">+</span></button>
+          <div class="faq__answer" id="faq-gab-1" role="region" aria-labelledby="faq-g-q1">
+            <p>Ambos proporcionan acceso a manguera contra incendios pero difieren en diseño. El <strong>gabinete 30ME</strong> almacena la manguera en rack fijo tipo zigzag, requiriendo desenrollado manual. La <strong>estación de manguera</strong> usa carrete oscilante que permite despliegue automático sin enredos. Las estaciones son más costosas pero ofrecen respuesta más rápida. Los gabinetes 30ME son más económicos y suficientes para la mayoría de aplicaciones con personal capacitado. Venta de ambos tipos con precio competitivo.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false" aria-controls="faq-gab-2" id="faq-g-q2">¿Qué normativas regulan gabinetes e hidrantes en México?<span class="faq__icon" aria-hidden="true">+</span></button>
+          <div class="faq__answer" id="faq-gab-2" role="region" aria-labelledby="faq-g-q2">
+            <p>La <strong>NOM-002-STPS-2010</strong> es la norma oficial que establece requisitos para gabinetes, incluyendo ubicación, espaciamiento, altura y componentes. <strong>NFPA 14</strong> clasifica sistemas en Clase I (uso de bomberos con 2.5"), Clase II (ocupantes con 1.5") y Clase III (combinación). Los hidrantes certificados <strong>UL 246</strong> son requeridos por autoridades municipales y aseguradoras. Como proveedor profesional, todos nuestros equipos cumplen estas normativas.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false" aria-controls="faq-gab-3" id="faq-g-q3">¿Cada cuánto tiempo debo hacer mantenimiento?<span class="faq__icon" aria-hidden="true">+</span></button>
+          <div class="faq__answer" id="faq-gab-3" role="region" aria-labelledby="faq-g-q3">
+            <p>La <strong>NOM-002-STPS-2010</strong> requiere inspecciones mensuales de gabinetes verificando accesibilidad, componentes y manguera correctamente enrollada. Adicionalmente, prueba hidrostática anual de mangueras a 250 PSI durante 3 minutos. Los hidrantes requieren inspección semestral de válvulas y tapas, más prueba de flujo anual. Ofrecemos servicio de mantenimiento preventivo y venta de refacciones originales.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false" aria-controls="faq-gab-4" id="faq-g-q4">¿Cuál es la diferencia entre manguera tipo I y tipo II?<span class="faq__icon" aria-hidden="true">+</span></button>
+          <div class="faq__answer" id="faq-gab-4" role="region" aria-labelledby="faq-g-q4">
+            <p>La <strong>manguera tipo I</strong> soporta hasta 150 PSI y es adecuada para la mayoría de instalaciones comerciales. La <strong>tipo II</strong> soporta hasta 300 PSI para instalaciones de alta presión como edificios altos o bombas industriales. Ambas tienen construcción de doble chaqueta de poliéster con recubrimiento interior de caucho. Es importante seleccionar según la presión de diseño del sistema. Cotización con precio disponible para ambos tipos.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false" aria-controls="faq-gab-5" id="faq-g-q5">¿Qué significa certificación UL 246 en hidrantes?<span class="faq__icon" aria-hidden="true">+</span></button>
+          <div class="faq__answer" id="faq-gab-5" role="region" aria-labelledby="faq-g-q5">
+            <p><strong>UL 246</strong> es el estándar de Underwriters Laboratories que establece requisitos de diseño, fabricación y prueba para hidrantes. Incluye pruebas de presión, operación mecánica, resistencia a corrosión, durabilidad y capacidad de flujo. Garantiza que el hidrante cumplirá su función crítica durante emergencias. Muchas autoridades y aseguradoras requieren específicamente hidrantes certificados UL 246. Todos nuestros hidrantes tienen esta certificación.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false" aria-controls="faq-gab-6" id="faq-g-q6">¿Cuántos gabinetes necesito para mi instalación?<span class="faq__icon" aria-hidden="true">+</span></button>
+          <div class="faq__answer" id="faq-gab-6" role="region" aria-labelledby="faq-g-q6">
+            <p>La <strong>NOM-002-STPS-2010</strong> establece que cualquier punto del área protegida debe estar a no más de 30 metros de un gabinete (medidos por camino real, no en línea recta). Cada piso debe tener su propio sistema. Para calcular, trace círculos de 30 metros desde posibles ubicaciones asegurando cobertura total. Los gabinetes deben ubicarse en rutas de evacuación, pasillos o cerca de escaleras. Nuestros ingenieros pueden realizar este análisis como parte de la cotización.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false" aria-controls="faq-gab-7" id="faq-g-q7">¿Cómo puedo solicitar cotización de gabinetes?<span class="faq__icon" aria-hidden="true">+</span></button>
+          <div class="faq__answer" id="faq-gab-7" role="region" aria-labelledby="faq-g-q7">
+            <p>Puedes cotizar de tres formas: <strong>1) Formulario en esta página</strong> (se envía a WhatsApp), <strong>2) WhatsApp directo 55 6529 8240</strong>, o <strong>3) Email ventas@gamademexico.com</strong>. Solo necesitamos: tipo de gabinete o hidrante, cantidad estimada, ubicación de entrega y normativa que debe cumplir. Respondemos en menos de 24 horas con precio, disponibilidad y opciones de envío. Precios especiales por volumen disponibles.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<script>
+  // FAQ Accordion
+  document.addEventListener('DOMContentLoaded', () => {
+    const faqQuestions = document.querySelectorAll('.faq__question');
+
+    faqQuestions.forEach(button => {
+      button.addEventListener('click', () => {
+        const expanded = button.getAttribute('aria-expanded') === 'true';
+
+        // Close all other items
+        faqQuestions.forEach(otherButton => {
+          if (otherButton !== button) {
+            otherButton.setAttribute('aria-expanded', 'false');
+            const otherAnswer = document.getElementById(otherButton.getAttribute('aria-controls') || '');
+            if (otherAnswer) otherAnswer.style.display = 'none';
+            const otherIcon = otherButton.querySelector('.faq__icon');
+            if (otherIcon) otherIcon.textContent = '+';
+          }
+        });
+
+        // Toggle current item
+        button.setAttribute('aria-expanded', (!expanded).toString());
+        const answer = document.getElementById(button.getAttribute('aria-controls') || '');
+        if (answer) {
+          answer.style.display = expanded ? 'none' : 'block';
+        }
+        const icon = button.querySelector('.faq__icon');
+        if (icon) {
+          icon.textContent = expanded ? '+' : '−';
+        }
+      });
+    });
+
+    // WhatsApp Form Handler
+    const cotizarForm = document.getElementById('cotizar-form');
+    if (cotizarForm) {
+      cotizarForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const nombre = (document.getElementById('lead-nombre') as HTMLInputElement)?.value || '';
+        const contacto = (document.getElementById('lead-contacto') as HTMLInputElement)?.value || '';
+        const tipoGabinete = (document.getElementById('lead-equipo') as HTMLSelectElement)?.value || '';
+
+        const mensaje = `Hola, me interesa cotizar gabinetes e hidrantes:%0A%0ANombre: ${encodeURIComponent(nombre)}%0AContacto: ${encodeURIComponent(contacto)}%0ATipo de gabinete: ${encodeURIComponent(tipoGabinete)}`;
+
+        window.open(`https://wa.me/5215565298240?text=${mensaje}`, '_blank');
+      });
+    }
+  });
+</script>

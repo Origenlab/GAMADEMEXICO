@@ -1,0 +1,948 @@
+---
+import Layout from '../../layouts/Base.astro';
+import '../../styles/services-shared.css';
+import Faq from '../../components/Faq.astro';
+import SectionHeader from '../../components/SectionHeader.astro';
+import LeadCapture from '../../components/LeadCapture.astro';
+
+const faqItems = [
+  {
+    pregunta: '¿Cómo puedo solicitar una cotización de equipos contra incendios en Gama de México?',
+    respuesta: 'Puedes solicitar tu cotización a través de nuestro formulario en línea (se envía directo a WhatsApp), escribiéndonos al WhatsApp 55 6529 8240, o llamando al 55 1543 7164. Solo necesitamos el tipo de equipo, las cantidades aproximadas y la ubicación de entrega. Respondemos en menos de 24 horas.',
+  },
+  {
+    pregunta: '¿Qué tipos de equipos contra incendios venden?',
+    respuesta: 'Manejamos un catálogo completo en seis categorías: Monitores (tipo corazón, cuello de cisne, certificados y UL Listed), Boquillas (tipo pistola, turbo jet y certificadas), Mangueras (millhose, blindex y de succión), Válvulas (compuerta, globo y angular), Conexiones y herrajes de bronce (chiflones, adaptadores, coples, toma siamesa, conexión Y), y Gabinetes e hidrantes (tipo 30ME e hidrante de banqueta).',
+  },
+  {
+    pregunta: '¿Realizan envíos de equipos contra incendios a todo México?',
+    respuesta: 'Sí, realizamos envíos a toda la República Mexicana. Operamos desde Ciudad de México (Santa Fe) y Querétaro, lo que permite coordinar logística eficiente al centro, norte y sureste del país.',
+  },
+  {
+    pregunta: '¿Ofrecen asesoría técnica para elegir equipos contra incendios?',
+    respuesta: 'Sí. Nuestros asesores técnicos evalúan tipo de riesgo, normativa aplicable (NOM-002-STPS, protección civil), especificaciones hidráulicas y de diseño para recomendarte los componentes exactos. La asesoría es gratuita y sin compromiso.',
+  },
+  {
+    pregunta: '¿Los equipos contra incendios que venden tienen certificaciones?',
+    respuesta: 'Sí. Como distribuidores autorizados de Elkhart Brass contamos con monitores y boquillas certificados UL (Underwriters Laboratories) y FM (Factory Mutual). Proporcionamos documentación técnica para verificaciones de protección civil.',
+  },
+  {
+    pregunta: '¿Dónde se ubican las sucursales de Gama de México?',
+    respuesta: 'Tenemos dos sucursales: Prol. Paseo de la Reforma 1015, Piso 1, Santa Fe, 01376 Ciudad de México, y Avenida Constituyentes 120, Santiago de Querétaro, 76030. Horario: lunes a domingo de 6:00 a 16:00 horas.',
+  },
+  {
+    pregunta: '¿Qué sectores o industrias atiende Gama de México?',
+    respuesta: 'Atendemos plantas manufactureras, industria química y petroquímica, terminales de almacenamiento, centros de datos, constructoras, hospitales, hoteles, corporativos, firmas de ingeniería, instaladores certificados y brigadas de protección civil. Ofrecemos venta unitaria y cotizaciones corporativas.',
+  },
+];
+---
+
+<Layout
+  title="Cotizaciones Corporativas | Licitaciones y Mayoreo | Gama de México"
+  description="Cotizaciones formales para empresas, licitaciones públicas y proyectos gubernamentales. Precios por volumen, documentación técnica completa y facturación CFDI 4.0."
+  activePage="servicios"
+  heroTitle="Cotizaciones Rápidas"
+  heroIntro="Obtén precios y disponibilidad de equipos contra incendios en menos de 24 horas. Cotizaciones detalladas con especificaciones técnicas, fichas y tiempos de entrega."
+  heroBadge="Servicios"
+  heroMetrics={[
+    { valor: "24h", texto: "Tiempo de respuesta" },
+    { valor: "Gratis", texto: "Sin compromiso" },
+    { valor: "Detallada", texto: "Con especificaciones" }
+  ]}
+  heroPrimaryText="Solicitar Cotización"
+  heroPrimaryLink="#cotizar"
+  heroSecondaryText="Ver Servicios"
+  heroSecondaryLink="/servicios"
+  heroShowRightContent={true}
+>
+  <Fragment slot="hero-content">
+    <p>Nuestro proceso de cotización está diseñado para brindarte toda la información que necesitas de manera rápida y profesional. Cada cotización incluye precios actualizados, disponibilidad en tiempo real, especificaciones técnicas completas y tiempos de entrega garantizados para que puedas tomar decisiones informadas.</p>
+    <p>Contamos con un equipo especializado que analiza tus requerimientos y te proporciona alternativas cuando es necesario, asegurando que recibas la mejor solución técnica y económica para tu proyecto de protección contra incendios.</p>
+  </Fragment>
+
+  <!-- SUBSECCIONES DE COTIZACIONES -->
+  <section class="service-sections" id="servicios-cotizaciones" aria-labelledby="sections-title">
+    <div class="container">
+      <SectionHeader
+        titulo="Servicios para Compras Corporativas"
+        subtitulo="Todo lo que necesitas para formalizar tu proceso de adquisición"
+        idTitulo="sections-title"
+        parrafo1="Entendemos las necesidades específicas de empresas, gobierno e instituciones en sus procesos de compra. Ofrecemos cotizaciones formales con documentación técnica completa, precios por volumen y facturación CFDI 4.0 para facilitar tu proceso de adquisición."
+        parrafo2="Ya sea que participes en una licitación pública, gestiones compras corporativas o requieras abastecimiento recurrente, nuestro equipo comercial está preparado para atenderte con la formalidad y profesionalismo que tu organización necesita."
+      />
+
+      <!-- Cotizaciones Formales -->
+      <div class="service-block" id="cotizaciones-formales">
+        <div class="service-block__header">
+          <div class="service-block__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          </div>
+          <div class="service-block__title-wrap">
+            <h3 class="service-block__title">Cotizaciones Formales</h3>
+            <p class="service-block__subtitle">Documentos profesionales con toda la información que requieres</p>
+          </div>
+        </div>
+        <div class="service-block__content">
+          <div class="service-block__text">
+            <p>Cada cotización que emitimos es un <strong>documento formal y profesional</strong> que incluye información completa del producto, especificaciones técnicas, precios unitarios, condiciones comerciales y vigencia. Listo para presentar ante cualquier instancia de aprobación.</p>
+            <p>Nuestras cotizaciones están diseñadas para <strong>facilitar la comparación y evaluación</strong> por parte de departamentos de compras, comités de adquisiciones y áreas de seguridad industrial que necesitan justificar técnica y económicamente la selección de proveedores.</p>
+          </div>
+          <div class="service-block__features">
+            <div class="feature-card">
+              <h4 class="feature-card__title">Identificación completa</h4>
+              <p class="feature-card__desc">Datos fiscales, domicilio, contacto comercial y referencias de la empresa.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Descripción detallada</h4>
+              <p class="feature-card__desc">Nombre comercial, modelo, marca, especificaciones y certificaciones de cada producto.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Precios desglosados</h4>
+              <p class="feature-card__desc">Precio unitario, cantidad, subtotal, IVA y total. Desglose claro para tu análisis.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Condiciones comerciales</h4>
+              <p class="feature-card__desc">Forma de pago, tiempo de entrega, vigencia de cotización y políticas de garantía.</p>
+            </div>
+          </div>
+          <div class="service-block__list">
+            <h4 class="service-block__list-title">Elementos incluidos en cada cotización:</h4>
+            <ul class="check-list">
+              <li class="check-list__item">Membrete oficial con datos fiscales completos</li>
+              <li class="check-list__item">Número de folio y fecha de emisión</li>
+              <li class="check-list__item">Descripción técnica de cada producto</li>
+              <li class="check-list__item">Marca, modelo y país de origen</li>
+              <li class="check-list__item">Certificaciones aplicables (UL, FM, NFPA)</li>
+              <li class="check-list__item">Tiempo de entrega estimado</li>
+              <li class="check-list__item">Vigencia de precios (generalmente 15-30 días)</li>
+              <li class="check-list__item">Firma y sello del ejecutivo comercial</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Documentación para Licitaciones -->
+      <div class="service-block" id="documentacion-licitaciones">
+        <div class="service-block__header">
+          <div class="service-block__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/><line x1="12" y1="11" x2="12" y2="17"/><line x1="9" y1="14" x2="15" y2="14"/></svg>
+          </div>
+          <div class="service-block__title-wrap">
+            <h3 class="service-block__title">Documentación para Licitaciones</h3>
+            <p class="service-block__subtitle">Paquete completo para participar en procesos de licitación pública</p>
+          </div>
+        </div>
+        <div class="service-block__content">
+          <div class="service-block__text">
+            <p>Participar en una licitación pública requiere <strong>documentación técnica, legal y fiscal específica</strong>. Preparamos el paquete completo que necesitas para cumplir con los requisitos de convocatoria y presentar una propuesta competitiva.</p>
+            <p>Nuestro equipo tiene experiencia atendiendo <strong>licitaciones de gobierno federal, estatal y municipal</strong>, así como procesos de adquisición de paraestatales como PEMEX, CFE e IMSS. Conocemos los requisitos documentales típicos y los tiempos de respuesta necesarios.</p>
+          </div>
+          <div class="service-block__features">
+            <div class="feature-card">
+              <h4 class="feature-card__title">Propuesta técnica</h4>
+              <p class="feature-card__desc">Fichas técnicas, certificados de conformidad, catálogos y especificaciones detalladas.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Propuesta económica</h4>
+              <p class="feature-card__desc">Cotización formal con desglose de precios según formato requerido por la convocatoria.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Documentación legal</h4>
+              <p class="feature-card__desc">Acta constitutiva, poderes, identificaciones y constancias de situación fiscal.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Experiencia y referencias</h4>
+              <p class="feature-card__desc">Cartas de clientes satisfechos, contratos anteriores y casos de éxito documentados.</p>
+            </div>
+          </div>
+          <div class="service-block__list">
+            <h4 class="service-block__list-title">Documentos que podemos proporcionar:</h4>
+            <ul class="check-list check-list--two-col">
+              <li class="check-list__item">Fichas técnicas oficiales del fabricante</li>
+              <li class="check-list__item">Certificados UL y FM originales</li>
+              <li class="check-list__item">Catálogos con especificaciones</li>
+              <li class="check-list__item">Cartas de distribuidor autorizado</li>
+              <li class="check-list__item">Constancia de situación fiscal (SAT)</li>
+              <li class="check-list__item">Opinión de cumplimiento fiscal</li>
+              <li class="check-list__item">Acuse de inscripción REPSE</li>
+              <li class="check-list__item">Cartas de experiencia y referencias</li>
+            </ul>
+          </div>
+          <div class="service-block__cta">
+            <p class="service-block__cta-text">¿Tienes un proceso de licitación próximo?</p>
+            <a href="https://wa.me/5215565298240?text=Hola,%20necesito%20documentación%20para%20una%20licitación" class="btn btn--primary btn--sm" target="_blank" rel="noopener">Solicitar paquete documental</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Precios por Volumen -->
+      <div class="service-block" id="precios-volumen">
+        <div class="service-block__header">
+          <div class="service-block__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <div class="service-block__title-wrap">
+            <h3 class="service-block__title">Precios por Volumen</h3>
+            <p class="service-block__subtitle">Descuentos especiales para compras corporativas y pedidos recurrentes</p>
+          </div>
+        </div>
+        <div class="service-block__content">
+          <div class="service-block__text">
+            <p>Las <strong>compras en volumen</strong> tienen condiciones comerciales diferenciadas. Ya sea un proyecto único de gran escala o un programa de compras recurrentes, ajustamos nuestros precios para ofrecer la mejor propuesta competitiva.</p>
+            <p>Trabajamos con <strong>constructoras, instaladores, distribuidores regionales</strong> y empresas con programas de mantenimiento continuo que requieren abastecimiento constante de equipos contra incendios.</p>
+          </div>
+          <div class="service-block__features">
+            <div class="feature-card">
+              <h4 class="feature-card__title">Proyectos grandes</h4>
+              <p class="feature-card__desc">Descuentos especiales para equipamiento de desarrollos completos, plantas industriales y proyectos de infraestructura.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Compras recurrentes</h4>
+              <p class="feature-card__desc">Precios preferenciales para clientes con pedidos periódicos. Programas anuales de suministro.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Distribuidores</h4>
+              <p class="feature-card__desc">Condiciones de mayorista para empresas que revenden o integran equipos en sus proyectos.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Contratos marco</h4>
+              <p class="feature-card__desc">Acuerdos de suministro con precios fijos por período determinado. Estabilidad en costos.</p>
+            </div>
+          </div>
+          <div class="service-block__highlight">
+            <h4 class="service-block__highlight-title">Beneficios de comprar por volumen:</h4>
+            <div class="highlight-grid">
+              <div class="highlight-item">
+                <span class="highlight-item__icon" aria-hidden="true">%</span>
+                <span class="highlight-item__text">Descuentos escalonados según cantidad</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-item__icon" aria-hidden="true">$</span>
+                <span class="highlight-item__text">Precios fijos durante vigencia de acuerdo</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-item__icon" aria-hidden="true">★</span>
+                <span class="highlight-item__text">Asesor comercial exclusivo asignado</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-item__icon" aria-hidden="true">⚡</span>
+                <span class="highlight-item__text">Prioridad en disponibilidad de inventario</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Facturación CFDI 4.0 -->
+      <div class="service-block" id="facturacion-cfdi">
+        <div class="service-block__header">
+          <div class="service-block__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M7 15h0M2 9.5h20"/></svg>
+          </div>
+          <div class="service-block__title-wrap">
+            <h3 class="service-block__title">Facturación CFDI 4.0</h3>
+            <p class="service-block__subtitle">Cumplimiento fiscal completo con todos los complementos requeridos</p>
+          </div>
+        </div>
+        <div class="service-block__content">
+          <div class="service-block__text">
+            <p>Emitimos <strong>facturas electrónicas CFDI 4.0</strong> con todos los requisitos fiscales vigentes. Nuestro proceso de facturación es ágil y cumple con las disposiciones del SAT para que puedas deducir tus compras sin problemas.</p>
+            <p>Para <strong>obra pública y contratos gubernamentales</strong>, generamos los complementos fiscales necesarios según el tipo de operación: complemento de pago, complemento de comercio exterior o los que requiera tu proceso específico.</p>
+          </div>
+          <div class="service-block__features">
+            <div class="feature-card">
+              <h4 class="feature-card__title">CFDI 4.0 completo</h4>
+              <p class="feature-card__desc">Facturas con todos los campos obligatorios: régimen fiscal, código postal, uso de CFDI correcto.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Complemento de pago</h4>
+              <p class="feature-card__desc">Para operaciones a crédito, emitimos REP (Recibo Electrónico de Pago) al momento del cobro.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Carta porte</h4>
+              <p class="feature-card__desc">Complemento de traslado de mercancías para envíos que lo requieran según normativa.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Facturación inmediata</h4>
+              <p class="feature-card__desc">Emitimos factura el mismo día del pago. Envío por correo electrónico en formato XML y PDF.</p>
+            </div>
+          </div>
+          <div class="service-block__contact">
+            <h4 class="service-block__contact-title">¿Necesitas una cotización corporativa?</h4>
+            <div class="contact-channels">
+              <a href="https://wa.me/5215565298240" class="contact-channel" target="_blank" rel="noopener">
+                <span class="contact-channel__icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                </span>
+                <span class="contact-channel__info">
+                  <span class="contact-channel__label">WhatsApp</span>
+                  <span class="contact-channel__value">55 6529 8240</span>
+                </span>
+              </a>
+              <a href="tel:+525515437164" class="contact-channel">
+                <span class="contact-channel__icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </span>
+                <span class="contact-channel__info">
+                  <span class="contact-channel__label">Teléfono</span>
+                  <span class="contact-channel__value">55 1543 7164</span>
+                </span>
+              </a>
+              <a href="mailto:ventas@gamademexico.com" class="contact-channel">
+                <span class="contact-channel__icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </span>
+                <span class="contact-channel__info">
+                  <span class="contact-channel__label">Email</span>
+                  <span class="contact-channel__value">ventas@gamademexico.com</span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESO -->
+  <section class="process" aria-labelledby="process-title">
+    <div class="container">
+      <SectionHeader
+        titulo="Proceso de Cotización Corporativa"
+        subtitulo="Así funciona nuestro proceso para clientes empresariales"
+        idTitulo="process-title"
+        parrafo1="Hemos optimizado nuestro proceso de cotización para brindarte respuestas rápidas y profesionales. Desde el primer contacto hasta la entrega de tu cotización formal, cada paso está diseñado para facilitar tu proceso de compra."
+        parrafo2="Nuestro compromiso es entregarte cotización formal en menos de 24 horas hábiles, con toda la documentación técnica y comercial que necesitas para tomar decisiones y presentar a comités de aprobación."
+      />
+      <div class="process__steps">
+        <div class="process__step">
+          <div class="process__number" aria-hidden="true">1</div>
+          <h3 class="process__step-title">Solicitud</h3>
+          <p class="process__step-desc">Envíanos tu lista de productos, especificaciones o bases de licitación por WhatsApp, email o teléfono.</p>
+        </div>
+        <div class="process__step">
+          <div class="process__number" aria-hidden="true">2</div>
+          <h3 class="process__step-title">Análisis</h3>
+          <p class="process__step-desc">Revisamos requerimientos, verificamos disponibilidad y preparamos la mejor propuesta técnico-económica.</p>
+        </div>
+        <div class="process__step">
+          <div class="process__number" aria-hidden="true">3</div>
+          <h3 class="process__step-title">Cotización</h3>
+          <p class="process__step-desc">En menos de 24 horas recibes cotización formal con precios, tiempos de entrega y documentación adjunta.</p>
+        </div>
+        <div class="process__step">
+          <div class="process__number" aria-hidden="true">4</div>
+          <h3 class="process__step-title">Cierre</h3>
+          <p class="process__step-desc">Confirmas pedido, procesamos pago, emitimos factura CFDI 4.0 y coordinamos entrega.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTORES QUE ATENDEMOS -->
+  <section class="sectors" aria-labelledby="sectors-title">
+    <div class="container">
+      <SectionHeader
+        titulo="Sectores que Atendemos"
+        subtitulo="Experiencia en procesos de compra corporativa y gubernamental"
+        idTitulo="sectors-title"
+        parrafo1="A lo largo de los años hemos desarrollado experiencia atendiendo los procesos de compra específicos de cada sector. Conocemos los requisitos documentales, tiempos de respuesta y formalidades que exige cada tipo de cliente."
+        parrafo2="Desde licitaciones públicas en CompraNet hasta contratos marco con corporativos multinacionales, nuestro equipo está capacitado para adaptarse a los requerimientos particulares de tu organización."
+      />
+      <div class="sectors__grid">
+        <div class="sector-card">
+          <div class="sector-card__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h3 class="sector-card__title">Gobierno Federal</h3>
+          <p class="sector-card__desc">Licitaciones en CompraNet, contratos marco y adquisiciones de dependencias federales.</p>
+        </div>
+        <div class="sector-card">
+          <div class="sector-card__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
+          </div>
+          <h3 class="sector-card__title">Paraestatales</h3>
+          <p class="sector-card__desc">PEMEX, CFE, IMSS y otras entidades con requisitos específicos de adquisición.</p>
+        </div>
+        <div class="sector-card">
+          <div class="sector-card__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+          </div>
+          <h3 class="sector-card__title">Industria Privada</h3>
+          <p class="sector-card__desc">Plantas manufactureras, refinerías, centros de datos y corporativos empresariales.</p>
+        </div>
+        <div class="sector-card">
+          <div class="sector-card__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+          </div>
+          <h3 class="sector-card__title">Constructoras</h3>
+          <p class="sector-card__desc">Desarrollos inmobiliarios, obras de infraestructura y proyectos de gran escala.</p>
+        </div>
+        <div class="sector-card">
+          <div class="sector-card__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <h3 class="sector-card__title">Instaladores</h3>
+          <p class="sector-card__desc">Empresas de instalación y mantenimiento de sistemas contra incendios.</p>
+        </div>
+        <div class="sector-card">
+          <div class="sector-card__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3 class="sector-card__title">Distribuidores</h3>
+          <p class="sector-card__desc">Empresas regionales que comercializan equipos contra incendios.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST -->
+  <section class="trust" aria-labelledby="trust-title">
+    <div class="container">
+      <SectionHeader
+        titulo="Por Qué Elegirnos para Compras Corporativas"
+        subtitulo="Beneficios de trabajar con Gama de México"
+        idTitulo="trust-title"
+        parrafo1="Somos distribuidores autorizados de Elkhart Brass, lo que nos permite ofrecer productos genuinos con garantía oficial, documentación completa y precios competitivos. Esta alianza es tu garantía de que estás adquiriendo equipos de calidad certificada."
+        parrafo2="Nuestro equipo comercial tiene experiencia atendiendo procesos de compra de todo tipo: desde adjudicaciones directas hasta licitaciones internacionales. Conocemos los tiempos, formatos y requisitos que cada proceso demanda."
+      />
+      <div class="trust__grid">
+        <div class="trust__item">
+          <h3 class="trust__item-title">Respuesta en 24 horas</h3>
+          <p class="trust__item-desc">Cotizaciones formales en menos de un día hábil. Urgencias el mismo día.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Documentación completa</h3>
+          <p class="trust__item-desc">Todo lo que necesitas para licitaciones, auditorías y procesos de aprobación.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Precios competitivos</h3>
+          <p class="trust__item-desc">Escalas de descuento por volumen y condiciones especiales para mayoristas.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Facturación ágil</h3>
+          <p class="trust__item-desc">CFDI 4.0 con todos los complementos. Emisión el mismo día del pago.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Asesor exclusivo</h3>
+          <p class="trust__item-desc">Un ejecutivo comercial asignado que conoce tu cuenta y da seguimiento puntual.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Experiencia comprobada</h3>
+          <p class="trust__item-desc">Años atendiendo empresas, gobierno y proyectos de gran escala en México.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEAD CAPTURE -->
+  <LeadCapture />
+
+  <!-- FAQ -->
+  <section class="faq" id="faq" aria-labelledby="faq-title">
+    <div class="container">
+      <SectionHeader
+        titulo="Preguntas Frecuentes sobre Equipos Contra Incendios"
+        subtitulo="Resolvemos las dudas más comunes sobre cotización, tipos de equipos, envíos y certificaciones"
+        idTitulo="faq-title"
+        parrafo1="Entendemos que la adquisición de equipos contra incendios involucra decisiones técnicas importantes: compatibilidad con sistemas existentes, cumplimiento normativo, certificaciones requeridas y logística de entrega. Hemos compilado las consultas más frecuentes de nuestros clientes para facilitar tu proceso de compra."
+        parrafo2="Si tu pregunta no aparece aquí, nuestro equipo de asesores técnicos está disponible vía WhatsApp, teléfono o correo electrónico para resolver cualquier duda específica sobre especificaciones, disponibilidad o requerimientos de instalación."
+      />
+      <Faq items={faqItems} id="faq" />
+    </div>
+  </section>
+
+  <!-- SERVICIOS RELACIONADOS -->
+  <section class="related-services" aria-labelledby="related-title">
+    <div class="container">
+      <SectionHeader
+        titulo="Otros Servicios"
+        subtitulo="Conoce todos los servicios que ofrecemos para tu proyecto contra incendios"
+        idTitulo="related-title"
+        parrafo1="Además de cotizaciones corporativas, ofrecemos un ecosistema completo de servicios diseñados para acompañarte en todas las etapas de tu proyecto: desde la asesoría técnica inicial hasta el soporte postventa y mantenimiento de equipos."
+        parrafo2="Cada servicio está pensado para facilitar tu proceso de compra, garantizar el cumplimiento normativo y maximizar la vida útil de tu inversión en equipos contra incendios."
+      />
+      <div class="related-services__grid">
+        <div class="related-service">
+          <h3 class="related-service__title">Garantía y Respaldo</h3>
+          <p class="related-service__desc">Garantía del fabricante, certificados UL/FM y documentación completa para verificaciones.</p>
+          <a href="/servicios/garantia" class="related-service__link">Ver servicio →</a>
+        </div>
+        <div class="related-service">
+          <h3 class="related-service__title">Asesoría Técnica</h3>
+          <p class="related-service__desc">Orientación especializada para seleccionar equipos según tu tipo de riesgo y normativa.</p>
+          <a href="/servicios/asesoria" class="related-service__link">Ver servicio →</a>
+        </div>
+        <div class="related-service">
+          <h3 class="related-service__title">Atención Empresarial</h3>
+          <p class="related-service__desc">Cuentas corporativas con ejecutivo dedicado, precios preferenciales y atención prioritaria.</p>
+          <a href="/servicios/empresas" class="related-service__link">Ver servicio →</a>
+        </div>
+        <div class="related-service">
+          <h3 class="related-service__title">Refacciones y Mantenimiento</h3>
+          <p class="related-service__desc">Componentes originales y kits de servicio para mantener tus equipos en óptimas condiciones.</p>
+          <a href="/servicios/mantenimiento" class="related-service__link">Ver servicio →</a>
+        </div>
+        <div class="related-service">
+          <h3 class="related-service__title">Logística y Envíos</h3>
+          <p class="related-service__desc">Entregas a toda la República Mexicana con embalaje especializado y seguimiento.</p>
+          <a href="/servicios/envios" class="related-service__link">Ver servicio →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta-section" aria-labelledby="cta-title">
+    <div class="container">
+      <div class="cta-section__content">
+        <h2 id="cta-title" class="cta-section__title">¿Listo para recibir tu cotización?</h2>
+        <p class="cta-section__text">Contáctanos hoy y recibe propuesta formal en menos de 24 horas.</p>
+        <div class="cta-section__buttons">
+          <a href="https://wa.me/5215565298240" class="btn btn--white" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+          <a href="mailto:ventas@gamademexico.com" class="btn btn--outline btn--white-outline">Enviar por Email</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  /* Service Sections */
+  .service-sections {
+    padding: var(--spacing-3xl) 0;
+    background: var(--color-white);
+  }
+
+  .service-block {
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    margin-bottom: var(--spacing-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+  }
+
+  .service-block__header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-lg);
+    background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-white) 100%);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .service-block__icon {
+    flex-shrink: 0;
+    width: 56px;
+    height: 56px;
+    background: var(--color-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+  }
+
+  .service-block__icon svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .service-block__title-wrap {
+    flex: 1;
+  }
+
+  .service-block__title {
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin-bottom: 0.25rem;
+  }
+
+  .service-block__subtitle {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
+  }
+
+  .service-block__content {
+    padding: var(--spacing-lg);
+  }
+
+  .service-block__text {
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .service-block__text p {
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-text);
+    line-height: var(--line-height-base);
+  }
+
+  .service-block__text p:last-child {
+    margin-bottom: 0;
+  }
+
+  .service-block__features {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+  }
+
+  .feature-card {
+    background: var(--color-accent);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius-sm);
+    border-left: 3px solid var(--color-primary);
+  }
+
+  .feature-card__title {
+    font-size: var(--font-size-base);
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin-bottom: 0.5rem;
+  }
+
+  .feature-card__desc {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
+    line-height: 1.5;
+  }
+
+  .service-block__list {
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-md);
+    background: var(--color-accent);
+    border-radius: var(--border-radius-sm);
+  }
+
+  .service-block__list-title {
+    font-size: var(--font-size-base);
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .check-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .check-list--two-col {
+    grid-template-columns: 1fr;
+  }
+
+  .check-list__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    font-size: var(--font-size-sm);
+    color: var(--color-text);
+  }
+
+  .check-list__item::before {
+    content: "✓";
+    color: var(--color-primary);
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  .service-block__cta {
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-md);
+    background: var(--color-secondary);
+    border-radius: var(--border-radius-sm);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-sm);
+    text-align: center;
+  }
+
+  .service-block__cta-text {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: var(--font-size-sm);
+  }
+
+  .service-block__highlight {
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-lg);
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    border-radius: var(--border-radius-sm);
+    color: var(--color-white);
+  }
+
+  .service-block__highlight-title {
+    font-size: var(--font-size-base);
+    font-weight: 700;
+    margin-bottom: var(--spacing-md);
+    text-align: center;
+  }
+
+  .highlight-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
+  }
+
+  .highlight-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    background: rgba(255, 255, 255, 0.1);
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--border-radius-sm);
+  }
+
+  .highlight-item__icon {
+    width: 32px;
+    height: 32px;
+    background: var(--color-white);
+    color: var(--color-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  .highlight-item__text {
+    font-size: var(--font-size-sm);
+  }
+
+  .service-block__contact {
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-lg);
+    background: var(--color-accent);
+    border-radius: var(--border-radius-sm);
+  }
+
+  .service-block__contact-title {
+    font-size: var(--font-size-base);
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin-bottom: var(--spacing-md);
+    text-align: center;
+  }
+
+  .contact-channels {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
+  }
+
+  .contact-channel {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm) var(--spacing-md);
+    background: var(--color-white);
+    border-radius: var(--border-radius-sm);
+    border: 1px solid var(--color-border);
+    transition: all var(--transition-fast);
+  }
+
+  .contact-channel:hover {
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-md);
+  }
+
+  .contact-channel__icon {
+    width: 40px;
+    height: 40px;
+    background: var(--color-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    flex-shrink: 0;
+  }
+
+  .contact-channel__icon svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .contact-channel__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-channel__label {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-light);
+  }
+
+  .contact-channel__value {
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    color: var(--color-secondary);
+  }
+
+  /* Process Section */
+  .process {
+    padding: var(--spacing-3xl) 0;
+    background: var(--color-accent);
+  }
+
+  .process__steps {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+
+  .process__step {
+    background: var(--color-white);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-md);
+    text-align: center;
+    position: relative;
+  }
+
+  .process__number {
+    width: 48px;
+    height: 48px;
+    background: var(--color-primary);
+    color: var(--color-white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    margin: 0 auto var(--spacing-sm);
+  }
+
+  .process__step-title {
+    font-size: var(--font-size-lg);
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin-bottom: 0.5rem;
+  }
+
+  .process__step-desc {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
+    line-height: 1.5;
+  }
+
+  /* Sectors Section */
+  .sectors {
+    padding: var(--spacing-3xl) 0;
+    background: var(--color-white);
+  }
+
+  .sectors__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .sector-card {
+    background: var(--color-accent);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius);
+    text-align: center;
+    border: 1px solid var(--color-border);
+    transition: all var(--transition-fast);
+  }
+
+  .sector-card:hover {
+    box-shadow: var(--shadow-md);
+    border-color: var(--color-primary);
+  }
+
+  .sector-card__icon {
+    width: 56px;
+    height: 56px;
+    background: var(--color-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto var(--spacing-sm);
+    color: var(--color-white);
+  }
+
+  .sector-card__icon svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .sector-card__title {
+    font-size: var(--font-size-lg);
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin-bottom: 0.5rem;
+  }
+
+  .sector-card__desc {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
+    line-height: 1.5;
+  }
+
+  /* Responsive */
+  @media (min-width: 640px) {
+    .service-block__features {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .check-list--two-col {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-channels {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .process__steps {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sectors__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .highlight-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cta-section__buttons {
+      flex-direction: row;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .service-block__header {
+      padding: var(--spacing-xl);
+    }
+
+    .service-block__content {
+      padding: var(--spacing-xl);
+    }
+
+    .service-block__features {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .process__steps {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .sectors__grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .cta-section__title {
+      font-size: var(--font-size-3xl);
+    }
+  }
+</style>
+

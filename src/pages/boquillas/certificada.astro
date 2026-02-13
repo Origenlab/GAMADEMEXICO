@@ -1,0 +1,207 @@
+---
+import Layout from '../../layouts/Base.astro';
+import '../../styles/subcategory.css';
+import { getCollection } from 'astro:content';
+import SubcategoryProductCard from '../../components/SubcategoryProductCard.astro';
+import ProductSidebar from '../../components/ProductSidebar.astro';
+import RelatedProductsGrid from '../../components/RelatedProductsGrid.astro';
+import CotizacionForm from '../../components/CotizacionForm.astro';
+
+// Obtener productos de boquillas
+const todasBoquillas = (await getCollection('productos', ({ data }) => data.categoria === 'boquillas')).sort((a, b) => a.data.orden - b.data.orden);
+
+// Filtrar productos certificados por subcategoria
+const productosCertificada = todasBoquillas.filter(p => p.data.subcategoria === 'certificada');
+
+// Otros productos para la sección de relacionados
+const otrasBoquillas = todasBoquillas.filter(p => !productosCertificada.includes(p));
+
+// Definir las subcategorías de boquillas para el sidebar
+const subcategorias = [
+  {
+    slug: 'tipo-pistola',
+    nombre: 'Boquilla Tipo Pistola',
+    descripcion: 'Control ergonómico seleccionable',
+    activo: false
+  },
+  {
+    slug: 'turbo-jet',
+    nombre: 'Boquilla Turbo Jet',
+    descripcion: 'Máximo alcance y penetración',
+    activo: false
+  },
+  {
+    slug: 'industrial',
+    nombre: 'Boquilla Industrial',
+    descripcion: 'Alto caudal para industria',
+    activo: false
+  },
+  {
+    slug: 'certificada',
+    nombre: 'Boquilla Certificada',
+    descripcion: 'Certificación UL/FM',
+    activo: true
+  },
+];
+---
+
+<Layout
+  title="Boquilla Certificada UL FM | Venta México"
+  description="Boquilla certificada UL/FM para manguera contra incendio. Chorro directo 250 GPM, bronce fundido, selector de caudal. Para bomberos e hidrantes. México."
+  activePage="equipos"
+  heroTitle="Boquilla Certificada UL/FM"
+  heroIntro="Boquillas contra incendio con certificación UL Listed y FM Approved, validación requerida para cumplimiento normativo en instalaciones industriales y comerciales. Estas certificaciones garantizan rendimiento probado, trazabilidad y aceptación por aseguradoras internacionales."
+  heroBadge="Boquillas Contra Incendios"
+  heroMetrics={[
+    { valor: "UL/FM", texto: "Doble certificación" },
+    { valor: "250", texto: "GPM máximo" },
+    { valor: "100", texto: "PSI operación" }
+  ]}
+  heroPrimaryText="Ver Catálogo"
+  heroPrimaryLink="#catalogo"
+  heroSecondaryText="Solicitar Cotización"
+  heroSecondaryLink="#cotizar"
+  heroShowRightContent={true}
+>
+
+  <!-- HERO CONTENT -->
+  <Fragment slot="hero-content">
+    <p>Las <strong>boquillas certificadas UL/FM</strong> son equipos validados por los laboratorios más exigentes de la industria: Underwriters Laboratories (UL) y Factory Mutual (FM). Esta doble certificación garantiza que cada boquilla ha sido sometida a pruebas de rendimiento hidráulico, resistencia de materiales y durabilidad bajo condiciones extremas. Son requisito obligatorio para proyectos que requieren cumplimiento de NFPA, NOM-002-STPS y pólizas de seguro con aseguradoras internacionales.</p>
+    <p>En <strong>Gama de México</strong> distribuimos boquillas certificadas de Elkhart Brass, Akron Brass y Task Force Tips con documentación completa de certificación. Cada equipo incluye número de listado verificable en las bases de datos públicas de UL y FM. Asesoramos en la selección del modelo correcto según tu aplicación: sistemas de hidrantes para edificios comerciales, gabinetes contra incendio, brigadas industriales o equipamiento para cuerpos de bomberos municipales.</p>
+  </Fragment>
+
+  <!-- MAIN CONTENT WITH SIDEBAR -->
+  <section class="subcat-content">
+    <div class="container">
+      <div class="subcat-layout">
+
+        <!-- MAIN CONTENT (LEFT) -->
+        <main class="subcat-main">
+
+          <!-- CATALOG HEADER -->
+          <div class="catalog-header">
+            <div class="catalog-header__text">
+              <h2 class="catalog-header__title">Catálogo de Boquillas Certificadas</h2>
+              <p class="catalog-header__desc">Selecciona el producto que mejor se adapte a tu operación</p>
+            </div>
+            <div class="catalog-header__count">
+              <span class="catalog-header__number">{productosCertificada.length}</span>
+              <span class="catalog-header__label">producto{productosCertificada.length !== 1 ? 's' : ''}</span>
+            </div>
+          </div>
+
+          <!-- PRODUCTS GRID -->
+          <div class="categories__grid">
+            {productosCertificada.map((producto) => (
+              <SubcategoryProductCard
+                title={producto.data.title}
+                description={producto.data.description}
+                brand={producto.data.marca}
+                image={producto.data.imagen}
+                productSlug={producto.id}
+                flow={producto.data.flujo}
+                material={producto.data.material}
+                certifications={producto.data.certificaciones}
+              />
+            ))}
+          </div>
+
+          {productosCertificada.length === 0 && (
+            <div class="catalog-empty">
+              <div class="catalog-empty__icon">🔍</div>
+              <h3 class="catalog-empty__title">Próximamente más opciones</h3>
+              <p class="catalog-empty__text">Estamos agregando más productos de boquillas certificadas de diferentes marcas. Mientras tanto, solicita una cotización personalizada.</p>
+              <a href="#cotizar" class="btn btn--primary">Solicitar Cotización</a>
+            </div>
+          )}
+
+          <!-- TECHNICAL INFO -->
+          <div class="tech-info">
+            <h3 class="tech-info__title">Especificaciones Técnicas Generales</h3>
+            <div class="tech-info__grid">
+              <div class="tech-info__item">
+                <span class="tech-info__label">Patrón</span>
+                <span class="tech-info__value">Chorro directo</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Caudal máximo</span>
+                <span class="tech-info__value">250 GPM</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Material</span>
+                <span class="tech-info__value">Bronce fundido</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Control</span>
+                <span class="tech-info__value">Selector de caudal</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Aplicación</span>
+                <span class="tech-info__value">Manguera / Monitor</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Usuario</span>
+                <span class="tech-info__value">Bomberos / Hidrantes</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA FINAL -->
+          <div class="subcat-cta-final">
+            <div class="subcat-cta-final__content">
+              <h3 class="subcat-cta-final__title">¿No encuentras el modelo que necesitas?</h3>
+              <p class="subcat-cta-final__desc">Tenemos acceso al catálogo completo de Elkhart Brass. Contáctanos para opciones adicionales y configuraciones especiales.</p>
+            </div>
+            <a href="#cotizar" class="btn btn--primary">Solicitar Cotización</a>
+          </div>
+
+        </main>
+
+        <!-- SIDEBAR (RIGHT) -->
+        <ProductSidebar
+          navTitulo="Tipos de Boquillas"
+          subcategorias={subcategorias}
+          baseUrl="/boquillas"
+          backLinkHref="/boquillas-contra-incendios"
+          backLinkTexto="Ver todas las boquillas"
+          certificaciones={[
+            { siglas: "FM", nombre: "Factory Mutual" },
+            { siglas: "UL", nombre: "UL Listed" },
+            { siglas: "NOM", nombre: "NOM-002-STPS" }
+          ]}
+          marcas={["Elkhart Brass", "Akron Brass", "Task Force Tips", "POK"]}
+          aplicaciones={[
+            "Brigadas industriales",
+            "Cuerpos de bomberos",
+            "Plantas petroquímicas",
+            "Proyectos con requerimientos FM/UL"
+          ]}
+          productosRelacionados={[
+            { href: "/monitores-contra-incendios", nombre: "Monitores Contra Incendios" },
+            { href: "/mangueras-contra-incendios", nombre: "Mangueras Contra Incendios" },
+            { href: "/valvulas-contra-incendios", nombre: "Válvulas Contra Incendios" },
+            { href: "/conexiones-herrajes-contra-incendios", nombre: "Conexiones y Herrajes" }
+          ]}
+        />
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RELATED PRODUCTS -->
+  <RelatedProductsGrid
+    titulo="Otras Boquillas Contra Incendios"
+    subtitulo="Explora más opciones para tu sistema de protección"
+    productos={otrasBoquillas}
+    maxProductos={3}
+    verTodosLink="/boquillas-contra-incendios"
+    verTodosTexto="Ver todas las boquillas"
+  />
+
+  <CotizacionForm
+    titulo="Cotiza Boquillas Certificadas"
+    tipoEquipo="Boquillas"
+    pagina="Boquillas Certificadas"
+  />
+
+</Layout>

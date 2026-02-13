@@ -1,0 +1,188 @@
+---
+import Layout from '../../layouts/Base.astro';
+import '../../styles/subcategory.css';
+import { getCollection } from 'astro:content';
+import SubcategoryProductCard from '../../components/SubcategoryProductCard.astro';
+import ProductSidebar from '../../components/ProductSidebar.astro';
+import RelatedProductsGrid from '../../components/RelatedProductsGrid.astro';
+import CotizacionForm from '../../components/CotizacionForm.astro';
+
+// 1. Obtener todos los productos de la categoría conexiones-herrajes
+const todosProductos = (await getCollection('productos', ({ data }) =>
+  data.categoria === 'conexiones-herrajes'
+)).sort((a, b) => a.data.orden - b.data.orden);
+
+// 2. Filtrar por subcategoría: Adaptadores de Bronce
+const productosSubcategoria = todosProductos.filter(p => p.data.subcategoria === 'adaptadores');
+
+// 3. Obtener otros productos para sección de relacionados
+const otrosProductos = todosProductos.filter(p => !productosSubcategoria.includes(p));
+
+// 4. Definir subcategorías para navegación
+const subcategorias = [
+  { slug: 'adaptadores', nombre: 'Adaptadores de Bronce', descripcion: 'Conversión entre roscas NH, NPT, Storz', activo: true },
+  { slug: 'wye', nombre: 'Conexión Y (Wye)', descripcion: 'Derivación en dos salidas', activo: false },
+  { slug: 'siamesa', nombre: 'Toma Siamesa FDC', descripcion: 'Conexión para bomberos', activo: false },
+  { slug: 'coples', nombre: 'Coples y Reducciones', descripcion: 'Conexión rápida Storz', activo: false },
+  { slug: 'chiflones', nombre: 'Chiflones de Tres Pasos', descripcion: 'Control de patrón de descarga', activo: false },
+  { slug: 'accesorios', nombre: 'Accesorios y Herrajes', descripcion: 'Tapones, caps, niples', activo: false },
+];
+---
+
+<Layout
+  title="Adaptadores de Bronce NST NPT | México"
+  description="Adaptadores de bronce para conexiones contra incendio. Macho, hembra, swivel. Roscas NH, NPT, Storz, 300 PSI. Certificados UL/FM. México."
+  activePage="equipos"
+  heroTitle="Adaptadores de Bronce"
+  heroIntro="Adaptadores para conversión entre diferentes tipos de rosca y sistemas de conexión en equipos contra incendio. Permiten la interoperabilidad entre equipos con roscas NH (National Hose), NPT (National Pipe Thread) y acoples Storz de conexión rápida."
+  heroBadge="Conexiones y Herrajes"
+  heroMetrics={[
+    { valor: "NH/NPT/Storz", texto: "Tipos de rosca" },
+    { valor: "300", texto: "PSI máxima" },
+    { valor: "UL/FM", texto: "Certificación" }
+  ]}
+  heroPrimaryText="Ver Catálogo"
+  heroPrimaryLink="#catalogo"
+  heroSecondaryText="Solicitar Cotización"
+  heroSecondaryLink="#cotizar"
+  heroShowRightContent={true}
+>
+
+  <!-- HERO CONTENT -->
+  <Fragment slot="hero-content">
+    <p>Los <strong>adaptadores de bronce</strong> son piezas de transición que permiten conectar equipos con diferentes tipos de rosca. Son esenciales cuando se integran componentes de distintos fabricantes o se conectan mangueras de bomberos a sistemas de edificios. Disponibles en configuraciones macho-macho, hembra-hembra, macho-hembra y con swivel giratorio para evitar torsión de mangueras.</p>
+    <p><strong>Gama de México</strong> ofrece adaptadores Elkhart Brass certificados UL/FM en bronce fundido. Manejamos conversiones entre roscas NH (1.5" y 2.5"), NPT (desde 1/2" hasta 4"), Storz (65mm y 100mm) y conexiones especiales. Cada adaptador está probado a 500 PSI para garantizar integridad bajo presión de servicio.</p>
+  </Fragment>
+
+  <!-- CONTENT + SIDEBAR -->
+  <section class="subcat-content">
+    <div class="container">
+      <div class="subcat-layout">
+
+        <!-- MAIN CONTENT -->
+        <main class="subcat-main">
+          <div class="catalog-header">
+            <div class="catalog-header__text">
+              <h2 class="catalog-header__title">Catálogo de Adaptadores de Bronce</h2>
+              <p class="catalog-header__desc">Selecciona el modelo que mejor se adapte a tu instalación</p>
+            </div>
+            <div class="catalog-header__count">
+              <span class="catalog-header__number">{productosSubcategoria.length}</span>
+              <span class="catalog-header__label">producto{productosSubcategoria.length !== 1 ? 's' : ''}</span>
+            </div>
+          </div>
+
+          <!-- Products Grid -->
+          <div class="categories__grid">
+            {productosSubcategoria.map((producto) => (
+              <SubcategoryProductCard
+                title={producto.data.title}
+                description={producto.data.description}
+                brand={producto.data.marca}
+                image={producto.data.imagen}
+                productSlug={producto.id}
+                flow={producto.data.flujo}
+                material={producto.data.material}
+                certifications={producto.data.certificaciones}
+              />
+            ))}
+          </div>
+
+          {productosSubcategoria.length === 0 && (
+            <div class="catalog-empty">
+              <div class="catalog-empty__icon">🔍</div>
+              <h3 class="catalog-empty__title">Próximamente más opciones</h3>
+              <p class="catalog-empty__text">Estamos agregando más adaptadores de diferentes marcas. Solicita una cotización personalizada.</p>
+              <a href="#cotizar" class="btn btn--primary">Solicitar Cotización</a>
+            </div>
+          )}
+
+          <!-- Tech Info -->
+          <div class="tech-info">
+            <h3 class="tech-info__title">Especificaciones Técnicas de Adaptadores</h3>
+            <div class="tech-info__grid">
+              <div class="tech-info__item">
+                <span class="tech-info__label">Presión de trabajo</span>
+                <span class="tech-info__value">250-300 PSI</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Presión de prueba</span>
+                <span class="tech-info__value">1,000 PSI</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Diámetros</span>
+                <span class="tech-info__value">1" a 6"</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Roscas</span>
+                <span class="tech-info__value">NH, NPT, Storz</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Temperatura</span>
+                <span class="tech-info__value">-65°F a 250°F</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Material</span>
+                <span class="tech-info__value">Bronce / Aluminio</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA Final -->
+          <div class="subcat-cta-final">
+            <div class="subcat-cta-final__content">
+              <h3 class="subcat-cta-final__title">¿No encuentras la configuración que necesitas?</h3>
+              <p class="subcat-cta-final__desc">Tenemos acceso al catálogo completo de Elkhart Brass. Contáctanos para adaptadores en roscas especiales o configuraciones personalizadas.</p>
+            </div>
+            <a href="#cotizar" class="btn btn--primary">Solicitar Cotización Especial</a>
+          </div>
+        </main>
+
+        <!-- SIDEBAR -->
+        <ProductSidebar
+          navTitulo="Tipos de Conexiones"
+          subcategorias={subcategorias}
+          baseUrl="/conexiones"
+          backLinkHref="/conexiones-herrajes-contra-incendios"
+          backLinkTexto="Ver todas las conexiones"
+          certificaciones={[
+            { siglas: "FM", nombre: "Factory Mutual" },
+            { siglas: "UL", nombre: "UL Listed" },
+            { siglas: "NOM", nombre: "NOM-002-STPS" }
+          ]}
+          marcas={["Dixon", "Elkhart Brass", "Harrington", "Action Coupling"]}
+          aplicaciones={[
+            "Conexión de mangueras",
+            "Adaptación entre roscas",
+            "Sistemas contra incendio",
+            "Hidrantes y gabinetes"
+          ]}
+          productosRelacionados={[
+            { href: "/gabinetes-hidrantes-contra-incendios", nombre: "Gabinetes e Hidrantes" },
+            { href: "/mangueras-contra-incendios", nombre: "Mangueras Contra Incendios" },
+            { href: "/valvulas-contra-incendios", nombre: "Válvulas Contra Incendios" },
+            { href: "/boquillas-contra-incendios", nombre: "Boquillas Contra Incendios" }
+          ]}
+        />
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RELATED PRODUCTS -->
+  <RelatedProductsGrid
+    titulo="Otras Conexiones y Herrajes"
+    subtitulo="Explora más opciones para tu sistema contra incendios"
+    productos={otrosProductos}
+    maxProductos={3}
+    verTodosLink="/conexiones-herrajes-contra-incendios"
+    verTodosTexto="Ver todas las conexiones"
+  />
+
+  <CotizacionForm
+    titulo="Cotiza Adaptadores"
+    tipoEquipo="Conexiones y herrajes"
+    pagina="Conexiones Adaptadores"
+  />
+
+</Layout>

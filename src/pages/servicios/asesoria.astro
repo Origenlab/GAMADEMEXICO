@@ -1,0 +1,862 @@
+---
+import Layout from '../../layouts/Base.astro';
+import '../../styles/services-shared.css';
+import Faq from '../../components/Faq.astro';
+import SectionHeader from '../../components/SectionHeader.astro';
+import LeadCapture from '../../components/LeadCapture.astro';
+
+const faqItems = [
+  {
+    pregunta: '¿Cómo puedo solicitar una cotización de equipos contra incendios en Gama de México?',
+    respuesta: 'Puedes solicitar tu cotización a través de nuestro formulario en línea (se envía directo a WhatsApp), escribiéndonos al WhatsApp 55 6529 8240, o llamando al 55 1543 7164. Solo necesitamos el tipo de equipo, las cantidades aproximadas y la ubicación de entrega. Respondemos en menos de 24 horas.',
+  },
+  {
+    pregunta: '¿Qué tipos de equipos contra incendios venden?',
+    respuesta: 'Manejamos un catálogo completo en seis categorías: Monitores (tipo corazón, cuello de cisne, certificados y UL Listed), Boquillas (tipo pistola, turbo jet y certificadas), Mangueras (millhose, blindex y de succión), Válvulas (compuerta, globo y angular), Conexiones y herrajes de bronce (chiflones, adaptadores, coples, toma siamesa, conexión Y), y Gabinetes e hidrantes (tipo 30ME e hidrante de banqueta).',
+  },
+  {
+    pregunta: '¿Realizan envíos de equipos contra incendios a todo México?',
+    respuesta: 'Sí, realizamos envíos a toda la República Mexicana. Operamos desde Ciudad de México (Santa Fe) y Querétaro, lo que permite coordinar logística eficiente al centro, norte y sureste del país.',
+  },
+  {
+    pregunta: '¿Ofrecen asesoría técnica para elegir equipos contra incendios?',
+    respuesta: 'Sí. Nuestros asesores técnicos evalúan tipo de riesgo, normativa aplicable (NOM-002-STPS, protección civil), especificaciones hidráulicas y de diseño para recomendarte los componentes exactos. La asesoría es gratuita y sin compromiso.',
+  },
+  {
+    pregunta: '¿Los equipos contra incendios que venden tienen certificaciones?',
+    respuesta: 'Sí. Como distribuidores autorizados de Elkhart Brass contamos con monitores y boquillas certificados UL (Underwriters Laboratories) y FM (Factory Mutual). Proporcionamos documentación técnica para verificaciones de protección civil.',
+  },
+  {
+    pregunta: '¿Dónde se ubican las sucursales de Gama de México?',
+    respuesta: 'Tenemos dos sucursales: Prol. Paseo de la Reforma 1015, Piso 1, Santa Fe, 01376 Ciudad de México, y Avenida Constituyentes 120, Santiago de Querétaro, 76030. Horario: lunes a domingo de 6:00 a 16:00 horas.',
+  },
+  {
+    pregunta: '¿Qué sectores o industrias atiende Gama de México?',
+    respuesta: 'Atendemos plantas manufactureras, industria química y petroquímica, terminales de almacenamiento, centros de datos, constructoras, hospitales, hoteles, corporativos, firmas de ingeniería, instaladores certificados y brigadas de protección civil. Ofrecemos venta unitaria y cotizaciones corporativas.',
+  },
+];
+---
+
+<Layout
+  title="Asesoría Técnica Especializada | Equipos Contra Incendios | Gama de México"
+  description="Asesoría técnica gratuita para selección de equipos contra incendios. Evaluación de riesgos, orientación normativa NOM/NFPA, especificaciones técnicas y documentación para proyectos."
+  activePage="servicios"
+  heroTitle="Asesoría Técnica"
+  heroBadge="Servicios"
+  heroIntro="Orientacion especializada para disenar sistemas de proteccion contra incendios que cumplan con normativas y especificaciones tecnicas."
+  heroMetrics={[
+    { valor: "24h", texto: "Respuesta" },
+    { valor: "NOM/NFPA", texto: "Normativas" },
+    { valor: "Gratuita", texto: "Asesoria" }
+  ]}
+  heroPrimaryText="Solicitar Asesoria"
+  heroPrimaryLink="https://wa.me/5215565298240?text=Hola,%20solicito%20asesor%C3%ADa%20t%C3%A9cnica"
+  heroSecondaryText="Ver Equipos"
+  heroSecondaryLink="/equipos"
+  heroShowRightContent={true}
+>
+  <Fragment slot="hero-content">
+    <p>Nuestro equipo de asesores tecnicos te guia en el diseno y seleccion de equipos para sistemas de proteccion contra incendios. Evaluamos el tipo de riesgo de tu instalacion, identificamos las normativas aplicables (NOM-002-STPS, NFPA 13, 14, 20) y te recomendamos los equipos con las especificaciones exactas que requiere tu proyecto.</p>
+    <p>Desde la evaluacion inicial hasta la entrega de documentacion tecnica, te acompanamos en cada etapa para asegurar que tu sistema cumpla con los requisitos de Proteccion Civil, aseguradoras y autoridades locales. Asesoria sin costo ni compromiso de compra.</p>
+  </Fragment>
+
+  <!-- SUBSECCIONES DE ASESORÍA -->
+  <section class="service-sections" id="servicios-asesoria" aria-labelledby="sections-title">
+    <div class="container">
+      <SectionHeader
+        titulo="Nuestra Asesoría Integral"
+        subtitulo="Cada etapa de nuestro servicio está diseñada para garantizar que tu proyecto cumpla con los más altos estándares de seguridad"
+        idTitulo="sections-title"
+        parrafo1="Nuestro equipo de asesores técnicos especializados te acompaña desde el análisis inicial de tu proyecto hasta la selección final de equipos. Evaluamos el tipo de riesgo de tu instalación, identificamos las normativas aplicables y te recomendamos soluciones que cumplan con los requerimientos de Protección Civil y aseguradoras."
+        parrafo2="La asesoría incluye orientación normativa NOM/NFPA, especificación técnica de equipos, comparativas de productos y toda la documentación necesaria para verificaciones. Servicio gratuito y sin compromiso de compra."
+      />
+
+      <!-- Evaluación de Tipo de Riesgo -->
+      <div class="service-block" id="evaluacion-riesgo">
+        <div class="service-block__header">
+          <div class="service-block__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
+          <div class="service-block__title-wrap">
+            <h3 class="service-block__title">Evaluación de Tipo de Riesgo</h3>
+            <p class="service-block__subtitle">Análisis técnico de las condiciones específicas de tu instalación</p>
+          </div>
+        </div>
+        <div class="service-block__content">
+          <div class="service-block__text">
+            <p>Cada instalación presenta <strong>niveles de riesgo diferentes</strong> que determinan el tipo de equipos y sistemas de protección requeridos. Nuestros asesores evalúan las características de tu proyecto: tipo de industria, materiales almacenados, procesos productivos, configuración del espacio y condiciones ambientales.</p>
+            <p>Con base en esta evaluación, clasificamos el riesgo según los estándares <strong>NFPA y NOM aplicables</strong>, lo que nos permite recomendar los equipos con las especificaciones correctas de caudal, presión, materiales y certificaciones para tu caso particular.</p>
+          </div>
+          <div class="service-block__features">
+            <div class="feature-card">
+              <h4 class="feature-card__title">Riesgo Ligero</h4>
+              <p class="feature-card__desc">Oficinas, escuelas, hospitales. Equipos estándar con certificación básica y caudales moderados.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Riesgo Ordinario</h4>
+              <p class="feature-card__desc">Comercios, bodegas, manufactura ligera. Equipos con mayor capacidad y certificaciones UL/FM.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Riesgo Extra</h4>
+              <p class="feature-card__desc">Petroquímicas, refinerías, hangares. Equipos de alto caudal con certificación FM y materiales especiales.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Riesgos Especiales</h4>
+              <p class="feature-card__desc">Químicos, explosivos, criogénicos. Soluciones personalizadas con materiales y sistemas específicos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Orientación Normativa NOM/NFPA -->
+      <div class="service-block" id="orientacion-normativa">
+        <div class="service-block__header">
+          <div class="service-block__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          </div>
+          <div class="service-block__title-wrap">
+            <h3 class="service-block__title">Orientación Normativa NOM/NFPA</h3>
+            <p class="service-block__subtitle">Cumplimiento con normativas mexicanas e internacionales</p>
+          </div>
+        </div>
+        <div class="service-block__content">
+          <div class="service-block__text">
+            <p>Te orientamos sobre las <strong>Normas Oficiales Mexicanas (NOM)</strong> y estándares <strong>NFPA (National Fire Protection Association)</strong> aplicables a tu proyecto. Conocemos los requerimientos específicos de Protección Civil, aseguradoras y autoridades locales para que tu sistema cumpla desde la especificación.</p>
+            <p>Nuestro equipo se mantiene actualizado en las <strong>normativas vigentes</strong> y sus modificaciones, asegurando que los equipos que te recomendamos cumplan con los estándares más recientes y evites rechazos en verificaciones o auditorías.</p>
+          </div>
+          <div class="service-block__features">
+            <div class="feature-card feature-card--highlight">
+              <h4 class="feature-card__title">NOM-002-STPS</h4>
+              <p class="feature-card__desc">Prevención y protección contra incendios en centros de trabajo. Equipos, señalización y planes de emergencia.</p>
+            </div>
+            <div class="feature-card feature-card--highlight">
+              <h4 class="feature-card__title">NFPA 13/14/20</h4>
+              <p class="feature-card__desc">Sistemas de rociadores, mangueras y bombas contra incendios. Diseño, instalación y mantenimiento.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">NFPA 24</h4>
+              <p class="feature-card__desc">Redes privadas de agua contra incendios. Tuberías, válvulas, hidrantes y monitores.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Protección Civil</h4>
+              <p class="feature-card__desc">Requerimientos locales y estatales. Verificaciones, dictámenes y programas internos.</p>
+            </div>
+          </div>
+          <div class="service-block__list">
+            <h4 class="service-block__list-title">Normativas adicionales que cubrimos:</h4>
+            <ul class="check-list">
+              <li class="check-list__item">NOM-154-SCFI — Extintores portátiles</li>
+              <li class="check-list__item">NFPA 1963 — Roscas de mangueras contra incendios</li>
+              <li class="check-list__item">NFPA 1961 — Mangueras contra incendios</li>
+              <li class="check-list__item">NFPA 1964 — Boquillas, pitones y accesorios</li>
+              <li class="check-list__item">FM Global Data Sheets — Especificaciones industriales</li>
+              <li class="check-list__item">UL Standards — Certificación de productos</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Selección de Especificaciones -->
+      <div class="service-block" id="seleccion-especificaciones">
+        <div class="service-block__header">
+          <div class="service-block__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+          </div>
+          <div class="service-block__title-wrap">
+            <h3 class="service-block__title">Selección de Especificaciones</h3>
+            <p class="service-block__subtitle">Equipos con las características exactas para tu proyecto</p>
+          </div>
+        </div>
+        <div class="service-block__content">
+          <div class="service-block__text">
+            <p>Te ayudamos a seleccionar los equipos con las <strong>especificaciones técnicas correctas</strong>: diámetros de conexión, rangos de caudal y presión, materiales de construcción, tipo de rosca, certificaciones requeridas y compatibilidad con sistemas existentes.</p>
+            <p>Evita errores costosos de especificación. Un monitor con caudal insuficiente, una válvula con materiales incompatibles o una boquilla con la rosca incorrecta pueden comprometer todo el sistema. Nuestros asesores <strong>verifican cada detalle técnico</strong> antes de cotizar.</p>
+          </div>
+          <div class="service-block__features">
+            <div class="feature-card">
+              <h4 class="feature-card__title">Caudales y Presiones</h4>
+              <p class="feature-card__desc">Cálculo de GPM y PSI según área de cobertura, tipo de riesgo y disponibilidad de agua.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Materiales</h4>
+              <p class="feature-card__desc">Bronce, acero inoxidable, aluminio o hierro según ambiente, compatibilidad química y durabilidad.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Conexiones</h4>
+              <p class="feature-card__desc">NST, Storz, NPT, bridadas o ranuradas. Diámetros de 1" a 8" según aplicación.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Certificaciones</h4>
+              <p class="feature-card__desc">UL, FM, USCG, NFPA según requerimientos de aseguradoras y autoridades.</p>
+            </div>
+          </div>
+          <div class="service-block__cta">
+            <p class="service-block__cta-text">¿Tienes especificaciones de ingeniería y necesitas equipos compatibles?</p>
+            <a href="https://wa.me/5215565298240?text=Hola,%20tengo%20especificaciones%20de%20proyecto%20y%20necesito%20cotización%20de%20equipos" class="btn btn--primary btn--sm" target="_blank" rel="noopener">Enviar Especificaciones</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Documentación Técnica -->
+      <div class="service-block" id="documentacion-tecnica">
+        <div class="service-block__header">
+          <div class="service-block__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          </div>
+          <div class="service-block__title-wrap">
+            <h3 class="service-block__title">Documentación Técnica</h3>
+            <p class="service-block__subtitle">Soporte documental para tu proyecto y verificaciones</p>
+          </div>
+        </div>
+        <div class="service-block__content">
+          <div class="service-block__text">
+            <p>Te proporcionamos toda la <strong>documentación técnica</strong> necesaria para tu proyecto: fichas técnicas del fabricante, certificados de conformidad, manuales de instalación, dibujos técnicos y cartas de especificación. Todo lo que necesitas para verificaciones de Protección Civil y auditorías.</p>
+            <p>Además, preparamos <strong>comparativas técnicas</strong> cuando hay múltiples opciones viables, para que puedas tomar decisiones informadas sobre precio, rendimiento y características de cada equipo.</p>
+          </div>
+          <div class="service-block__features">
+            <div class="feature-card">
+              <h4 class="feature-card__title">Fichas Técnicas</h4>
+              <p class="feature-card__desc">Especificaciones completas del fabricante con dimensiones, materiales, presiones y certificaciones.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Comparativas</h4>
+              <p class="feature-card__desc">Análisis lado a lado de productos alternativos con pros, contras y recomendación técnica.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Certificados</h4>
+              <p class="feature-card__desc">Documentos oficiales UL, FM y NFPA para cada equipo que requiera certificación.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Dibujos CAD</h4>
+              <p class="feature-card__desc">Archivos técnicos para integración en proyectos de ingeniería bajo solicitud.</p>
+            </div>
+          </div>
+          <div class="service-block__contact">
+            <h4 class="service-block__contact-title">Canales de Asesoría</h4>
+            <div class="contact-channels">
+              <a href="https://wa.me/5215565298240" class="contact-channel" target="_blank" rel="noopener">
+                <span class="contact-channel__icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                </span>
+                <span class="contact-channel__info">
+                  <span class="contact-channel__label">WhatsApp</span>
+                  <span class="contact-channel__value">55 6529 8240</span>
+                </span>
+              </a>
+              <a href="tel:+525515437164" class="contact-channel">
+                <span class="contact-channel__icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </span>
+                <span class="contact-channel__info">
+                  <span class="contact-channel__label">Teléfono</span>
+                  <span class="contact-channel__value">55 1543 7164</span>
+                </span>
+              </a>
+              <a href="mailto:ventas@gamademexico.com" class="contact-channel">
+                <span class="contact-channel__icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </span>
+                <span class="contact-channel__info">
+                  <span class="contact-channel__label">Email</span>
+                  <span class="contact-channel__value">ventas@gamademexico.com</span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESO DE ASESORÍA -->
+  <section class="process" aria-labelledby="process-title">
+    <div class="container">
+      <SectionHeader
+        titulo="Proceso de Asesoría"
+        subtitulo="Cómo trabajamos contigo para seleccionar los equipos correctos"
+        idTitulo="process-title"
+        parrafo1="Hemos diseñado un proceso estructurado para garantizar que recibas recomendaciones técnicas precisas y fundamentadas. Desde el primer contacto analizamos las características de tu proyecto para ofrecerte las mejores opciones disponibles."
+        parrafo2="Cada etapa está orientada a resolver tus necesidades específicas: tipo de riesgo, normativas aplicables, especificaciones técnicas y presupuesto. Respondemos en menos de 24 horas con propuestas detalladas y documentación de soporte."
+      />
+      <div class="process__steps">
+        <div class="process__step">
+          <div class="process__number" aria-hidden="true">1</div>
+          <h3 class="process__step-title">Contacto inicial</h3>
+          <p class="process__step-desc">Cuéntanos sobre tu proyecto: tipo de instalación, ubicación, planos disponibles y requerimientos específicos.</p>
+        </div>
+        <div class="process__step">
+          <div class="process__number" aria-hidden="true">2</div>
+          <h3 class="process__step-title">Análisis técnico</h3>
+          <p class="process__step-desc">Evaluamos el tipo de riesgo, normativa aplicable y especificaciones técnicas necesarias para tu caso.</p>
+        </div>
+        <div class="process__step">
+          <div class="process__number" aria-hidden="true">3</div>
+          <h3 class="process__step-title">Propuesta de equipos</h3>
+          <p class="process__step-desc">Te presentamos opciones de equipos con fichas técnicas, precios y recomendación fundamentada.</p>
+        </div>
+        <div class="process__step">
+          <div class="process__number" aria-hidden="true">4</div>
+          <h3 class="process__step-title">Cotización formal</h3>
+          <p class="process__step-desc">Entregamos cotización detallada con especificaciones, tiempos de entrega y documentación incluida.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTORES QUE ATENDEMOS -->
+  <section class="sectors" aria-labelledby="sectors-title">
+    <div class="container">
+      <SectionHeader
+        titulo="Sectores que Atendemos"
+        subtitulo="Experiencia en proyectos de protección contra incendios para diversas industrias"
+        idTitulo="sectors-title"
+        parrafo1="A lo largo de los años hemos desarrollado experiencia especializada en diversos sectores industriales, cada uno con requerimientos técnicos y normativos específicos. Conocemos las particularidades de cada industria y las soluciones que mejor se adaptan a sus necesidades."
+        parrafo2="Desde plantas petroquímicas con certificaciones FM hasta hospitales con sistemas especializados, nuestro equipo está capacitado para asesorarte en proyectos de cualquier escala y complejidad en toda la República Mexicana."
+      />
+      <div class="sectors-grid">
+        <div class="sector-card">
+          <div class="sector-card__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/></svg>
+          </div>
+          <h3 class="sector-card__title">Industria Petrolera</h3>
+          <p class="sector-card__desc">Refinerías, terminales de almacenamiento, plataformas offshore y plantas petroquímicas con requerimientos FM.</p>
+        </div>
+        <div class="sector-card">
+          <div class="sector-card__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg>
+          </div>
+          <h3 class="sector-card__title">Manufactura</h3>
+          <p class="sector-card__desc">Plantas industriales, líneas de producción, almacenes y centros de distribución con sistemas contra incendios.</p>
+        </div>
+        <div class="sector-card">
+          <div class="sector-card__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/><path d="M9 9v.01"/><path d="M9 12v.01"/><path d="M9 15v.01"/><path d="M9 18v.01"/></svg>
+          </div>
+          <h3 class="sector-card__title">Construcción</h3>
+          <p class="sector-card__desc">Desarrollos inmobiliarios, edificios corporativos, centros comerciales y proyectos de obra civil.</p>
+        </div>
+        <div class="sector-card">
+          <div class="sector-card__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+          </div>
+          <h3 class="sector-card__title">Salud</h3>
+          <p class="sector-card__desc">Hospitales, clínicas, laboratorios y centros de investigación con requerimientos especiales de seguridad.</p>
+        </div>
+        <div class="sector-card">
+          <div class="sector-card__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/><path d="M12 10h.01"/><path d="M12 14h.01"/><path d="M16 10h.01"/><path d="M16 14h.01"/><path d="M8 10h.01"/><path d="M8 14h.01"/></svg>
+          </div>
+          <h3 class="sector-card__title">Hotelería</h3>
+          <p class="sector-card__desc">Hoteles, resorts, centros de convenciones y espacios de entretenimiento con alta ocupación.</p>
+        </div>
+        <div class="sector-card">
+          <div class="sector-card__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <h3 class="sector-card__title">Energía</h3>
+          <p class="sector-card__desc">Plantas de generación, subestaciones eléctricas, parques eólicos y solares con protección especializada.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST / POR QUÉ ELEGIRNOS -->
+  <section class="trust" aria-labelledby="trust-title">
+    <div class="container">
+      <SectionHeader
+        titulo="Por Qué Elegir Nuestra Asesoría"
+        subtitulo="Experiencia técnica que marca la diferencia en tu proyecto"
+        idTitulo="trust-title"
+        parrafo1="Somos distribuidores autorizados de Elkhart Brass con acceso directo a especificaciones técnicas, documentación oficial y soporte del fabricante. Esta alianza nos permite ofrecerte asesoría con información de primera mano sobre los equipos más avanzados del mercado."
+        parrafo2="Nuestro compromiso es ayudarte a tomar decisiones informadas sin presión de compra. La asesoría técnica es completamente gratuita y puedes consultar todas las veces que necesites hasta que tengas claridad sobre los equipos correctos para tu proyecto."
+      />
+      <div class="trust__grid">
+        <div class="trust__item">
+          <h3 class="trust__item-title">Sin costo ni compromiso</h3>
+          <p class="trust__item-desc">La asesoría técnica es completamente gratuita. Te orientamos sin presión de compra.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Conocimiento normativo</h3>
+          <p class="trust__item-desc">Dominamos las NOM mexicanas y estándares NFPA para cumplimiento garantizado.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Respuesta rápida</h3>
+          <p class="trust__item-desc">Cotizaciones y recomendaciones técnicas en menos de 24 horas hábiles.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Experiencia industrial</h3>
+          <p class="trust__item-desc">Proyectos en refinerías, plantas, hospitales y edificios en toda la República.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Productos certificados</h3>
+          <p class="trust__item-desc">Solo recomendamos equipos con certificaciones UL, FM y NFPA vigentes.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Acompañamiento completo</h3>
+          <p class="trust__item-desc">Desde la especificación hasta la entrega con documentación para verificaciones.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEAD CAPTURE -->
+  <LeadCapture />
+
+  <!-- FAQ -->
+  <section class="faq" id="faq" aria-labelledby="faq-title">
+    <div class="container">
+      <SectionHeader
+        titulo="Preguntas Frecuentes sobre Equipos Contra Incendios"
+        subtitulo="Resolvemos las dudas más comunes sobre cotización, tipos de equipos, envíos y certificaciones"
+        idTitulo="faq-title"
+        parrafo1="Entendemos que la adquisición de equipos contra incendios involucra decisiones técnicas importantes: compatibilidad con sistemas existentes, cumplimiento normativo, certificaciones requeridas y logística de entrega. Hemos compilado las consultas más frecuentes de nuestros clientes para facilitar tu proceso de compra."
+        parrafo2="Si tu pregunta no aparece aquí, nuestro equipo de asesores técnicos está disponible vía WhatsApp, teléfono o correo electrónico para resolver cualquier duda específica sobre especificaciones, disponibilidad o requerimientos de instalación."
+      />
+      <Faq items={faqItems} id="faq" />
+    </div>
+  </section>
+
+  <!-- SERVICIOS RELACIONADOS -->
+  <section class="related-services" aria-labelledby="related-title">
+    <div class="container">
+      <SectionHeader
+        titulo="Otros Servicios"
+        subtitulo="Conoce todos los servicios que ofrecemos para tu proyecto contra incendios"
+        idTitulo="related-title"
+        parrafo1="Además de asesoría técnica, ofrecemos un ecosistema completo de servicios diseñados para acompañarte en todas las etapas de tu proyecto: desde la cotización inicial hasta el soporte postventa y mantenimiento de equipos."
+        parrafo2="Cada servicio está pensado para facilitar tu proceso de compra, garantizar el cumplimiento normativo y maximizar la vida útil de tu inversión en equipos contra incendios."
+      />
+      <div class="related-services__grid">
+        <div class="related-service">
+          <h3 class="related-service__title">Garantía y Respaldo</h3>
+          <p class="related-service__desc">Garantía del fabricante, certificados UL/FM y documentación completa para verificaciones.</p>
+          <a href="/servicios/garantia" class="related-service__link">Ver servicio →</a>
+        </div>
+        <div class="related-service">
+          <h3 class="related-service__title">Atención Empresarial</h3>
+          <p class="related-service__desc">Cuentas corporativas con ejecutivo dedicado, precios preferenciales y atención prioritaria.</p>
+          <a href="/servicios/empresas" class="related-service__link">Ver servicio →</a>
+        </div>
+        <div class="related-service">
+          <h3 class="related-service__title">Refacciones y Mantenimiento</h3>
+          <p class="related-service__desc">Componentes originales y kits de servicio para mantener tus equipos en óptimas condiciones.</p>
+          <a href="/servicios/mantenimiento" class="related-service__link">Ver servicio →</a>
+        </div>
+        <div class="related-service">
+          <h3 class="related-service__title">Logística y Envíos</h3>
+          <p class="related-service__desc">Entregas a toda la República Mexicana con embalaje especializado y seguimiento en tiempo real.</p>
+          <a href="/servicios/envios" class="related-service__link">Ver servicio →</a>
+        </div>
+        <div class="related-service">
+          <h3 class="related-service__title">Cotizaciones Corporativas</h3>
+          <p class="related-service__desc">Cotizaciones formales para licitaciones, compras corporativas y proyectos gubernamentales.</p>
+          <a href="/servicios/cotizaciones" class="related-service__link">Ver servicio →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta-section" aria-labelledby="cta-title">
+    <div class="container">
+      <div class="cta-section__content">
+        <h2 id="cta-title" class="cta-section__title">¿Listo para recibir asesoría especializada?</h2>
+        <p class="cta-section__text">Contáctanos hoy y recibe orientación técnica gratuita para seleccionar los equipos correctos para tu proyecto.</p>
+        <div class="cta-section__buttons">
+          <a href="https://wa.me/5215565298240" class="btn btn--white" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+          <a href="/equipos" class="btn btn--outline btn--white-outline">Ver catálogo de equipos</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  /* Service Sections */
+  .service-sections {
+    padding: var(--spacing-3xl) 0;
+    background: var(--color-white);
+  }
+
+  .service-block {
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    margin-bottom: var(--spacing-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+  }
+
+  .service-block__header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-lg);
+    background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-white) 100%);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .service-block__icon {
+    flex-shrink: 0;
+    width: 56px;
+    height: 56px;
+    background: var(--color-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+  }
+
+  .service-block__icon svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .service-block__title-wrap {
+    flex: 1;
+  }
+
+  .service-block__title {
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin-bottom: 0.25rem;
+  }
+
+  .service-block__subtitle {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
+  }
+
+  .service-block__content {
+    padding: var(--spacing-lg);
+  }
+
+  .service-block__text {
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .service-block__text p {
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-text);
+    line-height: var(--line-height-base);
+  }
+
+  .service-block__text p:last-child {
+    margin-bottom: 0;
+  }
+
+  .service-block__features {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+  }
+
+  .feature-card {
+    background: var(--color-accent);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius-sm);
+    border-left: 3px solid var(--color-primary);
+  }
+
+  .feature-card--highlight {
+    background: linear-gradient(135deg, rgba(196, 30, 58, 0.05) 0%, rgba(196, 30, 58, 0.1) 100%);
+    border-left-width: 4px;
+  }
+
+  .feature-card__title {
+    font-size: var(--font-size-base);
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin-bottom: 0.5rem;
+  }
+
+  .feature-card__desc {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
+    line-height: 1.5;
+  }
+
+  .service-block__list {
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-md);
+    background: var(--color-accent);
+    border-radius: var(--border-radius-sm);
+  }
+
+  .service-block__list-title {
+    font-size: var(--font-size-base);
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .check-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .check-list__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    font-size: var(--font-size-sm);
+    color: var(--color-text);
+  }
+
+  .check-list__item::before {
+    content: "✓";
+    color: var(--color-primary);
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  .service-block__cta {
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-md);
+    background: var(--color-secondary);
+    border-radius: var(--border-radius-sm);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-sm);
+    text-align: center;
+  }
+
+  .service-block__cta-text {
+    color: var(--footer-text-90);
+    font-size: var(--font-size-sm);
+  }
+
+  .service-block__contact {
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-lg);
+    background: var(--color-accent);
+    border-radius: var(--border-radius-sm);
+  }
+
+  .service-block__contact-title {
+    font-size: var(--font-size-base);
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin-bottom: var(--spacing-md);
+    text-align: center;
+  }
+
+  .contact-channels {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
+  }
+
+  .contact-channel {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm) var(--spacing-md);
+    background: var(--color-white);
+    border-radius: var(--border-radius-sm);
+    border: 1px solid var(--color-border);
+    transition: all var(--transition-fast);
+  }
+
+  .contact-channel:hover {
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-md);
+  }
+
+  .contact-channel__icon {
+    width: 40px;
+    height: 40px;
+    background: var(--color-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    flex-shrink: 0;
+  }
+
+  .contact-channel__icon svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .contact-channel__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-channel__label {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-light);
+  }
+
+  .contact-channel__value {
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    color: var(--color-secondary);
+  }
+
+  /* Process Section */
+  .process {
+    padding: var(--spacing-3xl) 0;
+    background: var(--color-accent);
+  }
+
+  .process__steps {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+
+  .process__step {
+    background: var(--color-white);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-md);
+    text-align: center;
+    position: relative;
+  }
+
+  .process__number {
+    width: 48px;
+    height: 48px;
+    background: var(--color-primary);
+    color: var(--color-white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    margin: 0 auto var(--spacing-sm);
+  }
+
+  .process__step-title {
+    font-size: var(--font-size-lg);
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin-bottom: 0.5rem;
+  }
+
+  .process__step-desc {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
+    line-height: 1.5;
+  }
+
+  /* Sectors */
+  .sectors {
+    padding: var(--spacing-3xl) 0;
+    background: var(--color-white);
+  }
+
+  .sectors-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .sector-card {
+    background: var(--color-accent);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius);
+    text-align: center;
+    border: 1px solid var(--color-border);
+    transition: all var(--transition-fast);
+  }
+
+  .sector-card:hover {
+    box-shadow: var(--shadow-md);
+    border-color: var(--color-primary);
+  }
+
+  .sector-card__icon {
+    width: 56px;
+    height: 56px;
+    background: var(--color-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto var(--spacing-sm);
+    color: var(--color-white);
+  }
+
+  .sector-card__icon svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .sector-card__title {
+    font-size: var(--font-size-base);
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin-bottom: 0.5rem;
+  }
+
+  .sector-card__desc {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
+    line-height: 1.5;
+  }
+
+  /* Responsive */
+  @media (min-width: 640px) {
+    .service-block__features {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .check-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-channels {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .process__steps {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sectors-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cta-section__buttons {
+      flex-direction: row;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .service-block__header {
+      padding: var(--spacing-xl);
+    }
+
+    .service-block__content {
+      padding: var(--spacing-xl);
+    }
+
+    .service-block__features {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .process__steps {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .sectors-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .cta-section__title {
+      font-size: var(--font-size-3xl);
+    }
+  }
+</style>
+

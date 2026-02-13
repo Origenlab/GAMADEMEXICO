@@ -1,0 +1,186 @@
+---
+import Layout from '../../layouts/Base.astro';
+import '../../styles/subcategory.css';
+import { getCollection } from 'astro:content';
+import SubcategoryProductCard from '../../components/SubcategoryProductCard.astro';
+import ProductSidebar from '../../components/ProductSidebar.astro';
+import RelatedProductsGrid from '../../components/RelatedProductsGrid.astro';
+import CotizacionForm from '../../components/CotizacionForm.astro';
+
+// 1. Obtener todos los productos de la categoría gabinetes-hidrantes
+const todosProductos = (await getCollection('productos', ({ data }) =>
+  data.categoria === 'gabinetes-hidrantes'
+)).sort((a, b) => a.data.orden - b.data.orden);
+
+// 2. Filtrar por subcategoría: Hidrantes de Banqueta
+const productosSubcategoria = todosProductos.filter(p => p.data.subcategoria === 'hidrantes');
+
+// 3. Obtener otros productos para sección de relacionados
+const otrosProductos = todosProductos.filter(p => !productosSubcategoria.includes(p));
+
+// 4. Definir subcategorías para navegación
+const subcategorias = [
+  { slug: 'gabinetes', nombre: 'Todos los Gabinetes', descripcion: 'Ver catalogo completo', activo: false },
+  { slug: 'tipo-30me', nombre: 'Gabinete Tipo 30ME', descripcion: 'Gabinete completo con manguera 30m', activo: false },
+  { slug: 'gabinete-empotrado', nombre: 'Gabinete Empotrado', descripcion: 'Instalacion al ras del muro', activo: false },
+  { slug: 'hidrante-banqueta', nombre: 'Hidrante de Banqueta', descripcion: 'Toma exterior hierro ductil', activo: true },
+  { slug: 'estacion-manguera', nombre: 'Estacion de Manguera', descripcion: 'Carrete oscilante 180 grados', activo: false },
+];
+---
+
+<Layout
+  title="Hidrantes de Banqueta Hierro Dúctil | México"
+  description='Hidrantes de banqueta en hierro dúctil ASTM A-536 con salidas de bronce. 2.5" y 4.5" para bomba. 250-350 PSI. UL 246, AWWA C502/C503. México.'
+  activePage="equipos"
+  heroTitle="Hidrantes Contra Incendio"
+  heroIntro="Hidrantes de banqueta para uso industrial y municipal, disponibles en configuraciones de barril seco y humedo con certificaciones UL y FM."
+  heroBadge="Gabinetes e Hidrantes"
+  heroMetrics={[
+    { value: "350 PSI", label: "Presion Max" },
+    { value: "UL/FM", label: "Certificado" },
+    { value: "AWWA", label: "Norma" }
+  ]}
+  heroPrimaryText="Solicitar Cotizacion"
+  heroPrimaryLink="#cotizar"
+  heroSecondaryText="Ver Catalogo"
+  heroSecondaryLink="#catalogo"
+  heroShowRightContent={true}
+>
+
+  <Fragment slot="hero-content">
+    <p>Los hidrantes contra incendio son componentes criticos en la infraestructura de proteccion contra incendios para aplicaciones industriales y municipales. Fabricados en hierro ductil ASTM A-536 con salidas de bronce ASTM B-62, nuestros hidrantes ofrecen la resistencia y durabilidad necesarias para servicio continuo en condiciones exigentes. Disponibles en configuraciones de barril seco para climas frios y barril humedo para instalaciones donde el congelamiento no es preocupacion, con presiones de trabajo de 250 a 350 PSI.</p>
+    <p>Cada hidrante cuenta con certificaciones UL 246, AWWA C502/C503 y NSF 61, garantizando cumplimiento con los estandares mas estrictos de la industria. El recubrimiento epoxico interior y exterior proporciona proteccion superior contra la corrosion, mientras que el vastago de acero inoxidable asegura operacion confiable a lo largo de los anos. Ideales para redes de agua municipales, parques industriales, refinerias, plantas quimicas y cualquier instalacion que requiera acceso a agua de alta presion para combate de incendios.</p>
+  </Fragment>
+
+  <!-- CONTENT + SIDEBAR -->
+  <section class="subcat-content">
+    <div class="container">
+      <div class="subcat-layout">
+
+        <!-- MAIN CONTENT -->
+        <main class="subcat-main">
+          <div class="catalog-header">
+            <div class="catalog-header__text">
+              <h2 class="catalog-header__title">Catálogo de Hidrantes de Banqueta</h2>
+              <p class="catalog-header__desc">Selecciona el modelo que mejor se adapte a tu instalación</p>
+            </div>
+            <div class="catalog-header__count">
+              <span class="catalog-header__number">{productosSubcategoria.length}</span>
+              <span class="catalog-header__label">producto{productosSubcategoria.length !== 1 ? 's' : ''}</span>
+            </div>
+          </div>
+
+          <!-- Products Grid -->
+          <div class="categories__grid">
+            {productosSubcategoria.map((producto) => (
+              <SubcategoryProductCard
+                title={producto.data.title}
+                description={producto.data.description}
+                brand={producto.data.marca}
+                image={producto.data.imagen}
+                productSlug={producto.id}
+                flow={producto.data.flujo}
+                material={producto.data.material}
+                certifications={producto.data.certificaciones}
+              />
+            ))}
+          </div>
+
+          {productosSubcategoria.length === 0 && (
+            <div class="catalog-empty">
+              <div class="catalog-empty__icon">🔍</div>
+              <h3 class="catalog-empty__title">Próximamente más opciones</h3>
+              <p class="catalog-empty__text">Estamos agregando más hidrantes de diferentes configuraciones. Solicita una cotización personalizada.</p>
+              <a href="#cotizar" class="btn btn--primary">Solicitar Cotización</a>
+            </div>
+          )}
+
+          <!-- Tech Info -->
+          <div class="tech-info">
+            <h3 class="tech-info__title">Especificaciones Técnicas de Hidrantes</h3>
+            <div class="tech-info__grid">
+              <div class="tech-info__item">
+                <span class="tech-info__label">Presión trabajo</span>
+                <span class="tech-info__value">250-350 PSI</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Salidas 2.5"</span>
+                <span class="tech-info__value">2 x NST (7.5 TPI)</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Salida bomba</span>
+                <span class="tech-info__value">4.5" NST (4 TPI)</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Entrada</span>
+                <span class="tech-info__value">6" ANSI B16.1</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Cuerpo</span>
+                <span class="tech-info__value">Hierro dúctil</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Recubrimiento</span>
+                <span class="tech-info__value">Epóxico</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA Final -->
+          <div class="subcat-cta-final">
+            <div class="subcat-cta-final__content">
+              <h3 class="subcat-cta-final__title">¿Necesitas hidrantes para un proyecto municipal?</h3>
+              <p class="subcat-cta-final__desc">Ofrecemos volumen para proyectos de redes de agua municipales e industriales con certificaciones completas.</p>
+            </div>
+            <a href="#cotizar" class="btn btn--primary">Solicitar Cotización Mayoreo</a>
+          </div>
+        </main>
+
+        <!-- SIDEBAR -->
+        <ProductSidebar
+          navTitulo="Tipos de Gabinetes"
+          subcategorias={subcategorias}
+          baseUrl="/gabinetes"
+          backLinkHref="/gabinetes-contra-incendios"
+          backLinkTexto="Ver todos los gabinetes"
+          certificaciones={[
+            { siglas: "FM", nombre: "Factory Mutual" },
+            { siglas: "UL", nombre: "UL Listed" },
+            { siglas: "NOM", nombre: "NOM-002-STPS" }
+          ]}
+          marcas={["Potter Roemer", "JL Industries", "Kennedy", "Mueller"]}
+          aplicaciones={[
+            "Hidrantes de pared",
+            "Tomas de agua",
+            "Redes contra incendio",
+            "Instalaciones industriales"
+          ]}
+          productosRelacionados={[
+            { href: "/boquillas-contra-incendios", nombre: "Boquillas Contra Incendios" },
+            { href: "/mangueras-contra-incendios", nombre: "Mangueras Contra Incendios" },
+            { href: "/valvulas-contra-incendios", nombre: "Válvulas Contra Incendios" },
+            { href: "/conexiones-herrajes-contra-incendios", nombre: "Conexiones y Herrajes" }
+          ]}
+        />
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RELATED PRODUCTS -->
+  <RelatedProductsGrid
+    titulo="Otros Gabinetes y Estaciones"
+    subtitulo="Explora más opciones para tu sistema de protección"
+    productos={otrosProductos}
+    maxProductos={3}
+    verTodosLink="/gabinetes-estaciones-contra-incendios"
+    verTodosTexto="Ver todos los gabinetes"
+  />
+
+  <CotizacionForm
+    titulo="Cotiza Hidrantes"
+    tipoEquipo="Gabinetes e hidrantes"
+    pagina="Gabinetes Hidrantes"
+  />
+
+</Layout>

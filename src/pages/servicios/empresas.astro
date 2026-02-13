@@ -1,0 +1,843 @@
+---
+import Layout from '../../layouts/Base.astro';
+import '../../styles/services-shared.css';
+import Faq from '../../components/Faq.astro';
+import SectionHeader from '../../components/SectionHeader.astro';
+import LeadCapture from '../../components/LeadCapture.astro';
+
+const faqItems = [
+  {
+    pregunta: '¿Cómo puedo solicitar una cotización de equipos contra incendios en Gama de México?',
+    respuesta: 'Puedes solicitar tu cotización a través de nuestro formulario en línea (se envía directo a WhatsApp), escribiéndonos al WhatsApp 55 6529 8240, o llamando al 55 1543 7164. Solo necesitamos el tipo de equipo, las cantidades aproximadas y la ubicación de entrega. Respondemos en menos de 24 horas.',
+  },
+  {
+    pregunta: '¿Qué tipos de equipos contra incendios venden?',
+    respuesta: 'Manejamos un catálogo completo en seis categorías: Monitores (tipo corazón, cuello de cisne, certificados y UL Listed), Boquillas (tipo pistola, turbo jet y certificadas), Mangueras (millhose, blindex y de succión), Válvulas (compuerta, globo y angular), Conexiones y herrajes de bronce (chiflones, adaptadores, coples, toma siamesa, conexión Y), y Gabinetes e hidrantes (tipo 30ME e hidrante de banqueta).',
+  },
+  {
+    pregunta: '¿Realizan envíos de equipos contra incendios a todo México?',
+    respuesta: 'Sí, realizamos envíos a toda la República Mexicana. Operamos desde Ciudad de México (Santa Fe) y Querétaro, lo que permite coordinar logística eficiente al centro, norte y sureste del país.',
+  },
+  {
+    pregunta: '¿Ofrecen asesoría técnica para elegir equipos contra incendios?',
+    respuesta: 'Sí. Nuestros asesores técnicos evalúan tipo de riesgo, normativa aplicable (NOM-002-STPS, protección civil), especificaciones hidráulicas y de diseño para recomendarte los componentes exactos. La asesoría es gratuita y sin compromiso.',
+  },
+  {
+    pregunta: '¿Los equipos contra incendios que venden tienen certificaciones?',
+    respuesta: 'Sí. Como distribuidores autorizados de Elkhart Brass contamos con monitores y boquillas certificados UL (Underwriters Laboratories) y FM (Factory Mutual). Proporcionamos documentación técnica para verificaciones de protección civil.',
+  },
+  {
+    pregunta: '¿Dónde se ubican las sucursales de Gama de México?',
+    respuesta: 'Tenemos dos sucursales: Prol. Paseo de la Reforma 1015, Piso 1, Santa Fe, 01376 Ciudad de México, y Avenida Constituyentes 120, Santiago de Querétaro, 76030. Horario: lunes a domingo de 6:00 a 16:00 horas.',
+  },
+  {
+    pregunta: '¿Qué sectores o industrias atiende Gama de México?',
+    respuesta: 'Atendemos plantas manufactureras, industria química y petroquímica, terminales de almacenamiento, centros de datos, constructoras, hospitales, hoteles, corporativos, firmas de ingeniería, instaladores certificados y brigadas de protección civil. Ofrecemos venta unitaria y cotizaciones corporativas.',
+  },
+];
+---
+
+<Layout
+  title="Atención a Empresas y Proyectos | Equipos Contra Incendios | Gama de México"
+  description="Servicio dedicado para constructoras, instaladores certificados y plantas industriales. Cotizaciones para licitaciones, obras gubernamentales y desarrollos inmobiliarios. Precios por volumen."
+  activePage="servicios"
+  heroTitle="Atención a Empresas"
+  heroIntro="Soluciones integrales de equipos contra incendios para empresas industriales, comerciales y de servicios. Cotizaciones corporativas, entregas programadas y condiciones especiales."
+  heroBadge="Servicios"
+  heroMetrics={[
+    { valor: "B2B", texto: "Atención empresarial" },
+    { valor: "Crédito", texto: "Facilidades de pago" },
+    { valor: "Volumen", texto: "Precios especiales" }
+  ]}
+  heroPrimaryText="Solicitar Cotización Corporativa"
+  heroPrimaryLink="#cotizar"
+  heroSecondaryText="Ver Servicios"
+  heroSecondaryLink="/servicios"
+  heroShowRightContent={true}
+>
+  <Fragment slot="hero-content">
+    <p>En Gama de México entendemos las necesidades específicas del sector empresarial. Ofrecemos un servicio B2B especializado que incluye atención personalizada, cotizaciones formales para licitaciones y proyectos, así como entregas coordinadas según los cronogramas de obra de nuestros clientes corporativos.</p>
+    <p>Nuestros clientes empresariales disfrutan de beneficios exclusivos: precios preferenciales por volumen, líneas de crédito comercial, inventario reservado para proyectos de largo plazo, documentación técnica completa y un ejecutivo de cuenta dedicado que garantiza una comunicación fluida y resolución eficiente de cualquier requerimiento.</p>
+  </Fragment>
+
+  <!-- SUBSECCIONES DE EMPRESAS -->
+  <section class="service-sections" id="servicios-empresas" aria-labelledby="sections-title">
+    <div class="container">
+      <SectionHeader
+        titulo="Soluciones para Cada Tipo de Proyecto"
+        subtitulo="Adaptamos nuestro servicio a las necesidades específicas de tu empresa y proyecto"
+        idTitulo="sections-title"
+        parrafo1="Entendemos que cada tipo de empresa tiene necesidades particulares en sus procesos de compra. Constructoras requieren entregas coordinadas con el avance de obra, licitaciones exigen documentación específica, y plantas industriales necesitan equipos con certificaciones FM."
+        parrafo2="Nuestro equipo comercial tiene experiencia atendiendo los requerimientos específicos de cada sector. Te asignamos un asesor dedicado que conoce tu industria y coordina todo el proceso para garantizar una experiencia de compra eficiente."
+      />
+
+      <!-- Constructoras e Instaladores -->
+      <div class="service-block" id="constructoras">
+        <div class="service-block__header">
+          <div class="service-block__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M17 18h1"/><path d="M12 18h1"/><path d="M7 18h1"/></svg>
+          </div>
+          <div class="service-block__title-wrap">
+            <h3 class="service-block__title">Constructoras e Instaladores Certificados</h3>
+            <p class="service-block__subtitle">Suministro coordinado para proyectos de construcción</p>
+          </div>
+        </div>
+        <div class="service-block__content">
+          <div class="service-block__text">
+            <p>Trabajamos con <strong>constructoras, firmas de ingeniería e instaladores certificados</strong> que ejecutan proyectos de sistemas contra incendios. Entendemos que tu reputación depende de cumplir con especificaciones técnicas exactas y fechas de entrega inamovibles.</p>
+            <p>Ofrecemos <strong>inventario reservado</strong> para tus proyectos, entregas programadas según tu calendario de obra y asesoría técnica para resolver cualquier duda de especificación en el momento. Tu asesor asignado conoce tu proyecto y coordina todo el proceso.</p>
+          </div>
+          <div class="service-block__features">
+            <div class="feature-card">
+              <h4 class="feature-card__title">Entregas Programadas</h4>
+              <p class="feature-card__desc">Coordinamos entregas según tu calendario de obra. Entregas parciales, escalonadas o en una sola fecha.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Inventario Reservado</h4>
+              <p class="feature-card__desc">Apartamos equipos para tu proyecto con anticipación para garantizar disponibilidad cuando los necesites.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Asesor Dedicado</h4>
+              <p class="feature-card__desc">Un solo punto de contacto que conoce tu proyecto y resuelve cualquier necesidad de forma ágil.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Soporte en Sitio</h4>
+              <p class="feature-card__desc">Verificación de equipos en recepción, resolución de dudas técnicas y gestión de garantías.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Licitaciones Públicas -->
+      <div class="service-block" id="licitaciones">
+        <div class="service-block__header">
+          <div class="service-block__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          </div>
+          <div class="service-block__title-wrap">
+            <h3 class="service-block__title">Licitaciones Públicas</h3>
+            <p class="service-block__subtitle">Documentación completa para procesos de licitación gubernamental</p>
+          </div>
+        </div>
+        <div class="service-block__content">
+          <div class="service-block__text">
+            <p>Conocemos los <strong>requisitos documentales</strong> de licitaciones públicas federales, estatales y municipales. Preparamos cotizaciones formales con toda la documentación técnica, fiscal y legal que requieren los procesos de CompraNet y licitaciones directas.</p>
+            <p>Entregamos <strong>fichas técnicas, certificados de origen, cartas de distribuidor autorizado</strong>, constancias de cumplimiento normativo y cualquier documento adicional que solicite la convocatoria. Tu propuesta técnica estará completa y profesional.</p>
+          </div>
+          <div class="service-block__features">
+            <div class="feature-card feature-card--highlight">
+              <h4 class="feature-card__title">Cotización Formal</h4>
+              <p class="feature-card__desc">Propuestas económicas en formato oficial con desglose de partidas, vigencia y condiciones comerciales.</p>
+            </div>
+            <div class="feature-card feature-card--highlight">
+              <h4 class="feature-card__title">Documentación Técnica</h4>
+              <p class="feature-card__desc">Fichas técnicas, certificados UL/FM, manuales y documentación del fabricante para cada partida.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Documentación Fiscal</h4>
+              <p class="feature-card__desc">Constancia de situación fiscal, opinión de cumplimiento SAT y documentos de constitución legal.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Cartas y Constancias</h4>
+              <p class="feature-card__desc">Carta de distribuidor autorizado, garantías del fabricante y constancias de cumplimiento normativo.</p>
+            </div>
+          </div>
+          <div class="service-block__list">
+            <h4 class="service-block__list-title">Documentos que preparamos para licitaciones:</h4>
+            <ul class="check-list">
+              <li class="check-list__item">Cotización formal con desglose por partidas</li>
+              <li class="check-list__item">Fichas técnicas del fabricante por cada equipo</li>
+              <li class="check-list__item">Certificados UL, FM y NFPA aplicables</li>
+              <li class="check-list__item">Carta de distribuidor autorizado Elkhart Brass</li>
+              <li class="check-list__item">Constancia de situación fiscal actualizada</li>
+              <li class="check-list__item">Opinión de cumplimiento de obligaciones fiscales</li>
+              <li class="check-list__item">Acta constitutiva y poder del representante legal</li>
+              <li class="check-list__item">Garantía del fabricante por escrito</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Desarrollos Inmobiliarios -->
+      <div class="service-block" id="desarrollos">
+        <div class="service-block__header">
+          <div class="service-block__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/><path d="M9 9v.01"/><path d="M9 12v.01"/><path d="M9 15v.01"/><path d="M9 18v.01"/></svg>
+          </div>
+          <div class="service-block__title-wrap">
+            <h3 class="service-block__title">Desarrollos Inmobiliarios</h3>
+            <p class="service-block__subtitle">Suministro por etapas para proyectos de construcción</p>
+          </div>
+        </div>
+        <div class="service-block__content">
+          <div class="service-block__text">
+            <p>Los desarrollos inmobiliarios —torres de departamentos, centros comerciales, parques industriales— requieren <strong>entregas escalonadas</strong> que se ajusten a las etapas de construcción. Coordinamos el suministro de equipos contra incendios sincronizado con tu avance de obra.</p>
+            <p>Trabajamos con desarrolladores que construyen <strong>múltiples proyectos simultáneos</strong>. Ofrecemos acuerdos de suministro que cubren varios proyectos con precios negociados, inventario prioritario y un solo punto de contacto para todas tus obras.</p>
+          </div>
+          <div class="service-block__features">
+            <div class="feature-card">
+              <h4 class="feature-card__title">Entregas por Etapas</h4>
+              <p class="feature-card__desc">Suministro sincronizado con el avance de obra. Entregas por torre, nivel o fase de construcción.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Múltiples Proyectos</h4>
+              <p class="feature-card__desc">Acuerdos comerciales que cubren varios desarrollos con condiciones preferenciales.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Coordinación con Instaladores</h4>
+              <p class="feature-card__desc">Trabajamos directamente con tu instalador certificado para asegurar compatibilidad.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Documentación para Entrega</h4>
+              <p class="feature-card__desc">Fichas técnicas y certificados listos para entrega-recepción y verificaciones de PC.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Precios por Volumen -->
+      <div class="service-block" id="volumen">
+        <div class="service-block__header">
+          <div class="service-block__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <div class="service-block__title-wrap">
+            <h3 class="service-block__title">Precios por Volumen</h3>
+            <p class="service-block__subtitle">Condiciones comerciales especiales para pedidos corporativos</p>
+          </div>
+        </div>
+        <div class="service-block__content">
+          <div class="service-block__text">
+            <p>Ofrecemos <strong>precios especiales por volumen</strong> para pedidos corporativos y proyectos de gran escala. Entre mayor sea tu pedido, mejores condiciones comerciales podemos ofrecerte. Negociamos caso por caso para darte la mejor propuesta posible.</p>
+            <p>Además de precios preferenciales, los clientes corporativos obtienen beneficios adicionales: <strong>crédito comercial</strong> (sujeto a aprobación), entregas prioritarias, inventario reservado y atención preferencial de nuestro equipo de soporte técnico.</p>
+          </div>
+          <div class="service-block__features">
+            <div class="feature-card">
+              <h4 class="feature-card__title">Descuentos por Volumen</h4>
+              <p class="feature-card__desc">Precios escalonados según cantidad. Cotizamos cada proyecto para darte la mejor propuesta.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Crédito Comercial</h4>
+              <p class="feature-card__desc">Líneas de crédito para clientes recurrentes. Plazos de 15, 30 o 45 días según historial.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Facturación CFDI 4.0</h4>
+              <p class="feature-card__desc">Facturación electrónica con complementos fiscales, addendas y requisitos corporativos.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Acuerdos Anuales</h4>
+              <p class="feature-card__desc">Contratos de suministro con precios fijos y disponibilidad garantizada durante el año.</p>
+            </div>
+          </div>
+          <div class="service-block__contact">
+            <h4 class="service-block__contact-title">Contacta a Ventas Corporativas</h4>
+            <div class="contact-channels">
+              <a href="https://wa.me/5215565298240" class="contact-channel" target="_blank" rel="noopener">
+                <span class="contact-channel__icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                </span>
+                <span class="contact-channel__info">
+                  <span class="contact-channel__label">WhatsApp</span>
+                  <span class="contact-channel__value">55 6529 8240</span>
+                </span>
+              </a>
+              <a href="tel:+525515437164" class="contact-channel">
+                <span class="contact-channel__icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </span>
+                <span class="contact-channel__info">
+                  <span class="contact-channel__label">Teléfono</span>
+                  <span class="contact-channel__value">55 1543 7164</span>
+                </span>
+              </a>
+              <a href="mailto:ventas@gamademexico.com" class="contact-channel">
+                <span class="contact-channel__icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </span>
+                <span class="contact-channel__info">
+                  <span class="contact-channel__label">Email</span>
+                  <span class="contact-channel__value">ventas@gamademexico.com</span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESO CORPORATIVO -->
+  <section class="process" aria-labelledby="process-title">
+    <div class="container">
+      <SectionHeader
+        titulo="Proceso de Atención Corporativa"
+        subtitulo="Cómo trabajamos con empresas y proyectos de gran escala"
+        idTitulo="process-title"
+        parrafo1="Hemos diseñado un proceso estructurado para atender proyectos corporativos con la profesionalidad que merecen. Desde el primer contacto hasta la entrega final, cada paso está orientado a garantizar que tu proyecto reciba la atención y seguimiento que necesita."
+        parrafo2="Tu asesor asignado coordina todo el proceso internamente: verificación de especificaciones, disponibilidad de inventario, logística de entrega y documentación. Un solo punto de contacto que conoce tu proyecto de principio a fin."
+      />
+      <div class="process__steps">
+        <div class="process__step">
+          <div class="process__number" aria-hidden="true">1</div>
+          <h3 class="process__step-title">Contacto inicial</h3>
+          <p class="process__step-desc">Cuéntanos sobre tu empresa y proyecto: tipo de obra, ubicación, volumen estimado y cronograma.</p>
+        </div>
+        <div class="process__step">
+          <div class="process__number" aria-hidden="true">2</div>
+          <h3 class="process__step-title">Revisión técnica</h3>
+          <p class="process__step-desc">Analizamos especificaciones, planos y requisitos para preparar una propuesta que cumpla al 100%.</p>
+        </div>
+        <div class="process__step">
+          <div class="process__number" aria-hidden="true">3</div>
+          <h3 class="process__step-title">Propuesta comercial</h3>
+          <p class="process__step-desc">Entregamos cotización formal con precios, tiempos de entrega, condiciones de pago y documentación.</p>
+        </div>
+        <div class="process__step">
+          <div class="process__number" aria-hidden="true">4</div>
+          <h3 class="process__step-title">Ejecución y entrega</h3>
+          <p class="process__step-desc">Coordinamos fabricación, logística y entrega según tu calendario. Seguimiento hasta cierre de proyecto.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLIENTES QUE ATENDEMOS -->
+  <section class="clients" aria-labelledby="clients-title">
+    <div class="container">
+      <SectionHeader
+        titulo="Tipos de Clientes que Atendemos"
+        subtitulo="Experiencia comprobada atendiendo a diversos sectores empresariales"
+        idTitulo="clients-title"
+        parrafo1="A lo largo de los años hemos desarrollado experiencia atendiendo empresas de diversos sectores, cada uno con requerimientos particulares. Conocemos los procesos de compra, tiempos de decisión y documentación que cada tipo de cliente necesita."
+        parrafo2="Ya sea que formes parte de una constructora ejecutando múltiples proyectos, una planta industrial con programas de mantenimiento o una dependencia gubernamental con procesos de licitación, nuestro equipo está preparado para atenderte."
+      />
+      <div class="clients-grid">
+        <div class="client-card">
+          <div class="client-card__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/></svg>
+          </div>
+          <h3 class="client-card__title">Constructoras</h3>
+          <p class="client-card__desc">Empresas de construcción ejecutando proyectos residenciales, comerciales e industriales con sistemas contra incendios.</p>
+        </div>
+        <div class="client-card">
+          <div class="client-card__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <h3 class="client-card__title">Instaladores Certificados</h3>
+          <p class="client-card__desc">Empresas especializadas en instalación y mantenimiento de sistemas de protección contra incendios.</p>
+        </div>
+        <div class="client-card">
+          <div class="client-card__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+          </div>
+          <h3 class="client-card__title">Firmas de Ingeniería</h3>
+          <p class="client-card__desc">Despachos de ingeniería que diseñan sistemas contra incendios y requieren equipos con especificaciones exactas.</p>
+        </div>
+        <div class="client-card">
+          <div class="client-card__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg>
+          </div>
+          <h3 class="client-card__title">Plantas Industriales</h3>
+          <p class="client-card__desc">Manufactura, petroquímica, alimentos y otras industrias con requerimientos de protección contra incendios.</p>
+        </div>
+        <div class="client-card">
+          <div class="client-card__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M9 8h1"/><path d="M9 12h1"/><path d="M9 16h1"/><path d="M14 8h1"/><path d="M14 12h1"/><path d="M14 16h1"/><path d="M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16"/></svg>
+          </div>
+          <h3 class="client-card__title">Gobierno y Sector Público</h3>
+          <p class="client-card__desc">Dependencias federales, estatales y municipales con procesos de licitación y requisitos documentales.</p>
+        </div>
+        <div class="client-card">
+          <div class="client-card__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/><path d="M12 10h.01"/><path d="M12 14h.01"/><path d="M16 10h.01"/><path d="M16 14h.01"/><path d="M8 10h.01"/><path d="M8 14h.01"/></svg>
+          </div>
+          <h3 class="client-card__title">Desarrolladores Inmobiliarios</h3>
+          <p class="client-card__desc">Empresas con múltiples desarrollos simultáneos que requieren suministro coordinado por etapas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST / POR QUÉ ELEGIRNOS -->
+  <section class="trust" aria-labelledby="trust-title">
+    <div class="container">
+      <SectionHeader
+        titulo="Por Qué las Empresas nos Eligen"
+        subtitulo="Beneficios de trabajar con Gama de México en tus proyectos"
+        idTitulo="trust-title"
+        parrafo1="Somos distribuidores autorizados de Elkhart Brass, lo que nos permite ofrecer productos genuinos con garantía oficial, documentación completa y precios competitivos. Esta alianza es tu garantía de que estás adquiriendo equipos de calidad certificada para tus proyectos."
+        parrafo2="Nuestros clientes corporativos valoran la combinación de productos de calidad, atención personalizada y cumplimiento de compromisos. Entendemos que tu reputación depende de proveedores confiables, y trabajamos para estar a la altura."
+      />
+      <div class="trust__grid">
+        <div class="trust__item">
+          <h3 class="trust__item-title">Asesor dedicado</h3>
+          <p class="trust__item-desc">Un solo punto de contacto que conoce tu proyecto y resuelve cualquier necesidad de forma ágil.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Precios competitivos</h3>
+          <p class="trust__item-desc">Descuentos por volumen y condiciones comerciales negociadas para cada proyecto.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Entregas confiables</h3>
+          <p class="trust__item-desc">Cumplimos fechas de entrega. Coordinación logística profesional en toda la República.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Documentación completa</h3>
+          <p class="trust__item-desc">Fichas técnicas, certificados y documentación para licitaciones y verificaciones.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Productos certificados</h3>
+          <p class="trust__item-desc">Equipos originales de Elkhart Brass con certificaciones UL, FM y garantía del fabricante.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Experiencia comprobada</h3>
+          <p class="trust__item-desc">Proyectos ejecutados en refinerías, plantas, hospitales y desarrollos en todo México.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEAD CAPTURE -->
+  <LeadCapture />
+
+  <!-- FAQ -->
+  <section class="faq" id="faq" aria-labelledby="faq-title">
+    <div class="container">
+      <SectionHeader
+        titulo="Preguntas Frecuentes sobre Equipos Contra Incendios"
+        subtitulo="Resolvemos las dudas más comunes sobre cotización, tipos de equipos, envíos y certificaciones"
+        idTitulo="faq-title"
+        parrafo1="Entendemos que la adquisición de equipos contra incendios involucra decisiones técnicas importantes: compatibilidad con sistemas existentes, cumplimiento normativo, certificaciones requeridas y logística de entrega. Hemos compilado las consultas más frecuentes de nuestros clientes para facilitar tu proceso de compra."
+        parrafo2="Si tu pregunta no aparece aquí, nuestro equipo de asesores técnicos está disponible vía WhatsApp, teléfono o correo electrónico para resolver cualquier duda específica sobre especificaciones, disponibilidad o requerimientos de instalación."
+      />
+      <Faq items={faqItems} id="faq" />
+    </div>
+  </section>
+
+  <!-- SERVICIOS RELACIONADOS -->
+  <section class="related-services" aria-labelledby="related-title">
+    <div class="container">
+      <SectionHeader
+        titulo="Otros Servicios"
+        subtitulo="Conoce todos los servicios que ofrecemos para tu proyecto contra incendios"
+        idTitulo="related-title"
+        parrafo1="Además de atención empresarial dedicada, ofrecemos un ecosistema completo de servicios diseñados para acompañarte en todas las etapas de tu proyecto: desde la asesoría técnica inicial hasta el soporte postventa y mantenimiento de equipos."
+        parrafo2="Cada servicio está pensado para facilitar tu proceso de compra, garantizar el cumplimiento normativo y maximizar la vida útil de tu inversión en equipos contra incendios."
+      />
+      <div class="related-services__grid">
+        <div class="related-service">
+          <h3 class="related-service__title">Garantía y Respaldo</h3>
+          <p class="related-service__desc">Garantía del fabricante, certificados UL/FM y documentación completa para verificaciones.</p>
+          <a href="/servicios/garantia" class="related-service__link">Ver servicio →</a>
+        </div>
+        <div class="related-service">
+          <h3 class="related-service__title">Asesoría Técnica</h3>
+          <p class="related-service__desc">Orientación especializada para seleccionar equipos según tu tipo de riesgo y normativa.</p>
+          <a href="/servicios/asesoria" class="related-service__link">Ver servicio →</a>
+        </div>
+        <div class="related-service">
+          <h3 class="related-service__title">Refacciones y Mantenimiento</h3>
+          <p class="related-service__desc">Componentes originales y kits de servicio para mantener tus equipos en óptimas condiciones.</p>
+          <a href="/servicios/mantenimiento" class="related-service__link">Ver servicio →</a>
+        </div>
+        <div class="related-service">
+          <h3 class="related-service__title">Logística y Envíos</h3>
+          <p class="related-service__desc">Entregas a toda la República Mexicana con embalaje especializado y seguimiento.</p>
+          <a href="/servicios/envios" class="related-service__link">Ver servicio →</a>
+        </div>
+        <div class="related-service">
+          <h3 class="related-service__title">Cotizaciones Corporativas</h3>
+          <p class="related-service__desc">Cotizaciones formales para licitaciones, compras corporativas y proyectos gubernamentales.</p>
+          <a href="/servicios/cotizaciones" class="related-service__link">Ver servicio →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta-section" aria-labelledby="cta-title">
+    <div class="container">
+      <div class="cta-section__content">
+        <h2 id="cta-title" class="cta-section__title">¿Tienes un proyecto corporativo?</h2>
+        <p class="cta-section__text">Contáctanos hoy y recibe atención personalizada, cotización competitiva y documentación completa para tu proyecto.</p>
+        <div class="cta-section__buttons">
+          <a href="https://wa.me/5215565298240" class="btn btn--white" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+          <a href="/equipos" class="btn btn--outline btn--white-outline">Ver catálogo de equipos</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  /* Service Sections */
+  .service-sections {
+    padding: var(--spacing-3xl) 0;
+    background: var(--color-white);
+  }
+
+  .service-block {
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    margin-bottom: var(--spacing-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+  }
+
+  .service-block__header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-lg);
+    background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-white) 100%);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .service-block__icon {
+    flex-shrink: 0;
+    width: 56px;
+    height: 56px;
+    background: var(--color-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+  }
+
+  .service-block__icon svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .service-block__title-wrap {
+    flex: 1;
+  }
+
+  .service-block__title {
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin-bottom: 0.25rem;
+  }
+
+  .service-block__subtitle {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
+  }
+
+  .service-block__content {
+    padding: var(--spacing-lg);
+  }
+
+  .service-block__text {
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .service-block__text p {
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-text);
+    line-height: var(--line-height-base);
+  }
+
+  .service-block__text p:last-child {
+    margin-bottom: 0;
+  }
+
+  .service-block__features {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+  }
+
+  .feature-card {
+    background: var(--color-accent);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius-sm);
+    border-left: 3px solid var(--color-primary);
+  }
+
+  .feature-card--highlight {
+    background: linear-gradient(135deg, rgba(196, 30, 58, 0.05) 0%, rgba(196, 30, 58, 0.1) 100%);
+    border-left-width: 4px;
+  }
+
+  .feature-card__title {
+    font-size: var(--font-size-base);
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin-bottom: 0.5rem;
+  }
+
+  .feature-card__desc {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
+    line-height: 1.5;
+  }
+
+  .service-block__list {
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-md);
+    background: var(--color-accent);
+    border-radius: var(--border-radius-sm);
+  }
+
+  .service-block__list-title {
+    font-size: var(--font-size-base);
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .check-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .check-list__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    font-size: var(--font-size-sm);
+    color: var(--color-text);
+  }
+
+  .check-list__item::before {
+    content: "✓";
+    color: var(--color-primary);
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  .service-block__contact {
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-lg);
+    background: var(--color-accent);
+    border-radius: var(--border-radius-sm);
+  }
+
+  .service-block__contact-title {
+    font-size: var(--font-size-base);
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin-bottom: var(--spacing-md);
+    text-align: center;
+  }
+
+  .contact-channels {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
+  }
+
+  .contact-channel {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm) var(--spacing-md);
+    background: var(--color-white);
+    border-radius: var(--border-radius-sm);
+    border: 1px solid var(--color-border);
+    transition: all var(--transition-fast);
+  }
+
+  .contact-channel:hover {
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-md);
+  }
+
+  .contact-channel__icon {
+    width: 40px;
+    height: 40px;
+    background: var(--color-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    flex-shrink: 0;
+  }
+
+  .contact-channel__icon svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .contact-channel__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-channel__label {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-light);
+  }
+
+  .contact-channel__value {
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    color: var(--color-secondary);
+  }
+
+  /* Process Section */
+  .process {
+    padding: var(--spacing-3xl) 0;
+    background: var(--color-accent);
+  }
+
+  .process__steps {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+
+  .process__step {
+    background: var(--color-white);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-md);
+    text-align: center;
+    position: relative;
+  }
+
+  .process__number {
+    width: 48px;
+    height: 48px;
+    background: var(--color-primary);
+    color: var(--color-white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    margin: 0 auto var(--spacing-sm);
+  }
+
+  .process__step-title {
+    font-size: var(--font-size-lg);
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin-bottom: 0.5rem;
+  }
+
+  .process__step-desc {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
+    line-height: 1.5;
+  }
+
+  /* Clients */
+  .clients {
+    padding: var(--spacing-3xl) 0;
+    background: var(--color-white);
+  }
+
+  .clients-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .client-card {
+    background: var(--color-accent);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius);
+    text-align: center;
+    border: 1px solid var(--color-border);
+    transition: all var(--transition-fast);
+  }
+
+  .client-card:hover {
+    box-shadow: var(--shadow-md);
+    border-color: var(--color-primary);
+  }
+
+  .client-card__icon {
+    width: 56px;
+    height: 56px;
+    background: var(--color-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto var(--spacing-sm);
+    color: var(--color-white);
+  }
+
+  .client-card__icon svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .client-card__title {
+    font-size: var(--font-size-base);
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin-bottom: 0.5rem;
+  }
+
+  .client-card__desc {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
+    line-height: 1.5;
+  }
+
+  /* Responsive */
+  @media (min-width: 640px) {
+    .service-block__features {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .check-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-channels {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .process__steps {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .clients-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cta-section__buttons {
+      flex-direction: row;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .service-block__header {
+      padding: var(--spacing-xl);
+    }
+
+    .service-block__content {
+      padding: var(--spacing-xl);
+    }
+
+    .service-block__features {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .process__steps {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .clients-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .cta-section__title {
+      font-size: var(--font-size-3xl);
+    }
+  }
+</style>
+

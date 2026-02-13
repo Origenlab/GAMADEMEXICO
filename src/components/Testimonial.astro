@@ -1,0 +1,90 @@
+---
+// Testimonial component - Reseña/testimonio de cliente
+interface Props {
+  texto: string;
+  autor: string;
+  cargo: string;
+  empresa: string;
+  estrellas?: number;
+}
+
+const { texto, autor, cargo, empresa, estrellas = 5 } = Astro.props;
+---
+
+<div class="testimonial">
+  <div class="testimonial__stars" aria-label={`Calificación: ${estrellas} de 5 estrellas`}>
+    {Array.from({ length: 5 }).map((_, i) => (
+      <span class={`testimonial__star ${i < estrellas ? 'testimonial__star--filled' : ''}`}>★</span>
+    ))}
+  </div>
+  <blockquote class="testimonial__quote">
+    "{texto}"
+  </blockquote>
+  <div class="testimonial__author">
+    <p class="testimonial__name">{autor}</p>
+    <p class="testimonial__role">{cargo}</p>
+    <p class="testimonial__company">{empresa}</p>
+  </div>
+</div>
+
+<style>
+  .testimonial {
+    background: var(--color-white);
+    border-radius: var(--border-radius-lg, 12px);
+    padding: var(--spacing-lg);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.04);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+
+  .testimonial__stars {
+    display: flex;
+    gap: 0.125rem;
+  }
+
+  .testimonial__star {
+    font-size: 1.25rem;
+    color: var(--color-border);
+    line-height: 1;
+  }
+
+  .testimonial__star--filled {
+    color: #f59e0b;
+  }
+
+  .testimonial__quote {
+    font-size: var(--font-size-base);
+    color: var(--color-text);
+    line-height: var(--line-height-relaxed, 1.7);
+    font-style: italic;
+    margin: 0;
+  }
+
+  .testimonial__author {
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+    padding-top: var(--spacing-sm);
+    border-top: 1px solid var(--color-accent);
+  }
+
+  .testimonial__name {
+    font-size: var(--font-size-base);
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin: 0;
+  }
+
+  .testimonial__role {
+    font-size: var(--font-size-sm);
+    color: var(--color-text);
+    margin: 0;
+  }
+
+  .testimonial__company {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
+    margin: 0;
+  }
+</style>

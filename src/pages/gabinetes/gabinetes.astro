@@ -1,0 +1,186 @@
+---
+import Layout from '../../layouts/Base.astro';
+import '../../styles/subcategory.css';
+import { getCollection } from 'astro:content';
+import SubcategoryProductCard from '../../components/SubcategoryProductCard.astro';
+import ProductSidebar from '../../components/ProductSidebar.astro';
+import RelatedProductsGrid from '../../components/RelatedProductsGrid.astro';
+import CotizacionForm from '../../components/CotizacionForm.astro';
+
+// 1. Obtener todos los productos de la categoría gabinetes-hidrantes
+const todosProductos = (await getCollection('productos', ({ data }) =>
+  data.categoria === 'gabinetes-hidrantes'
+)).sort((a, b) => a.data.orden - b.data.orden);
+
+// 2. Filtrar por subcategoría: Gabinetes
+const productosSubcategoria = todosProductos.filter(p => p.data.subcategoria === 'gabinetes');
+
+// 3. Obtener otros productos para sección de relacionados
+const otrosProductos = todosProductos.filter(p => !productosSubcategoria.includes(p));
+
+// 4. Definir subcategorías para navegación
+const subcategorias = [
+  { slug: 'gabinetes', nombre: 'Todos los Gabinetes', descripcion: 'Ver catalogo completo', activo: true },
+  { slug: 'tipo-30me', nombre: 'Gabinete Tipo 30ME', descripcion: 'Gabinete completo con manguera 30m', activo: false },
+  { slug: 'gabinete-empotrado', nombre: 'Gabinete Empotrado', descripcion: 'Instalacion al ras del muro', activo: false },
+  { slug: 'hidrante-banqueta', nombre: 'Hidrante de Banqueta', descripcion: 'Toma exterior hierro ductil', activo: false },
+  { slug: 'estacion-manguera', nombre: 'Estacion de Manguera', descripcion: 'Carrete oscilante 180 grados', activo: false },
+];
+---
+
+<Layout
+  title="Gabinetes Contra Incendios Tipo 30ME | México"
+  description="Gabinetes contra incendios tipo 30ME con manguera, válvula y boquilla incluidos. Acero calibre 22, vidrio templado. NOM-002-STPS. México."
+  activePage="equipos"
+  heroTitle="Gabinetes Contra Incendio"
+  heroIntro="Gabinetes de acero para edificios comerciales e industriales con cumplimiento NFPA 14, construccion en acero y opciones de puerta de vidrio."
+  heroBadge="Gabinetes e Hidrantes"
+  heroMetrics={[
+    { value: "300 PSI", label: "Presion" },
+    { value: "Cal. 22", label: "Acero" },
+    { value: "NOM", label: "Certificado" }
+  ]}
+  heroPrimaryText="Solicitar Cotizacion"
+  heroPrimaryLink="#cotizar"
+  heroSecondaryText="Ver Catalogo"
+  heroSecondaryLink="#catalogo"
+  heroShowRightContent={true}
+>
+
+  <Fragment slot="hero-content">
+    <p>Los gabinetes contra incendio son elementos fundamentales en cualquier sistema de proteccion contra incendios para edificios. Fabricados en acero calibre 22 con acabado en pintura electrostatica, nuestros gabinetes tipo 30ME integran todos los componentes necesarios para combate de incendios: manguera de 30 metros, valvula angular de bronce, boquilla de tres pasos y espacio para extintor. Su diseno cumple con la normativa NOM-002-STPS y los estandares NFPA 14 para sistemas standpipe.</p>
+    <p>Ofrecemos gabinetes en configuraciones empotradas y sobrepuestas, con opciones de puerta de vidrio templado de 3mm para facil visualizacion del equipo y acceso rapido en emergencias. La construccion robusta garantiza proteccion del equipo contra el polvo y la humedad, mientras que el acabado en color rojo seguridad facilita su identificacion. Ideales para hoteles, hospitales, oficinas, centros comerciales e instalaciones industriales que requieren cumplimiento normativo y proteccion efectiva.</p>
+  </Fragment>
+
+  <!-- CONTENT + SIDEBAR -->
+  <section class="subcat-content">
+    <div class="container">
+      <div class="subcat-layout">
+
+        <!-- MAIN CONTENT -->
+        <main class="subcat-main">
+          <div class="catalog-header">
+            <div class="catalog-header__text">
+              <h2 class="catalog-header__title">Catálogo de Gabinetes Contra Incendios</h2>
+              <p class="catalog-header__desc">Selecciona el modelo que mejor se adapte a tu instalación</p>
+            </div>
+            <div class="catalog-header__count">
+              <span class="catalog-header__number">{productosSubcategoria.length}</span>
+              <span class="catalog-header__label">producto{productosSubcategoria.length !== 1 ? 's' : ''}</span>
+            </div>
+          </div>
+
+          <!-- Products Grid -->
+          <div class="categories__grid">
+            {productosSubcategoria.map((producto) => (
+              <SubcategoryProductCard
+                title={producto.data.title}
+                description={producto.data.description}
+                brand={producto.data.marca}
+                image={producto.data.imagen}
+                productSlug={producto.id}
+                flow={producto.data.flujo}
+                material={producto.data.material}
+                certifications={producto.data.certificaciones}
+              />
+            ))}
+          </div>
+
+          {productosSubcategoria.length === 0 && (
+            <div class="catalog-empty">
+              <div class="catalog-empty__icon">🔍</div>
+              <h3 class="catalog-empty__title">Próximamente más opciones</h3>
+              <p class="catalog-empty__text">Estamos agregando más gabinetes de diferentes configuraciones. Solicita una cotización personalizada.</p>
+              <a href="#cotizar" class="btn btn--primary">Solicitar Cotización</a>
+            </div>
+          )}
+
+          <!-- Tech Info -->
+          <div class="tech-info">
+            <h3 class="tech-info__title">Especificaciones Técnicas de Gabinetes</h3>
+            <div class="tech-info__grid">
+              <div class="tech-info__item">
+                <span class="tech-info__label">Dimensiones</span>
+                <span class="tech-info__value">88x85x21 cm</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Manguera</span>
+                <span class="tech-info__value">1.5" x 30m</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Presión trabajo</span>
+                <span class="tech-info__value">300 PSI</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Vidrio puerta</span>
+                <span class="tech-info__value">Templado 3mm</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Calibre acero</span>
+                <span class="tech-info__value">Calibre 22</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Extintor</span>
+                <span class="tech-info__value">4.5 o 6 kg</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA Final -->
+          <div class="subcat-cta-final">
+            <div class="subcat-cta-final__content">
+              <h3 class="subcat-cta-final__title">¿Necesitas gabinetes para un proyecto especial?</h3>
+              <p class="subcat-cta-final__desc">Ofrecemos gabinetes en acabados especiales, acero inoxidable y configuraciones personalizadas para proyectos arquitectónicos.</p>
+            </div>
+            <a href="#cotizar" class="btn btn--primary">Solicitar Cotización Especial</a>
+          </div>
+        </main>
+
+        <!-- SIDEBAR -->
+        <ProductSidebar
+          navTitulo="Tipos de Gabinetes"
+          subcategorias={subcategorias}
+          baseUrl="/gabinetes"
+          backLinkHref="/gabinetes-contra-incendios"
+          backLinkTexto="Ver todos los gabinetes"
+          certificaciones={[
+            { siglas: "FM", nombre: "Factory Mutual" },
+            { siglas: "UL", nombre: "UL Listed" },
+            { siglas: "NOM", nombre: "NOM-002-STPS" }
+          ]}
+          marcas={["Potter Roemer", "JL Industries", "Larsen's", "Guardian"]}
+          aplicaciones={[
+            "Edificios comerciales",
+            "Plantas industriales",
+            "Hospitales y escuelas",
+            "Centros comerciales"
+          ]}
+          productosRelacionados={[
+            { href: "/boquillas-contra-incendios", nombre: "Boquillas Contra Incendios" },
+            { href: "/mangueras-contra-incendios", nombre: "Mangueras Contra Incendios" },
+            { href: "/valvulas-contra-incendios", nombre: "Valvulas Contra Incendios" },
+            { href: "/conexiones-herrajes-contra-incendios", nombre: "Conexiones y Herrajes" }
+          ]}
+        />
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RELATED PRODUCTS -->
+  <RelatedProductsGrid
+    titulo="Otros Gabinetes y Estaciones"
+    subtitulo="Explora más opciones para tu sistema de protección"
+    productos={otrosProductos}
+    maxProductos={3}
+    verTodosLink="/gabinetes-estaciones-contra-incendios"
+    verTodosTexto="Ver todos los gabinetes"
+  />
+
+  <CotizacionForm
+    titulo="Cotiza Gabinetes"
+    tipoEquipo="Gabinetes e hidrantes"
+    pagina="Gabinetes Gabinetes"
+  />
+
+</Layout>

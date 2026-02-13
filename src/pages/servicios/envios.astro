@@ -1,0 +1,939 @@
+---
+import Layout from '../../layouts/Base.astro';
+import '../../styles/services-shared.css';
+import Faq from '../../components/Faq.astro';
+import SectionHeader from '../../components/SectionHeader.astro';
+import LeadCapture from '../../components/LeadCapture.astro';
+
+const faqItems = [
+  {
+    pregunta: '¿Cómo puedo solicitar una cotización de equipos contra incendios en Gama de México?',
+    respuesta: 'Puedes solicitar tu cotización a través de nuestro formulario en línea (se envía directo a WhatsApp), escribiéndonos al WhatsApp 55 6529 8240, o llamando al 55 1543 7164. Solo necesitamos el tipo de equipo, las cantidades aproximadas y la ubicación de entrega. Respondemos en menos de 24 horas.',
+  },
+  {
+    pregunta: '¿Qué tipos de equipos contra incendios venden?',
+    respuesta: 'Manejamos un catálogo completo en seis categorías: Monitores (tipo corazón, cuello de cisne, certificados y UL Listed), Boquillas (tipo pistola, turbo jet y certificadas), Mangueras (millhose, blindex y de succión), Válvulas (compuerta, globo y angular), Conexiones y herrajes de bronce (chiflones, adaptadores, coples, toma siamesa, conexión Y), y Gabinetes e hidrantes (tipo 30ME e hidrante de banqueta).',
+  },
+  {
+    pregunta: '¿Realizan envíos de equipos contra incendios a todo México?',
+    respuesta: 'Sí, realizamos envíos a toda la República Mexicana. Operamos desde Ciudad de México (Santa Fe) y Querétaro, lo que permite coordinar logística eficiente al centro, norte y sureste del país.',
+  },
+  {
+    pregunta: '¿Ofrecen asesoría técnica para elegir equipos contra incendios?',
+    respuesta: 'Sí. Nuestros asesores técnicos evalúan tipo de riesgo, normativa aplicable (NOM-002-STPS, protección civil), especificaciones hidráulicas y de diseño para recomendarte los componentes exactos. La asesoría es gratuita y sin compromiso.',
+  },
+  {
+    pregunta: '¿Los equipos contra incendios que venden tienen certificaciones?',
+    respuesta: 'Sí. Como distribuidores autorizados de Elkhart Brass contamos con monitores y boquillas certificados UL (Underwriters Laboratories) y FM (Factory Mutual). Proporcionamos documentación técnica para verificaciones de protección civil.',
+  },
+  {
+    pregunta: '¿Dónde se ubican las sucursales de Gama de México?',
+    respuesta: 'Tenemos dos sucursales: Prol. Paseo de la Reforma 1015, Piso 1, Santa Fe, 01376 Ciudad de México, y Avenida Constituyentes 120, Santiago de Querétaro, 76030. Horario: lunes a domingo de 6:00 a 16:00 horas.',
+  },
+  {
+    pregunta: '¿Qué sectores o industrias atiende Gama de México?',
+    respuesta: 'Atendemos plantas manufactureras, industria química y petroquímica, terminales de almacenamiento, centros de datos, constructoras, hospitales, hoteles, corporativos, firmas de ingeniería, instaladores certificados y brigadas de protección civil. Ofrecemos venta unitaria y cotizaciones corporativas.',
+  },
+];
+---
+
+<Layout
+  title="Envíos Nacionales de Equipos Contra Incendios | Gama de México"
+  description="Envíos de equipos contra incendios a toda la República Mexicana. Entregas directas en obra, embalaje especializado y seguimiento en tiempo real. Logística coordinada."
+  activePage="servicios"
+  heroTitle="Envíos a Todo México"
+  heroIntro="Logística especializada para equipos contra incendios. Envíos seguros a toda la República Mexicana con embalaje profesional y seguimiento en tiempo real."
+  heroBadge="Servicios"
+  heroMetrics={[
+    { valor: "Nacional", texto: "Cobertura total" },
+    { valor: "24-72h", texto: "Tiempo de entrega" },
+    { valor: "Seguro", texto: "Embalaje protegido" }
+  ]}
+  heroPrimaryText="Consultar Envío"
+  heroPrimaryLink="#consultar"
+  heroSecondaryText="Ver Servicios"
+  heroSecondaryLink="/servicios"
+  heroShowRightContent={true}
+>
+  <Fragment slot="hero-content">
+    <p>Nuestra red de distribución abarca los 32 estados de la República Mexicana, con centros logísticos estratégicamente ubicados en Ciudad de México y Querétaro. Cada envío es preparado con embalaje especializado según el tipo de equipo, garantizando que monitores, válvulas, boquillas y conexiones lleguen en perfectas condiciones a su destino final.</p>
+    <p>Coordinamos entregas directas en obra con seguimiento en tiempo real y confirmación de recepción. Nuestro equipo de logística se adapta a los calendarios de proyecto y protocolos de seguridad de cada instalación, asegurando que los equipos contra incendios estén disponibles exactamente cuando los necesitas.</p>
+  </Fragment>
+
+  <!-- SUBSECCIONES DE ENVÍOS -->
+  <section class="service-sections" id="servicios-envios" aria-labelledby="sections-title">
+    <div class="container">
+      <SectionHeader
+        titulo="Servicios de Logística Especializada"
+        subtitulo="Soluciones de envío adaptadas a cada tipo de proyecto"
+        idTitulo="sections-title"
+        parrafo1="Los equipos contra incendios requieren manejo especializado durante el transporte. Monitores, válvulas, boquillas y conexiones son productos de precisión que deben llegar en perfectas condiciones para garantizar la seguridad de las instalaciones donde serán utilizados."
+        parrafo2="Nuestro servicio de logística está diseñado para garantizar entregas seguras, puntuales y coordinadas con tu equipo en sitio. Desde el embalaje hasta la confirmación de recepción, cada paso está orientado a proteger tu inversión."
+      />
+
+      <!-- Entregas Directas en Sitio -->
+      <div class="service-block" id="entregas-directas">
+        <div class="service-block__header">
+          <div class="service-block__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="13" x="6" y="4" rx="2"/><path d="m2 14 4-4 4 4"/><path d="M6 18v-4"/><circle cx="18" cy="18" r="3"/><circle cx="9" cy="18" r="3"/></svg>
+          </div>
+          <div class="service-block__title-wrap">
+            <h3 class="service-block__title">Entregas Directas en Sitio</h3>
+            <p class="service-block__subtitle">Coordinación con tu equipo de obra para recepción en ubicación final</p>
+          </div>
+        </div>
+        <div class="service-block__content">
+          <div class="service-block__text">
+            <p>No solo enviamos a una dirección: <strong>coordinamos la entrega directamente con tu equipo en sitio</strong>. Esto significa que el transporte llega cuando hay personal disponible para recibir, se respetan horarios de acceso a obra y se confirma la recepción con documentación fotográfica.</p>
+            <p>Este servicio es especialmente valioso para <strong>proyectos de construcción, plantas industriales en operación y obras con acceso restringido</strong>. Nos adaptamos a los protocolos de seguridad de cada instalación.</p>
+          </div>
+          <div class="service-block__features">
+            <div class="feature-card">
+              <h4 class="feature-card__title">Coordinación previa</h4>
+              <p class="feature-card__desc">Confirmamos fecha, hora y contacto en sitio antes de cada envío. Sin sorpresas.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Acceso controlado</h4>
+              <p class="feature-card__desc">Gestionamos permisos de acceso para entregas en plantas con seguridad estricta.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Confirmación fotográfica</h4>
+              <p class="feature-card__desc">Documentamos la entrega con fotos del equipo recibido en sitio.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Acuse de recibo</h4>
+              <p class="feature-card__desc">Entrega con firma de recepción y remisión para control administrativo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Embalaje Especializado -->
+      <div class="service-block" id="embalaje-especializado">
+        <div class="service-block__header">
+          <div class="service-block__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg>
+          </div>
+          <div class="service-block__title-wrap">
+            <h3 class="service-block__title">Embalaje Especializado</h3>
+            <p class="service-block__subtitle">Protección adecuada para cada tipo de equipo contra incendios</p>
+          </div>
+        </div>
+        <div class="service-block__content">
+          <div class="service-block__text">
+            <p>Los <strong>equipos contra incendios son productos de precisión</strong> que requieren protección específica durante el transporte. Un monitor golpeado, una válvula con daño en roscas o una boquilla maltratada pueden comprometer la seguridad del sistema completo.</p>
+            <p>Utilizamos <strong>materiales y técnicas de embalaje según el tipo de producto</strong>: tarimas de madera para equipos pesados, foam de alta densidad para válvulas, cajas reforzadas para conexiones de bronce y embalaje individual para boquillas certificadas.</p>
+          </div>
+          <div class="service-block__features">
+            <div class="feature-card">
+              <h4 class="feature-card__title">Monitores y válvulas grandes</h4>
+              <p class="feature-card__desc">Tarima de madera, flejes metálicos, protección de puntos de contacto y etiquetado de fragilidad.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Válvulas y conexiones</h4>
+              <p class="feature-card__desc">Cajas de cartón reforzado, separadores internos, protección de roscas y superficies maquinadas.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Mangueras</h4>
+              <p class="feature-card__desc">Enrollado protegido, plástico stretch, etiquetado por diámetro y longitud.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Boquillas certificadas</h4>
+              <p class="feature-card__desc">Empaque individual, foam protector, caja exterior reforzada para evitar impactos.</p>
+            </div>
+          </div>
+          <div class="service-block__list">
+            <h4 class="service-block__list-title">Materiales de embalaje que utilizamos:</h4>
+            <ul class="check-list">
+              <li class="check-list__item">Tarimas de madera tratada para exportación</li>
+              <li class="check-list__item">Foam de polietileno de alta densidad</li>
+              <li class="check-list__item">Cartón corrugado de triple pared</li>
+              <li class="check-list__item">Flejes de polipropileno y metálicos</li>
+              <li class="check-list__item">Plástico stretch industrial</li>
+              <li class="check-list__item">Esquineros y separadores de cartón</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Entregas Programadas -->
+      <div class="service-block" id="entregas-programadas">
+        <div class="service-block__header">
+          <div class="service-block__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/><path d="m9 16 2 2 4-4"/></svg>
+          </div>
+          <div class="service-block__title-wrap">
+            <h3 class="service-block__title">Entregas Programadas</h3>
+            <p class="service-block__subtitle">Sincronización con el calendario de tu proyecto</p>
+          </div>
+        </div>
+        <div class="service-block__content">
+          <div class="service-block__text">
+            <p>Los proyectos de construcción e instalación operan con <strong>calendarios estrictos</strong>. Recibir equipos antes de tiempo genera problemas de almacenamiento; recibirlos tarde detiene el avance de obra. Nuestro servicio de entregas programadas se sincroniza con tu calendario.</p>
+            <p>Podemos coordinar <strong>entregas escalonadas por etapas del proyecto</strong>: primero las válvulas y conexiones para la red hidráulica, después los gabinetes cuando los muros estén listos, y finalmente los monitores y boquillas para la puesta en marcha.</p>
+          </div>
+          <div class="service-block__features">
+            <div class="feature-card">
+              <h4 class="feature-card__title">Entregas por etapas</h4>
+              <p class="feature-card__desc">Dividimos tu pedido en entregas parciales según el avance de obra.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Fechas garantizadas</h4>
+              <p class="feature-card__desc">Confirmamos fechas de entrega y las respetamos. Anticipamos cualquier contratiempo.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Flexibilidad de reprogramación</h4>
+              <p class="feature-card__desc">Si tu calendario cambia, ajustamos las entregas sin penalizaciones.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Almacenamiento temporal</h4>
+              <p class="feature-card__desc">Podemos retener equipos en bodega si necesitas diferir la entrega.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Seguimiento en Tiempo Real -->
+      <div class="service-block" id="seguimiento-tiempo-real">
+        <div class="service-block__header">
+          <div class="service-block__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div class="service-block__title-wrap">
+            <h3 class="service-block__title">Seguimiento en Tiempo Real</h3>
+            <p class="service-block__subtitle">Visibilidad completa del estado de tu envío</p>
+          </div>
+        </div>
+        <div class="service-block__content">
+          <div class="service-block__text">
+            <p>Proporcionamos <strong>información actualizada sobre el estado de cada envío</strong>. Desde que el pedido sale de nuestra bodega hasta que llega a tu ubicación, puedes conocer en todo momento dónde se encuentra y cuándo llegará.</p>
+            <p>Utilizamos las <strong>plataformas de rastreo de nuestras líneas de transporte</strong> y te compartimos el acceso. Además, nuestro equipo está disponible para resolver dudas y coordinar cualquier ajuste necesario durante el trayecto.</p>
+          </div>
+          <div class="service-block__features">
+            <div class="feature-card">
+              <h4 class="feature-card__title">Número de guía</h4>
+              <p class="feature-card__desc">Te proporcionamos número de guía para rastreo directo con la transportista.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Notificaciones</h4>
+              <p class="feature-card__desc">Te avisamos cuando el pedido sale, está en tránsito y llegó a destino.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Contacto con transportista</h4>
+              <p class="feature-card__desc">Datos del operador para coordinar detalles de la última milla.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Comprobante de entrega</h4>
+              <p class="feature-card__desc">Documentación de entrega con firma, fecha y hora de recepción.</p>
+            </div>
+          </div>
+          <div class="service-block__contact">
+            <h4 class="service-block__contact-title">¿Necesitas información sobre un envío?</h4>
+            <div class="contact-channels">
+              <a href="https://wa.me/5215565298240" class="contact-channel" target="_blank" rel="noopener">
+                <span class="contact-channel__icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                </span>
+                <span class="contact-channel__info">
+                  <span class="contact-channel__label">WhatsApp</span>
+                  <span class="contact-channel__value">55 6529 8240</span>
+                </span>
+              </a>
+              <a href="tel:+525515437164" class="contact-channel">
+                <span class="contact-channel__icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </span>
+                <span class="contact-channel__info">
+                  <span class="contact-channel__label">Teléfono</span>
+                  <span class="contact-channel__value">55 1543 7164</span>
+                </span>
+              </a>
+              <a href="mailto:ventas@gamademexico.com" class="contact-channel">
+                <span class="contact-channel__icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </span>
+                <span class="contact-channel__info">
+                  <span class="contact-channel__label">Email</span>
+                  <span class="contact-channel__value">ventas@gamademexico.com</span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COBERTURA -->
+  <section class="coverage" aria-labelledby="coverage-title">
+    <div class="container">
+      <SectionHeader
+        titulo="Cobertura Nacional"
+        subtitulo="Entregamos equipos contra incendios en toda la República Mexicana"
+        idTitulo="coverage-title"
+        parrafo1="Operamos desde dos centros de distribución estratégicamente ubicados: Ciudad de México (Santa Fe) y Querétaro. Esta ubicación nos permite atender de manera eficiente tanto el centro del país como las zonas norte, occidente y sureste."
+        parrafo2="Los tiempos de entrega varían según destino y disponibilidad de transporte. En cada cotización confirmamos tiempos exactos para que puedas planificar la recepción de tus equipos con certeza."
+      />
+      <div class="coverage__grid">
+        <div class="coverage__card coverage__card--primary">
+          <div class="coverage__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h3 class="coverage__title">CDMX y Área Metropolitana</h3>
+          <p class="coverage__time">24-48 horas</p>
+          <p class="coverage__desc">Entregas rápidas desde nuestra sucursal en Santa Fe. Zona de cobertura directa sin costo adicional de logística.</p>
+        </div>
+        <div class="coverage__card coverage__card--primary">
+          <div class="coverage__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h3 class="coverage__title">Querétaro y Bajío</h3>
+          <p class="coverage__time">24-48 horas</p>
+          <p class="coverage__desc">Operamos desde Av. Constituyentes con cobertura en Querétaro, Guanajuato, San Luis Potosí y Aguascalientes.</p>
+        </div>
+        <div class="coverage__card">
+          <div class="coverage__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h3 class="coverage__title">Centro del País</h3>
+          <p class="coverage__time">2-3 días</p>
+          <p class="coverage__desc">Estado de México, Hidalgo, Morelos, Puebla, Tlaxcala, Michoacán.</p>
+        </div>
+        <div class="coverage__card">
+          <div class="coverage__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h3 class="coverage__title">Norte de México</h3>
+          <p class="coverage__time">3-5 días</p>
+          <p class="coverage__desc">Monterrey, Chihuahua, Coahuila, Tamaulipas, Nuevo León, Durango, Sonora.</p>
+        </div>
+        <div class="coverage__card">
+          <div class="coverage__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h3 class="coverage__title">Occidente</h3>
+          <p class="coverage__time">2-4 días</p>
+          <p class="coverage__desc">Guadalajara, Jalisco, Colima, Nayarit, Sinaloa.</p>
+        </div>
+        <div class="coverage__card">
+          <div class="coverage__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h3 class="coverage__title">Golfo y Sureste</h3>
+          <p class="coverage__time">3-5 días</p>
+          <p class="coverage__desc">Veracruz, Tabasco, Campeche, Yucatán, Quintana Roo, Oaxaca, Chiapas.</p>
+        </div>
+      </div>
+      <p class="coverage__note">Los tiempos de entrega son estimados y pueden variar según disponibilidad de transporte y condiciones de la ruta. Confirmamos tiempos exactos al cotizar.</p>
+    </div>
+  </section>
+
+  <!-- PROCESO -->
+  <section class="process" aria-labelledby="process-title">
+    <div class="container">
+      <SectionHeader
+        titulo="Proceso de Envío"
+        subtitulo="Cómo funciona la logística de tu pedido"
+        idTitulo="process-title"
+        parrafo1="Hemos simplificado el proceso de envío para que sea transparente y predecible. Desde el momento de tu compra hasta la entrega en sitio, te mantenemos informado del estado de tu pedido en cada etapa."
+        parrafo2="El costo de envío se incluye en tu cotización desde el inicio, sin sorpresas. Consideramos destino, peso, dimensiones y tipo de embalaje requerido para darte un precio justo y competitivo."
+      />
+      <div class="process__steps">
+        <div class="process__step">
+          <div class="process__number" aria-hidden="true">1</div>
+          <h3 class="process__step-title">Cotización</h3>
+          <p class="process__step-desc">Incluimos costo de envío en tu cotización según destino, peso y dimensiones del pedido.</p>
+        </div>
+        <div class="process__step">
+          <div class="process__number" aria-hidden="true">2</div>
+          <h3 class="process__step-title">Preparación</h3>
+          <p class="process__step-desc">Embalamos tu pedido con materiales adecuados para proteger cada tipo de equipo.</p>
+        </div>
+        <div class="process__step">
+          <div class="process__number" aria-hidden="true">3</div>
+          <h3 class="process__step-title">Despacho</h3>
+          <p class="process__step-desc">Entregamos a la línea de transporte y te compartimos número de guía para rastreo.</p>
+        </div>
+        <div class="process__step">
+          <div class="process__number" aria-hidden="true">4</div>
+          <h3 class="process__step-title">Entrega</h3>
+          <p class="process__step-desc">Coordinamos la recepción en sitio y confirmamos entrega con documentación.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRANSPORTISTAS -->
+  <section class="carriers" aria-labelledby="carriers-title">
+    <div class="container">
+      <SectionHeader
+        titulo="Líneas de Transporte"
+        subtitulo="Trabajamos con transportistas especializados en carga industrial"
+        idTitulo="carriers-title"
+        parrafo1="Seleccionamos la línea de transporte más adecuada para cada envío según tipo de carga, destino, urgencia y requerimientos especiales. Trabajamos con empresas establecidas que ofrecen cobertura nacional y rastreo en tiempo real."
+        parrafo2="Para pedidos urgentes o de alto valor, podemos coordinar transporte dedicado puerta a puerta. Cada opción tiene sus ventajas y te asesoramos para elegir la mejor alternativa para tu caso particular."
+      />
+      <div class="carriers__content">
+        <p class="carriers__text">Seleccionamos las <strong>líneas de transporte según el tipo de carga, destino y urgencia</strong> de cada envío. Trabajamos con empresas establecidas que ofrecen cobertura nacional, rastreo en tiempo real y experiencia en manejo de equipos industriales.</p>
+        <div class="carriers__list">
+          <div class="carriers__item">
+            <h4 class="carriers__item-title">Paquetería express</h4>
+            <p class="carriers__item-desc">Para piezas pequeñas, conexiones de bronce, boquillas individuales. Entrega en 24-72 horas.</p>
+          </div>
+          <div class="carriers__item">
+            <h4 class="carriers__item-title">Carga consolidada</h4>
+            <p class="carriers__item-desc">Para pedidos medianos. Combinamos con otros envíos para optimizar costos sin sacrificar tiempos.</p>
+          </div>
+          <div class="carriers__item">
+            <h4 class="carriers__item-title">Carga dedicada</h4>
+            <p class="carriers__item-desc">Para equipos grandes o pedidos urgentes. Transporte exclusivo puerta a puerta.</p>
+          </div>
+          <div class="carriers__item">
+            <h4 class="carriers__item-title">Fletes especiales</h4>
+            <p class="carriers__item-desc">Para monitores de gran formato, múltiples tarimas o entregas en ubicaciones remotas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST -->
+  <section class="trust" aria-labelledby="trust-title">
+    <div class="container">
+      <SectionHeader
+        titulo="Por Qué Confiar en Nuestra Logística"
+        subtitulo="Beneficios de nuestro servicio de envíos"
+        idTitulo="trust-title"
+        parrafo1="Nuestra experiencia enviando equipos contra incendios nos ha permitido desarrollar protocolos de embalaje y manejo que garantizan la integridad de cada producto. Sabemos cómo proteger válvulas de bronce, monitores de gran formato y conexiones de precisión."
+        parrafo2="Además del cuidado en el manejo, ofrecemos coordinación con tu equipo en sitio, rastreo en tiempo real y documentación completa de entrega. Tu tranquilidad es nuestra prioridad."
+      />
+      <div class="trust__grid">
+        <div class="trust__item">
+          <h3 class="trust__item-title">Dos centros de distribución</h3>
+          <p class="trust__item-desc">Operamos desde CDMX y Querétaro para tiempos de entrega más cortos a todo el país.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Embalaje profesional</h3>
+          <p class="trust__item-desc">Protegemos cada equipo según sus características. Llegada en condiciones perfectas.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Coordinación con obra</h3>
+          <p class="trust__item-desc">Nos adaptamos a tus calendarios y coordinamos entregas con tu equipo en sitio.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Rastreo completo</h3>
+          <p class="trust__item-desc">Visibilidad total desde que sale el pedido hasta que llega a destino.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Documentación incluida</h3>
+          <p class="trust__item-desc">Remisión, factura y comprobante de entrega para tu control administrativo.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Seguro de carga</h3>
+          <p class="trust__item-desc">Opción de seguro para envíos de alto valor. Protección ante eventualidades.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEAD CAPTURE -->
+  <LeadCapture />
+
+  <!-- FAQ -->
+  <section class="faq" id="faq" aria-labelledby="faq-title">
+    <div class="container">
+      <SectionHeader
+        titulo="Preguntas Frecuentes sobre Equipos Contra Incendios"
+        subtitulo="Resolvemos las dudas más comunes sobre cotización, tipos de equipos, envíos y certificaciones"
+        idTitulo="faq-title"
+        parrafo1="Entendemos que la adquisición de equipos contra incendios involucra decisiones técnicas importantes: compatibilidad con sistemas existentes, cumplimiento normativo, certificaciones requeridas y logística de entrega. Hemos compilado las consultas más frecuentes de nuestros clientes para facilitar tu proceso de compra."
+        parrafo2="Si tu pregunta no aparece aquí, nuestro equipo de asesores técnicos está disponible vía WhatsApp, teléfono o correo electrónico para resolver cualquier duda específica sobre especificaciones, disponibilidad o requerimientos de instalación."
+      />
+      <Faq items={faqItems} id="faq" />
+    </div>
+  </section>
+
+  <!-- SERVICIOS RELACIONADOS -->
+  <section class="related-services" aria-labelledby="related-title">
+    <div class="container">
+      <SectionHeader
+        titulo="Otros Servicios"
+        subtitulo="Conoce todos los servicios que ofrecemos para tu proyecto contra incendios"
+        idTitulo="related-title"
+        parrafo1="Además de logística especializada, ofrecemos un ecosistema completo de servicios diseñados para acompañarte en todas las etapas de tu proyecto: desde la asesoría técnica inicial hasta el soporte postventa y mantenimiento de equipos."
+        parrafo2="Cada servicio está pensado para facilitar tu proceso de compra, garantizar el cumplimiento normativo y maximizar la vida útil de tu inversión en equipos contra incendios."
+      />
+      <div class="related-services__grid">
+        <div class="related-service">
+          <h3 class="related-service__title">Garantía y Respaldo</h3>
+          <p class="related-service__desc">Garantía del fabricante, certificados UL/FM y documentación completa para verificaciones.</p>
+          <a href="/servicios/garantia" class="related-service__link">Ver servicio →</a>
+        </div>
+        <div class="related-service">
+          <h3 class="related-service__title">Asesoría Técnica</h3>
+          <p class="related-service__desc">Orientación especializada para seleccionar equipos según tu tipo de riesgo y normativa.</p>
+          <a href="/servicios/asesoria" class="related-service__link">Ver servicio →</a>
+        </div>
+        <div class="related-service">
+          <h3 class="related-service__title">Atención Empresarial</h3>
+          <p class="related-service__desc">Cuentas corporativas con ejecutivo dedicado, precios preferenciales y atención prioritaria.</p>
+          <a href="/servicios/empresas" class="related-service__link">Ver servicio →</a>
+        </div>
+        <div class="related-service">
+          <h3 class="related-service__title">Refacciones y Mantenimiento</h3>
+          <p class="related-service__desc">Componentes originales y kits de servicio para mantener tus equipos en óptimas condiciones.</p>
+          <a href="/servicios/mantenimiento" class="related-service__link">Ver servicio →</a>
+        </div>
+        <div class="related-service">
+          <h3 class="related-service__title">Cotizaciones Corporativas</h3>
+          <p class="related-service__desc">Cotizaciones formales para licitaciones, compras corporativas y proyectos gubernamentales.</p>
+          <a href="/servicios/cotizaciones" class="related-service__link">Ver servicio →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta-section" aria-labelledby="cta-title">
+    <div class="container">
+      <div class="cta-section__content">
+        <h2 id="cta-title" class="cta-section__title">¿Necesitas equipos contra incendios en tu ubicación?</h2>
+        <p class="cta-section__text">Contáctanos hoy y recibe cotización con costo de envío incluido.</p>
+        <div class="cta-section__buttons">
+          <a href="https://wa.me/5215565298240" class="btn btn--white" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+          <a href="/equipos" class="btn btn--outline btn--white-outline">Ver catálogo de equipos</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  /* Service Sections */
+  .service-sections {
+    padding: var(--spacing-3xl) 0;
+    background: var(--color-white);
+  }
+
+  .service-block {
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    margin-bottom: var(--spacing-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+  }
+
+  .service-block__header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-lg);
+    background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-white) 100%);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .service-block__icon {
+    flex-shrink: 0;
+    width: 56px;
+    height: 56px;
+    background: var(--color-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+  }
+
+  .service-block__icon svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .service-block__title-wrap {
+    flex: 1;
+  }
+
+  .service-block__title {
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin-bottom: 0.25rem;
+  }
+
+  .service-block__subtitle {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
+  }
+
+  .service-block__content {
+    padding: var(--spacing-lg);
+  }
+
+  .service-block__text {
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .service-block__text p {
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-text);
+    line-height: var(--line-height-base);
+  }
+
+  .service-block__text p:last-child {
+    margin-bottom: 0;
+  }
+
+  .service-block__features {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+  }
+
+  .feature-card {
+    background: var(--color-accent);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius-sm);
+    border-left: 3px solid var(--color-primary);
+  }
+
+  .feature-card__title {
+    font-size: var(--font-size-base);
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin-bottom: 0.5rem;
+  }
+
+  .feature-card__desc {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
+    line-height: 1.5;
+  }
+
+  .service-block__list {
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-md);
+    background: var(--color-accent);
+    border-radius: var(--border-radius-sm);
+  }
+
+  .service-block__list-title {
+    font-size: var(--font-size-base);
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .check-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .check-list__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    font-size: var(--font-size-sm);
+    color: var(--color-text);
+  }
+
+  .check-list__item::before {
+    content: "✓";
+    color: var(--color-primary);
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  .service-block__contact {
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-lg);
+    background: var(--color-accent);
+    border-radius: var(--border-radius-sm);
+  }
+
+  .service-block__contact-title {
+    font-size: var(--font-size-base);
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin-bottom: var(--spacing-md);
+    text-align: center;
+  }
+
+  .contact-channels {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
+  }
+
+  .contact-channel {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm) var(--spacing-md);
+    background: var(--color-white);
+    border-radius: var(--border-radius-sm);
+    border: 1px solid var(--color-border);
+    transition: all var(--transition-fast);
+  }
+
+  .contact-channel:hover {
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-md);
+  }
+
+  .contact-channel__icon {
+    width: 40px;
+    height: 40px;
+    background: var(--color-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    flex-shrink: 0;
+  }
+
+  .contact-channel__icon svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .contact-channel__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-channel__label {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-light);
+  }
+
+  .contact-channel__value {
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    color: var(--color-secondary);
+  }
+
+  /* Coverage Section */
+  .coverage {
+    padding: var(--spacing-3xl) 0;
+    background: var(--color-accent);
+  }
+
+  .coverage__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .coverage__card {
+    background: var(--color-white);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--color-border);
+    text-align: center;
+  }
+
+  .coverage__card--primary {
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-md);
+  }
+
+  .coverage__icon {
+    width: 48px;
+    height: 48px;
+    background: var(--color-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto var(--spacing-sm);
+    color: var(--color-white);
+  }
+
+  .coverage__icon svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .coverage__title {
+    font-size: var(--font-size-lg);
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin-bottom: 0.25rem;
+  }
+
+  .coverage__time {
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .coverage__desc {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
+    line-height: 1.5;
+  }
+
+  .coverage__note {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
+    text-align: center;
+    font-style: italic;
+  }
+
+  /* Process Section */
+  .process {
+    padding: var(--spacing-3xl) 0;
+    background: var(--color-white);
+  }
+
+  .process__steps {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+
+  .process__step {
+    background: var(--color-accent);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-md);
+    text-align: center;
+    position: relative;
+  }
+
+  .process__number {
+    width: 48px;
+    height: 48px;
+    background: var(--color-primary);
+    color: var(--color-white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    margin: 0 auto var(--spacing-sm);
+  }
+
+  .process__step-title {
+    font-size: var(--font-size-lg);
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin-bottom: 0.5rem;
+  }
+
+  .process__step-desc {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
+    line-height: 1.5;
+  }
+
+  /* Carriers Section */
+  .carriers {
+    padding: var(--spacing-3xl) 0;
+    background: var(--color-accent);
+  }
+
+  .carriers__content {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .carriers__text {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+    color: var(--color-text);
+    line-height: var(--line-height-base);
+  }
+
+  .carriers__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .carriers__item {
+    background: var(--color-white);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius-sm);
+    border-left: 3px solid var(--color-primary);
+  }
+
+  .carriers__item-title {
+    font-size: var(--font-size-base);
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin-bottom: 0.5rem;
+  }
+
+  .carriers__item-desc {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
+    line-height: 1.5;
+  }
+
+  /* Responsive */
+  @media (min-width: 640px) {
+    .service-block__features {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .check-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-channels {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .process__steps {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .coverage__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .carriers__list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cta-section__buttons {
+      flex-direction: row;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .service-block__header {
+      padding: var(--spacing-xl);
+    }
+
+    .service-block__content {
+      padding: var(--spacing-xl);
+    }
+
+    .service-block__features {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .process__steps {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .coverage__grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .cta-section__title {
+      font-size: var(--font-size-3xl);
+    }
+  }
+</style>
+

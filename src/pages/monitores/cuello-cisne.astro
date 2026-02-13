@@ -1,0 +1,199 @@
+---
+import Layout from '../../layouts/Base.astro';
+import '../../styles/subcategory.css';
+import { getCollection } from 'astro:content';
+import SubcategoryProductCard from '../../components/SubcategoryProductCard.astro';
+import ProductSidebar from '../../components/ProductSidebar.astro';
+import RelatedProductsGrid from '../../components/RelatedProductsGrid.astro';
+import CotizacionForm from '../../components/CotizacionForm.astro';
+
+// Obtener productos de monitores
+const todosMonitores = (await getCollection('productos', ({ data }) => data.categoria === 'monitores')).sort((a, b) => a.data.orden - b.data.orden);
+
+// Filtrar productos cuello de cisne por subcategoria
+const productosCuelloCisne = todosMonitores.filter(p => p.data.subcategoria === 'cuello-cisne');
+
+// Otros monitores para la sección de relacionados
+const otrosMonitores = todosMonitores.filter(p => !productosCuelloCisne.includes(p));
+
+// Definir las subcategorías de monitores para el sidebar
+const subcategorias = [
+  {
+    slug: 'tipo-corazon',
+    nombre: 'Monitor Tipo Corazón',
+    descripcion: 'Protección perimetral 360°',
+    activo: false
+  },
+  {
+    slug: 'cuello-cisne',
+    nombre: 'Monitor Cuello de Cisne',
+    descripcion: 'Protección de tanques elevados',
+    activo: true
+  },
+  {
+    slug: 'certificado-fm',
+    nombre: 'Monitor Certificado FM',
+    descripcion: 'Aprobación Factory Mutual',
+    activo: false
+  },
+  {
+    slug: 'ul-listed',
+    nombre: 'Monitor UL Listed',
+    descripcion: 'Certificación Underwriters Labs',
+    activo: false
+  },
+];
+---
+
+<Layout
+  title="Monitor Cuello de Cisne | Protección Tanques México"
+  description="Monitor fijo cuello de cisne para protección de tanques. Giro 360° horizontal, bronce fundido resistente a intemperie. Elkhart Brass, ARMECO. Cotización México."
+  activePage="equipos"
+  heroTitle="Monitor Cuello de Cisne"
+  heroIntro="Monitores fijos diseñados para protección de tanques de almacenamiento y estructuras elevadas. Su configuración de cuello extendido permite dirigir el flujo hacia abajo o en ángulos específicos, ideal para enfriamiento de tanques y protección de áreas críticas desde puntos elevados."
+  heroBadge="Monitores Contra Incendios"
+  heroMetrics={[
+    { valor: "360°", texto: "Giro horizontal" },
+    { valor: "90°", texto: "Ángulo de descarga" },
+    { valor: "1,000", texto: "GPM capacidad" }
+  ]}
+  heroPrimaryText="Ver Catálogo"
+  heroPrimaryLink="#catalogo"
+  heroSecondaryText="Solicitar Cotización"
+  heroSecondaryLink="#cotizar"
+  heroShowRightContent={true}
+>
+
+  <!-- HERO CONTENT -->
+  <Fragment slot="hero-content">
+    <p>El <strong>monitor cuello de cisne</strong> es la solución especializada para protección de tanques de almacenamiento de hidrocarburos y estructuras elevadas. Su diseño con cuello extendido y curvado permite posicionar la descarga en ángulos que los monitores convencionales no alcanzan, dirigiendo el flujo de agua o espuma hacia la superficie del tanque para enfriamiento perimetral o hacia puntos específicos en caso de incendio en el sello del techo flotante.</p>
+    <p>En <strong>Gama de México</strong> suministramos monitores cuello de cisne de Elkhart Brass y ARMECO con capacidades desde 500 hasta 1,000 GPM. Fabricados en bronce fundido resistente a la intemperie y ambientes corrosivos, estos equipos cumplen con NFPA 11 y NFPA 15. Asesoramos en el dimensionamiento según el diámetro del tanque, tipo de producto almacenado y requerimientos de la aseguradora para refinerías, terminales de almacenamiento y plantas petroquímicas.</p>
+  </Fragment>
+
+  <!-- MAIN CONTENT WITH SIDEBAR -->
+  <section class="subcat-content">
+    <div class="container">
+      <div class="subcat-layout">
+
+        <!-- MAIN CONTENT (LEFT) -->
+        <main class="subcat-main">
+
+          <!-- CATALOG HEADER -->
+          <div class="catalog-header">
+            <div class="catalog-header__text">
+              <h2 class="catalog-header__title">Catálogo de Monitor Fijo Tipo Cuello de Cisne</h2>
+              <p class="catalog-header__desc">Selecciona el producto que mejor se adapte a tu proyecto industrial</p>
+            </div>
+            <div class="catalog-header__count">
+              <span class="catalog-header__number">{productosCuelloCisne.length}</span>
+              <span class="catalog-header__label">producto{productosCuelloCisne.length !== 1 ? 's' : ''}</span>
+            </div>
+          </div>
+
+          <!-- PRODUCTS GRID -->
+          <div class="categories__grid">
+            {productosCuelloCisne.map((producto) => (
+              <SubcategoryProductCard
+                title={producto.data.title}
+                description={producto.data.description}
+                brand={producto.data.marca}
+                image={producto.data.imagen}
+                productSlug={producto.id}
+                flow={producto.data.flujo}
+                material={producto.data.material}
+                certifications={producto.data.certificaciones}
+              />
+            ))}
+          </div>
+
+          {productosCuelloCisne.length === 0 && (
+            <div class="catalog-empty">
+              <div class="catalog-empty__icon">🔍</div>
+              <h3 class="catalog-empty__title">Próximamente más opciones</h3>
+              <p class="catalog-empty__text">Estamos agregando más productos de monitores cuello de cisne de diferentes marcas. Mientras tanto, solicita una cotización personalizada.</p>
+              <a href="#cotizar" class="btn btn--primary">Solicitar Cotización</a>
+            </div>
+          )}
+
+          <!-- TECHNICAL INFO -->
+          <div class="tech-info">
+            <h3 class="tech-info__title">Especificaciones Técnicas Generales</h3>
+            <div class="tech-info__grid">
+              <div class="tech-info__item">
+                <span class="tech-info__label">Caudal típico</span>
+                <span class="tech-info__value">500 - 2,000 GPM</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Elevación</span>
+                <span class="tech-info__value">10 - 111 pies</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Presión de trabajo</span>
+                <span class="tech-info__value">150 - 200 PSI</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Control</span>
+                <span class="tech-info__value">Desde nivel piso</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Tipos</span>
+                <span class="tech-info__value">Autosoportado/Soportado</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Materiales</span>
+                <span class="tech-info__value">Acero, Galvanizado</span>
+              </div>
+            </div>
+          </div>
+
+        </main>
+
+        <!-- SIDEBAR (RIGHT) -->
+        <ProductSidebar
+          navTitulo="Tipos de Monitores"
+          subcategorias={subcategorias}
+          baseUrl="/monitores"
+          backLinkHref="/monitores-contra-incendios"
+          backLinkTexto="Ver todos los monitores"
+          certificaciones={[
+            { siglas: "FM", nombre: "Factory Mutual" },
+            { siglas: "UL", nombre: "UL Listed" },
+            { siglas: "NOM", nombre: "NOM-002-STPS" }
+          ]}
+          marcas={["Elkhart Brass", "Akron Brass", "Task Force Tips", "POK"]}
+          aplicaciones={[
+            "Refinerías",
+            "Plantas petroquímicas",
+            "Terminales de almacenamiento",
+            "Tanques elevados",
+            "Muelles y puertos"
+          ]}
+          productosRelacionados={[
+            { href: "/boquillas-contra-incendios", nombre: "Boquillas Contra Incendios" },
+            { href: "/mangueras-contra-incendios", nombre: "Mangueras Contra Incendios" },
+            { href: "/valvulas-contra-incendios", nombre: "Válvulas Contra Incendios" },
+            { href: "/conexiones-herrajes-contra-incendios", nombre: "Conexiones y Herrajes" }
+          ]}
+        />
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RELATED MONITORS -->
+  <RelatedProductsGrid
+    titulo="Otros Tipos de Monitores"
+    subtitulo="Explora más opciones según tu aplicación específica"
+    productos={otrosMonitores}
+    maxProductos={3}
+    verTodosLink="/monitores-contra-incendios"
+    verTodosTexto="Ver todos los monitores"
+  />
+
+  <CotizacionForm
+    titulo="Cotiza Monitores Cuello de Cisne"
+    tipoEquipo="Monitores"
+    pagina="Monitores Cuello de Cisne"
+  />
+
+</Layout>

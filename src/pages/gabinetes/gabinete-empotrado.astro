@@ -1,0 +1,194 @@
+---
+import Layout from '../../layouts/Base.astro';
+import '../../styles/subcategory.css';
+import { getCollection } from 'astro:content';
+import SubcategoryProductCard from '../../components/SubcategoryProductCard.astro';
+import ProductSidebar from '../../components/ProductSidebar.astro';
+import RelatedProductsGrid from '../../components/RelatedProductsGrid.astro';
+import CotizacionForm from '../../components/CotizacionForm.astro';
+
+// 1. Obtener todos los productos de la categoria gabinetes-hidrantes
+const todosProductos = (await getCollection('productos', ({ data }) =>
+  data.categoria === 'gabinetes-hidrantes'
+)).sort((a, b) => a.data.orden - b.data.orden);
+
+// 2. Filtrar gabinetes empotrados y semiempotrados
+const productosEmpotrados = todosProductos.filter(p =>
+  p.data.subcategoria === 'gabinetes' &&
+  (p.id.includes('empotrado') || p.id.includes('semiempotrado') || p.id.includes('arquitectonico') || p.id.includes('inoxidable'))
+);
+
+// 3. Obtener otros productos para seccion de relacionados
+const otrosProductos = todosProductos.filter(p => !productosEmpotrados.includes(p));
+
+// 4. Definir subcategorias para navegacion del sidebar
+const subcategorias = [
+  { slug: 'tipo-30me', nombre: 'Gabinete Tipo 30ME', descripcion: 'Gabinete completo con manguera 30m', activo: false },
+  { slug: 'gabinete-empotrado', nombre: 'Gabinete Empotrado', descripcion: 'Instalacion al ras del muro', activo: true },
+  { slug: 'hidrante-banqueta', nombre: 'Hidrante de Banqueta', descripcion: 'Toma exterior hierro ductil', activo: false },
+  { slug: 'estacion-manguera', nombre: 'Estacion de Manguera', descripcion: 'Carrete oscilante 180 grados', activo: false },
+];
+---
+
+<Layout
+  title="Gabinete Empotrado Contra Incendios | Venta Mexico"
+  description="Gabinete empotrado contra incendios para instalacion al ras del muro. Acero laminado o inoxidable T430. Ideal para hospitales, hoteles y edificios corporativos. NOM-002-STPS. Mexico."
+  activePage="equipos"
+  heroTitle="Gabinete Empotrado"
+  heroIntro="Los gabinetes empotrados se instalan dentro del muro quedando al ras con la superficie, ofreciendo una solucion estetica sin sacrificar funcionalidad. Fabricados en acero laminado o inoxidable T430, son la opcion preferida para hospitales, hoteles de lujo, edificios corporativos y espacios donde la arquitectura es prioritaria."
+  heroBadge="Gabinetes Contra Incendios"
+  heroMetrics={[
+    { valor: "Al ras", texto: "Instalacion empotrada" },
+    { valor: "T430", texto: "Inoxidable opcional" },
+    { valor: "NOM", texto: "Certificado" }
+  ]}
+  heroPrimaryText="Ver Catalogo"
+  heroPrimaryLink="#catalogo"
+  heroSecondaryText="Solicitar Cotizacion"
+  heroSecondaryLink="#cotizar"
+  heroShowRightContent={true}
+>
+
+  <!-- HERO CONTENT -->
+  <Fragment slot="hero-content">
+    <p>El <strong>gabinete empotrado</strong> esta disenado para proyectos donde la estetica arquitectonica es tan importante como la seguridad contra incendios. Al instalarse dentro de una cavidad en el muro con una ceja de 5/8" para tablaroca, el gabinete queda completamente al ras con la superficie, eliminando obstrucciones en pasillos y preservando la linea de diseno del espacio. Cumple integramente con <strong>NOM-002-STPS-2010</strong> y <strong>NFPA 14</strong>.</p>
+    <p>En <strong>Gama de Mexico</strong> ofrecemos gabinetes empotrados en tres acabados: pintura electrostatica roja (estandar normativo), pintura blanca (para integracion con muros claros) y acero inoxidable T430 pulido #4 (para areas de alta estetica como lobbies y hospitales). Cada gabinete incluye puerta con vidrio templado de 3mm, bisagra continua de 180 grados para apertura completa y cerradura de cilindro. Asesoramos en la especificacion correcta segun el proyecto arquitectonico y los requerimientos de Proteccion Civil.</p>
+  </Fragment>
+
+  <!-- MAIN CONTENT WITH SIDEBAR -->
+  <section class="subcat-content">
+    <div class="container">
+      <div class="subcat-layout">
+
+        <!-- MAIN CONTENT (LEFT) -->
+        <main class="subcat-main">
+
+          <!-- CATALOG HEADER -->
+          <div class="catalog-header" id="catalogo">
+            <div class="catalog-header__text">
+              <h2 class="catalog-header__title">Catalogo de Gabinetes Empotrados</h2>
+              <p class="catalog-header__desc">Gabinetes para instalacion al ras del muro con acabados premium</p>
+            </div>
+            <div class="catalog-header__count">
+              <span class="catalog-header__number">{productosEmpotrados.length}</span>
+              <span class="catalog-header__label">producto{productosEmpotrados.length !== 1 ? 's' : ''}</span>
+            </div>
+          </div>
+
+          <!-- PRODUCTS GRID -->
+          <div class="categories__grid">
+            {productosEmpotrados.map((producto) => (
+              <SubcategoryProductCard
+                title={producto.data.title}
+                description={producto.data.description}
+                brand={producto.data.marca}
+                image={producto.data.imagen}
+                productSlug={producto.id}
+                flow={producto.data.flujo}
+                material={producto.data.material}
+                certifications={producto.data.certificaciones}
+              />
+            ))}
+          </div>
+
+          {productosEmpotrados.length === 0 && (
+            <div class="catalog-empty">
+              <div class="catalog-empty__icon">🔍</div>
+              <h3 class="catalog-empty__title">Proximamente mas opciones</h3>
+              <p class="catalog-empty__text">Estamos agregando mas gabinetes empotrados de diferentes acabados. Mientras tanto, solicita una cotizacion personalizada.</p>
+              <a href="#cotizar" class="btn btn--primary">Solicitar Cotizacion</a>
+            </div>
+          )}
+
+          <!-- TECHNICAL INFO -->
+          <div class="tech-info">
+            <h3 class="tech-info__title">Especificaciones Tecnicas del Gabinete Empotrado</h3>
+            <div class="tech-info__grid">
+              <div class="tech-info__item">
+                <span class="tech-info__label">Dimensiones</span>
+                <span class="tech-info__value">24" x 30" x 5.5"</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Ceja tablaroca</span>
+                <span class="tech-info__value">5/8" perimetral</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Vidrio puerta</span>
+                <span class="tech-info__value">Templado 3mm</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Bisagra</span>
+                <span class="tech-info__value">Continua 180 grados</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Calibre puerta</span>
+                <span class="tech-info__value">Calibre 16</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Acabados</span>
+                <span class="tech-info__value">Rojo, blanco, inox</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA FINAL -->
+          <div class="subcat-cta-final">
+            <div class="subcat-cta-final__content">
+              <h3 class="subcat-cta-final__title">Proyecto arquitectonico con requerimientos especiales?</h3>
+              <p class="subcat-cta-final__desc">Fabricamos gabinetes empotrados en dimensiones especiales, acabados personalizados y configuraciones a medida para proyectos de hospitales, hoteles y edificios corporativos.</p>
+            </div>
+            <a href="#cotizar" class="btn btn--primary">Solicitar Cotizacion Especial</a>
+          </div>
+
+        </main>
+
+        <!-- SIDEBAR (RIGHT) -->
+        <ProductSidebar
+          navTitulo="Tipos de Gabinetes"
+          subcategorias={subcategorias}
+          baseUrl="/gabinetes"
+          backLinkHref="/gabinetes-contra-incendios"
+          backLinkTexto="Ver todos los gabinetes"
+          certificaciones={[
+            { siglas: "NOM", nombre: "NOM-002-STPS-2010" },
+            { siglas: "NFPA", nombre: "NFPA 14 Standpipe" },
+            { siglas: "UL", nombre: "UL Listed" }
+          ]}
+          marcas={["Potter Roemer", "JL Industries", "Larsen's", "Guardian", "Elkhart Brass"]}
+          aplicaciones={[
+            "Hospitales y clinicas",
+            "Hoteles de lujo",
+            "Edificios corporativos",
+            "Centros comerciales premium",
+            "Lobbies y recepciones",
+            "Pasillos de alta estetica"
+          ]}
+          productosRelacionados={[
+            { href: "/mangueras-contra-incendios", nombre: "Mangueras Contra Incendios" },
+            { href: "/boquillas-contra-incendios", nombre: "Boquillas Contra Incendios" },
+            { href: "/valvulas-contra-incendios", nombre: "Valvulas Contra Incendios" },
+            { href: "/extintores", nombre: "Extintores" }
+          ]}
+        />
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RELATED PRODUCTS -->
+  <RelatedProductsGrid
+    titulo="Otros Gabinetes e Hidrantes"
+    subtitulo="Explora mas opciones para tu sistema de proteccion contra incendios"
+    productos={otrosProductos}
+    maxProductos={3}
+    verTodosLink="/gabinetes-contra-incendios"
+    verTodosTexto="Ver todos los gabinetes"
+  />
+
+  <CotizacionForm
+    titulo="Cotiza Gabinetes Empotrados"
+    tipoEquipo="Gabinetes"
+    pagina="Gabinetes Empotrados"
+  />
+
+</Layout>

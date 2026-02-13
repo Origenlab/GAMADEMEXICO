@@ -1,0 +1,138 @@
+---
+// SectionHeader component - Encabezado de sección con dos columnas
+interface Props {
+  titulo: string;
+  subtitulo: string;
+  enlaceTexto?: string;
+  enlaceUrl?: string;
+  parrafo1?: string;
+  parrafo2?: string;
+  idTitulo?: string;
+}
+
+const {
+  titulo,
+  subtitulo,
+  enlaceTexto,
+  enlaceUrl,
+  parrafo1,
+  parrafo2,
+  idTitulo = "section-title"
+} = Astro.props;
+
+const tieneContenidoDerecho = parrafo1 || parrafo2;
+---
+
+<div class={`section-header ${tieneContenidoDerecho ? 'section-header--two-col' : ''}`}>
+  <div class="section-header__left">
+    <h2 id={idTitulo} class="section-header__title">{titulo}</h2>
+    <p class="section-header__subtitle">{subtitulo}</p>
+    {enlaceTexto && enlaceUrl && (
+      <a href={enlaceUrl} class="section-header__link">{enlaceTexto} &rarr;</a>
+    )}
+  </div>
+
+  {tieneContenidoDerecho && (
+    <div class="section-header__right">
+      {parrafo1 && <p>{parrafo1}</p>}
+      {parrafo2 && <p>{parrafo2}</p>}
+    </div>
+  )}
+</div>
+
+<style>
+  .section-header {
+    margin-bottom: var(--spacing-xl);
+    text-align: center;
+  }
+
+  .section-header--two-col {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+    align-items: center;
+    text-align: left;
+  }
+
+  .section-header__left {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+  }
+
+  .section-header:not(.section-header--two-col) .section-header__left {
+    align-items: center;
+  }
+
+  .section-header__title {
+    font-size: var(--font-size-xl);
+    font-weight: 800;
+    color: var(--color-secondary);
+    line-height: var(--line-height-tight);
+    margin: 0;
+  }
+
+  .section-header__subtitle {
+    font-size: var(--font-size-base);
+    color: var(--color-text-light);
+    line-height: var(--line-height-base);
+    margin: 0;
+  }
+
+  .section-header__link {
+    display: inline-flex;
+    align-items: center;
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-top: var(--spacing-xs);
+    transition: color var(--transition-fast);
+  }
+
+  .section-header__link:hover {
+    color: var(--color-primary-dark);
+  }
+
+  .section-header__right {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+
+  .section-header__right p {
+    font-size: var(--font-size-sm);
+    color: var(--color-text);
+    line-height: var(--line-height-base);
+    margin: 0;
+  }
+
+  /* Tablet */
+  @media (min-width: 768px) {
+    .section-header__title {
+      font-size: var(--font-size-2xl);
+    }
+  }
+
+  /* Desktop */
+  @media (min-width: 1024px) {
+    .section-header--two-col {
+      grid-template-columns: 1fr 1fr;
+      gap: var(--spacing-2xl);
+    }
+
+    .section-header__title {
+      font-size: var(--font-size-2xl);
+    }
+
+    .section-header__right p {
+      font-size: var(--font-size-base);
+    }
+  }
+
+  /* Large Desktop */
+  @media (min-width: 1280px) {
+    .section-header__title {
+      font-size: var(--font-size-3xl);
+    }
+  }
+</style>

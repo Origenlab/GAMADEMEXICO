@@ -1,0 +1,9 @@
+# =============================================================================
+# Gama de Mexico — Redirects para Cloudflare Pages
+# =============================================================================
+
+# Redirect index.html a raiz
+/index.html  /  301
+
+# www a non-www (Cloudflare lo maneja via DNS, pero por seguridad)
+# Nota: Este redirect se configura mejor en Cloudflare Dashboard > Rules

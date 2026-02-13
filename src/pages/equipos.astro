@@ -1,0 +1,278 @@
+---
+import Layout from '../layouts/Base.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+import CategoryCard from '../components/CategoryCard.astro';
+import Testimonial from '../components/Testimonial.astro';
+import Faq from '../components/Faq.astro';
+
+// Datos de categorías
+const categorias = [
+  {
+    titulo: 'Monitores Contra Incendios',
+    subtitulo: 'Protección perimetral de alto caudal para plantas industriales y terminales de almacenamiento',
+    enlace: '/monitores-contra-incendios',
+    subcategorias: [
+      { nombre: 'Monitor tipo corazón', enlace: '/monitores/tipo-corazon' },
+      { nombre: 'Monitor tipo cuello de cisne', enlace: '/monitores/cuello-cisne' },
+      { nombre: 'Monitor certificado FM', enlace: '/monitores/certificado-fm' },
+      { nombre: 'Monitor UL Listed', enlace: '/monitores/ul-listed' },
+    ],
+  },
+  {
+    titulo: 'Boquillas Contra Incendios',
+    subtitulo: 'Control preciso de flujo y patrón de descarga para operaciones de combate contra incendios',
+    enlace: '/boquillas-contra-incendios',
+    subcategorias: [
+      { nombre: 'Boquilla tipo pistola', enlace: '/boquillas/tipo-pistola' },
+      { nombre: 'Boquilla turbo jet', enlace: '/boquillas/turbo-jet' },
+      { nombre: 'Boquilla industrial', enlace: '/boquillas/industrial' },
+      { nombre: 'Boquilla certificada', enlace: '/boquillas/certificada' },
+    ],
+  },
+  {
+    titulo: 'Mangueras Contra Incendios',
+    subtitulo: 'Conducción de agua a presión para sistemas fijos, móviles y operaciones de succión',
+    enlace: '/mangueras-contra-incendios',
+    subcategorias: [
+      { nombre: 'Manguera Millhose', enlace: '/mangueras/millhose' },
+      { nombre: 'Manguera Blindex', enlace: '/mangueras/blindex' },
+      { nombre: 'Manguera de succión', enlace: '/mangueras/succion' },
+      { nombre: 'Manguera forestal', enlace: '/mangueras/forestal' },
+    ],
+  },
+  {
+    titulo: 'Válvulas Contra Incendios',
+    subtitulo: 'Regulación y control de flujo hidráulico en redes y sistemas contra incendio',
+    enlace: '/valvulas-contra-incendios',
+    subcategorias: [
+      { nombre: 'Válvula de compuerta OS&Y', enlace: '/valvulas/compuerta' },
+      { nombre: 'Válvula de globo', enlace: '/valvulas/globo' },
+      { nombre: 'Válvula de retención', enlace: '/valvulas/retencion' },
+      { nombre: 'Válvula mariposa', enlace: '/valvulas/mariposa' },
+    ],
+  },
+  {
+    titulo: 'Conexiones y Herrajes de Bronce',
+    subtitulo: 'Acoplamiento, derivación y distribución para redes hidráulicas contra incendio',
+    enlace: '/conexiones-herrajes-contra-incendios',
+    subcategorias: [
+      { nombre: 'Adaptadores de bronce', enlace: '/conexiones/adaptadores' },
+      { nombre: 'Conexión Y (Wye)', enlace: '/conexiones/wye' },
+      { nombre: 'Toma siamesa FDC', enlace: '/conexiones/siamesa' },
+      { nombre: 'Coples y reducciones', enlace: '/conexiones/coples' },
+      { nombre: 'Chiflones de tres pasos', enlace: '/conexiones/chiflones' },
+    ],
+  },
+  {
+    titulo: 'Gabinetes e Hidrantes Contra Incendios',
+    subtitulo: 'Almacenamiento de equipos y puntos de toma de agua para edificios, naves e industria',
+    enlace: '/gabinetes-hidrantes-contra-incendios',
+    subcategorias: [
+      { nombre: 'Gabinete tipo 30ME', enlace: '/gabinetes/tipo-30me' },
+      { nombre: 'Hidrante de banqueta', enlace: '/gabinetes/hidrante-banqueta' },
+      { nombre: 'Gabinete empotrado', enlace: '/gabinetes/gabinete-empotrado' },
+      { nombre: 'Estación de manguera', enlace: '/gabinetes/estacion-manguera' },
+    ],
+  },
+];
+
+// Datos de testimonios
+const testimonios = [
+  {
+    texto: 'Compramos monitores tipo corazón certificados FM para nuestra terminal de almacenamiento. La calidad Elkhart Brass es excepcional y el respaldo de Gama de México como distribuidor autorizado nos dio total confianza.',
+    autor: 'Ing. Roberto Salinas D.',
+    cargo: 'Superintendente de Seguridad',
+    empresa: 'Terminal de Almacenamiento, Tabasco',
+  },
+  {
+    texto: 'Equipamos cinco proyectos industriales con válvulas, mangueras y conexiones de bronce. Todo en inventario, documentación completa y entregas coordinadas sin retrasos. Gama de México entiende los tiempos de obra.',
+    autor: 'Ing. Carlos Vega R.',
+    cargo: 'Director de Obra',
+    empresa: 'Constructora Nacional, CDMX',
+  },
+  {
+    texto: 'Necesitábamos boquillas certificadas UL para cumplir con protección civil. La asesoría técnica fue clave para seleccionar los modelos correctos y la documentación llegó completa para la verificación.',
+    autor: 'Ing. Patricia Rojas S.',
+    cargo: 'Coordinadora de Infraestructura',
+    empresa: 'Data Center, Querétaro',
+  },
+];
+
+// Datos de ventajas
+const ventajas = [
+  {
+    titulo: 'Distribuidor autorizado Elkhart Brass',
+    descripcion: 'Somos distribuidores oficiales de Elkhart Brass, fabricante con más de 120 años de liderazgo mundial en equipos contra incendios.',
+  },
+  {
+    titulo: 'Certificaciones UL y FM',
+    descripcion: 'Todos nuestros monitores y boquillas cuentan con certificaciones UL y FM, garantizando cumplimiento normativo internacional.',
+    enlace: '/servicios/garantia#certificados-ul-fm',
+  },
+  {
+    titulo: 'Inventario disponible en México',
+    descripcion: 'Stock permanente de los equipos más solicitados para entregas inmediatas sin tiempos de importación.',
+  },
+  {
+    titulo: 'Asesoría técnica sin costo',
+    descripcion: 'Ingenieros especializados te ayudan a seleccionar el equipo correcto según tu proyecto y normativa aplicable.',
+  },
+  {
+    titulo: 'Documentación completa',
+    descripcion: 'Fichas técnicas, certificados y especificaciones del fabricante para verificaciones de protección civil y auditorías.',
+    enlace: '/servicios/garantia#fichas-tecnicas',
+  },
+  {
+    titulo: 'Precios por volumen y mayoreo',
+    descripcion: 'Cotizaciones corporativas con descuentos por volumen para proyectos de gran escala y compras recurrentes.',
+  },
+];
+
+// Datos de FAQ
+const faqItems = [
+  {
+    pregunta: '¿Qué equipos contra incendios venden en Gama de México?',
+    respuesta: 'Ofrecemos un catálogo completo en seis categorías: Monitores (tipo corazón, cuello de cisne, certificados FM y UL), Boquillas (tipo pistola, turbo jet, certificadas), Mangueras (Millhose, Blindex, succión, forestales), Válvulas (compuerta OS&Y, globo, retención, mariposa), Conexiones y herrajes de bronce (adaptadores, chiflones, tomas siamesas, coples), y Gabinetes e hidrantes (tipo 30ME, empotrados, hidrantes de banqueta).',
+  },
+  {
+    pregunta: '¿Los equipos tienen certificaciones UL y FM?',
+    respuesta: 'Sí. Como distribuidores autorizados de Elkhart Brass, nuestros monitores y boquillas cuentan con certificaciones UL (Underwriters Laboratories) y FM (Factory Mutual). Proporcionamos documentación técnica completa para verificaciones de protección civil y auditorías de seguridad.',
+  },
+  {
+    pregunta: '¿Cuánto tardan en entregar los equipos contra incendios?',
+    respuesta: 'Mantenemos inventario permanente de equipos más solicitados. En Valle de México y Querétaro entregamos en 24 a 48 horas; para el resto de la República Mexicana entre 3 y 7 días hábiles. Si requiere importación, informamos el plazo exacto en la cotización.',
+  },
+  {
+    pregunta: '¿Cómo puedo solicitar una cotización de equipos contra incendios?',
+    respuesta: 'Puedes solicitar cotización mediante el formulario en esta página (envío directo a WhatsApp), escribiendo al WhatsApp 55 6529 8240, llamando al 55 1543 7164 o por email a ventas@gamademexico.com. Respondemos en menos de 24 horas con precios y disponibilidad.',
+  },
+  {
+    pregunta: '¿Ofrecen precios especiales para compras por volumen?',
+    respuesta: 'Sí. Preparamos cotizaciones corporativas con precios especiales por volumen, condiciones de pago flexibles y coordinación de entregas múltiples para constructoras, desarrolladoras, plantas industriales y firmas de ingeniería.',
+  },
+  {
+    pregunta: '¿Cuál es la diferencia entre un monitor tipo corazón y uno tipo cuello de cisne?',
+    respuesta: 'Los monitores tipo corazón tienen base fija con rotación horizontal (360°) y vertical (hasta 90°), ideales para instalación en piso. Los monitores cuello de cisne cuentan con brazo elevado para proyectar agua desde altura, útiles sobre tanques de almacenamiento o estructuras elevadas.',
+  },
+  {
+    pregunta: '¿Proporcionan documentación para verificaciones de protección civil?',
+    respuesta: 'Sí. Entregamos fichas técnicas del fabricante, certificados de conformidad, manuales de instalación y declaraciones de cumplimiento UL/FM. También preparamos cartas técnicas específicas cuando el proyecto lo requiera.',
+  },
+];
+---
+
+<Layout
+  title="Catálogo Equipos Contra Incendios | Gama de México"
+  description="Catálogo de monitores, boquillas, mangueras, válvulas, conexiones y gabinetes contra incendios. Certificaciones UL/FM. Distribuidor Elkhart Brass."
+  activePage="equipos"
+  showLeadCapture={true}
+  heroTitle="Catálogo de Equipos Contra Incendios"
+  heroIntro="Explora nuestro catálogo completo de equipos certificados para protección contra incendios. Monitores, boquillas, mangueras, válvulas, conexiones y gabinetes de las mejores marcas con certificaciones UL y FM."
+  heroBadge="Equipos Contra Incendios"
+  heroMetrics={[
+    { valor: "6", texto: "Categorías de equipos" },
+    { valor: "UL/FM", texto: "Certificaciones" },
+    { valor: "Nacional", texto: "Cobertura" }
+  ]}
+  heroPrimaryText="Solicitar Cotización"
+  heroPrimaryLink="#cotizar"
+  heroSecondaryText="Ver Categorías"
+  heroSecondaryLink="#categorias"
+  heroShowRightContent={true}
+>
+
+  <!-- HERO CONTENT -->
+  <Fragment slot="hero-content">
+    <p>Nuestro catálogo reúne las soluciones más completas en protección contra incendios: monitores de alto caudal para protección perimetral, boquillas profesionales con control preciso de flujo, mangueras industriales de máxima resistencia, válvulas certificadas para redes hidráulicas, conexiones y herrajes de bronce de grado comercial, así como gabinetes e hidrantes diseñados para instalaciones fijas en edificios, naves industriales y desarrollos residenciales.</p>
+    <p>En Gama de México contamos con más de dos décadas de experiencia asesorando a constructoras, firmas de ingeniería, instaladores certificados y responsables de seguridad industrial. Como distribuidores autorizados de Elkhart Brass, garantizamos productos con certificaciones UL y FM, documentación técnica completa para verificaciones de protección civil, y un equipo de especialistas disponible para ayudarte a seleccionar los equipos exactos que tu proyecto requiere.</p>
+  </Fragment>
+
+  <!-- CATEGORÍAS -->
+  <section class="categories" id="equipos" aria-labelledby="categories-title">
+    <div class="container">
+      <SectionHeader
+        titulo="Categorías de Equipos Contra Incendios"
+        subtitulo="Explora nuestro catálogo completo de equipos certificados UL y FM"
+        idTitulo="categories-title"
+        parrafo1="Cada categoría incluye especificaciones técnicas detalladas, certificaciones internacionales y compatibilidad garantizada con sistemas contra incendios existentes. Selecciona una categoría para conocer productos disponibles y solicitar cotización."
+        parrafo2="Trabajamos con constructoras, firmas de ingeniería, instaladores certificados y responsables de seguridad que requieren documentación completa para cumplimiento normativo y verificaciones de protección civil."
+      />
+      <div class="categories__grid">
+        {categorias.map((cat) => (
+          <CategoryCard
+            titulo={cat.titulo}
+            subtitulo={cat.subtitulo}
+            enlace={cat.enlace}
+            subcategorias={cat.subcategorias}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST / VENTAJAS -->
+  <section class="trust" aria-labelledby="trust-title">
+    <div class="container">
+      <SectionHeader
+        titulo="Por Qué Comprar Equipos Contra Incendios en Gama de México"
+        subtitulo="Calidad certificada, respaldo técnico y disponibilidad que ningún otro distribuidor te ofrece"
+        idTitulo="trust-title"
+        enlaceTexto="Conoce todos nuestros servicios"
+        enlaceUrl="/servicios"
+        parrafo1="Somos distribuidores autorizados de Elkhart Brass, fabricante con más de 120 años de liderazgo mundial en equipos contra incendios. Todos nuestros monitores y boquillas cuentan con certificaciones UL y FM, respaldando el cumplimiento normativo de tu proyecto."
+        parrafo2="Mantenemos inventario permanente en México para entregas inmediatas, ofrecemos asesoría técnica sin costo y proporcionamos documentación completa para verificaciones de protección civil y auditorías de seguridad."
+      />
+      <div class="trust__grid">
+        {ventajas.map((item) => (
+          <div class="trust__item">
+            <h3 class="trust__item-title">
+              {item.enlace ? <a href={item.enlace}>{item.titulo}</a> : item.titulo}
+            </h3>
+            <p class="trust__item-desc">{item.descripcion}</p>
+          </div>
+        ))}
+      </div>
+
+      <SectionHeader
+        titulo="Lo Que Dicen Nuestros Clientes"
+        subtitulo="Empresas de todo México confían en Gama de México para sus equipos contra incendios"
+        idTitulo="testimonials-title"
+      />
+      <div class="trust__testimonials">
+        {testimonios.map((t) => (
+          <Testimonial
+            texto={t.texto}
+            autor={t.autor}
+            cargo={t.cargo}
+            empresa={t.empresa}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- SEO CONTENT -->
+  <section class="seo-content" aria-labelledby="seo-title">
+    <div class="container">
+      <div class="seo-content__body">
+        <h2 id="seo-title" class="seo-content__title">Equipos Contra Incendios en México: Catálogo, Certificaciones y Cómo Elegir el Equipo Correcto</h2>
+        <p class="seo-content__text">Seleccionar los <strong>equipos contra incendios</strong> correctos para tu proyecto no es una decisión que deba tomarse a la ligera. Ya sea que estés equipando una planta industrial, un desarrollo inmobiliario, un centro de datos o una terminal de almacenamiento, cada componente del sistema —desde <a href="/monitores-contra-incendios">monitores contra incendios</a> y <a href="/boquillas-contra-incendios">boquillas profesionales</a> hasta <a href="/mangueras-contra-incendios">mangueras certificadas</a>, <a href="/valvulas-contra-incendios">válvulas industriales</a>, <a href="/conexiones-herrajes-contra-incendios">conexiones de bronce</a> y <a href="/gabinetes-hidrantes-contra-incendios">gabinetes e hidrantes</a>— debe cumplir con especificaciones técnicas precisas, normativas de seguridad vigentes y condiciones operativas del entorno donde se instalará.</p>
+        <p class="seo-content__text">En México, la normatividad en protección civil —especialmente las normas NOM-002-STPS sobre prevención y protección contra incendios— establece requisitos específicos para equipos y sistemas contra incendios. Las certificaciones internacionales <strong>UL (Underwriters Laboratories)</strong> y <strong>FM (Factory Mutual)</strong> son el estándar de oro en la industria. Como <strong>distribuidores autorizados de Elkhart Brass</strong> —fabricante con más de 120 años liderando la innovación en equipos contra incendios a nivel mundial— en Gama de México ofrecemos un catálogo completo de productos con certificaciones UL y FM, documentación técnica del fabricante y respaldo de garantía real.</p>
+        <p class="seo-content__text">Operamos desde Ciudad de México y Querétaro con envíos a toda la República Mexicana y asesoría técnica sin costo para ayudarte a seleccionar exactamente lo que necesitas.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq" aria-labelledby="faq-title">
+    <div class="container">
+      <SectionHeader
+        titulo="Preguntas Frecuentes sobre Equipos Contra Incendios"
+        subtitulo="Resolvemos las dudas más comunes sobre productos, certificaciones, envíos y cotizaciones"
+        idTitulo="faq-title"
+      />
+      <Faq items={faqItems} id="faq-equipos" />
+    </div>
+  </section>
+
+</Layout>

@@ -1,0 +1,12 @@
+{
+  "short_name": "Gama MX",
+  "name": "Gama de M\u00e9xico - Equipos Contra Incendios",
+  "icons": [{
+    "src": "icon.png",
+    "type": "image/png",
+    "sizes": "192x192"
+  }],
+  "start_url": "/?utm_source=homescreen",
+  "background_color": "#ffffff",
+  "theme_color": "#C41E3A"
+}

@@ -1,0 +1,199 @@
+---
+import Layout from '../../layouts/Base.astro';
+import '../../styles/subcategory.css';
+import { getCollection } from 'astro:content';
+import SubcategoryProductCard from '../../components/SubcategoryProductCard.astro';
+import ProductSidebar from '../../components/ProductSidebar.astro';
+import RelatedProductsGrid from '../../components/RelatedProductsGrid.astro';
+import CotizacionForm from '../../components/CotizacionForm.astro';
+
+// Obtener productos de monitores
+const todosMonitores = (await getCollection('productos', ({ data }) => data.categoria === 'monitores')).sort((a, b) => a.data.orden - b.data.orden);
+
+// Filtrar productos UL Listed por subcategoria
+const productosUL = todosMonitores.filter(p => p.data.subcategoria === 'ul-listed');
+
+// Otros monitores para la sección de relacionados
+const otrosMonitores = todosMonitores.filter(p => !productosUL.includes(p));
+
+// Definir las subcategorías de monitores para el sidebar
+const subcategorias = [
+  {
+    slug: 'tipo-corazon',
+    nombre: 'Monitor Tipo Corazón',
+    descripcion: 'Protección perimetral 360°',
+    activo: false
+  },
+  {
+    slug: 'cuello-cisne',
+    nombre: 'Monitor Cuello de Cisne',
+    descripcion: 'Protección de tanques elevados',
+    activo: false
+  },
+  {
+    slug: 'certificado-fm',
+    nombre: 'Monitor Certificado FM',
+    descripcion: 'Aprobación Factory Mutual',
+    activo: false
+  },
+  {
+    slug: 'ul-listed',
+    nombre: 'Monitor UL Listed',
+    descripcion: 'Certificación Underwriters Labs',
+    activo: true
+  },
+];
+---
+
+<Layout
+  title="Monitor UL Listed | Certificación UL México"
+  description="Monitor contra incendio certificado UL Listed. Protección industrial conforme NOM-002-STPS. Para plantas, refinerías e hidrantes. México."
+  activePage="equipos"
+  heroTitle="Monitor UL Listed"
+  heroIntro="Monitores contra incendio con certificación UL Listed de Underwriters Laboratories, validación reconocida internacionalmente para equipos de seguridad. La certificación UL garantiza que el equipo cumple con estándares rigurosos de seguridad y rendimiento, requisito esencial para cumplimiento de NOM-002-STPS en México."
+  heroBadge="Monitores Contra Incendios"
+  heroMetrics={[
+    { valor: "UL", texto: "Certificación" },
+    { valor: "NOM-002", texto: "Cumplimiento" },
+    { valor: "NFPA", texto: "Estándar" }
+  ]}
+  heroPrimaryText="Ver Catálogo"
+  heroPrimaryLink="#catalogo"
+  heroSecondaryText="Solicitar Cotización"
+  heroSecondaryLink="#cotizar"
+  heroShowRightContent={true}
+>
+
+  <!-- HERO CONTENT -->
+  <Fragment slot="hero-content">
+    <p>La certificación <strong>UL Listed</strong> (Underwriters Laboratories) es el sello de confianza más reconocido en Norteamérica para equipos de protección contra incendios. Cada monitor con esta certificación ha sido probado y evaluado según estándares UL específicos para su categoría, verificando seguridad eléctrica, resistencia de materiales, rendimiento hidráulico y durabilidad. En México, los equipos UL Listed facilitan el cumplimiento de NOM-002-STPS y son aceptados por autoridades de protección civil.</p>
+    <p><strong>Gama de México</strong> distribuye monitores UL Listed de fabricantes premium como Elkhart Brass y Akron Brass. Cada equipo incluye número de archivo UL verificable en la base de datos pública de UL, garantizando autenticidad y trazabilidad. Asesoramos en la selección del modelo correcto para tu aplicación específica: protección perimetral industrial, sistemas de hidrantes, o instalaciones comerciales que requieren certificación para inspecciones de Protección Civil y renovación de licencias de funcionamiento.</p>
+  </Fragment>
+
+  <!-- MAIN CONTENT WITH SIDEBAR -->
+  <section class="subcat-content">
+    <div class="container">
+      <div class="subcat-layout">
+
+        <!-- MAIN CONTENT (LEFT) -->
+        <main class="subcat-main">
+
+          <!-- CATALOG HEADER -->
+          <div class="catalog-header">
+            <div class="catalog-header__text">
+              <h2 class="catalog-header__title">Catálogo de Monitores UL Listed</h2>
+              <p class="catalog-header__desc">Selecciona el producto que mejor se adapte a tu proyecto industrial</p>
+            </div>
+            <div class="catalog-header__count">
+              <span class="catalog-header__number">{productosUL.length}</span>
+              <span class="catalog-header__label">producto{productosUL.length !== 1 ? 's' : ''}</span>
+            </div>
+          </div>
+
+          <!-- PRODUCTS GRID -->
+          <div class="categories__grid">
+            {productosUL.map((producto) => (
+              <SubcategoryProductCard
+                title={producto.data.title}
+                description={producto.data.description}
+                brand={producto.data.marca}
+                image={producto.data.imagen}
+                productSlug={producto.id}
+                flow={producto.data.flujo}
+                material={producto.data.material}
+                certifications={producto.data.certificaciones}
+              />
+            ))}
+          </div>
+
+          {productosUL.length === 0 && (
+            <div class="catalog-empty">
+              <div class="catalog-empty__icon">🔍</div>
+              <h3 class="catalog-empty__title">Próximamente más opciones</h3>
+              <p class="catalog-empty__text">Estamos agregando más productos de monitores certificados UL. Mientras tanto, solicita una cotización personalizada.</p>
+              <a href="#cotizar" class="btn btn--primary">Solicitar Cotización</a>
+            </div>
+          )}
+
+          <!-- TECHNICAL INFO -->
+          <div class="tech-info">
+            <h3 class="tech-info__title">Especificaciones Técnicas Generales</h3>
+            <div class="tech-info__grid">
+              <div class="tech-info__item">
+                <span class="tech-info__label">Caudal típico</span>
+                <span class="tech-info__value">500 - 2,000 GPM</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Presión de trabajo</span>
+                <span class="tech-info__value">200 - 300 PSI</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Rotación horizontal</span>
+                <span class="tech-info__value">360° completos</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Ajuste vertical</span>
+                <span class="tech-info__value">-45° a +90°</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Conexiones</span>
+                <span class="tech-info__value">2.5" y 3" NPT/NH</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Materiales</span>
+                <span class="tech-info__value">Bronce, Acero inox.</span>
+              </div>
+            </div>
+          </div>
+
+        </main>
+
+        <!-- SIDEBAR (RIGHT) -->
+        <ProductSidebar
+          navTitulo="Tipos de Monitores"
+          subcategorias={subcategorias}
+          baseUrl="/monitores"
+          backLinkHref="/monitores-contra-incendios"
+          backLinkTexto="Ver todos los monitores"
+          certificaciones={[
+            { siglas: "UL", nombre: "UL Listed" },
+            { siglas: "FM", nombre: "Factory Mutual" },
+            { siglas: "NOM", nombre: "NOM-002-STPS" }
+          ]}
+          marcas={["Elkhart Brass", "Akron Brass", "Task Force Tips", "POK"]}
+          aplicaciones={[
+            "Refinerías",
+            "Plantas petroquímicas",
+            "Terminales de almacenamiento",
+            "Industria automotriz",
+            "Proyectos con requerimientos UL"
+          ]}
+          productosRelacionados={[
+            { href: "/boquillas-contra-incendios", nombre: "Boquillas Contra Incendios" },
+            { href: "/mangueras-contra-incendios", nombre: "Mangueras Contra Incendios" },
+            { href: "/valvulas-contra-incendios", nombre: "Válvulas Contra Incendios" },
+            { href: "/conexiones-herrajes-contra-incendios", nombre: "Conexiones y Herrajes" }
+          ]}
+        />
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RELATED MONITORS -->
+  <RelatedProductsGrid
+    titulo="Otros Tipos de Monitores"
+    subtitulo="Explora más opciones según tu aplicación específica"
+    productos={otrosMonitores}
+    maxProductos={3}
+    verTodosLink="/monitores-contra-incendios"
+    verTodosTexto="Ver todos los monitores"
+  />
+
+  <CotizacionForm
+    titulo="Cotiza Monitores UL Listed"
+    tipoEquipo="Monitores"
+    pagina="Monitores UL Listed"
+  />
+
+</Layout>

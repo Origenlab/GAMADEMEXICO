@@ -1,0 +1,199 @@
+---
+import Layout from '../../layouts/Base.astro';
+import '../../styles/subcategory.css';
+import { getCollection } from 'astro:content';
+import SubcategoryProductCard from '../../components/SubcategoryProductCard.astro';
+import ProductSidebar from '../../components/ProductSidebar.astro';
+import RelatedProductsGrid from '../../components/RelatedProductsGrid.astro';
+import CotizacionForm from '../../components/CotizacionForm.astro';
+
+// Obtener productos de monitores
+const todosMonitores = (await getCollection('productos', ({ data }) => data.categoria === 'monitores')).sort((a, b) => a.data.orden - b.data.orden);
+
+// Filtrar productos por subcategoría certificado-fm
+const productosFM = todosMonitores.filter(p => p.data.subcategoria === 'certificado-fm');
+
+// Otros monitores para la sección de relacionados
+const otrosMonitores = todosMonitores.filter(p => !productosFM.includes(p));
+
+// Definir las subcategorías de monitores para el sidebar
+const subcategorias = [
+  {
+    slug: 'tipo-corazon',
+    nombre: 'Monitor Tipo Corazón',
+    descripcion: 'Protección perimetral 360°',
+    activo: false
+  },
+  {
+    slug: 'cuello-cisne',
+    nombre: 'Monitor Cuello de Cisne',
+    descripcion: 'Protección de tanques elevados',
+    activo: false
+  },
+  {
+    slug: 'certificado-fm',
+    nombre: 'Monitor Certificado FM',
+    descripcion: 'Aprobación Factory Mutual',
+    activo: true
+  },
+  {
+    slug: 'ul-listed',
+    nombre: 'Monitor UL Listed',
+    descripcion: 'Certificación Underwriters Labs',
+    activo: false
+  },
+];
+---
+
+<Layout
+  title="Monitor Certificado FM | Factory Mutual México"
+  description="Monitor contra incendio certificado FM Approved. Cumple FM 1421 y NFPA. Para refinerías y plantas industriales. Distribuidor Elkhart Brass México."
+  activePage="equipos"
+  heroTitle="Monitor Certificado FM"
+  heroIntro="Monitores contra incendio con certificación FM Approved (Factory Mutual), el estándar más exigente de la industria para equipos de protección activa. Requeridos por aseguradoras internacionales y especificados en proyectos de alto riesgo como refinerías, plantas químicas y terminales de almacenamiento."
+  heroBadge="Monitores Contra Incendios"
+  heroMetrics={[
+    { valor: "FM", texto: "Factory Mutual" },
+    { valor: "1421", texto: "Estándar FM" },
+    { valor: "NFPA", texto: "Cumplimiento" }
+  ]}
+  heroPrimaryText="Ver Catálogo"
+  heroPrimaryLink="#catalogo"
+  heroSecondaryText="Solicitar Cotización"
+  heroSecondaryLink="#cotizar"
+  heroShowRightContent={true}
+>
+
+  <!-- HERO CONTENT -->
+  <Fragment slot="hero-content">
+    <p>La certificación <strong>FM Approved</strong> (Factory Mutual) representa el nivel más alto de validación para equipos contra incendios a nivel mundial. Los monitores con esta certificación han sido sometidos a pruebas exhaustivas de rendimiento, durabilidad y confiabilidad según el estándar FM 1421, garantizando su funcionamiento en las condiciones más críticas. Esta certificación es requisito obligatorio para muchas aseguradoras internacionales y proyectos industriales de alto riesgo.</p>
+    <p><strong>Gama de México</strong> es distribuidor autorizado de monitores certificados FM de Elkhart Brass, reconocidos globalmente por su calidad y trazabilidad. Cada equipo incluye documentación completa de certificación para cumplimiento normativo y auditorías. Asesoramos en la selección del modelo correcto según los requerimientos específicos de tu póliza de seguro, normativa NFPA aplicable y condiciones operativas del proyecto.</p>
+  </Fragment>
+
+  <!-- MAIN CONTENT WITH SIDEBAR -->
+  <section class="subcat-content">
+    <div class="container">
+      <div class="subcat-layout">
+
+        <!-- MAIN CONTENT (LEFT) -->
+        <main class="subcat-main">
+
+          <!-- CATALOG HEADER -->
+          <div class="catalog-header">
+            <div class="catalog-header__text">
+              <h2 class="catalog-header__title">Catálogo de Monitores Certificados FM</h2>
+              <p class="catalog-header__desc">Selecciona el producto que mejor se adapte a tu proyecto industrial</p>
+            </div>
+            <div class="catalog-header__count">
+              <span class="catalog-header__number">{productosFM.length}</span>
+              <span class="catalog-header__label">producto{productosFM.length !== 1 ? 's' : ''}</span>
+            </div>
+          </div>
+
+          <!-- PRODUCTS GRID -->
+          <div class="categories__grid">
+            {productosFM.map((producto) => (
+              <SubcategoryProductCard
+                title={producto.data.title}
+                description={producto.data.description}
+                brand={producto.data.marca}
+                image={producto.data.imagen}
+                productSlug={producto.id}
+                flow={producto.data.flujo}
+                material={producto.data.material}
+                certifications={producto.data.certificaciones}
+              />
+            ))}
+          </div>
+
+          {productosFM.length === 0 && (
+            <div class="catalog-empty">
+              <div class="catalog-empty__icon">🔍</div>
+              <h3 class="catalog-empty__title">Próximamente más opciones</h3>
+              <p class="catalog-empty__text">Estamos agregando más productos de monitores certificados FM. Mientras tanto, solicita una cotización personalizada.</p>
+              <a href="#cotizar" class="btn btn--primary">Solicitar Cotización</a>
+            </div>
+          )}
+
+          <!-- TECHNICAL INFO -->
+          <div class="tech-info">
+            <h3 class="tech-info__title">Especificaciones Técnicas Generales</h3>
+            <div class="tech-info__grid">
+              <div class="tech-info__item">
+                <span class="tech-info__label">Caudal típico</span>
+                <span class="tech-info__value">500 - 2,000 GPM</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Presión de trabajo</span>
+                <span class="tech-info__value">200 - 300 PSI</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Rotación horizontal</span>
+                <span class="tech-info__value">360° completos</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Ajuste vertical</span>
+                <span class="tech-info__value">-45° a +90°</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Conexiones</span>
+                <span class="tech-info__value">2.5" y 3" NPT/NH</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Materiales</span>
+                <span class="tech-info__value">Bronce, Acero inox.</span>
+              </div>
+            </div>
+          </div>
+
+        </main>
+
+        <!-- SIDEBAR (RIGHT) -->
+        <ProductSidebar
+          navTitulo="Tipos de Monitores"
+          subcategorias={subcategorias}
+          baseUrl="/monitores"
+          backLinkHref="/monitores-contra-incendios"
+          backLinkTexto="Ver todos los monitores"
+          certificaciones={[
+            { siglas: "FM", nombre: "Factory Mutual" },
+            { siglas: "UL", nombre: "UL Listed" },
+            { siglas: "NOM", nombre: "NOM-002-STPS" }
+          ]}
+          marcas={["Elkhart Brass", "Akron Brass", "Task Force Tips", "POK"]}
+          aplicaciones={[
+            "Refinerías",
+            "Plantas petroquímicas",
+            "Terminales de almacenamiento",
+            "Industria automotriz",
+            "Proyectos con requerimientos FM"
+          ]}
+          productosRelacionados={[
+            { href: "/boquillas-contra-incendios", nombre: "Boquillas Contra Incendios" },
+            { href: "/mangueras-contra-incendios", nombre: "Mangueras Contra Incendios" },
+            { href: "/valvulas-contra-incendios", nombre: "Válvulas Contra Incendios" },
+            { href: "/conexiones-herrajes-contra-incendios", nombre: "Conexiones y Herrajes" }
+          ]}
+        />
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RELATED MONITORS -->
+  <RelatedProductsGrid
+    titulo="Otros Tipos de Monitores"
+    subtitulo="Explora más opciones según tu aplicación específica"
+    productos={otrosMonitores}
+    maxProductos={3}
+    verTodosLink="/monitores-contra-incendios"
+    verTodosTexto="Ver todos los monitores"
+  />
+
+  <CotizacionForm
+    titulo="Cotiza Monitores Certificados FM"
+    tipoEquipo="Monitores"
+    pagina="Monitores Certificados FM"
+  />
+
+</Layout>

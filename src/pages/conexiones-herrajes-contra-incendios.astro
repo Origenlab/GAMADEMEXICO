@@ -1,0 +1,537 @@
+---
+import Layout from '../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+
+const productos = (await getCollection('productos', ({ data }) => data.categoria === 'conexiones-herrajes')).sort((a, b) => a.data.orden - b.data.orden);
+---
+
+<Layout
+  title="Conexiones y Herrajes Contra Incendio | México"
+  description="Conexiones y herrajes contra incendio. Adaptadores bronce, toma siamesa, Wye, coples Storz. Certificados UL/FM. Distribuidor Elkhart Brass México."
+  activePage="equipos"
+  heroTitle="Conexiones y Herrajes"
+  heroBadge="Equipos Contra Incendios"
+  heroShowRightContent={true}
+>
+  <Fragment slot="hero-content">
+    <p>Ofrecemos conexiones y herrajes contra incendios fabricados en bronce de alta calidad para integrar mangueras, hidrantes y equipos de bombeo en sistemas de proteccion completos. Nuestro catalogo incluye adaptadores de conversion NH/NPT/Storz, conexiones Y con valvulas de bola, tomas siamesas FDC certificadas y coples de acoplamiento rapido.</p>
+    <p>Todos nuestros herrajes cuentan con certificacion UL y FM, garantizando compatibilidad universal y operacion confiable bajo presion. Como distribuidor autorizado Elkhart Brass, proporcionamos productos originales con documentacion completa para auditorias y cumplimiento normativo.</p>
+  </Fragment>
+
+  <!-- BREADCRUMB -->
+  <nav class="breadcrumb" aria-label="Navegación de migas de pan">
+    <div class="container">
+      <ol class="breadcrumb__list">
+        <li class="breadcrumb__item"><a href="/" class="breadcrumb__link">Inicio</a></li>
+        <li class="breadcrumb__item"><a href="/equipos" class="breadcrumb__link">Equipos</a></li>
+        <li class="breadcrumb__item breadcrumb__item--active" aria-current="page">Conexiones y Herrajes</li>
+      </ol>
+    </div>
+  </nav><!-- PRODUCTOS DINAMICOS -->
+  <section class="categories" id="conexiones">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Tipos de Herraje Accesorio y Conexiones Bronce Incendio</h2>
+        <p class="section-subtitle">Selecciona un tipo de herraje o conexión manguera para conocer especificaciones técnicas y solicitar cotización</p>
+      </div>
+      <div class="categories__grid">
+        {productos.map((producto) => (
+          <article class="category-card">
+            <div class="category-card__image" role="img" aria-label={producto.data.title}></div>
+            <div class="category-card__body">
+              <h3 class="category-card__title">{producto.data.title}</h3>
+              <p class="category-card__sub">{producto.data.description}</p>
+              <ul class="category-card__products">
+                {producto.data.material && <li class="category-card__product">{producto.data.material}</li>}
+                {producto.data.flujo && <li class="category-card__product">{producto.data.flujo}</li>}
+                {producto.data.certificaciones && producto.data.certificaciones.length > 0 && <li class="category-card__product">Certificaciones: {producto.data.certificaciones.join(', ')}</li>}
+                <li class="category-card__product">Marca: {producto.data.marca}</li>
+              </ul>
+              <div class="category-card__ctas">
+                <a href={`/productos/${producto.id}`} class="btn btn--primary btn--sm">Ver especificaciones</a>
+                <a href="#cotizar" class="btn btn--outline btn--sm">Cotizar</a>
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE DETAILS -->
+  <section class="service-details" aria-labelledby="service-details-title">
+    <div class="container">
+      <div class="section-header">
+        <h2 id="service-details-title" class="section-title">Detalle de Cada Herraje Accesorio y Conexión Bronce</h2>
+      </div>
+
+      <div class="service-detail" id="detalle-adaptadores">
+        <div class="service-detail__content">
+          <h3 class="service-detail__title">Adaptadores de Bronce para Conversión de Roscas</h3>
+          <p class="service-detail__text">Los <strong>adaptadores de bronce</strong> son piezas de conversión profesionales que permiten conectar equipos con diferentes estándares de rosca (NH, NPT) y acoplamientos rápidos (Storz). Fabricados en bronce forjado de alta calidad, garantizan compatibilidad universal entre mangueras, hidrantes, monitores y equipos de bombeo. Venta con precio competitivo y cotización inmediata.</p>
+          <ul class="service-detail__list">
+            <li class="service-detail__list-item">Conversión NH (National Hose) a NPT (National Pipe Tapered)</li>
+            <li class="service-detail__list-item">Adaptadores NH/NPT a Storz para conexión rápida</li>
+            <li class="service-detail__list-item">Bronce forjado con tratamiento anticorrosión</li>
+            <li class="service-detail__list-item">Presión de trabajo 250-300 PSI según modelo</li>
+            <li class="service-detail__list-item">Diámetros: 1", 1.5", 2", 2.5", 3", 4" y 5"</li>
+            <li class="service-detail__list-item">Certificaciones UL Listed según estándares NFPA</li>
+          </ul>
+          <div class="service-detail__ctas">
+            <a href="#cotizar" class="btn btn--primary">Cotizar adaptadores</a>
+            <a href="/conexiones/adaptadores" class="btn btn--outline">Ver catálogo completo →</a>
+          </div>
+        </div>
+        <div class="service-detail__image" role="img" aria-label="Adaptadores de bronce NH NPT Storz Elkhart Brass"></div>
+      </div>
+
+      <div class="service-detail" id="detalle-conexion-y">
+        <div class="service-detail__content">
+          <h3 class="service-detail__title">Conexión Y (Wye) con Válvulas de Bola</h3>
+          <p class="service-detail__text">La <strong>conexión Y o Wye</strong> es una pieza de ramificación profesional que permite dividir una línea de alimentación principal en dos líneas de ataque independientes con control individual mediante válvulas de bola de cuarto de vuelta. El modelo B-97-A de Elkhart Brass es el estándar de la industria con recubrimiento Elk-O-Lite para máxima durabilidad. Costo competitivo disponible.</p>
+          <ul class="service-detail__list">
+            <li class="service-detail__list-item">Modelo Elkhart B-97-A con válvulas de bola integradas</li>
+            <li class="service-detail__list-item">Entrada 2.5" NH hembra, dos salidas 1.5" NH macho</li>
+            <li class="service-detail__list-item">Válvulas de cuarto de vuelta para operación rápida</li>
+            <li class="service-detail__list-item">Bronce forjado con recubrimiento Elk-O-Lite</li>
+            <li class="service-detail__list-item">Presión de trabajo 200 PSI continua</li>
+            <li class="service-detail__list-item">Certificación UL Listed según NFPA</li>
+          </ul>
+          <div class="service-detail__ctas">
+            <a href="#cotizar" class="btn btn--primary">Cotizar conexión Y</a>
+            <a href="/conexiones/wye" class="btn btn--outline">Ver catálogo completo →</a>
+          </div>
+        </div>
+        <div class="service-detail__image" role="img" aria-label="Conexión Y Elkhart B-97-A con válvulas de bola"></div>
+      </div>
+
+      <div class="service-detail" id="detalle-siamesa">
+        <div class="service-detail__content">
+          <h3 class="service-detail__title">Toma Siamesa FDC (Fire Department Connection)</h3>
+          <p class="service-detail__text">La <strong>toma siamesa FDC</strong> es una conexión de alimentación exterior profesional que permite a bomberos suministrar agua al sistema contra incendios desde autobombas. Configuración de dos entradas 2.5" NH hembra con válvulas check integradas que evitan retorno de agua. Beneficios de protección y cumplimiento NFPA 14. Precio y cotización disponible.</p>
+          <ul class="service-detail__list">
+            <li class="service-detail__list-item">Dos entradas 2.5" NH hembra con válvulas check</li>
+            <li class="service-detail__list-item">Prevención de retorno y protección de sobrepresiones</li>
+            <li class="service-detail__list-item">Capacidad hasta 500 GPM por entrada (1,000 GPM total)</li>
+            <li class="service-detail__list-item">Bronce forjado con acabado pulido o cromado</li>
+            <li class="service-detail__list-item">Incluye tapones de protección con cadena</li>
+            <li class="service-detail__list-item">Certificación UL Listed y FM Approved según NFPA 14</li>
+          </ul>
+          <div class="service-detail__ctas">
+            <a href="#cotizar" class="btn btn--primary">Cotizar toma siamesa</a>
+            <a href="/conexiones/siamesa" class="btn btn--outline">Ver catálogo completo →</a>
+          </div>
+        </div>
+        <div class="service-detail__image" role="img" aria-label="Toma siamesa FDC para bomberos"></div>
+      </div>
+
+      <div class="service-detail" id="detalle-storz">
+        <div class="service-detail__content">
+          <h3 class="service-detail__title">Coples Storz y Reducciones de Acoplamiento Rápido</h3>
+          <p class="service-detail__text">Los <strong>coples Storz</strong> son acoplamientos rápidos profesionales de cuarto de vuelta que permiten conectar mangueras sin roscar, reduciendo tiempo de despliegue en 50%. Sistema de guías y pestillos de seguridad que garantiza conexión hermética bajo presión. Disponibles en aluminio anodizado y bronce forjado con precio competitivo.</p>
+          <ul class="service-detail__list">
+            <li class="service-detail__list-item">Acoplamiento de cuarto de vuelta (90 grados)</li>
+            <li class="service-detail__list-item">Coples simétricos: 2.5", 3", 4", 5"</li>
+            <li class="service-detail__list-item">Reducciones asimétricas: 3" x 2.5", 4" x 3", 5" x 4"</li>
+            <li class="service-detail__list-item">Aluminio anodizado o bronce forjado</li>
+            <li class="service-detail__list-item">Empaque EPDM resistente a temperaturas extremas</li>
+            <li class="service-detail__list-item">Presión de trabajo 250-300 PSI según material</li>
+          </ul>
+          <div class="service-detail__ctas">
+            <a href="#cotizar" class="btn btn--primary">Cotizar coples Storz</a>
+            <a href="/conexiones/coples" class="btn btn--outline">Ver catálogo completo →</a>
+          </div>
+        </div>
+        <div class="service-detail__image" role="img" aria-label="Coples Storz de cuarto de vuelta"></div>
+      </div>
+
+      <div class="service-detail" id="detalle-chiflones">
+        <div class="service-detail__content">
+          <h3 class="service-detail__title">Chiflones de Tres Pasos Chief XD</h3>
+          <p class="service-detail__text">Los <strong>chiflones de tres pasos</strong> son boquillas de control manual que permiten ajustar el patrón de descarga entre chorro directo, niebla y cierre completo. El modelo Chief XD de Elkhart Brass ofrece flujo ajustable de 75-200 GPM con certificación UL 401 para máximo rendimiento en combate de incendios.</p>
+          <ul class="service-detail__list">
+            <li class="service-detail__list-item">Tres posiciones: chorro directo, niebla y cierre</li>
+            <li class="service-detail__list-item">Flujo ajustable 75-200 GPM</li>
+            <li class="service-detail__list-item">Conexión 1" y 1½" NH</li>
+            <li class="service-detail__list-item">Construcción aluminio o bronce</li>
+            <li class="service-detail__list-item">Tecnología Chief XD de Elkhart Brass</li>
+            <li class="service-detail__list-item">Certificación UL 401</li>
+          </ul>
+          <div class="service-detail__ctas">
+            <a href="#cotizar" class="btn btn--primary">Cotizar chiflones</a>
+            <a href="/conexiones/chiflones" class="btn btn--outline">Ver catálogo completo →</a>
+          </div>
+        </div>
+        <div class="service-detail__image" role="img" aria-label="Chiflones de tres pasos Chief XD"></div>
+      </div>
+
+      <div class="service-detail" id="detalle-accesorios">
+        <div class="service-detail__content">
+          <h3 class="service-detail__title">Herraje Accesorio Bronce Incendio NST</h3>
+          <p class="service-detail__text">Los <strong>herraje y accesorio bronce</strong> son componentes complementarios esenciales para sistemas contra incendio: tapones ciegos para sellado, caps de protección toma siamés con cadena, niples de extensión y conexiones de montaje NST. Fabricados en bronce para manguera y despliegue con presiones de trabajo de 175-500 PSI según modelo.</p>
+          <ul class="service-detail__list">
+            <li class="service-detail__list-item">Tapones ciegos NH y NPT</li>
+            <li class="service-detail__list-item">Caps de protección con cadena</li>
+            <li class="service-detail__list-item">Niples de extensión en bronce</li>
+            <li class="service-detail__list-item">Herrajes de montaje y sujeción</li>
+            <li class="service-detail__list-item">Tamaños de 1" a 6"</li>
+            <li class="service-detail__list-item">Roscas NH y NPT disponibles</li>
+          </ul>
+          <div class="service-detail__ctas">
+            <a href="#cotizar" class="btn btn--primary">Cotizar accesorios</a>
+            <a href="/conexiones/accesorios" class="btn btn--outline">Ver catálogo completo →</a>
+          </div>
+        </div>
+        <div class="service-detail__image" role="img" aria-label="Accesorios y herrajes contra incendio"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TRUST -->
+  <section class="trust" aria-labelledby="trust-title">
+    <div class="container">
+      <div class="section-header">
+        <h2 id="trust-title" class="section-title">Por Qué Comprar Herraje Accesorio y Conexiones Bronce Incendio</h2>
+        <p class="section-subtitle">Calidad certificada, inventario disponible y asesoría técnica especializada</p>
+      </div>
+      <div class="trust__grid">
+        <div class="trust__item">
+          <h3 class="trust__item-title">Certificaciones UL y FM Listed</h3>
+          <p class="trust__item-desc">Todas nuestras conexiones y herrajes cuentan con certificación UL Listed y FM Approved, garantizando cumplimiento NFPA y operación confiable.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Proveedor Elkhart Brass Original</h3>
+          <p class="trust__item-desc">Distribuidor autorizado Elkhart Brass con más de 125 años de experiencia. Productos originales con garantía de fábrica y soporte técnico profesional.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Venta con Stock Permanente</h3>
+          <p class="trust__item-desc">Inventario disponible de adaptadores, conexiones Y, tomas siamesas, coples Storz y accesorios para entrega inmediata cerca de tu ubicación.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Cotización y Precio Competitivo</h3>
+          <p class="trust__item-desc">Cotización inmediata con precio y costo competitivo. Precios especiales por volumen para proyectos de gran escala y compras recurrentes.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Asesoría Técnica Especializada</h3>
+          <p class="trust__item-desc">Experiencia profesional en selección de conexiones según estándar de rosca, presión de trabajo, diámetro y compatibilidad con equipos existentes.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Documentación para Auditorías</h3>
+          <p class="trust__item-desc">Fichas técnicas, certificados UL/FM, manuales y cartas de conformidad incluidos con cada venta para cumplimiento normativo y protección civil.</p>
+        </div>
+      </div>
+
+      <div class="trust__testimonials-header">
+        <h3 class="trust__testimonials-title">Lo que dicen nuestros clientes</h3>
+        <p class="trust__testimonials-subtitle">Empresas de todo México confían en nuestras conexiones y herrajes</p>
+      </div>
+      <div class="trust__testimonials">
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"Los adaptadores NH a Storz han sido fundamentales para modernizar nuestro equipo. Ahora conectamos mangueras nuevas con acoplamiento Storz a hidrantes municipales NH en menos de 5 segundos. Excelente proveedor con precio justo."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Comandante Roberto Mendoza</span>
+              <span class="testimonial__role">Bomberos Municipales</span>
+              <span class="testimonial__company">Querétaro</span>
+            </div>
+          </div>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"La conexión Y Elkhart B-97-A es increíblemente robusta. Las válvulas de bola operan suavemente incluso con 150 PSI de presión. Llevamos 3 años usándolas sin falla. Cotización rápida y costo muy accesible."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Ing. Patricia Ramírez</span>
+              <span class="testimonial__role">Jefe de Seguridad Industrial</span>
+              <span class="testimonial__company">Grupo Químico del Norte</span>
+            </div>
+          </div>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"Instalamos tomas siamesas FDC en 5 edificios corporativos. La calidad del bronce y el acabado cromado son excepcionales. Las válvulas check funcionan perfectamente. Venta profesional con documentación completa."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Arq. Fernando Gutiérrez</span>
+              <span class="testimonial__role">Director de Proyectos</span>
+              <span class="testimonial__company">Constructora Monterrey SA</span>
+            </div>
+          </div>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"Los coples Storz redujeron nuestro tiempo de despliegue en 50%. La conexión de cuarto de vuelta es súper rápida y los pestillos dan confianza total. Precio competitivo y experiencia profesional."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Capitán Luis Morales</span>
+              <span class="testimonial__role">Estación de Bomberos Industrial</span>
+              <span class="testimonial__company">Pemex Salamanca</span>
+            </div>
+          </div>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"Compramos kit completo de adaptadores para nuestro carro bomba nuevo. La compatibilidad con hidrantes municipales NH e industriales NPT ha sido perfecta. Beneficios de tener todo en una sola compra."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Comandante Alberto Sánchez</span>
+              <span class="testimonial__role">H. Cuerpo de Bomberos</span>
+              <span class="testimonial__company">San Luis Potosí</span>
+            </div>
+          </div>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"El soporte técnico de Gama nos ayudó a seleccionar las conexiones correctas para nuestro proyecto. Nos orientaron sobre diámetros, presiones y certificaciones NFPA. Excelente cotización con precio justo."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Ing. Carmen López</span>
+              <span class="testimonial__role">Gerente de Mantenimiento</span>
+              <span class="testimonial__company">Centro Comercial Galerías</span>
+            </div>
+          </div>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"Las conexiones Elkhart Brass son el estándar de oro. La durabilidad del bronce con recubrimiento Elk-O-Lite es excepcional. Después de 5 años en ambiente marino siguen como nuevas. Proveedor confiable."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Cap. Ricardo Domínguez</span>
+              <span class="testimonial__role">Jefe de Brigada</span>
+              <span class="testimonial__company">Terminal Marítima Veracruz</span>
+            </div>
+          </div>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"La calidad de los herrajes y accesorios es superior a otras marcas. Los tapones con cadena son robustos, las reducciones permiten instalación estándar y todo está certificado UL. Venta rápida y profesional."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Ing. Jorge Hernández</span>
+              <span class="testimonial__role">Instalador Certificado</span>
+              <span class="testimonial__company">Sistemas CI del Bajío</span>
+            </div>
+          </div>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"Gama de México tiene el mejor inventario de conexiones Elkhart Brass en el país. Conseguimos todo lo que necesitábamos en una sola compra. Costo competitivo y entrega cerca de nuestra ubicación."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Ing. Laura Campos</span>
+              <span class="testimonial__role">Consultora de Protección CI</span>
+              <span class="testimonial__company">Firma de Consultoría, CDMX</span>
+            </div>
+          </div>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEAD CAPTURE -->
+  <section class="lead-capture" id="cotizar" aria-labelledby="lead-title">
+    <div class="container">
+      <h2 id="lead-title" class="lead-capture__title">Cotiza tus conexiones y herrajes ahora</h2>
+      <div class="lead-capture__bullets">
+        <span class="lead-capture__bullet">Precios y disponibilidad en menos de 24 horas</span>
+        <span class="lead-capture__bullet">Asesoría técnica para selección correcta de conexiones</span>
+        <span class="lead-capture__bullet">Envíos a toda la República Mexicana</span>
+      </div>
+      <form class="lead-capture__form" id="cotizar-form" aria-label="Formulario de cotización por WhatsApp">
+        <input type="text" class="lead-capture__input" id="lead-nombre" name="nombre" placeholder="Nombre completo" required aria-label="Nombre completo" autocomplete="name">
+        <input type="text" class="lead-capture__input" id="lead-contacto" name="contacto" placeholder="Teléfono o Email" required aria-label="Teléfono o correo electrónico" autocomplete="tel">
+        <select class="lead-capture__select" id="lead-equipo" name="tipo_conexion" required aria-label="Tipo de conexión que necesitas">
+          <option value="" disabled selected>Tipo de conexión</option>
+          <option value="Adaptadores NH/NPT/Storz">Adaptadores NH/NPT/Storz</option>
+          <option value="Conexión Y con válvulas">Conexión Y con válvulas</option>
+          <option value="Toma siamesa FDC">Toma siamesa FDC</option>
+          <option value="Coples Storz">Coples Storz y reducciones</option>
+          <option value="Chiflones de tres pasos">Chiflones de tres pasos</option>
+          <option value="Accesorios y herrajes">Accesorios y herrajes varios</option>
+          <option value="Kit completo">Kit completo de conexiones</option>
+          <option value="Asesoría para selección">Necesito asesoría para seleccionar</option>
+        </select>
+        <button type="submit" class="btn btn--primary lead-capture__submit">Enviar por WhatsApp</button>
+      </form>
+      <p class="lead-capture__trust">Sin compromiso · Atención personalizada · Te respondemos al instante</p>
+      <p class="lead-capture__alt">También puedes escribirnos directo: <a href="https://wa.me/5215565298240" target="_blank" rel="noopener">WhatsApp: 55 6529 8240</a> | Email: <a href="mailto:ventas@gamademexico.com">ventas@gamademexico.com</a></p>
+    </div>
+  </section>
+
+  <!-- EQUIPOS COMPLEMENTARIOS - CROSS-LINKING SEO -->
+  <section class="complementary" aria-labelledby="complementary-title">
+    <div class="container">
+      <div class="section-header">
+        <h2 id="complementary-title" class="section-title">Equipos que Conectan con Nuestros Herrajes</h2>
+        <p class="section-subtitle">Las conexiones integran mangueras, válvulas y monitores en un sistema completo</p>
+      </div>
+      <div class="complementary__grid">
+        <a href="/mangueras-contra-incendios" class="complementary__card">
+          <div class="complementary__icon">🔴</div>
+          <h3 class="complementary__title">Mangueras Contra Incendios</h3>
+          <p class="complementary__desc">Mangueras Millhose, Blindex y forestales con acoples NH/NST y Storz. Compatibles con todas nuestras conexiones y adaptadores.</p>
+          <span class="complementary__link">Ver mangueras →</span>
+        </a>
+        <a href="/valvulas-contra-incendios" class="complementary__card">
+          <div class="complementary__icon">🔩</div>
+          <h3 class="complementary__title">Válvulas Contra Incendios</h3>
+          <p class="complementary__desc">Válvulas check para siamesas FDC que evitan drenaje del sistema. Compuerta OS&Y para control de líneas hacia conexiones.</p>
+          <span class="complementary__link">Ver válvulas →</span>
+        </a>
+        <a href="/monitores-contra-incendios" class="complementary__card">
+          <div class="complementary__icon">🎯</div>
+          <h3 class="complementary__title">Monitores Contra Incendios</h3>
+          <p class="complementary__desc">Monitores que se conectan al sistema mediante nuestros adaptadores y bridas. Tipo corazón y cuello de cisne certificados.</p>
+          <span class="complementary__link">Ver monitores →</span>
+        </a>
+        <a href="/gabinetes-hidrantes-contra-incendios" class="complementary__card">
+          <div class="complementary__icon">🚒</div>
+          <h3 class="complementary__title">Gabinetes e Hidrantes</h3>
+          <p class="complementary__desc">Hidrantes y gabinetes que utilizan nuestras conexiones para integración con la red principal. Compatibilidad total garantizada.</p>
+          <span class="complementary__link">Ver gabinetes →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEO CONTENT -->
+  <section class="seo-content" aria-labelledby="seo-title">
+    <div class="container">
+      <div class="seo-content__body">
+        <h2 id="seo-title" class="seo-content__title">Venta de Herraje Accesorio y Conexiones Bronce Incendio: Guía Técnica México</h2>
+
+        <h3 class="seo-content__subtitle">Qué son los herraje y accesorio bronce para sistemas contra incendios</h3>
+        <p class="seo-content__text">Los <strong>herraje y accesorio de bronce contra incendio</strong> son componentes fundamentales en sistemas contra incendios, funcionando como piezas de unión, acoplamiento y ramificación que integran manguera contra incendio, hidrantes, monitores y equipos de bombeo en una red cohesiva de protección. Como <strong>proveedor autorizado Elkhart Brass</strong>, ofrecemos venta de conexiones bronce certificadas con precio competitivo y cotización inmediata. Incluimos accesorios complementarios: tapones, niples, llaves, boquillas, chiflones y soportes de despliegue rápido. Las conexiones de bronce NST se especializan en puntos de interfaz donde diferentes equipos deben acoplarse de manera rápida, segura y hermética. También distribuimos herrajes para gabinete contra incendios y toma siamés.</p>
+
+        <h3>Tipos de Conexiones y su Función en Sistemas Contra Incendios</h3>
+        <p class="seo-content__text">El ecosistema de conexiones de bronce abarca seis categorías funcionales principales. Los <strong>adaptadores de conversión</strong> permiten conectar equipos con diferentes estándares de rosca (NH, NPT, NPSH) y sistemas de acoplamiento rápido (Storz). Las <strong>conexiones Y (Wye)</strong> son piezas de ramificación que dividen una línea de alimentación en dos líneas de ataque independientes. Las <strong>tomas siamés FDC</strong> son conexiones de alimentación exterior certificadas según NFPA 14. Los <strong>coples Storz</strong> con soporte de despliegue rápido reducen tiempo de despliegue en 50%. Venta con costo competitivo y beneficios exclusivos de distribuidor autorizado.</p>
+
+        <h3>Certificaciones UL/FM y Estándares de Compatibilidad</h3>
+        <p class="seo-content__text">Las <strong>certificaciones UL y FM</strong> garantizan que las conexiones de bronce cumplen estándares rigurosos según función y aplicación. NFPA 1963 establece dimensiones y tolerancias para conexiones NH. UL 401 certifica chiflones para patrones de descarga. FM 1319 aprueba conexiones Y para resistencia mecánica. Las tomas siamesas FDC siguen NFPA 14. Como proveedor profesional, incluimos documentación completa para auditorías de protección civil, cotización detallada y precio transparente.</p>
+
+        <h3>Materiales y Construcción Profesional</h3>
+        <p class="seo-content__text">Elkhart Brass es reconocido por fabricar conexiones en <strong>bronce forjado de alta calidad</strong> con recubrimiento Elk-O-Lite anticorrosión. Esta construcción profesional proporciona resistencia a la corrosión en ambientes marinos, durabilidad excepcional bajo uso intensivo, presiones de trabajo de 250-500 PSI según modelo, y compatibilidad universal con equipos municipales e industriales. El costo refleja la calidad superior de materiales y el proceso de fabricación certificado bajo estándares internacionales.</p>
+
+        <h3>¿Por Qué Comprar Conexiones con Gama de México?</h3>
+        <p class="seo-content__text">Nuestra <strong>experiencia de más de 15 años</strong> como proveedor y distribuidor de equipos de protección contra incendios nos permite ofrecer múltiples beneficios: venta de conexiones Elkhart Brass originales con garantía de fábrica, costo competitivo directo de distribuidor autorizado, cotización inmediata con especificaciones técnicas detalladas, stock permanente en México para entrega cerca de tu ubicación en 24-48 horas, asesoría profesional para selección del modelo correcto, y documentación completa para auditorías y cumplimiento normativo.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq" aria-labelledby="faq-title">
+    <div class="container">
+      <div class="section-header">
+        <h2 id="faq-title" class="section-title">Preguntas Frecuentes sobre Herraje Accesorio y Conexiones Bronce</h2>
+        <p class="section-subtitle">Resolvemos las dudas más comunes sobre tipos, certificaciones y compatibilidad</p>
+      </div>
+      <div class="faq__list">
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false" aria-controls="faq-con-1" id="faq-c-q1">¿Cuál es la diferencia entre rosca NH y NPT?<span class="faq__icon" aria-hidden="true">+</span></button>
+          <div class="faq__answer" id="faq-con-1" role="region" aria-labelledby="faq-c-q1">
+            <p><strong>NH (National Hose)</strong> es rosca recta diseñada para mangueras contra incendios, usa empaque de goma y permite conexión rápida sin sellador. <strong>NPT (National Pipe Tapered)</strong> es rosca cónica para tuberías industriales que sella por interferencia metal-metal. Son incompatibles entre sí: los adaptadores de conversión NH a NPT son necesarios para conectar equipos con diferentes estándares. Venta con precio competitivo y cotización inmediata.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false" aria-controls="faq-con-2" id="faq-c-q2">¿Qué ventajas ofrecen los coples Storz sobre conexiones roscadas?<span class="faq__icon" aria-hidden="true">+</span></button>
+          <div class="faq__answer" id="faq-con-2" role="region" aria-labelledby="faq-c-q2">
+            <p>Los <strong>coples Storz</strong> ofrecen beneficios significativos: acoplamiento de cuarto de vuelta que reduce tiempo de despliegue en 50%, operación con guantes de bombero, y pestillos de seguridad que evitan desconexión accidental bajo presión. Son estándar en aeropuertos, industrias petroquímicas y cuerpos de bomberos modernos. Requieren adaptadores Storz-NH para conectar con hidrantes existentes.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false" aria-controls="faq-con-3" id="faq-c-q3">¿Qué es una toma siamesa FDC y es obligatoria?<span class="faq__icon" aria-hidden="true">+</span></button>
+          <div class="faq__answer" id="faq-con-3" role="region" aria-labelledby="faq-c-q3">
+            <p>La <strong>toma siamesa FDC</strong> (Fire Department Connection) es conexión exterior que permite a bomberos alimentar el sistema desde autobombas. Es <strong>obligatoria según NFPA 14</strong> en edificios con tubería vertical y según NFPA 13 en sistemas de rociadores. Configuración estándar: dos entradas 2.5" NH con válvulas check certificadas UL/FM.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false" aria-controls="faq-con-4" id="faq-c-q4">¿Qué presión de trabajo soportan las conexiones de bronce?<span class="faq__icon" aria-hidden="true">+</span></button>
+          <div class="faq__answer" id="faq-con-4" role="region" aria-labelledby="faq-c-q4">
+            <p>La presión varía según tipo: <strong>Adaptadores</strong> 250-300 PSI, <strong>Conexiones Y</strong> 200 PSI continua, <strong>Tomas siamesas</strong> 175 PSI en válvulas check, <strong>Coples Storz</strong> 250-300 PSI según material. Nuestros asesores te ayudan a seleccionar la especificación correcta según el diseño de tu proyecto con cotización detallada y precio transparente.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false" aria-controls="faq-con-5" id="faq-c-q5">¿Las conexiones vienen con certificaciones UL y FM?<span class="faq__icon" aria-hidden="true">+</span></button>
+          <div class="faq__answer" id="faq-con-5" role="region" aria-labelledby="faq-c-q5">
+            <p>Sí. Todas nuestras conexiones cuentan con <strong>certificaciones UL Listed y FM Approved</strong>. Con cada venta entregamos documentación completa: ficha técnica, certificados UL/FM y manual de instalación. Esta documentación es fundamental para verificaciones de protección civil, auditorías de aseguradoras y procesos de licitación. Proveedor profesional con experiencia.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false" aria-controls="faq-con-6" id="faq-c-q6">¿Qué diámetros de conexiones tienen disponibles?<span class="faq__icon" aria-hidden="true">+</span></button>
+          <div class="faq__answer" id="faq-con-6" role="region" aria-labelledby="faq-c-q6">
+            <p>Manejamos rango completo de diámetros: <strong>1", 1.5", 2", 2.5", 3", 4" y 5"</strong> según tipo de conexión. Los adaptadores están disponibles en todas las combinaciones NH/NPT/Storz. Mantenemos stock permanente de diámetros más solicitados (1.5", 2.5", 3") para entregas inmediatas cerca de tu ubicación con costo competitivo.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false" aria-controls="faq-con-7" id="faq-c-q7">¿Cómo puedo solicitar una cotización de conexiones?<span class="faq__icon" aria-hidden="true">+</span></button>
+          <div class="faq__answer" id="faq-con-7" role="region" aria-labelledby="faq-c-q7">
+            <p>Puedes cotizar de tres formas: <strong>1) Formulario en esta página</strong> (se envía a WhatsApp), <strong>2) WhatsApp directo 55 6529 8240</strong>, o <strong>3) Email ventas@gamademexico.com</strong>. Solo necesitamos: tipo de conexión, diámetros, cantidad y ubicación de entrega. Respondemos en menos de 24 horas con precio, disponibilidad y opciones de envío. Precios especiales por volumen.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<script>
+  // FAQ Accordion
+  document.addEventListener('DOMContentLoaded', () => {
+    const faqQuestions = document.querySelectorAll('.faq__question');
+
+    faqQuestions.forEach(button => {
+      button.addEventListener('click', () => {
+        const expanded = button.getAttribute('aria-expanded') === 'true';
+
+        // Close all other items
+        faqQuestions.forEach(otherButton => {
+          if (otherButton !== button) {
+            otherButton.setAttribute('aria-expanded', 'false');
+            const otherAnswer = document.getElementById(otherButton.getAttribute('aria-controls') || '');
+            if (otherAnswer) otherAnswer.style.display = 'none';
+            const otherIcon = otherButton.querySelector('.faq__icon');
+            if (otherIcon) otherIcon.textContent = '+';
+          }
+        });
+
+        // Toggle current item
+        button.setAttribute('aria-expanded', (!expanded).toString());
+        const answer = document.getElementById(button.getAttribute('aria-controls') || '');
+        if (answer) {
+          answer.style.display = expanded ? 'none' : 'block';
+        }
+        const icon = button.querySelector('.faq__icon');
+        if (icon) {
+          icon.textContent = expanded ? '+' : '−';
+        }
+      });
+    });
+
+    // WhatsApp Form Handler
+    const cotizarForm = document.getElementById('cotizar-form');
+    if (cotizarForm) {
+      cotizarForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const nombre = (document.getElementById('lead-nombre') as HTMLInputElement)?.value || '';
+        const contacto = (document.getElementById('lead-contacto') as HTMLInputElement)?.value || '';
+        const tipoConexion = (document.getElementById('lead-equipo') as HTMLSelectElement)?.value || '';
+
+        const mensaje = `Hola, me interesa cotizar conexiones y herrajes:%0A%0ANombre: ${encodeURIComponent(nombre)}%0AContacto: ${encodeURIComponent(contacto)}%0ATipo de conexión: ${encodeURIComponent(tipoConexion)}`;
+
+        window.open(`https://wa.me/5215565298240?text=${mensaje}`, '_blank');
+      });
+    }
+  });
+</script>

@@ -1,0 +1,206 @@
+---
+import Layout from '../../layouts/Base.astro';
+import '../../styles/subcategory.css';
+import { getCollection } from 'astro:content';
+import SubcategoryProductCard from '../../components/SubcategoryProductCard.astro';
+import ProductSidebar from '../../components/ProductSidebar.astro';
+import RelatedProductsGrid from '../../components/RelatedProductsGrid.astro';
+import CotizacionForm from '../../components/CotizacionForm.astro';
+
+// Obtener productos de mangueras
+const todasMangueras = (await getCollection('productos', ({ data }) => data.categoria === 'mangueras')).sort((a, b) => a.data.orden - b.data.orden);
+
+// Filtrar productos de succión por subcategoria
+const productosSuccion = todasMangueras.filter(p => p.data.subcategoria === 'succion');
+
+// Otros productos para la sección de relacionados
+const otrasMangueras = todasMangueras.filter(p => !productosSuccion.includes(p));
+
+// Definir las subcategorías de mangueras para el sidebar
+const subcategorias = [
+  {
+    slug: 'millhose',
+    nombre: 'Manguera Millhose',
+    descripcion: 'Doble forro poliéster, gabinetes',
+    activo: false
+  },
+  {
+    slug: 'blindex',
+    nombre: 'Manguera Blindex',
+    descripcion: 'Resistente a llama y químicos',
+    activo: false
+  },
+  {
+    slug: 'succion',
+    nombre: 'Manguera de Succión',
+    descripcion: 'Refuerzo helicoidal, vacío',
+    activo: true
+  },
+  {
+    slug: 'forestal',
+    nombre: 'Manguera Forestal',
+    descripcion: 'Ultraligera, terreno difícil',
+    activo: false
+  },
+];
+---
+
+<Layout
+  title="Manguera de Succión Espiral PVC | México"
+  description="Venta de manguera de succión con espiral reforzado para agua y motobomba. Manguera verde industrial, rollo PVC resistente, uso agrícola y bombero. Stock México."
+  activePage="equipos"
+  heroTitle="Manguera de Succión"
+  heroIntro="Mangueras con refuerzo helicoidal diseñadas para operaciones de succión en bombas contra incendio y motobombas portátiles. Su construcción rígida pero flexible resiste el colapso por vacío, permitiendo extraer agua de cisternas, pozos, ríos y otras fuentes no presurizadas."
+  heroBadge="Mangueras Contra Incendios"
+  heroMetrics={[
+    { valor: "28\" Hg", texto: "Vacío máximo" },
+    { valor: "4\"-6\"", texto: "Diámetros" },
+    { valor: "PVC/Caucho", texto: "Materiales" }
+  ]}
+  heroPrimaryText="Ver Catálogo"
+  heroPrimaryLink="#catalogo"
+  heroSecondaryText="Solicitar Cotización"
+  heroSecondaryLink="#cotizar"
+  heroShowRightContent={true}
+>
+
+  <!-- HERO CONTENT -->
+  <Fragment slot="hero-content">
+    <p>La <strong>manguera de succión</strong> es componente esencial para operaciones donde se requiere extraer agua de fuentes no presurizadas: cisternas, tanques de almacenamiento, cuerpos de agua naturales o piscinas. Su construcción con refuerzo helicoidal de PVC rígido o acero evita el colapso cuando la bomba genera vacío, mientras que el cuerpo flexible permite almacenamiento y transporte sin complicaciones.</p>
+    <p><strong>Gama de México</strong> ofrece mangueras de succión en diámetros de 2", 3", 4" y 6" con longitudes de 3, 6 y 10 metros. Disponibles en construcción de PVC transparente para aplicaciones ligeras o caucho reforzado con espiral de acero para servicio pesado en bombas de alto caudal. Incluimos coples Storz o roscados según especificación, más canastilla de succión con válvula de pie para instalación completa.</p>
+  </Fragment>
+
+  <!-- MAIN CONTENT WITH SIDEBAR -->
+  <section class="subcat-content">
+    <div class="container">
+      <div class="subcat-layout">
+
+        <!-- MAIN CONTENT (LEFT) -->
+        <main class="subcat-main">
+
+          <!-- CATALOG HEADER -->
+          <div class="catalog-header">
+            <div class="catalog-header__text">
+              <h2 class="catalog-header__title">Catálogo de Mangueras de Succión</h2>
+              <p class="catalog-header__desc">Selecciona el producto que mejor se adapte a tu operación</p>
+            </div>
+            <div class="catalog-header__count">
+              <span class="catalog-header__number">{productosSuccion.length}</span>
+              <span class="catalog-header__label">producto{productosSuccion.length !== 1 ? 's' : ''}</span>
+            </div>
+          </div>
+
+          <!-- PRODUCTS GRID -->
+          <div class="categories__grid">
+            {productosSuccion.map((producto) => (
+              <SubcategoryProductCard
+                title={producto.data.title}
+                description={producto.data.description}
+                brand={producto.data.marca}
+                image={producto.data.imagen}
+                productSlug={producto.id}
+                flow={producto.data.flujo}
+                material={producto.data.material}
+                certifications={producto.data.certificaciones}
+              />
+            ))}
+          </div>
+
+          {productosSuccion.length === 0 && (
+            <div class="catalog-empty">
+              <div class="catalog-empty__icon">🔍</div>
+              <h3 class="catalog-empty__title">Próximamente más opciones</h3>
+              <p class="catalog-empty__text">Estamos agregando más productos de mangueras de succión. Mientras tanto, solicita una cotización personalizada.</p>
+              <a href="#cotizar" class="btn btn--primary">Solicitar Cotización</a>
+            </div>
+          )}
+
+          <!-- TECHNICAL INFO -->
+          <div class="tech-info">
+            <h3 class="tech-info__title">Especificaciones Técnicas Generales</h3>
+            <div class="tech-info__grid">
+              <div class="tech-info__item">
+                <span class="tech-info__label">Operación</span>
+                <span class="tech-info__value">Vacío -0.8 bar</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Refuerzo</span>
+                <span class="tech-info__value">Helicoidal galv.</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Diámetros</span>
+                <span class="tech-info__value">2.5", 3", 4", 6"</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Longitud</span>
+                <span class="tech-info__value">2.5 - 3 metros</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Acoples</span>
+                <span class="tech-info__value">Storz / NH</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Cuerpo</span>
+                <span class="tech-info__value">Caucho sintético</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA FINAL -->
+          <div class="subcat-cta-final">
+            <div class="subcat-cta-final__content">
+              <h3 class="subcat-cta-final__title">¿Necesitas abastecimiento alternativo?</h3>
+              <p class="subcat-cta-final__desc">Asesoría para selección de diámetro según capacidad de tu bomba y fuente de agua.</p>
+            </div>
+            <a href="#cotizar" class="btn btn--primary">Solicitar Cotización</a>
+          </div>
+
+        </main>
+
+        <ProductSidebar
+          navTitulo="Tipos de Mangueras"
+          subcategorias={subcategorias}
+          baseUrl="/mangueras"
+          backLinkHref="/mangueras-contra-incendios"
+          backLinkTexto="Ver todas las mangueras"
+          certificaciones={[
+            { siglas: "FM", nombre: "Factory Mutual" },
+            { siglas: "UL", nombre: "UL Listed" },
+            { siglas: "NOM", nombre: "NOM-002-STPS" }
+          ]}
+          marcas={["Key Fire Hose", "Snap-Tite", "All American Hose", "Kuriyama"]}
+          aplicaciones={[
+            "Bombas contra incendio",
+            "Succion de agua en pozos",
+            "Cuerpos de bomberos",
+            "Motobombas portatiles"
+          ]}
+          productosRelacionados={[
+            { href: "/boquillas-contra-incendios", nombre: "Boquillas Contra Incendios" },
+            { href: "/monitores-contra-incendios", nombre: "Monitores Contra Incendios" },
+            { href: "/valvulas-contra-incendios", nombre: "Valvulas Contra Incendios" },
+            { href: "/conexiones-herrajes-contra-incendios", nombre: "Conexiones y Herrajes" }
+          ]}
+        />
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RELATED PRODUCTS -->
+  <RelatedProductsGrid
+    titulo="Otras Mangueras Contra Incendios"
+    subtitulo="Explora más opciones para tu sistema de protección"
+    productos={otrasMangueras}
+    maxProductos={3}
+    verTodosLink="/mangueras-contra-incendios"
+    verTodosTexto="Ver todas las mangueras"
+  />
+
+  <CotizacionForm
+    titulo="Cotiza Mangueras de Succion"
+    tipoEquipo="Mangueras"
+    pagina="Mangueras de Succion"
+  />
+
+</Layout>

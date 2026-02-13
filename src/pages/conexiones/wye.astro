@@ -1,0 +1,188 @@
+---
+import Layout from '../../layouts/Base.astro';
+import '../../styles/subcategory.css';
+import { getCollection } from 'astro:content';
+import SubcategoryProductCard from '../../components/SubcategoryProductCard.astro';
+import ProductSidebar from '../../components/ProductSidebar.astro';
+import RelatedProductsGrid from '../../components/RelatedProductsGrid.astro';
+import CotizacionForm from '../../components/CotizacionForm.astro';
+
+// 1. Obtener todos los productos de la categoría conexiones-herrajes
+const todosProductos = (await getCollection('productos', ({ data }) =>
+  data.categoria === 'conexiones-herrajes'
+)).sort((a, b) => a.data.orden - b.data.orden);
+
+// 2. Filtrar por subcategoría: Conexión Y (Wye)
+const productosSubcategoria = todosProductos.filter(p => p.data.subcategoria === 'wye');
+
+// 3. Obtener otros productos para sección de relacionados
+const otrosProductos = todosProductos.filter(p => !productosSubcategoria.includes(p));
+
+// 4. Definir subcategorías para navegación
+const subcategorias = [
+  { slug: 'adaptadores', nombre: 'Adaptadores de Bronce', descripcion: 'Conversión entre roscas NH, NPT, Storz', activo: false },
+  { slug: 'wye', nombre: 'Conexión Y (Wye)', descripcion: 'Derivación en dos salidas', activo: true },
+  { slug: 'siamesa', nombre: 'Toma Siamesa FDC', descripcion: 'Conexión para bomberos', activo: false },
+  { slug: 'coples', nombre: 'Coples y Reducciones', descripcion: 'Conexión rápida Storz', activo: false },
+  { slug: 'chiflones', nombre: 'Chiflones de Tres Pasos', descripcion: 'Control de patrón de descarga', activo: false },
+  { slug: 'accesorios', nombre: 'Accesorios y Herrajes', descripcion: 'Tapones, caps, niples', activo: false },
+];
+---
+
+<Layout
+  title="Conexión Y Wye con Válvulas de Bola | México"
+  description="Conexión Y (Wye) con válvulas de bola para derivar líneas de manguera. Modelos B-97-A y B-100-A Elkhart Brass. UL/FM. México."
+  activePage="equipos"
+  heroTitle="Conexión Y (Wye)"
+  heroIntro="Bifurcadores que permiten dividir una línea de manguera en dos salidas independientes, cada una con válvula de bola para control individual del flujo. Esenciales para operaciones de combate de incendios que requieren múltiples líneas de ataque desde una sola fuente de agua."
+  heroBadge="Conexiones y Herrajes"
+  heroMetrics={[
+    { valor: "2", texto: "Salidas" },
+    { valor: "1/4 vuelta", texto: "Válvulas" },
+    { valor: "UL/FM", texto: "Certificación" }
+  ]}
+  heroPrimaryText="Ver Catálogo"
+  heroPrimaryLink="#catalogo"
+  heroSecondaryText="Solicitar Cotización"
+  heroSecondaryLink="#cotizar"
+  heroShowRightContent={true}
+>
+
+  <!-- HERO CONTENT -->
+  <Fragment slot="hero-content">
+    <p>Las <strong>conexiones Y (Wye)</strong> son dispositivos de bifurcación que dividen una línea de suministro en dos salidas independientes. Cada salida incorpora una válvula de bola de cuarto de vuelta que permite abrir o cerrar el flujo instantáneamente, facilitando el control táctico durante operaciones de combate. Los modelos B-97-A y B-100-A de Elkhart Brass son el estándar de la industria para aplicaciones de bomberos e industriales.</p>
+    <p><strong>Gama de México</strong> ofrece conexiones Wye en bronce fundido y aluminio forjado, con configuraciones de entrada/salida en roscas NH de 2-1/2" x 1-1/2" y 2-1/2" x 2-1/2". Las válvulas de bola están diseñadas para operar a presiones de hasta 300 PSI con mínima caída de presión. Certificación UL/FM garantiza rendimiento confiable en las condiciones más exigentes de emergencia.</p>
+  </Fragment>
+
+  <!-- CONTENT + SIDEBAR -->
+  <section class="subcat-content">
+    <div class="container">
+      <div class="subcat-layout">
+
+        <!-- MAIN CONTENT -->
+        <main class="subcat-main">
+          <div class="catalog-header">
+            <div class="catalog-header__text">
+              <h2 class="catalog-header__title">Catálogo de Adaptadores de Bronce</h2>
+              <p class="catalog-header__desc">Selecciona el modelo que mejor se adapte a tu instalación</p>
+            </div>
+            <div class="catalog-header__count">
+              <span class="catalog-header__number">{productosSubcategoria.length}</span>
+              <span class="catalog-header__label">producto{productosSubcategoria.length !== 1 ? 's' : ''}</span>
+            </div>
+          </div>
+
+          <!-- Products Grid -->
+          <div class="categories__grid">
+            {productosSubcategoria.map((producto) => (
+              <SubcategoryProductCard
+                title={producto.data.title}
+                description={producto.data.description}
+                brand={producto.data.marca}
+                image={producto.data.imagen}
+                productSlug={producto.id}
+                flow={producto.data.flujo}
+                material={producto.data.material}
+                certifications={producto.data.certificaciones}
+              />
+            ))}
+          </div>
+
+          {productosSubcategoria.length === 0 && (
+            <div class="catalog-empty">
+              <div class="catalog-empty__icon">🔍</div>
+              <h3 class="catalog-empty__title">Próximamente más opciones</h3>
+              <p class="catalog-empty__text">Estamos agregando más adaptadores de diferentes marcas. Solicita una cotización personalizada.</p>
+              <a href="#cotizar" class="btn btn--primary">Solicitar Cotización</a>
+            </div>
+          )}
+
+          <!-- Tech Info -->
+          <div class="tech-info">
+            <h3 class="tech-info__title">Especificaciones Técnicas de Adaptadores</h3>
+            <div class="tech-info__grid">
+              <div class="tech-info__item">
+                <span class="tech-info__label">Presión de trabajo</span>
+                <span class="tech-info__value">250-300 PSI</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Presión de prueba</span>
+                <span class="tech-info__value">1,000 PSI</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Diámetros</span>
+                <span class="tech-info__value">1" a 6"</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Roscas</span>
+                <span class="tech-info__value">NH, NPT, Storz</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Temperatura</span>
+                <span class="tech-info__value">-65°F a 250°F</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Material</span>
+                <span class="tech-info__value">Bronce / Aluminio</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA Final -->
+          <div class="subcat-cta-final">
+            <div class="subcat-cta-final__content">
+              <h3 class="subcat-cta-final__title">¿No encuentras la configuración que necesitas?</h3>
+              <p class="subcat-cta-final__desc">Tenemos acceso al catálogo completo de Elkhart Brass. Contáctanos para adaptadores en roscas especiales o configuraciones personalizadas.</p>
+            </div>
+            <a href="#cotizar" class="btn btn--primary">Solicitar Cotización Especial</a>
+          </div>
+        </main>
+
+        <!-- SIDEBAR -->
+        <ProductSidebar
+          navTitulo="Tipos de Conexiones"
+          subcategorias={subcategorias}
+          baseUrl="/conexiones"
+          backLinkHref="/conexiones-herrajes-contra-incendios"
+          backLinkTexto="Ver todas las conexiones"
+          certificaciones={[
+            { siglas: "FM", nombre: "Factory Mutual" },
+            { siglas: "UL", nombre: "UL Listed" },
+            { siglas: "NOM", nombre: "NOM-002-STPS" }
+          ]}
+          marcas={["Dixon", "Elkhart Brass", "Harrington", "Action Coupling"]}
+          aplicaciones={[
+            "División de líneas",
+            "Operaciones de bomberos",
+            "Sistemas de rociadores",
+            "Redes contra incendio"
+          ]}
+          productosRelacionados={[
+            { href: "/gabinetes-hidrantes-contra-incendios", nombre: "Gabinetes e Hidrantes" },
+            { href: "/mangueras-contra-incendios", nombre: "Mangueras Contra Incendios" },
+            { href: "/valvulas-contra-incendios", nombre: "Válvulas Contra Incendios" },
+            { href: "/boquillas-contra-incendios", nombre: "Boquillas Contra Incendios" }
+          ]}
+        />
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RELATED PRODUCTS -->
+  <RelatedProductsGrid
+    titulo="Otras Conexiones y Herrajes"
+    subtitulo="Explora más opciones para tu sistema contra incendios"
+    productos={otrosProductos}
+    maxProductos={3}
+    verTodosLink="/conexiones-herrajes-contra-incendios"
+    verTodosTexto="Ver todas las conexiones"
+  />
+
+  <CotizacionForm
+    titulo="Cotiza Conexiones Wye"
+    tipoEquipo="Conexiones y herrajes"
+    pagina="Conexiones Conexiones Wye"
+  />
+
+</Layout>

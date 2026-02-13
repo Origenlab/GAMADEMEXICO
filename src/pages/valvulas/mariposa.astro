@@ -1,0 +1,187 @@
+---
+import Layout from '../../layouts/Base.astro';
+import '../../styles/subcategory.css';
+import { getCollection } from 'astro:content';
+import SubcategoryProductCard from '../../components/SubcategoryProductCard.astro';
+import ProductSidebar from '../../components/ProductSidebar.astro';
+import RelatedProductsGrid from '../../components/RelatedProductsGrid.astro';
+import CotizacionForm from '../../components/CotizacionForm.astro';
+
+// 1. Obtener todos los productos de la categoría válvulas
+const todosProductos = (await getCollection('productos', ({ data }) =>
+  data.categoria === 'valvulas'
+)).sort((a, b) => a.data.orden - b.data.orden);
+
+// 2. Filtrar por subcategoría: Válvula Mariposa
+const productosSubcategoria = todosProductos.filter(p => p.data.subcategoria === 'mariposa');
+
+// 3. Obtener otros productos para sección de relacionados
+const otrosProductos = todosProductos.filter(p => !productosSubcategoria.includes(p));
+
+// 4. Definir subcategorías para navegación
+const subcategorias = [
+  { slug: 'compuerta', nombre: 'Válvula de Compuerta OS&Y', descripcion: 'Aislamiento en líneas principales', activo: false },
+  { slug: 'globo', nombre: 'Válvula de Globo', descripcion: 'Control preciso de presión', activo: false },
+  { slug: 'retencion', nombre: 'Válvula de Retención', descripcion: 'Prevención de reflujo', activo: false },
+  { slug: 'mariposa', nombre: 'Válvula Mariposa', descripcion: 'Apertura rápida 90°', activo: true },
+];
+---
+
+<Layout
+  title="Válvula Mariposa Control Flujo | México"
+  description="Válvula mariposa con asiento EPDM y acero inoxidable. Apertura rápida 90°, presión 175-300 PSI. Certificadas UL/FM para uso industrial. México."
+  activePage="equipos"
+  heroTitle="Válvula Mariposa"
+  heroIntro="Válvulas mariposa indicadoras para control de flujo en sistemas contra incendio de gran diámetro. Su diseño compacto con disco giratorio 90° permite apertura rápida y mínima pérdida de presión, ideal para líneas principales donde el espacio es limitado."
+  heroBadge="Válvulas Contra Incendios"
+  heroMetrics={[
+    { valor: "90°", texto: "Apertura rápida" },
+    { valor: "2\"-12\"", texto: "Diámetros" },
+    { valor: "300", texto: "PSI máxima" }
+  ]}
+  heroPrimaryText="Ver Catálogo"
+  heroPrimaryLink="#catalogo"
+  heroSecondaryText="Solicitar Cotización"
+  heroSecondaryLink="#cotizar"
+  heroShowRightContent={true}
+>
+
+  <!-- HERO CONTENT -->
+  <Fragment slot="hero-content">
+    <p>La <strong>válvula mariposa</strong> utiliza un disco circular que gira 90° sobre un eje central para controlar el flujo. Su diseño wafer o lug ocupa significativamente menos espacio que las válvulas de compuerta equivalentes, reduciendo costos de instalación y facilitando el mantenimiento en cuartos de bombas con espacio limitado. El indicador visual de posición permite verificar el estado de la válvula sin necesidad de operar el volante.</p>
+    <p><strong>Gama de México</strong> suministra válvulas mariposa certificadas UL/FM con cuerpo de hierro dúctil, disco de acero inoxidable y asiento de EPDM o NBR según aplicación. Disponibles con actuador de palanca para operación manual rápida o reductor de engranajes para diámetros mayores a 6". Incluimos opciones con interruptor de supervisión integrado para monitoreo remoto según NFPA 72.</p>
+  </Fragment>
+
+  <!-- CONTENT + SIDEBAR -->
+  <section class="subcat-content">
+    <div class="container">
+      <div class="subcat-layout">
+
+        <!-- MAIN CONTENT -->
+        <main class="subcat-main">
+          <div class="catalog-header">
+            <div class="catalog-header__text">
+              <h2 class="catalog-header__title">Catálogo de Válvulas Mariposa Indicadoras</h2>
+              <p class="catalog-header__desc">Selecciona el modelo que mejor se adapte a tu sistema contra incendios</p>
+            </div>
+            <div class="catalog-header__count">
+              <span class="catalog-header__number">{productosSubcategoria.length}</span>
+              <span class="catalog-header__label">producto{productosSubcategoria.length !== 1 ? 's' : ''}</span>
+            </div>
+          </div>
+
+          <!-- Products Grid -->
+          <div class="categories__grid">
+            {productosSubcategoria.map((producto) => (
+              <SubcategoryProductCard
+                title={producto.data.title}
+                description={producto.data.description}
+                brand={producto.data.marca}
+                image={producto.data.imagen}
+                productSlug={producto.id}
+                flow={producto.data.flujo}
+                material={producto.data.material}
+                certifications={producto.data.certificaciones}
+              />
+            ))}
+          </div>
+
+          <!-- Empty State -->
+          {productosSubcategoria.length === 0 && (
+            <div class="catalog-empty">
+              <div class="catalog-empty__icon">🔍</div>
+              <h3 class="catalog-empty__title">Próximamente más opciones</h3>
+              <p class="catalog-empty__text">Estamos agregando más válvulas mariposa de diferentes marcas y especificaciones. Mientras tanto, solicita una cotización personalizada.</p>
+              <a href="#cotizar" class="btn btn--primary">Solicitar Cotización</a>
+            </div>
+          )}
+
+          <!-- Tech Info -->
+          <div class="tech-info">
+            <h3 class="tech-info__title">Especificaciones Técnicas de Válvulas Mariposa</h3>
+            <div class="tech-info__grid">
+              <div class="tech-info__item">
+                <span class="tech-info__label">Presión de trabajo</span>
+                <span class="tech-info__value">175-300 PSI</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Presión de prueba</span>
+                <span class="tech-info__value">2x presión trabajo</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Diámetros disponibles</span>
+                <span class="tech-info__value">2" a 12"</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Rotación</span>
+                <span class="tech-info__value">90° apertura rápida</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Sello</span>
+                <span class="tech-info__value">Bubble-tight EPDM</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Supervisión</span>
+                <span class="tech-info__value">Switch tamper integrado</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA Final -->
+          <div class="subcat-cta-final">
+            <div class="subcat-cta-final__content">
+              <h3 class="subcat-cta-final__title">¿No encuentras el diámetro o conexión que necesitas?</h3>
+              <p class="subcat-cta-final__desc">Tenemos acceso al catálogo completo de Elkhart Brass. Contáctanos para válvulas en configuración wafer, ranurada, bridada o diámetros especiales.</p>
+            </div>
+            <a href="#cotizar" class="btn btn--primary">Solicitar Cotización Especial</a>
+          </div>
+        </main>
+
+        <!-- SIDEBAR -->
+        <ProductSidebar
+          navTitulo="Tipos de Válvulas"
+          subcategorias={subcategorias}
+          baseUrl="/valvulas"
+          backLinkHref="/valvulas-contra-incendios"
+          backLinkTexto="Ver todas las válvulas"
+          certificaciones={[
+            { siglas: "FM", nombre: "Factory Mutual" },
+            { siglas: "UL", nombre: "UL Listed" },
+            { siglas: "NOM", nombre: "NOM-002-STPS" }
+          ]}
+          marcas={["Nibco", "Kennedy", "Milwaukee", "Apollo"]}
+          aplicaciones={[
+            "Sistemas de gran caudal",
+            "Redes contra incendio",
+            "Control de flujo rápido",
+            "Instalaciones industriales"
+          ]}
+          productosRelacionados={[
+            { href: "/gabinetes-hidrantes-contra-incendios", nombre: "Gabinetes e Hidrantes" },
+            { href: "/mangueras-contra-incendios", nombre: "Mangueras Contra Incendios" },
+            { href: "/boquillas-contra-incendios", nombre: "Boquillas Contra Incendios" },
+            { href: "/conexiones-herrajes-contra-incendios", nombre: "Conexiones y Herrajes" }
+          ]}
+        />
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RELATED PRODUCTS -->
+  <RelatedProductsGrid
+    titulo="Otras Válvulas Contra Incendios"
+    subtitulo="Explora más opciones para tu sistema de protección"
+    productos={otrosProductos}
+    maxProductos={3}
+    verTodosLink="/valvulas-contra-incendios"
+    verTodosTexto="Ver todas las válvulas"
+  />
+
+  <CotizacionForm
+    titulo="Cotiza Válvulas Mariposa"
+    tipoEquipo="Válvulas"
+    pagina="Válvulas Mariposa"
+  />
+
+</Layout>

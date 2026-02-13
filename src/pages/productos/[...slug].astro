@@ -1,0 +1,902 @@
+---
+import Layout from '../../layouts/Base.astro';
+import { getCollection, render } from 'astro:content';
+import { CATEGORY_MAP, WHATSAPP_NUMBER, WHATSAPP_URL } from '../../lib/config';
+import { buildProductSchema, buildBreadcrumbSchema } from '../../lib/seo';
+import RelatedProductsGrid from '../../components/RelatedProductsGrid.astro';
+import CotizacionForm from '../../components/CotizacionForm.astro';
+
+/* ── getStaticPaths: genera una ruta por cada producto ── */
+export async function getStaticPaths() {
+  const productos = await getCollection('productos');
+  return productos.map((producto) => ({
+    params: { slug: producto.id },
+    props: { producto },
+  }));
+}
+
+const { producto } = Astro.props;
+const { Content } = await render(producto);
+
+const cat = CATEGORY_MAP[producto.data.categoria];
+const categoriaUrl = cat?.url ?? '/equipos';
+const categoriaNombre = cat?.nombre ?? 'Equipos';
+
+/* ── Productos relacionados (misma categoría, excluyendo el actual) ── */
+const todosProductos = await getCollection('productos', ({ data }) => data.categoria === producto.data.categoria);
+const relacionados = todosProductos
+  .filter((p) => p.id !== producto.id)
+  .sort((a, b) => a.data.orden - b.data.orden)
+  .slice(0, 3);
+
+/* ── Otras categorías para cross-linking SEO ── */
+const otrasCategorias = Object.entries(CATEGORY_MAP)
+  .filter(([key]) => key !== producto.data.categoria)
+  .slice(0, 4)
+  .map(([key, value]) => ({ slug: key, ...value }));
+
+/* ── JSON-LD structured data ── */
+const productSchema = buildProductSchema({
+  name: producto.data.title,
+  description: producto.data.description,
+  image: producto.data.imagen,
+  brand: producto.data.marca,
+  model: producto.data.modelo,
+  category: categoriaNombre,
+  price: producto.data.precioReferencia,
+  url: `/productos/${producto.id}`,
+  certifications: producto.data.certificaciones,
+});
+
+const breadcrumbSchema = buildBreadcrumbSchema([
+  { name: 'Inicio', url: '/' },
+  { name: 'Equipos', url: '/equipos' },
+  { name: categoriaNombre, url: categoriaUrl },
+  { name: producto.data.title, url: `/productos/${producto.id}` },
+]);
+---
+
+<Layout
+  title={`${producto.data.title} | ${producto.data.marca} | Gama de México`}
+  description={producto.data.description}
+  activePage="equipos"
+  showBreadcrumb={false}
+  showHero={false}
+  structuredData={[productSchema, breadcrumbSchema]}
+>
+  <!-- Breadcrumb -->
+  <nav class="breadcrumb" aria-label="Navegación de migas de pan">
+    <div class="container">
+      <ol class="breadcrumb__list">
+        <li class="breadcrumb__item"><a href="/">Inicio</a></li>
+        <li class="breadcrumb__item"><a href="/equipos">Equipos</a></li>
+        <li class="breadcrumb__item"><a href={categoriaUrl}>{categoriaNombre}</a></li>
+        <li class="breadcrumb__item breadcrumb__item--active" aria-current="page">{producto.data.title}</li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- Product Header -->
+  <section class="product-hero">
+    <div class="container">
+      <div class="product-hero__grid">
+        <div class="product-hero__gallery">
+          <div class="product-hero__image">
+            {producto.data.imagen ? (
+              <img
+                src={producto.data.imagen}
+                alt={producto.data.title}
+                width="600"
+                height="450"
+                loading="eager"
+                id="main-product-image"
+              />
+            ) : (
+              <div class="product-hero__placeholder">
+                <svg width="80" height="80" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                  <rect x="3" y="3" width="18" height="18" rx="2"/>
+                  <circle cx="8.5" cy="8.5" r="1.5"/>
+                  <path d="M21 15l-5-5L5 21"/>
+                </svg>
+                <span>Imagen no disponible</span>
+              </div>
+            )}
+            {producto.data.destacado && (
+              <span class="product-hero__badge">Producto destacado</span>
+            )}
+          </div>
+          {producto.data.galeria && producto.data.galeria.length > 0 && (
+            <div class="product-hero__thumbnails">
+              {producto.data.imagen && (
+                <button class="thumbnail thumbnail--active" data-image={producto.data.imagen}>
+                  <img src={producto.data.imagen} alt="Vista principal" width="80" height="60" loading="lazy" />
+                </button>
+              )}
+              {producto.data.galeria.map((img, i) => (
+                <button class="thumbnail" data-image={img}>
+                  <img src={img} alt={`Vista ${i + 1}`} width="80" height="60" loading="lazy" />
+                </button>
+              ))}
+            </div>
+          )}
+        </div>
+
+        <div class="product-hero__info">
+          <span class="product-hero__categoria">
+            <a href={categoriaUrl}>{categoriaNombre}</a>
+          </span>
+          <h2 class="product-hero__title">{producto.data.title}</h2>
+          <p class="product-hero__description">{producto.data.description}</p>
+
+          <div class="product-hero__specs">
+            {producto.data.material && (
+              <div class="spec-row">
+                <span class="spec-row__label">Material</span>
+                <span class="spec-row__value">{producto.data.material}</span>
+              </div>
+            )}
+            {producto.data.flujo && (
+              <div class="spec-row">
+                <span class="spec-row__label">Flujo / Presión</span>
+                <span class="spec-row__value">{producto.data.flujo}</span>
+              </div>
+            )}
+            <div class="spec-row">
+              <span class="spec-row__label">Marca</span>
+              <span class="spec-row__value">{producto.data.marca}</span>
+            </div>
+            {producto.data.certificaciones && producto.data.certificaciones.length > 0 && (
+              <div class="spec-row">
+                <span class="spec-row__label">Certificaciones</span>
+                <span class="spec-row__value">
+                  {producto.data.certificaciones.map((cert) => (
+                    <span class="cert-badge">{cert}</span>
+                  ))}
+                </span>
+              </div>
+            )}
+          </div>
+
+          <div class="product-hero__ctas">
+            <a href="#cotizar" class="btn btn--primary">Cotizar este producto</a>
+            <a
+              href={`${WHATSAPP_URL}?text=${encodeURIComponent(`Hola, me interesa cotizar: ${producto.data.title}`)}`}
+              class="btn btn--outline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Details Section - Professional Layout -->
+  <section class="product-details">
+    <div class="product-details__container">
+      <div class="product-details__grid">
+        <!-- Columna Izquierda: Contenido Principal -->
+        <div class="product-details__main">
+          <div class="product-details__content">
+            <Content />
+          </div>
+        </div>
+
+        <!-- Columna Derecha: Sidebar con Info Rápida -->
+        <aside class="product-details__sidebar">
+          <!-- Ficha Técnica Compacta -->
+          <div class="sidebar-block">
+            <h3 class="sidebar-block__title">Ficha Técnica</h3>
+            <table class="specs-table">
+              {producto.data.flujo && (
+                <tr>
+                  <th>Caudal</th>
+                  <td>{producto.data.flujo}</td>
+                </tr>
+              )}
+              {producto.data.material && (
+                <tr>
+                  <th>Material</th>
+                  <td>{producto.data.material}</td>
+                </tr>
+              )}
+              <tr>
+                <th>Marca</th>
+                <td>{producto.data.marca}</td>
+              </tr>
+              <tr>
+                <th>Categoría</th>
+                <td>{categoriaNombre}</td>
+              </tr>
+            </table>
+          </div>
+
+          <!-- Certificaciones -->
+          {producto.data.certificaciones && producto.data.certificaciones.length > 0 && (
+            <div class="sidebar-block">
+              <h3 class="sidebar-block__title">Certificaciones</h3>
+              <ul class="cert-list">
+                {producto.data.certificaciones.map((cert: string) => (
+                  <li class="cert-list__item">
+                    <span class="cert-list__check">✓</span>
+                    {cert}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          <!-- Soporte -->
+          <div class="sidebar-block sidebar-block--highlight">
+            <h3 class="sidebar-block__title">Incluye</h3>
+            <ul class="includes-list">
+              <li><a href="/servicios/garantia#garantia-fabricante">Garantía de fábrica {producto.data.marca}</a></li>
+              <li><a href="/servicios/garantia#fichas-tecnicas">Fichas técnicas oficiales</a></li>
+              <li><a href="/servicios/garantia#soporte-postventa">Soporte postventa</a></li>
+              <li>Envío a toda la República</li>
+            </ul>
+          </div>
+
+          <!-- CTA Compacto -->
+          <div class="sidebar-cta">
+            <p class="sidebar-cta__text">¿Necesitas cotización o asesoría técnica?</p>
+            <a href="#cotizar" class="btn btn--primary btn--block">Solicitar Cotización</a>
+            <a
+              href={`${WHATSAPP_URL}?text=${encodeURIComponent(`Hola, necesito información sobre: ${producto.data.title}`)}`}
+              class="btn btn--whatsapp btn--block"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+              WhatsApp Directo
+            </a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Products -->
+  <RelatedProductsGrid
+    titulo={`Otros ${categoriaNombre}`}
+    subtitulo={`Explora más opciones de ${categoriaNombre.toLowerCase()} para tu proyecto`}
+    productos={relacionados}
+    maxProductos={3}
+    verTodosLink={categoriaUrl}
+    verTodosTexto={`Ver todos los ${categoriaNombre.toLowerCase()}`}
+  />
+
+  <!-- Otras Categorías - Cross-Linking SEO -->
+  <section class="other-categories">
+    <div class="container">
+      <h2 class="other-categories__title">Explora Otras Categorías de Equipos</h2>
+      <p class="other-categories__subtitle">Completa tu sistema contra incendios con equipos certificados</p>
+      <div class="other-categories__grid">
+        {otrasCategorias.map((cat) => (
+          <a href={cat.url} class="other-cat-card">
+            <h3 class="other-cat-card__title">{cat.nombre}</h3>
+            <span class="other-cat-card__link">Ver catálogo →</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Lead Capture - Componente Unificado -->
+  <CotizacionForm
+    titulo={`Cotiza ${producto.data.title}`}
+    producto={producto.data.title}
+    pagina={`Producto: ${producto.data.title}`}
+  />
+</Layout>
+
+<script>
+  // Galería de imágenes - cambio al hacer clic
+  document.addEventListener('DOMContentLoaded', () => {
+    const thumbnails = document.querySelectorAll('.thumbnail');
+    const mainImage = document.getElementById('main-product-image') as HTMLImageElement;
+
+    if (thumbnails.length > 0 && mainImage) {
+      thumbnails.forEach((thumb) => {
+        thumb.addEventListener('click', () => {
+          const newSrc = thumb.getAttribute('data-image');
+          if (newSrc) {
+            mainImage.src = newSrc;
+            thumbnails.forEach(t => t.classList.remove('thumbnail--active'));
+            thumb.classList.add('thumbnail--active');
+          }
+        });
+      });
+    }
+  });
+</script>
+
+<style>
+  /* Breadcrumb */
+  .breadcrumb {
+    background: #f8f9fa;
+    padding: 1rem 0;
+    border-bottom: 1px solid #e9ecef;
+  }
+
+  .breadcrumb__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0.875rem;
+    gap: 0.25rem;
+  }
+
+  .breadcrumb__item {
+    display: flex;
+    align-items: center;
+    color: #666;
+  }
+
+  .breadcrumb__item:not(:last-child)::after {
+    content: '/';
+    margin: 0 0.5rem;
+    color: #aaa;
+  }
+
+  .breadcrumb__item a {
+    color: #c8102e;
+    text-decoration: none;
+  }
+
+  .breadcrumb__item a:hover {
+    text-decoration: underline;
+  }
+
+  .breadcrumb__item--active {
+    color: #333;
+    font-weight: 600;
+  }
+
+  /* Product Hero */
+  .product-hero {
+    padding: 3rem 0;
+    background: white;
+  }
+
+  .product-hero__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+  }
+
+  .product-hero__gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .product-hero__image {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #f8f9fa;
+  }
+
+  .product-hero__image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .product-hero__thumbnails {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  .thumbnail {
+    width: 80px;
+    height: 60px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 0;
+    background: white;
+  }
+
+  .thumbnail:hover {
+    border-color: #c8102e;
+  }
+
+  .thumbnail--active {
+    border-color: #c8102e;
+    box-shadow: 0 0 0 2px rgba(200, 16, 46, 0.2);
+  }
+
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .product-hero__placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 350px;
+    color: #aaa;
+    gap: 1rem;
+  }
+
+  .product-hero__badge {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background: #c8102e;
+    color: white;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+
+  .product-hero__categoria {
+    display: inline-block;
+    margin-bottom: 0.75rem;
+  }
+
+  .product-hero__categoria a {
+    color: #c8102e;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .product-hero__categoria a:hover {
+    text-decoration: underline;
+  }
+
+  .product-hero__title {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: #1a1a2e;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+
+  .product-hero__description {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+  }
+
+  /* Specs Table */
+  .product-hero__specs {
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+  }
+
+  .spec-row {
+    display: flex;
+    border-bottom: 1px solid #e9ecef;
+    font-size: 0.95rem;
+  }
+
+  .spec-row:last-child {
+    border-bottom: none;
+  }
+
+  .spec-row__label {
+    flex: 0 0 40%;
+    padding: 0.75rem 1rem;
+    background: #f8f9fa;
+    font-weight: 600;
+    color: #333;
+  }
+
+  .spec-row__value {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    color: #555;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  .cert-badge {
+    display: inline-block;
+    background: #e8f5e9;
+    color: #2e7d32;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.825rem;
+    font-weight: 600;
+  }
+
+  /* CTAs */
+  .product-hero__ctas {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  /* Product Details - Two Column Layout */
+  .product-details {
+    padding: 3rem 0;
+    background: #f8f9fa;
+  }
+
+  .product-details__container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  .product-details__grid {
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 2.5rem;
+    align-items: start;
+  }
+
+  /* Main Content - Left Column */
+  .product-details__main {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  }
+
+  .product-details__content {
+    padding: 2.5rem;
+  }
+
+  .product-details__content :global(p) {
+    font-size: 1.05rem;
+    color: #333;
+    line-height: 1.85;
+    margin-bottom: 1.25rem;
+  }
+
+  .product-details__content :global(h2) {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin: 2rem 0 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #c8102e;
+  }
+
+  .product-details__content :global(h2:first-of-type) {
+    margin-top: 1.5rem;
+  }
+
+  .product-details__content :global(h3) {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #333;
+    margin: 1.5rem 0 0.75rem;
+  }
+
+  .product-details__content :global(ul),
+  .product-details__content :global(ol) {
+    margin: 0 0 1.25rem;
+    padding-left: 1.5rem;
+  }
+
+  .product-details__content :global(li) {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.75;
+    margin-bottom: 0.4rem;
+  }
+
+  .product-details__content :global(strong) {
+    color: #1a1a2e;
+    font-weight: 600;
+  }
+
+  /* Sidebar - Right Column */
+  .product-details__sidebar {
+    position: sticky;
+    top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .sidebar-block {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  }
+
+  .sidebar-block--highlight {
+    background: linear-gradient(135deg, #fafafa 0%, #f5f5f5 100%);
+    border: 1px solid #e0e0e0;
+  }
+
+  .sidebar-block__title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    margin: 0 0 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid #c8102e;
+  }
+
+  /* Specs Table */
+  .specs-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+  }
+
+  .specs-table tr {
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .specs-table tr:last-child {
+    border-bottom: none;
+  }
+
+  .specs-table th {
+    text-align: left;
+    padding: 0.6rem 0;
+    color: #666;
+    font-weight: 500;
+    width: 45%;
+  }
+
+  .specs-table td {
+    text-align: right;
+    padding: 0.6rem 0;
+    color: #1a1a2e;
+    font-weight: 600;
+  }
+
+  /* Certification List */
+  .cert-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .cert-list__item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+    font-size: 0.9rem;
+    color: #333;
+    border-bottom: 1px solid #f5f5f5;
+  }
+
+  .cert-list__item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .cert-list__check {
+    color: #2e7d32;
+    font-weight: 700;
+    font-size: 0.85rem;
+  }
+
+  /* Includes List */
+  .includes-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .includes-list li {
+    position: relative;
+    padding: 0.4rem 0 0.4rem 1.25rem;
+    font-size: 0.875rem;
+    color: #444;
+    line-height: 1.5;
+  }
+
+  .includes-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #c8102e;
+    font-weight: 700;
+  }
+
+  /* Sidebar CTA */
+  .sidebar-cta {
+    background: linear-gradient(135deg, #1a1a2e 0%, #2d2d4a 100%);
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  .sidebar-cta__text {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.95rem;
+    margin: 0 0 1rem;
+    line-height: 1.5;
+  }
+
+  .sidebar-cta .btn {
+    margin-bottom: 0.75rem;
+  }
+
+  .sidebar-cta .btn:last-child {
+    margin-bottom: 0;
+  }
+
+  /* WhatsApp Button */
+  .btn--whatsapp {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background: #25d366;
+    color: white;
+    padding: 0.75rem 1.25rem;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: background 0.2s ease;
+  }
+
+  .btn--whatsapp:hover {
+    background: #128c7e;
+  }
+
+  .btn--block {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Responsive - Tablet */
+  @media (max-width: 1024px) {
+    .product-details__grid {
+      grid-template-columns: 1fr 320px;
+      gap: 2rem;
+    }
+  }
+
+  /* Responsive - Mobile */
+  @media (max-width: 768px) {
+    .product-hero__grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .product-hero__title {
+      font-size: 1.75rem;
+    }
+
+    .product-details {
+      padding: 2rem 0;
+    }
+
+    .product-details__container {
+      padding: 0 1rem;
+    }
+
+    .product-details__grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .product-details__content {
+      padding: 1.75rem;
+    }
+
+    .product-details__content :global(p) {
+      font-size: 1rem;
+    }
+
+    .product-details__content :global(h2) {
+      font-size: 1.2rem;
+    }
+
+    .product-details__sidebar {
+      position: static;
+    }
+
+    .sidebar-block {
+      padding: 1.25rem;
+    }
+
+    .spec-row {
+      flex-direction: column;
+    }
+
+    .spec-row__label {
+      flex: none;
+    }
+
+    .related-products__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* Other Categories - Cross-Linking */
+  .other-categories {
+    padding: 3rem 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  }
+
+  .other-categories__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .other-categories__subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 2rem;
+  }
+
+  .other-categories__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+
+  .other-cat-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-decoration: none;
+    border: 2px solid transparent;
+    transition: all 0.2s ease;
+    text-align: center;
+  }
+
+  .other-cat-card:hover {
+    border-color: #c8102e;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .other-cat-card__title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin-bottom: 0.5rem;
+  }
+
+  .other-cat-card__link {
+    font-size: 0.875rem;
+    color: #c8102e;
+    font-weight: 500;
+  }
+
+  @media (max-width: 768px) {
+    .other-categories__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .other-categories__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

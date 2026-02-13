@@ -1,0 +1,207 @@
+---
+import Layout from '../../layouts/Base.astro';
+import '../../styles/subcategory.css';
+import { getCollection } from 'astro:content';
+import SubcategoryProductCard from '../../components/SubcategoryProductCard.astro';
+import ProductSidebar from '../../components/ProductSidebar.astro';
+import RelatedProductsGrid from '../../components/RelatedProductsGrid.astro';
+import CotizacionForm from '../../components/CotizacionForm.astro';
+
+// Obtener productos de boquillas
+const todasBoquillas = (await getCollection('productos', ({ data }) => data.categoria === 'boquillas')).sort((a, b) => a.data.orden - b.data.orden);
+
+// Filtrar productos turbo jet por subcategoria
+const productosTurboJet = todasBoquillas.filter(p => p.data.subcategoria === 'turbo-jet');
+
+// Otros productos para la sección de relacionados
+const otrasBoquillas = todasBoquillas.filter(p => !productosTurboJet.includes(p));
+
+// Definir las subcategorías de boquillas para el sidebar
+const subcategorias = [
+  {
+    slug: 'tipo-pistola',
+    nombre: 'Boquilla Tipo Pistola',
+    descripcion: 'Control ergonómico seleccionable',
+    activo: false
+  },
+  {
+    slug: 'turbo-jet',
+    nombre: 'Boquilla Turbo Jet',
+    descripcion: 'Máximo alcance y penetración',
+    activo: true
+  },
+  {
+    slug: 'industrial',
+    nombre: 'Boquilla Industrial',
+    descripcion: 'Alto caudal para industria',
+    activo: false
+  },
+  {
+    slug: 'certificada',
+    nombre: 'Boquilla Certificada',
+    descripcion: 'Certificación UL/FM',
+    activo: false
+  },
+];
+---
+
+<Layout
+  title="Boquilla Turbo Jet | Máximo Alcance México"
+  description="Boquilla Turbo Jet para máximo alcance y penetración. Alta presión, conexión NST, caudal regulable GPM. Akron Brass, Elkhart. Certificación UL. México."
+  activePage="equipos"
+  heroTitle="Boquilla Turbo Jet"
+  heroIntro="Boquillas de alta velocidad diseñadas para máximo alcance y penetración en incendios estructurales e industriales. La tecnología Turbo Jet genera un chorro compacto y cohesivo que mantiene su integridad a distancias superiores, ideal para ataque ofensivo desde posiciones seguras."
+  heroBadge="Boquillas Contra Incendios"
+  heroMetrics={[
+    { valor: "60m+", texto: "Alcance efectivo" },
+    { valor: "200", texto: "GPM máximo" },
+    { valor: "100", texto: "PSI operación" }
+  ]}
+  heroPrimaryText="Ver Catálogo"
+  heroPrimaryLink="#catalogo"
+  heroSecondaryText="Solicitar Cotización"
+  heroSecondaryLink="#cotizar"
+  heroShowRightContent={true}
+>
+
+  <!-- HERO CONTENT -->
+  <Fragment slot="hero-content">
+    <p>La <strong>boquilla Turbo Jet</strong> utiliza tecnología de turbina interna que imparte rotación al flujo de agua, generando un chorro altamente cohesivo con mínima dispersión. Este diseño permite alcances efectivos superiores a 60 metros manteniendo la capacidad de penetración necesaria para combatir incendios estructurales desde distancias seguras. El patrón de descarga es ajustable desde chorro sólido hasta niebla de protección mediante rotación del cabezal.</p>
+    <p><strong>Gama de México</strong> distribuye boquillas Turbo Jet de Akron Brass y Elkhart Brass, líderes mundiales en tecnología de boquillas de combate. Estos equipos son la elección preferida de cuerpos de bomberos profesionales, brigadas industriales de alto rendimiento y unidades de rescate que requieren versatilidad y alcance superior. Disponibles en configuraciones de 1.5" y 2.5" NHT con caudales seleccionables y certificación UL.</p>
+  </Fragment>
+
+  <!-- MAIN CONTENT WITH SIDEBAR -->
+  <section class="subcat-content">
+    <div class="container">
+      <div class="subcat-layout">
+
+        <!-- MAIN CONTENT (LEFT) -->
+        <main class="subcat-main">
+
+          <!-- CATALOG HEADER -->
+          <div class="catalog-header">
+            <div class="catalog-header__text">
+              <h2 class="catalog-header__title">Catálogo de Boquillas Turbo Jet</h2>
+              <p class="catalog-header__desc">Selecciona el producto que mejor se adapte a tu operación</p>
+            </div>
+            <div class="catalog-header__count">
+              <span class="catalog-header__number">{productosTurboJet.length}</span>
+              <span class="catalog-header__label">producto{productosTurboJet.length !== 1 ? 's' : ''}</span>
+            </div>
+          </div>
+
+          <!-- PRODUCTS GRID -->
+          <div class="categories__grid">
+            {productosTurboJet.map((producto) => (
+              <SubcategoryProductCard
+                title={producto.data.title}
+                description={producto.data.description}
+                brand={producto.data.marca}
+                image={producto.data.imagen}
+                productSlug={producto.id}
+                flow={producto.data.flujo}
+                material={producto.data.material}
+                certifications={producto.data.certificaciones}
+              />
+            ))}
+          </div>
+
+          {productosTurboJet.length === 0 && (
+            <div class="catalog-empty">
+              <div class="catalog-empty__icon">🔍</div>
+              <h3 class="catalog-empty__title">Próximamente más opciones</h3>
+              <p class="catalog-empty__text">Estamos agregando más productos de boquillas turbo jet de diferentes marcas. Mientras tanto, solicita una cotización personalizada.</p>
+              <a href="#cotizar" class="btn btn--primary">Solicitar Cotización</a>
+            </div>
+          )}
+
+          <!-- TECHNICAL INFO -->
+          <div class="tech-info">
+            <h3 class="tech-info__title">Especificaciones Técnicas Generales</h3>
+            <div class="tech-info__grid">
+              <div class="tech-info__item">
+                <span class="tech-info__label">Caudal típico</span>
+                <span class="tech-info__value">60 - 325 GPM</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Presión de trabajo</span>
+                <span class="tech-info__value">75 - 100 PSI</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Ajuste</span>
+                <span class="tech-info__value">Automático</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Entradas</span>
+                <span class="tech-info__value">1.5" y 2.5" NHT</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Tecnología</span>
+                <span class="tech-info__value">Resorte externo</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Materiales</span>
+                <span class="tech-info__value">Aluminio forjado</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA FINAL -->
+          <div class="subcat-cta-final">
+            <div class="subcat-cta-final__content">
+              <h3 class="subcat-cta-final__title">¿No encuentras el modelo que necesitas?</h3>
+              <p class="subcat-cta-final__desc">Tenemos acceso al catálogo completo de Elkhart Brass. Contáctanos para opciones adicionales y configuraciones especiales.</p>
+            </div>
+            <a href="#cotizar" class="btn btn--primary">Solicitar Cotización</a>
+          </div>
+
+        </main>
+
+        <!-- SIDEBAR (RIGHT) -->
+        <ProductSidebar
+          navTitulo="Tipos de Boquillas"
+          subcategorias={subcategorias}
+          baseUrl="/boquillas"
+          backLinkHref="/boquillas-contra-incendios"
+          backLinkTexto="Ver todas las boquillas"
+          certificaciones={[
+            { siglas: "FM", nombre: "Factory Mutual" },
+            { siglas: "UL", nombre: "UL Listed" },
+            { siglas: "NOM", nombre: "NOM-002-STPS" }
+          ]}
+          marcas={["Elkhart Brass", "Akron Brass", "Task Force Tips", "POK"]}
+          aplicaciones={[
+            "Cuerpos de bomberos",
+            "Brigadas industriales",
+            "Refinerías",
+            "Aplicaciones de alto alcance"
+          ]}
+          productosRelacionados={[
+            { href: "/monitores-contra-incendios", nombre: "Monitores Contra Incendios" },
+            { href: "/mangueras-contra-incendios", nombre: "Mangueras Contra Incendios" },
+            { href: "/valvulas-contra-incendios", nombre: "Válvulas Contra Incendios" },
+            { href: "/conexiones-herrajes-contra-incendios", nombre: "Conexiones y Herrajes" }
+          ]}
+        />
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RELATED PRODUCTS -->
+  <RelatedProductsGrid
+    titulo="Otras Boquillas Contra Incendios"
+    subtitulo="Explora más opciones para tu sistema de protección"
+    productos={otrasBoquillas}
+    maxProductos={3}
+    verTodosLink="/boquillas-contra-incendios"
+    verTodosTexto="Ver todas las boquillas"
+  />
+
+  <CotizacionForm
+    titulo="Cotiza Boquillas Turbo Jet"
+    tipoEquipo="Boquillas"
+    pagina="Boquillas Turbo Jet"
+  />
+
+</Layout>

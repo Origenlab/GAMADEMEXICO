@@ -1,0 +1,398 @@
+---
+import Layout from '../layouts/Base.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+import ServiceCard from '../components/ServiceCard.astro';
+import CategoryCard from '../components/CategoryCard.astro';
+import Faq from '../components/Faq.astro';
+import {
+  buildOrganizationSchema,
+  buildLocalBusinessSchema,
+  buildWebSiteSchema,
+  buildFAQSchema,
+} from '../lib/seo';
+
+// FAQ data (usada en el HTML y en el schema)
+const faqItems = [
+  {
+    pregunta: '¿Cómo puedo solicitar una cotización de equipos contra incendios en Gama de México?',
+    respuesta: 'Puedes solicitar tu cotización a través de nuestro formulario en línea (se envía directo a WhatsApp), escribiéndonos al WhatsApp 55 6529 8240, o llamando al 55 1543 7164. Solo necesitamos el tipo de equipo, las cantidades aproximadas y la ubicación de entrega. Respondemos en menos de 24 horas.',
+  },
+  {
+    pregunta: '¿Qué tipos de equipos contra incendios venden?',
+    respuesta: 'Manejamos un catálogo completo en seis categorías: Monitores (tipo corazón, cuello de cisne, certificados y UL Listed), Boquillas (tipo pistola, turbo jet y certificadas), Mangueras (millhose, blindex y de succión), Válvulas (compuerta, globo y angular), Conexiones y herrajes de bronce (chiflones, adaptadores, coples, toma siamesa, conexión Y), y Gabinetes e hidrantes (tipo 30ME e hidrante de banqueta).',
+  },
+  {
+    pregunta: '¿Realizan envíos de equipos contra incendios a todo México?',
+    respuesta: 'Sí, realizamos envíos a toda la República Mexicana. Operamos desde Ciudad de México (Santa Fe) y Querétaro, lo que permite coordinar logística eficiente al centro, norte y sureste del país.',
+  },
+  {
+    pregunta: '¿Ofrecen asesoría técnica para elegir equipos contra incendios?',
+    respuesta: 'Sí. Nuestros asesores técnicos evalúan tipo de riesgo, normativa aplicable (NOM-002-STPS, protección civil), especificaciones hidráulicas y de diseño para recomendarte los componentes exactos. La asesoría es gratuita y sin compromiso.',
+  },
+  {
+    pregunta: '¿Los equipos contra incendios que venden tienen certificaciones?',
+    respuesta: 'Sí. Como distribuidores autorizados de Elkhart Brass contamos con monitores y boquillas certificados UL (Underwriters Laboratories) y FM (Factory Mutual). Proporcionamos documentación técnica para verificaciones de protección civil.',
+  },
+  {
+    pregunta: '¿Dónde se ubican las sucursales de Gama de México?',
+    respuesta: 'Tenemos dos sucursales: Prol. Paseo de la Reforma 1015, Piso 1, Santa Fe, 01376 Ciudad de México, y Avenida Constituyentes 120, Santiago de Querétaro, 76030. Horario: lunes a domingo de 6:00 a 16:00 horas.',
+  },
+  {
+    pregunta: '¿Qué sectores o industrias atiende Gama de México?',
+    respuesta: 'Atendemos plantas manufactureras, industria química y petroquímica, terminales de almacenamiento, centros de datos, constructoras, hospitales, hoteles, corporativos, firmas de ingeniería, instaladores certificados y brigadas de protección civil. Ofrecemos venta unitaria y cotizaciones corporativas.',
+  },
+];
+
+const structuredData = [
+  buildOrganizationSchema(),
+  buildLocalBusinessSchema(),
+  buildWebSiteSchema(),
+  buildFAQSchema(faqItems),
+];
+---
+
+<Layout
+  title="Equipos Contra Incendios México | Gama de México"
+  description="Distribuidor Elkhart Brass México. Monitores, boquillas, mangueras, válvulas y gabinetes contra incendios certificados UL/FM. Envíos nacionales."
+  activePage="inicio"
+  structuredData={structuredData}
+  showLeadCapture={true}
+  heroTitle="Equipos Contra Incendios en México"
+  heroIntro="Suministro profesional de equipos certificados para protección industrial, comercial y residencial. Asesoría técnica, inventario y logística nacional para proyectos críticos."
+  heroBadge="Distribuidor Autorizado Elkhart Brass"
+  heroMetrics={[
+    { valor: "UL/FM", texto: "Equipos certificados" },
+    { valor: "24h", texto: "Respuesta cotización" },
+    { valor: "Nacional", texto: "Cobertura envíos" }
+  ]}
+  heroPrimaryText="Solicitar Cotización"
+  heroPrimaryLink="#cotizar"
+  heroSecondaryText="Ver Catálogo de Equipos"
+  heroSecondaryLink="#equipos"
+  heroShowRightContent={true}
+>
+
+  <!-- HERO CONTENT -->
+  <Fragment slot="hero-content">
+    <p><strong>Gama de México</strong> es distribuidor autorizado de Elkhart Brass, referente mundial en equipos contra incendios con certificaciones UL y FM. Nuestro catálogo abarca soluciones completas de protección activa: monitores tipo corazón y cuello de cisne para control perimetral, boquillas de alto rendimiento para dirección precisa de flujo, mangueras industriales de máxima resistencia y válvulas diseñadas para operar bajo las condiciones más exigentes en plantas industriales, centros de datos y terminales de almacenamiento.</p>
+    <p>Operamos desde Santa Fe, Ciudad de México, con cobertura logística en toda la República Mexicana. Nuestro equipo de asesores técnicos evalúa las condiciones específicas de cada proyecto —tipo de riesgo, normativa aplicable y especificaciones de diseño— para recomendarte los componentes exactos que necesitas. Atendemos a constructoras, firmas de ingeniería, instaladores certificados, brigadas industriales y responsables de seguridad patrimonial que exigen equipos probados y respaldo técnico real.</p>
+  </Fragment>
+
+  <!-- CATEGORIAS -->
+  <section class="categories" id="equipos" aria-labelledby="categories-title">
+    <div class="container">
+      <SectionHeader
+        titulo="Catálogo de Equipos Contra Incendios: Monitores, Boquillas, Mangueras y Más"
+        subtitulo="Equipos certificados UL y FM de Elkhart Brass. Selecciona una categoría para conocer productos y solicitar cotización"
+        idTitulo="categories-title"
+        parrafo1="Nuestro catálogo integra las soluciones más avanzadas en protección contra incendios: monitores tipo corazón y cuello de cisne para control perimetral en plantas industriales, boquillas de alto rendimiento para dirección precisa de flujo, mangueras de descarga e industriales con resistencia certificada, y válvulas diseñadas para operar bajo condiciones extremas de presión y temperatura."
+        parrafo2="Cada producto cuenta con especificaciones técnicas detalladas, certificaciones internacionales UL y FM, y compatibilidad garantizada con sistemas contra incendios existentes. Trabajamos con constructoras, firmas de ingeniería e instaladores que requieren documentación completa para cumplimiento normativo."
+      />
+      <div class="categories__grid">
+        <CategoryCard
+          titulo="Monitores Contra Incendios"
+          subtitulo="Lanzadores de agua para protección perimetral"
+          enlace="/monitores-contra-incendios"
+          subcategorias={[
+            { nombre: "Monitor tipo corazón", enlace: "/monitores/tipo-corazon" },
+            { nombre: "Monitor cuello de cisne", enlace: "/monitores/cuello-cisne" },
+            { nombre: "Monitor certificado FM", enlace: "/monitores/certificado-fm" },
+            { nombre: "Monitor UL Listed", enlace: "/monitores/ul-listed" }
+          ]}
+        />
+        <CategoryCard
+          titulo="Boquillas Contra Incendios"
+          subtitulo="Control y dirección de flujo de agua"
+          enlace="/boquillas-contra-incendios"
+          subcategorias={[
+            { nombre: "Boquilla tipo pistola", enlace: "/boquillas/tipo-pistola" },
+            { nombre: "Boquilla turbo jet", enlace: "/boquillas/turbo-jet" },
+            { nombre: "Boquilla industrial", enlace: "/boquillas/industrial" },
+            { nombre: "Boquilla certificada", enlace: "/boquillas/certificada" }
+          ]}
+        />
+        <CategoryCard
+          titulo="Mangueras Contra Incendios"
+          subtitulo="Conducción de agua a presión industrial"
+          enlace="/mangueras-contra-incendios"
+          subcategorias={[
+            { nombre: "Manguera Millhose", enlace: "/mangueras/millhose" },
+            { nombre: "Manguera Blindex", enlace: "/mangueras/blindex" },
+            { nombre: "Manguera de succión", enlace: "/mangueras/succion" },
+            { nombre: "Manguera forestal", enlace: "/mangueras/forestal" }
+          ]}
+        />
+        <CategoryCard
+          titulo="Válvulas Contra Incendios"
+          subtitulo="Control de flujo hidráulico en sistemas contra incendio"
+          enlace="/valvulas-contra-incendios"
+          subcategorias={[
+            { nombre: "Válvula de compuerta OS&Y", enlace: "/valvulas/compuerta" },
+            { nombre: "Válvula de globo", enlace: "/valvulas/globo" },
+            { nombre: "Válvula de retención", enlace: "/valvulas/retencion" },
+            { nombre: "Válvula mariposa", enlace: "/valvulas/mariposa" }
+          ]}
+        />
+        <CategoryCard
+          titulo="Conexiones y Herrajes de Bronce"
+          subtitulo="Acoplamiento y distribución para redes contra incendio"
+          enlace="/conexiones-herrajes-contra-incendios"
+          subcategorias={[
+            { nombre: "Adaptadores de bronce", enlace: "/conexiones/adaptadores" },
+            { nombre: "Conexión Y (Wye)", enlace: "/conexiones/wye" },
+            { nombre: "Toma siamesa FDC", enlace: "/conexiones/siamesa" },
+            { nombre: "Coples y reducciones", enlace: "/conexiones/coples" },
+            { nombre: "Chiflones de tres pasos", enlace: "/conexiones/chiflones" },
+            { nombre: "Accesorios y herrajes", enlace: "/conexiones/accesorios" }
+          ]}
+        />
+        <CategoryCard
+          titulo="Gabinetes e Hidrantes"
+          subtitulo="Almacenamiento y toma de agua para edificios e industria"
+          enlace="/gabinetes-hidrantes-contra-incendios"
+          subcategorias={[
+            { nombre: "Gabinete tipo 30ME", enlace: "/gabinetes/tipo-30me" },
+            { nombre: "Hidrante de banqueta", enlace: "/gabinetes/hidrante-banqueta" },
+            { nombre: "Gabinete empotrado", enlace: "/gabinetes/gabinete-empotrado" },
+            { nombre: "Estación de manguera", enlace: "/gabinetes/estacion-manguera" }
+          ]}
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section class="services" id="servicios" aria-labelledby="services-title">
+    <div class="container">
+      <SectionHeader
+        titulo="Servicios de Venta y Asesoría en Equipos Contra Incendios"
+        subtitulo="Soluciones integrales para protección contra incendios en el sector industrial, comercial y residencial de México"
+        enlaceTexto="Ver todos los servicios"
+        enlaceUrl="/servicios"
+        idTitulo="services-title"
+        parrafo1="Como distribuidores autorizados de Elkhart Brass en México, ofrecemos un servicio integral que va más allá de la venta de equipos. Nuestro equipo de ingenieros especializados analiza las condiciones específicas de cada instalación —capacidad hidráulica, tipo de riesgo, normativa NOM aplicable— para garantizar que cada componente cumpla con los estándares de seguridad requeridos por protección civil y aseguradoras."
+        parrafo2="Atendemos proyectos de cualquier escala: desde el suministro unitario para mantenimiento preventivo hasta cotizaciones corporativas para plantas industriales, terminales de almacenamiento y desarrollos inmobiliarios. Cada equipo incluye documentación técnica completa, certificados de origen y respaldo postventa para verificaciones oficiales."
+      />
+      <div class="services__grid">
+        <ServiceCard
+          id="garantia"
+          titulo="Garantía y Respaldo Técnico"
+          descripcion="Todos nuestros equipos incluyen <strong>garantía del fabricante</strong> y respaldo técnico real. Documentación completa, <strong>certificados UL y FM</strong>, fichas técnicas oficiales y soporte postventa para verificaciones de protección civil."
+          enlace="/servicios/garantia"
+        />
+        <ServiceCard
+          id="asesoria"
+          titulo="Asesoría Técnica Especializada"
+          descripcion="Ingenieros especializados te ayudan a seleccionar <strong>equipos contra incendios</strong> según las especificaciones de tu proyecto, tipo de riesgo y <strong>normativa NOM</strong> aplicable. Asesoría sin costo para sistemas de protección contra incendios."
+          enlace="/servicios/asesoria"
+        />
+        <ServiceCard
+          id="empresas"
+          titulo="Atención a Empresas y Proyectos"
+          descripcion="Servicio dedicado para <strong>constructoras, instaladores certificados, plantas industriales</strong> y proyectos de gran escala. Cotizaciones para <strong>licitaciones</strong>, obras gubernamentales y desarrollos inmobiliarios en toda la República Mexicana."
+          enlace="/servicios/empresas"
+        />
+        <ServiceCard
+          id="mantenimiento"
+          titulo="Suministro para Mantenimiento"
+          descripcion="Reposición de <strong>piezas, refacciones y accesorios</strong> para mantenimiento preventivo y correctivo de <strong>sistemas contra incendios</strong> existentes. Disponibilidad de válvulas, conexiones, mangueras y herrajes de bronce para reparaciones inmediatas."
+          enlace="/servicios/mantenimiento"
+        />
+        <ServiceCard
+          id="envios"
+          titulo="Logística y Envíos Nacionales"
+          descripcion="<strong>Envíos de equipos contra incendios a toda la República Mexicana</strong>. Coordinamos entregas directas a obra, planta industrial o almacén. Embalaje especializado para monitores, válvulas y equipos de alto valor."
+          enlace="/servicios/envios"
+        />
+        <ServiceCard
+          id="cotizaciones"
+          titulo="Cotizaciones Corporativas"
+          descripcion="Procesos de <strong>cotización y facturación</strong> para compras corporativas, licitaciones públicas y proyectos gubernamentales. Precios competitivos en <strong>venta al mayoreo de equipos contra incendios</strong> con distribución directa."
+          enlace="/servicios/cotizaciones"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST -->
+  <section class="trust" aria-labelledby="trust-title">
+    <div class="container">
+      <SectionHeader
+        titulo="Por Qué Elegir a Gama de México como tu Proveedor de Equipos Contra Incendios"
+        subtitulo="Distribuidor autorizado Elkhart Brass con cobertura nacional, asesoría técnica y disponibilidad inmediata"
+        idTitulo="trust-title"
+        parrafo1="La selección de un proveedor de equipos contra incendios impacta directamente en la seguridad de instalaciones, personal y activos. En Gama de México combinamos la representación oficial de Elkhart Brass —líder mundial en tecnología contra incendios— con conocimiento técnico del mercado mexicano: normativas NOM, requerimientos de protección civil y estándares de aseguradoras nacionales."
+        parrafo2="Operamos desde dos ubicaciones estratégicas en Ciudad de México y Querétaro, lo que nos permite coordinar envíos eficientes a cualquier punto del país. Nuestro inventario permanente reduce tiempos de entrega, mientras que el equipo técnico proporciona asesoría personalizada para proyectos de cualquier complejidad."
+      />
+      <div class="trust__grid">
+        <div class="trust__item">
+          <h3 class="trust__item-title">Experiencia comprobada</h3>
+          <p class="trust__item-desc">Años atendiendo al sector industrial, comercial y de construcción en México con soluciones confiables.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title"><a href="/servicios/garantia">Calidad garantizada</a></h3>
+          <p class="trust__item-desc">Distribuidores autorizados Elkhart Brass. Equipos con <a href="/servicios/garantia#certificados-ul-fm">certificaciones UL y FM</a>, garantía de funcionamiento en cada producto.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Asesoría técnica real</h3>
+          <p class="trust__item-desc">No solo vendemos: te ayudamos a seleccionar lo correcto para tu proyecto específico y sus requerimientos.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Disponibilidad inmediata</h3>
+          <p class="trust__item-desc">Inventario constante de los productos más solicitados para entregas rápidas y sin demoras.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Cobertura nacional</h3>
+          <p class="trust__item-desc">Envíos a toda la República Mexicana con opciones de logística coordinada a tu obra o instalación.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Atención personalizada</h3>
+          <p class="trust__item-desc">Un asesor asignado que conoce tu proyecto y da seguimiento puntual a cada requerimiento.</p>
+        </div>
+      </div>
+
+      <div class="trust__testimonials-header">
+        <h3 class="trust__testimonials-title">Lo que dicen nuestros clientes</h3>
+        <p class="trust__testimonials-subtitle">Empresas de todo México confían en Gama de México para sus equipos contra incendios</p>
+      </div>
+      <div class="trust__testimonials">
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"Los monitores tipo corazón que adquirimos cumplen al 100% con las especificaciones de nuestro sistema contra incendios. La asesoría técnica de Gama de México fue determinante para seleccionar el equipo correcto según el nivel de riesgo de nuestra planta."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Ricardo Mendoza L.</span>
+              <span class="testimonial__role">Gerente de Seguridad Industrial</span>
+              <span class="testimonial__company">Planta Manufacturera, Edo. Méx.</span>
+            </div>
+          </div>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"Llevamos tres proyectos consecutivos trabajando con Gama de México. Mangueras, válvulas y conexiones de bronce siempre disponibles y con tiempos de entrega que respetan nuestro calendario de obra. Un proveedor serio."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Ing. Carlos Vega R.</span>
+              <span class="testimonial__role">Director de Obra</span>
+              <span class="testimonial__company">Constructora Nacional, CDMX</span>
+            </div>
+          </div>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"Necesitábamos consolidar chiflones, adaptadores, coples y tomas siamesas con un solo proveedor. Gama de México tenía todo en inventario. La cotización llegó el mismo día y el envío se coordinó sin contratiempos a nuestra planta en Veracruz."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Jorge Hernández M.</span>
+              <span class="testimonial__role">Jefe de Mantenimiento</span>
+              <span class="testimonial__company">Industria Química, Veracruz</span>
+            </div>
+          </div>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"Cotizamos boquillas certificadas y monitores UL para nuestro centro de datos. El equipo de Gama de México nos orientó sobre las especificaciones técnicas y certificaciones necesarias. Productos Elkhart Brass de primera calidad."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Ing. Patricia Rojas S.</span>
+              <span class="testimonial__role">Coordinadora de Infraestructura</span>
+              <span class="testimonial__company">Data Center, Querétaro</span>
+            </div>
+          </div>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"Instalamos gabinetes tipo 30ME e hidrantes de banqueta en un desarrollo residencial de 200 viviendas. Gama de México nos entregó todo el equipo en una sola remisión, con factura y documentación completa para la verificación de protección civil."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Arq. Daniel Fuentes P.</span>
+              <span class="testimonial__role">Responsable de Proyecto</span>
+              <span class="testimonial__company">Desarrolladora Inmobiliaria, Puebla</span>
+            </div>
+          </div>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"Como instaladores certificados requerimos un proveedor que maneje equipos con respaldo técnico real. Las válvulas de compuerta y mangueras blindex de Gama de México cumplen con las especificaciones de cada proyecto que ejecutamos."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Téc. Miguel Ángel Ortiz</span>
+              <span class="testimonial__role">Director Técnico</span>
+              <span class="testimonial__company">Instalaciones Contra Incendios, Jalisco</span>
+            </div>
+          </div>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"Gestionamos la compra de equipos contra incendios para cinco naves industriales. Gama de México nos preparó una cotización corporativa detallada con precios por volumen. El proceso de facturación fue impecable y la entrega, puntual en cada ubicación."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Lic. Andrea Torres G.</span>
+              <span class="testimonial__role">Gerente de Compras</span>
+              <span class="testimonial__company">Grupo Industrial, Monterrey</span>
+            </div>
+          </div>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"Renovamos el sistema contra incendios de nuestra terminal de almacenamiento y necesitábamos monitores certificados con urgencia. Gama de México tenía disponibilidad inmediata y nos asesoró para cumplir con la normativa vigente. Servicio excepcional."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Ing. Roberto Salinas D.</span>
+              <span class="testimonial__role">Superintendente de Seguridad</span>
+              <span class="testimonial__company">Terminal de Almacenamiento, Tabasco</span>
+            </div>
+          </div>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"Equipamos las brigadas de emergencia de nuestra corporación con boquillas turbo jet y mangueras millhose. La calidad del equipo Elkhart Brass es evidente y el respaldo de Gama de México como distribuidor autorizado nos da total confianza."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Lic. Fernanda Díaz L.</span>
+              <span class="testimonial__role">Coordinadora de Protección Civil</span>
+              <span class="testimonial__company">Corporativo Empresarial, CDMX</span>
+            </div>
+          </div>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEO CONTENT -->
+  <section class="seo-content" aria-labelledby="seo-title">
+    <div class="container">
+      <div class="seo-content__body">
+        <h2 id="seo-title" class="seo-content__title">Venta de Equipos Contra Incendios en México: Protección, Normatividad y Cumplimiento</h2>
+        <p class="seo-content__text">La inversión en <strong>equipos contra incendios</strong> de calidad es una decisión crítica que protege vidas, patrimonio y la continuidad operativa de cualquier empresa. En México, la normatividad en materia de protección civil —incluyendo las normas NOM-002-STPS sobre condiciones de seguridad para prevención de incendios y la NOM-154-SCFI sobre extintores— establece requisitos claros para que naves industriales, edificios comerciales, centros de datos, terminales de almacenamiento y desarrollos residenciales cuenten con <strong>sistemas contra incendios</strong> funcionales y debidamente mantenidos. La selección correcta de componentes —desde <a href="/monitores-contra-incendios">monitores contra incendios</a> y boquillas certificadas hasta mangueras industriales, válvulas y gabinetes— puede significar la diferencia entre un conato controlado y una pérdida catastrófica.</p>
+        <p class="seo-content__text">Como <strong>distribuidores autorizados de Elkhart Brass</strong> en México, en Gama de México ofrecemos un catálogo integral de equipos para <strong>sistemas de agua contra incendios</strong> respaldados por certificaciones UL (Underwriters Laboratories) y FM (Factory Mutual). Nuestros <strong>monitores contra incendios</strong> —tipo corazón, cuello de cisne, certificados y con listado UL— están diseñados para protección perimetral en instalaciones de alto riesgo. Las <strong>boquillas contra incendios</strong> tipo pistola, turbo jet y certificadas ofrecen control preciso del flujo y alcance del agua. Suministramos <a href="/equipos#detalle-mangueras">mangueras contra incendios</a> de grado industrial (millhose, blindex y de succión), <strong>válvulas contra incendios</strong> de compuerta, globo y angular, y un amplio inventario de <strong>conexiones y herrajes de bronce</strong>: chiflones de tres pasos, adaptadores, coples, niples caña, tomas siamesas y conexiones tipo "Y". Para instalaciones fijas, contamos con <strong>gabinetes contra incendios</strong> tipo 30ME e <strong>hidrantes de banqueta</strong>.</p>
+        <p class="seo-content__text">Operamos desde dos ubicaciones estratégicas: nuestra sucursal principal en <strong>Santa Fe, Ciudad de México</strong>, y nuestra sucursal en <strong>Santiago de Querétaro</strong>, lo que nos permite atender con rapidez a empresas en el centro del país y coordinar envíos a toda la <strong>República Mexicana</strong>. Atendemos a plantas manufactureras, refinerías, centros de distribución, corporativos, hospitales, hoteles, constructoras, firmas de ingeniería, instaladores certificados y brigadas de protección civil. Cada proyecto recibe asesoría técnica personalizada para identificar los componentes adecuados según el tipo de riesgo, las especificaciones de diseño y la normativa aplicable.</p>
+        <p class="seo-content__text">Elegir un <strong>proveedor de equipos contra incendios</strong> especializado te da acceso a inventario con disponibilidad inmediata, garantía de funcionamiento respaldada por el fabricante, documentación técnica completa para verificaciones de protección civil, y un proceso de compra transparente desde la cotización hasta la entrega en sitio. Ya sea que necesites equipar un proyecto nuevo, reponer componentes para mantenimiento preventivo y correctivo, o cumplir con los requerimientos de una auditoría de seguridad, nuestro equipo está preparado para responder en menos de 24 horas. <a href="#cotizar">Solicita tu cotización sin compromiso</a> o escríbenos directamente por <a href="https://wa.me/5215565298240" target="_blank" rel="noopener">WhatsApp</a> para recibir asesoría inmediata sobre los equipos contra incendios que tu empresa necesita.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq" aria-labelledby="faq-title">
+    <div class="container">
+      <SectionHeader
+        titulo="Preguntas Frecuentes sobre Equipos Contra Incendios"
+        subtitulo="Resolvemos las dudas más comunes sobre cotización, tipos de equipos, envíos y certificaciones"
+        idTitulo="faq-title"
+        parrafo1="Entendemos que la adquisición de equipos contra incendios involucra decisiones técnicas importantes: compatibilidad con sistemas existentes, cumplimiento normativo, certificaciones requeridas y logística de entrega. Hemos compilado las consultas más frecuentes de nuestros clientes para facilitar tu proceso de compra."
+        parrafo2="Si tu pregunta no aparece aquí, nuestro equipo de asesores técnicos está disponible vía WhatsApp, teléfono o correo electrónico para resolver cualquier duda específica sobre especificaciones, disponibilidad o requerimientos de instalación."
+      />
+      <Faq items={faqItems} id="faq" />
+    </div>
+  </section>
+
+</Layout>

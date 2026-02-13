@@ -1,0 +1,194 @@
+---
+import Layout from '../../layouts/Base.astro';
+import '../../styles/subcategory.css';
+import { getCollection } from 'astro:content';
+import SubcategoryProductCard from '../../components/SubcategoryProductCard.astro';
+import ProductSidebar from '../../components/ProductSidebar.astro';
+import RelatedProductsGrid from '../../components/RelatedProductsGrid.astro';
+import CotizacionForm from '../../components/CotizacionForm.astro';
+
+// 1. Obtener todos los productos de la categoria gabinetes-hidrantes
+const todosProductos = (await getCollection('productos', ({ data }) =>
+  data.categoria === 'gabinetes-hidrantes'
+)).sort((a, b) => a.data.orden - b.data.orden);
+
+// 2. Filtrar estaciones de manguera
+const productosEstaciones = todosProductos.filter(p =>
+  p.data.subcategoria === 'estaciones' || p.id.includes('estacion-manguera')
+);
+
+// 3. Obtener otros productos para seccion de relacionados
+const otrosProductos = todosProductos.filter(p => !productosEstaciones.includes(p));
+
+// 4. Definir subcategorias para navegacion del sidebar
+const subcategorias = [
+  { slug: 'tipo-30me', nombre: 'Gabinete Tipo 30ME', descripcion: 'Gabinete completo con manguera 30m', activo: false },
+  { slug: 'gabinete-empotrado', nombre: 'Gabinete Empotrado', descripcion: 'Instalacion al ras del muro', activo: false },
+  { slug: 'hidrante-banqueta', nombre: 'Hidrante de Banqueta', descripcion: 'Toma exterior hierro ductil', activo: false },
+  { slug: 'estacion-manguera', nombre: 'Estacion de Manguera', descripcion: 'Carrete oscilante 180 grados', activo: true },
+];
+---
+
+<Layout
+  title="Estacion de Manguera con Carrete Oscilante | Venta Mexico"
+  description="Estaciones de manguera con carrete oscilante 180 grados y despliegue automatico. Manguera 1.5 pulgadas x 30m, boquilla cromada ajustable. NFPA 14 Class II/III. Mexico."
+  activePage="equipos"
+  heroTitle="Estacion de Manguera"
+  heroIntro="Las estaciones de manguera con carrete oscilante son la solucion de respuesta rapida para edificios comerciales e industriales. El diseno de 180 grados permite cobertura amplia desde un punto fijo, mientras que el despliegue automatico de la manguera facilita la operacion incluso por personal sin entrenamiento especializado. Cumplen con NFPA 14 para sistemas standpipe Class II y III."
+  heroBadge="Estaciones Contra Incendios"
+  heroMetrics={[
+    { valor: "180", texto: "Grados oscilacion" },
+    { valor: "30m", texto: "Manguera incluida" },
+    { valor: "100 PSI", texto: "Presion salida" }
+  ]}
+  heroPrimaryText="Ver Catalogo"
+  heroPrimaryLink="#catalogo"
+  heroSecondaryText="Solicitar Cotizacion"
+  heroSecondaryLink="#cotizar"
+  heroShowRightContent={true}
+>
+
+  <!-- HERO CONTENT -->
+  <Fragment slot="hero-content">
+    <p>La <strong>estacion de manguera</strong> con carrete oscilante representa la evolucion de los sistemas de primera respuesta contra incendios en edificaciones. A diferencia del gabinete tradicional donde el usuario debe extraer la manguera manualmente, la estacion permite simplemente jalar la boquilla mientras el carrete se desenrolla automaticamente, reduciendo drasticamente el tiempo de respuesta. El brazo oscilante de 180 grados proporciona cobertura de hasta 39.7 metros de radio sin necesidad de desplazar el equipo.</p>
+    <p>En <strong>Gama de Mexico</strong> ofrecemos estaciones de manguera con conexion de entrada 1.5" NST/NH, manguera de 30 metros (100 ft) con presion de trabajo de 300 PSI, carrete de 18" de diametro y boquilla de bronce cromado ajustable desde chorro directo hasta neblina amplia. Disponibles en versiones manuales (con valvula exterior) y automaticas (donde la rotacion del carrete abre la valvula). Ideales para sistemas standpipe Class II (edificios de 4-12 pisos) y Class III (mas de 12 pisos), cumpliendo integramente con <strong>NFPA 14</strong> y <strong>NFPA 1963</strong>.</p>
+  </Fragment>
+
+  <!-- MAIN CONTENT WITH SIDEBAR -->
+  <section class="subcat-content">
+    <div class="container">
+      <div class="subcat-layout">
+
+        <!-- MAIN CONTENT (LEFT) -->
+        <main class="subcat-main">
+
+          <!-- CATALOG HEADER -->
+          <div class="catalog-header" id="catalogo">
+            <div class="catalog-header__text">
+              <h2 class="catalog-header__title">Catalogo de Estaciones de Manguera</h2>
+              <p class="catalog-header__desc">Carretes oscilantes con despliegue automatico para respuesta rapida</p>
+            </div>
+            <div class="catalog-header__count">
+              <span class="catalog-header__number">{productosEstaciones.length}</span>
+              <span class="catalog-header__label">producto{productosEstaciones.length !== 1 ? 's' : ''}</span>
+            </div>
+          </div>
+
+          <!-- PRODUCTS GRID -->
+          <div class="categories__grid">
+            {productosEstaciones.map((producto) => (
+              <SubcategoryProductCard
+                title={producto.data.title}
+                description={producto.data.description}
+                brand={producto.data.marca}
+                image={producto.data.imagen}
+                productSlug={producto.id}
+                flow={producto.data.flujo}
+                material={producto.data.material}
+                certifications={producto.data.certificaciones}
+              />
+            ))}
+          </div>
+
+          {productosEstaciones.length === 0 && (
+            <div class="catalog-empty">
+              <div class="catalog-empty__icon">🔍</div>
+              <h3 class="catalog-empty__title">Proximamente mas opciones</h3>
+              <p class="catalog-empty__text">Estamos agregando mas estaciones de manguera de diferentes configuraciones. Mientras tanto, solicita una cotizacion personalizada.</p>
+              <a href="#cotizar" class="btn btn--primary">Solicitar Cotizacion</a>
+            </div>
+          )}
+
+          <!-- TECHNICAL INFO -->
+          <div class="tech-info">
+            <h3 class="tech-info__title">Especificaciones Tecnicas de la Estacion de Manguera</h3>
+            <div class="tech-info__grid">
+              <div class="tech-info__item">
+                <span class="tech-info__label">Conexion entrada</span>
+                <span class="tech-info__value">1.5" NST/NH</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Manguera</span>
+                <span class="tech-info__value">1.5" x 30m, 300 PSI</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Presion salida</span>
+                <span class="tech-info__value">100 PSI max (NFPA)</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Diametro carrete</span>
+                <span class="tech-info__value">18 pulgadas</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Oscilacion</span>
+                <span class="tech-info__value">180 grados</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Cobertura radio</span>
+                <span class="tech-info__value">39.7m (130 ft)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA FINAL -->
+          <div class="subcat-cta-final">
+            <div class="subcat-cta-final__content">
+              <h3 class="subcat-cta-final__title">Necesitas calcular estaciones para tu edificio?</h3>
+              <p class="subcat-cta-final__desc">Te ayudamos a determinar la cantidad y ubicacion de estaciones segun NFPA 14 y las dimensiones de tu edificio. Incluimos planos de distribucion y documentacion para Proteccion Civil.</p>
+            </div>
+            <a href="#cotizar" class="btn btn--primary">Solicitar Asesoria Tecnica</a>
+          </div>
+
+        </main>
+
+        <!-- SIDEBAR (RIGHT) -->
+        <ProductSidebar
+          navTitulo="Tipos de Gabinetes"
+          subcategorias={subcategorias}
+          baseUrl="/gabinetes"
+          backLinkHref="/gabinetes-contra-incendios"
+          backLinkTexto="Ver todos los gabinetes"
+          certificaciones={[
+            { siglas: "NFPA", nombre: "NFPA 14 Standpipe" },
+            { siglas: "NFPA", nombre: "NFPA 1963 Conexiones" },
+            { siglas: "UL", nombre: "UL Listed" },
+            { siglas: "FM", nombre: "Factory Mutual" }
+          ]}
+          marcas={["Potter Roemer", "JL Industries", "Elkhart Brass", "Guardian", "Dixon"]}
+          aplicaciones={[
+            "Edificios de oficinas 4+ pisos",
+            "Hoteles y hospitales",
+            "Estacionamientos techados",
+            "Bodegas industriales",
+            "Plantas de manufactura",
+            "Centros de distribucion"
+          ]}
+          productosRelacionados={[
+            { href: "/mangueras-contra-incendios", nombre: "Mangueras Contra Incendios" },
+            { href: "/boquillas-contra-incendios", nombre: "Boquillas Contra Incendios" },
+            { href: "/valvulas-contra-incendios", nombre: "Valvulas Contra Incendios" },
+            { href: "/conexiones-herrajes-contra-incendios", nombre: "Conexiones y Herrajes" }
+          ]}
+        />
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RELATED PRODUCTS -->
+  <RelatedProductsGrid
+    titulo="Otros Gabinetes e Hidrantes"
+    subtitulo="Explora mas opciones para tu sistema de proteccion contra incendios"
+    productos={otrosProductos}
+    maxProductos={3}
+    verTodosLink="/gabinetes-contra-incendios"
+    verTodosTexto="Ver todos los gabinetes"
+  />
+
+  <CotizacionForm
+    titulo="Cotiza Estaciones de Manguera"
+    tipoEquipo="Estaciones de Manguera"
+    pagina="Estaciones de Manguera"
+  />
+
+</Layout>

@@ -1,0 +1,150 @@
+---
+// LeadCapture component - Formulario de cotización por WhatsApp
+---
+
+<section class="lead-capture" id="cotizar" aria-labelledby="lead-title">
+  <div class="container">
+    <h2 id="lead-title" class="lead-capture__title">Cotiza tu equipo contra incendios en minutos</h2>
+    <div class="lead-capture__bullets">
+      <span class="lead-capture__bullet">Respuesta en menos de 24 horas</span>
+      <span class="lead-capture__bullet">Asesoría sin costo para selección de equipos</span>
+      <span class="lead-capture__bullet">Precios competitivos y envío a todo México</span>
+    </div>
+    <form class="lead-capture__form" id="cotizar-form" aria-label="Formulario de cotización por WhatsApp">
+      <input type="text" class="lead-capture__input" id="lead-nombre" name="nombre" placeholder="Nombre completo" required aria-label="Nombre completo" autocomplete="name">
+      <input type="text" class="lead-capture__input" id="lead-contacto" name="contacto" placeholder="Teléfono o Email" required aria-label="Teléfono o correo electrónico" autocomplete="tel">
+      <select class="lead-capture__select" id="lead-equipo" name="tipo_equipo" required aria-label="Tipo de equipo que necesitas">
+        <option value="" disabled selected>Tipo de equipo</option>
+        <option value="Monitores">Monitores</option>
+        <option value="Boquillas">Boquillas</option>
+        <option value="Mangueras">Mangueras</option>
+        <option value="Válvulas">Válvulas</option>
+        <option value="Conexiones y herrajes">Conexiones y herrajes</option>
+        <option value="Gabinetes e hidrantes">Gabinetes e hidrantes</option>
+        <option value="Varios equipos">Varios equipos</option>
+        <option value="Otro">Otro (especificar)</option>
+      </select>
+      <button type="submit" class="btn btn--primary lead-capture__submit">Enviar por WhatsApp</button>
+    </form>
+    <p class="lead-capture__trust">Sin compromiso · Atención personalizada · Te respondemos al instante</p>
+    <p class="lead-capture__alt">También puedes escribirnos directo: <a href="https://wa.me/5215565298240" target="_blank" rel="noopener">WhatsApp: 55 6529 8240</a></p>
+  </div>
+</section>
+
+<style>
+  .lead-capture {
+    padding: var(--spacing-2xl) 0;
+    background: var(--color-accent);
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .lead-capture .container {
+    max-width: 1060px;
+  }
+
+  .lead-capture__title {
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    color: var(--color-secondary);
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .lead-capture__bullets {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .lead-capture__bullet {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
+  }
+
+  .lead-capture__bullet::before {
+    content: "\2713  ";
+    color: var(--color-primary);
+    font-weight: 700;
+  }
+
+  .lead-capture__form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+  }
+
+  .lead-capture__input,
+  .lead-capture__select {
+    padding: 0.875rem var(--spacing-sm);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    font-size: var(--font-size-base);
+    background: var(--color-white);
+    color: var(--color-text);
+    transition: border-color var(--transition-fast);
+  }
+
+  .lead-capture__input:focus,
+  .lead-capture__select:focus {
+    border-color: var(--color-primary);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(196, 30, 58, 0.15);
+  }
+
+  .lead-capture__submit {
+    width: 100%;
+  }
+
+  .lead-capture__trust {
+    text-align: center;
+    font-size: var(--font-size-xs);
+    color: var(--color-text-light);
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .lead-capture__alt {
+    text-align: center;
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
+  }
+
+  .lead-capture__alt a {
+    color: var(--color-primary);
+    font-weight: 600;
+  }
+
+  .lead-capture__alt a:hover {
+    color: var(--color-primary-dark);
+  }
+
+  /* Tablet */
+  @media (min-width: 768px) {
+    .lead-capture__form {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .lead-capture__submit {
+      grid-column: 1 / -1;
+      width: auto;
+      justify-self: center;
+      min-width: 280px;
+    }
+  }
+
+  /* Desktop */
+  @media (min-width: 1024px) {
+    .lead-capture__form {
+      grid-template-columns: 1fr 1fr 1fr auto;
+    }
+
+    .lead-capture__submit {
+      grid-column: auto;
+      min-width: auto;
+    }
+  }
+</style>

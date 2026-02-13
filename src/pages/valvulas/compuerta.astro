@@ -1,0 +1,187 @@
+---
+import Layout from '../../layouts/Base.astro';
+import '../../styles/subcategory.css';
+import { getCollection } from 'astro:content';
+import SubcategoryProductCard from '../../components/SubcategoryProductCard.astro';
+import ProductSidebar from '../../components/ProductSidebar.astro';
+import RelatedProductsGrid from '../../components/RelatedProductsGrid.astro';
+import CotizacionForm from '../../components/CotizacionForm.astro';
+
+// 1. Obtener todos los productos de la categoría válvulas
+const todosProductos = (await getCollection('productos', ({ data }) =>
+  data.categoria === 'valvulas'
+)).sort((a, b) => a.data.orden - b.data.orden);
+
+// 2. Filtrar por subcategoría: Válvula de Compuerta OS&Y
+const productosSubcategoria = todosProductos.filter(p => p.data.subcategoria === 'compuerta');
+
+// 3. Obtener otros productos para sección de relacionados
+const otrosProductos = todosProductos.filter(p => !productosSubcategoria.includes(p));
+
+// 4. Definir subcategorías para navegación
+const subcategorias = [
+  { slug: 'compuerta', nombre: 'Válvula de Compuerta OS&Y', descripcion: 'Aislamiento en líneas principales', activo: true },
+  { slug: 'globo', nombre: 'Válvula de Globo', descripcion: 'Control preciso de presión', activo: false },
+  { slug: 'retencion', nombre: 'Válvula de Retención', descripcion: 'Prevención de reflujo', activo: false },
+  { slug: 'mariposa', nombre: 'Válvula Mariposa', descripcion: 'Apertura rápida 90°', activo: false },
+];
+---
+
+<Layout
+  title="Válvula Compuerta OS&Y Bridada | México"
+  description="Válvula compuerta OS&Y bridada para sistema contra incendio. Vástago exterior, cierre hermético, 175-350 PSI. Certificadas UL/FM. México."
+  activePage="equipos"
+  heroTitle="Válvula de Compuerta OS&Y"
+  heroIntro="Válvulas de compuerta con vástago exterior y yugo (Outside Screw & Yoke) para aislamiento en líneas principales de sistemas contra incendio. El diseño OS&Y permite verificación visual instantánea del estado de apertura, requisito fundamental para cumplimiento de NFPA 25."
+  heroBadge="Válvulas Contra Incendios"
+  heroMetrics={[
+    { valor: "350", texto: "PSI máxima" },
+    { valor: "2\"-12\"", texto: "Diámetros" },
+    { valor: "UL/FM", texto: "Certificación" }
+  ]}
+  heroPrimaryText="Ver Catálogo"
+  heroPrimaryLink="#catalogo"
+  heroSecondaryText="Solicitar Cotización"
+  heroSecondaryLink="#cotizar"
+  heroShowRightContent={true}
+>
+
+  <!-- HERO CONTENT -->
+  <Fragment slot="hero-content">
+    <p>La <strong>válvula de compuerta OS&Y</strong> (Outside Screw & Yoke) es el componente estándar para aislamiento en sistemas contra incendio según NFPA 13, 14 y 20. Su diseño con vástago exterior permite verificar visualmente si la válvula está abierta o cerrada sin necesidad de girarla, característica crítica para inspecciones de rutina y respuesta a emergencias. La posición del vástago también facilita la instalación de interruptores de supervisión para monitoreo remoto.</p>
+    <p><strong>Gama de México</strong> suministra válvulas OS&Y bridadas en hierro dúctil y bronce con certificación UL/FM en diámetros de 2" a 12". Cada válvula incluye bridas perforadas según ANSI B16.1 Clase 125 o 250 según aplicación. Asesoramos en la selección del modelo correcto considerando presión de trabajo, material compatible con el medio y requerimientos de supervisión electrónica para sistemas monitoreados.</p>
+  </Fragment>
+
+  <!-- CONTENT + SIDEBAR -->
+  <section class="subcat-content">
+    <div class="container">
+      <div class="subcat-layout">
+
+        <!-- MAIN CONTENT -->
+        <main class="subcat-main">
+          <div class="catalog-header">
+            <div class="catalog-header__text">
+              <h2 class="catalog-header__title">Catálogo de Válvulas de Compuerta OS&Y</h2>
+              <p class="catalog-header__desc">Selecciona el modelo que mejor se adapte a tu sistema contra incendios</p>
+            </div>
+            <div class="catalog-header__count">
+              <span class="catalog-header__number">{productosSubcategoria.length}</span>
+              <span class="catalog-header__label">producto{productosSubcategoria.length !== 1 ? 's' : ''}</span>
+            </div>
+          </div>
+
+          <!-- Products Grid -->
+          <div class="categories__grid">
+            {productosSubcategoria.map((producto) => (
+              <SubcategoryProductCard
+                title={producto.data.title}
+                description={producto.data.description}
+                brand={producto.data.marca}
+                image={producto.data.imagen}
+                productSlug={producto.id}
+                flow={producto.data.flujo}
+                material={producto.data.material}
+                certifications={producto.data.certificaciones}
+              />
+            ))}
+          </div>
+
+          <!-- Empty State -->
+          {productosSubcategoria.length === 0 && (
+            <div class="catalog-empty">
+              <div class="catalog-empty__icon">🔍</div>
+              <h3 class="catalog-empty__title">Próximamente más opciones</h3>
+              <p class="catalog-empty__text">Estamos agregando más válvulas de compuerta OS&Y de diferentes marcas y especificaciones. Mientras tanto, solicita una cotización personalizada.</p>
+              <a href="#cotizar" class="btn btn--primary">Solicitar Cotización</a>
+            </div>
+          )}
+
+          <!-- Tech Info -->
+          <div class="tech-info">
+            <h3 class="tech-info__title">Especificaciones Técnicas de Válvulas de Compuerta OS&Y</h3>
+            <div class="tech-info__grid">
+              <div class="tech-info__item">
+                <span class="tech-info__label">Presión de trabajo</span>
+                <span class="tech-info__value">175-350 PSI</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Presión de prueba</span>
+                <span class="tech-info__value">4x presión trabajo</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Diámetros disponibles</span>
+                <span class="tech-info__value">2.5" a 12"</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Rotación vástago</span>
+                <span class="tech-info__value">90° sello hermético</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Recubrimiento</span>
+                <span class="tech-info__value">Epóxico AWWA C550</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Certificaciones</span>
+                <span class="tech-info__value">UL 262, FM 1120/1130</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA Final -->
+          <div class="subcat-cta-final">
+            <div class="subcat-cta-final__content">
+              <h3 class="subcat-cta-final__title">¿No encuentras el diámetro o configuración que necesitas?</h3>
+              <p class="subcat-cta-final__desc">Tenemos acceso al catálogo completo de Elkhart Brass. Contáctanos para válvulas en diámetros especiales, conexiones bridadas, ranuradas o combinaciones.</p>
+            </div>
+            <a href="#cotizar" class="btn btn--primary">Solicitar Cotización Especial</a>
+          </div>
+        </main>
+
+        <!-- SIDEBAR -->
+        <ProductSidebar
+          navTitulo="Tipos de Válvulas"
+          subcategorias={subcategorias}
+          baseUrl="/valvulas"
+          backLinkHref="/valvulas-contra-incendios"
+          backLinkTexto="Ver todas las válvulas"
+          certificaciones={[
+            { siglas: "FM", nombre: "Factory Mutual" },
+            { siglas: "UL", nombre: "UL Listed" },
+            { siglas: "NOM", nombre: "NOM-002-STPS" }
+          ]}
+          marcas={["Nibco", "Kennedy", "Milwaukee", "Apollo"]}
+          aplicaciones={[
+            "Redes hidráulicas",
+            "Sistemas contra incendio",
+            "Plantas industriales",
+            "Control de flujo principal"
+          ]}
+          productosRelacionados={[
+            { href: "/gabinetes-hidrantes-contra-incendios", nombre: "Gabinetes e Hidrantes" },
+            { href: "/mangueras-contra-incendios", nombre: "Mangueras Contra Incendios" },
+            { href: "/boquillas-contra-incendios", nombre: "Boquillas Contra Incendios" },
+            { href: "/conexiones-herrajes-contra-incendios", nombre: "Conexiones y Herrajes" }
+          ]}
+        />
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RELATED PRODUCTS -->
+  <RelatedProductsGrid
+    titulo="Otras Válvulas Contra Incendios"
+    subtitulo="Explora más opciones para tu sistema de protección"
+    productos={otrosProductos}
+    maxProductos={3}
+    verTodosLink="/valvulas-contra-incendios"
+    verTodosTexto="Ver todas las válvulas"
+  />
+
+  <CotizacionForm
+    titulo="Cotiza Válvulas de Compuerta"
+    tipoEquipo="Válvulas"
+    pagina="Válvulas de Compuerta"
+  />
+
+</Layout>

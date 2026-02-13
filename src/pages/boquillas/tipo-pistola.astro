@@ -1,0 +1,208 @@
+---
+import Layout from '../../layouts/Base.astro';
+import '../../styles/subcategory.css';
+import { getCollection } from 'astro:content';
+import SubcategoryProductCard from '../../components/SubcategoryProductCard.astro';
+import ProductSidebar from '../../components/ProductSidebar.astro';
+import RelatedProductsGrid from '../../components/RelatedProductsGrid.astro';
+import CotizacionForm from '../../components/CotizacionForm.astro';
+
+// Obtener productos de boquillas
+const todasBoquillas = (await getCollection('productos', ({ data }) => data.categoria === 'boquillas')).sort((a, b) => a.data.orden - b.data.orden);
+
+// Filtrar productos tipo pistola por subcategoria
+const productosPistola = todasBoquillas.filter(p => p.data.subcategoria === 'tipo-pistola');
+
+// Otros productos para la sección de relacionados
+const otrasBoquillas = todasBoquillas.filter(p => !productosPistola.includes(p));
+
+// Definir las subcategorías de boquillas para el sidebar
+const subcategorias = [
+  {
+    slug: 'tipo-pistola',
+    nombre: 'Boquilla Tipo Pistola',
+    descripcion: 'Control ergonómico seleccionable',
+    activo: true
+  },
+  {
+    slug: 'turbo-jet',
+    nombre: 'Boquilla Turbo Jet',
+    descripcion: 'Máximo alcance y penetración',
+    activo: false
+  },
+  {
+    slug: 'industrial',
+    nombre: 'Boquilla Industrial',
+    descripcion: 'Alto caudal para industria',
+    activo: false
+  },
+  {
+    slug: 'certificada',
+    nombre: 'Boquilla Certificada',
+    descripcion: 'Certificación UL/FM',
+    activo: false
+  },
+];
+---
+
+<Layout
+  title="Boquilla Tipo Pistola | Galonaje GPM México"
+  description="Boquilla tipo pistola con galonaje seleccionable 15-250 GPM. Patrón chorro a niebla, aluminio anodizado. Akron, Elkhart Brass. México."
+  activePage="equipos"
+  heroTitle="Boquilla Tipo Pistola"
+  heroIntro="Boquillas manuales con control ergonómico para ajustar caudal y patrón de descarga en operaciones de ataque inicial, enfriamiento y protección de instalaciones. Distribuimos Elkhart Brass, Akron Brass y Task Force Tips con certificación UL/FM."
+  heroBadge="Boquillas Contra Incendios"
+  heroMetrics={[
+    { valor: "15-250", texto: "GPM seleccionable" },
+    { valor: "Chorro/Niebla", texto: "Patrón ajustable" },
+    { valor: "75-100", texto: "PSI de operación" }
+  ]}
+  heroPrimaryText="Ver Catálogo"
+  heroPrimaryLink="#catalogo"
+  heroSecondaryText="Solicitar Cotización"
+  heroSecondaryLink="#cotizar"
+  heroShowRightContent={true}
+>
+
+  <!-- HERO CONTENT -->
+  <Fragment slot="hero-content">
+    <p>La <strong>boquilla tipo pistola</strong> es el equipo de control manual más versátil para operaciones de combate y supresión de incendios. Su diseño ergonómico con empuñadura tipo pistola permite al operador ajustar el caudal (GPM) y el patrón de descarga —desde chorro sólido hasta niebla de protección— sin soltar la manguera. Fabricadas en aluminio forjado anodizado o bronce, estas boquillas incluyen mecanismo de interlock que previene cambios accidentales de flujo durante la operación.</p>
+    <p><strong>Gama de México</strong> distribuye boquillas tipo pistola de Elkhart Brass, Akron Brass y Task Force Tips con certificaciones UL y FM. Asesoramos en la selección del modelo según tu aplicación: caudales de 15 a 250 GPM, entradas de 1.5" o 2.5" NHT, y configuraciones especiales para espuma. Atendemos cuerpos de bomberos, brigadas industriales, protección civil, aeropuertos y plantas petroquímicas en toda la República Mexicana.</p>
+  </Fragment>
+
+  <!-- MAIN CONTENT WITH SIDEBAR -->
+  <section class="subcat-content">
+    <div class="container">
+      <div class="subcat-layout">
+
+        <!-- MAIN CONTENT (LEFT) -->
+        <main class="subcat-main">
+
+          <!-- CATALOG HEADER -->
+          <div class="catalog-header" id="catalogo">
+            <div class="catalog-header__text">
+              <h2 class="catalog-header__title">Catálogo de Boquillas Tipo Pistola</h2>
+              <p class="catalog-header__desc">Selecciona el producto que mejor se adapte a tu operación</p>
+            </div>
+            <div class="catalog-header__count">
+              <span class="catalog-header__number">{productosPistola.length}</span>
+              <span class="catalog-header__label">producto{productosPistola.length !== 1 ? 's' : ''}</span>
+            </div>
+          </div>
+
+          <!-- PRODUCTS GRID -->
+          <div class="categories__grid">
+            {productosPistola.map((producto) => (
+              <SubcategoryProductCard
+                title={producto.data.title}
+                description={producto.data.description}
+                brand={producto.data.marca}
+                image={producto.data.imagen}
+                productSlug={producto.id}
+                flow={producto.data.flujo}
+                material={producto.data.material}
+                certifications={producto.data.certificaciones}
+              />
+            ))}
+          </div>
+
+          {productosPistola.length === 0 && (
+            <div class="catalog-empty">
+              <div class="catalog-empty__icon">🔍</div>
+              <h3 class="catalog-empty__title">Próximamente más opciones</h3>
+              <p class="catalog-empty__text">Estamos agregando más productos de boquillas tipo pistola de diferentes marcas. Mientras tanto, solicita una cotización personalizada.</p>
+              <a href="#cotizar" class="btn btn--primary">Solicitar Cotización</a>
+            </div>
+          )}
+
+          <!-- TECHNICAL INFO -->
+          <div class="tech-info">
+            <h3 class="tech-info__title">Especificaciones Técnicas Generales</h3>
+            <div class="tech-info__grid">
+              <div class="tech-info__item">
+                <span class="tech-info__label">Caudal típico</span>
+                <span class="tech-info__value">15 - 250 GPM</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Presión de trabajo</span>
+                <span class="tech-info__value">75 - 100 PSI</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Patrones</span>
+                <span class="tech-info__value">Chorro, 30°, 90°</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Entradas</span>
+                <span class="tech-info__value">1.5" y 2.5" NHT</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Ajustes de flujo</span>
+                <span class="tech-info__value">4 a 6 posiciones</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Materiales</span>
+                <span class="tech-info__value">Aluminio forjado</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA FINAL -->
+          <div class="subcat-cta-final">
+            <div class="subcat-cta-final__content">
+              <h3 class="subcat-cta-final__title">¿No encuentras el modelo que necesitas?</h3>
+              <p class="subcat-cta-final__desc">Tenemos acceso al catálogo completo de Elkhart Brass. Contáctanos para opciones adicionales y configuraciones especiales.</p>
+            </div>
+            <a href="#cotizar" class="btn btn--primary">Solicitar Cotización</a>
+          </div>
+
+        </main>
+
+        <!-- SIDEBAR (RIGHT) -->
+        <ProductSidebar
+          navTitulo="Tipos de Boquillas"
+          subcategorias={subcategorias}
+          baseUrl="/boquillas"
+          backLinkHref="/boquillas-contra-incendios"
+          backLinkTexto="Ver todas las boquillas"
+          certificaciones={[
+            { siglas: "FM", nombre: "Factory Mutual" },
+            { siglas: "UL", nombre: "UL Listed" },
+            { siglas: "NOM", nombre: "NOM-002-STPS" }
+          ]}
+          marcas={["Elkhart Brass", "Akron Brass", "Task Force Tips", "POK"]}
+          aplicaciones={[
+            "Brigadas industriales",
+            "Cuerpos de bomberos",
+            "Plantas petroquímicas",
+            "Refinerías",
+            "Terminales de almacenamiento"
+          ]}
+          productosRelacionados={[
+            { href: "/gabinetes-hidrantes-contra-incendios", nombre: "Gabinetes e Hidrantes" },
+            { href: "/mangueras-contra-incendios", nombre: "Mangueras Contra Incendios" },
+            { href: "/valvulas-contra-incendios", nombre: "Válvulas Contra Incendios" },
+            { href: "/conexiones-herrajes-contra-incendios", nombre: "Conexiones y Herrajes" }
+          ]}
+        />
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RELATED PRODUCTS -->
+  <RelatedProductsGrid
+    titulo="Otras Boquillas Contra Incendios"
+    subtitulo="Explora más opciones para tu sistema de protección"
+    productos={otrasBoquillas}
+    maxProductos={3}
+    verTodosLink="/boquillas-contra-incendios"
+    verTodosTexto="Ver todas las boquillas"
+  />
+
+  <CotizacionForm
+    titulo="Cotiza Boquillas Tipo Pistola"
+    tipoEquipo="Boquillas"
+    pagina="Boquillas Tipo Pistola"
+  />
+
+</Layout>

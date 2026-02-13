@@ -1,0 +1,39 @@
+# =============================================================================
+# Gama de Mexico — Headers de seguridad y cache para Cloudflare Pages
+# =============================================================================
+
+# Headers de seguridad globales
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  X-XSS-Protection: 1; mode=block
+
+# Cache inmutable para assets estaticos
+/img/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/_astro/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Favicon y manifest
+/favicon.ico
+  Cache-Control: public, max-age=604800
+
+/site.webmanifest
+  Cache-Control: public, max-age=604800
+
+# HTML pages — revalidar siempre
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Sitemap y robots
+/sitemap*.xml
+  Cache-Control: public, max-age=3600
+
+/robots.txt
+  Cache-Control: public, max-age=3600

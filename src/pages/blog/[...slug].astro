@@ -1,0 +1,73 @@
+---
+import Layout from '../../layouts/Base.astro';
+import { getCollection, render } from 'astro:content';
+import { buildBreadcrumbSchema } from '../../lib/seo';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog', ({ data }) => !data.draft);
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+
+const breadcrumbSchema = buildBreadcrumbSchema([
+  { name: 'Inicio', url: '/' },
+  { name: 'Blog', url: '/blog' },
+  { name: post.data.title, url: `/blog/${post.id}` },
+]);
+---
+
+<Layout
+  title={`${post.data.title} | Blog Gama de México`}
+  description={post.data.description}
+  heroTitle={post.data.title}
+  heroIntro={post.data.description}
+  heroBadge="Blog Técnico"
+  heroPrimaryText="Cotizar Equipos"
+  heroPrimaryLink="#cotizar"
+  heroSecondaryText="Volver al Blog"
+  heroSecondaryLink="/blog"
+  structuredData={[breadcrumbSchema]}
+>
+  <article class="blog-post">
+    <div class="container">
+      <p class="blog-post__meta">{post.data.fecha} · {post.data.autor}</p>
+      <div class="blog-post__content">
+        <Content />
+      </div>
+    </div>
+  </article>
+</Layout>
+
+<style>
+  .blog-post {
+    padding: var(--spacing-3xl) 0;
+    background: var(--color-white);
+  }
+
+  .blog-post__meta {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
+    margin-bottom: var(--spacing-md);
+  }
+
+  .blog-post__content {
+    max-width: 900px;
+  }
+
+  .blog-post__content :global(h2) {
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: var(--color-secondary);
+  }
+
+  .blog-post__content :global(p),
+  .blog-post__content :global(li) {
+    color: var(--color-text);
+    line-height: 1.8;
+  }
+</style>

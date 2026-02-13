@@ -1,0 +1,208 @@
+---
+import Layout from '../../layouts/Base.astro';
+import '../../styles/subcategory.css';
+import { getCollection } from 'astro:content';
+import SubcategoryProductCard from '../../components/SubcategoryProductCard.astro';
+import ProductSidebar from '../../components/ProductSidebar.astro';
+import RelatedProductsGrid from '../../components/RelatedProductsGrid.astro';
+import CotizacionForm from '../../components/CotizacionForm.astro';
+
+// Obtener productos de mangueras
+const todasMangueras = (await getCollection('productos', ({ data }) => data.categoria === 'mangueras')).sort((a, b) => a.data.orden - b.data.orden);
+
+// Filtrar productos Blindex por subcategoria
+const productosBlindex = todasMangueras.filter(p => p.data.subcategoria === 'blindex');
+
+// Otros productos para la sección de relacionados
+const otrasMangueras = todasMangueras.filter(p => !productosBlindex.includes(p));
+
+// Definir las subcategorías de mangueras para el sidebar
+const subcategorias = [
+  {
+    slug: 'millhose',
+    nombre: 'Manguera Millhose',
+    descripcion: 'Doble forro poliéster, gabinetes',
+    activo: false
+  },
+  {
+    slug: 'blindex',
+    nombre: 'Manguera Blindex',
+    descripcion: 'Resistente a llama y químicos',
+    activo: true
+  },
+  {
+    slug: 'succion',
+    nombre: 'Manguera de Succión',
+    descripcion: 'Refuerzo helicoidal, vacío',
+    activo: false
+  },
+  {
+    slug: 'forestal',
+    nombre: 'Manguera Forestal',
+    descripcion: 'Ultraligera, terreno difícil',
+    activo: false
+  },
+];
+---
+
+<Layout
+  title="Manguera Blindex 4 Capas 600°C | México"
+  description="Manguera Blindex 4 capas para condiciones extremas. Alta resistencia 600°C, servicio pesado industrial. Protección contra incendio. México."
+  activePage="equipos"
+  heroTitle="Manguera Blindex"
+  heroIntro="Mangueras de combate de 4 capas diseñadas para las condiciones más extremas. Su construcción con forro interno de caucho nitrilo y recubrimiento exterior resistente a llama soporta temperaturas de hasta 600°C, ideal para refinerías, acereras y plantas químicas."
+  heroBadge="Mangueras Contra Incendios"
+  heroMetrics={[
+    { valor: "600°C", texto: "Resistencia térmica" },
+    { valor: "400", texto: "PSI presión" },
+    { valor: "4 capas", texto: "Construcción" }
+  ]}
+  heroPrimaryText="Ver Catálogo"
+  heroPrimaryLink="#catalogo"
+  heroSecondaryText="Solicitar Cotización"
+  heroSecondaryLink="#cotizar"
+  heroShowRightContent={true}
+>
+
+  <!-- HERO CONTENT -->
+  <Fragment slot="hero-content">
+    <p>La <strong>manguera Blindex</strong> representa el estándar de máxima resistencia para operaciones en ambientes industriales extremos. Su construcción de 4 capas incluye forro interno de caucho nitrilo resistente a hidrocarburos, refuerzo de poliéster de alta tenacidad, barrera térmica intermedia y recubrimiento exterior de caucho EPDM resistente a llama directa. Esta configuración permite operación continua en proximidad a fuentes de calor intenso sin degradación del material.</p>
+    <p><strong>Gama de México</strong> suministra mangueras Blindex en diámetros de 1.5", 2.5" y 4" con longitudes estándar de 15, 25 y 30 metros. Cada manguera cumple con NFPA 1961 y está certificada para presiones de trabajo de 300 PSI con prueba hidrostática de 600 PSI. Ideales para refinerías, plantas petroquímicas, acereras, fundidoras y cualquier instalación donde las mangueras convencionales no resisten las condiciones operativas.</p>
+  </Fragment>
+
+  <!-- MAIN CONTENT WITH SIDEBAR -->
+  <section class="subcat-content">
+    <div class="container">
+      <div class="subcat-layout">
+
+        <!-- MAIN CONTENT (LEFT) -->
+        <main class="subcat-main">
+
+          <!-- CATALOG HEADER -->
+          <div class="catalog-header">
+            <div class="catalog-header__text">
+              <h2 class="catalog-header__title">Catálogo de Mangueras Blindex</h2>
+              <p class="catalog-header__desc">Selecciona el producto que mejor se adapte a tu operación</p>
+            </div>
+            <div class="catalog-header__count">
+              <span class="catalog-header__number">{productosBlindex.length}</span>
+              <span class="catalog-header__label">producto{productosBlindex.length !== 1 ? 's' : ''}</span>
+            </div>
+          </div>
+
+          <!-- PRODUCTS GRID -->
+          <div class="categories__grid">
+            {productosBlindex.map((producto) => (
+              <SubcategoryProductCard
+                title={producto.data.title}
+                description={producto.data.description}
+                brand={producto.data.marca}
+                image={producto.data.imagen}
+                productSlug={producto.id}
+                flow={producto.data.flujo}
+                material={producto.data.material}
+                certifications={producto.data.certificaciones}
+              />
+            ))}
+          </div>
+
+          {productosBlindex.length === 0 && (
+            <div class="catalog-empty">
+              <div class="catalog-empty__icon">🔍</div>
+              <h3 class="catalog-empty__title">Próximamente más opciones</h3>
+              <p class="catalog-empty__text">Estamos agregando más productos de mangueras Blindex de diferentes configuraciones. Mientras tanto, solicita una cotización personalizada.</p>
+              <a href="#cotizar" class="btn btn--primary">Solicitar Cotización</a>
+            </div>
+          )}
+
+          <!-- TECHNICAL INFO -->
+          <div class="tech-info">
+            <h3 class="tech-info__title">Especificaciones Técnicas Generales</h3>
+            <div class="tech-info__grid">
+              <div class="tech-info__item">
+                <span class="tech-info__label">Resist. térmica</span>
+                <span class="tech-info__value">600°C llama directa</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Presión trabajo</span>
+                <span class="tech-info__value">300 PSI (21 bar)</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Construcción</span>
+                <span class="tech-info__value">4 capas</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Exterior</span>
+                <span class="tech-info__value">Hypalon</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Interior</span>
+                <span class="tech-info__value">NBR (nitrilo)</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Diámetros</span>
+                <span class="tech-info__value">1.5" y 2.5"</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA FINAL -->
+          <div class="subcat-cta-final">
+            <div class="subcat-cta-final__content">
+              <h3 class="subcat-cta-final__title">¿Ambiente industrial extremo?</h3>
+              <p class="subcat-cta-final__desc">Asesoría especializada para selección de mangueras en refinerías, petroquímicas y plantas químicas.</p>
+            </div>
+            <a href="#cotizar" class="btn btn--primary">Solicitar Cotización</a>
+          </div>
+
+        </main>
+
+        <!-- SIDEBAR (RIGHT) -->
+        <ProductSidebar
+          navTitulo="Tipos de Mangueras"
+          subcategorias={subcategorias}
+          baseUrl="/mangueras"
+          backLinkHref="/mangueras-contra-incendios"
+          backLinkTexto="Ver todas las mangueras"
+          certificaciones={[
+            { siglas: "FM", nombre: "Factory Mutual" },
+            { siglas: "UL", nombre: "UL Listed" },
+            { siglas: "NOM", nombre: "NOM-002-STPS" }
+          ]}
+          marcas={["Key Fire Hose", "Snap-Tite", "All American Hose", "Niedner"]}
+          aplicaciones={[
+            "Brigadas industriales",
+            "Cuerpos de bomberos",
+            "Plantas petroquímicas",
+            "Refinerías",
+            "Industria en general"
+          ]}
+          productosRelacionados={[
+            { href: "/gabinetes-hidrantes-contra-incendios", nombre: "Gabinetes e Hidrantes" },
+            { href: "/boquillas-contra-incendios", nombre: "Boquillas Contra Incendios" },
+            { href: "/valvulas-contra-incendios", nombre: "Válvulas Contra Incendios" },
+            { href: "/conexiones-herrajes-contra-incendios", nombre: "Conexiones y Herrajes" }
+          ]}
+        />
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RELATED PRODUCTS -->
+  <RelatedProductsGrid
+    titulo="Otras Mangueras Contra Incendios"
+    subtitulo="Explora más opciones para tu sistema de protección"
+    productos={otrasMangueras}
+    maxProductos={3}
+    verTodosLink="/mangueras-contra-incendios"
+    verTodosTexto="Ver todas las mangueras"
+  />
+
+  <CotizacionForm
+    titulo="Cotiza Mangueras Blindex"
+    tipoEquipo="Mangueras"
+    pagina="Mangueras Blindex"
+  />
+
+</Layout>

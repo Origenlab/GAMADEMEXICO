@@ -1,0 +1,249 @@
+---
+interface Producto {
+  id: string;
+  data: {
+    title: string;
+    description: string;
+    marca?: string;
+    imagen?: string;
+    flujo?: string;
+    certificaciones?: string[];
+  };
+}
+
+interface Props {
+  titulo?: string;
+  subtitulo?: string;
+  productos: Producto[];
+  maxProductos?: number;
+  verTodosLink?: string;
+  verTodosTexto?: string;
+}
+
+const {
+  titulo = 'Productos Relacionados',
+  subtitulo = 'Explora más opciones para tu proyecto',
+  productos,
+  maxProductos = 3,
+  verTodosLink,
+  verTodosTexto = 'Ver todos'
+} = Astro.props;
+
+const productosAMostrar = productos.slice(0, maxProductos);
+
+function getProductAnchorText(rawTitle: string): string {
+  // Quitar todo después de " - "
+  let text = rawTitle.split(' - ')[0].trim();
+
+  // Quitar "Monitor " del inicio si existe
+  text = text.replace(/^Monitor\s+/i, '');
+
+  // Quitar marcas conocidas
+  const marcas = ['Elkhart Brass', 'Akron Brass', 'Task Force Tips', 'ARMECO', 'POK', 'Dixon', 'Harrington', 'Joperz'];
+  marcas.forEach(marca => {
+    text = text.replace(new RegExp(`\\s*${marca}\\s*`, 'gi'), ' ');
+  });
+
+  // Limpiar espacios múltiples
+  text = text.replace(/\s+/g, ' ').trim();
+
+  // Si quedó muy corto, usar título original sin "Monitor"
+  if (text.length < 5) {
+    text = rawTitle.split(' - ')[0].replace(/^Monitor\s+/i, '').trim();
+  }
+
+  return text;
+}
+---
+
+{productosAMostrar.length > 0 && (
+  <section class="related-products">
+    <div class="container">
+      <div class="related-products__header">
+        <div class="related-products__text">
+          <h2 class="related-products__title">{titulo}</h2>
+          <p class="related-products__subtitle">{subtitulo}</p>
+        </div>
+        {verTodosLink && (
+          <a href={verTodosLink} class="btn btn--outline btn--sm">{verTodosTexto}</a>
+        )}
+      </div>
+
+      <div class="related-products__grid">
+        {productosAMostrar.map((producto) => (
+          <article class="related-card">
+            <div
+              class="related-card__image"
+              style={producto.data.imagen ? `background-image: url(${producto.data.imagen});` : undefined}
+              role="img"
+              aria-label={producto.data.title}
+            ></div>
+            <div class="related-card__body">
+              {producto.data.marca && (
+                <span class="related-card__brand">{producto.data.marca}</span>
+              )}
+              <h3 class="related-card__title">{producto.data.title}</h3>
+              <p class="related-card__desc">{producto.data.description}</p>
+              <ul class="related-card__specs">
+                {producto.data.flujo && (
+                  <li class="related-card__spec">
+                    <strong>Caudal:</strong> {producto.data.flujo}
+                  </li>
+                )}
+                {producto.data.certificaciones && producto.data.certificaciones.length > 0 && (
+                  <li class="related-card__spec">
+                    <strong>Certificaciones:</strong> {producto.data.certificaciones.slice(0, 2).join(', ')}
+                  </li>
+                )}
+              </ul>
+              <div class="related-card__cta">
+                <a href={`/productos/${producto.id}`} class="btn btn--primary btn--sm">{getProductAnchorText(producto.data.title)}</a>
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+)}
+
+<style>
+  .related-products {
+    padding: var(--spacing-2xl) 0;
+    background: var(--color-accent);
+  }
+
+  .related-products__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: var(--spacing-lg);
+    gap: var(--spacing-md);
+    flex-wrap: wrap;
+  }
+
+  .related-products__title {
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin-bottom: 0.25rem;
+  }
+
+  .related-products__subtitle {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
+  }
+
+  .related-products__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-md);
+  }
+
+  /* Card - misma estructura que SubcategoryProductCard */
+  .related-card {
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  }
+
+  .related-card__image {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    background-color: var(--color-accent);
+    background-size: cover;
+    background-position: center;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .related-card__body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1;
+  }
+
+  .related-card__brand {
+    display: inline-flex;
+    width: fit-content;
+    background: rgba(196, 30, 58, 0.1);
+    color: var(--color-primary);
+    border: 1px solid rgba(196, 30, 58, 0.2);
+    padding: 0.2rem 0.55rem;
+    border-radius: 999px;
+    font-size: 0.6875rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .related-card__title {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.35;
+    color: var(--color-secondary);
+  }
+
+  .related-card__desc {
+    margin: 0;
+    font-size: 0.875rem;
+    color: var(--color-text-light);
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .related-card__specs {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .related-card__spec {
+    font-size: 0.8125rem;
+    color: var(--color-text);
+    line-height: 1.4;
+  }
+
+  .related-card__spec strong {
+    color: var(--color-secondary);
+  }
+
+  .related-card__cta {
+    margin-top: auto;
+    padding-top: 0.5rem;
+  }
+
+  .related-card__cta .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  @media (max-width: 1024px) {
+    .related-products__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 640px) {
+    .related-products__grid {
+      grid-template-columns: 1fr;
+    }
+
+    .related-products__header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+</style>

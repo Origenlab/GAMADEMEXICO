@@ -1,0 +1,484 @@
+---
+import Layout from '../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+
+const productos = (await getCollection('productos', ({ data }) => data.categoria === 'valvulas')).sort((a, b) => a.data.orden - b.data.orden);
+---
+
+<Layout
+  title="Válvulas Contra Incendio UL NFPA | México"
+  description="Válvulas contra incendio certificadas UL/FM. Tipo compuerta OS&Y, globo, retención y mariposa. Control y protección industrial NFPA. México."
+  activePage="equipos"
+  heroTitle="Válvulas Contra Incendios"
+  heroBadge="Equipos Contra Incendios"
+  heroShowRightContent={true}
+>
+  <Fragment slot="hero-content">
+    <p>Distribuimos valvulas contra incendios certificadas UL y FM para sistemas de proteccion activa en edificios comerciales e instalaciones industriales. Nuestra linea incluye valvulas de compuerta OS&Y con indicacion visual de posicion, valvulas de globo para control de flujo, valvulas de retencion tipo swing y valvulas mariposa con switch supervisor.</p>
+    <p>Cada valvula cumple con los estandares NFPA 13, 14 y 20, garantizando operacion confiable en condiciones de emergencia. Te asesoramos en la seleccion del tipo, diametro y especificacion correcta segun el diseno hidraulico de tu proyecto y requisitos de aseguradoras.</p>
+  </Fragment>
+
+  <!-- BREADCRUMB -->
+  <nav class="breadcrumb" aria-label="Navegación de migas de pan">
+    <div class="container">
+      <ol class="breadcrumb__list">
+        <li class="breadcrumb__item"><a href="/" class="breadcrumb__link">Inicio</a></li>
+        <li class="breadcrumb__item"><a href="/equipos" class="breadcrumb__link">Equipos</a></li>
+        <li class="breadcrumb__item breadcrumb__item--active" aria-current="page">Válvulas Contra Incendios</li>
+      </ol>
+    </div>
+  </nav><!-- PRODUCTOS DINAMICOS -->
+  <section class="categories" id="valvulas">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Tipo de Válvula Contra Incendio con Certificación UL Industrial</h2>
+        <p class="section-subtitle">Catálogo de válvulas sistema contra incendio con certificación NFPA para control y protección</p>
+      </div>
+      <div class="categories__grid">
+        {productos.map((producto) => (
+          <article class="category-card">
+            <div class="category-card__image" role="img" aria-label={producto.data.title}></div>
+            <div class="category-card__body">
+              <h3 class="category-card__title">{producto.data.title}</h3>
+              <p class="category-card__sub">{producto.data.description}</p>
+              <ul class="category-card__products">
+                {producto.data.material && <li class="category-card__product">{producto.data.material}</li>}
+                {producto.data.flujo && <li class="category-card__product">{producto.data.flujo}</li>}
+                {producto.data.certificaciones && producto.data.certificaciones.length > 0 && <li class="category-card__product">Certificaciones: {producto.data.certificaciones.join(', ')}</li>}
+                <li class="category-card__product">Marca: {producto.data.marca}</li>
+              </ul>
+              <div class="category-card__ctas">
+                <a href={`/productos/${producto.id}`} class="btn btn--primary btn--sm">Ver especificaciones</a>
+                <a href="#cotizar" class="btn btn--outline btn--sm">Cotizar</a>
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- DETALLES DE PRODUCTOS -->
+  <section class="service-details" aria-labelledby="service-details-title">
+    <div class="container">
+      <div class="section-header">
+        <h2 id="service-details-title" class="section-title">Especificaciones Técnicas por Tipo de Válvula Sistema Industrial</h2>
+      </div>
+
+      <div class="service-detail" id="detalle-compuerta">
+        <div class="service-detail__content">
+          <h3 class="service-detail__title">Válvula de Compuerta OS&Y (Outside Screw and Yoke)</h3>
+          <p class="service-detail__text">La válvula de compuerta con vástago exterior y yugo es el estándar en sistemas contra incendio para control de flujo en líneas principales. El diseño OS&Y permite verificación visual instantánea de la posición de la válvula: cuando el vástago está extendido, la válvula está abierta; cuando está retraído, está cerrada. Este indicador visual es crítico para inspecciones y cumplimiento normativo.</p>
+          <ul class="service-detail__list">
+            <li class="service-detail__list-item">Indicación visual de posición (vástago exterior)</li>
+            <li class="service-detail__list-item">Cumplimiento NFPA 13 para redes principales</li>
+            <li class="service-detail__list-item">Presiones de trabajo: 175, 200, 250 y 350 PSI</li>
+            <li class="service-detail__list-item">Diámetros disponibles: 2.5", 3", 4", 6", 8", 10", 12"</li>
+            <li class="service-detail__list-item">Fabricación en hierro dúctil y bronce</li>
+            <li class="service-detail__list-item">Certificaciones UL y FM Listed</li>
+          </ul>
+          <div class="service-detail__ctas">
+            <a href="/valvulas/compuerta" class="btn btn--outline">Ver catálogo completo</a>
+            <a href="#cotizar" class="btn btn--primary">Cotizar válvula de compuerta</a>
+          </div>
+        </div>
+        <div class="service-detail__image" role="img" aria-label="Válvula de compuerta OS&Y para sistemas contra incendio"></div>
+      </div>
+
+      <div class="service-detail" id="detalle-globo">
+        <div class="service-detail__content">
+          <h3 class="service-detail__title">Válvula de Globo para Control de Flujo</h3>
+          <p class="service-detail__text">Las válvulas de globo permiten el control preciso de presión y flujo mediante estrangulamiento gradual. Su diseño interno, con un disco que cierra contra un asiento, ofrece regulación fina del caudal —fundamental en sistemas donde se requiere ajuste de presión sin interrumpir completamente el flujo. Disponibles en configuraciones angular y recta para adaptarse a diferentes trayectorias de tubería.</p>
+          <ul class="service-detail__list">
+            <li class="service-detail__list-item">Control preciso de presión y flujo</li>
+            <li class="service-detail__list-item">Diseño angular y recto (straight pattern)</li>
+            <li class="service-detail__list-item">Aplicación en líneas de alimentación y derivaciones</li>
+            <li class="service-detail__list-item">Presión de trabajo hasta 300 PSI</li>
+            <li class="service-detail__list-item">Construcción en bronce y hierro dúctil</li>
+            <li class="service-detail__list-item">Vástago no ascendente (interior)</li>
+          </ul>
+          <div class="service-detail__ctas">
+            <a href="/valvulas/globo" class="btn btn--outline">Ver catálogo completo</a>
+            <a href="#cotizar" class="btn btn--primary">Cotizar válvula de globo</a>
+          </div>
+        </div>
+        <div class="service-detail__image" role="img" aria-label="Válvula de globo para regulación de flujo en sistemas contra incendio"></div>
+      </div>
+
+      <div class="service-detail" id="detalle-retencion">
+        <div class="service-detail__content">
+          <h3 class="service-detail__title">Válvula de Retención (Check Valve) tipo Swing</h3>
+          <p class="service-detail__text">La válvula de retención previene el retorno de flujo en sistemas hidráulicos, protegiendo equipos de bombeo y garantizando la dirección correcta del agua. El diseño tipo swing (columpio) opera mediante gravedad: el disco interno se abre con el flujo hacia adelante y se cierra automáticamente cuando el flujo se detiene o intenta revertir, sin requerir actuación manual o eléctrica.</p>
+          <ul class="service-detail__list">
+            <li class="service-detail__list-item">Prevención de retorno (backflow prevention)</li>
+            <li class="service-detail__list-item">Operación automática por gravedad</li>
+            <li class="service-detail__list-item">Diseño tipo swing (disco oscilante)</li>
+            <li class="service-detail__list-item">Sello EPDM resistente a temperatura</li>
+            <li class="service-detail__list-item">Listado UL 312 (válvulas de retención)</li>
+            <li class="service-detail__list-item">Instalación horizontal y vertical</li>
+          </ul>
+          <div class="service-detail__ctas">
+            <a href="/valvulas/retencion" class="btn btn--outline">Ver catálogo completo</a>
+            <a href="#cotizar" class="btn btn--primary">Cotizar válvula de retención</a>
+          </div>
+        </div>
+        <div class="service-detail__image" role="img" aria-label="Válvula de retención check swing para sistemas contra incendio"></div>
+      </div>
+
+      <div class="service-detail" id="detalle-mariposa">
+        <div class="service-detail__content">
+          <h3 class="service-detail__title">Válvula Mariposa Indicadora (Butterfly Valve)</h3>
+          <p class="service-detail__text">Las válvulas mariposa ofrecen apertura rápida (90° de rotación) en diámetros grandes, ideal para líneas principales de alimentación y conexiones a bombas. El diseño con indicador de posición supervisado (tamper switch) permite monitoreo remoto del estado de la válvula, enviando señales de alarma al panel de control cuando se detecta manipulación no autorizada.</p>
+          <ul class="service-detail__list">
+            <li class="service-detail__list-item">Apertura rápida de 90° (cuarto de vuelta)</li>
+            <li class="service-detail__list-item">Indicador visual y switch supervisor (tamper)</li>
+            <li class="service-detail__list-item">Sello bubble-tight (hermético)</li>
+            <li class="service-detail__list-item">Diámetros grandes: 4" a 12"</li>
+            <li class="service-detail__list-item">Aplicación en líneas principales y bombas</li>
+            <li class="service-detail__list-item">Certificación UL y FM Approved</li>
+          </ul>
+          <div class="service-detail__ctas">
+            <a href="/valvulas/mariposa" class="btn btn--outline">Ver catálogo completo</a>
+            <a href="#cotizar" class="btn btn--primary">Cotizar válvula mariposa</a>
+          </div>
+        </div>
+        <div class="service-detail__image" role="img" aria-label="Válvula mariposa indicadora para sistemas contra incendio"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TRUST -->
+  <section class="trust" aria-labelledby="trust-title">
+    <div class="container">
+      <div class="section-header">
+        <h2 id="trust-title" class="section-title">Por Qué Comprar Válvulas Contra Incendio con Certificación UL NFPA</h2>
+        <p class="section-subtitle">Sistema industrial, control, protección y mantenimiento que ningún otro proveedor te ofrece</p>
+      </div>
+      <div class="trust__grid">
+        <div class="trust__item">
+          <h3 class="trust__item-title">Certificaciones UL y FM Listed</h3>
+          <p class="trust__item-desc">Todas nuestras válvulas cuentan con certificaciones UL (Underwriters Laboratories) y FM (Factory Mutual), garantizando cumplimiento con NFPA 13, 14 y 20.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Fabricación en hierro dúctil y bronce</h3>
+          <p class="trust__item-desc">Materiales de alta resistencia a corrosión, diseñados para soportar presiones extremas y operar en condiciones ambientales adversas durante décadas.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Inventario disponible en México</h3>
+          <p class="trust__item-desc">Stock permanente de válvulas de compuerta OS&Y, globo, retención y mariposa en los diámetros más solicitados para entregas inmediatas.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Asesoría técnica especializada</h3>
+          <p class="trust__item-desc">Ingenieros con experiencia en diseño de sistemas contra incendio te ayudan a seleccionar el tipo, diámetro y especificación correcta según tu proyecto.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Documentación para protección civil</h3>
+          <p class="trust__item-desc">Fichas técnicas, certificados UL/FM y especificaciones del fabricante para respaldar verificaciones, auditorías y procesos de licitación.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Precios corporativos por volumen</h3>
+          <p class="trust__item-desc">Cotizaciones especiales para proyectos de gran escala, constructoras y compras recurrentes con descuentos por volumen.</p>
+        </div>
+      </div>
+
+      <div class="trust__testimonials-header">
+        <h3 class="trust__testimonials-title">Lo que dicen nuestros clientes sobre nuestras válvulas</h3>
+        <p class="trust__testimonials-subtitle">Empresas de todo México confían en nuestras válvulas para sus sistemas contra incendio</p>
+      </div>
+      <div class="trust__testimonials">
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"Instalamos válvulas de compuerta OS&Y en una red principal de 8 pulgadas para una planta industrial. La calidad de fabricación es excepcional, el vástago exterior permite verificación visual inmediata y la documentación UL que nos entregaron pasó sin problemas la inspección de protección civil."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Ing. Roberto Castillo M.</span>
+              <span class="testimonial__role">Jefe de Mantenimiento</span>
+              <span class="testimonial__company">Planta Manufacturera, Querétaro</span>
+            </div>
+          </div>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"Necesitábamos válvulas de retención para proteger las bombas contra incendio de un edificio corporativo. Gama de México nos asesoró en la selección correcta del tipo swing y el sello EPDM ha funcionado perfectamente durante dos años de operación continua."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Ing. Patricia Rojas S.</span>
+              <span class="testimonial__role">Coordinadora de Infraestructura</span>
+              <span class="testimonial__company">Corporativo Empresarial, CDMX</span>
+            </div>
+          </div>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"Equipamos cinco proyectos con válvulas mariposa indicadoras certificadas FM. El switch supervisor integrado permite monitoreo remoto desde el panel de alarmas y el sello hermético garantiza cero fugas. Producto de calidad con respaldo técnico real."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Ing. Carlos Mendoza R.</span>
+              <span class="testimonial__role">Director de Proyectos</span>
+              <span class="testimonial__company">Firma de Ingeniería, Monterrey</span>
+            </div>
+          </div>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"Compramos válvulas de globo para regulación de presión en una red de hidrantes. La construcción en bronce resiste perfectamente las condiciones de temperatura y humedad de la planta. Gama de México entregó en tiempo con toda la documentación que solicitamos."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Téc. Miguel Ángel Torres</span>
+              <span class="testimonial__role">Supervisor de Instalaciones</span>
+              <span class="testimonial__company">Instaladora Certificada, Jalisco</span>
+            </div>
+          </div>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"Renovamos el sistema contra incendios de un data center y necesitábamos válvulas de compuerta con certificación UL Listed para cumplir con los requisitos de la aseguradora. Todo el material llegó con certificados originales y fichas técnicas completas."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Lic. Andrea Vega P.</span>
+              <span class="testimonial__role">Gerente de Operaciones</span>
+              <span class="testimonial__company">Data Center, Puebla</span>
+            </div>
+          </div>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"Como constructora trabajamos solo con proveedores confiables. Las válvulas que suministra Gama de México cumplen todas las especificaciones NFPA 13, llegan con documentación del fabricante y los precios por volumen son competitivos."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Arq. Jorge Hernández L.</span>
+              <span class="testimonial__role">Director de Obra</span>
+              <span class="testimonial__company">Constructora Nacional, CDMX</span>
+            </div>
+          </div>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"Instalamos válvulas de retención en las líneas de succión de nuestras bombas contra incendio. El diseño tipo swing opera perfectamente por gravedad y el sello EPDM resiste las altas temperaturas del cuarto de bombas sin degradarse."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Ing. Daniela Fuentes R.</span>
+              <span class="testimonial__role">Coordinadora de Mantenimiento</span>
+              <span class="testimonial__company">Terminal de Almacenamiento, Veracruz</span>
+            </div>
+          </div>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"Equipamos un proyecto de 300 viviendas con válvulas de compuerta OS&Y para las redes principales. La entrega fue puntual, los precios por volumen nos permitieron optimizar el presupuesto y la facturación se procesó sin contratiempos."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Lic. Ricardo Salinas G.</span>
+              <span class="testimonial__role">Gerente de Compras</span>
+              <span class="testimonial__company">Desarrolladora Inmobiliaria, Edo. Méx.</span>
+            </div>
+          </div>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"Gestionamos la compra de válvulas mariposa indicadoras para cinco naves industriales. La asesoría técnica de Gama de México fue clave para seleccionar los diámetros correctos y el switch supervisor funciona perfecto con nuestro panel de alarmas."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Ing. Fernanda Díaz M.</span>
+              <span class="testimonial__role">Coordinadora de Proyectos</span>
+              <span class="testimonial__company">Grupo Industrial, Monterrey</span>
+            </div>
+          </div>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEAD CAPTURE -->
+  <section class="lead-capture" id="cotizar" aria-labelledby="lead-title">
+    <div class="container">
+      <h2 id="lead-title" class="lead-capture__title">Cotiza tus válvulas contra incendios ahora</h2>
+      <div class="lead-capture__bullets">
+        <span class="lead-capture__bullet">Precios y disponibilidad en menos de 24 horas</span>
+        <span class="lead-capture__bullet">Asesoría técnica gratuita para selección de válvulas</span>
+        <span class="lead-capture__bullet">Envíos a toda la República Mexicana</span>
+      </div>
+      <form class="lead-capture__form" id="cotizar-form" aria-label="Formulario de cotización por WhatsApp">
+        <input type="text" class="lead-capture__input" id="lead-nombre" name="nombre" placeholder="Nombre completo" required aria-label="Nombre completo" autocomplete="name">
+        <input type="text" class="lead-capture__input" id="lead-contacto" name="contacto" placeholder="Teléfono o Email" required aria-label="Teléfono o correo electrónico" autocomplete="tel">
+        <select class="lead-capture__select" id="lead-equipo" name="tipo_valvula" required aria-label="Tipo de válvula que necesitas">
+          <option value="" disabled selected>Tipo de válvula</option>
+          <option value="Válvula de compuerta OS&Y">Válvula de compuerta OS&Y</option>
+          <option value="Válvula de globo">Válvula de globo</option>
+          <option value="Válvula de retención (check)">Válvula de retención (check)</option>
+          <option value="Válvula mariposa indicadora">Válvula mariposa indicadora</option>
+          <option value="Varias válvulas / proyecto completo">Varias válvulas / proyecto completo</option>
+          <option value="Asesoría para selección">Asesoría para selección</option>
+          <option value="Otro">Otro (especificar)</option>
+        </select>
+        <button type="submit" class="btn btn--primary lead-capture__submit">Enviar por WhatsApp</button>
+      </form>
+      <p class="lead-capture__trust">Sin compromiso · Atención personalizada · Te respondemos al instante</p>
+      <p class="lead-capture__alt">También puedes escribirnos directo: <a href="https://wa.me/5215565298240" target="_blank" rel="noopener">WhatsApp: 55 6529 8240</a> | Email: <a href="mailto:ventas@gamademexico.com">ventas@gamademexico.com</a></p>
+    </div>
+  </section>
+
+  <!-- EQUIPOS COMPLEMENTARIOS - CROSS-LINKING SEO -->
+  <section class="complementary" aria-labelledby="complementary-title">
+    <div class="container">
+      <div class="section-header">
+        <h2 id="complementary-title" class="section-title">Equipos Complementarios para tu Sistema Contra Incendios</h2>
+        <p class="section-subtitle">Las válvulas son solo una parte del sistema. Completa tu instalación con equipos certificados</p>
+      </div>
+      <div class="complementary__grid">
+        <a href="/monitores-contra-incendios" class="complementary__card">
+          <div class="complementary__icon">🎯</div>
+          <h3 class="complementary__title">Monitores Contra Incendios</h3>
+          <p class="complementary__desc">Monitores tipo corazón y cuello de cisne certificados UL/FM para descarga de alto caudal. Compatibles con válvulas de compuerta OS&Y en líneas principales.</p>
+          <span class="complementary__link">Ver monitores →</span>
+        </a>
+        <a href="/boquillas-contra-incendios" class="complementary__card">
+          <div class="complementary__icon">💧</div>
+          <h3 class="complementary__title">Boquillas Contra Incendios</h3>
+          <p class="complementary__desc">Boquillas tipo pistola, turbo jet e industriales. Conectan a mangueras reguladas por válvulas de globo para control preciso de flujo.</p>
+          <span class="complementary__link">Ver boquillas →</span>
+        </a>
+        <a href="/mangueras-contra-incendios" class="complementary__card">
+          <div class="complementary__icon">🔴</div>
+          <h3 class="complementary__title">Mangueras Contra Incendios</h3>
+          <p class="complementary__desc">Mangueras Millhose, Blindex y forestales certificadas NFPA. El sistema completo requiere válvulas de retención para proteger las bombas de alimentación.</p>
+          <span class="complementary__link">Ver mangueras →</span>
+        </a>
+        <a href="/conexiones-herrajes-contra-incendios" class="complementary__card">
+          <div class="complementary__icon">🔧</div>
+          <h3 class="complementary__title">Conexiones y Herrajes</h3>
+          <p class="complementary__desc">Siamesas FDC, acoples Storz y adaptadores. Las conexiones de bomberos requieren válvulas check para evitar drenaje del sistema.</p>
+          <span class="complementary__link">Ver conexiones →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEO CONTENT -->
+  <section class="seo-content" aria-labelledby="seo-title">
+    <div class="container">
+      <div class="seo-content__body">
+        <h2 id="seo-title" class="seo-content__title">Venta de Válvulas Contra Incendios Certificadas en México: Guía de Selección, Tipos y Precio</h2>
+        <p class="seo-content__text">La selección correcta de <strong>válvulas contra incendios</strong> es fundamental para garantizar la operación confiable de cualquier sistema de protección activa. A diferencia de las válvulas de uso general en fontanería o plomería, las válvulas diseñadas específicamente para sistemas contra incendio deben cumplir estándares técnicos rigurosos establecidos por <strong>NFPA 13</strong> (sistemas de rociadores automáticos), <strong>NFPA 14</strong> (sistemas de tubería vertical y mangueras), <strong>NFPA 20</strong> (instalación de bombas estacionarias), y certificaciones <strong>UL (Underwriters Laboratories)</strong> y <strong>FM (Factory Mutual)</strong>. Estos requisitos aseguran que cada válvula puede soportar presiones de trabajo extremas —desde 175 hasta 350 PSI—, operar en condiciones de emergencia sin fallar, resistir corrosión durante décadas de servicio y proporcionar indicación visual clara de su estado para inspecciones y cumplimiento normativo. En Gama de México, como distribuidores autorizados de fabricantes líderes a nivel internacional, ofrecemos un catálogo completo de válvulas certificadas: <strong>compuerta OS&Y</strong> (Outside Screw and Yoke) con vástago exterior para indicación visual, <strong>válvulas de globo</strong> para regulación precisa de presión y flujo, <strong>válvulas de retención tipo swing</strong> para prevención de retorno automático, y <strong>válvulas mariposa indicadoras</strong> con switch supervisor para monitoreo remoto. Cada tipo tiene aplicaciones específicas en el sistema y debe seleccionarse según la función hidráulica, el diámetro de tubería y los requisitos normativos del proyecto.</p>
+        <p class="seo-content__text">Las <strong>válvulas de compuerta OS&Y</strong> son el estándar en líneas principales de sistemas contra incendio porque su diseño con vástago exterior permite verificar instantáneamente si la válvula está abierta (vástago extendido) o cerrada (vástago retraído) sin necesidad de operarla. Esta característica es crítica para inspecciones de protección civil, auditorías de seguridad y operación de brigadas de emergencia. NFPA 13 requiere que todas las válvulas en líneas de suministro principal tengan supervisión visual o electrónica, y las OS&Y cumplen este requisito de forma inherente. Fabricadas en hierro dúctil con recubrimiento epóxico o en bronce para ambientes corrosivos, estas válvulas operan con presiones de trabajo que van desde 175 PSI (aplicaciones residenciales) hasta 350 PSI (instalaciones industriales y de alto riesgo). Los diámetros disponibles —desde 2.5 pulgadas hasta 12 pulgadas— cubren todo el rango de aplicaciones en redes contra incendio, desde derivaciones secundarias hasta alimentaciones principales de edificios de gran altura. Las <strong>válvulas de globo</strong>, por su parte, se utilizan cuando se requiere regulación fina del flujo sin interrumpir completamente el servicio. Su diseño interno, con un disco que cierra contra un asiento, permite estrangular gradualmente el caudal —algo que las válvulas de compuerta no pueden hacer eficientemente—. Se emplean típicamente en líneas de prueba, derivaciones de control y puntos donde se necesita ajustar presión. Están disponibles en configuraciones de flujo recto (straight pattern) y angular (angle pattern), adaptándose a diferentes trayectorias de tubería y facilitando instalaciones compactas en espacios reducidos.</p>
+        <p class="seo-content__text">Las <strong>válvulas de retención</strong> (check valves) son componentes de protección que previenen el retorno de flujo en sistemas hidráulicos. En instalaciones contra incendio, se instalan típicamente en las líneas de descarga de bombas para evitar que el agua regrese hacia el equipo cuando se detiene, protegiendo los impulsores y sellos mecánicos. El tipo más común es el diseño <strong>swing</strong> (columpio), donde un disco interno oscila libremente sobre una bisagra: cuando el agua fluye en la dirección correcta, el disco se abre por presión hidráulica; cuando el flujo se detiene o intenta revertir, el disco se cierra automáticamente por gravedad y contrapresión. Este mecanismo no requiere actuación manual ni eléctrica, operando de forma completamente pasiva. Los sellos internos —generalmente fabricados en EPDM (caucho etileno-propileno-dieno)— resisten temperaturas elevadas, exposición continua a agua y degradación por envejecimiento. El listado <strong>UL 312</strong> específico para válvulas de retención certifica que el producto cumple con pruebas de cierre hermético, resistencia a presión inversa y durabilidad bajo ciclos repetidos de operación. Finalmente, las <strong>válvulas mariposa indicadoras</strong> ofrecen apertura rápida (90° de rotación, conocido como "cuarto de vuelta") en diámetros grandes, ideal para líneas principales donde el espacio de instalación es limitado y se requiere operación sencilla. El indicador visual externo —similar al de las OS&Y— muestra la posición de la válvula, mientras que el <strong>tamper switch</strong> (interruptor supervisor) envía una señal eléctrica al panel de alarmas cuando se detecta movimiento no autorizado, alertando a los operadores sobre manipulación del sistema. El sello <strong>bubble-tight</strong> (hermético a burbujas) garantiza cero fugas en posición cerrada, cumpliendo con los requisitos de prueba de aceptación establecidos en NFPA 25 (inspección, prueba y mantenimiento de sistemas).</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq" aria-labelledby="faq-title">
+    <div class="container">
+      <div class="section-header">
+        <h2 id="faq-title" class="section-title">Preguntas Frecuentes sobre Válvulas Contra Incendios</h2>
+        <p class="section-subtitle">Resolvemos las dudas más comunes sobre tipos, especificaciones, certificaciones y aplicaciones</p>
+      </div>
+      <div class="faq__list">
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false" aria-controls="faq-v-1" id="faq-vq-1">¿Qué tipos de válvulas contra incendios venden en Gama de México?<span class="faq__icon" aria-hidden="true">+</span></button>
+          <div class="faq__answer" id="faq-v-1" role="region" aria-labelledby="faq-vq-1">
+            <p>Ofrecemos cuatro tipos principales de válvulas para sistemas contra incendio: <strong>1) Válvulas de compuerta OS&Y</strong> (Outside Screw and Yoke) con vástago exterior para indicación visual de posición, ideales para líneas principales; <strong>2) Válvulas de globo</strong> en configuraciones angular y recta para control preciso de presión y flujo; <strong>3) Válvulas de retención tipo swing</strong> para prevención automática de retorno de flujo en líneas de bombas; y <strong>4) Válvulas mariposa indicadoras</strong> con tamper switch para apertura rápida en diámetros grandes. Todas cuentan con certificaciones UL y FM, fabricación en hierro dúctil o bronce, y documentación técnica completa del fabricante.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false" aria-controls="faq-v-2" id="faq-vq-2">¿Cuál es la diferencia entre una válvula OS&Y y una válvula común?<span class="faq__icon" aria-hidden="true">+</span></button>
+          <div class="faq__answer" id="faq-v-2" role="region" aria-labelledby="faq-vq-2">
+            <p>La principal diferencia está en el <strong>vástago exterior</strong>. En una válvula OS&Y (Outside Screw and Yoke), el vástago roscado se extiende hacia afuera del cuerpo cuando la válvula se abre y se retrae cuando se cierra, permitiendo verificación visual instantánea de la posición sin necesidad de operarla. Esto cumple con los requisitos de <strong>NFPA 13</strong> que exige supervisión visual o electrónica en válvulas de control principal. Además, las válvulas OS&Y para sistemas contra incendio están fabricadas con materiales específicos (hierro dúctil o bronce), certificadas para presiones de trabajo de 175 a 350 PSI, y cuentan con listado <strong>UL/FM</strong> que garantiza cumplimiento con estándares de la industria. Las válvulas comunes de plomería no cumplen estos requisitos y no son aptas para aplicaciones de protección contra incendios.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false" aria-controls="faq-v-3" id="faq-vq-3">¿Qué presión de trabajo soportan las válvulas contra incendios?<span class="faq__icon" aria-hidden="true">+</span></button>
+          <div class="faq__answer" id="faq-v-3" role="region" aria-labelledby="faq-vq-3">
+            <p>Las válvulas contra incendios están disponibles en diferentes rangos de presión según la aplicación: <strong>175 PSI</strong> (aplicaciones residenciales y comerciales ligeras), <strong>200 PSI</strong> (edificios comerciales estándar), <strong>250 PSI</strong> (instalaciones industriales), y <strong>300-350 PSI</strong> (aplicaciones de alto riesgo y sistemas de bombeo de alta presión). La presión de trabajo debe seleccionarse considerando la presión máxima del sistema más un margen de seguridad. Por ejemplo, si tu sistema opera normalmente a 150 PSI, debes especificar válvulas con clasificación mínima de 200 PSI. Nuestros asesores técnicos te ayudan a determinar la especificación correcta según el diseño hidráulico de tu proyecto y los requisitos de la bomba contra incendio.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false" aria-controls="faq-v-4" id="faq-vq-4">¿Para qué sirve una válvula de retención (check valve) en sistemas contra incendio?<span class="faq__icon" aria-hidden="true">+</span></button>
+          <div class="faq__answer" id="faq-v-4" role="region" aria-labelledby="faq-vq-4">
+            <p>La <strong>válvula de retención</strong> previene el retorno de flujo en el sistema, protegiendo equipos críticos y manteniendo la dirección correcta del agua. Su aplicación principal es en las <strong>líneas de descarga de bombas contra incendio</strong>: cuando la bomba arranca, el agua fluye hacia el sistema y el disco interno de la válvula se abre automáticamente; cuando la bomba se detiene, el disco se cierra por gravedad evitando que el agua regrese y dañe los impulsores, sellos mecánicos y motor de la bomba. También se utilizan en <strong>conexiones de bomberos (FDC)</strong> para evitar que el agua del sistema drene hacia la conexión exterior, y en <strong>sistemas de tanques elevados</strong> para prevenir vaciado por gravedad. El diseño tipo swing opera completamente por gravedad —sin requerir electricidad ni actuación manual— y el sello EPDM garantiza cierre hermético incluso después de años de servicio.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false" aria-controls="faq-v-5" id="faq-vq-5">¿Qué diámetros de válvulas contra incendios tienen disponibles?<span class="faq__icon" aria-hidden="true">+</span></button>
+          <div class="faq__answer" id="faq-v-5" role="region" aria-labelledby="faq-vq-5">
+            <p>Manejamos un rango completo de diámetros para cubrir todas las aplicaciones en sistemas contra incendio: <strong>2.5"</strong> y <strong>3"</strong> para derivaciones y gabinetes contra incendio, <strong>4"</strong> y <strong>6"</strong> para redes secundarias y alimentación de rociadores, <strong>8"</strong> y <strong>10"</strong> para líneas principales de edificios de mediana y gran altura, y <strong>12"</strong> para instalaciones industriales de alto caudal. La disponibilidad específica de cada diámetro varía según el tipo de válvula: las OS&Y están disponibles en todo el rango (2.5" a 12"), las de globo típicamente hasta 6", las de retención desde 3" hasta 12", y las mariposa desde 4" hasta 12". Mantenemos stock permanente de los diámetros más solicitados (3", 4" y 6") para entregas inmediatas; diámetros especiales pueden requerir tiempos de entrega adicionales que te informamos en la cotización.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false" aria-controls="faq-v-6" id="faq-vq-6">¿Las válvulas vienen con certificaciones UL y FM?<span class="faq__icon" aria-hidden="true">+</span></button>
+          <div class="faq__answer" id="faq-v-6" role="region" aria-labelledby="faq-vq-6">
+            <p>Sí. Todas nuestras válvulas contra incendios cuentan con certificaciones <strong>UL (Underwriters Laboratories)</strong> y <strong>FM (Factory Mutual)</strong>, dos de los estándares de seguridad más reconocidos a nivel internacional. Específicamente: válvulas de compuerta y mariposa cuentan con <strong>UL Listed</strong> y <strong>FM Approved</strong> según normas NFPA 13 y 14; válvulas de retención tienen listado <strong>UL 312</strong> específico para check valves. Con cada válvula entregamos la <strong>documentación completa</strong>: ficha técnica del fabricante, declaración de conformidad, certificados UL/FM y manual de instalación. Esta documentación es fundamental para pasar verificaciones de protección civil, auditorías de aseguradoras, procesos de licitación y certificación de edificios. Todo se entrega en español, impreso o digital según prefieras.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false" aria-controls="faq-v-7" id="faq-vq-7">¿Cómo puedo solicitar una cotización de válvulas contra incendios?<span class="faq__icon" aria-hidden="true">+</span></button>
+          <div class="faq__answer" id="faq-v-7" role="region" aria-labelledby="faq-vq-7">
+            <p>Puedes cotizar de tres formas rápidas: <strong>1) Formulario en esta página</strong> (se envía directo a nuestro WhatsApp), <strong>2) WhatsApp directo al 55 6529 8240</strong>, o <strong>3) Llamada al 55 1543 7164</strong> o email a <strong>ventas@gamademexico.com</strong>. Solo necesitamos saber: tipo de válvula requerida (compuerta OS&Y, globo, retención o mariposa), diámetro(s) necesarios, cantidad aproximada, presión de trabajo del sistema y ubicación de entrega. Si no estás seguro del tipo o especificación correcta, nuestros ingenieros te asesoran sin costo para seleccionar exactamente lo que tu proyecto necesita según NFPA 13, 14 o 20. Respondemos en <strong>menos de 24 horas</strong> con precios, disponibilidad inmediata y opciones de envío. Para proyectos de gran escala preparamos cotizaciones corporativas con precios especiales por volumen.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<script>
+  // FAQ Accordion
+  document.addEventListener('DOMContentLoaded', () => {
+    const faqQuestions = document.querySelectorAll('.faq__question');
+
+    faqQuestions.forEach(button => {
+      button.addEventListener('click', () => {
+        const expanded = button.getAttribute('aria-expanded') === 'true';
+
+        // Close all other items
+        faqQuestions.forEach(otherButton => {
+          if (otherButton !== button) {
+            otherButton.setAttribute('aria-expanded', 'false');
+            const otherAnswer = document.getElementById(otherButton.getAttribute('aria-controls') || '');
+            if (otherAnswer) otherAnswer.style.display = 'none';
+            const otherIcon = otherButton.querySelector('.faq__icon');
+            if (otherIcon) otherIcon.textContent = '+';
+          }
+        });
+
+        // Toggle current item
+        button.setAttribute('aria-expanded', (!expanded).toString());
+        const answer = document.getElementById(button.getAttribute('aria-controls') || '');
+        if (answer) {
+          answer.style.display = expanded ? 'none' : 'block';
+        }
+        const icon = button.querySelector('.faq__icon');
+        if (icon) {
+          icon.textContent = expanded ? '+' : '−';
+        }
+      });
+    });
+
+    // WhatsApp Form Handler
+    const cotizarForm = document.getElementById('cotizar-form');
+    if (cotizarForm) {
+      cotizarForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const nombre = (document.getElementById('lead-nombre') as HTMLInputElement)?.value || '';
+        const contacto = (document.getElementById('lead-contacto') as HTMLInputElement)?.value || '';
+        const tipoValvula = (document.getElementById('lead-equipo') as HTMLSelectElement)?.value || '';
+
+        const mensaje = `Hola, me interesa cotizar válvulas contra incendios:%0A%0ANombre: ${encodeURIComponent(nombre)}%0AContacto: ${encodeURIComponent(contacto)}%0ATipo de válvula: ${encodeURIComponent(tipoValvula)}`;
+
+        window.open(`https://wa.me/5215565298240?text=${mensaje}`, '_blank');
+      });
+    }
+  });
+</script>

@@ -1,0 +1,202 @@
+---
+// ProductSidebar - Sidebar reutilizable para páginas de productos
+interface Subcategoria {
+  slug: string;
+  nombre: string;
+  descripcion?: string;
+  activo: boolean;
+}
+
+interface Certificacion {
+  siglas: string;
+  nombre: string;
+}
+
+interface ProductoRelacionado {
+  href: string;
+  nombre: string;
+}
+
+interface Props {
+  // Navegación de subcategorías
+  navTitulo: string;
+  subcategorias: Subcategoria[];
+  baseUrl: string; // ej: "/monitores" o "/boquillas"
+  backLinkHref: string;
+  backLinkTexto: string;
+
+  // Certificaciones (opcional)
+  certificaciones?: Certificacion[];
+
+  // Marcas (opcional)
+  marcas?: string[];
+
+  // Aplicaciones (opcional)
+  aplicaciones?: string[];
+
+  // Características (opcional)
+  caracteristicas?: string[];
+
+  // Productos relacionados (opcional)
+  productosRelacionados?: ProductoRelacionado[];
+
+  // Configuración de contacto
+  mostrarContacto?: boolean;
+  whatsappNumero?: string;
+  telefonoDisplay?: string;
+}
+
+const {
+  navTitulo,
+  subcategorias,
+  baseUrl,
+  backLinkHref,
+  backLinkTexto,
+  certificaciones = [],
+  marcas = [],
+  aplicaciones = [],
+  caracteristicas = [],
+  productosRelacionados = [],
+  mostrarContacto = true,
+  whatsappNumero = "5215565298240",
+  telefonoDisplay = "55 6529 8240"
+} = Astro.props;
+
+const activeSubcategoria = subcategorias.find((subcat) => subcat.activo);
+const activeLabel = activeSubcategoria?.nombre ?? "esta línea de producto";
+const activeDesc = activeSubcategoria?.descripcion ?? "aplicaciones de protección contra incendio";
+
+const featuresToShow = caracteristicas.length > 0
+  ? caracteristicas
+  : [
+      `Selección técnica para ${activeLabel} según tu red hidráulica.`,
+      `Configuraciones para ${activeDesc.toLowerCase()}.`,
+      "Compatibilidad con normas y prácticas NFPA/NOM en proyectos reales.",
+      "Acompañamiento comercial para cotización, entrega y postventa."
+    ];
+---
+
+<aside class="subcat-sidebar">
+
+  <!-- NAVIGATION WIDGET -->
+  <div class="sidebar-widget">
+    <div class="sidebar-widget__header">
+      <h3 class="sidebar-widget__title">{navTitulo}</h3>
+    </div>
+    <nav class="sidebar-nav" aria-label="Navegación de subcategorías">
+      <ul class="sidebar-nav__list">
+        {subcategorias.map((subcat) => (
+          <li class="sidebar-nav__item">
+            <a
+              href={`${baseUrl}/${subcat.slug}`}
+              class={`sidebar-nav__link ${subcat.activo ? 'sidebar-nav__link--active' : ''}`}
+              aria-current={subcat.activo ? 'page' : undefined}
+            >
+              <span class="sidebar-nav__indicator"></span>
+              <span class="sidebar-nav__text">{subcat.nombre}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+    <a href={backLinkHref} class="sidebar-widget__back">
+      ← {backLinkTexto}
+    </a>
+  </div>
+
+  <!-- QUICK CONTACT WIDGET -->
+  {mostrarContacto && (
+    <div class="sidebar-widget sidebar-widget--highlight">
+      <div class="sidebar-widget__header">
+        <h3 class="sidebar-widget__title">Cotización Rápida</h3>
+      </div>
+      <p class="sidebar-widget__text">Respuesta en menos de 24 horas con precio y disponibilidad.</p>
+      <div class="sidebar-widget__actions">
+        <a href="#cotizar" class="btn btn--primary btn--sm btn--full">Solicitar Cotización</a>
+        <a href={`https://wa.me/${whatsappNumero}`} class="btn btn--outline btn--sm btn--full" target="_blank" rel="noopener">WhatsApp Directo</a>
+      </div>
+      <p class="sidebar-widget__phone">Tel: <a href={`tel:+52${telefonoDisplay.replace(/\s/g, '')}`}>{telefonoDisplay}</a></p>
+    </div>
+  )}
+
+  <!-- CARACTERÍSTICAS WIDGET -->
+  {featuresToShow.length > 0 && (
+    <div class="sidebar-widget">
+      <div class="sidebar-widget__header">
+        <h3 class="sidebar-widget__title">Características Clave</h3>
+      </div>
+      <ul class="sidebar-features">
+        {featuresToShow.map((item) => (
+          <li class="sidebar-features__item">
+            <span class="sidebar-features__icon">✓</span>
+            <span class="sidebar-features__text">{item}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  )}
+
+  <!-- CERTIFICATIONS WIDGET -->
+  {certificaciones.length > 0 && (
+    <div class="sidebar-widget">
+      <div class="sidebar-widget__header">
+        <h3 class="sidebar-widget__title">Certificaciones Disponibles</h3>
+      </div>
+      <div class="sidebar-certs">
+        {certificaciones.map((cert) => (
+          <div class="sidebar-cert">
+            <span class="sidebar-cert__badge">{cert.siglas}</span>
+            <span class="sidebar-cert__name">{cert.nombre}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  )}
+
+  <!-- BRANDS WIDGET -->
+  {marcas.length > 0 && (
+    <div class="sidebar-widget">
+      <div class="sidebar-widget__header">
+        <h3 class="sidebar-widget__title">Marcas que Manejamos</h3>
+      </div>
+      <ul class="sidebar-brands">
+        {marcas.map((marca) => (
+          <li class="sidebar-brands__item">{marca}</li>
+        ))}
+      </ul>
+      <p class="sidebar-widget__note">Pregunta por otras marcas</p>
+    </div>
+  )}
+
+  <!-- APPLICATIONS WIDGET -->
+  {aplicaciones.length > 0 && (
+    <div class="sidebar-widget">
+      <div class="sidebar-widget__header">
+        <h3 class="sidebar-widget__title">Aplicaciones</h3>
+      </div>
+      <ul class="sidebar-apps">
+        {aplicaciones.map((app) => (
+          <li class="sidebar-apps__item">{app}</li>
+        ))}
+      </ul>
+    </div>
+  )}
+
+  <!-- RELATED LINKS WIDGET -->
+  {productosRelacionados.length > 0 && (
+    <div class="sidebar-widget">
+      <div class="sidebar-widget__header">
+        <h3 class="sidebar-widget__title">Productos Relacionados</h3>
+      </div>
+      <ul class="sidebar-links">
+        {productosRelacionados.map((prod) => (
+          <li><a href={prod.href} class="sidebar-links__link">{prod.nombre}</a></li>
+        ))}
+      </ul>
+    </div>
+  )}
+
+  <!-- SLOT PARA CONTENIDO ADICIONAL -->
+  <slot />
+
+</aside>

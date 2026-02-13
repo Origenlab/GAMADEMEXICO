@@ -1,0 +1,189 @@
+---
+import TopBar from '../components/TopBar.astro';
+import Header from '../components/Header.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+import Hero from '../components/Hero.astro';
+import CtaCatalogo from '../components/CtaCatalogo.astro';
+import LeadCapture from '../components/LeadCapture.astro';
+import Footer from '../components/Footer.astro';
+import WhatsAppBubble from '../components/WhatsAppBubble.astro';
+import '../styles/global.css';
+import { SITE_URL, SITE_NAME, OG_IMAGE_DEFAULT, GEO, BRAND_COLOR } from '../lib/config';
+import { getPageCtaContent } from '../lib/pageCta';
+
+interface Props {
+  title: string;
+  description: string;
+  canonical?: string;
+  ogTitle?: string;
+  ogDescription?: string;
+  ogImage?: string;
+  ogType?: string;
+  twitterTitle?: string;
+  twitterDescription?: string;
+  activePage?: string;
+  showBreadcrumb?: boolean;
+  showHero?: boolean;
+  heroTitle?: string;
+  heroIntro?: string;
+  heroBadge?: string;
+  heroMetrics?: Array<{ valor: string; texto: string }>;
+  heroPrimaryText?: string;
+  heroPrimaryLink?: string;
+  heroSecondaryText?: string;
+  heroSecondaryLink?: string;
+  heroShowRightContent?: boolean;
+  noindex?: boolean;
+  structuredData?: object[];
+  showLeadCapture?: boolean;
+}
+
+const {
+  title,
+  description,
+  canonical,
+  ogTitle,
+  ogDescription,
+  ogImage = `${SITE_URL}${OG_IMAGE_DEFAULT}`,
+  ogType = 'website',
+  twitterTitle,
+  twitterDescription,
+  activePage = '',
+  showBreadcrumb = true,
+  showHero = true,
+  heroTitle = '',
+  heroIntro = '',
+  heroBadge = '',
+  heroMetrics = [],
+  heroPrimaryText = 'Solicitar Cotización',
+  heroPrimaryLink = '#cotizar',
+  heroSecondaryText = 'Ver Catálogo de Equipos',
+  heroSecondaryLink = '#equipos',
+  heroShowRightContent = false,
+  noindex = false,
+  structuredData = [],
+  showLeadCapture = false,
+} = Astro.props;
+
+const pathname = Astro.url.pathname.replace(/\.html$/, '').replace(/\/$/, '') || '/';
+const canonicalUrl = canonical || `${SITE_URL}${pathname}`;
+const hasHeroContent = Astro.slots.has('hero-content');
+const shouldShowHero = showHero && heroTitle;
+const pageTitle = heroTitle || title.split('|')[0].trim();
+const heroCta = getPageCtaContent(pathname, pageTitle);
+---
+
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>{title}</title>
+  <meta name="description" content={description}>
+  {noindex
+    ? <meta name="robots" content="noindex, follow">
+    : <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  }
+  <link rel="canonical" href={canonicalUrl}>
+
+  <!-- Geo meta tags para SEO local Mexico -->
+  <meta name="geo.region" content={GEO.region}>
+  <meta name="geo.placename" content={GEO.placename}>
+  <meta name="geo.position" content={`${GEO.latitude};${GEO.longitude}`}>
+  <meta name="ICBM" content={`${GEO.latitude}, ${GEO.longitude}`}>
+
+  <meta property="og:title" content={ogTitle || title}>
+  <meta property="og:description" content={ogDescription || description}>
+  <meta property="og:type" content={ogType}>
+  <meta property="og:url" content={canonicalUrl}>
+  <meta property="og:image" content={ogImage}>
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:alt" content={`Equipos contra incendios ${SITE_NAME}: monitores, boquillas, mangueras, válvulas y gabinetes`}>
+  <meta property="og:site_name" content={SITE_NAME}>
+  <meta property="og:locale" content="es_MX">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content={twitterTitle || ogTitle || title}>
+  <meta name="twitter:description" content={twitterDescription || ogDescription || description}>
+  <meta name="twitter:image" content={ogImage}>
+  <meta name="twitter:image:alt" content={`Equipos contra incendios ${SITE_NAME}`}>
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content={BRAND_COLOR}>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  {structuredData.map((data) => (
+    <script type="application/ld+json" set:html={JSON.stringify(data)} />
+  ))}
+
+  <slot name="head" />
+</head>
+
+<body>
+
+  <TopBar />
+  <Header activePage={activePage} />
+  {showBreadcrumb && <Breadcrumb pageTitle={pageTitle} />}
+
+  {shouldShowHero && hasHeroContent && (
+    <Hero
+      titulo={heroTitle}
+      intro={heroIntro}
+      etiqueta={heroBadge}
+      metricas={heroMetrics}
+      ctaPrimarioTexto={heroPrimaryText}
+      ctaPrimarioEnlace={heroPrimaryLink}
+      ctaSecundarioTexto={heroSecondaryText}
+      ctaSecundarioEnlace={heroSecondaryLink}
+      mostrarContenidoDerecho={heroShowRightContent}
+    >
+      <slot name="hero-content" />
+    </Hero>
+  )}
+
+  {shouldShowHero && !hasHeroContent && (
+    <Hero
+      titulo={heroTitle}
+      intro={heroIntro}
+      etiqueta={heroBadge}
+      metricas={heroMetrics}
+      ctaPrimarioTexto={heroPrimaryText}
+      ctaPrimarioEnlace={heroPrimaryLink}
+      ctaSecundarioTexto={heroSecondaryText}
+      ctaSecundarioEnlace={heroSecondaryLink}
+      mostrarContenidoDerecho={heroShowRightContent}
+    />
+  )}
+  {shouldShowHero && (
+    <CtaCatalogo
+      titulo={heroCta.titulo}
+      subtitulo={heroCta.subtitulo}
+      textoBoton={heroCta.textoBoton}
+      enlace={heroCta.enlace}
+    />
+  )}
+
+  <main id="main-content" role="main">
+    <slot />
+  </main>
+
+  {showLeadCapture && <LeadCapture />}
+  <Footer />
+
+  <WhatsAppBubble />
+
+  <script src="../scripts/main.ts"></script>
+
+</body>
+
+</html>

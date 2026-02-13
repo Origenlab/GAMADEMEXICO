@@ -1,0 +1,207 @@
+---
+import Layout from '../../layouts/Base.astro';
+import '../../styles/subcategory.css';
+import { getCollection } from 'astro:content';
+import SubcategoryProductCard from '../../components/SubcategoryProductCard.astro';
+import ProductSidebar from '../../components/ProductSidebar.astro';
+import RelatedProductsGrid from '../../components/RelatedProductsGrid.astro';
+import CotizacionForm from '../../components/CotizacionForm.astro';
+
+// Obtener productos de boquillas
+const todasBoquillas = (await getCollection('productos', ({ data }) => data.categoria === 'boquillas')).sort((a, b) => a.data.orden - b.data.orden);
+
+// Filtrar productos industriales por subcategoria
+const productosIndustrial = todasBoquillas.filter(p => p.data.subcategoria === 'industrial');
+
+// Otros productos para la sección de relacionados
+const otrasBoquillas = todasBoquillas.filter(p => !productosIndustrial.includes(p));
+
+// Definir las subcategorías de boquillas para el sidebar
+const subcategorias = [
+  {
+    slug: 'tipo-pistola',
+    nombre: 'Boquilla Tipo Pistola',
+    descripcion: 'Control ergonómico seleccionable',
+    activo: false
+  },
+  {
+    slug: 'turbo-jet',
+    nombre: 'Boquilla Turbo Jet',
+    descripcion: 'Máximo alcance y penetración',
+    activo: false
+  },
+  {
+    slug: 'industrial',
+    nombre: 'Boquilla Industrial',
+    descripcion: 'Alto caudal para industria',
+    activo: true
+  },
+  {
+    slug: 'certificada',
+    nombre: 'Boquilla Certificada',
+    descripcion: 'Certificación UL/FM',
+    activo: false
+  },
+];
+---
+
+<Layout
+  title="Boquilla Industrial Alta Presión | México"
+  description="Boquilla industrial alta presión con chiflón y pulverización. Acero inoxidable y latón, alto flujo GPM. Serie 205-B certificada UL 401. México."
+  activePage="equipos"
+  heroTitle="Boquilla Industrial"
+  heroIntro="Boquillas de alto caudal diseñadas para aplicaciones industriales pesadas donde se requiere máximo flujo y resistencia a condiciones extremas. Fabricadas en acero inoxidable, bronce o latón para operación continua en plantas químicas, refinerías y sistemas fijos de protección."
+  heroBadge="Boquillas Contra Incendios"
+  heroMetrics={[
+    { valor: "500+", texto: "GPM capacidad" },
+    { valor: "150", texto: "PSI máxima" },
+    { valor: "Inox/Bronce", texto: "Materiales" }
+  ]}
+  heroPrimaryText="Ver Catálogo"
+  heroPrimaryLink="#catalogo"
+  heroSecondaryText="Solicitar Cotización"
+  heroSecondaryLink="#cotizar"
+  heroShowRightContent={true}
+>
+
+  <!-- HERO CONTENT -->
+  <Fragment slot="hero-content">
+    <p>Las <strong>boquillas industriales</strong> están diseñadas para entregar caudales superiores a los 500 GPM en aplicaciones donde las boquillas manuales convencionales resultan insuficientes. Fabricadas en acero inoxidable 316, bronce naval o latón de alta resistencia, estos equipos soportan operación continua bajo condiciones extremas de temperatura, presión y ambientes corrosivos. Su diseño permite configuraciones de chorro sólido para máximo alcance o patrones de pulverización para enfriamiento de superficies.</p>
+    <p><strong>Gama de México</strong> suministra boquillas industriales para integración en sistemas fijos de protección, monitores de alto caudal y aplicaciones especiales en refinerías, plantas petroquímicas, acereras y centrales de generación. Asesoramos en la selección del material, tipo de conexión y patrón de descarga según las características específicas de tu proceso industrial y los requerimientos de tu póliza de seguro.</p>
+  </Fragment>
+
+  <!-- MAIN CONTENT WITH SIDEBAR -->
+  <section class="subcat-content">
+    <div class="container">
+      <div class="subcat-layout">
+
+        <!-- MAIN CONTENT (LEFT) -->
+        <main class="subcat-main">
+
+          <!-- CATALOG HEADER -->
+          <div class="catalog-header">
+            <div class="catalog-header__text">
+              <h2 class="catalog-header__title">Catálogo de Boquillas Industriales</h2>
+              <p class="catalog-header__desc">Selecciona el producto que mejor se adapte a tu operación</p>
+            </div>
+            <div class="catalog-header__count">
+              <span class="catalog-header__number">{productosIndustrial.length}</span>
+              <span class="catalog-header__label">producto{productosIndustrial.length !== 1 ? 's' : ''}</span>
+            </div>
+          </div>
+
+          <!-- PRODUCTS GRID -->
+          <div class="categories__grid">
+            {productosIndustrial.map((producto) => (
+              <SubcategoryProductCard
+                title={producto.data.title}
+                description={producto.data.description}
+                brand={producto.data.marca}
+                image={producto.data.imagen}
+                productSlug={producto.id}
+                flow={producto.data.flujo}
+                material={producto.data.material}
+                certifications={producto.data.certificaciones}
+              />
+            ))}
+          </div>
+
+          {productosIndustrial.length === 0 && (
+            <div class="catalog-empty">
+              <div class="catalog-empty__icon">🔍</div>
+              <h3 class="catalog-empty__title">Próximamente más opciones</h3>
+              <p class="catalog-empty__text">Estamos agregando más productos de boquillas industriales de diferentes marcas. Mientras tanto, solicita una cotización personalizada.</p>
+              <a href="#cotizar" class="btn btn--primary">Solicitar Cotización</a>
+            </div>
+          )}
+
+          <!-- TECHNICAL INFO -->
+          <div class="tech-info">
+            <h3 class="tech-info__title">Especificaciones Técnicas Generales</h3>
+            <div class="tech-info__grid">
+              <div class="tech-info__item">
+                <span class="tech-info__label">Presión</span>
+                <span class="tech-info__value">Alta presión industrial</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Patrón</span>
+                <span class="tech-info__value">Chiflón / Pulverización</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Material</span>
+                <span class="tech-info__value">Acero inoxidable / Latón</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Flujo</span>
+                <span class="tech-info__value">Alto GPM industrial</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Certificación</span>
+                <span class="tech-info__value">UL 401 A/B/C</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Aplicación</span>
+                <span class="tech-info__value">Industrial severa</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA FINAL -->
+          <div class="subcat-cta-final">
+            <div class="subcat-cta-final__content">
+              <h3 class="subcat-cta-final__title">¿No encuentras el modelo que necesitas?</h3>
+              <p class="subcat-cta-final__desc">Tenemos acceso al catálogo completo de Elkhart Brass. Contáctanos para opciones adicionales y configuraciones especiales.</p>
+            </div>
+            <a href="#cotizar" class="btn btn--primary">Solicitar Cotización</a>
+          </div>
+
+        </main>
+
+        <!-- SIDEBAR (RIGHT) -->
+        <ProductSidebar
+          navTitulo="Tipos de Boquillas"
+          subcategorias={subcategorias}
+          baseUrl="/boquillas"
+          backLinkHref="/boquillas-contra-incendios"
+          backLinkTexto="Ver todas las boquillas"
+          certificaciones={[
+            { siglas: "FM", nombre: "Factory Mutual" },
+            { siglas: "UL", nombre: "UL Listed" },
+            { siglas: "NOM", nombre: "NOM-002-STPS" }
+          ]}
+          marcas={["Elkhart Brass", "Akron Brass", "Task Force Tips", "POK"]}
+          aplicaciones={[
+            "Industria manufacturera",
+            "Plantas químicas",
+            "Almacenes industriales",
+            "Parques industriales"
+          ]}
+          productosRelacionados={[
+            { href: "/monitores-contra-incendios", nombre: "Monitores Contra Incendios" },
+            { href: "/mangueras-contra-incendios", nombre: "Mangueras Contra Incendios" },
+            { href: "/valvulas-contra-incendios", nombre: "Válvulas Contra Incendios" },
+            { href: "/conexiones-herrajes-contra-incendios", nombre: "Conexiones y Herrajes" }
+          ]}
+        />
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RELATED PRODUCTS -->
+  <RelatedProductsGrid
+    titulo="Otras Boquillas Contra Incendios"
+    subtitulo="Explora más opciones para tu sistema de protección"
+    productos={otrasBoquillas}
+    maxProductos={3}
+    verTodosLink="/boquillas-contra-incendios"
+    verTodosTexto="Ver todas las boquillas"
+  />
+
+  <CotizacionForm
+    titulo="Cotiza Boquillas Industriales"
+    tipoEquipo="Boquillas"
+    pagina="Boquillas Industriales"
+  />
+
+</Layout>

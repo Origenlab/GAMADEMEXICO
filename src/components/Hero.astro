@@ -1,0 +1,62 @@
+---
+// Hero component - Sección principal de página
+interface Props {
+  titulo: string;
+  intro: string;
+  etiqueta?: string;
+  metricas?: Array<{ valor: string; texto: string }>;
+  ctaPrimarioTexto?: string;
+  ctaPrimarioEnlace?: string;
+  ctaSecundarioTexto?: string;
+  ctaSecundarioEnlace?: string;
+  mostrarContenidoDerecho?: boolean;
+}
+
+const {
+  titulo,
+  intro,
+  etiqueta = '',
+  metricas = [],
+  ctaPrimarioTexto = "Solicitar Cotización",
+  ctaPrimarioEnlace = "#cotizar",
+  ctaSecundarioTexto = "Ver Catálogo de Equipos",
+  ctaSecundarioEnlace = "/equipos",
+  mostrarContenidoDerecho = false
+} = Astro.props;
+
+const wrapperClass = mostrarContenidoDerecho ? 'hero-section hero-section--two-cols' : 'hero-section hero-section--one-col';
+---
+
+<section class={wrapperClass} aria-labelledby="hero-title">
+  <div class="hero-section__inner">
+    <div class="hero-section__left">
+      {etiqueta && <p class="hero-section__badge">{etiqueta}</p>}
+      <h1 id="hero-title" class="hero-section__title">{titulo}</h1>
+      <p class="hero-section__intro">{intro}</p>
+      <div class="hero-section__ctas">
+        {ctaPrimarioTexto && (
+          <a href={ctaPrimarioEnlace} class="btn btn--primary">{ctaPrimarioTexto}</a>
+        )}
+        {ctaSecundarioTexto && (
+          <a href={ctaSecundarioEnlace} class="btn btn--outline">{ctaSecundarioTexto}</a>
+        )}
+      </div>
+      {metricas.length > 0 && (
+        <div class="hero-section__metrics">
+          {metricas.map((item) => (
+            <div class="hero-section__metric">
+              <span class="hero-section__metric-value">{item.valor}</span>
+              <span class="hero-section__metric-label">{item.texto}</span>
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+
+    {mostrarContenidoDerecho && (
+      <div class="hero-section__right">
+        <slot />
+      </div>
+    )}
+  </div>
+</section>

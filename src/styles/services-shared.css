@@ -1,0 +1,118 @@
+/* Shared styles for servicios detail pages */
+
+.cta-section {
+  padding: var(--spacing-3xl) 0;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+}
+
+.cta-section__content {
+  text-align: center;
+}
+
+.cta-section__title {
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  color: var(--color-white);
+  margin-bottom: var(--spacing-sm);
+}
+
+.cta-section__text {
+  font-size: var(--font-size-lg);
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: var(--spacing-lg);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-section__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  justify-content: center;
+  align-items: center;
+}
+
+.btn--white-outline {
+  background: transparent;
+  color: var(--color-white);
+  border-color: var(--color-white);
+}
+
+.btn--white-outline:hover {
+  background: var(--color-white);
+  color: var(--color-primary);
+}
+
+.related-services {
+  padding: var(--spacing-2xl) 0;
+  background: var(--color-accent);
+}
+
+.related-services__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-md);
+}
+
+.related-service {
+  background: var(--color-white);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  transition: all var(--transition-fast);
+}
+
+.related-service:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-primary);
+}
+
+.related-service__title {
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  color: var(--color-secondary);
+}
+
+.related-service__desc {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-light);
+  line-height: 1.5;
+  flex: 1;
+}
+
+.related-service__link {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-primary);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.related-service__link:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 640px) {
+  .cta-section__buttons {
+    flex-direction: row;
+  }
+
+  .related-services__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .cta-section__title {
+    font-size: var(--font-size-3xl);
+  }
+
+  .related-services__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

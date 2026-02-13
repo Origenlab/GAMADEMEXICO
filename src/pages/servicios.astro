@@ -1,0 +1,496 @@
+---
+import Layout from '../layouts/Base.astro';
+---
+
+<Layout
+  title="Servicios Equipos Contra Incendios | Gama de México"
+  description="Venta de equipos contra incendios, asesoría técnica especializada, atención a empresas, suministro para mantenimiento, logística nacional y cotizaciones corporativas."
+  activePage="servicios"
+>
+
+  <!-- BREADCRUMB -->
+  <nav class="breadcrumb" aria-label="Navegación de migas de pan">
+    <div class="container">
+      <ol class="breadcrumb__list">
+        <li class="breadcrumb__item"><a href="/" class="breadcrumb__link">Inicio</a></li>
+        <li class="breadcrumb__item breadcrumb__item--active" aria-current="page">Servicios</li>
+      </ol>
+    </div>
+  </nav><!-- SERVICIOS -->
+  <section class="categories" id="servicios" aria-labelledby="categories-title">
+    <div class="container">
+      <div class="section-header">
+        <h2 id="categories-title" class="section-title">Nuestros Servicios Especializados</h2>
+        <p class="section-subtitle">Cada servicio está diseñado para resolver necesidades reales del sector contra incendios en México</p>
+      </div>
+      <div class="categories__grid">
+        <article class="category-card">
+          <div class="category-card__image category-card__image--garantia" role="img" aria-label="Garantía y respaldo técnico"></div>
+          <div class="category-card__body">
+            <h3 class="category-card__title">Garantía y Respaldo Técnico</h3>
+            <p class="category-card__sub">Todos nuestros equipos cuentan con garantía del fabricante y respaldo técnico real. Documentación completa, certificados de conformidad y soporte postventa para verificaciones de protección civil y auditorías de seguridad.</p>
+            <ul class="category-card__products">
+              <li class="category-card__product">Garantía del fabricante</li>
+              <li class="category-card__product">Certificados UL y FM</li>
+              <li class="category-card__product">Fichas técnicas oficiales</li>
+              <li class="category-card__product">Soporte postventa</li>
+            </ul>
+            <div class="category-card__ctas">
+              <a href="/servicios/garantia" class="btn btn--primary btn--sm">Ver detalles</a>
+              <a href="#cotizar" class="btn btn--outline btn--sm">Consultar</a>
+            </div>
+          </div>
+        </article>
+        <article class="category-card">
+          <div class="category-card__image category-card__image--asesoria" role="img" aria-label="Asesoría técnica especializada"></div>
+          <div class="category-card__body">
+            <h3 class="category-card__title">Asesoría Técnica Especializada</h3>
+            <p class="category-card__sub">Ingenieros especializados te ayudan a seleccionar equipos contra incendios según las especificaciones de tu proyecto, tipo de riesgo y normativa NOM aplicable. Asesoría sin costo para sistemas de protección contra incendios.</p>
+            <ul class="category-card__products">
+              <li class="category-card__product">Evaluación de tipo de riesgo</li>
+              <li class="category-card__product">Orientación normativa NOM/NFPA</li>
+              <li class="category-card__product">Selección de especificaciones</li>
+              <li class="category-card__product">Documentación técnica</li>
+            </ul>
+            <div class="category-card__ctas">
+              <a href="/servicios/asesoria" class="btn btn--primary btn--sm">Ver detalles</a>
+              <a href="#cotizar" class="btn btn--outline btn--sm">Consultar</a>
+            </div>
+          </div>
+        </article>
+        <article class="category-card">
+          <div class="category-card__image category-card__image--empresas" role="img" aria-label="Atención a empresas y proyectos"></div>
+          <div class="category-card__body">
+            <h3 class="category-card__title">Atención a Empresas y Proyectos</h3>
+            <p class="category-card__sub">Servicio dedicado para constructoras, instaladores certificados, plantas industriales y proyectos de gran escala. Cotizaciones para licitaciones, obras gubernamentales y desarrollos inmobiliarios en toda la República Mexicana.</p>
+            <ul class="category-card__products">
+              <li class="category-card__product">Constructoras e instaladores</li>
+              <li class="category-card__product">Licitaciones públicas</li>
+              <li class="category-card__product">Desarrollos inmobiliarios</li>
+              <li class="category-card__product">Precios por volumen</li>
+            </ul>
+            <div class="category-card__ctas">
+              <a href="/servicios/empresas" class="btn btn--primary btn--sm">Ver detalles</a>
+              <a href="#cotizar" class="btn btn--outline btn--sm">Consultar</a>
+            </div>
+          </div>
+        </article>
+        <article class="category-card">
+          <div class="category-card__image category-card__image--mantenimiento" role="img" aria-label="Suministro para mantenimiento"></div>
+          <div class="category-card__body">
+            <h3 class="category-card__title">Suministro para Mantenimiento</h3>
+            <p class="category-card__sub">Reposición de piezas, refacciones y accesorios para mantenimiento preventivo y correctivo de sistemas contra incendios existentes. Disponibilidad de válvulas, conexiones, mangueras y herrajes de bronce para reparaciones inmediatas.</p>
+            <ul class="category-card__products">
+              <li class="category-card__product"><a href="/valvulas-contra-incendios">Válvulas de reposición</a></li>
+              <li class="category-card__product"><a href="/conexiones-herrajes-contra-incendios">Conexiones y herrajes</a></li>
+              <li class="category-card__product"><a href="/mangueras-contra-incendios">Mangueras certificadas</a></li>
+              <li class="category-card__product">Componentes para pruebas</li>
+            </ul>
+            <div class="category-card__ctas">
+              <a href="/servicios/mantenimiento" class="btn btn--primary btn--sm">Ver detalles</a>
+              <a href="#cotizar" class="btn btn--outline btn--sm">Cotizar refacciones</a>
+            </div>
+          </div>
+        </article>
+        <article class="category-card">
+          <div class="category-card__image category-card__image--logistica" role="img" aria-label="Logística y envíos nacionales"></div>
+          <div class="category-card__body">
+            <h3 class="category-card__title">Logística y Envíos Nacionales</h3>
+            <p class="category-card__sub">Envíos de equipos contra incendios a toda la República Mexicana. Coordinamos entregas directas a obra, planta industrial o almacén. Embalaje especializado para monitores, válvulas y equipos de alto valor.</p>
+            <ul class="category-card__products">
+              <li class="category-card__product">Entregas directas en sitio</li>
+              <li class="category-card__product">Embalaje especializado</li>
+              <li class="category-card__product">Entregas programadas</li>
+              <li class="category-card__product">Seguimiento en tiempo real</li>
+            </ul>
+            <div class="category-card__ctas">
+              <a href="/servicios/envios" class="btn btn--primary btn--sm">Ver detalles</a>
+              <a href="#cotizar" class="btn btn--outline btn--sm">Consultar envío</a>
+            </div>
+          </div>
+        </article>
+        <article class="category-card">
+          <div class="category-card__image category-card__image--corporativo" role="img" aria-label="Cotizaciones corporativas"></div>
+          <div class="category-card__body">
+            <h3 class="category-card__title">Cotizaciones Corporativas</h3>
+            <p class="category-card__sub">Procesos de cotización y facturación para compras corporativas, licitaciones públicas y proyectos gubernamentales. Precios competitivos en venta al mayoreo de equipos contra incendios con distribución directa.</p>
+            <ul class="category-card__products">
+              <li class="category-card__product">Cotizaciones formales</li>
+              <li class="category-card__product">Documentación para licitaciones</li>
+              <li class="category-card__product">Precios por volumen</li>
+              <li class="category-card__product">Facturación CFDI 4.0</li>
+            </ul>
+            <div class="category-card__ctas">
+              <a href="/servicios/cotizaciones" class="btn btn--primary btn--sm">Ver detalles</a>
+              <a href="#cotizar" class="btn btn--outline btn--sm">Solicitar cotización</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE DETAILS -->
+  <section class="service-details" aria-labelledby="service-details-title">
+    <div class="container">
+      <div class="section-header">
+        <h2 id="service-details-title" class="section-title">Detalle de Cada Servicio</h2>
+      </div>
+
+      <div class="service-detail" id="detalle-garantia">
+        <div class="service-detail__content">
+          <h3 class="service-detail__title">Garantía y Respaldo Técnico del Fabricante</h3>
+          <p class="service-detail__text">Como <strong>distribuidores autorizados de Elkhart Brass</strong>, todos nuestros equipos incluyen garantía del fabricante y respaldo técnico real. Proporcionamos la documentación completa que necesitas para verificaciones de Protección Civil, auditorías de seguridad y procesos de certificación de instalaciones.</p>
+          <ul class="service-detail__list">
+            <li class="service-detail__list-item">Garantía oficial del fabricante con cobertura por defectos de manufactura</li>
+            <li class="service-detail__list-item">Certificados UL y FM originales para cada equipo que lo requiera</li>
+            <li class="service-detail__list-item">Fichas técnicas oficiales con especificaciones del fabricante</li>
+            <li class="service-detail__list-item">Manuales de instalación y operación en español</li>
+            <li class="service-detail__list-item">Soporte postventa para consultas técnicas y resolución de dudas</li>
+            <li class="service-detail__list-item">Cartas técnicas y declaratorias para verificaciones oficiales</li>
+          </ul>
+          <div class="service-detail__ctas">
+            <a href="/servicios/garantia" class="btn btn--primary">Ver detalles completos</a>
+            <a href="#cotizar" class="btn btn--outline">Consultar garantías</a>
+          </div>
+        </div>
+        <div class="service-detail__image" role="img" aria-label="Garantía y certificaciones de equipos"></div>
+      </div>
+
+      <div class="service-detail" id="detalle-asesoria">
+        <div class="service-detail__content">
+          <h3 class="service-detail__title">Asesoría Técnica Especializada</h3>
+          <p class="service-detail__text">Nuestro servicio de <strong>asesoría técnica es gratuito, sin compromiso y completamente personalizado</strong>. Analizamos las características específicas de tu proyecto para recomendarte los equipos exactos que necesitas según el tipo de riesgo, normativa aplicable y especificaciones hidráulicas del sistema contra incendios.</p>
+          <ul class="service-detail__list">
+            <li class="service-detail__list-item">Evaluación del tipo de riesgo (ordinario, extraordinario, clase A/B/C/D)</li>
+            <li class="service-detail__list-item">Orientación sobre normativa mexicana (NOM-002-STPS-2010, NFPA)</li>
+            <li class="service-detail__list-item">Selección de diámetros, materiales y certificaciones según aplicación</li>
+            <li class="service-detail__list-item">Especificaciones hidráulicas (presión, caudal, pérdidas por fricción)</li>
+            <li class="service-detail__list-item">Documentación técnica completa (fichas, certificados, planos)</li>
+          </ul>
+          <div class="service-detail__ctas">
+            <a href="/servicios/asesoria" class="btn btn--primary">Ver detalles completos</a>
+            <a href="#cotizar" class="btn btn--outline">Solicitar asesoría</a>
+          </div>
+        </div>
+        <div class="service-detail__image" role="img" aria-label="Asesoría técnica personalizada"></div>
+      </div>
+
+      <div class="service-detail" id="detalle-empresas">
+        <div class="service-detail__content">
+          <h3 class="service-detail__title">Atención a Empresas y Proyectos de Gran Escala</h3>
+          <p class="service-detail__text">Hemos desarrollado un <strong>canal dedicado para constructoras, firmas de ingeniería, instaladores certificados y proyectos gubernamentales</strong>. Asignamos un asesor técnico exclusivo que coordina todo el proceso: desde la revisión de planos y especificaciones hasta la entrega programada en sitio.</p>
+          <ul class="service-detail__list">
+            <li class="service-detail__list-item">Constructoras e instaladores certificados con cronogramas ajustados</li>
+            <li class="service-detail__list-item">Licitaciones públicas con documentación técnica y fiscal completa</li>
+            <li class="service-detail__list-item">Desarrollos inmobiliarios con suministro coordinado por etapas</li>
+            <li class="service-detail__list-item">Precios por volumen para pedidos corporativos recurrentes</li>
+            <li class="service-detail__list-item">Facturación empresarial (CFDI 4.0) con complementos fiscales</li>
+          </ul>
+          <div class="service-detail__ctas">
+            <a href="/servicios/empresas" class="btn btn--primary">Ver detalles completos</a>
+            <a href="#cotizar" class="btn btn--outline">Contactar ventas</a>
+          </div>
+        </div>
+        <div class="service-detail__image" role="img" aria-label="Atención a proyectos empresariales"></div>
+      </div>
+
+      <div class="service-detail" id="detalle-mantenimiento">
+        <div class="service-detail__content">
+          <h3 class="service-detail__title">Suministro para Mantenimiento Preventivo y Correctivo</h3>
+          <p class="service-detail__text">Proveemos <strong>refacciones y accesorios de calidad certificada</strong> para el mantenimiento de sistemas contra incendios en operación. Atendemos a responsables de seguridad, jefes de mantenimiento y brigadas industriales que necesitan reponer componentes para cumplir con verificaciones de Protección Civil.</p>
+          <ul class="service-detail__list">
+            <li class="service-detail__list-item">Válvulas, conexiones y mangueras de reposición con certificación UL</li>
+            <li class="service-detail__list-item">Herrajes de bronce (niples, coples, reducciones, adaptadores)</li>
+            <li class="service-detail__list-item">Componentes para pruebas hidrostáticas (manómetros, válvulas)</li>
+            <li class="service-detail__list-item">Disponibilidad inmediata desde inventario en CDMX y Querétaro</li>
+            <li class="service-detail__list-item">Asesoría para identificar el componente correcto según tu sistema</li>
+          </ul>
+          <div class="service-detail__ctas">
+            <a href="/servicios/mantenimiento" class="btn btn--primary">Ver detalles completos</a>
+            <a href="/equipos" class="btn btn--outline">Ver refacciones</a>
+          </div>
+        </div>
+        <div class="service-detail__image" role="img" aria-label="Refacciones para mantenimiento"></div>
+      </div>
+
+      <div class="service-detail" id="detalle-logistica">
+        <div class="service-detail__content">
+          <h3 class="service-detail__title">Logística y Envíos a Toda la República Mexicana</h3>
+          <p class="service-detail__text">Operamos desde <strong>Ciudad de México y Querétaro</strong> con cobertura en toda la República Mexicana. Coordinamos entregas directas en sitio, utilizamos embalaje especializado para equipos de gran formato y nos adaptamos a los calendarios de obra más exigentes.</p>
+          <ul class="service-detail__list">
+            <li class="service-detail__list-item">Entregas directas en sitio coordinadas con tu equipo de obra</li>
+            <li class="service-detail__list-item">Embalaje especializado para monitores, válvulas y equipos grandes</li>
+            <li class="service-detail__list-item">Coordinación con calendarios de proyecto (entregas por etapas)</li>
+            <li class="service-detail__list-item">Líneas de transporte especializadas en carga industrial</li>
+            <li class="service-detail__list-item">Seguimiento de envío con actualizaciones en tiempo real</li>
+          </ul>
+          <div class="service-detail__ctas">
+            <a href="/servicios/envios" class="btn btn--primary">Ver detalles completos</a>
+            <a href="#cotizar" class="btn btn--outline">Consultar envío</a>
+          </div>
+        </div>
+        <div class="service-detail__image" role="img" aria-label="Logística y envíos nacionales"></div>
+      </div>
+
+      <div class="service-detail" id="detalle-corporativas">
+        <div class="service-detail__content">
+          <h3 class="service-detail__title">Cotizaciones Corporativas y Licitaciones</h3>
+          <p class="service-detail__text">Hemos preparado nuestro proceso de cotización para el <strong>sector corporativo y gubernamental</strong>. Entregamos cotizaciones formales con especificaciones técnicas completas, documentación para licitaciones públicas, precios por volumen y facturación fiscal con todos los complementos CFDI 4.0.</p>
+          <ul class="service-detail__list">
+            <li class="service-detail__list-item">Cotizaciones formales con especificaciones técnicas (fichas, certificados)</li>
+            <li class="service-detail__list-item">Documentación completa para licitaciones (técnica, fiscal, experiencia)</li>
+            <li class="service-detail__list-item">Precios por volumen para pedidos corporativos recurrentes</li>
+            <li class="service-detail__list-item">Facturación fiscal (CFDI 4.0) con complementos para obra pública</li>
+            <li class="service-detail__list-item">Respuesta en menos de 24 horas hábiles con asesor asignado</li>
+          </ul>
+          <div class="service-detail__ctas">
+            <a href="/servicios/cotizaciones" class="btn btn--primary">Ver detalles completos</a>
+            <a href="#cotizar" class="btn btn--outline">Solicitar cotización</a>
+          </div>
+        </div>
+        <div class="service-detail__image" role="img" aria-label="Cotizaciones corporativas"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TRUST -->
+  <section class="trust" aria-labelledby="trust-title">
+    <div class="container">
+      <div class="section-header">
+        <h2 id="trust-title" class="section-title">Por Qué Confiar en Nuestros Servicios</h2>
+        <p class="section-subtitle">Respaldo técnico, disponibilidad y atención que marca la diferencia</p>
+      </div>
+      <div class="trust__grid">
+        <div class="trust__item">
+          <h3 class="trust__item-title">Distribuidor autorizado Elkhart Brass</h3>
+          <p class="trust__item-desc">Vendemos equipos originales con certificaciones UL y FM reconocidas internacionalmente.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Asesoría técnica sin costo</h3>
+          <p class="trust__item-desc">Evaluamos tu proyecto y te recomendamos los equipos exactos que necesitas, sin compromiso.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Inventario con disponibilidad inmediata</h3>
+          <p class="trust__item-desc">Operamos desde CDMX y Querétaro con stock disponible para entrega rápida.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Cobertura en toda la República</h3>
+          <p class="trust__item-desc">Coordinamos entregas directas en sitio en cualquier estado de México.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Respuesta en menos de 24 horas</h3>
+          <p class="trust__item-desc">Atendemos cotizaciones, consultas técnicas y solicitudes corporativas con agilidad.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Documentación completa</h3>
+          <p class="trust__item-desc">Proporcionamos fichas técnicas, certificados, planos y documentación para licitaciones.</p>
+        </div>
+      </div>
+
+      <div class="trust__testimonials-header">
+        <h3 class="trust__testimonials-title">Lo que dicen nuestros clientes</h3>
+        <p class="trust__testimonials-subtitle">Empresas de todo México confían en Gama de México para sus equipos contra incendios</p>
+      </div>
+      <div class="trust__testimonials">
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"La asesoría técnica de Gama de México fue determinante para seleccionar el equipo correcto según el nivel de riesgo de nuestra planta. Nos explicaron cada especificación y certificación antes de cotizar."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Ricardo Mendoza L.</span>
+              <span class="testimonial__role">Gerente de Seguridad Industrial</span>
+              <span class="testimonial__company">Planta Manufacturera, Edo. Méx.</span>
+            </div>
+          </div>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"Gestionamos la compra de equipos para cinco naves industriales. Gama de México nos preparó una cotización corporativa detallada con precios por volumen. El proceso de facturación fue impecable."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Lic. Andrea Torres G.</span>
+              <span class="testimonial__role">Gerente de Compras</span>
+              <span class="testimonial__company">Grupo Industrial, Monterrey</span>
+            </div>
+          </div>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"Necesitábamos consolidar chiflones, adaptadores y tomas siamesas con un solo proveedor. Gama de México tenía todo en inventario. La cotización llegó el mismo día y el envío se coordinó sin contratiempos."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Jorge Hernández M.</span>
+              <span class="testimonial__role">Jefe de Mantenimiento</span>
+              <span class="testimonial__company">Industria Química, Veracruz</span>
+            </div>
+          </div>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"Solicitamos asesoría para equipar el sistema contra incendios de un centro comercial. El ingeniero asignado revisó los planos, identificó los componentes necesarios y nos entregó una cotización en menos de 24 horas."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Ing. Carlos Vega R.</span>
+              <span class="testimonial__role">Director de Obra</span>
+              <span class="testimonial__company">Constructora Nacional, CDMX</span>
+            </div>
+          </div>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"El servicio de envío fue excelente. Coordinaron la entrega de monitores y válvulas directamente en nuestra planta en Tabasco con embalaje especializado. Todo llegó en perfecto estado."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Ing. Roberto Salinas D.</span>
+              <span class="testimonial__role">Superintendente de Seguridad</span>
+              <span class="testimonial__company">Terminal de Almacenamiento, Tabasco</span>
+            </div>
+          </div>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"Presentamos una licitación pública y requeríamos documentación técnica completa: fichas de producto, certificaciones UL y FM, y cotización formal. Gama de México nos preparó todo en un día. Ganamos la licitación."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Arq. Daniel Fuentes P.</span>
+              <span class="testimonial__role">Responsable de Proyecto</span>
+              <span class="testimonial__company">Desarrolladora Inmobiliaria, Puebla</span>
+            </div>
+          </div>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEAD CAPTURE -->
+  <section class="lead-capture" id="cotizar" aria-labelledby="lead-title">
+    <div class="container">
+      <h2 id="lead-title" class="lead-capture__title">Solicita tu cotización de servicios</h2>
+      <div class="lead-capture__bullets">
+        <span class="lead-capture__bullet">Asesoría técnica gratuita y sin compromiso</span>
+        <span class="lead-capture__bullet">Respuesta en menos de 24 horas</span>
+        <span class="lead-capture__bullet">Atención en toda la República Mexicana</span>
+      </div>
+      <form class="lead-capture__form" id="cotizar-form" aria-label="Formulario de cotización por WhatsApp">
+        <input type="text" class="lead-capture__input" id="lead-nombre" name="nombre" placeholder="Nombre completo" required aria-label="Nombre completo" autocomplete="name">
+        <input type="text" class="lead-capture__input" id="lead-contacto" name="contacto" placeholder="Teléfono o Email" required aria-label="Teléfono o correo electrónico" autocomplete="tel">
+        <select class="lead-capture__select" id="lead-servicio" name="tipo_servicio" required aria-label="Tipo de servicio que necesitas">
+          <option value="" disabled selected>Tipo de servicio</option>
+          <option value="Venta de equipos">Venta de equipos y accesorios</option>
+          <option value="Asesoría técnica">Asesoría técnica especializada</option>
+          <option value="Proyecto corporativo">Atención a empresas / proyectos</option>
+          <option value="Refacciones / mantenimiento">Suministro para mantenimiento</option>
+          <option value="Consulta de envío">Logística y envíos</option>
+          <option value="Cotización corporativa">Cotización corporativa / licitación</option>
+          <option value="Otro">Otro (especificar)</option>
+        </select>
+        <button type="submit" class="btn btn--primary lead-capture__submit">Enviar por WhatsApp</button>
+      </form>
+      <p class="lead-capture__trust">Sin compromiso · Atención personalizada · Te respondemos al instante</p>
+      <p class="lead-capture__alt">También puedes escribirnos directo: <a href="https://wa.me/5215565298240" target="_blank" rel="noopener">WhatsApp: 55 6529 8240</a> | Email: <a href="mailto:ventas@gamademexico.com">ventas@gamademexico.com</a></p>
+    </div>
+  </section>
+
+  <!-- SEO CONTENT -->
+  <section class="seo-content" aria-labelledby="seo-title">
+    <div class="container">
+      <div class="seo-content__body">
+        <h2 id="seo-title" class="seo-content__title">Servicios Profesionales de Equipos Contra Incendios en México</h2>
+        <p class="seo-content__text">En Gama de México hemos diseñado un modelo de servicio integral que va más allá de la venta de equipos contra incendios. Nuestro objetivo es convertirnos en el <strong>aliado técnico y comercial</strong> de constructoras, firmas de ingeniería, instaladores certificados, plantas industriales y responsables de seguridad patrimonial en toda la República Mexicana. Desde la asesoría inicial hasta la entrega coordinada en sitio, acompañamos cada etapa del proyecto para garantizar que cuentes con los componentes correctos, certificados y disponibles en el momento preciso.</p>
+        <p class="seo-content__text">Como <strong>distribuidores autorizados de Elkhart Brass</strong>, garantizamos equipos originales con certificaciones UL y FM reconocidas internacionalmente. Operamos desde Ciudad de México y Querétaro con inventario disponible para entregas rápidas y logística nacional. Nuestro equipo técnico evalúa cada proyecto considerando el tipo de riesgo, la normativa aplicable (NOM-002-STPS-2010, NFPA) y las especificaciones hidráulicas del sistema. Esta metodología nos permite ofrecer soluciones precisas, documentadas y respaldadas por fabricantes de clase mundial.</p>
+        <p class="seo-content__text">El modelo de atención que hemos desarrollado para el <strong>sector corporativo y gubernamental</strong> incluye cotizaciones formales con especificaciones completas, documentación técnica para licitaciones públicas, precios por volumen, facturación fiscal (CFDI 4.0) con todos los complementos necesarios y tiempos de respuesta garantizados en menos de 24 horas hábiles. Asignamos un asesor técnico exclusivo para proyectos de gran escala, coordinamos entregas por etapas según los calendarios de obra y proporcionamos seguimiento completo desde la cotización hasta la recepción en sitio.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq" aria-labelledby="faq-title">
+    <div class="container">
+      <div class="section-header">
+        <h2 id="faq-title" class="section-title">Preguntas Frecuentes sobre Nuestros Servicios</h2>
+        <p class="section-subtitle">Resolvemos las dudas más comunes sobre asesoría, cotizaciones, envíos y atención corporativa</p>
+      </div>
+      <div class="faq__list">
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false" aria-controls="faq-s-1" id="faq-q-1">¿Qué servicios ofrece Gama de México en equipos contra incendios?<span class="faq__icon" aria-hidden="true">+</span></button>
+          <div class="faq__answer" id="faq-s-1" role="region" aria-labelledby="faq-q-1">
+            <p>Ofrecemos seis servicios principales: (1) <strong>Venta de equipos y accesorios</strong> certificados (monitores, boquillas, mangueras, válvulas, conexiones, gabinetes, hidrantes); (2) <strong>Asesoría técnica especializada</strong> gratuita para selección de equipos según tipo de riesgo y normativa; (3) <strong>Atención a empresas y proyectos de gran escala</strong> con asesor exclusivo y precios por volumen; (4) <strong>Suministro para mantenimiento</strong> preventivo y correctivo con disponibilidad inmediata; (5) <strong>Logística y envíos nacionales</strong> con entregas coordinadas en toda la República; (6) <strong>Cotizaciones corporativas y para licitaciones</strong> con documentación técnica completa y respuesta en menos de 24 horas.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false" aria-controls="faq-s-2" id="faq-q-2">¿La asesoría técnica tiene algún costo?<span class="faq__icon" aria-hidden="true">+</span></button>
+          <div class="faq__answer" id="faq-s-2" role="region" aria-labelledby="faq-q-2">
+            <p>No. Nuestro servicio de <strong>asesoría técnica es completamente gratuito y sin compromiso</strong>. Analizamos las características específicas de tu proyecto (tipo de riesgo, normativa aplicable, especificaciones hidráulicas) y te recomendamos los equipos exactos que necesitas. Proporcionamos orientación sobre normativa mexicana (NOM-002-STPS-2010, NFPA), selección de diámetros y materiales, certificaciones requeridas y documentación técnica. Puedes consultarnos por teléfono, WhatsApp, correo electrónico o mediante el formulario de contacto sin ningún costo.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false" aria-controls="faq-s-3" id="faq-q-3">¿Pueden atender licitaciones públicas y proyectos gubernamentales?<span class="faq__icon" aria-hidden="true">+</span></button>
+          <div class="faq__answer" id="faq-s-3" role="region" aria-labelledby="faq-q-3">
+            <p>Sí. Hemos preparado nuestro proceso específicamente para el <strong>sector corporativo y gubernamental</strong>. Proporcionamos cotizaciones formales con especificaciones técnicas completas (fichas de producto, certificados UL y FM, planos de instalación), documentación completa para licitaciones públicas, precios por volumen para pedidos corporativos recurrentes, facturación fiscal (CFDI 4.0) con todos los complementos necesarios y respuesta garantizada en menos de 24 horas hábiles.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false" aria-controls="faq-s-4" id="faq-q-4">¿Qué tipo de refacciones manejan para mantenimiento?<span class="faq__icon" aria-hidden="true">+</span></button>
+          <div class="faq__answer" id="faq-s-4" role="region" aria-labelledby="faq-q-4">
+            <p>Proveemos <strong>refacciones y accesorios certificados</strong> para mantenimiento preventivo y correctivo de sistemas contra incendios: válvulas de reposición (compuerta, globo, check), conexiones certificadas UL (coples, niples, reducciones, adaptadores), mangueras industriales tipo Blindex de 1½" y 2½", herrajes de bronce con rosca NPT, componentes para pruebas hidrostáticas, y boquillas de reemplazo. Operamos desde Ciudad de México y Querétaro con <strong>disponibilidad inmediata en inventario</strong>.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false" aria-controls="faq-s-5" id="faq-q-5">¿Cómo funcionan los envíos de equipos contra incendios?<span class="faq__icon" aria-hidden="true">+</span></button>
+          <div class="faq__answer" id="faq-s-5" role="region" aria-labelledby="faq-q-5">
+            <p>Operamos desde <strong>Ciudad de México y Querétaro</strong> con cobertura en toda la República Mexicana. Coordinamos entregas directas en sitio utilizando líneas de transporte especializadas en carga industrial. Utilizamos <strong>embalaje especializado</strong> para proteger equipos de gran formato (monitores, válvulas, gabinetes) durante el traslado. Nos adaptamos a los calendarios de obra, programando entregas por etapas según el avance del proyecto. Los costos de envío se informan claramente en la cotización.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false" aria-controls="faq-s-6" id="faq-q-6">¿Cuánto tardan en responder una cotización?<span class="faq__icon" aria-hidden="true">+</span></button>
+          <div class="faq__answer" id="faq-s-6" role="region" aria-labelledby="faq-q-6">
+            <p>Nuestro compromiso es responder <strong>en menos de 24 horas hábiles</strong>. Para solicitudes urgentes o equipos en inventario, frecuentemente respondemos el mismo día. Las cotizaciones incluyen precios, disponibilidad, tiempos de entrega estimados y especificaciones técnicas del producto. Para proyectos de gran escala o licitaciones, asignamos un asesor técnico exclusivo que coordina todo el proceso.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // Formulario de cotización
+    const cotizarForm = document.getElementById('cotizar-form');
+    if (cotizarForm) {
+      cotizarForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const nombre = (document.getElementById('lead-nombre') as HTMLInputElement)?.value || '';
+        const contacto = (document.getElementById('lead-contacto') as HTMLInputElement)?.value || '';
+        const servicio = (document.getElementById('lead-servicio') as HTMLSelectElement)?.value || 'No especificado';
+        const mensaje = `Hola, me interesa información sobre sus servicios:%0A%0ANombre: ${encodeURIComponent(nombre)}%0AContacto: ${encodeURIComponent(contacto)}%0AServicio: ${encodeURIComponent(servicio)}`;
+        window.open(`https://wa.me/5215565298240?text=${mensaje}`, '_blank');
+      });
+    }
+
+    // FAQ accordion
+    const faqButtons = document.querySelectorAll('.faq__question');
+    faqButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const expanded = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', String(!expanded));
+        const answer = button.nextElementSibling as HTMLElement;
+        if (answer) {
+          answer.style.display = expanded ? 'none' : 'block';
+        }
+        const icon = button.querySelector('.faq__icon');
+        if (icon) {
+          icon.textContent = expanded ? '+' : '−';
+        }
+      });
+    });
+  });
+</script>

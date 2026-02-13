@@ -1,0 +1,203 @@
+---
+import Layout from '../../layouts/Base.astro';
+import '../../styles/subcategory.css';
+import { getCollection } from 'astro:content';
+import SubcategoryProductCard from '../../components/SubcategoryProductCard.astro';
+import ProductSidebar from '../../components/ProductSidebar.astro';
+import RelatedProductsGrid from '../../components/RelatedProductsGrid.astro';
+import CotizacionForm from '../../components/CotizacionForm.astro';
+
+// Obtener productos de monitores
+const todosMonitores = (await getCollection('productos', ({ data }) => data.categoria === 'monitores')).sort((a, b) => a.data.orden - b.data.orden);
+
+// Filtrar productos tipo corazón por subcategoria
+const productosCorazon = todosMonitores.filter(p => p.data.subcategoria === 'tipo-corazon');
+
+// Otros monitores para la sección de relacionados
+const otrosMonitores = todosMonitores.filter(p => !productosCorazon.includes(p));
+
+// Definir las subcategorías de monitores para el sidebar
+const subcategorias = [
+  {
+    slug: 'tipo-corazon',
+    nombre: 'Monitor Tipo Corazón',
+    descripcion: 'Protección perimetral 360°',
+    activo: true
+  },
+  {
+    slug: 'cuello-cisne',
+    nombre: 'Monitor Cuello de Cisne',
+    descripcion: 'Protección de tanques elevados',
+    activo: false
+  },
+  {
+    slug: 'certificado-fm',
+    nombre: 'Monitor Certificado FM',
+    descripcion: 'Aprobación Factory Mutual',
+    activo: false
+  },
+  {
+    slug: 'ul-listed',
+    nombre: 'Monitor UL Listed',
+    descripcion: 'Certificación Underwriters Labs',
+    activo: false
+  },
+];
+
+---
+
+<Layout
+  title="Monitor Tipo Corazón 360° | Venta México"
+  description="Monitor tipo corazón doble cremallera. Giro 360° horizontal, 120° vertical. Caudal 500-2000 GPM. Bronce fundido Elkhart Brass. Cotización México."
+  activePage="equipos"
+  heroTitle="Monitor Tipo Corazón"
+  heroIntro="Monitores fijos de alta capacidad con rotación horizontal de 360° y elevación vertical de hasta 150°. Diseñados para protección perimetral en refinerías, plantas petroquímicas y terminales de almacenamiento. Manejamos Elkhart Brass, ARMECO y Joperz con certificaciones FM, UL y NFPA."
+  heroBadge="Monitores Contra Incendios"
+  heroMetrics={[
+    { valor: "360°", texto: "Giro horizontal" },
+    { valor: "150°", texto: "Elevación vertical" },
+    { valor: "1,250", texto: "GPM máximo" }
+  ]}
+  heroPrimaryText="Ver Catálogo"
+  heroPrimaryLink="#catalogo"
+  heroSecondaryText="Solicitar Cotización"
+  heroSecondaryLink="#cotizar"
+  heroShowRightContent={true}
+>
+
+  <!-- HERO CONTENT -->
+  <Fragment slot="hero-content">
+    <p>El <strong>monitor tipo corazón</strong> es el estándar de la industria para protección perimetral en instalaciones de alto riesgo. Su diseño de doble cremallera permite una rotación horizontal completa de 360° y elevación vertical controlada, lo que garantiza cobertura total desde un punto fijo. Fabricados en bronce fundido o aluminio de grado marino, estos monitores operan a presiones de trabajo entre 100 y 150 PSI con caudales que van desde 250 hasta 1,250 GPM según el modelo y boquilla seleccionada.</p>
+    <p>En <strong>Gama de México</strong> distribuimos monitores tipo corazón de Elkhart Brass, ARMECO y Joperz con certificaciones FM, UL y cumplimiento NFPA 11/15. Asesoramos en la selección del modelo correcto según las características de tu proyecto: tipo de riesgo, distancia de alcance requerida, agente extintor (agua o espuma) y condiciones ambientales. Atendemos refinerías, plantas petroquímicas, terminales de almacenamiento, muelles industriales y hangares de aviación en toda la República Mexicana.</p>
+  </Fragment>
+
+  <!-- MAIN CONTENT WITH SIDEBAR -->
+  <section class="subcat-content">
+    <div class="container">
+      <div class="subcat-layout">
+
+        <!-- MAIN CONTENT (LEFT) -->
+        <main class="subcat-main">
+
+          <!-- CATALOG HEADER -->
+          <div class="catalog-header" id="catalogo">
+            <div class="catalog-header__text">
+              <h2 class="catalog-header__title">Catálogo de Monitores Tipo Corazón</h2>
+              <p class="catalog-header__desc">Selecciona el producto que mejor se adapte a tu proyecto industrial</p>
+            </div>
+            <div class="catalog-header__count">
+              <span class="catalog-header__number">{productosCorazon.length}</span>
+              <span class="catalog-header__label">producto{productosCorazon.length !== 1 ? 's' : ''}</span>
+            </div>
+          </div>
+
+          <!-- PRODUCTS GRID -->
+          <div class="categories__grid">
+            {productosCorazon.map((producto) => (
+              <SubcategoryProductCard
+                title={producto.data.title}
+                description={producto.data.description}
+                brand={producto.data.marca}
+                image={producto.data.imagen}
+                productSlug={producto.id}
+                flow={producto.data.flujo}
+                material={producto.data.material}
+                certifications={producto.data.certificaciones}
+              />
+            ))}
+          </div>
+
+          {productosCorazon.length === 0 && (
+            <div class="catalog-empty">
+              <div class="catalog-empty__icon">🔍</div>
+              <h3 class="catalog-empty__title">Próximamente más opciones</h3>
+              <p class="catalog-empty__text">Estamos agregando más productos de monitores tipo corazón de diferentes marcas. Mientras tanto, solicita una cotización personalizada.</p>
+              <a href="#cotizar" class="btn btn--primary">Solicitar Cotización</a>
+            </div>
+          )}
+
+          <!-- TECHNICAL INFO -->
+          <div class="tech-info">
+            <h3 class="tech-info__title">Especificaciones Técnicas del Monitor Tipo Corazón</h3>
+            <div class="tech-info__grid">
+              <div class="tech-info__item">
+                <span class="tech-info__label">Caudal</span>
+                <span class="tech-info__value">250 - 1000 GPM</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Giro horizontal</span>
+                <span class="tech-info__value">360° por manivela</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Giro vertical</span>
+                <span class="tech-info__value">120° accionado</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Base bridada</span>
+                <span class="tech-info__value">4" cara realzada</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Salida macho</span>
+                <span class="tech-info__value">2.5" NST/NSHT</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Material</span>
+                <span class="tech-info__value">Bronce fundido</span>
+              </div>
+            </div>
+          </div>
+
+        </main>
+
+        <!-- SIDEBAR (RIGHT) -->
+        <ProductSidebar
+          navTitulo="Tipos de Monitores"
+          subcategorias={subcategorias}
+          baseUrl="/monitores"
+          backLinkHref="/monitores-contra-incendios"
+          backLinkTexto="Ver todos los monitores"
+          certificaciones={[
+            { siglas: "FM", nombre: "Factory Mutual" },
+            { siglas: "UL", nombre: "UL Listed" },
+            { siglas: "NOM", nombre: "NOM-002-STPS" }
+          ]}
+          marcas={["Elkhart Brass", "Akron Brass", "Task Force Tips", "POK"]}
+          aplicaciones={[
+            "Refinerías",
+            "Plantas petroquímicas",
+            "Terminales de almacenamiento",
+            "Muelles y puertos",
+            "Hangares de aviación",
+            "Plantas químicas"
+          ]}
+          productosRelacionados={[
+            { href: "/boquillas-contra-incendios", nombre: "Boquillas Contra Incendios" },
+            { href: "/mangueras-contra-incendios", nombre: "Mangueras Contra Incendios" },
+            { href: "/valvulas-contra-incendios", nombre: "Válvulas Contra Incendios" },
+            { href: "/conexiones-herrajes-contra-incendios", nombre: "Conexiones y Herrajes" }
+          ]}
+        />
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RELATED MONITORS -->
+  <RelatedProductsGrid
+    titulo="Otros Tipos de Monitores"
+    subtitulo="Explora más opciones según tu aplicación específica"
+    productos={otrosMonitores}
+    maxProductos={3}
+    verTodosLink="/monitores-contra-incendios"
+    verTodosTexto="Ver todos los monitores"
+  />
+
+  <CotizacionForm
+    titulo="Cotiza Monitores Tipo Corazon"
+    tipoEquipo="Monitores"
+    pagina="Monitores Tipo Corazon"
+  />
+
+</Layout>
+
+<!-- Los estilos de subcategoría están en /src/styles/subcategory.css -->

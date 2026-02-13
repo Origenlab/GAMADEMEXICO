@@ -1,0 +1,207 @@
+---
+import Layout from '../../layouts/Base.astro';
+import '../../styles/subcategory.css';
+import { getCollection } from 'astro:content';
+import SubcategoryProductCard from '../../components/SubcategoryProductCard.astro';
+import ProductSidebar from '../../components/ProductSidebar.astro';
+import RelatedProductsGrid from '../../components/RelatedProductsGrid.astro';
+import CotizacionForm from '../../components/CotizacionForm.astro';
+
+// Obtener productos de mangueras
+const todasMangueras = (await getCollection('productos', ({ data }) => data.categoria === 'mangueras')).sort((a, b) => a.data.orden - b.data.orden);
+
+// Filtrar productos forestales por subcategoria
+const productosForestal = todasMangueras.filter(p => p.data.subcategoria === 'forestal');
+
+// Otros productos para la sección de relacionados
+const otrasMangueras = todasMangueras.filter(p => !productosForestal.includes(p));
+
+// Definir las subcategorías de mangueras para el sidebar
+const subcategorias = [
+  {
+    slug: 'millhose',
+    nombre: 'Manguera Millhose',
+    descripcion: 'Doble forro poliéster, gabinetes',
+    activo: false
+  },
+  {
+    slug: 'blindex',
+    nombre: 'Manguera Blindex',
+    descripcion: 'Resistente a llama y químicos',
+    activo: false
+  },
+  {
+    slug: 'succion',
+    nombre: 'Manguera de Succión',
+    descripcion: 'Refuerzo helicoidal, vacío',
+    activo: false
+  },
+  {
+    slug: 'forestal',
+    nombre: 'Manguera Forestal',
+    descripcion: 'Ultraligera, terreno difícil',
+    activo: true
+  },
+];
+---
+
+<Layout
+  title="Manguera Forestal Incendios | Venta México"
+  description="Manguera forestal para incendios forestales. Sintético poliéster alta presión, longitud 30m. Para bomberos y brigadas CONAFOR. México."
+  activePage="equipos"
+  heroTitle="Manguera Forestal"
+  heroIntro="Mangueras ultraligeras diseñadas específicamente para combate de incendios forestales y operaciones en terreno difícil. Su construcción de poliéster sintético permite transportar grandes longitudes con mínimo peso, facilitando el despliegue rápido en zonas remotas sin acceso vehicular."
+  heroBadge="Mangueras Contra Incendios"
+  heroMetrics={[
+    { valor: "30m", texto: "Longitud estándar" },
+    { valor: "1\"", texto: "Diámetro ligero" },
+    { valor: "300", texto: "PSI presión" }
+  ]}
+  heroPrimaryText="Ver Catálogo"
+  heroPrimaryLink="#catalogo"
+  heroSecondaryText="Solicitar Cotización"
+  heroSecondaryLink="#cotizar"
+  heroShowRightContent={true}
+>
+
+  <!-- HERO CONTENT -->
+  <Fragment slot="hero-content">
+    <p>La <strong>manguera forestal</strong> está optimizada para el combate de incendios en áreas naturales protegidas, bosques y zonas de difícil acceso. Su construcción 100% sintética en poliéster de alta tenacidad reduce el peso hasta un 40% comparado con mangueras convencionales, permitiendo que brigadistas transporten múltiples tramos en terreno escarpado. El forro interno de poliuretano garantiza flujo sin turbulencias y resistencia a la abrasión por arrastre en superficies rocosas.</p>
+    <p><strong>Gama de México</strong> suministra mangueras forestales en diámetros de 1" y 1.5" con longitudes de 30 metros, el estándar para brigadas de CONAFOR, Protección Civil estatal y cuerpos de bomberos con responsabilidad en zonas rurales. Disponibles con coples de aluminio tipo forestal o Storz según especificación. Cumplimiento NFPA 1961 para mangueras de ataque ligero.</p>
+  </Fragment>
+
+  <!-- MAIN CONTENT WITH SIDEBAR -->
+  <section class="subcat-content">
+    <div class="container">
+      <div class="subcat-layout">
+
+        <!-- MAIN CONTENT (LEFT) -->
+        <main class="subcat-main">
+
+          <!-- CATALOG HEADER -->
+          <div class="catalog-header">
+            <div class="catalog-header__text">
+              <h2 class="catalog-header__title">Catálogo de Mangueras Forestales</h2>
+              <p class="catalog-header__desc">Selecciona el producto que mejor se adapte a tu operación</p>
+            </div>
+            <div class="catalog-header__count">
+              <span class="catalog-header__number">{productosForestal.length}</span>
+              <span class="catalog-header__label">producto{productosForestal.length !== 1 ? 's' : ''}</span>
+            </div>
+          </div>
+
+          <!-- PRODUCTS GRID -->
+          <div class="categories__grid">
+            {productosForestal.map((producto) => (
+              <SubcategoryProductCard
+                title={producto.data.title}
+                description={producto.data.description}
+                brand={producto.data.marca}
+                image={producto.data.imagen}
+                productSlug={producto.id}
+                flow={producto.data.flujo}
+                material={producto.data.material}
+                certifications={producto.data.certificaciones}
+              />
+            ))}
+          </div>
+
+          {productosForestal.length === 0 && (
+            <div class="catalog-empty">
+              <div class="catalog-empty__icon">🔍</div>
+              <h3 class="catalog-empty__title">Próximamente más opciones</h3>
+              <p class="catalog-empty__text">Estamos agregando más productos de mangueras forestales. Mientras tanto, solicita una cotización personalizada.</p>
+              <a href="#cotizar" class="btn btn--primary">Solicitar Cotización</a>
+            </div>
+          )}
+
+          <!-- TECHNICAL INFO -->
+          <div class="tech-info">
+            <h3 class="tech-info__title">Especificaciones Técnicas Generales</h3>
+            <div class="tech-info__grid">
+              <div class="tech-info__item">
+                <span class="tech-info__label">Peso</span>
+                <span class="tech-info__value">40% más ligera</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Presión trabajo</span>
+                <span class="tech-info__value">200-250 PSI</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Diámetros</span>
+                <span class="tech-info__value">1" y 1.5"</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Forro</span>
+                <span class="tech-info__value">Simple alta densidad</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Acoples</span>
+                <span class="tech-info__value">Aluminio ligero</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Almacenamiento</span>
+                <span class="tech-info__value">Enrollado compacto</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA FINAL -->
+          <div class="subcat-cta-final">
+            <div class="subcat-cta-final__content">
+              <h3 class="subcat-cta-final__title">¿Equipamiento para brigadas forestales?</h3>
+              <p class="subcat-cta-final__desc">Asesoría especializada para selección de mangueras y accesorios para operaciones en terreno difícil.</p>
+            </div>
+            <a href="#cotizar" class="btn btn--primary">Solicitar Cotización</a>
+          </div>
+
+        </main>
+
+        <!-- SIDEBAR (RIGHT) -->
+        <ProductSidebar
+          navTitulo="Tipos de Mangueras"
+          subcategorias={subcategorias}
+          baseUrl="/mangueras"
+          backLinkHref="/mangueras-contra-incendios"
+          backLinkTexto="Ver todas las mangueras"
+          certificaciones={[
+            { siglas: "FM", nombre: "Factory Mutual" },
+            { siglas: "UL", nombre: "UL Listed" },
+            { siglas: "NFPA", nombre: "NFPA 1961" }
+          ]}
+          marcas={["Key Fire Hose", "Snap-Tite", "All American Hose", "Niedner"]}
+          aplicaciones={[
+            "Combate de incendios forestales",
+            "Brigadas forestales",
+            "Protección civil",
+            "Áreas de difícil acceso"
+          ]}
+          productosRelacionados={[
+            { href: "/boquillas-contra-incendios", nombre: "Boquillas Contra Incendios" },
+            { href: "/monitores-contra-incendios", nombre: "Monitores Contra Incendios" },
+            { href: "/valvulas-contra-incendios", nombre: "Válvulas Contra Incendios" },
+            { href: "/conexiones-herrajes-contra-incendios", nombre: "Conexiones y Herrajes" }
+          ]}
+        />
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RELATED PRODUCTS -->
+  <RelatedProductsGrid
+    titulo="Otras Mangueras Contra Incendios"
+    subtitulo="Explora más opciones para tu sistema de protección"
+    productos={otrasMangueras}
+    maxProductos={3}
+    verTodosLink="/mangueras-contra-incendios"
+    verTodosTexto="Ver todas las mangueras"
+  />
+
+  <CotizacionForm
+    titulo="Cotiza Mangueras Forestales"
+    tipoEquipo="Mangueras"
+    pagina="Mangueras Forestales"
+  />
+
+</Layout>

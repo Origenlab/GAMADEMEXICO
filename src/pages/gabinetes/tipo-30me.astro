@@ -1,0 +1,194 @@
+---
+import Layout from '../../layouts/Base.astro';
+import '../../styles/subcategory.css';
+import { getCollection } from 'astro:content';
+import SubcategoryProductCard from '../../components/SubcategoryProductCard.astro';
+import ProductSidebar from '../../components/ProductSidebar.astro';
+import RelatedProductsGrid from '../../components/RelatedProductsGrid.astro';
+import CotizacionForm from '../../components/CotizacionForm.astro';
+
+// 1. Obtener todos los productos de la categoria gabinetes-hidrantes
+const todosProductos = (await getCollection('productos', ({ data }) =>
+  data.categoria === 'gabinetes-hidrantes'
+)).sort((a, b) => a.data.orden - b.data.orden);
+
+// 2. Filtrar gabinetes tipo 30ME y 30M (gabinetes completos con manguera)
+const productosTipo30ME = todosProductos.filter(p =>
+  p.data.subcategoria === 'gabinetes' &&
+  (p.id.includes('30me') || p.id.includes('30m-') || p.id.includes('sobrepuesto'))
+);
+
+// 3. Obtener otros productos para seccion de relacionados
+const otrosProductos = todosProductos.filter(p => !productosTipo30ME.includes(p));
+
+// 4. Definir subcategorias para navegacion del sidebar
+const subcategorias = [
+  { slug: 'tipo-30me', nombre: 'Gabinete Tipo 30ME', descripcion: 'Gabinete completo con manguera 30m', activo: true },
+  { slug: 'gabinete-empotrado', nombre: 'Gabinete Empotrado', descripcion: 'Instalacion al ras del muro', activo: false },
+  { slug: 'hidrante-banqueta', nombre: 'Hidrante de Banqueta', descripcion: 'Toma exterior hierro ductil', activo: false },
+  { slug: 'estacion-manguera', nombre: 'Estacion de Manguera', descripcion: 'Carrete oscilante 180 grados', activo: false },
+];
+---
+
+<Layout
+  title="Gabinete Tipo 30ME con Manguera | Venta Mexico"
+  description="Gabinete contra incendios tipo 30ME completo: manguera 30m, valvula angular bronce, boquilla tres pasos y espacio extintor. Acero calibre 22. NOM-002-STPS. Cotizacion Mexico."
+  activePage="equipos"
+  heroTitle="Gabinete Tipo 30ME"
+  heroIntro="El gabinete tipo 30ME es el estandar de la industria para proteccion contra incendios en edificios comerciales e industriales. Integra manguera de 30 metros, valvula angular de bronce, boquilla de tres posiciones y espacio para extintor portatil, cumpliendo con NOM-002-STPS-2010 y NFPA 14."
+  heroBadge="Gabinetes Contra Incendios"
+  heroMetrics={[
+    { valor: "30m", texto: "Manguera incluida" },
+    { valor: "300 PSI", texto: "Presion trabajo" },
+    { valor: "NOM", texto: "Certificado" }
+  ]}
+  heroPrimaryText="Ver Catalogo"
+  heroPrimaryLink="#catalogo"
+  heroSecondaryText="Solicitar Cotizacion"
+  heroSecondaryLink="#cotizar"
+  heroShowRightContent={true}
+>
+
+  <!-- HERO CONTENT -->
+  <Fragment slot="hero-content">
+    <p>El <strong>gabinete tipo 30ME</strong> representa la solucion mas completa para primera respuesta contra incendios en edificaciones. Su denominacion "30ME" indica que incluye <strong>manguera de 30 metros</strong> y espacio para <strong>extintor portatil</strong>, proporcionando capacidad dual de combate de incendios desde un solo punto de instalacion. El diseno cumple con la normativa mexicana <strong>NOM-002-STPS-2010</strong> y los estandares internacionales <strong>NFPA 14</strong> para sistemas standpipe.</p>
+    <p>En <strong>Gama de Mexico</strong> ofrecemos gabinetes tipo 30ME fabricados en acero calibre 22 con acabado electrostatico rojo seguridad. Cada gabinete incluye manguera de doble forro con coples de bronce NST, valvula angular de bronce de 1.5", boquilla de tres posiciones (chorro solido, neblina y cerrado), rack portamanguera oscilante y espacio para extintor de 4.5 o 6 kg. Atendemos proyectos en hoteles, hospitales, oficinas, centros comerciales, bodegas e instalaciones industriales en toda la Republica Mexicana.</p>
+  </Fragment>
+
+  <!-- MAIN CONTENT WITH SIDEBAR -->
+  <section class="subcat-content">
+    <div class="container">
+      <div class="subcat-layout">
+
+        <!-- MAIN CONTENT (LEFT) -->
+        <main class="subcat-main">
+
+          <!-- CATALOG HEADER -->
+          <div class="catalog-header" id="catalogo">
+            <div class="catalog-header__text">
+              <h2 class="catalog-header__title">Catalogo de Gabinetes Tipo 30ME</h2>
+              <p class="catalog-header__desc">Gabinetes completos con manguera, valvula, boquilla y espacio para extintor</p>
+            </div>
+            <div class="catalog-header__count">
+              <span class="catalog-header__number">{productosTipo30ME.length}</span>
+              <span class="catalog-header__label">producto{productosTipo30ME.length !== 1 ? 's' : ''}</span>
+            </div>
+          </div>
+
+          <!-- PRODUCTS GRID -->
+          <div class="categories__grid">
+            {productosTipo30ME.map((producto) => (
+              <SubcategoryProductCard
+                title={producto.data.title}
+                description={producto.data.description}
+                brand={producto.data.marca}
+                image={producto.data.imagen}
+                productSlug={producto.id}
+                flow={producto.data.flujo}
+                material={producto.data.material}
+                certifications={producto.data.certificaciones}
+              />
+            ))}
+          </div>
+
+          {productosTipo30ME.length === 0 && (
+            <div class="catalog-empty">
+              <div class="catalog-empty__icon">🔍</div>
+              <h3 class="catalog-empty__title">Proximamente mas opciones</h3>
+              <p class="catalog-empty__text">Estamos agregando mas gabinetes tipo 30ME de diferentes configuraciones. Mientras tanto, solicita una cotizacion personalizada.</p>
+              <a href="#cotizar" class="btn btn--primary">Solicitar Cotizacion</a>
+            </div>
+          )}
+
+          <!-- TECHNICAL INFO -->
+          <div class="tech-info">
+            <h3 class="tech-info__title">Especificaciones Tecnicas del Gabinete Tipo 30ME</h3>
+            <div class="tech-info__grid">
+              <div class="tech-info__item">
+                <span class="tech-info__label">Dimensiones</span>
+                <span class="tech-info__value">88 x 85 x 21 cm</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Manguera</span>
+                <span class="tech-info__value">1.5" x 30m, 300 PSI</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Valvula angular</span>
+                <span class="tech-info__value">Bronce 1.5" NPT/NST</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Boquilla</span>
+                <span class="tech-info__value">Tres posiciones</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Calibre acero</span>
+                <span class="tech-info__value">Calibre 22</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Extintor</span>
+                <span class="tech-info__value">4.5 o 6 kg</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA FINAL -->
+          <div class="subcat-cta-final">
+            <div class="subcat-cta-final__content">
+              <h3 class="subcat-cta-final__title">Necesitas gabinetes para un proyecto de construccion?</h3>
+              <p class="subcat-cta-final__desc">Ofrecemos precios especiales por volumen para desarrolladores, constructoras y proyectos de remodelacion. Incluimos asesoria en la ubicacion segun NOM-002-STPS.</p>
+            </div>
+            <a href="#cotizar" class="btn btn--primary">Solicitar Cotizacion por Volumen</a>
+          </div>
+
+        </main>
+
+        <!-- SIDEBAR (RIGHT) -->
+        <ProductSidebar
+          navTitulo="Tipos de Gabinetes"
+          subcategorias={subcategorias}
+          baseUrl="/gabinetes"
+          backLinkHref="/gabinetes-contra-incendios"
+          backLinkTexto="Ver todos los gabinetes"
+          certificaciones={[
+            { siglas: "NOM", nombre: "NOM-002-STPS-2010" },
+            { siglas: "NFPA", nombre: "NFPA 14 Standpipe" },
+            { siglas: "UL", nombre: "UL Listed" }
+          ]}
+          marcas={["Potter Roemer", "JL Industries", "Larsen's", "Guardian", "Nacional"]}
+          aplicaciones={[
+            "Edificios de oficinas",
+            "Hoteles y hospitales",
+            "Centros comerciales",
+            "Plantas industriales",
+            "Escuelas y universidades",
+            "Bodegas y almacenes"
+          ]}
+          productosRelacionados={[
+            { href: "/mangueras-contra-incendios", nombre: "Mangueras Contra Incendios" },
+            { href: "/boquillas-contra-incendios", nombre: "Boquillas Contra Incendios" },
+            { href: "/valvulas-contra-incendios", nombre: "Valvulas Contra Incendios" },
+            { href: "/extintores", nombre: "Extintores" }
+          ]}
+        />
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RELATED PRODUCTS -->
+  <RelatedProductsGrid
+    titulo="Otros Gabinetes e Hidrantes"
+    subtitulo="Explora mas opciones para tu sistema de proteccion contra incendios"
+    productos={otrosProductos}
+    maxProductos={3}
+    verTodosLink="/gabinetes-contra-incendios"
+    verTodosTexto="Ver todos los gabinetes"
+  />
+
+  <CotizacionForm
+    titulo="Cotiza Gabinetes Tipo 30ME"
+    tipoEquipo="Gabinetes"
+    pagina="Gabinetes Tipo 30ME"
+  />
+
+</Layout>

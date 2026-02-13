@@ -1,0 +1,136 @@
+---
+// FAQ component - Preguntas frecuentes con acordeón
+interface FaqItem {
+  pregunta: string;
+  respuesta: string;
+}
+
+interface Props {
+  items: FaqItem[];
+  id?: string;
+}
+
+const { items, id = "faq" } = Astro.props;
+---
+
+<div class="faq__list">
+  {items.map((item, index) => (
+    <div class="faq__item">
+      <button
+        class="faq__question"
+        aria-expanded="false"
+        aria-controls={`${id}-answer-${index + 1}`}
+        id={`${id}-q-${index + 1}`}
+      >
+        {item.pregunta}
+        <span class="faq__icon" aria-hidden="true">+</span>
+      </button>
+      <div
+        class="faq__answer"
+        id={`${id}-answer-${index + 1}`}
+        role="region"
+        aria-labelledby={`${id}-q-${index + 1}`}
+      >
+        <p>{item.respuesta}</p>
+      </div>
+    </div>
+  ))}
+</div>
+
+<style>
+  .faq__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  .faq__item {
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .faq__item:last-child {
+    border-bottom: none;
+  }
+
+  .faq__question {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md) 0;
+    background: none;
+    border: none;
+    text-align: left;
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    color: var(--color-secondary);
+    cursor: pointer;
+    transition: color var(--transition-fast);
+  }
+
+  .faq__question:hover {
+    color: var(--color-primary);
+  }
+
+  .faq__icon {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--color-primary);
+    transition: transform var(--transition-fast);
+  }
+
+  .faq__question[aria-expanded="true"] .faq__icon {
+    transform: rotate(45deg);
+  }
+
+  .faq__answer {
+    display: none;
+    padding-bottom: var(--spacing-md);
+  }
+
+  .faq__answer[aria-hidden="false"] {
+    display: block;
+  }
+
+  .faq__answer p {
+    font-size: var(--font-size-sm);
+    color: var(--color-text);
+    line-height: var(--line-height-relaxed, 1.7);
+    margin: 0;
+  }
+</style>
+
+<script>
+  function initFaq() {
+    const faqItems = document.querySelectorAll('.faq__question');
+
+    faqItems.forEach((button) => {
+      button.addEventListener('click', () => {
+        const expanded = button.getAttribute('aria-expanded') === 'true';
+        const answerId = button.getAttribute('aria-controls');
+        const answer = document.getElementById(answerId!);
+
+        // Toggle current
+        button.setAttribute('aria-expanded', (!expanded).toString());
+        if (answer) {
+          answer.setAttribute('aria-hidden', expanded.toString());
+        }
+      });
+    });
+  }
+
+  // Initialize on load
+  initFaq();
+
+  // Re-initialize on Astro page transitions
+  document.addEventListener('astro:page-load', initFaq);
+</script>

@@ -1,0 +1,494 @@
+---
+import Layout from '../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+
+const productos = (await getCollection('productos', ({ data }) => data.categoria === 'mangueras')).sort((a, b) => a.data.orden - b.data.orden);
+---
+
+<Layout
+  title="Mangueras Contra Incendio | Venta México"
+  description="Mangueras contra incendio para gabinete, bombero e industrial. Certificadas 250-300 PSI. Millhose, Blindex, succión y forestal. México."
+  activePage="equipos"
+  heroTitle="Mangueras Contra Incendios"
+  heroBadge="Equipos Contra Incendios"
+  heroShowRightContent={true}
+>
+  <Fragment slot="hero-content">
+    <p>Ofrecemos mangueras contra incendios certificadas NFPA 1961 para aplicaciones en gabinetes, brigadas de bomberos e industria. Nuestro catalogo incluye mangueras Millhose de doble forro sintetico, Blindex multicapa resistente a altas temperaturas, mangueras de succion con refuerzo helicoidal y modelos forestales ultraligeros para zonas de dificil acceso.</p>
+    <p>Todas nuestras mangueras soportan presiones de trabajo de 250 a 300 PSI y estan disponibles en diametros de 1.5 y 2.5 pulgadas. Te apoyamos en la seleccion del tipo correcto segun condiciones ambientales, presion del sistema y normativa aplicable a tu proyecto.</p>
+  </Fragment>
+
+  <!-- BREADCRUMB -->
+  <nav class="breadcrumb" aria-label="Navegación de migas de pan">
+    <div class="container">
+      <ol class="breadcrumb__list">
+        <li class="breadcrumb__item"><a href="/" class="breadcrumb__link">Inicio</a></li>
+        <li class="breadcrumb__item"><a href="/equipos" class="breadcrumb__link">Equipos</a></li>
+        <li class="breadcrumb__item breadcrumb__item--active" aria-current="page">Mangueras Contra Incendios</li>
+      </ol>
+    </div>
+  </nav><!-- PRODUCTOS DINAMICOS -->
+  <section class="categories" id="mangueras" aria-labelledby="products-title">
+    <div class="container">
+      <div class="section-header">
+        <h2 id="products-title" class="section-title">Tipos de Mangueras Contra Incendios</h2>
+        <p class="section-subtitle">Selecciona un tipo de manguera para conocer especificaciones técnicas y cotizar precios y disponibilidad</p>
+      </div>
+      <div class="categories__grid">
+        {productos.map((producto) => (
+          <article class="category-card">
+            <div class="category-card__image" role="img" aria-label={producto.data.title}></div>
+            <div class="category-card__body">
+              <h3 class="category-card__title">{producto.data.title}</h3>
+              <p class="category-card__sub">{producto.data.description}</p>
+              <ul class="category-card__products">
+                {producto.data.material && <li>{producto.data.material}</li>}
+                {producto.data.flujo && <li>{producto.data.flujo}</li>}
+                {producto.data.certificaciones && producto.data.certificaciones.length > 0 && <li>Certificaciones: {producto.data.certificaciones.join(', ')}</li>}
+                <li>Marca: {producto.data.marca}</li>
+              </ul>
+              <div class="category-card__ctas">
+                <a href={`/productos/${producto.id}`} class="btn btn--primary btn--sm">Ver especificaciones</a>
+                <a href="#cotizar" class="btn btn--outline btn--sm">Cotizar este producto</a>
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCT DETAILS -->
+  <section class="service-details" aria-labelledby="service-details-title">
+    <div class="container">
+      <div class="section-header">
+        <h2 id="service-details-title" class="section-title">Detalle de Cada Tipo de Manguera Contra Incendios</h2>
+      </div>
+
+      <div class="service-detail" id="detalle-millhose">
+        <div class="service-detail__content">
+          <h3 class="service-detail__title">Manguera Millhose Doble Forro Sintético</h3>
+          <p class="service-detail__text">La manguera Millhose es la opción estándar para sistemas contra incendios en edificios comerciales, naves industriales y gabinetes tipo 30ME. Fabricada con <strong>doble forro de poliéster de alta tenacidad</strong> y recubierta con compuestos de EPDM o NBR, ofrece excelente resistencia a la abrasión, flexibilidad en temperaturas extremas y compatibilidad con agua y espuma.</p>
+          <ul class="service-detail__list">
+            <li class="service-detail__list-item">Doble forro sintético de poliéster de alta resistencia</li>
+            <li class="service-detail__list-item">Recubrimiento interior y exterior de EPDM o NBR</li>
+            <li class="service-detail__list-item">Presión de trabajo de 300 PSI (20.7 bar)</li>
+            <li class="service-detail__list-item">Diámetros disponibles: 1.5" (38 mm) y 2.5" (64 mm)</li>
+            <li class="service-detail__list-item">Certificación NFPA 1961 para sistemas contra incendios</li>
+            <li class="service-detail__list-item">Rollos de 15 o 30 metros según requerimiento</li>
+          </ul>
+          <div class="service-detail__ctas">
+            <a href="/mangueras/millhose" class="btn btn--outline">Ver catálogo completo</a>
+            <a href="#cotizar" class="btn btn--primary">Cotizar manguera Millhose</a>
+          </div>
+        </div>
+        <div class="service-detail__image" role="img" aria-label="Manguera Millhose doble forro sintético"></div>
+      </div>
+
+      <div class="service-detail" id="detalle-blindex">
+        <div class="service-detail__content">
+          <h3 class="service-detail__title">Manguera Blindex Multicapa 4 Capas</h3>
+          <p class="service-detail__text">La manguera Blindex representa el nivel superior de resistencia para aplicaciones industriales de alto riesgo. Construida con <strong>cuatro capas de refuerzo textil</strong> y recubrimientos de Hypalon y NBR, soporta exposición a flamas hasta 600°C, resistencia química, abrasión extrema y presiones de trabajo de 300 PSI con factores de seguridad elevados.</p>
+          <ul class="service-detail__list">
+            <li class="service-detail__list-item">Construcción multicapa con 4 capas de refuerzo textil</li>
+            <li class="service-detail__list-item">Recubrimiento exterior Hypalon resistente a flamas hasta 600°C</li>
+            <li class="service-detail__list-item">Recubrimiento interior NBR resistente a químicos y abrasión</li>
+            <li class="service-detail__list-item">Presión de trabajo de 300 PSI con alto factor de seguridad</li>
+            <li class="service-detail__list-item">Resistencia a hidrocarburos, ácidos y agentes químicos</li>
+            <li class="service-detail__list-item">Ideal para plantas petroquímicas y zonas de riesgo extremo</li>
+          </ul>
+          <div class="service-detail__ctas">
+            <a href="/mangueras/blindex" class="btn btn--outline">Ver catálogo completo</a>
+            <a href="#cotizar" class="btn btn--primary">Cotizar manguera Blindex</a>
+          </div>
+        </div>
+        <div class="service-detail__image" role="img" aria-label="Manguera Blindex multicapa resistente a altas temperaturas"></div>
+      </div>
+
+      <div class="service-detail" id="detalle-succion">
+        <div class="service-detail__content">
+          <h3 class="service-detail__title">Manguera de Succión con Refuerzo Helicoidal</h3>
+          <p class="service-detail__text">Las mangueras de succión están diseñadas específicamente para operación en vacío, permitiendo la extracción de agua desde fuentes naturales, cisternas, pozos o cuerpos de agua sin colapso por presión negativa. El <strong>refuerzo helicoidal de acero galvanizado</strong> mantiene la estructura circular bajo condiciones de succión continua.</p>
+          <ul class="service-detail__list">
+            <li class="service-detail__list-item">Refuerzo helicoidal de alambre de acero galvanizado</li>
+            <li class="service-detail__list-item">Construcción rígida que mantiene forma bajo vacío</li>
+            <li class="service-detail__list-item">Capacidad de operación en vacío hasta -0.8 bar</li>
+            <li class="service-detail__list-item">Diámetros desde 2" hasta 6" según aplicación</li>
+            <li class="service-detail__list-item">Uso en bombas portátiles, pipas y equipos de emergencia</li>
+            <li class="service-detail__list-item">Acoplamiento tipo storz o rosca NST según preferencia</li>
+          </ul>
+          <div class="service-detail__ctas">
+            <a href="/mangueras/succion" class="btn btn--outline">Ver catálogo completo</a>
+            <a href="#cotizar" class="btn btn--primary">Cotizar manguera de succión</a>
+          </div>
+        </div>
+        <div class="service-detail__image" role="img" aria-label="Manguera de succión con refuerzo helicoidal para bombas"></div>
+      </div>
+
+      <div class="service-detail" id="detalle-forestal">
+        <div class="service-detail__content">
+          <h3 class="service-detail__title">Manguera Forestal Ultraligera de Un Forro</h3>
+          <p class="service-detail__text">Las mangueras forestales están optimizadas para <strong>portabilidad extrema</strong> en operaciones de combate de incendios en zonas de difícil acceso. Con construcción de un solo forro sintético y recubrimiento ligero, pesan hasta <strong>40% menos</strong> que mangueras convencionales, facilitando el despliegue rápido en campo por brigadas forestales y unidades de respuesta rápida.</p>
+          <ul class="service-detail__list">
+            <li class="service-detail__list-item">Construcción ultraligera de un solo forro sintético</li>
+            <li class="service-detail__list-item">40% más ligera que mangueras convencionales</li>
+            <li class="service-detail__list-item">Presión de trabajo entre 200 y 250 PSI</li>
+            <li class="service-detail__list-item">Alta flexibilidad y capacidad de enrollado compacto</li>
+            <li class="service-detail__list-item">Recomendada por CONAFOR para combate de incendios forestales</li>
+            <li class="service-detail__list-item">Diámetros 1.5" para operación manual en terrenos irregulares</li>
+          </ul>
+          <div class="service-detail__ctas">
+            <a href="/mangueras/forestal" class="btn btn--outline">Ver catálogo completo</a>
+            <a href="#cotizar" class="btn btn--primary">Cotizar manguera forestal</a>
+          </div>
+        </div>
+        <div class="service-detail__image" role="img" aria-label="Manguera forestal ultraligera para brigadas de emergencia"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TRUST -->
+  <section class="trust" aria-labelledby="trust-title">
+    <div class="container">
+      <div class="section-header">
+        <h2 id="trust-title" class="section-title">Por Qué Comprar Mangueras Contra Incendios en Gama de México</h2>
+        <p class="section-subtitle">Calidad certificada, inventario disponible y asesoría técnica especializada</p>
+      </div>
+      <div class="trust__grid">
+        <div class="trust__item">
+          <h3 class="trust__item-title">Certificación NFPA 1961</h3>
+          <p class="trust__item-desc">Todas nuestras mangueras industriales cumplen con el estándar NFPA 1961 para mangueras contra incendios, garantizando rendimiento y durabilidad comprobados.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">4 tipos especializados de mangueras</h3>
+          <p class="trust__item-desc">Catálogo completo desde mangueras Millhose estándar hasta Blindex de alto riesgo, succión y forestales para cada aplicación específica.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Inventario permanente</h3>
+          <p class="trust__item-desc">Stock disponible de diámetros 1.5" y 2.5" en rollos de 15 y 30 metros para entregas inmediatas sin tiempos de espera.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Resistencia térmica y química</h3>
+          <p class="trust__item-desc">Mangueras Blindex con resistencia a flamas hasta 600°C y compatibilidad con hidrocarburos, ácidos y agentes químicos industriales.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Asesoría técnica sin costo</h3>
+          <p class="trust__item-desc">Te ayudamos a seleccionar el tipo de manguera correcto según presión de trabajo, condiciones ambientales y normativa aplicable a tu proyecto.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Precios por volumen</h3>
+          <p class="trust__item-desc">Cotizaciones corporativas con descuentos especiales para proyectos de gran escala, desarrollos inmobiliarios y compras recurrentes.</p>
+        </div>
+      </div>
+
+      <div class="trust__testimonials-header">
+        <h3 class="trust__testimonials-title">Lo que dicen nuestros clientes</h3>
+        <p class="trust__testimonials-subtitle">Empresas de todo México confían en nuestras mangueras contra incendios</p>
+      </div>
+      <div class="trust__testimonials">
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"Compramos 400 metros de manguera Millhose 2.5" para equipar los gabinetes contra incendios de un desarrollo de naves industriales. La certificación NFPA 1961 pasó sin problemas la inspección de protección civil y la calidad de manufactura es evidente. Precio competitivo y entrega coordinada a tiempo."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Ing. Roberto Salinas D.</span>
+              <span class="testimonial__role">Director de Proyecto</span>
+              <span class="testimonial__company">Constructora Industrial, Querétaro</span>
+            </div>
+          </div>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"Necesitábamos mangueras Blindex para la zona de tanques de almacenamiento de nuestra planta petroquímica. La resistencia a 600°C y la compatibilidad química son exactamente lo que requieren nuestros protocolos de seguridad. Gama de México nos entregó documentación completa del fabricante y certificados de calidad."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Ing. Patricia Rojas S.</span>
+              <span class="testimonial__role">Gerente de Seguridad Industrial</span>
+              <span class="testimonial__company">Planta Petroquímica, Veracruz</span>
+            </div>
+          </div>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"Equipamos a la brigada forestal del municipio con mangueras forestales ultraligeras. La reducción de peso es real y facilita enormemente el despliegue en terrenos irregulares. Cumplen con las especificaciones de CONAFOR y llegaron con factura y certificación. Proveedor confiable para equipo crítico."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Téc. Miguel Ángel Ortiz</span>
+              <span class="testimonial__role">Coordinador de Brigada Forestal</span>
+              <span class="testimonial__company">Gobierno Municipal, Chiapas</span>
+            </div>
+          </div>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"Compramos mangueras de succión con refuerzo helicoidal para nuestras pipas de emergencia. Operan perfectamente en vacío sin colapso y el refuerzo galvanizado garantiza durabilidad. Gama de México nos asesoró en la selección del diámetro correcto y el acoplamiento storz que necesitábamos."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Cmdte. Carlos Vega R.</span>
+              <span class="testimonial__role">Jefe de Bomberos</span>
+              <span class="testimonial__company">Cuerpo de Bomberos, Jalisco</span>
+            </div>
+          </div>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"Como instaladores certificados trabajamos exclusivamente con mangueras que cumplan normativa. Las mangueras Millhose que distribuye Gama de México tienen certificación NFPA 1961 verificable, la manufactura es de calidad y el precio permite mantener márgenes sanos en los proyectos."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Ing. Fernanda Díaz L.</span>
+              <span class="testimonial__role">Directora Técnica</span>
+              <span class="testimonial__company">Instalaciones Contra Incendios, Monterrey</span>
+            </div>
+          </div>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"Renovamos todas las mangueras de los gabinetes tipo 30ME de un corporativo de 12 pisos. Solicitamos 180 metros de manguera Millhose 1.5" y Gama de México coordinó la entrega en CDMX en menos de una semana. Precio competitivo, factura inmediata y calidad que respalda nuestra reputación."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Ricardo Mendoza L.</span>
+              <span class="testimonial__role">Gerente de Mantenimiento</span>
+              <span class="testimonial__company">Corporativo Empresarial, CDMX</span>
+            </div>
+          </div>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"Gestionamos la compra de mangueras para cinco plantas industriales simultáneamente. Gama de México nos preparó una cotización corporativa con descuento por volumen, coordinó entregas en múltiples estados y la documentación llegó completa para cada ubicación. Servicio profesional de principio a fin."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Lic. Andrea Torres G.</span>
+              <span class="testimonial__role">Gerente de Compras</span>
+              <span class="testimonial__company">Grupo Industrial, Estado de México</span>
+            </div>
+          </div>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"Necesitábamos mangueras Blindex para reemplazar equipos dañados en una zona de alto riesgo químico. La resistencia del recubrimiento Hypalon y la compatibilidad con ácidos era crítica. Gama de México tenía stock disponible y nos entregó documentación técnica del fabricante para validación del área de seguridad."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Ing. Jorge Hernández M.</span>
+              <span class="testimonial__role">Jefe de Seguridad Industrial</span>
+              <span class="testimonial__company">Industria Química, Nuevo León</span>
+            </div>
+          </div>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"Compramos mangueras forestales para la brigada de emergencia de una reserva natural. El peso reducido permite transportarlas por senderos sin vehículos y la presión de trabajo es suficiente para operaciones de combate. Gama de México nos orientó sobre el diámetro y longitud óptimos para nuestras condiciones."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Biol. Daniel Fuentes P.</span>
+              <span class="testimonial__role">Coordinador de Protección</span>
+              <span class="testimonial__company">Reserva Natural, Oaxaca</span>
+            </div>
+          </div>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEAD CAPTURE -->
+  <section class="lead-capture" id="cotizar" aria-labelledby="lead-title">
+    <div class="container">
+      <h2 id="lead-title" class="lead-capture__title">Cotiza tus mangueras contra incendios ahora</h2>
+      <div class="lead-capture__bullets">
+        <span class="lead-capture__bullet">Precios y disponibilidad en menos de 24 horas</span>
+        <span class="lead-capture__bullet">Asesoría técnica para selección de tipo y diámetro</span>
+        <span class="lead-capture__bullet">Envíos a toda la República Mexicana</span>
+      </div>
+      <form class="lead-capture__form" id="cotizar-form" aria-label="Formulario de cotización por WhatsApp">
+        <input type="text" class="lead-capture__input" id="lead-nombre" name="nombre" placeholder="Nombre completo" required aria-label="Nombre completo" autocomplete="name">
+        <input type="text" class="lead-capture__input" id="lead-contacto" name="contacto" placeholder="Teléfono o Email" required aria-label="Teléfono o correo electrónico" autocomplete="tel">
+        <select class="lead-capture__select" id="lead-equipo" name="tipo_equipo" required aria-label="Tipo de manguera que necesitas">
+          <option value="" disabled selected>Tipo de manguera</option>
+          <option value="Manguera Millhose">Manguera Millhose doble forro</option>
+          <option value="Manguera Blindex">Manguera Blindex 4 capas</option>
+          <option value="Manguera de succión">Manguera de succión helicoidal</option>
+          <option value="Manguera forestal">Manguera forestal ultraligera</option>
+          <option value="Varios tipos / proyecto completo">Varios tipos / proyecto completo</option>
+          <option value="Asesoría para selección">Necesito asesoría para seleccionar</option>
+          <option value="Otro">Otro (especificar)</option>
+        </select>
+        <button type="submit" class="btn btn--primary lead-capture__submit">Enviar por WhatsApp</button>
+      </form>
+      <p class="lead-capture__trust">Sin compromiso · Atención personalizada · Te respondemos al instante</p>
+      <p class="lead-capture__alt">También puedes escribirnos directo: <a href="https://wa.me/5215565298240" target="_blank" rel="noopener">WhatsApp: 55 6529 8240</a> | Email: <a href="mailto:ventas@gamademexico.com">ventas@gamademexico.com</a></p>
+    </div>
+  </section>
+
+  <!-- EQUIPOS COMPLEMENTARIOS - CROSS-LINKING SEO -->
+  <section class="complementary" aria-labelledby="complementary-title">
+    <div class="container">
+      <div class="section-header">
+        <h2 id="complementary-title" class="section-title">Equipos Complementarios para tus Mangueras</h2>
+        <p class="section-subtitle">Completa tu sistema con boquillas, conexiones y gabinetes certificados</p>
+      </div>
+      <div class="complementary__grid">
+        <a href="/boquillas-contra-incendios" class="complementary__card">
+          <div class="complementary__icon">💧</div>
+          <h3 class="complementary__title">Boquillas Contra Incendios</h3>
+          <p class="complementary__desc">Boquillas tipo pistola, turbo jet e industriales. El complemento esencial para tus mangueras, con control de patrón y flujo ajustable.</p>
+          <span class="complementary__link">Ver boquillas →</span>
+        </a>
+        <a href="/conexiones-herrajes-contra-incendios" class="complementary__card">
+          <div class="complementary__icon">🔧</div>
+          <h3 class="complementary__title">Conexiones y Herrajes</h3>
+          <p class="complementary__desc">Acoples NH/NST, Storz y adaptadores para conectar mangueras a hidrantes, siamesas y gabinetes. Bronce y aluminio certificado.</p>
+          <span class="complementary__link">Ver conexiones →</span>
+        </a>
+        <a href="/gabinetes-hidrantes-contra-incendios" class="complementary__card">
+          <div class="complementary__icon">🚒</div>
+          <h3 class="complementary__title">Gabinetes e Hidrantes</h3>
+          <p class="complementary__desc">Gabinetes para almacenar mangueras enrolladas. Hidrantes de banqueta y pared para conexión rápida en emergencias.</p>
+          <span class="complementary__link">Ver gabinetes →</span>
+        </a>
+        <a href="/valvulas-contra-incendios" class="complementary__card">
+          <div class="complementary__icon">🔩</div>
+          <h3 class="complementary__title">Válvulas Contra Incendios</h3>
+          <p class="complementary__desc">Válvulas de retención para proteger bombas que alimentan las mangueras. Check valves certificadas UL 312 y FM.</p>
+          <span class="complementary__link">Ver válvulas →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEO CONTENT -->
+  <section class="seo-content" aria-labelledby="seo-title">
+    <div class="container">
+      <div class="seo-content__body">
+        <h2 id="seo-title" class="seo-content__title">Manguera Contra Incendio para Gabinete, Bombero e Industrial: Guía Completa México</h2>
+
+        <h3 class="seo-content__subtitle">Cómo elegir la manguera contra incendio correcta para gabinete e hidrante</h3>
+        <p class="seo-content__text">Seleccionar la <strong>manguera contra incendio</strong> correcta para gabinete, bombero o uso industrial no es una decisión trivial. La manguera es el componente que conduce el agua desde la fuente de suministro —red hidráulica, cisterna, hidrante o bomba portátil— hasta el punto donde se requiere aplicar el agente extintor. Durante esta trayectoria, la manguera debe soportar presiones de trabajo elevadas (típicamente entre 250 y 300 PSI), resistir la abrasión por arrastre sobre superficies rugosas, y mantener compatibilidad con conexiones y accesorios estándar. Las mangueras para gabinete bombero industrial deben elegirse considerando la aplicación específica y las conexiones requeridas para hidrante.</p>
+
+        <h3 class="seo-content__subtitle">Certificación NFPA 1961 y normatividad en México</h3>
+        <p class="seo-content__text">En México, la normatividad aplicable a <strong>mangueras contra incendios</strong> se basa principalmente en el estándar <strong>NFPA 1961</strong>, que establece los requisitos mínimos de fabricación, prueba y desempeño para mangueras utilizadas en sistemas de protección contra incendios. Este estándar especifica parámetros como presión de prueba hidrostática (mínimo 600 PSI), resistencia a la abrasión, resistencia a la oxidación y al moho, comportamiento ante exposición térmica, y compatibilidad con acoplamientos. Las mangueras certificadas bajo NFPA 1961 garantizan que han sido sometidas a pruebas rigurosas y cumplen con los requisitos de rendimiento necesarios para operaciones de combate de incendios profesionales. Además de la certificación NFPA, es fundamental considerar el tipo de construcción —forro simple, doble forro o multicapa— ya que determina la resistencia mecánica, flexibilidad, peso y vida útil esperada del producto.</p>
+
+        <h3 class="seo-content__subtitle">Venta de manguera contra incendio: gabinete, bombero, industrial con conexiones</h3>
+        <p class="seo-content__text">En Gama de México ofrecemos <strong>venta de manguera contra incendio</strong> para gabinete, bombero e industrial con cuatro líneas especializadas y accesorios: <strong>1) Manguera Millhose</strong> de doble forro sintético ideal para gabinetes tipo 30ME y uso industrial, con presión de trabajo de 250-300 PSI y conexiones para hidrante en diámetros de 1.5" y 2.5"; <strong>2) Manguera Blindex</strong> multicapa para aplicaciones de alto riesgo industrial con resistencia a flamas hasta 600°C y conexiones químico-resistentes; <strong>3) Manguera de succión</strong> con refuerzo helicoidal para bombero, permitiendo la extracción de agua desde cisternas o hidrantes; y <strong>4) Manguera forestal</strong> para brigadas bombero, optimizada para portabilidad extrema. Todas incluyen accesorios y conexiones compatibles con sistemas de gabinete e hidrante estándar 250 PSI.</p>
+
+        <h3 class="seo-content__subtitle">Precios y cotización de manguera contra incendio gabinete industrial</h3>
+        <p class="seo-content__text">Como <strong>proveedor especializado de manguera contra incendio</strong> para gabinete, bombero e industrial, en Gama de México manejamos precios competitivos para proyectos de todos los tamaños. Nuestra cotización incluye: precio por metro o rollo según tipo de manguera para gabinete o hidrante, opciones de conexiones y accesorios tipo storz o rosca NST, documentación técnica del fabricante, certificados NFPA 1961, y costo de envío. Las mangueras 250 PSI para gabinete bombero industrial incluyen conexiones compatibles con sistemas de hidrante estándar. Si tu compra supera cierto volumen, aplicamos descuentos corporativos. Solicita cotización y recibe respuesta en 24 horas con precios y disponibilidad de mangueras, conexiones y accesorios.</p>
+
+        <h3 class="seo-content__subtitle">Tu proveedor de mangueras contra incendios en México</h3>
+        <p class="seo-content__text">Operamos desde Ciudad de México y Querétaro con envíos a toda la República Mexicana, atendiendo a industrias de todos los sectores: manufactura, petroquímica, alimentaria, logística y construcción. Contamos con más de 25 años de experiencia como <strong>distribuidor de equipo contra incendios</strong> certificado, ofreciendo mangueras fabricadas con los más altos estándares de calidad internacional. Nuestro catálogo incluye también los accesorios complementarios: conexiones tipo storz y rosca NST, portamangueras, reductores y boquillas compatibles. Cada línea incluye documentación técnica del fabricante, certificados de conformidad NFPA cuando aplica, y opciones de longitud en rollos de 15 o 30 metros. Nuestros ingenieros te ofrecen asesoría técnica sin costo para ayudarte a seleccionar exactamente el tipo de manguera resistente que necesitas según presión de trabajo, caudal requerido, condiciones ambientales y normativa aplicable a tu proyecto.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq" aria-labelledby="faq-title">
+    <div class="container">
+      <div class="section-header">
+        <h2 id="faq-title" class="section-title">Preguntas Frecuentes sobre Manguera Contra Incendio Gabinete Bombero Industrial</h2>
+        <p class="section-subtitle">Resolvemos las dudas más comunes sobre mangueras 250 PSI, conexiones, accesorios e hidrante</p>
+      </div>
+      <div class="faq__list">
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false" aria-controls="faq-mg-1" id="faq-m-1">¿Qué tipos de manguera contra incendio para gabinete e industrial venden?<span class="faq__icon" aria-hidden="true">+</span></button>
+          <div class="faq__answer" id="faq-mg-1" role="region" aria-labelledby="faq-m-1">
+            <p>Ofrecemos cuatro tipos especializados de manguera contra incendio para gabinete, bombero e industrial: <strong>1) Manguera Millhose</strong> ideal para gabinetes con presión de trabajo de 250-300 PSI y conexiones para hidrante; <strong>2) Manguera Blindex</strong> multicapa para aplicaciones industriales de alto riesgo; <strong>3) Manguera de succión</strong> para bombero con refuerzo helicoidal; y <strong>4) Manguera forestal</strong> ultraligera para brigadas. Todas incluyen accesorios y conexiones compatibles con sistemas de gabinete e hidrante estándar. Disponibles en diámetros de 1.5" y 2.5" con presión 250 PSI, en rollos de 15 o 30 metros.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false" aria-controls="faq-mg-2" id="faq-m-2">¿Las mangueras cuentan con certificación NFPA 1961?<span class="faq__icon" aria-hidden="true">+</span></button>
+          <div class="faq__answer" id="faq-mg-2" role="region" aria-labelledby="faq-m-2">
+            <p>Sí. Nuestras <strong>mangueras Millhose y Blindex</strong> cuentan con certificación <strong>NFPA 1961</strong>, el estándar internacional para mangueras de sistemas contra incendios. Este estándar especifica requisitos de presión de prueba hidrostática (mínimo 600 PSI), resistencia a la abrasión, compatibilidad con acoplamientos y desempeño bajo condiciones operativas extremas. Proporcionamos documentación técnica del fabricante que incluye certificados de conformidad, fichas técnicas con especificaciones completas y declaratorias de cumplimiento normativo para respaldar verificaciones de protección civil, auditorías de aseguradoras y procesos de licitación. Las mangueras de succión y forestales cumplen con especificaciones técnicas del fabricante y normativas aplicables a sus respectivas aplicaciones.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false" aria-controls="faq-mg-3" id="faq-m-3">¿Cuál es la diferencia entre manguera Millhose y manguera Blindex?<span class="faq__icon" aria-hidden="true">+</span></button>
+          <div class="faq__answer" id="faq-mg-3" role="region" aria-labelledby="faq-m-3">
+            <p>La <strong>manguera Millhose</strong> es de construcción estándar con doble forro sintético y recubrimientos de EPDM o NBR, diseñada para uso general en gabinetes tipo 30ME, edificios comerciales y aplicaciones industriales convencionales. La <strong>manguera Blindex</strong> es de construcción reforzada con cuatro capas de refuerzo textil y recubrimientos especiales de Hypalon (exterior) y NBR (interior), diseñada específicamente para aplicaciones de alto riesgo. La diferencia principal radica en la resistencia térmica —Blindex soporta exposición a flamas hasta 600°C versus temperaturas convencionales de Millhose— y en la resistencia química: Blindex es compatible con hidrocarburos, ácidos y agentes químicos industriales, mientras que Millhose está diseñada para uso con agua y espuma estándar. Ambas operan a 300 PSI de presión de trabajo y cumplen NFPA 1961, pero Blindex ofrece mayor factor de seguridad y durabilidad en ambientes hostiles.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false" aria-controls="faq-mg-4" id="faq-m-4">¿Qué diámetro de manguera contra incendio necesito para gabinete e hidrante?<span class="faq__icon" aria-hidden="true">+</span></button>
+          <div class="faq__answer" id="faq-mg-4" role="region" aria-labelledby="faq-m-4">
+            <p>El diámetro de la manguera contra incendio depende del caudal y presión de tu sistema de gabinete o hidrante. Los <strong>gabinetes tipo 30ME</strong> bombero en edificios comerciales utilizan manguera de <strong>1.5 pulgadas</strong> con presión 250 PSI y conexiones estándar. Para aplicaciones industriales o hidrantes donde se requiere mayor caudal, se utiliza manguera de <strong>2.5 pulgadas</strong> con accesorios y conexiones compatibles. Las mangueras de succión para bombero están disponibles en diámetros desde 2" hasta 6". Nuestros asesores te ayudan a determinar el diámetro correcto para gabinete industrial, incluyendo conexiones y accesorios según normativa NOM-002-STPS, NFPA 14.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false" aria-controls="faq-mg-5" id="faq-m-5">¿En qué longitudes están disponibles las mangueras contra incendios?<span class="faq__icon" aria-hidden="true">+</span></button>
+          <div class="faq__answer" id="faq-mg-5" role="region" aria-labelledby="faq-m-5">
+            <p>Las mangueras Millhose y Blindex están disponibles en <strong>rollos de 15 metros o 30 metros</strong> según tu preferencia. Los gabinetes tipo 30ME típicamente se equipan con rollos de 30 metros para garantizar radio de cobertura adecuado. Para aplicaciones industriales con múltiples puntos de conexión o proyectos que requieren longitudes específicas, podemos coordinar cortes personalizados. Las <strong>mangueras de succión</strong> se suministran en tramos de 3 a 6 metros con acoplamientos instalados en fábrica, permitiendo ensamblaje modular según la profundidad de succión requerida. Las <strong>mangueras forestales</strong> están disponibles en rollos de 15 o 30 metros optimizados para portabilidad. Todas las mangueras se entregan con los extremos preparados para instalación de acoplamientos tipo rosca NST o storz según especifiques. Si tu proyecto requiere longitudes no estándar o configuraciones especiales, consúltanos para evaluar disponibilidad.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false" aria-controls="faq-mg-6" id="faq-m-6">¿Cuánto tiempo de vida útil tienen las mangueras contra incendios?<span class="faq__icon" aria-hidden="true">+</span></button>
+          <div class="faq__answer" id="faq-mg-6" role="region" aria-labelledby="faq-m-6">
+            <p>La vida útil de una manguera contra incendios depende de las condiciones de almacenamiento, frecuencia de uso y exposición ambiental. En condiciones normales —manguera almacenada en gabinete protegido de luz solar directa, sin exposición continua a químicos, con enrollado adecuado y pruebas hidrostáticas anuales— una <strong>manguera Millhose o Blindex puede durar entre 10 y 15 años</strong>. La norma NFPA 1962 establece que las mangueras deben ser probadas hidrostáticamente cada año y retiradas de servicio cuando muestren señales de deterioro como cortes, abrasión excesiva, dureza del recubrimiento, fugas en prueba o pérdida de flexibilidad. Las mangueras forestales, por su construcción ligera y uso intensivo en campo, típicamente tienen vida útil más corta (5-7 años). Las de succión, por su construcción robusta con refuerzo metálico y uso intermitente, pueden durar 15 años o más con mantenimiento adecuado. Recomendamos inspección visual trimestral y prueba hidrostática anual conforme NFPA 1962.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false" aria-controls="faq-mg-7" id="faq-m-7">¿Cómo solicito cotización de manguera contra incendio con conexiones y accesorios?<span class="faq__icon" aria-hidden="true">+</span></button>
+          <div class="faq__answer" id="faq-mg-7" role="region" aria-labelledby="faq-m-7">
+            <p>Puedes solicitar cotización de manguera contra incendio para gabinete, bombero o industrial de tres formas: <strong>1) Formulario en esta página</strong>, <strong>2) WhatsApp 55 6529 8240</strong>, o <strong>3) Correo ventas@gamademexico.com</strong>. Necesitamos saber: tipo de manguera para gabinete o hidrante (Millhose, Blindex, succión o forestal), diámetro, cantidad de metros, y si requieres conexiones y accesorios adicionales. Respondemos en <strong>menos de 24 horas</strong> con precios de mangueras 250 PSI, conexiones para hidrante, accesorios y disponibilidad. Si no estás seguro del tipo de manguera industrial que necesitas, solicita asesoría para gabinete bombero según normativa aplicable a tu proyecto.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<script>
+  // FAQ Accordion
+  document.addEventListener('DOMContentLoaded', () => {
+    const faqQuestions = document.querySelectorAll('.faq__question');
+
+    faqQuestions.forEach(button => {
+      button.addEventListener('click', () => {
+        const expanded = button.getAttribute('aria-expanded') === 'true';
+        const icon = button.querySelector('.faq__icon');
+
+        // Close all other items
+        faqQuestions.forEach(otherButton => {
+          if (otherButton !== button) {
+            otherButton.setAttribute('aria-expanded', 'false');
+            const otherIcon = otherButton.querySelector('.faq__icon');
+            if (otherIcon) otherIcon.textContent = '+';
+            const otherAnswer = document.getElementById(otherButton.getAttribute('aria-controls') || '');
+            if (otherAnswer) otherAnswer.style.display = 'none';
+          }
+        });
+
+        // Toggle current item
+        button.setAttribute('aria-expanded', (!expanded).toString());
+        if (icon) icon.textContent = expanded ? '+' : '−';
+        const answer = document.getElementById(button.getAttribute('aria-controls') || '');
+        if (answer) {
+          answer.style.display = expanded ? 'none' : 'block';
+        }
+      });
+    });
+
+    // WhatsApp Form Handler
+    const cotizarForm = document.getElementById('cotizar-form');
+    if (cotizarForm) {
+      cotizarForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const nombre = (document.getElementById('lead-nombre') as HTMLInputElement)?.value || '';
+        const contacto = (document.getElementById('lead-contacto') as HTMLInputElement)?.value || '';
+        const tipoEquipo = (document.getElementById('lead-equipo') as HTMLSelectElement)?.value || '';
+
+        const mensaje = `Hola, me interesa cotizar mangueras contra incendios:%0A%0ANombre: ${encodeURIComponent(nombre)}%0AContacto: ${encodeURIComponent(contacto)}%0ATipo de manguera: ${encodeURIComponent(tipoEquipo)}`;
+
+        window.open(`https://wa.me/5215565298240?text=${mensaje}`, '_blank');
+      });
+    }
+  });
+</script>

@@ -1,0 +1,611 @@
+---
+interface Props {
+  activePage?: string;
+}
+
+const { activePage = '' } = Astro.props;
+---
+
+<a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+<header class="header" id="header" role="banner">
+  <div class="container">
+
+    <div class="header__logo">
+      <a href="/" aria-label="Gama de México - Inicio">
+        <img src="/img/gama-de-mexico.avif" alt="Gama de México - Venta de Equipos Contra Incendios | Distribuidor Elkhart Brass" class="header__logo-img" width="200" height="60" loading="eager">
+      </a>
+    </div>
+
+    <nav class="nav-desktop" role="navigation" aria-label="Navegación principal">
+      <ul class="nav-desktop__list">
+        <li class="nav-desktop__item">
+          <a href="/" class={`nav-desktop__link ${activePage === 'inicio' ? 'nav-desktop__link--active' : ''}`}>Inicio</a>
+        </li>
+        <li class="nav-desktop__item">
+          <a href="/equipos" class={`nav-desktop__link ${activePage === 'equipos' ? 'nav-desktop__link--active' : ''}`} aria-haspopup="true" aria-expanded="false">
+            Equipos y Accesorios <span class="nav-desktop__arrow" aria-hidden="true">&#9660;</span>
+          </a>
+
+          <div class="mega-menu" role="menu" aria-label="Catálogo de equipos">
+            <div class="mega-menu__category">
+              <h3 class="mega-menu__title">Monitores</h3>
+              <ul class="mega-menu__list">
+                <li><a href="/monitores/tipo-corazon" class="mega-menu__link" role="menuitem">Monitor tipo corazón</a></li>
+                <li><a href="/monitores/cuello-cisne" class="mega-menu__link" role="menuitem">Monitor tipo cuello de cisne</a></li>
+                <li><a href="/monitores/certificado-fm" class="mega-menu__link" role="menuitem">Monitor certificado FM</a></li>
+                <li><a href="/monitores/ul-listed" class="mega-menu__link" role="menuitem">Monitor UL Listed</a></li>
+              </ul>
+              <a href="/monitores-contra-incendios" class="mega-menu__view-all">Ver todos &rarr;</a>
+            </div>
+
+            <div class="mega-menu__category">
+              <h3 class="mega-menu__title">Boquillas</h3>
+              <ul class="mega-menu__list">
+                <li><a href="/boquillas/tipo-pistola" class="mega-menu__link" role="menuitem">Boquilla tipo pistola</a></li>
+                <li><a href="/boquillas/turbo-jet" class="mega-menu__link" role="menuitem">Boquilla turbo jet</a></li>
+                <li><a href="/boquillas/industrial" class="mega-menu__link" role="menuitem">Boquilla industrial</a></li>
+                <li><a href="/boquillas/certificada" class="mega-menu__link" role="menuitem">Boquilla certificada</a></li>
+              </ul>
+              <a href="/boquillas-contra-incendios" class="mega-menu__view-all">Ver todos &rarr;</a>
+            </div>
+
+            <div class="mega-menu__category">
+              <h3 class="mega-menu__title">Mangueras</h3>
+              <ul class="mega-menu__list">
+                <li><a href="/mangueras/millhose" class="mega-menu__link" role="menuitem">Manguera Millhose</a></li>
+                <li><a href="/mangueras/blindex" class="mega-menu__link" role="menuitem">Manguera Blindex</a></li>
+                <li><a href="/mangueras/succion" class="mega-menu__link" role="menuitem">Manguera de succión</a></li>
+                <li><a href="/mangueras/forestal" class="mega-menu__link" role="menuitem">Manguera forestal</a></li>
+              </ul>
+              <a href="/mangueras-contra-incendios" class="mega-menu__view-all">Ver todos &rarr;</a>
+            </div>
+
+            <div class="mega-menu__category">
+              <h3 class="mega-menu__title">Válvulas</h3>
+              <ul class="mega-menu__list">
+                <li><a href="/valvulas/compuerta" class="mega-menu__link" role="menuitem">Válvula de compuerta OS&Y</a></li>
+                <li><a href="/valvulas/globo" class="mega-menu__link" role="menuitem">Válvula de globo</a></li>
+                <li><a href="/valvulas/retencion" class="mega-menu__link" role="menuitem">Válvula de retención</a></li>
+                <li><a href="/valvulas/mariposa" class="mega-menu__link" role="menuitem">Válvula mariposa</a></li>
+              </ul>
+              <a href="/valvulas-contra-incendios" class="mega-menu__view-all">Ver todos &rarr;</a>
+            </div>
+
+            <div class="mega-menu__category">
+              <h3 class="mega-menu__title">Conexiones y Herrajes</h3>
+              <ul class="mega-menu__list">
+                <li><a href="/conexiones/adaptadores" class="mega-menu__link" role="menuitem">Adaptadores de bronce</a></li>
+                <li><a href="/conexiones/wye" class="mega-menu__link" role="menuitem">Conexión Y (Wye)</a></li>
+                <li><a href="/conexiones/siamesa" class="mega-menu__link" role="menuitem">Toma siamesa FDC</a></li>
+                <li><a href="/conexiones/coples" class="mega-menu__link" role="menuitem">Coples y reducciones</a></li>
+                <li><a href="/conexiones/chiflones" class="mega-menu__link" role="menuitem">Chiflones de tres pasos</a></li>
+                <li><a href="/conexiones/accesorios" class="mega-menu__link" role="menuitem">Accesorios y herrajes</a></li>
+              </ul>
+              <a href="/conexiones-herrajes-contra-incendios" class="mega-menu__view-all">Ver todos &rarr;</a>
+            </div>
+
+            <div class="mega-menu__category">
+              <h3 class="mega-menu__title">Gabinetes e Hidrantes</h3>
+              <ul class="mega-menu__list">
+                <li><a href="/gabinetes/tipo-30me" class="mega-menu__link" role="menuitem">Gabinete tipo 30ME</a></li>
+                <li><a href="/gabinetes/hidrante-banqueta" class="mega-menu__link" role="menuitem">Hidrante de banqueta</a></li>
+                <li><a href="/gabinetes/empotrado" class="mega-menu__link" role="menuitem">Gabinete empotrado</a></li>
+                <li><a href="/gabinetes/estacion-manguera" class="mega-menu__link" role="menuitem">Estación de manguera</a></li>
+              </ul>
+              <a href="/gabinetes-hidrantes-contra-incendios" class="mega-menu__view-all">Ver todos &rarr;</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-desktop__item">
+          <a href="/servicios" class={`nav-desktop__link ${activePage === 'servicios' ? 'nav-desktop__link--active' : ''}`} aria-haspopup="true" aria-expanded="false">
+            Servicios <span class="nav-desktop__arrow" aria-hidden="true">&#9660;</span>
+          </a>
+
+          <div class="mega-menu mega-menu--services" role="menu" aria-label="Servicios especializados">
+            <div class="mega-menu__category">
+              <h3 class="mega-menu__title">Asesoría y Soporte</h3>
+              <ul class="mega-menu__list">
+                <li><a href="/servicios/garantia" class="mega-menu__link" role="menuitem">Garantía y Respaldo Técnico</a></li>
+                <li><a href="/servicios/asesoria" class="mega-menu__link" role="menuitem">Asesoría Técnica Especializada</a></li>
+                <li><a href="/servicios/empresas" class="mega-menu__link" role="menuitem">Atención a Empresas y Proyectos</a></li>
+              </ul>
+            </div>
+
+            <div class="mega-menu__category">
+              <h3 class="mega-menu__title">Suministro y Logística</h3>
+              <ul class="mega-menu__list">
+                <li><a href="/servicios/mantenimiento" class="mega-menu__link" role="menuitem">Suministro para Mantenimiento</a></li>
+                <li><a href="/servicios/envios" class="mega-menu__link" role="menuitem">Logística y Envíos Nacionales</a></li>
+                <li><a href="/servicios/cotizaciones" class="mega-menu__link" role="menuitem">Cotizaciones Corporativas</a></li>
+              </ul>
+            </div>
+
+            <div class="mega-menu__category mega-menu__category--cta">
+              <h3 class="mega-menu__title">¿Necesitas ayuda?</h3>
+              <p class="mega-menu__desc">Nuestro equipo de asesores técnicos está listo para ayudarte a seleccionar los equipos correctos para tu proyecto.</p>
+              <a href="/servicios" class="btn btn--primary btn--sm">Ver todos los servicios</a>
+              <a href="https://wa.me/5215565298240" class="mega-menu__whatsapp" target="_blank" rel="noopener">WhatsApp: 55 6529 8240</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-desktop__item">
+          <a href="/#industrias" class="nav-desktop__link">Industrias</a>
+        </li>
+        <li class="nav-desktop__item">
+          <a href="/#recursos" class="nav-desktop__link">Recursos</a>
+        </li>
+        <li class="nav-desktop__item">
+          <a href="/#contacto" class="nav-desktop__link">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+
+    <a href="https://wa.me/5215565298240" class="btn btn--primary btn--sm header__cta" target="_blank" rel="noopener" aria-label="Cotizar por WhatsApp">Cotizar por WhatsApp</a>
+
+    <button class="hamburger" id="hamburger" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="mobile-nav">
+      <span class="hamburger__line"></span>
+      <span class="hamburger__line"></span>
+      <span class="hamburger__line"></span>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-overlay" id="mobile-overlay" aria-hidden="true"></div>
+
+<nav class="mobile-nav" id="mobile-nav" role="navigation" aria-label="Navegación móvil" aria-hidden="true">
+  <ul>
+    <li class="mobile-nav__item">
+      <a href="/" class="mobile-nav__link">Inicio</a>
+    </li>
+    <li class="mobile-nav__item">
+      <button class="mobile-nav__link" aria-expanded="false" aria-controls="mobile-submenu-equipos" id="mobile-toggle-equipos">
+        Equipos y Accesorios <span class="mobile-nav__arrow" aria-hidden="true">&#9660;</span>
+      </button>
+      <div class="mobile-nav__submenu" id="mobile-submenu-equipos" role="region" aria-labelledby="mobile-toggle-equipos">
+        <div class="mobile-nav__subcategory">
+          <div class="mobile-nav__subtitle">Monitores</div>
+          <a href="/monitores/tipo-corazon" class="mobile-nav__sublink">Monitor tipo corazón</a>
+          <a href="/monitores/cuello-cisne" class="mobile-nav__sublink">Monitor tipo cuello de cisne</a>
+          <a href="/monitores/certificado-fm" class="mobile-nav__sublink">Monitor certificado FM</a>
+          <a href="/monitores/ul-listed" class="mobile-nav__sublink">Monitor UL Listed</a>
+        </div>
+        <div class="mobile-nav__subcategory">
+          <div class="mobile-nav__subtitle">Boquillas</div>
+          <a href="/boquillas/tipo-pistola" class="mobile-nav__sublink">Boquilla tipo pistola</a>
+          <a href="/boquillas/turbo-jet" class="mobile-nav__sublink">Boquilla turbo jet</a>
+          <a href="/boquillas/industrial" class="mobile-nav__sublink">Boquilla industrial</a>
+          <a href="/boquillas/certificada" class="mobile-nav__sublink">Boquilla certificada</a>
+        </div>
+        <div class="mobile-nav__subcategory">
+          <div class="mobile-nav__subtitle">Mangueras</div>
+          <a href="/mangueras/millhose" class="mobile-nav__sublink">Manguera Millhose</a>
+          <a href="/mangueras/blindex" class="mobile-nav__sublink">Manguera Blindex</a>
+          <a href="/mangueras/succion" class="mobile-nav__sublink">Manguera de succión</a>
+          <a href="/mangueras/forestal" class="mobile-nav__sublink">Manguera forestal</a>
+        </div>
+        <div class="mobile-nav__subcategory">
+          <div class="mobile-nav__subtitle">Válvulas</div>
+          <a href="/valvulas/compuerta" class="mobile-nav__sublink">Válvula de compuerta OS&Y</a>
+          <a href="/valvulas/globo" class="mobile-nav__sublink">Válvula de globo</a>
+          <a href="/valvulas/retencion" class="mobile-nav__sublink">Válvula de retención</a>
+          <a href="/valvulas/mariposa" class="mobile-nav__sublink">Válvula mariposa</a>
+        </div>
+        <div class="mobile-nav__subcategory">
+          <div class="mobile-nav__subtitle">Conexiones y Herrajes</div>
+          <a href="/conexiones/adaptadores" class="mobile-nav__sublink">Adaptadores de bronce</a>
+          <a href="/conexiones/wye" class="mobile-nav__sublink">Conexión Y (Wye)</a>
+          <a href="/conexiones/siamesa" class="mobile-nav__sublink">Toma siamesa FDC</a>
+          <a href="/conexiones/coples" class="mobile-nav__sublink">Coples y reducciones</a>
+          <a href="/conexiones/chiflones" class="mobile-nav__sublink">Chiflones de tres pasos</a>
+          <a href="/conexiones/accesorios" class="mobile-nav__sublink">Accesorios y herrajes</a>
+        </div>
+        <div class="mobile-nav__subcategory">
+          <div class="mobile-nav__subtitle">Gabinetes e Hidrantes</div>
+          <a href="/gabinetes/tipo-30me" class="mobile-nav__sublink">Gabinete tipo 30ME</a>
+          <a href="/gabinetes/hidrante-banqueta" class="mobile-nav__sublink">Hidrante de banqueta</a>
+          <a href="/gabinetes/empotrado" class="mobile-nav__sublink">Gabinete empotrado</a>
+          <a href="/gabinetes/estacion-manguera" class="mobile-nav__sublink">Estación de manguera</a>
+        </div>
+      </div>
+    </li>
+    <li class="mobile-nav__item">
+      <button class="mobile-nav__link" aria-expanded="false" aria-controls="mobile-submenu-servicios" id="mobile-toggle-servicios">
+        Servicios <span class="mobile-nav__arrow" aria-hidden="true">&#9660;</span>
+      </button>
+      <div class="mobile-nav__submenu" id="mobile-submenu-servicios" role="region" aria-labelledby="mobile-toggle-servicios">
+        <div class="mobile-nav__subcategory">
+          <div class="mobile-nav__subtitle">Asesoría y Soporte</div>
+          <a href="/servicios/garantia" class="mobile-nav__sublink">Garantía y Respaldo Técnico</a>
+          <a href="/servicios/asesoria" class="mobile-nav__sublink">Asesoría Técnica Especializada</a>
+          <a href="/servicios/empresas" class="mobile-nav__sublink">Atención a Empresas y Proyectos</a>
+        </div>
+        <div class="mobile-nav__subcategory">
+          <div class="mobile-nav__subtitle">Suministro y Logística</div>
+          <a href="/servicios/mantenimiento" class="mobile-nav__sublink">Suministro para Mantenimiento</a>
+          <a href="/servicios/envios" class="mobile-nav__sublink">Logística y Envíos Nacionales</a>
+          <a href="/servicios/cotizaciones" class="mobile-nav__sublink">Cotizaciones Corporativas</a>
+        </div>
+        <a href="/servicios" class="mobile-nav__sublink mobile-nav__sublink--all">Ver todos los servicios &rarr;</a>
+      </div>
+    </li>
+    <li class="mobile-nav__item">
+      <a href="/#industrias" class="mobile-nav__link">Industrias</a>
+    </li>
+    <li class="mobile-nav__item">
+      <a href="/#recursos" class="mobile-nav__link">Recursos</a>
+    </li>
+    <li class="mobile-nav__item">
+      <a href="/#contacto" class="mobile-nav__link">Contacto</a>
+    </li>
+  </ul>
+  <div class="mobile-nav__cta">
+    <a href="https://wa.me/5215565298240" class="btn btn--primary" target="_blank" rel="noopener" aria-label="Cotizar por WhatsApp">Cotizar por WhatsApp</a>
+  </div>
+</nav>
+
+<style>
+  /* Header */
+  .header {
+    background-color: var(--color-white);
+    height: var(--header-height);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: box-shadow var(--transition-base);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .header--scrolled {
+    box-shadow: var(--shadow-md);
+  }
+
+  .header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .header__logo {
+    flex-shrink: 0;
+  }
+
+  .header__logo a {
+    display: block;
+  }
+
+  .header__logo-img {
+    width: 200px;
+    height: auto;
+    max-height: 60px;
+    object-fit: contain;
+  }
+
+  .header__cta {
+    display: none;
+  }
+
+  /* Desktop Navigation */
+  .nav-desktop {
+    display: none;
+  }
+
+  .nav-desktop__list {
+    display: flex;
+    align-items: center;
+    gap: 0;
+  }
+
+  .nav-desktop__item {
+    position: relative;
+  }
+
+  .nav-desktop__link {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.5rem 1rem;
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    color: var(--color-text);
+    transition: color var(--transition-fast);
+    white-space: nowrap;
+  }
+
+  .nav-desktop__link:hover,
+  .nav-desktop__link--active {
+    color: var(--color-primary);
+  }
+
+  .nav-desktop__arrow {
+    font-size: 10px;
+    transition: transform var(--transition-fast);
+  }
+
+  .nav-desktop__item:hover .nav-desktop__arrow {
+    transform: rotate(180deg);
+  }
+
+  /* Mega Menu */
+  .mega-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-top: 3px solid var(--color-primary);
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+    box-shadow: var(--shadow-lg);
+    padding: var(--spacing-lg);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-lg);
+    min-width: 720px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-50%) translateY(10px);
+    transition: all var(--transition-base);
+    pointer-events: none;
+  }
+
+  .nav-desktop__item:hover .mega-menu,
+  .nav-desktop__item:focus-within .mega-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+    pointer-events: auto;
+  }
+
+  .mega-menu__category {
+    padding: var(--spacing-sm);
+  }
+
+  .mega-menu__title {
+    font-size: var(--font-size-sm);
+    font-weight: 700;
+    color: var(--color-secondary);
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
+    border-bottom: 2px solid var(--color-primary);
+  }
+
+  .mega-menu__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .mega-menu__link {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-light);
+    padding: 0.25rem 0;
+    transition: color var(--transition-fast);
+  }
+
+  .mega-menu__link:hover {
+    color: var(--color-primary);
+  }
+
+  .mega-menu__view-all {
+    display: inline-block;
+    margin-top: 0.75rem;
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    color: var(--color-primary);
+  }
+
+  .mega-menu__view-all:hover {
+    color: var(--color-primary-dark);
+  }
+
+  /* Mega Menu - Services variant */
+  .mega-menu--services {
+    grid-template-columns: 1fr 1fr 1.2fr;
+    min-width: 680px;
+  }
+
+  .mega-menu__category--cta {
+    background: linear-gradient(135deg, rgba(196, 30, 58, 0.05) 0%, rgba(196, 30, 58, 0.1) 100%);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-md);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .mega-menu__desc {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-light);
+    line-height: 1.5;
+  }
+
+  .mega-menu__whatsapp {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-light);
+    margin-top: auto;
+    transition: color var(--transition-fast);
+  }
+
+  .mega-menu__whatsapp:hover {
+    color: #25D366;
+  }
+
+  /* Hamburger */
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    gap: 5px;
+    z-index: 1100;
+  }
+
+  .hamburger__line {
+    width: 24px;
+    height: 2px;
+    background: var(--color-secondary);
+    transition: all var(--transition-base);
+    border-radius: 2px;
+  }
+
+  .hamburger--active .hamburger__line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .hamburger--active .hamburger__line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger--active .hamburger__line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  /* Mobile Overlay */
+  .mobile-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1050;
+    opacity: 0;
+    visibility: hidden;
+    transition: all var(--transition-base);
+  }
+
+  .mobile-overlay--active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* Mobile Navigation */
+  .mobile-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 320px;
+    max-width: 85vw;
+    height: 100vh;
+    background: var(--color-white);
+    z-index: 1060;
+    transform: translateX(100%);
+    transition: transform var(--transition-slow);
+    overflow-y: auto;
+    padding: var(--spacing-2xl) var(--spacing-md) var(--spacing-lg);
+  }
+
+  .mobile-nav--active {
+    transform: translateX(0);
+  }
+
+  .mobile-nav__item {
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .mobile-nav__link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--spacing-sm) 0;
+    font-size: var(--font-size-base);
+    font-weight: 500;
+    color: var(--color-text);
+  }
+
+  .mobile-nav__link:hover {
+    color: var(--color-primary);
+  }
+
+  .mobile-nav__arrow {
+    transition: transform var(--transition-fast);
+    font-size: 12px;
+  }
+
+  .mobile-nav__arrow--open {
+    transform: rotate(180deg);
+  }
+
+  .mobile-nav__submenu {
+    display: none;
+    padding-bottom: var(--spacing-sm);
+  }
+
+  .mobile-nav__submenu--open {
+    display: block;
+  }
+
+  .mobile-nav__subcategory {
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .mobile-nav__subtitle {
+    font-size: var(--font-size-sm);
+    font-weight: 700;
+    color: var(--color-secondary);
+    padding: 0.25rem 0;
+  }
+
+  .mobile-nav__sublink {
+    display: block;
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
+    padding: 0.35rem 0 0.35rem var(--spacing-sm);
+  }
+
+  .mobile-nav__sublink:hover {
+    color: var(--color-primary);
+  }
+
+  .mobile-nav__sublink--all {
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-top: var(--spacing-sm);
+    border-top: 1px solid var(--color-border);
+    padding-top: var(--spacing-sm);
+  }
+
+  .mobile-nav__sublink--all:hover {
+    color: var(--color-primary-dark);
+  }
+
+  .mobile-nav__cta {
+    margin-top: var(--spacing-lg);
+  }
+
+  .mobile-nav__cta .btn {
+    width: 100%;
+  }
+
+  /* Desktop (1024px+) */
+  @media (min-width: 1024px) {
+    .nav-desktop {
+      display: block;
+    }
+
+    .hamburger {
+      display: none;
+    }
+
+    .header__cta {
+      display: inline-flex;
+      flex-shrink: 0;
+    }
+  }
+
+  /* Large Desktop (1200px+) */
+  @media (min-width: 1200px) {
+    .mega-menu {
+      grid-template-columns: repeat(3, 1fr);
+      min-width: 780px;
+    }
+  }
+
+  /* Print */
+  @media print {
+    .header {
+      display: none !important;
+    }
+  }
+</style>
