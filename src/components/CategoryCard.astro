@@ -10,13 +10,14 @@ interface Props {
   subtitulo: string;
   enlace: string;
   subcategorias: Subcategoria[];
+  imagen?: string;
 }
 
-const { titulo, subtitulo, enlace, subcategorias } = Astro.props;
+const { titulo, subtitulo, enlace, subcategorias, imagen } = Astro.props;
 ---
 
 <article class="category-card">
-  <div class="category-card__image"></div>
+  <div class="category-card__image" style={imagen ? `background-image: url('${imagen}'); background-size: cover; background-position: center;` : undefined}></div>
   <div class="category-card__body">
     <h3 class="category-card__title">{titulo}</h3>
     <p class="category-card__sub">{subtitulo}</p>
