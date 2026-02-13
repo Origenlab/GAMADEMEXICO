@@ -37,12 +37,6 @@ export default defineConfig({
     vite: {
           build: {
                   cssMinify: true,
-                  minify: 'terser',
-                  terserOptions: {
-                            compress: {
-                                        drop_console: true,
-                            },
-                  },
           },
     },
 
