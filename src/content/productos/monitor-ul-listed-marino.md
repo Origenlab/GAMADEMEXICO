@@ -3,7 +3,7 @@ title: "Monitor UL Listed Marino - Plataformas Offshore y Embarcaciones"
 description: "Monitor contra incendio certificado UL Listed para aplicaciones marinas y offshore. Resistencia a corrosión salina, acero inoxidable 316L. Cumple SOLAS y normativa marítima internacional."
 categoria: "monitores"
 subcategoria: "ul-listed"
-imagen: "/img/monitores-contra-incendios/monitor-ul-listed-foam-aplicacion-marina.avif"
+imagen: "/img/monitores-contra-incendios/monitor-ul-listed-contra-incendios-fondo-camion-26.avif"
 galeria:
   - "/img/monitores-contra-incendios/monitor-ul-listed-foam-boquilla-amarilla-01.avif"
   - "/img/monitores-contra-incendios/monitor-ul-listed-foam-boquilla-amarilla-02.avif"

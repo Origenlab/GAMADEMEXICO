@@ -3,7 +3,7 @@ title: "Monitor UL Listed para Aseguradoras - Certificación Completa"
 description: "Monitor contra incendio certificado UL Listed aceptado por aseguradoras nacionales e internacionales. Documentación completa para auditorías, cumplimiento NFPA y reducción de primas de seguro industrial."
 categoria: "monitores"
 subcategoria: "ul-listed"
-imagen: "/img/monitores-contra-incendios/monitor-ul-listed-fixed-flow-vista-lateral.avif"
+imagen: "/img/monitores-contra-incendios/monitor-ul-listed-contra-incendios-camion-fondo-02.avif"
 galeria:
   - "/img/monitores-contra-incendios/monitor-ul-listed-fixed-flow-detalle-manometro.avif"
   - "/img/monitores-contra-incendios/monitor-ul-listed-fixed-flow-perfil-derecho.avif"

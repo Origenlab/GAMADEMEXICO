@@ -1,8 +1,39 @@
 ---
 import Layout from '../layouts/Base.astro';
 import { getCollection } from 'astro:content';
+import Faq from '../components/Faq.astro';
 
 const productos = (await getCollection('productos', ({ data }) => data.categoria === 'valvulas')).sort((a, b) => a.data.orden - b.data.orden);
+const faqItems = [
+  {
+    "pregunta": "¿Qué tipos de válvulas contra incendios venden en Gama de México?",
+    "respuesta": "Ofrecemos cuatro tipos principales de válvulas para sistemas contra incendio: 1) Válvulas de compuerta OS&Y (Outside Screw and Yoke) con vástago exterior para indicación visual de posición, ideales para líneas principales; 2) Válvulas de globo en configuraciones angular y recta para control preciso de presión y flujo; 3) Válvulas de retención tipo swing para prevención automática de retorno de flujo en líneas de bombas; y 4) Válvulas mariposa indicadoras con tamper switch para apertura rápida en diámetros grandes. Todas cuentan con certificaciones UL y FM, fabricación en hierro dúctil o bronce, y documentación técnica completa del fabricante."
+  },
+  {
+    "pregunta": "¿Cuál es la diferencia entre una válvula OS&Y y una válvula común?",
+    "respuesta": "La principal diferencia está en el vástago exterior. En una válvula OS&Y (Outside Screw and Yoke), el vástago roscado se extiende hacia afuera del cuerpo cuando la válvula se abre y se retrae cuando se cierra, permitiendo verificación visual instantánea de la posición sin necesidad de operarla. Esto cumple con los requisitos de NFPA 13 que exige supervisión visual o electrónica en válvulas de control principal. Además, las válvulas OS&Y para sistemas contra incendio están fabricadas con materiales específicos (hierro dúctil o bronce), certificadas para presiones de trabajo de 175 a 350 PSI, y cuentan con listado UL/FM que garantiza cumplimiento con estándares de la industria. Las válvulas comunes de plomería no cumplen estos requisitos y no son aptas para aplicaciones de protección contra incendios."
+  },
+  {
+    "pregunta": "¿Qué presión de trabajo soportan las válvulas contra incendios?",
+    "respuesta": "Las válvulas contra incendios están disponibles en diferentes rangos de presión según la aplicación: 175 PSI (aplicaciones residenciales y comerciales ligeras), 200 PSI (edificios comerciales estándar), 250 PSI (instalaciones industriales), y 300-350 PSI (aplicaciones de alto riesgo y sistemas de bombeo de alta presión). La presión de trabajo debe seleccionarse considerando la presión máxima del sistema más un margen de seguridad. Por ejemplo, si tu sistema opera normalmente a 150 PSI, debes especificar válvulas con clasificación mínima de 200 PSI. Nuestros asesores técnicos te ayudan a determinar la especificación correcta según el diseño hidráulico de tu proyecto y los requisitos de la bomba contra incendio."
+  },
+  {
+    "pregunta": "¿Para qué sirve una válvula de retención (check valve) en sistemas contra incendio?",
+    "respuesta": "La válvula de retención previene el retorno de flujo en el sistema, protegiendo equipos críticos y manteniendo la dirección correcta del agua. Su aplicación principal es en las líneas de descarga de bombas contra incendio: cuando la bomba arranca, el agua fluye hacia el sistema y el disco interno de la válvula se abre automáticamente; cuando la bomba se detiene, el disco se cierra por gravedad evitando que el agua regrese y dañe los impulsores, sellos mecánicos y motor de la bomba. También se utilizan en conexiones de bomberos (FDC) para evitar que el agua del sistema drene hacia la conexión exterior, y en sistemas de tanques elevados para prevenir vaciado por gravedad. El diseño tipo swing opera completamente por gravedad —sin requerir electricidad ni actuación manual— y el sello EPDM garantiza cierre hermético incluso después de años de servicio."
+  },
+  {
+    "pregunta": "¿Qué diámetros de válvulas contra incendios tienen disponibles?",
+    "respuesta": "Manejamos un rango completo de diámetros para cubrir todas las aplicaciones en sistemas contra incendio: 2.5\" y 3\" para derivaciones y gabinetes contra incendio, 4\" y 6\" para redes secundarias y alimentación de rociadores, 8\" y 10\" para líneas principales de edificios de mediana y gran altura, y 12\" para instalaciones industriales de alto caudal. La disponibilidad específica de cada diámetro varía según el tipo de válvula: las OS&Y están disponibles en todo el rango (2.5\" a 12\"), las de globo típicamente hasta 6\", las de retención desde 3\" hasta 12\", y las mariposa desde 4\" hasta 12\". Mantenemos stock permanente de los diámetros más solicitados (3\", 4\" y 6\") para entregas inmediatas; diámetros especiales pueden requerir tiempos de entrega adicionales que te informamos en la cotización."
+  },
+  {
+    "pregunta": "¿Las válvulas vienen con certificaciones UL y FM?",
+    "respuesta": "Sí. Todas nuestras válvulas contra incendios cuentan con certificaciones UL (Underwriters Laboratories) y FM (Factory Mutual), dos de los estándares de seguridad más reconocidos a nivel internacional. Específicamente: válvulas de compuerta y mariposa cuentan con UL Listed y FM Approved según normas NFPA 13 y 14; válvulas de retención tienen listado UL 312 específico para check valves. Con cada válvula entregamos la documentación completa: ficha técnica del fabricante, declaración de conformidad, certificados UL/FM y manual de instalación. Esta documentación es fundamental para pasar verificaciones de protección civil, auditorías de aseguradoras, procesos de licitación y certificación de edificios. Todo se entrega en español, impreso o digital según prefieras."
+  },
+  {
+    "pregunta": "¿Cómo puedo solicitar una cotización de válvulas contra incendios?",
+    "respuesta": "Puedes cotizar de tres formas rápidas: 1) Formulario en esta página (se envía directo a nuestro WhatsApp), 2) WhatsApp directo al 55 6529 8240, o 3) Llamada al 55 1543 7164 o email a ventas@gamademexico.com. Solo necesitamos saber: tipo de válvula requerida (compuerta OS&Y, globo, retención o mariposa), diámetro(s) necesarios, cantidad aproximada, presión de trabajo del sistema y ubicación de entrega. Si no estás seguro del tipo o especificación correcta, nuestros ingenieros te asesoran sin costo para seleccionar exactamente lo que tu proyecto necesita según NFPA 13, 14 o 20. Respondemos en menos de 24 horas con precios, disponibilidad inmediata y opciones de envío. Para proyectos de gran escala preparamos cotizaciones corporativas con precios especiales por volumen."
+  }
+];
 ---
 
 <Layout
@@ -383,102 +414,8 @@ const productos = (await getCollection('productos', ({ data }) => data.categoria
         <h2 id="faq-title" class="section-title">Preguntas Frecuentes sobre Válvulas Contra Incendios</h2>
         <p class="section-subtitle">Resolvemos las dudas más comunes sobre tipos, especificaciones, certificaciones y aplicaciones</p>
       </div>
-      <div class="faq__list">
-        <div class="faq__item">
-          <button class="faq__question" aria-expanded="false" aria-controls="faq-v-1" id="faq-vq-1">¿Qué tipos de válvulas contra incendios venden en Gama de México?<span class="faq__icon" aria-hidden="true">+</span></button>
-          <div class="faq__answer" id="faq-v-1" role="region" aria-labelledby="faq-vq-1">
-            <p>Ofrecemos cuatro tipos principales de válvulas para sistemas contra incendio: <strong>1) Válvulas de compuerta OS&Y</strong> (Outside Screw and Yoke) con vástago exterior para indicación visual de posición, ideales para líneas principales; <strong>2) Válvulas de globo</strong> en configuraciones angular y recta para control preciso de presión y flujo; <strong>3) Válvulas de retención tipo swing</strong> para prevención automática de retorno de flujo en líneas de bombas; y <strong>4) Válvulas mariposa indicadoras</strong> con tamper switch para apertura rápida en diámetros grandes. Todas cuentan con certificaciones UL y FM, fabricación en hierro dúctil o bronce, y documentación técnica completa del fabricante.</p>
-          </div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__question" aria-expanded="false" aria-controls="faq-v-2" id="faq-vq-2">¿Cuál es la diferencia entre una válvula OS&Y y una válvula común?<span class="faq__icon" aria-hidden="true">+</span></button>
-          <div class="faq__answer" id="faq-v-2" role="region" aria-labelledby="faq-vq-2">
-            <p>La principal diferencia está en el <strong>vástago exterior</strong>. En una válvula OS&Y (Outside Screw and Yoke), el vástago roscado se extiende hacia afuera del cuerpo cuando la válvula se abre y se retrae cuando se cierra, permitiendo verificación visual instantánea de la posición sin necesidad de operarla. Esto cumple con los requisitos de <strong>NFPA 13</strong> que exige supervisión visual o electrónica en válvulas de control principal. Además, las válvulas OS&Y para sistemas contra incendio están fabricadas con materiales específicos (hierro dúctil o bronce), certificadas para presiones de trabajo de 175 a 350 PSI, y cuentan con listado <strong>UL/FM</strong> que garantiza cumplimiento con estándares de la industria. Las válvulas comunes de plomería no cumplen estos requisitos y no son aptas para aplicaciones de protección contra incendios.</p>
-          </div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__question" aria-expanded="false" aria-controls="faq-v-3" id="faq-vq-3">¿Qué presión de trabajo soportan las válvulas contra incendios?<span class="faq__icon" aria-hidden="true">+</span></button>
-          <div class="faq__answer" id="faq-v-3" role="region" aria-labelledby="faq-vq-3">
-            <p>Las válvulas contra incendios están disponibles en diferentes rangos de presión según la aplicación: <strong>175 PSI</strong> (aplicaciones residenciales y comerciales ligeras), <strong>200 PSI</strong> (edificios comerciales estándar), <strong>250 PSI</strong> (instalaciones industriales), y <strong>300-350 PSI</strong> (aplicaciones de alto riesgo y sistemas de bombeo de alta presión). La presión de trabajo debe seleccionarse considerando la presión máxima del sistema más un margen de seguridad. Por ejemplo, si tu sistema opera normalmente a 150 PSI, debes especificar válvulas con clasificación mínima de 200 PSI. Nuestros asesores técnicos te ayudan a determinar la especificación correcta según el diseño hidráulico de tu proyecto y los requisitos de la bomba contra incendio.</p>
-          </div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__question" aria-expanded="false" aria-controls="faq-v-4" id="faq-vq-4">¿Para qué sirve una válvula de retención (check valve) en sistemas contra incendio?<span class="faq__icon" aria-hidden="true">+</span></button>
-          <div class="faq__answer" id="faq-v-4" role="region" aria-labelledby="faq-vq-4">
-            <p>La <strong>válvula de retención</strong> previene el retorno de flujo en el sistema, protegiendo equipos críticos y manteniendo la dirección correcta del agua. Su aplicación principal es en las <strong>líneas de descarga de bombas contra incendio</strong>: cuando la bomba arranca, el agua fluye hacia el sistema y el disco interno de la válvula se abre automáticamente; cuando la bomba se detiene, el disco se cierra por gravedad evitando que el agua regrese y dañe los impulsores, sellos mecánicos y motor de la bomba. También se utilizan en <strong>conexiones de bomberos (FDC)</strong> para evitar que el agua del sistema drene hacia la conexión exterior, y en <strong>sistemas de tanques elevados</strong> para prevenir vaciado por gravedad. El diseño tipo swing opera completamente por gravedad —sin requerir electricidad ni actuación manual— y el sello EPDM garantiza cierre hermético incluso después de años de servicio.</p>
-          </div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__question" aria-expanded="false" aria-controls="faq-v-5" id="faq-vq-5">¿Qué diámetros de válvulas contra incendios tienen disponibles?<span class="faq__icon" aria-hidden="true">+</span></button>
-          <div class="faq__answer" id="faq-v-5" role="region" aria-labelledby="faq-vq-5">
-            <p>Manejamos un rango completo de diámetros para cubrir todas las aplicaciones en sistemas contra incendio: <strong>2.5"</strong> y <strong>3"</strong> para derivaciones y gabinetes contra incendio, <strong>4"</strong> y <strong>6"</strong> para redes secundarias y alimentación de rociadores, <strong>8"</strong> y <strong>10"</strong> para líneas principales de edificios de mediana y gran altura, y <strong>12"</strong> para instalaciones industriales de alto caudal. La disponibilidad específica de cada diámetro varía según el tipo de válvula: las OS&Y están disponibles en todo el rango (2.5" a 12"), las de globo típicamente hasta 6", las de retención desde 3" hasta 12", y las mariposa desde 4" hasta 12". Mantenemos stock permanente de los diámetros más solicitados (3", 4" y 6") para entregas inmediatas; diámetros especiales pueden requerir tiempos de entrega adicionales que te informamos en la cotización.</p>
-          </div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__question" aria-expanded="false" aria-controls="faq-v-6" id="faq-vq-6">¿Las válvulas vienen con certificaciones UL y FM?<span class="faq__icon" aria-hidden="true">+</span></button>
-          <div class="faq__answer" id="faq-v-6" role="region" aria-labelledby="faq-vq-6">
-            <p>Sí. Todas nuestras válvulas contra incendios cuentan con certificaciones <strong>UL (Underwriters Laboratories)</strong> y <strong>FM (Factory Mutual)</strong>, dos de los estándares de seguridad más reconocidos a nivel internacional. Específicamente: válvulas de compuerta y mariposa cuentan con <strong>UL Listed</strong> y <strong>FM Approved</strong> según normas NFPA 13 y 14; válvulas de retención tienen listado <strong>UL 312</strong> específico para check valves. Con cada válvula entregamos la <strong>documentación completa</strong>: ficha técnica del fabricante, declaración de conformidad, certificados UL/FM y manual de instalación. Esta documentación es fundamental para pasar verificaciones de protección civil, auditorías de aseguradoras, procesos de licitación y certificación de edificios. Todo se entrega en español, impreso o digital según prefieras.</p>
-          </div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__question" aria-expanded="false" aria-controls="faq-v-7" id="faq-vq-7">¿Cómo puedo solicitar una cotización de válvulas contra incendios?<span class="faq__icon" aria-hidden="true">+</span></button>
-          <div class="faq__answer" id="faq-v-7" role="region" aria-labelledby="faq-vq-7">
-            <p>Puedes cotizar de tres formas rápidas: <strong>1) Formulario en esta página</strong> (se envía directo a nuestro WhatsApp), <strong>2) WhatsApp directo al 55 6529 8240</strong>, o <strong>3) Llamada al 55 1543 7164</strong> o email a <strong>ventas@gamademexico.com</strong>. Solo necesitamos saber: tipo de válvula requerida (compuerta OS&Y, globo, retención o mariposa), diámetro(s) necesarios, cantidad aproximada, presión de trabajo del sistema y ubicación de entrega. Si no estás seguro del tipo o especificación correcta, nuestros ingenieros te asesoran sin costo para seleccionar exactamente lo que tu proyecto necesita según NFPA 13, 14 o 20. Respondemos en <strong>menos de 24 horas</strong> con precios, disponibilidad inmediata y opciones de envío. Para proyectos de gran escala preparamos cotizaciones corporativas con precios especiales por volumen.</p>
-          </div>
-        </div>
-      </div>
+      <Faq items={faqItems} id="faq" />
     </div>
   </section>
 
 </Layout>
-
-<script>
-  // FAQ Accordion
-  document.addEventListener('DOMContentLoaded', () => {
-    const faqQuestions = document.querySelectorAll('.faq__question');
-
-    faqQuestions.forEach(button => {
-      button.addEventListener('click', () => {
-        const expanded = button.getAttribute('aria-expanded') === 'true';
-
-        // Close all other items
-        faqQuestions.forEach(otherButton => {
-          if (otherButton !== button) {
-            otherButton.setAttribute('aria-expanded', 'false');
-            const otherAnswer = document.getElementById(otherButton.getAttribute('aria-controls') || '');
-            if (otherAnswer) otherAnswer.style.display = 'none';
-            const otherIcon = otherButton.querySelector('.faq__icon');
-            if (otherIcon) otherIcon.textContent = '+';
-          }
-        });
-
-        // Toggle current item
-        button.setAttribute('aria-expanded', (!expanded).toString());
-        const answer = document.getElementById(button.getAttribute('aria-controls') || '');
-        if (answer) {
-          answer.style.display = expanded ? 'none' : 'block';
-        }
-        const icon = button.querySelector('.faq__icon');
-        if (icon) {
-          icon.textContent = expanded ? '+' : '−';
-        }
-      });
-    });
-
-    // WhatsApp Form Handler
-    const cotizarForm = document.getElementById('cotizar-form');
-    if (cotizarForm) {
-      cotizarForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-
-        const nombre = (document.getElementById('lead-nombre') as HTMLInputElement)?.value || '';
-        const contacto = (document.getElementById('lead-contacto') as HTMLInputElement)?.value || '';
-        const tipoValvula = (document.getElementById('lead-equipo') as HTMLSelectElement)?.value || '';
-
-        const mensaje = `Hola, me interesa cotizar válvulas contra incendios:%0A%0ANombre: ${encodeURIComponent(nombre)}%0AContacto: ${encodeURIComponent(contacto)}%0ATipo de válvula: ${encodeURIComponent(tipoValvula)}`;
-
-        window.open(`https://wa.me/5215565298240?text=${mensaje}`, '_blank');
-      });
-    }
-  });
-</script>

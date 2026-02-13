@@ -1,8 +1,39 @@
 ---
 import Layout from '../layouts/Base.astro';
 import { getCollection } from 'astro:content';
+import Faq from '../components/Faq.astro';
 
 const productos = (await getCollection('productos', ({ data }) => data.categoria === 'mangueras')).sort((a, b) => a.data.orden - b.data.orden);
+const faqItems = [
+  {
+    "pregunta": "¿Qué tipos de manguera contra incendio para gabinete e industrial venden?",
+    "respuesta": "Ofrecemos cuatro tipos especializados de manguera contra incendio para gabinete, bombero e industrial: 1) Manguera Millhose ideal para gabinetes con presión de trabajo de 250-300 PSI y conexiones para hidrante; 2) Manguera Blindex multicapa para aplicaciones industriales de alto riesgo; 3) Manguera de succión para bombero con refuerzo helicoidal; y 4) Manguera forestal ultraligera para brigadas. Todas incluyen accesorios y conexiones compatibles con sistemas de gabinete e hidrante estándar. Disponibles en diámetros de 1.5\" y 2.5\" con presión 250 PSI, en rollos de 15 o 30 metros."
+  },
+  {
+    "pregunta": "¿Las mangueras cuentan con certificación NFPA 1961?",
+    "respuesta": "Sí. Nuestras mangueras Millhose y Blindex cuentan con certificación NFPA 1961, el estándar internacional para mangueras de sistemas contra incendios. Este estándar especifica requisitos de presión de prueba hidrostática (mínimo 600 PSI), resistencia a la abrasión, compatibilidad con acoplamientos y desempeño bajo condiciones operativas extremas. Proporcionamos documentación técnica del fabricante que incluye certificados de conformidad, fichas técnicas con especificaciones completas y declaratorias de cumplimiento normativo para respaldar verificaciones de protección civil, auditorías de aseguradoras y procesos de licitación. Las mangueras de succión y forestales cumplen con especificaciones técnicas del fabricante y normativas aplicables a sus respectivas aplicaciones."
+  },
+  {
+    "pregunta": "¿Cuál es la diferencia entre manguera Millhose y manguera Blindex?",
+    "respuesta": "La manguera Millhose es de construcción estándar con doble forro sintético y recubrimientos de EPDM o NBR, diseñada para uso general en gabinetes tipo 30ME, edificios comerciales y aplicaciones industriales convencionales. La manguera Blindex es de construcción reforzada con cuatro capas de refuerzo textil y recubrimientos especiales de Hypalon (exterior) y NBR (interior), diseñada específicamente para aplicaciones de alto riesgo. La diferencia principal radica en la resistencia térmica —Blindex soporta exposición a flamas hasta 600°C versus temperaturas convencionales de Millhose— y en la resistencia química: Blindex es compatible con hidrocarburos, ácidos y agentes químicos industriales, mientras que Millhose está diseñada para uso con agua y espuma estándar. Ambas operan a 300 PSI de presión de trabajo y cumplen NFPA 1961, pero Blindex ofrece mayor factor de seguridad y durabilidad en ambientes hostiles."
+  },
+  {
+    "pregunta": "¿Qué diámetro de manguera contra incendio necesito para gabinete e hidrante?",
+    "respuesta": "El diámetro de la manguera contra incendio depende del caudal y presión de tu sistema de gabinete o hidrante. Los gabinetes tipo 30ME bombero en edificios comerciales utilizan manguera de 1.5 pulgadas con presión 250 PSI y conexiones estándar. Para aplicaciones industriales o hidrantes donde se requiere mayor caudal, se utiliza manguera de 2.5 pulgadas con accesorios y conexiones compatibles. Las mangueras de succión para bombero están disponibles en diámetros desde 2\" hasta 6\". Nuestros asesores te ayudan a determinar el diámetro correcto para gabinete industrial, incluyendo conexiones y accesorios según normativa NOM-002-STPS, NFPA 14."
+  },
+  {
+    "pregunta": "¿En qué longitudes están disponibles las mangueras contra incendios?",
+    "respuesta": "Las mangueras Millhose y Blindex están disponibles en rollos de 15 metros o 30 metros según tu preferencia. Los gabinetes tipo 30ME típicamente se equipan con rollos de 30 metros para garantizar radio de cobertura adecuado. Para aplicaciones industriales con múltiples puntos de conexión o proyectos que requieren longitudes específicas, podemos coordinar cortes personalizados. Las mangueras de succión se suministran en tramos de 3 a 6 metros con acoplamientos instalados en fábrica, permitiendo ensamblaje modular según la profundidad de succión requerida. Las mangueras forestales están disponibles en rollos de 15 o 30 metros optimizados para portabilidad. Todas las mangueras se entregan con los extremos preparados para instalación de acoplamientos tipo rosca NST o storz según especifiques. Si tu proyecto requiere longitudes no estándar o configuraciones especiales, consúltanos para evaluar disponibilidad."
+  },
+  {
+    "pregunta": "¿Cuánto tiempo de vida útil tienen las mangueras contra incendios?",
+    "respuesta": "La vida útil de una manguera contra incendios depende de las condiciones de almacenamiento, frecuencia de uso y exposición ambiental. En condiciones normales —manguera almacenada en gabinete protegido de luz solar directa, sin exposición continua a químicos, con enrollado adecuado y pruebas hidrostáticas anuales— una manguera Millhose o Blindex puede durar entre 10 y 15 años. La norma NFPA 1962 establece que las mangueras deben ser probadas hidrostáticamente cada año y retiradas de servicio cuando muestren señales de deterioro como cortes, abrasión excesiva, dureza del recubrimiento, fugas en prueba o pérdida de flexibilidad. Las mangueras forestales, por su construcción ligera y uso intensivo en campo, típicamente tienen vida útil más corta (5-7 años). Las de succión, por su construcción robusta con refuerzo metálico y uso intermitente, pueden durar 15 años o más con mantenimiento adecuado. Recomendamos inspección visual trimestral y prueba hidrostática anual conforme NFPA 1962."
+  },
+  {
+    "pregunta": "¿Cómo solicito cotización de manguera contra incendio con conexiones y accesorios?",
+    "respuesta": "Puedes solicitar cotización de manguera contra incendio para gabinete, bombero o industrial de tres formas: 1) Formulario en esta página, 2) WhatsApp 55 6529 8240, o 3) Correo ventas@gamademexico.com. Necesitamos saber: tipo de manguera para gabinete o hidrante (Millhose, Blindex, succión o forestal), diámetro, cantidad de metros, y si requieres conexiones y accesorios adicionales. Respondemos en menos de 24 horas con precios de mangueras 250 PSI, conexiones para hidrante, accesorios y disponibilidad. Si no estás seguro del tipo de manguera industrial que necesitas, solicita asesoría para gabinete bombero según normativa aplicable a tu proyecto."
+  }
+];
 ---
 
 <Layout
@@ -395,100 +426,8 @@ const productos = (await getCollection('productos', ({ data }) => data.categoria
         <h2 id="faq-title" class="section-title">Preguntas Frecuentes sobre Manguera Contra Incendio Gabinete Bombero Industrial</h2>
         <p class="section-subtitle">Resolvemos las dudas más comunes sobre mangueras 250 PSI, conexiones, accesorios e hidrante</p>
       </div>
-      <div class="faq__list">
-        <div class="faq__item">
-          <button class="faq__question" aria-expanded="false" aria-controls="faq-mg-1" id="faq-m-1">¿Qué tipos de manguera contra incendio para gabinete e industrial venden?<span class="faq__icon" aria-hidden="true">+</span></button>
-          <div class="faq__answer" id="faq-mg-1" role="region" aria-labelledby="faq-m-1">
-            <p>Ofrecemos cuatro tipos especializados de manguera contra incendio para gabinete, bombero e industrial: <strong>1) Manguera Millhose</strong> ideal para gabinetes con presión de trabajo de 250-300 PSI y conexiones para hidrante; <strong>2) Manguera Blindex</strong> multicapa para aplicaciones industriales de alto riesgo; <strong>3) Manguera de succión</strong> para bombero con refuerzo helicoidal; y <strong>4) Manguera forestal</strong> ultraligera para brigadas. Todas incluyen accesorios y conexiones compatibles con sistemas de gabinete e hidrante estándar. Disponibles en diámetros de 1.5" y 2.5" con presión 250 PSI, en rollos de 15 o 30 metros.</p>
-          </div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__question" aria-expanded="false" aria-controls="faq-mg-2" id="faq-m-2">¿Las mangueras cuentan con certificación NFPA 1961?<span class="faq__icon" aria-hidden="true">+</span></button>
-          <div class="faq__answer" id="faq-mg-2" role="region" aria-labelledby="faq-m-2">
-            <p>Sí. Nuestras <strong>mangueras Millhose y Blindex</strong> cuentan con certificación <strong>NFPA 1961</strong>, el estándar internacional para mangueras de sistemas contra incendios. Este estándar especifica requisitos de presión de prueba hidrostática (mínimo 600 PSI), resistencia a la abrasión, compatibilidad con acoplamientos y desempeño bajo condiciones operativas extremas. Proporcionamos documentación técnica del fabricante que incluye certificados de conformidad, fichas técnicas con especificaciones completas y declaratorias de cumplimiento normativo para respaldar verificaciones de protección civil, auditorías de aseguradoras y procesos de licitación. Las mangueras de succión y forestales cumplen con especificaciones técnicas del fabricante y normativas aplicables a sus respectivas aplicaciones.</p>
-          </div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__question" aria-expanded="false" aria-controls="faq-mg-3" id="faq-m-3">¿Cuál es la diferencia entre manguera Millhose y manguera Blindex?<span class="faq__icon" aria-hidden="true">+</span></button>
-          <div class="faq__answer" id="faq-mg-3" role="region" aria-labelledby="faq-m-3">
-            <p>La <strong>manguera Millhose</strong> es de construcción estándar con doble forro sintético y recubrimientos de EPDM o NBR, diseñada para uso general en gabinetes tipo 30ME, edificios comerciales y aplicaciones industriales convencionales. La <strong>manguera Blindex</strong> es de construcción reforzada con cuatro capas de refuerzo textil y recubrimientos especiales de Hypalon (exterior) y NBR (interior), diseñada específicamente para aplicaciones de alto riesgo. La diferencia principal radica en la resistencia térmica —Blindex soporta exposición a flamas hasta 600°C versus temperaturas convencionales de Millhose— y en la resistencia química: Blindex es compatible con hidrocarburos, ácidos y agentes químicos industriales, mientras que Millhose está diseñada para uso con agua y espuma estándar. Ambas operan a 300 PSI de presión de trabajo y cumplen NFPA 1961, pero Blindex ofrece mayor factor de seguridad y durabilidad en ambientes hostiles.</p>
-          </div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__question" aria-expanded="false" aria-controls="faq-mg-4" id="faq-m-4">¿Qué diámetro de manguera contra incendio necesito para gabinete e hidrante?<span class="faq__icon" aria-hidden="true">+</span></button>
-          <div class="faq__answer" id="faq-mg-4" role="region" aria-labelledby="faq-m-4">
-            <p>El diámetro de la manguera contra incendio depende del caudal y presión de tu sistema de gabinete o hidrante. Los <strong>gabinetes tipo 30ME</strong> bombero en edificios comerciales utilizan manguera de <strong>1.5 pulgadas</strong> con presión 250 PSI y conexiones estándar. Para aplicaciones industriales o hidrantes donde se requiere mayor caudal, se utiliza manguera de <strong>2.5 pulgadas</strong> con accesorios y conexiones compatibles. Las mangueras de succión para bombero están disponibles en diámetros desde 2" hasta 6". Nuestros asesores te ayudan a determinar el diámetro correcto para gabinete industrial, incluyendo conexiones y accesorios según normativa NOM-002-STPS, NFPA 14.</p>
-          </div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__question" aria-expanded="false" aria-controls="faq-mg-5" id="faq-m-5">¿En qué longitudes están disponibles las mangueras contra incendios?<span class="faq__icon" aria-hidden="true">+</span></button>
-          <div class="faq__answer" id="faq-mg-5" role="region" aria-labelledby="faq-m-5">
-            <p>Las mangueras Millhose y Blindex están disponibles en <strong>rollos de 15 metros o 30 metros</strong> según tu preferencia. Los gabinetes tipo 30ME típicamente se equipan con rollos de 30 metros para garantizar radio de cobertura adecuado. Para aplicaciones industriales con múltiples puntos de conexión o proyectos que requieren longitudes específicas, podemos coordinar cortes personalizados. Las <strong>mangueras de succión</strong> se suministran en tramos de 3 a 6 metros con acoplamientos instalados en fábrica, permitiendo ensamblaje modular según la profundidad de succión requerida. Las <strong>mangueras forestales</strong> están disponibles en rollos de 15 o 30 metros optimizados para portabilidad. Todas las mangueras se entregan con los extremos preparados para instalación de acoplamientos tipo rosca NST o storz según especifiques. Si tu proyecto requiere longitudes no estándar o configuraciones especiales, consúltanos para evaluar disponibilidad.</p>
-          </div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__question" aria-expanded="false" aria-controls="faq-mg-6" id="faq-m-6">¿Cuánto tiempo de vida útil tienen las mangueras contra incendios?<span class="faq__icon" aria-hidden="true">+</span></button>
-          <div class="faq__answer" id="faq-mg-6" role="region" aria-labelledby="faq-m-6">
-            <p>La vida útil de una manguera contra incendios depende de las condiciones de almacenamiento, frecuencia de uso y exposición ambiental. En condiciones normales —manguera almacenada en gabinete protegido de luz solar directa, sin exposición continua a químicos, con enrollado adecuado y pruebas hidrostáticas anuales— una <strong>manguera Millhose o Blindex puede durar entre 10 y 15 años</strong>. La norma NFPA 1962 establece que las mangueras deben ser probadas hidrostáticamente cada año y retiradas de servicio cuando muestren señales de deterioro como cortes, abrasión excesiva, dureza del recubrimiento, fugas en prueba o pérdida de flexibilidad. Las mangueras forestales, por su construcción ligera y uso intensivo en campo, típicamente tienen vida útil más corta (5-7 años). Las de succión, por su construcción robusta con refuerzo metálico y uso intermitente, pueden durar 15 años o más con mantenimiento adecuado. Recomendamos inspección visual trimestral y prueba hidrostática anual conforme NFPA 1962.</p>
-          </div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__question" aria-expanded="false" aria-controls="faq-mg-7" id="faq-m-7">¿Cómo solicito cotización de manguera contra incendio con conexiones y accesorios?<span class="faq__icon" aria-hidden="true">+</span></button>
-          <div class="faq__answer" id="faq-mg-7" role="region" aria-labelledby="faq-m-7">
-            <p>Puedes solicitar cotización de manguera contra incendio para gabinete, bombero o industrial de tres formas: <strong>1) Formulario en esta página</strong>, <strong>2) WhatsApp 55 6529 8240</strong>, o <strong>3) Correo ventas@gamademexico.com</strong>. Necesitamos saber: tipo de manguera para gabinete o hidrante (Millhose, Blindex, succión o forestal), diámetro, cantidad de metros, y si requieres conexiones y accesorios adicionales. Respondemos en <strong>menos de 24 horas</strong> con precios de mangueras 250 PSI, conexiones para hidrante, accesorios y disponibilidad. Si no estás seguro del tipo de manguera industrial que necesitas, solicita asesoría para gabinete bombero según normativa aplicable a tu proyecto.</p>
-          </div>
-        </div>
-      </div>
+      <Faq items={faqItems} id="faq" />
     </div>
   </section>
 
 </Layout>
-
-<script>
-  // FAQ Accordion
-  document.addEventListener('DOMContentLoaded', () => {
-    const faqQuestions = document.querySelectorAll('.faq__question');
-
-    faqQuestions.forEach(button => {
-      button.addEventListener('click', () => {
-        const expanded = button.getAttribute('aria-expanded') === 'true';
-        const icon = button.querySelector('.faq__icon');
-
-        // Close all other items
-        faqQuestions.forEach(otherButton => {
-          if (otherButton !== button) {
-            otherButton.setAttribute('aria-expanded', 'false');
-            const otherIcon = otherButton.querySelector('.faq__icon');
-            if (otherIcon) otherIcon.textContent = '+';
-            const otherAnswer = document.getElementById(otherButton.getAttribute('aria-controls') || '');
-            if (otherAnswer) otherAnswer.style.display = 'none';
-          }
-        });
-
-        // Toggle current item
-        button.setAttribute('aria-expanded', (!expanded).toString());
-        if (icon) icon.textContent = expanded ? '+' : '−';
-        const answer = document.getElementById(button.getAttribute('aria-controls') || '');
-        if (answer) {
-          answer.style.display = expanded ? 'none' : 'block';
-        }
-      });
-    });
-
-    // WhatsApp Form Handler
-    const cotizarForm = document.getElementById('cotizar-form');
-    if (cotizarForm) {
-      cotizarForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-
-        const nombre = (document.getElementById('lead-nombre') as HTMLInputElement)?.value || '';
-        const contacto = (document.getElementById('lead-contacto') as HTMLInputElement)?.value || '';
-        const tipoEquipo = (document.getElementById('lead-equipo') as HTMLSelectElement)?.value || '';
-
-        const mensaje = `Hola, me interesa cotizar mangueras contra incendios:%0A%0ANombre: ${encodeURIComponent(nombre)}%0AContacto: ${encodeURIComponent(contacto)}%0ATipo de manguera: ${encodeURIComponent(tipoEquipo)}`;
-
-        window.open(`https://wa.me/5215565298240?text=${mensaje}`, '_blank');
-      });
-    }
-  });
-</script>

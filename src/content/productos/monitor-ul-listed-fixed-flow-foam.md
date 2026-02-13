@@ -3,7 +3,7 @@ title: "Monitor UL Listed Fixed Flow - Acero Inoxidable con Inductor de Espuma"
 description: "Monitor contra incendio UL Listed con sistema de inducción de espuma certificado UL 162. Acero inoxidable SS304/SS316/SS316L para ambientes corrosivos. Boquillas de flujo fijo y variable. Alto caudal y largo alcance."
 categoria: "monitores"
 subcategoria: "ul-listed"
-imagen: "/img/monitores-contra-incendios/monitor-ul-listed-fixed-flow-vista-frontal.avif"
+imagen: "/img/monitores-contra-incendios/monitor-ul-listed-contra-incendios-vista-frontal-07.avif"
 galeria:
   - "/img/monitores-contra-incendios/monitor-ul-listed-fixed-flow-ruedas-negras.avif"
   - "/img/monitores-contra-incendios/monitor-ul-listed-fixed-flow-vista-frontal.avif"

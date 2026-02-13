@@ -85,11 +85,6 @@ const { items, id = "faq" } = Astro.props;
     font-size: 1.25rem;
     font-weight: 400;
     color: var(--color-primary);
-    transition: transform var(--transition-fast);
-  }
-
-  .faq__question[aria-expanded="true"] .faq__icon {
-    transform: rotate(45deg);
   }
 
   .faq__answer {
@@ -97,7 +92,7 @@ const { items, id = "faq" } = Astro.props;
     padding-bottom: var(--spacing-md);
   }
 
-  .faq__answer[aria-hidden="false"] {
+  .faq__answer--open {
     display: block;
   }
 
@@ -108,29 +103,3 @@ const { items, id = "faq" } = Astro.props;
     margin: 0;
   }
 </style>
-
-<script>
-  function initFaq() {
-    const faqItems = document.querySelectorAll('.faq__question');
-
-    faqItems.forEach((button) => {
-      button.addEventListener('click', () => {
-        const expanded = button.getAttribute('aria-expanded') === 'true';
-        const answerId = button.getAttribute('aria-controls');
-        const answer = document.getElementById(answerId!);
-
-        // Toggle current
-        button.setAttribute('aria-expanded', (!expanded).toString());
-        if (answer) {
-          answer.setAttribute('aria-hidden', expanded.toString());
-        }
-      });
-    });
-  }
-
-  // Initialize on load
-  initFaq();
-
-  // Re-initialize on Astro page transitions
-  document.addEventListener('astro:page-load', initFaq);
-</script>

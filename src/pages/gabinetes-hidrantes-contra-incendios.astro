@@ -2,8 +2,39 @@
 import Layout from '../layouts/Base.astro';
 import SectionHeader from '../components/SectionHeader.astro';
 import { getCollection } from 'astro:content';
+import Faq from '../components/Faq.astro';
 
 const productos = (await getCollection('productos', ({ data }) => data.categoria === 'gabinetes-hidrantes')).sort((a, b) => a.data.orden - b.data.orden);
+const faqItems = [
+  {
+    "pregunta": "¿Cuál es la diferencia entre gabinete tipo 30ME y estación de manguera?",
+    "respuesta": "Ambos proporcionan acceso a manguera contra incendios pero difieren en diseño. El gabinete 30ME almacena la manguera en rack fijo tipo zigzag, requiriendo desenrollado manual. La estación de manguera usa carrete oscilante que permite despliegue automático sin enredos. Las estaciones son más costosas pero ofrecen respuesta más rápida. Los gabinetes 30ME son más económicos y suficientes para la mayoría de aplicaciones con personal capacitado. Venta de ambos tipos con precio competitivo."
+  },
+  {
+    "pregunta": "¿Qué normativas regulan gabinetes e hidrantes en México?",
+    "respuesta": "La NOM-002-STPS-2010 es la norma oficial que establece requisitos para gabinetes, incluyendo ubicación, espaciamiento, altura y componentes. NFPA 14 clasifica sistemas en Clase I (uso de bomberos con 2.5\"), Clase II (ocupantes con 1.5\") y Clase III (combinación). Los hidrantes certificados UL 246 son requeridos por autoridades municipales y aseguradoras. Como proveedor profesional, todos nuestros equipos cumplen estas normativas."
+  },
+  {
+    "pregunta": "¿Cada cuánto tiempo debo hacer mantenimiento?",
+    "respuesta": "La NOM-002-STPS-2010 requiere inspecciones mensuales de gabinetes verificando accesibilidad, componentes y manguera correctamente enrollada. Adicionalmente, prueba hidrostática anual de mangueras a 250 PSI durante 3 minutos. Los hidrantes requieren inspección semestral de válvulas y tapas, más prueba de flujo anual. Ofrecemos servicio de mantenimiento preventivo y venta de refacciones originales."
+  },
+  {
+    "pregunta": "¿Cuál es la diferencia entre manguera tipo I y tipo II?",
+    "respuesta": "La manguera tipo I soporta hasta 150 PSI y es adecuada para la mayoría de instalaciones comerciales. La tipo II soporta hasta 300 PSI para instalaciones de alta presión como edificios altos o bombas industriales. Ambas tienen construcción de doble chaqueta de poliéster con recubrimiento interior de caucho. Es importante seleccionar según la presión de diseño del sistema. Cotización con precio disponible para ambos tipos."
+  },
+  {
+    "pregunta": "¿Qué significa certificación UL 246 en hidrantes?",
+    "respuesta": "UL 246 es el estándar de Underwriters Laboratories que establece requisitos de diseño, fabricación y prueba para hidrantes. Incluye pruebas de presión, operación mecánica, resistencia a corrosión, durabilidad y capacidad de flujo. Garantiza que el hidrante cumplirá su función crítica durante emergencias. Muchas autoridades y aseguradoras requieren específicamente hidrantes certificados UL 246. Todos nuestros hidrantes tienen esta certificación."
+  },
+  {
+    "pregunta": "¿Cuántos gabinetes necesito para mi instalación?",
+    "respuesta": "La NOM-002-STPS-2010 establece que cualquier punto del área protegida debe estar a no más de 30 metros de un gabinete (medidos por camino real, no en línea recta). Cada piso debe tener su propio sistema. Para calcular, trace círculos de 30 metros desde posibles ubicaciones asegurando cobertura total. Los gabinetes deben ubicarse en rutas de evacuación, pasillos o cerca de escaleras. Nuestros ingenieros pueden realizar este análisis como parte de la cotización."
+  },
+  {
+    "pregunta": "¿Cómo puedo solicitar cotización de gabinetes?",
+    "respuesta": "Puedes cotizar de tres formas: 1) Formulario en esta página (se envía a WhatsApp), 2) WhatsApp directo 55 6529 8240, o 3) Email ventas@gamademexico.com. Solo necesitamos: tipo de gabinete o hidrante, cantidad estimada, ubicación de entrega y normativa que debe cumplir. Respondemos en menos de 24 horas con precio, disponibilidad y opciones de envío. Precios especiales por volumen disponibles."
+  }
+];
 ---
 
 <Layout
@@ -388,102 +419,8 @@ const productos = (await getCollection('productos', ({ data }) => data.categoria
         <h2 id="faq-title" class="section-title">Preguntas Frecuentes sobre Gabinetes e Hidrantes</h2>
         <p class="section-subtitle">Resolvemos las dudas más comunes sobre tipos, normativas y mantenimiento</p>
       </div>
-      <div class="faq__list">
-        <div class="faq__item">
-          <button class="faq__question" aria-expanded="false" aria-controls="faq-gab-1" id="faq-g-q1">¿Cuál es la diferencia entre gabinete tipo 30ME y estación de manguera?<span class="faq__icon" aria-hidden="true">+</span></button>
-          <div class="faq__answer" id="faq-gab-1" role="region" aria-labelledby="faq-g-q1">
-            <p>Ambos proporcionan acceso a manguera contra incendios pero difieren en diseño. El <strong>gabinete 30ME</strong> almacena la manguera en rack fijo tipo zigzag, requiriendo desenrollado manual. La <strong>estación de manguera</strong> usa carrete oscilante que permite despliegue automático sin enredos. Las estaciones son más costosas pero ofrecen respuesta más rápida. Los gabinetes 30ME son más económicos y suficientes para la mayoría de aplicaciones con personal capacitado. Venta de ambos tipos con precio competitivo.</p>
-          </div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__question" aria-expanded="false" aria-controls="faq-gab-2" id="faq-g-q2">¿Qué normativas regulan gabinetes e hidrantes en México?<span class="faq__icon" aria-hidden="true">+</span></button>
-          <div class="faq__answer" id="faq-gab-2" role="region" aria-labelledby="faq-g-q2">
-            <p>La <strong>NOM-002-STPS-2010</strong> es la norma oficial que establece requisitos para gabinetes, incluyendo ubicación, espaciamiento, altura y componentes. <strong>NFPA 14</strong> clasifica sistemas en Clase I (uso de bomberos con 2.5"), Clase II (ocupantes con 1.5") y Clase III (combinación). Los hidrantes certificados <strong>UL 246</strong> son requeridos por autoridades municipales y aseguradoras. Como proveedor profesional, todos nuestros equipos cumplen estas normativas.</p>
-          </div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__question" aria-expanded="false" aria-controls="faq-gab-3" id="faq-g-q3">¿Cada cuánto tiempo debo hacer mantenimiento?<span class="faq__icon" aria-hidden="true">+</span></button>
-          <div class="faq__answer" id="faq-gab-3" role="region" aria-labelledby="faq-g-q3">
-            <p>La <strong>NOM-002-STPS-2010</strong> requiere inspecciones mensuales de gabinetes verificando accesibilidad, componentes y manguera correctamente enrollada. Adicionalmente, prueba hidrostática anual de mangueras a 250 PSI durante 3 minutos. Los hidrantes requieren inspección semestral de válvulas y tapas, más prueba de flujo anual. Ofrecemos servicio de mantenimiento preventivo y venta de refacciones originales.</p>
-          </div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__question" aria-expanded="false" aria-controls="faq-gab-4" id="faq-g-q4">¿Cuál es la diferencia entre manguera tipo I y tipo II?<span class="faq__icon" aria-hidden="true">+</span></button>
-          <div class="faq__answer" id="faq-gab-4" role="region" aria-labelledby="faq-g-q4">
-            <p>La <strong>manguera tipo I</strong> soporta hasta 150 PSI y es adecuada para la mayoría de instalaciones comerciales. La <strong>tipo II</strong> soporta hasta 300 PSI para instalaciones de alta presión como edificios altos o bombas industriales. Ambas tienen construcción de doble chaqueta de poliéster con recubrimiento interior de caucho. Es importante seleccionar según la presión de diseño del sistema. Cotización con precio disponible para ambos tipos.</p>
-          </div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__question" aria-expanded="false" aria-controls="faq-gab-5" id="faq-g-q5">¿Qué significa certificación UL 246 en hidrantes?<span class="faq__icon" aria-hidden="true">+</span></button>
-          <div class="faq__answer" id="faq-gab-5" role="region" aria-labelledby="faq-g-q5">
-            <p><strong>UL 246</strong> es el estándar de Underwriters Laboratories que establece requisitos de diseño, fabricación y prueba para hidrantes. Incluye pruebas de presión, operación mecánica, resistencia a corrosión, durabilidad y capacidad de flujo. Garantiza que el hidrante cumplirá su función crítica durante emergencias. Muchas autoridades y aseguradoras requieren específicamente hidrantes certificados UL 246. Todos nuestros hidrantes tienen esta certificación.</p>
-          </div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__question" aria-expanded="false" aria-controls="faq-gab-6" id="faq-g-q6">¿Cuántos gabinetes necesito para mi instalación?<span class="faq__icon" aria-hidden="true">+</span></button>
-          <div class="faq__answer" id="faq-gab-6" role="region" aria-labelledby="faq-g-q6">
-            <p>La <strong>NOM-002-STPS-2010</strong> establece que cualquier punto del área protegida debe estar a no más de 30 metros de un gabinete (medidos por camino real, no en línea recta). Cada piso debe tener su propio sistema. Para calcular, trace círculos de 30 metros desde posibles ubicaciones asegurando cobertura total. Los gabinetes deben ubicarse en rutas de evacuación, pasillos o cerca de escaleras. Nuestros ingenieros pueden realizar este análisis como parte de la cotización.</p>
-          </div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__question" aria-expanded="false" aria-controls="faq-gab-7" id="faq-g-q7">¿Cómo puedo solicitar cotización de gabinetes?<span class="faq__icon" aria-hidden="true">+</span></button>
-          <div class="faq__answer" id="faq-gab-7" role="region" aria-labelledby="faq-g-q7">
-            <p>Puedes cotizar de tres formas: <strong>1) Formulario en esta página</strong> (se envía a WhatsApp), <strong>2) WhatsApp directo 55 6529 8240</strong>, o <strong>3) Email ventas@gamademexico.com</strong>. Solo necesitamos: tipo de gabinete o hidrante, cantidad estimada, ubicación de entrega y normativa que debe cumplir. Respondemos en menos de 24 horas con precio, disponibilidad y opciones de envío. Precios especiales por volumen disponibles.</p>
-          </div>
-        </div>
-      </div>
+      <Faq items={faqItems} id="faq" />
     </div>
   </section>
 
 </Layout>
-
-<script>
-  // FAQ Accordion
-  document.addEventListener('DOMContentLoaded', () => {
-    const faqQuestions = document.querySelectorAll('.faq__question');
-
-    faqQuestions.forEach(button => {
-      button.addEventListener('click', () => {
-        const expanded = button.getAttribute('aria-expanded') === 'true';
-
-        // Close all other items
-        faqQuestions.forEach(otherButton => {
-          if (otherButton !== button) {
-            otherButton.setAttribute('aria-expanded', 'false');
-            const otherAnswer = document.getElementById(otherButton.getAttribute('aria-controls') || '');
-            if (otherAnswer) otherAnswer.style.display = 'none';
-            const otherIcon = otherButton.querySelector('.faq__icon');
-            if (otherIcon) otherIcon.textContent = '+';
-          }
-        });
-
-        // Toggle current item
-        button.setAttribute('aria-expanded', (!expanded).toString());
-        const answer = document.getElementById(button.getAttribute('aria-controls') || '');
-        if (answer) {
-          answer.style.display = expanded ? 'none' : 'block';
-        }
-        const icon = button.querySelector('.faq__icon');
-        if (icon) {
-          icon.textContent = expanded ? '+' : '−';
-        }
-      });
-    });
-
-    // WhatsApp Form Handler
-    const cotizarForm = document.getElementById('cotizar-form');
-    if (cotizarForm) {
-      cotizarForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-
-        const nombre = (document.getElementById('lead-nombre') as HTMLInputElement)?.value || '';
-        const contacto = (document.getElementById('lead-contacto') as HTMLInputElement)?.value || '';
-        const tipoGabinete = (document.getElementById('lead-equipo') as HTMLSelectElement)?.value || '';
-
-        const mensaje = `Hola, me interesa cotizar gabinetes e hidrantes:%0A%0ANombre: ${encodeURIComponent(nombre)}%0AContacto: ${encodeURIComponent(contacto)}%0ATipo de gabinete: ${encodeURIComponent(tipoGabinete)}`;
-
-        window.open(`https://wa.me/5215565298240?text=${mensaje}`, '_blank');
-      });
-    }
-  });
-</script>

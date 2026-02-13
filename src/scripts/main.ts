@@ -26,133 +26,146 @@
   const mobileNav = document.getElementById('mobile-nav');
   const mobileOverlay = document.getElementById('mobile-overlay');
 
-  if (!hamburger || !mobileNav || !mobileOverlay) return;
+  if (hamburger && mobileNav && mobileOverlay) {
+    let isMenuOpen = false;
 
-  let isMenuOpen = false;
+    function openMenu() {
+      isMenuOpen = true;
+      hamburger.classList.add('hamburger--active');
+      hamburger.setAttribute('aria-expanded', 'true');
+      mobileNav.classList.add('mobile-nav--active');
+      mobileNav.setAttribute('aria-hidden', 'false');
+      mobileOverlay.classList.add('mobile-overlay--active');
+      mobileOverlay.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
 
-  function openMenu() {
-    isMenuOpen = true;
-    hamburger!.classList.add('hamburger--active');
-    hamburger!.setAttribute('aria-expanded', 'true');
-    mobileNav!.classList.add('mobile-nav--active');
-    mobileNav!.setAttribute('aria-hidden', 'false');
-    mobileOverlay!.classList.add('mobile-overlay--active');
-    mobileOverlay!.setAttribute('aria-hidden', 'false');
-    document.body.style.overflow = 'hidden';
-
-    const firstLink = mobileNav!.querySelector('a, button') as HTMLElement | null;
-    if (firstLink) firstLink.focus();
-  }
-
-  function closeMenu() {
-    isMenuOpen = false;
-    hamburger!.classList.remove('hamburger--active');
-    hamburger!.setAttribute('aria-expanded', 'false');
-    mobileNav!.classList.remove('mobile-nav--active');
-    mobileNav!.setAttribute('aria-hidden', 'true');
-    mobileOverlay!.classList.remove('mobile-overlay--active');
-    mobileOverlay!.setAttribute('aria-hidden', 'true');
-    document.body.style.overflow = '';
-    hamburger!.focus();
-  }
-
-  hamburger.addEventListener('click', function () {
-    if (isMenuOpen) {
-      closeMenu();
-    } else {
-      openMenu();
+      const firstLink = mobileNav.querySelector('a, button') as HTMLElement | null;
+      if (firstLink) firstLink.focus();
     }
-  });
 
-  mobileOverlay.addEventListener('click', closeMenu);
-
-  document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape' && isMenuOpen) {
-      closeMenu();
+    function closeMenu() {
+      isMenuOpen = false;
+      hamburger.classList.remove('hamburger--active');
+      hamburger.setAttribute('aria-expanded', 'false');
+      mobileNav.classList.remove('mobile-nav--active');
+      mobileNav.setAttribute('aria-hidden', 'true');
+      mobileOverlay.classList.remove('mobile-overlay--active');
+      mobileOverlay.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+      hamburger.focus();
     }
-  });
 
-  // ── Focus trap in mobile nav ──
-  mobileNav.addEventListener('keydown', function (e) {
-    if (e.key !== 'Tab') return;
-    const focusable = mobileNav!.querySelectorAll(
-      'a, button, input, select, textarea, [tabindex]:not([tabindex="-1"])'
-    ) as NodeListOf<HTMLElement>;
-    if (focusable.length === 0) return;
-    const first = focusable[0];
-    const last = focusable[focusable.length - 1];
-
-    if (e.shiftKey) {
-      if (document.activeElement === first) {
-        e.preventDefault();
-        last.focus();
+    hamburger.addEventListener('click', function () {
+      if (isMenuOpen) {
+        closeMenu();
+      } else {
+        openMenu();
       }
-    } else {
-      if (document.activeElement === last) {
-        e.preventDefault();
-        first.focus();
+    });
+
+    mobileOverlay.addEventListener('click', closeMenu);
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && isMenuOpen) {
+        closeMenu();
       }
+    });
+
+    // ── Focus trap in mobile nav ──
+    mobileNav.addEventListener('keydown', function (e) {
+      if (e.key !== 'Tab') return;
+      const focusable = mobileNav.querySelectorAll(
+        'a, button, input, select, textarea, [tabindex]:not([tabindex="-1"])'
+      ) as NodeListOf<HTMLElement>;
+      if (focusable.length === 0) return;
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+
+      if (e.shiftKey) {
+        if (document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        }
+      } else {
+        if (document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
+        }
+      }
+    });
+
+    // ── Close mobile menu on anchor clicks ──
+    const mobileLinks = mobileNav.querySelectorAll('a[href^="#"]');
+    mobileLinks.forEach(function (link) {
+      link.addEventListener('click', function () {
+        closeMenu();
+      });
+    });
+
+    // ── Mobile submenu toggle — Equipos ──
+    const toggleEquipos = document.getElementById('mobile-toggle-equipos');
+    if (toggleEquipos) {
+      toggleEquipos.addEventListener('click', function () {
+        const submenu = document.getElementById('mobile-submenu-equipos');
+        const arrow = this.querySelector('.mobile-nav__arrow') as HTMLElement | null;
+        const isOpen = this.getAttribute('aria-expanded') === 'true';
+
+        this.setAttribute('aria-expanded', String(!isOpen));
+        submenu?.classList.toggle('mobile-nav__submenu--open');
+        if (arrow) arrow.classList.toggle('mobile-nav__arrow--open');
+      });
     }
-  });
 
-  // ── Close mobile menu on anchor clicks ──
-  const mobileLinks = mobileNav.querySelectorAll('a[href^="#"]');
-  mobileLinks.forEach(function (link) {
-    link.addEventListener('click', function () {
-      closeMenu();
-    });
-  });
+    // ── Mobile submenu toggle — Servicios ──
+    const toggleServicios = document.getElementById('mobile-toggle-servicios');
+    if (toggleServicios) {
+      toggleServicios.addEventListener('click', function () {
+        const submenu = document.getElementById('mobile-submenu-servicios');
+        const arrow = this.querySelector('.mobile-nav__arrow') as HTMLElement | null;
+        const isOpen = this.getAttribute('aria-expanded') === 'true';
 
-  // ── Mobile submenu toggle — Equipos ──
-  const toggleEquipos = document.getElementById('mobile-toggle-equipos');
-  if (toggleEquipos) {
-    toggleEquipos.addEventListener('click', function () {
-      const submenu = document.getElementById('mobile-submenu-equipos');
-      const arrow = this.querySelector('.mobile-nav__arrow') as HTMLElement | null;
-      const isOpen = this.getAttribute('aria-expanded') === 'true';
-
-      this.setAttribute('aria-expanded', String(!isOpen));
-      submenu?.classList.toggle('mobile-nav__submenu--open');
-      if (arrow) arrow.classList.toggle('mobile-nav__arrow--open');
-    });
-  }
-
-  // ── Mobile submenu toggle — Servicios ──
-  const toggleServicios = document.getElementById('mobile-toggle-servicios');
-  if (toggleServicios) {
-    toggleServicios.addEventListener('click', function () {
-      const submenu = document.getElementById('mobile-submenu-servicios');
-      const arrow = this.querySelector('.mobile-nav__arrow') as HTMLElement | null;
-      const isOpen = this.getAttribute('aria-expanded') === 'true';
-
-      this.setAttribute('aria-expanded', String(!isOpen));
-      submenu?.classList.toggle('mobile-nav__submenu--open');
-      if (arrow) arrow.classList.toggle('mobile-nav__arrow--open');
-    });
+        this.setAttribute('aria-expanded', String(!isOpen));
+        submenu?.classList.toggle('mobile-nav__submenu--open');
+        if (arrow) arrow.classList.toggle('mobile-nav__arrow--open');
+      });
+    }
   }
 
   // ── FAQ accordion ──
   const faqButtons = document.querySelectorAll('.faq__question');
-  faqButtons.forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      const answerId = this.getAttribute('aria-controls');
+  if (faqButtons.length > 0) {
+    function setFaqState(btn: Element, expanded: boolean) {
+      const answerId = btn.getAttribute('aria-controls');
       const answer = answerId ? document.getElementById(answerId) : null;
-      const isExpanded = this.getAttribute('aria-expanded') === 'true';
-
-      // Close all other answers
-      faqButtons.forEach(function (otherBtn) {
-        const otherAnswerId = otherBtn.getAttribute('aria-controls');
-        const otherAnswer = otherAnswerId ? document.getElementById(otherAnswerId) : null;
-        otherBtn.setAttribute('aria-expanded', 'false');
-        if (otherAnswer) otherAnswer.classList.remove('faq__answer--open');
-      });
-
-      if (!isExpanded) {
-        this.setAttribute('aria-expanded', 'true');
-        if (answer) answer.classList.add('faq__answer--open');
+      const icon = btn.querySelector('.faq__icon');
+      btn.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+      if (icon) icon.textContent = expanded ? '−' : '+';
+      if (answer) {
+        answer.classList.toggle('faq__answer--open', expanded);
+        (answer as HTMLElement).hidden = !expanded;
       }
+    }
+
+    // Estado inicial consistente.
+    faqButtons.forEach(function (btn, index) {
+      const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+      setFaqState(btn, index === 0 ? isExpanded : false);
     });
-  });
+
+    faqButtons.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        const isExpanded = this.getAttribute('aria-expanded') === 'true';
+
+        faqButtons.forEach(function (otherBtn) {
+          setFaqState(otherBtn, false);
+        });
+
+        if (!isExpanded) {
+          setFaqState(this, true);
+        }
+      });
+    });
+  }
 
   // ── WhatsApp form (homepage) ──
   const cotizarForm = document.getElementById('cotizar-form');
@@ -162,7 +175,9 @@
 
       const nombre = (document.getElementById('lead-nombre') as HTMLInputElement)?.value.trim();
       const contacto = (document.getElementById('lead-contacto') as HTMLInputElement)?.value.trim();
-      const equipo = (document.getElementById('lead-equipo') as HTMLSelectElement)?.value;
+      const equipo =
+        (document.getElementById('lead-equipo') as HTMLSelectElement)?.value ||
+        (document.getElementById('lead-servicio') as HTMLSelectElement)?.value;
 
       if (!nombre || !contacto || !equipo) return;
 

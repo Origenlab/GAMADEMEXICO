@@ -3,9 +3,40 @@ import Layout from '../layouts/Base.astro';
 import SectionHeader from '../components/SectionHeader.astro';
 import { getCollection } from 'astro:content';
 import { withImageCdn } from '../lib/images';
+import Faq from '../components/Faq.astro';
 
 const productos = (await getCollection('productos', ({ data }) => data.categoria === 'monitores')).sort((a, b) => a.data.orden - b.data.orden);
 const cdnImage = (path: string) => withImageCdn(path) ?? path;
+const faqItems = [
+  {
+    "pregunta": "¿Qué tipos de monitores contra incendios vende Gama de México?",
+    "respuesta": "Distribuimos cuatro tipos principales de monitores de marcas líderes como Elkhart Brass, Akron, Potter Roemer y Task Force Tips: 1) Monitores tipo corazón, ideales para protección perimetral con rotación 360° y caudales hasta 2,000 GPM; 2) Monitores tipo cuello de cisne en versión autosoportada y soportada para protección de tanques desde arriba, con caudales de 500-2,000 GPM; 3) Monitores certificados FM que cumplen estándar FM 1421 para instalaciones de alto riesgo; y 4) Monitores UL Listed reconocidos por Protección Civil en México. Todos tienen construcción forjada de una pieza e incluyen certificación y documentación completa."
+  },
+  {
+    "pregunta": "¿Cuál es la diferencia entre un monitor certificado FM y uno UL Listed?",
+    "respuesta": "La certificación FM (Factory Mutual) es el estándar más riguroso para equipos en instalaciones industriales de alto riesgo - cumple estándar FM 1421, requiere inspecciones trimestrales en fábrica, y es exigido por aseguradoras para refinerías, petroquímicas y terminales de almacenamiento. La certificación UL Listed (Underwriters Laboratories) certifica seguridad y rendimiento mediante pruebas integrales y es ampliamente aceptado por autoridades de Protección Civil en México para aplicaciones comerciales e industriales. Muchos monitores Elkhart Brass tienen doble certificación FM y UL, ofreciendo máxima flexibilidad."
+  },
+  {
+    "pregunta": "¿Qué caudal manejan los monitores contra incendios?",
+    "respuesta": "Los monitores que distribuimos manejan caudales desde 500 hasta 2,000 GPM (1,893 a 7,571 litros por minuto) según el modelo. Los monitores tipo corazón Copperhead tienen capacidad hasta 1,250 GPM, ideales para la mayoría de aplicaciones de protección perimetral. Los monitores tipo cuello de cisne están disponibles en diferentes alturas y caudales - los modelos para tanques grandes pueden alcanzar hasta 2,000 GPM. El caudal necesario se determina según el riesgo a proteger, la distancia de proyección requerida y los códigos NFPA aplicables. Nuestros ingenieros te ayudan a calcular el caudal correcto sin costo."
+  },
+  {
+    "pregunta": "¿De qué materiales están fabricados los monitores?",
+    "respuesta": "Los monitores que distribuimos están disponibles en tres materiales según el ambiente de operación: 1) Bronce forjado - recomendado para ambientes marinos, plantas químicas con vapores corrosivos, y aplicaciones donde se requiere máxima resistencia a corrosión; 2) Acero inoxidable 316 - para aplicaciones con espuma o agentes químicos que pueden atacar el bronce; y 3) Hierro dúctil - para aplicaciones con agua dulce donde la corrosión no es preocupación. Todas las marcas que manejamos tienen construcción forjada de una sola pieza sin juntas débiles. Te asesoramos en la selección del material correcto."
+  },
+  {
+    "pregunta": "¿En qué tipo de aplicaciones se utilizan los monitores contra incendios?",
+    "respuesta": "Los monitores tipo corazón se utilizan en protección perimetral de áreas de proceso en refinerías de petróleo, plantas petroquímicas, terminales de almacenamiento de hidrocarburos, muelles de carga/descarga de líquidos inflamables, hangares de aviación, y almacenes de productos químicos. Los monitores tipo cuello de cisne se utilizan específicamente para protección de tanques atmosféricos de almacenamiento, tanques de GLP, esferas de almacenamiento, y recipientes a presión elevados. En general, cualquier instalación con riesgo de incendio clase B que requiera proyección de grandes volúmenes de agua a distancia."
+  },
+  {
+    "pregunta": "¿Cómo sé qué tipo de monitor necesito para mi aplicación?",
+    "respuesta": "La selección del monitor correcto depende de varios factores: 1) Tipo de riesgo a proteger - corazón para perímetro horizontal, cuello de cisne para tanques; 2) Caudal requerido según códigos NFPA y tamaño del riesgo; 3) Alcance de proyección necesario; 4) Requisitos de certificación - FM para instalaciones de alto riesgo, UL para aplicaciones generales; 5) Material según ambiente corrosivo o no; y 6) Operación manual o remota. Nuestros ingenieros realizan esta evaluación sin costo - compártenos detalles de tu aplicación y te recomendamos el modelo óptimo."
+  },
+  {
+    "pregunta": "¿Los monitores incluyen documentación para trámites con Protección Civil?",
+    "respuesta": "Sí, cada monitor incluye documentación completa aceptada por autoridades mexicanas: certificado FM original o UL Listed según modelo, fichas técnicas en español con especificaciones completas, manuales de instalación y operación traducidos, cartas de conformidad con NOM-002-STPS-2010, y dibujos dimensionales. Esta documentación es exactamente lo que solicitan en auditorías de Protección Civil, verificaciones de aseguradoras, y dictámenes de unidades de verificación. Muchos clientes nos comentan que la calidad de nuestra documentación facilita enormemente los trámites."
+  }
+];
 ---
 
 <Layout
@@ -60,7 +91,7 @@ const cdnImage = (path: string) => withImageCdn(path) ?? path;
           </div>
         </article>
         <article class="category-card">
-          <div class="category-card__image" role="img" aria-label="Monitor Cuello de Cisne" style={`background-image: url('${cdnImage('/img/monitores-contra-incendios/monitor-cuello-cisne-vista-frontal-bronce.avif')}'); background-size: cover; background-position: center;`}></div>
+          <div class="category-card__image" role="img" aria-label="Monitor Cuello de Cisne" style={`background-image: url('${cdnImage('/img/monitores-contra-incendios/monitor-cuello-cisne-contra-incendios-lateral-derecha-01.avif')}'); background-size: cover; background-position: center;`}></div>
           <div class="category-card__body">
             <h3 class="category-card__title">Monitor Cuello de Cisne</h3>
             <p class="category-card__sub">Protección de tanques elevados con proyección desde arriba</p>
@@ -94,7 +125,7 @@ const cdnImage = (path: string) => withImageCdn(path) ?? path;
           </div>
         </article>
         <article class="category-card">
-          <div class="category-card__image" role="img" aria-label="Monitor UL Listed" style={`background-image: url('${cdnImage('/img/monitores-contra-incendios/monitor-ul-listed-fixed-flow-vista-frontal.avif')}'); background-size: cover; background-position: center;`}></div>
+          <div class="category-card__image" role="img" aria-label="Monitor UL Listed" style={`background-image: url('${cdnImage('/img/monitores-contra-incendios/monitor-ul-listed-contra-incendios-estacion-bomberos-01.avif')}'); background-size: cover; background-position: center;`}></div>
           <div class="category-card__body">
             <h3 class="category-card__title">Monitor UL Listed</h3>
             <p class="category-card__sub">Certificación Underwriters Laboratories para máxima confiabilidad</p>
@@ -160,7 +191,7 @@ const cdnImage = (path: string) => withImageCdn(path) ?? path;
             <a href="#cotizar" class="btn btn--outline">Cotizar</a>
           </div>
         </div>
-        <div class="service-detail__image" role="img" aria-label="Monitor tipo cuello de cisne para tanques industriales" style={`background-image: url('${cdnImage('/img/monitores-contra-incendios/monitor-cuello-cisne-perfil-completo.avif')}'); background-size: cover; background-position: center;`}></div>
+        <div class="service-detail__image" role="img" aria-label="Monitor tipo cuello de cisne para tanques industriales" style={`background-image: url('${cdnImage('/img/monitores-contra-incendios/monitor-cuello-cisne-contra-incendios-perspectiva-frontal-05.avif')}'); background-size: cover; background-position: center;`}></div>
       </div>
 
       <div class="service-detail" id="detalle-fm">
@@ -200,7 +231,7 @@ const cdnImage = (path: string) => withImageCdn(path) ?? path;
             <a href="#cotizar" class="btn btn--outline">Cotizar</a>
           </div>
         </div>
-        <div class="service-detail__image" role="img" aria-label="Monitor UL Listed Underwriters Laboratories" style={`background-image: url('${cdnImage('/img/monitores-contra-incendios/monitor-ul-listed-fixed-flow-perfil-completo.avif')}'); background-size: cover; background-position: center;`}></div>
+        <div class="service-detail__image" role="img" aria-label="Monitor UL Listed Underwriters Laboratories" style={`background-image: url('${cdnImage('/img/monitores-contra-incendios/monitor-ul-listed-contra-incendios-camion-fondo-02.avif')}'); background-size: cover; background-position: center;`}></div>
       </div>
 
     </div>
@@ -464,100 +495,8 @@ const cdnImage = (path: string) => withImageCdn(path) ?? path;
         subtitulo="Resolvemos las dudas más comunes sobre tipos, certificaciones y selección"
         idTitulo="faq-title"
       />
-      <div class="faq__list">
-        <div class="faq__item">
-          <button class="faq__question" aria-expanded="false" aria-controls="faq-mon-1" id="faq-m-q1">¿Qué tipos de monitores contra incendios vende Gama de México?<span class="faq__icon" aria-hidden="true">+</span></button>
-          <div class="faq__answer" id="faq-mon-1" role="region" aria-labelledby="faq-m-q1">
-            <p>Distribuimos cuatro tipos principales de monitores de marcas líderes como Elkhart Brass, Akron, Potter Roemer y Task Force Tips: <strong>1) Monitores tipo corazón</strong>, ideales para protección perimetral con rotación 360° y caudales hasta 2,000 GPM; <strong>2) Monitores tipo cuello de cisne</strong> en versión autosoportada y soportada para protección de tanques desde arriba, con caudales de 500-2,000 GPM; <strong>3) Monitores certificados FM</strong> que cumplen estándar FM 1421 para instalaciones de alto riesgo; y <strong>4) Monitores UL Listed</strong> reconocidos por Protección Civil en México. Todos tienen construcción forjada de una pieza e incluyen certificación y documentación completa.</p>
-          </div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__question" aria-expanded="false" aria-controls="faq-mon-2" id="faq-m-q2">¿Cuál es la diferencia entre un monitor certificado FM y uno UL Listed?<span class="faq__icon" aria-hidden="true">+</span></button>
-          <div class="faq__answer" id="faq-mon-2" role="region" aria-labelledby="faq-m-q2">
-            <p>La <strong>certificación FM (Factory Mutual)</strong> es el estándar más riguroso para equipos en instalaciones industriales de alto riesgo - cumple estándar FM 1421, requiere inspecciones trimestrales en fábrica, y es exigido por aseguradoras para refinerías, petroquímicas y terminales de almacenamiento. La <strong>certificación UL Listed</strong> (Underwriters Laboratories) certifica seguridad y rendimiento mediante pruebas integrales y es ampliamente aceptado por autoridades de Protección Civil en México para aplicaciones comerciales e industriales. Muchos monitores Elkhart Brass tienen doble certificación FM y UL, ofreciendo máxima flexibilidad.</p>
-          </div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__question" aria-expanded="false" aria-controls="faq-mon-3" id="faq-m-q3">¿Qué caudal manejan los monitores contra incendios?<span class="faq__icon" aria-hidden="true">+</span></button>
-          <div class="faq__answer" id="faq-mon-3" role="region" aria-labelledby="faq-m-q3">
-            <p>Los monitores que distribuimos manejan caudales desde <strong>500 hasta 2,000 GPM</strong> (1,893 a 7,571 litros por minuto) según el modelo. Los monitores tipo corazón Copperhead tienen capacidad hasta 1,250 GPM, ideales para la mayoría de aplicaciones de protección perimetral. Los monitores tipo cuello de cisne están disponibles en diferentes alturas y caudales - los modelos para tanques grandes pueden alcanzar hasta 2,000 GPM. El caudal necesario se determina según el riesgo a proteger, la distancia de proyección requerida y los códigos NFPA aplicables. Nuestros ingenieros te ayudan a calcular el caudal correcto sin costo.</p>
-          </div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__question" aria-expanded="false" aria-controls="faq-mon-4" id="faq-m-q4">¿De qué materiales están fabricados los monitores?<span class="faq__icon" aria-hidden="true">+</span></button>
-          <div class="faq__answer" id="faq-mon-4" role="region" aria-labelledby="faq-m-q4">
-            <p>Los monitores que distribuimos están disponibles en tres materiales según el ambiente de operación: <strong>1) Bronce forjado</strong> - recomendado para ambientes marinos, plantas químicas con vapores corrosivos, y aplicaciones donde se requiere máxima resistencia a corrosión; <strong>2) Acero inoxidable 316</strong> - para aplicaciones con espuma o agentes químicos que pueden atacar el bronce; y <strong>3) Hierro dúctil</strong> - para aplicaciones con agua dulce donde la corrosión no es preocupación. Todas las marcas que manejamos tienen construcción forjada de una sola pieza sin juntas débiles. Te asesoramos en la selección del material correcto.</p>
-          </div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__question" aria-expanded="false" aria-controls="faq-mon-5" id="faq-m-q5">¿En qué tipo de aplicaciones se utilizan los monitores contra incendios?<span class="faq__icon" aria-hidden="true">+</span></button>
-          <div class="faq__answer" id="faq-mon-5" role="region" aria-labelledby="faq-m-q5">
-            <p>Los <strong>monitores tipo corazón</strong> se utilizan en protección perimetral de áreas de proceso en refinerías de petróleo, plantas petroquímicas, terminales de almacenamiento de hidrocarburos, muelles de carga/descarga de líquidos inflamables, hangares de aviación, y almacenes de productos químicos. Los <strong>monitores tipo cuello de cisne</strong> se utilizan específicamente para protección de tanques atmosféricos de almacenamiento, tanques de GLP, esferas de almacenamiento, y recipientes a presión elevados. En general, cualquier instalación con riesgo de incendio clase B que requiera proyección de grandes volúmenes de agua a distancia.</p>
-          </div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__question" aria-expanded="false" aria-controls="faq-mon-6" id="faq-m-q6">¿Cómo sé qué tipo de monitor necesito para mi aplicación?<span class="faq__icon" aria-hidden="true">+</span></button>
-          <div class="faq__answer" id="faq-mon-6" role="region" aria-labelledby="faq-m-q6">
-            <p>La selección del monitor correcto depende de varios factores: <strong>1)</strong> Tipo de riesgo a proteger - corazón para perímetro horizontal, cuello de cisne para tanques; <strong>2)</strong> Caudal requerido según códigos NFPA y tamaño del riesgo; <strong>3)</strong> Alcance de proyección necesario; <strong>4)</strong> Requisitos de certificación - FM para instalaciones de alto riesgo, UL para aplicaciones generales; <strong>5)</strong> Material según ambiente corrosivo o no; y <strong>6)</strong> Operación manual o remota. Nuestros ingenieros realizan esta evaluación sin costo - compártenos detalles de tu aplicación y te recomendamos el modelo óptimo.</p>
-          </div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__question" aria-expanded="false" aria-controls="faq-mon-7" id="faq-m-q7">¿Los monitores incluyen documentación para trámites con Protección Civil?<span class="faq__icon" aria-hidden="true">+</span></button>
-          <div class="faq__answer" id="faq-mon-7" role="region" aria-labelledby="faq-m-q7">
-            <p>Sí, cada monitor incluye documentación completa aceptada por autoridades mexicanas: <strong>certificado FM original o UL Listed</strong> según modelo, fichas técnicas en español con especificaciones completas, manuales de instalación y operación traducidos, cartas de conformidad con NOM-002-STPS-2010, y dibujos dimensionales. Esta documentación es exactamente lo que solicitan en auditorías de Protección Civil, verificaciones de aseguradoras, y dictámenes de unidades de verificación. Muchos clientes nos comentan que la calidad de nuestra documentación facilita enormemente los trámites.</p>
-          </div>
-        </div>
-      </div>
+      <Faq items={faqItems} id="faq" />
     </div>
   </section>
 
 </Layout>
-
-<script>
-  // FAQ Accordion
-  document.addEventListener('DOMContentLoaded', () => {
-    const faqQuestions = document.querySelectorAll('.faq__question');
-
-    faqQuestions.forEach(button => {
-      button.addEventListener('click', () => {
-        const expanded = button.getAttribute('aria-expanded') === 'true';
-        const icon = button.querySelector('.faq__icon');
-
-        // Close all other items
-        faqQuestions.forEach(otherButton => {
-          if (otherButton !== button) {
-            otherButton.setAttribute('aria-expanded', 'false');
-            const otherIcon = otherButton.querySelector('.faq__icon');
-            if (otherIcon) otherIcon.textContent = '+';
-            const otherAnswer = document.getElementById(otherButton.getAttribute('aria-controls') || '');
-            if (otherAnswer) otherAnswer.style.display = 'none';
-          }
-        });
-
-        // Toggle current item
-        button.setAttribute('aria-expanded', (!expanded).toString());
-        if (icon) icon.textContent = expanded ? '+' : '−';
-        const answer = document.getElementById(button.getAttribute('aria-controls') || '');
-        if (answer) {
-          answer.style.display = expanded ? 'none' : 'block';
-        }
-      });
-    });
-
-    // WhatsApp Form Handler
-    const cotizarForm = document.getElementById('cotizar-form');
-    if (cotizarForm) {
-      cotizarForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-
-        const nombre = (document.getElementById('lead-nombre') as HTMLInputElement)?.value || '';
-        const contacto = (document.getElementById('lead-contacto') as HTMLInputElement)?.value || '';
-        const tipoEquipo = (document.getElementById('lead-equipo') as HTMLSelectElement)?.value || '';
-
-        const mensaje = `Hola, me interesa cotizar monitores contra incendios:%0A%0ANombre: ${encodeURIComponent(nombre)}%0AContacto: ${encodeURIComponent(contacto)}%0ATipo de monitor: ${encodeURIComponent(tipoEquipo)}`;
-
-        window.open(`https://wa.me/5215565298240?text=${mensaje}`, '_blank');
-      });
-    }
-  });
-</script>

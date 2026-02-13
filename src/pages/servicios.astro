@@ -1,5 +1,33 @@
 ---
 import Layout from '../layouts/Base.astro';
+import Faq from '../components/Faq.astro';
+
+const faqItems = [
+  {
+    pregunta: '¿Qué servicios ofrece Gama de México en equipos contra incendios?',
+    respuesta: 'Ofrecemos seis servicios principales: (1) Venta de equipos y accesorios certificados (monitores, boquillas, mangueras, válvulas, conexiones, gabinetes, hidrantes); (2) Asesoría técnica especializada gratuita para selección de equipos según tipo de riesgo y normativa; (3) Atención a empresas y proyectos de gran escala con asesor exclusivo y precios por volumen; (4) Suministro para mantenimiento preventivo y correctivo con disponibilidad inmediata; (5) Logística y envíos nacionales con entregas coordinadas en toda la República; (6) Cotizaciones corporativas y para licitaciones con documentación técnica completa y respuesta en menos de 24 horas.',
+  },
+  {
+    pregunta: '¿La asesoría técnica tiene algún costo?',
+    respuesta: 'No. Nuestro servicio de asesoría técnica es completamente gratuito y sin compromiso. Analizamos las características específicas de tu proyecto (tipo de riesgo, normativa aplicable, especificaciones hidráulicas) y te recomendamos los equipos exactos que necesitas. Proporcionamos orientación sobre normativa mexicana (NOM-002-STPS-2010, NFPA), selección de diámetros y materiales, certificaciones requeridas y documentación técnica. Puedes consultarnos por teléfono, WhatsApp, correo electrónico o mediante el formulario de contacto sin ningún costo.',
+  },
+  {
+    pregunta: '¿Pueden atender licitaciones públicas y proyectos gubernamentales?',
+    respuesta: 'Sí. Hemos preparado nuestro proceso específicamente para el sector corporativo y gubernamental. Proporcionamos cotizaciones formales con especificaciones técnicas completas (fichas de producto, certificados UL y FM, planos de instalación), documentación completa para licitaciones públicas, precios por volumen para pedidos corporativos recurrentes, facturación fiscal (CFDI 4.0) con todos los complementos necesarios y respuesta garantizada en menos de 24 horas hábiles.',
+  },
+  {
+    pregunta: '¿Qué tipo de refacciones manejan para mantenimiento?',
+    respuesta: 'Proveemos refacciones y accesorios certificados para mantenimiento preventivo y correctivo de sistemas contra incendios: válvulas de reposición (compuerta, globo, check), conexiones certificadas UL (coples, niples, reducciones, adaptadores), mangueras industriales tipo Blindex de 1½" y 2½", herrajes de bronce con rosca NPT, componentes para pruebas hidrostáticas, y boquillas de reemplazo. Operamos desde Ciudad de México y Querétaro con disponibilidad inmediata en inventario.',
+  },
+  {
+    pregunta: '¿Cómo funcionan los envíos de equipos contra incendios?',
+    respuesta: 'Operamos desde Ciudad de México y Querétaro con cobertura en toda la República Mexicana. Coordinamos entregas directas en sitio utilizando líneas de transporte especializadas en carga industrial. Utilizamos embalaje especializado para proteger equipos de gran formato (monitores, válvulas, gabinetes) durante el traslado. Nos adaptamos a los calendarios de obra, programando entregas por etapas según el avance del proyecto. Los costos de envío se informan claramente en la cotización.',
+  },
+  {
+    pregunta: '¿Cuánto tardan en responder una cotización?',
+    respuesta: 'Nuestro compromiso es responder en menos de 24 horas hábiles. Para solicitudes urgentes o equipos en inventario, frecuentemente respondemos el mismo día. Las cotizaciones incluyen precios, disponibilidad, tiempos de entrega estimados y especificaciones técnicas del producto. Para proyectos de gran escala o licitaciones, asignamos un asesor técnico exclusivo que coordina todo el proceso.',
+  },
+];
 ---
 
 <Layout
@@ -418,79 +446,8 @@ import Layout from '../layouts/Base.astro';
         <h2 id="faq-title" class="section-title">Preguntas Frecuentes sobre Nuestros Servicios</h2>
         <p class="section-subtitle">Resolvemos las dudas más comunes sobre asesoría, cotizaciones, envíos y atención corporativa</p>
       </div>
-      <div class="faq__list">
-        <div class="faq__item">
-          <button class="faq__question" aria-expanded="false" aria-controls="faq-s-1" id="faq-q-1">¿Qué servicios ofrece Gama de México en equipos contra incendios?<span class="faq__icon" aria-hidden="true">+</span></button>
-          <div class="faq__answer" id="faq-s-1" role="region" aria-labelledby="faq-q-1">
-            <p>Ofrecemos seis servicios principales: (1) <strong>Venta de equipos y accesorios</strong> certificados (monitores, boquillas, mangueras, válvulas, conexiones, gabinetes, hidrantes); (2) <strong>Asesoría técnica especializada</strong> gratuita para selección de equipos según tipo de riesgo y normativa; (3) <strong>Atención a empresas y proyectos de gran escala</strong> con asesor exclusivo y precios por volumen; (4) <strong>Suministro para mantenimiento</strong> preventivo y correctivo con disponibilidad inmediata; (5) <strong>Logística y envíos nacionales</strong> con entregas coordinadas en toda la República; (6) <strong>Cotizaciones corporativas y para licitaciones</strong> con documentación técnica completa y respuesta en menos de 24 horas.</p>
-          </div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__question" aria-expanded="false" aria-controls="faq-s-2" id="faq-q-2">¿La asesoría técnica tiene algún costo?<span class="faq__icon" aria-hidden="true">+</span></button>
-          <div class="faq__answer" id="faq-s-2" role="region" aria-labelledby="faq-q-2">
-            <p>No. Nuestro servicio de <strong>asesoría técnica es completamente gratuito y sin compromiso</strong>. Analizamos las características específicas de tu proyecto (tipo de riesgo, normativa aplicable, especificaciones hidráulicas) y te recomendamos los equipos exactos que necesitas. Proporcionamos orientación sobre normativa mexicana (NOM-002-STPS-2010, NFPA), selección de diámetros y materiales, certificaciones requeridas y documentación técnica. Puedes consultarnos por teléfono, WhatsApp, correo electrónico o mediante el formulario de contacto sin ningún costo.</p>
-          </div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__question" aria-expanded="false" aria-controls="faq-s-3" id="faq-q-3">¿Pueden atender licitaciones públicas y proyectos gubernamentales?<span class="faq__icon" aria-hidden="true">+</span></button>
-          <div class="faq__answer" id="faq-s-3" role="region" aria-labelledby="faq-q-3">
-            <p>Sí. Hemos preparado nuestro proceso específicamente para el <strong>sector corporativo y gubernamental</strong>. Proporcionamos cotizaciones formales con especificaciones técnicas completas (fichas de producto, certificados UL y FM, planos de instalación), documentación completa para licitaciones públicas, precios por volumen para pedidos corporativos recurrentes, facturación fiscal (CFDI 4.0) con todos los complementos necesarios y respuesta garantizada en menos de 24 horas hábiles.</p>
-          </div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__question" aria-expanded="false" aria-controls="faq-s-4" id="faq-q-4">¿Qué tipo de refacciones manejan para mantenimiento?<span class="faq__icon" aria-hidden="true">+</span></button>
-          <div class="faq__answer" id="faq-s-4" role="region" aria-labelledby="faq-q-4">
-            <p>Proveemos <strong>refacciones y accesorios certificados</strong> para mantenimiento preventivo y correctivo de sistemas contra incendios: válvulas de reposición (compuerta, globo, check), conexiones certificadas UL (coples, niples, reducciones, adaptadores), mangueras industriales tipo Blindex de 1½" y 2½", herrajes de bronce con rosca NPT, componentes para pruebas hidrostáticas, y boquillas de reemplazo. Operamos desde Ciudad de México y Querétaro con <strong>disponibilidad inmediata en inventario</strong>.</p>
-          </div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__question" aria-expanded="false" aria-controls="faq-s-5" id="faq-q-5">¿Cómo funcionan los envíos de equipos contra incendios?<span class="faq__icon" aria-hidden="true">+</span></button>
-          <div class="faq__answer" id="faq-s-5" role="region" aria-labelledby="faq-q-5">
-            <p>Operamos desde <strong>Ciudad de México y Querétaro</strong> con cobertura en toda la República Mexicana. Coordinamos entregas directas en sitio utilizando líneas de transporte especializadas en carga industrial. Utilizamos <strong>embalaje especializado</strong> para proteger equipos de gran formato (monitores, válvulas, gabinetes) durante el traslado. Nos adaptamos a los calendarios de obra, programando entregas por etapas según el avance del proyecto. Los costos de envío se informan claramente en la cotización.</p>
-          </div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__question" aria-expanded="false" aria-controls="faq-s-6" id="faq-q-6">¿Cuánto tardan en responder una cotización?<span class="faq__icon" aria-hidden="true">+</span></button>
-          <div class="faq__answer" id="faq-s-6" role="region" aria-labelledby="faq-q-6">
-            <p>Nuestro compromiso es responder <strong>en menos de 24 horas hábiles</strong>. Para solicitudes urgentes o equipos en inventario, frecuentemente respondemos el mismo día. Las cotizaciones incluyen precios, disponibilidad, tiempos de entrega estimados y especificaciones técnicas del producto. Para proyectos de gran escala o licitaciones, asignamos un asesor técnico exclusivo que coordina todo el proceso.</p>
-          </div>
-        </div>
-      </div>
+      <Faq items={faqItems} id="faq" />
     </div>
   </section>
 
 </Layout>
-
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    // Formulario de cotización
-    const cotizarForm = document.getElementById('cotizar-form');
-    if (cotizarForm) {
-      cotizarForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const nombre = (document.getElementById('lead-nombre') as HTMLInputElement)?.value || '';
-        const contacto = (document.getElementById('lead-contacto') as HTMLInputElement)?.value || '';
-        const servicio = (document.getElementById('lead-servicio') as HTMLSelectElement)?.value || 'No especificado';
-        const mensaje = `Hola, me interesa información sobre sus servicios:%0A%0ANombre: ${encodeURIComponent(nombre)}%0AContacto: ${encodeURIComponent(contacto)}%0AServicio: ${encodeURIComponent(servicio)}`;
-        window.open(`https://wa.me/5215565298240?text=${mensaje}`, '_blank');
-      });
-    }
-
-    // FAQ accordion
-    const faqButtons = document.querySelectorAll('.faq__question');
-    faqButtons.forEach((button) => {
-      button.addEventListener('click', () => {
-        const expanded = button.getAttribute('aria-expanded') === 'true';
-        button.setAttribute('aria-expanded', String(!expanded));
-        const answer = button.nextElementSibling as HTMLElement;
-        if (answer) {
-          answer.style.display = expanded ? 'none' : 'block';
-        }
-        const icon = button.querySelector('.faq__icon');
-        if (icon) {
-          icon.textContent = expanded ? '+' : '−';
-        }
-      });
-    });
-  });
-</script>

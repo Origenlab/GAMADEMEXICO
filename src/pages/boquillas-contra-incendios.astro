@@ -1,8 +1,39 @@
 ---
 import Layout from '../layouts/Base.astro';
 import { getCollection } from 'astro:content';
+import Faq from '../components/Faq.astro';
 
 const productos = (await getCollection('productos', ({ data }) => data.categoria === 'boquillas')).sort((a, b) => a.data.orden - b.data.orden);
+const faqItems = [
+  {
+    "pregunta": "¿Qué es el chiflón de 3 pasos en boquillas contra incendios?",
+    "respuesta": "El chiflón de 3 pasos permite seleccionar tres patrones de agua: chorro directo para máximo alcance, niebla para enfriamiento y cortina para protección personal. Las boquillas con chiflón incluyen selector de flujo ajustable, construcción en bronce fundido y válvula de cierre total con empaque de neopreno. Disponibles en modelos tipo pistola y turbo jet."
+  },
+  {
+    "pregunta": "¿Por qué elegir boquillas de bronce fundido?",
+    "respuesta": "Las boquillas de bronce fundido ofrecen resistencia superior a la corrosión para aplicaciones industriales. Incluyen chiflón de 3 pasos para patrones de agua regulables, selector de flujo ajustable y válvula de cierre total con empaque de neopreno. Ideal para ambientes químicos, petroquímicos y refinerías. Disponibles en modelos turbo jet y tipo pistola."
+  },
+  {
+    "pregunta": "¿Cómo funciona el selector de flujo en boquillas?",
+    "respuesta": "El selector de flujo permite ajustar el caudal GPM según la aplicación específica. En boquillas tipo pistola el ajuste es manual, en turbo jet es automático para mantener presión constante. Combinado con chiflón de 3 pasos ofrece control total de los patrones de agua. Válvula de cierre total con empaque de neopreno garantiza sellado hermético. Construcción en bronce fundido disponible."
+  },
+  {
+    "pregunta": "¿Qué patrones de agua ofrecen las boquillas contra incendios?",
+    "respuesta": "Los patrones de agua disponibles mediante chiflón de 3 pasos son: chorro directo para máximo alcance y penetración, niebla para enfriamiento y protección térmica, y cortina para defensa del operador. El selector de flujo controla el caudal GPM. Construcción en bronce fundido con cierre total mediante empaque de neopreno. Modelos turbo jet disponibles."
+  },
+  {
+    "pregunta": "¿Qué ventajas tiene el cierre total con neopreno?",
+    "respuesta": "La válvula de cierre total con empaque de neopreno proporciona sellado hermético instantáneo, evitando fugas y permitiendo control preciso del flujo. Compatible con boquillas de bronce fundido y aluminio. Funciona con chiflón de 3 pasos, selector de flujo y todos los patrones de agua. Disponible en modelos turbo jet y tipo pistola."
+  },
+  {
+    "pregunta": "¿Qué diferencia hay entre boquilla tipo pistola y turbo jet?",
+    "respuesta": "Las boquillas tipo pistola tienen selector de flujo manual y chiflón de 3 pasos con ajuste fijo. Las turbo jet ajustan automáticamente para mantener presión constante cuando varía el caudal. Ambas ofrecen patrones de agua regulables, cierre total con neopreno y opciones en bronce fundido o aluminio forjado."
+  },
+  {
+    "pregunta": "¿Qué tipos de boquillas contra incendios venden?",
+    "respuesta": "Vendemos boquillas con chiflón de 3 pasos: tipo pistola con selector de flujo manual, turbo jet con ajuste automático, industriales en bronce fundido y certificadas UL/FM. Todas incluyen patrones de agua regulables, cierre total con empaque de neopreno y documentación completa para auditorías."
+  }
+];
 ---
 
 <Layout
@@ -394,100 +425,8 @@ const productos = (await getCollection('productos', ({ data }) => data.categoria
         <h2 id="faq-title" class="section-title">Preguntas Frecuentes sobre Boquillas Contra Incendios con Chiflón</h2>
         <p class="section-subtitle">Chiflón 3 pasos, bronce fundido, selector de flujo, patrones de agua y turbo jet</p>
       </div>
-      <div class="faq__list">
-        <div class="faq__item">
-          <button class="faq__question" aria-expanded="false" aria-controls="faq-boq-1" id="faq-b-q1">¿Qué es el chiflón de 3 pasos en boquillas contra incendios?<span class="faq__icon" aria-hidden="true">+</span></button>
-          <div class="faq__answer" id="faq-boq-1" role="region" aria-labelledby="faq-b-q1">
-            <p>El <strong>chiflón de 3 pasos</strong> permite seleccionar tres <strong>patrones de agua</strong>: chorro directo para máximo alcance, niebla para enfriamiento y cortina para protección personal. Las boquillas con chiflón incluyen <strong>selector de flujo</strong> ajustable, construcción en <strong>bronce fundido</strong> y válvula de <strong>cierre total</strong> con empaque de <strong>neopreno</strong>. Disponibles en modelos tipo pistola y <strong>turbo jet</strong>.</p>
-          </div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__question" aria-expanded="false" aria-controls="faq-boq-2" id="faq-b-q2">¿Por qué elegir boquillas de bronce fundido?<span class="faq__icon" aria-hidden="true">+</span></button>
-          <div class="faq__answer" id="faq-boq-2" role="region" aria-labelledby="faq-b-q2">
-            <p>Las boquillas de <strong>bronce fundido</strong> ofrecen resistencia superior a la corrosión para aplicaciones industriales. Incluyen <strong>chiflón de 3 pasos</strong> para <strong>patrones de agua</strong> regulables, <strong>selector de flujo</strong> ajustable y válvula de <strong>cierre total</strong> con empaque de <strong>neopreno</strong>. Ideal para ambientes químicos, petroquímicos y refinerías. Disponibles en modelos <strong>turbo jet</strong> y tipo pistola.</p>
-          </div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__question" aria-expanded="false" aria-controls="faq-boq-3" id="faq-b-q3">¿Cómo funciona el selector de flujo en boquillas?<span class="faq__icon" aria-hidden="true">+</span></button>
-          <div class="faq__answer" id="faq-boq-3" role="region" aria-labelledby="faq-b-q3">
-            <p>El <strong>selector de flujo</strong> permite ajustar el caudal GPM según la aplicación específica. En boquillas tipo pistola el ajuste es manual, en <strong>turbo jet</strong> es automático para mantener presión constante. Combinado con <strong>chiflón de 3 pasos</strong> ofrece control total de los <strong>patrones de agua</strong>. Válvula de <strong>cierre total</strong> con empaque de <strong>neopreno</strong> garantiza sellado hermético. Construcción en <strong>bronce fundido</strong> disponible.</p>
-          </div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__question" aria-expanded="false" aria-controls="faq-boq-4" id="faq-b-q4">¿Qué patrones de agua ofrecen las boquillas contra incendios?<span class="faq__icon" aria-hidden="true">+</span></button>
-          <div class="faq__answer" id="faq-boq-4" role="region" aria-labelledby="faq-b-q4">
-            <p>Los <strong>patrones de agua</strong> disponibles mediante <strong>chiflón de 3 pasos</strong> son: chorro directo para máximo alcance y penetración, niebla para enfriamiento y protección térmica, y cortina para defensa del operador. El <strong>selector de flujo</strong> controla el caudal GPM. Construcción en <strong>bronce fundido</strong> con <strong>cierre total</strong> mediante empaque de <strong>neopreno</strong>. Modelos <strong>turbo jet</strong> disponibles.</p>
-          </div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__question" aria-expanded="false" aria-controls="faq-boq-5" id="faq-b-q5">¿Qué ventajas tiene el cierre total con neopreno?<span class="faq__icon" aria-hidden="true">+</span></button>
-          <div class="faq__answer" id="faq-boq-5" role="region" aria-labelledby="faq-b-q5">
-            <p>La válvula de <strong>cierre total</strong> con empaque de <strong>neopreno</strong> proporciona sellado hermético instantáneo, evitando fugas y permitiendo control preciso del flujo. Compatible con boquillas de <strong>bronce fundido</strong> y aluminio. Funciona con <strong>chiflón de 3 pasos</strong>, <strong>selector de flujo</strong> y todos los <strong>patrones de agua</strong>. Disponible en modelos <strong>turbo jet</strong> y tipo pistola.</p>
-          </div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__question" aria-expanded="false" aria-controls="faq-boq-6" id="faq-b-q6">¿Qué diferencia hay entre boquilla tipo pistola y turbo jet?<span class="faq__icon" aria-hidden="true">+</span></button>
-          <div class="faq__answer" id="faq-boq-6" role="region" aria-labelledby="faq-b-q6">
-            <p>Las boquillas tipo pistola tienen <strong>selector de flujo</strong> manual y <strong>chiflón de 3 pasos</strong> con ajuste fijo. Las <strong>turbo jet</strong> ajustan automáticamente para mantener presión constante cuando varía el caudal. Ambas ofrecen <strong>patrones de agua</strong> regulables, <strong>cierre total</strong> con <strong>neopreno</strong> y opciones en <strong>bronce fundido</strong> o aluminio forjado.</p>
-          </div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__question" aria-expanded="false" aria-controls="faq-boq-7" id="faq-b-q7">¿Qué tipos de boquillas contra incendios venden?<span class="faq__icon" aria-hidden="true">+</span></button>
-          <div class="faq__answer" id="faq-boq-7" role="region" aria-labelledby="faq-b-q7">
-            <p>Vendemos boquillas con <strong>chiflón de 3 pasos</strong>: tipo pistola con <strong>selector de flujo</strong> manual, <strong>turbo jet</strong> con ajuste automático, industriales en <strong>bronce fundido</strong> y certificadas UL/FM. Todas incluyen <strong>patrones de agua</strong> regulables, <strong>cierre total</strong> con empaque de <strong>neopreno</strong> y documentación completa para auditorías.</p>
-          </div>
-        </div>
-      </div>
+      <Faq items={faqItems} id="faq" />
     </div>
   </section>
 
 </Layout>
-
-<script>
-  // FAQ Accordion
-  document.addEventListener('DOMContentLoaded', () => {
-    const faqQuestions = document.querySelectorAll('.faq__question');
-
-    faqQuestions.forEach(button => {
-      button.addEventListener('click', () => {
-        const expanded = button.getAttribute('aria-expanded') === 'true';
-        const icon = button.querySelector('.faq__icon');
-
-        // Close all other items
-        faqQuestions.forEach(otherButton => {
-          if (otherButton !== button) {
-            otherButton.setAttribute('aria-expanded', 'false');
-            const otherIcon = otherButton.querySelector('.faq__icon');
-            if (otherIcon) otherIcon.textContent = '+';
-            const otherAnswer = document.getElementById(otherButton.getAttribute('aria-controls') || '');
-            if (otherAnswer) otherAnswer.style.display = 'none';
-          }
-        });
-
-        // Toggle current item
-        button.setAttribute('aria-expanded', (!expanded).toString());
-        if (icon) icon.textContent = expanded ? '+' : '−';
-        const answer = document.getElementById(button.getAttribute('aria-controls') || '');
-        if (answer) {
-          answer.style.display = expanded ? 'none' : 'block';
-        }
-      });
-    });
-
-    // WhatsApp Form Handler
-    const cotizarForm = document.getElementById('cotizar-form');
-    if (cotizarForm) {
-      cotizarForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-
-        const nombre = (document.getElementById('lead-nombre') as HTMLInputElement)?.value || '';
-        const contacto = (document.getElementById('lead-contacto') as HTMLInputElement)?.value || '';
-        const tipoEquipo = (document.getElementById('lead-equipo') as HTMLSelectElement)?.value || '';
-
-        const mensaje = `Hola, me interesa cotizar boquillas contra incendios:%0A%0ANombre: ${encodeURIComponent(nombre)}%0AContacto: ${encodeURIComponent(contacto)}%0ATipo de boquilla: ${encodeURIComponent(tipoEquipo)}`;
-
-        window.open(`https://wa.me/5215565298240?text=${mensaje}`, '_blank');
-      });
-    }
-  });
-</script>

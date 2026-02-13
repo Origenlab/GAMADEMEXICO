@@ -3,7 +3,7 @@ title: "Monitor UL Listed"
 description: "Monitor listado por Underwriters Laboratories con pruebas de seguridad integrales. Aceptado por Protección Civil y aseguradoras en México."
 categoria: "monitores"
 subcategoria: "ul-listed"
-imagen: "/img/monitores-contra-incendios/monitor-ul-listed-fixed-flow-angulo-completo.avif"
+imagen: "/img/monitores-contra-incendios/monitor-ul-listed-contra-incendios-estacion-bomberos-01.avif"
 galeria:
   - "/img/monitores-contra-incendios/monitor-ul-listed-fixed-flow-perfil-completo.avif"
   - "/img/monitores-contra-incendios/monitor-ul-listed-fixed-flow-detalle-manometro.avif"

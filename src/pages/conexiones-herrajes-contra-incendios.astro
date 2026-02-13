@@ -1,8 +1,39 @@
 ---
 import Layout from '../layouts/Base.astro';
 import { getCollection } from 'astro:content';
+import Faq from '../components/Faq.astro';
 
 const productos = (await getCollection('productos', ({ data }) => data.categoria === 'conexiones-herrajes')).sort((a, b) => a.data.orden - b.data.orden);
+const faqItems = [
+  {
+    "pregunta": "¿Cuál es la diferencia entre rosca NH y NPT?",
+    "respuesta": "NH (National Hose) es rosca recta diseñada para mangueras contra incendios, usa empaque de goma y permite conexión rápida sin sellador. NPT (National Pipe Tapered) es rosca cónica para tuberías industriales que sella por interferencia metal-metal. Son incompatibles entre sí: los adaptadores de conversión NH a NPT son necesarios para conectar equipos con diferentes estándares. Venta con precio competitivo y cotización inmediata."
+  },
+  {
+    "pregunta": "¿Qué ventajas ofrecen los coples Storz sobre conexiones roscadas?",
+    "respuesta": "Los coples Storz ofrecen beneficios significativos: acoplamiento de cuarto de vuelta que reduce tiempo de despliegue en 50%, operación con guantes de bombero, y pestillos de seguridad que evitan desconexión accidental bajo presión. Son estándar en aeropuertos, industrias petroquímicas y cuerpos de bomberos modernos. Requieren adaptadores Storz-NH para conectar con hidrantes existentes."
+  },
+  {
+    "pregunta": "¿Qué es una toma siamesa FDC y es obligatoria?",
+    "respuesta": "La toma siamesa FDC (Fire Department Connection) es conexión exterior que permite a bomberos alimentar el sistema desde autobombas. Es obligatoria según NFPA 14 en edificios con tubería vertical y según NFPA 13 en sistemas de rociadores. Configuración estándar: dos entradas 2.5\" NH con válvulas check certificadas UL/FM."
+  },
+  {
+    "pregunta": "¿Qué presión de trabajo soportan las conexiones de bronce?",
+    "respuesta": "La presión varía según tipo: Adaptadores 250-300 PSI, Conexiones Y 200 PSI continua, Tomas siamesas 175 PSI en válvulas check, Coples Storz 250-300 PSI según material. Nuestros asesores te ayudan a seleccionar la especificación correcta según el diseño de tu proyecto con cotización detallada y precio transparente."
+  },
+  {
+    "pregunta": "¿Las conexiones vienen con certificaciones UL y FM?",
+    "respuesta": "Sí. Todas nuestras conexiones cuentan con certificaciones UL Listed y FM Approved. Con cada venta entregamos documentación completa: ficha técnica, certificados UL/FM y manual de instalación. Esta documentación es fundamental para verificaciones de protección civil, auditorías de aseguradoras y procesos de licitación. Proveedor profesional con experiencia."
+  },
+  {
+    "pregunta": "¿Qué diámetros de conexiones tienen disponibles?",
+    "respuesta": "Manejamos rango completo de diámetros: 1\", 1.5\", 2\", 2.5\", 3\", 4\" y 5\" según tipo de conexión. Los adaptadores están disponibles en todas las combinaciones NH/NPT/Storz. Mantenemos stock permanente de diámetros más solicitados (1.5\", 2.5\", 3\") para entregas inmediatas cerca de tu ubicación con costo competitivo."
+  },
+  {
+    "pregunta": "¿Cómo puedo solicitar una cotización de conexiones?",
+    "respuesta": "Puedes cotizar de tres formas: 1) Formulario en esta página (se envía a WhatsApp), 2) WhatsApp directo 55 6529 8240, o 3) Email ventas@gamademexico.com. Solo necesitamos: tipo de conexión, diámetros, cantidad y ubicación de entrega. Respondemos en menos de 24 horas con precio, disponibilidad y opciones de envío. Precios especiales por volumen."
+  }
+];
 ---
 
 <Layout
@@ -436,102 +467,8 @@ const productos = (await getCollection('productos', ({ data }) => data.categoria
         <h2 id="faq-title" class="section-title">Preguntas Frecuentes sobre Herraje Accesorio y Conexiones Bronce</h2>
         <p class="section-subtitle">Resolvemos las dudas más comunes sobre tipos, certificaciones y compatibilidad</p>
       </div>
-      <div class="faq__list">
-        <div class="faq__item">
-          <button class="faq__question" aria-expanded="false" aria-controls="faq-con-1" id="faq-c-q1">¿Cuál es la diferencia entre rosca NH y NPT?<span class="faq__icon" aria-hidden="true">+</span></button>
-          <div class="faq__answer" id="faq-con-1" role="region" aria-labelledby="faq-c-q1">
-            <p><strong>NH (National Hose)</strong> es rosca recta diseñada para mangueras contra incendios, usa empaque de goma y permite conexión rápida sin sellador. <strong>NPT (National Pipe Tapered)</strong> es rosca cónica para tuberías industriales que sella por interferencia metal-metal. Son incompatibles entre sí: los adaptadores de conversión NH a NPT son necesarios para conectar equipos con diferentes estándares. Venta con precio competitivo y cotización inmediata.</p>
-          </div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__question" aria-expanded="false" aria-controls="faq-con-2" id="faq-c-q2">¿Qué ventajas ofrecen los coples Storz sobre conexiones roscadas?<span class="faq__icon" aria-hidden="true">+</span></button>
-          <div class="faq__answer" id="faq-con-2" role="region" aria-labelledby="faq-c-q2">
-            <p>Los <strong>coples Storz</strong> ofrecen beneficios significativos: acoplamiento de cuarto de vuelta que reduce tiempo de despliegue en 50%, operación con guantes de bombero, y pestillos de seguridad que evitan desconexión accidental bajo presión. Son estándar en aeropuertos, industrias petroquímicas y cuerpos de bomberos modernos. Requieren adaptadores Storz-NH para conectar con hidrantes existentes.</p>
-          </div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__question" aria-expanded="false" aria-controls="faq-con-3" id="faq-c-q3">¿Qué es una toma siamesa FDC y es obligatoria?<span class="faq__icon" aria-hidden="true">+</span></button>
-          <div class="faq__answer" id="faq-con-3" role="region" aria-labelledby="faq-c-q3">
-            <p>La <strong>toma siamesa FDC</strong> (Fire Department Connection) es conexión exterior que permite a bomberos alimentar el sistema desde autobombas. Es <strong>obligatoria según NFPA 14</strong> en edificios con tubería vertical y según NFPA 13 en sistemas de rociadores. Configuración estándar: dos entradas 2.5" NH con válvulas check certificadas UL/FM.</p>
-          </div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__question" aria-expanded="false" aria-controls="faq-con-4" id="faq-c-q4">¿Qué presión de trabajo soportan las conexiones de bronce?<span class="faq__icon" aria-hidden="true">+</span></button>
-          <div class="faq__answer" id="faq-con-4" role="region" aria-labelledby="faq-c-q4">
-            <p>La presión varía según tipo: <strong>Adaptadores</strong> 250-300 PSI, <strong>Conexiones Y</strong> 200 PSI continua, <strong>Tomas siamesas</strong> 175 PSI en válvulas check, <strong>Coples Storz</strong> 250-300 PSI según material. Nuestros asesores te ayudan a seleccionar la especificación correcta según el diseño de tu proyecto con cotización detallada y precio transparente.</p>
-          </div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__question" aria-expanded="false" aria-controls="faq-con-5" id="faq-c-q5">¿Las conexiones vienen con certificaciones UL y FM?<span class="faq__icon" aria-hidden="true">+</span></button>
-          <div class="faq__answer" id="faq-con-5" role="region" aria-labelledby="faq-c-q5">
-            <p>Sí. Todas nuestras conexiones cuentan con <strong>certificaciones UL Listed y FM Approved</strong>. Con cada venta entregamos documentación completa: ficha técnica, certificados UL/FM y manual de instalación. Esta documentación es fundamental para verificaciones de protección civil, auditorías de aseguradoras y procesos de licitación. Proveedor profesional con experiencia.</p>
-          </div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__question" aria-expanded="false" aria-controls="faq-con-6" id="faq-c-q6">¿Qué diámetros de conexiones tienen disponibles?<span class="faq__icon" aria-hidden="true">+</span></button>
-          <div class="faq__answer" id="faq-con-6" role="region" aria-labelledby="faq-c-q6">
-            <p>Manejamos rango completo de diámetros: <strong>1", 1.5", 2", 2.5", 3", 4" y 5"</strong> según tipo de conexión. Los adaptadores están disponibles en todas las combinaciones NH/NPT/Storz. Mantenemos stock permanente de diámetros más solicitados (1.5", 2.5", 3") para entregas inmediatas cerca de tu ubicación con costo competitivo.</p>
-          </div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__question" aria-expanded="false" aria-controls="faq-con-7" id="faq-c-q7">¿Cómo puedo solicitar una cotización de conexiones?<span class="faq__icon" aria-hidden="true">+</span></button>
-          <div class="faq__answer" id="faq-con-7" role="region" aria-labelledby="faq-c-q7">
-            <p>Puedes cotizar de tres formas: <strong>1) Formulario en esta página</strong> (se envía a WhatsApp), <strong>2) WhatsApp directo 55 6529 8240</strong>, o <strong>3) Email ventas@gamademexico.com</strong>. Solo necesitamos: tipo de conexión, diámetros, cantidad y ubicación de entrega. Respondemos en menos de 24 horas con precio, disponibilidad y opciones de envío. Precios especiales por volumen.</p>
-          </div>
-        </div>
-      </div>
+      <Faq items={faqItems} id="faq" />
     </div>
   </section>
 
 </Layout>
-
-<script>
-  // FAQ Accordion
-  document.addEventListener('DOMContentLoaded', () => {
-    const faqQuestions = document.querySelectorAll('.faq__question');
-
-    faqQuestions.forEach(button => {
-      button.addEventListener('click', () => {
-        const expanded = button.getAttribute('aria-expanded') === 'true';
-
-        // Close all other items
-        faqQuestions.forEach(otherButton => {
-          if (otherButton !== button) {
-            otherButton.setAttribute('aria-expanded', 'false');
-            const otherAnswer = document.getElementById(otherButton.getAttribute('aria-controls') || '');
-            if (otherAnswer) otherAnswer.style.display = 'none';
-            const otherIcon = otherButton.querySelector('.faq__icon');
-            if (otherIcon) otherIcon.textContent = '+';
-          }
-        });
-
-        // Toggle current item
-        button.setAttribute('aria-expanded', (!expanded).toString());
-        const answer = document.getElementById(button.getAttribute('aria-controls') || '');
-        if (answer) {
-          answer.style.display = expanded ? 'none' : 'block';
-        }
-        const icon = button.querySelector('.faq__icon');
-        if (icon) {
-          icon.textContent = expanded ? '+' : '−';
-        }
-      });
-    });
-
-    // WhatsApp Form Handler
-    const cotizarForm = document.getElementById('cotizar-form');
-    if (cotizarForm) {
-      cotizarForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-
-        const nombre = (document.getElementById('lead-nombre') as HTMLInputElement)?.value || '';
-        const contacto = (document.getElementById('lead-contacto') as HTMLInputElement)?.value || '';
-        const tipoConexion = (document.getElementById('lead-equipo') as HTMLSelectElement)?.value || '';
-
-        const mensaje = `Hola, me interesa cotizar conexiones y herrajes:%0A%0ANombre: ${encodeURIComponent(nombre)}%0AContacto: ${encodeURIComponent(contacto)}%0ATipo de conexión: ${encodeURIComponent(tipoConexion)}`;
-
-        window.open(`https://wa.me/5215565298240?text=${mensaje}`, '_blank');
-      });
-    }
-  });
-</script>
