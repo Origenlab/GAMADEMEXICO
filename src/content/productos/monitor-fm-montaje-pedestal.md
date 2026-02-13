@@ -3,7 +3,7 @@ title: "Monitor FM Approved con Pedestal - Montaje Elevado"
 description: "Monitor contra incendio certificado FM Approved con pedestal de montaje elevado. Altura ajustable de 1.2 a 2.4 metros. Instalación sobre losa sin riser, ideal para áreas de proceso y exteriores."
 categoria: "monitores"
 subcategoria: "certificado-fm"
-imagen: "/img/monitores-contra-incendios/monitor-st611-fm-approved-perfil-derecho.avif"
+imagen: "/img/monitores-contra-incendios/monitor-certificado-fm-contra-incendios-perspectiva-industrial-13.avif"
 galeria:
   - "/img/monitores-contra-incendios/monitor-contra-incendio-aplicacion-industrial-03.avif"
   - "/img/monitores-contra-incendios/monitor-st611-fm-approved-valvulas-laterales.avif"

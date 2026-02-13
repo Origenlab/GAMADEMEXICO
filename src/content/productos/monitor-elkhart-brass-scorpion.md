@@ -9,9 +9,6 @@ galeria:
   - "/img/monitores-contra-incendios/monitor-elkhart-brass-scorpion-detalle-boquilla.avif"
   - "/img/monitores-contra-incendios/monitor-elkhart-brass-scorpion-alto-volumen-perfil.avif"
   - "/img/monitores-contra-incendios/monitor-elkhart-brass-scorpion-base-bridada.avif"
-  - "/img/monitores-contra-incendios/monitor-elkhart-brass-scorpion-galeria-profesional.avif"
-  - "/img/monitores-contra-incendios/monitor-elkhart-brass-scorpion-vistas-multiples.avif"
-  - "/img/monitores-contra-incendios/monitor-elkhart-brass-scorpion-aplicacion-industrial.avif"
 certificaciones: ["FM Approved", "UL Listed", "NFPA 11"]
 flujo: "500 - 2,500 GPM"
 material: "Aluminio fundido / Acero inoxidable"

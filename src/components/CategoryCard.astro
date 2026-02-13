@@ -1,4 +1,6 @@
 ---
+import { withImageCdn } from '../lib/images';
+
 // CategoryCard component - Card con subcategorías y botón principal
 interface Subcategoria {
   nombre: string;
@@ -14,10 +16,11 @@ interface Props {
 }
 
 const { titulo, subtitulo, enlace, subcategorias, imagen } = Astro.props;
+const imageUrl = withImageCdn(imagen);
 ---
 
 <article class="category-card">
-  <div class="category-card__image" style={imagen ? `background-image: url('${imagen}'); background-size: cover; background-position: center;` : undefined}></div>
+  <div class="category-card__image" style={imageUrl ? `background-image: url('${imageUrl}'); background-size: cover; background-position: center;` : undefined}></div>
   <div class="category-card__body">
     <h3 class="category-card__title">{titulo}</h3>
     <p class="category-card__sub">{subtitulo}</p>

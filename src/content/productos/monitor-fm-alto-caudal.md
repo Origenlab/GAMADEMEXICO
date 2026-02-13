@@ -3,7 +3,7 @@ title: "Monitor FM Approved Alto Caudal - 2,000 GPM Máximo"
 description: "Monitor contra incendio certificado FM Approved con capacidad de hasta 2,000 GPM. Alcance de 80 metros en chorro sólido. Diseñado para protección de grandes áreas industriales y refinerías."
 categoria: "monitores"
 subcategoria: "certificado-fm"
-imagen: "/img/monitores-contra-incendios/monitor-st611-fm-approved-vista-completa.avif"
+imagen: "/img/monitores-contra-incendios/monitor-certificado-fm-contra-incendios-camion-fondo-05.avif"
 galeria:
   - "/img/monitores-contra-incendios/monitor-st611-fm-approved-angulo-superior.avif"
   - "/img/monitores-contra-incendios/monitor-st611-fm-approved-perfil-completo.avif"

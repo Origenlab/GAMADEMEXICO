@@ -2,8 +2,10 @@
 import Layout from '../layouts/Base.astro';
 import SectionHeader from '../components/SectionHeader.astro';
 import { getCollection } from 'astro:content';
+import { withImageCdn } from '../lib/images';
 
 const productos = (await getCollection('productos', ({ data }) => data.categoria === 'monitores')).sort((a, b) => a.data.orden - b.data.orden);
+const cdnImage = (path: string) => withImageCdn(path) ?? path;
 ---
 
 <Layout
@@ -41,7 +43,7 @@ const productos = (await getCollection('productos', ({ data }) => data.categoria
       />
       <div class="categories__grid">
         <article class="category-card">
-          <div class="category-card__image" role="img" aria-label="Monitor Tipo Corazón" style="background-image: url('/img/monitores-contra-incendios/monitor-tipo-corazon-contra-incendios-industrial-frontal-02.avif'); background-size: cover; background-position: center;"></div>
+          <div class="category-card__image" role="img" aria-label="Monitor Tipo Corazón" style={`background-image: url('${cdnImage('/img/monitores-contra-incendios/monitor-tipo-corazon-contra-incendios-industrial-frontal-02.avif')}'); background-size: cover; background-position: center;`}></div>
           <div class="category-card__body">
             <h3 class="category-card__title">Monitor Tipo Corazón</h3>
             <p class="category-card__sub">Protección perimetral con rotación 360° y caudales hasta 2,000 GPM</p>
@@ -58,7 +60,7 @@ const productos = (await getCollection('productos', ({ data }) => data.categoria
           </div>
         </article>
         <article class="category-card">
-          <div class="category-card__image" role="img" aria-label="Monitor Cuello de Cisne" style="background-image: url('/img/monitores-contra-incendios/monitor-cuello-cisne-vista-frontal-bronce.avif'); background-size: cover; background-position: center;"></div>
+          <div class="category-card__image" role="img" aria-label="Monitor Cuello de Cisne" style={`background-image: url('${cdnImage('/img/monitores-contra-incendios/monitor-cuello-cisne-vista-frontal-bronce.avif')}'); background-size: cover; background-position: center;`}></div>
           <div class="category-card__body">
             <h3 class="category-card__title">Monitor Cuello de Cisne</h3>
             <p class="category-card__sub">Protección de tanques elevados con proyección desde arriba</p>
@@ -75,7 +77,7 @@ const productos = (await getCollection('productos', ({ data }) => data.categoria
           </div>
         </article>
         <article class="category-card">
-          <div class="category-card__image" role="img" aria-label="Monitor Certificado FM" style="background-image: url('/img/monitores-contra-incendios/monitor-st611-fm-approved-vista-frontal.avif'); background-size: cover; background-position: center;"></div>
+          <div class="category-card__image" role="img" aria-label="Monitor Certificado FM" style={`background-image: url('${cdnImage('/img/monitores-contra-incendios/monitor-certificado-fm-contra-incendios-vista-urbana-01.avif')}'); background-size: cover; background-position: center;`}></div>
           <div class="category-card__body">
             <h3 class="category-card__title">Monitor Certificado FM</h3>
             <p class="category-card__sub">Aprobación Factory Mutual para instalaciones de alto riesgo</p>
@@ -92,7 +94,7 @@ const productos = (await getCollection('productos', ({ data }) => data.categoria
           </div>
         </article>
         <article class="category-card">
-          <div class="category-card__image" role="img" aria-label="Monitor UL Listed" style="background-image: url('/img/monitores-contra-incendios/monitor-ul-listed-fixed-flow-vista-frontal.avif'); background-size: cover; background-position: center;"></div>
+          <div class="category-card__image" role="img" aria-label="Monitor UL Listed" style={`background-image: url('${cdnImage('/img/monitores-contra-incendios/monitor-ul-listed-fixed-flow-vista-frontal.avif')}'); background-size: cover; background-position: center;`}></div>
           <div class="category-card__body">
             <h3 class="category-card__title">Monitor UL Listed</h3>
             <p class="category-card__sub">Certificación Underwriters Laboratories para máxima confiabilidad</p>
@@ -138,7 +140,7 @@ const productos = (await getCollection('productos', ({ data }) => data.categoria
             <a href="#cotizar" class="btn btn--outline">Cotizar</a>
           </div>
         </div>
-        <div class="service-detail__image" role="img" aria-label="Monitor tipo corazón para protección industrial" style="background-image: url('/img/monitores-contra-incendios/monitor-tipo-corazon-contra-incendios-industrial-perspectiva-04.avif'); background-size: cover; background-position: center;"></div>
+        <div class="service-detail__image" role="img" aria-label="Monitor tipo corazón para protección industrial" style={`background-image: url('${cdnImage('/img/monitores-contra-incendios/monitor-tipo-corazon-contra-incendios-industrial-perspectiva-04.avif')}'); background-size: cover; background-position: center;`}></div>
       </div>
 
       <div class="service-detail" id="detalle-cuello-cisne">
@@ -158,7 +160,7 @@ const productos = (await getCollection('productos', ({ data }) => data.categoria
             <a href="#cotizar" class="btn btn--outline">Cotizar</a>
           </div>
         </div>
-        <div class="service-detail__image" role="img" aria-label="Monitor tipo cuello de cisne para tanques industriales" style="background-image: url('/img/monitores-contra-incendios/monitor-cuello-cisne-perfil-completo.avif'); background-size: cover; background-position: center;"></div>
+        <div class="service-detail__image" role="img" aria-label="Monitor tipo cuello de cisne para tanques industriales" style={`background-image: url('${cdnImage('/img/monitores-contra-incendios/monitor-cuello-cisne-perfil-completo.avif')}'); background-size: cover; background-position: center;`}></div>
       </div>
 
       <div class="service-detail" id="detalle-fm">
@@ -178,7 +180,7 @@ const productos = (await getCollection('productos', ({ data }) => data.categoria
             <a href="#cotizar" class="btn btn--outline">Cotizar</a>
           </div>
         </div>
-        <div class="service-detail__image" role="img" aria-label="Monitor certificado FM Factory Mutual" style="background-image: url('/img/monitores-contra-incendios/monitor-st611-fm-approved-perfil-profesional.avif'); background-size: cover; background-position: center;"></div>
+        <div class="service-detail__image" role="img" aria-label="Monitor certificado FM Factory Mutual" style={`background-image: url('${cdnImage('/img/monitores-contra-incendios/monitor-certificado-fm-contra-incendios-estacion-bomberos-03.avif')}'); background-size: cover; background-position: center;`}></div>
       </div>
 
       <div class="service-detail" id="detalle-ul">
@@ -198,7 +200,7 @@ const productos = (await getCollection('productos', ({ data }) => data.categoria
             <a href="#cotizar" class="btn btn--outline">Cotizar</a>
           </div>
         </div>
-        <div class="service-detail__image" role="img" aria-label="Monitor UL Listed Underwriters Laboratories" style="background-image: url('/img/monitores-contra-incendios/monitor-ul-listed-fixed-flow-perfil-completo.avif'); background-size: cover; background-position: center;"></div>
+        <div class="service-detail__image" role="img" aria-label="Monitor UL Listed Underwriters Laboratories" style={`background-image: url('${cdnImage('/img/monitores-contra-incendios/monitor-ul-listed-fixed-flow-perfil-completo.avif')}'); background-size: cover; background-position: center;`}></div>
       </div>
 
     </div>

@@ -5,6 +5,7 @@ import { CATEGORY_MAP, WHATSAPP_NUMBER, WHATSAPP_URL } from '../../lib/config';
 import { buildProductSchema, buildBreadcrumbSchema } from '../../lib/seo';
 import RelatedProductsGrid from '../../components/RelatedProductsGrid.astro';
 import CotizacionForm from '../../components/CotizacionForm.astro';
+import { withImageCdn } from '../../lib/images';
 
 /* ── getStaticPaths: genera una ruta por cada producto ── */
 export async function getStaticPaths() {
@@ -54,6 +55,9 @@ const breadcrumbSchema = buildBreadcrumbSchema([
   { name: categoriaNombre, url: categoriaUrl },
   { name: producto.data.title, url: `/productos/${producto.id}` },
 ]);
+
+const mainImage = withImageCdn(producto.data.imagen);
+const galleryImages = (producto.data.galeria ?? []).map((img) => withImageCdn(img) ?? img);
 ---
 
 <Layout
@@ -82,9 +86,9 @@ const breadcrumbSchema = buildBreadcrumbSchema([
       <div class="product-hero__grid">
         <div class="product-hero__gallery">
           <div class="product-hero__image">
-            {producto.data.imagen ? (
+            {mainImage ? (
               <img
-                src={producto.data.imagen}
+                src={mainImage}
                 alt={producto.data.title}
                 width="600"
                 height="450"
@@ -105,15 +109,15 @@ const breadcrumbSchema = buildBreadcrumbSchema([
               <span class="product-hero__badge">Producto destacado</span>
             )}
           </div>
-          {producto.data.galeria && producto.data.galeria.length > 0 && (
+          {galleryImages.length > 0 && (
             <div class="product-hero__thumbnails">
-              {producto.data.imagen && (
-                <button class="thumbnail thumbnail--active" data-image={producto.data.imagen}>
-                  <img src={producto.data.imagen} alt="Vista principal" width="80" height="60" loading="lazy" />
+              {mainImage && (
+                <button type="button" class="thumbnail thumbnail--active" data-image={mainImage}>
+                  <img src={mainImage} alt="Vista principal" width="80" height="60" loading="lazy" />
                 </button>
               )}
-              {producto.data.galeria.map((img, i) => (
-                <button class="thumbnail" data-image={img}>
+              {galleryImages.map((img, i) => (
+                <button type="button" class="thumbnail" data-image={img}>
                   <img src={img} alt={`Vista ${i + 1}`} width="80" height="60" loading="lazy" />
                 </button>
               ))}
@@ -292,27 +296,44 @@ const breadcrumbSchema = buildBreadcrumbSchema([
     producto={producto.data.title}
     pagina={`Producto: ${producto.data.title}`}
   />
-</Layout>
 
-<script>
-  // Galería de imágenes - cambio al hacer clic
-  document.addEventListener('DOMContentLoaded', () => {
-    const thumbnails = document.querySelectorAll('.thumbnail');
-    const mainImage = document.getElementById('main-product-image') as HTMLImageElement;
+<script is:inline data-cfasync="false">
+  // Galeria robusta para todos los productos (resistente a carga tardia de scripts).
+  (function () {
+    function initProductGallery() {
+      var mainImage = document.getElementById('main-product-image');
+      var gallery = document.querySelector('.product-hero__thumbnails');
+      if (!mainImage || !gallery) return;
 
-    if (thumbnails.length > 0 && mainImage) {
-      thumbnails.forEach((thumb) => {
-        thumb.addEventListener('click', () => {
-          const newSrc = thumb.getAttribute('data-image');
-          if (newSrc) {
-            mainImage.src = newSrc;
-            thumbnails.forEach(t => t.classList.remove('thumbnail--active'));
-            thumb.classList.add('thumbnail--active');
-          }
+      function activateThumb(thumb) {
+        var newSrc = thumb.getAttribute('data-image');
+        if (!newSrc) return;
+
+        mainImage.setAttribute('src', newSrc);
+
+        var thumbs = gallery.querySelectorAll('.thumbnail');
+        thumbs.forEach(function (item) {
+          item.classList.remove('thumbnail--active');
         });
+        thumb.classList.add('thumbnail--active');
+      }
+
+      gallery.addEventListener('click', function (event) {
+        var thumb = event.target instanceof Element
+          ? event.target.closest('.thumbnail')
+          : null;
+        if (!thumb || !(thumb instanceof HTMLButtonElement)) return;
+        event.preventDefault();
+        activateThumb(thumb);
       });
     }
-  });
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initProductGallery, { once: true });
+    } else {
+      initProductGallery();
+    }
+  })();
 </script>
 
 <style>
@@ -900,3 +921,4 @@ const breadcrumbSchema = buildBreadcrumbSchema([
     }
   }
 </style>
+</Layout>

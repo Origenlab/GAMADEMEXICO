@@ -3,7 +3,7 @@ title: "Monitor Tipo Corazón Fabricación Mexicana - Contenido Nacional"
 description: "Monitor contra incendio tipo corazón 100% fabricación mexicana. Cumple requisitos de contenido nacional para licitaciones. Precio competitivo, entrega inmediata, refacciones locales. Certificado PEMEX."
 categoria: "monitores"
 subcategoria: "tipo-corazon"
-imagen: "/img/monitores-contra-incendios/monitor-tipo-corazon-bronce-fundido-detalle.avif"
+imagen: "/img/monitores-contra-incendios/monitor-tipo-corazon-contra-incendios-industrial-tres-cuartos-10.avif"
 galeria:
   - "/img/monitores-contra-incendios/monitor-incendio-corazon-angulos-giro-vertical.avif"
   - "/img/monitores-contra-incendios/monitor-tipo-corazon-fondo-gris-profesional.avif"

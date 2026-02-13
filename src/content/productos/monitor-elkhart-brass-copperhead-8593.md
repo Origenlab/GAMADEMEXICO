@@ -3,7 +3,7 @@ title: "Monitor Copperhead Elkhart Brass 8593"
 description: "Monitor industrial Copperhead de Elkhart Brass. Sellado completamente, válvula de bola integrada, flujo hasta 1,250 GPM, presión 200 PSI. Diseñado para refinerías y plantas químicas. Aprobado FM."
 categoria: "monitores"
 subcategoria: "tipo-corazon"
-imagen: "/img/monitores-contra-incendios/monitor-contra-incendio-tipo-corazon-giro-360-bronce.avif"
+imagen: "/img/monitores-contra-incendios/monitor-tipo-corazon-contra-incendios-industrial-detalle-volante-06.avif"
 galeria:
   - "/img/monitores-contra-incendios/monitor-corazon-miniatura-thumbnail.avif"
   - "/img/monitores-contra-incendios/monitor-doble-cremallera-render-05.avif"

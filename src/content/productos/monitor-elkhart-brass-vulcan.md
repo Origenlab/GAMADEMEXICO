@@ -9,9 +9,6 @@ galeria:
   - "/img/monitores-contra-incendios/monitor-elkhart-brass-vulcan-canal-eliptico.avif"
   - "/img/monitores-contra-incendios/monitor-elkhart-brass-vulcan-perfil-compacto.avif"
   - "/img/monitores-contra-incendios/monitor-elkhart-brass-vulcan-nula-friccion.avif"
-  - "/img/monitores-contra-incendios/monitor-elkhart-brass-vulcan-detalle-volantes.avif"
-  - "/img/monitores-contra-incendios/monitor-elkhart-brass-vulcan-espacio-reducido.avif"
-  - "/img/monitores-contra-incendios/monitor-elkhart-brass-vulcan-plataforma-aerea.avif"
 certificaciones: ["FM Approved", "UL Listed", "NFPA 1964"]
 flujo: "500 - 1,250 GPM"
 material: "Aluminio fundido / Bronce"

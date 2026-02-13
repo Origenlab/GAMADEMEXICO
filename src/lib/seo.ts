@@ -14,15 +14,17 @@ import {
   LOGO_PATH,
   GEO,
 } from './config';
+import { toAbsoluteImageUrl } from './images';
 
 // -- Organization Schema (incluir en todas las paginas) --
 export function buildOrganizationSchema() {
+  const logoUrl = toAbsoluteImageUrl(LOGO_PATH, SITE_URL);
   return {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: SITE_NAME,
     url: SITE_URL,
-    logo: `${SITE_URL}${LOGO_PATH}`,
+    logo: logoUrl,
     description: 'Distribuidor autorizado Elkhart Brass en México. Venta de equipos contra incendios con certificaciones UL y FM.',
     telephone: PHONE_PRIMARY,
     email: EMAIL_SALES,
@@ -49,14 +51,15 @@ export function buildOrganizationSchema() {
 
 // -- LocalBusiness Schema (homepage) --
 export function buildLocalBusinessSchema() {
+  const logoUrl = toAbsoluteImageUrl(LOGO_PATH, SITE_URL);
   return {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
     '@id': `${SITE_URL}/#business`,
     name: SITE_NAME,
     url: SITE_URL,
-    logo: `${SITE_URL}${LOGO_PATH}`,
-    image: `${SITE_URL}${LOGO_PATH}`,
+    logo: logoUrl,
+    image: logoUrl,
     description: 'Distribuidor autorizado Elkhart Brass en México. Venta de monitores, boquillas, mangueras, válvulas, conexiones y gabinetes contra incendios certificados UL y FM.',
     telephone: PHONE_PRIMARY,
     email: EMAIL_SALES,
@@ -146,9 +149,7 @@ export function buildProductSchema(product: ProductSchemaInput) {
   };
 
   if (product.image) {
-    schema.image = product.image.startsWith('http')
-      ? product.image
-      : `${SITE_URL}${product.image}`;
+    schema.image = toAbsoluteImageUrl(product.image, SITE_URL);
   }
 
   if (product.model) {

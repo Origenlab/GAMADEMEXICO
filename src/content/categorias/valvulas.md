@@ -4,7 +4,7 @@ description: "Control de flujo para sistemas contra incendios: v\u00e1lvulas de 
 metaTitle: "V\u00e1lvulas Contra Incendios | Compuerta OS&Y, Globo, Retenci\u00f3n, Mariposa | Gama de M\u00e9xico"
 metaDescription: "Venta de v\u00e1lvulas contra incendios certificadas UL y FM en M\u00e9xico: compuerta OS&Y, globo, retenci\u00f3n (check) y mariposa. Presi\u00f3n de trabajo hasta 350 PSI, hierro d\u00factil y bronce."
 slug: "valvulas-contra-incendios"
-imagen: "/img/categorias/valvulas.jpg"
+imagen: "/img/valvulas-contra-incendios/valvula-mariposa-4-frontal.avif"
 orden: 4
 ---
 

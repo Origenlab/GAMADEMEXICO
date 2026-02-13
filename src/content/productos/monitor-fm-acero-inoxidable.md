@@ -3,7 +3,7 @@ title: "Monitor FM Approved Acero Inoxidable 316 - Máxima Resistencia"
 description: "Monitor contra incendio certificado FM Approved fabricado en acero inoxidable 316L. Resistencia superior a corrosión marina y química. Vida útil extendida para ambientes agresivos."
 categoria: "monitores"
 subcategoria: "certificado-fm"
-imagen: "/img/monitores-contra-incendios/monitor-st611-fm-approved-boquilla-dorada.avif"
+imagen: "/img/monitores-contra-incendios/monitor-certificado-fm-contra-incendios-fondo-blanco-10.avif"
 galeria:
   - "/img/monitores-contra-incendios/monitor-st611-fm-approved-detalle-anillos.avif"
   - "/img/monitores-contra-incendios/monitor-st611-fm-approved-vista-lateral.avif"

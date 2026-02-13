@@ -4,7 +4,7 @@ description: "Lanzadores de agua de alto caudal para protección perimetral indu
 metaTitle: "Monitores Contra Incendios | Tipo Corazón, Cuello de Cisne, Certificados FM y UL | Gama de México"
 metaDescription: "Venta de monitores contra incendios en México: Elkhart Brass, Akron, Potter Roemer, Task Force Tips. Tipo corazón, cuello de cisne, certificados FM y UL. Construcción forjada, hasta 2,000 GPM. Cotización en 24h."
 slug: "monitores-contra-incendios"
-imagen: "/img/categorias/monitores.jpg"
+imagen: "/img/monitores-contra-incendios/monitor-st611-fm-approved-vista-frontal.avif"
 orden: 1
 ---
 

@@ -6,10 +6,17 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "audit:images": "node scripts/audit-images.mjs",
+    "e2e:gallery": "node scripts/e2e-gallery-playwright.mjs",
+    "e2e:gallery:prod": "node scripts/e2e-gallery-playwright.mjs",
+    "e2e:gallery:local": "GALLERY_BASE_URL=http://127.0.0.1:4173 node scripts/e2e-gallery-playwright.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.0",
     "astro": "^5.17.1"
+  },
+  "devDependencies": {
+    "playwright": "^1.58.2"
   }
 }

@@ -4,7 +4,7 @@ description: "L\u00edneas de conducci\u00f3n de agua para sistemas contra incend
 metaTitle: "Mangueras Contra Incendios | Millhose, Blindex, Succi\u00f3n, Forestal | Gama de M\u00e9xico"
 metaDescription: "Venta de mangueras contra incendios certificadas NFPA 1961 en M\u00e9xico: Millhose doble forro, Blindex 4 capas, succi\u00f3n y forestal. Resistencia 300-400 PSI, di\u00e1metros 1.5\" a 2.5\"."
 slug: "mangueras-contra-incendios"
-imagen: "/img/categorias/mangueras.jpg"
+imagen: "/img/mangueras-contra-incendios/manguera-millhose-1-5-30m-frontal.avif"
 orden: 3
 ---
 

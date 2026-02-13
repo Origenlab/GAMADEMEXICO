@@ -41,3 +41,33 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+## CDN de imagenes (EWWW)
+
+Para servir imagenes por el CDN de EWWW, define esta variable de entorno:
+
+```bash
+PUBLIC_EWWW_CDN_BASE=https://TU-CDN-EWWW
+```
+
+Ejemplo comun de EWWW Easy IO:
+
+```bash
+PUBLIC_EWWW_CDN_BASE=https://i0.wp.com/gamademexico.com
+```
+
+Con esa variable activa, las rutas locales de imagen (`/img/...`) se reescriben automaticamente al CDN en HTML y en JSON-LD.
+
+## Auditoria de imagenes
+
+Ejecuta este comando para revisar formatos, pesos, dimensiones, rutas faltantes y archivos no usados:
+
+```bash
+npm run audit:images
+```
+
+Si quieres usarlo en CI y fallar solo cuando haya referencias rotas, puedes ejecutar:
+
+```bash
+node scripts/audit-images.mjs --fail-on-missing
+```

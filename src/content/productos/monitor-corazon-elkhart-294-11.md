@@ -3,7 +3,7 @@ title: "Monitor Tipo Corazón Elkhart Brass 294-11"
 description: "Monitor Elkhart Brass 294-11 fijo tipo corazón. Flujo 350-1,250 GPM, giro vertical de 150°, alcance 270 pies. Fabricado en bronce fundido. Aprobado FM."
 categoria: "monitores"
 subcategoria: "tipo-corazon"
-imagen: "/img/monitores-contra-incendios/monitor-tipo-corazon-bronce-fundido-detalle.avif"
+imagen: "/img/monitores-contra-incendios/monitor-tipo-corazon-contra-incendios-industrial-lateral-03.avif"
 galeria:
   - "/img/monitores-contra-incendios/monitor-incendio-corazon-vista-lateral-volante.avif"
   - "/img/monitores-contra-incendios/monitor-doble-cremallera-render-03.avif"

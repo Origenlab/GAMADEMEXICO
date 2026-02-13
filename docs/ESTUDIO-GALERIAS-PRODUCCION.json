@@ -1,0 +1,13 @@
+{
+  "generatedAt": "2026-02-13T18:55:35.847Z",
+  "domain": "https://gamademexico.com",
+  "stats": {
+    "total": 204,
+    "status200": 204,
+    "withMain": 204,
+    "withAtLeast2Thumbs": 204,
+    "withScriptSignal": 204,
+    "issues": 0
+  },
+  "bad": []
+}

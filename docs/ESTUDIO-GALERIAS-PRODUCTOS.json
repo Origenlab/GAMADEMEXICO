@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-02-13T18:55:12.638Z",
+  "stats": {
+    "total": 204,
+    "withMainImage": 204,
+    "withThumbContainer": 204,
+    "withScript": 204,
+    "withCfasync": 204,
+    "withAtLeast2Thumbs": 204,
+    "withExactly5Thumbs": 105,
+    "missingImageRefs": 0
+  },
+  "issuesCount": 0,
+  "issues": []
+}

@@ -3,7 +3,7 @@ title: "Monitor Tipo Corazón para Terminales de Almacenamiento"
 description: "Monitor contra incendio tipo corazón diseñado para protección de terminales de almacenamiento de hidrocarburos. Cobertura de tanques atmosféricos, áreas de carga y manifolds. Giro 360° horizontal, 120° vertical."
 categoria: "monitores"
 subcategoria: "tipo-corazon"
-imagen: "/img/monitores-contra-incendios/monitor-corazon-tres-vistas-base-bridada.avif"
+imagen: "/img/monitores-contra-incendios/monitor-tipo-corazon-contra-incendios-industrial-vista-completa-08.avif"
 galeria:
   - "/img/monitores-contra-incendios/monitor-contra-incendio-tipo-corazon-giro-360-bronce.avif"
   - "/img/monitores-contra-incendios/monitor-corazon-inclinado-giro-vertical-120.avif"

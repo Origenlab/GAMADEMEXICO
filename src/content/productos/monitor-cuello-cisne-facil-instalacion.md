@@ -3,7 +3,7 @@ title: "Monitor Cuello de Cisne Base Bridada - Instalación Directa"
 description: "Monitor contra incendio cuello de cisne con base bridada ANSI 150# para instalación directa sobre riser. Sin adaptadores, conexión inmediata a tubería de 4 pulgadas. Incluye kit de tornillería."
 categoria: "monitores"
 subcategoria: "cuello-cisne"
-imagen: "/img/monitores-contra-incendios/monitor-cuello-cisne-detalle-profesional.avif"
+imagen: "/img/monitores-contra-incendios/monitor-cuello-cisne-contra-incendios-detalle-base-13.avif"
 galeria:
   - "/img/monitores-contra-incendios/monitor-cuello-cisne-salida-nst-bronce.avif"
   - "/img/monitores-contra-incendios/monitor-cuello-cisne-giro-vertical-120.avif"

@@ -1,0 +1,2661 @@
+{
+  "generatedAt": "2026-02-13T19:10:26.448Z",
+  "domain": "https://gamademexico.com",
+  "total": 204,
+  "passed": 0,
+  "failed": 204,
+  "failures": [
+    {
+      "slug": "accesorios-herrajes",
+      "url": "https://gamademexico.com/productos/accesorios-herrajes",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/conexiones-herrajes/tapon-rocker-lug-2-5-frontal.avif",
+        "secondSrc": "/img/conexiones-herrajes/tapon-rocker-lug-2-5-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "adaptador-aluminio-elk-o-lite-4",
+      "url": "https://gamademexico.com/productos/adaptador-aluminio-elk-o-lite-4",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/conexiones-herrajes/adaptador-aluminio-elk-o-lite-4-frontal.avif",
+        "secondSrc": "/img/conexiones-herrajes/adaptador-aluminio-elk-o-lite-4-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "adaptador-bronce-doble-hembra-1-5",
+      "url": "https://gamademexico.com/productos/adaptador-bronce-doble-hembra-1-5",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/conexiones-herrajes/adaptador-doble-hembra-1-5-frontal.avif",
+        "secondSrc": "/img/conexiones-herrajes/adaptador-doble-hembra-1-5-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "adaptador-bronce-doble-macho-2-5",
+      "url": "https://gamademexico.com/productos/adaptador-bronce-doble-macho-2-5",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/conexiones-herrajes/adaptador-doble-macho-2-5-frontal.avif",
+        "secondSrc": "/img/conexiones-herrajes/adaptador-doble-macho-2-5-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "adaptador-bronce-nh-storz-2-5",
+      "url": "https://gamademexico.com/productos/adaptador-bronce-nh-storz-2-5",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/conexiones-herrajes/adaptador-bronce-nh-storz-2-5-frontal.avif",
+        "secondSrc": "/img/conexiones-herrajes/adaptador-bronce-nh-storz-2-5-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "adaptador-bronce-reduccion-2-5-1-5",
+      "url": "https://gamademexico.com/productos/adaptador-bronce-reduccion-2-5-1-5",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/conexiones-herrajes/adaptador-reduccion-2-5-1-5-frontal.avif",
+        "secondSrc": "/img/conexiones-herrajes/adaptador-reduccion-2-5-1-5-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "adaptador-bronce-swivel-2-5",
+      "url": "https://gamademexico.com/productos/adaptador-bronce-swivel-2-5",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/conexiones-herrajes/adaptador-swivel-2-5-frontal.avif",
+        "secondSrc": "/img/conexiones-herrajes/adaptador-swivel-2-5-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "adaptador-bronce-universal-435",
+      "url": "https://gamademexico.com/productos/adaptador-bronce-universal-435",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/conexiones-herrajes/adaptador-universal-435-frontal.avif",
+        "secondSrc": "/img/conexiones-herrajes/adaptador-universal-435-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "adaptadores-bronce",
+      "url": "https://gamademexico.com/productos/adaptadores-bronce",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/conexiones-herrajes/adaptador-bronce-nh-npt-2-5-frontal.avif",
+        "secondSrc": "/img/conexiones-herrajes/adaptador-bronce-nh-npt-2-5-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "boquilla-certificada",
+      "url": "https://gamademexico.com/productos/boquilla-certificada",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/boquillas-contra-incendios/boquilla-certificada-monitor-csw-lb-elkhart-frontal.avif",
+        "secondSrc": "/img/boquillas-contra-incendios/boquilla-certificada-monitor-csw-lb-elkhart-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "boquilla-certificada-dual-ul-fm",
+      "url": "https://gamademexico.com/productos/boquilla-certificada-dual-ul-fm",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/boquillas-contra-incendios/boquilla-certificada-dual-ul-fm-csw-lb-frontal.avif",
+        "secondSrc": "/img/boquillas-contra-incendios/boquilla-certificada-dual-ul-fm-csw-lb-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "boquilla-certificada-fm-approved-industrial",
+      "url": "https://gamademexico.com/productos/boquilla-certificada-fm-approved-industrial",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/boquillas-contra-incendios/boquilla-certificada-fm-approved-monitor-incendio-frontal.avif",
+        "secondSrc": "/img/boquillas-contra-incendios/boquilla-certificada-fm-approved-monitor-incendio-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "boquilla-certificada-nfpa-1964-bomberos",
+      "url": "https://gamademexico.com/productos/boquilla-certificada-nfpa-1964-bomberos",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/boquillas-contra-incendios/boquilla-certificada-nfpa-1964-elkhart-brass-frontal.avif",
+        "secondSrc": "/img/boquillas-contra-incendios/boquilla-certificada-nfpa-1964-elkhart-brass-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "boquilla-certificada-nom-mexicana",
+      "url": "https://gamademexico.com/productos/boquilla-certificada-nom-mexicana",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/boquillas-contra-incendios/boquilla-certificada-nom-stps-monitor-incendio-frontal.avif",
+        "secondSrc": "/img/boquillas-contra-incendios/boquilla-certificada-nom-stps-monitor-incendio-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "boquilla-certificada-pemex-petroleo",
+      "url": "https://gamademexico.com/productos/boquilla-certificada-pemex-petroleo",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/boquillas-contra-incendios/boquilla-certificada-pemex-nrf-elkhart-frontal.avif",
+        "secondSrc": "/img/boquillas-contra-incendios/boquilla-certificada-pemex-nrf-elkhart-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "boquilla-certificada-ul-1971-nfpa",
+      "url": "https://gamademexico.com/productos/boquilla-certificada-ul-1971-nfpa",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/boquillas-contra-incendios/boquilla-certificada-ul-1971-monitor-hidrante-frontal.avif",
+        "secondSrc": "/img/boquillas-contra-incendios/boquilla-certificada-ul-1971-monitor-hidrante-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "boquilla-certificada-uscg-maritima",
+      "url": "https://gamademexico.com/productos/boquilla-certificada-uscg-maritima",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/boquillas-contra-incendios/boquilla-certificada-uscg-solas-monitor-frontal.avif",
+        "secondSrc": "/img/boquillas-contra-incendios/boquilla-certificada-uscg-solas-monitor-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "boquilla-industrial",
+      "url": "https://gamademexico.com/productos/boquilla-industrial",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/boquillas-contra-incendios/boquilla-industrial-novino-niebla-flujo-constante-frontal.avif",
+        "secondSrc": "/img/boquillas-contra-incendios/boquilla-industrial-novino-niebla-flujo-constante-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "boquilla-industrial-acero-inoxidable",
+      "url": "https://gamademexico.com/productos/boquilla-industrial-acero-inoxidable",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/boquillas-contra-incendios/boquilla-industrial-acero-inoxidable-servicio-pesado-frontal.avif",
+        "secondSrc": "/img/boquillas-contra-incendios/boquilla-industrial-acero-inoxidable-servicio-pesado-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "boquilla-industrial-alta-temperatura",
+      "url": "https://gamademexico.com/productos/boquilla-industrial-alta-temperatura",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/boquillas-contra-incendios/boquilla-industrial-alta-temperatura-manguera-incendios-frontal.avif",
+        "secondSrc": "/img/boquillas-contra-incendios/boquilla-industrial-alta-temperatura-manguera-incendios-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "boquilla-industrial-antideflagrante-atex",
+      "url": "https://gamademexico.com/productos/boquilla-industrial-antideflagrante-atex",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/boquillas-contra-incendios/boquilla-industrial-atex-manguera-contra-incendios-frontal.avif",
+        "secondSrc": "/img/boquillas-contra-incendios/boquilla-industrial-atex-manguera-contra-incendios-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "boquilla-industrial-bronce-marino-offshore",
+      "url": "https://gamademexico.com/productos/boquilla-industrial-bronce-marino-offshore",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/boquillas-contra-incendios/boquilla-industrial-bronce-marino-npsh-2-pulgadas-frontal.avif",
+        "secondSrc": "/img/boquillas-contra-incendios/boquilla-industrial-bronce-marino-npsh-2-pulgadas-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "boquilla-industrial-espuma-afff",
+      "url": "https://gamademexico.com/productos/boquilla-industrial-espuma-afff",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/boquillas-contra-incendios/boquilla-industrial-espuma-afff-flujo-constante-frontal.avif",
+        "secondSrc": "/img/boquillas-contra-incendios/boquilla-industrial-espuma-afff-flujo-constante-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "boquilla-industrial-limpieza-emergencia",
+      "url": "https://gamademexico.com/productos/boquilla-industrial-limpieza-emergencia",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/boquillas-contra-incendios/boquilla-industrial-limpieza-emergencia-niebla-frontal.avif",
+        "secondSrc": "/img/boquillas-contra-incendios/boquilla-industrial-limpieza-emergencia-niebla-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "boquilla-industrial-mineria-pesada",
+      "url": "https://gamademexico.com/productos/boquilla-industrial-mineria-pesada",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/boquillas-contra-incendios/boquilla-industrial-mineria-servicio-pesado-npsh-frontal.avif",
+        "secondSrc": "/img/boquillas-contra-incendios/boquilla-industrial-mineria-servicio-pesado-npsh-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "boquilla-pistola-akron-turbojet-1723",
+      "url": "https://gamademexico.com/productos/boquilla-pistola-akron-turbojet-1723",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/boquillas-contra-incendios/boquilla-pistola-xhyxfire-hero.avif",
+        "secondSrc": "/img/boquillas-contra-incendios/boquilla-pistola-xhyxfire-hero.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "boquilla-pistola-alta-presion-200-psi",
+      "url": "https://gamademexico.com/productos/boquilla-pistola-alta-presion-200-psi",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/boquillas-contra-incendios/boquilla-pistola-alta-presion-200psi-frontal.avif",
+        "secondSrc": "/img/boquillas-contra-incendios/boquilla-pistola-alta-presion-200psi-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "boquilla-pistola-bronce-marino-nst",
+      "url": "https://gamademexico.com/productos/boquilla-pistola-bronce-marino-nst",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/boquillas-contra-incendios/boquilla-pistola-bronce-marino-frontal.avif",
+        "secondSrc": "/img/boquillas-contra-incendios/boquilla-pistola-bronce-marino-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "boquilla-pistola-forestal-wildland",
+      "url": "https://gamademexico.com/productos/boquilla-pistola-forestal-wildland",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/boquillas-contra-incendios/boquilla-pistola-forestal-wildland-frontal.avif",
+        "secondSrc": "/img/boquillas-contra-incendios/boquilla-pistola-forestal-wildland-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "boquilla-pistola-nacional-economica",
+      "url": "https://gamademexico.com/productos/boquilla-pistola-nacional-economica",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/boquillas-contra-incendios/boquilla-pistola-nacional-economica-frontal.avif",
+        "secondSrc": "/img/boquillas-contra-incendios/boquilla-pistola-nacional-economica-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "boquilla-pistola-select-o-flow-2-5",
+      "url": "https://gamademexico.com/productos/boquilla-pistola-select-o-flow-2-5",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/boquillas-contra-incendios/boquilla-pistola-select-o-flow-frontal.avif",
+        "secondSrc": "/img/boquillas-contra-incendios/boquilla-pistola-select-o-flow-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "boquilla-pistola-tft-handline-95-300",
+      "url": "https://gamademexico.com/productos/boquilla-pistola-tft-handline-95-300",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/boquillas-contra-incendios/boquilla-pistola-tft-handline-frontal.avif",
+        "secondSrc": "/img/boquillas-contra-incendios/boquilla-pistola-tft-handline-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "boquilla-tipo-pistola",
+      "url": "https://gamademexico.com/productos/boquilla-tipo-pistola",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/boquillas-contra-incendios/boquilla-pistola-phantom-xd-frontal.avif",
+        "secondSrc": "/img/boquillas-contra-incendios/boquilla-pistola-phantom-xd-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "boquilla-turbo-jet",
+      "url": "https://gamademexico.com/productos/boquilla-turbo-jet",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/boquillas-contra-incendios/boquilla-turbo-jet-frontal.avif",
+        "secondSrc": "/img/boquillas-contra-incendios/boquilla-turbo-jet-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "boquilla-turbo-jet-akron-1720",
+      "url": "https://gamademexico.com/productos/boquilla-turbo-jet-akron-1720",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/boquillas-contra-incendios/boquilla-turbo-jet-akron-1720-frontal.avif",
+        "secondSrc": "/img/boquillas-contra-incendios/boquilla-turbo-jet-akron-1720-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "boquilla-turbo-jet-baja-presion-50psi",
+      "url": "https://gamademexico.com/productos/boquilla-turbo-jet-baja-presion-50psi",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/boquillas-contra-incendios/boquilla-turbo-jet-baja-presion-50psi-frontal.avif",
+        "secondSrc": "/img/boquillas-contra-incendios/boquilla-turbo-jet-baja-presion-50psi-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "boquilla-turbo-jet-master-stream-500-1250",
+      "url": "https://gamademexico.com/productos/boquilla-turbo-jet-master-stream-500-1250",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/boquillas-contra-incendios/boquilla-turbo-jet-master-stream-500-1250-frontal.avif",
+        "secondSrc": "/img/boquillas-contra-incendios/boquilla-turbo-jet-master-stream-500-1250-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "boquilla-turbo-jet-pok-turbokador",
+      "url": "https://gamademexico.com/productos/boquilla-turbo-jet-pok-turbokador",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/boquillas-contra-incendios/boquilla-turbo-jet-pok-turbokador-frontal.avif",
+        "secondSrc": "/img/boquillas-contra-incendios/boquilla-turbo-jet-pok-turbokador-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "boquilla-turbo-jet-sm30-75-325",
+      "url": "https://gamademexico.com/productos/boquilla-turbo-jet-sm30-75-325",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/boquillas-contra-incendios/boquilla-turbo-jet-sm30-75-325-frontal.avif",
+        "secondSrc": "/img/boquillas-contra-incendios/boquilla-turbo-jet-sm30-75-325-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "boquilla-turbo-jet-tft-mid-force",
+      "url": "https://gamademexico.com/productos/boquilla-turbo-jet-tft-mid-force",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/boquillas-contra-incendios/boquilla-turbo-jet-tft-mid-force-frontal.avif",
+        "secondSrc": "/img/boquillas-contra-incendios/boquilla-turbo-jet-tft-mid-force-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "boquilla-turbo-jet-ultrajet-automatica",
+      "url": "https://gamademexico.com/productos/boquilla-turbo-jet-ultrajet-automatica",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/boquillas-contra-incendios/boquilla-turbo-jet-ultrajet-automatica-frontal.avif",
+        "secondSrc": "/img/boquillas-contra-incendios/boquilla-turbo-jet-ultrajet-automatica-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "cap-alta-presion-nfpa1901",
+      "url": "https://gamademexico.com/productos/cap-alta-presion-nfpa1901",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/conexiones-herrajes/cap-alta-presion-nfpa1901-frontal.avif",
+        "secondSrc": "/img/conexiones-herrajes/cap-alta-presion-nfpa1901-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "cap-proteccion-2-5-nh",
+      "url": "https://gamademexico.com/productos/cap-proteccion-2-5-nh",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/conexiones-herrajes/cap-proteccion-2-5-frontal.avif",
+        "secondSrc": "/img/conexiones-herrajes/cap-proteccion-2-5-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "cap-storz-proteccion-cable",
+      "url": "https://gamademexico.com/productos/cap-storz-proteccion-cable",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/conexiones-herrajes/cap-storz-proteccion-frontal.avif",
+        "secondSrc": "/img/conexiones-herrajes/cap-storz-proteccion-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "chiflon-205b-2-5",
+      "url": "https://gamademexico.com/productos/chiflon-205b-2-5",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/conexiones-herrajes/chiflon-205b-2-5-frontal.avif",
+        "secondSrc": "/img/conexiones-herrajes/chiflon-205b-2-5-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "chiflon-aluminio-ligero-1-5",
+      "url": "https://gamademexico.com/productos/chiflon-aluminio-ligero-1-5",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/conexiones-herrajes/chiflon-aluminio-1-5-frontal.avif",
+        "secondSrc": "/img/conexiones-herrajes/chiflon-aluminio-1-5-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "chiflon-chief-xd-1-5",
+      "url": "https://gamademexico.com/productos/chiflon-chief-xd-1-5",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/conexiones-herrajes/chiflon-chief-xd-1-5-frontal.avif",
+        "secondSrc": "/img/conexiones-herrajes/chiflon-chief-xd-1-5-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "chiflon-industrial-1",
+      "url": "https://gamademexico.com/productos/chiflon-industrial-1",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/conexiones-herrajes/chiflon-industrial-1-frontal.avif",
+        "secondSrc": "/img/conexiones-herrajes/chiflon-industrial-1-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "chiflon-nacional-economico",
+      "url": "https://gamademexico.com/productos/chiflon-nacional-economico",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/conexiones-herrajes/chiflon-nacional-frontal.avif",
+        "secondSrc": "/img/conexiones-herrajes/chiflon-nacional-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "chiflon-niebla-ajustable-1-5",
+      "url": "https://gamademexico.com/productos/chiflon-niebla-ajustable-1-5",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/conexiones-herrajes/chiflon-niebla-ajustable-frontal.avif",
+        "secondSrc": "/img/conexiones-herrajes/chiflon-niebla-ajustable-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "chiflon-quimicos-ul401",
+      "url": "https://gamademexico.com/productos/chiflon-quimicos-ul401",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/conexiones-herrajes/chiflon-quimicos-ul401-frontal.avif",
+        "secondSrc": "/img/conexiones-herrajes/chiflon-quimicos-ul401-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "chiflones-tres-pasos",
+      "url": "https://gamademexico.com/productos/chiflones-tres-pasos",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/conexiones-herrajes/chiflon-205b-1-5-frontal.avif",
+        "secondSrc": "/img/conexiones-herrajes/chiflon-205b-1-5-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "conexion-wye",
+      "url": "https://gamademexico.com/productos/conexion-wye",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/conexiones-herrajes/conexion-wye-b97a-frontal.avif",
+        "secondSrc": "/img/conexiones-herrajes/conexion-wye-b97a-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "conexion-wye-b100a-2-5-1-5",
+      "url": "https://gamademexico.com/productos/conexion-wye-b100a-2-5-1-5",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/conexiones-herrajes/conexion-wye-b100a-frontal.avif",
+        "secondSrc": "/img/conexiones-herrajes/conexion-wye-b100a-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "conexion-wye-bronce-2-5",
+      "url": "https://gamademexico.com/productos/conexion-wye-bronce-2-5",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/conexiones-herrajes/conexion-wye-bronce-2-5-frontal.avif",
+        "secondSrc": "/img/conexiones-herrajes/conexion-wye-bronce-2-5-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "conexion-wye-economica-nacional",
+      "url": "https://gamademexico.com/productos/conexion-wye-economica-nacional",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/conexiones-herrajes/conexion-wye-nacional-frontal.avif",
+        "secondSrc": "/img/conexiones-herrajes/conexion-wye-nacional-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "conexion-wye-flush-inlet",
+      "url": "https://gamademexico.com/productos/conexion-wye-flush-inlet",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/conexiones-herrajes/conexion-wye-flush-frontal.avif",
+        "secondSrc": "/img/conexiones-herrajes/conexion-wye-flush-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "conexion-wye-manometro-integrado",
+      "url": "https://gamademexico.com/productos/conexion-wye-manometro-integrado",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/conexiones-herrajes/conexion-wye-manometro-frontal.avif",
+        "secondSrc": "/img/conexiones-herrajes/conexion-wye-manometro-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "conexion-wye-storz-5",
+      "url": "https://gamademexico.com/productos/conexion-wye-storz-5",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/conexiones-herrajes/conexion-wye-storz-5-frontal.avif",
+        "secondSrc": "/img/conexiones-herrajes/conexion-wye-storz-5-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "conexion-wye-tres-vias",
+      "url": "https://gamademexico.com/productos/conexion-wye-tres-vias",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/conexiones-herrajes/conexion-wye-tres-vias-frontal.avif",
+        "secondSrc": "/img/conexiones-herrajes/conexion-wye-tres-vias-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "cople-storz-4-aluminio",
+      "url": "https://gamademexico.com/productos/cople-storz-4-aluminio",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/conexiones-herrajes/cople-storz-4-aluminio-frontal.avif",
+        "secondSrc": "/img/conexiones-herrajes/cople-storz-4-aluminio-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "cople-storz-5-bronce",
+      "url": "https://gamademexico.com/productos/cople-storz-5-bronce",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/conexiones-herrajes/cople-storz-5-bronce-frontal.avif",
+        "secondSrc": "/img/conexiones-herrajes/cople-storz-5-bronce-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "cople-storz-nacional-economico",
+      "url": "https://gamademexico.com/productos/cople-storz-nacional-economico",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/conexiones-herrajes/cople-storz-nacional-frontal.avif",
+        "secondSrc": "/img/conexiones-herrajes/cople-storz-nacional-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "coples-reducciones",
+      "url": "https://gamademexico.com/productos/coples-reducciones",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/conexiones-herrajes/cople-storz-2-5-aluminio-frontal.avif",
+        "secondSrc": "/img/conexiones-herrajes/cople-storz-2-5-aluminio-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "estacion-manguera",
+      "url": "https://gamademexico.com/productos/estacion-manguera",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/gabinetes-hidrantes/estacion-manguera-frontal.avif",
+        "secondSrc": "/img/gabinetes-hidrantes/estacion-manguera-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "estacion-manguera-15m",
+      "url": "https://gamademexico.com/productos/estacion-manguera-15m",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/gabinetes-hidrantes/estacion-15m-frontal.avif",
+        "secondSrc": "/img/gabinetes-hidrantes/estacion-15m-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "estacion-manguera-acero-inox",
+      "url": "https://gamademexico.com/productos/estacion-manguera-acero-inox",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/gabinetes-hidrantes/estacion-inox-frontal.avif",
+        "secondSrc": "/img/gabinetes-hidrantes/estacion-inox-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "estacion-manguera-automatica",
+      "url": "https://gamademexico.com/productos/estacion-manguera-automatica",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/gabinetes-hidrantes/estacion-automatica-frontal.avif",
+        "secondSrc": "/img/gabinetes-hidrantes/estacion-automatica-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "estacion-manguera-doble",
+      "url": "https://gamademexico.com/productos/estacion-manguera-doble",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/gabinetes-hidrantes/estacion-doble-frontal.avif",
+        "secondSrc": "/img/gabinetes-hidrantes/estacion-doble-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "estacion-manguera-gabinete",
+      "url": "https://gamademexico.com/productos/estacion-manguera-gabinete",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/gabinetes-hidrantes/estacion-gabinete-frontal.avif",
+        "secondSrc": "/img/gabinetes-hidrantes/estacion-gabinete-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "estacion-manguera-portatil",
+      "url": "https://gamademexico.com/productos/estacion-manguera-portatil",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/gabinetes-hidrantes/estacion-portatil-frontal.avif",
+        "secondSrc": "/img/gabinetes-hidrantes/estacion-portatil-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "estacion-manguera-retractil",
+      "url": "https://gamademexico.com/productos/estacion-manguera-retractil",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/gabinetes-hidrantes/estacion-retractil-frontal.avif",
+        "secondSrc": "/img/gabinetes-hidrantes/estacion-retractil-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "gabinete-15m-compacto",
+      "url": "https://gamademexico.com/productos/gabinete-15m-compacto",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/gabinetes-hidrantes/gabinete-15m-compacto.avif",
+        "secondSrc": "/img/gabinetes-hidrantes/gabinete-15m-compacto.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "gabinete-30m-sobrepuesto",
+      "url": "https://gamademexico.com/productos/gabinete-30m-sobrepuesto",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/gabinetes-hidrantes/gabinete-30m-sobrepuesto.avif",
+        "secondSrc": "/img/gabinetes-hidrantes/gabinete-30m-sobrepuesto.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "gabinete-30me",
+      "url": "https://gamademexico.com/productos/gabinete-30me",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/gabinetes-hidrantes/gabinete-30me-frontal.avif",
+        "secondSrc": "/img/gabinetes-hidrantes/gabinete-30me-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "gabinete-acero-inoxidable",
+      "url": "https://gamademexico.com/productos/gabinete-acero-inoxidable",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/gabinetes-hidrantes/gabinete-inox-frontal.avif",
+        "secondSrc": "/img/gabinetes-hidrantes/gabinete-inox-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "gabinete-blanco-arquitectonico",
+      "url": "https://gamademexico.com/productos/gabinete-blanco-arquitectonico",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/gabinetes-hidrantes/gabinete-blanco-frontal.avif",
+        "secondSrc": "/img/gabinetes-hidrantes/gabinete-blanco-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "gabinete-doble-compartimento",
+      "url": "https://gamademexico.com/productos/gabinete-doble-compartimento",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/gabinetes-hidrantes/gabinete-doble-frontal.avif",
+        "secondSrc": "/img/gabinetes-hidrantes/gabinete-doble-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "gabinete-empotrado",
+      "url": "https://gamademexico.com/productos/gabinete-empotrado",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/gabinetes-hidrantes/gabinete-empotrado-frontal.avif",
+        "secondSrc": "/img/gabinetes-hidrantes/gabinete-empotrado-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "gabinete-semiempotrado",
+      "url": "https://gamademexico.com/productos/gabinete-semiempotrado",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/gabinetes-hidrantes/gabinete-semiempotrado.avif",
+        "secondSrc": "/img/gabinetes-hidrantes/gabinete-semiempotrado.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "gabinete-vidrio-seguridad",
+      "url": "https://gamademexico.com/productos/gabinete-vidrio-seguridad",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/gabinetes-hidrantes/gabinete-vidrio-seguridad.avif",
+        "secondSrc": "/img/gabinetes-hidrantes/gabinete-vidrio-seguridad.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "hidrante-banqueta",
+      "url": "https://gamademexico.com/productos/hidrante-banqueta",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/gabinetes-hidrantes/hidrante-banqueta-frontal.avif",
+        "secondSrc": "/img/gabinetes-hidrantes/hidrante-banqueta-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "hidrante-banqueta-350psi",
+      "url": "https://gamademexico.com/productos/hidrante-banqueta-350psi",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/gabinetes-hidrantes/hidrante-350psi-frontal.avif",
+        "secondSrc": "/img/gabinetes-hidrantes/hidrante-350psi-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "hidrante-banqueta-4-salidas",
+      "url": "https://gamademexico.com/productos/hidrante-banqueta-4-salidas",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/gabinetes-hidrantes/hidrante-4salidas-frontal.avif",
+        "secondSrc": "/img/gabinetes-hidrantes/hidrante-4salidas-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "hidrante-banqueta-barril-seco",
+      "url": "https://gamademexico.com/productos/hidrante-banqueta-barril-seco",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/gabinetes-hidrantes/hidrante-barril-seco.avif",
+        "secondSrc": "/img/gabinetes-hidrantes/hidrante-barril-seco.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "hidrante-banqueta-enterrado",
+      "url": "https://gamademexico.com/productos/hidrante-banqueta-enterrado",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/gabinetes-hidrantes/hidrante-enterrado-tapa.avif",
+        "secondSrc": "/img/gabinetes-hidrantes/hidrante-enterrado-tapa.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "hidrante-banqueta-indicador",
+      "url": "https://gamademexico.com/productos/hidrante-banqueta-indicador",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/gabinetes-hidrantes/hidrante-indicador-frontal.avif",
+        "secondSrc": "/img/gabinetes-hidrantes/hidrante-indicador-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "hidrante-banqueta-monitoreado",
+      "url": "https://gamademexico.com/productos/hidrante-banqueta-monitoreado",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/gabinetes-hidrantes/hidrante-monitoreado-frontal.avif",
+        "secondSrc": "/img/gabinetes-hidrantes/hidrante-monitoreado-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "hidrante-banqueta-trafico",
+      "url": "https://gamademexico.com/productos/hidrante-banqueta-trafico",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/gabinetes-hidrantes/hidrante-trafico-frontal.avif",
+        "secondSrc": "/img/gabinetes-hidrantes/hidrante-trafico-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "incrementador-111a-1-5-2-5",
+      "url": "https://gamademexico.com/productos/incrementador-111a-1-5-2-5",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/conexiones-herrajes/incrementador-111a-frontal.avif",
+        "secondSrc": "/img/conexiones-herrajes/incrementador-111a-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "kit-accesorios-gabinete",
+      "url": "https://gamademexico.com/productos/kit-accesorios-gabinete",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/conexiones-herrajes/kit-accesorios-gabinete-frontal.avif",
+        "secondSrc": "/img/conexiones-herrajes/kit-accesorios-gabinete-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "llave-hidrante-pentagonal",
+      "url": "https://gamademexico.com/productos/llave-hidrante-pentagonal",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/conexiones-herrajes/llave-hidrante-pentagonal-frontal.avif",
+        "secondSrc": "/img/conexiones-herrajes/llave-hidrante-pentagonal-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "manguera-blindex",
+      "url": "https://gamademexico.com/productos/manguera-blindex",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/mangueras-contra-incendios/manguera-blindex-1-5-30m-frontal.avif",
+        "secondSrc": "/img/mangueras-contra-incendios/manguera-blindex-1-5-30m-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "manguera-blindex-1-5-15m",
+      "url": "https://gamademexico.com/productos/manguera-blindex-1-5-15m",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/mangueras-contra-incendios/manguera-blindex-1-5-15m-frontal.avif",
+        "secondSrc": "/img/mangueras-contra-incendios/manguera-blindex-1-5-15m-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "manguera-blindex-2-5-15m",
+      "url": "https://gamademexico.com/productos/manguera-blindex-2-5-15m",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/mangueras-contra-incendios/manguera-blindex-2-5-15m-frontal.avif",
+        "secondSrc": "/img/mangueras-contra-incendios/manguera-blindex-2-5-15m-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "manguera-blindex-2-5-30m",
+      "url": "https://gamademexico.com/productos/manguera-blindex-2-5-30m",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/mangueras-contra-incendios/manguera-blindex-2-5-30m-frontal.avif",
+        "secondSrc": "/img/mangueras-contra-incendios/manguera-blindex-2-5-30m-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "manguera-blindex-afff-espuma",
+      "url": "https://gamademexico.com/productos/manguera-blindex-afff-espuma",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/mangueras-contra-incendios/manguera-blindex-afff-frontal.avif",
+        "secondSrc": "/img/mangueras-contra-incendios/manguera-blindex-afff-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "manguera-blindex-nitrilo-reforzado",
+      "url": "https://gamademexico.com/productos/manguera-blindex-nitrilo-reforzado",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/mangueras-contra-incendios/manguera-blindex-nitrilo-frontal.avif",
+        "secondSrc": "/img/mangueras-contra-incendios/manguera-blindex-nitrilo-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "manguera-blindex-premium-pemex",
+      "url": "https://gamademexico.com/productos/manguera-blindex-premium-pemex",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/mangueras-contra-incendios/manguera-blindex-pemex-frontal.avif",
+        "secondSrc": "/img/mangueras-contra-incendios/manguera-blindex-pemex-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "manguera-blindex-storz-refineria",
+      "url": "https://gamademexico.com/productos/manguera-blindex-storz-refineria",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/mangueras-contra-incendios/manguera-blindex-storz-frontal.avif",
+        "secondSrc": "/img/mangueras-contra-incendios/manguera-blindex-storz-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "manguera-forestal",
+      "url": "https://gamademexico.com/productos/manguera-forestal",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/mangueras-contra-incendios/manguera-forestal-1-5-30m-frontal.avif",
+        "secondSrc": "/img/mangueras-contra-incendios/manguera-forestal-1-5-30m-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "manguera-forestal-1-15m",
+      "url": "https://gamademexico.com/productos/manguera-forestal-1-15m",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/mangueras-contra-incendios/manguera-forestal-1-15m-frontal.avif",
+        "secondSrc": "/img/mangueras-contra-incendios/manguera-forestal-1-15m-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "manguera-forestal-1-5-15m",
+      "url": "https://gamademexico.com/productos/manguera-forestal-1-5-15m",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/mangueras-contra-incendios/manguera-forestal-1-5-15m-frontal.avif",
+        "secondSrc": "/img/mangueras-contra-incendios/manguera-forestal-1-5-15m-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "manguera-forestal-amarilla-alta-vis",
+      "url": "https://gamademexico.com/productos/manguera-forestal-amarilla-alta-vis",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/mangueras-contra-incendios/manguera-forestal-amarilla-frontal.avif",
+        "secondSrc": "/img/mangueras-contra-incendios/manguera-forestal-amarilla-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "manguera-forestal-kit-brigada",
+      "url": "https://gamademexico.com/productos/manguera-forestal-kit-brigada",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/mangueras-contra-incendios/manguera-forestal-kit-frontal.avif",
+        "secondSrc": "/img/mangueras-contra-incendios/manguera-forestal-kit-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "manguera-forestal-naranja-rescate",
+      "url": "https://gamademexico.com/productos/manguera-forestal-naranja-rescate",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/mangueras-contra-incendios/manguera-forestal-naranja-frontal.avif",
+        "secondSrc": "/img/mangueras-contra-incendios/manguera-forestal-naranja-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "manguera-forestal-resistente-abrasion",
+      "url": "https://gamademexico.com/productos/manguera-forestal-resistente-abrasion",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/mangueras-contra-incendios/manguera-forestal-abrasion-frontal.avif",
+        "secondSrc": "/img/mangueras-contra-incendios/manguera-forestal-abrasion-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "manguera-forestal-uso-rudo-militar",
+      "url": "https://gamademexico.com/productos/manguera-forestal-uso-rudo-militar",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/mangueras-contra-incendios/manguera-forestal-militar-frontal.avif",
+        "secondSrc": "/img/mangueras-contra-incendios/manguera-forestal-militar-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "manguera-millhose",
+      "url": "https://gamademexico.com/productos/manguera-millhose",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/mangueras-contra-incendios/manguera-millhose-1-5-30m-frontal.avif",
+        "secondSrc": "/img/mangueras-contra-incendios/manguera-millhose-1-5-30m-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "manguera-millhose-1-5-15m",
+      "url": "https://gamademexico.com/productos/manguera-millhose-1-5-15m",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/mangueras-contra-incendios/manguera-millhose-1-5-15m-frontal.avif",
+        "secondSrc": "/img/mangueras-contra-incendios/manguera-millhose-1-5-15m-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "manguera-millhose-2-5-15m",
+      "url": "https://gamademexico.com/productos/manguera-millhose-2-5-15m",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/mangueras-contra-incendios/manguera-millhose-2-5-15m-frontal.avif",
+        "secondSrc": "/img/mangueras-contra-incendios/manguera-millhose-2-5-15m-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "manguera-millhose-2-5-30m",
+      "url": "https://gamademexico.com/productos/manguera-millhose-2-5-30m",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/mangueras-contra-incendios/manguera-millhose-2-5-30m-frontal.avif",
+        "secondSrc": "/img/mangueras-contra-incendios/manguera-millhose-2-5-30m-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "manguera-millhose-amarilla-alta-visibilidad",
+      "url": "https://gamademexico.com/productos/manguera-millhose-amarilla-alta-visibilidad",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/mangueras-contra-incendios/manguera-millhose-amarilla-frontal.avif",
+        "secondSrc": "/img/mangueras-contra-incendios/manguera-millhose-amarilla-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "manguera-millhose-nbr-quimicos",
+      "url": "https://gamademexico.com/productos/manguera-millhose-nbr-quimicos",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/mangueras-contra-incendios/manguera-millhose-nbr-frontal.avif",
+        "secondSrc": "/img/mangueras-contra-incendios/manguera-millhose-nbr-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "manguera-millhose-roja-premium-elkhart",
+      "url": "https://gamademexico.com/productos/manguera-millhose-roja-premium-elkhart",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/mangueras-contra-incendios/manguera-millhose-elkhart-frontal.avif",
+        "secondSrc": "/img/mangueras-contra-incendios/manguera-millhose-elkhart-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "manguera-millhose-storz-2-5",
+      "url": "https://gamademexico.com/productos/manguera-millhose-storz-2-5",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/mangueras-contra-incendios/manguera-millhose-storz-frontal.avif",
+        "secondSrc": "/img/mangueras-contra-incendios/manguera-millhose-storz-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "manguera-succion",
+      "url": "https://gamademexico.com/productos/manguera-succion",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/mangueras-contra-incendios/manguera-succion-4-3m-frontal.avif",
+        "secondSrc": "/img/mangueras-contra-incendios/manguera-succion-4-3m-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "manguera-succion-2-5-3m",
+      "url": "https://gamademexico.com/productos/manguera-succion-2-5-3m",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/mangueras-contra-incendios/manguera-succion-2-5-3m-frontal.avif",
+        "secondSrc": "/img/mangueras-contra-incendios/manguera-succion-2-5-3m-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "manguera-succion-4-6m",
+      "url": "https://gamademexico.com/productos/manguera-succion-4-6m",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/mangueras-contra-incendios/manguera-succion-4-6m-frontal.avif",
+        "secondSrc": "/img/mangueras-contra-incendios/manguera-succion-4-6m-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "manguera-succion-6-3m",
+      "url": "https://gamademexico.com/productos/manguera-succion-6-3m",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/mangueras-contra-incendios/manguera-succion-6-3m-frontal.avif",
+        "secondSrc": "/img/mangueras-contra-incendios/manguera-succion-6-3m-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "manguera-succion-colador-canastilla",
+      "url": "https://gamademexico.com/productos/manguera-succion-colador-canastilla",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/mangueras-contra-incendios/manguera-succion-colador-frontal.avif",
+        "secondSrc": "/img/mangueras-contra-incendios/manguera-succion-colador-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "manguera-succion-flotador-emergencia",
+      "url": "https://gamademexico.com/productos/manguera-succion-flotador-emergencia",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/mangueras-contra-incendios/manguera-succion-flotador-frontal.avif",
+        "secondSrc": "/img/mangueras-contra-incendios/manguera-succion-flotador-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "manguera-succion-nbr-hidrocarburos",
+      "url": "https://gamademexico.com/productos/manguera-succion-nbr-hidrocarburos",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/mangueras-contra-incendios/manguera-succion-nbr-frontal.avif",
+        "secondSrc": "/img/mangueras-contra-incendios/manguera-succion-nbr-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "manguera-succion-transparente-pvc",
+      "url": "https://gamademexico.com/productos/manguera-succion-transparente-pvc",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/mangueras-contra-incendios/manguera-succion-transparente-frontal.avif",
+        "secondSrc": "/img/mangueras-contra-incendios/manguera-succion-transparente-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "monitor-certificado-fm",
+      "url": "https://gamademexico.com/productos/monitor-certificado-fm",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/monitores-contra-incendios/monitor-st611-fm-approved-angulo-derecho.avif",
+        "secondSrc": "/img/monitores-contra-incendios/monitor-st611-fm-approved-angulo-derecho.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "monitor-corazon-966-m002",
+      "url": "https://gamademexico.com/productos/monitor-corazon-966-m002",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/monitores-contra-incendios/monitor-corazon-tres-vistas-base-bridada.avif",
+        "secondSrc": "/img/monitores-contra-incendios/monitor-corazon-tres-vistas-base-bridada.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "monitor-corazon-doble-cremallera",
+      "url": "https://gamademexico.com/productos/monitor-corazon-doble-cremallera",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 9,
+        "firstSrc": "/img/monitores-contra-incendios/monitor-doble-cremallera-par-frontal-posterior.avif",
+        "secondSrc": "/img/monitores-contra-incendios/monitor-doble-cremallera-par-frontal-posterior.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "monitor-corazon-elkhart-294-11",
+      "url": "https://gamademexico.com/productos/monitor-corazon-elkhart-294-11",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/monitores-contra-incendios/monitor-tipo-corazon-bronce-fundido-detalle.avif",
+        "secondSrc": "/img/monitores-contra-incendios/monitor-tipo-corazon-bronce-fundido-detalle.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "monitor-corazon-fabricacion-mexicana",
+      "url": "https://gamademexico.com/productos/monitor-corazon-fabricacion-mexicana",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 3,
+        "firstSrc": "/img/monitores-contra-incendios/monitor-tipo-corazon-bronce-fundido-detalle.avif",
+        "secondSrc": "/img/monitores-contra-incendios/monitor-tipo-corazon-bronce-fundido-detalle.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "monitor-corazon-joperz-i102",
+      "url": "https://gamademexico.com/productos/monitor-corazon-joperz-i102",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 7,
+        "firstSrc": "/img/monitores-contra-incendios/monitor-contra-incendio-corazon-frontal-posterior.avif",
+        "secondSrc": "/img/monitores-contra-incendios/monitor-contra-incendio-corazon-frontal-posterior.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "monitor-corazon-terminales-almacenamiento",
+      "url": "https://gamademexico.com/productos/monitor-corazon-terminales-almacenamiento",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 3,
+        "firstSrc": "/img/monitores-contra-incendios/monitor-corazon-tres-vistas-base-bridada.avif",
+        "secondSrc": "/img/monitores-contra-incendios/monitor-corazon-tres-vistas-base-bridada.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "monitor-corazon-una-cremallera",
+      "url": "https://gamademexico.com/productos/monitor-corazon-una-cremallera",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 8,
+        "firstSrc": "/img/monitores-contra-incendios/monitor-corazon-una-cremallera-bronce-fundido.avif",
+        "secondSrc": "/img/monitores-contra-incendios/monitor-corazon-una-cremallera-bronce-fundido.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "monitor-cuello-cisne",
+      "url": "https://gamademexico.com/productos/monitor-cuello-cisne",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 19,
+        "firstSrc": "/img/monitores-contra-incendios/monitor-cuello-cisne-vista-frontal-bronce.avif",
+        "secondSrc": "/img/monitores-contra-incendios/monitor-cuello-cisne-vista-frontal-bronce.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "monitor-cuello-cisne-bronce-marino",
+      "url": "https://gamademexico.com/productos/monitor-cuello-cisne-bronce-marino",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 3,
+        "firstSrc": "/img/monitores-contra-incendios/monitor-cuello-cisne-curva-elegante.avif",
+        "secondSrc": "/img/monitores-contra-incendios/monitor-cuello-cisne-curva-elegante.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "monitor-cuello-cisne-certificado-pemex",
+      "url": "https://gamademexico.com/productos/monitor-cuello-cisne-certificado-pemex",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 3,
+        "firstSrc": "/img/monitores-contra-incendios/monitor-cuello-cisne-forma-s-01.avif",
+        "secondSrc": "/img/monitores-contra-incendios/monitor-cuello-cisne-forma-s-01.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "monitor-cuello-cisne-economico",
+      "url": "https://gamademexico.com/productos/monitor-cuello-cisne-economico",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 3,
+        "firstSrc": "/img/monitores-contra-incendios/monitor-cuello-cisne-forma-s-03.avif",
+        "secondSrc": "/img/monitores-contra-incendios/monitor-cuello-cisne-forma-s-03.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "monitor-cuello-cisne-facil-instalacion",
+      "url": "https://gamademexico.com/productos/monitor-cuello-cisne-facil-instalacion",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 3,
+        "firstSrc": "/img/monitores-contra-incendios/monitor-cuello-cisne-detalle-profesional.avif",
+        "secondSrc": "/img/monitores-contra-incendios/monitor-cuello-cisne-detalle-profesional.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "monitor-cuello-cisne-multiproposito",
+      "url": "https://gamademexico.com/productos/monitor-cuello-cisne-multiproposito",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 3,
+        "firstSrc": "/img/monitores-contra-incendios/monitor-cuello-cisne-vista-frontal-bronce.avif",
+        "secondSrc": "/img/monitores-contra-incendios/monitor-cuello-cisne-vista-frontal-bronce.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "monitor-cuello-cisne-operacion-segura",
+      "url": "https://gamademexico.com/productos/monitor-cuello-cisne-operacion-segura",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 3,
+        "firstSrc": "/img/monitores-contra-incendios/monitor-cuello-cisne-angulo-izquierdo.avif",
+        "secondSrc": "/img/monitores-contra-incendios/monitor-cuello-cisne-angulo-izquierdo.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "monitor-cuello-cisne-petroquimica",
+      "url": "https://gamademexico.com/productos/monitor-cuello-cisne-petroquimica",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 3,
+        "firstSrc": "/img/monitores-contra-incendios/monitor-cuello-cisne-forma-s-02.avif",
+        "secondSrc": "/img/monitores-contra-incendios/monitor-cuello-cisne-forma-s-02.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "monitor-elkhart-brass-copperhead-8593",
+      "url": "https://gamademexico.com/productos/monitor-elkhart-brass-copperhead-8593",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/monitores-contra-incendios/monitor-contra-incendio-tipo-corazon-giro-360-bronce.avif",
+        "secondSrc": "/img/monitores-contra-incendios/monitor-contra-incendio-tipo-corazon-giro-360-bronce.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "monitor-elkhart-brass-scorpion",
+      "url": "https://gamademexico.com/productos/monitor-elkhart-brass-scorpion",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 8,
+        "firstSrc": "/img/monitores-contra-incendios/monitor-elkhart-brass-scorpion-2500gpm-vista-frontal.avif",
+        "secondSrc": "/img/monitores-contra-incendios/monitor-elkhart-brass-scorpion-2500gpm-vista-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "monitor-elkhart-brass-sidewinder-exm2",
+      "url": "https://gamademexico.com/productos/monitor-elkhart-brass-sidewinder-exm2",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 8,
+        "firstSrc": "/img/monitores-contra-incendios/monitor-elkhart-brass-sidewinder-exm2-angulo-derecho.avif",
+        "secondSrc": "/img/monitores-contra-incendios/monitor-elkhart-brass-sidewinder-exm2-angulo-derecho.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "monitor-elkhart-brass-vulcan",
+      "url": "https://gamademexico.com/productos/monitor-elkhart-brass-vulcan",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 8,
+        "firstSrc": "/img/monitores-contra-incendios/monitor-elkhart-brass-vulcan-vista-frontal.avif",
+        "secondSrc": "/img/monitores-contra-incendios/monitor-elkhart-brass-vulcan-vista-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "monitor-fm-acero-inoxidable",
+      "url": "https://gamademexico.com/productos/monitor-fm-acero-inoxidable",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 3,
+        "firstSrc": "/img/monitores-contra-incendios/monitor-st611-fm-approved-boquilla-dorada.avif",
+        "secondSrc": "/img/monitores-contra-incendios/monitor-st611-fm-approved-boquilla-dorada.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "monitor-fm-agua-espuma",
+      "url": "https://gamademexico.com/productos/monitor-fm-agua-espuma",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 3,
+        "firstSrc": "/img/monitores-contra-incendios/monitor-st611-fm-approved-angulo-lateral.avif",
+        "secondSrc": "/img/monitores-contra-incendios/monitor-st611-fm-approved-angulo-lateral.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "monitor-fm-alto-caudal",
+      "url": "https://gamademexico.com/productos/monitor-fm-alto-caudal",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 3,
+        "firstSrc": "/img/monitores-contra-incendios/monitor-st611-fm-approved-vista-completa.avif",
+        "secondSrc": "/img/monitores-contra-incendios/monitor-st611-fm-approved-vista-completa.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "monitor-fm-control-remoto",
+      "url": "https://gamademexico.com/productos/monitor-fm-control-remoto",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 3,
+        "firstSrc": "/img/monitores-contra-incendios/monitor-st611-fm-approved-con-manometro.avif",
+        "secondSrc": "/img/monitores-contra-incendios/monitor-st611-fm-approved-con-manometro.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "monitor-fm-montaje-pedestal",
+      "url": "https://gamademexico.com/productos/monitor-fm-montaje-pedestal",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 3,
+        "firstSrc": "/img/monitores-contra-incendios/monitor-st611-fm-approved-perfil-derecho.avif",
+        "secondSrc": "/img/monitores-contra-incendios/monitor-st611-fm-approved-perfil-derecho.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "monitor-fm-refinerias",
+      "url": "https://gamademexico.com/productos/monitor-fm-refinerias",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 3,
+        "firstSrc": "/img/monitores-contra-incendios/monitor-st611-fm-approved-aplicacion-real.avif",
+        "secondSrc": "/img/monitores-contra-incendios/monitor-st611-fm-approved-aplicacion-real.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "monitor-st611-fm-approved",
+      "url": "https://gamademexico.com/productos/monitor-st611-fm-approved",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 17,
+        "firstSrc": "/img/monitores-contra-incendios/monitor-st611-fm-approved-vista-frontal.avif",
+        "secondSrc": "/img/monitores-contra-incendios/monitor-st611-fm-approved-vista-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "monitor-ul-listed",
+      "url": "https://gamademexico.com/productos/monitor-ul-listed",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/monitores-contra-incendios/monitor-ul-listed-fixed-flow-angulo-completo.avif",
+        "secondSrc": "/img/monitores-contra-incendios/monitor-ul-listed-fixed-flow-angulo-completo.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "monitor-ul-listed-aseguradoras",
+      "url": "https://gamademexico.com/productos/monitor-ul-listed-aseguradoras",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 3,
+        "firstSrc": "/img/monitores-contra-incendios/monitor-ul-listed-fixed-flow-vista-lateral.avif",
+        "secondSrc": "/img/monitores-contra-incendios/monitor-ul-listed-fixed-flow-vista-lateral.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "monitor-ul-listed-economico",
+      "url": "https://gamademexico.com/productos/monitor-ul-listed-economico",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 3,
+        "firstSrc": "/img/monitores-contra-incendios/monitor-ul-listed-fixed-flow-angulo-derecho.avif",
+        "secondSrc": "/img/monitores-contra-incendios/monitor-ul-listed-fixed-flow-angulo-derecho.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "monitor-ul-listed-fixed-flow-foam",
+      "url": "https://gamademexico.com/productos/monitor-ul-listed-fixed-flow-foam",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 15,
+        "firstSrc": "/img/monitores-contra-incendios/monitor-ul-listed-fixed-flow-vista-frontal.avif",
+        "secondSrc": "/img/monitores-contra-incendios/monitor-ul-listed-fixed-flow-vista-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "monitor-ul-listed-largo-alcance",
+      "url": "https://gamademexico.com/productos/monitor-ul-listed-largo-alcance",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 3,
+        "firstSrc": "/img/monitores-contra-incendios/monitor-ul-listed-fixed-flow-vista-frontal.avif",
+        "secondSrc": "/img/monitores-contra-incendios/monitor-ul-listed-fixed-flow-vista-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "monitor-ul-listed-marino",
+      "url": "https://gamademexico.com/productos/monitor-ul-listed-marino",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 3,
+        "firstSrc": "/img/monitores-contra-incendios/monitor-ul-listed-foam-aplicacion-marina.avif",
+        "secondSrc": "/img/monitores-contra-incendios/monitor-ul-listed-foam-aplicacion-marina.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "monitor-ul-listed-operacion-segura",
+      "url": "https://gamademexico.com/productos/monitor-ul-listed-operacion-segura",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 3,
+        "firstSrc": "/img/monitores-contra-incendios/monitor-ul-listed-fixed-flow-volantes-control.avif",
+        "secondSrc": "/img/monitores-contra-incendios/monitor-ul-listed-fixed-flow-volantes-control.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "monitor-ul-listed-retrofit",
+      "url": "https://gamademexico.com/productos/monitor-ul-listed-retrofit",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 3,
+        "firstSrc": "/img/monitores-contra-incendios/monitor-ul-listed-fixed-flow-ruedas-negras.avif",
+        "secondSrc": "/img/monitores-contra-incendios/monitor-ul-listed-fixed-flow-ruedas-negras.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "niple-cana-npt-nh-2-5",
+      "url": "https://gamademexico.com/productos/niple-cana-npt-nh-2-5",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/conexiones-herrajes/niple-cana-npt-nh-2-5-frontal.avif",
+        "secondSrc": "/img/conexiones-herrajes/niple-cana-npt-nh-2-5-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "reduccion-campana-102a-2-5-1-5",
+      "url": "https://gamademexico.com/productos/reduccion-campana-102a-2-5-1-5",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/conexiones-herrajes/reduccion-campana-102a-frontal.avif",
+        "secondSrc": "/img/conexiones-herrajes/reduccion-campana-102a-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "reduccion-storz-4-2-5",
+      "url": "https://gamademexico.com/productos/reduccion-storz-4-2-5",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/conexiones-herrajes/reduccion-storz-4-2-5-frontal.avif",
+        "secondSrc": "/img/conexiones-herrajes/reduccion-storz-4-2-5-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "reduccion-swivel-101a-2-5-1-5",
+      "url": "https://gamademexico.com/productos/reduccion-swivel-101a-2-5-1-5",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/conexiones-herrajes/reduccion-swivel-101a-frontal.avif",
+        "secondSrc": "/img/conexiones-herrajes/reduccion-swivel-101a-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "soporte-manguera-despliegue",
+      "url": "https://gamademexico.com/productos/soporte-manguera-despliegue",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/conexiones-herrajes/soporte-manguera-despliegue-frontal.avif",
+        "secondSrc": "/img/conexiones-herrajes/soporte-manguera-despliegue-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "toma-siamesa-fdc",
+      "url": "https://gamademexico.com/productos/toma-siamesa-fdc",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/conexiones-herrajes/toma-siamesa-2a-plain-frontal.avif",
+        "secondSrc": "/img/conexiones-herrajes/toma-siamesa-2a-plain-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "toma-siamesa-fdc-4a-clappered",
+      "url": "https://gamademexico.com/productos/toma-siamesa-fdc-4a-clappered",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/conexiones-herrajes/toma-siamesa-4a-clappered-frontal.avif",
+        "secondSrc": "/img/conexiones-herrajes/toma-siamesa-4a-clappered-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "toma-siamesa-fdc-9702-alivio",
+      "url": "https://gamademexico.com/productos/toma-siamesa-fdc-9702-alivio",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/conexiones-herrajes/toma-siamesa-9702-alivio-frontal.avif",
+        "secondSrc": "/img/conexiones-herrajes/toma-siamesa-9702-alivio-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "toma-siamesa-fdc-acero-inoxidable",
+      "url": "https://gamademexico.com/productos/toma-siamesa-fdc-acero-inoxidable",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/conexiones-herrajes/toma-siamesa-inox-316-frontal.avif",
+        "secondSrc": "/img/conexiones-herrajes/toma-siamesa-inox-316-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "toma-siamesa-fdc-cromada",
+      "url": "https://gamademexico.com/productos/toma-siamesa-fdc-cromada",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/conexiones-herrajes/toma-siamesa-cromada-frontal.avif",
+        "secondSrc": "/img/conexiones-herrajes/toma-siamesa-cromada-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "toma-siamesa-fdc-nacional",
+      "url": "https://gamademexico.com/productos/toma-siamesa-fdc-nacional",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/conexiones-herrajes/toma-siamesa-nacional-frontal.avif",
+        "secondSrc": "/img/conexiones-herrajes/toma-siamesa-nacional-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "toma-siamesa-fdc-storz-4",
+      "url": "https://gamademexico.com/productos/toma-siamesa-fdc-storz-4",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/conexiones-herrajes/toma-siamesa-storz-4-frontal.avif",
+        "secondSrc": "/img/conexiones-herrajes/toma-siamesa-storz-4-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "toma-siamesa-fdc-tres-entradas",
+      "url": "https://gamademexico.com/productos/toma-siamesa-fdc-tres-entradas",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 4,
+        "firstSrc": "/img/conexiones-herrajes/toma-siamesa-tres-entradas-frontal.avif",
+        "secondSrc": "/img/conexiones-herrajes/toma-siamesa-tres-entradas-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "valvula-compuerta-osy",
+      "url": "https://gamademexico.com/productos/valvula-compuerta-osy",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/valvulas-contra-incendios/valvula-compuerta-osy-4-frontal.avif",
+        "secondSrc": "/img/valvulas-contra-incendios/valvula-compuerta-osy-4-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "valvula-compuerta-osy-10-bridada",
+      "url": "https://gamademexico.com/productos/valvula-compuerta-osy-10-bridada",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/valvulas-contra-incendios/valvula-compuerta-osy-10-frontal.avif",
+        "secondSrc": "/img/valvulas-contra-incendios/valvula-compuerta-osy-10-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "valvula-compuerta-osy-2-5-bridada",
+      "url": "https://gamademexico.com/productos/valvula-compuerta-osy-2-5-bridada",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/valvulas-contra-incendios/valvula-compuerta-osy-2-5-frontal.avif",
+        "secondSrc": "/img/valvulas-contra-incendios/valvula-compuerta-osy-2-5-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "valvula-compuerta-osy-3-ranurada",
+      "url": "https://gamademexico.com/productos/valvula-compuerta-osy-3-ranurada",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/valvulas-contra-incendios/valvula-compuerta-osy-3-ranurada-frontal.avif",
+        "secondSrc": "/img/valvulas-contra-incendios/valvula-compuerta-osy-3-ranurada-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "valvula-compuerta-osy-4-ranurada",
+      "url": "https://gamademexico.com/productos/valvula-compuerta-osy-4-ranurada",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/valvulas-contra-incendios/valvula-compuerta-osy-4-ranurada-frontal.avif",
+        "secondSrc": "/img/valvulas-contra-incendios/valvula-compuerta-osy-4-ranurada-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "valvula-compuerta-osy-6-bridada",
+      "url": "https://gamademexico.com/productos/valvula-compuerta-osy-6-bridada",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/valvulas-contra-incendios/valvula-compuerta-osy-6-frontal.avif",
+        "secondSrc": "/img/valvulas-contra-incendios/valvula-compuerta-osy-6-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "valvula-compuerta-osy-6-ranurada",
+      "url": "https://gamademexico.com/productos/valvula-compuerta-osy-6-ranurada",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/valvulas-contra-incendios/valvula-compuerta-osy-6-ranurada-frontal.avif",
+        "secondSrc": "/img/valvulas-contra-incendios/valvula-compuerta-osy-6-ranurada-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "valvula-compuerta-osy-8-bridada",
+      "url": "https://gamademexico.com/productos/valvula-compuerta-osy-8-bridada",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/valvulas-contra-incendios/valvula-compuerta-osy-8-frontal.avif",
+        "secondSrc": "/img/valvulas-contra-incendios/valvula-compuerta-osy-8-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "valvula-globo",
+      "url": "https://gamademexico.com/productos/valvula-globo",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/valvulas-contra-incendios/valvula-globo-2-frontal.avif",
+        "secondSrc": "/img/valvulas-contra-incendios/valvula-globo-2-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "valvula-globo-0-5-bronce-recto",
+      "url": "https://gamademexico.com/productos/valvula-globo-0-5-bronce-recto",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/valvulas-contra-incendios/valvula-globo-0-5-recto-frontal.avif",
+        "secondSrc": "/img/valvulas-contra-incendios/valvula-globo-0-5-recto-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "valvula-globo-0-75-bronce-angular",
+      "url": "https://gamademexico.com/productos/valvula-globo-0-75-bronce-angular",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/valvulas-contra-incendios/valvula-globo-0-75-angular-frontal.avif",
+        "secondSrc": "/img/valvulas-contra-incendios/valvula-globo-0-75-angular-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "valvula-globo-1-25-bronce-recto",
+      "url": "https://gamademexico.com/productos/valvula-globo-1-25-bronce-recto",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/valvulas-contra-incendios/valvula-globo-1-25-recto-frontal.avif",
+        "secondSrc": "/img/valvulas-contra-incendios/valvula-globo-1-25-recto-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "valvula-globo-1-5-bronce-recto",
+      "url": "https://gamademexico.com/productos/valvula-globo-1-5-bronce-recto",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/valvulas-contra-incendios/valvula-globo-1-5-recto-frontal.avif",
+        "secondSrc": "/img/valvulas-contra-incendios/valvula-globo-1-5-recto-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "valvula-globo-1-bronce-angular",
+      "url": "https://gamademexico.com/productos/valvula-globo-1-bronce-angular",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/valvulas-contra-incendios/valvula-globo-1-angular-frontal.avif",
+        "secondSrc": "/img/valvulas-contra-incendios/valvula-globo-1-angular-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "valvula-globo-2-5-bronce-angular",
+      "url": "https://gamademexico.com/productos/valvula-globo-2-5-bronce-angular",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/valvulas-contra-incendios/valvula-globo-2-5-angular-frontal.avif",
+        "secondSrc": "/img/valvulas-contra-incendios/valvula-globo-2-5-angular-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "valvula-globo-2-hierro-bridada",
+      "url": "https://gamademexico.com/productos/valvula-globo-2-hierro-bridada",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/valvulas-contra-incendios/valvula-globo-2-bridada-frontal.avif",
+        "secondSrc": "/img/valvulas-contra-incendios/valvula-globo-2-bridada-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "valvula-mariposa",
+      "url": "https://gamademexico.com/productos/valvula-mariposa",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/valvulas-contra-incendios/valvula-mariposa-4-frontal.avif",
+        "secondSrc": "/img/valvulas-contra-incendios/valvula-mariposa-4-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "valvula-mariposa-10-wafer-indicadora",
+      "url": "https://gamademexico.com/productos/valvula-mariposa-10-wafer-indicadora",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/valvulas-contra-incendios/valvula-mariposa-10-frontal.avif",
+        "secondSrc": "/img/valvulas-contra-incendios/valvula-mariposa-10-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "valvula-mariposa-2-5-wafer-indicadora",
+      "url": "https://gamademexico.com/productos/valvula-mariposa-2-5-wafer-indicadora",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/valvulas-contra-incendios/valvula-mariposa-2-5-frontal.avif",
+        "secondSrc": "/img/valvulas-contra-incendios/valvula-mariposa-2-5-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "valvula-mariposa-3-ranurada-indicadora",
+      "url": "https://gamademexico.com/productos/valvula-mariposa-3-ranurada-indicadora",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/valvulas-contra-incendios/valvula-mariposa-3-ranurada-frontal.avif",
+        "secondSrc": "/img/valvulas-contra-incendios/valvula-mariposa-3-ranurada-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "valvula-mariposa-4-ranurada-indicadora",
+      "url": "https://gamademexico.com/productos/valvula-mariposa-4-ranurada-indicadora",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/valvulas-contra-incendios/valvula-mariposa-4-ranurada-frontal.avif",
+        "secondSrc": "/img/valvulas-contra-incendios/valvula-mariposa-4-ranurada-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "valvula-mariposa-6-ranurada-indicadora",
+      "url": "https://gamademexico.com/productos/valvula-mariposa-6-ranurada-indicadora",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/valvulas-contra-incendios/valvula-mariposa-6-ranurada-frontal.avif",
+        "secondSrc": "/img/valvulas-contra-incendios/valvula-mariposa-6-ranurada-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "valvula-mariposa-6-wafer-indicadora",
+      "url": "https://gamademexico.com/productos/valvula-mariposa-6-wafer-indicadora",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/valvulas-contra-incendios/valvula-mariposa-6-frontal.avif",
+        "secondSrc": "/img/valvulas-contra-incendios/valvula-mariposa-6-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "valvula-mariposa-8-wafer-indicadora",
+      "url": "https://gamademexico.com/productos/valvula-mariposa-8-wafer-indicadora",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/valvulas-contra-incendios/valvula-mariposa-8-frontal.avif",
+        "secondSrc": "/img/valvulas-contra-incendios/valvula-mariposa-8-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "valvula-retencion",
+      "url": "https://gamademexico.com/productos/valvula-retencion",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/valvulas-contra-incendios/valvula-retencion-4-frontal.avif",
+        "secondSrc": "/img/valvulas-contra-incendios/valvula-retencion-4-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "valvula-retencion-check-10-bridada",
+      "url": "https://gamademexico.com/productos/valvula-retencion-check-10-bridada",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/valvulas-contra-incendios/valvula-retencion-10-frontal.avif",
+        "secondSrc": "/img/valvulas-contra-incendios/valvula-retencion-10-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "valvula-retencion-check-2-5-bridada",
+      "url": "https://gamademexico.com/productos/valvula-retencion-check-2-5-bridada",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/valvulas-contra-incendios/valvula-retencion-2-5-frontal.avif",
+        "secondSrc": "/img/valvulas-contra-incendios/valvula-retencion-2-5-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "valvula-retencion-check-2-roscada",
+      "url": "https://gamademexico.com/productos/valvula-retencion-check-2-roscada",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/valvulas-contra-incendios/valvula-retencion-2-roscada-frontal.avif",
+        "secondSrc": "/img/valvulas-contra-incendios/valvula-retencion-2-roscada-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "valvula-retencion-check-3-ranurada",
+      "url": "https://gamademexico.com/productos/valvula-retencion-check-3-ranurada",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/valvulas-contra-incendios/valvula-retencion-3-ranurada-frontal.avif",
+        "secondSrc": "/img/valvulas-contra-incendios/valvula-retencion-3-ranurada-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "valvula-retencion-check-4-ranurada",
+      "url": "https://gamademexico.com/productos/valvula-retencion-check-4-ranurada",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/valvulas-contra-incendios/valvula-retencion-4-ranurada-frontal.avif",
+        "secondSrc": "/img/valvulas-contra-incendios/valvula-retencion-4-ranurada-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "valvula-retencion-check-6-swing",
+      "url": "https://gamademexico.com/productos/valvula-retencion-check-6-swing",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/valvulas-contra-incendios/valvula-retencion-6-frontal.avif",
+        "secondSrc": "/img/valvulas-contra-incendios/valvula-retencion-6-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    },
+    {
+      "slug": "valvula-retencion-check-8-swing",
+      "url": "https://gamademexico.com/productos/valvula-retencion-check-8-swing",
+      "ok": false,
+      "reason": "click_did_not_update_main_image",
+      "details": {
+        "thumbCount": 5,
+        "firstSrc": "/img/valvulas-contra-incendios/valvula-retencion-8-frontal.avif",
+        "secondSrc": "/img/valvulas-contra-incendios/valvula-retencion-8-frontal.avif",
+        "activeCount": 1,
+        "secondIsActive": false
+      }
+    }
+  ]
+}

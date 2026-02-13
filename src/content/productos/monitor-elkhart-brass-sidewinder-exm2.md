@@ -9,9 +9,6 @@ galeria:
   - "/img/monitores-contra-incendios/monitor-elkhart-brass-sidewinder-exm2-vista-frontal.avif"
   - "/img/monitores-contra-incendios/monitor-elkhart-brass-sidewinder-exm2-angulo-izquierdo.avif"
   - "/img/monitores-contra-incendios/monitor-elkhart-brass-sidewinder-exm2-perfil-vertical.avif"
-  - "/img/monitores-contra-incendios/monitor-sidewinder-exm2-galeria-vistas.avif"
-  - "/img/monitores-contra-incendios/monitor-sidewinder-exm2-galeria-detalles.avif"
-  - "/img/monitores-contra-incendios/monitor-sidewinder-exm2-mineria-construccion.avif"
 certificaciones: ["FM Approved", "UL Listed"]
 flujo: "500 - 1,250 GPM"
 material: "Aluminio anodizado / Acero inoxidable"

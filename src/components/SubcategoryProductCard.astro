@@ -1,4 +1,6 @@
 ---
+import { withImageCdn } from '../lib/images';
+
 interface Props {
   title: string;
   description: string;
@@ -20,6 +22,7 @@ const {
   material = '',
   certifications = [],
 } = Astro.props;
+const imageUrl = withImageCdn(image);
 
 function getProductAnchorText(rawTitle: string): string {
   const cleanTitle = rawTitle.split(' - ')[0].trim();
@@ -32,7 +35,7 @@ const anchorText = getProductAnchorText(title);
 <article class="subcategory-product-card">
   <div
     class="subcategory-product-card__image"
-    style={image ? `background-image: url(${image});` : undefined}
+    style={imageUrl ? `background-image: url(${imageUrl});` : undefined}
     role="img"
     aria-label={title}
   ></div>

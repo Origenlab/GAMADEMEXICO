@@ -4,7 +4,7 @@ description: "Adaptadores NH/NPT/Storz, conexiones Y, tomas siamesas FDC, coples
 metaTitle: "Conexiones y Herrajes de Bronce Contra Incendios | Adaptadores, Siamesas, Coples | Gama de M\u00e9xico"
 metaDescription: "Venta de conexiones y herrajes de bronce contra incendios en M\u00e9xico: adaptadores NH/NPT/Storz, tomas siamesas FDC, conexiones Y, coples y chiflones. Elkhart Brass certificado."
 slug: "conexiones-herrajes-contra-incendios"
-imagen: "/img/categorias/conexiones.jpg"
+imagen: "/img/conexiones-herrajes/conexion-wye-b97a-frontal.avif"
 orden: 5
 ---
 
