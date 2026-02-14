@@ -1,0 +1,158 @@
+---
+// =============================================================================
+// BlogRecent - Sección de artículos recientes para interlinking
+// Usar en páginas de productos, servicios, homepage, etc.
+// =============================================================================
+
+import { getCollection } from 'astro:content';
+import BlogCard from './BlogCard.astro';
+import { CATEGORY_LABELS } from '../../lib/blogHelpers';
+
+interface Props {
+  titulo?: string;
+  subtitulo?: string;
+  categoria?: string; // Filtrar por categoría específica
+  limit?: number;
+  showViewAll?: boolean;
+  columns?: 2 | 3;
+  background?: 'white' | 'accent';
+}
+
+const {
+  titulo = 'Artículos Relacionados',
+  subtitulo = 'Recursos técnicos de nuestro equipo de ingenieros',
+  categoria,
+  limit = 3,
+  showViewAll = true,
+  columns = 3,
+  background = 'accent',
+} = Astro.props;
+
+// Obtener posts filtrados
+let posts = await getCollection('blog', ({ data }) => {
+  if (data.draft) return false;
+  if (categoria && data.categoria !== categoria) return false;
+  return true;
+});
+
+// Ordenar por fecha y limitar
+posts = posts
+  .sort((a, b) => new Date(b.data.fecha).getTime() - new Date(a.data.fecha).getTime())
+  .slice(0, limit);
+
+const viewAllLink = categoria ? `/blog/categoria/${categoria}` : '/blog';
+const viewAllText = categoria ? `Ver más sobre ${CATEGORY_LABELS[categoria] || categoria}` : 'Ver todos los artículos';
+---
+
+{posts.length > 0 && (
+  <section class={`blog-recent blog-recent--${background}`}>
+    <div class="container">
+      <div class="blog-recent__header">
+        <div class="blog-recent__header-text">
+          <h2 class="blog-recent__title">{titulo}</h2>
+          {subtitulo && <p class="blog-recent__subtitle">{subtitulo}</p>}
+        </div>
+        {showViewAll && (
+          <a href={viewAllLink} class="btn btn--outline btn--sm">
+            {viewAllText} →
+          </a>
+        )}
+      </div>
+
+      <div class={`blog-recent__grid blog-recent__grid--${columns}-cols`}>
+        {posts.map((post) => (
+          <BlogCard
+            title={post.data.title}
+            description={post.data.description}
+            slug={post.id}
+            fecha={post.data.fecha}
+            categoria={post.data.categoria}
+            autor={post.data.autor}
+            imagen={post.data.imagen}
+            imagenAlt={post.data.imagenAlt}
+            tiempoLectura={post.data.tiempoLectura}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+)}
+
+<style>
+  .blog-recent {
+    padding: var(--spacing-3xl) 0;
+  }
+
+  .blog-recent--white {
+    background: var(--color-white);
+  }
+
+  .blog-recent--accent {
+    background: var(--color-accent);
+  }
+
+  .blog-recent__header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .blog-recent__header-text {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+  }
+
+  .blog-recent__title {
+    margin: 0;
+    font-size: var(--font-size-2xl);
+    font-weight: 700;
+    color: var(--color-secondary);
+  }
+
+  .blog-recent__subtitle {
+    margin: 0;
+    font-size: var(--font-size-base);
+    color: var(--color-text-light);
+  }
+
+  .blog-recent__grid {
+    display: grid;
+    gap: var(--spacing-lg);
+  }
+
+  .blog-recent__grid--2-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-recent__grid--3-cols {
+    grid-template-columns: 1fr;
+  }
+
+  @media (min-width: 768px) {
+    .blog-recent__header {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    .blog-recent__grid--2-cols {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blog-recent__grid--3-cols {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .blog-recent__title {
+      font-size: var(--font-size-3xl);
+    }
+
+    .blog-recent__grid--3-cols {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+</style>

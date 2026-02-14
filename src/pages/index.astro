@@ -4,6 +4,7 @@ import SectionHeader from '../components/SectionHeader.astro';
 import ServiceCard from '../components/ServiceCard.astro';
 import CategoryCard from '../components/CategoryCard.astro';
 import Faq from '../components/Faq.astro';
+import BlogRecent from '../components/blog/BlogRecent.astro';
 import {
   buildOrganizationSchema,
   buildLocalBusinessSchema,
@@ -381,6 +382,15 @@ const structuredData = [
       </div>
     </div>
   </section>
+
+  <!-- BLOG / RECURSOS -->
+  <BlogRecent
+    titulo="Recursos Técnicos y Guías"
+    subtitulo="Artículos de nuestro equipo de ingenieros para ayudarte a tomar mejores decisiones"
+    limit={3}
+    columns={3}
+    background="white"
+  />
 
   <!-- FAQ -->
   <section class="faq" id="faq" aria-labelledby="faq-title">

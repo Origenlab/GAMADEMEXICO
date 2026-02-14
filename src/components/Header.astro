@@ -133,10 +133,38 @@ const logoUrl = withImageCdn('/img/gama-de-mexico.avif');
           </div>
         </li>
         <li class="nav-desktop__item">
-          <a href="/#industrias" class="nav-desktop__link">Industrias</a>
-        </li>
-        <li class="nav-desktop__item">
-          <a href="/#recursos" class="nav-desktop__link">Recursos</a>
+          <a href="/blog" class={`nav-desktop__link ${activePage === 'blog' ? 'nav-desktop__link--active' : ''}`} aria-haspopup="true" aria-expanded="false">
+            Blog <span class="nav-desktop__arrow" aria-hidden="true">&#9660;</span>
+          </a>
+
+          <div class="mega-menu mega-menu--blog" role="menu" aria-label="Blog técnico">
+            <div class="mega-menu__category">
+              <h3 class="mega-menu__title">Categorías</h3>
+              <ul class="mega-menu__list">
+                <li><a href="/blog/categoria/normatividad" class="mega-menu__link" role="menuitem">Normatividad NFPA y NOM</a></li>
+                <li><a href="/blog/categoria/productos" class="mega-menu__link" role="menuitem">Guías de Productos</a></li>
+                <li><a href="/blog/categoria/mantenimiento" class="mega-menu__link" role="menuitem">Mantenimiento de Equipos</a></li>
+                <li><a href="/blog/categoria/seguridad-industrial" class="mega-menu__link" role="menuitem">Seguridad Industrial</a></li>
+              </ul>
+              <a href="/blog" class="mega-menu__view-all">Ver todos los artículos &rarr;</a>
+            </div>
+
+            <div class="mega-menu__category">
+              <h3 class="mega-menu__title">Temas Populares</h3>
+              <ul class="mega-menu__list">
+                <li><a href="/blog/categoria/extintores" class="mega-menu__link" role="menuitem">Extintores</a></li>
+                <li><a href="/blog/categoria/sistemas-contraincendios" class="mega-menu__link" role="menuitem">Sistemas Contra Incendios</a></li>
+                <li><a href="/blog/categoria/capacitacion" class="mega-menu__link" role="menuitem">Capacitación</a></li>
+                <li><a href="/blog/categoria/senalizacion" class="mega-menu__link" role="menuitem">Señalización</a></li>
+              </ul>
+            </div>
+
+            <div class="mega-menu__category mega-menu__category--cta">
+              <h3 class="mega-menu__title">Recursos Técnicos</h3>
+              <p class="mega-menu__desc">Artículos escritos por ingenieros especializados en protección contra incendios con más de 30 años de experiencia.</p>
+              <a href="/blog" class="btn btn--primary btn--sm">Explorar Blog</a>
+            </div>
+          </div>
         </li>
         <li class="nav-desktop__item">
           <a href="/#contacto" class="nav-desktop__link">Contacto</a>
@@ -233,10 +261,21 @@ const logoUrl = withImageCdn('/img/gama-de-mexico.avif');
       </div>
     </li>
     <li class="mobile-nav__item">
-      <a href="/#industrias" class="mobile-nav__link">Industrias</a>
-    </li>
-    <li class="mobile-nav__item">
-      <a href="/#recursos" class="mobile-nav__link">Recursos</a>
+      <button class="mobile-nav__link" aria-expanded="false" aria-controls="mobile-submenu-blog" id="mobile-toggle-blog">
+        Blog <span class="mobile-nav__arrow" aria-hidden="true">&#9660;</span>
+      </button>
+      <div class="mobile-nav__submenu" id="mobile-submenu-blog" role="region" aria-labelledby="mobile-toggle-blog">
+        <div class="mobile-nav__subcategory">
+          <div class="mobile-nav__subtitle">Categorías</div>
+          <a href="/blog/categoria/normatividad" class="mobile-nav__sublink">Normatividad NFPA y NOM</a>
+          <a href="/blog/categoria/productos" class="mobile-nav__sublink">Guías de Productos</a>
+          <a href="/blog/categoria/mantenimiento" class="mobile-nav__sublink">Mantenimiento de Equipos</a>
+          <a href="/blog/categoria/seguridad-industrial" class="mobile-nav__sublink">Seguridad Industrial</a>
+          <a href="/blog/categoria/extintores" class="mobile-nav__sublink">Extintores</a>
+          <a href="/blog/categoria/sistemas-contraincendios" class="mobile-nav__sublink">Sistemas Contra Incendios</a>
+        </div>
+        <a href="/blog" class="mobile-nav__sublink mobile-nav__sublink--all">Ver todos los artículos &rarr;</a>
+      </div>
     </li>
     <li class="mobile-nav__item">
       <a href="/#contacto" class="mobile-nav__link">Contacto</a>
@@ -407,6 +446,12 @@ const logoUrl = withImageCdn('/img/gama-de-mexico.avif');
   .mega-menu--services {
     grid-template-columns: 1fr 1fr 1.2fr;
     min-width: 680px;
+  }
+
+  /* Mega Menu - Blog variant */
+  .mega-menu--blog {
+    grid-template-columns: 1fr 1fr 1.2fr;
+    min-width: 620px;
   }
 
   .mega-menu__category--cta {

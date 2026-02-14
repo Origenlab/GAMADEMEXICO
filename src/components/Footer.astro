@@ -65,16 +65,22 @@ const currentYear = new Date().getFullYear();
           </ul>
         </div>
 
-        <!-- Columna 3: Servicios -->
+        <!-- Columna 3: Servicios y Blog -->
         <div class="footer__col">
           <h3 class="footer__title">Servicios</h3>
           <ul class="footer__list">
             <li><a href="/servicios/garantia" class="footer__link">Garantía y Respaldo</a></li>
             <li><a href="/servicios/asesoria" class="footer__link">Asesoría Técnica</a></li>
             <li><a href="/servicios/empresas" class="footer__link">Atención a Empresas</a></li>
-            <li><a href="/servicios/mantenimiento" class="footer__link">Suministro Mantenimiento</a></li>
-            <li><a href="/servicios/envios" class="footer__link">Envíos Nacionales</a></li>
             <li><a href="/servicios/cotizaciones" class="footer__link">Cotizaciones Corporativas</a></li>
+          </ul>
+
+          <h3 class="footer__title footer__title--spaced">Blog Técnico</h3>
+          <ul class="footer__list">
+            <li><a href="/blog" class="footer__link">Todos los Artículos</a></li>
+            <li><a href="/blog/categoria/normatividad" class="footer__link">Normatividad NFPA y NOM</a></li>
+            <li><a href="/blog/categoria/productos" class="footer__link">Guías de Productos</a></li>
+            <li><a href="/blog/categoria/mantenimiento" class="footer__link">Mantenimiento</a></li>
           </ul>
         </div>
 
@@ -290,6 +296,12 @@ const currentYear = new Date().getFullYear();
     text-transform: uppercase;
     letter-spacing: 0.05em;
     margin: 0 0 var(--spacing-md);
+  }
+
+  .footer__title--spaced {
+    margin-top: var(--spacing-lg);
+    padding-top: var(--spacing-md);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   .footer__list {
