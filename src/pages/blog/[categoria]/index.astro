@@ -1,44 +1,49 @@
 ---
 // =============================================================================
-// Blog Category - Página de categoría
+// Blog Category Index - Página de categoría /blog/[categoria-contra-incendios]
 // =============================================================================
 
 import Layout from '../../../layouts/Base.astro';
 import { getCollection } from 'astro:content';
 import BlogGrid from '../../../components/blog/BlogGrid.astro';
 import BlogCategories from '../../../components/blog/BlogCategories.astro';
-import { getCategoriesWithCount, CATEGORY_LABELS } from '../../../lib/blogHelpers';
+import {
+  getCategoriesWithCount,
+  CATEGORY_LABELS,
+  CATEGORY_SLUGS,
+  SLUG_TO_CATEGORY,
+} from '../../../lib/blogHelpers';
 import { buildBreadcrumbSchema } from '../../../lib/seo';
 
-// Metadata de categorías para SEO (coinciden con productos del sitio)
+// Metadata de categorías para SEO
 const CATEGORY_META: Record<string, { title: string; description: string }> = {
   monitores: {
-    title: 'Monitores Contra Incendios',
+    title: 'Artículos sobre Monitores Contra Incendios',
     description:
       'Guías técnicas sobre monitores contra incendios: selección, mantenimiento, normatividad NFPA y certificaciones FM/UL. Monitores tipo corazón y cuello de cisne.',
   },
   boquillas: {
-    title: 'Boquillas Contra Incendios',
+    title: 'Artículos sobre Boquillas Contra Incendios',
     description:
       'Artículos sobre boquillas contra incendios: tipos (pistola, turbo jet, industrial), selección por GPM, patrones de descarga y certificaciones.',
   },
   mangueras: {
-    title: 'Mangueras Contra Incendios',
+    title: 'Artículos sobre Mangueras Contra Incendios',
     description:
       'Guías sobre mangueras contra incendios: tipos (doble forro, Blindex, forestal), selección, cuidado, normativa NFPA 1961 y mantenimiento.',
   },
   valvulas: {
-    title: 'Válvulas Contra Incendios',
+    title: 'Artículos sobre Válvulas Contra Incendios',
     description:
       'Todo sobre válvulas para sistemas contra incendios: OS&Y, mariposa, retención, globe. Instalación, mantenimiento y certificaciones UL/FM.',
   },
   'conexiones-herrajes': {
-    title: 'Conexiones y Herrajes',
+    title: 'Artículos sobre Conexiones y Herrajes',
     description:
       'Artículos técnicos sobre conexiones contra incendios: adaptadores, siamesas FDC, coples Storz, Wye, reducciones y herrajes de bronce.',
   },
   'gabinetes-hidrantes': {
-    title: 'Gabinetes e Hidrantes',
+    title: 'Artículos sobre Gabinetes e Hidrantes',
     description:
       'Guías sobre gabinetes contra incendios e hidrantes: tipos, instalación, normativa NFPA 14, mantenimiento y equipamiento completo.',
   },
@@ -47,21 +52,27 @@ const CATEGORY_META: Record<string, { title: string; description: string }> = {
 export async function getStaticPaths() {
   const posts = await getCollection('blog', ({ data }) => !data.draft);
 
-  // Obtener categorías únicas
+  // Obtener categorías únicas de los posts
   const categories = [...new Set(posts.map((p) => p.data.categoria))];
 
-  return categories.map((category) => ({
-    params: { category },
-    props: {
-      category,
-      posts: posts
-        .filter((p) => p.data.categoria === category)
-        .sort((a, b) => new Date(b.data.fecha).getTime() - new Date(a.data.fecha).getTime()),
-    },
-  }));
+  return categories.map((category) => {
+    const categorySlug = CATEGORY_SLUGS[category] || category;
+    const categoryPosts = posts
+      .filter((p) => p.data.categoria === category)
+      .sort((a, b) => new Date(b.data.fecha).getTime() - new Date(a.data.fecha).getTime());
+
+    return {
+      params: { categoria: categorySlug },
+      props: {
+        category,
+        categorySlug,
+        posts: categoryPosts,
+      },
+    };
+  });
 }
 
-const { category, posts } = Astro.props;
+const { category, categorySlug, posts } = Astro.props;
 const meta = CATEGORY_META[category] || {
   title: CATEGORY_LABELS[category] || category,
   description: `Artículos sobre ${CATEGORY_LABELS[category] || category} en el blog de Gama de México.`,
@@ -76,7 +87,7 @@ const categories = getCategoriesWithCount(allPosts);
 const breadcrumbSchema = buildBreadcrumbSchema([
   { name: 'Inicio', url: '/' },
   { name: 'Blog', url: '/blog' },
-  { name: categoryLabel, url: `/blog/categoria/${category}` },
+  { name: categoryLabel, url: `/blog/${categorySlug}` },
 ]);
 ---
 
@@ -85,7 +96,7 @@ const breadcrumbSchema = buildBreadcrumbSchema([
   description={meta.description}
   heroTitle={meta.title}
   heroIntro={meta.description}
-  heroBadge="Categoría"
+  heroBadge="Blog Técnico"
   heroPrimaryText="Solicitar Asesoría"
   heroPrimaryLink="#cotizar"
   heroSecondaryText="Ver Todos"
@@ -98,8 +109,9 @@ const breadcrumbSchema = buildBreadcrumbSchema([
   <!-- Grid de artículos -->
   <BlogGrid
     posts={posts}
-    titulo={`${posts.length} ${posts.length === 1 ? 'artículo' : 'artículos'} en ${categoryLabel}`}
+    titulo={`${posts.length} ${posts.length === 1 ? 'artículo' : 'artículos'} sobre ${categoryLabel}`}
     columns={3}
+    categorySlug={categorySlug}
   />
 
   {posts.length === 0 && (

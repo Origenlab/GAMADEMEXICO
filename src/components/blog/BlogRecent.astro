@@ -6,7 +6,7 @@
 
 import { getCollection } from 'astro:content';
 import BlogCard from './BlogCard.astro';
-import { CATEGORY_LABELS } from '../../lib/blogHelpers';
+import { CATEGORY_LABELS, CATEGORY_SLUGS } from '../../lib/blogHelpers';
 
 interface Props {
   titulo?: string;
@@ -40,7 +40,8 @@ posts = posts
   .sort((a, b) => new Date(b.data.fecha).getTime() - new Date(a.data.fecha).getTime())
   .slice(0, limit);
 
-const viewAllLink = categoria ? `/blog/categoria/${categoria}` : '/blog';
+const categorySlug = categoria ? (CATEGORY_SLUGS[categoria] || categoria) : '';
+const viewAllLink = categoria ? `/blog/${categorySlug}` : '/blog';
 const viewAllText = categoria ? `Ver más sobre ${CATEGORY_LABELS[categoria] || categoria}` : 'Ver todos los artículos';
 ---
 

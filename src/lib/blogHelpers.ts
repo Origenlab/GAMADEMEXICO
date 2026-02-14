@@ -20,6 +20,28 @@ export const CATEGORY_LABELS: Record<string, string> = {
 };
 
 // -----------------------------------------------------------------------------
+// Slugs de URL para categorías (formato SEO-friendly)
+// -----------------------------------------------------------------------------
+export const CATEGORY_SLUGS: Record<string, string> = {
+  'monitores': 'monitores-contra-incendios',
+  'boquillas': 'boquillas-contra-incendios',
+  'mangueras': 'mangueras-contra-incendios',
+  'valvulas': 'valvulas-contra-incendios',
+  'conexiones-herrajes': 'conexiones-herrajes-contra-incendios',
+  'gabinetes-hidrantes': 'gabinetes-hidrantes-contra-incendios',
+};
+
+// Mapeo inverso: de slug URL a categoría interna
+export const SLUG_TO_CATEGORY: Record<string, string> = {
+  'monitores-contra-incendios': 'monitores',
+  'boquillas-contra-incendios': 'boquillas',
+  'mangueras-contra-incendios': 'mangueras',
+  'valvulas-contra-incendios': 'valvulas',
+  'conexiones-herrajes-contra-incendios': 'conexiones-herrajes',
+  'gabinetes-hidrantes-contra-incendios': 'gabinetes-hidrantes',
+};
+
+// -----------------------------------------------------------------------------
 // Calcular tiempo de lectura
 // -----------------------------------------------------------------------------
 export function calculateReadingTime(content: string): number {

@@ -5,7 +5,7 @@
 // =============================================================================
 
 import { withImageCdn } from '../../lib/images';
-import { formatDateShort, getAuthorName, CATEGORY_LABELS } from '../../lib/blogHelpers';
+import { formatDateShort, getAuthorName, CATEGORY_LABELS, CATEGORY_SLUGS } from '../../lib/blogHelpers';
 
 interface Props {
   title: string;
@@ -38,10 +38,11 @@ const {
 const imageUrl = imagen ? withImageCdn(imagen) : null;
 const authorName = getAuthorName(autor);
 const categoryLabel = CATEGORY_LABELS[categoria] || categoria;
+const categorySlug = CATEGORY_SLUGS[categoria] || categoria;
 ---
 
 <article class={`blog-card ${destacado ? 'blog-card--featured' : ''}`}>
-  <a href={`/blog/${slug}`} class="blog-card__link">
+  <a href={`/blog/${categorySlug}/${slug}`} class="blog-card__link">
     <div
       class="blog-card__image"
       style={imageUrl ? `background-image: url(${imageUrl});` : undefined}

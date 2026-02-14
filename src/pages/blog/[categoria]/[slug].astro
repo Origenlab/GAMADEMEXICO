@@ -1,16 +1,16 @@
 ---
 // =============================================================================
-// Blog Post - Página de artículo individual
+// Blog Post - Página de artículo /blog/[categoria]/[slug]
 // =============================================================================
 
-import Layout from '../../layouts/Base.astro';
+import Layout from '../../../layouts/Base.astro';
 import { getCollection, render } from 'astro:content';
-import BlogSidebar from '../../components/blog/BlogSidebar.astro';
-import BlogAuthor from '../../components/blog/BlogAuthor.astro';
-import BlogRelatedPosts from '../../components/blog/BlogRelatedPosts.astro';
-import BlogCTA from '../../components/blog/BlogCTA.astro';
-import CotizacionForm from '../../components/CotizacionForm.astro';
-import { buildArticleSchema, buildBreadcrumbSchema } from '../../lib/seo';
+import BlogSidebar from '../../../components/blog/BlogSidebar.astro';
+import BlogAuthor from '../../../components/blog/BlogAuthor.astro';
+import BlogRelatedPosts from '../../../components/blog/BlogRelatedPosts.astro';
+import BlogCTA from '../../../components/blog/BlogCTA.astro';
+import CotizacionForm from '../../../components/CotizacionForm.astro';
+import { buildArticleSchema, buildBreadcrumbSchema } from '../../../lib/seo';
 import {
   formatDateSpanish,
   calculateReadingTime,
@@ -18,17 +18,25 @@ import {
   getAllTags,
   extractTableOfContents,
   CATEGORY_LABELS,
-} from '../../lib/blogHelpers';
+  CATEGORY_SLUGS,
+} from '../../../lib/blogHelpers';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog', ({ data }) => !data.draft);
-  return posts.map((post) => ({
-    params: { slug: post.id },
-    props: { post },
-  }));
+
+  return posts.map((post) => {
+    const categorySlug = CATEGORY_SLUGS[post.data.categoria] || post.data.categoria;
+    return {
+      params: {
+        categoria: categorySlug,
+        slug: post.id,
+      },
+      props: { post, categorySlug },
+    };
+  });
 }
 
-const { post } = Astro.props;
+const { post, categorySlug } = Astro.props;
 const { Content, headings } = await render(post);
 
 // Obtener posts relacionados
@@ -51,7 +59,7 @@ const categoryLabel = CATEGORY_LABELS[post.data.categoria] || post.data.categori
 const articleSchema = buildArticleSchema({
   title: post.data.title,
   description: post.data.description,
-  url: `/blog/${post.id}`,
+  url: `/blog/${categorySlug}/${post.id}`,
   image: post.data.imagen,
   datePublished: post.data.fecha,
   dateModified: post.data.fechaActualizacion,
@@ -65,8 +73,8 @@ const articleSchema = buildArticleSchema({
 const breadcrumbSchema = buildBreadcrumbSchema([
   { name: 'Inicio', url: '/' },
   { name: 'Blog', url: '/blog' },
-  { name: categoryLabel, url: `/blog/categoria/${post.data.categoria}` },
-  { name: post.data.title, url: `/blog/${post.id}` },
+  { name: categoryLabel, url: `/blog/${categorySlug}` },
+  { name: post.data.title, url: `/blog/${categorySlug}/${post.id}` },
 ]);
 ---
 
@@ -138,7 +146,7 @@ const breadcrumbSchema = buildBreadcrumbSchema([
         </div>
 
         <!-- Sidebar -->
-        <BlogSidebar headings={tocItems} tags={allTags} showCTA={true} />
+        <BlogSidebar headings={tocItems} tags={allTags} showCTA={true} categorySlug={categorySlug} />
       </div>
     </div>
   </article>

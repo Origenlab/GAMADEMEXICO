@@ -3,7 +3,7 @@
 // BlogCategories - Navegación de categorías del blog
 // =============================================================================
 
-import { CATEGORY_LABELS } from '../../lib/blogHelpers';
+import { CATEGORY_LABELS, CATEGORY_SLUGS } from '../../lib/blogHelpers';
 
 interface CategoryItem {
   slug: string;
@@ -34,15 +34,18 @@ const totalCount = categories.reduce((sum, cat) => sum + cat.count, 0);
         {showCount && <span class="blog-categories__count">{totalCount}</span>}
       </a>
 
-      {categories.map((cat) => (
-        <a
-          href={`/blog/categoria/${cat.slug}`}
-          class={`blog-categories__item ${activeCategory === cat.slug ? 'blog-categories__item--active' : ''}`}
-        >
-          {CATEGORY_LABELS[cat.slug] || cat.name}
-          {showCount && <span class="blog-categories__count">{cat.count}</span>}
-        </a>
-      ))}
+      {categories.map((cat) => {
+        const categoryUrlSlug = CATEGORY_SLUGS[cat.slug] || cat.slug;
+        return (
+          <a
+            href={`/blog/${categoryUrlSlug}`}
+            class={`blog-categories__item ${activeCategory === cat.slug ? 'blog-categories__item--active' : ''}`}
+          >
+            {CATEGORY_LABELS[cat.slug] || cat.name}
+            {showCount && <span class="blog-categories__count">{cat.count}</span>}
+          </a>
+        );
+      })}
     </div>
   </div>
 </nav>
