@@ -1,0 +1,130 @@
+---
+// =============================================================================
+// BlogCategories - Navegación de categorías del blog
+// =============================================================================
+
+import { CATEGORY_LABELS } from '../../lib/blogHelpers';
+
+interface CategoryItem {
+  slug: string;
+  name: string;
+  count: number;
+}
+
+interface Props {
+  categories: CategoryItem[];
+  activeCategory?: string;
+  showCount?: boolean;
+}
+
+const { categories, activeCategory, showCount = true } = Astro.props;
+
+// Calcular total de artículos
+const totalCount = categories.reduce((sum, cat) => sum + cat.count, 0);
+---
+
+<nav class="blog-categories" aria-label="Categorías del blog">
+  <div class="container">
+    <div class="blog-categories__list">
+      <a
+        href="/blog"
+        class={`blog-categories__item ${!activeCategory ? 'blog-categories__item--active' : ''}`}
+      >
+        Todos
+        {showCount && <span class="blog-categories__count">{totalCount}</span>}
+      </a>
+
+      {categories.map((cat) => (
+        <a
+          href={`/blog/categoria/${cat.slug}`}
+          class={`blog-categories__item ${activeCategory === cat.slug ? 'blog-categories__item--active' : ''}`}
+        >
+          {CATEGORY_LABELS[cat.slug] || cat.name}
+          {showCount && <span class="blog-categories__count">{cat.count}</span>}
+        </a>
+      ))}
+    </div>
+  </div>
+</nav>
+
+<style>
+  .blog-categories {
+    background: var(--color-white);
+    border-bottom: 1px solid var(--color-border);
+    padding: var(--spacing-md) 0;
+    position: sticky;
+    top: var(--header-height);
+    z-index: 100;
+  }
+
+  .blog-categories__list {
+    display: flex;
+    gap: var(--spacing-xs);
+    overflow-x: auto;
+    padding-bottom: var(--spacing-xs);
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .blog-categories__list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .blog-categories__item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    color: var(--color-text);
+    background: var(--color-accent);
+    text-decoration: none;
+    white-space: nowrap;
+    transition: all var(--transition-fast);
+  }
+
+  .blog-categories__item:hover {
+    background: var(--color-border);
+    color: var(--color-secondary);
+  }
+
+  .blog-categories__item--active {
+    background: var(--color-primary);
+    color: var(--color-white);
+  }
+
+  .blog-categories__item--active:hover {
+    background: var(--color-primary-dark);
+    color: var(--color-white);
+  }
+
+  .blog-categories__count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 1.25rem;
+    height: 1.25rem;
+    padding: 0 0.35rem;
+    border-radius: 999px;
+    font-size: 0.6875rem;
+    font-weight: 700;
+    background: rgba(0, 0, 0, 0.1);
+  }
+
+  .blog-categories__item--active .blog-categories__count {
+    background: rgba(255, 255, 255, 0.25);
+  }
+
+  @media (min-width: 768px) {
+    .blog-categories__list {
+      flex-wrap: wrap;
+      overflow-x: visible;
+    }
+
+    .blog-categories__item {
+      padding: 0.625rem 1.25rem;
+    }
+  }
+</style>

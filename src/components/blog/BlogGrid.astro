@@ -1,0 +1,150 @@
+---
+// =============================================================================
+// BlogGrid - Grid responsivo de artículos
+// =============================================================================
+
+import BlogCard from './BlogCard.astro';
+import { calculateReadingTime } from '../../lib/blogHelpers';
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  posts: CollectionEntry<'blog'>[];
+  titulo?: string;
+  subtitulo?: string;
+  columns?: 2 | 3;
+  showViewAll?: boolean;
+  viewAllLink?: string;
+  viewAllText?: string;
+}
+
+const {
+  posts,
+  titulo,
+  subtitulo,
+  columns = 3,
+  showViewAll = false,
+  viewAllLink = '/blog',
+  viewAllText = 'Ver todos',
+} = Astro.props;
+---
+
+<section class="blog-grid-section">
+  <div class="container">
+    {(titulo || subtitulo || showViewAll) && (
+      <div class="blog-grid__header">
+        <div class="blog-grid__header-text">
+          {titulo && <h2 class="blog-grid__title">{titulo}</h2>}
+          {subtitulo && <p class="blog-grid__subtitle">{subtitulo}</p>}
+        </div>
+        {showViewAll && (
+          <a href={viewAllLink} class="btn btn--outline btn--sm">
+            {viewAllText} →
+          </a>
+        )}
+      </div>
+    )}
+
+    <div class={`blog-grid blog-grid--${columns}-cols`}>
+      {posts.map((post) => (
+        <BlogCard
+          title={post.data.title}
+          description={post.data.description}
+          slug={post.id}
+          fecha={post.data.fecha}
+          categoria={post.data.categoria}
+          autor={post.data.autor}
+          imagen={post.data.imagen}
+          imagenAlt={post.data.imagenAlt}
+          tags={post.data.tags}
+          destacado={post.data.destacado}
+          tiempoLectura={post.data.tiempoLectura}
+        />
+      ))}
+    </div>
+
+    {posts.length === 0 && (
+      <div class="blog-grid__empty">
+        <p>No hay artículos disponibles en esta sección.</p>
+      </div>
+    )}
+  </div>
+</section>
+
+<style>
+  .blog-grid-section {
+    padding: var(--spacing-3xl) 0;
+  }
+
+  .blog-grid__header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .blog-grid__header-text {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+  }
+
+  .blog-grid__title {
+    margin: 0;
+    font-size: var(--font-size-2xl);
+    font-weight: 700;
+    color: var(--color-secondary);
+  }
+
+  .blog-grid__subtitle {
+    margin: 0;
+    font-size: var(--font-size-base);
+    color: var(--color-text-light);
+  }
+
+  .blog-grid {
+    display: grid;
+    gap: var(--spacing-lg);
+  }
+
+  .blog-grid--2-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-grid--3-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-grid__empty {
+    text-align: center;
+    padding: var(--spacing-2xl);
+    background: var(--color-accent);
+    border-radius: var(--border-radius);
+    color: var(--color-text-light);
+  }
+
+  @media (min-width: 768px) {
+    .blog-grid__header {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    .blog-grid--2-cols {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blog-grid--3-cols {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .blog-grid__title {
+      font-size: var(--font-size-3xl);
+    }
+
+    .blog-grid--3-cols {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+</style>

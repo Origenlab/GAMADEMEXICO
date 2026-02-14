@@ -1,0 +1,136 @@
+---
+// =============================================================================
+// Blog Category - Página de categoría
+// =============================================================================
+
+import Layout from '../../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+import BlogGrid from '../../../components/blog/BlogGrid.astro';
+import BlogCategories from '../../../components/blog/BlogCategories.astro';
+import { getCategoriesWithCount, CATEGORY_LABELS } from '../../../lib/blogHelpers';
+import { buildBreadcrumbSchema } from '../../../lib/seo';
+
+// Metadata de categorías para SEO
+const CATEGORY_META: Record<string, { title: string; description: string }> = {
+  extintores: {
+    title: 'Artículos sobre Extintores',
+    description:
+      'Guías técnicas sobre selección, mantenimiento y normatividad de extintores contra incendios en México. Tipos, certificaciones y mejores prácticas.',
+  },
+  'sistemas-contraincendios': {
+    title: 'Sistemas Contra Incendios',
+    description:
+      'Todo sobre sistemas de supresión, rociadores, monitores y protección activa contra incendios para industria y comercio.',
+  },
+  normatividad: {
+    title: 'Normatividad y Cumplimiento',
+    description:
+      'Guías sobre normativas NFPA, NOM-002-STPS, certificaciones UL y FM, y requisitos legales para equipos contra incendios en México.',
+  },
+  'seguridad-industrial': {
+    title: 'Seguridad Industrial',
+    description:
+      'Artículos sobre seguridad industrial, prevención de incendios, planes de emergencia y protección de instalaciones.',
+  },
+  senalizacion: {
+    title: 'Señalización de Seguridad',
+    description:
+      'Guías sobre señalización de seguridad, rutas de evacuación, señales de equipos contra incendios y normativas aplicables.',
+  },
+  capacitacion: {
+    title: 'Capacitación en Seguridad',
+    description:
+      'Artículos sobre capacitación de brigadas, uso de extintores, evacuación y formación en seguridad contra incendios.',
+  },
+  mantenimiento: {
+    title: 'Mantenimiento de Equipos',
+    description:
+      'Guías de mantenimiento preventivo y correctivo para extintores, mangueras, hidrantes y sistemas contra incendios.',
+  },
+  productos: {
+    title: 'Productos y Equipos',
+    description:
+      'Información técnica sobre monitores, boquillas, mangueras, válvulas y conexiones contra incendios. Guías de selección y comparativas.',
+  },
+};
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog', ({ data }) => !data.draft);
+
+  // Obtener categorías únicas
+  const categories = [...new Set(posts.map((p) => p.data.categoria))];
+
+  return categories.map((category) => ({
+    params: { category },
+    props: {
+      category,
+      posts: posts
+        .filter((p) => p.data.categoria === category)
+        .sort((a, b) => new Date(b.data.fecha).getTime() - new Date(a.data.fecha).getTime()),
+    },
+  }));
+}
+
+const { category, posts } = Astro.props;
+const meta = CATEGORY_META[category] || {
+  title: CATEGORY_LABELS[category] || category,
+  description: `Artículos sobre ${CATEGORY_LABELS[category] || category} en el blog de Gama de México.`,
+};
+const categoryLabel = CATEGORY_LABELS[category] || category;
+
+// Obtener todas las categorías para navegación
+const allPosts = await getCollection('blog', ({ data }) => !data.draft);
+const categories = getCategoriesWithCount(allPosts);
+
+// Schema breadcrumb
+const breadcrumbSchema = buildBreadcrumbSchema([
+  { name: 'Inicio', url: '/' },
+  { name: 'Blog', url: '/blog' },
+  { name: categoryLabel, url: `/blog/categoria/${category}` },
+]);
+---
+
+<Layout
+  title={`${meta.title} | Blog Gama de México`}
+  description={meta.description}
+  heroTitle={meta.title}
+  heroIntro={meta.description}
+  heroBadge="Categoría"
+  heroPrimaryText="Solicitar Asesoría"
+  heroPrimaryLink="#cotizar"
+  heroSecondaryText="Ver Todos"
+  heroSecondaryLink="/blog"
+  structuredData={[breadcrumbSchema]}
+>
+  <!-- Navegación de categorías -->
+  <BlogCategories categories={categories} activeCategory={category} />
+
+  <!-- Grid de artículos -->
+  <BlogGrid
+    posts={posts}
+    titulo={`${posts.length} ${posts.length === 1 ? 'artículo' : 'artículos'} en ${categoryLabel}`}
+    columns={3}
+  />
+
+  {posts.length === 0 && (
+    <section class="blog-empty">
+      <div class="container">
+        <p>No hay artículos en esta categoría todavía.</p>
+        <a href="/blog" class="btn btn--primary">Ver todos los artículos</a>
+      </div>
+    </section>
+  )}
+</Layout>
+
+<style>
+  .blog-empty {
+    padding: var(--spacing-3xl) 0;
+    text-align: center;
+    background: var(--color-accent);
+  }
+
+  .blog-empty p {
+    margin-bottom: var(--spacing-lg);
+    color: var(--color-text-light);
+  }
+</style>

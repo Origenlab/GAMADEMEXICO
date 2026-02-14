@@ -221,3 +221,75 @@ export function buildBreadcrumbSchema(items: BreadcrumbItem[]) {
     })),
   };
 }
+
+// -- Article Schema (Blog) --
+interface ArticleSchemaInput {
+  title: string;
+  description: string;
+  url: string;
+  image?: string;
+  datePublished: string;
+  dateModified?: string;
+  author: string | { nombre: string; cargo?: string };
+  category: string;
+  tags?: string[];
+  wordCount?: number;
+  readingTime?: number;
+}
+
+export function buildArticleSchema(article: ArticleSchemaInput) {
+  const authorName = typeof article.author === 'string'
+    ? article.author
+    : article.author.nombre;
+
+  const authorJobTitle = typeof article.author === 'object'
+    ? article.author.cargo
+    : undefined;
+
+  const schema: Record<string, unknown> = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: article.title,
+    description: article.description,
+    datePublished: article.datePublished,
+    dateModified: article.dateModified || article.datePublished,
+    author: {
+      '@type': 'Person',
+      name: authorName,
+      ...(authorJobTitle && { jobTitle: authorJobTitle }),
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: SITE_NAME,
+      url: SITE_URL,
+      logo: {
+        '@type': 'ImageObject',
+        url: toAbsoluteImageUrl(LOGO_PATH, SITE_URL),
+      },
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': article.url.startsWith('http') ? article.url : `${SITE_URL}${article.url}`,
+    },
+    articleSection: article.category,
+    inLanguage: 'es-MX',
+  };
+
+  if (article.image) {
+    schema.image = toAbsoluteImageUrl(article.image, SITE_URL);
+  }
+
+  if (article.tags && article.tags.length > 0) {
+    schema.keywords = article.tags.join(', ');
+  }
+
+  if (article.wordCount) {
+    schema.wordCount = article.wordCount;
+  }
+
+  if (article.readingTime) {
+    schema.timeRequired = `PT${article.readingTime}M`;
+  }
+
+  return schema;
+}

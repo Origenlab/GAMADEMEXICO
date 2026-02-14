@@ -1,0 +1,111 @@
+---
+// =============================================================================
+// BlogAuthor - Caja de información del autor
+// =============================================================================
+
+import { getAuthorName, getAuthorRole } from '../../lib/blogHelpers';
+
+interface Props {
+  autor: string | { nombre: string; cargo?: string; imagen?: string };
+  fecha?: string;
+  fechaActualizacion?: string;
+}
+
+const { autor, fecha, fechaActualizacion } = Astro.props;
+
+const nombre = getAuthorName(autor);
+const cargo = getAuthorRole(autor);
+const imagen = typeof autor === 'object' ? autor.imagen : undefined;
+
+// Generar iniciales para avatar
+const initials = nombre
+  .split(' ')
+  .map((n) => n[0])
+  .slice(0, 2)
+  .join('')
+  .toUpperCase();
+---
+
+<div class="blog-author">
+  <div class="blog-author__avatar">
+    {imagen ? (
+      <img src={imagen} alt={nombre} width="64" height="64" loading="lazy" />
+    ) : (
+      <span class="blog-author__initials">{initials}</span>
+    )}
+  </div>
+
+  <div class="blog-author__info">
+    <span class="blog-author__label">Escrito por</span>
+    <span class="blog-author__name">{nombre}</span>
+    {cargo && <span class="blog-author__role">{cargo}</span>}
+    <span class="blog-author__company">Gama de México</span>
+  </div>
+</div>
+
+<style>
+  .blog-author {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-lg);
+    background: var(--color-accent);
+    border-radius: var(--border-radius);
+    margin-top: var(--spacing-xl);
+  }
+
+  .blog-author__avatar {
+    flex-shrink: 0;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: var(--color-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .blog-author__avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .blog-author__initials {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-white);
+    letter-spacing: 0.05em;
+  }
+
+  .blog-author__info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+  }
+
+  .blog-author__label {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .blog-author__name {
+    font-size: var(--font-size-lg);
+    font-weight: 700;
+    color: var(--color-secondary);
+  }
+
+  .blog-author__role {
+    font-size: var(--font-size-sm);
+    color: var(--color-text);
+  }
+
+  .blog-author__company {
+    font-size: var(--font-size-xs);
+    color: var(--color-primary);
+    font-weight: 600;
+  }
+</style>

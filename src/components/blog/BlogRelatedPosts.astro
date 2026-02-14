@@ -1,0 +1,90 @@
+---
+// =============================================================================
+// BlogRelatedPosts - Grid de artículos relacionados
+// =============================================================================
+
+import BlogCard from './BlogCard.astro';
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  posts: CollectionEntry<'blog'>[];
+  titulo?: string;
+  subtitulo?: string;
+}
+
+const { posts, titulo = 'Artículos Relacionados', subtitulo } = Astro.props;
+---
+
+{posts.length > 0 && (
+  <section class="blog-related">
+    <div class="container">
+      <div class="blog-related__header">
+        <h2 class="blog-related__title">{titulo}</h2>
+        {subtitulo && <p class="blog-related__subtitle">{subtitulo}</p>}
+      </div>
+
+      <div class="blog-related__grid">
+        {posts.map((post) => (
+          <BlogCard
+            title={post.data.title}
+            description={post.data.description}
+            slug={post.id}
+            fecha={post.data.fecha}
+            categoria={post.data.categoria}
+            autor={post.data.autor}
+            imagen={post.data.imagen}
+            imagenAlt={post.data.imagenAlt}
+            tiempoLectura={post.data.tiempoLectura}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+)}
+
+<style>
+  .blog-related {
+    padding: var(--spacing-3xl) 0;
+    background: var(--color-accent);
+  }
+
+  .blog-related__header {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .blog-related__title {
+    margin: 0;
+    font-size: var(--font-size-2xl);
+    font-weight: 700;
+    color: var(--color-secondary);
+  }
+
+  .blog-related__subtitle {
+    margin: var(--spacing-xs) 0 0 0;
+    font-size: var(--font-size-base);
+    color: var(--color-text-light);
+  }
+
+  .blog-related__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+
+  @media (min-width: 768px) {
+    .blog-related__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .blog-related__title {
+      font-size: var(--font-size-3xl);
+    }
+
+    .blog-related__grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+</style>

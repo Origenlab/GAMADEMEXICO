@@ -1,98 +1,125 @@
 ---
+// =============================================================================
+// Blog Index - Listado principal de artículos
+// =============================================================================
+
 import Layout from '../../layouts/Base.astro';
 import { getCollection } from 'astro:content';
+import BlogGrid from '../../components/blog/BlogGrid.astro';
+import BlogCategories from '../../components/blog/BlogCategories.astro';
+import BlogCard from '../../components/blog/BlogCard.astro';
+import { getCategoriesWithCount, getAllTags } from '../../lib/blogHelpers';
+import { buildBreadcrumbSchema } from '../../lib/seo';
 
-const posts = (await getCollection('blog', ({ data }) => !data.draft))
+// Obtener todos los posts publicados
+const allPosts = (await getCollection('blog', ({ data }) => !data.draft))
   .sort((a, b) => new Date(b.data.fecha).getTime() - new Date(a.data.fecha).getTime());
+
+// Posts destacados (máximo 3)
+const featuredPosts = allPosts.filter((p) => p.data.destacado).slice(0, 3);
+
+// Posts regulares (excluyendo destacados para evitar duplicados en featured)
+const regularPosts = featuredPosts.length > 0
+  ? allPosts.filter((p) => !featuredPosts.some((f) => f.id === p.id))
+  : allPosts;
+
+// Obtener categorías con conteo
+const categories = getCategoriesWithCount(allPosts);
+
+// Schema breadcrumb
+const breadcrumbSchema = buildBreadcrumbSchema([
+  { name: 'Inicio', url: '/' },
+  { name: 'Blog', url: '/blog' },
+]);
 ---
 
 <Layout
   title="Blog de Equipos Contra Incendios | Gama de México"
-  description="Guías técnicas, recomendaciones de compra y mejores prácticas para monitores, boquillas, mangueras, válvulas y sistemas contra incendio en México."
+  description="Guías técnicas, normatividad NFPA y NOM, y mejores prácticas para sistemas contra incendios en México. Contenido por ingenieros especializados."
   heroTitle="Blog Técnico de Equipos Contra Incendios"
-  heroIntro="Artículos profesionales para ayudarte a seleccionar, instalar y mantener equipos contra incendio con enfoque en cumplimiento normativo, seguridad operacional y eficiencia de inversión."
+  heroIntro="Artículos profesionales para seleccionar, instalar y mantener equipos contra incendio con enfoque en cumplimiento normativo y seguridad operacional."
   heroBadge="Recursos y Guías"
   heroMetrics={[
-    { valor: "50+", texto: "Artículos técnicos" },
-    { valor: "NFPA", texto: "Normativas cubiertas" },
-    { valor: "NOM", texto: "Cumplimiento México" }
+    { valor: `${allPosts.length}+`, texto: 'Artículos técnicos' },
+    { valor: 'NFPA', texto: 'Normativas cubiertas' },
+    { valor: 'NOM', texto: 'Cumplimiento México' },
   ]}
   heroPrimaryText="Solicitar Asesoría"
   heroPrimaryLink="#cotizar"
   heroSecondaryText="Ver Equipos"
   heroSecondaryLink="/equipos"
   heroShowRightContent={true}
+  structuredData={[breadcrumbSchema]}
 >
   <Fragment slot="hero-content">
-    <p>En nuestro <strong>blog técnico</strong> encontrarás guías detalladas sobre selección de equipos contra incendios, requisitos normativos NFPA y NOM, mejores prácticas de instalación y mantenimiento preventivo. Contenido desarrollado por nuestro equipo de ingenieros con más de 30 años de experiencia en protección contra incendios para industria petrolera, petroquímica y manufactura.</p>
-    <p>Cada artículo está diseñado para ayudarte a tomar decisiones informadas sobre <strong>monitores, boquillas, mangueras, válvulas y conexiones</strong>. Abordamos temas como certificaciones FM/UL, cálculos hidráulicos, compatibilidad de materiales y casos de aplicación específicos para el mercado mexicano.</p>
+    <p>
+      En nuestro <strong>blog técnico</strong> encontrarás guías detalladas sobre selección de equipos
+      contra incendios, requisitos normativos NFPA y NOM, mejores prácticas de instalación y
+      mantenimiento preventivo. Contenido desarrollado por nuestro equipo de ingenieros con más de 30
+      años de experiencia en protección contra incendios para industria petrolera, petroquímica y
+      manufactura.
+    </p>
   </Fragment>
 
-  <section class="blog-list" aria-labelledby="blog-list-title">
-    <div class="container">
-      <h2 id="blog-list-title" class="section-title">Artículos Recientes</h2>
-      <div class="blog-grid">
-        {posts.map((post) => (
-          <article class="blog-card">
-            <a href={`/blog/${post.id}`} class="blog-card__link">
-              <div class="blog-card__body">
-                <p class="blog-card__meta">{post.data.fecha} · {post.data.autor}</p>
-                <h3 class="blog-card__title">{post.data.title}</h3>
-                <p class="blog-card__desc">{post.data.description}</p>
-              </div>
-            </a>
-          </article>
-        ))}
+  <!-- Navegación de categorías -->
+  <BlogCategories categories={categories} />
+
+  <!-- Artículos destacados -->
+  {featuredPosts.length > 0 && (
+    <section class="blog-featured" aria-labelledby="featured-title">
+      <div class="container">
+        <h2 id="featured-title" class="section-title">Artículos Destacados</h2>
+        <div class="blog-featured__grid">
+          {featuredPosts.map((post) => (
+            <BlogCard
+              title={post.data.title}
+              description={post.data.description}
+              slug={post.id}
+              fecha={post.data.fecha}
+              categoria={post.data.categoria}
+              autor={post.data.autor}
+              imagen={post.data.imagen}
+              imagenAlt={post.data.imagenAlt}
+              destacado={true}
+              tiempoLectura={post.data.tiempoLectura}
+            />
+          ))}
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  )}
+
+  <!-- Todos los artículos -->
+  <BlogGrid
+    posts={regularPosts}
+    titulo="Artículos Recientes"
+    subtitulo="Últimas publicaciones de nuestro equipo técnico"
+    columns={3}
+  />
 </Layout>
 
 <style>
-  .blog-list {
+  .blog-featured {
     padding: var(--spacing-3xl) 0;
-    background: var(--color-accent);
+    background: var(--color-white);
   }
 
-  .blog-grid {
+  .blog-featured__grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: var(--spacing-md);
+    gap: var(--spacing-lg);
     margin-top: var(--spacing-lg);
   }
 
-  .blog-card {
-    background: var(--color-white);
-    border: 1px solid var(--color-border);
-    border-radius: var(--border-radius);
-    overflow: hidden;
-  }
-
-  .blog-card__link {
-    display: block;
-    padding: var(--spacing-lg);
-  }
-
-  .blog-card__meta {
-    font-size: var(--font-size-xs);
-    color: var(--color-text-light);
-    margin-bottom: 0.5rem;
-  }
-
-  .blog-card__title {
-    color: var(--color-secondary);
-    font-size: var(--font-size-lg);
-    margin-bottom: 0.5rem;
-  }
-
-  .blog-card__desc {
-    color: var(--color-text-light);
-    font-size: var(--font-size-sm);
-  }
-
   @media (min-width: 768px) {
-    .blog-grid {
+    .blog-featured__grid {
       grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .blog-featured__grid {
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 </style>

@@ -1,0 +1,125 @@
+---
+// =============================================================================
+// Blog Tag - Página de etiqueta
+// =============================================================================
+
+import Layout from '../../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+import BlogGrid from '../../../components/blog/BlogGrid.astro';
+import BlogTags from '../../../components/blog/BlogTags.astro';
+import { getAllTags } from '../../../lib/blogHelpers';
+import { buildBreadcrumbSchema } from '../../../lib/seo';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog', ({ data }) => !data.draft);
+
+  // Obtener todos los tags únicos
+  const allTags = new Set<string>();
+  posts.forEach((p) => p.data.tags?.forEach((t) => allTags.add(t)));
+
+  return [...allTags].map((tag) => ({
+    params: { tag: encodeURIComponent(tag) },
+    props: {
+      tag,
+      posts: posts
+        .filter((p) => p.data.tags?.includes(tag))
+        .sort((a, b) => new Date(b.data.fecha).getTime() - new Date(a.data.fecha).getTime()),
+    },
+  }));
+}
+
+const { tag, posts } = Astro.props;
+
+// Obtener todos los tags para la sidebar
+const allPosts = await getCollection('blog', ({ data }) => !data.draft);
+const allTags = getAllTags(allPosts);
+
+// Schema breadcrumb
+const breadcrumbSchema = buildBreadcrumbSchema([
+  { name: 'Inicio', url: '/' },
+  { name: 'Blog', url: '/blog' },
+  { name: `Etiqueta: ${tag}`, url: `/blog/tag/${encodeURIComponent(tag)}` },
+]);
+---
+
+<Layout
+  title={`Artículos sobre "${tag}" | Blog Gama de México`}
+  description={`${posts.length} artículos etiquetados con "${tag}" sobre equipos contra incendios, normatividad y seguridad industrial.`}
+  heroTitle={`Etiqueta: ${tag}`}
+  heroIntro={`${posts.length} ${posts.length === 1 ? 'artículo encontrado' : 'artículos encontrados'} con esta etiqueta`}
+  heroBadge="Etiqueta"
+  heroPrimaryText="Solicitar Asesoría"
+  heroPrimaryLink="#cotizar"
+  heroSecondaryText="Ver Todos"
+  heroSecondaryLink="/blog"
+  structuredData={[breadcrumbSchema]}
+>
+  <section class="blog-tag-page">
+    <div class="container">
+      <div class="blog-tag-page__layout">
+        <!-- Contenido principal -->
+        <div class="blog-tag-page__main">
+          <BlogGrid posts={posts} columns={2} />
+
+          {posts.length === 0 && (
+            <div class="blog-tag-page__empty">
+              <p>No hay artículos con esta etiqueta.</p>
+              <a href="/blog" class="btn btn--primary">Ver todos los artículos</a>
+            </div>
+          )}
+        </div>
+
+        <!-- Sidebar con tags -->
+        <aside class="blog-tag-page__sidebar">
+          <div class="blog-tag-page__widget">
+            <BlogTags tags={allTags} activeTag={tag} titulo="Todas las Etiquetas" />
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .blog-tag-page {
+    padding: var(--spacing-3xl) 0;
+    background: var(--color-white);
+  }
+
+  .blog-tag-page__layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-2xl);
+  }
+
+  .blog-tag-page__empty {
+    text-align: center;
+    padding: var(--spacing-2xl);
+    background: var(--color-accent);
+    border-radius: var(--border-radius);
+  }
+
+  .blog-tag-page__empty p {
+    margin-bottom: var(--spacing-lg);
+    color: var(--color-text-light);
+  }
+
+  .blog-tag-page__widget {
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-md);
+  }
+
+  @media (min-width: 1024px) {
+    .blog-tag-page__layout {
+      grid-template-columns: 1fr 300px;
+    }
+
+    .blog-tag-page__sidebar {
+      position: sticky;
+      top: calc(var(--header-height) + var(--spacing-lg));
+      height: fit-content;
+    }
+  }
+</style>

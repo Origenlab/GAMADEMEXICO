@@ -1,0 +1,118 @@
+---
+// =============================================================================
+// BlogSidebar - Sidebar para artículos con widgets
+// Sigue el patrón de ProductSidebar
+// =============================================================================
+
+import BlogTableOfContents from './BlogTableOfContents.astro';
+import BlogTags from './BlogTags.astro';
+import BlogCTA from './BlogCTA.astro';
+import type { TOCItem } from '../../lib/blogHelpers';
+
+interface Props {
+  headings?: TOCItem[];
+  tags?: Map<string, number>;
+  showCTA?: boolean;
+  ctaTitulo?: string;
+  ctaTexto?: string;
+}
+
+const {
+  headings = [],
+  tags,
+  showCTA = true,
+  ctaTitulo = '¿Necesitas Asesoría?',
+  ctaTexto = 'Nuestros ingenieros te ayudan a elegir el equipo correcto.',
+} = Astro.props;
+
+const hasContent = headings.length > 0 || (tags && tags.size > 0) || showCTA;
+---
+
+{hasContent && (
+  <aside class="blog-sidebar">
+    {/* TOC Widget */}
+    {headings.length > 0 && (
+      <div class="blog-sidebar__widget">
+        <BlogTableOfContents headings={headings} />
+      </div>
+    )}
+
+    {/* CTA Widget */}
+    {showCTA && (
+      <div class="blog-sidebar__widget">
+        <BlogCTA
+          titulo={ctaTitulo}
+          texto={ctaTexto}
+          variant="sidebar"
+        />
+      </div>
+    )}
+
+    {/* Tags Widget */}
+    {tags && tags.size > 0 && (
+      <div class="blog-sidebar__widget">
+        <div class="blog-sidebar__tags-wrapper">
+          <BlogTags tags={tags} maxTags={10} />
+        </div>
+      </div>
+    )}
+
+    {/* Slot para contenido adicional */}
+    <slot />
+  </aside>
+)}
+
+<style>
+  .blog-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+    position: sticky;
+    top: calc(var(--header-height) + var(--spacing-lg));
+    max-height: calc(100vh - var(--header-height) - var(--spacing-2xl));
+    overflow-y: auto;
+  }
+
+  .blog-sidebar__widget {
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+  }
+
+  /* Reset padding para componentes que ya tienen su propio padding */
+  .blog-sidebar__widget > :global(.blog-toc),
+  .blog-sidebar__widget > :global(.blog-cta) {
+    border: none;
+    border-radius: 0;
+  }
+
+  .blog-sidebar__tags-wrapper {
+    padding: var(--spacing-md);
+  }
+
+  /* Scroll suave para la sidebar */
+  .blog-sidebar::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .blog-sidebar::-webkit-scrollbar-track {
+    background: var(--color-accent);
+    border-radius: 2px;
+  }
+
+  .blog-sidebar::-webkit-scrollbar-thumb {
+    background: var(--color-border);
+    border-radius: 2px;
+  }
+
+  .blog-sidebar::-webkit-scrollbar-thumb:hover {
+    background: var(--color-text-light);
+  }
+
+  @media (max-width: 1024px) {
+    .blog-sidebar {
+      display: none;
+    }
+  }
+</style>

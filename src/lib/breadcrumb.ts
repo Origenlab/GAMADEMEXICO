@@ -66,6 +66,18 @@ export const routeNames: Record<string, string> = {
   'equipos': 'Equipos',
   'aviso-de-privacidad': 'Aviso de Privacidad',
   'terminos-y-condiciones': 'Términos y Condiciones',
+
+  // Blog - Secciones
+  'categoria': 'Categoría',
+  'tag': 'Etiqueta',
+
+  // Blog - Categorías
+  'extintores': 'Extintores',
+  'sistemas-contraincendios': 'Sistemas Contra Incendios',
+  'normatividad': 'Normatividad',
+  'seguridad-industrial': 'Seguridad Industrial',
+  'senalizacion': 'Señalización',
+  'capacitacion': 'Capacitación',
 };
 
 // Mapeo de categorías padre para subcategorías
