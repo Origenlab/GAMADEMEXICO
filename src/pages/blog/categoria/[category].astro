@@ -10,47 +10,37 @@ import BlogCategories from '../../../components/blog/BlogCategories.astro';
 import { getCategoriesWithCount, CATEGORY_LABELS } from '../../../lib/blogHelpers';
 import { buildBreadcrumbSchema } from '../../../lib/seo';
 
-// Metadata de categorías para SEO
+// Metadata de categorías para SEO (coinciden con productos del sitio)
 const CATEGORY_META: Record<string, { title: string; description: string }> = {
-  extintores: {
-    title: 'Artículos sobre Extintores',
+  monitores: {
+    title: 'Monitores Contra Incendios',
     description:
-      'Guías técnicas sobre selección, mantenimiento y normatividad de extintores contra incendios en México. Tipos, certificaciones y mejores prácticas.',
+      'Guías técnicas sobre monitores contra incendios: selección, mantenimiento, normatividad NFPA y certificaciones FM/UL. Monitores tipo corazón y cuello de cisne.',
   },
-  'sistemas-contraincendios': {
-    title: 'Sistemas Contra Incendios',
+  boquillas: {
+    title: 'Boquillas Contra Incendios',
     description:
-      'Todo sobre sistemas de supresión, rociadores, monitores y protección activa contra incendios para industria y comercio.',
+      'Artículos sobre boquillas contra incendios: tipos (pistola, turbo jet, industrial), selección por GPM, patrones de descarga y certificaciones.',
   },
-  normatividad: {
-    title: 'Normatividad y Cumplimiento',
+  mangueras: {
+    title: 'Mangueras Contra Incendios',
     description:
-      'Guías sobre normativas NFPA, NOM-002-STPS, certificaciones UL y FM, y requisitos legales para equipos contra incendios en México.',
+      'Guías sobre mangueras contra incendios: tipos (doble forro, Blindex, forestal), selección, cuidado, normativa NFPA 1961 y mantenimiento.',
   },
-  'seguridad-industrial': {
-    title: 'Seguridad Industrial',
+  valvulas: {
+    title: 'Válvulas Contra Incendios',
     description:
-      'Artículos sobre seguridad industrial, prevención de incendios, planes de emergencia y protección de instalaciones.',
+      'Todo sobre válvulas para sistemas contra incendios: OS&Y, mariposa, retención, globe. Instalación, mantenimiento y certificaciones UL/FM.',
   },
-  senalizacion: {
-    title: 'Señalización de Seguridad',
+  'conexiones-herrajes': {
+    title: 'Conexiones y Herrajes',
     description:
-      'Guías sobre señalización de seguridad, rutas de evacuación, señales de equipos contra incendios y normativas aplicables.',
+      'Artículos técnicos sobre conexiones contra incendios: adaptadores, siamesas FDC, coples Storz, Wye, reducciones y herrajes de bronce.',
   },
-  capacitacion: {
-    title: 'Capacitación en Seguridad',
+  'gabinetes-hidrantes': {
+    title: 'Gabinetes e Hidrantes',
     description:
-      'Artículos sobre capacitación de brigadas, uso de extintores, evacuación y formación en seguridad contra incendios.',
-  },
-  mantenimiento: {
-    title: 'Mantenimiento de Equipos',
-    description:
-      'Guías de mantenimiento preventivo y correctivo para extintores, mangueras, hidrantes y sistemas contra incendios.',
-  },
-  productos: {
-    title: 'Productos y Equipos',
-    description:
-      'Información técnica sobre monitores, boquillas, mangueras, válvulas y conexiones contra incendios. Guías de selección y comparativas.',
+      'Guías sobre gabinetes contra incendios e hidrantes: tipos, instalación, normativa NFPA 14, mantenimiento y equipamiento completo.',
   },
 };
 

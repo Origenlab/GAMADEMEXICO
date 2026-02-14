@@ -46,17 +46,15 @@ const blog = defineCollection({
     fecha: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, 'Usar formato YYYY-MM-DD'),
     fechaActualizacion: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).optional(),
 
-    // --- Categoría (enum validado para consistencia) ---
+    // --- Categoría (enum validado - DEBE coincidir con productos del sitio) ---
     categoria: z.enum([
-      'extintores',
-      'sistemas-contraincendios',
-      'normatividad',
-      'seguridad-industrial',
-      'senalizacion',
-      'capacitacion',
-      'mantenimiento',
-      'productos',
-    ]).default('productos'),
+      'monitores',
+      'boquillas',
+      'mangueras',
+      'valvulas',
+      'conexiones-herrajes',
+      'gabinetes-hidrantes',
+    ]).default('monitores'),
 
     // --- Tags ---
     tags: z.array(z.string()).default([]),

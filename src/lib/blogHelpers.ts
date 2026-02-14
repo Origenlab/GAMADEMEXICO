@@ -8,17 +8,15 @@ import type { CollectionEntry } from 'astro:content';
 type BlogPost = CollectionEntry<'blog'>;
 
 // -----------------------------------------------------------------------------
-// Etiquetas de categorías en español
+// Etiquetas de categorías en español (coinciden con productos del sitio)
 // -----------------------------------------------------------------------------
 export const CATEGORY_LABELS: Record<string, string> = {
-  'extintores': 'Extintores',
-  'sistemas-contraincendios': 'Sistemas Contra Incendios',
-  'normatividad': 'Normatividad',
-  'seguridad-industrial': 'Seguridad Industrial',
-  'senalizacion': 'Señalización',
-  'capacitacion': 'Capacitación',
-  'mantenimiento': 'Mantenimiento',
-  'productos': 'Productos',
+  'monitores': 'Monitores',
+  'boquillas': 'Boquillas',
+  'mangueras': 'Mangueras',
+  'valvulas': 'Válvulas',
+  'conexiones-herrajes': 'Conexiones y Herrajes',
+  'gabinetes-hidrantes': 'Gabinetes e Hidrantes',
 };
 
 // -----------------------------------------------------------------------------
@@ -247,14 +245,12 @@ export function validateBlogFrontmatter(data: unknown): { valid: boolean; errors
   }
 
   const validCategories = [
-    'extintores',
-    'sistemas-contraincendios',
-    'normatividad',
-    'seguridad-industrial',
-    'senalizacion',
-    'capacitacion',
-    'mantenimiento',
-    'productos',
+    'monitores',
+    'boquillas',
+    'mangueras',
+    'valvulas',
+    'conexiones-herrajes',
+    'gabinetes-hidrantes',
   ];
   if (!fm.categoria || !validCategories.includes(fm.categoria)) {
     errors.push(`categoria: debe ser uno de: ${validCategories.join(', ')}`);

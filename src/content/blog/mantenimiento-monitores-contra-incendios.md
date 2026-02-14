@@ -2,7 +2,7 @@
 title: "Mantenimiento de Monitores Contra Incendios: Guía Completa"
 description: "Aprende a mantener tus monitores contra incendios en óptimas condiciones. Programa de inspección, lubricación y pruebas para garantizar funcionamiento confiable."
 fecha: "2025-02-05"
-categoria: "mantenimiento"
+categoria: "monitores"
 autor:
   nombre: "Ing. Roberto Martínez"
   cargo: "Gerente de Servicio Técnico"

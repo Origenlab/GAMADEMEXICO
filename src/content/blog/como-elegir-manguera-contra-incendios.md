@@ -2,7 +2,7 @@
 title: "¿Cómo elegir la manguera contra incendios correcta?"
 description: "Guía para seleccionar la manguera contra incendios correcta según su aplicación: gabinetes, brigadas industriales o forestales. Tipos y certificaciones."
 fecha: "2025-01-15"
-categoria: "productos"
+categoria: "mangueras"
 autor: "Equipo Técnico Gama de México"
 imagen: "/img/mangueras-contra-incendios/manguera-millhose-1-5-30m-frontal.avif"
 imagenAlt: "Manguera contra incendios Millhose de 1.5 pulgadas enrollada"
