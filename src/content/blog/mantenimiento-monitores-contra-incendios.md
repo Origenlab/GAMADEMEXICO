@@ -6,8 +6,8 @@ categoria: "monitores"
 autor:
   nombre: "Ing. Roberto Martínez"
   cargo: "Gerente de Servicio Técnico"
-imagen: "/img/monitores-contra-incendios/monitor-tipo-corazon-4000-principal.avif"
-imagenAlt: "Monitor contra incendios tipo corazón durante inspección de mantenimiento"
+imagen: "/img/monitores-contra-incendios/monitor-corazon-una-cremallera-vistas-multiples.avif"
+imagenAlt: "Monitor contra incendios tipo corazón con vistas de mantenimiento"
 tags: ["monitores", "mantenimiento", "inspección", "Elkhart Brass", "NFPA 25"]
 destacado: false
 draft: false

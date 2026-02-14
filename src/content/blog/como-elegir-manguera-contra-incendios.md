@@ -4,8 +4,8 @@ description: "Guía para seleccionar la manguera contra incendios correcta segú
 fecha: "2025-01-15"
 categoria: "mangueras"
 autor: "Equipo Técnico Gama de México"
-imagen: "/img/mangueras-contra-incendios/manguera-millhose-1-5-30m-frontal.avif"
-imagenAlt: "Manguera contra incendios Millhose de 1.5 pulgadas enrollada"
+imagen: "/img/mangueras-contra-incendios/manguera-blindex-2-5-30m-frontal.avif"
+imagenAlt: "Manguera contra incendios Blindex de 2.5 pulgadas vista frontal"
 tags: ["mangueras", "guía de compra", "NFPA 1961", "protección contra incendios"]
 destacado: true
 draft: false

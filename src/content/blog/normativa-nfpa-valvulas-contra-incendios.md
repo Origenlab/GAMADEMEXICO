@@ -6,8 +6,8 @@ categoria: "valvulas"
 autor:
   nombre: "Ing. Carlos Ramírez"
   cargo: "Especialista en Normatividad"
-imagen: "/img/valvulas-contra-incendios/valvula-compuerta-osy-4-principal.avif"
-imagenAlt: "Válvula de compuerta OS&Y instalada en sistema contra incendios"
+imagen: "/img/valvulas-contra-incendios/valvula-compuerta-osy-4-frontal.avif"
+imagenAlt: "Válvula de compuerta OS&Y de 4 pulgadas vista frontal"
 tags: ["NFPA 13", "NFPA 25", "válvulas", "normatividad", "cumplimiento"]
 destacado: true
 draft: false

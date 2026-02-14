@@ -6,8 +6,8 @@ categoria: "monitores"
 autor:
   nombre: "Ing. Roberto Hernández"
   cargo: "Director Técnico"
-imagen: "/img/monitores-contra-incendios/monitor-tipo-corazon-contra-incendios-industrial-perspectiva-02.avif"
-imagenAlt: "Monitor contra incendios tipo corazón instalado en planta industrial"
+imagen: "/img/monitores-contra-incendios/monitor-tipo-corazon-contra-incendios-industrial-angulo-frontal-19.avif"
+imagenAlt: "Monitor contra incendios tipo corazón vista frontal en aplicación industrial"
 tags: ["monitores", "selección de equipos", "protección contra incendios", "NFPA 15", "certificación FM", "UL Listed"]
 destacado: true
 draft: false
@@ -61,7 +61,7 @@ El diseño más popular para aplicaciones industriales. Su nombre proviene de la
 
 Diseño elegante con el tubo de descarga curvado. Ofrece excelente visibilidad del área protegida.
 
-![Monitor cuello de cisne vista completa](/img/monitores-contra-incendios/monitor-cuello-cisne-contra-incendios-perspectiva-06.avif)
+![Monitor cuello de cisne vista completa](/img/monitores-contra-incendios/monitor-cuello-cisne-vista-frontal-bronce.avif)
 
 **Ventajas:**
 - Perfil bajo, ideal para espacios reducidos
@@ -82,7 +82,7 @@ Consulta nuestra [línea completa de monitores cuello de cisne](/monitores/cuell
 
 Monitores que cumplen con los estándares de Factory Mutual para instalaciones con seguros industriales exigentes.
 
-![Monitor certificado FM instalación industrial](/img/monitores-contra-incendios/monitor-certificado-fm-contra-incendios-parque-industrial-12.avif)
+![Monitor certificado FM instalación industrial](/img/monitores-contra-incendios/monitor-st611-fm-approved-vista-frontal.avif)
 
 **Características:**
 - Certificación FM Approved
@@ -220,7 +220,7 @@ La altura óptima depende del alcance deseado:
 
 ## Mantenimiento Preventivo
 
-Un programa de mantenimiento es esencial. Consulta nuestra [guía de mantenimiento de monitores](/blog/mantenimiento-monitores-contra-incendios) para procedimientos detallados.
+Un programa de mantenimiento es esencial. Consulta nuestra [guía de mantenimiento de monitores](/blog/monitores-contra-incendios/mantenimiento-monitores-contra-incendios) para procedimientos detallados.
 
 ### Inspección Visual (Semanal)
 
