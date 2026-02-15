@@ -56,6 +56,21 @@ const readingTime = post.data.tiempoLectura || calculateReadingTime(post.body ||
 // Nombre de categoría
 const categoryLabel = CATEGORY_LABELS[post.data.categoria] || post.data.categoria;
 
+// Obtener nombre del autor
+const getAuthorName = (autor: string | { nombre: string; cargo?: string } | undefined): string => {
+  if (!autor) return 'Equipo Técnico';
+  if (typeof autor === 'string') return autor;
+  return autor.nombre;
+};
+
+const getAuthorCargo = (autor: string | { nombre: string; cargo?: string } | undefined): string => {
+  if (!autor || typeof autor === 'string') return 'Gama de México';
+  return autor.cargo || 'Gama de México';
+};
+
+const authorName = getAuthorName(post.data.autor);
+const authorCargo = getAuthorCargo(post.data.autor);
+
 // Schema Article
 const articleSchema = buildArticleSchema({
   title: post.data.title,
@@ -87,12 +102,22 @@ const breadcrumbSchema = buildBreadcrumbSchema([
   heroTitle={post.data.title}
   heroIntro={post.data.description}
   heroBadge={categoryLabel}
+  heroMetrics={[
+    { valor: `${readingTime} min`, texto: 'Tiempo de lectura' },
+    { valor: formatDateSpanish(post.data.fecha).split(' ')[0], texto: formatDateSpanish(post.data.fecha).split(' ').slice(1).join(' ') },
+    { valor: 'NFPA', texto: 'Normativa' },
+  ]}
   heroPrimaryText="Cotizar Equipos"
   heroPrimaryLink="#cotizar"
-  heroSecondaryText="Volver al Blog"
-  heroSecondaryLink="/blog"
+  heroSecondaryText="Ver más artículos"
+  heroSecondaryLink={`/blog/${categorySlug}`}
+  heroShowRightContent={true}
   structuredData={[articleSchema, breadcrumbSchema]}
 >
+  <Fragment slot="hero-content">
+    <p><strong>Por {authorName}</strong>, {authorCargo}. Este artículo forma parte de nuestra serie de guías técnicas sobre <strong>{categoryLabel.toLowerCase()}</strong>, desarrolladas para profesionales de seguridad, instaladores certificados y responsables de sistemas contra incendios.</p>
+    <p>Contenido basado en normatividad <strong>NFPA</strong> y <strong>NOM</strong> vigentes, con enfoque práctico para aplicaciones industriales, comerciales y de almacenamiento en México. Asesoría técnica disponible para consultas específicas sobre tu proyecto.</p>
+  </Fragment>
   <article class="blog-article">
     <div class="container">
       <div class="blog-article__layout">

@@ -1,6 +1,7 @@
 ---
 // =============================================================================
 // Blog Category Index - Página de categoría /blog/[categoria-contra-incendios]
+// Hero profesional de dos columnas como el index principal
 // =============================================================================
 
 import Layout from '../../../layouts/Base.astro';
@@ -15,44 +16,95 @@ import {
 } from '../../../lib/blogHelpers';
 import { buildBreadcrumbSchema } from '../../../lib/seo';
 
-// Metadata de categorías para SEO
-const CATEGORY_META: Record<string, { title: string; description: string }> = {
+// Metadata completa de categorías para SEO y Hero
+const CATEGORY_META: Record<string, {
+  title: string;
+  description: string;
+  heroContent: string[];
+  metrics: Array<{ valor: string; texto: string }>;
+}> = {
   monitores: {
-    title: 'Artículos sobre Monitores Contra Incendios',
-    description:
-      'Guías técnicas sobre monitores contra incendios: selección, mantenimiento, normatividad NFPA y certificaciones FM/UL. Monitores tipo corazón y cuello de cisne.',
+    title: 'Guías Técnicas de Monitores Contra Incendios',
+    description: 'Artículos profesionales sobre selección, instalación y mantenimiento de monitores contra incendios. Normatividad NFPA 15, certificaciones FM/UL y mejores prácticas.',
+    heroContent: [
+      'Nuestros artículos sobre <strong>monitores contra incendios</strong> cubren desde la selección técnica según caudal y alcance, hasta procedimientos de mantenimiento preventivo conforme a NFPA 25. Contenido desarrollado por ingenieros con experiencia en instalaciones industriales, petroquímicas y de almacenamiento.',
+      'Aprende a elegir entre monitores tipo corazón y cuello de cisne, entiende las diferencias entre certificaciones FM Approved y UL Listed, y conoce los criterios de posicionamiento para máxima cobertura. Guías prácticas para responsables de seguridad, instaladores y firmas de ingeniería.',
+    ],
+    metrics: [
+      { valor: 'NFPA 15', texto: 'Normativa aplicable' },
+      { valor: 'FM/UL', texto: 'Certificaciones' },
+      { valor: '500-2000', texto: 'GPM típicos' },
+    ],
   },
   boquillas: {
-    title: 'Artículos sobre Boquillas Contra Incendios',
-    description:
-      'Artículos sobre boquillas contra incendios: tipos (pistola, turbo jet, industrial), selección por GPM, patrones de descarga y certificaciones.',
+    title: 'Guías Técnicas de Boquillas Contra Incendios',
+    description: 'Artículos sobre boquillas contra incendios: tipos, selección por GPM, patrones de descarga y certificaciones. Guías para brigadas y profesionales.',
+    heroContent: [
+      'Artículos técnicos sobre <strong>boquillas contra incendios</strong> para brigadas industriales, bomberos y responsables de seguridad. Desde boquillas tipo pistola hasta turbo jet, cubrimos selección por caudal, patrones de descarga y compatibilidad con mangueras.',
+      'Conoce las diferencias entre boquillas de chorro sólido, niebla y espuma, entiende los rangos de operación en GPM y aprende a seleccionar el equipo correcto según el tipo de riesgo. Contenido basado en normatividad NFPA y especificaciones de fabricantes certificados.',
+    ],
+    metrics: [
+      { valor: 'NFPA 1964', texto: 'Normativa aplicable' },
+      { valor: '95-250', texto: 'GPM típicos' },
+      { valor: 'UL Listed', texto: 'Certificación' },
+    ],
   },
   mangueras: {
-    title: 'Artículos sobre Mangueras Contra Incendios',
-    description:
-      'Guías sobre mangueras contra incendios: tipos (doble forro, Blindex, forestal), selección, cuidado, normativa NFPA 1961 y mantenimiento.',
+    title: 'Guías Técnicas de Mangueras Contra Incendios',
+    description: 'Todo sobre mangueras contra incendios: tipos, selección, cuidado y normativa NFPA 1961. Guías para mantenimiento y pruebas hidrostáticas.',
+    heroContent: [
+      'Guías completas sobre <strong>mangueras contra incendios</strong>: desde la selección por diámetro y presión de trabajo, hasta procedimientos de prueba hidrostática conforme a NFPA 1962. Contenido para responsables de mantenimiento y brigadas industriales.',
+      'Aprende las diferencias entre mangueras de chaqueta simple, doble forro y Blindex, conoce los criterios de almacenamiento y enrollado, y domina las inspecciones periódicas. Artículos prácticos con enfoque en cumplimiento normativo y vida útil del equipo.',
+    ],
+    metrics: [
+      { valor: 'NFPA 1961', texto: 'Fabricación' },
+      { valor: 'NFPA 1962', texto: 'Mantenimiento' },
+      { valor: '300 PSI', texto: 'Presión típica' },
+    ],
   },
   valvulas: {
-    title: 'Artículos sobre Válvulas Contra Incendios',
-    description:
-      'Todo sobre válvulas para sistemas contra incendios: OS&Y, mariposa, retención, globe. Instalación, mantenimiento y certificaciones UL/FM.',
+    title: 'Guías Técnicas de Válvulas Contra Incendios',
+    description: 'Artículos sobre válvulas para sistemas contra incendios: OS&Y, mariposa, retención y globe. Instalación, mantenimiento y certificaciones.',
+    heroContent: [
+      'Artículos técnicos sobre <strong>válvulas contra incendios</strong> para sistemas de rociadores, standpipes y redes hidráulicas. Cubrimos válvulas OS&Y, mariposa con supervisión, retención y globe conforme a NFPA 13 y NFPA 25.',
+      'Conoce los requisitos de instalación, procedimientos de inspección trimestral y anual, y criterios de selección según aplicación. Guías para ingenieros de proyecto, instaladores certificados y responsables de mantenimiento de sistemas contra incendios.',
+    ],
+    metrics: [
+      { valor: 'NFPA 13', texto: 'Diseño sistemas' },
+      { valor: 'NFPA 25', texto: 'Inspección' },
+      { valor: 'FM/UL', texto: 'Certificaciones' },
+    ],
   },
   'conexiones-herrajes': {
-    title: 'Artículos sobre Conexiones y Herrajes',
-    description:
-      'Artículos técnicos sobre conexiones contra incendios: adaptadores, siamesas FDC, coples Storz, Wye, reducciones y herrajes de bronce.',
+    title: 'Guías Técnicas de Conexiones y Herrajes',
+    description: 'Artículos sobre conexiones contra incendios: adaptadores, siamesas FDC, coples Storz, Wye y herrajes de bronce para sistemas hidráulicos.',
+    heroContent: [
+      'Guías técnicas sobre <strong>conexiones y herrajes</strong> para sistemas contra incendios: adaptadores NST/NH, coples Storz, tomas siamesas FDC, conexiones Y y reducciones. Contenido para instaladores y personal de mantenimiento.',
+      'Aprende sobre compatibilidad de roscas, materiales adecuados según aplicación, y procedimientos de instalación conforme a NFPA 14. Artículos prácticos con especificaciones técnicas y mejores prácticas de la industria.',
+    ],
+    metrics: [
+      { valor: 'NFPA 14', texto: 'Standpipes' },
+      { valor: 'NST/Storz', texto: 'Roscas comunes' },
+      { valor: 'Bronce', texto: 'Material típico' },
+    ],
   },
   'gabinetes-hidrantes': {
-    title: 'Artículos sobre Gabinetes e Hidrantes',
-    description:
-      'Guías sobre gabinetes contra incendios e hidrantes: tipos, instalación, normativa NFPA 14, mantenimiento y equipamiento completo.',
+    title: 'Guías Técnicas de Gabinetes e Hidrantes',
+    description: 'Todo sobre gabinetes contra incendios e hidrantes: tipos, instalación, normativa NFPA 14 y equipamiento completo para edificios.',
+    heroContent: [
+      'Artículos sobre <strong>gabinetes e hidrantes</strong> contra incendios: desde gabinetes tipo 30ME hasta hidrantes de banqueta y poste. Cubrimos requisitos de instalación, equipamiento y mantenimiento conforme a NFPA 14.',
+      'Conoce las especificaciones de gabinetes para edificios comerciales e industriales, requisitos de accesibilidad, componentes obligatorios y procedimientos de inspección. Guías para arquitectos, instaladores y responsables de seguridad.',
+    ],
+    metrics: [
+      { valor: 'NFPA 14', texto: 'Standpipes' },
+      { valor: 'Clase I/II/III', texto: 'Clasificación' },
+      { valor: 'NOM', texto: 'Cumplimiento MX' },
+    ],
   },
 };
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog', ({ data }) => !data.draft);
-
-  // Obtener categorías únicas de los posts
   const categories = [...new Set(posts.map((p) => p.data.categoria))];
 
   return categories.map((category) => {
@@ -73,15 +125,28 @@ export async function getStaticPaths() {
 }
 
 const { category, categorySlug, posts } = Astro.props;
-const meta = CATEGORY_META[category] || {
-  title: CATEGORY_LABELS[category] || category,
-  description: `Artículos sobre ${CATEGORY_LABELS[category] || category} en el blog de Gama de México.`,
+
+// Obtener metadata de la categoría
+const defaultMeta = {
+  title: `Artículos sobre ${CATEGORY_LABELS[category] || category}`,
+  description: `Guías técnicas sobre ${CATEGORY_LABELS[category] || category} en el blog de Gama de México.`,
+  heroContent: [
+    `Artículos profesionales sobre <strong>${CATEGORY_LABELS[category] || category}</strong> desarrollados por nuestro equipo técnico. Contenido práctico con enfoque en normatividad y mejores prácticas de la industria.`,
+    'Guías para profesionales de seguridad, instaladores certificados y responsables de mantenimiento de sistemas contra incendios en México.',
+  ],
+  metrics: [
+    { valor: `${posts.length}`, texto: 'Artículos' },
+    { valor: 'NFPA', texto: 'Normativas' },
+    { valor: 'NOM', texto: 'Cumplimiento' },
+  ],
 };
+
+const meta = CATEGORY_META[category] || defaultMeta;
 const categoryLabel = CATEGORY_LABELS[category] || category;
 
 // Obtener todas las categorías para navegación
 const allPosts = await getCollection('blog', ({ data }) => !data.draft);
-const categories = getCategoriesWithCount(allPosts);
+const allCategories = getCategoriesWithCount(allPosts);
 
 // Schema breadcrumb
 const breadcrumbSchema = buildBreadcrumbSchema([
@@ -96,20 +161,29 @@ const breadcrumbSchema = buildBreadcrumbSchema([
   description={meta.description}
   heroTitle={meta.title}
   heroIntro={meta.description}
-  heroBadge="Blog Técnico"
+  heroBadge="Blog Técnico Especializado"
+  heroMetrics={meta.metrics}
   heroPrimaryText="Solicitar Asesoría"
   heroPrimaryLink="#cotizar"
-  heroSecondaryText="Ver Todos"
-  heroSecondaryLink="/blog"
+  heroSecondaryText="Ver Equipos"
+  heroSecondaryLink={`/${category === 'gabinetes-hidrantes' ? 'gabinetes-hidrantes' : category + '-contra-incendios'}`}
+  heroShowRightContent={true}
   structuredData={[breadcrumbSchema]}
 >
+  <Fragment slot="hero-content">
+    {meta.heroContent.map((paragraph) => (
+      <p set:html={paragraph} />
+    ))}
+  </Fragment>
+
   <!-- Navegación de categorías -->
-  <BlogCategories categories={categories} activeCategory={category} />
+  <BlogCategories categories={allCategories} activeCategory={category} />
 
   <!-- Grid de artículos -->
   <BlogGrid
     posts={posts}
     titulo={`${posts.length} ${posts.length === 1 ? 'artículo' : 'artículos'} sobre ${categoryLabel}`}
+    subtitulo="Contenido técnico desarrollado por ingenieros especializados"
     columns={3}
     categorySlug={categorySlug}
   />
@@ -117,8 +191,12 @@ const breadcrumbSchema = buildBreadcrumbSchema([
   {posts.length === 0 && (
     <section class="blog-empty">
       <div class="container">
-        <p>No hay artículos en esta categoría todavía.</p>
-        <a href="/blog" class="btn btn--primary">Ver todos los artículos</a>
+        <div class="blog-empty__content">
+          <div class="blog-empty__icon">📝</div>
+          <h2 class="blog-empty__title">Próximamente</h2>
+          <p class="blog-empty__text">Estamos preparando artículos técnicos sobre {categoryLabel}.</p>
+          <a href="/blog" class="btn btn--primary">Ver todos los artículos</a>
+        </div>
       </div>
     </section>
   )}
@@ -127,12 +205,33 @@ const breadcrumbSchema = buildBreadcrumbSchema([
 <style>
   .blog-empty {
     padding: var(--spacing-3xl) 0;
-    text-align: center;
     background: var(--color-accent);
   }
 
-  .blog-empty p {
-    margin-bottom: var(--spacing-lg);
+  .blog-empty__content {
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: var(--spacing-2xl);
+    background: var(--color-white);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  }
+
+  .blog-empty__icon {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .blog-empty__title {
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin: 0 0 var(--spacing-sm) 0;
+  }
+
+  .blog-empty__text {
     color: var(--color-text-light);
+    margin-bottom: var(--spacing-lg);
   }
 </style>
