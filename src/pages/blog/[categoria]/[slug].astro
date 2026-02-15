@@ -103,9 +103,9 @@ const breadcrumbSchema = buildBreadcrumbSchema([
   heroIntro={post.data.description}
   heroBadge={categoryLabel}
   heroMetrics={[
-    { valor: `${readingTime} min`, texto: 'Tiempo de lectura' },
-    { valor: formatDateSpanish(post.data.fecha).split(' ')[0], texto: formatDateSpanish(post.data.fecha).split(' ').slice(1).join(' ') },
+    { valor: `${readingTime} min`, texto: 'Lectura' },
     { valor: 'NFPA', texto: 'Normativa' },
+    { valor: 'NOM', texto: 'Cumplimiento MX' },
   ]}
   heroPrimaryText="Cotizar Equipos"
   heroPrimaryLink="#cotizar"
@@ -130,15 +130,9 @@ const breadcrumbSchema = buildBreadcrumbSchema([
               {categoryLabel}
             </a>
             <div class="blog-article__meta">
-              <time datetime={post.data.fecha}>{formatDateSpanish(post.data.fecha)}</time>
+              <span>{readingTime} min de lectura</span>
               <span class="blog-article__separator">·</span>
-              <span>{readingTime} min lectura</span>
-              {post.data.fechaActualizacion && (
-                <>
-                  <span class="blog-article__separator">·</span>
-                  <span class="blog-article__updated">Actualizado: {formatDateSpanish(post.data.fechaActualizacion)}</span>
-                </>
-              )}
+              <span>Guía Técnica Profesional</span>
             </div>
           </div>
 

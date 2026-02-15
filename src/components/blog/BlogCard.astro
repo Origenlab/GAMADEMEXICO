@@ -54,13 +54,9 @@ const categorySlug = CATEGORY_SLUGS[categoria] || categoria;
 
     <div class="blog-card__body">
       <div class="blog-card__meta">
-        <time datetime={fecha}>{formatDateShort(fecha)}</time>
-        {tiempoLectura && (
-          <>
-            <span class="blog-card__separator">·</span>
-            <span>{tiempoLectura} min lectura</span>
-          </>
-        )}
+        {tiempoLectura && <span>{tiempoLectura} min de lectura</span>}
+        <span class="blog-card__separator">·</span>
+        <span>Guía Técnica</span>
       </div>
 
       <h3 class="blog-card__title">{title}</h3>
