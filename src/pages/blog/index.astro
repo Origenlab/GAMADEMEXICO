@@ -1,6 +1,7 @@
 ---
 // =============================================================================
 // Blog Index - Listado principal de artículos
+// Diseño profesional con secciones alternadas
 // =============================================================================
 
 import Layout from '../../layouts/Base.astro';
@@ -8,7 +9,8 @@ import { getCollection } from 'astro:content';
 import BlogGrid from '../../components/blog/BlogGrid.astro';
 import BlogCategories from '../../components/blog/BlogCategories.astro';
 import BlogCard from '../../components/blog/BlogCard.astro';
-import { getCategoriesWithCount, getAllTags } from '../../lib/blogHelpers';
+import BlogCTA from '../../components/blog/BlogCTA.astro';
+import { getCategoriesWithCount, getAllTags, CATEGORY_LABELS, CATEGORY_SLUGS } from '../../lib/blogHelpers';
 import { buildBreadcrumbSchema } from '../../lib/seo';
 
 // Obtener todos los posts publicados
@@ -62,13 +64,22 @@ const breadcrumbSchema = buildBreadcrumbSchema([
   </Fragment>
 
   <!-- Navegación de categorías -->
-  <BlogCategories categories={categories} />
+  <BlogCategories categories={categories} showHeader={false} />
 
   <!-- Artículos destacados -->
   {featuredPosts.length > 0 && (
     <section class="blog-featured" aria-labelledby="featured-title">
       <div class="container">
-        <h2 id="featured-title" class="section-title">Artículos Destacados</h2>
+        <div class="catalog-header">
+          <div class="catalog-header__info">
+            <h2 id="featured-title" class="catalog-header__title">Artículos Destacados</h2>
+            <p class="catalog-header__desc">Contenido seleccionado por nuestro equipo técnico</p>
+          </div>
+          <div class="catalog-header__count">
+            <span class="catalog-header__number">{featuredPosts.length}</span>
+            <span class="catalog-header__label">Destacados</span>
+          </div>
+        </div>
         <div class="blog-featured__grid">
           {featuredPosts.map((post) => (
             <BlogCard
@@ -95,10 +106,53 @@ const breadcrumbSchema = buildBreadcrumbSchema([
     titulo="Artículos Recientes"
     subtitulo="Últimas publicaciones de nuestro equipo técnico"
     columns={3}
+    background="accent"
+    showCount={true}
   />
+
+  <!-- CTA intermedio -->
+  <section class="blog-cta-section">
+    <div class="container">
+      <BlogCTA
+        titulo="¿Necesitas equipos contra incendios?"
+        texto="Nuestros ingenieros especializados te ayudan a seleccionar el equipo correcto según normatividad NFPA y NOM."
+        variant="fullwidth"
+      />
+    </div>
+  </section>
+
+  <!-- Explorar por categoría -->
+  <section class="blog-explore">
+    <div class="container">
+      <div class="catalog-header">
+        <div class="catalog-header__info">
+          <h2 class="catalog-header__title">Explora por Categoría</h2>
+          <p class="catalog-header__desc">Artículos técnicos organizados por tipo de equipo</p>
+        </div>
+      </div>
+      <div class="blog-explore__grid">
+        {categories.map((cat) => {
+          const urlSlug = CATEGORY_SLUGS[cat.slug] || cat.slug;
+          return (
+            <a href={`/blog/${urlSlug}`} class="blog-explore__card">
+              <div class="blog-explore__card-icon">
+                <span class="blog-explore__indicator"></span>
+              </div>
+              <div class="blog-explore__card-content">
+                <h3 class="blog-explore__card-title">{CATEGORY_LABELS[cat.slug] || cat.name}</h3>
+                <p class="blog-explore__card-count">{cat.count} {cat.count === 1 ? 'artículo' : 'artículos'}</p>
+              </div>
+              <span class="blog-explore__arrow">→</span>
+            </a>
+          );
+        })}
+      </div>
+    </div>
+  </section>
 </Layout>
 
 <style>
+  /* FEATURED SECTION */
   .blog-featured {
     padding: var(--spacing-3xl) 0;
     background: var(--color-white);
@@ -108,17 +162,179 @@ const breadcrumbSchema = buildBreadcrumbSchema([
     display: grid;
     grid-template-columns: 1fr;
     gap: var(--spacing-lg);
-    margin-top: var(--spacing-lg);
+  }
+
+  /* CATALOG HEADER - Reutilizado */
+  .catalog-header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    padding-bottom: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
+    border-bottom: 2px solid var(--color-primary);
+  }
+
+  .catalog-header__info {
+    flex: 1;
+  }
+
+  .catalog-header__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin: 0 0 0.25rem;
+  }
+
+  .catalog-header__desc {
+    font-size: 0.9375rem;
+    color: var(--color-text-light);
+    margin: 0;
+  }
+
+  .catalog-header__count {
+    text-align: center;
+  }
+
+  .catalog-header__number {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    line-height: 1;
+  }
+
+  .catalog-header__label {
+    font-size: 0.75rem;
+    color: var(--color-text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  /* CTA SECTION */
+  .blog-cta-section {
+    padding: var(--spacing-3xl) 0;
+    background: var(--color-white);
+  }
+
+  /* EXPLORE SECTION */
+  .blog-explore {
+    padding: var(--spacing-3xl) 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  }
+
+  .blog-explore__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .blog-explore__card {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-lg);
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    transition: all 0.2s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  }
+
+  .blog-explore__card:hover {
+    border-color: var(--color-primary);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+  }
+
+  .blog-explore__card-icon {
+    width: 48px;
+    height: 48px;
+    background: var(--color-accent);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .blog-explore__indicator {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--color-primary);
+  }
+
+  .blog-explore__card:hover .blog-explore__card-icon {
+    background: var(--color-primary);
+  }
+
+  .blog-explore__card:hover .blog-explore__indicator {
+    background: white;
+  }
+
+  .blog-explore__card-content {
+    flex: 1;
+  }
+
+  .blog-explore__card-title {
+    margin: 0 0 0.25rem 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-secondary);
+  }
+
+  .blog-explore__card:hover .blog-explore__card-title {
+    color: var(--color-primary);
+  }
+
+  .blog-explore__card-count {
+    margin: 0;
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
+  }
+
+  .blog-explore__arrow {
+    font-size: 1.25rem;
+    color: var(--color-border);
+    transition: all 0.2s;
+  }
+
+  .blog-explore__card:hover .blog-explore__arrow {
+    color: var(--color-primary);
+    transform: translateX(4px);
   }
 
   @media (min-width: 768px) {
+    .catalog-header {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    .catalog-header__title {
+      font-size: 1.75rem;
+    }
+
     .blog-featured__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blog-explore__grid {
       grid-template-columns: repeat(2, 1fr);
     }
   }
 
   @media (min-width: 1024px) {
+    .catalog-header__title {
+      font-size: 2rem;
+    }
+
     .blog-featured__grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .blog-explore__grid {
       grid-template-columns: repeat(3, 1fr);
     }
   }

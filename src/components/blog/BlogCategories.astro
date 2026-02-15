@@ -1,6 +1,7 @@
 ---
 // =============================================================================
 // BlogCategories - Navegación de categorías del blog
+// Estilo profesional con header y pills de navegación
 // =============================================================================
 
 import { CATEGORY_LABELS, CATEGORY_SLUGS } from '../../lib/blogHelpers';
@@ -15,9 +16,10 @@ interface Props {
   categories: CategoryItem[];
   activeCategory?: string;
   showCount?: boolean;
+  showHeader?: boolean;
 }
 
-const { categories, activeCategory, showCount = true } = Astro.props;
+const { categories, activeCategory, showCount = true, showHeader = false } = Astro.props;
 
 // Calcular total de artículos
 const totalCount = categories.reduce((sum, cat) => sum + cat.count, 0);
@@ -25,12 +27,20 @@ const totalCount = categories.reduce((sum, cat) => sum + cat.count, 0);
 
 <nav class="blog-categories" aria-label="Categorías del blog">
   <div class="container">
+    {showHeader && (
+      <div class="blog-categories__header">
+        <h2 class="blog-categories__title">Explora por Categoría</h2>
+        <p class="blog-categories__subtitle">Artículos técnicos organizados por tipo de equipo</p>
+      </div>
+    )}
+
     <div class="blog-categories__list">
       <a
         href="/blog"
         class={`blog-categories__item ${!activeCategory ? 'blog-categories__item--active' : ''}`}
       >
-        Todos
+        <span class="blog-categories__indicator"></span>
+        <span class="blog-categories__text">Todos</span>
         {showCount && <span class="blog-categories__count">{totalCount}</span>}
       </a>
 
@@ -41,7 +51,8 @@ const totalCount = categories.reduce((sum, cat) => sum + cat.count, 0);
             href={`/blog/${categoryUrlSlug}`}
             class={`blog-categories__item ${activeCategory === cat.slug ? 'blog-categories__item--active' : ''}`}
           >
-            {CATEGORY_LABELS[cat.slug] || cat.name}
+            <span class="blog-categories__indicator"></span>
+            <span class="blog-categories__text">{CATEGORY_LABELS[cat.slug] || cat.name}</span>
             {showCount && <span class="blog-categories__count">{cat.count}</span>}
           </a>
         );
@@ -53,18 +64,38 @@ const totalCount = categories.reduce((sum, cat) => sum + cat.count, 0);
 <style>
   .blog-categories {
     background: var(--color-white);
-    border-bottom: 1px solid var(--color-border);
-    padding: var(--spacing-md) 0;
+    border-bottom: 2px solid var(--color-primary);
+    padding: var(--spacing-lg) 0;
     position: sticky;
-    top: var(--header-height);
+    top: 0;
     z-index: 100;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+
+  .blog-categories__header {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .blog-categories__title {
+    margin: 0 0 0.25rem 0;
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    color: var(--color-secondary);
+  }
+
+  .blog-categories__subtitle {
+    margin: 0;
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
   }
 
   .blog-categories__list {
     display: flex;
-    gap: var(--spacing-xs);
+    justify-content: center;
+    gap: 0.5rem;
     overflow-x: auto;
-    padding-bottom: var(--spacing-xs);
+    padding-bottom: 0.25rem;
     scrollbar-width: none;
     -ms-overflow-style: none;
   }
@@ -76,44 +107,68 @@ const totalCount = categories.reduce((sum, cat) => sum + cat.count, 0);
   .blog-categories__item {
     display: inline-flex;
     align-items: center;
-    gap: 0.375rem;
-    padding: 0.5rem 1rem;
-    border-radius: 999px;
+    gap: 0.5rem;
+    padding: 0.625rem 1.25rem;
+    border-radius: 8px;
     font-size: var(--font-size-sm);
     font-weight: 500;
     color: var(--color-text);
     background: var(--color-accent);
     text-decoration: none;
     white-space: nowrap;
-    transition: all var(--transition-fast);
+    transition: all 0.2s;
+    border: 1px solid transparent;
   }
 
   .blog-categories__item:hover {
-    background: var(--color-border);
-    color: var(--color-secondary);
+    background: var(--color-white);
+    border-color: var(--color-border);
+    color: var(--color-primary);
   }
 
   .blog-categories__item--active {
     background: var(--color-primary);
     color: var(--color-white);
+    font-weight: 600;
   }
 
   .blog-categories__item--active:hover {
     background: var(--color-primary-dark);
     color: var(--color-white);
+    border-color: var(--color-primary-dark);
+  }
+
+  .blog-categories__indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--color-border);
+    flex-shrink: 0;
+  }
+
+  .blog-categories__item:hover .blog-categories__indicator {
+    background: var(--color-primary);
+  }
+
+  .blog-categories__item--active .blog-categories__indicator {
+    background: rgba(255, 255, 255, 0.7);
+  }
+
+  .blog-categories__text {
+    flex: 1;
   }
 
   .blog-categories__count {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-width: 1.25rem;
-    height: 1.25rem;
-    padding: 0 0.35rem;
-    border-radius: 999px;
+    min-width: 1.5rem;
+    height: 1.5rem;
+    padding: 0 0.5rem;
+    border-radius: 50px;
     font-size: 0.6875rem;
     font-weight: 700;
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.08);
   }
 
   .blog-categories__item--active .blog-categories__count {
@@ -127,7 +182,17 @@ const totalCount = categories.reduce((sum, cat) => sum + cat.count, 0);
     }
 
     .blog-categories__item {
-      padding: 0.625rem 1.25rem;
+      padding: 0.75rem 1.5rem;
+    }
+
+    .blog-categories__title {
+      font-size: var(--font-size-2xl);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .blog-categories {
+      padding: var(--spacing-xl) 0;
     }
   }
 </style>
