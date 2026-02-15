@@ -6,7 +6,7 @@ categoria: "boquillas"
 autor:
   nombre: "Ing. Fernando Castillo"
   cargo: "Especialista en Equipos de Descarga"
-imagen: "/img/boquillas-contra-incendios/boquilla-turbojet-frontal.avif"
+imagen: "/img/boquillas-contra-incendios/boquilla-turbo-jet-frontal.avif"
 imagenAlt: "Boquilla turbo jet contra incendios de alto rendimiento"
 tags: ["boquillas contra incendios", "NFPA 1964", "pitones industriales", "brigadas contra incendio", "equipos de descarga", "protección contra fuego"]
 destacado: true
