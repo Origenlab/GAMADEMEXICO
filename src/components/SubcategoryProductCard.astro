@@ -1,5 +1,5 @@
 ---
-import { withImageCdn } from '../lib/images';
+import { getThumbnailUrl } from '../lib/images';
 
 interface Props {
   title: string;
@@ -22,7 +22,9 @@ const {
   material = '',
   certifications = [],
 } = Astro.props;
-const imageUrl = withImageCdn(image);
+
+// Imagen optimizada: 400px ancho, calidad 75%, sin metadatos
+const imageUrl = image ? getThumbnailUrl(image, 400) : undefined;
 
 function getProductAnchorText(rawTitle: string): string {
   const cleanTitle = rawTitle.split(' - ')[0].trim();

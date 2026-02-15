@@ -1,5 +1,5 @@
 ---
-import { withImageCdn } from '../lib/images';
+import { getThumbnailUrl } from '../lib/images';
 
 interface Producto {
   id: string;
@@ -76,7 +76,7 @@ function getProductAnchorText(rawTitle: string): string {
           <article class="related-card">
             <div
               class="related-card__image"
-              style={producto.data.imagen ? `background-image: url(${withImageCdn(producto.data.imagen)});` : undefined}
+              style={producto.data.imagen ? `background-image: url(${getThumbnailUrl(producto.data.imagen, 400)});` : undefined}
               role="img"
               aria-label={producto.data.title}
             ></div>

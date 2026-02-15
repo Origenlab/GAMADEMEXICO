@@ -1,5 +1,5 @@
 ---
-import { withImageCdn } from '../lib/images';
+import { getThumbnailUrl } from '../lib/images';
 
 // CategoryCard component - Card con subcategorías y botón principal
 interface Subcategoria {
@@ -16,7 +16,9 @@ interface Props {
 }
 
 const { titulo, subtitulo, enlace, subcategorias, imagen } = Astro.props;
-const imageUrl = withImageCdn(imagen);
+
+// Imagen optimizada: 640px ancho para cards de categoría
+const imageUrl = imagen ? getThumbnailUrl(imagen, 640) : undefined;
 ---
 
 <article class="category-card">

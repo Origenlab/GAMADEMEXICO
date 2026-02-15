@@ -4,7 +4,7 @@
 // Sigue el patrón de SubcategoryProductCard
 // =============================================================================
 
-import { withImageCdn } from '../../lib/images';
+import { getThumbnailUrl } from '../../lib/images';
 import { formatDateShort, getAuthorName, CATEGORY_LABELS, CATEGORY_SLUGS } from '../../lib/blogHelpers';
 
 interface Props {
@@ -35,7 +35,8 @@ const {
   tiempoLectura,
 } = Astro.props;
 
-const imageUrl = imagen ? withImageCdn(imagen) : null;
+// Imagen optimizada: 640px para cards de blog
+const imageUrl = imagen ? getThumbnailUrl(imagen, 640) : null;
 const authorName = getAuthorName(autor);
 const categoryLabel = CATEGORY_LABELS[categoria] || categoria;
 const categorySlug = CATEGORY_SLUGS[categoria] || categoria;

@@ -1,0 +1,115 @@
+---
+// =============================================================================
+// OptimizedImage - Componente de imagen optimizada con ExactDN CDN
+// =============================================================================
+// Uso:
+//   <OptimizedImage src="/img/producto.avif" alt="Descripción" width={800} />
+//   <OptimizedImage src="/img/hero.jpg" alt="Banner" preset="hero" />
+//   <OptimizedImage src="/img/card.avif" alt="Card" preset="thumbnail" />
+// =============================================================================
+
+import {
+  getOptimizedImageUrl,
+  generateSrcset,
+  getThumbnailUrl,
+  getHeroImageUrl,
+  isCdnEnabled,
+} from '../lib/images';
+
+type ImagePreset = 'default' | 'thumbnail' | 'hero' | 'card' | 'og';
+
+interface Props {
+  src: string;
+  alt: string;
+  width?: number;
+  height?: number;
+  quality?: number;
+  preset?: ImagePreset;
+  loading?: 'lazy' | 'eager';
+  decoding?: 'async' | 'sync' | 'auto';
+  class?: string;
+  sizes?: string;
+  responsive?: boolean;
+}
+
+const {
+  src,
+  alt,
+  width,
+  height,
+  quality = 82,
+  preset = 'default',
+  loading = 'lazy',
+  decoding = 'async',
+  class: className = '',
+  sizes,
+  responsive = true,
+} = Astro.props;
+
+// Presets de optimización según uso
+const presetConfigs: Record<ImagePreset, { width?: number; height?: number; quality: number }> = {
+  default: { quality: 82 },
+  thumbnail: { width: 400, quality: 75 },
+  card: { width: 640, quality: 78 },
+  hero: { width: 1920, quality: 85 },
+  og: { width: 1200, height: 630, quality: 85 },
+};
+
+const config = presetConfigs[preset];
+const finalWidth = width || config.width;
+const finalHeight = height || config.height;
+const finalQuality = quality || config.quality;
+
+// Generar URL optimizada
+let optimizedSrc: string;
+let srcsetAttr: string | undefined;
+let sizesAttr: string | undefined;
+
+if (preset === 'thumbnail' || preset === 'card') {
+  optimizedSrc = getThumbnailUrl(src, finalWidth, finalHeight);
+} else if (preset === 'hero') {
+  optimizedSrc = getHeroImageUrl(src, finalWidth);
+} else if (responsive && !finalHeight) {
+  // Generar srcset para imágenes responsivas
+  const responsiveData = generateSrcset(src, {
+    quality: finalQuality,
+    sizes: sizes,
+  });
+  optimizedSrc = responsiveData.src;
+  srcsetAttr = responsiveData.srcset;
+  sizesAttr = responsiveData.sizes;
+} else {
+  optimizedSrc = getOptimizedImageUrl(src, {
+    width: finalWidth,
+    height: finalHeight,
+    quality: finalQuality,
+    strip: 'all',
+  });
+}
+
+// Atributos condicionales
+const imgAttrs: Record<string, string | number | undefined> = {
+  src: optimizedSrc,
+  alt,
+  loading,
+  decoding,
+  class: className || undefined,
+};
+
+if (finalWidth) imgAttrs.width = finalWidth;
+if (finalHeight) imgAttrs.height = finalHeight;
+if (srcsetAttr) imgAttrs.srcset = srcsetAttr;
+if (sizesAttr) imgAttrs.sizes = sizesAttr;
+---
+
+<img
+  src={optimizedSrc}
+  alt={alt}
+  loading={loading}
+  decoding={decoding}
+  class={className || undefined}
+  width={finalWidth}
+  height={finalHeight}
+  srcset={srcsetAttr}
+  sizes={sizesAttr}
+/>
