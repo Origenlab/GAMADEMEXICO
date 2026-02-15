@@ -1,6 +1,6 @@
 ---
-title: "Guía Completa: Cómo Elegir la Manguera Contra Incendios Correcta para tu Empresa"
-description: "Guía técnica profesional para seleccionar mangueras contra incendios según aplicación, normativa NFPA 1961 y tipo de riesgo. Comparativa de tipos, especificaciones y certificaciones."
+title: "Cómo Elegir la Manguera Contra Incendios Correcta"
+description: "Guía técnica para seleccionar mangueras contra incendios según normativa NFPA 1961. Comparativa de tipos, especificaciones y certificaciones."
 fecha: "2025-01-15"
 fechaActualizacion: "2025-02-01"
 categoria: "mangueras"
