@@ -1,9 +1,12 @@
 ---
 import Layout from '../layouts/Base.astro';
+import SectionHeader from '../components/SectionHeader.astro';
 import { getCollection } from 'astro:content';
+import { withImageCdn } from '../lib/images';
 import Faq from '../components/Faq.astro';
 
 const productos = (await getCollection('productos', ({ data }) => data.categoria === 'boquillas')).sort((a, b) => a.data.orden - b.data.orden);
+const cdnImage = (path: string) => withImageCdn(path) ?? path;
 const faqItems = [
   {
     "pregunta": "¿Qué es el chiflón de 3 pasos en boquillas contra incendios?",
@@ -40,100 +43,155 @@ const faqItems = [
   title="Boquillas Contra Incendios | Venta México"
   description="Boquillas contra incendios chiflón 3 pasos, turbo jet y tipo pistola. Bronce fundido, selector de flujo. Certificadas UL/FM Elkhart Brass. México."
   activePage="equipos"
-  heroTitle="Boquillas Contra Incendios"
-  heroBadge="Equipos Contra Incendios"
+  heroTitle="Boquillas Contra Incendios para Brigadas y Sistemas Fijos"
+  heroIntro="Control preciso de patrones de agua con chiflón de 3 pasos, selector de flujo ajustable y construcción en bronce fundido. Equipos tipo pistola, turbo jet e industriales certificados UL/FM."
+  heroBadge="Boquillas Contra Incendios"
+  heroMetrics={[
+    { valor: "3", texto: "Patrones de agua" },
+    { valor: "325", texto: "GPM máximo" },
+    { valor: "UL/FM", texto: "Certificaciones disponibles" }
+  ]}
+  heroPrimaryText="Ver Catálogo"
+  heroPrimaryLink="#boquillas"
+  heroSecondaryText="Solicitar Cotización"
+  heroSecondaryLink="#cotizar"
   heroShowRightContent={true}
 >
   <Fragment slot="hero-content">
-    <p>Distribuimos boquillas contra incendios de alto rendimiento para brigadas industriales, cuerpos de bomberos y sistemas fijos. Nuestra linea incluye boquillas tipo pistola con chiflon de 3 pasos, modelos turbo jet con ajuste automatico de presion, opciones industriales en bronce fundido y versiones certificadas UL/FM para proyectos con requisitos normativos estrictos.</p>
-    <p>Cada boquilla ofrece control preciso de patrones de agua y selector de flujo ajustable, permitiendo adaptar la descarga segun la situacion de emergencia. Te asesoramos en la seleccion del modelo correcto por caudal, presion de trabajo y certificacion requerida para tu aplicacion especifica.</p>
+    <p>Distribuimos boquillas contra incendios de alto rendimiento para brigadas industriales, cuerpos de bomberos y sistemas fijos. Nuestra línea incluye boquillas tipo pistola con chiflón de 3 pasos, modelos turbo jet con ajuste automático de presión, opciones industriales en bronce fundido y versiones certificadas UL/FM para proyectos con requisitos normativos estrictos.</p>
+    <p>Cada boquilla ofrece control preciso de patrones de agua y selector de flujo ajustable, permitiendo adaptar la descarga según la situación de emergencia. Te asesoramos en la selección del modelo correcto por caudal, presión de trabajo y certificación requerida para tu aplicación específica.</p>
   </Fragment>
 
-  <!-- BREADCRUMB -->
-  <nav class="breadcrumb" aria-label="Navegación de migas de pan">
-    <div class="container">
-      <ol class="breadcrumb__list">
-        <li class="breadcrumb__item"><a href="/" class="breadcrumb__link">Inicio</a></li>
-        <li class="breadcrumb__item"><a href="/equipos" class="breadcrumb__link">Equipos</a></li>
-        <li class="breadcrumb__item breadcrumb__item--active" aria-current="page">Boquillas Contra Incendios</li>
-      </ol>
-    </div>
-  </nav><!-- PRODUCTOS DINAMICOS -->
+  <!-- PRODUCTOS DINAMICOS -->
   <section class="categories" id="boquillas">
     <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Tipos de Boquillas Contra Incendios | Chiflón 3 Pasos y Turbo Jet</h2>
-        <p class="section-subtitle">Boquillas con selector de flujo, bronce fundido y patrones de agua regulables</p>
-      </div>
+      <SectionHeader
+        titulo="Catálogo de Boquillas Contra Incendios por Tipo"
+        subtitulo="Selecciona un tipo de boquilla para conocer especificaciones técnicas y solicitar cotización"
+        idTitulo="boquillas-title"
+        parrafo1="Nuestro catálogo integra boquillas contra incendios de marcas líderes como Elkhart Brass, Akron Brass y Task Force Tips. Cada tipo de boquilla está diseñado para aplicaciones específicas: brigadas industriales, cuerpos de bomberos, sistemas fijos y proyectos que requieren certificaciones UL y FM."
+        parrafo2="Trabajamos con plantas industriales, cuerpos de bomberos, firmas de ingeniería e instaladores certificados que requieren equipos con documentación completa para cumplimiento normativo y verificaciones de Protección Civil."
+      />
       <div class="categories__grid">
-        {productos.map((producto) => (
-          <article class="category-card">
-            <div class="category-card__image" role="img" aria-label={producto.data.title}></div>
-            <div class="category-card__body">
-              <h3 class="category-card__title">{producto.data.title}</h3>
-              <p class="category-card__sub">{producto.data.description}</p>
-              <ul class="category-card__products">
-                {producto.data.material && <li class="category-card__product">{producto.data.material}</li>}
-                {producto.data.flujo && <li class="category-card__product">{producto.data.flujo}</li>}
-                {producto.data.certificaciones && producto.data.certificaciones.length > 0 && <li class="category-card__product">Certificaciones: {producto.data.certificaciones.join(', ')}</li>}
-                <li class="category-card__product">Marca: {producto.data.marca}</li>
-              </ul>
-              <div class="category-card__ctas">
-                <a href={`/productos/${producto.id}`} class="btn btn--primary btn--sm">Ver especificaciones</a>
-                <a href="#cotizar" class="btn btn--outline btn--sm">Cotizar</a>
-              </div>
+        <article class="category-card">
+          <div class="category-card__image" role="img" aria-label="Boquilla Tipo Pistola" style={`background-image: url('${cdnImage('/img/boquillas-contra-incendios/boquilla-tipo-pistola-contra-incendios-estacion-bomberos-01.avif')}'); background-size: cover; background-position: center;`}></div>
+          <div class="category-card__body">
+            <h3 class="category-card__title">Boquilla Tipo Pistola</h3>
+            <p class="category-card__sub">Chiflón de 3 pasos con selector de flujo ajustable de 15 a 250 GPM</p>
+            <ul class="category-card__products">
+              <li class="category-card__product">Chiflón 3 pasos: chorro, niebla, cortina</li>
+              <li class="category-card__product">Selector de flujo: 15 - 250 GPM</li>
+              <li class="category-card__product">Certificaciones: UL, FM</li>
+              <li class="category-card__product">Multimarca disponible</li>
+            </ul>
+            <div class="category-card__ctas">
+              <a href="/boquillas/tipo-pistola" class="btn btn--primary btn--sm">Ver catálogo</a>
+              <a href="#cotizar" class="btn btn--outline btn--sm">Cotizar</a>
             </div>
-          </article>
-        ))}
+          </div>
+        </article>
+        <article class="category-card">
+          <div class="category-card__image" role="img" aria-label="Boquilla Turbo Jet" style={`background-image: url('${cdnImage('/img/boquillas-contra-incendios/boquilla-turbo-jet-frontal.avif')}'); background-size: cover; background-position: center;`}></div>
+          <div class="category-card__body">
+            <h3 class="category-card__title">Boquilla Turbo Jet</h3>
+            <p class="category-card__sub">Ajuste automático de presión con caudal de 60 a 325 GPM</p>
+            <ul class="category-card__products">
+              <li class="category-card__product">Presión constante automática</li>
+              <li class="category-card__product">Caudal: 60 - 325 GPM</li>
+              <li class="category-card__product">Certificaciones: UL, FM</li>
+              <li class="category-card__product">Patrones de agua regulables</li>
+            </ul>
+            <div class="category-card__ctas">
+              <a href="/boquillas/turbo-jet" class="btn btn--primary btn--sm">Ver catálogo</a>
+              <a href="#cotizar" class="btn btn--outline btn--sm">Cotizar</a>
+            </div>
+          </div>
+        </article>
+        <article class="category-card">
+          <div class="category-card__image" role="img" aria-label="Boquilla Industrial" style={`background-image: url('${cdnImage('/img/boquillas-contra-incendios/boquilla-industrial-bronce-marino-npsh-2-pulgadas-frontal.avif')}'); background-size: cover; background-position: center;`}></div>
+          <div class="category-card__body">
+            <h3 class="category-card__title">Boquilla Industrial</h3>
+            <p class="category-card__sub">Bronce fundido para ambientes corrosivos y aplicaciones severas</p>
+            <ul class="category-card__products">
+              <li class="category-card__product">Bronce fundido anti-corrosión</li>
+              <li class="category-card__product">UL 401 Class A/B/C</li>
+              <li class="category-card__product">Resistencia a vapores químicos</li>
+              <li class="category-card__product">Cierre total con neopreno</li>
+            </ul>
+            <div class="category-card__ctas">
+              <a href="/boquillas/industrial" class="btn btn--primary btn--sm">Ver catálogo</a>
+              <a href="#cotizar" class="btn btn--outline btn--sm">Cotizar</a>
+            </div>
+          </div>
+        </article>
+        <article class="category-card">
+          <div class="category-card__image" role="img" aria-label="Boquilla Certificada" style={`background-image: url('${cdnImage('/img/boquillas-contra-incendios/boquilla-pistola-select-o-flow-frontal.avif')}'); background-size: cover; background-position: center;`}></div>
+          <div class="category-card__body">
+            <h3 class="category-card__title">Boquilla Certificada UL/FM</h3>
+            <p class="category-card__sub">Doble certificación para proyectos con requisitos normativos estrictos</p>
+            <ul class="category-card__products">
+              <li class="category-card__product">Certificación UL y FM</li>
+              <li class="category-card__product">Cumple NFPA 1964</li>
+              <li class="category-card__product">Marcado láser permanente</li>
+              <li class="category-card__product">Documentación completa</li>
+            </ul>
+            <div class="category-card__ctas">
+              <a href="/boquillas/certificada" class="btn btn--primary btn--sm">Ver catálogo</a>
+              <a href="#cotizar" class="btn btn--outline btn--sm">Cotizar</a>
+            </div>
+          </div>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- SERVICE DETAILS -->
+  <!-- PRODUCT DETAILS -->
   <section class="service-details" aria-labelledby="service-details-title">
     <div class="container">
-      <div class="section-header">
-        <h2 id="service-details-title" class="section-title">Detalle de Cada Tipo de Boquilla Contra Incendios</h2>
-      </div>
+      <SectionHeader
+        titulo="Detalle de Cada Tipo de Boquilla Contra Incendios"
+        subtitulo="Conoce las características técnicas y aplicaciones de cada configuración"
+        idTitulo="service-details-title"
+      />
 
       <div class="service-detail" id="detalle-pistola">
         <div class="service-detail__content">
           <h3 class="service-detail__title">Boquilla Tipo Pistola — Chiflón 3 Pasos con Selector de Flujo</h3>
-          <p class="service-detail__text">La boquilla contra incendios Phantom XD con <strong>chiflón de 3 pasos</strong> ofrece <strong>selector de flujo entre 15 y 250 GPM</strong> con <strong>patrones de agua</strong>: chorro directo, niebla regulable y cortina. Construcción en <strong>bronce fundido</strong> y aluminio forjado con válvula de <strong>cierre total</strong> y empaque de <strong>neopreno</strong>. El mango ergonómico proporciona control preciso. Costo y precio disponible bajo cotización.</p>
+          <p class="service-detail__text">La boquilla contra incendios Phantom XD con <strong>chiflón de 3 pasos</strong> ofrece <strong>selector de flujo entre 15 y 250 GPM</strong> con <strong>patrones de agua</strong>: chorro directo, niebla regulable y cortina. Construcción en <strong>bronce fundido</strong> y aluminio forjado con válvula de <strong>cierre total</strong> y empaque de <strong>neopreno</strong>. El mango ergonómico proporciona control preciso. Múltiples marcas disponibles con precio bajo cotización.</p>
           <ul class="service-detail__list">
             <li class="service-detail__list-item">Chiflón de 3 pasos: chorro, niebla y cortina</li>
             <li class="service-detail__list-item">Selector de flujo de 15 a 250 GPM ajustable</li>
             <li class="service-detail__list-item">Construcción en bronce fundido y aluminio forjado</li>
             <li class="service-detail__list-item">Cierre total con empaque de neopreno</li>
             <li class="service-detail__list-item">Patrones de agua regulables para cada aplicación</li>
-            <li class="service-detail__list-item">Mango ergonómico con control preciso</li>
+            <li class="service-detail__list-item">Marcas: Elkhart Brass, Akron, Task Force Tips</li>
           </ul>
-          <div class="service-detail__actions">
+          <div class="service-detail__ctas">
             <a href="/boquillas/tipo-pistola" class="btn btn--primary">Ver catálogo completo</a>
             <a href="#cotizar" class="btn btn--outline">Cotizar</a>
           </div>
         </div>
-        <div class="service-detail__image" role="img" aria-label="Boquilla tipo pistola Phantom XD Elkhart Brass"></div>
+        <div class="service-detail__image" role="img" aria-label="Boquilla tipo pistola contra incendios profesional" style={`background-image: url('${cdnImage('/img/boquillas-contra-incendios/boquilla-tipo-pistola-contra-incendios-certificada-fm-15.avif')}'); background-size: cover; background-position: center;`}></div>
       </div>
 
       <div class="service-detail" id="detalle-turbo-jet">
         <div class="service-detail__content">
           <h3 class="service-detail__title">Boquilla Turbo Jet — Patrones de Agua con Presión Constante</h3>
-          <p class="service-detail__text">La boquilla <strong>turbo jet</strong> Select-O-Matic XD mantiene <strong>presión constante con caudal de 60 a 325 GPM</strong>. Sistema patentado de resorte externo para ajuste automático del <strong>selector de flujo</strong>. <strong>Patrones de agua</strong> regulables con <strong>cierre total</strong> mediante empaque de <strong>neopreno</strong>. Ideal para combatir incendios donde la presión varía.</p>
+          <p class="service-detail__text">La boquilla <strong>turbo jet</strong> Select-O-Matic XD mantiene <strong>presión constante con caudal de 60 a 325 GPM</strong>. Sistema patentado de resorte externo para ajuste automático del <strong>selector de flujo</strong>. <strong>Patrones de agua</strong> regulables con <strong>cierre total</strong> mediante empaque de <strong>neopreno</strong>. Ideal para combatir incendios donde la presión varía. Múltiples marcas disponibles.</p>
           <ul class="service-detail__list">
             <li class="service-detail__list-item">Turbo jet con selector de flujo 60 a 325 GPM</li>
             <li class="service-detail__list-item">Patrones de agua con ajuste automático</li>
             <li class="service-detail__list-item">Cierre total con empaque de neopreno</li>
             <li class="service-detail__list-item">Construcción en bronce fundido y aluminio</li>
             <li class="service-detail__list-item">Chiflón 3 pasos: chorro, niebla, cortina</li>
-            <li class="service-detail__list-item">Compatible con hidrantes y unidades móviles</li>
+            <li class="service-detail__list-item">Marcas: Elkhart Brass, Akron, Task Force Tips</li>
           </ul>
-          <div class="service-detail__actions">
+          <div class="service-detail__ctas">
             <a href="/boquillas/turbo-jet" class="btn btn--primary">Ver catálogo completo</a>
             <a href="#cotizar" class="btn btn--outline">Cotizar</a>
           </div>
         </div>
-        <div class="service-detail__image" role="img" aria-label="Boquilla turbo jet Select-O-Matic XD Elkhart Brass"></div>
+        <div class="service-detail__image" role="img" aria-label="Boquilla turbo jet Select-O-Matic XD Elkhart Brass" style={`background-image: url('${cdnImage('/img/boquillas-contra-incendios/boquilla-turbo-jet-lateral.avif')}'); background-size: cover; background-position: center;`}></div>
       </div>
 
       <div class="service-detail" id="detalle-industrial">
@@ -148,12 +206,12 @@ const faqItems = [
             <li class="service-detail__list-item">Patrones de agua ajustables UL 401 Class A/B/C</li>
             <li class="service-detail__list-item">Ideal para plantas químicas y petroquímicas</li>
           </ul>
-          <div class="service-detail__actions">
+          <div class="service-detail__ctas">
             <a href="/boquillas/industrial" class="btn btn--primary">Ver catálogo completo</a>
             <a href="#cotizar" class="btn btn--outline">Cotizar</a>
           </div>
         </div>
-        <div class="service-detail__image" role="img" aria-label="Boquilla industrial serie 205-B Elkhart Brass"></div>
+        <div class="service-detail__image" role="img" aria-label="Boquilla industrial serie 205-B Elkhart Brass" style={`background-image: url('${cdnImage('/img/boquillas-contra-incendios/boquilla-industrial-bronce-marino-npsh-2-pulgadas-lateral.avif')}'); background-size: cover; background-position: center;`}></div>
       </div>
 
       <div class="service-detail" id="detalle-certificada">
@@ -168,12 +226,12 @@ const faqItems = [
             <li class="service-detail__list-item">Patrones de agua certificados UL y FM</li>
             <li class="service-detail__list-item">Documentación completa NFPA 1964</li>
           </ul>
-          <div class="service-detail__actions">
+          <div class="service-detail__ctas">
             <a href="/boquillas/certificada" class="btn btn--primary">Ver catálogo completo</a>
             <a href="#cotizar" class="btn btn--outline">Cotizar</a>
           </div>
         </div>
-        <div class="service-detail__image" role="img" aria-label="Boquilla certificada Chief XD Elkhart Brass"></div>
+        <div class="service-detail__image" role="img" aria-label="Boquilla certificada Chief XD Elkhart Brass" style={`background-image: url('${cdnImage('/img/boquillas-contra-incendios/boquilla-pistola-select-o-flow-lateral.avif')}'); background-size: cover; background-position: center;`}></div>
       </div>
 
     </div>
@@ -182,10 +240,11 @@ const faqItems = [
   <!-- TRUST -->
   <section class="trust" aria-labelledby="trust-title">
     <div class="container">
-      <div class="section-header">
-        <h2 id="trust-title" class="section-title">Por Qué Comprar Boquillas Contra Incendios con Chiflón 3 Pasos</h2>
-        <p class="section-subtitle">Bronce fundido, selector de flujo, patrones de agua y cierre total con neopreno</p>
-      </div>
+      <SectionHeader
+        titulo="Por Qué Comprar Boquillas Contra Incendios en Gama de México"
+        subtitulo="Calidad certificada, inventario disponible y asesoría técnica especializada"
+        idTitulo="trust-title"
+      />
       <div class="trust__grid">
         <div class="trust__item">
           <h3 class="trust__item-title">Chiflón de 3 Pasos Profesional</h3>
@@ -208,15 +267,16 @@ const faqItems = [
           <p class="trust__item-desc">Línea completa de boquillas turbo jet con certificación UL y FM. Selector de flujo automático para presión constante en todo el rango de caudal.</p>
         </div>
         <div class="trust__item">
-          <h3 class="trust__item-title">Patrones de Agua Regulables</h3>
-          <p class="trust__item-desc">Patrones de agua ajustables para diferentes aplicaciones: chorro concentrado para alcance, niebla para enfriamiento y cortina para protección personal.</p>
+          <h3 class="trust__item-title">Documentación para Auditorías</h3>
+          <p class="trust__item-desc">Certificados UL/FM originales, fichas técnicas en español, manuales y cartas de conformidad con NOM-002-STPS incluidos.</p>
         </div>
       </div>
 
-      <div class="trust__testimonials-header">
-        <h3 class="trust__testimonials-title">Lo que dicen nuestros clientes</h3>
-        <p class="trust__testimonials-subtitle">Empresas de todo México confían en nuestras boquillas contra incendios</p>
-      </div>
+      <SectionHeader
+        titulo="Lo que dicen nuestros clientes"
+        subtitulo="Empresas de todo México confían en nuestras boquillas contra incendios"
+        idTitulo="testimonials-title"
+      />
       <div class="trust__testimonials">
         <blockquote class="testimonial">
           <div class="testimonial__stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
@@ -333,7 +393,11 @@ const faqItems = [
   <!-- LEAD CAPTURE -->
   <section class="lead-capture" id="cotizar" aria-labelledby="lead-title">
     <div class="container">
-      <h2 id="lead-title" class="lead-capture__title">Cotiza tus boquillas contra incendios ahora</h2>
+      <SectionHeader
+        titulo="Cotiza tus boquillas contra incendios ahora"
+        subtitulo="Precios competitivos, asesoría técnica y envío a toda la República"
+        idTitulo="lead-title"
+      />
       <div class="lead-capture__bullets">
         <span class="lead-capture__bullet">Precios y disponibilidad en menos de 24 horas</span>
         <span class="lead-capture__bullet">Asesoría técnica para selección del modelo correcto</span>
@@ -362,10 +426,11 @@ const faqItems = [
   <!-- EQUIPOS COMPLEMENTARIOS - CROSS-LINKING SEO -->
   <section class="complementary" aria-labelledby="complementary-title">
     <div class="container">
-      <div class="section-header">
-        <h2 id="complementary-title" class="section-title">Equipos Complementarios para tu Sistema de Boquillas</h2>
-        <p class="section-subtitle">Las boquillas requieren mangueras, válvulas y conexiones de calidad para máximo rendimiento</p>
-      </div>
+      <SectionHeader
+        titulo="Equipos Complementarios para Sistemas con Boquillas"
+        subtitulo="Completa tu sistema contra incendios con equipos certificados compatibles"
+        idTitulo="complementary-title"
+      />
       <div class="complementary__grid">
         <a href="/mangueras-contra-incendios" class="complementary__card">
           <div class="complementary__icon">🔴</div>
@@ -398,8 +463,12 @@ const faqItems = [
   <!-- SEO CONTENT -->
   <section class="seo-content" aria-labelledby="seo-title">
     <div class="container">
+      <SectionHeader
+        titulo="Boquillas Contra Incendio: Guía Completa para Brigadas y Sistemas Fijos en México"
+        subtitulo="Todo lo que necesitas saber sobre tipos, certificaciones y aplicaciones"
+        idTitulo="seo-title"
+      />
       <div class="seo-content__body">
-        <h2 id="seo-title" class="seo-content__title">Venta de Boquillas Contra Incendios con Chiflón 3 Pasos y Bronce Fundido en México</h2>
 
         <p class="seo-content__text">Las <strong>boquillas contra incendios</strong> con <strong>chiflón de 3 pasos</strong> determinan los <strong>patrones de agua</strong>: chorro directo, niebla y cortina. Construcción en <strong>bronce fundido</strong> resistente con <strong>selector de flujo</strong> ajustable y válvula de <strong>cierre total</strong> con empaque de <strong>neopreno</strong>. Como <strong>proveedor autorizado Elkhart Brass</strong>, ofrecemos venta de boquillas tipo pistola y <strong>turbo jet</strong> con precio competitivo en México.</p>
 
@@ -421,10 +490,11 @@ const faqItems = [
   <!-- FAQ -->
   <section class="faq" id="faq" aria-labelledby="faq-title">
     <div class="container">
-      <div class="section-header">
-        <h2 id="faq-title" class="section-title">Preguntas Frecuentes sobre Boquillas Contra Incendios con Chiflón</h2>
-        <p class="section-subtitle">Chiflón 3 pasos, bronce fundido, selector de flujo, patrones de agua y turbo jet</p>
-      </div>
+      <SectionHeader
+        titulo="Preguntas Frecuentes sobre Boquillas Contra Incendios"
+        subtitulo="Resolvemos las dudas más comunes sobre tipos, certificaciones y selección"
+        idTitulo="faq-title"
+      />
       <Faq items={faqItems} id="faq" />
     </div>
   </section>
