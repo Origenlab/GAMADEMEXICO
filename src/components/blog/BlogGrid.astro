@@ -4,7 +4,6 @@
 // =============================================================================
 
 import BlogCard from './BlogCard.astro';
-import { calculateReadingTime } from '../../lib/blogHelpers';
 import type { CollectionEntry } from 'astro:content';
 
 interface Props {
@@ -17,7 +16,6 @@ interface Props {
   viewAllText?: string;
   showCount?: boolean;
   background?: 'white' | 'accent';
-  categorySlug?: string;
 }
 
 const {
@@ -30,60 +28,71 @@ const {
   viewAllText = 'Ver todos',
   showCount = true,
   background = 'accent',
-  categorySlug,
 } = Astro.props;
+
+const hasSidebar = Astro.slots.has('sidebar');
 ---
 
 <section class={`blog-grid-section blog-grid-section--${background}`}>
   <div class="container">
-    {(titulo || subtitulo || showViewAll || showCount) && (
-      <div class="catalog-header">
-        <div class="catalog-header__info">
-          {titulo && <h2 class="catalog-header__title">{titulo}</h2>}
-          {subtitulo && <p class="catalog-header__desc">{subtitulo}</p>}
-        </div>
-        <div class="catalog-header__meta">
-          {showCount && posts.length > 0 && (
-            <div class="catalog-header__count">
-              <span class="catalog-header__number">{posts.length}</span>
-              <span class="catalog-header__label">{posts.length === 1 ? 'Artículo' : 'Artículos'}</span>
+    <div class={`blog-grid-layout ${hasSidebar ? 'blog-grid-layout--with-sidebar' : ''}`}>
+      <div class="blog-grid-layout__main">
+        {(titulo || subtitulo || showViewAll || showCount) && (
+          <div class="catalog-header">
+            <div class="catalog-header__info">
+              {titulo && <h2 class="catalog-header__title">{titulo}</h2>}
+              {subtitulo && <p class="catalog-header__desc">{subtitulo}</p>}
             </div>
-          )}
-          {showViewAll && (
-            <a href={viewAllLink} class="btn btn--outline btn--sm">
-              {viewAllText} →
-            </a>
-          )}
-        </div>
-      </div>
-    )}
+            <div class="catalog-header__meta">
+              {showCount && posts.length > 0 && (
+                <div class="catalog-header__count">
+                  <span class="catalog-header__number">{posts.length}</span>
+                  <span class="catalog-header__label">{posts.length === 1 ? 'Artículo' : 'Artículos'}</span>
+                </div>
+              )}
+              {showViewAll && (
+                <a href={viewAllLink} class="btn btn--outline btn--sm">
+                  {viewAllText} →
+                </a>
+              )}
+            </div>
+          </div>
+        )}
 
-    {posts.length > 0 ? (
-      <div class={`blog-grid blog-grid--${columns}-cols`}>
-        {posts.map((post) => (
-          <BlogCard
-            title={post.data.title}
-            description={post.data.description}
-            slug={post.id}
-            fecha={post.data.fecha}
-            categoria={post.data.categoria}
-            autor={post.data.autor}
-            imagen={post.data.imagen}
-            imagenAlt={post.data.imagenAlt}
-            tags={post.data.tags}
-            destacado={post.data.destacado}
-            tiempoLectura={post.data.tiempoLectura}
-          />
-        ))}
+        {posts.length > 0 ? (
+          <div class={`blog-grid blog-grid--${columns}-cols`}>
+            {posts.map((post) => (
+              <BlogCard
+                title={post.data.title}
+                description={post.data.description}
+                slug={post.id}
+                fecha={post.data.fecha}
+                categoria={post.data.categoria}
+                autor={post.data.autor}
+                imagen={post.data.imagen}
+                imagenAlt={post.data.imagenAlt}
+                tags={post.data.tags}
+                destacado={post.data.destacado}
+                tiempoLectura={post.data.tiempoLectura}
+              />
+            ))}
+          </div>
+        ) : (
+          <div class="catalog-empty">
+            <div class="catalog-empty__icon">📝</div>
+            <h3 class="catalog-empty__title">No hay artículos disponibles</h3>
+            <p class="catalog-empty__text">Pronto publicaremos contenido en esta sección.</p>
+            <a href="/blog" class="btn btn--primary">Ver todos los artículos</a>
+          </div>
+        )}
       </div>
-    ) : (
-      <div class="catalog-empty">
-        <div class="catalog-empty__icon">📝</div>
-        <h3 class="catalog-empty__title">No hay artículos disponibles</h3>
-        <p class="catalog-empty__text">Pronto publicaremos contenido en esta sección.</p>
-        <a href="/blog" class="btn btn--primary">Ver todos los artículos</a>
-      </div>
-    )}
+
+      {hasSidebar && (
+        <aside class="blog-grid-layout__aside">
+          <slot name="sidebar" />
+        </aside>
+      )}
+    </div>
   </div>
 </section>
 
@@ -98,6 +107,20 @@ const {
 
   .blog-grid-section--white {
     background: var(--color-white);
+  }
+
+  .blog-grid-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+  }
+
+  .blog-grid-layout__main {
+    min-width: 0;
+  }
+
+  .blog-grid-layout__aside {
+    min-width: 0;
   }
 
   /* CATALOG HEADER - Mismo estilo que páginas de productos */
@@ -218,8 +241,25 @@ const {
       font-size: 2rem;
     }
 
+    .blog-grid-layout--with-sidebar {
+      grid-template-columns: minmax(0, 1fr) 330px;
+      align-items: start;
+      gap: var(--spacing-2xl);
+    }
+
+    .blog-grid-layout__aside {
+      position: sticky;
+      top: calc(var(--header-height) + var(--spacing-lg));
+    }
+
     .blog-grid--3-cols {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .blog-grid--3-cols {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
     }
   }
 </style>

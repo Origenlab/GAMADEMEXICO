@@ -5,7 +5,7 @@
 // =============================================================================
 
 import { CATEGORY_LABELS, CATEGORY_SLUGS } from '../../lib/blogHelpers';
-import { WHATSAPP_NUMBER } from '../../lib/config';
+import { CATEGORY_MAP, WHATSAPP_NUMBER } from '../../lib/config';
 
 interface TOCItem {
   id: string;
@@ -13,10 +13,28 @@ interface TOCItem {
   level: number;
 }
 
+interface SidebarPostLink {
+  title: string;
+  href: string;
+  categoryLabel?: string;
+}
+
+interface HubLink {
+  title: string;
+  href: string;
+  description?: string;
+}
+
 interface Props {
   headings?: TOCItem[];
   tags?: Map<string, number>;
+  categoryPosts?: SidebarPostLink[];
+  featuredPosts?: SidebarPostLink[];
+  recentPosts?: SidebarPostLink[];
+  recentPostsTitle?: string;
+  interlinkHubs?: HubLink[];
   showCTA?: boolean;
+  layoutVariant?: 'article' | 'home' | 'category' | 'tag';
   categorySlug?: string;
   ctaTitulo?: string;
   ctaTexto?: string;
@@ -27,7 +45,13 @@ interface Props {
 const {
   headings = [],
   tags,
+  categoryPosts = [],
+  featuredPosts = [],
+  recentPosts = [],
+  recentPostsTitle = 'Publicaciones Recientes',
+  interlinkHubs = [],
   showCTA = true,
+  layoutVariant = 'article',
   categorySlug,
   ctaTitulo = 'Cotización Rápida',
   ctaTexto = 'Respuesta en menos de 24 horas con precio y disponibilidad.',
@@ -35,7 +59,13 @@ const {
   telefonoDisplay = '55 6529 8240',
 } = Astro.props;
 
-const hasContent = headings.length > 0 || (tags && tags.size > 0) || showCTA;
+const hasContent =
+  headings.length > 0 ||
+  (tags && tags.size > 0) ||
+  showCTA ||
+  categoryPosts.length > 0 ||
+  featuredPosts.length > 0 ||
+  recentPosts.length > 0;
 
 // Categorías para navegación
 const categorias = Object.entries(CATEGORY_LABELS).map(([slug, nombre]) => ({
@@ -46,13 +76,48 @@ const categorias = Object.entries(CATEGORY_LABELS).map(([slug, nombre]) => ({
 
 // Filtrar headings h2 y h3
 const filteredHeadings = headings.filter(h => h.level === 2 || h.level === 3);
+
+const categoryEntry = Object.entries(CATEGORY_SLUGS).find(([, slug]) => slug === categorySlug);
+const currentCategoryKey = categoryEntry?.[0];
+const currentCategoryName = currentCategoryKey
+  ? (CATEGORY_LABELS[currentCategoryKey] || currentCategoryKey)
+  : 'esta categoría';
+
+const categoryLandingUrl = currentCategoryKey && currentCategoryKey in CATEGORY_MAP
+  ? CATEGORY_MAP[currentCategoryKey as keyof typeof CATEGORY_MAP].url
+  : '/blog';
+
+const defaultHubLinks: HubLink[] = [
+  {
+    title: `Catálogo de ${currentCategoryName}`,
+    href: categoryLandingUrl,
+    description: 'Revisa modelos, aplicaciones y especificaciones por proyecto.',
+  },
+  {
+    title: 'Todos los Equipos Contra Incendios',
+    href: '/equipos',
+    description: 'Explora soluciones completas para industria, comercio e infraestructura.',
+  },
+  {
+    title: 'Asesoría Técnica Especializada',
+    href: '/servicios/asesoria',
+    description: 'Validación técnica para selección, integración y cumplimiento.',
+  },
+  {
+    title: 'Solicitar Cotización Empresarial',
+    href: '/servicios/cotizaciones',
+    description: 'Atención comercial con propuesta técnica y tiempos de entrega.',
+  },
+];
+
+const hubLinks = interlinkHubs.length > 0 ? interlinkHubs : defaultHubLinks;
 ---
 
 {hasContent && (
-  <aside class="blog-sidebar">
+  <aside class={`blog-sidebar blog-sidebar--${layoutVariant}`}>
     {/* TOC Widget */}
     {filteredHeadings.length > 0 && (
-      <div class="sidebar-widget">
+      <div class="sidebar-widget sidebar-widget--toc">
         <div class="sidebar-widget__header">
           <h3 class="sidebar-widget__title">En este artículo</h3>
         </div>
@@ -71,9 +136,69 @@ const filteredHeadings = headings.filter(h => h.level === 2 || h.level === 3);
       </div>
     )}
 
+    {/* Enlaces de la categoría actual */}
+    {categoryPosts.length > 0 && (
+      <div class="sidebar-widget sidebar-widget--category-posts">
+        <div class="sidebar-widget__header">
+          <h3 class="sidebar-widget__title">Más sobre {currentCategoryName}</h3>
+          <p class="sidebar-widget__subtitle">Guías técnicas recomendadas</p>
+        </div>
+        <ul class="sidebar-links" aria-label={`Guías recomendadas sobre ${currentCategoryName}`}>
+          {categoryPosts.slice(0, 5).map((post) => (
+            <li class="sidebar-links__item">
+              <a href={post.href} class="sidebar-links__link">
+                <span class="sidebar-links__title">{post.title}</span>
+                <span class="sidebar-links__meta">Leer guía técnica →</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    )}
+
+    {/* Lecturas destacadas para interlinking transversal */}
+    {featuredPosts.length > 0 && (
+      <div class="sidebar-widget sidebar-widget--featured">
+        <div class="sidebar-widget__header">
+          <h3 class="sidebar-widget__title">Lecturas Destacadas</h3>
+          <p class="sidebar-widget__subtitle">Contenido técnico de alto valor</p>
+        </div>
+        <ul class="sidebar-links" aria-label="Lecturas destacadas del blog">
+          {featuredPosts.slice(0, 4).map((post) => (
+            <li class="sidebar-links__item">
+              <a href={post.href} class="sidebar-links__link">
+                <span class="sidebar-links__title">{post.title}</span>
+                {post.categoryLabel && <span class="sidebar-links__meta">{post.categoryLabel}</span>}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    )}
+
+    {/* Publicaciones recientes */}
+    {recentPosts.length > 0 && (
+      <div class="sidebar-widget sidebar-widget--recent">
+        <div class="sidebar-widget__header">
+          <h3 class="sidebar-widget__title">{recentPostsTitle}</h3>
+          <p class="sidebar-widget__subtitle">Últimos contenidos del blog técnico</p>
+        </div>
+        <ul class="sidebar-links" aria-label="Publicaciones recientes del blog">
+          {recentPosts.slice(0, 6).map((post) => (
+            <li class="sidebar-links__item">
+              <a href={post.href} class="sidebar-links__link">
+                <span class="sidebar-links__title">{post.title}</span>
+                {post.categoryLabel && <span class="sidebar-links__meta">{post.categoryLabel}</span>}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    )}
+
     {/* CTA Widget - Highlight */}
     {showCTA && (
-      <div class="sidebar-widget sidebar-widget--highlight">
+      <div class="sidebar-widget sidebar-widget--highlight sidebar-widget--cta">
         <div class="sidebar-widget__header">
           <h3 class="sidebar-widget__title">{ctaTitulo}</h3>
         </div>
@@ -91,8 +216,26 @@ const filteredHeadings = headings.filter(h => h.level === 2 || h.level === 3);
       </div>
     )}
 
+    {/* Hub de interlinking comercial */}
+    <div class="sidebar-widget sidebar-widget--hub">
+      <div class="sidebar-widget__header">
+        <h3 class="sidebar-widget__title">Rutas Estratégicas</h3>
+        <p class="sidebar-widget__subtitle">Accesos directos a recursos clave</p>
+      </div>
+      <ul class="sidebar-hub" aria-label="Rutas estratégicas del sitio">
+        {hubLinks.map((link) => (
+          <li class="sidebar-hub__item">
+            <a href={link.href} class="sidebar-hub__link">
+              <span class="sidebar-hub__title">{link.title}</span>
+              {link.description && <span class="sidebar-hub__desc">{link.description}</span>}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+
     {/* Categorías Widget */}
-    <div class="sidebar-widget">
+    <div class="sidebar-widget sidebar-widget--categories">
       <div class="sidebar-widget__header">
         <h3 class="sidebar-widget__title">Categorías del Blog</h3>
       </div>
@@ -116,7 +259,7 @@ const filteredHeadings = headings.filter(h => h.level === 2 || h.level === 3);
 
     {/* Tags Widget */}
     {tags && tags.size > 0 && (
-      <div class="sidebar-widget">
+      <div class="sidebar-widget sidebar-widget--tags">
         <div class="sidebar-widget__header">
           <h3 class="sidebar-widget__title">Etiquetas Populares</h3>
         </div>
@@ -184,6 +327,13 @@ const filteredHeadings = headings.filter(h => h.level === 2 || h.level === 3);
     margin: 0;
   }
 
+  .sidebar-widget__subtitle {
+    margin: 0.35rem 0 0;
+    font-size: 0.75rem;
+    color: var(--color-text-light);
+    line-height: 1.45;
+  }
+
   .sidebar-widget__text {
     font-size: 0.875rem;
     color: var(--color-text-light);
@@ -243,6 +393,99 @@ const filteredHeadings = headings.filter(h => h.level === 2 || h.level === 3);
     color: var(--color-secondary);
   }
 
+  /* ENLACES EDITORIALES */
+  .sidebar-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .sidebar-links__item {
+    margin: 0;
+  }
+
+  .sidebar-links__link {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 0.75rem 0.875rem;
+    border-radius: 8px;
+    border: 1px solid var(--color-border);
+    background: var(--color-white);
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+
+  .sidebar-links__link:hover {
+    border-color: var(--color-primary);
+    background: #fef7f7;
+  }
+
+  .sidebar-links__title {
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--color-secondary);
+    line-height: 1.35;
+  }
+
+  .sidebar-links__link:hover .sidebar-links__title {
+    color: var(--color-primary);
+  }
+
+  .sidebar-links__meta {
+    font-size: 0.6875rem;
+    color: var(--color-text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+
+  /* HUB ESTRATEGICO */
+  .sidebar-hub {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .sidebar-hub__item {
+    margin: 0;
+  }
+
+  .sidebar-hub__link {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 0.75rem 0.875rem;
+    border-radius: 8px;
+    background: linear-gradient(180deg, #f8fafc 0%, #eef2f7 100%);
+    border: 1px solid #dbe4ef;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+
+  .sidebar-hub__link:hover {
+    border-color: #9ab0c8;
+    transform: translateY(-1px);
+  }
+
+  .sidebar-hub__title {
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--color-secondary);
+    line-height: 1.35;
+  }
+
+  .sidebar-hub__desc {
+    font-size: 0.75rem;
+    color: var(--color-text-light);
+    line-height: 1.4;
+  }
+
   /* SIDEBAR TOC */
   .sidebar-toc__list {
     list-style: none;
@@ -270,6 +513,17 @@ const filteredHeadings = headings.filter(h => h.level === 2 || h.level === 3);
   .sidebar-toc__link:hover {
     background: var(--color-border);
     color: var(--color-primary);
+  }
+
+  .sidebar-toc__link.is-active {
+    background: #fde9ec;
+    color: var(--color-primary);
+    border-left: 3px solid var(--color-primary);
+    padding-left: calc(0.75rem - 3px);
+  }
+
+  .sidebar-toc__link.is-active .sidebar-toc__indicator {
+    background: var(--color-primary);
   }
 
   .sidebar-toc__item--level-3 .sidebar-toc__link {
@@ -386,9 +640,98 @@ const filteredHeadings = headings.filter(h => h.level === 2 || h.level === 3);
     background: rgba(255, 255, 255, 0.2);
   }
 
+  /* Orden de bloques por tipo de página */
+  .blog-sidebar--article .sidebar-widget--toc { order: 10; }
+  .blog-sidebar--article .sidebar-widget--category-posts { order: 20; }
+  .blog-sidebar--article .sidebar-widget--cta { order: 30; }
+  .blog-sidebar--article .sidebar-widget--featured { order: 40; }
+  .blog-sidebar--article .sidebar-widget--recent { order: 50; }
+  .blog-sidebar--article .sidebar-widget--hub { order: 60; }
+  .blog-sidebar--article .sidebar-widget--categories { order: 70; }
+  .blog-sidebar--article .sidebar-widget--tags { order: 80; }
+
+  .blog-sidebar--home .sidebar-widget--featured { order: 10; }
+  .blog-sidebar--home .sidebar-widget--recent { order: 20; }
+  .blog-sidebar--home .sidebar-widget--hub { order: 30; }
+  .blog-sidebar--home .sidebar-widget--categories { order: 40; }
+  .blog-sidebar--home .sidebar-widget--tags { order: 50; }
+  .blog-sidebar--home .sidebar-widget--cta { order: 60; }
+
+  .blog-sidebar--category .sidebar-widget--category-posts { order: 10; }
+  .blog-sidebar--category .sidebar-widget--featured { order: 20; }
+  .blog-sidebar--category .sidebar-widget--recent { order: 30; }
+  .blog-sidebar--category .sidebar-widget--hub { order: 40; }
+  .blog-sidebar--category .sidebar-widget--categories { order: 50; }
+  .blog-sidebar--category .sidebar-widget--tags { order: 60; }
+  .blog-sidebar--category .sidebar-widget--cta { order: 70; }
+
+  .blog-sidebar--tag .sidebar-widget--recent { order: 10; }
+  .blog-sidebar--tag .sidebar-widget--featured { order: 20; }
+  .blog-sidebar--tag .sidebar-widget--hub { order: 30; }
+  .blog-sidebar--tag .sidebar-widget--categories { order: 40; }
+  .blog-sidebar--tag .sidebar-widget--tags { order: 50; }
+  .blog-sidebar--tag .sidebar-widget--cta { order: 60; }
+
   @media (max-width: 1024px) {
     .blog-sidebar {
-      display: none;
+      position: static;
+      top: auto;
     }
   }
 </style>
+
+<script is:inline>
+  (() => {
+    const sidebar = document.querySelector('.blog-sidebar');
+    if (!sidebar) return;
+
+    const tocLinks = Array.from(sidebar.querySelectorAll('.sidebar-toc__link'));
+    if (!tocLinks.length) return;
+
+    const clearActive = () => {
+      tocLinks.forEach((link) => link.classList.remove('is-active'));
+    };
+
+    const setActiveById = (id) => {
+      if (!id) return;
+      clearActive();
+      const active = sidebar.querySelector(`.sidebar-toc__link[href="#${id}"]`);
+      if (active) active.classList.add('is-active');
+    };
+
+    const fromHash = () => {
+      const id = window.location.hash.replace('#', '');
+      if (id) setActiveById(id);
+    };
+
+    window.addEventListener('hashchange', fromHash);
+    fromHash();
+
+    const headingTargets = tocLinks
+      .map((link) => {
+        const targetId = (link.getAttribute('href') || '').replace('#', '');
+        return document.getElementById(targetId);
+      })
+      .filter(Boolean);
+
+    if (!('IntersectionObserver' in window) || !headingTargets.length) return;
+
+    let activeHeading = '';
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            activeHeading = entry.target.id;
+          }
+        });
+        if (activeHeading) setActiveById(activeHeading);
+      },
+      {
+        rootMargin: '-30% 0px -55% 0px',
+        threshold: 0,
+      }
+    );
+
+    headingTargets.forEach((heading) => observer.observe(heading));
+  })();
+</script>

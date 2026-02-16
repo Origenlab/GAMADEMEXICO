@@ -7,6 +7,7 @@
 import Layout from '../../layouts/Base.astro';
 import { getCollection } from 'astro:content';
 import BlogGrid from '../../components/blog/BlogGrid.astro';
+import BlogSidebar from '../../components/blog/BlogSidebar.astro';
 import BlogCategories from '../../components/blog/BlogCategories.astro';
 import BlogCard from '../../components/blog/BlogCard.astro';
 import BlogCTA from '../../components/blog/BlogCTA.astro';
@@ -27,6 +28,21 @@ const regularPosts = featuredPosts.length > 0
 
 // Obtener categorías con conteo
 const categories = getCategoriesWithCount(allPosts);
+const allTags = getAllTags(allPosts);
+
+const toSidebarLink = (entry: typeof allPosts[number]) => ({
+  title: entry.data.title,
+  href: `/blog/${CATEGORY_SLUGS[entry.data.categoria] || entry.data.categoria}/${entry.id}`,
+  categoryLabel: CATEGORY_LABELS[entry.data.categoria] || entry.data.categoria,
+});
+
+const sidebarRecentPosts = allPosts.slice(0, 6).map(toSidebarLink);
+const sidebarFeaturedPosts = (featuredPosts.length > 0 ? featuredPosts : allPosts.slice(0, 4)).map(toSidebarLink);
+const sidebarHubs = categories.slice(0, 4).map((cat) => ({
+  title: `Guías de ${CATEGORY_LABELS[cat.slug] || cat.name}`,
+  href: `/blog/${CATEGORY_SLUGS[cat.slug] || cat.slug}`,
+  description: `${cat.count} ${cat.count === 1 ? 'artículo técnico' : 'artículos técnicos'} disponibles.`,
+}));
 
 // Schema breadcrumb
 const breadcrumbSchema = buildBreadcrumbSchema([
@@ -108,7 +124,21 @@ const breadcrumbSchema = buildBreadcrumbSchema([
     columns={3}
     background="accent"
     showCount={true}
-  />
+  >
+    <Fragment slot="sidebar">
+      <BlogSidebar
+        layoutVariant="home"
+        tags={allTags}
+        showCTA={true}
+        featuredPosts={sidebarFeaturedPosts}
+        recentPosts={sidebarRecentPosts}
+        recentPostsTitle="Últimas Publicaciones"
+        interlinkHubs={sidebarHubs}
+        ctaTitulo="Asesoría Técnica Especializada"
+        ctaTexto="Te ayudamos a seleccionar equipos contra incendios con base en riesgo, normatividad y alcance de tu proyecto."
+      />
+    </Fragment>
+  </BlogGrid>
 
   <!-- CTA intermedio -->
   <section class="blog-cta-section">

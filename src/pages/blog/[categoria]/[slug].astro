@@ -44,6 +44,33 @@ const { Content, headings } = await render(post);
 const allPosts = await getCollection('blog', ({ data }) => !data.draft);
 const relatedPosts = getRelatedPosts(post, allPosts, 3);
 
+// Enlaces para sidebar (interlinking contextual)
+const toSidebarLink = (entry: typeof allPosts[number]) => ({
+  title: entry.data.title,
+  href: `/blog/${CATEGORY_SLUGS[entry.data.categoria] || entry.data.categoria}/${entry.id}`,
+  categoryLabel: CATEGORY_LABELS[entry.data.categoria] || entry.data.categoria,
+});
+
+const sidebarCategoryPosts = allPosts
+  .filter((entry) => entry.id !== post.id && entry.data.categoria === post.data.categoria)
+  .sort((a, b) => new Date(b.data.fecha).getTime() - new Date(a.data.fecha).getTime())
+  .slice(0, 5)
+  .map(toSidebarLink);
+
+const sidebarCategoryPostUrls = new Set(sidebarCategoryPosts.map((entry) => entry.href));
+
+const sidebarFeaturedPosts = allPosts
+  .filter((entry) => entry.id !== post.id)
+  .sort((a, b) => {
+    if (Boolean(b.data.destacado) !== Boolean(a.data.destacado)) {
+      return Number(Boolean(b.data.destacado)) - Number(Boolean(a.data.destacado));
+    }
+    return new Date(b.data.fecha).getTime() - new Date(a.data.fecha).getTime();
+  })
+  .map(toSidebarLink)
+  .filter((entry) => !sidebarCategoryPostUrls.has(entry.href))
+  .slice(0, 4);
+
 // Tags para sidebar
 const allTags = getAllTags(allPosts);
 
@@ -177,7 +204,15 @@ const breadcrumbSchema = buildBreadcrumbSchema([
         </div>
 
         <!-- Sidebar -->
-        <BlogSidebar headings={tocItems} tags={allTags} showCTA={true} categorySlug={categorySlug} />
+        <BlogSidebar
+          layoutVariant="article"
+          headings={tocItems}
+          tags={allTags}
+          showCTA={true}
+          categorySlug={categorySlug}
+          categoryPosts={sidebarCategoryPosts}
+          featuredPosts={sidebarFeaturedPosts}
+        />
       </div>
     </div>
   </article>

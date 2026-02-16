@@ -6,8 +6,8 @@
 import Layout from '../../../layouts/Base.astro';
 import { getCollection } from 'astro:content';
 import BlogGrid from '../../../components/blog/BlogGrid.astro';
-import BlogTags from '../../../components/blog/BlogTags.astro';
-import { getAllTags } from '../../../lib/blogHelpers';
+import BlogSidebar from '../../../components/blog/BlogSidebar.astro';
+import { getAllTags, CATEGORY_LABELS, CATEGORY_SLUGS } from '../../../lib/blogHelpers';
 import { buildBreadcrumbSchema } from '../../../lib/seo';
 
 export async function getStaticPaths() {
@@ -34,6 +34,33 @@ const { tag, posts } = Astro.props;
 const allPosts = await getCollection('blog', ({ data }) => !data.draft);
 const allTags = getAllTags(allPosts);
 
+const toSidebarLink = (entry: typeof allPosts[number]) => ({
+  title: entry.data.title,
+  href: `/blog/${CATEGORY_SLUGS[entry.data.categoria] || entry.data.categoria}/${entry.id}`,
+  categoryLabel: CATEGORY_LABELS[entry.data.categoria] || entry.data.categoria,
+});
+
+const sidebarTagPosts = posts.map(toSidebarLink).slice(0, 6);
+const sidebarTagUrls = new Set(sidebarTagPosts.map((entry) => entry.href));
+const sidebarFeaturedPosts = allPosts
+  .sort((a, b) => {
+    if (Boolean(b.data.destacado) !== Boolean(a.data.destacado)) {
+      return Number(Boolean(b.data.destacado)) - Number(Boolean(a.data.destacado));
+    }
+    return new Date(b.data.fecha).getTime() - new Date(a.data.fecha).getTime();
+  })
+  .map(toSidebarLink)
+  .filter((entry) => !sidebarTagUrls.has(entry.href))
+  .slice(0, 4);
+
+const sidebarHubs = [...new Set(posts.map((entry) => entry.data.categoria))]
+  .slice(0, 4)
+  .map((category) => ({
+    title: `Más sobre ${CATEGORY_LABELS[category] || category}`,
+    href: `/blog/${CATEGORY_SLUGS[category] || category}`,
+    description: 'Accede a artículos técnicos relacionados en esta categoría.',
+  }));
+
 // Schema breadcrumb
 const breadcrumbSchema = buildBreadcrumbSchema([
   { name: 'Inicio', url: '/' },
@@ -54,72 +81,26 @@ const breadcrumbSchema = buildBreadcrumbSchema([
   heroSecondaryLink="/blog"
   structuredData={[breadcrumbSchema]}
 >
-  <section class="blog-tag-page">
-    <div class="container">
-      <div class="blog-tag-page__layout">
-        <!-- Contenido principal -->
-        <div class="blog-tag-page__main">
-          <BlogGrid posts={posts} columns={2} />
-
-          {posts.length === 0 && (
-            <div class="blog-tag-page__empty">
-              <p>No hay artículos con esta etiqueta.</p>
-              <a href="/blog" class="btn btn--primary">Ver todos los artículos</a>
-            </div>
-          )}
-        </div>
-
-        <!-- Sidebar con tags -->
-        <aside class="blog-tag-page__sidebar">
-          <div class="blog-tag-page__widget">
-            <BlogTags tags={allTags} activeTag={tag} titulo="Todas las Etiquetas" />
-          </div>
-        </aside>
-      </div>
-    </div>
-  </section>
+  <BlogGrid
+    posts={posts}
+    titulo={`Resultados para la etiqueta: ${tag}`}
+    subtitulo={`${posts.length} ${posts.length === 1 ? 'artículo técnico encontrado' : 'artículos técnicos encontrados'} con esta etiqueta.`}
+    columns={2}
+    background="white"
+    showCount={true}
+  >
+    <Fragment slot="sidebar">
+      <BlogSidebar
+        layoutVariant="tag"
+        tags={allTags}
+        showCTA={true}
+        featuredPosts={sidebarFeaturedPosts}
+        recentPosts={sidebarTagPosts}
+        recentPostsTitle={`Más sobre "${tag}"`}
+        interlinkHubs={sidebarHubs}
+        ctaTitulo="¿Necesitas asesoría para tu proyecto?"
+        ctaTexto="Nuestro equipo técnico te ayuda a elegir equipos contra incendios compatibles con tu operación y normativa aplicable."
+      />
+    </Fragment>
+  </BlogGrid>
 </Layout>
-
-<style>
-  .blog-tag-page {
-    padding: var(--spacing-3xl) 0;
-    background: var(--color-white);
-  }
-
-  .blog-tag-page__layout {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: var(--spacing-2xl);
-  }
-
-  .blog-tag-page__empty {
-    text-align: center;
-    padding: var(--spacing-2xl);
-    background: var(--color-accent);
-    border-radius: var(--border-radius);
-  }
-
-  .blog-tag-page__empty p {
-    margin-bottom: var(--spacing-lg);
-    color: var(--color-text-light);
-  }
-
-  .blog-tag-page__widget {
-    background: var(--color-white);
-    border: 1px solid var(--color-border);
-    border-radius: var(--border-radius);
-    padding: var(--spacing-md);
-  }
-
-  @media (min-width: 1024px) {
-    .blog-tag-page__layout {
-      grid-template-columns: 1fr 300px;
-    }
-
-    .blog-tag-page__sidebar {
-      position: sticky;
-      top: calc(var(--header-height) + var(--spacing-lg));
-      height: fit-content;
-    }
-  }
-</style>

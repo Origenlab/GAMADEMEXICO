@@ -7,12 +7,13 @@
 import Layout from '../../../layouts/Base.astro';
 import { getCollection } from 'astro:content';
 import BlogGrid from '../../../components/blog/BlogGrid.astro';
+import BlogSidebar from '../../../components/blog/BlogSidebar.astro';
 import BlogCategories from '../../../components/blog/BlogCategories.astro';
 import {
   getCategoriesWithCount,
+  getAllTags,
   CATEGORY_LABELS,
   CATEGORY_SLUGS,
-  SLUG_TO_CATEGORY,
 } from '../../../lib/blogHelpers';
 import { buildBreadcrumbSchema } from '../../../lib/seo';
 
@@ -147,6 +148,33 @@ const categoryLabel = CATEGORY_LABELS[category] || category;
 // Obtener todas las categorías para navegación
 const allPosts = await getCollection('blog', ({ data }) => !data.draft);
 const allCategories = getCategoriesWithCount(allPosts);
+const allTags = getAllTags(allPosts);
+
+const toSidebarLink = (entry: typeof allPosts[number]) => ({
+  title: entry.data.title,
+  href: `/blog/${CATEGORY_SLUGS[entry.data.categoria] || entry.data.categoria}/${entry.id}`,
+  categoryLabel: CATEGORY_LABELS[entry.data.categoria] || entry.data.categoria,
+});
+
+const sidebarCategoryPosts = posts.slice(0, 6).map(toSidebarLink);
+const sidebarCategoryPostUrls = new Set(sidebarCategoryPosts.map((entry) => entry.href));
+const sidebarFeaturedPosts = allPosts
+  .filter((entry) => entry.data.categoria !== category)
+  .sort((a, b) => {
+    if (Boolean(b.data.destacado) !== Boolean(a.data.destacado)) {
+      return Number(Boolean(b.data.destacado)) - Number(Boolean(a.data.destacado));
+    }
+    return new Date(b.data.fecha).getTime() - new Date(a.data.fecha).getTime();
+  })
+  .map(toSidebarLink)
+  .filter((entry) => !sidebarCategoryPostUrls.has(entry.href))
+  .slice(0, 4);
+
+const sidebarRecentPosts = allPosts
+  .sort((a, b) => new Date(b.data.fecha).getTime() - new Date(a.data.fecha).getTime())
+  .map(toSidebarLink)
+  .filter((entry) => !sidebarCategoryPostUrls.has(entry.href))
+  .slice(0, 6);
 
 // Schema breadcrumb
 const breadcrumbSchema = buildBreadcrumbSchema([
@@ -185,8 +213,22 @@ const breadcrumbSchema = buildBreadcrumbSchema([
     titulo={`${posts.length} ${posts.length === 1 ? 'artículo' : 'artículos'} sobre ${categoryLabel}`}
     subtitulo="Contenido técnico desarrollado por ingenieros especializados"
     columns={3}
-    categorySlug={categorySlug}
-  />
+  >
+    <Fragment slot="sidebar">
+      <BlogSidebar
+        layoutVariant="category"
+        tags={allTags}
+        showCTA={true}
+        categorySlug={categorySlug}
+        categoryPosts={sidebarCategoryPosts}
+        featuredPosts={sidebarFeaturedPosts}
+        recentPosts={sidebarRecentPosts}
+        recentPostsTitle="Publicaciones Recientes"
+        ctaTitulo={`¿Proyecto de ${categoryLabel}?`}
+        ctaTexto="Recibe recomendación técnica de equipos, compatibilidades y tiempos de entrega para tu operación."
+      />
+    </Fragment>
+  </BlogGrid>
 
   {posts.length === 0 && (
     <section class="blog-empty">
