@@ -1,0 +1,509 @@
+---
+// =============================================================================
+// EmpresasRecomendadas - Sistema inteligente de recomendación de empresas
+// Lógica de selección basada en:
+// 1. Empresas con sistemas similares (alta prioridad)
+// 2. Empresas del mismo giro en diferentes ciudades
+// 3. Empresas destacadas de otros giros
+// 4. Rotación para diversidad
+// =============================================================================
+
+import { getCollection } from 'astro:content';
+import CategoryCard from '../CategoryCard.astro';
+
+interface Props {
+  empresaActual: {
+    slug: string;
+    giro: string;
+    ciudad: string;
+    estado: string;
+    tipoSistema: string[];
+  };
+  titulo?: string;
+  subtitulo?: string;
+  limit?: number;
+}
+
+const {
+  empresaActual,
+  titulo = 'Empresas con Protección Similar',
+  subtitulo = 'Otros establecimientos certificados que podrían interesarte',
+  limit = 6,
+} = Astro.props;
+
+// Mapeo de giros
+const giroLabels: Record<string, string> = {
+  hotel: 'Hotel',
+  restaurante: 'Restaurante',
+  oficina: 'Oficina',
+  almacen: 'Almacén',
+  hospital: 'Hospital',
+  escuela: 'Escuela',
+  industria: 'Industria',
+  comercio: 'Comercio',
+  residencial: 'Residencial',
+  otro: 'Otro'
+};
+
+const sistemaLabels: Record<string, string> = {
+  'rociadores-automaticos': 'Rociadores Automáticos',
+  'red-hidrantes': 'Red de Hidrantes',
+  'extintores': 'Extintores',
+  'deteccion-alarma': 'Detección y Alarma',
+  'fm200': 'FM-200',
+  'co2': 'CO2',
+  'espuma': 'Espuma',
+  'gabinetes': 'Gabinetes',
+  'senalizacion': 'Señalización'
+};
+
+// Obtener todas las empresas excepto la actual
+const todasEmpresas = await getCollection('empresasCertificadas');
+const otrasEmpresas = todasEmpresas.filter(e => e.data.slug !== empresaActual.slug);
+
+// Función para calcular similitud entre dos empresas
+const calcularSimilitud = (empresa: any) => {
+  let score = 0;
+  const data = empresa.data;
+
+  // 1. Sistemas en común (máximo 30 puntos)
+  const sistemasComunes = empresaActual.tipoSistema.filter(s =>
+    data.tipoSistema.includes(s)
+  );
+  score += sistemasComunes.length * 6;
+
+  // 2. Mismo giro pero diferente ciudad (15 puntos)
+  if (data.giro === empresaActual.giro && data.ciudad !== empresaActual.ciudad) {
+    score += 15;
+  }
+
+  // 3. Misma ciudad pero diferente giro (10 puntos)
+  if (data.ciudad === empresaActual.ciudad && data.giro !== empresaActual.giro) {
+    score += 10;
+  }
+
+  // 4. Mismo estado (5 puntos)
+  if (data.estado === empresaActual.estado && data.ciudad !== empresaActual.ciudad) {
+    score += 5;
+  }
+
+  // 5. Empresa destacada (8 puntos)
+  if (data.destacado) {
+    score += 8;
+  }
+
+  // 6. Empresa verificada (3 puntos)
+  if (data.verificado) {
+    score += 3;
+  }
+
+  // 7. Certificación vigente (5 puntos)
+  if (data.certificacionVigente) {
+    score += 5;
+  }
+
+  // 8. Cantidad de sistemas (más completa = más relevante)
+  score += Math.min(data.tipoSistema.length, 5);
+
+  return score;
+};
+
+// Hash para variación
+const hashSlug = (slug: string): number => {
+  let hash = 0;
+  for (let i = 0; i < slug.length; i++) {
+    hash = ((hash << 5) - hash) + slug.charCodeAt(i);
+    hash = hash & hash;
+  }
+  return Math.abs(hash);
+};
+
+const seedValue = hashSlug(empresaActual.slug);
+
+// Calcular scores y ordenar
+const empresasConScore = otrasEmpresas.map(empresa => ({
+  empresa,
+  score: calcularSimilitud(empresa),
+  variacion: (hashSlug(empresa.data.slug) + seedValue) % 50
+}));
+
+// Ordenar por score, con variación para diversidad
+empresasConScore.sort((a, b) => {
+  const scoreDiff = b.score - a.score;
+  if (Math.abs(scoreDiff) > 10) return scoreDiff;
+  return a.variacion - b.variacion;
+});
+
+// Seleccionar top empresas
+const empresasRecomendadas = empresasConScore.slice(0, limit).map(e => e.empresa);
+
+// Agrupar por categoría para mostrar
+const categorias = {
+  mismoGiro: empresasRecomendadas.filter(e =>
+    e.data.giro === empresaActual.giro && e.data.ciudad !== empresaActual.ciudad
+  ).slice(0, 2),
+  mismaCiudad: empresasRecomendadas.filter(e =>
+    e.data.ciudad === empresaActual.ciudad
+  ).slice(0, 2),
+  destacadas: empresasRecomendadas.filter(e =>
+    e.data.destacado && e.data.giro !== empresaActual.giro && e.data.ciudad !== empresaActual.ciudad
+  ).slice(0, 2)
+};
+
+// Combinar para mostrar (sin duplicados)
+const slugsMostrados = new Set<string>();
+const empresasAMostrar: typeof empresasRecomendadas = [];
+
+// Primero agregar del mismo giro
+categorias.mismoGiro.forEach(e => {
+  if (!slugsMostrados.has(e.data.slug) && empresasAMostrar.length < limit) {
+    slugsMostrados.add(e.data.slug);
+    empresasAMostrar.push(e);
+  }
+});
+
+// Luego de la misma ciudad
+categorias.mismaCiudad.forEach(e => {
+  if (!slugsMostrados.has(e.data.slug) && empresasAMostrar.length < limit) {
+    slugsMostrados.add(e.data.slug);
+    empresasAMostrar.push(e);
+  }
+});
+
+// Finalmente destacadas
+categorias.destacadas.forEach(e => {
+  if (!slugsMostrados.has(e.data.slug) && empresasAMostrar.length < limit) {
+    slugsMostrados.add(e.data.slug);
+    empresasAMostrar.push(e);
+  }
+});
+
+// Si faltan, agregar del ranking general
+empresasConScore.forEach(({ empresa }) => {
+  if (!slugsMostrados.has(empresa.data.slug) && empresasAMostrar.length < limit) {
+    slugsMostrados.add(empresa.data.slug);
+    empresasAMostrar.push(empresa);
+  }
+});
+---
+
+{empresasAMostrar.length > 0 && (
+  <section class="empresas-recomendadas">
+    <div class="container">
+      <header class="empresas-recomendadas__header">
+        <h2 class="empresas-recomendadas__title">{titulo}</h2>
+        <p class="empresas-recomendadas__subtitle">{subtitulo}</p>
+      </header>
+
+      <!-- Grid de empresas recomendadas -->
+      <div class="empresas-recomendadas__grid">
+        {empresasAMostrar.map((empresa) => {
+          const sistemasComunes = empresaActual.tipoSistema.filter(s =>
+            empresa.data.tipoSistema.includes(s)
+          );
+
+          return (
+            <article class="empresa-card-enhanced">
+              <div class="empresa-card-enhanced__badge">
+                {empresa.data.giro === empresaActual.giro ? (
+                  <span class="badge badge--giro">Mismo giro</span>
+                ) : empresa.data.ciudad === empresaActual.ciudad ? (
+                  <span class="badge badge--ciudad">Misma ciudad</span>
+                ) : empresa.data.destacado ? (
+                  <span class="badge badge--destacado">Destacado</span>
+                ) : sistemasComunes.length > 0 ? (
+                  <span class="badge badge--sistemas">{sistemasComunes.length} sistemas similares</span>
+                ) : null}
+              </div>
+
+              <h3 class="empresa-card-enhanced__title">
+                <a href={`/empresas-certificadas/${empresa.data.slug}`}>
+                  {empresa.data.nombre}
+                </a>
+              </h3>
+
+              <p class="empresa-card-enhanced__meta">
+                <span class="empresa-card-enhanced__giro">{giroLabels[empresa.data.giro]}</span>
+                <span class="empresa-card-enhanced__separator">·</span>
+                <span class="empresa-card-enhanced__ubicacion">{empresa.data.ciudad}, {empresa.data.estado}</span>
+              </p>
+
+              <!-- Sistemas de la empresa -->
+              <div class="empresa-card-enhanced__sistemas">
+                {empresa.data.tipoSistema.slice(0, 4).map((sistema) => (
+                  <span class={`sistema-tag ${sistemasComunes.includes(sistema) ? 'sistema-tag--match' : ''}`}>
+                    {sistemaLabels[sistema]?.split(' ')[0] || sistema}
+                  </span>
+                ))}
+                {empresa.data.tipoSistema.length > 4 && (
+                  <span class="sistema-tag sistema-tag--more">
+                    +{empresa.data.tipoSistema.length - 4}
+                  </span>
+                )}
+              </div>
+
+              <footer class="empresa-card-enhanced__footer">
+                <span class={`cert-status ${empresa.data.certificacionVigente ? 'cert-status--active' : 'cert-status--expired'}`}>
+                  {empresa.data.certificacionVigente ? 'Certificación vigente' : 'Vencida'}
+                </span>
+                <a href={`/empresas-certificadas/${empresa.data.slug}`} class="empresa-card-enhanced__link">
+                  Ver detalles →
+                </a>
+              </footer>
+            </article>
+          );
+        })}
+      </div>
+
+      <!-- Enlaces de navegación para SEO -->
+      <nav class="empresas-recomendadas__nav">
+        <div class="empresas-recomendadas__nav-group">
+          <h4 class="empresas-recomendadas__nav-title">Explorar por giro:</h4>
+          <div class="empresas-recomendadas__nav-links">
+            <a href="/empresas-certificadas/giro/industria">Industrias</a>
+            <a href="/empresas-certificadas/giro/hotel">Hoteles</a>
+            <a href="/empresas-certificadas/giro/hospital">Hospitales</a>
+            <a href="/empresas-certificadas/giro/comercio">Comercios</a>
+            <a href="/empresas-certificadas/giro/oficina">Oficinas</a>
+          </div>
+        </div>
+        <div class="empresas-recomendadas__nav-group">
+          <h4 class="empresas-recomendadas__nav-title">Por ubicación:</h4>
+          <div class="empresas-recomendadas__nav-links">
+            <a href="/empresas-certificadas/estado/ciudad-de-mexico">CDMX</a>
+            <a href="/empresas-certificadas/estado/nuevo-leon">Nuevo León</a>
+            <a href="/empresas-certificadas/estado/jalisco">Jalisco</a>
+            <a href="/empresas-certificadas/estado/guanajuato">Guanajuato</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+)}
+
+<style>
+  .empresas-recomendadas {
+    padding: var(--spacing-3xl) 0;
+    background: var(--color-white);
+  }
+
+  .empresas-recomendadas__header {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .empresas-recomendadas__title {
+    font-size: var(--font-size-2xl);
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin: 0 0 var(--spacing-xs);
+  }
+
+  .empresas-recomendadas__subtitle {
+    font-size: var(--font-size-base);
+    color: var(--color-text-light);
+    margin: 0;
+  }
+
+  .empresas-recomendadas__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+
+  /* Card mejorada */
+  .empresa-card-enhanced {
+    position: relative;
+    background: var(--color-white);
+    border: 1px solid var(--color-border, #e5e7eb);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-lg);
+    transition: all var(--transition-base);
+  }
+
+  .empresa-card-enhanced:hover {
+    border-color: var(--color-primary);
+    box-shadow: 0 8px 25px rgba(200, 16, 46, 0.1);
+    transform: translateY(-2px);
+  }
+
+  .empresa-card-enhanced__badge {
+    position: absolute;
+    top: var(--spacing-md);
+    right: var(--spacing-md);
+  }
+
+  .badge {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    border-radius: var(--border-radius);
+  }
+
+  .badge--giro {
+    background: #e3f2fd;
+    color: #1565c0;
+  }
+
+  .badge--ciudad {
+    background: #e8f5e9;
+    color: #2e7d32;
+  }
+
+  .badge--destacado {
+    background: #fff3e0;
+    color: #ef6c00;
+  }
+
+  .badge--sistemas {
+    background: #fce4ec;
+    color: #c62828;
+  }
+
+  .empresa-card-enhanced__title {
+    font-size: var(--font-size-lg);
+    font-weight: 700;
+    margin: 0 0 var(--spacing-xs);
+    padding-right: 100px;
+  }
+
+  .empresa-card-enhanced__title a {
+    color: var(--color-secondary);
+    text-decoration: none;
+  }
+
+  .empresa-card-enhanced__title a:hover {
+    color: var(--color-primary);
+  }
+
+  .empresa-card-enhanced__meta {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
+    margin: 0 0 var(--spacing-md);
+  }
+
+  .empresa-card-enhanced__separator {
+    margin: 0 var(--spacing-xs);
+  }
+
+  .empresa-card-enhanced__sistemas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+    margin-bottom: var(--spacing-md);
+  }
+
+  .sistema-tag {
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.7rem;
+    font-weight: 500;
+    background: var(--color-accent);
+    color: var(--color-text);
+    border-radius: var(--border-radius);
+  }
+
+  .sistema-tag--match {
+    background: var(--color-primary);
+    color: var(--color-white);
+  }
+
+  .sistema-tag--more {
+    background: var(--color-secondary);
+    color: var(--color-white);
+  }
+
+  .empresa-card-enhanced__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: var(--spacing-md);
+    border-top: 1px solid var(--color-accent);
+  }
+
+  .cert-status {
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+  }
+
+  .cert-status--active {
+    color: #2e7d32;
+  }
+
+  .cert-status--expired {
+    color: #c62828;
+  }
+
+  .empresa-card-enhanced__link {
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    color: var(--color-primary);
+    text-decoration: none;
+  }
+
+  .empresa-card-enhanced__link:hover {
+    text-decoration: underline;
+  }
+
+  /* Navegación SEO */
+  .empresas-recomendadas__nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-2xl);
+    padding-top: var(--spacing-xl);
+    border-top: 2px solid var(--color-accent);
+  }
+
+  .empresas-recomendadas__nav-group {
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .empresas-recomendadas__nav-title {
+    font-size: var(--font-size-sm);
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin: 0 0 var(--spacing-sm);
+  }
+
+  .empresas-recomendadas__nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+  }
+
+  .empresas-recomendadas__nav-links a {
+    display: inline-block;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    font-size: var(--font-size-xs);
+    font-weight: 500;
+    color: var(--color-text);
+    background: var(--color-accent);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    transition: all var(--transition-fast);
+  }
+
+  .empresas-recomendadas__nav-links a:hover {
+    background: var(--color-primary);
+    color: var(--color-white);
+  }
+
+  @media (min-width: 768px) {
+    .empresas-recomendadas__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .empresas-recomendadas__title {
+      font-size: var(--font-size-3xl);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .empresas-recomendadas__grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+</style>

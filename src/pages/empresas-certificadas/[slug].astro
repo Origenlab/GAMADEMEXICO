@@ -1,10 +1,11 @@
 ---
 import Layout from '../../layouts/Base.astro';
 import SectionHeader from '../../components/SectionHeader.astro';
-import CategoryCard from '../../components/CategoryCard.astro';
 import CtaCatalogo from '../../components/CtaCatalogo.astro';
 import CotizacionForm from '../../components/CotizacionForm.astro';
-import BlogRecent from '../../components/blog/BlogRecent.astro';
+import SidebarDirectorio from '../../components/directorio/SidebarDirectorio.astro';
+import EmpresasRecomendadas from '../../components/directorio/EmpresasRecomendadas.astro';
+import ArticulosRelevantes from '../../components/directorio/ArticulosRelevantes.astro';
 import { getCollection, render } from 'astro:content';
 
 export async function getStaticPaths() {
@@ -188,12 +189,6 @@ const breadcrumbSchema = {
   ]
 };
 
-// Obtener empresas relacionadas (mismo giro o misma ciudad)
-const todasEmpresas = await getCollection('empresasCertificadas');
-const empresasRelacionadas = todasEmpresas
-  .filter(e => e.data.slug !== empresa.data.slug && (e.data.giro === empresa.data.giro || e.data.ciudad === empresa.data.ciudad))
-  .slice(0, 3);
-
 // Formatear fecha
 const formatDate = (dateStr: string) => {
   return new Date(dateStr).toLocaleDateString('es-MX', { day: 'numeric', month: 'long', year: 'numeric' });
@@ -295,176 +290,36 @@ const formatDate = (dateStr: string) => {
           )}
         </div>
 
-        <!-- Sidebar -->
-        <aside class="main-content__sidebar">
-
-          <!-- Tarjeta de Certificación -->
-          <div class="sidebar-card sidebar-card--cert">
-            <div class="sidebar-card__header">
-              <h3 class="sidebar-card__title">Certificación Oficial</h3>
-              <span class={`cert-badge ${empresa.data.certificacionVigente ? 'cert-badge--active' : 'cert-badge--expired'}`}>
-                {empresa.data.certificacionVigente ? 'Vigente' : 'Vencida'}
-              </span>
-            </div>
-            <dl class="cert-data">
-              <div class="cert-data__row">
-                <dt>Certificado por</dt>
-                <dd>{empresa.data.certificadoPor}</dd>
-              </div>
-              <div class="cert-data__row">
-                <dt>Fecha certificación</dt>
-                <dd>{formatDate(empresa.data.fechaCertificacion)}</dd>
-              </div>
-              {empresa.data.fechaVencimiento && (
-                <div class="cert-data__row">
-                  <dt>Vencimiento</dt>
-                  <dd>{formatDate(empresa.data.fechaVencimiento)}</dd>
-                </div>
-              )}
-              <div class="cert-data__row">
-                <dt>Sistemas verificados</dt>
-                <dd><strong>{empresa.data.tipoSistema.length}</strong> activos</dd>
-              </div>
-              <div class="cert-data__row">
-                <dt>Tipo de negocio</dt>
-                <dd>{giroLabels[empresa.data.giro]}</dd>
-              </div>
-            </dl>
-          </div>
-
-          <!-- Mapa y Ubicación -->
-          <div class="sidebar-card">
-            <h3 class="sidebar-card__title">Ubicación</h3>
-            <a
-              href={`https://www.google.com/maps/search/?api=1&query=${empresa.data.latitud},${empresa.data.longitud}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              class="map-preview"
-            >
-              <span class="map-preview__icon">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                  <circle cx="12" cy="10" r="3"/>
-                </svg>
-              </span>
-              <span class="map-preview__text">Ver en Google Maps</span>
-            </a>
-            <address class="location-address">
-              <strong>{empresa.data.direccion}</strong><br/>
-              {empresa.data.colonia}<br/>
-              {empresa.data.ciudad}, {empresa.data.estado}<br/>
-              C.P. {empresa.data.codigoPostal}
-            </address>
-          </div>
-
-          <!-- Contacto -->
-          {(empresa.data.telefono || empresa.data.website || empresa.data.email) && (
-            <div class="sidebar-card">
-              <h3 class="sidebar-card__title">Contacto</h3>
-              <div class="contact-links">
-                {empresa.data.telefono && (
-                  <a href={`tel:${empresa.data.telefono}`} class="contact-link">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-                    </svg>
-                    {empresa.data.telefono}
-                  </a>
-                )}
-                {empresa.data.email && (
-                  <a href={`mailto:${empresa.data.email}`} class="contact-link">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                      <polyline points="22,6 12,13 2,6"/>
-                    </svg>
-                    Enviar correo
-                  </a>
-                )}
-                {empresa.data.website && (
-                  <a href={empresa.data.website} target="_blank" rel="noopener noreferrer" class="contact-link">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <circle cx="12" cy="12" r="10"/>
-                      <line x1="2" y1="12" x2="22" y2="12"/>
-                      <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
-                    </svg>
-                    Visitar sitio web
-                  </a>
-                )}
-              </div>
-            </div>
-          )}
-
-          <!-- Explorar Directorio -->
-          <div class="sidebar-card sidebar-card--nav">
-            <h3 class="sidebar-card__title">Explorar Directorio</h3>
-            <nav class="directory-nav">
-              <a href="/empresas-certificadas" class="directory-nav__link">
-                <span>Todas las empresas certificadas</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M9 18l6-6-6-6"/>
-                </svg>
-              </a>
-              <a href={`/empresas-certificadas/giro/${empresa.data.giro}`} class="directory-nav__link">
-                <span>Más {giroLabels[empresa.data.giro]}s certificados</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M9 18l6-6-6-6"/>
-                </svg>
-              </a>
-              <a href={`/empresas-certificadas/estado/${empresa.data.estado.toLowerCase().replace(/ /g, '-')}`} class="directory-nav__link">
-                <span>Empresas en {empresa.data.estado}</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M9 18l6-6-6-6"/>
-                </svg>
-              </a>
-            </nav>
-          </div>
-
-          <!-- CTA Sidebar -->
-          <div class="sidebar-card sidebar-card--cta">
-            <h3 class="sidebar-card__title">¿Tu empresa necesita certificación?</h3>
-            <p class="sidebar-cta__text">Verifica tus sistemas contra incendios y aparece en nuestro directorio oficial.</p>
-            <a href="#cotizar" class="sidebar-cta__btn">Solicitar certificación</a>
-          </div>
-
-        </aside>
+        <!-- Sidebar Mejorado -->
+        <SidebarDirectorio empresa={empresa.data} />
       </div>
     </div>
   </section>
 
-  <!-- Empresas Relacionadas -->
-  {empresasRelacionadas.length > 0 && (
-    <section class="related-section">
-      <div class="container">
-        <SectionHeader
-          titulo={`Más Empresas con Sistemas Contra Incendios Certificados en ${empresa.data.ciudad}`}
-          subtitulo="Directorio de establecimientos verificados con protección contra incendios en la misma zona"
-          idTitulo="empresas-relacionadas"
-        />
+  <!-- Empresas Recomendadas (Sistema Inteligente) -->
+  <EmpresasRecomendadas
+    empresaActual={{
+      slug: empresa.data.slug,
+      giro: empresa.data.giro,
+      ciudad: empresa.data.ciudad,
+      estado: empresa.data.estado,
+      tipoSistema: empresa.data.tipoSistema
+    }}
+    titulo={`Empresas con Protección Similar en ${empresa.data.estado}`}
+    subtitulo="Otros establecimientos certificados con sistemas de protección contra incendios relacionados"
+    limit={6}
+  />
 
-        <div class="related-grid">
-          {empresasRelacionadas.map((rel) => (
-            <CategoryCard
-              titulo={rel.data.nombre}
-              subtitulo={`${giroLabels[rel.data.giro]} · ${rel.data.ciudad}, ${rel.data.estado}`}
-              enlace={`/empresas-certificadas/${rel.data.slug}`}
-              subcategorias={rel.data.tipoSistema.slice(0, 3).map((sistema) => ({
-                nombre: sistemaInfo[sistema]?.label || sistema,
-                enlace: `/empresas-certificadas/${rel.data.slug}#${sistema}`
-              }))}
-            />
-          ))}
-        </div>
-      </div>
-    </section>
-  )}
-
-  <!-- Artículos Relacionados del Blog -->
-  <BlogRecent
-    titulo="Guías Técnicas sobre Protección Contra Incendios y Normativas de Seguridad"
-    subtitulo="Recursos de nuestro equipo de ingenieros para cumplir con normativas y optimizar tu sistema"
+  <!-- Artículos Relevantes (Diversificados por contexto) -->
+  <ArticulosRelevantes
+    sistemas={empresa.data.tipoSistema}
+    giro={empresa.data.giro}
+    empresaSlug={empresa.data.slug}
+    titulo="Recursos Técnicos para tu Sistema de Protección"
+    subtitulo="Guías y normativas relevantes según los sistemas instalados en esta empresa"
     limit={3}
     columns={3}
     background="white"
-    showViewAll={true}
   />
 
   <!-- CTA: Certifica tu empresa -->
@@ -699,257 +554,9 @@ const formatDate = (dateStr: string) => {
     line-height: var(--line-height-base);
   }
 
-  /* Sidebar */
-  .main-content__sidebar {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-lg);
-  }
-
-  .sidebar-card {
-    background: var(--color-white);
-    border-radius: var(--border-radius-lg);
-    padding: var(--spacing-lg);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
-  }
-
-  .sidebar-card__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: var(--spacing-md);
-    padding-bottom: var(--spacing-sm);
-    border-bottom: 2px solid var(--color-primary);
-  }
-
-  .sidebar-card__title {
-    font-size: var(--font-size-base);
-    font-weight: 700;
-    color: var(--color-secondary);
-    margin: 0;
-  }
-
-  .sidebar-card:not(.sidebar-card--cert) .sidebar-card__title {
-    margin-bottom: var(--spacing-md);
-    padding-bottom: var(--spacing-sm);
-    border-bottom: 2px solid var(--color-primary);
-  }
-
-  /* Certification Badge */
-  .cert-badge {
-    font-size: var(--font-size-xs);
-    font-weight: 700;
-    padding: 0.25rem 0.75rem;
-    border-radius: 20px;
-  }
-
-  .cert-badge--active {
-    background: #e8f5e9;
-    color: #2e7d32;
-  }
-
-  .cert-badge--expired {
-    background: #ffebee;
-    color: #c62828;
-  }
-
-  /* Certification Data */
-  .cert-data {
-    margin: 0;
-  }
-
-  .cert-data__row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: var(--spacing-xs) 0;
-    border-bottom: 1px solid var(--color-accent);
-    font-size: var(--font-size-sm);
-  }
-
-  .cert-data__row:last-child {
-    border-bottom: none;
-  }
-
-  .cert-data__row dt {
-    color: var(--color-text-light);
-  }
-
-  .cert-data__row dd {
-    color: var(--color-secondary);
-    font-weight: 500;
-    margin: 0;
-    text-align: right;
-  }
-
-  /* Map Preview */
-  .map-preview {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: var(--spacing-sm);
-    padding: var(--spacing-lg);
-    background: var(--color-accent);
-    border-radius: var(--border-radius);
-    text-decoration: none;
-    transition: background var(--transition-fast);
-    margin-bottom: var(--spacing-md);
-  }
-
-  .map-preview:hover {
-    background: var(--color-border, #e0e0e0);
-  }
-
-  .map-preview__icon {
-    color: var(--color-primary);
-  }
-
-  .map-preview__text {
-    font-size: var(--font-size-sm);
-    font-weight: 600;
-    color: var(--color-primary);
-  }
-
-  .location-address {
-    font-style: normal;
-    font-size: var(--font-size-sm);
-    line-height: var(--line-height-relaxed);
-    color: var(--color-text);
-  }
-
-  .location-address strong {
-    color: var(--color-secondary);
-  }
-
-  /* Contact Links */
-  .contact-links {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-sm);
-  }
-
-  .contact-link {
-    display: flex;
-    align-items: center;
-    gap: var(--spacing-sm);
-    padding: var(--spacing-sm);
-    background: var(--color-accent);
-    border-radius: var(--border-radius);
-    text-decoration: none;
-    color: var(--color-text);
-    font-size: var(--font-size-sm);
-    font-weight: 500;
-    transition: all var(--transition-fast);
-  }
-
-  .contact-link:hover {
-    background: var(--color-primary);
-    color: var(--color-white);
-  }
-
-  .contact-link svg {
-    flex-shrink: 0;
-    color: var(--color-primary);
-  }
-
-  .contact-link:hover svg {
-    color: var(--color-white);
-  }
-
-  /* Directory Navigation */
-  .directory-nav {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-  }
-
-  .directory-nav__link {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: var(--spacing-sm) 0;
-    border-bottom: 1px solid var(--color-accent);
-    text-decoration: none;
-    color: var(--color-text);
-    font-size: var(--font-size-sm);
-    transition: color var(--transition-fast);
-  }
-
-  .directory-nav__link:last-child {
-    border-bottom: none;
-  }
-
-  .directory-nav__link:hover {
-    color: var(--color-primary);
-  }
-
-  .directory-nav__link svg {
-    color: var(--color-text-light);
-    transition: transform var(--transition-fast);
-  }
-
-  .directory-nav__link:hover svg {
-    transform: translateX(4px);
-    color: var(--color-primary);
-  }
-
-  /* Sidebar CTA */
-  .sidebar-card--cta {
-    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
-    color: var(--color-white);
-  }
-
-  .sidebar-card--cta .sidebar-card__title {
-    color: var(--color-white);
-    border-bottom-color: rgba(255, 255, 255, 0.3);
-  }
-
-  .sidebar-cta__text {
-    font-size: var(--font-size-sm);
-    line-height: var(--line-height-relaxed);
-    margin-bottom: var(--spacing-md);
-    opacity: 0.9;
-  }
-
-  .sidebar-cta__btn {
-    display: block;
-    width: 100%;
-    padding: var(--spacing-sm) var(--spacing-md);
-    background: var(--color-white);
-    color: var(--color-primary);
-    font-weight: 600;
-    font-size: var(--font-size-sm);
-    text-align: center;
-    text-decoration: none;
-    border-radius: var(--border-radius);
-    transition: all var(--transition-fast);
-  }
-
-  .sidebar-cta__btn:hover {
-    background: var(--color-accent);
-    transform: translateY(-2px);
-  }
-
-  /* Related Section */
-  .related-section {
-    padding: var(--spacing-3xl) 0;
-    background: var(--color-white);
-  }
-
-  .related-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: var(--spacing-lg);
-    margin-top: var(--spacing-xl);
-  }
 
   /* Responsive */
   @media (min-width: 768px) {
-    .related-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
     .sistema-detail__footer {
       flex-direction: row;
       gap: var(--spacing-xl);
@@ -965,16 +572,6 @@ const formatDate = (dateStr: string) => {
     .main-content__grid {
       grid-template-columns: 1fr 340px;
       gap: var(--spacing-2xl);
-    }
-
-    .related-grid {
-      grid-template-columns: repeat(3, 1fr);
-    }
-
-    .main-content__sidebar {
-      position: sticky;
-      top: var(--spacing-lg);
-      align-self: start;
     }
 
     .sistema-detail {

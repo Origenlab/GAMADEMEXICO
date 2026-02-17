@@ -1,0 +1,294 @@
+---
+// =============================================================================
+// ArticulosRelevantes - Artículos diversificados según contexto de empresa
+// Muestra artículos diferentes basándose en:
+// - Sistemas instalados en la empresa
+// - Giro del negocio
+// - Rotación basada en slug para diversidad
+// =============================================================================
+
+import { getCollection } from 'astro:content';
+import BlogCard from '../blog/BlogCard.astro';
+
+interface Props {
+  sistemas?: string[];  // Sistemas de la empresa para relevancia
+  giro?: string;        // Giro para filtrar artículos
+  empresaSlug?: string; // Slug para crear variación
+  titulo?: string;
+  subtitulo?: string;
+  limit?: number;
+  columns?: 2 | 3;
+  background?: 'white' | 'accent';
+}
+
+const {
+  sistemas = [],
+  giro = '',
+  empresaSlug = '',
+  titulo = 'Recursos Técnicos para tu Sistema de Protección',
+  subtitulo = 'Guías y normativas de nuestro equipo de ingenieros especializados',
+  limit = 3,
+  columns = 3,
+  background = 'accent',
+} = Astro.props;
+
+// Mapeo de sistemas a palabras clave para búsqueda de artículos
+const sistemasKeywords: Record<string, string[]> = {
+  'rociadores-automaticos': ['rociadores', 'sprinklers', 'nfpa 13', 'sistemas fijos'],
+  'red-hidrantes': ['hidrantes', 'mangueras', 'gabinetes', 'nfpa 14'],
+  'extintores': ['extintores', 'portátiles', 'abc', 'nfpa 10'],
+  'deteccion-alarma': ['detección', 'alarma', 'detectores', 'nfpa 72'],
+  'fm200': ['fm-200', 'agente limpio', 'nfpa 2001', 'hfc-227ea'],
+  'co2': ['co2', 'dióxido', 'nfpa 12'],
+  'espuma': ['espuma', 'afff', 'nfpa 11', 'nfpa 16'],
+  'gabinetes': ['gabinetes', 'mangueras', 'boquillas'],
+  'senalizacion': ['señalización', 'evacuación', 'nom-003-segob'],
+};
+
+// Mapeo de giro a categorías de artículos relevantes
+const giroCategories: Record<string, string[]> = {
+  'hotel': ['normativas', 'guias-tecnicas', 'mantenimiento'],
+  'restaurante': ['normativas', 'guias-tecnicas'],
+  'hospital': ['normativas', 'guias-tecnicas', 'industria'],
+  'industria': ['industria', 'normativas', 'guias-tecnicas'],
+  'almacen': ['industria', 'normativas'],
+  'oficina': ['normativas', 'guias-tecnicas'],
+  'escuela': ['normativas', 'guias-tecnicas'],
+  'comercio': ['normativas', 'guias-tecnicas'],
+};
+
+// Obtener todos los posts
+let allPosts = await getCollection('blog', ({ data }) => !data.draft);
+
+// Función para calcular relevancia de un artículo
+const calcularRelevancia = (post: any) => {
+  let score = 0;
+  const titulo = post.data.title.toLowerCase();
+  const descripcion = (post.data.description || '').toLowerCase();
+  const contenido = titulo + ' ' + descripcion;
+
+  // Puntos por sistemas coincidentes
+  sistemas.forEach(sistema => {
+    const keywords = sistemasKeywords[sistema] || [];
+    keywords.forEach(keyword => {
+      if (contenido.includes(keyword.toLowerCase())) {
+        score += 10;
+      }
+    });
+  });
+
+  // Puntos por categoría de giro
+  const categoriasRelevantes = giroCategories[giro] || [];
+  if (categoriasRelevantes.includes(post.data.categoria)) {
+    score += 5;
+  }
+
+  // Puntos por artículos destacados
+  if (post.data.destacado) {
+    score += 3;
+  }
+
+  // Puntos por artículos recientes (últimos 60 días)
+  const fechaPost = new Date(post.data.fecha);
+  const ahora = new Date();
+  const diasAntiguedad = Math.floor((ahora.getTime() - fechaPost.getTime()) / (1000 * 60 * 60 * 24));
+  if (diasAntiguedad < 60) {
+    score += 2;
+  }
+
+  return score;
+};
+
+// Crear variación basada en el slug de la empresa
+const hashSlug = (slug: string): number => {
+  let hash = 0;
+  for (let i = 0; i < slug.length; i++) {
+    const char = slug.charCodeAt(i);
+    hash = ((hash << 5) - hash) + char;
+    hash = hash & hash;
+  }
+  return Math.abs(hash);
+};
+
+const seedValue = hashSlug(empresaSlug);
+
+// Ordenar posts por relevancia + variación
+const postsConRelevancia = allPosts.map(post => ({
+  post,
+  relevancia: calcularRelevancia(post),
+  // Añadir variación pseudo-aleatoria basada en el slug
+  variacion: (hashSlug(post.id) + seedValue) % 100
+}));
+
+// Ordenar: primero por relevancia, luego por variación para diversidad
+postsConRelevancia.sort((a, b) => {
+  // Si hay diferencia significativa de relevancia, usar eso
+  if (Math.abs(a.relevancia - b.relevancia) > 5) {
+    return b.relevancia - a.relevancia;
+  }
+  // Si relevancia similar, usar variación para diversidad
+  return a.variacion - b.variacion;
+});
+
+// Tomar los primeros 'limit' posts
+const postsSeleccionados = postsConRelevancia.slice(0, limit).map(p => p.post);
+
+// Determinar enlace "Ver todos" basado en categoría más común
+const categoriaComun = postsSeleccionados[0]?.data.categoria || 'normativas';
+const viewAllLink = `/blog/${categoriaComun}`;
+---
+
+{postsSeleccionados.length > 0 && (
+  <section class={`articulos-relevantes articulos-relevantes--${background}`}>
+    <div class="container">
+      <div class="articulos-relevantes__header">
+        <div class="articulos-relevantes__header-text">
+          <h2 class="articulos-relevantes__title">{titulo}</h2>
+          {subtitulo && <p class="articulos-relevantes__subtitle">{subtitulo}</p>}
+        </div>
+        <a href={viewAllLink} class="btn btn--outline btn--sm">
+          Ver más artículos →
+        </a>
+      </div>
+
+      <div class={`articulos-relevantes__grid articulos-relevantes__grid--${columns}-cols`}>
+        {postsSeleccionados.map((post) => (
+          <BlogCard
+            title={post.data.title}
+            description={post.data.description}
+            slug={post.id}
+            fecha={post.data.fecha}
+            categoria={post.data.categoria}
+            autor={post.data.autor}
+            imagen={post.data.imagen}
+            imagenAlt={post.data.imagenAlt}
+            tiempoLectura={post.data.tiempoLectura}
+          />
+        ))}
+      </div>
+
+      <!-- Enlaces adicionales por categoría para SEO -->
+      <nav class="articulos-relevantes__nav" aria-label="Categorías de artículos">
+        <span class="articulos-relevantes__nav-label">Explorar por tema:</span>
+        <a href="/blog/normativas" class="articulos-relevantes__nav-link">Normativas NFPA y NOM</a>
+        <a href="/blog/guias-tecnicas" class="articulos-relevantes__nav-link">Guías Técnicas</a>
+        <a href="/blog/industria" class="articulos-relevantes__nav-link">Industria</a>
+        <a href="/blog/mantenimiento" class="articulos-relevantes__nav-link">Mantenimiento</a>
+      </nav>
+    </div>
+  </section>
+)}
+
+<style>
+  .articulos-relevantes {
+    padding: var(--spacing-3xl) 0;
+  }
+
+  .articulos-relevantes--white {
+    background: var(--color-white);
+  }
+
+  .articulos-relevantes--accent {
+    background: var(--color-accent);
+  }
+
+  .articulos-relevantes__header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .articulos-relevantes__header-text {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+  }
+
+  .articulos-relevantes__title {
+    margin: 0;
+    font-size: var(--font-size-2xl);
+    font-weight: 700;
+    color: var(--color-secondary);
+  }
+
+  .articulos-relevantes__subtitle {
+    margin: 0;
+    font-size: var(--font-size-base);
+    color: var(--color-text-light);
+  }
+
+  .articulos-relevantes__grid {
+    display: grid;
+    gap: var(--spacing-lg);
+  }
+
+  .articulos-relevantes__grid--2-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .articulos-relevantes__grid--3-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .articulos-relevantes__nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-xl);
+    padding-top: var(--spacing-lg);
+    border-top: 1px solid var(--color-border, #e5e7eb);
+  }
+
+  .articulos-relevantes__nav-label {
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    color: var(--color-secondary);
+  }
+
+  .articulos-relevantes__nav-link {
+    display: inline-block;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    font-size: var(--font-size-xs);
+    font-weight: 500;
+    color: var(--color-text);
+    background: var(--color-white);
+    border: 1px solid var(--color-border, #e5e7eb);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    transition: all var(--transition-fast);
+  }
+
+  .articulos-relevantes__nav-link:hover {
+    background: var(--color-primary);
+    color: var(--color-white);
+    border-color: var(--color-primary);
+  }
+
+  @media (min-width: 768px) {
+    .articulos-relevantes__header {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    .articulos-relevantes__grid--2-cols {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .articulos-relevantes__grid--3-cols {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .articulos-relevantes__title {
+      font-size: var(--font-size-3xl);
+    }
+
+    .articulos-relevantes__grid--3-cols {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+</style>

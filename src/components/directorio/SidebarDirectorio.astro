@@ -1,0 +1,708 @@
+---
+// =============================================================================
+// SidebarDirectorio - Sidebar mejorado con interlinking para SEO
+// Incluye:
+// - Información de certificación
+// - Navegación por sistemas
+// - Navegación geográfica
+// - Empresas destacadas del mismo giro
+// - CTAs contextuales
+// =============================================================================
+
+import { getCollection } from 'astro:content';
+
+interface Props {
+  empresa: {
+    nombre: string;
+    slug: string;
+    giro: string;
+    ciudad: string;
+    estado: string;
+    direccion: string;
+    colonia: string;
+    codigoPostal: string;
+    latitud: number;
+    longitud: number;
+    tipoSistema: string[];
+    telefono?: string;
+    email?: string;
+    website?: string;
+    fechaCertificacion: string;
+    fechaVencimiento?: string;
+    certificacionVigente: boolean;
+    certificadoPor: string;
+  };
+}
+
+const { empresa } = Astro.props;
+
+// Mapeos
+const giroLabels: Record<string, string> = {
+  hotel: 'Hotel',
+  restaurante: 'Restaurante',
+  oficina: 'Oficina',
+  almacen: 'Almacén',
+  hospital: 'Hospital',
+  escuela: 'Escuela',
+  industria: 'Industria',
+  comercio: 'Comercio',
+  residencial: 'Residencial',
+  otro: 'Otro'
+};
+
+const sistemaLabels: Record<string, string> = {
+  'rociadores-automaticos': 'Rociadores Automáticos',
+  'red-hidrantes': 'Red de Hidrantes',
+  'extintores': 'Extintores',
+  'deteccion-alarma': 'Detección y Alarma',
+  'fm200': 'FM-200',
+  'co2': 'CO2',
+  'espuma': 'Espuma',
+  'gabinetes': 'Gabinetes',
+  'senalizacion': 'Señalización'
+};
+
+// Formatear fecha
+const formatDate = (dateStr: string) => {
+  return new Date(dateStr).toLocaleDateString('es-MX', { day: 'numeric', month: 'long', year: 'numeric' });
+};
+
+// Obtener empresas destacadas del mismo giro (para interlinking)
+const todasEmpresas = await getCollection('empresasCertificadas');
+const empresasDestacadasGiro = todasEmpresas
+  .filter(e =>
+    e.data.slug !== empresa.slug &&
+    e.data.giro === empresa.giro &&
+    e.data.destacado
+  )
+  .slice(0, 3);
+
+// Obtener otras ciudades del mismo estado
+const ciudadesDelEstado = [...new Set(
+  todasEmpresas
+    .filter(e => e.data.estado === empresa.estado && e.data.ciudad !== empresa.ciudad)
+    .map(e => e.data.ciudad)
+)].slice(0, 5);
+
+// Slug del estado
+const estadoSlug = empresa.estado.toLowerCase().replace(/ /g, '-');
+const ciudadSlug = empresa.ciudad.toLowerCase().replace(/ /g, '-');
+---
+
+<aside class="sidebar-directorio">
+  <!-- Tarjeta de Certificación -->
+  <div class="sidebar-card sidebar-card--cert">
+    <div class="sidebar-card__header">
+      <h3 class="sidebar-card__title">Certificación Oficial</h3>
+      <span class={`cert-badge ${empresa.certificacionVigente ? 'cert-badge--active' : 'cert-badge--expired'}`}>
+        {empresa.certificacionVigente ? 'Vigente' : 'Vencida'}
+      </span>
+    </div>
+    <dl class="cert-data">
+      <div class="cert-data__row">
+        <dt>Certificado por</dt>
+        <dd>{empresa.certificadoPor}</dd>
+      </div>
+      <div class="cert-data__row">
+        <dt>Fecha certificación</dt>
+        <dd>{formatDate(empresa.fechaCertificacion)}</dd>
+      </div>
+      {empresa.fechaVencimiento && (
+        <div class="cert-data__row">
+          <dt>Vencimiento</dt>
+          <dd>{formatDate(empresa.fechaVencimiento)}</dd>
+        </div>
+      )}
+      <div class="cert-data__row">
+        <dt>Sistemas verificados</dt>
+        <dd><strong>{empresa.tipoSistema.length}</strong> activos</dd>
+      </div>
+      <div class="cert-data__row">
+        <dt>Tipo de negocio</dt>
+        <dd>
+          <a href={`/empresas-certificadas/giro/${empresa.giro}`} class="cert-data__link">
+            {giroLabels[empresa.giro]}
+          </a>
+        </dd>
+      </div>
+    </dl>
+  </div>
+
+  <!-- Sistemas Instalados (con links a productos) -->
+  <div class="sidebar-card">
+    <h3 class="sidebar-card__title">Sistemas Certificados</h3>
+    <nav class="sistemas-nav">
+      {empresa.tipoSistema.map((sistema) => (
+        <a href={`#${sistema}`} class="sistemas-nav__link">
+          <span class="sistemas-nav__icon">✓</span>
+          <span class="sistemas-nav__text">{sistemaLabels[sistema]}</span>
+        </a>
+      ))}
+    </nav>
+    <div class="sistemas-cta">
+      <a href="/equipos" class="sistemas-cta__link">
+        Ver equipos en catálogo →
+      </a>
+    </div>
+  </div>
+
+  <!-- Mapa y Ubicación -->
+  <div class="sidebar-card">
+    <h3 class="sidebar-card__title">Ubicación</h3>
+    <a
+      href={`https://www.google.com/maps/search/?api=1&query=${empresa.latitud},${empresa.longitud}`}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="map-preview"
+    >
+      <span class="map-preview__icon">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+          <circle cx="12" cy="10" r="3"/>
+        </svg>
+      </span>
+      <span class="map-preview__text">Ver en Google Maps</span>
+    </a>
+    <address class="location-address">
+      <strong>{empresa.direccion}</strong><br/>
+      {empresa.colonia}<br/>
+      <a href={`/empresas-certificadas/estado/${estadoSlug}/${ciudadSlug}`}>{empresa.ciudad}</a>,
+      <a href={`/empresas-certificadas/estado/${estadoSlug}`}>{empresa.estado}</a><br/>
+      C.P. {empresa.codigoPostal}
+    </address>
+  </div>
+
+  <!-- Contacto -->
+  {(empresa.telefono || empresa.website || empresa.email) && (
+    <div class="sidebar-card">
+      <h3 class="sidebar-card__title">Contacto</h3>
+      <div class="contact-links">
+        {empresa.telefono && (
+          <a href={`tel:${empresa.telefono}`} class="contact-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            {empresa.telefono}
+          </a>
+        )}
+        {empresa.email && (
+          <a href={`mailto:${empresa.email}`} class="contact-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            Enviar correo
+          </a>
+        )}
+        {empresa.website && (
+          <a href={empresa.website} target="_blank" rel="noopener noreferrer" class="contact-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <line x1="2" y1="12" x2="22" y2="12"/>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+            Sitio web oficial
+          </a>
+        )}
+      </div>
+    </div>
+  )}
+
+  <!-- Empresas destacadas del mismo giro -->
+  {empresasDestacadasGiro.length > 0 && (
+    <div class="sidebar-card">
+      <h3 class="sidebar-card__title">{giroLabels[empresa.giro]}s Destacados</h3>
+      <ul class="destacados-list">
+        {empresasDestacadasGiro.map((emp) => (
+          <li class="destacados-item">
+            <a href={`/empresas-certificadas/${emp.data.slug}`} class="destacados-link">
+              <span class="destacados-nombre">{emp.data.nombre}</span>
+              <span class="destacados-ciudad">{emp.data.ciudad}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+      <a href={`/empresas-certificadas/giro/${empresa.giro}`} class="destacados-ver-mas">
+        Ver todos los {giroLabels[empresa.giro].toLowerCase()}s →
+      </a>
+    </div>
+  )}
+
+  <!-- Otras ciudades del estado -->
+  {ciudadesDelEstado.length > 0 && (
+    <div class="sidebar-card">
+      <h3 class="sidebar-card__title">Otras ciudades en {empresa.estado}</h3>
+      <div class="ciudades-tags">
+        {ciudadesDelEstado.map((ciudad) => (
+          <a
+            href={`/empresas-certificadas/estado/${estadoSlug}/${ciudad.toLowerCase().replace(/ /g, '-')}`}
+            class="ciudad-tag"
+          >
+            {ciudad}
+          </a>
+        ))}
+      </div>
+    </div>
+  )}
+
+  <!-- Explorar Directorio -->
+  <div class="sidebar-card sidebar-card--nav">
+    <h3 class="sidebar-card__title">Explorar Directorio</h3>
+    <nav class="directory-nav">
+      <a href="/empresas-certificadas" class="directory-nav__link">
+        <span>Todas las empresas certificadas</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M9 18l6-6-6-6"/>
+        </svg>
+      </a>
+      <a href={`/empresas-certificadas/giro/${empresa.giro}`} class="directory-nav__link">
+        <span>Más {giroLabels[empresa.giro]}s certificados</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M9 18l6-6-6-6"/>
+        </svg>
+      </a>
+      <a href={`/empresas-certificadas/estado/${estadoSlug}`} class="directory-nav__link">
+        <span>Empresas en {empresa.estado}</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M9 18l6-6-6-6"/>
+        </svg>
+      </a>
+      <a href={`/empresas-certificadas/estado/${estadoSlug}/${ciudadSlug}`} class="directory-nav__link">
+        <span>Empresas en {empresa.ciudad}</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M9 18l6-6-6-6"/>
+        </svg>
+      </a>
+    </nav>
+  </div>
+
+  <!-- CTA Sidebar -->
+  <div class="sidebar-card sidebar-card--cta">
+    <h3 class="sidebar-card__title">¿Tu {giroLabels[empresa.giro].toLowerCase()} necesita certificación?</h3>
+    <p class="sidebar-cta__text">Verifica tus sistemas contra incendios y aparece en nuestro directorio oficial con más de 50 empresas certificadas.</p>
+    <a href="#cotizar" class="sidebar-cta__btn">Solicitar certificación</a>
+  </div>
+
+  <!-- Quick Links SEO -->
+  <div class="sidebar-card sidebar-card--seo">
+    <h3 class="sidebar-card__title">Enlaces Rápidos</h3>
+    <div class="quick-links">
+      <a href="/blog/normativas">Normativas NFPA</a>
+      <a href="/equipos">Catálogo de Equipos</a>
+      <a href="/servicios">Nuestros Servicios</a>
+      <a href="/contacto">Contactar Gama de México</a>
+    </div>
+  </div>
+</aside>
+
+<style>
+  .sidebar-directorio {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+  }
+
+  .sidebar-card {
+    background: var(--color-white);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-lg);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  }
+
+  .sidebar-card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 2px solid var(--color-primary);
+  }
+
+  .sidebar-card__title {
+    font-size: var(--font-size-base);
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin: 0;
+  }
+
+  .sidebar-card:not(.sidebar-card--cert) .sidebar-card__title {
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 2px solid var(--color-primary);
+  }
+
+  /* Certification Badge */
+  .cert-badge {
+    font-size: var(--font-size-xs);
+    font-weight: 700;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+  }
+
+  .cert-badge--active {
+    background: #e8f5e9;
+    color: #2e7d32;
+  }
+
+  .cert-badge--expired {
+    background: #ffebee;
+    color: #c62828;
+  }
+
+  /* Certification Data */
+  .cert-data {
+    margin: 0;
+  }
+
+  .cert-data__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-xs) 0;
+    border-bottom: 1px solid var(--color-accent);
+    font-size: var(--font-size-sm);
+  }
+
+  .cert-data__row:last-child {
+    border-bottom: none;
+  }
+
+  .cert-data__row dt {
+    color: var(--color-text-light);
+  }
+
+  .cert-data__row dd {
+    color: var(--color-secondary);
+    font-weight: 500;
+    margin: 0;
+    text-align: right;
+  }
+
+  .cert-data__link {
+    color: var(--color-primary);
+    text-decoration: none;
+  }
+
+  .cert-data__link:hover {
+    text-decoration: underline;
+  }
+
+  /* Sistemas Nav */
+  .sistemas-nav {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+  }
+
+  .sistemas-nav__link {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    background: var(--color-accent);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    color: var(--color-text);
+    font-size: var(--font-size-sm);
+    transition: all var(--transition-fast);
+  }
+
+  .sistemas-nav__link:hover {
+    background: var(--color-primary);
+    color: var(--color-white);
+  }
+
+  .sistemas-nav__icon {
+    color: var(--color-primary);
+    font-weight: bold;
+  }
+
+  .sistemas-nav__link:hover .sistemas-nav__icon {
+    color: var(--color-white);
+  }
+
+  .sistemas-cta {
+    margin-top: var(--spacing-md);
+    padding-top: var(--spacing-sm);
+    border-top: 1px solid var(--color-accent);
+  }
+
+  .sistemas-cta__link {
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    color: var(--color-primary);
+    text-decoration: none;
+  }
+
+  .sistemas-cta__link:hover {
+    text-decoration: underline;
+  }
+
+  /* Map Preview */
+  .map-preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-lg);
+    background: var(--color-accent);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    transition: background var(--transition-fast);
+    margin-bottom: var(--spacing-md);
+  }
+
+  .map-preview:hover {
+    background: var(--color-border, #e0e0e0);
+  }
+
+  .map-preview__icon {
+    color: var(--color-primary);
+  }
+
+  .map-preview__text {
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    color: var(--color-primary);
+  }
+
+  .location-address {
+    font-style: normal;
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-relaxed);
+    color: var(--color-text);
+  }
+
+  .location-address strong {
+    color: var(--color-secondary);
+  }
+
+  .location-address a {
+    color: var(--color-primary);
+    text-decoration: none;
+  }
+
+  .location-address a:hover {
+    text-decoration: underline;
+  }
+
+  /* Contact Links */
+  .contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+
+  .contact-link {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm);
+    background: var(--color-accent);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    color: var(--color-text);
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    transition: all var(--transition-fast);
+  }
+
+  .contact-link:hover {
+    background: var(--color-primary);
+    color: var(--color-white);
+  }
+
+  .contact-link svg {
+    flex-shrink: 0;
+    color: var(--color-primary);
+  }
+
+  .contact-link:hover svg {
+    color: var(--color-white);
+  }
+
+  /* Destacados */
+  .destacados-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .destacados-item {
+    border-bottom: 1px solid var(--color-accent);
+  }
+
+  .destacados-item:last-child {
+    border-bottom: none;
+  }
+
+  .destacados-link {
+    display: flex;
+    flex-direction: column;
+    padding: var(--spacing-sm) 0;
+    text-decoration: none;
+    transition: all var(--transition-fast);
+  }
+
+  .destacados-link:hover .destacados-nombre {
+    color: var(--color-primary);
+  }
+
+  .destacados-nombre {
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    color: var(--color-secondary);
+  }
+
+  .destacados-ciudad {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-light);
+  }
+
+  .destacados-ver-mas {
+    display: block;
+    margin-top: var(--spacing-sm);
+    padding-top: var(--spacing-sm);
+    border-top: 1px solid var(--color-accent);
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    color: var(--color-primary);
+    text-decoration: none;
+  }
+
+  .destacados-ver-mas:hover {
+    text-decoration: underline;
+  }
+
+  /* Ciudades Tags */
+  .ciudades-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+  }
+
+  .ciudad-tag {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    font-size: var(--font-size-xs);
+    font-weight: 500;
+    color: var(--color-text);
+    background: var(--color-accent);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    transition: all var(--transition-fast);
+  }
+
+  .ciudad-tag:hover {
+    background: var(--color-primary);
+    color: var(--color-white);
+  }
+
+  /* Directory Navigation */
+  .directory-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .directory-nav__link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-sm) 0;
+    border-bottom: 1px solid var(--color-accent);
+    text-decoration: none;
+    color: var(--color-text);
+    font-size: var(--font-size-sm);
+    transition: color var(--transition-fast);
+  }
+
+  .directory-nav__link:last-child {
+    border-bottom: none;
+  }
+
+  .directory-nav__link:hover {
+    color: var(--color-primary);
+  }
+
+  .directory-nav__link svg {
+    color: var(--color-text-light);
+    transition: transform var(--transition-fast);
+  }
+
+  .directory-nav__link:hover svg {
+    transform: translateX(4px);
+    color: var(--color-primary);
+  }
+
+  /* Sidebar CTA */
+  .sidebar-card--cta {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    color: var(--color-white);
+  }
+
+  .sidebar-card--cta .sidebar-card__title {
+    color: var(--color-white);
+    border-bottom-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .sidebar-cta__text {
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-relaxed);
+    margin-bottom: var(--spacing-md);
+    opacity: 0.9;
+  }
+
+  .sidebar-cta__btn {
+    display: block;
+    width: 100%;
+    padding: var(--spacing-sm) var(--spacing-md);
+    background: var(--color-white);
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: var(--font-size-sm);
+    text-align: center;
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    transition: all var(--transition-fast);
+  }
+
+  .sidebar-cta__btn:hover {
+    background: var(--color-accent);
+    transform: translateY(-2px);
+  }
+
+  /* Quick Links SEO */
+  .quick-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+  }
+
+  .quick-links a {
+    display: inline-block;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    font-size: var(--font-size-xs);
+    font-weight: 500;
+    color: var(--color-primary);
+    background: var(--color-accent);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    transition: all var(--transition-fast);
+  }
+
+  .quick-links a:hover {
+    background: var(--color-primary);
+    color: var(--color-white);
+  }
+
+  /* Sticky on desktop */
+  @media (min-width: 1024px) {
+    .sidebar-directorio {
+      position: sticky;
+      top: var(--spacing-lg);
+      align-self: start;
+    }
+  }
+</style>
