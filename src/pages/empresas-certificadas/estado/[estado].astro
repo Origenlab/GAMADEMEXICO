@@ -1,7 +1,10 @@
 ---
 import Layout from '../../../layouts/Base.astro';
 import SectionHeader from '../../../components/SectionHeader.astro';
+import CategoryCard from '../../../components/CategoryCard.astro';
+import CtaCatalogo from '../../../components/CtaCatalogo.astro';
 import CotizacionForm from '../../../components/CotizacionForm.astro';
+import BlogRecent from '../../../components/blog/BlogRecent.astro';
 import { getCollection } from 'astro:content';
 
 // Mapeo de giros
@@ -31,8 +34,15 @@ const sistemaLabels: Record<string, string> = {
   'senalizacion': 'Señalización'
 };
 
+// Función para crear slugs
+function createSlug(text: string): string {
+  return text.toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/\s+/g, '-');
+}
+
 export async function getStaticPaths() {
-  // Función definida aquí para estar disponible en build
   function createEstadoSlug(estado: string): string {
     return estado.toLowerCase()
       .normalize('NFD')
@@ -54,14 +64,6 @@ export async function getStaticPaths() {
 
 const { empresas, estadoNombre } = Astro.props;
 
-// Función para crear slugs (para usar en template)
-function createEstadoSlug(estado: string): string {
-  return estado.toLowerCase()
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .replace(/\s+/g, '-');
-}
-
 // Agrupar por ciudad
 const empresasPorCiudad = empresas.reduce((acc, empresa) => {
   const ciudad = empresa.data.ciudad;
@@ -78,14 +80,22 @@ const empresasPorGiro = empresas.reduce((acc, empresa) => {
   return acc;
 }, {} as Record<string, typeof empresas>);
 
+// Empresas ordenadas
+const empresasOrdenadas = [...empresas].sort((a, b) => {
+  if (a.data.destacado && !b.data.destacado) return -1;
+  if (!a.data.destacado && b.data.destacado) return 1;
+  if (a.data.verificado && !b.data.verificado) return -1;
+  return 0;
+});
+
 // Schema.org
 const itemListSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
   "name": `Empresas con Sistemas Contra Incendios Certificados en ${estadoNombre}`,
-  "description": `Directorio de empresas con sistemas de protección contra incendios certificados en ${estadoNombre}, México. Hoteles, restaurantes, oficinas y más.`,
+  "description": `Directorio de ${empresas.length} empresas con sistemas de protección contra incendios certificados en ${estadoNombre}, México. Hoteles, restaurantes, oficinas, almacenes y más.`,
   "numberOfItems": empresas.length,
-  "itemListElement": empresas.slice(0, 10).map((empresa, index) => ({
+  "itemListElement": empresasOrdenadas.slice(0, 10).map((empresa, index) => ({
     "@type": "ListItem",
     "position": index + 1,
     "item": {
@@ -113,11 +123,11 @@ const breadcrumbSchema = {
 ---
 
 <Layout
-  title={`Empresas con Sistemas Contra Incendios en ${estadoNombre} | Directorio`}
-  description={`${empresas.length} empresas con sistemas contra incendios certificados en ${estadoNombre}. Hoteles, restaurantes, oficinas y almacenes protegidos por Gama de México.`}
+  title={`Empresas con Sistemas Contra Incendios Certificados en ${estadoNombre} | Directorio`}
+  description={`${empresas.length} empresas con sistemas contra incendios certificados en ${estadoNombre}. Hoteles, restaurantes, oficinas y almacenes protegidos por Gama de México en ${Object.keys(empresasPorCiudad).length} ciudades.`}
   activePage="directorio"
-  heroTitle={`Empresas Certificadas en ${estadoNombre}`}
-  heroIntro={`Encuentra hoteles, restaurantes, oficinas y almacenes con sistemas de protección contra incendios certificados en ${estadoNombre}.`}
+  heroTitle={`Empresas con Sistemas Contra Incendios Certificados en ${estadoNombre}`}
+  heroIntro={`Directorio de ${empresas.length} hoteles, restaurantes, oficinas y almacenes con sistemas de protección contra incendios certificados en ${estadoNombre}. Verificados por Gama de México.`}
   heroBadge={estadoNombre}
   heroMetrics={[
     { valor: String(empresas.length), texto: "Empresas certificadas" },
@@ -128,137 +138,128 @@ const breadcrumbSchema = {
   heroPrimaryLink="/empresas-certificadas#registrar"
   heroSecondaryText="Ver todos los estados"
   heroSecondaryLink="/empresas-certificadas#estados"
+  heroShowRightContent={true}
   structuredData={[itemListSchema, breadcrumbSchema]}
 >
 
-  <!-- Breadcrumb -->
-  <nav class="breadcrumb" aria-label="Navegación">
-    <div class="container">
-      <ol class="breadcrumb__list">
-        <li class="breadcrumb__item"><a href="/">Inicio</a></li>
-        <li class="breadcrumb__item"><a href="/empresas-certificadas">Empresas Certificadas</a></li>
-        <li class="breadcrumb__item breadcrumb__item--active" aria-current="page">{estadoNombre}</li>
-      </ol>
-    </div>
-  </nav>
+  <!-- HERO CONTENT -->
+  <Fragment slot="hero-content">
+    <p>El <strong>Directorio de Empresas Certificadas en {estadoNombre}</strong> reúne establecimientos que han implementado y verificado sus sistemas de protección contra incendios. Desde hoteles y restaurantes hasta almacenes industriales y oficinas corporativas, cada empresa listada cuenta con certificación vigente que acredita el cumplimiento de normativas NFPA y NOM.</p>
+    <p>Consulta empresas por ciudad o tipo de negocio. Toda la información está verificada por ingenieros especializados de Gama de México.</p>
+  </Fragment>
 
-  <!-- Ciudades del Estado -->
-  <section class="cities-section">
+  <!-- Contenido Principal con Sidebar -->
+  <section class="main-content">
     <div class="container">
-      <SectionHeader
-        titulo={`Ciudades en ${estadoNombre}`}
-        subtitulo="Selecciona una ciudad para ver empresas certificadas"
-        idTitulo="ciudades"
-      />
+      <div class="main-content__grid">
 
-      <div class="cities-grid">
-        {Object.entries(empresasPorCiudad)
-          .sort((a, b) => b[1].length - a[1].length)
-          .map(([ciudad, lista]) => {
-            const ciudadSlug = ciudad.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\s+/g, '-');
-            const estadoSlug = createEstadoSlug(estadoNombre);
-            return (
-              <a href={`/empresas-certificadas/estado/${estadoSlug}/${ciudadSlug}`} class="city-link-card">
-                <div class="city-link-card__icon">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                    <circle cx="12" cy="10" r="3"/>
-                  </svg>
-                </div>
-                <div class="city-link-card__content">
-                  <h3 class="city-link-card__title">{ciudad}</h3>
-                  <p class="city-link-card__count">{lista.length} empresas certificadas</p>
-                </div>
-                <svg class="city-link-card__arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <!-- Columna Principal -->
+        <div class="main-content__primary">
+          <SectionHeader
+            titulo={`${Object.keys(empresasPorCiudad).length} Ciudades con Empresas Certificadas en ${estadoNombre}`}
+            subtitulo="Selecciona una ciudad para ver el directorio completo de empresas con sistemas contra incendios verificados"
+            idTitulo="ciudades"
+            parrafo1={`El estado de ${estadoNombre} cuenta con ${empresas.length} empresas que han certificado sus sistemas de protección contra incendios con Gama de México. Estas empresas están distribuidas en ${Object.keys(empresasPorCiudad).length} ciudades, abarcando sectores como hotelería, restaurantes, oficinas corporativas, almacenes industriales, hospitales y centros educativos. Cada establecimiento ha sido verificado por ingenieros especializados.`}
+            parrafo2={`La certificación incluye verificación de sistemas de rociadores automáticos, redes de hidrantes, sistemas de detección y alarma, gabinetes contra incendio, señalización de emergencia y planes de evacuación. Los sistemas están instalados conforme a normativas NFPA, NOM-002-STPS y requerimientos de protección civil estatales y municipales de ${estadoNombre}.`}
+          />
+
+          <div class="cities-grid">
+            {Object.entries(empresasPorCiudad)
+              .sort((a, b) => b[1].length - a[1].length)
+              .map(([ciudad, lista]) => {
+                const ciudadSlug = createSlug(ciudad);
+                const estadoSlug = createSlug(estadoNombre);
+                return (
+                  <CategoryCard
+                    titulo={`Empresas Certificadas en ${ciudad}`}
+                    subtitulo={`${lista.length} empresas con sistemas contra incendios verificados en ${ciudad}, ${estadoNombre}`}
+                    enlace={`/empresas-certificadas/estado/${estadoSlug}/${ciudadSlug}`}
+                    subcategorias={lista.slice(0, 4).map((emp) => ({
+                      nombre: emp.data.nombre,
+                      enlace: `/empresas-certificadas/${emp.data.slug}`
+                    }))}
+                  />
+                );
+              })}
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="main-content__sidebar">
+
+          <!-- Por Tipo de Negocio -->
+          <div class="sidebar-card">
+            <h3 class="sidebar-card__title">Por Tipo de Negocio</h3>
+            <nav class="giro-nav">
+              {Object.entries(empresasPorGiro)
+                .sort((a, b) => b[1].length - a[1].length)
+                .map(([giro, lista]) => (
+                  <a href={`/empresas-certificadas/giro/${giro}`} class="giro-nav__link">
+                    <span>{giroLabels[giro]}</span>
+                    <span class="giro-nav__count">{lista.length}</span>
+                  </a>
+                ))}
+            </nav>
+          </div>
+
+          <!-- Explorar Directorio -->
+          <div class="sidebar-card">
+            <h3 class="sidebar-card__title">Explorar Directorio</h3>
+            <nav class="directory-nav">
+              <a href="/empresas-certificadas" class="directory-nav__link">
+                <span>Todas las empresas certificadas</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M9 18l6-6-6-6"/>
                 </svg>
               </a>
-            );
-          })}
-      </div>
-    </div>
-  </section>
-
-  <!-- Por Giro -->
-  <section class="giros-section">
-    <div class="container">
-      <SectionHeader
-        titulo={`Tipos de Negocio en ${estadoNombre}`}
-        subtitulo="Explora empresas certificadas por categoría"
-        idTitulo="giros"
-      />
-
-      <div class="giros-grid">
-        {Object.entries(empresasPorGiro).map(([giro, lista]) => (
-          <a href={`/empresas-certificadas/giro/${giro}`} class="giro-card">
-            <span class="giro-card__icon">
-              {giro === 'hotel' && '🏨'}
-              {giro === 'restaurante' && '🍽️'}
-              {giro === 'oficina' && '🏢'}
-              {giro === 'almacen' && '📦'}
-              {giro === 'hospital' && '🏥'}
-              {giro === 'escuela' && '🏫'}
-              {giro === 'industria' && '🏭'}
-              {giro === 'comercio' && '🛒'}
-            </span>
-            <h3 class="giro-card__title">{giroLabels[giro]}</h3>
-            <p class="giro-card__count">{lista.length} en {estadoNombre}</p>
-          </a>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <!-- Lista de Todas las Empresas -->
-  <section class="all-empresas">
-    <div class="container">
-      <SectionHeader
-        titulo={`Todas las Empresas en ${estadoNombre}`}
-        subtitulo={`${empresas.length} empresas con certificación activa`}
-        idTitulo="todas"
-      />
-
-      <div class="empresas-table">
-        <div class="table-header">
-          <span class="col-name">Empresa</span>
-          <span class="col-city">Ciudad</span>
-          <span class="col-type">Giro</span>
-          <span class="col-status">Estado</span>
-          <span class="col-action"></span>
-        </div>
-        {empresas.map((empresa) => (
-          <div class="table-row">
-            <div class="col-name">
-              <strong>{empresa.data.nombre}</strong>
-              <span class="col-name__address">{empresa.data.colonia}</span>
-            </div>
-            <div class="col-city">{empresa.data.ciudad}</div>
-            <div class="col-type">
-              <span class={`giro-badge giro-badge--${empresa.data.giro}`}>
-                {giroLabels[empresa.data.giro]}
-              </span>
-            </div>
-            <div class="col-status">
-              {empresa.data.certificacionVigente ? (
-                <span class="status-badge status-badge--active">Vigente</span>
-              ) : (
-                <span class="status-badge status-badge--expired">Vencida</span>
-              )}
-            </div>
-            <div class="col-action">
-              <a href={`/empresas-certificadas/${empresa.data.slug}`} class="btn btn--sm btn--outline">
-                Ver
+              <a href="/empresas-certificadas#estados" class="directory-nav__link">
+                <span>Ver otros estados</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 18l6-6-6-6"/>
+                </svg>
               </a>
-            </div>
+              <a href="/empresas-certificadas#giros" class="directory-nav__link">
+                <span>Buscar por tipo de negocio</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 18l6-6-6-6"/>
+                </svg>
+              </a>
+            </nav>
           </div>
-        ))}
+
+          <!-- CTA Sidebar -->
+          <div class="sidebar-card sidebar-card--cta">
+            <h3 class="sidebar-card__title">¿Tu empresa está en {estadoNombre}?</h3>
+            <p class="sidebar-cta__text">Verifica tus sistemas contra incendios y aparece en nuestro directorio oficial.</p>
+            <a href="#cotizar" class="sidebar-cta__btn">Solicitar certificación</a>
+          </div>
+
+        </aside>
       </div>
     </div>
   </section>
+
+  <!-- Artículos Relacionados -->
+  <BlogRecent
+    titulo={`Guías Técnicas sobre Protección Contra Incendios y Normativas en ${estadoNombre}`}
+    subtitulo="Recursos de nuestro equipo de ingenieros especializados"
+    limit={3}
+    columns={3}
+    background="white"
+    showViewAll={true}
+  />
 
   <!-- CTA -->
+  <CtaCatalogo
+    titulo={`¿Tu empresa en ${estadoNombre} tiene sistema contra incendios?`}
+    subtitulo="Verificación profesional · Certificado digital · Inclusión en directorio"
+    textoBoton="Solicitar certificación"
+    enlace="#cotizar"
+  />
+
+  <!-- Formulario -->
   <CotizacionForm
-    titulo={`¿Tu empresa está en ${estadoNombre}?`}
+    titulo={`Certifica tu empresa en ${estadoNombre}`}
     producto={`Certificación en ${estadoNombre}`}
     pagina={`Estado: ${estadoNombre}`}
   />
@@ -266,279 +267,184 @@ const breadcrumbSchema = {
 </Layout>
 
 <style>
-  /* Breadcrumb */
-  .breadcrumb {
-    background: #f8f9fa;
-    padding: 1rem 0;
-    border-bottom: 1px solid #e9ecef;
+  /* Main Content with Sidebar */
+  .main-content {
+    padding: var(--spacing-3xl) 0;
+    background: var(--color-accent);
   }
 
-  .breadcrumb__list {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    font-size: 0.875rem;
+  .main-content__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
   }
 
-  .breadcrumb__item {
-    display: flex;
-    align-items: center;
-    color: #666;
-  }
-
-  .breadcrumb__item:not(:last-child)::after {
-    content: '/';
-    margin: 0 0.5rem;
-    color: #aaa;
-  }
-
-  .breadcrumb__item a {
-    color: #c8102e;
-    text-decoration: none;
-  }
-
-  .breadcrumb__item--active {
-    color: #333;
-    font-weight: 600;
-  }
-
-  /* Cities Section */
-  .cities-section {
-    padding: 3rem 0;
+  .main-content__primary {
+    min-width: 0;
   }
 
   .cities-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 1rem;
-    margin-top: 2rem;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-xl);
   }
 
-  .city-link-card {
+  /* Sidebar */
+  .main-content__sidebar {
     display: flex;
-    align-items: center;
-    gap: 1rem;
-    background: white;
-    border: 2px solid #e9ecef;
-    border-radius: 12px;
-    padding: 1.25rem;
-    text-decoration: none;
-    transition: all 0.2s;
+    flex-direction: column;
+    gap: var(--spacing-lg);
   }
 
-  .city-link-card:hover {
-    border-color: #c8102e;
-    transform: translateX(4px);
+  .sidebar-card {
+    background: var(--color-white);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-lg);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
   }
 
-  .city-link-card__icon {
-    flex-shrink: 0;
-    width: 48px;
-    height: 48px;
-    background: #fee2e2;
-    border-radius: 12px;
+  .sidebar-card__title {
+    font-size: var(--font-size-base);
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin: 0 0 var(--spacing-md) 0;
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 2px solid var(--color-primary);
+  }
+
+  /* Giro Navigation */
+  .giro-nav {
     display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .giro-nav__link {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    color: #c8102e;
-  }
-
-  .city-link-card__content {
-    flex-grow: 1;
-  }
-
-  .city-link-card__title {
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: #1a1a2e;
-    margin-bottom: 0.15rem;
-  }
-
-  .city-link-card__count {
-    font-size: 0.85rem;
-    color: #666;
-  }
-
-  .city-link-card__arrow {
-    flex-shrink: 0;
-    color: #ccc;
-    transition: color 0.2s, transform 0.2s;
-  }
-
-  .city-link-card:hover .city-link-card__arrow {
-    color: #c8102e;
-    transform: translateX(4px);
-  }
-
-  /* Giros Section */
-  .giros-section {
-    padding: 3rem 0;
-    background: #f8f9fa;
-  }
-
-  .giros-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 1rem;
-    margin-top: 2rem;
-  }
-
-  .giro-card {
-    background: white;
-    border-radius: 12px;
-    padding: 1.5rem;
-    text-align: center;
+    padding: var(--spacing-sm) 0;
+    border-bottom: 1px solid var(--color-accent);
     text-decoration: none;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-    transition: transform 0.2s, box-shadow 0.2s;
+    color: var(--color-text);
+    font-size: var(--font-size-sm);
+    transition: color var(--transition-fast);
   }
 
-  .giro-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-  }
-
-  .giro-card__icon {
-    font-size: 2.5rem;
-    margin-bottom: 0.75rem;
-    display: block;
-  }
-
-  .giro-card__title {
-    font-size: 1rem;
-    font-weight: 700;
-    color: #1a1a2e;
-    margin-bottom: 0.25rem;
-  }
-
-  .giro-card__count {
-    font-size: 0.8rem;
-    color: #666;
-  }
-
-  /* Table */
-  .all-empresas {
-    padding: 3rem 0;
-  }
-
-  .empresas-table {
-    margin-top: 2rem;
-    background: white;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-  }
-
-  .table-header {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 100px 80px;
-    gap: 1rem;
-    padding: 1rem 1.5rem;
-    background: #1a1a2e;
-    color: white;
-    font-weight: 600;
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    letter-spacing: 0.03em;
-  }
-
-  .table-row {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 100px 80px;
-    gap: 1rem;
-    padding: 1rem 1.5rem;
-    border-bottom: 1px solid #f0f0f0;
-    align-items: center;
-    transition: background 0.2s;
-  }
-
-  .table-row:hover {
-    background: #f8f9fa;
-  }
-
-  .table-row:last-child {
+  .giro-nav__link:last-child {
     border-bottom: none;
   }
 
-  .col-name strong {
+  .giro-nav__link:hover {
+    color: var(--color-primary);
+  }
+
+  .giro-nav__count {
+    background: var(--color-accent);
+    padding: 0.15rem 0.5rem;
+    border-radius: 12px;
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    color: var(--color-text-light);
+  }
+
+  /* Directory Navigation */
+  .directory-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .directory-nav__link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-sm) 0;
+    border-bottom: 1px solid var(--color-accent);
+    text-decoration: none;
+    color: var(--color-text);
+    font-size: var(--font-size-sm);
+    transition: color var(--transition-fast);
+  }
+
+  .directory-nav__link:last-child {
+    border-bottom: none;
+  }
+
+  .directory-nav__link:hover {
+    color: var(--color-primary);
+  }
+
+  .directory-nav__link svg {
+    color: var(--color-text-light);
+    transition: transform var(--transition-fast);
+  }
+
+  .directory-nav__link:hover svg {
+    transform: translateX(4px);
+    color: var(--color-primary);
+  }
+
+  /* Sidebar CTA */
+  .sidebar-card--cta {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    color: var(--color-white);
+  }
+
+  .sidebar-card--cta .sidebar-card__title {
+    color: var(--color-white);
+    border-bottom-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .sidebar-cta__text {
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-relaxed);
+    margin-bottom: var(--spacing-md);
+    opacity: 0.9;
+  }
+
+  .sidebar-cta__btn {
     display: block;
-    color: #1a1a2e;
-    margin-bottom: 0.15rem;
-  }
-
-  .col-name__address {
-    font-size: 0.8rem;
-    color: #888;
-  }
-
-  .col-city {
-    color: #555;
-    font-size: 0.9rem;
-  }
-
-  .giro-badge {
-    display: inline-block;
-    padding: 0.25rem 0.6rem;
-    border-radius: 12px;
-    font-size: 0.75rem;
+    width: 100%;
+    padding: var(--spacing-sm) var(--spacing-md);
+    background: var(--color-white);
+    color: var(--color-primary);
     font-weight: 600;
+    font-size: var(--font-size-sm);
+    text-align: center;
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    transition: all var(--transition-fast);
   }
 
-  .giro-badge--hotel { background: #e3f2fd; color: #1565c0; }
-  .giro-badge--restaurante { background: #fff3e0; color: #e65100; }
-  .giro-badge--oficina { background: #f3e5f5; color: #7b1fa2; }
-  .giro-badge--almacen { background: #fce4ec; color: #c2185b; }
-  .giro-badge--hospital { background: #e8f5e9; color: #2e7d32; }
-  .giro-badge--industria { background: #e0e0e0; color: #424242; }
-
-  .status-badge {
-    display: inline-block;
-    padding: 0.25rem 0.6rem;
-    border-radius: 12px;
-    font-size: 0.75rem;
-    font-weight: 600;
-  }
-
-  .status-badge--active {
-    background: #e8f5e9;
-    color: #2e7d32;
-  }
-
-  .status-badge--expired {
-    background: #ffebee;
-    color: #c62828;
+  .sidebar-cta__btn:hover {
+    background: var(--color-accent);
   }
 
   /* Responsive */
-  @media (max-width: 900px) {
-    .table-header {
-      display: none;
-    }
-
-    .table-row {
-      grid-template-columns: 1fr;
-      gap: 0.5rem;
-      padding: 1.25rem;
-    }
-
-    .col-city::before { content: 'Ciudad: '; color: #888; }
-    .col-type::before { content: 'Tipo: '; color: #888; }
-    .col-status::before { content: 'Estado: '; color: #888; }
-
-    .col-action {
-      margin-top: 0.5rem;
+  @media (min-width: 768px) {
+    .cities-grid {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 
-  @media (max-width: 768px) {
-    .cities-grid {
-      grid-template-columns: 1fr;
+  @media (min-width: 1024px) {
+    .main-content__grid {
+      grid-template-columns: 1fr 340px;
+      gap: var(--spacing-2xl);
     }
 
-    .giros-grid {
-      grid-template-columns: repeat(2, 1fr);
+    .main-content__sidebar {
+      position: sticky;
+      top: var(--spacing-lg);
+      align-self: start;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .main-content__grid {
+      grid-template-columns: 1fr 380px;
     }
   }
 </style>

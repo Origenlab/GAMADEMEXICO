@@ -1,7 +1,6 @@
 ---
 import Layout from '../../layouts/Base.astro';
 import SectionHeader from '../../components/SectionHeader.astro';
-import ServiceCard from '../../components/ServiceCard.astro';
 import CategoryCard from '../../components/CategoryCard.astro';
 import CtaCatalogo from '../../components/CtaCatalogo.astro';
 import CotizacionForm from '../../components/CotizacionForm.astro';
@@ -33,43 +32,124 @@ const giroLabels: Record<string, string> = {
   otro: 'Otro'
 };
 
-// Mapeo de sistemas a descripciones SEO
-const sistemaInfo: Record<string, { label: string; descripcion: string }> = {
+// Mapeo de sistemas a contenido SEO completo
+const sistemaInfo: Record<string, { label: string; intro: string; caracteristicas: string[]; normativa: string; equipos: string }> = {
   'rociadores-automaticos': {
-    label: 'Rociadores Automáticos',
-    descripcion: 'Sistema de <strong>rociadores automáticos</strong> certificados UL/FM para supresión inmediata de incendios. Activación por temperatura con cobertura completa del inmueble.'
+    label: 'Sistema de Rociadores Automáticos',
+    intro: 'El sistema de rociadores automáticos instalado proporciona protección activa contra incendios mediante la descarga automática de agua cuando se detecta calor excesivo. Los rociadores están diseñados para activarse individualmente al alcanzar su temperatura de fusión, conteniendo el fuego en su etapa inicial y evitando su propagación.',
+    caracteristicas: [
+      'Rociadores con certificación UL/FM de respuesta rápida',
+      'Cobertura completa de áreas de almacenamiento y oficinas',
+      'Sistema húmedo con presión constante para activación inmediata',
+      'Válvulas de control con supervisión electrónica',
+      'Conexión a bomba contra incendios certificada'
+    ],
+    normativa: 'Instalación conforme a NFPA 13 (Instalación de Sistemas de Rociadores) y NOM-002-STPS-2010.',
+    equipos: 'Rociadores Tyco, Viking o equivalente certificado UL/FM.'
   },
   'red-hidrantes': {
-    label: 'Red de Hidrantes',
-    descripcion: '<strong>Red de hidrantes</strong> con gabinetes equipados, válvulas anguladas y mangueras certificadas. Conexión directa para brigadas y bomberos.'
+    label: 'Red de Hidrantes y Gabinetes Contra Incendio',
+    intro: 'La red de hidrantes proporciona puntos de conexión estratégicamente ubicados para que brigadas internas y cuerpos de bomberos puedan combatir incendios con agua a alta presión. Los gabinetes interiores permiten una primera respuesta inmediata por parte del personal capacitado.',
+    caracteristicas: [
+      'Hidrantes exteriores con conexiones siamesas para bomberos',
+      'Gabinetes interiores con manguera de 1½" y 30 metros de longitud',
+      'Válvulas anguladas de latón certificadas UL/FM',
+      'Boquillas de chorro/niebla ajustables',
+      'Extintor portátil incluido en cada gabinete'
+    ],
+    normativa: 'Conforme a NFPA 14 (Sistemas de Tuberías Verticales y Mangueras) y NFPA 24 (Instalación de Tuberías para Servicio Privado de Incendios).',
+    equipos: 'Válvulas Elkhart Brass, mangueras certificadas UL, gabinetes fabricados conforme a NOM.'
   },
   'extintores': {
-    label: 'Extintores Certificados',
-    descripcion: '<strong>Extintores portátiles</strong> clase ABC y K ubicados estratégicamente. Recarga y mantenimiento conforme a NOM-002-STPS.'
+    label: 'Extintores Portátiles Certificados',
+    intro: 'Los extintores portátiles constituyen la primera línea de defensa contra conatos de incendio. Están ubicados estratégicamente para que cualquier persona pueda acceder a uno en menos de 15 metros de recorrido, permitiendo una respuesta inmediata ante emergencias.',
+    caracteristicas: [
+      'Extintores tipo ABC de polvo químico seco para riesgos generales',
+      'Extintores tipo K para áreas de cocina y preparación de alimentos',
+      'Extintores de CO2 para equipos eléctricos y electrónicos',
+      'Señalización visible y altura de montaje conforme a norma',
+      'Programa de mantenimiento y recarga semestral'
+    ],
+    normativa: 'Conforme a NOM-002-STPS-2010 y NFPA 10 (Extintores Portátiles Contra Incendios).',
+    equipos: 'Extintores certificados con capacidad de 4.5 kg a 9 kg según área de cobertura.'
   },
   'deteccion-alarma': {
-    label: 'Detección y Alarma',
-    descripcion: 'Sistema de <strong>detección temprana</strong> con sensores de humo, temperatura y alarma audible/visual. Monitoreo central 24/7.'
+    label: 'Sistema de Detección y Alarma Contra Incendios',
+    intro: 'El sistema de detección y alarma proporciona vigilancia continua 24/7 mediante sensores distribuidos en toda la instalación. Al detectar humo, calor o llama, el sistema activa automáticamente las alarmas audibles y visuales, notifica a la central de monitoreo y puede activar sistemas de supresión automática.',
+    caracteristicas: [
+      'Detectores de humo fotoeléctricos en áreas generales',
+      'Detectores térmicos en cocinas y áreas con vapor',
+      'Estaciones manuales de alarma en rutas de evacuación',
+      'Sirenas y luces estroboscópicas para notificación',
+      'Panel de control inteligente con comunicador a central de monitoreo'
+    ],
+    normativa: 'Conforme a NFPA 72 (Código Nacional de Alarmas de Incendio y Señalización) y NOM-002-STPS-2010.',
+    equipos: 'Panel de detección direccionable, detectores inteligentes con autodiagnóstico.'
   },
   'fm200': {
-    label: 'Sistema FM-200',
-    descripcion: '<strong>Agente limpio FM-200</strong> para áreas críticas: servidores, archivos, laboratorios. Supresión sin residuos ni daño a equipos electrónicos.'
+    label: 'Sistema de Supresión FM-200 (Agente Limpio)',
+    intro: 'El sistema FM-200 proporciona supresión de incendios mediante un agente gaseoso que no deja residuos, siendo ideal para proteger equipos electrónicos, servidores, archivos importantes y obras de arte. La descarga se realiza en menos de 10 segundos, extinguiendo el fuego sin dañar los equipos.',
+    caracteristicas: [
+      'Agente HFC-227ea (FM-200) ecológicamente seguro',
+      'Descarga total en menos de 10 segundos',
+      'Sin residuos ni daño a equipos electrónicos',
+      'Sistema de prealarma para evacuación del área',
+      'Cilindros de almacenamiento con supervisión de presión'
+    ],
+    normativa: 'Conforme a NFPA 2001 (Sistemas de Extinción de Incendios con Agentes Limpios).',
+    equipos: 'Sistema completo con cilindros, válvulas, tuberías y boquillas de descarga certificadas.'
   },
   'co2': {
-    label: 'Sistema CO2',
-    descripcion: '<strong>Sistema de CO2</strong> para supresión en áreas industriales y cuartos eléctricos. Descarga total con evacuación previa.'
+    label: 'Sistema de Supresión con CO2',
+    intro: 'El sistema de dióxido de carbono proporciona supresión efectiva mediante desplazamiento de oxígeno, siendo especialmente efectivo para fuegos de clase B (líquidos inflamables) y C (equipos eléctricos). Requiere procedimientos de evacuación previos a la descarga.',
+    caracteristicas: [
+      'Descarga total o local según configuración',
+      'Efectivo para fuegos clase B y C',
+      'No deja residuos tras la descarga',
+      'Sistema de retardo para evacuación del personal',
+      'Alarma previa obligatoria antes de descarga'
+    ],
+    normativa: 'Conforme a NFPA 12 (Sistemas de Extinción con Dióxido de Carbono).',
+    equipos: 'Cilindros de alta presión, válvulas direccionales y boquillas de descarga.'
   },
   'espuma': {
-    label: 'Sistema de Espuma',
-    descripcion: '<strong>Sistema de espuma AFFF</strong> para almacenamiento de líquidos inflamables, hangares y áreas de alto riesgo químico.'
+    label: 'Sistema de Supresión con Espuma AFFF',
+    intro: 'El sistema de espuma AFFF (Aqueous Film Forming Foam) está diseñado para combatir incendios de líquidos inflamables mediante la formación de una película acuosa que sofoca las llamas y previene la reignición. Es ideal para hangares, plantas químicas y áreas de almacenamiento de combustibles.',
+    caracteristicas: [
+      'Concentrado AFFF al 3% o 6% según aplicación',
+      'Cámaras de espuma para tanques de almacenamiento',
+      'Monitores de espuma para áreas abiertas',
+      'Sistema de proporcionamiento automático',
+      'Reserva de concentrado para múltiples descargas'
+    ],
+    normativa: 'Conforme a NFPA 11 (Sistemas de Espuma de Baja, Media y Alta Expansión) y NFPA 16.',
+    equipos: 'Proporcionadores, cámaras de espuma, monitores y concentrado AFFF certificado UL.'
   },
   'gabinetes': {
-    label: 'Gabinetes Contra Incendio',
-    descripcion: '<strong>Gabinetes equipados</strong> con manguera, válvula angulada, extintor y hacha. Ubicación estratégica en rutas de evacuación.'
+    label: 'Gabinetes Contra Incendio Equipados',
+    intro: 'Los gabinetes contra incendio proporcionan equipos de primera respuesta accesibles para el personal capacitado. Cada gabinete contiene los elementos necesarios para combatir conatos de incendio y facilitar la evacuación, ubicados estratégicamente en pasillos y rutas de evacuación.',
+    caracteristicas: [
+      'Gabinete metálico con vidrio de seguridad',
+      'Manguera de 1½" x 30 metros con carrete giratorio',
+      'Válvula angulada de latón con conexión NST',
+      'Boquilla de niebla/chorro ajustable',
+      'Extintor portátil y hacha de bombero incluidos'
+    ],
+    normativa: 'Conforme a NFPA 14 y especificaciones de protección civil locales.',
+    equipos: 'Gabinetes fabricados en acero al carbón con acabado en pintura electrostática roja.'
   },
   'senalizacion': {
-    label: 'Señalización de Emergencia',
-    descripcion: '<strong>Señalización fotoluminiscente</strong> conforme a NOM-003-SEGOB: rutas de evacuación, puntos de reunión y ubicación de equipos.'
+    label: 'Señalización de Emergencia y Rutas de Evacuación',
+    intro: 'El sistema de señalización de emergencia guía al personal y visitantes hacia las salidas de emergencia y puntos de reunión mediante señales fotoluminiscentes que permanecen visibles incluso durante cortes de energía eléctrica. La señalización cumple con códigos de colores y pictogramas internacionales.',
+    caracteristicas: [
+      'Señales fotoluminiscentes visibles hasta 8 horas sin luz',
+      'Identificación de rutas de evacuación principales y alternas',
+      'Señalización de ubicación de equipos contra incendio',
+      'Puntos de reunión claramente identificados',
+      'Planos de evacuación en cada nivel'
+    ],
+    normativa: 'Conforme a NOM-003-SEGOB-2011 y NOM-026-STPS-2008 (Colores y Señales de Seguridad).',
+    equipos: 'Señales de PVC fotoluminiscente con soporte y fijación permanente.'
   }
 };
 
@@ -171,14 +251,39 @@ const formatDate = (dateStr: string) => {
             parrafo2="Los sistemas instalados utilizan equipos certificados UL y FM de marcas reconocidas como Elkhart Brass, garantizando la máxima confiabilidad en caso de emergencia. La verificación periódica asegura que todos los componentes se encuentren operativos y listos para proteger vidas y patrimonio."
           />
 
-          <div class="sistemas-grid">
-            {empresa.data.tipoSistema.map((sistema) => (
-              <ServiceCard
-                id={sistema}
-                titulo={sistemaInfo[sistema]?.label || sistema}
-                descripcion={sistemaInfo[sistema]?.descripcion || `Sistema de ${sistema} certificado e instalado en este establecimiento.`}
-                enlace={`/equipos?sistema=${sistema}`}
-              />
+          <!-- Sistemas Detallados -->
+          <div class="sistemas-content">
+            {empresa.data.tipoSistema.map((sistema, index) => (
+              <article class="sistema-detail" id={sistema}>
+                <header class="sistema-detail__header">
+                  <span class="sistema-detail__number">{String(index + 1).padStart(2, '0')}</span>
+                  <h3 class="sistema-detail__title">{sistemaInfo[sistema]?.label || sistema}</h3>
+                </header>
+
+                <p class="sistema-detail__intro">{sistemaInfo[sistema]?.intro}</p>
+
+                <div class="sistema-detail__specs">
+                  <h4 class="sistema-detail__subtitle">Características del sistema instalado:</h4>
+                  <ul class="sistema-detail__list">
+                    {sistemaInfo[sistema]?.caracteristicas.map((car) => (
+                      <li>{car}</li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div class="sistema-detail__footer">
+                  <div class="sistema-detail__normativa">
+                    <strong>Normativa aplicable:</strong> {sistemaInfo[sistema]?.normativa}
+                  </div>
+                  <div class="sistema-detail__equipos">
+                    <strong>Equipos utilizados:</strong> {sistemaInfo[sistema]?.equipos}
+                  </div>
+                </div>
+
+                <a href={`/equipos?sistema=${sistema}`} class="sistema-detail__link">
+                  Ver equipos relacionados en nuestro catálogo →
+                </a>
+              </article>
             ))}
           </div>
 
@@ -422,11 +527,141 @@ const formatDate = (dateStr: string) => {
     min-width: 0;
   }
 
-  .sistemas-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: var(--spacing-lg);
+  /* Sistemas Content - Secciones detalladas */
+  .sistemas-content {
     margin-top: var(--spacing-xl);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2xl);
+  }
+
+  .sistema-detail {
+    background: var(--color-white);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-xl);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  }
+
+  .sistema-detail__header {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-md);
+    border-bottom: 2px solid var(--color-primary);
+  }
+
+  .sistema-detail__number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background: var(--color-primary);
+    color: var(--color-white);
+    font-size: var(--font-size-lg);
+    font-weight: 800;
+    border-radius: var(--border-radius);
+    flex-shrink: 0;
+  }
+
+  .sistema-detail__title {
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin: 0;
+    line-height: var(--line-height-tight);
+  }
+
+  .sistema-detail__intro {
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-relaxed);
+    color: var(--color-text);
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .sistema-detail__specs {
+    background: var(--color-accent);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .sistema-detail__subtitle {
+    font-size: var(--font-size-sm);
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin: 0 0 var(--spacing-md) 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .sistema-detail__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .sistema-detail__list li {
+    position: relative;
+    padding-left: var(--spacing-lg);
+    margin-bottom: var(--spacing-sm);
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-base);
+    color: var(--color-text);
+  }
+
+  .sistema-detail__list li:last-child {
+    margin-bottom: 0;
+  }
+
+  .sistema-detail__list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.5em;
+    width: 8px;
+    height: 8px;
+    background: var(--color-primary);
+    border-radius: 50%;
+  }
+
+  .sistema-detail__footer {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+    padding: var(--spacing-md);
+    background: linear-gradient(135deg, rgba(200, 16, 46, 0.05) 0%, rgba(200, 16, 46, 0.02) 100%);
+    border-radius: var(--border-radius);
+    border-left: 4px solid var(--color-primary);
+  }
+
+  .sistema-detail__normativa,
+  .sistema-detail__equipos {
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-base);
+    color: var(--color-text);
+  }
+
+  .sistema-detail__normativa strong,
+  .sistema-detail__equipos strong {
+    color: var(--color-secondary);
+  }
+
+  .sistema-detail__link {
+    display: inline-flex;
+    align-items: center;
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+  }
+
+  .sistema-detail__link:hover {
+    color: var(--color-primary-dark);
+    text-decoration: underline;
   }
 
   /* Content Wrapper (Markdown) */
@@ -711,12 +946,18 @@ const formatDate = (dateStr: string) => {
 
   /* Responsive */
   @media (min-width: 768px) {
-    .sistemas-grid {
+    .related-grid {
       grid-template-columns: repeat(2, 1fr);
     }
 
-    .related-grid {
-      grid-template-columns: repeat(2, 1fr);
+    .sistema-detail__footer {
+      flex-direction: row;
+      gap: var(--spacing-xl);
+    }
+
+    .sistema-detail__normativa,
+    .sistema-detail__equipos {
+      flex: 1;
     }
   }
 
@@ -724,10 +965,6 @@ const formatDate = (dateStr: string) => {
     .main-content__grid {
       grid-template-columns: 1fr 340px;
       gap: var(--spacing-2xl);
-    }
-
-    .sistemas-grid {
-      grid-template-columns: repeat(2, 1fr);
     }
 
     .related-grid {
@@ -738,6 +975,14 @@ const formatDate = (dateStr: string) => {
       position: sticky;
       top: var(--spacing-lg);
       align-self: start;
+    }
+
+    .sistema-detail {
+      padding: var(--spacing-2xl);
+    }
+
+    .sistema-detail__title {
+      font-size: var(--font-size-2xl);
     }
   }
 

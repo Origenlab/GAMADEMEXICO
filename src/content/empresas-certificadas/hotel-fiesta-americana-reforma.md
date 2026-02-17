@@ -23,7 +23,7 @@ fechaCertificacion: "2024-06-15"
 fechaVencimiento: "2025-06-15"
 certificacionVigente: true
 certificadoPor: "Gama de México"
-imagen: "/img/directorio/empresas/hotel-fiesta-americana-reforma.avif"
+imagen: "/img/gama-de-mexico.avif"
 destacado: true
 verificado: true
 fechaRegistro: "2024-06-15"

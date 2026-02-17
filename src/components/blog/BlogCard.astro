@@ -4,7 +4,7 @@
 // Sigue el patrón de SubcategoryProductCard
 // =============================================================================
 
-import { formatDateShort, getAuthorName, CATEGORY_LABELS, CATEGORY_SLUGS } from '../../lib/blogHelpers';
+import { getAuthorName, CATEGORY_LABELS, CATEGORY_SLUGS } from '../../lib/blogHelpers';
 import { generateSrcset, getOptimizedImageUrl } from '../../lib/images';
 
 interface Props {
@@ -25,7 +25,6 @@ const {
   title,
   description,
   slug,
-  fecha,
   categoria,
   autor = 'Equipo Técnico Gama de México',
   imagen,
@@ -35,53 +34,41 @@ const {
   tiempoLectura,
 } = Astro.props;
 
+const fallbackImage = '/img/gama-de-mexico.avif';
+const effectiveImage = imagen || fallbackImage;
+
 // Imagen optimizada para cards: src principal + srcset responsivo
-const imageUrl = imagen
-  ? getOptimizedImageUrl(imagen, { width: 768, quality: 78, strip: 'all' })
-  : null;
-const imageResponsiveData = imagen
-  ? generateSrcset(imagen, {
-      widths: [320, 480, 640, 768, 960],
-      sizes: '(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw',
-      quality: 78,
-      strip: 'all',
-    })
-  : undefined;
+const imageUrl = getOptimizedImageUrl(effectiveImage, { width: 768, quality: 78, strip: 'all' });
+const imageResponsiveData = generateSrcset(effectiveImage, {
+  widths: [320, 480, 640, 768, 960],
+  sizes: '(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw',
+  quality: 78,
+  strip: 'all',
+});
 const authorName = getAuthorName(autor);
 const categoryLabel = CATEGORY_LABELS[categoria] || categoria;
 const categorySlug = CATEGORY_SLUGS[categoria] || categoria;
-const dateShort = formatDateShort(fecha);
 ---
 
 <article class={`blog-card ${destacado ? 'blog-card--featured' : ''}`}>
   <a href={`/blog/${categorySlug}/${slug}`} class="blog-card__link">
     <div class="blog-card__media">
-      {imageUrl ? (
-        <img
-          class="blog-card__image"
-          src={imageUrl}
-          alt={imagenAlt || title}
-          loading="lazy"
-          decoding="async"
-          srcset={imageResponsiveData?.srcset}
-          sizes={imageResponsiveData?.sizes}
-        />
-      ) : (
-        <div class="blog-card__image-placeholder" role="img" aria-label={imagenAlt || title}></div>
-      )}
+      <img
+        class="blog-card__image"
+        src={imageUrl}
+        alt={imagenAlt || title}
+        loading="lazy"
+        decoding="async"
+        srcset={imageResponsiveData.srcset}
+        sizes={imageResponsiveData.sizes}
+      />
       <span class="blog-card__category">{categoryLabel}</span>
     </div>
 
     <div class="blog-card__body">
       <div class="blog-card__meta">
-        <time datetime={fecha}>{dateShort}</time>
-        {tiempoLectura && (
-          <>
-            <span class="blog-card__separator">·</span>
-            <span>{tiempoLectura} min de lectura</span>
-          </>
-        )}
-        <span class="blog-card__separator">·</span>
+        {tiempoLectura && <span>{tiempoLectura} min de lectura</span>}
+        {tiempoLectura && <span class="blog-card__separator">·</span>}
         <span>Guía Técnica</span>
       </div>
 
@@ -137,12 +124,6 @@ const dateShort = formatDateShort(fecha);
     height: 100%;
     object-fit: cover;
     object-position: center;
-  }
-
-  .blog-card__image-placeholder {
-    width: 100%;
-    min-height: 200px;
-    background: linear-gradient(135deg, #edf2f7 0%, #e2e8f0 100%);
   }
 
   .blog-card__category {
@@ -235,8 +216,7 @@ const dateShort = formatDateShort(fecha);
 
   @media (min-width: 768px) {
     .blog-card__media,
-    .blog-card__image,
-    .blog-card__image-placeholder {
+    .blog-card__image {
       min-height: 220px;
     }
   }

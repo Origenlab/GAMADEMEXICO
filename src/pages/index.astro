@@ -383,6 +383,50 @@ const structuredData = [
     </div>
   </section>
 
+  <!-- DIRECTORIO DE EMPRESAS CERTIFICADAS -->
+  <section class="directorio-promo" id="directorio">
+    <div class="container">
+      <div class="directorio-promo__content">
+        <div class="directorio-promo__text">
+          <span class="directorio-promo__badge">Directorio Certificado</span>
+          <h2 class="directorio-promo__title">Consulta Empresas con Sistemas Contra Incendios Verificados</h2>
+          <p class="directorio-promo__desc">Nuestro directorio reúne hoteles, restaurantes, oficinas, almacenes industriales y plantas manufactureras que cuentan con <strong>sistemas de protección contra incendios certificados</strong> por Gama de México. Cada empresa ha sido verificada por nuestros ingenieros, confirmando el funcionamiento óptimo de rociadores automáticos, red de hidrantes, sistemas de detección y gabinetes contra incendio.</p>
+          <ul class="directorio-promo__features">
+            <li>Empresas verificadas por especialistas de Gama de México</li>
+            <li>Sistemas certificados conforme a normativas NFPA y NOM</li>
+            <li>Badge de certificación para mostrar a clientes y aseguradoras</li>
+          </ul>
+          <div class="directorio-promo__actions">
+            <a href="/empresas-certificadas" class="btn btn--primary">Ver Directorio Completo</a>
+            <a href="/empresas-certificadas#registrar" class="btn btn--outline">Registrar Mi Empresa</a>
+          </div>
+        </div>
+        <div class="directorio-promo__stats">
+          <div class="directorio-stat">
+            <span class="directorio-stat__icon">🏨</span>
+            <span class="directorio-stat__label">Hoteles</span>
+            <a href="/empresas-certificadas/giro/hotel" class="directorio-stat__link">Ver certificados →</a>
+          </div>
+          <div class="directorio-stat">
+            <span class="directorio-stat__icon">🍽️</span>
+            <span class="directorio-stat__label">Restaurantes</span>
+            <a href="/empresas-certificadas/giro/restaurante" class="directorio-stat__link">Ver certificados →</a>
+          </div>
+          <div class="directorio-stat">
+            <span class="directorio-stat__icon">🏢</span>
+            <span class="directorio-stat__label">Oficinas</span>
+            <a href="/empresas-certificadas/giro/oficina" class="directorio-stat__link">Ver certificados →</a>
+          </div>
+          <div class="directorio-stat">
+            <span class="directorio-stat__icon">🏭</span>
+            <span class="directorio-stat__label">Industrias</span>
+            <a href="/empresas-certificadas/giro/industria" class="directorio-stat__link">Ver certificados →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- BLOG / RECURSOS -->
   <BlogRecent
     titulo="Recursos Técnicos y Guías"
@@ -407,3 +451,154 @@ const structuredData = [
   </section>
 
 </Layout>
+
+<style>
+  /* DIRECTORIO PROMO */
+  .directorio-promo {
+    padding: var(--spacing-3xl, 4rem) 0;
+    background: linear-gradient(135deg, var(--color-secondary, #1a1a2e) 0%, #2d2d4a 100%);
+    color: white;
+  }
+
+  .directorio-promo__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl, 2rem);
+    align-items: center;
+  }
+
+  @media (min-width: 1024px) {
+    .directorio-promo__content {
+      grid-template-columns: 1.5fr 1fr;
+      gap: var(--spacing-3xl, 4rem);
+    }
+  }
+
+  .directorio-promo__badge {
+    display: inline-block;
+    background: var(--color-primary, #c8102e);
+    color: white;
+    padding: 0.35rem 0.9rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    margin-bottom: var(--spacing-md, 1rem);
+  }
+
+  .directorio-promo__title {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 800;
+    line-height: 1.2;
+    margin: 0 0 var(--spacing-md, 1rem);
+    color: white;
+  }
+
+  .directorio-promo__desc {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 0 0 var(--spacing-lg, 1.5rem);
+  }
+
+  .directorio-promo__desc strong {
+    color: white;
+  }
+
+  .directorio-promo__features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 var(--spacing-xl, 2rem);
+  }
+
+  .directorio-promo__features li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.6rem 0;
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  .directorio-promo__features li::before {
+    content: '✓';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    background: var(--color-primary, #c8102e);
+    border-radius: 50%;
+    font-size: 0.7rem;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  .directorio-promo__actions {
+    display: flex;
+    gap: var(--spacing-sm, 0.75rem);
+    flex-wrap: wrap;
+  }
+
+  .directorio-promo__actions .btn--outline {
+    border-color: rgba(255, 255, 255, 0.5);
+    color: white;
+  }
+
+  .directorio-promo__actions .btn--outline:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: white;
+  }
+
+  /* Stats Grid */
+  .directorio-promo__stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md, 1rem);
+  }
+
+  .directorio-stat {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: var(--border-radius-lg, 12px);
+    padding: var(--spacing-lg, 1.5rem);
+    text-align: center;
+    transition: background-color 0.2s, transform 0.2s;
+  }
+
+  .directorio-stat:hover {
+    background: rgba(255, 255, 255, 0.12);
+    transform: translateY(-2px);
+  }
+
+  .directorio-stat__icon {
+    display: block;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .directorio-stat__label {
+    display: block;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 0.5rem;
+  }
+
+  .directorio-stat__link {
+    font-size: 0.8rem;
+    color: var(--color-primary, #c8102e);
+    text-decoration: none;
+    font-weight: 600;
+    background: rgba(200, 16, 46, 0.2);
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+    display: inline-block;
+    transition: background-color 0.2s;
+  }
+
+  .directorio-stat__link:hover {
+    background: rgba(200, 16, 46, 0.35);
+  }
+</style>

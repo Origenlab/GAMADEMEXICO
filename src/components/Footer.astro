@@ -65,7 +65,7 @@ const currentYear = new Date().getFullYear();
           </ul>
         </div>
 
-        <!-- Columna 3: Servicios y Blog -->
+        <!-- Columna 3: Servicios y Directorio -->
         <div class="footer__col">
           <h3 class="footer__title">Servicios</h3>
           <ul class="footer__list">
@@ -75,10 +75,21 @@ const currentYear = new Date().getFullYear();
             <li><a href="/servicios/cotizaciones" class="footer__link">Cotizaciones Corporativas</a></li>
           </ul>
 
-          <h3 class="footer__title footer__title--spaced">Blog Técnico</h3>
+          <h3 class="footer__title footer__title--spaced">Directorio Certificado</h3>
+          <ul class="footer__list">
+            <li><a href="/empresas-certificadas" class="footer__link">Empresas Certificadas</a></li>
+            <li><a href="/empresas-certificadas#giros" class="footer__link">Por Tipo de Negocio</a></li>
+            <li><a href="/empresas-certificadas#estados" class="footer__link">Por Estado</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna 4: Blog -->
+        <div class="footer__col">
+          <h3 class="footer__title">Blog Técnico</h3>
           <ul class="footer__list">
             <li><a href="/blog" class="footer__link">Todos los Artículos</a></li>
             <li><a href="/blog/monitores-contra-incendios" class="footer__link">Monitores</a></li>
+            <li><a href="/blog/boquillas-contra-incendios" class="footer__link">Boquillas</a></li>
             <li><a href="/blog/mangueras-contra-incendios" class="footer__link">Mangueras</a></li>
             <li><a href="/blog/valvulas-contra-incendios" class="footer__link">Válvulas</a></li>
           </ul>
@@ -470,7 +481,7 @@ const currentYear = new Date().getFullYear();
   /* Desktop */
   @media (min-width: 1024px) {
     .footer__grid {
-      grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+      grid-template-columns: 1.4fr 1fr 1fr 1fr 1.1fr;
     }
 
     .footer__brand {

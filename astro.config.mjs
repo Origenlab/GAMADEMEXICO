@@ -6,6 +6,8 @@ import rehypeEwwwImages from './src/lib/markdown/rehype-ewww-images.mjs';
 
 const env = loadEnv(process.env.NODE_ENV ?? 'development', process.cwd(), '');
 const ewwwCdnBase = env.PUBLIC_EWWW_CDN_BASE || process.env.PUBLIC_EWWW_CDN_BASE || '';
+const isProduction = (process.env.NODE_ENV ?? 'development') === 'production';
+const markdownCdnBase = isProduction ? ewwwCdnBase : '';
 
 // https://astro.build/config
 // Configuración optimizada para SEO con dominio personalizado
@@ -50,6 +52,6 @@ export default defineConfig({
 
     // Optimización automática de imágenes embebidas en Markdown (blog y contenido)
     markdown: {
-          rehypePlugins: [[rehypeEwwwImages, { cdnBase: ewwwCdnBase }]],
+          rehypePlugins: [[rehypeEwwwImages, { cdnBase: markdownCdnBase }]],
     },
 });

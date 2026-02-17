@@ -1,47 +1,94 @@
 ---
 import Layout from '../../../layouts/Base.astro';
 import SectionHeader from '../../../components/SectionHeader.astro';
+import CategoryCard from '../../../components/CategoryCard.astro';
+import CtaCatalogo from '../../../components/CtaCatalogo.astro';
 import CotizacionForm from '../../../components/CotizacionForm.astro';
+import BlogRecent from '../../../components/blog/BlogRecent.astro';
 import { getCollection } from 'astro:content';
 
-// Mapeo de giros a nombres legibles
-const giroLabels: Record<string, string> = {
-  hotel: 'Hoteles',
-  restaurante: 'Restaurantes',
-  oficina: 'Oficinas',
-  almacen: 'Almacenes',
-  hospital: 'Hospitales',
-  escuela: 'Escuelas',
-  industria: 'Industrias',
-  comercio: 'Comercios',
-  residencial: 'Residenciales',
-  otro: 'Otros'
-};
-
-const giroDescriptions: Record<string, string> = {
-  hotel: 'Hoteles y hospedajes con sistemas de protección contra incendios certificados. Rociadores automáticos, detección de humo y alarmas de evacuación.',
-  restaurante: 'Restaurantes y establecimientos de alimentos con sistemas contra incendios. Supresión en cocinas, extintores y rutas de evacuación.',
-  oficina: 'Edificios corporativos y oficinas con protección integral contra incendios. Rociadores, detección inteligente y sistemas de alarma.',
-  almacen: 'Almacenes y bodegas con protección contra incendios industriales. Sistemas de rociadores de alta capacidad y detección temprana.',
-  hospital: 'Hospitales y centros de salud con protección especializada. Sistemas redundantes, detección temprana y evacuación asistida.',
-  escuela: 'Escuelas e instituciones educativas con sistemas contra incendios. Detección, alarmas y señalización para evacuación segura.',
-  industria: 'Plantas industriales y fábricas con protección robusta. Sistemas de espuma, rociadores industriales y monitoreo 24/7.',
-  comercio: 'Centros comerciales y tiendas con sistemas integrados. Detección, supresión y control de humo para grandes espacios.',
-  residencial: 'Edificios residenciales y condominios con protección completa. Rociadores residenciales, detección en áreas comunes.',
-  otro: 'Otros establecimientos con sistemas de protección contra incendios certificados.'
-};
-
-const giroIcons: Record<string, string> = {
-  hotel: '/img/icons/hotel-fire.svg',
-  restaurante: '/img/icons/restaurant-fire.svg',
-  oficina: '/img/icons/office-fire.svg',
-  almacen: '/img/icons/warehouse-fire.svg',
-  hospital: '/img/icons/hospital-fire.svg',
-  escuela: '/img/icons/school-fire.svg',
-  industria: '/img/icons/industry-fire.svg',
-  comercio: '/img/icons/commerce-fire.svg',
-  residencial: '/img/icons/residential-fire.svg',
-  otro: '/img/icons/other-fire.svg'
+// Mapeo de giros a nombres y descripciones SEO
+const giroInfo: Record<string, { label: string; labelSingular: string; description: string; intro: string; parrafo1: string; parrafo2: string }> = {
+  hotel: {
+    label: 'Hoteles',
+    labelSingular: 'Hotel',
+    description: 'Directorio de hoteles con sistemas de protección contra incendios certificados en México. Rociadores automáticos, detección de humo y alarmas de evacuación verificados.',
+    intro: 'Consulta hoteles y hospedajes con sistemas contra incendios certificados por Gama de México. Cada establecimiento cuenta con verificación de rociadores, detectores y rutas de evacuación.',
+    parrafo1: 'Los hoteles requieren sistemas de protección contra incendios especializados debido a la alta ocupación de huéspedes, muchos de ellos desconociendo la distribución del edificio. La normativa NFPA 101 (Código de Seguridad Humana) y NOM-002-STPS establecen requisitos específicos: rociadores en todas las habitaciones, detectores de humo interconectados, sistemas de alarma audible y visual, iluminación de emergencia en pasillos y escaleras, y señalización fotoluminiscente de rutas de evacuación.',
+    parrafo2: 'Gama de México verifica que cada hotel listado cumpla con estos estándares: rociadores con cobertura completa, panel de detección direccionable, estaciones manuales en cada piso, gabinetes con manguera y extintores, y planes de evacuación actualizados. La certificación vigente garantiza a huéspedes, aseguradoras y autoridades que el inmueble está preparado para responder ante cualquier emergencia.'
+  },
+  restaurante: {
+    label: 'Restaurantes',
+    labelSingular: 'Restaurante',
+    description: 'Restaurantes con sistemas contra incendios certificados. Supresión en cocinas comerciales, extintores clase K y detectores de humo verificados.',
+    intro: 'Directorio de restaurantes y establecimientos de alimentos con protección contra incendios certificada. Sistemas de supresión en campanas y cocinas comerciales.',
+    parrafo1: 'Los restaurantes presentan riesgos específicos de incendio debido a las cocinas comerciales con equipos de alta temperatura, grasas y aceites. La normativa NFPA 96 (Control de Ventilación y Protección contra Incendios de Operaciones de Cocina Comercial) requiere sistemas de supresión automática en campanas extractoras, extintores clase K para fuegos de aceite, y mantenimiento periódico de ductos de ventilación.',
+    parrafo2: 'Los restaurantes certificados por Gama de México cuentan con: sistema de supresión tipo Ansul o equivalente en campanas, extintores clase K ubicados a no más de 9 metros de equipos de cocina, detectores de humo en áreas de comedor, señalización de salidas de emergencia, y capacitación del personal en uso de equipos. La verificación incluye pruebas de funcionamiento y revisión de mantenimiento.'
+  },
+  oficina: {
+    label: 'Oficinas',
+    labelSingular: 'Oficina',
+    description: 'Edificios corporativos y oficinas con protección integral contra incendios. Rociadores automáticos, detección inteligente y sistemas de alarma certificados.',
+    intro: 'Directorio de oficinas corporativas y espacios de trabajo con sistemas contra incendios verificados. Protección para empleados, visitantes y activos empresariales.',
+    parrafo1: 'Los edificios de oficinas albergan gran cantidad de personas y equipos electrónicos de alto valor. La normativa NFPA 13 (Instalación de Sistemas de Rociadores) y NFPA 72 (Código Nacional de Alarmas) establecen requisitos para protección completa: rociadores automáticos en todas las áreas, detectores de humo en espacios abiertos y cerrados, sistema de alarma con notificación masiva, control de humo en edificios de altura, y sistemas de comunicación de emergencia.',
+    parrafo2: 'Las oficinas certificadas incluyen: rociadores con cobertura adecuada al tipo de ocupación, panel de detección con comunicador a central de monitoreo, estaciones manuales en accesos a escaleras, gabinetes contra incendio en cada nivel, iluminación de emergencia en rutas de evacuación, y brigadas capacitadas. Gama de México verifica el funcionamiento de todos los sistemas y su mantenimiento actualizado.'
+  },
+  almacen: {
+    label: 'Almacenes',
+    labelSingular: 'Almacén',
+    description: 'Almacenes y bodegas con protección contra incendios industriales. Rociadores ESFR de alta descarga, red de hidrantes y monitores certificados.',
+    intro: 'Directorio de almacenes, bodegas y centros de distribución con sistemas contra incendios de alto rendimiento verificados por Gama de México.',
+    parrafo1: 'Los almacenes y centros de distribución presentan desafíos únicos: grandes alturas de almacenamiento, materiales combustibles empacados, y rápida propagación del fuego entre racks. La normativa NFPA 13 requiere sistemas de rociadores especializados ESFR (Early Suppression Fast Response) o rociadores en rack, con densidades de descarga calculadas según el tipo de mercancía, altura de almacenamiento y configuración de estanterías.',
+    parrafo2: 'Los almacenes certificados cuentan con: rociadores ESFR K14 a K25 según altura, red de hidrantes exteriores e interiores, monitores contra incendios en patios de maniobras, detectores de humo por aspiración (VESDA) para detección temprana, y sistemas de control de humo. Gama de México verifica cálculos hidráulicos, pruebas de flujo, y documentación de diseño conforme a NFPA.'
+  },
+  hospital: {
+    label: 'Hospitales',
+    labelSingular: 'Hospital',
+    description: 'Hospitales y clínicas con sistemas contra incendios especializados para áreas críticas. Protección redundante y evacuación asistida.',
+    intro: 'Directorio de hospitales y centros de salud con protección contra incendios especializada. Sistemas redundantes para áreas críticas y evacuación de pacientes.',
+    parrafo1: 'Los hospitales requieren el más alto nivel de protección contra incendios debido a pacientes con movilidad reducida, equipos médicos sensibles, y áreas con gases medicinales y oxígeno. La normativa NFPA 99 (Código de Instalaciones de Atención de la Salud) y NFPA 101 establecen requisitos especiales: compartimentación contra fuego, sistemas de supresión con agentes limpios en quirófanos y laboratorios, detectores especializados que eviten falsas alarmas, y planes de evacuación horizontal.',
+    parrafo2: 'Los hospitales certificados incluyen: rociadores en todas las áreas excepto donde esté contraindicado, sistemas FM-200 o Novec en áreas de equipo crítico, detectores multicriterio para reducir falsas alarmas, sistema de alarma con notificación por zonas, iluminación de emergencia con respaldo de 90 minutos, generadores para sistemas de vida, y personal capacitado en evacuación asistida. La verificación de Gama de México incluye todas las áreas críticas.'
+  },
+  escuela: {
+    label: 'Escuelas',
+    labelSingular: 'Escuela',
+    description: 'Escuelas e instituciones educativas con sistemas contra incendios. Detección, alarmas y señalización para evacuación segura de estudiantes.',
+    intro: 'Directorio de escuelas y universidades con sistemas de protección contra incendios certificados. Prioridad en evacuación segura de estudiantes.',
+    parrafo1: 'Las instituciones educativas deben proteger a estudiantes de todas las edades, muchos de ellos menores que requieren supervisión durante emergencias. La normativa NFPA 101 para ocupaciones educativas requiere: sistemas de alarma con notificación completa, rutas de evacuación amplias y claramente señalizadas, simulacros periódicos documentados, y coordinación con bomberos locales para planes de respuesta.',
+    parrafo2: 'Las escuelas certificadas cuentan con: detectores de humo en aulas, pasillos y áreas comunes, sistema de alarma audible en todo el campus, estaciones manuales en salidas, iluminación de emergencia en rutas de evacuación, extintores en ubicaciones accesibles, y planes de evacuación publicados en cada salón. Gama de México verifica el funcionamiento de todos los sistemas y la documentación de simulacros realizados.'
+  },
+  industria: {
+    label: 'Industrias',
+    labelSingular: 'Industria',
+    description: 'Plantas industriales y fábricas con protección contra incendios de alto rendimiento. Rociadores industriales, sistemas de espuma y monitoreo 24/7.',
+    intro: 'Directorio de plantas industriales con sistemas contra incendios especializados. Protección para procesos de manufactura y materiales peligrosos.',
+    parrafo1: 'Las instalaciones industriales presentan riesgos variados: procesos con altas temperaturas, materiales inflamables, maquinaria que genera chispas, y grandes volúmenes de producción. Dependiendo del proceso, pueden requerir sistemas específicos bajo NFPA 30 (Líquidos Inflamables y Combustibles), NFPA 654 (Prevención de Explosiones de Polvo), o NFPA 86 (Hornos y Equipos de Calentamiento).',
+    parrafo2: 'Las plantas certificadas incluyen sistemas adaptados a sus riesgos específicos: rociadores con densidades calculadas para la ocupación, sistemas de espuma para tanques de líquidos inflamables, supresión de CO2 en cuartos eléctricos, detectores de llama UV/IR en áreas de proceso, monitores industriales en exteriores, y brigadas contra incendio capacitadas. Gama de México realiza evaluación de riesgos específica para cada instalación.'
+  },
+  comercio: {
+    label: 'Comercios',
+    labelSingular: 'Comercio',
+    description: 'Centros comerciales y tiendas con sistemas contra incendios integrados. Detección, supresión y control de humo para grandes espacios.',
+    intro: 'Directorio de centros comerciales y tiendas con protección contra incendios certificada. Sistemas diseñados para alta afluencia de público.',
+    parrafo1: 'Los espacios comerciales requieren protección que permita evacuación masiva de clientes y empleados. La normativa NFPA 101 para ocupaciones comerciales y NFPA 92 (Control de Humo) establecen: sistemas de rociadores con cobertura completa, detectores de humo y calor, sistemas de control y evacuación de humo en grandes espacios, señalización visible desde cualquier punto, y sistemas de comunicación para instrucciones de evacuación.',
+    parrafo2: 'Los comercios certificados cuentan con: rociadores automáticos en áreas de venta, bodegas y oficinas, detectores direccionables para identificación precisa de zona, sistema de control de humo en atrios y espacios de doble altura, gabinetes contra incendio distribuidos estratégicamente, rutas de evacuación con capacidad para aforo máximo, e iluminación de emergencia en todo el establecimiento. La certificación asegura funcionamiento coordinado de todos los sistemas.'
+  },
+  residencial: {
+    label: 'Residenciales',
+    labelSingular: 'Residencial',
+    description: 'Edificios residenciales y condominios con protección contra incendios completa. Rociadores residenciales y detección en áreas comunes.',
+    intro: 'Directorio de edificios residenciales con sistemas contra incendios certificados. Protección para residentes y áreas comunes.',
+    parrafo1: 'Los edificios residenciales requieren protección que funcione cuando los residentes duermen o están ausentes. La normativa NFPA 13R (Instalación de Sistemas de Rociadores en Ocupaciones Residenciales de Baja Altura) y NFPA 13 para edificios de altura establecen: rociadores residenciales de respuesta rápida en todas las unidades, detectores de humo interconectados, sistema de alarma con notificación a todos los departamentos, y rutas de evacuación protegidas.',
+    parrafo2: 'Los residenciales certificados incluyen: rociadores residenciales en cada departamento y áreas comunes, detectores de humo en recámaras y pasillos, sistema de alarma con sirenas en áreas comunes y comunicador a central, gabinetes contra incendio en cada piso, iluminación de emergencia en escaleras y pasillos, y sistema de presurización de escaleras en edificios de altura. Gama de México verifica la protección de todas las áreas.'
+  },
+  otro: {
+    label: 'Otros',
+    labelSingular: 'Establecimiento',
+    description: 'Otros establecimientos con sistemas de protección contra incendios certificados por Gama de México.',
+    intro: 'Directorio de establecimientos diversos con sistemas contra incendios certificados.',
+    parrafo1: 'Cada tipo de establecimiento tiene requerimientos específicos de protección contra incendios basados en su ocupación, materiales presentes, y riesgos particulares. Gama de México evalúa cada instalación individualmente para asegurar que cumpla con las normativas aplicables a su tipo de uso.',
+    parrafo2: 'Todos los establecimientos certificados cuentan con sistemas verificados que cumplen con NOM-002-STPS y normativas NFPA aplicables a su tipo de ocupación. La certificación incluye revisión de equipos instalados, pruebas de funcionamiento, y verificación de mantenimiento actualizado.'
+  }
 };
 
 // Mapeo de sistemas
@@ -71,6 +118,7 @@ export async function getStaticPaths() {
 }
 
 const { empresas, giro } = Astro.props;
+const info = giroInfo[giro] || giroInfo.otro;
 
 // Agrupar por ciudad
 const empresasPorCiudad = empresas.reduce((acc, empresa) => {
@@ -85,7 +133,6 @@ const empresasOrdenadas = [...empresas].sort((a, b) => {
   if (a.data.destacado && !b.data.destacado) return -1;
   if (!a.data.destacado && b.data.destacado) return 1;
   if (a.data.verificado && !b.data.verificado) return -1;
-  if (!a.data.verificado && b.data.verificado) return 1;
   return 0;
 });
 
@@ -93,8 +140,8 @@ const empresasOrdenadas = [...empresas].sort((a, b) => {
 const itemListSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  "name": `${giroLabels[giro]} con Sistemas Contra Incendios Certificados en México`,
-  "description": giroDescriptions[giro],
+  "name": `${info.label} con Sistemas Contra Incendios Certificados en México`,
+  "description": info.description,
   "numberOfItems": empresas.length,
   "itemListElement": empresasOrdenadas.slice(0, 10).map((empresa, index) => ({
     "@type": "ListItem",
@@ -119,386 +166,328 @@ const breadcrumbSchema = {
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://gamademexico.com" },
     { "@type": "ListItem", "position": 2, "name": "Empresas Certificadas", "item": "https://gamademexico.com/empresas-certificadas" },
-    { "@type": "ListItem", "position": 3, "name": giroLabels[giro] }
+    { "@type": "ListItem", "position": 3, "name": info.label }
   ]
 };
 ---
 
 <Layout
-  title={`${giroLabels[giro]} con Sistemas Contra Incendios | Directorio México`}
-  description={giroDescriptions[giro]}
+  title={`${info.label} con Sistemas Contra Incendios Certificados | Directorio México`}
+  description={info.description}
   activePage="directorio"
-  heroTitle={`${giroLabels[giro]} con Sistemas Contra Incendios Certificados`}
-  heroIntro={giroDescriptions[giro]}
-  heroBadge={giroLabels[giro]}
+  heroTitle={`${info.label} con Sistemas Contra Incendios Certificados en México`}
+  heroIntro={info.intro}
+  heroBadge={`Directorio de ${info.label}`}
   heroMetrics={[
-    { valor: String(empresas.length), texto: "Empresas certificadas" },
+    { valor: String(empresas.length), texto: `${info.label} certificados` },
     { valor: String(Object.keys(empresasPorCiudad).length), texto: "Ciudades" }
   ]}
   heroPrimaryText="Registra tu empresa"
   heroPrimaryLink="/empresas-certificadas#registrar"
   heroSecondaryText="Ver todos los giros"
   heroSecondaryLink="/empresas-certificadas#giros"
+  heroShowRightContent={true}
   structuredData={[itemListSchema, breadcrumbSchema]}
 >
 
-  <!-- Breadcrumb -->
-  <nav class="breadcrumb" aria-label="Navegación">
+  <!-- HERO CONTENT -->
+  <Fragment slot="hero-content">
+    <p>El <strong>Directorio de {info.label} con Sistemas Contra Incendios Certificados</strong> de Gama de México reúne establecimientos que han implementado y verificado sus sistemas de protección. Cada {info.labelSingular.toLowerCase()} listado cuenta con certificación vigente que acredita el correcto funcionamiento de rociadores, detectores, alarmas y equipos de supresión conforme a normativas NFPA y NOM.</p>
+    <p>Consulta la ubicación, sistemas instalados y estado de certificación de cada establecimiento. La información está verificada por ingenieros especializados de Gama de México.</p>
+  </Fragment>
+
+  <!-- Contenido Principal con Sidebar -->
+  <section class="main-content">
     <div class="container">
-      <ol class="breadcrumb__list">
-        <li class="breadcrumb__item"><a href="/">Inicio</a></li>
-        <li class="breadcrumb__item"><a href="/empresas-certificadas">Empresas Certificadas</a></li>
-        <li class="breadcrumb__item breadcrumb__item--active" aria-current="page">{giroLabels[giro]}</li>
-      </ol>
-    </div>
-  </nav>
+      <div class="main-content__grid">
 
-  <!-- Listado de Empresas -->
-  <section class="empresas-list">
-    <div class="container">
-      <SectionHeader
-        titulo={`${empresas.length} ${giroLabels[giro]} Certificados`}
-        subtitulo="Empresas con sistemas de protección contra incendios verificados"
-        idTitulo="lista-empresas"
-      />
+        <!-- Columna Principal -->
+        <div class="main-content__primary">
+          <SectionHeader
+            titulo={`Directorio de ${empresas.length} ${info.label} con Protección Contra Incendios Verificada`}
+            subtitulo={`Establecimientos con sistemas certificados por Gama de México en ${Object.keys(empresasPorCiudad).length} ciudades de México`}
+            idTitulo="lista-empresas"
+            parrafo1={info.parrafo1}
+            parrafo2={info.parrafo2}
+          />
 
-      <div class="empresas-grid">
-        {empresasOrdenadas.map((empresa) => (
-          <article class="empresa-card">
-            <div class="empresa-card__header">
-              {empresa.data.verificado && (
-                <span class="badge badge--verified">Verificado</span>
-              )}
-              {empresa.data.certificacionVigente && (
-                <span class="badge badge--active">Vigente</span>
-              )}
-            </div>
+          <div class="empresas-grid">
+            {empresasOrdenadas.map((empresa) => (
+              <CategoryCard
+                titulo={empresa.data.nombre}
+                subtitulo={`${empresa.data.ciudad}, ${empresa.data.estado} · ${empresa.data.certificacionVigente ? 'Certificación Vigente' : 'Certificación Vencida'}`}
+                enlace={`/empresas-certificadas/${empresa.data.slug}`}
+                subcategorias={empresa.data.tipoSistema.slice(0, 4).map((sistema) => ({
+                  nombre: sistemaLabels[sistema],
+                  enlace: `/empresas-certificadas/${empresa.data.slug}#${sistema}`
+                }))}
+              />
+            ))}
+          </div>
+        </div>
 
-            <h3 class="empresa-card__title">
-              <a href={`/empresas-certificadas/${empresa.data.slug}`}>
-                {empresa.data.nombre}
+        <!-- Sidebar -->
+        <aside class="main-content__sidebar">
+
+          <!-- Por Ciudad -->
+          <div class="sidebar-card">
+            <h3 class="sidebar-card__title">{info.label} por Ciudad</h3>
+            <nav class="city-nav">
+              {Object.entries(empresasPorCiudad)
+                .sort((a, b) => b[1].length - a[1].length)
+                .slice(0, 8)
+                .map(([ciudad, lista]) => (
+                  <a href={`#ciudad-${ciudad.toLowerCase().replace(/\s+/g, '-')}`} class="city-nav__link">
+                    <span>{ciudad}</span>
+                    <span class="city-nav__count">{lista.length}</span>
+                  </a>
+                ))}
+            </nav>
+          </div>
+
+          <!-- Explorar Directorio -->
+          <div class="sidebar-card">
+            <h3 class="sidebar-card__title">Explorar Directorio</h3>
+            <nav class="directory-nav">
+              <a href="/empresas-certificadas" class="directory-nav__link">
+                <span>Todas las empresas certificadas</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 18l6-6-6-6"/>
+                </svg>
               </a>
-            </h3>
-
-            <p class="empresa-card__location">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                <circle cx="12" cy="10" r="3"/>
-              </svg>
-              {empresa.data.colonia}, {empresa.data.ciudad}
-            </p>
-
-            <p class="empresa-card__address">
-              {empresa.data.direccion}
-            </p>
-
-            <div class="empresa-card__systems">
-              {empresa.data.tipoSistema.slice(0, 3).map((sistema) => (
-                <span class="system-tag">{sistemaLabels[sistema]}</span>
-              ))}
-              {empresa.data.tipoSistema.length > 3 && (
-                <span class="system-tag system-tag--more">+{empresa.data.tipoSistema.length - 3}</span>
-              )}
-            </div>
-
-            <div class="empresa-card__footer">
-              <span class="cert-info">
-                Certificado: {new Date(empresa.data.fechaCertificacion).toLocaleDateString('es-MX', { month: 'short', year: 'numeric' })}
-              </span>
-              <a href={`/empresas-certificadas/${empresa.data.slug}`} class="btn btn--sm btn--primary">
-                Ver detalles
+              <a href="/empresas-certificadas#giros" class="directory-nav__link">
+                <span>Ver otros tipos de negocio</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 18l6-6-6-6"/>
+                </svg>
               </a>
-            </div>
-          </article>
-        ))}
+              <a href="/empresas-certificadas#estados" class="directory-nav__link">
+                <span>Buscar por estado</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 18l6-6-6-6"/>
+                </svg>
+              </a>
+            </nav>
+          </div>
+
+          <!-- CTA Sidebar -->
+          <div class="sidebar-card sidebar-card--cta">
+            <h3 class="sidebar-card__title">¿Tu {info.labelSingular.toLowerCase()} necesita certificación?</h3>
+            <p class="sidebar-cta__text">Verifica tus sistemas contra incendios y aparece en nuestro directorio oficial.</p>
+            <a href="#cotizar" class="sidebar-cta__btn">Solicitar certificación</a>
+          </div>
+
+        </aside>
       </div>
     </div>
   </section>
 
-  <!-- Explorar por Ciudad -->
-  {Object.keys(empresasPorCiudad).length > 1 && (
-    <section class="explore-cities">
-      <div class="container">
-        <SectionHeader
-          titulo={`${giroLabels[giro]} por Ciudad`}
-          subtitulo="Encuentra empresas certificadas cerca de ti"
-          idTitulo="por-ciudad"
-        />
-
-        <div class="cities-grid">
-          {Object.entries(empresasPorCiudad)
-            .sort((a, b) => b[1].length - a[1].length)
-            .map(([ciudad, lista]) => (
-              <div class="city-card">
-                <h3 class="city-card__title">{ciudad}</h3>
-                <p class="city-card__count">{lista.length} empresas</p>
-                <ul class="city-card__list">
-                  {lista.slice(0, 3).map(emp => (
-                    <li>
-                      <a href={`/empresas-certificadas/${emp.data.slug}`}>{emp.data.nombre}</a>
-                    </li>
-                  ))}
-                </ul>
-                {lista.length > 3 && (
-                  <span class="city-card__more">+{lista.length - 3} más</span>
-                )}
-              </div>
-            ))}
-        </div>
-      </div>
-    </section>
-  )}
+  <!-- Artículos Relacionados -->
+  <BlogRecent
+    titulo={`Guías Técnicas sobre Protección Contra Incendios para ${info.label}`}
+    subtitulo="Recursos de nuestro equipo de ingenieros especializados"
+    limit={3}
+    columns={3}
+    background="white"
+    showViewAll={true}
+  />
 
   <!-- CTA -->
+  <CtaCatalogo
+    titulo={`¿Tu ${info.labelSingular.toLowerCase()} tiene sistema contra incendios?`}
+    subtitulo="Verificación profesional · Certificado digital · Inclusión en directorio"
+    textoBoton="Solicitar certificación"
+    enlace="#cotizar"
+  />
+
+  <!-- Formulario -->
   <CotizacionForm
-    titulo={`¿Tu ${giroLabels[giro].slice(0, -1).toLowerCase()} necesita certificación?`}
-    producto={`Certificación para ${giroLabels[giro]}`}
-    pagina={`Giro: ${giroLabels[giro]}`}
+    titulo={`Certifica tu ${info.labelSingular.toLowerCase()}`}
+    producto={`Certificación para ${info.label}`}
+    pagina={`Giro: ${info.label}`}
   />
 
 </Layout>
 
 <style>
-  /* Breadcrumb */
-  .breadcrumb {
-    background: #f8f9fa;
-    padding: 1rem 0;
-    border-bottom: 1px solid #e9ecef;
+  /* Main Content with Sidebar */
+  .main-content {
+    padding: var(--spacing-3xl) 0;
+    background: var(--color-accent);
   }
 
-  .breadcrumb__list {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    font-size: 0.875rem;
-    gap: 0.25rem;
+  .main-content__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
   }
 
-  .breadcrumb__item {
-    display: flex;
-    align-items: center;
-    color: #666;
-  }
-
-  .breadcrumb__item:not(:last-child)::after {
-    content: '/';
-    margin: 0 0.5rem;
-    color: #aaa;
-  }
-
-  .breadcrumb__item a {
-    color: #c8102e;
-    text-decoration: none;
-  }
-
-  .breadcrumb__item--active {
-    color: #333;
-    font-weight: 600;
-  }
-
-  /* Empresas List */
-  .empresas-list {
-    padding: 3rem 0;
+  .main-content__primary {
+    min-width: 0;
   }
 
   .empresas-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-    gap: 1.5rem;
-    margin-top: 2rem;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-xl);
   }
 
-  .empresa-card {
-    background: white;
-    border-radius: 12px;
-    padding: 1.5rem;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-    transition: transform 0.2s, box-shadow 0.2s;
+  /* Sidebar */
+  .main-content__sidebar {
     display: flex;
     flex-direction: column;
+    gap: var(--spacing-lg);
   }
 
-  .empresa-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  .sidebar-card {
+    background: var(--color-white);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-lg);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
   }
 
-  .empresa-card__header {
-    display: flex;
-    gap: 0.5rem;
-    margin-bottom: 0.75rem;
-  }
-
-  .badge {
-    display: inline-block;
-    padding: 0.2rem 0.6rem;
-    border-radius: 16px;
-    font-size: 0.7rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.02em;
-  }
-
-  .badge--verified {
-    background: #e8f5e9;
-    color: #2e7d32;
-  }
-
-  .badge--active {
-    background: #e3f2fd;
-    color: #1565c0;
-  }
-
-  .empresa-card__title {
-    font-size: 1.15rem;
+  .sidebar-card__title {
+    font-size: var(--font-size-base);
     font-weight: 700;
-    margin-bottom: 0.5rem;
-    line-height: 1.3;
+    color: var(--color-secondary);
+    margin: 0 0 var(--spacing-md) 0;
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 2px solid var(--color-primary);
   }
 
-  .empresa-card__title a {
-    color: #1a1a2e;
-    text-decoration: none;
-  }
-
-  .empresa-card__title a:hover {
-    color: #c8102e;
-  }
-
-  .empresa-card__location {
+  /* City Navigation */
+  .city-nav {
     display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    color: #c8102e;
-    font-size: 0.9rem;
-    font-weight: 500;
-    margin-bottom: 0.25rem;
+    flex-direction: column;
+    gap: 0;
   }
 
-  .empresa-card__address {
-    color: #666;
-    font-size: 0.85rem;
-    margin-bottom: 1rem;
-    line-height: 1.4;
-  }
-
-  .empresa-card__systems {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.4rem;
-    margin-bottom: 1rem;
-    flex-grow: 1;
-  }
-
-  .system-tag {
-    background: #f0f0f0;
-    padding: 0.2rem 0.5rem;
-    border-radius: 4px;
-    font-size: 0.72rem;
-    color: #555;
-  }
-
-  .system-tag--more {
-    background: #c8102e;
-    color: white;
-  }
-
-  .empresa-card__footer {
+  .city-nav__link {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 1rem;
-    border-top: 1px solid #eee;
-    margin-top: auto;
+    padding: var(--spacing-sm) 0;
+    border-bottom: 1px solid var(--color-accent);
+    text-decoration: none;
+    color: var(--color-text);
+    font-size: var(--font-size-sm);
+    transition: color var(--transition-fast);
   }
 
-  .cert-info {
-    font-size: 0.8rem;
-    color: #888;
-  }
-
-  /* Cities */
-  .explore-cities {
-    padding: 3rem 0;
-    background: #f8f9fa;
-  }
-
-  .cities-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 1.5rem;
-    margin-top: 2rem;
-  }
-
-  .city-card {
-    background: white;
-    border-radius: 12px;
-    padding: 1.5rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-  }
-
-  .city-card__title {
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: #1a1a2e;
-    margin-bottom: 0.25rem;
-  }
-
-  .city-card__count {
-    font-size: 0.85rem;
-    color: #c8102e;
-    font-weight: 600;
-    margin-bottom: 1rem;
-  }
-
-  .city-card__list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .city-card__list li {
-    padding: 0.35rem 0;
-    border-bottom: 1px solid #f0f0f0;
-  }
-
-  .city-card__list li:last-child {
+  .city-nav__link:last-child {
     border-bottom: none;
   }
 
-  .city-card__list a {
-    color: #444;
+  .city-nav__link:hover {
+    color: var(--color-primary);
+  }
+
+  .city-nav__count {
+    background: var(--color-accent);
+    padding: 0.15rem 0.5rem;
+    border-radius: 12px;
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    color: var(--color-text-light);
+  }
+
+  /* Directory Navigation */
+  .directory-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .directory-nav__link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-sm) 0;
+    border-bottom: 1px solid var(--color-accent);
     text-decoration: none;
-    font-size: 0.9rem;
+    color: var(--color-text);
+    font-size: var(--font-size-sm);
+    transition: color var(--transition-fast);
   }
 
-  .city-card__list a:hover {
-    color: #c8102e;
+  .directory-nav__link:last-child {
+    border-bottom: none;
   }
 
-  .city-card__more {
-    display: inline-block;
-    margin-top: 0.75rem;
-    font-size: 0.8rem;
-    color: #888;
+  .directory-nav__link:hover {
+    color: var(--color-primary);
+  }
+
+  .directory-nav__link svg {
+    color: var(--color-text-light);
+    transition: transform var(--transition-fast);
+  }
+
+  .directory-nav__link:hover svg {
+    transform: translateX(4px);
+    color: var(--color-primary);
+  }
+
+  /* Sidebar CTA */
+  .sidebar-card--cta {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    color: var(--color-white);
+  }
+
+  .sidebar-card--cta .sidebar-card__title {
+    color: var(--color-white);
+    border-bottom-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .sidebar-cta__text {
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-relaxed);
+    margin-bottom: var(--spacing-md);
+    opacity: 0.9;
+  }
+
+  .sidebar-cta__btn {
+    display: block;
+    width: 100%;
+    padding: var(--spacing-sm) var(--spacing-md);
+    background: var(--color-white);
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: var(--font-size-sm);
+    text-align: center;
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    transition: all var(--transition-fast);
+  }
+
+  .sidebar-cta__btn:hover {
+    background: var(--color-accent);
   }
 
   /* Responsive */
-  @media (max-width: 768px) {
+  @media (min-width: 768px) {
     .empresas-grid {
-      grid-template-columns: 1fr;
-    }
-
-    .cities-grid {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 
-  @media (max-width: 480px) {
-    .cities-grid {
-      grid-template-columns: 1fr;
+  @media (min-width: 1024px) {
+    .main-content__grid {
+      grid-template-columns: 1fr 340px;
+      gap: var(--spacing-2xl);
+    }
+
+    .main-content__sidebar {
+      position: sticky;
+      top: var(--spacing-lg);
+      align-self: start;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .main-content__grid {
+      grid-template-columns: 1fr 380px;
     }
   }
 </style>

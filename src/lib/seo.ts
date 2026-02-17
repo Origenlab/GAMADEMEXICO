@@ -228,8 +228,6 @@ interface ArticleSchemaInput {
   description: string;
   url: string;
   image?: string;
-  datePublished: string;
-  dateModified?: string;
   author: string | { nombre: string; cargo?: string };
   category: string;
   tags?: string[];
@@ -251,8 +249,6 @@ export function buildArticleSchema(article: ArticleSchemaInput) {
     '@type': 'Article',
     headline: article.title,
     description: article.description,
-    datePublished: article.datePublished,
-    dateModified: article.dateModified || article.datePublished,
     author: {
       '@type': 'Person',
       name: authorName,

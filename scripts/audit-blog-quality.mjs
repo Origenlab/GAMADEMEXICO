@@ -3,6 +3,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 const BLOG_DIR = path.join(process.cwd(), 'src', 'content', 'blog');
+const PUBLIC_DIR = path.join(process.cwd(), 'public');
 
 const MIN_TITLE = 20;
 const MAX_TITLE = 70;
@@ -41,8 +42,11 @@ function auditFile(filePath) {
 
   const internalLinks = (body.match(/\[[^\]]+\]\(\/(?!\/)[^)]+\)/g) || []).length;
   const inlineImages = (body.match(/!\[[^\]]*\]\([^)]+\)/g) || []).length;
+  const inlineImagePaths = [...body.matchAll(/!\[[^\]]*\]\((\/img\/[^)\s]+)\)/g)].map((m) => m[1]);
+  const brokenInlineImages = inlineImagePaths.filter((imgPath) => !fs.existsSync(path.join(PUBLIC_DIR, imgPath.replace(/^\/+/, ''))));
   const h2Count = (body.match(/^##\s+/gm) || []).length;
   const hasInterlink = /##\s+Interlinking recomendado Gama de México|##\s+Interlinking estratégico|Rutas estratégicas para tu proyecto/i.test(body);
+  const heroImageExists = Boolean(imagen) && fs.existsSync(path.join(PUBLIC_DIR, imagen.replace(/^\/+/, '')));
 
   const checks = [
     {
@@ -62,6 +66,12 @@ function auditFile(filePath) {
       ok: Boolean(imagen) && imagen.startsWith('/img/'),
       detail: imagen || 'missing',
       expected: 'starts with /img/',
+    },
+    {
+      key: 'hero_image_file',
+      ok: heroImageExists,
+      detail: heroImageExists ? 'ok' : (imagen || 'missing'),
+      expected: 'existing file in /public/img',
     },
     {
       key: 'hero_image_alt',
@@ -86,6 +96,12 @@ function auditFile(filePath) {
       ok: inlineImages >= MIN_INLINE_IMAGES,
       detail: `${inlineImages}`,
       expected: `>= ${MIN_INLINE_IMAGES}`,
+    },
+    {
+      key: 'inline_image_files',
+      ok: brokenInlineImages.length === 0,
+      detail: brokenInlineImages.length ? brokenInlineImages.join(', ') : 'ok',
+      expected: 'all inline /img paths must exist',
     },
     {
       key: 'h2_sections',

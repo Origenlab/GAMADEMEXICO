@@ -5,6 +5,7 @@
 // =============================================================================
 
 const RAW_CDN_BASE = (import.meta.env.PUBLIC_EWWW_CDN_BASE ?? '').trim();
+const IS_DEV = import.meta.env.DEV;
 
 // -----------------------------------------------------------------------------
 // Tipos e interfaces
@@ -98,7 +99,8 @@ export function withImageCdn(path?: string): string | undefined {
   }
 
   const cdnBase = sanitizeCdnBase(RAW_CDN_BASE);
-  if (!cdnBase || !path.startsWith('/')) {
+  // En desarrollo local priorizamos rutas locales para evitar dependencias externas del CDN.
+  if (IS_DEV || !cdnBase || !path.startsWith('/')) {
     return path;
   }
 

@@ -369,6 +369,32 @@
   text-align: center;
 }
 
+/* Directorio Variant */
+.sidebar-widget--directorio {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border: 1px solid #dee2e6;
+}
+
+.sidebar-widget--directorio .sidebar-widget__header {
+  border-bottom-color: var(--color-primary);
+}
+
+.sidebar-widget__cta-link {
+  display: block;
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid #dee2e6;
+  font-size: 0.8rem;
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.sidebar-widget__cta-link:hover {
+  color: var(--color-secondary);
+}
+
 /* SIDEBAR NAV */
 .sidebar-nav__list {
   list-style: none;

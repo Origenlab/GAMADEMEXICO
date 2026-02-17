@@ -8,11 +8,9 @@ import { getThumbnailUrl } from '../../lib/images';
 
 interface Props {
   autor: string | { nombre: string; cargo?: string; imagen?: string };
-  fecha?: string;
-  fechaActualizacion?: string;
 }
 
-const { autor, fecha, fechaActualizacion } = Astro.props;
+const { autor } = Astro.props;
 
 const nombre = getAuthorName(autor);
 const cargo = getAuthorRole(autor);
