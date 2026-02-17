@@ -2,8 +2,23 @@
 import Layout from '../layouts/Base.astro';
 import { getCollection } from 'astro:content';
 import Faq from '../components/Faq.astro';
+import { getBackgroundImageUrl } from '../lib/images';
 
 const productos = (await getCollection('productos', ({ data }) => data.categoria === 'conexiones-herrajes')).sort((a, b) => a.data.orden - b.data.orden);
+const cardImage = (path?: string) =>
+  path
+    ? getBackgroundImageUrl(path, {
+        width: 960,
+        quality: 78,
+        strip: 'all',
+      })
+    : undefined;
+const detailImage = (path: string) =>
+  getBackgroundImageUrl(path, {
+    width: 1280,
+    quality: 80,
+    strip: 'all',
+  });
 const faqItems = [
   {
     "pregunta": "¿Cuál es la diferencia entre rosca NH y NPT?",
@@ -68,7 +83,12 @@ const faqItems = [
       <div class="categories__grid">
         {productos.map((producto) => (
           <article class="category-card">
-            <div class="category-card__image" role="img" aria-label={producto.data.title}></div>
+            <div
+              class="category-card__image"
+              role="img"
+              aria-label={producto.data.title}
+              style={producto.data.imagen ? `background-image: url('${cardImage(producto.data.imagen)}'); background-size: cover; background-position: center;` : undefined}
+            ></div>
             <div class="category-card__body">
               <h3 class="category-card__title">{producto.data.title}</h3>
               <p class="category-card__sub">{producto.data.description}</p>
@@ -113,7 +133,7 @@ const faqItems = [
             <a href="/conexiones/adaptadores" class="btn btn--outline">Ver catálogo completo →</a>
           </div>
         </div>
-        <div class="service-detail__image" role="img" aria-label="Adaptadores de bronce NH NPT Storz Elkhart Brass"></div>
+        <div class="service-detail__image" role="img" aria-label="Adaptadores de bronce NH NPT Storz Elkhart Brass" style={`background-image: url('${detailImage('/img/conexiones-herrajes/adaptador-bronce-nh-npt-2-5-frontal.avif')}'); background-size: cover; background-position: center;`}></div>
       </div>
 
       <div class="service-detail" id="detalle-conexion-y">
@@ -133,7 +153,7 @@ const faqItems = [
             <a href="/conexiones/wye" class="btn btn--outline">Ver catálogo completo →</a>
           </div>
         </div>
-        <div class="service-detail__image" role="img" aria-label="Conexión Y Elkhart B-97-A con válvulas de bola"></div>
+        <div class="service-detail__image" role="img" aria-label="Conexión Y Elkhart B-97-A con válvulas de bola" style={`background-image: url('${detailImage('/img/conexiones-herrajes/conexion-wye-b100a-frontal.avif')}'); background-size: cover; background-position: center;`}></div>
       </div>
 
       <div class="service-detail" id="detalle-siamesa">
@@ -153,7 +173,7 @@ const faqItems = [
             <a href="/conexiones/siamesa" class="btn btn--outline">Ver catálogo completo →</a>
           </div>
         </div>
-        <div class="service-detail__image" role="img" aria-label="Toma siamesa FDC para bomberos"></div>
+        <div class="service-detail__image" role="img" aria-label="Toma siamesa FDC para bomberos" style={`background-image: url('${detailImage('/img/conexiones-herrajes/toma-siamesa-2a-plain-frontal.avif')}'); background-size: cover; background-position: center;`}></div>
       </div>
 
       <div class="service-detail" id="detalle-storz">
@@ -173,7 +193,7 @@ const faqItems = [
             <a href="/conexiones/coples" class="btn btn--outline">Ver catálogo completo →</a>
           </div>
         </div>
-        <div class="service-detail__image" role="img" aria-label="Coples Storz de cuarto de vuelta"></div>
+        <div class="service-detail__image" role="img" aria-label="Coples Storz de cuarto de vuelta" style={`background-image: url('${detailImage('/img/conexiones-herrajes/cople-storz-4-aluminio-frontal.avif')}'); background-size: cover; background-position: center;`}></div>
       </div>
 
       <div class="service-detail" id="detalle-chiflones">
@@ -193,7 +213,7 @@ const faqItems = [
             <a href="/conexiones/chiflones" class="btn btn--outline">Ver catálogo completo →</a>
           </div>
         </div>
-        <div class="service-detail__image" role="img" aria-label="Chiflones de tres pasos Chief XD"></div>
+        <div class="service-detail__image" role="img" aria-label="Chiflones de tres pasos Chief XD" style={`background-image: url('${detailImage('/img/conexiones-herrajes/chiflon-chief-xd-1-5-frontal.avif')}'); background-size: cover; background-position: center;`}></div>
       </div>
 
       <div class="service-detail" id="detalle-accesorios">
@@ -213,7 +233,7 @@ const faqItems = [
             <a href="/conexiones/accesorios" class="btn btn--outline">Ver catálogo completo →</a>
           </div>
         </div>
-        <div class="service-detail__image" role="img" aria-label="Accesorios y herrajes contra incendio"></div>
+        <div class="service-detail__image" role="img" aria-label="Accesorios y herrajes contra incendio" style={`background-image: url('${detailImage('/img/conexiones-herrajes/soporte-manguera-despliegue-frontal.avif')}'); background-size: cover; background-position: center;`}></div>
       </div>
 
     </div>

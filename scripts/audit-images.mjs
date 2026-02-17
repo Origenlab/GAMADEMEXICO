@@ -11,6 +11,26 @@ const IMAGE_EXTS = new Set(['.avif', '.webp', '.jpg', '.jpeg', '.png', '.gif', '
 const RASTER_EXTS = new Set(['.avif', '.webp', '.jpg', '.jpeg', '.png', '.gif']);
 const TEXT_EXTS = new Set(['.astro', '.md', '.mdx', '.ts', '.js', '.json', '.html', '.css', '.txt', '.xml', '.mjs']);
 
+function loadEnvFile(file) {
+  if (!fs.existsSync(file)) return;
+  const content = fs.readFileSync(file, 'utf8');
+  for (const rawLine of content.split('\n')) {
+    const line = rawLine.trim();
+    if (!line || line.startsWith('#')) continue;
+    const eqIndex = line.indexOf('=');
+    if (eqIndex <= 0) continue;
+    const key = line.slice(0, eqIndex).trim();
+    const value = line.slice(eqIndex + 1).trim();
+    if (!key || process.env[key] !== undefined) continue;
+    process.env[key] = value;
+  }
+}
+
+// Cargar variables de entorno para validar configuración EWWW también en scripts Node.
+loadEnvFile(path.join(ROOT, '.env'));
+loadEnvFile(path.join(ROOT, '.env.local'));
+loadEnvFile(path.join(ROOT, '.env.development'));
+
 function walk(dir, onFile) {
   if (!fs.existsSync(dir)) return;
   for (const name of fs.readdirSync(dir)) {

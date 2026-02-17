@@ -2,11 +2,16 @@
 import Layout from '../layouts/Base.astro';
 import SectionHeader from '../components/SectionHeader.astro';
 import { getCollection } from 'astro:content';
-import { withImageCdn } from '../lib/images';
+import { getBackgroundImageUrl } from '../lib/images';
 import Faq from '../components/Faq.astro';
 
 const productos = (await getCollection('productos', ({ data }) => data.categoria === 'monitores')).sort((a, b) => a.data.orden - b.data.orden);
-const cdnImage = (path: string) => withImageCdn(path) ?? path;
+const cdnImage = (path: string) =>
+  getBackgroundImageUrl(path, {
+    width: 960,
+    quality: 80,
+    strip: 'all',
+  });
 const faqItems = [
   {
     "pregunta": "¿Qué tipos de monitores contra incendios vende Gama de México?",

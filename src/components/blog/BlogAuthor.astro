@@ -4,6 +4,7 @@
 // =============================================================================
 
 import { getAuthorName, getAuthorRole } from '../../lib/blogHelpers';
+import { getThumbnailUrl } from '../../lib/images';
 
 interface Props {
   autor: string | { nombre: string; cargo?: string; imagen?: string };
@@ -16,6 +17,7 @@ const { autor, fecha, fechaActualizacion } = Astro.props;
 const nombre = getAuthorName(autor);
 const cargo = getAuthorRole(autor);
 const imagen = typeof autor === 'object' ? autor.imagen : undefined;
+const imagenOptimizada = imagen ? getThumbnailUrl(imagen, 128, 128) : undefined;
 
 // Generar iniciales para avatar
 const initials = nombre
@@ -29,7 +31,14 @@ const initials = nombre
 <div class="blog-author">
   <div class="blog-author__avatar">
     {imagen ? (
-      <img src={imagen} alt={nombre} width="64" height="64" loading="lazy" />
+      <img
+        src={imagenOptimizada}
+        alt={`${nombre} - ${cargo}`}
+        width="64"
+        height="64"
+        loading="lazy"
+        decoding="async"
+      />
     ) : (
       <span class="blog-author__initials">{initials}</span>
     )}

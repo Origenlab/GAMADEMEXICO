@@ -5,7 +5,7 @@ import { CATEGORY_MAP, WHATSAPP_NUMBER, WHATSAPP_URL } from '../../lib/config';
 import { buildProductSchema, buildBreadcrumbSchema } from '../../lib/seo';
 import RelatedProductsGrid from '../../components/RelatedProductsGrid.astro';
 import CotizacionForm from '../../components/CotizacionForm.astro';
-import { withImageCdn } from '../../lib/images';
+import { getOptimizedImageUrl, getThumbnailUrl } from '../../lib/images';
 
 /* ── getStaticPaths: genera una ruta por cada producto ── */
 export async function getStaticPaths() {
@@ -56,8 +56,24 @@ const breadcrumbSchema = buildBreadcrumbSchema([
   { name: producto.data.title, url: `/productos/${producto.id}` },
 ]);
 
-const mainImage = withImageCdn(producto.data.imagen);
-const galleryImages = (producto.data.galeria ?? []).map((img) => withImageCdn(img) ?? img);
+const mainImageRaw = producto.data.imagen;
+const mainImage = mainImageRaw
+  ? getOptimizedImageUrl(mainImageRaw, {
+      width: 1200,
+      quality: 84,
+      strip: 'all',
+    })
+  : undefined;
+const mainImageThumbnail = mainImageRaw ? getThumbnailUrl(mainImageRaw, 160, 120) : undefined;
+const galleryImagesRaw = producto.data.galeria ?? [];
+const galleryImages = galleryImagesRaw.map((img) =>
+  getOptimizedImageUrl(img, {
+    width: 1200,
+    quality: 82,
+    strip: 'all',
+  })
+);
+const galleryThumbnailImages = galleryImagesRaw.map((img) => getThumbnailUrl(img, 160, 120));
 ---
 
 <Layout
@@ -89,10 +105,12 @@ const galleryImages = (producto.data.galeria ?? []).map((img) => withImageCdn(im
             {mainImage ? (
               <img
                 src={mainImage}
-                alt={producto.data.title}
+                alt={`${producto.data.title} - imagen principal`}
                 width="600"
                 height="450"
                 loading="eager"
+                decoding="async"
+                fetchpriority="high"
                 id="main-product-image"
               />
             ) : (
@@ -112,13 +130,37 @@ const galleryImages = (producto.data.galeria ?? []).map((img) => withImageCdn(im
           {galleryImages.length > 0 && (
             <div class="product-hero__thumbnails">
               {mainImage && (
-                <button type="button" class="thumbnail thumbnail--active" data-image={mainImage}>
-                  <img src={mainImage} alt="Vista principal" width="80" height="60" loading="lazy" />
+                <button
+                  type="button"
+                  class="thumbnail thumbnail--active"
+                  data-image={mainImage}
+                  data-alt={`${producto.data.title} - imagen principal`}
+                >
+                  <img
+                    src={mainImageThumbnail ?? mainImage}
+                    alt={`Miniatura principal de ${producto.data.title}`}
+                    width="80"
+                    height="60"
+                    loading="lazy"
+                    decoding="async"
+                  />
                 </button>
               )}
               {galleryImages.map((img, i) => (
-                <button type="button" class="thumbnail" data-image={img}>
-                  <img src={img} alt={`Vista ${i + 1}`} width="80" height="60" loading="lazy" />
+                <button
+                  type="button"
+                  class="thumbnail"
+                  data-image={img}
+                  data-alt={`Vista ${i + 1} de ${producto.data.title}`}
+                >
+                  <img
+                    src={galleryThumbnailImages[i] ?? img}
+                    alt={`Miniatura ${i + 1} de ${producto.data.title}`}
+                    width="80"
+                    height="60"
+                    loading="lazy"
+                    decoding="async"
+                  />
                 </button>
               ))}
             </div>
@@ -307,9 +349,13 @@ const galleryImages = (producto.data.galeria ?? []).map((img) => withImageCdn(im
 
       function activateThumb(thumb) {
         var newSrc = thumb.getAttribute('data-image');
+        var newAlt = thumb.getAttribute('data-alt');
         if (!newSrc) return;
 
         mainImage.setAttribute('src', newSrc);
+        if (newAlt) {
+          mainImage.setAttribute('alt', newAlt);
+        }
 
         var thumbs = gallery.querySelectorAll('.thumbnail');
         thumbs.forEach(function (item) {

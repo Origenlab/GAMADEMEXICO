@@ -2,8 +2,23 @@
 import Layout from '../layouts/Base.astro';
 import { getCollection } from 'astro:content';
 import Faq from '../components/Faq.astro';
+import { getBackgroundImageUrl } from '../lib/images';
 
 const productos = (await getCollection('productos', ({ data }) => data.categoria === 'valvulas')).sort((a, b) => a.data.orden - b.data.orden);
+const cardImage = (path?: string) =>
+  path
+    ? getBackgroundImageUrl(path, {
+        width: 960,
+        quality: 78,
+        strip: 'all',
+      })
+    : undefined;
+const detailImage = (path: string) =>
+  getBackgroundImageUrl(path, {
+    width: 1280,
+    quality: 80,
+    strip: 'all',
+  });
 const faqItems = [
   {
     "pregunta": "¿Qué tipos de válvulas contra incendios venden en Gama de México?",
@@ -68,7 +83,12 @@ const faqItems = [
       <div class="categories__grid">
         {productos.map((producto) => (
           <article class="category-card">
-            <div class="category-card__image" role="img" aria-label={producto.data.title}></div>
+            <div
+              class="category-card__image"
+              role="img"
+              aria-label={producto.data.title}
+              style={producto.data.imagen ? `background-image: url('${cardImage(producto.data.imagen)}'); background-size: cover; background-position: center;` : undefined}
+            ></div>
             <div class="category-card__body">
               <h3 class="category-card__title">{producto.data.title}</h3>
               <p class="category-card__sub">{producto.data.description}</p>
@@ -113,7 +133,7 @@ const faqItems = [
             <a href="#cotizar" class="btn btn--primary">Cotizar válvula de compuerta</a>
           </div>
         </div>
-        <div class="service-detail__image" role="img" aria-label="Válvula de compuerta OS&Y para sistemas contra incendio"></div>
+        <div class="service-detail__image" role="img" aria-label="Válvula de compuerta OS&Y para sistemas contra incendio" style={`background-image: url('${detailImage('/img/valvulas-contra-incendios/valvula-compuerta-osy-ranurada-contra-incendios-vista-frontal-16.avif')}'); background-size: cover; background-position: center;`}></div>
       </div>
 
       <div class="service-detail" id="detalle-globo">
@@ -133,7 +153,7 @@ const faqItems = [
             <a href="#cotizar" class="btn btn--primary">Cotizar válvula de globo</a>
           </div>
         </div>
-        <div class="service-detail__image" role="img" aria-label="Válvula de globo para regulación de flujo en sistemas contra incendio"></div>
+        <div class="service-detail__image" role="img" aria-label="Válvula de globo para regulación de flujo en sistemas contra incendio" style={`background-image: url('${detailImage('/img/valvulas-contra-incendios/valvula-globo-bridada-acero-inoxidable-contra-incendios-fondo-blanco-01.avif')}'); background-size: cover; background-position: center;`}></div>
       </div>
 
       <div class="service-detail" id="detalle-retencion">
@@ -153,7 +173,7 @@ const faqItems = [
             <a href="#cotizar" class="btn btn--primary">Cotizar válvula de retención</a>
           </div>
         </div>
-        <div class="service-detail__image" role="img" aria-label="Válvula de retención check swing para sistemas contra incendio"></div>
+        <div class="service-detail__image" role="img" aria-label="Válvula de retención check swing para sistemas contra incendio" style={`background-image: url('${detailImage('/img/valvulas-contra-incendios/valvula-check-swing-bridada-contra-incendios-hierro-ductil-16.avif')}'); background-size: cover; background-position: center;`}></div>
       </div>
 
       <div class="service-detail" id="detalle-mariposa">
@@ -173,7 +193,7 @@ const faqItems = [
             <a href="#cotizar" class="btn btn--primary">Cotizar válvula mariposa</a>
           </div>
         </div>
-        <div class="service-detail__image" role="img" aria-label="Válvula mariposa indicadora para sistemas contra incendio"></div>
+        <div class="service-detail__image" role="img" aria-label="Válvula mariposa indicadora para sistemas contra incendio" style={`background-image: url('${detailImage('/img/valvulas-contra-incendios/valvula-mariposa-indicadora-contra-incendios-tamper-switch-fondo-blanco-01.avif')}'); background-size: cover; background-position: center;`}></div>
       </div>
 
     </div>

@@ -2,8 +2,23 @@
 import Layout from '../layouts/Base.astro';
 import { getCollection } from 'astro:content';
 import Faq from '../components/Faq.astro';
+import { getBackgroundImageUrl } from '../lib/images';
 
 const productos = (await getCollection('productos', ({ data }) => data.categoria === 'mangueras')).sort((a, b) => a.data.orden - b.data.orden);
+const cardImage = (path?: string) =>
+  path
+    ? getBackgroundImageUrl(path, {
+        width: 960,
+        quality: 78,
+        strip: 'all',
+      })
+    : undefined;
+const detailImage = (path: string) =>
+  getBackgroundImageUrl(path, {
+    width: 1280,
+    quality: 80,
+    strip: 'all',
+  });
 const faqItems = [
   {
     "pregunta": "¿Qué tipos de manguera contra incendio para gabinete e industrial venden?",
@@ -68,7 +83,12 @@ const faqItems = [
       <div class="categories__grid">
         {productos.map((producto) => (
           <article class="category-card">
-            <div class="category-card__image" role="img" aria-label={producto.data.title}></div>
+            <div
+              class="category-card__image"
+              role="img"
+              aria-label={producto.data.title}
+              style={producto.data.imagen ? `background-image: url('${cardImage(producto.data.imagen)}'); background-size: cover; background-position: center;` : undefined}
+            ></div>
             <div class="category-card__body">
               <h3 class="category-card__title">{producto.data.title}</h3>
               <p class="category-card__sub">{producto.data.description}</p>
@@ -113,7 +133,7 @@ const faqItems = [
             <a href="#cotizar" class="btn btn--primary">Cotizar manguera Millhose</a>
           </div>
         </div>
-        <div class="service-detail__image" role="img" aria-label="Manguera Millhose doble forro sintético"></div>
+        <div class="service-detail__image" role="img" aria-label="Manguera Millhose doble forro sintético" style={`background-image: url('${detailImage('/img/mangueras-contra-incendios/manguera-millhose-1-5-30m-frontal.avif')}'); background-size: cover; background-position: center;`}></div>
       </div>
 
       <div class="service-detail" id="detalle-blindex">
@@ -133,7 +153,7 @@ const faqItems = [
             <a href="#cotizar" class="btn btn--primary">Cotizar manguera Blindex</a>
           </div>
         </div>
-        <div class="service-detail__image" role="img" aria-label="Manguera Blindex multicapa resistente a altas temperaturas"></div>
+        <div class="service-detail__image" role="img" aria-label="Manguera Blindex multicapa resistente a altas temperaturas" style={`background-image: url('${detailImage('/img/mangueras-contra-incendios/manguera-blindex-2-5-15m-frontal.avif')}'); background-size: cover; background-position: center;`}></div>
       </div>
 
       <div class="service-detail" id="detalle-succion">
@@ -153,7 +173,7 @@ const faqItems = [
             <a href="#cotizar" class="btn btn--primary">Cotizar manguera de succión</a>
           </div>
         </div>
-        <div class="service-detail__image" role="img" aria-label="Manguera de succión con refuerzo helicoidal para bombas"></div>
+        <div class="service-detail__image" role="img" aria-label="Manguera de succión con refuerzo helicoidal para bombas" style={`background-image: url('${detailImage('/img/mangueras-contra-incendios/manguera-succion-6-3m-frontal.avif')}'); background-size: cover; background-position: center;`}></div>
       </div>
 
       <div class="service-detail" id="detalle-forestal">
@@ -173,7 +193,7 @@ const faqItems = [
             <a href="#cotizar" class="btn btn--primary">Cotizar manguera forestal</a>
           </div>
         </div>
-        <div class="service-detail__image" role="img" aria-label="Manguera forestal ultraligera para brigadas de emergencia"></div>
+        <div class="service-detail__image" role="img" aria-label="Manguera forestal ultraligera para brigadas de emergencia" style={`background-image: url('${detailImage('/img/mangueras-contra-incendios/manguera-forestal-contra-incendios-vista-lateral-06.avif')}'); background-size: cover; background-position: center;`}></div>
       </div>
 
     </div>

@@ -3,8 +3,23 @@ import Layout from '../layouts/Base.astro';
 import SectionHeader from '../components/SectionHeader.astro';
 import { getCollection } from 'astro:content';
 import Faq from '../components/Faq.astro';
+import { getBackgroundImageUrl } from '../lib/images';
 
 const productos = (await getCollection('productos', ({ data }) => data.categoria === 'gabinetes-hidrantes')).sort((a, b) => a.data.orden - b.data.orden);
+const cardImage = (path?: string) =>
+  path
+    ? getBackgroundImageUrl(path, {
+        width: 960,
+        quality: 78,
+        strip: 'all',
+      })
+    : undefined;
+const detailImage = (path: string) =>
+  getBackgroundImageUrl(path, {
+    width: 1280,
+    quality: 80,
+    strip: 'all',
+  });
 const faqItems = [
   {
     "pregunta": "¿Cuál es la diferencia entre gabinete tipo 30ME y estación de manguera?",
@@ -62,7 +77,12 @@ const faqItems = [
       <div class="categories__grid">
         {productos.map((producto) => (
           <article class="category-card">
-            <div class="category-card__image" role="img" aria-label={producto.data.title}></div>
+            <div
+              class="category-card__image"
+              role="img"
+              aria-label={producto.data.title}
+              style={producto.data.imagen ? `background-image: url('${cardImage(producto.data.imagen)}'); background-size: cover; background-position: center;` : undefined}
+            ></div>
             <div class="category-card__body">
               <h3 class="category-card__title">{producto.data.title}</h3>
               <p class="category-card__sub">{producto.data.description}</p>
@@ -107,7 +127,7 @@ const faqItems = [
             <a href="/gabinetes/tipo-30me" class="btn btn--outline">Ver catálogo completo →</a>
           </div>
         </div>
-        <div class="service-detail__image" role="img" aria-label="Gabinete Contra Incendios 30ME"></div>
+        <div class="service-detail__image" role="img" aria-label="Gabinete Contra Incendios 30ME" style={`background-image: url('${detailImage('/img/gabinetes-hidrantes/gabinete-30me-frontal.avif')}'); background-size: cover; background-position: center;`}></div>
       </div>
 
       <div class="service-detail" id="detalle-hidrante">
@@ -127,7 +147,7 @@ const faqItems = [
             <a href="/gabinetes/hidrante-banqueta" class="btn btn--outline">Ver catálogo completo →</a>
           </div>
         </div>
-        <div class="service-detail__image" role="img" aria-label="Hidrante de Banqueta UL 246"></div>
+        <div class="service-detail__image" role="img" aria-label="Hidrante de Banqueta UL 246" style={`background-image: url('${detailImage('/img/gabinetes-hidrantes/hidrante-enterrado-tapa.avif')}'); background-size: cover; background-position: center;`}></div>
       </div>
 
       <div class="service-detail" id="detalle-empotrado">
@@ -147,7 +167,7 @@ const faqItems = [
             <a href="/gabinetes/gabinete-empotrado" class="btn btn--outline">Ver catálogo completo →</a>
           </div>
         </div>
-        <div class="service-detail__image" role="img" aria-label="Gabinete Empotrado Contra Incendios"></div>
+        <div class="service-detail__image" role="img" aria-label="Gabinete Empotrado Contra Incendios" style={`background-image: url('${detailImage('/img/gabinetes-hidrantes/gabinete-inox-frontal.avif')}'); background-size: cover; background-position: center;`}></div>
       </div>
 
       <div class="service-detail" id="detalle-estacion">
@@ -167,7 +187,7 @@ const faqItems = [
             <a href="/gabinetes/estacion-manguera" class="btn btn--outline">Ver catálogo completo →</a>
           </div>
         </div>
-        <div class="service-detail__image" role="img" aria-label="Estación de Manguera con Carrete"></div>
+        <div class="service-detail__image" role="img" aria-label="Estación de Manguera con Carrete" style={`background-image: url('${detailImage('/img/gabinetes-hidrantes/estacion-retractil-frontal.avif')}'); background-size: cover; background-position: center;`}></div>
       </div>
 
     </div>

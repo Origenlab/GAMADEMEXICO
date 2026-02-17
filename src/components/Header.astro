@@ -1,12 +1,16 @@
 ---
-import { withImageCdn } from '../lib/images';
+import { getOptimizedImageUrl } from '../lib/images';
 
 interface Props {
   activePage?: string;
 }
 
 const { activePage = '' } = Astro.props;
-const logoUrl = withImageCdn('/img/gama-de-mexico.avif');
+const logoUrl = getOptimizedImageUrl('/img/gama-de-mexico.avif', {
+  width: 400,
+  quality: 82,
+  strip: 'all',
+});
 ---
 
 <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
@@ -16,7 +20,16 @@ const logoUrl = withImageCdn('/img/gama-de-mexico.avif');
 
     <div class="header__logo">
       <a href="/" aria-label="Gama de México - Inicio">
-        <img src={logoUrl} alt="Gama de México - Venta de Equipos Contra Incendios | Distribuidor Elkhart Brass" class="header__logo-img" width="200" height="60" loading="eager">
+        <img
+          src={logoUrl}
+          alt="Gama de México - Venta de Equipos Contra Incendios | Distribuidor Elkhart Brass"
+          class="header__logo-img"
+          width="200"
+          height="60"
+          loading="eager"
+          decoding="async"
+          fetchpriority="high"
+        >
       </a>
     </div>
 

@@ -145,7 +145,7 @@ Durante el ataque inicial, el líder de brigada debe controlar tres factores: po
 
 Finalizada la atención, la línea debe drenarse, inspeccionarse visualmente y limpiarse antes de reenrollado. Nunca se recomienda guardar manguera húmeda por periodos prolongados, ya que acelera deterioro del forro y de los acoples. Cualquier signo de daño debe registrarse y escalarse para evaluación técnica.
 
-![Kit de manguera forestal para operación de brigada en campo](/img/mangueras-contra-incendios/manguera-forestal-kit-desplegado.avif)
+![Kit de manguera forestal para operación de brigada en campo](/img/mangueras-contra-incendios/manguera-forestal-contra-incendios-vista-lateral-06.avif)
 *Descripción técnica: Configuración de manguera forestal para despliegue táctico en escenarios de difícil acceso, con énfasis en portabilidad y velocidad de respuesta.*
 
 ---

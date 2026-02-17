@@ -3,9 +3,9 @@
 // OptimizedImage - Componente de imagen optimizada con ExactDN CDN
 // =============================================================================
 // Uso:
-//   <OptimizedImage src="/img/producto.avif" alt="Descripción" width={800} />
-//   <OptimizedImage src="/img/hero.jpg" alt="Banner" preset="hero" />
-//   <OptimizedImage src="/img/card.avif" alt="Card" preset="thumbnail" />
+//   <OptimizedImage src="/ruta/imagen.avif" alt="Descripción" width={800} />
+//   <OptimizedImage src="/ruta/banner.avif" alt="Banner" preset="hero" />
+//   <OptimizedImage src="/ruta/card.avif" alt="Card" preset="thumbnail" />
 // =============================================================================
 
 import {
@@ -24,6 +24,7 @@ interface Props {
   width?: number;
   height?: number;
   quality?: number;
+  fetchpriority?: 'high' | 'low' | 'auto';
   preset?: ImagePreset;
   loading?: 'lazy' | 'eager';
   decoding?: 'async' | 'sync' | 'auto';
@@ -37,7 +38,8 @@ const {
   alt,
   width,
   height,
-  quality = 82,
+  quality,
+  fetchpriority,
   preset = 'default',
   loading = 'lazy',
   decoding = 'async',
@@ -58,7 +60,7 @@ const presetConfigs: Record<ImagePreset, { width?: number; height?: number; qual
 const config = presetConfigs[preset];
 const finalWidth = width || config.width;
 const finalHeight = height || config.height;
-const finalQuality = quality || config.quality;
+const finalQuality = quality ?? config.quality;
 
 // Generar URL optimizada
 let optimizedSrc: string;
@@ -93,6 +95,7 @@ const imgAttrs: Record<string, string | number | undefined> = {
   alt,
   loading,
   decoding,
+  fetchpriority,
   class: className || undefined,
 };
 
@@ -107,6 +110,7 @@ if (sizesAttr) imgAttrs.sizes = sizesAttr;
   alt={alt}
   loading={loading}
   decoding={decoding}
+  fetchpriority={fetchpriority}
   class={className || undefined}
   width={finalWidth}
   height={finalHeight}
