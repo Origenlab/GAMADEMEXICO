@@ -4,8 +4,8 @@
 // Sigue el patrón de SubcategoryProductCard
 // =============================================================================
 
-import { getThumbnailUrl } from '../../lib/images';
 import { formatDateShort, getAuthorName, CATEGORY_LABELS, CATEGORY_SLUGS } from '../../lib/blogHelpers';
+import { generateSrcset, getOptimizedImageUrl } from '../../lib/images';
 
 interface Props {
   title: string;
@@ -35,27 +35,52 @@ const {
   tiempoLectura,
 } = Astro.props;
 
-// Imagen optimizada: 640px para cards de blog
-const imageUrl = imagen ? getThumbnailUrl(imagen, 640) : null;
+// Imagen optimizada para cards: src principal + srcset responsivo
+const imageUrl = imagen
+  ? getOptimizedImageUrl(imagen, { width: 768, quality: 78, strip: 'all' })
+  : null;
+const imageResponsiveData = imagen
+  ? generateSrcset(imagen, {
+      widths: [320, 480, 640, 768, 960],
+      sizes: '(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw',
+      quality: 78,
+      strip: 'all',
+    })
+  : undefined;
 const authorName = getAuthorName(autor);
 const categoryLabel = CATEGORY_LABELS[categoria] || categoria;
 const categorySlug = CATEGORY_SLUGS[categoria] || categoria;
+const dateShort = formatDateShort(fecha);
 ---
 
 <article class={`blog-card ${destacado ? 'blog-card--featured' : ''}`}>
   <a href={`/blog/${categorySlug}/${slug}`} class="blog-card__link">
-    <div
-      class="blog-card__image"
-      style={imageUrl ? `background-image: url(${imageUrl});` : undefined}
-      role="img"
-      aria-label={imagenAlt || title}
-    >
+    <div class="blog-card__media">
+      {imageUrl ? (
+        <img
+          class="blog-card__image"
+          src={imageUrl}
+          alt={imagenAlt || title}
+          loading="lazy"
+          decoding="async"
+          srcset={imageResponsiveData?.srcset}
+          sizes={imageResponsiveData?.sizes}
+        />
+      ) : (
+        <div class="blog-card__image-placeholder" role="img" aria-label={imagenAlt || title}></div>
+      )}
       <span class="blog-card__category">{categoryLabel}</span>
     </div>
 
     <div class="blog-card__body">
       <div class="blog-card__meta">
-        {tiempoLectura && <span>{tiempoLectura} min de lectura</span>}
+        <time datetime={fecha}>{dateShort}</time>
+        {tiempoLectura && (
+          <>
+            <span class="blog-card__separator">·</span>
+            <span>{tiempoLectura} min de lectura</span>
+          </>
+        )}
         <span class="blog-card__separator">·</span>
         <span>Guía Técnica</span>
       </div>
@@ -97,13 +122,27 @@ const categorySlug = CATEGORY_SLUGS[categoria] || categoria;
     color: inherit;
   }
 
-  .blog-card__image {
+  .blog-card__media {
     position: relative;
     min-height: 200px;
-    background: var(--color-accent);
-    background-size: cover;
-    background-position: center;
     border-bottom: 1px solid var(--color-border);
+    background: var(--color-accent);
+    overflow: hidden;
+  }
+
+  .blog-card__image {
+    display: block;
+    width: 100%;
+    min-height: 200px;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .blog-card__image-placeholder {
+    width: 100%;
+    min-height: 200px;
+    background: linear-gradient(135deg, #edf2f7 0%, #e2e8f0 100%);
   }
 
   .blog-card__category {
@@ -132,6 +171,7 @@ const categorySlug = CATEGORY_SLUGS[categoria] || categoria;
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    flex-wrap: wrap;
     font-size: var(--font-size-xs);
     color: var(--color-text-light);
   }
@@ -194,7 +234,9 @@ const categorySlug = CATEGORY_SLUGS[categoria] || categoria;
   }
 
   @media (min-width: 768px) {
-    .blog-card__image {
+    .blog-card__media,
+    .blog-card__image,
+    .blog-card__image-placeholder {
       min-height: 220px;
     }
   }

@@ -9,6 +9,7 @@ import { getCollection } from 'astro:content';
 import BlogGrid from '../../../components/blog/BlogGrid.astro';
 import BlogSidebar from '../../../components/blog/BlogSidebar.astro';
 import BlogCategories from '../../../components/blog/BlogCategories.astro';
+import { CATEGORY_MAP } from '../../../lib/config';
 import {
   getCategoriesWithCount,
   getAllTags,
@@ -176,6 +177,43 @@ const sidebarRecentPosts = allPosts
   .filter((entry) => !sidebarCategoryPostUrls.has(entry.href))
   .slice(0, 6);
 
+const categoryLandingUrl = category in CATEGORY_MAP
+  ? CATEGORY_MAP[category as keyof typeof CATEGORY_MAP].url
+  : '/equipos';
+
+const strategicPattern = /(lineamientos|requisitos|manual|cumplimiento|auditoria|inspeccion|normativa|programa|guia)/i;
+const sidebarInterestModules = posts
+  .filter((entry) => strategicPattern.test(entry.id) || strategicPattern.test(entry.data.title))
+  .slice(0, 3)
+  .map((entry) => ({
+    title: entry.data.title,
+    href: `/blog/${CATEGORY_SLUGS[entry.data.categoria] || entry.data.categoria}/${entry.id}`,
+    description: `Guía técnica de ${categoryLabel.toLowerCase()} para aplicación empresarial.`,
+  }));
+
+const sidebarInterlinkHubs = [
+  {
+    title: `Catálogo de ${categoryLabel}`,
+    href: categoryLandingUrl,
+    description: 'Modelos, especificaciones y aplicaciones por tipo de proyecto.',
+  },
+  {
+    title: 'Asesoría técnica especializada',
+    href: '/servicios/asesoria',
+    description: 'Soporte para selección de equipos, compatibilidad y cumplimiento.',
+  },
+  {
+    title: 'Mantenimiento de equipos',
+    href: '/servicios/mantenimiento',
+    description: 'Planes de inspección, evidencia documental y continuidad operativa.',
+  },
+  {
+    title: 'Solicitar cotización empresarial',
+    href: '/servicios/cotizaciones',
+    description: 'Propuesta comercial con tiempos de entrega y soporte postventa.',
+  },
+];
+
 // Schema breadcrumb
 const breadcrumbSchema = buildBreadcrumbSchema([
   { name: 'Inicio', url: '/' },
@@ -224,6 +262,8 @@ const breadcrumbSchema = buildBreadcrumbSchema([
         featuredPosts={sidebarFeaturedPosts}
         recentPosts={sidebarRecentPosts}
         recentPostsTitle="Publicaciones Recientes"
+        interestModules={sidebarInterestModules}
+        interlinkHubs={sidebarInterlinkHubs}
         ctaTitulo={`¿Proyecto de ${categoryLabel}?`}
         ctaTexto="Recibe recomendación técnica de equipos, compatibilidades y tiempos de entrega para tu operación."
       />

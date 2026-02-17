@@ -13,8 +13,8 @@ import BlogCTA from '../../../components/blog/BlogCTA.astro';
 import CotizacionForm from '../../../components/CotizacionForm.astro';
 import { buildArticleSchema, buildBreadcrumbSchema } from '../../../lib/seo';
 import { generateSrcset, getOptimizedImageUrl } from '../../../lib/images';
+import { CATEGORY_MAP } from '../../../lib/config';
 import {
-  formatDateSpanish,
   calculateReadingTime,
   getRelatedPosts,
   getAllTags,
@@ -72,6 +72,15 @@ const sidebarFeaturedPosts = allPosts
   .filter((entry) => !sidebarCategoryPostUrls.has(entry.href))
   .slice(0, 4);
 
+const sidebarFeaturedPostUrls = new Set(sidebarFeaturedPosts.map((entry) => entry.href));
+
+const sidebarRecentPosts = allPosts
+  .filter((entry) => entry.id !== post.id)
+  .sort((a, b) => new Date(b.data.fecha).getTime() - new Date(a.data.fecha).getTime())
+  .map(toSidebarLink)
+  .filter((entry) => !sidebarCategoryPostUrls.has(entry.href) && !sidebarFeaturedPostUrls.has(entry.href))
+  .slice(0, 6);
+
 // Tags para sidebar
 const allTags = getAllTags(allPosts);
 
@@ -83,6 +92,34 @@ const readingTime = post.data.tiempoLectura || calculateReadingTime(post.body ||
 
 // Nombre de categoría
 const categoryLabel = CATEGORY_LABELS[post.data.categoria] || post.data.categoria;
+const categoryLandingUrl = CATEGORY_MAP[post.data.categoria]?.url || '/equipos';
+const crossCategoryHubs = Object.entries(CATEGORY_SLUGS)
+  .filter(([key]) => key !== post.data.categoria)
+  .slice(0, 3)
+  .map(([key, slug]) => ({
+    title: `Guías de ${CATEGORY_LABELS[key] || key}`,
+    href: `/blog/${slug}`,
+    description: 'Consulta lineamientos técnicos y criterios de selección.',
+  }));
+
+const sidebarInterlinkHubs = [
+  {
+    title: `Catálogo de ${categoryLabel}`,
+    href: categoryLandingUrl,
+    description: 'Modelos, fichas técnicas y aplicaciones por tipo de riesgo.',
+  },
+  {
+    title: 'Todos los Equipos Contra Incendios',
+    href: '/equipos',
+    description: 'Portafolio integral para industria, comercio e infraestructura crítica.',
+  },
+  {
+    title: 'Asesoría Técnica Especializada',
+    href: '/servicios/asesoria',
+    description: 'Ingeniería de selección y cumplimiento para tu proyecto.',
+  },
+  ...crossCategoryHubs,
+];
 
 // Obtener nombre del autor
 const getAuthorName = (autor: string | { nombre: string; cargo?: string } | undefined): string => {
@@ -203,6 +240,21 @@ const breadcrumbSchema = buildBreadcrumbSchema([
             <Content />
           </div>
 
+          <section class="blog-article__strategic-links" aria-labelledby="strategic-links-title">
+            <h2 id="strategic-links-title">Rutas estratégicas para tu proyecto</h2>
+            <p>
+              Si estás planificando una compra o actualización de sistemas contra incendio, estas
+              rutas te ayudan a avanzar con criterios técnicos, cumplimiento y trazabilidad documental.
+            </p>
+            <ul>
+              {sidebarInterlinkHubs.slice(0, 4).map((hub) => (
+                <li>
+                  <a href={hub.href}>{hub.title}</a>: {hub.description}
+                </li>
+              ))}
+            </ul>
+          </section>
+
           <!-- CTA inline -->
           <BlogCTA variant="fullwidth" />
 
@@ -233,6 +285,11 @@ const breadcrumbSchema = buildBreadcrumbSchema([
           categorySlug={categorySlug}
           categoryPosts={sidebarCategoryPosts}
           featuredPosts={sidebarFeaturedPosts}
+          recentPosts={sidebarRecentPosts}
+          recentPostsTitle="Últimas Publicaciones"
+          interlinkHubs={sidebarInterlinkHubs}
+          ctaTitulo="Cotización y Diagnóstico"
+          ctaTexto="Recibe una recomendación técnica alineada a riesgo, operación y cumplimiento normativo."
         />
       </div>
     </div>
@@ -354,6 +411,34 @@ const breadcrumbSchema = buildBreadcrumbSchema([
   /* CONTENIDO MARKDOWN */
   .blog-article__content {
     max-width: 100%;
+  }
+
+  .blog-article__strategic-links {
+    margin: var(--spacing-2xl) 0;
+    padding: var(--spacing-lg);
+    background: var(--color-accent);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+  }
+
+  .blog-article__strategic-links h2 {
+    margin-top: 0;
+  }
+
+  .blog-article__strategic-links p {
+    margin: 0.5rem 0 0.75rem;
+    color: var(--color-text-light);
+  }
+
+  .blog-article__strategic-links ul {
+    margin: 0;
+    padding-left: 1rem;
+    display: grid;
+    gap: 0.5rem;
+  }
+
+  .blog-article__strategic-links a {
+    font-weight: 600;
   }
 
   .blog-article__content :global(h2) {

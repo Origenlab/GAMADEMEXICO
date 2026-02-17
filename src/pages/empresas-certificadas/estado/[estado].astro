@@ -1,0 +1,544 @@
+---
+import Layout from '../../../layouts/Base.astro';
+import SectionHeader from '../../../components/SectionHeader.astro';
+import CotizacionForm from '../../../components/CotizacionForm.astro';
+import { getCollection } from 'astro:content';
+
+// Mapeo de giros
+const giroLabels: Record<string, string> = {
+  hotel: 'Hoteles',
+  restaurante: 'Restaurantes',
+  oficina: 'Oficinas',
+  almacen: 'Almacenes',
+  hospital: 'Hospitales',
+  escuela: 'Escuelas',
+  industria: 'Industrias',
+  comercio: 'Comercios',
+  residencial: 'Residenciales',
+  otro: 'Otros'
+};
+
+// Mapeo de sistemas
+const sistemaLabels: Record<string, string> = {
+  'rociadores-automaticos': 'Rociadores Automáticos',
+  'red-hidrantes': 'Red de Hidrantes',
+  'extintores': 'Extintores',
+  'deteccion-alarma': 'Detección y Alarma',
+  'fm200': 'FM-200',
+  'co2': 'CO2',
+  'espuma': 'Espuma',
+  'gabinetes': 'Gabinetes',
+  'senalizacion': 'Señalización'
+};
+
+export async function getStaticPaths() {
+  // Función definida aquí para estar disponible en build
+  function createEstadoSlug(estado: string): string {
+    return estado.toLowerCase()
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .replace(/\s+/g, '-');
+  }
+
+  const empresas = await getCollection('empresasCertificadas');
+  const estados = [...new Set(empresas.map(e => e.data.estado))];
+
+  return estados.map(estado => ({
+    params: { estado: createEstadoSlug(estado) },
+    props: {
+      empresas: empresas.filter(e => e.data.estado === estado),
+      estadoNombre: estado
+    }
+  }));
+}
+
+const { empresas, estadoNombre } = Astro.props;
+
+// Función para crear slugs (para usar en template)
+function createEstadoSlug(estado: string): string {
+  return estado.toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/\s+/g, '-');
+}
+
+// Agrupar por ciudad
+const empresasPorCiudad = empresas.reduce((acc, empresa) => {
+  const ciudad = empresa.data.ciudad;
+  if (!acc[ciudad]) acc[ciudad] = [];
+  acc[ciudad].push(empresa);
+  return acc;
+}, {} as Record<string, typeof empresas>);
+
+// Agrupar por giro
+const empresasPorGiro = empresas.reduce((acc, empresa) => {
+  const giro = empresa.data.giro;
+  if (!acc[giro]) acc[giro] = [];
+  acc[giro].push(empresa);
+  return acc;
+}, {} as Record<string, typeof empresas>);
+
+// Schema.org
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": `Empresas con Sistemas Contra Incendios Certificados en ${estadoNombre}`,
+  "description": `Directorio de empresas con sistemas de protección contra incendios certificados en ${estadoNombre}, México. Hoteles, restaurantes, oficinas y más.`,
+  "numberOfItems": empresas.length,
+  "itemListElement": empresas.slice(0, 10).map((empresa, index) => ({
+    "@type": "ListItem",
+    "position": index + 1,
+    "item": {
+      "@type": "LocalBusiness",
+      "name": empresa.data.nombre,
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": empresa.data.ciudad,
+        "addressRegion": estadoNombre,
+        "addressCountry": "MX"
+      }
+    }
+  }))
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://gamademexico.com" },
+    { "@type": "ListItem", "position": 2, "name": "Empresas Certificadas", "item": "https://gamademexico.com/empresas-certificadas" },
+    { "@type": "ListItem", "position": 3, "name": estadoNombre }
+  ]
+};
+---
+
+<Layout
+  title={`Empresas con Sistemas Contra Incendios en ${estadoNombre} | Directorio`}
+  description={`${empresas.length} empresas con sistemas contra incendios certificados en ${estadoNombre}. Hoteles, restaurantes, oficinas y almacenes protegidos por Gama de México.`}
+  activePage="directorio"
+  heroTitle={`Empresas Certificadas en ${estadoNombre}`}
+  heroIntro={`Encuentra hoteles, restaurantes, oficinas y almacenes con sistemas de protección contra incendios certificados en ${estadoNombre}.`}
+  heroBadge={estadoNombre}
+  heroMetrics={[
+    { valor: String(empresas.length), texto: "Empresas certificadas" },
+    { valor: String(Object.keys(empresasPorCiudad).length), texto: "Ciudades" },
+    { valor: String(Object.keys(empresasPorGiro).length), texto: "Tipos de negocio" }
+  ]}
+  heroPrimaryText="Registra tu empresa"
+  heroPrimaryLink="/empresas-certificadas#registrar"
+  heroSecondaryText="Ver todos los estados"
+  heroSecondaryLink="/empresas-certificadas#estados"
+  structuredData={[itemListSchema, breadcrumbSchema]}
+>
+
+  <!-- Breadcrumb -->
+  <nav class="breadcrumb" aria-label="Navegación">
+    <div class="container">
+      <ol class="breadcrumb__list">
+        <li class="breadcrumb__item"><a href="/">Inicio</a></li>
+        <li class="breadcrumb__item"><a href="/empresas-certificadas">Empresas Certificadas</a></li>
+        <li class="breadcrumb__item breadcrumb__item--active" aria-current="page">{estadoNombre}</li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- Ciudades del Estado -->
+  <section class="cities-section">
+    <div class="container">
+      <SectionHeader
+        titulo={`Ciudades en ${estadoNombre}`}
+        subtitulo="Selecciona una ciudad para ver empresas certificadas"
+        idTitulo="ciudades"
+      />
+
+      <div class="cities-grid">
+        {Object.entries(empresasPorCiudad)
+          .sort((a, b) => b[1].length - a[1].length)
+          .map(([ciudad, lista]) => {
+            const ciudadSlug = ciudad.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\s+/g, '-');
+            const estadoSlug = createEstadoSlug(estadoNombre);
+            return (
+              <a href={`/empresas-certificadas/estado/${estadoSlug}/${ciudadSlug}`} class="city-link-card">
+                <div class="city-link-card__icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                </div>
+                <div class="city-link-card__content">
+                  <h3 class="city-link-card__title">{ciudad}</h3>
+                  <p class="city-link-card__count">{lista.length} empresas certificadas</p>
+                </div>
+                <svg class="city-link-card__arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 18l6-6-6-6"/>
+                </svg>
+              </a>
+            );
+          })}
+      </div>
+    </div>
+  </section>
+
+  <!-- Por Giro -->
+  <section class="giros-section">
+    <div class="container">
+      <SectionHeader
+        titulo={`Tipos de Negocio en ${estadoNombre}`}
+        subtitulo="Explora empresas certificadas por categoría"
+        idTitulo="giros"
+      />
+
+      <div class="giros-grid">
+        {Object.entries(empresasPorGiro).map(([giro, lista]) => (
+          <a href={`/empresas-certificadas/giro/${giro}`} class="giro-card">
+            <span class="giro-card__icon">
+              {giro === 'hotel' && '🏨'}
+              {giro === 'restaurante' && '🍽️'}
+              {giro === 'oficina' && '🏢'}
+              {giro === 'almacen' && '📦'}
+              {giro === 'hospital' && '🏥'}
+              {giro === 'escuela' && '🏫'}
+              {giro === 'industria' && '🏭'}
+              {giro === 'comercio' && '🛒'}
+            </span>
+            <h3 class="giro-card__title">{giroLabels[giro]}</h3>
+            <p class="giro-card__count">{lista.length} en {estadoNombre}</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Lista de Todas las Empresas -->
+  <section class="all-empresas">
+    <div class="container">
+      <SectionHeader
+        titulo={`Todas las Empresas en ${estadoNombre}`}
+        subtitulo={`${empresas.length} empresas con certificación activa`}
+        idTitulo="todas"
+      />
+
+      <div class="empresas-table">
+        <div class="table-header">
+          <span class="col-name">Empresa</span>
+          <span class="col-city">Ciudad</span>
+          <span class="col-type">Giro</span>
+          <span class="col-status">Estado</span>
+          <span class="col-action"></span>
+        </div>
+        {empresas.map((empresa) => (
+          <div class="table-row">
+            <div class="col-name">
+              <strong>{empresa.data.nombre}</strong>
+              <span class="col-name__address">{empresa.data.colonia}</span>
+            </div>
+            <div class="col-city">{empresa.data.ciudad}</div>
+            <div class="col-type">
+              <span class={`giro-badge giro-badge--${empresa.data.giro}`}>
+                {giroLabels[empresa.data.giro]}
+              </span>
+            </div>
+            <div class="col-status">
+              {empresa.data.certificacionVigente ? (
+                <span class="status-badge status-badge--active">Vigente</span>
+              ) : (
+                <span class="status-badge status-badge--expired">Vencida</span>
+              )}
+            </div>
+            <div class="col-action">
+              <a href={`/empresas-certificadas/${empresa.data.slug}`} class="btn btn--sm btn--outline">
+                Ver
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <CotizacionForm
+    titulo={`¿Tu empresa está en ${estadoNombre}?`}
+    producto={`Certificación en ${estadoNombre}`}
+    pagina={`Estado: ${estadoNombre}`}
+  />
+
+</Layout>
+
+<style>
+  /* Breadcrumb */
+  .breadcrumb {
+    background: #f8f9fa;
+    padding: 1rem 0;
+    border-bottom: 1px solid #e9ecef;
+  }
+
+  .breadcrumb__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0.875rem;
+  }
+
+  .breadcrumb__item {
+    display: flex;
+    align-items: center;
+    color: #666;
+  }
+
+  .breadcrumb__item:not(:last-child)::after {
+    content: '/';
+    margin: 0 0.5rem;
+    color: #aaa;
+  }
+
+  .breadcrumb__item a {
+    color: #c8102e;
+    text-decoration: none;
+  }
+
+  .breadcrumb__item--active {
+    color: #333;
+    font-weight: 600;
+  }
+
+  /* Cities Section */
+  .cities-section {
+    padding: 3rem 0;
+  }
+
+  .cities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .city-link-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: white;
+    border: 2px solid #e9ecef;
+    border-radius: 12px;
+    padding: 1.25rem;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+
+  .city-link-card:hover {
+    border-color: #c8102e;
+    transform: translateX(4px);
+  }
+
+  .city-link-card__icon {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    background: #fee2e2;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #c8102e;
+  }
+
+  .city-link-card__content {
+    flex-grow: 1;
+  }
+
+  .city-link-card__title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 0.15rem;
+  }
+
+  .city-link-card__count {
+    font-size: 0.85rem;
+    color: #666;
+  }
+
+  .city-link-card__arrow {
+    flex-shrink: 0;
+    color: #ccc;
+    transition: color 0.2s, transform 0.2s;
+  }
+
+  .city-link-card:hover .city-link-card__arrow {
+    color: #c8102e;
+    transform: translateX(4px);
+  }
+
+  /* Giros Section */
+  .giros-section {
+    padding: 3rem 0;
+    background: #f8f9fa;
+  }
+
+  .giros-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .giro-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .giro-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  }
+
+  .giro-card__icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+    display: block;
+  }
+
+  .giro-card__title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 0.25rem;
+  }
+
+  .giro-card__count {
+    font-size: 0.8rem;
+    color: #666;
+  }
+
+  /* Table */
+  .all-empresas {
+    padding: 3rem 0;
+  }
+
+  .empresas-table {
+    margin-top: 2rem;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  }
+
+  .table-header {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 100px 80px;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    background: #1a1a2e;
+    color: white;
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+
+  .table-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 100px 80px;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #f0f0f0;
+    align-items: center;
+    transition: background 0.2s;
+  }
+
+  .table-row:hover {
+    background: #f8f9fa;
+  }
+
+  .table-row:last-child {
+    border-bottom: none;
+  }
+
+  .col-name strong {
+    display: block;
+    color: #1a1a2e;
+    margin-bottom: 0.15rem;
+  }
+
+  .col-name__address {
+    font-size: 0.8rem;
+    color: #888;
+  }
+
+  .col-city {
+    color: #555;
+    font-size: 0.9rem;
+  }
+
+  .giro-badge {
+    display: inline-block;
+    padding: 0.25rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+
+  .giro-badge--hotel { background: #e3f2fd; color: #1565c0; }
+  .giro-badge--restaurante { background: #fff3e0; color: #e65100; }
+  .giro-badge--oficina { background: #f3e5f5; color: #7b1fa2; }
+  .giro-badge--almacen { background: #fce4ec; color: #c2185b; }
+  .giro-badge--hospital { background: #e8f5e9; color: #2e7d32; }
+  .giro-badge--industria { background: #e0e0e0; color: #424242; }
+
+  .status-badge {
+    display: inline-block;
+    padding: 0.25rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+
+  .status-badge--active {
+    background: #e8f5e9;
+    color: #2e7d32;
+  }
+
+  .status-badge--expired {
+    background: #ffebee;
+    color: #c62828;
+  }
+
+  /* Responsive */
+  @media (max-width: 900px) {
+    .table-header {
+      display: none;
+    }
+
+    .table-row {
+      grid-template-columns: 1fr;
+      gap: 0.5rem;
+      padding: 1.25rem;
+    }
+
+    .col-city::before { content: 'Ciudad: '; color: #888; }
+    .col-type::before { content: 'Tipo: '; color: #888; }
+    .col-status::before { content: 'Estado: '; color: #888; }
+
+    .col-action {
+      margin-top: 0.5rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .cities-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .giros-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+</style>

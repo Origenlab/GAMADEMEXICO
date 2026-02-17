@@ -343,3 +343,24 @@ Explora nuestra línea completa de equipos para sistemas de protección contra i
 - [Monitores Contra Incendios](/monitores-contra-incendios) - Descarga de alto caudal
 - [Válvulas Contra Incendios](/valvulas-contra-incendios) - Control de flujo
 - [Gabinetes e Hidrantes](/gabinetes-hidrantes) - Estaciones de protección
+
+
+---
+
+## Interlinking recomendado Gama de México
+
+Para facilitar tu navegación técnica y comercial dentro del sitio, revisa estas rutas estratégicas:
+
+- [Catálogo de Boquillas contra incendios](/boquillas-contra-incendios)
+- [Guías del blog sobre boquillas contra incendios](/blog/boquillas-contra-incendios)
+- [Todos los equipos contra incendios](/equipos)
+- [Asesoría técnica especializada](/servicios/asesoria)
+- [Solicitar cotización empresarial](/servicios/cotizaciones)
+- [Artículo recomendado 1](/blog/boquillas-contra-incendios/ingenieria-boquillas-contra-incendios-proyectos-industriales)
+- [Artículo recomendado 2](/blog/boquillas-contra-incendios/cumplimiento-legal-boquillas-contra-incendios-mexico-2026)
+
+
+## Imagen técnica de referencia
+
+![Boquilla turbo jet contra incendios de alto rendimiento](/img/boquillas-contra-incendios/boquilla-turbo-jet-frontal.avif)
+*Descripción técnica: referencia visual del equipo y su aplicación en proyectos de protección contra incendios en México.*

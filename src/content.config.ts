@@ -104,4 +104,114 @@ const categorias = defineCollection({
   }),
 });
 
-export const collections = { productos, blog, categorias };
+// =============================================================================
+// Empresas Certificadas - Directorio SEO de empresas con sistemas contra incendios
+// =============================================================================
+const empresasCertificadas = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/empresas-certificadas' }),
+  schema: z.object({
+    // --- Información básica ---
+    nombre: z.string(),
+    slug: z.string(),
+    descripcion: z.string().optional(),
+
+    // --- Categoría del negocio ---
+    giro: z.enum([
+      'hotel',
+      'restaurante',
+      'oficina',
+      'almacen',
+      'hospital',
+      'escuela',
+      'industria',
+      'comercio',
+      'residencial',
+      'otro'
+    ]),
+
+    // --- Ubicación ---
+    direccion: z.string(),
+    colonia: z.string(),
+    ciudad: z.string(),
+    estado: z.string(),
+    codigoPostal: z.string(),
+    latitud: z.number(),
+    longitud: z.number(),
+
+    // --- Contacto ---
+    telefono: z.string().optional(),
+    email: z.string().email().optional(),
+    website: z.string().url().optional(),
+
+    // --- Sistema contra incendios ---
+    tipoSistema: z.array(z.enum([
+      'rociadores-automaticos',
+      'red-hidrantes',
+      'extintores',
+      'deteccion-alarma',
+      'fm200',
+      'co2',
+      'espuma',
+      'gabinetes',
+      'senalizacion'
+    ])),
+
+    // --- Certificación ---
+    fechaCertificacion: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+    fechaVencimiento: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).optional(),
+    certificacionVigente: z.boolean().default(true),
+    certificadoPor: z.string().default('Gama de México'),
+
+    // --- Media ---
+    imagen: z.string().optional(),
+    galeria: z.array(z.string()).optional(),
+
+    // --- SEO ---
+    destacado: z.boolean().default(false),
+    verificado: z.boolean().default(false),
+
+    // --- Metadata ---
+    fechaRegistro: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).optional(),
+  }),
+});
+
+// =============================================================================
+// Hidrantes - Directorio de hidrantes públicos y privados
+// =============================================================================
+const hidrantes = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/hidrantes' }),
+  schema: z.object({
+    // --- Identificación ---
+    id: z.string(),
+    tipo: z.enum(['publico', 'privado']),
+
+    // --- Ubicación ---
+    ubicacionDescripcion: z.string(),
+    colonia: z.string(),
+    ciudad: z.string(),
+    estado: z.string(),
+    codigoPostal: z.string(),
+    latitud: z.number(),
+    longitud: z.number(),
+
+    // --- Especificaciones técnicas ---
+    presionPsi: z.number().optional(),
+    diametroConexion: z.string().optional(), // Flexible para diferentes formatos
+    colorCodigo: z.enum(['rojo', 'amarillo', 'verde', 'azul']).optional(),
+
+    // --- Estado operativo ---
+    estadoOperativo: z.enum(['operativo', 'mantenimiento', 'fuera-servicio']),
+    ultimaInspeccion: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).optional(),
+    proximaInspeccion: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).optional(),
+
+    // --- Media ---
+    imagen: z.string().optional(),
+
+    // --- Metadata ---
+    notas: z.string().optional(),
+    reportadoPor: z.string().optional(),
+    fechaRegistro: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).optional(),
+  }),
+});
+
+export const collections = { productos, blog, categorias, empresasCertificadas, hidrantes };

@@ -1,0 +1,886 @@
+---
+import Layout from '../../layouts/Base.astro';
+import CotizacionForm from '../../components/CotizacionForm.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const hidrantes = await getCollection('hidrantes');
+  return hidrantes.map((hidrante) => ({
+    params: { id: hidrante.data.id.toLowerCase() },
+    props: { hidrante },
+  }));
+}
+
+const { hidrante } = Astro.props;
+const { Content } = await render(hidrante);
+
+// Mapeo de colores
+const colorLabels: Record<string, string> = {
+  rojo: 'Rojo (< 500 GPM)',
+  amarillo: 'Amarillo (500-999 GPM)',
+  verde: 'Verde (1000-1499 GPM)',
+  azul: 'Azul (1500+ GPM)'
+};
+
+const colorClasses: Record<string, string> = {
+  rojo: '#c8102e',
+  amarillo: '#ffc107',
+  verde: '#4caf50',
+  azul: '#2196f3'
+};
+
+// Estado operativo
+const estadoLabels: Record<string, string> = {
+  operativo: 'Operativo',
+  mantenimiento: 'En Mantenimiento',
+  'fuera-servicio': 'Fuera de Servicio'
+};
+
+// Schema.org
+const placeSchema = {
+  "@context": "https://schema.org",
+  "@type": "Place",
+  "name": `Hidrante ${hidrante.data.id}`,
+  "description": `Hidrante ${hidrante.data.tipo} ubicado en ${hidrante.data.ubicacionDescripcion}, ${hidrante.data.colonia}, ${hidrante.data.ciudad}, ${hidrante.data.estado}`,
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": hidrante.data.ubicacionDescripcion,
+    "addressLocality": hidrante.data.ciudad,
+    "addressRegion": hidrante.data.estado,
+    "postalCode": hidrante.data.codigoPostal,
+    "addressCountry": "MX"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": hidrante.data.latitud,
+    "longitude": hidrante.data.longitud
+  }
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://gamademexico.com" },
+    { "@type": "ListItem", "position": 2, "name": "Hidrantes", "item": "https://gamademexico.com/hidrantes" },
+    { "@type": "ListItem", "position": 3, "name": `Hidrante ${hidrante.data.id}` }
+  ]
+};
+
+// Obtener hidrantes cercanos (misma ciudad)
+const todosHidrantes = await getCollection('hidrantes');
+const hidrantesCercanos = todosHidrantes
+  .filter(h => h.data.id !== hidrante.data.id && h.data.ciudad === hidrante.data.ciudad)
+  .slice(0, 4);
+---
+
+<Layout
+  title={`Hidrante ${hidrante.data.id} | ${hidrante.data.ciudad}, ${hidrante.data.estado}`}
+  description={`Información del hidrante ${hidrante.data.id} en ${hidrante.data.ubicacionDescripcion}, ${hidrante.data.ciudad}. Estado: ${estadoLabels[hidrante.data.estadoOperativo]}. Tipo: ${hidrante.data.tipo}.`}
+  activePage="hidrantes"
+  showHero={false}
+  structuredData={[placeSchema, breadcrumbSchema]}
+>
+
+  <!-- Breadcrumb -->
+  <nav class="breadcrumb">
+    <div class="container">
+      <ol class="breadcrumb__list">
+        <li class="breadcrumb__item"><a href="/">Inicio</a></li>
+        <li class="breadcrumb__item"><a href="/hidrantes">Hidrantes</a></li>
+        <li class="breadcrumb__item"><a href={`/hidrantes/estado/${hidrante.data.estado.toLowerCase().replace(/ /g, '-')}`}>{hidrante.data.estado}</a></li>
+        <li class="breadcrumb__item breadcrumb__item--active">{hidrante.data.id}</li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <section class="hidrante-header">
+    <div class="container">
+      <div class="header-grid">
+        <!-- Info Principal -->
+        <div class="header-info">
+          <div class="header-badges">
+            <span class={`badge badge--status badge--${hidrante.data.estadoOperativo}`}>
+              {hidrante.data.estadoOperativo === 'operativo' && '✓'}
+              {hidrante.data.estadoOperativo === 'mantenimiento' && '⚙️'}
+              {hidrante.data.estadoOperativo === 'fuera-servicio' && '✗'}
+              {estadoLabels[hidrante.data.estadoOperativo]}
+            </span>
+            <span class={`badge badge--type badge--${hidrante.data.tipo}`}>
+              {hidrante.data.tipo === 'publico' ? '🏛️ Público' : '🏢 Privado'}
+            </span>
+            {hidrante.data.colorCodigo && (
+              <span class={`badge badge--color badge--color-${hidrante.data.colorCodigo}`}>
+                {colorLabels[hidrante.data.colorCodigo]}
+              </span>
+            )}
+          </div>
+
+          <h1 class="header-title">Hidrante {hidrante.data.id}</h1>
+
+          <div class="header-location">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            <div>
+              <strong>{hidrante.data.ubicacionDescripcion}</strong>
+              <span>{hidrante.data.colonia}, {hidrante.data.ciudad}, {hidrante.data.estado}</span>
+              <span class="cp">C.P. {hidrante.data.codigoPostal}</span>
+            </div>
+          </div>
+
+          <!-- Coordenadas -->
+          <div class="coordinates">
+            <span class="coordinates__label">Coordenadas:</span>
+            <code class="coordinates__value">{hidrante.data.latitud}, {hidrante.data.longitud}</code>
+            <button class="btn btn--sm btn--outline copy-coords" data-coords={`${hidrante.data.latitud}, ${hidrante.data.longitud}`}>
+              📋 Copiar
+            </button>
+          </div>
+        </div>
+
+        <!-- Mapa y Acciones -->
+        <div class="header-sidebar">
+          <div class="mini-map" style={`--hydrant-color: ${colorClasses[hidrante.data.colorCodigo || 'rojo']}`}>
+            <div class="mini-map__placeholder">
+              <div class="hydrant-marker">
+                <svg viewBox="0 0 24 36" class="hydrant-icon">
+                  <rect x="8" y="0" width="8" height="6" rx="1" fill="currentColor"/>
+                  <rect x="6" y="6" width="12" height="20" rx="2" fill="currentColor"/>
+                  <rect x="0" y="10" width="6" height="4" rx="1" fill="currentColor"/>
+                  <rect x="18" y="10" width="6" height="4" rx="1" fill="currentColor"/>
+                  <rect x="4" y="26" width="16" height="4" rx="1" fill="currentColor"/>
+                  <rect x="6" y="30" width="12" height="6" rx="1" fill="currentColor"/>
+                </svg>
+              </div>
+              <a
+                href={`https://www.google.com/maps/search/?api=1&query=${hidrante.data.latitud},${hidrante.data.longitud}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="map-link"
+              >
+                Ver en Google Maps →
+              </a>
+            </div>
+          </div>
+
+          <div class="quick-actions">
+            <a
+              href={`https://www.google.com/maps/dir/?api=1&destination=${hidrante.data.latitud},${hidrante.data.longitud}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn--primary btn--block"
+            >
+              🧭 Cómo llegar
+            </a>
+            <a href="#reportar" class="btn btn--outline btn--block">
+              📝 Reportar problema
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Especificaciones Técnicas -->
+  <section class="specs-section">
+    <div class="container">
+      <h2 class="section-title">Especificaciones Técnicas</h2>
+
+      <div class="specs-grid">
+        <div class="spec-card">
+          <span class="spec-card__icon">💧</span>
+          <span class="spec-card__label">Presión</span>
+          <span class="spec-card__value">
+            {hidrante.data.presionPsi ? `${hidrante.data.presionPsi} PSI` : 'No disponible'}
+          </span>
+        </div>
+
+        <div class="spec-card">
+          <span class="spec-card__icon">⭕</span>
+          <span class="spec-card__label">Conexión</span>
+          <span class="spec-card__value">
+            {hidrante.data.diametroConexion || 'No especificado'}
+          </span>
+        </div>
+
+        <div class="spec-card">
+          <span class="spec-card__icon">🎨</span>
+          <span class="spec-card__label">Código de Color</span>
+          <span class="spec-card__value" style={`color: ${colorClasses[hidrante.data.colorCodigo || 'rojo']}`}>
+            {hidrante.data.colorCodigo ? colorLabels[hidrante.data.colorCodigo] : 'No especificado'}
+          </span>
+        </div>
+
+        <div class="spec-card">
+          <span class="spec-card__icon">📋</span>
+          <span class="spec-card__label">Tipo</span>
+          <span class="spec-card__value">
+            {hidrante.data.tipo === 'publico' ? 'Público (Municipal)' : 'Privado'}
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Historial de Inspecciones -->
+  <section class="inspection-section">
+    <div class="container">
+      <h2 class="section-title">Historial de Inspecciones</h2>
+
+      <div class="inspection-timeline">
+        {hidrante.data.ultimaInspeccion && (
+          <div class="timeline-item timeline-item--completed">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">
+                {new Date(hidrante.data.ultimaInspeccion).toLocaleDateString('es-MX', {
+                  day: 'numeric',
+                  month: 'long',
+                  year: 'numeric'
+                })}
+              </span>
+              <h4 class="timeline-title">Última inspección</h4>
+              <p class="timeline-desc">Inspección de rutina completada</p>
+            </div>
+          </div>
+        )}
+
+        {hidrante.data.proximaInspeccion && (
+          <div class="timeline-item timeline-item--pending">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">
+                {new Date(hidrante.data.proximaInspeccion).toLocaleDateString('es-MX', {
+                  day: 'numeric',
+                  month: 'long',
+                  year: 'numeric'
+                })}
+              </span>
+              <h4 class="timeline-title">Próxima inspección programada</h4>
+              <p class="timeline-desc">Inspección de mantenimiento preventivo</p>
+            </div>
+          </div>
+        )}
+
+        {hidrante.data.fechaRegistro && (
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">
+                {new Date(hidrante.data.fechaRegistro).toLocaleDateString('es-MX', {
+                  day: 'numeric',
+                  month: 'long',
+                  year: 'numeric'
+                })}
+              </span>
+              <h4 class="timeline-title">Fecha de registro</h4>
+              <p class="timeline-desc">Alta en el sistema de directorio</p>
+            </div>
+          </div>
+        )}
+      </div>
+    </div>
+  </section>
+
+  <!-- Contenido del Markdown (notas) -->
+  {Content && (
+    <section class="notes-section">
+      <div class="container">
+        <h2 class="section-title">Notas y Observaciones</h2>
+        <div class="notes-content">
+          <Content />
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- Hidrantes Cercanos -->
+  {hidrantesCercanos.length > 0 && (
+    <section class="nearby-section">
+      <div class="container">
+        <h2 class="section-title">Hidrantes Cercanos en {hidrante.data.ciudad}</h2>
+
+        <div class="nearby-grid">
+          {hidrantesCercanos.map((cercano) => (
+            <a href={`/hidrantes/${cercano.data.id.toLowerCase()}`} class="nearby-card">
+              <div class="nearby-card__header">
+                <span class={`id-badge id-badge--${cercano.data.colorCodigo || 'rojo'}`}>
+                  {cercano.data.id}
+                </span>
+                <span class={`status-dot status-dot--${cercano.data.estadoOperativo}`}></span>
+              </div>
+              <p class="nearby-card__location">{cercano.data.ubicacionDescripcion}</p>
+              <p class="nearby-card__colonia">{cercano.data.colonia}</p>
+            </a>
+          ))}
+        </div>
+
+        <div class="view-all">
+          <a href={`/hidrantes/estado/${hidrante.data.estado.toLowerCase().replace(/ /g, '-')}`} class="btn btn--outline">
+            Ver todos los hidrantes en {hidrante.data.estado}
+          </a>
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- Reportar Problema -->
+  <section class="report-section" id="reportar">
+    <div class="container">
+      <div class="report-card">
+        <h2 class="report-title">¿Hay algún problema con este hidrante?</h2>
+        <p class="report-text">
+          Reporta daños, obstrucciones, fugas u otros problemas que afecten la operación de este hidrante.
+          Tu reporte ayuda a mantener la seguridad de la comunidad.
+        </p>
+        <div class="report-options">
+          <label class="report-option">
+            <input type="radio" name="problema" value="dano" />
+            <span>🔧 Daño físico</span>
+          </label>
+          <label class="report-option">
+            <input type="radio" name="problema" value="fuga" />
+            <span>💧 Fuga de agua</span>
+          </label>
+          <label class="report-option">
+            <input type="radio" name="problema" value="obstruccion" />
+            <span>🚗 Obstrucción</span>
+          </label>
+          <label class="report-option">
+            <input type="radio" name="problema" value="otro" />
+            <span>📝 Otro problema</span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Formulario -->
+  <CotizacionForm
+    titulo={`Reportar problema con hidrante ${hidrante.data.id}`}
+    producto={`Reporte Hidrante ${hidrante.data.id}`}
+    pagina={`Hidrante: ${hidrante.data.id}`}
+  />
+
+</Layout>
+
+<script>
+  // Copiar coordenadas
+  const copyBtn = document.querySelector('.copy-coords');
+  copyBtn?.addEventListener('click', async () => {
+    const coords = copyBtn.getAttribute('data-coords');
+    if (coords) {
+      await navigator.clipboard.writeText(coords);
+      const originalText = copyBtn.textContent;
+      copyBtn.textContent = '✓ Copiado';
+      setTimeout(() => {
+        copyBtn.textContent = originalText;
+      }, 2000);
+    }
+  });
+</script>
+
+<style>
+  /* Breadcrumb */
+  .breadcrumb {
+    background: #f8f9fa;
+    padding: 1rem 0;
+    border-bottom: 1px solid #e9ecef;
+  }
+
+  .breadcrumb__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0.875rem;
+  }
+
+  .breadcrumb__item {
+    display: flex;
+    align-items: center;
+    color: #666;
+  }
+
+  .breadcrumb__item:not(:last-child)::after {
+    content: '/';
+    margin: 0 0.5rem;
+    color: #aaa;
+  }
+
+  .breadcrumb__item a {
+    color: #c8102e;
+    text-decoration: none;
+  }
+
+  .breadcrumb__item--active {
+    color: #333;
+    font-weight: 600;
+  }
+
+  /* Header */
+  .hidrante-header {
+    padding: 3rem 0;
+    background: white;
+  }
+
+  .header-grid {
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 3rem;
+    align-items: start;
+  }
+
+  .header-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.35rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+
+  .badge--operativo { background: #e8f5e9; color: #2e7d32; }
+  .badge--mantenimiento { background: #fff3e0; color: #e65100; }
+  .badge--fuera-servicio { background: #ffebee; color: #c62828; }
+
+  .badge--publico { background: #e3f2fd; color: #1565c0; }
+  .badge--privado { background: #f3e5f5; color: #7b1fa2; }
+
+  .badge--color-rojo { background: #ffebee; color: #c8102e; }
+  .badge--color-amarillo { background: #fff8e1; color: #f57c00; }
+  .badge--color-verde { background: #e8f5e9; color: #2e7d32; }
+  .badge--color-azul { background: #e3f2fd; color: #1565c0; }
+
+  .header-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #1a1a2e;
+    margin-bottom: 1.5rem;
+  }
+
+  .header-location {
+    display: flex;
+    gap: 1rem;
+    padding: 1.25rem;
+    background: #f8f9fa;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+  }
+
+  .header-location svg {
+    flex-shrink: 0;
+    color: #c8102e;
+  }
+
+  .header-location strong {
+    display: block;
+    font-size: 1.1rem;
+    color: #1a1a2e;
+    margin-bottom: 0.25rem;
+  }
+
+  .header-location span {
+    display: block;
+    color: #666;
+    font-size: 0.95rem;
+  }
+
+  .header-location .cp {
+    font-size: 0.85rem;
+    color: #888;
+    margin-top: 0.25rem;
+  }
+
+  .coordinates {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  .coordinates__label {
+    font-size: 0.9rem;
+    color: #666;
+  }
+
+  .coordinates__value {
+    background: #e9ecef;
+    padding: 0.35rem 0.75rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    color: #333;
+  }
+
+  /* Sidebar */
+  .header-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .mini-map {
+    background: #e9ecef;
+    border-radius: 12px;
+    height: 220px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .mini-map__placeholder {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .hydrant-marker {
+    width: 50px;
+    height: 75px;
+  }
+
+  .hydrant-marker .hydrant-icon {
+    width: 100%;
+    height: 100%;
+    color: var(--hydrant-color, #c8102e);
+  }
+
+  .map-link {
+    color: #c8102e;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+
+  .map-link:hover {
+    text-decoration: underline;
+  }
+
+  .quick-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .btn--block {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Specs */
+  .specs-section {
+    padding: 3rem 0;
+    background: #f8f9fa;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .specs-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
+
+  .spec-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+
+  .spec-card__icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 0.75rem;
+  }
+
+  .spec-card__label {
+    display: block;
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 0.25rem;
+  }
+
+  .spec-card__value {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1a1a2e;
+  }
+
+  /* Timeline */
+  .inspection-section {
+    padding: 3rem 0;
+  }
+
+  .inspection-timeline {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .timeline-item {
+    display: flex;
+    gap: 1.5rem;
+    padding-bottom: 2rem;
+    position: relative;
+  }
+
+  .timeline-item:not(:last-child)::before {
+    content: '';
+    position: absolute;
+    left: 11px;
+    top: 24px;
+    bottom: 0;
+    width: 2px;
+    background: #e0e0e0;
+  }
+
+  .timeline-marker {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #e0e0e0;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 1;
+  }
+
+  .timeline-item--completed .timeline-marker {
+    background: #4caf50;
+  }
+
+  .timeline-item--pending .timeline-marker {
+    background: #ffc107;
+  }
+
+  .timeline-content {
+    flex-grow: 1;
+  }
+
+  .timeline-date {
+    font-size: 0.85rem;
+    color: #888;
+  }
+
+  .timeline-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin: 0.25rem 0;
+  }
+
+  .timeline-desc {
+    font-size: 0.9rem;
+    color: #666;
+  }
+
+  /* Notes */
+  .notes-section {
+    padding: 3rem 0;
+    background: #f8f9fa;
+  }
+
+  .notes-content {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+
+  .notes-content :global(p) {
+    line-height: 1.7;
+  }
+
+  /* Nearby */
+  .nearby-section {
+    padding: 3rem 0;
+  }
+
+  .nearby-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .nearby-card {
+    background: white;
+    border: 2px solid #e9ecef;
+    border-radius: 12px;
+    padding: 1.25rem;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+
+  .nearby-card:hover {
+    border-color: #c8102e;
+    transform: translateY(-2px);
+  }
+
+  .nearby-card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+  }
+
+  .id-badge {
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    font-family: monospace;
+  }
+
+  .id-badge--rojo { background: #ffebee; color: #c8102e; }
+  .id-badge--amarillo { background: #fff8e1; color: #f57c00; }
+  .id-badge--verde { background: #e8f5e9; color: #2e7d32; }
+  .id-badge--azul { background: #e3f2fd; color: #1565c0; }
+
+  .status-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+
+  .status-dot--operativo { background: #4caf50; }
+  .status-dot--mantenimiento { background: #ffc107; }
+  .status-dot--fuera-servicio { background: #f44336; }
+
+  .nearby-card__location {
+    font-size: 0.9rem;
+    color: #1a1a2e;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    line-height: 1.3;
+  }
+
+  .nearby-card__colonia {
+    font-size: 0.8rem;
+    color: #888;
+  }
+
+  .view-all {
+    text-align: center;
+  }
+
+  /* Report */
+  .report-section {
+    padding: 3rem 0;
+    background: #f8f9fa;
+  }
+
+  .report-card {
+    max-width: 700px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  }
+
+  .report-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 0.75rem;
+  }
+
+  .report-text {
+    color: #666;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+
+  .report-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+
+  .report-option {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+
+  .report-option:hover {
+    background: #e9ecef;
+  }
+
+  .report-option input {
+    accent-color: #c8102e;
+  }
+
+  .report-option span {
+    font-size: 0.95rem;
+    color: #333;
+  }
+
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .header-grid {
+      grid-template-columns: 1fr 320px;
+      gap: 2rem;
+    }
+
+    .specs-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nearby-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .header-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .header-title {
+      font-size: 2rem;
+    }
+
+    .specs-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .nearby-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .report-options {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

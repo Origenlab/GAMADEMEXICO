@@ -1,0 +1,835 @@
+---
+import Layout from '../../layouts/Base.astro';
+import SectionHeader from '../../components/SectionHeader.astro';
+import CotizacionForm from '../../components/CotizacionForm.astro';
+import { getCollection } from 'astro:content';
+
+// Obtener todos los hidrantes
+const hidrantes = await getCollection('hidrantes');
+
+// Agrupar por estado
+const hidrantesPorEstado = hidrantes.reduce((acc, hidrante) => {
+  const estado = hidrante.data.estado;
+  if (!acc[estado]) acc[estado] = [];
+  acc[estado].push(hidrante);
+  return acc;
+}, {} as Record<string, typeof hidrantes>);
+
+// Agrupar por ciudad
+const hidrantesPorCiudad = hidrantes.reduce((acc, hidrante) => {
+  const ciudad = hidrante.data.ciudad;
+  if (!acc[ciudad]) acc[ciudad] = [];
+  acc[ciudad].push(hidrante);
+  return acc;
+}, {} as Record<string, typeof hidrantes>);
+
+// Contar por estado operativo
+const hidrantesOperativos = hidrantes.filter(h => h.data.estadoOperativo === 'operativo').length;
+const hidrantesMantenimiento = hidrantes.filter(h => h.data.estadoOperativo === 'mantenimiento').length;
+const hidrantesFueraServicio = hidrantes.filter(h => h.data.estadoOperativo === 'fuera-servicio').length;
+
+// Contar por tipo
+const hidrantesPublicos = hidrantes.filter(h => h.data.tipo === 'publico').length;
+const hidrantesPrivados = hidrantes.filter(h => h.data.tipo === 'privado').length;
+
+// Mapeo de colores de código
+const colorLabels: Record<string, string> = {
+  rojo: 'Rojo (< 500 GPM)',
+  amarillo: 'Amarillo (500-999 GPM)',
+  verde: 'Verde (1000-1499 GPM)',
+  azul: 'Azul (1500+ GPM)'
+};
+
+const colorDescriptions: Record<string, string> = {
+  rojo: 'Flujo menor a 500 GPM. Adecuado para uso residencial básico.',
+  amarillo: 'Flujo de 500 a 999 GPM. Uso residencial y comercial ligero.',
+  verde: 'Flujo de 1000 a 1499 GPM. Uso comercial e industrial.',
+  azul: 'Flujo mayor a 1500 GPM. Máxima capacidad para industria pesada.'
+};
+
+// Schema.org
+const directorySchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Directorio de Hidrantes en México",
+  "description": "Mapa interactivo de hidrantes contra incendios públicos y privados en México. Ubicación, estado operativo y características técnicas.",
+  "numberOfItems": hidrantes.length,
+  "itemListElement": hidrantes.slice(0, 10).map((hidrante, index) => ({
+    "@type": "ListItem",
+    "position": index + 1,
+    "item": {
+      "@type": "Place",
+      "name": `Hidrante ${hidrante.data.id}`,
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": hidrante.data.ciudad,
+        "addressRegion": hidrante.data.estado,
+        "addressCountry": "MX"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": hidrante.data.latitud,
+        "longitude": hidrante.data.longitud
+      }
+    }
+  }))
+};
+---
+
+<Layout
+  title="Mapa de Hidrantes en México | Directorio de Hidrantes Contra Incendios"
+  description="Localiza hidrantes contra incendios en México. Mapa interactivo con ubicación, estado operativo, presión y características técnicas de hidrantes públicos y privados."
+  activePage="hidrantes"
+  heroTitle="Directorio de Hidrantes Contra Incendios"
+  heroIntro="Mapa interactivo de hidrantes en México. Consulta ubicación, estado operativo, presión disponible y características técnicas de hidrantes públicos y privados."
+  heroBadge="Mapa de Hidrantes"
+  heroMetrics={[
+    { valor: String(hidrantes.length), texto: "Hidrantes registrados" },
+    { valor: String(hidrantesOperativos), texto: "Operativos" },
+    { valor: String(Object.keys(hidrantesPorCiudad).length), texto: "Ciudades" }
+  ]}
+  heroPrimaryText="Reportar hidrante"
+  heroPrimaryLink="#reportar"
+  heroSecondaryText="Ver mapa completo"
+  heroSecondaryLink="#mapa"
+  structuredData={[directorySchema]}
+>
+
+  <!-- Estadísticas -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card stat-card--operativo">
+          <span class="stat-card__number">{hidrantesOperativos}</span>
+          <span class="stat-card__label">Operativos</span>
+          <span class="stat-card__icon">✓</span>
+        </div>
+        <div class="stat-card stat-card--mantenimiento">
+          <span class="stat-card__number">{hidrantesMantenimiento}</span>
+          <span class="stat-card__label">En Mantenimiento</span>
+          <span class="stat-card__icon">⚙️</span>
+        </div>
+        <div class="stat-card stat-card--fuera">
+          <span class="stat-card__number">{hidrantesFueraServicio}</span>
+          <span class="stat-card__label">Fuera de Servicio</span>
+          <span class="stat-card__icon">✗</span>
+        </div>
+        <div class="stat-card stat-card--publicos">
+          <span class="stat-card__number">{hidrantesPublicos}</span>
+          <span class="stat-card__label">Públicos</span>
+          <span class="stat-card__icon">🏛️</span>
+        </div>
+        <div class="stat-card stat-card--privados">
+          <span class="stat-card__number">{hidrantesPrivados}</span>
+          <span class="stat-card__label">Privados</span>
+          <span class="stat-card__icon">🏢</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mapa Placeholder -->
+  <section class="map-section" id="mapa">
+    <div class="container">
+      <SectionHeader
+        titulo="Mapa Interactivo de Hidrantes"
+        subtitulo="Localiza hidrantes cercanos a cualquier ubicación en México"
+        idTitulo="mapa-hidrantes"
+      />
+
+      <div class="map-container">
+        <div class="map-placeholder" id="hidrantes-map">
+          <div class="map-placeholder__content">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            <h3>Mapa Interactivo</h3>
+            <p>Visualización de {hidrantes.length} hidrantes en tiempo real</p>
+            <p class="map-placeholder__note">Próximamente con Leaflet</p>
+          </div>
+        </div>
+
+        <div class="map-legend">
+          <h4 class="map-legend__title">Código de Colores (NFPA)</h4>
+          <div class="legend-items">
+            <div class="legend-item">
+              <span class="legend-color legend-color--rojo"></span>
+              <span class="legend-text">Rojo: &lt; 500 GPM</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-color legend-color--amarillo"></span>
+              <span class="legend-text">Amarillo: 500-999 GPM</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-color legend-color--verde"></span>
+              <span class="legend-text">Verde: 1000-1499 GPM</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-color legend-color--azul"></span>
+              <span class="legend-text">Azul: 1500+ GPM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Explorar por Estado -->
+  <section class="explore-section">
+    <div class="container">
+      <SectionHeader
+        titulo="Hidrantes por Estado"
+        subtitulo="Selecciona un estado para ver hidrantes disponibles"
+        idTitulo="por-estado"
+      />
+
+      <div class="states-grid">
+        {Object.entries(hidrantesPorEstado)
+          .sort((a, b) => b[1].length - a[1].length)
+          .map(([estado, lista]) => {
+            const estadoSlug = estado.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\s+/g, '-');
+            const operativos = lista.filter(h => h.data.estadoOperativo === 'operativo').length;
+            return (
+              <a href={`/hidrantes/estado/${estadoSlug}`} class="state-card">
+                <div class="state-card__header">
+                  <h3 class="state-card__title">{estado}</h3>
+                  <span class="state-card__count">{lista.length}</span>
+                </div>
+                <div class="state-card__stats">
+                  <span class="stat-mini stat-mini--green">{operativos} operativos</span>
+                  <span class="stat-mini stat-mini--gray">{lista.length - operativos} otros</span>
+                </div>
+                <div class="state-card__cities">
+                  {[...new Set(lista.map(h => h.data.ciudad))].slice(0, 3).join(', ')}
+                </div>
+              </a>
+            );
+          })}
+      </div>
+    </div>
+  </section>
+
+  <!-- Código de Colores -->
+  <section class="color-code-section">
+    <div class="container">
+      <SectionHeader
+        titulo="Sistema de Código de Colores NFPA"
+        subtitulo="Identificación visual de capacidad de flujo en hidrantes"
+        idTitulo="codigo-colores"
+      />
+
+      <div class="color-cards">
+        {Object.entries(colorLabels).map(([color, label]) => (
+          <div class={`color-card color-card--${color}`}>
+            <div class="color-card__hydrant">
+              <svg viewBox="0 0 24 36" class="hydrant-icon">
+                <rect x="8" y="0" width="8" height="6" rx="1" fill="currentColor"/>
+                <rect x="6" y="6" width="12" height="20" rx="2" fill="currentColor"/>
+                <rect x="0" y="10" width="6" height="4" rx="1" fill="currentColor"/>
+                <rect x="18" y="10" width="6" height="4" rx="1" fill="currentColor"/>
+                <rect x="4" y="26" width="16" height="4" rx="1" fill="currentColor"/>
+                <rect x="6" y="30" width="12" height="6" rx="1" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3 class="color-card__title">{label}</h3>
+            <p class="color-card__desc">{colorDescriptions[color]}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Lista de Hidrantes Recientes -->
+  <section class="recent-section">
+    <div class="container">
+      <SectionHeader
+        titulo="Hidrantes Registrados Recientemente"
+        subtitulo="Últimas actualizaciones del directorio"
+        idTitulo="recientes"
+      />
+
+      <div class="hidrantes-table">
+        <div class="table-header">
+          <span class="col-id">ID</span>
+          <span class="col-location">Ubicación</span>
+          <span class="col-type">Tipo</span>
+          <span class="col-pressure">Presión</span>
+          <span class="col-status">Estado</span>
+          <span class="col-action"></span>
+        </div>
+        {hidrantes.slice(0, 10).map((hidrante) => (
+          <div class="table-row">
+            <div class="col-id">
+              <span class={`id-badge id-badge--${hidrante.data.colorCodigo || 'rojo'}`}>
+                {hidrante.data.id}
+              </span>
+            </div>
+            <div class="col-location">
+              <strong>{hidrante.data.ubicacionDescripcion}</strong>
+              <span>{hidrante.data.colonia}, {hidrante.data.ciudad}</span>
+            </div>
+            <div class="col-type">
+              {hidrante.data.tipo === 'publico' ? '🏛️ Público' : '🏢 Privado'}
+            </div>
+            <div class="col-pressure">
+              {hidrante.data.presionPsi ? `${hidrante.data.presionPsi} PSI` : 'N/A'}
+            </div>
+            <div class="col-status">
+              <span class={`status-badge status-badge--${hidrante.data.estadoOperativo}`}>
+                {hidrante.data.estadoOperativo === 'operativo' && '✓ Operativo'}
+                {hidrante.data.estadoOperativo === 'mantenimiento' && '⚙️ Mantenimiento'}
+                {hidrante.data.estadoOperativo === 'fuera-servicio' && '✗ Fuera de Servicio'}
+              </span>
+            </div>
+            <div class="col-action">
+              <a href={`/hidrantes/${hidrante.data.id.toLowerCase()}`} class="btn btn--sm btn--outline">
+                Ver
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {hidrantes.length > 10 && (
+        <div class="view-all">
+          <a href="/hidrantes/todos" class="btn btn--primary">
+            Ver todos los hidrantes ({hidrantes.length})
+          </a>
+        </div>
+      )}
+    </div>
+  </section>
+
+  <!-- Reportar Hidrante -->
+  <section class="report-section" id="reportar">
+    <div class="container">
+      <div class="report-content">
+        <div class="report-info">
+          <h2 class="report-title">¿Conoces un hidrante que no está registrado?</h2>
+          <p class="report-text">
+            Ayúdanos a mantener el directorio actualizado. Reporta hidrantes públicos o privados que no aparezcan en nuestro mapa.
+          </p>
+          <ul class="report-benefits">
+            <li>Contribuye a la seguridad de tu comunidad</li>
+            <li>Ayuda a los servicios de emergencia</li>
+            <li>Información verificada por profesionales</li>
+          </ul>
+        </div>
+        <div class="report-form-card">
+          <h3>Información requerida</h3>
+          <ul class="report-requirements">
+            <li>📍 Ubicación exacta (dirección o coordenadas)</li>
+            <li>📸 Fotografía del hidrante</li>
+            <li>🔧 Estado aparente (operativo/dañado)</li>
+            <li>📝 Observaciones adicionales</li>
+          </ul>
+          <a href="#cotizar" class="btn btn--primary btn--block">
+            Reportar hidrante
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Formulario -->
+  <CotizacionForm
+    titulo="Reportar o solicitar información sobre hidrantes"
+    producto="Reporte de Hidrante"
+    pagina="Directorio de Hidrantes"
+  />
+
+</Layout>
+
+<style>
+  /* Stats */
+  .stats-section {
+    padding: 2rem 0;
+    background: white;
+    border-bottom: 1px solid #e9ecef;
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+  }
+
+  .stat-card {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 1.25rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .stat-card__number {
+    display: block;
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 0.25rem;
+  }
+
+  .stat-card__label {
+    font-size: 0.8rem;
+    color: #666;
+  }
+
+  .stat-card__icon {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    font-size: 1.25rem;
+    opacity: 0.5;
+  }
+
+  .stat-card--operativo { background: #e8f5e9; }
+  .stat-card--operativo .stat-card__number { color: #2e7d32; }
+
+  .stat-card--mantenimiento { background: #fff3e0; }
+  .stat-card--mantenimiento .stat-card__number { color: #e65100; }
+
+  .stat-card--fuera { background: #ffebee; }
+  .stat-card--fuera .stat-card__number { color: #c62828; }
+
+  .stat-card--publicos { background: #e3f2fd; }
+  .stat-card--publicos .stat-card__number { color: #1565c0; }
+
+  .stat-card--privados { background: #f3e5f5; }
+  .stat-card--privados .stat-card__number { color: #7b1fa2; }
+
+  /* Map */
+  .map-section {
+    padding: 3rem 0;
+    background: #f8f9fa;
+  }
+
+  .map-container {
+    margin-top: 2rem;
+  }
+
+  .map-placeholder {
+    background: #e0e0e0;
+    border-radius: 12px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .map-placeholder__content {
+    text-align: center;
+    color: #666;
+  }
+
+  .map-placeholder__content svg {
+    margin-bottom: 1rem;
+    opacity: 0.4;
+  }
+
+  .map-placeholder__content h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+
+  .map-placeholder__note {
+    font-size: 0.85rem;
+    color: #999;
+    margin-top: 0.5rem;
+  }
+
+  .map-legend {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+
+  .map-legend__title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 1rem;
+  }
+
+  .legend-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .legend-color {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+  }
+
+  .legend-color--rojo { background: #c8102e; }
+  .legend-color--amarillo { background: #ffc107; }
+  .legend-color--verde { background: #4caf50; }
+  .legend-color--azul { background: #2196f3; }
+
+  .legend-text {
+    font-size: 0.9rem;
+    color: #555;
+  }
+
+  /* States */
+  .explore-section {
+    padding: 3rem 0;
+  }
+
+  .states-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .state-card {
+    background: white;
+    border: 2px solid #e9ecef;
+    border-radius: 12px;
+    padding: 1.25rem;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+
+  .state-card:hover {
+    border-color: #c8102e;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  .state-card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+  }
+
+  .state-card__title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1a1a2e;
+  }
+
+  .state-card__count {
+    background: #c8102e;
+    color: white;
+    padding: 0.25rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: 700;
+  }
+
+  .state-card__stats {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .stat-mini {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+
+  .stat-mini--green { color: #2e7d32; }
+  .stat-mini--gray { color: #888; }
+
+  .state-card__cities {
+    font-size: 0.85rem;
+    color: #666;
+  }
+
+  /* Color Cards */
+  .color-code-section {
+    padding: 3rem 0;
+    background: #f8f9fa;
+  }
+
+  .color-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .color-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  }
+
+  .color-card__hydrant {
+    width: 60px;
+    height: 90px;
+    margin: 0 auto 1rem;
+  }
+
+  .hydrant-icon {
+    width: 100%;
+    height: 100%;
+  }
+
+  .color-card--rojo .hydrant-icon { color: #c8102e; }
+  .color-card--amarillo .hydrant-icon { color: #ffc107; }
+  .color-card--verde .hydrant-icon { color: #4caf50; }
+  .color-card--azul .hydrant-icon { color: #2196f3; }
+
+  .color-card__title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 0.5rem;
+  }
+
+  .color-card__desc {
+    font-size: 0.85rem;
+    color: #666;
+    line-height: 1.5;
+  }
+
+  /* Table */
+  .recent-section {
+    padding: 3rem 0;
+  }
+
+  .hidrantes-table {
+    margin-top: 2rem;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  }
+
+  .table-header {
+    display: grid;
+    grid-template-columns: 120px 2fr 100px 80px 140px 70px;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    background: #1a1a2e;
+    color: white;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+  }
+
+  .table-row {
+    display: grid;
+    grid-template-columns: 120px 2fr 100px 80px 140px 70px;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #f0f0f0;
+    align-items: center;
+  }
+
+  .table-row:hover {
+    background: #f8f9fa;
+  }
+
+  .id-badge {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    font-family: monospace;
+  }
+
+  .id-badge--rojo { background: #ffebee; color: #c8102e; }
+  .id-badge--amarillo { background: #fff8e1; color: #f57c00; }
+  .id-badge--verde { background: #e8f5e9; color: #2e7d32; }
+  .id-badge--azul { background: #e3f2fd; color: #1565c0; }
+
+  .col-location strong {
+    display: block;
+    color: #1a1a2e;
+    font-size: 0.9rem;
+    margin-bottom: 0.15rem;
+  }
+
+  .col-location span {
+    font-size: 0.8rem;
+    color: #888;
+  }
+
+  .col-type {
+    font-size: 0.85rem;
+    color: #555;
+  }
+
+  .col-pressure {
+    font-weight: 600;
+    color: #1a1a2e;
+    font-size: 0.9rem;
+  }
+
+  .status-badge {
+    display: inline-block;
+    padding: 0.25rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+
+  .status-badge--operativo {
+    background: #e8f5e9;
+    color: #2e7d32;
+  }
+
+  .status-badge--mantenimiento {
+    background: #fff3e0;
+    color: #e65100;
+  }
+
+  .status-badge--fuera-servicio {
+    background: #ffebee;
+    color: #c62828;
+  }
+
+  .view-all {
+    text-align: center;
+    padding: 2rem;
+  }
+
+  /* Report */
+  .report-section {
+    padding: 3rem 0;
+    background: linear-gradient(135deg, #1a1a2e 0%, #2d2d4a 100%);
+    color: white;
+  }
+
+  .report-content {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .report-title {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+  }
+
+  .report-text {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+
+  .report-benefits {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .report-benefits li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+  }
+
+  .report-benefits li::before {
+    content: '✓';
+    background: #c8102e;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+  }
+
+  .report-form-card {
+    background: white;
+    color: #1a1a2e;
+    border-radius: 12px;
+    padding: 2rem;
+  }
+
+  .report-form-card h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .report-requirements {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem;
+  }
+
+  .report-requirements li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+    font-size: 0.95rem;
+  }
+
+  .btn--block {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .stats-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .color-cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .report-content {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .stats-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .table-header {
+      display: none;
+    }
+
+    .table-row {
+      grid-template-columns: 1fr;
+      gap: 0.5rem;
+    }
+
+    .color-cards {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .stats-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .color-cards {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

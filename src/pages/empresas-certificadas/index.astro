@@ -1,0 +1,307 @@
+---
+import Layout from '../../layouts/Base.astro';
+import SectionHeader from '../../components/SectionHeader.astro';
+import ServiceCard from '../../components/ServiceCard.astro';
+import CategoryCard from '../../components/CategoryCard.astro';
+import CtaCatalogo from '../../components/CtaCatalogo.astro';
+import CotizacionForm from '../../components/CotizacionForm.astro';
+import BlogRecent from '../../components/blog/BlogRecent.astro';
+import { getCollection } from 'astro:content';
+
+// Obtener todas las empresas certificadas
+const empresas = await getCollection('empresasCertificadas');
+
+// Agrupar por estado y ciudad
+const empresasPorEstado = empresas.reduce((acc, empresa) => {
+  const estado = empresa.data.estado;
+  const ciudad = empresa.data.ciudad;
+
+  if (!acc[estado]) {
+    acc[estado] = { ciudades: {}, total: 0 };
+  }
+  if (!acc[estado].ciudades[ciudad]) {
+    acc[estado].ciudades[ciudad] = [];
+  }
+  acc[estado].ciudades[ciudad].push(empresa);
+  acc[estado].total++;
+
+  return acc;
+}, {} as Record<string, { ciudades: Record<string, typeof empresas>, total: number }>);
+
+// Agrupar por giro
+const empresasPorGiro = empresas.reduce((acc, empresa) => {
+  const giro = empresa.data.giro;
+  if (!acc[giro]) {
+    acc[giro] = [];
+  }
+  acc[giro].push(empresa);
+  return acc;
+}, {} as Record<string, typeof empresas>);
+
+// Empresas destacadas
+const empresasDestacadas = empresas.filter(e => e.data.destacado);
+
+// Mapeo de giros a nombres legibles
+const giroLabels: Record<string, string> = {
+  hotel: 'Hoteles',
+  restaurante: 'Restaurantes',
+  oficina: 'Oficinas',
+  almacen: 'Almacenes',
+  hospital: 'Hospitales',
+  escuela: 'Escuelas',
+  industria: 'Industrias',
+  comercio: 'Comercios',
+  residencial: 'Residenciales',
+  otro: 'Otros'
+};
+
+// Mapeo de tipos de sistema a nombres legibles
+const sistemaLabels: Record<string, string> = {
+  'rociadores-automaticos': 'Rociadores Automáticos',
+  'red-hidrantes': 'Red de Hidrantes',
+  'extintores': 'Extintores',
+  'deteccion-alarma': 'Detección y Alarma',
+  'fm200': 'FM-200',
+  'co2': 'CO2',
+  'espuma': 'Espuma',
+  'gabinetes': 'Gabinetes',
+  'senalizacion': 'Señalización'
+};
+
+// Schema.org para directorio
+const directorySchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Empresas con Sistemas Contra Incendios Certificados en México",
+  "description": "Directorio de empresas que cuentan con sistemas de protección contra incendios certificados por Gama de México",
+  "numberOfItems": empresas.length,
+  "itemListElement": empresasDestacadas.map((empresa, index) => ({
+    "@type": "ListItem",
+    "position": index + 1,
+    "item": {
+      "@type": "LocalBusiness",
+      "name": empresa.data.nombre,
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": empresa.data.direccion,
+        "addressLocality": empresa.data.ciudad,
+        "addressRegion": empresa.data.estado,
+        "postalCode": empresa.data.codigoPostal,
+        "addressCountry": "MX"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": empresa.data.latitud,
+        "longitude": empresa.data.longitud
+      }
+    }
+  }))
+};
+---
+
+<Layout
+  title="Empresas con Sistemas Contra Incendios Certificados | Directorio México"
+  description="Directorio de hoteles, restaurantes, oficinas y almacenes con sistemas contra incendios certificados en México. Verifica empresas protegidas por Gama de México."
+  activePage="directorio"
+  heroTitle="Directorio de Empresas con Sistemas Contra Incendios Certificados"
+  heroIntro="Consulta empresas en México que cuentan con sistemas de protección contra incendios verificados. Hoteles, restaurantes, oficinas, almacenes y más con certificación vigente."
+  heroBadge="Directorio Certificado"
+  heroMetrics={[
+    { valor: String(empresas.length), texto: "Empresas certificadas" },
+    { valor: String(Object.keys(empresasPorEstado).length), texto: "Estados" },
+    { valor: String(Object.keys(empresasPorGiro).length), texto: "Giros" }
+  ]}
+  heroPrimaryText="Registra tu empresa"
+  heroPrimaryLink="#registrar"
+  heroSecondaryText="Ver mapa interactivo"
+  heroSecondaryLink="#mapa"
+  structuredData={[directorySchema]}
+  heroShowRightContent={true}
+>
+
+  <!-- HERO CONTENT -->
+  <Fragment slot="hero-content">
+    <p><strong>El Directorio de Empresas Certificadas</strong> de Gama de México reúne hoteles, restaurantes, oficinas corporativas, almacenes industriales, hospitales y centros comerciales que han implementado sistemas profesionales de protección contra incendios. Cada empresa registrada cuenta con equipos verificados: rociadores automáticos, red de hidrantes, sistemas de detección y alarma, gabinetes contra incendio y señalización de emergencia conforme a normativas NFPA y NOM.</p>
+    <p>Este directorio público permite a clientes, socios comerciales y autoridades de protección civil consultar el estatus de certificación de cualquier establecimiento. Las empresas listadas demuestran su compromiso con la seguridad patrimonial y la prevención de siniestros, respaldadas por la experiencia técnica de Gama de México como distribuidor autorizado de equipos Elkhart Brass.</p>
+  </Fragment>
+
+  <!-- Empresas Destacadas -->
+  <section class="featured-companies" id="destacadas">
+    <div class="container">
+      <SectionHeader
+        titulo="Empresas Destacadas con Certificación Vigente en Sistemas Contra Incendios"
+        subtitulo="Instalaciones verificadas con rociadores automáticos, detectores de humo, gabinetes y red de hidrantes certificados por Gama de México"
+        idTitulo="empresas-destacadas"
+        parrafo1="Las empresas destacadas en este directorio representan los más altos estándares de protección contra incendios en México. Cada establecimiento ha sido verificado por ingenieros especializados de Gama de México, confirmando el correcto funcionamiento de sus sistemas de supresión, detección y evacuación conforme a normativas NFPA, NOM-002-STPS y requerimientos de protección civil."
+        parrafo2="Estas instalaciones cuentan con equipos certificados UL y FM, incluyendo monitores contra incendios Elkhart Brass, rociadores automáticos de respuesta rápida, sistemas de detección inteligente y gabinetes equipados con manguera y válvula angulada. La certificación vigente garantiza a clientes, aseguradoras y autoridades que el inmueble cumple con los estándares de seguridad requeridos."
+      />
+
+      <div class="featured-grid">
+        {empresasDestacadas.map((empresa) => (
+          <CategoryCard
+            titulo={empresa.data.nombre}
+            subtitulo={`${giroLabels[empresa.data.giro]} · ${empresa.data.ciudad}, ${empresa.data.estado}`}
+            enlace={`/empresas-certificadas/${empresa.data.slug}`}
+            subcategorias={empresa.data.tipoSistema.slice(0, 4).map((sistema) => ({
+              nombre: sistemaLabels[sistema],
+              enlace: `/empresas-certificadas/${empresa.data.slug}#${sistema}`
+            }))}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Explorar por Giro -->
+  <section class="explore-by-category" id="giros">
+    <div class="container">
+      <SectionHeader
+        titulo="Directorio de Empresas Certificadas por Tipo de Negocio y Giro Comercial"
+        subtitulo="Consulta hoteles, restaurantes, oficinas, almacenes, hospitales e industrias con sistemas contra incendios verificados en México"
+        idTitulo="explorar-giro"
+        parrafo1="Cada giro comercial tiene requerimientos específicos de protección contra incendios. Los hoteles requieren rociadores en habitaciones y pasillos, sistemas de alarma audible y visual, y rutas de evacuación iluminadas. Los restaurantes necesitan sistemas de supresión en campanas de cocina y extintores clase K. Los almacenes industriales demandan rociadores de alta descarga ESFR y red de hidrantes con monitores."
+        parrafo2="Nuestro directorio clasifica las empresas certificadas por su giro para facilitar la consulta de establecimientos similares al tuyo. Identifica qué sistemas implementaron, quién realizó la certificación y cuándo fue la última verificación. Esta información es valiosa para benchmarking de seguridad, cumplimiento de requisitos de franquicias y referencia ante aseguradoras."
+      />
+
+      <div class="giro-grid">
+        <ServiceCard
+          id="hoteles"
+          titulo="Hoteles con Sistemas Contra Incendios Certificados"
+          descripcion={`Directorio de <strong>${empresasPorGiro['hotel']?.length || 0} hoteles</strong> en México con sistemas de protección contra incendios certificados. Incluye <strong>rociadores automáticos</strong>, sistemas de detección y alarma, gabinetes contra incendio y rutas de evacuación verificadas conforme a <strong>NFPA</strong> y normativas de protección civil.`}
+          enlace="/empresas-certificadas/giro/hotel"
+        />
+        <ServiceCard
+          id="restaurantes"
+          titulo="Restaurantes con Protección Contra Incendios"
+          descripcion={`<strong>${empresasPorGiro['restaurante']?.length || 0} restaurantes</strong> certificados con sistemas de <strong>supresión en cocinas comerciales</strong>, extintores clase K, detectores de humo y planes de evacuación. Cumplimiento de normativas para establecimientos de alimentos y bebidas.`}
+          enlace="/empresas-certificadas/giro/restaurante"
+        />
+        <ServiceCard
+          id="oficinas"
+          titulo="Oficinas Corporativas con Sistemas Certificados"
+          descripcion={`<strong>${empresasPorGiro['oficina']?.length || 0} oficinas corporativas</strong> y espacios de trabajo con sistemas de <strong>detección temprana de incendios</strong>, rociadores automáticos, señalización de emergencia y planes de evacuación certificados por especialistas.`}
+          enlace="/empresas-certificadas/giro/oficina"
+        />
+        <ServiceCard
+          id="almacenes"
+          titulo="Almacenes Industriales con Rociadores ESFR"
+          descripcion={`<strong>${empresasPorGiro['almacen']?.length || 0} almacenes</strong> y centros de distribución con sistemas de <strong>rociadores automáticos de alta descarga</strong>, red de hidrantes industriales y sistemas de detección especializados para almacenamiento de mercancías.`}
+          enlace="/empresas-certificadas/giro/almacen"
+        />
+        <ServiceCard
+          id="hospitales"
+          titulo="Hospitales con Sistemas Especializados"
+          descripcion={`<strong>${empresasPorGiro['hospital']?.length || 0} hospitales</strong> y clínicas con sistemas contra incendios especializados para áreas críticas: quirófanos, terapia intensiva, laboratorios. Incluye <strong>sistemas de supresión de agentes limpios</strong> y evacuación asistida.`}
+          enlace="/empresas-certificadas/giro/hospital"
+        />
+        <ServiceCard
+          id="industrias"
+          titulo="Plantas Industriales con Protección de Alto Rendimiento"
+          descripcion={`<strong>${empresasPorGiro['industria']?.length || 0} plantas industriales</strong> y fábricas con sistemas de protección contra incendios de alto rendimiento: <strong>rociadores ESFR, monitores industriales</strong>, sistemas de espuma y protección para procesos especiales.`}
+          enlace="/empresas-certificadas/giro/industria"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- Explorar por Estado -->
+  <section class="explore-by-location" id="estados">
+    <div class="container">
+      <SectionHeader
+        titulo="Empresas con Sistemas Contra Incendios Certificados por Estado y Ciudad en México"
+        subtitulo="Localiza establecimientos certificados cerca de tu ubicación. Directorio geográfico de protección contra incendios verificada"
+        idTitulo="explorar-estado"
+        parrafo1="La ubicación geográfica determina las autoridades de protección civil competentes, los requerimientos normativos locales y la disponibilidad de servicios de bomberos. Nuestro directorio organiza las empresas certificadas por estado y ciudad para que puedas identificar fácilmente establecimientos en tu zona que han implementado sistemas contra incendios de calidad."
+        parrafo2="Consulta el directorio estatal para conocer el nivel de adopción de sistemas contra incendios en tu región, identificar proveedores que trabajan en tu área y obtener referencias de instalaciones similares a la tuya. Cada empresa incluye dirección exacta, tipo de sistema instalado, fecha de certificación y estatus de vigencia verificado por Gama de México."
+      />
+
+      <div class="location-grid">
+        {Object.entries(empresasPorEstado).map(([estado, data]) => (
+          <CategoryCard
+            titulo={`Empresas Certificadas en ${estado}`}
+            subtitulo={`${data.total} empresas con sistemas contra incendios verificados`}
+            enlace={`/empresas-certificadas/estado/${estado.toLowerCase().replace(/ /g, '-')}`}
+            subcategorias={Object.entries(data.ciudades).slice(0, 4).map(([ciudad, empresasEnCiudad]) => ({
+              nombre: `${ciudad} (${empresasEnCiudad.length})`,
+              enlace: `/empresas-certificadas/estado/${estado.toLowerCase().replace(/ /g, '-')}/${ciudad.toLowerCase().replace(/ /g, '-')}`
+            }))}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Artículos Relacionados -->
+  <BlogRecent
+    titulo="Guías Técnicas sobre Protección Civil y Certificación de Sistemas Contra Incendios"
+    subtitulo="Recursos de nuestro equipo de ingenieros para preparar tu empresa ante inspecciones y cumplir con normativas de seguridad"
+    limit={3}
+    columns={3}
+    background="white"
+    showViewAll={true}
+  />
+
+  <!-- CTA: Registra tu empresa -->
+  <div id="registrar">
+    <CtaCatalogo
+      titulo="¿Tu empresa tiene sistema contra incendios? Aparece en nuestro directorio"
+      subtitulo="Badge de verificación · Certificado digital · Visibilidad ante clientes"
+      textoBoton="Solicitar certificación"
+      enlace="#cotizar"
+    />
+  </div>
+
+  <!-- Formulario de contacto -->
+  <CotizacionForm
+    titulo="Registra tu empresa en el directorio"
+    producto="Certificación para Directorio"
+    pagina="Directorio Empresas Certificadas"
+  />
+
+</Layout>
+
+<style>
+  /* Secciones - Solo padding y backgrounds */
+  .featured-companies,
+  .explore-by-location {
+    padding: var(--spacing-3xl, 4rem) 0;
+    background: var(--color-accent, #f8f9fa);
+  }
+
+  .explore-by-category {
+    padding: var(--spacing-3xl, 4rem) 0;
+    background: var(--color-white, #ffffff);
+  }
+
+  /* Grids para componentes */
+  .featured-grid,
+  .location-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg, 1.5rem);
+    margin-top: var(--spacing-xl, 2rem);
+  }
+
+  .giro-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg, 1.5rem);
+    margin-top: var(--spacing-xl, 2rem);
+  }
+
+  @media (min-width: 768px) {
+    .featured-grid,
+    .location-grid,
+    .giro-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .featured-grid,
+    .location-grid,
+    .giro-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+</style>

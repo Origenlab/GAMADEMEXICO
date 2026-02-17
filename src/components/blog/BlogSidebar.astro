@@ -33,6 +33,7 @@ interface Props {
   recentPosts?: SidebarPostLink[];
   recentPostsTitle?: string;
   interlinkHubs?: HubLink[];
+  interestModules?: HubLink[];
   showCTA?: boolean;
   layoutVariant?: 'article' | 'home' | 'category' | 'tag';
   categorySlug?: string;
@@ -50,6 +51,7 @@ const {
   recentPosts = [],
   recentPostsTitle = 'Publicaciones Recientes',
   interlinkHubs = [],
+  interestModules = [],
   showCTA = true,
   layoutVariant = 'article',
   categorySlug,
@@ -65,7 +67,8 @@ const hasContent =
   showCTA ||
   categoryPosts.length > 0 ||
   featuredPosts.length > 0 ||
-  recentPosts.length > 0;
+  recentPosts.length > 0 ||
+  interestModules.length > 0;
 
 // Categorías para navegación
 const categorias = Object.entries(CATEGORY_LABELS).map(([slug, nombre]) => ({
@@ -111,6 +114,133 @@ const defaultHubLinks: HubLink[] = [
 ];
 
 const hubLinks = interlinkHubs.length > 0 ? interlinkHubs : defaultHubLinks;
+
+const fallbackInterestModules: HubLink[] = [
+  {
+    title: 'Cumplimiento normativo contra incendios',
+    href: '/blog/gabinetes-hidrantes-contra-incendios/requisitos-legales-equipos-contra-incendios-mexico-empresas',
+    description: 'Lineamientos y documentación para empresas en México.',
+  },
+  {
+    title: 'Mantenimiento de equipos contra incendios',
+    href: '/servicios/mantenimiento',
+    description: 'Planes de verificación, trazabilidad y continuidad operativa.',
+  },
+  {
+    title: 'Asesoría y suministro para empresas',
+    href: '/servicios/asesoria',
+    description: 'Soporte técnico para selección e integración de equipos.',
+  },
+];
+
+const interestByCategory: Record<string, HubLink[]> = {
+  monitores: [
+    {
+      title: 'Lineamientos de monitores',
+      href: '/blog/monitores-contra-incendios/lineamientos-monitor-contra-incendios-mexico',
+      description: 'Criterios técnicos y de cumplimiento para instalación.',
+    },
+    {
+      title: 'Auditoría de monitores',
+      href: '/blog/monitores-contra-incendios/auditoria-monitores-contra-incendios-empresas-mexico',
+      description: 'Checklist operativo para validar desempeño y evidencia.',
+    },
+    {
+      title: 'Manual técnico para empresas',
+      href: '/blog/monitores-contra-incendios/manual-tecnico-monitores-contra-incendios-empresas',
+      description: 'Selección, uso y requisitos para operación industrial.',
+    },
+  ],
+  boquillas: [
+    {
+      title: 'Cumplimiento legal de boquillas',
+      href: '/blog/boquillas-contra-incendios/cumplimiento-legal-boquillas-contra-incendios-mexico-2026',
+      description: 'Marco de referencia para auditoría y seguridad industrial.',
+    },
+    {
+      title: 'Ingeniería de boquillas',
+      href: '/blog/boquillas-contra-incendios/ingenieria-boquillas-contra-incendios-proyectos-industriales',
+      description: 'Especificación técnica para proyectos corporativos.',
+    },
+    {
+      title: 'Brigadas y sistemas fijos',
+      href: '/blog/boquillas-contra-incendios/boquillas-contra-incendios-brigadas-sistemas-fijos',
+      description: 'Aplicación práctica en respuesta inicial y operación.',
+    },
+  ],
+  mangueras: [
+    {
+      title: 'Lineamientos para mangueras',
+      href: '/blog/mangueras-contra-incendios/lineamientos-mangueras-contra-incendios-empresas-mexico',
+      description: 'Requisitos técnicos y operativos para empresas.',
+    },
+    {
+      title: 'Cómo elegir mangueras',
+      href: '/blog/mangueras-contra-incendios/como-elegir-manguera-contra-incendios',
+      description: 'Selección por riesgo, presión y aplicación real.',
+    },
+    {
+      title: 'Mantenimiento especializado',
+      href: '/servicios/mantenimiento',
+      description: 'Servicio para conservar trazabilidad y desempeño.',
+    },
+  ],
+  valvulas: [
+    {
+      title: 'Normativa NFPA para válvulas',
+      href: '/blog/valvulas-contra-incendios/normativa-nfpa-valvulas-contra-incendios',
+      description: 'Puntos clave para cumplimiento y operación segura.',
+    },
+    {
+      title: 'Mantenimiento del sistema',
+      href: '/servicios/mantenimiento',
+      description: 'Inspección y control preventivo de componentes críticos.',
+    },
+    {
+      title: 'Asesoría de integración',
+      href: '/servicios/asesoria',
+      description: 'Compatibilidad de válvulas con red y equipos.',
+    },
+  ],
+  'gabinetes-hidrantes': [
+    {
+      title: 'Requisitos legales empresariales',
+      href: '/blog/gabinetes-hidrantes-contra-incendios/requisitos-legales-equipos-contra-incendios-mexico-empresas',
+      description: 'Documentación y pasos para estar en regla.',
+    },
+    {
+      title: 'Inspección de Protección Civil',
+      href: '/blog/gabinetes-hidrantes-contra-incendios/inspeccion-proteccion-civil-equipos-contra-incendios-empresas-mexico',
+      description: 'Qué revisan y cómo preparar evidencia técnica.',
+    },
+    {
+      title: 'Programa interno y equipos',
+      href: '/blog/gabinetes-hidrantes-contra-incendios/programa-interno-equipos-contra-incendios-empresas-mexico',
+      description: 'Estrategia integral para cumplimiento operativo.',
+    },
+  ],
+  'conexiones-herrajes': [
+    {
+      title: 'Conexiones y herrajes',
+      href: '/conexiones-herrajes-contra-incendios',
+      description: 'Catálogo técnico para compatibilidad hidráulica.',
+    },
+    {
+      title: 'Todos los equipos contra incendios',
+      href: '/equipos',
+      description: 'Explora soluciones complementarias por categoría.',
+    },
+    {
+      title: 'Asesoría técnica para integración',
+      href: '/servicios/asesoria',
+      description: 'Soporte para selección y configuración del sistema.',
+    },
+  ],
+};
+
+const resolvedInterestModules = interestModules.length > 0
+  ? interestModules
+  : (currentCategoryKey ? (interestByCategory[currentCategoryKey] || fallbackInterestModules) : fallbackInterestModules);
 ---
 
 {hasContent && (
@@ -216,11 +346,29 @@ const hubLinks = interlinkHubs.length > 0 ? interlinkHubs : defaultHubLinks;
       </div>
     )}
 
-    {/* Hub de interlinking comercial */}
+    {/* Módulos de interés por categoría */}
+    <div class="sidebar-widget sidebar-widget--interest">
+      <div class="sidebar-widget__header">
+        <h3 class="sidebar-widget__title">Módulos de Interés</h3>
+        <p class="sidebar-widget__subtitle">Bloques prioritarios para cumplimiento y operación</p>
+      </div>
+      <ul class="sidebar-hub" aria-label="Módulos de interés del sitio">
+        {resolvedInterestModules.map((link) => (
+          <li class="sidebar-hub__item">
+            <a href={link.href} class="sidebar-hub__link">
+              <span class="sidebar-hub__title">{link.title}</span>
+              {link.description && <span class="sidebar-hub__desc">{link.description}</span>}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+
+    {/* Rutas estratégicas de navegación */}
     <div class="sidebar-widget sidebar-widget--hub">
       <div class="sidebar-widget__header">
         <h3 class="sidebar-widget__title">Rutas Estratégicas</h3>
-        <p class="sidebar-widget__subtitle">Accesos directos a recursos clave</p>
+        <p class="sidebar-widget__subtitle">Accesos directos a recursos clave del sitio</p>
       </div>
       <ul class="sidebar-hub" aria-label="Rutas estratégicas del sitio">
         {hubLinks.map((link) => (
@@ -644,33 +792,37 @@ const hubLinks = interlinkHubs.length > 0 ? interlinkHubs : defaultHubLinks;
   .blog-sidebar--article .sidebar-widget--toc { order: 10; }
   .blog-sidebar--article .sidebar-widget--category-posts { order: 20; }
   .blog-sidebar--article .sidebar-widget--cta { order: 30; }
-  .blog-sidebar--article .sidebar-widget--featured { order: 40; }
-  .blog-sidebar--article .sidebar-widget--recent { order: 50; }
-  .blog-sidebar--article .sidebar-widget--hub { order: 60; }
-  .blog-sidebar--article .sidebar-widget--categories { order: 70; }
-  .blog-sidebar--article .sidebar-widget--tags { order: 80; }
+  .blog-sidebar--article .sidebar-widget--interest { order: 40; }
+  .blog-sidebar--article .sidebar-widget--featured { order: 50; }
+  .blog-sidebar--article .sidebar-widget--recent { order: 60; }
+  .blog-sidebar--article .sidebar-widget--hub { order: 70; }
+  .blog-sidebar--article .sidebar-widget--categories { order: 80; }
+  .blog-sidebar--article .sidebar-widget--tags { order: 90; }
 
-  .blog-sidebar--home .sidebar-widget--featured { order: 10; }
-  .blog-sidebar--home .sidebar-widget--recent { order: 20; }
-  .blog-sidebar--home .sidebar-widget--hub { order: 30; }
-  .blog-sidebar--home .sidebar-widget--categories { order: 40; }
-  .blog-sidebar--home .sidebar-widget--tags { order: 50; }
-  .blog-sidebar--home .sidebar-widget--cta { order: 60; }
+  .blog-sidebar--home .sidebar-widget--interest { order: 10; }
+  .blog-sidebar--home .sidebar-widget--featured { order: 20; }
+  .blog-sidebar--home .sidebar-widget--recent { order: 30; }
+  .blog-sidebar--home .sidebar-widget--hub { order: 40; }
+  .blog-sidebar--home .sidebar-widget--categories { order: 50; }
+  .blog-sidebar--home .sidebar-widget--tags { order: 60; }
+  .blog-sidebar--home .sidebar-widget--cta { order: 70; }
 
-  .blog-sidebar--category .sidebar-widget--category-posts { order: 10; }
-  .blog-sidebar--category .sidebar-widget--featured { order: 20; }
-  .blog-sidebar--category .sidebar-widget--recent { order: 30; }
-  .blog-sidebar--category .sidebar-widget--hub { order: 40; }
-  .blog-sidebar--category .sidebar-widget--categories { order: 50; }
-  .blog-sidebar--category .sidebar-widget--tags { order: 60; }
-  .blog-sidebar--category .sidebar-widget--cta { order: 70; }
+  .blog-sidebar--category .sidebar-widget--interest { order: 10; }
+  .blog-sidebar--category .sidebar-widget--category-posts { order: 20; }
+  .blog-sidebar--category .sidebar-widget--featured { order: 30; }
+  .blog-sidebar--category .sidebar-widget--recent { order: 40; }
+  .blog-sidebar--category .sidebar-widget--hub { order: 50; }
+  .blog-sidebar--category .sidebar-widget--categories { order: 60; }
+  .blog-sidebar--category .sidebar-widget--tags { order: 70; }
+  .blog-sidebar--category .sidebar-widget--cta { order: 80; }
 
-  .blog-sidebar--tag .sidebar-widget--recent { order: 10; }
-  .blog-sidebar--tag .sidebar-widget--featured { order: 20; }
-  .blog-sidebar--tag .sidebar-widget--hub { order: 30; }
-  .blog-sidebar--tag .sidebar-widget--categories { order: 40; }
-  .blog-sidebar--tag .sidebar-widget--tags { order: 50; }
-  .blog-sidebar--tag .sidebar-widget--cta { order: 60; }
+  .blog-sidebar--tag .sidebar-widget--interest { order: 10; }
+  .blog-sidebar--tag .sidebar-widget--recent { order: 20; }
+  .blog-sidebar--tag .sidebar-widget--featured { order: 30; }
+  .blog-sidebar--tag .sidebar-widget--hub { order: 40; }
+  .blog-sidebar--tag .sidebar-widget--categories { order: 50; }
+  .blog-sidebar--tag .sidebar-widget--tags { order: 60; }
+  .blog-sidebar--tag .sidebar-widget--cta { order: 70; }
 
   @media (max-width: 1024px) {
     .blog-sidebar {

@@ -61,6 +61,59 @@ const sidebarHubs = [...new Set(posts.map((entry) => entry.data.categoria))]
     description: 'Accede a artículos técnicos relacionados en esta categoría.',
   }));
 
+const legalGuideByCategory: Record<string, { href: string; title: string }> = {
+  monitores: {
+    href: '/blog/monitores-contra-incendios/lineamientos-monitor-contra-incendios-mexico',
+    title: 'Lineamientos de monitores para empresas',
+  },
+  boquillas: {
+    href: '/blog/boquillas-contra-incendios/cumplimiento-legal-boquillas-contra-incendios-mexico-2026',
+    title: 'Cumplimiento legal de boquillas en México',
+  },
+  mangueras: {
+    href: '/blog/mangueras-contra-incendios/lineamientos-mangueras-contra-incendios-empresas-mexico',
+    title: 'Lineamientos de mangueras contra incendios',
+  },
+  valvulas: {
+    href: '/blog/valvulas-contra-incendios/normativa-nfpa-valvulas-contra-incendios',
+    title: 'Normativa NFPA para válvulas',
+  },
+  'gabinetes-hidrantes': {
+    href: '/blog/gabinetes-hidrantes-contra-incendios/requisitos-legales-equipos-contra-incendios-mexico-empresas',
+    title: 'Requisitos legales de equipos contra incendios',
+  },
+};
+
+const categoryCounts = posts.reduce<Record<string, number>>((acc, entry) => {
+  const key = entry.data.categoria;
+  acc[key] = (acc[key] || 0) + 1;
+  return acc;
+}, {});
+
+const dominantCategories = Object.entries(categoryCounts)
+  .sort((a, b) => b[1] - a[1])
+  .map(([slug]) => slug)
+  .slice(0, 3);
+
+const sidebarInterestModules = dominantCategories.map((slug) => {
+  const categoryLabel = CATEGORY_LABELS[slug] || slug;
+  const legalGuide = legalGuideByCategory[slug];
+
+  if (legalGuide) {
+    return {
+      title: legalGuide.title,
+      href: legalGuide.href,
+      description: `Guía recomendada para reforzar cumplimiento y trazabilidad en ${categoryLabel.toLowerCase()}.`,
+    };
+  }
+
+  return {
+    title: `Guías clave de ${categoryLabel}`,
+    href: `/blog/${CATEGORY_SLUGS[slug] || slug}`,
+    description: 'Criterios de selección, operación y mantenimiento para proyectos empresariales.',
+  };
+});
+
 // Schema breadcrumb
 const breadcrumbSchema = buildBreadcrumbSchema([
   { name: 'Inicio', url: '/' },
@@ -98,6 +151,7 @@ const breadcrumbSchema = buildBreadcrumbSchema([
         recentPosts={sidebarTagPosts}
         recentPostsTitle={`Más sobre "${tag}"`}
         interlinkHubs={sidebarHubs}
+        interestModules={sidebarInterestModules}
         ctaTitulo="¿Necesitas asesoría para tu proyecto?"
         ctaTexto="Nuestro equipo técnico te ayuda a elegir equipos contra incendios compatibles con tu operación y normativa aplicable."
       />

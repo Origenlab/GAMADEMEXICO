@@ -1,0 +1,504 @@
+---
+import Layout from '../../../layouts/Base.astro';
+import SectionHeader from '../../../components/SectionHeader.astro';
+import CotizacionForm from '../../../components/CotizacionForm.astro';
+import { getCollection } from 'astro:content';
+
+// Mapeo de giros a nombres legibles
+const giroLabels: Record<string, string> = {
+  hotel: 'Hoteles',
+  restaurante: 'Restaurantes',
+  oficina: 'Oficinas',
+  almacen: 'Almacenes',
+  hospital: 'Hospitales',
+  escuela: 'Escuelas',
+  industria: 'Industrias',
+  comercio: 'Comercios',
+  residencial: 'Residenciales',
+  otro: 'Otros'
+};
+
+const giroDescriptions: Record<string, string> = {
+  hotel: 'Hoteles y hospedajes con sistemas de protección contra incendios certificados. Rociadores automáticos, detección de humo y alarmas de evacuación.',
+  restaurante: 'Restaurantes y establecimientos de alimentos con sistemas contra incendios. Supresión en cocinas, extintores y rutas de evacuación.',
+  oficina: 'Edificios corporativos y oficinas con protección integral contra incendios. Rociadores, detección inteligente y sistemas de alarma.',
+  almacen: 'Almacenes y bodegas con protección contra incendios industriales. Sistemas de rociadores de alta capacidad y detección temprana.',
+  hospital: 'Hospitales y centros de salud con protección especializada. Sistemas redundantes, detección temprana y evacuación asistida.',
+  escuela: 'Escuelas e instituciones educativas con sistemas contra incendios. Detección, alarmas y señalización para evacuación segura.',
+  industria: 'Plantas industriales y fábricas con protección robusta. Sistemas de espuma, rociadores industriales y monitoreo 24/7.',
+  comercio: 'Centros comerciales y tiendas con sistemas integrados. Detección, supresión y control de humo para grandes espacios.',
+  residencial: 'Edificios residenciales y condominios con protección completa. Rociadores residenciales, detección en áreas comunes.',
+  otro: 'Otros establecimientos con sistemas de protección contra incendios certificados.'
+};
+
+const giroIcons: Record<string, string> = {
+  hotel: '/img/icons/hotel-fire.svg',
+  restaurante: '/img/icons/restaurant-fire.svg',
+  oficina: '/img/icons/office-fire.svg',
+  almacen: '/img/icons/warehouse-fire.svg',
+  hospital: '/img/icons/hospital-fire.svg',
+  escuela: '/img/icons/school-fire.svg',
+  industria: '/img/icons/industry-fire.svg',
+  comercio: '/img/icons/commerce-fire.svg',
+  residencial: '/img/icons/residential-fire.svg',
+  otro: '/img/icons/other-fire.svg'
+};
+
+// Mapeo de sistemas
+const sistemaLabels: Record<string, string> = {
+  'rociadores-automaticos': 'Rociadores Automáticos',
+  'red-hidrantes': 'Red de Hidrantes',
+  'extintores': 'Extintores',
+  'deteccion-alarma': 'Detección y Alarma',
+  'fm200': 'FM-200',
+  'co2': 'CO2',
+  'espuma': 'Espuma',
+  'gabinetes': 'Gabinetes',
+  'senalizacion': 'Señalización'
+};
+
+export async function getStaticPaths() {
+  const empresas = await getCollection('empresasCertificadas');
+  const giros = [...new Set(empresas.map(e => e.data.giro))];
+
+  return giros.map(giro => ({
+    params: { giro },
+    props: {
+      empresas: empresas.filter(e => e.data.giro === giro),
+      giro
+    }
+  }));
+}
+
+const { empresas, giro } = Astro.props;
+
+// Agrupar por ciudad
+const empresasPorCiudad = empresas.reduce((acc, empresa) => {
+  const ciudad = empresa.data.ciudad;
+  if (!acc[ciudad]) acc[ciudad] = [];
+  acc[ciudad].push(empresa);
+  return acc;
+}, {} as Record<string, typeof empresas>);
+
+// Empresas destacadas primero
+const empresasOrdenadas = [...empresas].sort((a, b) => {
+  if (a.data.destacado && !b.data.destacado) return -1;
+  if (!a.data.destacado && b.data.destacado) return 1;
+  if (a.data.verificado && !b.data.verificado) return -1;
+  if (!a.data.verificado && b.data.verificado) return 1;
+  return 0;
+});
+
+// Schema.org
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": `${giroLabels[giro]} con Sistemas Contra Incendios Certificados en México`,
+  "description": giroDescriptions[giro],
+  "numberOfItems": empresas.length,
+  "itemListElement": empresasOrdenadas.slice(0, 10).map((empresa, index) => ({
+    "@type": "ListItem",
+    "position": index + 1,
+    "item": {
+      "@type": "LocalBusiness",
+      "name": empresa.data.nombre,
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": empresa.data.direccion,
+        "addressLocality": empresa.data.ciudad,
+        "addressRegion": empresa.data.estado,
+        "addressCountry": "MX"
+      }
+    }
+  }))
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://gamademexico.com" },
+    { "@type": "ListItem", "position": 2, "name": "Empresas Certificadas", "item": "https://gamademexico.com/empresas-certificadas" },
+    { "@type": "ListItem", "position": 3, "name": giroLabels[giro] }
+  ]
+};
+---
+
+<Layout
+  title={`${giroLabels[giro]} con Sistemas Contra Incendios | Directorio México`}
+  description={giroDescriptions[giro]}
+  activePage="directorio"
+  heroTitle={`${giroLabels[giro]} con Sistemas Contra Incendios Certificados`}
+  heroIntro={giroDescriptions[giro]}
+  heroBadge={giroLabels[giro]}
+  heroMetrics={[
+    { valor: String(empresas.length), texto: "Empresas certificadas" },
+    { valor: String(Object.keys(empresasPorCiudad).length), texto: "Ciudades" }
+  ]}
+  heroPrimaryText="Registra tu empresa"
+  heroPrimaryLink="/empresas-certificadas#registrar"
+  heroSecondaryText="Ver todos los giros"
+  heroSecondaryLink="/empresas-certificadas#giros"
+  structuredData={[itemListSchema, breadcrumbSchema]}
+>
+
+  <!-- Breadcrumb -->
+  <nav class="breadcrumb" aria-label="Navegación">
+    <div class="container">
+      <ol class="breadcrumb__list">
+        <li class="breadcrumb__item"><a href="/">Inicio</a></li>
+        <li class="breadcrumb__item"><a href="/empresas-certificadas">Empresas Certificadas</a></li>
+        <li class="breadcrumb__item breadcrumb__item--active" aria-current="page">{giroLabels[giro]}</li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- Listado de Empresas -->
+  <section class="empresas-list">
+    <div class="container">
+      <SectionHeader
+        titulo={`${empresas.length} ${giroLabels[giro]} Certificados`}
+        subtitulo="Empresas con sistemas de protección contra incendios verificados"
+        idTitulo="lista-empresas"
+      />
+
+      <div class="empresas-grid">
+        {empresasOrdenadas.map((empresa) => (
+          <article class="empresa-card">
+            <div class="empresa-card__header">
+              {empresa.data.verificado && (
+                <span class="badge badge--verified">Verificado</span>
+              )}
+              {empresa.data.certificacionVigente && (
+                <span class="badge badge--active">Vigente</span>
+              )}
+            </div>
+
+            <h3 class="empresa-card__title">
+              <a href={`/empresas-certificadas/${empresa.data.slug}`}>
+                {empresa.data.nombre}
+              </a>
+            </h3>
+
+            <p class="empresa-card__location">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              {empresa.data.colonia}, {empresa.data.ciudad}
+            </p>
+
+            <p class="empresa-card__address">
+              {empresa.data.direccion}
+            </p>
+
+            <div class="empresa-card__systems">
+              {empresa.data.tipoSistema.slice(0, 3).map((sistema) => (
+                <span class="system-tag">{sistemaLabels[sistema]}</span>
+              ))}
+              {empresa.data.tipoSistema.length > 3 && (
+                <span class="system-tag system-tag--more">+{empresa.data.tipoSistema.length - 3}</span>
+              )}
+            </div>
+
+            <div class="empresa-card__footer">
+              <span class="cert-info">
+                Certificado: {new Date(empresa.data.fechaCertificacion).toLocaleDateString('es-MX', { month: 'short', year: 'numeric' })}
+              </span>
+              <a href={`/empresas-certificadas/${empresa.data.slug}`} class="btn btn--sm btn--primary">
+                Ver detalles
+              </a>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Explorar por Ciudad -->
+  {Object.keys(empresasPorCiudad).length > 1 && (
+    <section class="explore-cities">
+      <div class="container">
+        <SectionHeader
+          titulo={`${giroLabels[giro]} por Ciudad`}
+          subtitulo="Encuentra empresas certificadas cerca de ti"
+          idTitulo="por-ciudad"
+        />
+
+        <div class="cities-grid">
+          {Object.entries(empresasPorCiudad)
+            .sort((a, b) => b[1].length - a[1].length)
+            .map(([ciudad, lista]) => (
+              <div class="city-card">
+                <h3 class="city-card__title">{ciudad}</h3>
+                <p class="city-card__count">{lista.length} empresas</p>
+                <ul class="city-card__list">
+                  {lista.slice(0, 3).map(emp => (
+                    <li>
+                      <a href={`/empresas-certificadas/${emp.data.slug}`}>{emp.data.nombre}</a>
+                    </li>
+                  ))}
+                </ul>
+                {lista.length > 3 && (
+                  <span class="city-card__more">+{lista.length - 3} más</span>
+                )}
+              </div>
+            ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- CTA -->
+  <CotizacionForm
+    titulo={`¿Tu ${giroLabels[giro].slice(0, -1).toLowerCase()} necesita certificación?`}
+    producto={`Certificación para ${giroLabels[giro]}`}
+    pagina={`Giro: ${giroLabels[giro]}`}
+  />
+
+</Layout>
+
+<style>
+  /* Breadcrumb */
+  .breadcrumb {
+    background: #f8f9fa;
+    padding: 1rem 0;
+    border-bottom: 1px solid #e9ecef;
+  }
+
+  .breadcrumb__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0.875rem;
+    gap: 0.25rem;
+  }
+
+  .breadcrumb__item {
+    display: flex;
+    align-items: center;
+    color: #666;
+  }
+
+  .breadcrumb__item:not(:last-child)::after {
+    content: '/';
+    margin: 0 0.5rem;
+    color: #aaa;
+  }
+
+  .breadcrumb__item a {
+    color: #c8102e;
+    text-decoration: none;
+  }
+
+  .breadcrumb__item--active {
+    color: #333;
+    font-weight: 600;
+  }
+
+  /* Empresas List */
+  .empresas-list {
+    padding: 3rem 0;
+  }
+
+  .empresas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .empresa-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .empresa-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  }
+
+  .empresa-card__header {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .badge {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    border-radius: 16px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+  }
+
+  .badge--verified {
+    background: #e8f5e9;
+    color: #2e7d32;
+  }
+
+  .badge--active {
+    background: #e3f2fd;
+    color: #1565c0;
+  }
+
+  .empresa-card__title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+  }
+
+  .empresa-card__title a {
+    color: #1a1a2e;
+    text-decoration: none;
+  }
+
+  .empresa-card__title a:hover {
+    color: #c8102e;
+  }
+
+  .empresa-card__location {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #c8102e;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+  }
+
+  .empresa-card__address {
+    color: #666;
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+  }
+
+  .empresa-card__systems {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+  }
+
+  .system-tag {
+    background: #f0f0f0;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.72rem;
+    color: #555;
+  }
+
+  .system-tag--more {
+    background: #c8102e;
+    color: white;
+  }
+
+  .empresa-card__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+    margin-top: auto;
+  }
+
+  .cert-info {
+    font-size: 0.8rem;
+    color: #888;
+  }
+
+  /* Cities */
+  .explore-cities {
+    padding: 3rem 0;
+    background: #f8f9fa;
+  }
+
+  .cities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .city-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+
+  .city-card__title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 0.25rem;
+  }
+
+  .city-card__count {
+    font-size: 0.85rem;
+    color: #c8102e;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  .city-card__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .city-card__list li {
+    padding: 0.35rem 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .city-card__list li:last-child {
+    border-bottom: none;
+  }
+
+  .city-card__list a {
+    color: #444;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+
+  .city-card__list a:hover {
+    color: #c8102e;
+  }
+
+  .city-card__more {
+    display: inline-block;
+    margin-top: 0.75rem;
+    font-size: 0.8rem;
+    color: #888;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .empresas-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .cities-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .cities-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

@@ -9,6 +9,9 @@
     "preview": "astro preview",
     "astro": "astro",
     "audit:images": "node scripts/audit-images.mjs",
+    "content:blog:normalize": "node scripts/normalize-blog-content.mjs",
+    "content:blog:check": "node scripts/normalize-blog-content.mjs --check",
+    "content:blog:audit": "node scripts/audit-blog-quality.mjs",
     "e2e:gallery": "node scripts/e2e-gallery-playwright.mjs",
     "e2e:gallery:prod": "node scripts/e2e-gallery-playwright.mjs",
     "e2e:gallery:local": "GALLERY_BASE_URL=http://127.0.0.1:4173 node scripts/e2e-gallery-playwright.mjs"

@@ -1,0 +1,647 @@
+---
+import Layout from '../../../layouts/Base.astro';
+import SectionHeader from '../../../components/SectionHeader.astro';
+import CotizacionForm from '../../../components/CotizacionForm.astro';
+import { getCollection } from 'astro:content';
+
+// Colores
+const colorLabels: Record<string, string> = {
+  rojo: 'Rojo (< 500 GPM)',
+  amarillo: 'Amarillo (500-999 GPM)',
+  verde: 'Verde (1000-1499 GPM)',
+  azul: 'Azul (1500+ GPM)'
+};
+
+// Estado operativo
+const estadoOpLabels: Record<string, string> = {
+  operativo: 'Operativo',
+  mantenimiento: 'En Mantenimiento',
+  'fuera-servicio': 'Fuera de Servicio'
+};
+
+export async function getStaticPaths() {
+  // Función definida aquí para estar disponible en build
+  function createSlug(text: string): string {
+    return text.toLowerCase()
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .replace(/\s+/g, '-');
+  }
+
+  const hidrantes = await getCollection('hidrantes');
+  const estados = [...new Set(hidrantes.map(h => h.data.estado))];
+
+  return estados.map(estado => ({
+    params: { estado: createSlug(estado) },
+    props: {
+      hidrantes: hidrantes.filter(h => h.data.estado === estado),
+      estadoNombre: estado
+    }
+  }));
+}
+
+const { hidrantes, estadoNombre } = Astro.props;
+
+// Agrupar por ciudad
+const hidrantesPorCiudad = hidrantes.reduce((acc, h) => {
+  const ciudad = h.data.ciudad;
+  if (!acc[ciudad]) acc[ciudad] = [];
+  acc[ciudad].push(h);
+  return acc;
+}, {} as Record<string, typeof hidrantes>);
+
+// Estadísticas
+const operativos = hidrantes.filter(h => h.data.estadoOperativo === 'operativo').length;
+const publicos = hidrantes.filter(h => h.data.tipo === 'publico').length;
+
+// Schema.org
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": `Hidrantes en ${estadoNombre}, México`,
+  "description": `Directorio de ${hidrantes.length} hidrantes contra incendios en ${estadoNombre}. Mapa de ubicación, estado operativo y características técnicas.`,
+  "numberOfItems": hidrantes.length,
+  "itemListElement": hidrantes.slice(0, 10).map((h, index) => ({
+    "@type": "ListItem",
+    "position": index + 1,
+    "item": {
+      "@type": "Place",
+      "name": `Hidrante ${h.data.id}`,
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": h.data.ciudad,
+        "addressRegion": estadoNombre,
+        "addressCountry": "MX"
+      }
+    }
+  }))
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://gamademexico.com" },
+    { "@type": "ListItem", "position": 2, "name": "Hidrantes", "item": "https://gamademexico.com/hidrantes" },
+    { "@type": "ListItem", "position": 3, "name": estadoNombre }
+  ]
+};
+---
+
+<Layout
+  title={`Hidrantes en ${estadoNombre} | Mapa de Hidrantes Contra Incendios`}
+  description={`${hidrantes.length} hidrantes contra incendios en ${estadoNombre}. Consulta ubicación, estado operativo y características. ${operativos} operativos, ${publicos} públicos.`}
+  activePage="hidrantes"
+  heroTitle={`Hidrantes en ${estadoNombre}`}
+  heroIntro={`Directorio de ${hidrantes.length} hidrantes contra incendios registrados en ${estadoNombre}. Consulta ubicación exacta, estado operativo y especificaciones técnicas.`}
+  heroBadge={estadoNombre}
+  heroMetrics={[
+    { valor: String(hidrantes.length), texto: "Hidrantes registrados" },
+    { valor: String(operativos), texto: "Operativos" },
+    { valor: String(Object.keys(hidrantesPorCiudad).length), texto: "Ciudades" }
+  ]}
+  heroPrimaryText="Reportar hidrante"
+  heroPrimaryLink="/hidrantes#reportar"
+  heroSecondaryText="Ver todos los estados"
+  heroSecondaryLink="/hidrantes#estados"
+  structuredData={[itemListSchema, breadcrumbSchema]}
+>
+
+  <!-- Breadcrumb -->
+  <nav class="breadcrumb">
+    <div class="container">
+      <ol class="breadcrumb__list">
+        <li class="breadcrumb__item"><a href="/">Inicio</a></li>
+        <li class="breadcrumb__item"><a href="/hidrantes">Hidrantes</a></li>
+        <li class="breadcrumb__item breadcrumb__item--active">{estadoNombre}</li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- Por Ciudad -->
+  <section class="cities-section">
+    <div class="container">
+      <SectionHeader
+        titulo={`Ciudades en ${estadoNombre}`}
+        subtitulo="Selecciona una ciudad para ver hidrantes disponibles"
+        idTitulo="ciudades"
+      />
+
+      <div class="cities-grid">
+        {Object.entries(hidrantesPorCiudad)
+          .sort((a, b) => b[1].length - a[1].length)
+          .map(([ciudad, lista]) => {
+            const operativosEnCiudad = lista.filter(h => h.data.estadoOperativo === 'operativo').length;
+            return (
+              <div class="city-card">
+                <div class="city-card__header">
+                  <h3 class="city-card__title">{ciudad}</h3>
+                  <span class="city-card__count">{lista.length}</span>
+                </div>
+                <div class="city-card__stats">
+                  <span class="stat stat--green">{operativosEnCiudad} operativos</span>
+                  {lista.length - operativosEnCiudad > 0 && (
+                    <span class="stat stat--gray">{lista.length - operativosEnCiudad} otros</span>
+                  )}
+                </div>
+                <ul class="city-card__list">
+                  {lista.slice(0, 3).map(h => (
+                    <li>
+                      <a href={`/hidrantes/${h.data.id.toLowerCase()}`}>
+                        <span class={`status-dot status-dot--${h.data.estadoOperativo}`}></span>
+                        {h.data.id} - {h.data.ubicacionDescripcion.slice(0, 40)}...
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+                {lista.length > 3 && (
+                  <span class="city-card__more">+{lista.length - 3} más</span>
+                )}
+              </div>
+            );
+          })}
+      </div>
+    </div>
+  </section>
+
+  <!-- Todos los Hidrantes -->
+  <section class="all-section">
+    <div class="container">
+      <SectionHeader
+        titulo={`Todos los Hidrantes en ${estadoNombre}`}
+        subtitulo={`${hidrantes.length} hidrantes registrados`}
+        idTitulo="todos"
+      />
+
+      <div class="filters-bar">
+        <div class="filter-group">
+          <label>Estado:</label>
+          <select id="filter-status">
+            <option value="all">Todos</option>
+            <option value="operativo">Operativo</option>
+            <option value="mantenimiento">En Mantenimiento</option>
+            <option value="fuera-servicio">Fuera de Servicio</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label>Tipo:</label>
+          <select id="filter-type">
+            <option value="all">Todos</option>
+            <option value="publico">Público</option>
+            <option value="privado">Privado</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label>Ciudad:</label>
+          <select id="filter-city">
+            <option value="all">Todas</option>
+            {Object.keys(hidrantesPorCiudad).map(ciudad => (
+              <option value={ciudad}>{ciudad}</option>
+            ))}
+          </select>
+        </div>
+      </div>
+
+      <div class="hidrantes-grid" id="hidrantes-grid">
+        {hidrantes.map((h) => (
+          <article class="hidrante-card" data-status={h.data.estadoOperativo} data-type={h.data.tipo} data-city={h.data.ciudad}>
+            <div class="hidrante-card__header">
+              <span class={`id-badge id-badge--${h.data.colorCodigo || 'rojo'}`}>
+                {h.data.id}
+              </span>
+              <span class={`status-badge status-badge--${h.data.estadoOperativo}`}>
+                {estadoOpLabels[h.data.estadoOperativo]}
+              </span>
+            </div>
+
+            <div class="hidrante-card__location">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              <div>
+                <strong>{h.data.ubicacionDescripcion}</strong>
+                <span>{h.data.colonia}, {h.data.ciudad}</span>
+              </div>
+            </div>
+
+            <div class="hidrante-card__specs">
+              <div class="spec">
+                <span class="spec__label">Tipo</span>
+                <span class="spec__value">{h.data.tipo === 'publico' ? '🏛️ Público' : '🏢 Privado'}</span>
+              </div>
+              {h.data.presionPsi && (
+                <div class="spec">
+                  <span class="spec__label">Presión</span>
+                  <span class="spec__value">{h.data.presionPsi} PSI</span>
+                </div>
+              )}
+              {h.data.colorCodigo && (
+                <div class="spec">
+                  <span class="spec__label">Capacidad</span>
+                  <span class="spec__value" style={`color: ${h.data.colorCodigo === 'rojo' ? '#c8102e' : h.data.colorCodigo === 'amarillo' ? '#f57c00' : h.data.colorCodigo === 'verde' ? '#2e7d32' : '#1565c0'}`}>
+                    {colorLabels[h.data.colorCodigo].split(' ')[0]}
+                  </span>
+                </div>
+              )}
+            </div>
+
+            <a href={`/hidrantes/${h.data.id.toLowerCase()}`} class="hidrante-card__link">
+              Ver detalles →
+            </a>
+          </article>
+        ))}
+      </div>
+
+      <p class="results-count" id="results-count">
+        Mostrando <strong>{hidrantes.length}</strong> hidrantes
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <CotizacionForm
+    titulo={`¿Conoces un hidrante en ${estadoNombre}?`}
+    producto={`Reporte Hidrante ${estadoNombre}`}
+    pagina={`Estado: ${estadoNombre}`}
+  />
+
+</Layout>
+
+<script>
+  const grid = document.getElementById('hidrantes-grid');
+  const cards = grid?.querySelectorAll('.hidrante-card');
+  const resultsCount = document.getElementById('results-count');
+
+  const filterStatus = document.getElementById('filter-status') as HTMLSelectElement;
+  const filterType = document.getElementById('filter-type') as HTMLSelectElement;
+  const filterCity = document.getElementById('filter-city') as HTMLSelectElement;
+
+  function applyFilters() {
+    const status = filterStatus?.value;
+    const type = filterType?.value;
+    const city = filterCity?.value;
+    let visibleCount = 0;
+
+    cards?.forEach(card => {
+      const cardStatus = card.getAttribute('data-status');
+      const cardType = card.getAttribute('data-type');
+      const cardCity = card.getAttribute('data-city');
+
+      const matchesStatus = status === 'all' || cardStatus === status;
+      const matchesType = type === 'all' || cardType === type;
+      const matchesCity = city === 'all' || cardCity === city;
+
+      if (matchesStatus && matchesType && matchesCity) {
+        (card as HTMLElement).style.display = '';
+        visibleCount++;
+      } else {
+        (card as HTMLElement).style.display = 'none';
+      }
+    });
+
+    if (resultsCount) {
+      resultsCount.innerHTML = `Mostrando <strong>${visibleCount}</strong> hidrantes`;
+    }
+  }
+
+  filterStatus?.addEventListener('change', applyFilters);
+  filterType?.addEventListener('change', applyFilters);
+  filterCity?.addEventListener('change', applyFilters);
+</script>
+
+<style>
+  /* Breadcrumb */
+  .breadcrumb {
+    background: #f8f9fa;
+    padding: 1rem 0;
+    border-bottom: 1px solid #e9ecef;
+  }
+
+  .breadcrumb__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0.875rem;
+  }
+
+  .breadcrumb__item {
+    display: flex;
+    align-items: center;
+    color: #666;
+  }
+
+  .breadcrumb__item:not(:last-child)::after {
+    content: '/';
+    margin: 0 0.5rem;
+    color: #aaa;
+  }
+
+  .breadcrumb__item a {
+    color: #c8102e;
+    text-decoration: none;
+  }
+
+  .breadcrumb__item--active {
+    color: #333;
+    font-weight: 600;
+  }
+
+  /* Cities */
+  .cities-section {
+    padding: 3rem 0;
+  }
+
+  .cities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .city-card {
+    background: white;
+    border: 2px solid #e9ecef;
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.2s;
+  }
+
+  .city-card:hover {
+    border-color: #c8102e;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  }
+
+  .city-card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+  }
+
+  .city-card__title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1a1a2e;
+  }
+
+  .city-card__count {
+    background: #c8102e;
+    color: white;
+    padding: 0.25rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: 700;
+  }
+
+  .city-card__stats {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .stat {
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
+
+  .stat--green { color: #2e7d32; }
+  .stat--gray { color: #888; }
+
+  .city-card__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .city-card__list li {
+    padding: 0.4rem 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .city-card__list li:last-child {
+    border-bottom: none;
+  }
+
+  .city-card__list a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #555;
+    text-decoration: none;
+    font-size: 0.85rem;
+  }
+
+  .city-card__list a:hover {
+    color: #c8102e;
+  }
+
+  .status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .status-dot--operativo { background: #4caf50; }
+  .status-dot--mantenimiento { background: #ffc107; }
+  .status-dot--fuera-servicio { background: #f44336; }
+
+  .city-card__more {
+    display: block;
+    margin-top: 0.75rem;
+    font-size: 0.8rem;
+    color: #888;
+  }
+
+  /* All Section */
+  .all-section {
+    padding: 3rem 0;
+    background: #f8f9fa;
+  }
+
+  .filters-bar {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+    padding: 1rem 1.5rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+
+  .filter-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .filter-group label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #555;
+  }
+
+  .filter-group select {
+    padding: 0.5rem 1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    background: white;
+    cursor: pointer;
+    transition: border-color 0.2s;
+  }
+
+  .filter-group select:focus {
+    outline: none;
+    border-color: #c8102e;
+  }
+
+  .hidrantes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .hidrante-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .hidrante-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  }
+
+  .hidrante-card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .id-badge {
+    padding: 0.3rem 0.6rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    font-family: monospace;
+  }
+
+  .id-badge--rojo { background: #ffebee; color: #c8102e; }
+  .id-badge--amarillo { background: #fff8e1; color: #f57c00; }
+  .id-badge--verde { background: #e8f5e9; color: #2e7d32; }
+  .id-badge--azul { background: #e3f2fd; color: #1565c0; }
+
+  .status-badge {
+    padding: 0.25rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+
+  .status-badge--operativo { background: #e8f5e9; color: #2e7d32; }
+  .status-badge--mantenimiento { background: #fff3e0; color: #e65100; }
+  .status-badge--fuera-servicio { background: #ffebee; color: #c62828; }
+
+  .hidrante-card__location {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .hidrante-card__location svg {
+    flex-shrink: 0;
+    color: #c8102e;
+    margin-top: 2px;
+  }
+
+  .hidrante-card__location strong {
+    display: block;
+    font-size: 0.95rem;
+    color: #1a1a2e;
+    margin-bottom: 0.15rem;
+  }
+
+  .hidrante-card__location span {
+    font-size: 0.85rem;
+    color: #777;
+  }
+
+  .hidrante-card__specs {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+
+  .spec {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .spec__label {
+    font-size: 0.75rem;
+    color: #888;
+  }
+
+  .spec__value {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #333;
+  }
+
+  .hidrante-card__link {
+    display: block;
+    text-align: center;
+    padding: 0.75rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    color: #c8102e;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: background 0.2s;
+  }
+
+  .hidrante-card__link:hover {
+    background: #e9ecef;
+  }
+
+  .results-count {
+    text-align: center;
+    margin-top: 2rem;
+    color: #666;
+    font-size: 0.95rem;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .cities-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .filters-bar {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .filter-group {
+      width: 100%;
+    }
+
+    .filter-group select {
+      flex-grow: 1;
+    }
+
+    .hidrantes-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

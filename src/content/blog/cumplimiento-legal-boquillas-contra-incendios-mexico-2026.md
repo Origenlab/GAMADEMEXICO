@@ -370,3 +370,18 @@ Si tu organización necesita elevar su nivel de cumplimiento, el camino correcto
 - Ley Federal del Trabajo (texto vigente): https://www.diputados.gob.mx/LeyesBiblio/ref/lft.htm
 
 > Nota: Este artículo es informativo y técnico. La validación jurídica final debe realizarse conforme al giro, ubicación y condiciones específicas de cada centro de trabajo.
+
+
+---
+
+## Interlinking recomendado Gama de México
+
+Para facilitar tu navegación técnica y comercial dentro del sitio, revisa estas rutas estratégicas:
+
+- [Catálogo de Boquillas contra incendios](/boquillas-contra-incendios)
+- [Guías del blog sobre boquillas contra incendios](/blog/boquillas-contra-incendios)
+- [Todos los equipos contra incendios](/equipos)
+- [Asesoría técnica especializada](/servicios/asesoria)
+- [Solicitar cotización empresarial](/servicios/cotizaciones)
+- [Artículo recomendado 1](/blog/boquillas-contra-incendios/ingenieria-boquillas-contra-incendios-proyectos-industriales)
+- [Artículo recomendado 2](/blog/boquillas-contra-incendios/cumplimiento-legal-boquillas-contra-incendios-mexico-2026)

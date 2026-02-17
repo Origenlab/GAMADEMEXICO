@@ -44,6 +44,24 @@ const sidebarHubs = categories.slice(0, 4).map((cat) => ({
   description: `${cat.count} ${cat.count === 1 ? 'artículo técnico' : 'artículos técnicos'} disponibles.`,
 }));
 
+const sidebarInterestModules = [
+  {
+    title: 'Requisitos legales para empresas en México',
+    href: '/blog/gabinetes-hidrantes-contra-incendios/requisitos-legales-equipos-contra-incendios-mexico-empresas',
+    description: 'Checklist base de cumplimiento documental y operativo para inspecciones.',
+  },
+  {
+    title: 'Inspecciones de Protección Civil',
+    href: '/blog/gabinetes-hidrantes-contra-incendios/inspeccion-proteccion-civil-equipos-contra-incendios-empresas-mexico',
+    description: 'Qué te revisan y cómo preparar evidencias con enfoque preventivo.',
+  },
+  {
+    title: 'Programa interno y control de evidencias',
+    href: '/blog/gabinetes-hidrantes-contra-incendios/programa-interno-equipos-contra-incendios-empresas-mexico',
+    description: 'Plan de trabajo para mantener trazabilidad y continuidad operativa.',
+  },
+];
+
 // Schema breadcrumb
 const breadcrumbSchema = buildBreadcrumbSchema([
   { name: 'Inicio', url: '/' },
@@ -134,6 +152,7 @@ const breadcrumbSchema = buildBreadcrumbSchema([
         recentPosts={sidebarRecentPosts}
         recentPostsTitle="Últimas Publicaciones"
         interlinkHubs={sidebarHubs}
+        interestModules={sidebarInterestModules}
         ctaTitulo="Asesoría Técnica Especializada"
         ctaTexto="Te ayudamos a seleccionar equipos contra incendios con base en riesgo, normatividad y alcance de tu proyecto."
       />
