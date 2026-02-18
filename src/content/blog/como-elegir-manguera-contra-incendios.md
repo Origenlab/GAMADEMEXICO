@@ -284,22 +284,3 @@ Explora nuestra línea completa de equipos para sistemas de protección contra i
 - [Gabinetes e Hidrantes](/gabinetes-hidrantes) - Estaciones de protección
 
 
----
-
-## Interlinking recomendado Gama de México
-
-Para facilitar tu navegación técnica y comercial dentro del sitio, revisa estas rutas estratégicas:
-
-- [Catálogo de Mangueras contra incendios](/mangueras-contra-incendios)
-- [Guías del blog sobre mangueras contra incendios](/blog/mangueras-contra-incendios)
-- [Todos los equipos contra incendios](/equipos)
-- [Asesoría técnica especializada](/servicios/asesoria)
-- [Solicitar cotización empresarial](/servicios/cotizaciones)
-- [Artículo recomendado 1](/blog/mangueras-contra-incendios/lineamientos-mangueras-contra-incendios-empresas-mexico)
-- [Artículo recomendado 2](/blog/mangueras-contra-incendios/como-elegir-manguera-contra-incendios)
-
-
-## Imagen técnica de referencia
-
-![Manguera contra incendios Blindex de 2.5 pulgadas certificada NFPA](/img/mangueras-contra-incendios/manguera-blindex-2-5-30m-frontal.avif)
-*Descripción técnica: referencia visual del equipo y su aplicación en proyectos de protección contra incendios en México.*

@@ -27,6 +27,9 @@ Un monitor que falla durante una emergencia puede significar:
 
 El mantenimiento preventivo evita estos escenarios y extiende la vida útil del equipo.
 
+![Monitor contra incendios industrial en posición de servicio](/img/monitores-contra-incendios/monitor-ul-listed-contra-incendios-perfil-completo-08.avif)
+*Descripción técnica: un [monitor UL Listed](/monitores/ul-listed) correctamente mantenido garantiza respuesta confiable en emergencias.*
+
 ## Programa de Inspección
 
 ### Inspección Visual Semanal
@@ -54,6 +57,9 @@ Pruebas más detalladas:
 - **Lubricación:** Aplicar grasa en puntos de giro según especificaciones
 - **Ajuste de tensión:** Verificar frenos de posición
 - **Tornillería:** Revisar y apretar conexiones flojas
+
+![Monitor certificado FM para aplicaciones industriales de alto riesgo](/img/monitores-contra-incendios/monitor-certificado-fm-contra-incendios-tres-cuartos-06.avif)
+*Descripción técnica: los [monitores certificados FM](/monitores/certificado-fm) requieren mantenimiento documentado para mantener validez de certificación.*
 
 ## Procedimientos de Mantenimiento
 
@@ -140,7 +146,10 @@ Reemplazar sellos y empaques. Verificar presión de operación dentro de especif
 - Depósitos minerales
 
 **Solución:**
-Limpiar boquilla y verificar estado del deflector. En casos severos, reemplazar boquilla.
+Limpiar [boquilla](/boquillas-contra-incendios) y verificar estado del deflector. En casos severos, reemplazar boquilla.
+
+![Monitor cuello de cisne para mantenimiento en instalaciones portuarias](/img/monitores-contra-incendios/monitor-cuello-cisne-contra-incendios-vista-completa-07.avif)
+*Descripción técnica: el [monitor cuello de cisne](/monitores/cuello-cisne) requiere especial atención en ambientes marinos por exposición a corrosión salina.*
 
 ## Programa de Mantenimiento Recomendado
 
@@ -159,22 +168,27 @@ Un programa de mantenimiento preventivo bien implementado garantiza que tus moni
 ¿Necesitas servicio de mantenimiento para tus monitores? Contamos con técnicos certificados por Elkhart Brass para inspección y servicio de todos los modelos.
 
 
----
+## Preguntas frecuentes sobre mantenimiento de monitores
 
-## Interlinking recomendado Gama de México
+### ¿Con qué frecuencia debo lubricar un monitor contra incendios?
 
-Para facilitar tu navegación técnica y comercial dentro del sitio, revisa estas rutas estratégicas:
+En condiciones normales se recomienda lubricación trimestral. En ambientes corrosivos, marinos o con alta humedad, la frecuencia debe ser mensual. Utiliza grasa compatible con el ambiente: grado alimenticio para áreas de proceso, marina para ambientes salinos, o litio para aplicaciones generales.
 
-- [Catálogo de Monitores contra incendios](/monitores-contra-incendios)
-- [Guías del blog sobre monitores contra incendios](/blog/monitores-contra-incendios)
-- [Todos los equipos contra incendios](/equipos)
-- [Asesoría técnica especializada](/servicios/asesoria)
-- [Solicitar cotización empresarial](/servicios/cotizaciones)
-- [Artículo recomendado 1](/blog/monitores-contra-incendios/manual-tecnico-monitores-contra-incendios-empresas)
-- [Artículo recomendado 2](/blog/monitores-contra-incendios/auditoria-monitores-contra-incendios-empresas-mexico)
+### ¿Qué hago si el monitor tiene movimiento duro o trabado?
 
+Primero intenta lubricar los puntos de giro (cojinetes de giro horizontal, mecanismo de elevación vertical, articulaciones). Si el problema persiste después de la lubricación, es probable que haya daño en cojinetes o corrosión interna que requiere revisión por técnico especializado.
 
-## Imagen técnica de referencia
+### ¿Cada cuánto se requiere prueba de flujo según NFPA 25?
 
-![Monitor contra incendios tipo corazón con vistas de mantenimiento](/img/monitores-contra-incendios/monitor-corazon-una-cremallera-vistas-multiples.avif)
-*Descripción técnica: referencia visual del equipo y su aplicación en proyectos de protección contra incendios en México.*
+NFPA 25 requiere una prueba anual de flujo para verificar el desempeño del monitor. Esta prueba debe documentarse incluyendo: presión de operación, caudal medido, patrón de descarga, movimiento completo de la torreta y cualquier hallazgo que requiera corrección.
+
+### ¿Cuándo debo programar una reconstrucción del monitor?
+
+La reconstrucción se recomienda cada 5-10 años dependiendo del uso y condiciones ambientales. Incluye reemplazo de sellos y empaques, inspección de superficies de asiento, verificación de desgaste en engranajes y aplicación de recubrimiento anticorrosivo si es necesario.
+
+### ¿Puedo hacer el mantenimiento internamente o necesito un técnico certificado?
+
+Las inspecciones visuales y verificaciones de movimiento pueden realizarlas personal de planta capacitado. Sin embargo, las pruebas de flujo anuales y las reconstrucciones deben ser ejecutadas por técnicos certificados por el fabricante para garantizar cumplimiento normativo y validez de garantía.
+
+![Monitor tipo corazón con especificaciones para mantenimiento preventivo](/img/monitores-contra-incendios/monitor-tipo-corazon-contra-incendios-industrial-detalle-volante-06.avif)
+*Descripción técnica: referencia visual de los puntos de mantenimiento en un [monitor tipo corazón](/monitores/tipo-corazon).*

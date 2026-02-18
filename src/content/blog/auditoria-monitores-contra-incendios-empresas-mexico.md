@@ -84,6 +84,9 @@ Evidencia deseada:
 - Resultados de pruebas de flujo/presión.
 - Registro de ajustes de bombeo y válvulas.
 
+![Monitor tipo corazón para aplicaciones industriales de alto caudal](/img/monitores-contra-incendios/monitor-tipo-corazon-contra-incendios-industrial-frontal-02.avif)
+*Descripción técnica: el [monitor tipo corazón](/monitores/tipo-corazon) es una de las opciones más robustas para protección de áreas críticas.*
+
 ### 3. Selección del tipo de monitor
 
 Preguntas clave:
@@ -158,7 +161,10 @@ Corrección: plan de entrenamiento específico para operación segura de monitor
 
 ### Hallazgo 5: Integración incompleta con el resto de sistemas contra incendios
 
-Corrección: revisar válvulas, conexiones, boquillas, mangueras y capacidad de bombeo como sistema único.
+Corrección: revisar [válvulas](/valvulas-contra-incendios), [conexiones](/conexiones-herrajes-contra-incendios), [boquillas](/boquillas-contra-incendios), [mangueras](/mangueras-contra-incendios) y capacidad de bombeo como sistema único.
+
+![Monitor cuello de cisne para instalaciones portuarias e industriales](/img/monitores-contra-incendios/monitor-cuello-cisne-contra-incendios-perfil-09.avif)
+*Descripción técnica: el [monitor cuello de cisne](/monitores/cuello-cisne) ofrece perfil bajo y resistencia en ambientes marinos.*
 
 ### Hallazgo 6: Mantenimiento reactivo y no preventivo
 
@@ -213,6 +219,9 @@ Si quieres pasar de un estado reactivo a uno controlado, esta hoja de ruta funci
 
 Este enfoque permite mostrar avances reales en muy corto plazo, con impacto directo en seguridad y gobernanza operativa.
 
+![Monitor certificado FM para cumplimiento de aseguradoras](/img/monitores-contra-incendios/monitor-certificado-fm-contra-incendios-fondo-blanco-10.avif)
+*Descripción técnica: los [monitores certificados FM](/monitores/certificado-fm) proporcionan la trazabilidad requerida por aseguradoras y auditorías de terceros.*
+
 ## Indicadores clave (KPI) para gestionar monitores como sistema crítico
 
 Las empresas con mejor desempeño en seguridad no sólo revisan equipos; gestionan datos. Recomendamos medir:
@@ -251,6 +260,9 @@ Atendemos requerimientos en toda la República Mexicana con enfoque técnico y l
 - Sureste: industria, turismo, servicios y proyectos institucionales.
 
 Además de entrega de equipo, apoyamos en especificación por sitio, estandarización entre plantas y consolidación de criterios técnicos para empresas con múltiples sedes.
+
+![Boquilla profesional para integración con monitores contra incendios](/img/boquillas-contra-incendios/boquilla-turbo-jet-akron-1720-frontal.avif)
+*Descripción técnica: la correcta selección de [boquillas](/boquillas-contra-incendios) es esencial para el desempeño óptimo del sistema de monitores.*
 
 ## Preguntas frecuentes de interés para empresas
 
@@ -298,16 +310,3 @@ En Gama de México te apoyamos con enfoque técnico, operativo y documental para
 - [Conexiones y herrajes](/conexiones-herrajes-contra-incendios)
 
 
----
-
-## Interlinking recomendado Gama de México
-
-Para facilitar tu navegación técnica y comercial dentro del sitio, revisa estas rutas estratégicas:
-
-- [Catálogo de Monitores contra incendios](/monitores-contra-incendios)
-- [Guías del blog sobre monitores contra incendios](/blog/monitores-contra-incendios)
-- [Todos los equipos contra incendios](/equipos)
-- [Asesoría técnica especializada](/servicios/asesoria)
-- [Solicitar cotización empresarial](/servicios/cotizaciones)
-- [Artículo recomendado 1](/blog/monitores-contra-incendios/manual-tecnico-monitores-contra-incendios-empresas)
-- [Artículo recomendado 2](/blog/monitores-contra-incendios/auditoria-monitores-contra-incendios-empresas-mexico)

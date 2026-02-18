@@ -256,11 +256,37 @@ Basándonos en más de 30 años de experiencia, estos son nuestros monitores má
 ### Para Proyectos con Presupuesto
 - [Monitor UL Listed Económico](/productos/monitor-ul-listed-economico) - Certificación sin costo excesivo
 
+## Preguntas frecuentes sobre selección de monitores
+
+### ¿Cuál es la diferencia entre un monitor manual y uno de control remoto?
+
+El monitor manual requiere que un operador esté físicamente junto al equipo para dirigir el chorro de agua, lo cual puede ser riesgoso en situaciones de alta radiación térmica. Los monitores de control remoto permiten operar desde una sala de control segura, ideal para refinerías, terminales de hidrocarburos y áreas de alto riesgo donde la exposición del personal debe minimizarse.
+
+### ¿Qué certificación necesito: FM Approved o UL Listed?
+
+Ambas certificaciones son reconocidas internacionalmente. FM Approved es más común en instalaciones petroleras y de seguros industriales, mientras que UL Listed tiene amplia aceptación en proyectos comerciales e institucionales. La decisión depende de los requisitos de tu aseguradora, el código local aplicable y las especificaciones del proyecto. En algunos casos se requieren ambas.
+
+### ¿Cómo calculo el caudal de monitor que necesito?
+
+El caudal depende del área a proteger, la clase de riesgo y el escenario de incendio. Para riesgos industriales ordinarios se recomienda 500-1000 GPM, mientras que aplicaciones petroquímicas pueden requerir 2000-6000 GPM. Lo ideal es realizar un [cálculo hidráulico](/servicios/asesoria) considerando pérdidas de carga, presión disponible y cobertura requerida.
+
+### ¿Puedo usar el mismo monitor para agua y espuma?
+
+Sí, siempre que el monitor sea compatible con agentes espumantes y la boquilla permita la descarga de espuma. Los monitores de bronce son ideales para esta aplicación dual. Es importante verificar la compatibilidad de materiales y el ajuste del patrón de descarga según el agente utilizado.
+
+### ¿Cada cuánto debo dar mantenimiento a un monitor contra incendios?
+
+Como mínimo, se recomienda inspección visual semanal, operación de movimientos mensual, y prueba de flujo con descarga real anual. Consulta nuestra [guía de mantenimiento de monitores](/blog/monitores-contra-incendios/mantenimiento-monitores-contra-incendios) para procedimientos detallados y calendario de verificaciones.
+
+### ¿Qué altura de montaje es mejor para mi instalación?
+
+Depende del alcance deseado y las obstrucciones del área. A nivel de piso se usa para protección cercana de tanques bajos. Montaje elevado (3-5 metros) ofrece mejor cobertura general. En torres de 10+ metros se logra máximo alcance para parques de tanques grandes. La altura debe calcularse junto con la presión disponible para lograr el alcance efectivo requerido.
+
 ## Conclusión
 
 Seleccionar el monitor contra incendios correcto requiere analizar múltiples factores: caudal, presión, material, certificaciones y tipo de control. Una selección incorrecta puede comprometer la protección de toda la instalación.
 
-En Gama de México contamos con el catálogo más completo de monitores contra incendios en México, desde modelos de fabricación nacional hasta equipos importados de Elkhart Brass con certificaciones internacionales.
+En Gama de México contamos con el catálogo más completo de [monitores contra incendios](/monitores-contra-incendios) en México, desde modelos de fabricación nacional hasta equipos importados de Elkhart Brass con certificaciones internacionales.
 
 ---
 
@@ -275,16 +301,3 @@ Nuestro equipo de ingenieros puede ayudarte con:
 [Solicita una cotización](#cotizar) o contáctanos por [WhatsApp](https://wa.me/5215565298240) para asesoría inmediata.
 
 
----
-
-## Interlinking recomendado Gama de México
-
-Para facilitar tu navegación técnica y comercial dentro del sitio, revisa estas rutas estratégicas:
-
-- [Catálogo de Monitores contra incendios](/monitores-contra-incendios)
-- [Guías del blog sobre monitores contra incendios](/blog/monitores-contra-incendios)
-- [Todos los equipos contra incendios](/equipos)
-- [Asesoría técnica especializada](/servicios/asesoria)
-- [Solicitar cotización empresarial](/servicios/cotizaciones)
-- [Artículo recomendado 1](/blog/monitores-contra-incendios/manual-tecnico-monitores-contra-incendios-empresas)
-- [Artículo recomendado 2](/blog/monitores-contra-incendios/auditoria-monitores-contra-incendios-empresas-mexico)

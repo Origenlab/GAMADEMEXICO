@@ -376,16 +376,3 @@ Este manual permite pasar de la reacción a la gestión técnica. Si tu organiza
 - [Gabinetes e hidrantes](/gabinetes-hidrantes-contra-incendios)
 
 
----
-
-## Interlinking recomendado Gama de México
-
-Para facilitar tu navegación técnica y comercial dentro del sitio, revisa estas rutas estratégicas:
-
-- [Catálogo de Boquillas contra incendios](/boquillas-contra-incendios)
-- [Guías del blog sobre boquillas contra incendios](/blog/boquillas-contra-incendios)
-- [Todos los equipos contra incendios](/equipos)
-- [Asesoría técnica especializada](/servicios/asesoria)
-- [Solicitar cotización empresarial](/servicios/cotizaciones)
-- [Artículo recomendado 1](/blog/boquillas-contra-incendios/ingenieria-boquillas-contra-incendios-proyectos-industriales)
-- [Artículo recomendado 2](/blog/boquillas-contra-incendios/cumplimiento-legal-boquillas-contra-incendios-mexico-2026)
