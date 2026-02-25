@@ -1,0 +1,771 @@
+---
+import Layout from '../layouts/Base.astro';
+import '../styles/services-shared.css';
+import SectionHeader from '../components/SectionHeader.astro';
+import Faq from '../components/Faq.astro';
+import {
+  PHONE_PRIMARY,
+  PHONE_DISPLAY,
+  WHATSAPP_NUMBER,
+  WHATSAPP_DISPLAY,
+  EMAIL_SALES,
+  BUSINESS_HOURS,
+  LOCATIONS,
+  WHATSAPP_URL,
+  PHONE_URL,
+  EMAIL_URL
+} from '../lib/config';
+
+const faqItems = [
+  {
+    pregunta: '¿Cuál es el horario de atención de Gama de México?',
+    respuesta: `Atendemos de ${BUSINESS_HOURS.daysLong} en horario de ${BUSINESS_HOURS.display} (hora del centro de México). Durante este horario puedes contactarnos por teléfono, WhatsApp o correo electrónico para recibir atención inmediata.`,
+  },
+  {
+    pregunta: '¿Cómo puedo solicitar una cotización?',
+    respuesta: 'Puedes solicitar cotización de tres formas: 1) Enviando un mensaje por WhatsApp al 55 6529 8240, 2) Llamando al 55 1543 7164, o 3) Enviando un correo a ventas@gamademexico.com. Incluye el tipo de equipo, cantidades aproximadas y ubicación de entrega. Respondemos en menos de 24 horas.',
+  },
+  {
+    pregunta: '¿Tienen sucursales físicas donde pueda ver los equipos?',
+    respuesta: 'Sí, contamos con dos sucursales: CDMX Santa Fe (Prol. Paseo de la Reforma 1015, Piso 1) y Querétaro (Av. Constituyentes 120). Te recomendamos agendar una cita previa para garantizar atención personalizada y disponibilidad de los equipos que deseas revisar.',
+  },
+  {
+    pregunta: '¿Realizan envíos a toda la República Mexicana?',
+    respuesta: 'Sí, realizamos envíos a toda la República Mexicana. Coordinamos la logística desde nuestras sucursales en CDMX y Querétaro para garantizar entregas eficientes al centro, norte y sureste del país. Los tiempos de entrega varían según ubicación y disponibilidad.',
+  },
+  {
+    pregunta: '¿Ofrecen asesoría técnica antes de comprar?',
+    respuesta: 'Sí, ofrecemos asesoría técnica gratuita y sin compromiso. Nuestros especialistas evalúan el tipo de riesgo de tu instalación, la normativa aplicable (NOM-002-STPS, NFPA) y te recomiendan los equipos con las especificaciones correctas para tu proyecto.',
+  },
+  {
+    pregunta: '¿Qué métodos de pago aceptan?',
+    respuesta: 'Aceptamos transferencia bancaria, depósito en efectivo y pago con tarjeta de crédito/débito. Para empresas ofrecemos facturación y, en algunos casos, opciones de crédito previa evaluación. Consulta con tu asesor las condiciones específicas.',
+  },
+];
+---
+
+<Layout
+  title="Contacto | Gama de México | Equipos Contra Incendios"
+  description="Contáctanos para cotizar equipos contra incendios. WhatsApp: 55 6529 8240. Teléfono: 55 1543 7164. Sucursales en CDMX Santa Fe y Querétaro. Atención Lun-Dom 6:00-16:00."
+  activePage="contacto"
+  heroTitle="Contacto"
+  heroBadge="Atención Personalizada"
+  heroIntro="Estamos para ayudarte a seleccionar los equipos contra incendios que necesitas. Contáctanos por el medio que prefieras y recibe atención especializada."
+  heroMetrics={[
+    { valor: "24h", texto: "Respuesta garantizada" },
+    { valor: "2", texto: "Sucursales en México" },
+    { valor: BUSINESS_HOURS.display, texto: "Horario de atención" }
+  ]}
+  heroPrimaryText="WhatsApp Directo"
+  heroPrimaryLink={WHATSAPP_URL}
+  heroSecondaryText="Llamar Ahora"
+  heroSecondaryLink={PHONE_URL}
+  heroShowRightContent={true}
+>
+  <Fragment slot="hero-content">
+    <p>En <strong>Gama de México</strong> entendemos que cada proyecto de protección contra incendios es único. Por eso ofrecemos atención personalizada para ayudarte a identificar los equipos correctos según tu tipo de instalación, normativa aplicable y presupuesto disponible.</p>
+    <p>Nuestro equipo de asesores técnicos está disponible para resolver tus dudas, preparar cotizaciones detalladas y coordinar entregas a cualquier punto de la República Mexicana. Contáctanos hoy y recibe respuesta en menos de 24 horas.</p>
+  </Fragment>
+
+  <!-- CANALES DE CONTACTO -->
+  <section class="contact-channels-section" aria-labelledby="channels-title">
+    <div class="container">
+      <SectionHeader
+        titulo="Canales de Contacto"
+        subtitulo="Elige el medio que más te convenga para comunicarte con nosotros"
+        idTitulo="channels-title"
+        parrafo1="Ponemos a tu disposición múltiples canales de comunicación para que puedas contactarnos de la forma más conveniente. Ya sea que prefieras la inmediatez del WhatsApp, la formalidad del correo electrónico o la atención directa por teléfono, estamos listos para atenderte."
+        parrafo2="Nuestro compromiso es responder todas las consultas en un máximo de 24 horas hábiles, aunque la mayoría de los mensajes por WhatsApp reciben respuesta en minutos durante nuestro horario de atención."
+      />
+
+      <div class="contact-grid">
+        <!-- WhatsApp -->
+        <a href={WHATSAPP_URL} class="contact-card contact-card--whatsapp" target="_blank" rel="noopener">
+          <div class="contact-card__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </div>
+          <div class="contact-card__content">
+            <span class="contact-card__label">WhatsApp</span>
+            <span class="contact-card__value">{WHATSAPP_DISPLAY}</span>
+            <span class="contact-card__desc">Respuesta inmediata</span>
+          </div>
+          <span class="contact-card__arrow">→</span>
+        </a>
+
+        <!-- Teléfono -->
+        <a href={PHONE_URL} class="contact-card contact-card--phone">
+          <div class="contact-card__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div class="contact-card__content">
+            <span class="contact-card__label">Teléfono</span>
+            <span class="contact-card__value">{PHONE_DISPLAY}</span>
+            <span class="contact-card__desc">Llamadas directas</span>
+          </div>
+          <span class="contact-card__arrow">→</span>
+        </a>
+
+        <!-- Email -->
+        <a href={EMAIL_URL} class="contact-card contact-card--email">
+          <div class="contact-card__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div class="contact-card__content">
+            <span class="contact-card__label">Correo Electrónico</span>
+            <span class="contact-card__value">{EMAIL_SALES}</span>
+            <span class="contact-card__desc">Para cotizaciones formales</span>
+          </div>
+          <span class="contact-card__arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULARIO DE CONTACTO -->
+  <section class="contact-form-section" id="formulario" aria-labelledby="form-title">
+    <div class="container">
+      <div class="contact-form-wrapper">
+        <div class="contact-form-info">
+          <h2 id="form-title" class="contact-form-info__title">Envíanos un mensaje</h2>
+          <p class="contact-form-info__desc">Completa el formulario y te contactaremos en menos de 24 horas con la información que necesitas.</p>
+
+          <div class="contact-form-info__features">
+            <div class="info-feature">
+              <span class="info-feature__icon">✓</span>
+              <span class="info-feature__text">Cotizaciones sin compromiso</span>
+            </div>
+            <div class="info-feature">
+              <span class="info-feature__icon">✓</span>
+              <span class="info-feature__text">Asesoría técnica gratuita</span>
+            </div>
+            <div class="info-feature">
+              <span class="info-feature__icon">✓</span>
+              <span class="info-feature__text">Respuesta en menos de 24h</span>
+            </div>
+            <div class="info-feature">
+              <span class="info-feature__icon">✓</span>
+              <span class="info-feature__text">Atención personalizada</span>
+            </div>
+          </div>
+
+          <div class="contact-form-info__schedule">
+            <h3 class="schedule-title">Horario de Atención</h3>
+            <div class="schedule-row">
+              <span class="schedule-days">{BUSINESS_HOURS.daysLong}</span>
+              <span class="schedule-hours">{BUSINESS_HOURS.display}</span>
+            </div>
+            <p class="schedule-note">Hora del centro de México (GMT-6)</p>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form" data-whatsapp={WHATSAPP_NUMBER}>
+          <div class="form-group">
+            <label for="nombre" class="form-label">Nombre completo <span class="required">*</span></label>
+            <input type="text" id="nombre" name="nombre" class="form-input" placeholder="Tu nombre" required autocomplete="name">
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email" class="form-label">Correo electrónico <span class="required">*</span></label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="tu@email.com" required autocomplete="email">
+            </div>
+            <div class="form-group">
+              <label for="telefono" class="form-label">Teléfono <span class="required">*</span></label>
+              <input type="tel" id="telefono" name="telefono" class="form-input" placeholder="55 1234 5678" required autocomplete="tel">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="empresa" class="form-label">Empresa / Organización</label>
+            <input type="text" id="empresa" name="empresa" class="form-input" placeholder="Nombre de tu empresa (opcional)" autocomplete="organization">
+          </div>
+
+          <div class="form-group">
+            <label for="asunto" class="form-label">Asunto <span class="required">*</span></label>
+            <select id="asunto" name="asunto" class="form-select" required>
+              <option value="" disabled selected>Selecciona una opción</option>
+              <option value="Cotización de equipos">Cotización de equipos</option>
+              <option value="Asesoría técnica">Asesoría técnica</option>
+              <option value="Información de productos">Información de productos</option>
+              <option value="Pedido existente">Seguimiento de pedido</option>
+              <option value="Facturación">Facturación</option>
+              <option value="Distribución">Ser distribuidor</option>
+              <option value="Otro">Otro</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="mensaje" class="form-label">Mensaje <span class="required">*</span></label>
+            <textarea id="mensaje" name="mensaje" class="form-textarea" rows="5" placeholder="Describe tu consulta, los equipos que necesitas, cantidades aproximadas, etc." required></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn--primary btn--lg form-submit">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Enviar por WhatsApp
+            </button>
+            <p class="form-note">Al enviar, serás redirigido a WhatsApp con tu mensaje prellenado.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUCURSALES -->
+  <section class="locations-section" id="sucursales" aria-labelledby="locations-title">
+    <div class="container">
+      <SectionHeader
+        titulo="Nuestras Sucursales"
+        subtitulo="Visítanos en cualquiera de nuestras ubicaciones en México"
+        idTitulo="locations-title"
+        parrafo1="Contamos con dos sucursales estratégicamente ubicadas para atender a clientes en todo el país. Desde Ciudad de México y Querétaro coordinamos envíos a cualquier punto de la República Mexicana."
+        parrafo2="Te recomendamos agendar una cita antes de visitarnos para garantizar atención personalizada y disponibilidad de los equipos que deseas revisar."
+      />
+
+      <div class="locations-grid">
+        <!-- CDMX -->
+        <div class="location-card">
+          <div class="location-card__header">
+            <div class="location-card__badge">Matriz</div>
+            <h3 class="location-card__name">{LOCATIONS[0].name}</h3>
+          </div>
+          <div class="location-card__body">
+            <address class="location-card__address">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="location-icon"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div>
+                <span class="address-line">{LOCATIONS[0].street}</span>
+                <span class="address-line">{LOCATIONS[0].neighborhood}</span>
+                <span class="address-line">C.P. {LOCATIONS[0].postalCode}, {LOCATIONS[0].locality}</span>
+              </div>
+            </address>
+            <div class="location-card__schedule">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="location-icon"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span>{BUSINESS_HOURS.daysLong}: {BUSINESS_HOURS.display}</span>
+            </div>
+          </div>
+          <div class="location-card__actions">
+            <a href="https://maps.google.com/?q=Prolongación+Paseo+de+la+Reforma+1015+Santa+Fe+CDMX" target="_blank" rel="noopener" class="btn btn--outline btn--sm">
+              Ver en Google Maps
+            </a>
+            <a href={`${WHATSAPP_URL}?text=${encodeURIComponent('Hola, me gustaría agendar una visita a la sucursal CDMX Santa Fe')}`} target="_blank" rel="noopener" class="btn btn--primary btn--sm">
+              Agendar visita
+            </a>
+          </div>
+        </div>
+
+        <!-- Querétaro -->
+        <div class="location-card">
+          <div class="location-card__header">
+            <div class="location-card__badge location-card__badge--secondary">Sucursal</div>
+            <h3 class="location-card__name">{LOCATIONS[1].name}</h3>
+          </div>
+          <div class="location-card__body">
+            <address class="location-card__address">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="location-icon"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div>
+                <span class="address-line">{LOCATIONS[1].street}</span>
+                <span class="address-line">C.P. {LOCATIONS[1].postalCode}, {LOCATIONS[1].locality}</span>
+                <span class="address-line">{LOCATIONS[1].region}</span>
+              </div>
+            </address>
+            <div class="location-card__schedule">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="location-icon"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span>{BUSINESS_HOURS.daysLong}: {BUSINESS_HOURS.display}</span>
+            </div>
+          </div>
+          <div class="location-card__actions">
+            <a href="https://maps.google.com/?q=Avenida+Constituyentes+120+Santiago+de+Querétaro" target="_blank" rel="noopener" class="btn btn--outline btn--sm">
+              Ver en Google Maps
+            </a>
+            <a href={`${WHATSAPP_URL}?text=${encodeURIComponent('Hola, me gustaría agendar una visita a la sucursal Querétaro')}`} target="_blank" rel="noopener" class="btn btn--primary btn--sm">
+              Agendar visita
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mapa embebido -->
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.037834762835!2d-99.26269548509413!3d19.366699986903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d2002e0b8b0d15%3A0x8f8c3f8c3f8c3f8c!2sProl.%20Paseo%20de%20la%20Reforma%201015%2C%20Santa%20Fe%2C%20Contadero%2C%20%C3%81lvaro%20Obreg%C3%B3n%2C%2001376%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses!2smx!4v1700000000000!5m2!1ses!2smx"
+          width="100%"
+          height="400"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Ubicación de Gama de México en Santa Fe, CDMX"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq" aria-labelledby="faq-title">
+    <div class="container">
+      <SectionHeader
+        titulo="Preguntas Frecuentes"
+        subtitulo="Resolvemos tus dudas sobre cómo contactarnos y trabajar con nosotros"
+        idTitulo="faq-title"
+        parrafo1="Hemos recopilado las consultas más frecuentes de nuestros clientes sobre horarios, métodos de contacto, ubicaciones y proceso de compra. Si tu pregunta no aparece aquí, no dudes en contactarnos directamente."
+        parrafo2="Nuestro equipo está disponible para responder cualquier duda adicional por WhatsApp, teléfono o correo electrónico."
+      />
+      <Faq items={faqItems} id="faq" />
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta-section" aria-labelledby="cta-title">
+    <div class="container">
+      <div class="cta-section__content">
+        <h2 id="cta-title" class="cta-section__title">¿Listo para proteger tu instalación?</h2>
+        <p class="cta-section__text">Contáctanos hoy y recibe asesoría técnica gratuita para seleccionar los equipos contra incendios que necesitas.</p>
+        <div class="cta-section__buttons">
+          <a href={WHATSAPP_URL} class="btn btn--white" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+          <a href="/equipos" class="btn btn--outline btn--white-outline">Ver catálogo de equipos</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  /* Contact Channels Section */
+  .contact-channels-section {
+    padding: var(--spacing-3xl) 0;
+    background: var(--color-white);
+  }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-xl);
+  }
+
+  .contact-card {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-lg);
+    background: var(--color-white);
+    border: 2px solid var(--color-border);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    transition: all var(--transition-fast);
+  }
+
+  .contact-card:hover {
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-2px);
+  }
+
+  .contact-card--whatsapp:hover {
+    border-color: #25D366;
+  }
+
+  .contact-card--whatsapp .contact-card__icon {
+    background: #25D366;
+  }
+
+  .contact-card__icon {
+    width: 64px;
+    height: 64px;
+    background: var(--color-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    flex-shrink: 0;
+  }
+
+  .contact-card__icon svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .contact-card__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-card__label {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
+    font-weight: 500;
+  }
+
+  .contact-card__value {
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    color: var(--color-secondary);
+  }
+
+  .contact-card__desc {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
+    margin-top: 0.25rem;
+  }
+
+  .contact-card__arrow {
+    font-size: var(--font-size-xl);
+    color: var(--color-primary);
+    font-weight: 700;
+    transition: transform var(--transition-fast);
+  }
+
+  .contact-card:hover .contact-card__arrow {
+    transform: translateX(4px);
+  }
+
+  /* Contact Form Section */
+  .contact-form-section {
+    padding: var(--spacing-3xl) 0;
+    background: var(--color-accent);
+  }
+
+  .contact-form-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+    background: var(--color-white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-lg);
+    overflow: hidden;
+  }
+
+  .contact-form-info {
+    padding: var(--spacing-xl);
+    background: var(--color-secondary);
+    color: var(--color-white);
+  }
+
+  .contact-form-info__title {
+    font-size: var(--font-size-2xl);
+    font-weight: 700;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .contact-form-info__desc {
+    font-size: var(--font-size-base);
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .contact-form-info__features {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .info-feature {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+  }
+
+  .info-feature__icon {
+    width: 24px;
+    height: 24px;
+    background: var(--color-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-size-xs);
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  .info-feature__text {
+    font-size: var(--font-size-sm);
+  }
+
+  .contact-form-info__schedule {
+    padding-top: var(--spacing-lg);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .schedule-title {
+    font-size: var(--font-size-sm);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-primary);
+  }
+
+  .schedule-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--font-size-base);
+  }
+
+  .schedule-days {
+    font-weight: 500;
+  }
+
+  .schedule-hours {
+    font-weight: 700;
+  }
+
+  .schedule-note {
+    font-size: var(--font-size-xs);
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: var(--spacing-xs);
+  }
+
+  /* Contact Form */
+  .contact-form {
+    padding: var(--spacing-xl);
+  }
+
+  .form-group {
+    margin-bottom: var(--spacing-md);
+  }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .form-label {
+    display: block;
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    color: var(--color-secondary);
+    margin-bottom: 0.5rem;
+  }
+
+  .required {
+    color: var(--color-primary);
+  }
+
+  .form-input,
+  .form-select,
+  .form-textarea {
+    width: 100%;
+    padding: 0.875rem var(--spacing-sm);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-sm);
+    font-size: var(--font-size-base);
+    background: var(--color-white);
+    color: var(--color-text);
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+  }
+
+  .form-input:focus,
+  .form-select:focus,
+  .form-textarea:focus {
+    border-color: var(--color-primary);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(196, 30, 58, 0.15);
+  }
+
+  .form-textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+
+  .form-actions {
+    margin-top: var(--spacing-lg);
+  }
+
+  .form-submit {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+  }
+
+  .form-note {
+    text-align: center;
+    font-size: var(--font-size-xs);
+    color: var(--color-text-light);
+    margin-top: var(--spacing-sm);
+  }
+
+  /* Locations Section */
+  .locations-section {
+    padding: var(--spacing-3xl) 0;
+    background: var(--color-white);
+  }
+
+  .locations-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .location-card {
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+  }
+
+  .location-card__header {
+    padding: var(--spacing-md) var(--spacing-lg);
+    background: var(--color-accent);
+    border-bottom: 1px solid var(--color-border);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+  }
+
+  .location-card__badge {
+    padding: 0.25rem 0.75rem;
+    background: var(--color-primary);
+    color: var(--color-white);
+    font-size: var(--font-size-xs);
+    font-weight: 700;
+    border-radius: var(--border-radius-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .location-card__badge--secondary {
+    background: var(--color-secondary);
+  }
+
+  .location-card__name {
+    font-size: var(--font-size-lg);
+    font-weight: 700;
+    color: var(--color-secondary);
+  }
+
+  .location-card__body {
+    padding: var(--spacing-lg);
+  }
+
+  .location-card__address {
+    display: flex;
+    gap: var(--spacing-sm);
+    font-style: normal;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .location-icon {
+    width: 20px;
+    height: 20px;
+    color: var(--color-primary);
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .address-line {
+    display: block;
+    font-size: var(--font-size-sm);
+    color: var(--color-text);
+    line-height: 1.5;
+  }
+
+  .location-card__schedule {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
+    padding-top: var(--spacing-md);
+    border-top: 1px solid var(--color-border);
+  }
+
+  .location-card__actions {
+    padding: var(--spacing-md) var(--spacing-lg);
+    background: var(--color-accent);
+    border-top: 1px solid var(--color-border);
+    display: flex;
+    gap: var(--spacing-sm);
+    flex-wrap: wrap;
+  }
+
+  .location-card__actions .btn {
+    flex: 1;
+    min-width: 140px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  /* Map */
+  .map-container {
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+  }
+
+  .map-container iframe {
+    display: block;
+  }
+
+  /* Responsive */
+  @media (min-width: 640px) {
+    .form-row {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 768px) {
+    .contact-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .locations-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .contact-form-wrapper {
+      grid-template-columns: 380px 1fr;
+    }
+
+    .form-submit {
+      width: auto;
+    }
+  }
+</style>
+
+<script>
+  // Contact Form - WhatsApp Handler
+  document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('contact-form') as HTMLFormElement;
+    if (!form) return;
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const nombre = (form.querySelector('#nombre') as HTMLInputElement)?.value.trim() || '';
+      const email = (form.querySelector('#email') as HTMLInputElement)?.value.trim() || '';
+      const telefono = (form.querySelector('#telefono') as HTMLInputElement)?.value.trim() || '';
+      const empresa = (form.querySelector('#empresa') as HTMLInputElement)?.value.trim() || '';
+      const asunto = (form.querySelector('#asunto') as HTMLSelectElement)?.value || '';
+      const mensaje = (form.querySelector('#mensaje') as HTMLTextAreaElement)?.value.trim() || '';
+      const whatsapp = form.dataset.whatsapp;
+
+      if (!nombre || !email || !telefono || !asunto || !mensaje) return;
+
+      let whatsappMsg = `Hola, me comunico desde la página de contacto de Gama de México.\n\n`;
+      whatsappMsg += `*Asunto:* ${asunto}\n\n`;
+      whatsappMsg += `*Datos de contacto:*\n`;
+      whatsappMsg += `- Nombre: ${nombre}\n`;
+      whatsappMsg += `- Email: ${email}\n`;
+      whatsappMsg += `- Teléfono: ${telefono}\n`;
+      if (empresa) {
+        whatsappMsg += `- Empresa: ${empresa}\n`;
+      }
+      whatsappMsg += `\n*Mensaje:*\n${mensaje}`;
+
+      window.open(`https://wa.me/${whatsapp}?text=${encodeURIComponent(whatsappMsg)}`, '_blank');
+    });
+  });
+</script>
