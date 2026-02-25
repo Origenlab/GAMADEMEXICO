@@ -5,9 +5,10 @@ categoria: "conexiones-herrajes"
 subcategoria: "siamesa"
 imagen: "/img/conexiones-herrajes/toma-siamesa-cromada-frontal.avif"
 galeria:
-  - "/img/conexiones-herrajes/toma-siamesa-cromada-acabado.avif"
-  - "/img/conexiones-herrajes/toma-siamesa-cromada-entradas.avif"
-  - "/img/conexiones-herrajes/toma-siamesa-cromada-fachada.avif"
+  - "/img/conexiones-herrajes/toma-siamesa-showroom-exhibicion.avif"
+  - "/img/conexiones-herrajes/toma-siamesa-tienda-extintores.avif"
+  - "/img/conexiones-herrajes/toma-siamesa-ambiente-profesional.avif"
+  - "/img/conexiones-herrajes/toma-siamesa-sala-capacitacion.avif"
 certificaciones: ["UL Listed", "FM Approved", "NFPA 14"]
 flujo: "500 GPM por entrada"
 material: "Bronce cromado"
