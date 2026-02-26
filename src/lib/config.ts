@@ -59,9 +59,9 @@ export const GEO = {
 
 // -- Brand --
 export const BRAND_COLOR = '#C41E3A';
-// TODO: Crear imagen OG de 1200x630px para mejor rendimiento en redes sociales
-// Por ahora usa icon.png como fallback
-export const OG_IMAGE_DEFAULT = '/icon.png';
+// OG Image: 1200x630px para redes sociales (Facebook, LinkedIn, Twitter)
+// Imagen por defecto que representa la marca y productos principales
+export const OG_IMAGE_DEFAULT = '/img/og-gama-mexico-equipos-contra-incendios.jpg';
 export const LOGO_PATH = '/img/gama-de-mexico.avif';
 
 // -- Marcas distribuidas --
@@ -81,6 +81,19 @@ export const CATEGORY_MAP: Record<string, { url: string; nombre: string }> = {
   'conexiones-herrajes':  { url: '/conexiones-herrajes-contra-incendios',  nombre: 'Conexiones y Herrajes' },
   'gabinetes-hidrantes':  { url: '/gabinetes-hidrantes-contra-incendios',  nombre: 'Gabinetes e Hidrantes' },
 };
+
+// -- Redes sociales (Schema.org sameAs) --
+// Agregar URLs cuando esten disponibles para mejorar SEO
+export const SOCIAL_MEDIA = {
+  facebook: '', // Ejemplo: 'https://www.facebook.com/gamademexico'
+  instagram: '', // Ejemplo: 'https://www.instagram.com/gamademexico'
+  linkedin: '', // Ejemplo: 'https://www.linkedin.com/company/gamademexico'
+  youtube: '', // Ejemplo: 'https://www.youtube.com/@gamademexico'
+} as const;
+
+// Helper para obtener array de URLs de redes sociales activas
+export const getSocialMediaUrls = (): string[] =>
+  Object.values(SOCIAL_MEDIA).filter((url) => url.length > 0);
 
 // -- URLs de WhatsApp preformateadas --
 export const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}`;

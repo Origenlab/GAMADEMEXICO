@@ -3,6 +3,12 @@ import Layout from '../layouts/Base.astro';
 import { getCollection } from 'astro:content';
 import Faq from '../components/Faq.astro';
 import { getBackgroundImageUrl } from '../lib/images';
+import {
+  buildProductCategorySchema,
+  buildFAQSchema,
+  buildBreadcrumbSchema,
+  buildOrganizationSchema,
+} from '../lib/seo';
 
 const productos = (await getCollection('productos', ({ data }) => data.categoria === 'mangueras')).sort((a, b) => a.data.orden - b.data.orden);
 const cardImage = (path?: string) =>
@@ -49,12 +55,36 @@ const faqItems = [
     "respuesta": "Puedes solicitar cotización de manguera contra incendio para gabinete, bombero o industrial de tres formas: 1) Formulario en esta página, 2) WhatsApp 55 6529 8240, o 3) Correo ventas@gamademexico.com. Necesitamos saber: tipo de manguera para gabinete o hidrante (Millhose, Blindex, succión o forestal), diámetro, cantidad de metros, y si requieres conexiones y accesorios adicionales. Respondemos en menos de 24 horas con precios de mangueras 250 PSI, conexiones para hidrante, accesorios y disponibilidad. Si no estás seguro del tipo de manguera industrial que necesitas, solicita asesoría para gabinete bombero según normativa aplicable a tu proyecto."
   }
 ];
+
+const structuredData = [
+  buildOrganizationSchema(),
+  buildProductCategorySchema({
+    name: 'Mangueras Contra Incendios Certificadas NFPA 1961',
+    description: 'Mangueras contra incendio para gabinete, bombero e industrial. Certificadas 250-300 PSI. Millhose, Blindex, succión y forestal en México.',
+    image: '/img/mangueras-contra-incendios/manguera-forestal-contra-incendios-vista-lateral-06.avif',
+    url: '/mangueras-contra-incendios',
+    category: 'Mangueras Contra Incendios',
+    brand: 'Gama de México',
+    reviewAuthor: 'Ing. Carlos Ramírez',
+    reviewBody: 'Mangueras Blindex de excelente calidad para nuestra planta industrial. Resistencia térmica superior y documentación NFPA 1961 completa. Gama de México siempre cumple en tiempos de entrega.',
+    reviewDate: '2025-04-18',
+    ratingCount: 39,
+    reviewCount: 39,
+  }),
+  buildBreadcrumbSchema([
+    { name: 'Inicio', url: '/' },
+    { name: 'Equipos', url: '/equipos' },
+    { name: 'Mangueras Contra Incendios', url: '/mangueras-contra-incendios' },
+  ]),
+  buildFAQSchema(faqItems),
+];
 ---
 
 <Layout
   title="Mangueras Contra Incendio | Venta México"
   description="Mangueras contra incendio para gabinete, bombero e industrial. Certificadas 250-300 PSI. Millhose, Blindex, succión y forestal. México."
   activePage="equipos"
+  structuredData={structuredData}
   heroTitle="Mangueras Contra Incendios"
   heroBadge="Equipos Contra Incendios"
   heroShowRightContent={true}

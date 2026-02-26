@@ -1,6 +1,12 @@
 ---
 import Layout from '../layouts/Base.astro';
 import Faq from '../components/Faq.astro';
+import {
+  buildOrganizationSchema,
+  buildServiceSchema,
+  buildFAQSchema,
+  buildBreadcrumbSchema,
+} from '../lib/seo';
 
 const faqItems = [
   {
@@ -28,12 +34,27 @@ const faqItems = [
     respuesta: 'Nuestro compromiso es responder en menos de 24 horas hábiles. Para solicitudes urgentes o equipos en inventario, frecuentemente respondemos el mismo día. Las cotizaciones incluyen precios, disponibilidad, tiempos de entrega estimados y especificaciones técnicas del producto. Para proyectos de gran escala o licitaciones, asignamos un asesor técnico exclusivo que coordina todo el proceso.',
   },
 ];
+
+const structuredData = [
+  buildOrganizationSchema(),
+  buildServiceSchema({
+    name: 'Venta y Asesoría de Equipos Contra Incendios',
+    description: 'Servicios profesionales de venta, asesoría técnica, mantenimiento, logística y cotizaciones de equipos contra incendios en México.',
+    url: '/servicios',
+  }),
+  buildBreadcrumbSchema([
+    { name: 'Inicio', url: '/' },
+    { name: 'Servicios', url: '/servicios' },
+  ]),
+  buildFAQSchema(faqItems),
+];
 ---
 
 <Layout
   title="Servicios Equipos Contra Incendios | Gama de México"
   description="Venta de equipos contra incendios, asesoría técnica especializada, atención a empresas, suministro para mantenimiento, logística nacional y cotizaciones corporativas."
   activePage="servicios"
+  structuredData={structuredData}
 >
 
   <!-- BREADCRUMB -->
@@ -53,7 +74,7 @@ const faqItems = [
       </div>
       <div class="categories__grid">
         <article class="category-card">
-          <div class="category-card__image category-card__image--garantia" role="img" aria-label="Garantía y respaldo técnico"></div>
+          <div class="category-card__image category-card__image--garantia" role="img" aria-label="Garantía y respaldo técnico" style="background-image: url('/img/asesora-certificacion-ul-fm-valvulas-contra-incendios.avif'); background-size: cover; background-position: center;"></div>
           <div class="category-card__body">
             <h3 class="category-card__title">Garantía y Respaldo Técnico</h3>
             <p class="category-card__sub">Todos nuestros equipos cuentan con garantía del fabricante y respaldo técnico real. Documentación completa, certificados de conformidad y soporte postventa para verificaciones de protección civil y auditorías de seguridad.</p>
@@ -70,7 +91,7 @@ const faqItems = [
           </div>
         </article>
         <article class="category-card">
-          <div class="category-card__image category-card__image--asesoria" role="img" aria-label="Asesoría técnica especializada"></div>
+          <div class="category-card__image category-card__image--asesoria" role="img" aria-label="Asesoría técnica especializada" style="background-image: url('/img/ingenieros-diseno-nfpa-14-valvulas-contra-incendios.avif'); background-size: cover; background-position: center;"></div>
           <div class="category-card__body">
             <h3 class="category-card__title">Asesoría Técnica Especializada</h3>
             <p class="category-card__sub">Ingenieros especializados te ayudan a seleccionar equipos contra incendios según las especificaciones de tu proyecto, tipo de riesgo y normativa NOM aplicable. Asesoría sin costo para sistemas de protección contra incendios.</p>
@@ -87,7 +108,7 @@ const faqItems = [
           </div>
         </article>
         <article class="category-card">
-          <div class="category-card__image category-card__image--empresas" role="img" aria-label="Atención a empresas y proyectos"></div>
+          <div class="category-card__image category-card__image--empresas" role="img" aria-label="Atención a empresas y proyectos" style="background-image: url('/img/licitacion-gobierno-equipos-contra-incendios-mexico.avif'); background-size: cover; background-position: center;"></div>
           <div class="category-card__body">
             <h3 class="category-card__title">Atención a Empresas y Proyectos</h3>
             <p class="category-card__sub">Servicio dedicado para constructoras, instaladores certificados, plantas industriales y proyectos de gran escala. Cotizaciones para licitaciones, obras gubernamentales y desarrollos inmobiliarios en toda la República Mexicana.</p>
@@ -104,7 +125,7 @@ const faqItems = [
           </div>
         </article>
         <article class="category-card">
-          <div class="category-card__image category-card__image--mantenimiento" role="img" aria-label="Suministro para mantenimiento"></div>
+          <div class="category-card__image category-card__image--mantenimiento" role="img" aria-label="Suministro para mantenimiento" style="background-image: url('/img/tecnico-almacen-refacciones-valvulas-contra-incendios.avif'); background-size: cover; background-position: center;"></div>
           <div class="category-card__body">
             <h3 class="category-card__title">Suministro para Mantenimiento</h3>
             <p class="category-card__sub">Reposición de piezas, refacciones y accesorios para mantenimiento preventivo y correctivo de sistemas contra incendios existentes. Disponibilidad de válvulas, conexiones, mangueras y herrajes de bronce para reparaciones inmediatas.</p>
@@ -121,7 +142,7 @@ const faqItems = [
           </div>
         </article>
         <article class="category-card">
-          <div class="category-card__image category-card__image--logistica" role="img" aria-label="Logística y envíos nacionales"></div>
+          <div class="category-card__image category-card__image--logistica" role="img" aria-label="Logística y envíos nacionales" style="background-image: url('/img/logistica-envio-nacional-equipos-contra-incendios-mexico.avif'); background-size: cover; background-position: center;"></div>
           <div class="category-card__body">
             <h3 class="category-card__title">Logística y Envíos Nacionales</h3>
             <p class="category-card__sub">Envíos de equipos contra incendios a toda la República Mexicana. Coordinamos entregas directas a obra, planta industrial o almacén. Embalaje especializado para monitores, válvulas y equipos de alto valor.</p>
@@ -138,7 +159,7 @@ const faqItems = [
           </div>
         </article>
         <article class="category-card">
-          <div class="category-card__image category-card__image--corporativo" role="img" aria-label="Cotizaciones corporativas"></div>
+          <div class="category-card__image category-card__image--corporativo" role="img" aria-label="Cotizaciones corporativas" style="background-image: url('/img/director-cotizacion-videollamada-equipos-contra-incendios.avif'); background-size: cover; background-position: center;"></div>
           <div class="category-card__body">
             <h3 class="category-card__title">Cotizaciones Corporativas</h3>
             <p class="category-card__sub">Procesos de cotización y facturación para compras corporativas, licitaciones públicas y proyectos gubernamentales. Precios competitivos en venta al mayoreo de equipos contra incendios con distribución directa.</p>
@@ -182,7 +203,7 @@ const faqItems = [
             <a href="#cotizar" class="btn btn--outline">Consultar garantías</a>
           </div>
         </div>
-        <div class="service-detail__image" role="img" aria-label="Garantía y certificaciones de equipos"></div>
+        <div class="service-detail__image" role="img" aria-label="Garantía y certificaciones de equipos" style="background-image: url('/img/asesora-entrega-certificacion-valvulas-contra-incendios.avif'); background-size: cover; background-position: center;"></div>
       </div>
 
       <div class="service-detail" id="detalle-asesoria">
@@ -201,7 +222,7 @@ const faqItems = [
             <a href="#cotizar" class="btn btn--outline">Solicitar asesoría</a>
           </div>
         </div>
-        <div class="service-detail__image" role="img" aria-label="Asesoría técnica personalizada"></div>
+        <div class="service-detail__image" role="img" aria-label="Asesoría técnica personalizada" style="background-image: url('/img/asesor-planos-sistema-contra-incendios-cdmx.avif'); background-size: cover; background-position: center;"></div>
       </div>
 
       <div class="service-detail" id="detalle-empresas">
@@ -220,7 +241,7 @@ const faqItems = [
             <a href="#cotizar" class="btn btn--outline">Contactar ventas</a>
           </div>
         </div>
-        <div class="service-detail__image" role="img" aria-label="Atención a proyectos empresariales"></div>
+        <div class="service-detail__image" role="img" aria-label="Atención a proyectos empresariales" style="background-image: url('/img/equipo-gama-mexico-director-showroom-certificaciones.avif'); background-size: cover; background-position: center;"></div>
       </div>
 
       <div class="service-detail" id="detalle-mantenimiento">
@@ -239,7 +260,7 @@ const faqItems = [
             <a href="/equipos" class="btn btn--outline">Ver refacciones</a>
           </div>
         </div>
-        <div class="service-detail__image" role="img" aria-label="Refacciones para mantenimiento"></div>
+        <div class="service-detail__image" role="img" aria-label="Refacciones para mantenimiento" style="background-image: url('/img/tecnico-mantenimiento-valvula-industrial-nom-002.avif'); background-size: cover; background-position: center;"></div>
       </div>
 
       <div class="service-detail" id="detalle-logistica">
@@ -258,7 +279,7 @@ const faqItems = [
             <a href="#cotizar" class="btn btn--outline">Consultar envío</a>
           </div>
         </div>
-        <div class="service-detail__image" role="img" aria-label="Logística y envíos nacionales"></div>
+        <div class="service-detail__image" role="img" aria-label="Logística y envíos nacionales" style="background-image: url('/img/logistica-envio-equipos-contra-incendios-elkhart-brass.avif'); background-size: cover; background-position: center;"></div>
       </div>
 
       <div class="service-detail" id="detalle-corporativas">
@@ -277,7 +298,7 @@ const faqItems = [
             <a href="#cotizar" class="btn btn--outline">Solicitar cotización</a>
           </div>
         </div>
-        <div class="service-detail__image" role="img" aria-label="Cotizaciones corporativas"></div>
+        <div class="service-detail__image" role="img" aria-label="Cotizaciones corporativas" style="background-image: url('/img/asesor-cotizacion-videollamada-valvulas-contra-incendios.avif'); background-size: cover; background-position: center;"></div>
       </div>
 
     </div>

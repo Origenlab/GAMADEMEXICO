@@ -15,6 +15,12 @@ import {
   PHONE_URL,
   EMAIL_URL
 } from '../lib/config';
+import {
+  buildOrganizationSchema,
+  buildLocalBusinessSchema,
+  buildFAQSchema,
+  buildBreadcrumbSchema,
+} from '../lib/seo';
 
 const faqItems = [
   {
@@ -42,12 +48,23 @@ const faqItems = [
     respuesta: 'Aceptamos transferencia bancaria, depósito en efectivo y pago con tarjeta de crédito/débito. Para empresas ofrecemos facturación y, en algunos casos, opciones de crédito previa evaluación. Consulta con tu asesor las condiciones específicas.',
   },
 ];
+
+const structuredData = [
+  buildOrganizationSchema(),
+  buildLocalBusinessSchema(),
+  buildBreadcrumbSchema([
+    { name: 'Inicio', url: '/' },
+    { name: 'Contacto', url: '/contacto' },
+  ]),
+  buildFAQSchema(faqItems),
+];
 ---
 
 <Layout
   title="Contacto | Gama de México | Equipos Contra Incendios"
   description="Contáctanos para cotizar equipos contra incendios. WhatsApp: 55 6529 8240. Teléfono: 55 1543 7164. Sucursales en CDMX Santa Fe y Querétaro. Atención Lun-Dom 6:00-16:00."
   activePage="contacto"
+  structuredData={structuredData}
   heroTitle="Contacto"
   heroBadge="Atención Personalizada"
   heroIntro="Estamos para ayudarte a seleccionar los equipos contra incendios que necesitas. Contáctanos por el medio que prefieras y recibe atención especializada."

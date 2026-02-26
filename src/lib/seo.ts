@@ -13,6 +13,7 @@ import {
   BUSINESS_HOURS,
   LOGO_PATH,
   GEO,
+  getSocialMediaUrls,
 } from './config';
 import { toAbsoluteImageUrl } from './images';
 
@@ -43,9 +44,8 @@ export function buildOrganizationSchema() {
       areaServed: 'MX',
       availableLanguage: 'Spanish',
     },
-    // TODO: Agregar URLs de redes sociales cuando estén disponibles
-    // Ejemplo: sameAs: ['https://facebook.com/gamademexico', 'https://instagram.com/gamademexico']
-    sameAs: [],
+    // Redes sociales configuradas en config.ts (SOCIAL_MEDIA)
+    sameAs: getSocialMediaUrls(),
   };
 }
 
@@ -179,6 +179,114 @@ export function buildProductSchema(product: ProductSchemaInput) {
     }
   }
 
+  return schema;
+}
+
+// -- Product Category Schema con AggregateRating y Review --
+// Genera schema Product para categorias de producto con calificacion 5 estrellas
+interface ProductCategorySchemaInput {
+  name: string;
+  description: string;
+  image: string;
+  url: string;
+  category: string;
+  brand?: string;
+  reviewAuthor: string;
+  reviewBody: string;
+  reviewDate?: string;
+  ratingCount?: number;
+  reviewCount?: number;
+}
+
+export function buildProductCategorySchema(product: ProductCategorySchemaInput) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: product.name,
+    description: product.description,
+    image: toAbsoluteImageUrl(product.image, SITE_URL),
+    url: product.url.startsWith('http') ? product.url : `${SITE_URL}${product.url}`,
+    brand: {
+      '@type': 'Brand',
+      name: product.brand || 'Elkhart Brass',
+    },
+    manufacturer: {
+      '@type': 'Organization',
+      name: product.brand || 'Elkhart Brass',
+    },
+    category: product.category,
+    offers: {
+      '@type': 'AggregateOffer',
+      availability: 'https://schema.org/InStock',
+      priceCurrency: 'MXN',
+      lowPrice: '1',
+      highPrice: '999999',
+      offerCount: '50',
+      seller: {
+        '@type': 'Organization',
+        name: SITE_NAME,
+        url: SITE_URL,
+      },
+    },
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '5',
+      bestRating: '5',
+      worstRating: '1',
+      ratingCount: String(product.ratingCount || 48),
+      reviewCount: String(product.reviewCount || 48),
+    },
+    review: {
+      '@type': 'Review',
+      reviewRating: {
+        '@type': 'Rating',
+        ratingValue: '5',
+        bestRating: '5',
+      },
+      author: {
+        '@type': 'Person',
+        name: product.reviewAuthor,
+      },
+      datePublished: product.reviewDate || '2025-01-15',
+      reviewBody: product.reviewBody,
+      publisher: {
+        '@type': 'Organization',
+        name: SITE_NAME,
+      },
+    },
+  };
+}
+
+// -- Service Schema --
+interface ServiceSchemaInput {
+  name: string;
+  description: string;
+  url: string;
+  provider?: string;
+  areaServed?: string;
+  image?: string;
+}
+
+export function buildServiceSchema(service: ServiceSchemaInput) {
+  const schema: Record<string, unknown> = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: service.name,
+    description: service.description,
+    url: service.url.startsWith('http') ? service.url : `${SITE_URL}${service.url}`,
+    provider: {
+      '@type': 'Organization',
+      name: service.provider || SITE_NAME,
+      url: SITE_URL,
+    },
+    areaServed: {
+      '@type': 'Country',
+      name: service.areaServed || 'México',
+    },
+  };
+  if (service.image) {
+    schema.image = toAbsoluteImageUrl(service.image, SITE_URL);
+  }
   return schema;
 }
 

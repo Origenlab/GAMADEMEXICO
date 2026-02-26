@@ -1,0 +1,75 @@
+---
+import { generateSrcset, getOptimizedImageUrl } from '../lib/images';
+
+/**
+ * ResponsiveImage - Componente de imagen optimizada con srcset
+ * Usa el sistema de CDN ExactDN para servir imágenes de diferente tamaño según viewport
+ */
+
+interface Props {
+  src: string;
+  alt: string;
+  class?: string;
+  width?: number;
+  height?: number;
+  loading?: 'lazy' | 'eager';
+  decoding?: 'async' | 'sync' | 'auto';
+  fetchpriority?: 'high' | 'low' | 'auto';
+  sizes?: string;
+  widths?: number[];
+  quality?: number;
+  aspectRatio?: string;
+}
+
+const {
+  src,
+  alt,
+  class: className = '',
+  width,
+  height,
+  loading = 'lazy',
+  decoding = 'async',
+  fetchpriority,
+  sizes = '(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw',
+  widths = [320, 480, 640, 768, 1024, 1280],
+  quality = 80,
+  aspectRatio,
+} = Astro.props;
+
+// Generar srcset optimizado
+const { srcset, src: defaultSrc } = generateSrcset(src, {
+  widths,
+  sizes,
+  quality,
+});
+
+// Imagen fallback para navegadores sin srcset
+const fallbackSrc = getOptimizedImageUrl(src, {
+  width: 768,
+  quality,
+  strip: 'all',
+});
+---
+
+<img
+  src={fallbackSrc}
+  srcset={srcset}
+  sizes={sizes}
+  alt={alt}
+  class:list={['responsive-image', className]}
+  width={width}
+  height={height}
+  loading={loading}
+  decoding={decoding}
+  fetchpriority={fetchpriority}
+  style={aspectRatio ? `aspect-ratio: ${aspectRatio};` : undefined}
+/>
+
+<style>
+  .responsive-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+</style>

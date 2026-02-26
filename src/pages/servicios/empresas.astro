@@ -4,6 +4,7 @@ import '../../styles/services-shared.css';
 import Faq from '../../components/Faq.astro';
 import SectionHeader from '../../components/SectionHeader.astro';
 import LeadCapture from '../../components/LeadCapture.astro';
+import { buildOrganizationSchema, buildServiceSchema, buildFAQSchema, buildBreadcrumbSchema } from '../../lib/seo';
 
 const faqItems = [
   {
@@ -35,12 +36,20 @@ const faqItems = [
     respuesta: 'Atendemos plantas manufactureras, industria química y petroquímica, terminales de almacenamiento, centros de datos, constructoras, hospitales, hoteles, corporativos, firmas de ingeniería, instaladores certificados y brigadas de protección civil. Ofrecemos venta unitaria y cotizaciones corporativas.',
   },
 ];
+
+const structuredData = [
+  buildOrganizationSchema(),
+  buildServiceSchema({ name: 'Atención a Empresas y Proyectos Contra Incendios', description: 'Servicio dedicado para constructoras, instaladores certificados y plantas industriales. Cotizaciones para licitaciones y precios por volumen.', url: '/servicios/empresas' }),
+  buildBreadcrumbSchema([{ name: 'Inicio', url: '/' }, { name: 'Servicios', url: '/servicios' }, { name: 'Atención a Empresas', url: '/servicios/empresas' }]),
+  buildFAQSchema(faqItems),
+];
 ---
 
 <Layout
   title="Atención a Empresas y Proyectos | Equipos Contra Incendios | Gama de México"
   description="Servicio dedicado para constructoras, instaladores certificados y plantas industriales. Cotizaciones para licitaciones, obras gubernamentales y desarrollos inmobiliarios. Precios por volumen."
   activePage="servicios"
+  structuredData={structuredData}
   heroTitle="Atención a Empresas"
   heroIntro="Soluciones integrales de equipos contra incendios para empresas industriales, comerciales y de servicios. Cotizaciones corporativas, entregas programadas y condiciones especiales."
   heroBadge="Servicios"
@@ -462,7 +471,7 @@ const faqItems = [
         <p class="cta-section__text">Contáctanos hoy y recibe atención personalizada, cotización competitiva y documentación completa para tu proyecto.</p>
         <div class="cta-section__buttons">
           <a href="https://wa.me/5215565298240" class="btn btn--white" target="_blank" rel="noopener">Escribir por WhatsApp</a>
-          <a href="/equipos" class="btn btn--outline btn--white-outline">Ver catálogo de equipos</a>
+          <a href="/contacto" class="btn btn--outline btn--white-outline">Ver canales de contacto</a>
         </div>
       </div>
     </div>

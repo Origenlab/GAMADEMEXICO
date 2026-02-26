@@ -4,6 +4,7 @@ import '../../styles/services-shared.css';
 import Faq from '../../components/Faq.astro';
 import SectionHeader from '../../components/SectionHeader.astro';
 import LeadCapture from '../../components/LeadCapture.astro';
+import { buildOrganizationSchema, buildServiceSchema, buildFAQSchema, buildBreadcrumbSchema } from '../../lib/seo';
 
 const faqItems = [
   {
@@ -35,12 +36,20 @@ const faqItems = [
     respuesta: 'Atendemos plantas manufactureras, industria química y petroquímica, terminales de almacenamiento, centros de datos, constructoras, hospitales, hoteles, corporativos, firmas de ingeniería, instaladores certificados y brigadas de protección civil. Ofrecemos venta unitaria y cotizaciones corporativas.',
   },
 ];
+
+const structuredData = [
+  buildOrganizationSchema(),
+  buildServiceSchema({ name: 'Mantenimiento de Equipos Contra Incendios', description: 'Mantenimiento preventivo y correctivo de sistemas contra incendios. Refacciones, válvulas, conexiones, mangueras y herrajes con disponibilidad inmediata.', url: '/servicios/mantenimiento' }),
+  buildBreadcrumbSchema([{ name: 'Inicio', url: '/' }, { name: 'Servicios', url: '/servicios' }, { name: 'Mantenimiento', url: '/servicios/mantenimiento' }]),
+  buildFAQSchema(faqItems),
+];
 ---
 
 <Layout
   title="Suministro para Mantenimiento | Refacciones Contra Incendios | Gama de México"
   description="Refacciones y accesorios para mantenimiento de sistemas contra incendios. Válvulas, conexiones, mangueras y herrajes de bronce. Disponibilidad inmediata para reparaciones."
   activePage="servicios"
+  structuredData={structuredData}
   heroTitle="Mantenimiento de Equipos"
   heroIntro="Servicios de mantenimiento preventivo y correctivo para equipos contra incendios. Inspección, pruebas hidrostáticas, recarga y reparación de mangueras, válvulas y monitores."
   heroBadge="Servicios"
@@ -470,7 +479,7 @@ const faqItems = [
         <p class="cta-section__text">Contáctanos hoy y recibe cotización rápida con disponibilidad confirmada.</p>
         <div class="cta-section__buttons">
           <a href="https://wa.me/5215565298240" class="btn btn--white" target="_blank" rel="noopener">Escribir por WhatsApp</a>
-          <a href="/equipos" class="btn btn--outline btn--white-outline">Ver catálogo completo</a>
+          <a href="/contacto" class="btn btn--outline btn--white-outline">Ver canales de contacto</a>
         </div>
       </div>
     </div>

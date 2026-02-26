@@ -4,6 +4,7 @@ import '../../styles/services-shared.css';
 import Faq from '../../components/Faq.astro';
 import SectionHeader from '../../components/SectionHeader.astro';
 import LeadCapture from '../../components/LeadCapture.astro';
+import { buildOrganizationSchema, buildServiceSchema, buildFAQSchema, buildBreadcrumbSchema } from '../../lib/seo';
 
 const faqItems = [
   {
@@ -35,12 +36,20 @@ const faqItems = [
     respuesta: 'Atendemos plantas manufactureras, industria química y petroquímica, terminales de almacenamiento, centros de datos, constructoras, hospitales, hoteles, corporativos, firmas de ingeniería, instaladores certificados y brigadas de protección civil. Ofrecemos venta unitaria y cotizaciones corporativas.',
   },
 ];
+
+const structuredData = [
+  buildOrganizationSchema(),
+  buildServiceSchema({ name: 'Cotizaciones Corporativas de Equipos Contra Incendios', description: 'Cotizaciones formales para empresas, licitaciones públicas y proyectos gubernamentales. Precios por volumen y facturación CFDI 4.0.', url: '/servicios/cotizaciones' }),
+  buildBreadcrumbSchema([{ name: 'Inicio', url: '/' }, { name: 'Servicios', url: '/servicios' }, { name: 'Cotizaciones', url: '/servicios/cotizaciones' }]),
+  buildFAQSchema(faqItems),
+];
 ---
 
 <Layout
   title="Cotizaciones Corporativas | Licitaciones y Mayoreo | Gama de México"
   description="Cotizaciones formales para empresas, licitaciones públicas y proyectos gubernamentales. Precios por volumen, documentación técnica completa y facturación CFDI 4.0."
   activePage="servicios"
+  structuredData={structuredData}
   heroTitle="Cotizaciones Rápidas"
   heroIntro="Obtén precios y disponibilidad de equipos contra incendios en menos de 24 horas. Cotizaciones detalladas con especificaciones técnicas, fichas y tiempos de entrega."
   heroBadge="Servicios"
@@ -500,7 +509,7 @@ const faqItems = [
         <p class="cta-section__text">Contáctanos hoy y recibe propuesta formal en menos de 24 horas.</p>
         <div class="cta-section__buttons">
           <a href="https://wa.me/5215565298240" class="btn btn--white" target="_blank" rel="noopener">Escribir por WhatsApp</a>
-          <a href="mailto:ventas@gamademexico.com" class="btn btn--outline btn--white-outline">Enviar por Email</a>
+          <a href="/contacto" class="btn btn--outline btn--white-outline">Ver canales de contacto</a>
         </div>
       </div>
     </div>

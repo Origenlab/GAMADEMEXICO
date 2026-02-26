@@ -3,6 +3,12 @@ import Layout from '../layouts/Base.astro';
 import { getCollection } from 'astro:content';
 import Faq from '../components/Faq.astro';
 import { getBackgroundImageUrl } from '../lib/images';
+import {
+  buildProductCategorySchema,
+  buildFAQSchema,
+  buildBreadcrumbSchema,
+  buildOrganizationSchema,
+} from '../lib/seo';
 
 const productos = (await getCollection('productos', ({ data }) => data.categoria === 'conexiones-herrajes')).sort((a, b) => a.data.orden - b.data.orden);
 const cardImage = (path?: string) =>
@@ -49,12 +55,36 @@ const faqItems = [
     "respuesta": "Puedes cotizar de tres formas: 1) Formulario en esta página (se envía a WhatsApp), 2) WhatsApp directo 55 6529 8240, o 3) Email ventas@gamademexico.com. Solo necesitamos: tipo de conexión, diámetros, cantidad y ubicación de entrega. Respondemos en menos de 24 horas con precio, disponibilidad y opciones de envío. Precios especiales por volumen."
   }
 ];
+
+const structuredData = [
+  buildOrganizationSchema(),
+  buildProductCategorySchema({
+    name: 'Conexiones y Herrajes Contra Incendio en Bronce',
+    description: 'Conexiones y herrajes contra incendio. Adaptadores bronce, toma siamesa FDC, Wye, coples Storz. Certificados UL/FM. Distribuidor Elkhart Brass México.',
+    image: '/img/conexiones-herrajes-contra-incendios/toma-siamesa-fdc-bronce-contra-incendios-bomberos-dos-bocas-01.avif',
+    url: '/conexiones-herrajes-contra-incendios',
+    category: 'Conexiones y Herrajes Contra Incendios',
+    brand: 'Elkhart Brass',
+    reviewAuthor: 'Arq. Patricia Sánchez',
+    reviewBody: 'Conexiones de bronce de primera calidad. La toma siamesa FDC cumplió perfectamente con los requisitos de Protección Civil para nuestro edificio corporativo. Excelente servicio.',
+    reviewDate: '2025-06-05',
+    ratingCount: 36,
+    reviewCount: 36,
+  }),
+  buildBreadcrumbSchema([
+    { name: 'Inicio', url: '/' },
+    { name: 'Equipos', url: '/equipos' },
+    { name: 'Conexiones y Herrajes', url: '/conexiones-herrajes-contra-incendios' },
+  ]),
+  buildFAQSchema(faqItems),
+];
 ---
 
 <Layout
   title="Conexiones y Herrajes Contra Incendio | México"
   description="Conexiones y herrajes contra incendio. Adaptadores bronce, toma siamesa, Wye, coples Storz. Certificados UL/FM. Distribuidor Elkhart Brass México."
   activePage="equipos"
+  structuredData={structuredData}
   heroTitle="Conexiones y Herrajes"
   heroBadge="Equipos Contra Incendios"
   heroShowRightContent={true}

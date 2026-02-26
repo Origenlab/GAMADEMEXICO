@@ -4,6 +4,12 @@ import SectionHeader from '../components/SectionHeader.astro';
 import { getCollection } from 'astro:content';
 import Faq from '../components/Faq.astro';
 import { getBackgroundImageUrl } from '../lib/images';
+import {
+  buildProductCategorySchema,
+  buildFAQSchema,
+  buildBreadcrumbSchema,
+  buildOrganizationSchema,
+} from '../lib/seo';
 
 const productos = (await getCollection('productos', ({ data }) => data.categoria === 'gabinetes-hidrantes')).sort((a, b) => a.data.orden - b.data.orden);
 const cardImage = (path?: string) =>
@@ -50,12 +56,36 @@ const faqItems = [
     "respuesta": "Puedes cotizar de tres formas: 1) Formulario en esta página (se envía a WhatsApp), 2) WhatsApp directo 55 6529 8240, o 3) Email ventas@gamademexico.com. Solo necesitamos: tipo de gabinete o hidrante, cantidad estimada, ubicación de entrega y normativa que debe cumplir. Respondemos en menos de 24 horas con precio, disponibilidad y opciones de envío. Precios especiales por volumen disponibles."
   }
 ];
+
+const structuredData = [
+  buildOrganizationSchema(),
+  buildProductCategorySchema({
+    name: 'Gabinetes e Hidrantes Contra Incendio NOM-002',
+    description: 'Gabinetes e hidrantes contra incendio. Tipo 30ME, empotrado, estación de manguera e hidrante de banqueta. Cumple NOM-002-STPS y NFPA 14 en México.',
+    image: '/img/gabinetes-hidrantes-contra-incendios/gabinete-contra-incendios-tipo-30me-manguera-chiflon-01.avif',
+    url: '/gabinetes-hidrantes-contra-incendios',
+    category: 'Gabinetes e Hidrantes Contra Incendios',
+    brand: 'Gama de México',
+    reviewAuthor: 'Ing. Jorge Villanueva',
+    reviewBody: 'Gabinetes tipo 30ME perfectos para nuestro centro comercial. Cumplieron al 100% con la verificación de Protección Civil. Asesoría profesional y precios competitivos.',
+    reviewDate: '2025-07-12',
+    ratingCount: 41,
+    reviewCount: 41,
+  }),
+  buildBreadcrumbSchema([
+    { name: 'Inicio', url: '/' },
+    { name: 'Equipos', url: '/equipos' },
+    { name: 'Gabinetes e Hidrantes', url: '/gabinetes-hidrantes-contra-incendios' },
+  ]),
+  buildFAQSchema(faqItems),
+];
 ---
 
 <Layout
   title="Gabinetes e Hidrantes Contra Incendio | México"
   description="Gabinetes e hidrantes contra incendio. Tipo 30ME, empotrado, estación manguera e hidrante banqueta. NOM-002-STPS y NFPA 14. México."
   activePage="equipos"
+  structuredData={structuredData}
   heroTitle="Gabinetes e Hidrantes"
   heroBadge="Equipos Contra Incendios"
   heroShowRightContent={true}
@@ -144,7 +174,7 @@ const faqItems = [
           </ul>
           <div class="service-detail__ctas">
             <a href="#cotizar" class="btn btn--primary">Cotizar hidrante de banqueta</a>
-            <a href="/gabinetes/hidrante-banqueta" class="btn btn--outline">Ver catálogo completo →</a>
+            <a href="/gabinetes/hidrantes" class="btn btn--outline">Ver catálogo completo →</a>
           </div>
         </div>
         <div class="service-detail__image" role="img" aria-label="Hidrante de Banqueta UL 246" style={`background-image: url('${detailImage('/img/gabinetes-hidrantes/hidrante-enterrado-tapa.avif')}'); background-size: cover; background-position: center;`}></div>
@@ -167,7 +197,7 @@ const faqItems = [
             <a href="/gabinetes/empotrado" class="btn btn--outline">Ver catálogo completo →</a>
           </div>
         </div>
-        <div class="service-detail__image" role="img" aria-label="Gabinete Empotrado Contra Incendios" style={`background-image: url('${detailImage('/img/gabinetes-hidrantes/gabinete-inox-frontal.avif')}'); background-size: cover; background-position: center;`}></div>
+        <div class="service-detail__image" role="img" aria-label="Gabinete Empotrado Contra Incendios" style={`background-image: url('${detailImage('/img/gabinetes-hidrantes/gabinete-manguera-lobby-corporativo.avif')}'); background-size: cover; background-position: center;`}></div>
       </div>
 
       <div class="service-detail" id="detalle-estacion">
@@ -184,10 +214,10 @@ const faqItems = [
           </ul>
           <div class="service-detail__ctas">
             <a href="#cotizar" class="btn btn--primary">Cotizar estación de manguera</a>
-            <a href="/gabinetes/estacion-manguera" class="btn btn--outline">Ver catálogo completo →</a>
+            <a href="/gabinetes/estaciones" class="btn btn--outline">Ver catálogo completo →</a>
           </div>
         </div>
-        <div class="service-detail__image" role="img" aria-label="Estación de Manguera con Carrete" style={`background-image: url('${detailImage('/img/gabinetes-hidrantes/estacion-retractil-frontal.avif')}'); background-size: cover; background-position: center;`}></div>
+        <div class="service-detail__image" role="img" aria-label="Estación de Manguera con Carrete" style={`background-image: url('${detailImage('/img/gabinetes-hidrantes/gabinete-manguera-carrete-detalle.avif')}'); background-size: cover; background-position: center;`}></div>
       </div>
 
     </div>

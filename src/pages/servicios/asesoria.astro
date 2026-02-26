@@ -4,6 +4,7 @@ import '../../styles/services-shared.css';
 import Faq from '../../components/Faq.astro';
 import SectionHeader from '../../components/SectionHeader.astro';
 import LeadCapture from '../../components/LeadCapture.astro';
+import { buildOrganizationSchema, buildServiceSchema, buildFAQSchema, buildBreadcrumbSchema } from '../../lib/seo';
 
 const faqItems = [
   {
@@ -35,12 +36,20 @@ const faqItems = [
     respuesta: 'Atendemos plantas manufactureras, industria química y petroquímica, terminales de almacenamiento, centros de datos, constructoras, hospitales, hoteles, corporativos, firmas de ingeniería, instaladores certificados y brigadas de protección civil. Ofrecemos venta unitaria y cotizaciones corporativas.',
   },
 ];
+
+const structuredData = [
+  buildOrganizationSchema(),
+  buildServiceSchema({ name: 'Asesoría Técnica en Equipos Contra Incendios', description: 'Asesoría técnica gratuita para selección de equipos contra incendios. Evaluación de riesgos, orientación normativa NOM/NFPA y documentación para proyectos.', url: '/servicios/asesoria' }),
+  buildBreadcrumbSchema([{ name: 'Inicio', url: '/' }, { name: 'Servicios', url: '/servicios' }, { name: 'Asesoría Técnica', url: '/servicios/asesoria' }]),
+  buildFAQSchema(faqItems),
+];
 ---
 
 <Layout
   title="Asesoría Técnica Especializada | Equipos Contra Incendios | Gama de México"
   description="Asesoría técnica gratuita para selección de equipos contra incendios. Evaluación de riesgos, orientación normativa NOM/NFPA, especificaciones técnicas y documentación para proyectos."
   activePage="servicios"
+  structuredData={structuredData}
   heroTitle="Asesoría Técnica"
   heroBadge="Servicios"
   heroIntro="Orientacion especializada para disenar sistemas de proteccion contra incendios que cumplan con normativas y especificaciones tecnicas."
@@ -464,7 +473,7 @@ const faqItems = [
         <p class="cta-section__text">Contáctanos hoy y recibe orientación técnica gratuita para seleccionar los equipos correctos para tu proyecto.</p>
         <div class="cta-section__buttons">
           <a href="https://wa.me/5215565298240" class="btn btn--white" target="_blank" rel="noopener">Escribir por WhatsApp</a>
-          <a href="/equipos" class="btn btn--outline btn--white-outline">Ver catálogo de equipos</a>
+          <a href="/contacto" class="btn btn--outline btn--white-outline">Ver canales de contacto</a>
         </div>
       </div>
     </div>

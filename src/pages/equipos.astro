@@ -4,6 +4,11 @@ import SectionHeader from '../components/SectionHeader.astro';
 import CategoryCard from '../components/CategoryCard.astro';
 import Testimonial from '../components/Testimonial.astro';
 import Faq from '../components/Faq.astro';
+import {
+  buildOrganizationSchema,
+  buildFAQSchema,
+  buildBreadcrumbSchema,
+} from '../lib/seo';
 
 // Datos de categorías
 const categorias = [
@@ -11,6 +16,7 @@ const categorias = [
     titulo: 'Monitores Contra Incendios',
     subtitulo: 'Protección perimetral de alto caudal para plantas industriales y terminales de almacenamiento',
     enlace: '/monitores-contra-incendios',
+    imagen: '/img/monitores-contra-incendios/monitor-tipo-corazon-contra-incendios-industrial-tres-cuartos-10.avif',
     subcategorias: [
       { nombre: 'Monitor tipo corazón', enlace: '/monitores/tipo-corazon' },
       { nombre: 'Monitor tipo cuello de cisne', enlace: '/monitores/cuello-cisne' },
@@ -22,6 +28,7 @@ const categorias = [
     titulo: 'Boquillas Contra Incendios',
     subtitulo: 'Control preciso de flujo y patrón de descarga para operaciones de combate contra incendios',
     enlace: '/boquillas-contra-incendios',
+    imagen: '/img/boquillas-contra-incendios/boquilla-tipo-pistola-contra-incendios-estacion-bomberos-01.avif',
     subcategorias: [
       { nombre: 'Boquilla tipo pistola', enlace: '/boquillas/tipo-pistola' },
       { nombre: 'Boquilla turbo jet', enlace: '/boquillas/turbo-jet' },
@@ -33,6 +40,7 @@ const categorias = [
     titulo: 'Mangueras Contra Incendios',
     subtitulo: 'Conducción de agua a presión para sistemas fijos, móviles y operaciones de succión',
     enlace: '/mangueras-contra-incendios',
+    imagen: '/img/mangueras-contra-incendios/manguera-forestal-contra-incendios-vista-lateral-06.avif',
     subcategorias: [
       { nombre: 'Manguera Millhose', enlace: '/mangueras/millhose' },
       { nombre: 'Manguera Blindex', enlace: '/mangueras/blindex' },
@@ -44,6 +52,7 @@ const categorias = [
     titulo: 'Válvulas Contra Incendios',
     subtitulo: 'Regulación y control de flujo hidráulico en redes y sistemas contra incendio',
     enlace: '/valvulas-contra-incendios',
+    imagen: '/img/valvulas-contra-incendios/valvula-check-swing-bridada-contra-incendios-hierro-ductil-16.avif',
     subcategorias: [
       { nombre: 'Válvula de compuerta OS&Y', enlace: '/valvulas/compuerta' },
       { nombre: 'Válvula de globo', enlace: '/valvulas/globo' },
@@ -55,6 +64,7 @@ const categorias = [
     titulo: 'Conexiones y Herrajes de Bronce',
     subtitulo: 'Acoplamiento, derivación y distribución para redes hidráulicas contra incendio',
     enlace: '/conexiones-herrajes-contra-incendios',
+    imagen: '/img/conexiones-herrajes/toma-siamesa-2a-plain-frontal.avif',
     subcategorias: [
       { nombre: 'Adaptadores de bronce', enlace: '/conexiones/adaptadores' },
       { nombre: 'Conexión Y (Wye)', enlace: '/conexiones/wye' },
@@ -67,6 +77,7 @@ const categorias = [
     titulo: 'Gabinetes e Hidrantes Contra Incendios',
     subtitulo: 'Almacenamiento de equipos y puntos de toma de agua para edificios, naves e industria',
     enlace: '/gabinetes-hidrantes-contra-incendios',
+    imagen: '/img/gabinetes-hidrantes/gabinete-manguera-producto-frontal.avif',
     subcategorias: [
       { nombre: 'Gabinete tipo 30ME', enlace: '/gabinetes/tipo-30me' },
       { nombre: 'Gabinete empotrado', enlace: '/gabinetes/empotrado' },
@@ -159,12 +170,22 @@ const faqItems = [
     respuesta: 'Sí. Entregamos fichas técnicas del fabricante, certificados de conformidad, manuales de instalación y declaraciones de cumplimiento UL/FM. También preparamos cartas técnicas específicas cuando el proyecto lo requiera.',
   },
 ];
+
+const structuredData = [
+  buildOrganizationSchema(),
+  buildBreadcrumbSchema([
+    { name: 'Inicio', url: '/' },
+    { name: 'Equipos Contra Incendios', url: '/equipos' },
+  ]),
+  buildFAQSchema(faqItems),
+];
 ---
 
 <Layout
   title="Catálogo Equipos Contra Incendios | Gama de México"
   description="Catálogo de monitores, boquillas, mangueras, válvulas, conexiones y gabinetes contra incendios. Certificaciones UL/FM. Distribuidor Elkhart Brass."
   activePage="equipos"
+  structuredData={structuredData}
   showLeadCapture={true}
   heroTitle="Catálogo de Equipos Contra Incendios"
   heroIntro="Explora nuestro catálogo completo de equipos certificados para protección contra incendios. Monitores, boquillas, mangueras, válvulas, conexiones y gabinetes de las mejores marcas con certificaciones UL y FM."
@@ -203,6 +224,7 @@ const faqItems = [
             titulo={cat.titulo}
             subtitulo={cat.subtitulo}
             enlace={cat.enlace}
+            imagen={cat.imagen}
             subcategorias={cat.subcategorias}
           />
         ))}

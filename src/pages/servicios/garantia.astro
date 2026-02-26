@@ -3,6 +3,7 @@ import Layout from '../../layouts/Base.astro';
 import Faq from '../../components/Faq.astro';
 import SectionHeader from '../../components/SectionHeader.astro';
 import LeadCapture from '../../components/LeadCapture.astro';
+import { buildOrganizationSchema, buildServiceSchema, buildFAQSchema, buildBreadcrumbSchema } from '../../lib/seo';
 
 const faqItems = [
   {
@@ -34,12 +35,20 @@ const faqItems = [
     respuesta: 'Atendemos plantas manufactureras, industria química y petroquímica, terminales de almacenamiento, centros de datos, constructoras, hospitales, hoteles, corporativos, firmas de ingeniería, instaladores certificados y brigadas de protección civil. Ofrecemos venta unitaria y cotizaciones corporativas.',
   },
 ];
+
+const structuredData = [
+  buildOrganizationSchema(),
+  buildServiceSchema({ name: 'Garantía y Soporte Técnico de Equipos Contra Incendios', description: 'Garantía del fabricante, certificados UL y FM, fichas técnicas oficiales y soporte postventa para equipos contra incendios.', url: '/servicios/garantia' }),
+  buildBreadcrumbSchema([{ name: 'Inicio', url: '/' }, { name: 'Servicios', url: '/servicios' }, { name: 'Garantía', url: '/servicios/garantia' }]),
+  buildFAQSchema(faqItems),
+];
 ---
 
 <Layout
   title="Garantía y Respaldo Técnico | Equipos Contra Incendios | Gama de México"
   description="Garantía del fabricante, certificados UL y FM, fichas técnicas oficiales y soporte postventa para equipos contra incendios. Documentación para verificaciones de protección civil."
   activePage="servicios"
+  structuredData={structuredData}
   heroTitle="Garantía y Soporte Técnico"
   heroIntro="Respaldo integral en todos nuestros equipos contra incendios. Garantía de fábrica, soporte postventa y asesoría técnica continua para maximizar la vida útil de tu inversión."
   heroBadge="Servicios"

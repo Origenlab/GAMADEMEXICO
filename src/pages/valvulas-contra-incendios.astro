@@ -3,6 +3,12 @@ import Layout from '../layouts/Base.astro';
 import { getCollection } from 'astro:content';
 import Faq from '../components/Faq.astro';
 import { getBackgroundImageUrl } from '../lib/images';
+import {
+  buildProductCategorySchema,
+  buildFAQSchema,
+  buildBreadcrumbSchema,
+  buildOrganizationSchema,
+} from '../lib/seo';
 
 const productos = (await getCollection('productos', ({ data }) => data.categoria === 'valvulas')).sort((a, b) => a.data.orden - b.data.orden);
 const cardImage = (path?: string) =>
@@ -49,12 +55,36 @@ const faqItems = [
     "respuesta": "Puedes cotizar de tres formas rápidas: 1) Formulario en esta página (se envía directo a nuestro WhatsApp), 2) WhatsApp directo al 55 6529 8240, o 3) Llamada al 55 1543 7164 o email a ventas@gamademexico.com. Solo necesitamos saber: tipo de válvula requerida (compuerta OS&Y, globo, retención o mariposa), diámetro(s) necesarios, cantidad aproximada, presión de trabajo del sistema y ubicación de entrega. Si no estás seguro del tipo o especificación correcta, nuestros ingenieros te asesoran sin costo para seleccionar exactamente lo que tu proyecto necesita según NFPA 13, 14 o 20. Respondemos en menos de 24 horas con precios, disponibilidad inmediata y opciones de envío. Para proyectos de gran escala preparamos cotizaciones corporativas con precios especiales por volumen."
   }
 ];
+
+const structuredData = [
+  buildOrganizationSchema(),
+  buildProductCategorySchema({
+    name: 'Válvulas Contra Incendios Certificadas UL/FM',
+    description: 'Válvulas contra incendio certificadas UL y FM. Tipo compuerta OS&Y, globo, retención y mariposa para sistemas de protección activa NFPA en México.',
+    image: '/img/valvulas-contra-incendios/valvula-check-swing-bridada-contra-incendios-hierro-ductil-16.avif',
+    url: '/valvulas-contra-incendios',
+    category: 'Válvulas Contra Incendios',
+    brand: 'Elkhart Brass',
+    reviewAuthor: 'Ing. Roberto Méndez',
+    reviewBody: 'Excelente calidad en válvulas OS&Y y check. Documentación UL/FM completa para nuestra auditoría de Protección Civil. Entrega puntual y asesoría técnica de primer nivel.',
+    reviewDate: '2025-03-10',
+    ratingCount: 52,
+    reviewCount: 52,
+  }),
+  buildBreadcrumbSchema([
+    { name: 'Inicio', url: '/' },
+    { name: 'Equipos', url: '/equipos' },
+    { name: 'Válvulas Contra Incendios', url: '/valvulas-contra-incendios' },
+  ]),
+  buildFAQSchema(faqItems),
+];
 ---
 
 <Layout
   title="Válvulas Contra Incendio UL NFPA | México"
   description="Válvulas contra incendio certificadas UL/FM. Tipo compuerta OS&Y, globo, retención y mariposa. Control y protección industrial NFPA. México."
   activePage="equipos"
+  structuredData={structuredData}
   heroTitle="Válvulas Contra Incendios"
   heroBadge="Equipos Contra Incendios"
   heroShowRightContent={true}

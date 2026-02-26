@@ -4,6 +4,7 @@ import '../../styles/services-shared.css';
 import Faq from '../../components/Faq.astro';
 import SectionHeader from '../../components/SectionHeader.astro';
 import LeadCapture from '../../components/LeadCapture.astro';
+import { buildOrganizationSchema, buildServiceSchema, buildFAQSchema, buildBreadcrumbSchema } from '../../lib/seo';
 
 const faqItems = [
   {
@@ -35,12 +36,20 @@ const faqItems = [
     respuesta: 'Atendemos plantas manufactureras, industria química y petroquímica, terminales de almacenamiento, centros de datos, constructoras, hospitales, hoteles, corporativos, firmas de ingeniería, instaladores certificados y brigadas de protección civil. Ofrecemos venta unitaria y cotizaciones corporativas.',
   },
 ];
+
+const structuredData = [
+  buildOrganizationSchema(),
+  buildServiceSchema({ name: 'Envíos Nacionales de Equipos Contra Incendios', description: 'Envíos de equipos contra incendios a toda la República Mexicana. Entregas directas en obra, embalaje especializado y logística coordinada.', url: '/servicios/envios' }),
+  buildBreadcrumbSchema([{ name: 'Inicio', url: '/' }, { name: 'Servicios', url: '/servicios' }, { name: 'Envíos', url: '/servicios/envios' }]),
+  buildFAQSchema(faqItems),
+];
 ---
 
 <Layout
   title="Envíos Nacionales de Equipos Contra Incendios | Gama de México"
   description="Envíos de equipos contra incendios a toda la República Mexicana. Entregas directas en obra, embalaje especializado y seguimiento en tiempo real. Logística coordinada."
   activePage="servicios"
+  structuredData={structuredData}
   heroTitle="Envíos a Todo México"
   heroIntro="Logística especializada para equipos contra incendios. Envíos seguros a toda la República Mexicana con embalaje profesional y seguimiento en tiempo real."
   heroBadge="Servicios"
@@ -501,7 +510,7 @@ const faqItems = [
         <p class="cta-section__text">Contáctanos hoy y recibe cotización con costo de envío incluido.</p>
         <div class="cta-section__buttons">
           <a href="https://wa.me/5215565298240" class="btn btn--white" target="_blank" rel="noopener">Escribir por WhatsApp</a>
-          <a href="/equipos" class="btn btn--outline btn--white-outline">Ver catálogo de equipos</a>
+          <a href="/contacto" class="btn btn--outline btn--white-outline">Ver canales de contacto</a>
         </div>
       </div>
     </div>

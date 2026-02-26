@@ -1,0 +1,896 @@
+---
+import Layout from '../layouts/Base.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+import Faq from '../components/Faq.astro';
+import LeadCapture from '../components/LeadCapture.astro';
+import {
+  SITE_NAME,
+  LOCATIONS,
+  DISTRIBUTED_BRANDS,
+  BUSINESS_HOURS,
+  PHONE_DISPLAY,
+  WHATSAPP_DISPLAY,
+  EMAIL_SALES,
+  WHATSAPP_URL,
+  PHONE_URL,
+  EMAIL_URL,
+} from '../lib/config';
+import {
+  buildOrganizationSchema,
+  buildLocalBusinessSchema,
+  buildFAQSchema,
+  buildBreadcrumbSchema,
+} from '../lib/seo';
+
+const faqItems = [
+  {
+    pregunta: '¿Qué significa ser distribuidor autorizado de Elkhart Brass?',
+    respuesta: 'Como distribuidores autorizados, tenemos acceso directo a productos originales con garantía del fabricante, documentación técnica oficial, soporte especializado y precios competitivos. Elkhart Brass es líder mundial con más de 120 años de experiencia en equipos contra incendios certificados UL y FM.',
+  },
+  {
+    pregunta: '¿A qué sectores atiende Gama de México?',
+    respuesta: 'Atendemos a plantas industriales, terminales de almacenamiento, refinerías, centros de datos, constructoras, firmas de ingeniería, instaladores certificados, hospitales, hoteles, corporativos y brigadas de protección civil. Tanto proyectos unitarios como cotizaciones corporativas de gran escala.',
+  },
+  {
+    pregunta: '¿Cuál es el horario de atención?',
+    respuesta: `Nuestro horario de atención es ${BUSINESS_HOURS.fullDisplay} (hora Ciudad de México). Puedes contactarnos por WhatsApp, teléfono o correo electrónico, y te respondemos en menos de 24 horas hábiles.`,
+  },
+  {
+    pregunta: '¿Dónde están ubicadas sus sucursales?',
+    respuesta: 'Operamos desde dos ubicaciones estratégicas: nuestra oficina principal en Santa Fe, Ciudad de México (Prol. Paseo de la Reforma 1015, Piso 1, CP 01376), y nuestra sucursal en Santiago de Querétaro (Av. Constituyentes 120, CP 76030). Esto nos permite coordinar envíos eficientes a toda la República Mexicana.',
+  },
+  {
+    pregunta: '¿Realizan envíos a todo México?',
+    respuesta: 'Sí. Coordinamos envíos de equipos contra incendios a toda la República Mexicana. En Valle de México y Querétaro entregamos en 24-48 horas; para el resto del país entre 3-7 días hábiles dependiendo de la ubicación y disponibilidad.',
+  },
+  {
+    pregunta: '¿Ofrecen asesoría técnica sin costo?',
+    respuesta: 'Sí. Nuestro equipo de asesores técnicos evalúa las características de tu proyecto (tipo de riesgo, normativa aplicable, especificaciones hidráulicas) para recomendarte los equipos exactos que necesitas. La asesoría es completamente gratuita y sin compromiso de compra.',
+  },
+];
+
+const valores = [
+  {
+    titulo: 'Integridad',
+    descripcion: 'Actuamos con honestidad y transparencia en cada interacción. Nuestros clientes confían en nosotros porque decimos lo que hacemos y hacemos lo que decimos.',
+    icono: 'shield',
+  },
+  {
+    titulo: 'Excelencia técnica',
+    descripcion: 'Nos mantenemos actualizados en normativas, productos y tecnologías para ofrecer las mejores soluciones en protección contra incendios.',
+    icono: 'star',
+  },
+  {
+    titulo: 'Servicio al cliente',
+    descripcion: 'Cada proyecto es importante. Respondemos rápido, asesoramos con claridad y acompañamos hasta que el equipo esté funcionando en sitio.',
+    icono: 'users',
+  },
+  {
+    titulo: 'Compromiso con la seguridad',
+    descripcion: 'Entendemos que nuestros equipos protegen vidas y patrimonio. Por eso solo trabajamos con productos certificados y probados.',
+    icono: 'fire',
+  },
+];
+
+const hitos = [
+  { anio: '2005', evento: 'Fundación de Gama de México en Ciudad de México' },
+  { anio: '2010', evento: 'Certificación como distribuidor autorizado Elkhart Brass' },
+  { anio: '2015', evento: 'Apertura de sucursal en Querétaro' },
+  { anio: '2018', evento: 'Ampliación de catálogo con Potter Roemer y Task Force Tips' },
+  { anio: '2020', evento: 'Implementación de plataforma digital para cotizaciones' },
+  { anio: '2024', evento: 'Consolidación como referente nacional en equipos contra incendios' },
+];
+
+const structuredData = [
+  buildOrganizationSchema(),
+  buildLocalBusinessSchema(),
+  buildBreadcrumbSchema([
+    { name: 'Inicio', url: '/' },
+    { name: 'Nosotros', url: '/nosotros' },
+  ]),
+  buildFAQSchema(faqItems),
+];
+---
+
+<Layout
+  title="Nosotros | Gama de México — Distribuidores de Equipos Contra Incendios"
+  description="Conoce a Gama de México: distribuidores autorizados de Elkhart Brass con más de 15 años de experiencia en equipos contra incendios certificados UL y FM. Oficinas en CDMX y Querétaro."
+  activePage="nosotros"
+  structuredData={structuredData}
+  heroTitle="Gama de México"
+  heroBadge="Nosotros"
+  heroIntro="Somos distribuidores autorizados de Elkhart Brass con más de 15 años de experiencia suministrando equipos contra incendios certificados a la industria mexicana."
+  heroMetrics={[
+    { valor: "+15", texto: "Años de experiencia" },
+    { valor: "2", texto: "Sucursales en México" },
+    { valor: "UL/FM", texto: "Certificaciones" }
+  ]}
+  heroPrimaryText="Contactar"
+  heroPrimaryLink="/contacto"
+  heroSecondaryText="Ver Catálogo"
+  heroSecondaryLink="/equipos"
+  heroShowRightContent={true}
+>
+
+  <Fragment slot="hero-content">
+    <p>En <strong>{SITE_NAME}</strong> nos especializamos en el suministro de equipos contra incendios de alta calidad para el sector industrial, comercial y de construcción en México. Como distribuidores autorizados de <strong>Elkhart Brass</strong> —fabricante con más de 120 años de liderazgo mundial— garantizamos productos originales con certificaciones UL y FM, documentación técnica completa y respaldo de garantía real.</p>
+    <p>Operamos desde <strong>Ciudad de México y Querétaro</strong> con cobertura logística en toda la República Mexicana. Nuestro equipo de asesores técnicos está preparado para ayudarte a seleccionar los equipos exactos que tu proyecto requiere, cumpliendo con las normativas NOM y NFPA aplicables.</p>
+  </Fragment>
+
+  <!-- NUESTRA HISTORIA -->
+  <section class="about-section about-section--alt" aria-labelledby="historia-title">
+    <div class="container">
+      <SectionHeader
+        titulo="Nuestra Historia"
+        subtitulo="Más de 15 años construyendo confianza en el mercado mexicano"
+        idTitulo="historia-title"
+        parrafo1="Gama de México nació con una visión clara: convertirse en el aliado técnico y comercial de confianza para empresas que requieren equipos contra incendios de calidad certificada. Desde nuestros inicios hemos priorizado la especialización, el conocimiento técnico y el servicio personalizado."
+        parrafo2="A lo largo de los años hemos consolidado relaciones con los fabricantes más reconocidos del mundo, permitiéndonos ofrecer un catálogo integral de soluciones: desde monitores de alto caudal y boquillas profesionales hasta mangueras industriales, válvulas, conexiones de bronce y gabinetes para instalaciones fijas."
+      />
+
+      <div class="timeline">
+        {hitos.map((hito, index) => (
+          <div class="timeline__item">
+            <div class="timeline__marker">{hito.anio}</div>
+            <div class="timeline__content">
+              <p>{hito.evento}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- MISIÓN, VISIÓN Y VALORES -->
+  <section class="about-section" aria-labelledby="mision-title">
+    <div class="container">
+      <SectionHeader
+        titulo="Misión, Visión y Valores"
+        subtitulo="Los principios que guían nuestro trabajo diario"
+        idTitulo="mision-title"
+      />
+
+      <div class="mission-grid">
+        <div class="mission-card mission-card--primary">
+          <div class="mission-card__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+          </div>
+          <h3 class="mission-card__title">Misión</h3>
+          <p class="mission-card__text">Suministrar equipos contra incendios de la más alta calidad y certificación, acompañados de asesoría técnica especializada, para proteger vidas, patrimonio y la continuidad operativa de nuestros clientes en toda la República Mexicana.</p>
+        </div>
+
+        <div class="mission-card mission-card--secondary">
+          <div class="mission-card__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+          <h3 class="mission-card__title">Visión</h3>
+          <p class="mission-card__text">Ser reconocidos como el distribuidor de referencia en equipos contra incendios en México, distinguiéndonos por nuestra especialización técnica, inventario disponible, respuesta ágil y compromiso inquebrantable con la seguridad de nuestros clientes.</p>
+        </div>
+      </div>
+
+      <div class="values-grid">
+        {valores.map((valor) => (
+          <div class="value-card">
+            <div class="value-card__icon" aria-hidden="true">
+              {valor.icono === 'shield' && (
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+              )}
+              {valor.icono === 'star' && (
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              )}
+              {valor.icono === 'users' && (
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              )}
+              {valor.icono === 'fire' && (
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
+              )}
+            </div>
+            <h4 class="value-card__title">{valor.titulo}</h4>
+            <p class="value-card__text">{valor.descripcion}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ALIANZA ELKHART BRASS -->
+  <section class="about-section about-section--dark" aria-labelledby="alianza-title">
+    <div class="container">
+      <div class="alliance-content">
+        <div class="alliance-text">
+          <span class="alliance-badge">Distribuidor Autorizado</span>
+          <h2 id="alianza-title" class="alliance-title">Alianza con Elkhart Brass</h2>
+          <p class="alliance-intro">Elkhart Brass es el fabricante líder mundial en equipos contra incendios con más de <strong>120 años de innovación</strong>. Como distribuidores autorizados en México, tenemos acceso directo a su catálogo completo de productos certificados.</p>
+
+          <div class="alliance-benefits">
+            <div class="alliance-benefit">
+              <span class="alliance-benefit__check" aria-hidden="true">✓</span>
+              <span>Productos originales con garantía del fabricante</span>
+            </div>
+            <div class="alliance-benefit">
+              <span class="alliance-benefit__check" aria-hidden="true">✓</span>
+              <span>Certificaciones UL y FM en monitores y boquillas</span>
+            </div>
+            <div class="alliance-benefit">
+              <span class="alliance-benefit__check" aria-hidden="true">✓</span>
+              <span>Documentación técnica oficial para verificaciones</span>
+            </div>
+            <div class="alliance-benefit">
+              <span class="alliance-benefit__check" aria-hidden="true">✓</span>
+              <span>Soporte técnico especializado del fabricante</span>
+            </div>
+            <div class="alliance-benefit">
+              <span class="alliance-benefit__check" aria-hidden="true">✓</span>
+              <span>Precios competitivos de distribuidor autorizado</span>
+            </div>
+          </div>
+
+          <p class="alliance-brands">También distribuimos equipos de: <strong>{DISTRIBUTED_BRANDS.slice(1).join(', ')}</strong></p>
+        </div>
+
+        <div class="alliance-visual">
+          <div class="brand-showcase">
+            <div class="brand-showcase__main">
+              <span class="brand-showcase__label">Distribuidor Autorizado</span>
+              <span class="brand-showcase__brand">Elkhart Brass</span>
+              <span class="brand-showcase__since">Desde 2010</span>
+            </div>
+            <div class="brand-showcase__certs">
+              <span class="cert-badge">UL Listed</span>
+              <span class="cert-badge">FM Approved</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POR QUÉ ELEGIRNOS -->
+  <section class="trust" aria-labelledby="trust-title">
+    <div class="container">
+      <SectionHeader
+        titulo="Por Qué Elegir a Gama de México"
+        subtitulo="Lo que nos distingue como tu proveedor de equipos contra incendios"
+        idTitulo="trust-title"
+        parrafo1="La elección de un proveedor de equipos contra incendios impacta directamente en la seguridad de tu instalación. En Gama de México combinamos productos de calidad mundial con conocimiento técnico del mercado mexicano y un compromiso real de servicio."
+        parrafo2="Hemos construido nuestra reputación entregando resultados: equipos certificados, documentación completa, entregas puntuales y asesoría técnica que resuelve problemas reales. Eso es lo que nuestros clientes valoran y por lo que regresan proyecto tras proyecto."
+      />
+      <div class="trust__grid">
+        <div class="trust__item">
+          <h3 class="trust__item-title">Distribuidor autorizado</h3>
+          <p class="trust__item-desc">Representamos oficialmente a Elkhart Brass, garantizando productos originales y respaldo del fabricante.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Certificaciones UL y FM</h3>
+          <p class="trust__item-desc">Equipos con certificaciones internacionales reconocidas por aseguradoras y autoridades de protección civil.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Asesoría técnica real</h3>
+          <p class="trust__item-desc">No solo vendemos: analizamos tu proyecto y te recomendamos los equipos correctos según normativa y riesgo.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Inventario disponible</h3>
+          <p class="trust__item-desc">Stock permanente de los productos más solicitados para entregas rápidas sin tiempos de importación.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Cobertura nacional</h3>
+          <p class="trust__item-desc">Desde CDMX y Querétaro coordinamos envíos a toda la República Mexicana con logística especializada.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Respuesta en 24 horas</h3>
+          <p class="trust__item-desc">Cotizaciones, consultas técnicas y solicitudes corporativas atendidas en menos de un día hábil.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- UBICACIONES -->
+  <section class="about-section about-section--alt" aria-labelledby="ubicaciones-title">
+    <div class="container">
+      <SectionHeader
+        titulo="Nuestras Ubicaciones"
+        subtitulo="Dos centros de operación para mejor cobertura nacional"
+        idTitulo="ubicaciones-title"
+        parrafo1="Operamos desde dos ubicaciones estratégicas en el centro del país: Ciudad de México y Querétaro. Esta configuración nos permite coordinar logística eficiente hacia el norte, centro, sur y sureste de México."
+        parrafo2="Ambas sucursales cuentan con inventario de productos de alta rotación, personal técnico capacitado y conexión directa con nuestros proveedores para atender requerimientos especiales."
+      />
+
+      <div class="locations-grid">
+        {LOCATIONS.map((location) => (
+          <div class="location-card">
+            <div class="location-card__icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <h3 class="location-card__title">{location.name}</h3>
+            <address class="location-card__address">
+              <p>{location.street}</p>
+              {location.neighborhood && <p>{location.neighborhood}</p>}
+              <p>{location.locality}, {location.region} {location.postalCode}</p>
+            </address>
+            <div class="location-card__hours">
+              <strong>Horario:</strong> {BUSINESS_HOURS.fullDisplay}
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div class="contact-channels">
+        <h3 class="contact-channels__title">Canales de Contacto</h3>
+        <div class="contact-channels__grid">
+          <a href={WHATSAPP_URL} class="contact-channel" target="_blank" rel="noopener">
+            <span class="contact-channel__icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </span>
+            <span class="contact-channel__info">
+              <span class="contact-channel__label">WhatsApp</span>
+              <span class="contact-channel__value">{WHATSAPP_DISPLAY}</span>
+            </span>
+          </a>
+          <a href={PHONE_URL} class="contact-channel">
+            <span class="contact-channel__icon contact-channel__icon--phone" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </span>
+            <span class="contact-channel__info">
+              <span class="contact-channel__label">Teléfono</span>
+              <span class="contact-channel__value">{PHONE_DISPLAY}</span>
+            </span>
+          </a>
+          <a href={EMAIL_URL} class="contact-channel">
+            <span class="contact-channel__icon contact-channel__icon--email" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            </span>
+            <span class="contact-channel__info">
+              <span class="contact-channel__label">Email</span>
+              <span class="contact-channel__value">{EMAIL_SALES}</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEAD CAPTURE -->
+  <LeadCapture />
+
+  <!-- FAQ -->
+  <section class="faq" id="faq" aria-labelledby="faq-title">
+    <div class="container">
+      <SectionHeader
+        titulo="Preguntas Frecuentes sobre Gama de México"
+        subtitulo="Resolvemos las dudas más comunes sobre nuestra empresa y servicios"
+        idTitulo="faq-title"
+        parrafo1="Hemos compilado las preguntas que más frecuentemente recibimos de clientes y prospectos. Si tu pregunta no aparece aquí, no dudes en contactarnos directamente."
+        parrafo2="Nuestro equipo está disponible para resolver cualquier duda específica sobre productos, servicios, envíos o procesos de cotización."
+      />
+      <Faq items={faqItems} id="faq" />
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta-section" aria-labelledby="cta-title">
+    <div class="container">
+      <div class="cta-section__content">
+        <h2 id="cta-title" class="cta-section__title">¿Listo para trabajar con nosotros?</h2>
+        <p class="cta-section__text">Contáctanos hoy y descubre por qué empresas de todo México confían en Gama de México para sus equipos contra incendios.</p>
+        <div class="cta-section__buttons">
+          <a href="/contacto" class="btn btn--white">Ver canales de contacto</a>
+          <a href="/equipos" class="btn btn--outline btn--white-outline">Explorar catálogo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  /* About Sections */
+  .about-section {
+    padding: var(--spacing-3xl) 0;
+    background: var(--color-white);
+  }
+
+  .about-section--alt {
+    background: var(--color-accent);
+  }
+
+  .about-section--dark {
+    background: linear-gradient(135deg, var(--color-secondary) 0%, #2d2d4a 100%);
+    color: white;
+  }
+
+  /* Timeline */
+  .timeline {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-xl);
+  }
+
+  .timeline__item {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+  }
+
+  .timeline__marker {
+    flex-shrink: 0;
+    width: 70px;
+    padding: 0.5rem 0.75rem;
+    background: var(--color-primary);
+    color: white;
+    font-weight: 700;
+    font-size: var(--font-size-sm);
+    text-align: center;
+    border-radius: var(--border-radius-sm);
+  }
+
+  .timeline__content {
+    flex: 1;
+    padding: var(--spacing-sm) var(--spacing-md);
+    background: var(--color-white);
+    border-radius: var(--border-radius-sm);
+    border-left: 3px solid var(--color-primary);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .timeline__content p {
+    margin: 0;
+    font-size: var(--font-size-sm);
+    color: var(--color-text);
+  }
+
+  /* Mission Grid */
+  .mission-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .mission-card {
+    padding: var(--spacing-xl);
+    border-radius: var(--border-radius);
+    text-align: center;
+  }
+
+  .mission-card--primary {
+    background: linear-gradient(135deg, var(--color-primary) 0%, #a01830 100%);
+    color: white;
+  }
+
+  .mission-card--secondary {
+    background: var(--color-secondary);
+    color: white;
+  }
+
+  .mission-card__icon {
+    width: 56px;
+    height: 56px;
+    margin: 0 auto var(--spacing-md);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mission-card__icon svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .mission-card__title {
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .mission-card__text {
+    font-size: var(--font-size-base);
+    line-height: 1.7;
+    opacity: 0.95;
+  }
+
+  /* Values Grid */
+  .values-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .value-card {
+    padding: var(--spacing-lg);
+    background: var(--color-accent);
+    border-radius: var(--border-radius);
+    border-left: 4px solid var(--color-primary);
+    transition: box-shadow var(--transition-fast);
+  }
+
+  .value-card:hover {
+    box-shadow: var(--shadow-md);
+  }
+
+  .value-card__icon {
+    width: 44px;
+    height: 44px;
+    margin-bottom: var(--spacing-sm);
+    background: var(--color-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+
+  .value-card__icon svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .value-card__title {
+    font-size: var(--font-size-base);
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin-bottom: 0.5rem;
+  }
+
+  .value-card__text {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
+    line-height: 1.6;
+  }
+
+  /* Alliance Section */
+  .alliance-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+    align-items: center;
+  }
+
+  .alliance-badge {
+    display: inline-block;
+    background: var(--color-primary);
+    color: white;
+    padding: 0.35rem 0.9rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .alliance-title {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 800;
+    line-height: 1.2;
+    margin: 0 0 var(--spacing-md);
+    color: white;
+  }
+
+  .alliance-intro {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .alliance-intro strong {
+    color: white;
+  }
+
+  .alliance-benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .alliance-benefit {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  .alliance-benefit__check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    background: var(--color-primary);
+    border-radius: 50%;
+    font-size: 0.7rem;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  .alliance-brands {
+    font-size: var(--font-size-sm);
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .alliance-brands strong {
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  /* Brand Showcase */
+  .brand-showcase {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-xl);
+    text-align: center;
+  }
+
+  .brand-showcase__main {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .brand-showcase__label {
+    font-size: var(--font-size-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .brand-showcase__brand {
+    font-size: var(--font-size-2xl);
+    font-weight: 800;
+    color: white;
+  }
+
+  .brand-showcase__since {
+    font-size: var(--font-size-sm);
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .brand-showcase__certs {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    flex-wrap: wrap;
+  }
+
+  .cert-badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: var(--color-primary);
+    color: white;
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    border-radius: 50px;
+  }
+
+  /* Locations Grid */
+  .locations-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .location-card {
+    background: var(--color-white);
+    padding: var(--spacing-xl);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-md);
+    text-align: center;
+  }
+
+  .location-card__icon {
+    width: 56px;
+    height: 56px;
+    margin: 0 auto var(--spacing-md);
+    background: var(--color-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+
+  .location-card__icon svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .location-card__title {
+    font-size: var(--font-size-lg);
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .location-card__address {
+    font-style: normal;
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
+    line-height: 1.6;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .location-card__address p {
+    margin: 0;
+  }
+
+  .location-card__hours {
+    font-size: var(--font-size-sm);
+    color: var(--color-text);
+    padding-top: var(--spacing-sm);
+    border-top: 1px solid var(--color-border);
+  }
+
+  /* Contact Channels */
+  .contact-channels {
+    padding: var(--spacing-xl);
+    background: var(--color-white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-md);
+  }
+
+  .contact-channels__title {
+    font-size: var(--font-size-lg);
+    font-weight: 700;
+    color: var(--color-secondary);
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .contact-channels__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
+  }
+
+  .contact-channel {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm) var(--spacing-md);
+    background: var(--color-accent);
+    border-radius: var(--border-radius-sm);
+    border: 1px solid var(--color-border);
+    transition: all var(--transition-fast);
+    text-decoration: none;
+  }
+
+  .contact-channel:hover {
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-md);
+  }
+
+  .contact-channel__icon {
+    width: 44px;
+    height: 44px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-shrink: 0;
+  }
+
+  .contact-channel__icon svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .contact-channel__icon--phone {
+    background: var(--color-primary);
+  }
+
+  .contact-channel__icon--email {
+    background: var(--color-secondary);
+  }
+
+  .contact-channel__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-channel__label {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-light);
+  }
+
+  .contact-channel__value {
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    color: var(--color-secondary);
+  }
+
+  /* CTA Section */
+  .cta-section {
+    padding: var(--spacing-3xl) 0;
+    background: linear-gradient(135deg, var(--color-primary) 0%, #a01830 100%);
+    text-align: center;
+  }
+
+  .cta-section__content {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .cta-section__title {
+    font-size: clamp(1.5rem, 4vw, 2.25rem);
+    font-weight: 800;
+    color: white;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .cta-section__text {
+    font-size: var(--font-size-base);
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: var(--spacing-lg);
+    line-height: 1.6;
+  }
+
+  .cta-section__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    justify-content: center;
+  }
+
+  .cta-section__buttons .btn--white-outline {
+    border-color: rgba(255, 255, 255, 0.5);
+    color: white;
+  }
+
+  .cta-section__buttons .btn--white-outline:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: white;
+  }
+
+  /* Responsive */
+  @media (min-width: 640px) {
+    .timeline {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .values-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-channels__grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .cta-section__buttons {
+      flex-direction: row;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .mission-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .locations-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .timeline {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .values-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .alliance-content {
+      grid-template-columns: 1.5fr 1fr;
+      gap: var(--spacing-3xl);
+    }
+  }
+</style>

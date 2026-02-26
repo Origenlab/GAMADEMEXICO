@@ -4,6 +4,12 @@ import SectionHeader from '../components/SectionHeader.astro';
 import { getCollection } from 'astro:content';
 import { getBackgroundImageUrl } from '../lib/images';
 import Faq from '../components/Faq.astro';
+import {
+  buildProductCategorySchema,
+  buildFAQSchema,
+  buildBreadcrumbSchema,
+  buildOrganizationSchema,
+} from '../lib/seo';
 
 const productos = (await getCollection('productos', ({ data }) => data.categoria === 'boquillas')).sort((a, b) => a.data.orden - b.data.orden);
 const cdnImage = (path: string) =>
@@ -42,12 +48,36 @@ const faqItems = [
     "respuesta": "Vendemos boquillas con chiflón de 3 pasos: tipo pistola con selector de flujo manual, turbo jet con ajuste automático, industriales en bronce fundido y certificadas UL/FM. Todas incluyen patrones de agua regulables, cierre total con empaque de neopreno y documentación completa para auditorías."
   }
 ];
+
+const structuredData = [
+  buildOrganizationSchema(),
+  buildProductCategorySchema({
+    name: 'Boquillas Contra Incendios Chiflón 3 Pasos',
+    description: 'Boquillas contra incendios con chiflón de 3 pasos, turbo jet y tipo pistola. Bronce fundido, selector de flujo. Certificadas UL/FM Elkhart Brass.',
+    image: '/img/boquillas-contra-incendios/boquilla-tipo-pistola-contra-incendios-estacion-bomberos-01.avif',
+    url: '/boquillas-contra-incendios',
+    category: 'Boquillas Contra Incendios',
+    brand: 'Elkhart Brass',
+    reviewAuthor: 'Cap. Luis Hernández',
+    reviewBody: 'Las boquillas Elkhart Brass son las mejores que hemos probado. El chiflón de 3 pasos facilita el trabajo de nuestras brigadas. Servicio y entrega impecables por parte de Gama de México.',
+    reviewDate: '2025-05-22',
+    ratingCount: 47,
+    reviewCount: 47,
+  }),
+  buildBreadcrumbSchema([
+    { name: 'Inicio', url: '/' },
+    { name: 'Equipos', url: '/equipos' },
+    { name: 'Boquillas Contra Incendios', url: '/boquillas-contra-incendios' },
+  ]),
+  buildFAQSchema(faqItems),
+];
 ---
 
 <Layout
   title="Boquillas Contra Incendios | Venta México"
   description="Boquillas contra incendios chiflón 3 pasos, turbo jet y tipo pistola. Bronce fundido, selector de flujo. Certificadas UL/FM Elkhart Brass. México."
   activePage="equipos"
+  structuredData={structuredData}
   heroTitle="Boquillas Contra Incendios para Brigadas y Sistemas Fijos"
   heroIntro="Control preciso de patrones de agua con chiflón de 3 pasos, selector de flujo ajustable y construcción en bronce fundido. Equipos tipo pistola, turbo jet e industriales certificados UL/FM."
   heroBadge="Boquillas Contra Incendios"

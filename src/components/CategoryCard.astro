@@ -1,7 +1,8 @@
 ---
-import { getThumbnailUrl } from '../lib/images';
+import { generateSrcset, getOptimizedImageUrl } from '../lib/images';
 
 // CategoryCard component - Card con subcategorías y botón principal
+// Actualizado con srcset para imágenes responsive
 interface Subcategoria {
   nombre: string;
   enlace: string;
@@ -17,12 +18,47 @@ interface Props {
 
 const { titulo, subtitulo, enlace, subcategorias, imagen } = Astro.props;
 
-// Imagen optimizada: 640px ancho para cards de categoría
-const imageUrl = imagen ? getThumbnailUrl(imagen, 640) : undefined;
+// Configuración de srcset para diferentes viewports
+const imageWidths = [320, 480, 640, 768, 1024];
+const imageSizes = '(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw';
+
+// Generar srcset si hay imagen
+let srcset: string | undefined;
+let fallbackSrc: string | undefined;
+
+if (imagen) {
+  const responsive = generateSrcset(imagen, {
+    widths: imageWidths,
+    sizes: imageSizes,
+    quality: 78,
+  });
+  srcset = responsive.srcset;
+  fallbackSrc = getOptimizedImageUrl(imagen, {
+    width: 640,
+    quality: 78,
+    strip: 'all',
+  });
+}
 ---
 
 <article class="category-card">
-  <div class="category-card__image" style={imageUrl ? `background-image: url('${imageUrl}'); background-size: cover; background-position: center;` : undefined}></div>
+  <div class="category-card__image-wrapper">
+    {imagen ? (
+      <img
+        src={fallbackSrc}
+        srcset={srcset}
+        sizes={imageSizes}
+        alt={titulo}
+        class="category-card__image"
+        loading="lazy"
+        decoding="async"
+        width="640"
+        height="360"
+      />
+    ) : (
+      <div class="category-card__image-placeholder"></div>
+    )}
+  </div>
   <div class="category-card__body">
     <h3 class="category-card__title">{titulo}</h3>
     <p class="category-card__sub">{subtitulo}</p>
@@ -45,9 +81,23 @@ const imageUrl = imagen ? getThumbnailUrl(imagen, 640) : undefined;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.04);
   }
 
-  .category-card__image {
+  .category-card__image-wrapper {
     width: 100%;
     aspect-ratio: 16 / 9;
+    background: var(--color-accent);
+    overflow: hidden;
+  }
+
+  .category-card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .category-card__image-placeholder {
+    width: 100%;
+    height: 100%;
     background: var(--color-accent);
   }
 

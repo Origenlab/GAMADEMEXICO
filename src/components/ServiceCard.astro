@@ -1,17 +1,59 @@
 ---
+import { generateSrcset, getOptimizedImageUrl } from '../lib/images';
+
 // ServiceCard component - Card simple con título, descripción y botón
+// Actualizado con srcset para imágenes responsive
 interface Props {
   titulo: string;
   descripcion: string;
   enlace: string;
   id?: string;
+  imagen?: string;
 }
 
-const { titulo, descripcion, enlace, id } = Astro.props;
+const { titulo, descripcion, enlace, id, imagen } = Astro.props;
+
+// Configuración de srcset para diferentes viewports
+const imageWidths = [320, 480, 640, 768];
+const imageSizes = '(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw';
+
+// Generar srcset si hay imagen
+let srcset: string | undefined;
+let fallbackSrc: string | undefined;
+
+if (imagen) {
+  const responsive = generateSrcset(imagen, {
+    widths: imageWidths,
+    sizes: imageSizes,
+    quality: 78,
+  });
+  srcset = responsive.srcset;
+  fallbackSrc = getOptimizedImageUrl(imagen, {
+    width: 640,
+    quality: 78,
+    strip: 'all',
+  });
+}
 ---
 
 <article class="service-card" id={id}>
-  <div class="service-card__image"></div>
+  <div class="service-card__image-wrapper">
+    {imagen ? (
+      <img
+        src={fallbackSrc}
+        srcset={srcset}
+        sizes={imageSizes}
+        alt={titulo}
+        class="service-card__image"
+        loading="lazy"
+        decoding="async"
+        width="640"
+        height="360"
+      />
+    ) : (
+      <div class="service-card__image-placeholder"></div>
+    )}
+  </div>
   <div class="service-card__body">
     <h3 class="service-card__title">{titulo}</h3>
     <p class="service-card__desc" set:html={descripcion} />
@@ -29,9 +71,23 @@ const { titulo, descripcion, enlace, id } = Astro.props;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.04);
   }
 
-  .service-card__image {
+  .service-card__image-wrapper {
     width: 100%;
     aspect-ratio: 16 / 9;
+    background: var(--color-accent);
+    overflow: hidden;
+  }
+
+  .service-card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .service-card__image-placeholder {
+    width: 100%;
+    height: 100%;
     background: var(--color-accent);
   }
 

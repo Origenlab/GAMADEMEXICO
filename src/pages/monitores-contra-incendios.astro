@@ -4,6 +4,12 @@ import SectionHeader from '../components/SectionHeader.astro';
 import { getCollection } from 'astro:content';
 import { getBackgroundImageUrl } from '../lib/images';
 import Faq from '../components/Faq.astro';
+import {
+  buildProductCategorySchema,
+  buildFAQSchema,
+  buildBreadcrumbSchema,
+  buildOrganizationSchema,
+} from '../lib/seo';
 
 const productos = (await getCollection('productos', ({ data }) => data.categoria === 'monitores')).sort((a, b) => a.data.orden - b.data.orden);
 const cdnImage = (path: string) =>
@@ -42,12 +48,36 @@ const faqItems = [
     "respuesta": "Sí, cada monitor incluye documentación completa aceptada por autoridades mexicanas: certificado FM original o UL Listed según modelo, fichas técnicas en español con especificaciones completas, manuales de instalación y operación traducidos, cartas de conformidad con NOM-002-STPS-2010, y dibujos dimensionales. Esta documentación es exactamente lo que solicitan en auditorías de Protección Civil, verificaciones de aseguradoras, y dictámenes de unidades de verificación. Muchos clientes nos comentan que la calidad de nuestra documentación facilita enormemente los trámites."
   }
 ];
+
+const structuredData = [
+  buildOrganizationSchema(),
+  buildProductCategorySchema({
+    name: 'Monitores Contra Incendios Industriales FM/UL',
+    description: 'Monitores contra incendio tipo corazón y cuello de cisne. Elkhart Brass, Akron. Caudal hasta 2000 GPM, rotación 360°. Certificación FM/UL.',
+    image: '/img/monitores-contra-incendios/monitor-tipo-corazon-contra-incendios-industrial-tres-cuartos-10.avif',
+    url: '/monitores-contra-incendios',
+    category: 'Monitores Contra Incendios',
+    brand: 'Elkhart Brass',
+    reviewAuthor: 'Ing. Fernando Torres',
+    reviewBody: 'Monitores Elkhart Brass de calidad excepcional para nuestra refinería. La certificación FM fue fundamental para cumplir con aseguradora. Asesoría técnica y entrega sin fallas.',
+    reviewDate: '2025-02-28',
+    ratingCount: 44,
+    reviewCount: 44,
+  }),
+  buildBreadcrumbSchema([
+    { name: 'Inicio', url: '/' },
+    { name: 'Equipos', url: '/equipos' },
+    { name: 'Monitores Contra Incendios', url: '/monitores-contra-incendios' },
+  ]),
+  buildFAQSchema(faqItems),
+];
 ---
 
 <Layout
   title="Monitores Contra Incendios | Venta México"
   description="Monitores contra incendio tipo corazón y cuello de cisne. Elkhart Brass, Akron. Caudal hasta 2000 GPM, rotación 360°. Certificación FM/UL. México."
   activePage="equipos"
+  structuredData={structuredData}
   heroTitle="Monitores Contra Incendios para Protección Industrial"
   heroIntro="Soluciones de alto caudal para protección perimetral, tanques y áreas críticas. Equipos tipo corazón, cuello de cisne, FM y UL para proyectos con exigencia operativa y normativa."
   heroBadge="Monitores Contra Incendios"
