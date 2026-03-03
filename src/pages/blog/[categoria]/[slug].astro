@@ -14,6 +14,7 @@ import CotizacionForm from '../../../components/CotizacionForm.astro';
 import { buildArticleSchema, buildBreadcrumbSchema } from '../../../lib/seo';
 import { generateSrcset, getOptimizedImageUrl } from '../../../lib/images';
 import { CATEGORY_MAP } from '../../../lib/config';
+import { slugifyTag } from '../../../lib/blogHelpers';
 import {
   calculateReadingTime,
   getRelatedPosts,
@@ -258,7 +259,7 @@ const breadcrumbSchema = buildBreadcrumbSchema([
               <span class="blog-article__tags-label">Etiquetas:</span>
               <div class="blog-article__tags-list">
                 {post.data.tags.map((tag) => (
-                  <a href={`/blog/tag/${encodeURIComponent(tag)}`} class="blog-article__tag">
+                  <a href={`/blog/tag/${slugifyTag(tag)}`} class="blog-article__tag">
                     {tag}
                   </a>
                 ))}

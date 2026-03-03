@@ -34,9 +34,43 @@ export default defineConfig({
     integrations: [
           sitemap({
                   filter: (page) => !page.includes('/404'),
-                  changefreq: 'weekly',
-                  priority: 0.7,
                   lastmod: new Date(),
+                  serialize(item) {
+                        const url = item.url.replace('https://gamademexico.com', '');
+                        // Homepage — máxima prioridad
+                        if (url === '' || url === '/') {
+                              item.priority = 1.0;
+                              item.changefreq = 'daily';
+                        }
+                        // Páginas de categoría principal — alta prioridad
+                        else if (/^\/(monitores|boquillas|mangueras|valvulas|conexiones-herrajes|gabinetes-hidrantes)-contra-incendios$/.test(url)
+                              || url === '/equipos'
+                              || url === '/contacto') {
+                              item.priority = 0.9;
+                              item.changefreq = 'weekly';
+                        }
+                        // Subcategorías y servicios
+                        else if (url.startsWith('/gabinetes/') || url.startsWith('/servicios/')) {
+                              item.priority = 0.8;
+                              item.changefreq = 'weekly';
+                        }
+                        // Productos individuales y empresas certificadas
+                        else if (url.startsWith('/productos/') || url.startsWith('/empresas-certificadas')) {
+                              item.priority = 0.7;
+                              item.changefreq = 'monthly';
+                        }
+                        // Blog
+                        else if (url.startsWith('/blog')) {
+                              item.priority = 0.6;
+                              item.changefreq = 'monthly';
+                        }
+                        // Páginas legales y otras
+                        else {
+                              item.priority = 0.4;
+                              item.changefreq = 'yearly';
+                        }
+                        return item;
+                  },
           }),
         ],
 

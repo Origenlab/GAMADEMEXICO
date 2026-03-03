@@ -161,6 +161,21 @@ export function getPostsByCategory(posts: BlogPost[]): Map<string, BlogPost[]> {
 }
 
 // -----------------------------------------------------------------------------
+// Slugificar tags para URLs limpias (sin %20 ni caracteres especiales)
+// -----------------------------------------------------------------------------
+export function slugifyTag(tag: string): string {
+  return tag
+    .normalize('NFD')                    // Descomponer acentos
+    .replace(/[\u0300-\u036f]/g, '')     // Eliminar diacríticos
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9\s-]/g, '')       // Solo alfanuméricos, espacios y guiones
+    .replace(/[\s_]+/g, '-')            // Espacios → guiones
+    .replace(/-+/g, '-')               // Guiones múltiples → uno
+    .replace(/^-|-$/g, '');            // Sin guiones al inicio/final
+}
+
+// -----------------------------------------------------------------------------
 // Obtener todos los tags con conteo
 // -----------------------------------------------------------------------------
 export function getAllTags(posts: BlogPost[]): Map<string, number> {

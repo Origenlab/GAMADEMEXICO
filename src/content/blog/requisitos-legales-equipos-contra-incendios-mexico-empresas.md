@@ -9,7 +9,7 @@ autor:
   cargo: "Consultor Senior en Protección Contra Incendios y Cumplimiento Normativo"
 imagen: "/img/valvulas-contra-incendios/valvula-compuerta-osy-ranurada-contra-incendios-ul-fm-listed-11.avif"
 imagenAlt: "Válvula OS&Y certificada UL/FM - equipos contra incendios para cumplimiento normativo en México"
-tags: ["requisitos legales contra incendios", "equipos contra incendios en México", "cumplimiento Protección Civil", "NOM-002-STPS-2010", "RFSSST", "mantenimiento de equipos contra incendios", "bitácoras de seguridad", "capacitación de brigadas", "extintores para empresas", "gabinetes e hidrantes", "auditoría de seguridad industrial", "cumplimiento normativo empresarial"]
+tags: ["requisitos legales contra incendios", "equipos contra incendios en México", "cumplimiento protección civil", "NOM-002-STPS-2010", "RFSSST", "mantenimiento de equipos contra incendios", "bitácoras de seguridad", "capacitación de brigadas", "extintores para empresas", "gabinetes e hidrantes", "auditoría de seguridad industrial", "cumplimiento normativo empresarial"]
 destacado: true
 draft: false
 tiempoLectura: 24

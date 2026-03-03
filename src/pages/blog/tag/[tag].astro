@@ -7,7 +7,7 @@ import Layout from '../../../layouts/Base.astro';
 import { getCollection } from 'astro:content';
 import BlogGrid from '../../../components/blog/BlogGrid.astro';
 import BlogSidebar from '../../../components/blog/BlogSidebar.astro';
-import { getAllTags, CATEGORY_LABELS, CATEGORY_SLUGS } from '../../../lib/blogHelpers';
+import { getAllTags, CATEGORY_LABELS, CATEGORY_SLUGS, slugifyTag } from '../../../lib/blogHelpers';
 import { buildBreadcrumbSchema } from '../../../lib/seo';
 
 export async function getStaticPaths() {
@@ -18,7 +18,7 @@ export async function getStaticPaths() {
   posts.forEach((p) => p.data.tags?.forEach((t) => allTags.add(t)));
 
   return [...allTags].map((tag) => ({
-    params: { tag: encodeURIComponent(tag) },
+    params: { tag: slugifyTag(tag) },
     props: {
       tag,
       posts: posts
@@ -118,7 +118,7 @@ const sidebarInterestModules = dominantCategories.map((slug) => {
 const breadcrumbSchema = buildBreadcrumbSchema([
   { name: 'Inicio', url: '/' },
   { name: 'Blog', url: '/blog' },
-  { name: `Etiqueta: ${tag}`, url: `/blog/tag/${encodeURIComponent(tag)}` },
+  { name: `Etiqueta: ${tag}`, url: `/blog/tag/${slugifyTag(tag)}` },
 ]);
 ---
 

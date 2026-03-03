@@ -3,6 +3,8 @@
 // BlogTags - Nube de etiquetas del blog
 // =============================================================================
 
+import { slugifyTag } from '../../lib/blogHelpers';
+
 interface Props {
   tags: Map<string, number>;
   activeTag?: string;
@@ -24,7 +26,7 @@ const sortedTags = [...tags.entries()]
     <div class="blog-tags__cloud">
       {sortedTags.map(([tag, count]) => (
         <a
-          href={`/blog/tag/${encodeURIComponent(tag)}`}
+          href={`/blog/tag/${slugifyTag(tag)}`}
           class={`blog-tag ${activeTag === tag ? 'blog-tag--active' : ''}`}
         >
           {tag}

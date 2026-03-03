@@ -4,7 +4,7 @@
 // Sigue el patrón de ProductSidebar con estilos de subcategory.css
 // =============================================================================
 
-import { CATEGORY_LABELS, CATEGORY_SLUGS } from '../../lib/blogHelpers';
+import { CATEGORY_LABELS, CATEGORY_SLUGS, slugifyTag } from '../../lib/blogHelpers';
 import { CATEGORY_MAP, WHATSAPP_NUMBER } from '../../lib/config';
 
 interface TOCItem {
@@ -418,7 +418,7 @@ const resolvedInterestModules = interestModules.length > 0
         </div>
         <div class="sidebar-tags">
           {[...tags.entries()].slice(0, 12).map(([tag, count]) => (
-            <a href={`/blog/tag/${encodeURIComponent(tag)}`} class="sidebar-tags__item">
+            <a href={`/blog/tag/${slugifyTag(tag)}`} class="sidebar-tags__item">
               {tag}
               <span class="sidebar-tags__count">{count}</span>
             </a>
