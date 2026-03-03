@@ -12,7 +12,6 @@ latitud: 19.1147
 longitud: -98.3036
 telefono: "222 303 6000"
 email: "contacto@vw.com.mx"
-website: "https://www.vw.com.mx"
 tipoSistema:
   - rociadores-automaticos
   - red-hidrantes

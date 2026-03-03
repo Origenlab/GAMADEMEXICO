@@ -12,7 +12,6 @@ latitud: 19.4326
 longitud: -99.1514
 telefono: "55 5140 4100"
 email: "contacto@fiestaamericana.com"
-website: "https://www.fiestaamericana.com"
 tipoSistema:
   - rociadores-automaticos
   - red-hidrantes

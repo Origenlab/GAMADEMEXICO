@@ -12,7 +12,6 @@ latitud: 20.5442
 longitud: -101.1853
 telefono: "464 648 8000"
 email: "contacto@mazda.mx"
-website: "https://www.mazda.mx"
 tipoSistema:
   - rociadores-automaticos
   - red-hidrantes

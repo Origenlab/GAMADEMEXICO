@@ -12,7 +12,6 @@ latitud: 19.4262
 longitud: -99.1678
 telefono: "55 5283 2900"
 email: "info@torremayor.com.mx"
-website: "https://www.torremayor.com.mx"
 tipoSistema:
   - rociadores-automaticos
   - red-hidrantes

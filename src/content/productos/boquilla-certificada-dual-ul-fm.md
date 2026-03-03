@@ -85,7 +85,7 @@ Esta boquilla incluye el paquete de documentación más completo:
 | Certificación | URL de Verificación |
 |---------------|-------------------|
 | UL | [ul.com/database](https://ul.com) |
-| FM | [approvals.fmglobal.com](https://approvals.fmglobal.com) |
+| FM | [fmglobal.com](https://www.fmglobal.com) |
 | cUL | [ul.com/database](https://ul.com) |
 
 ## Por Qué Elegir Dual Certificación

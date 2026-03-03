@@ -12,7 +12,6 @@ latitud: 28.4867
 longitud: -100.7533
 telefono: "878 782 9000"
 email: "contacto@cbrands.com"
-website: "https://www.cbrands.com"
 tipoSistema:
   - rociadores-automaticos
   - red-hidrantes

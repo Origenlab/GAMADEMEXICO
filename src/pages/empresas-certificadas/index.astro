@@ -8,6 +8,14 @@ import CotizacionForm from '../../components/CotizacionForm.astro';
 import ArticulosRelevantes from '../../components/directorio/ArticulosRelevantes.astro';
 import { getCollection } from 'astro:content';
 
+// Helper para crear slugs sin acentos
+function createSlug(text: string): string {
+  return text.toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/\s+/g, '-');
+}
+
 // Obtener todas las empresas certificadas
 const empresas = await getCollection('empresasCertificadas');
 
@@ -100,8 +108,8 @@ const directorySchema = {
 ---
 
 <Layout
-  title="Empresas con Sistemas Contra Incendios Certificados | Directorio México"
-  description="Directorio de hoteles, restaurantes, oficinas y almacenes con sistemas contra incendios certificados en México. Verifica empresas protegidas por Gama de México."
+  title="Empresas Certificadas Contra Incendios en México | Directorio"
+  description="Directorio verificado de empresas con sistemas contra incendios certificados NFPA en México. Hoteles, industrias y oficinas protegidas. Consulta gratis."
   activePage="directorio"
   heroTitle="Directorio de Empresas con Sistemas Contra Incendios Certificados"
   heroIntro="Consulta empresas en México que cuentan con sistemas de protección contra incendios verificados. Hoteles, restaurantes, oficinas, almacenes y más con certificación vigente."
@@ -170,7 +178,7 @@ const directorySchema = {
           <h3 class="quick-links-card__title">Explorar por Estado</h3>
           <div class="quick-links-card__links">
             {Object.entries(empresasPorEstado).slice(0, 8).map(([estado, data]) => (
-              <a href={`/empresas-certificadas/estado/${estado.toLowerCase().replace(/ /g, '-')}`} class="quick-link">
+              <a href={`/empresas-certificadas/estado/${createSlug(estado)}`} class="quick-link">
                 <span class="quick-link__name">{estado}</span>
                 <span class="quick-link__count">{data.total}</span>
               </a>
@@ -287,10 +295,10 @@ const directorySchema = {
           <CategoryCard
             titulo={`Empresas Certificadas en ${estado}`}
             subtitulo={`${data.total} empresas con sistemas contra incendios verificados`}
-            enlace={`/empresas-certificadas/estado/${estado.toLowerCase().replace(/ /g, '-')}`}
+            enlace={`/empresas-certificadas/estado/${createSlug(estado)}`}
             subcategorias={Object.entries(data.ciudades).slice(0, 4).map(([ciudad, empresasEnCiudad]) => ({
               nombre: `${ciudad} (${empresasEnCiudad.length})`,
-              enlace: `/empresas-certificadas/estado/${estado.toLowerCase().replace(/ /g, '-')}/${ciudad.toLowerCase().replace(/ /g, '-')}`
+              enlace: `/empresas-certificadas/estado/${createSlug(estado)}/${createSlug(ciudad)}`
             }))}
           />
         ))}

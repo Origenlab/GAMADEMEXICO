@@ -11,7 +11,6 @@ codigoPostal: "10700"
 latitud: 19.3032
 longitud: -99.2196
 telefono: "55 5449 5500"
-website: "https://hospitalesangeles.com"
 tipoSistema:
   - rociadores-automaticos
   - red-hidrantes

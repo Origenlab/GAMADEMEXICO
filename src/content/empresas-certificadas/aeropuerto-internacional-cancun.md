@@ -12,7 +12,6 @@ latitud: 21.0365
 longitud: -86.8771
 telefono: "998 848 7200"
 email: "contacto@asur.com.mx"
-website: "https://www.cancunairport.com"
 tipoSistema:
   - rociadores-automaticos
   - red-hidrantes

@@ -12,7 +12,6 @@ latitud: 19.3592
 longitud: -99.2744
 telefono: "55 5292 0904"
 email: "info@centrosantafe.com.mx"
-website: "https://www.centrosantafe.com.mx"
 tipoSistema:
   - rociadores-automaticos
   - red-hidrantes

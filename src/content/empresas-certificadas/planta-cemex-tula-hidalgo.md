@@ -12,7 +12,6 @@ latitud: 20.0544
 longitud: -99.3411
 telefono: "773 732 0000"
 email: "contacto.tula@cemex.com"
-website: "https://www.cemex.com.mx"
 tipoSistema:
   - rociadores-automaticos
   - red-hidrantes

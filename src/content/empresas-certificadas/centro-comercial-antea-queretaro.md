@@ -12,7 +12,6 @@ latitud: 20.5833
 longitud: -100.3833
 telefono: "442 238 9100"
 email: "informes@anteaqro.com"
-website: "https://www.antea.mx"
 tipoSistema:
   - rociadores-automaticos
   - red-hidrantes

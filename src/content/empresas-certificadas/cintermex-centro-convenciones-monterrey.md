@@ -12,7 +12,6 @@ latitud: 25.6783
 longitud: -100.2842
 telefono: "81 8369 6969"
 email: "informes@cintermex.com.mx"
-website: "https://www.cintermex.com.mx"
 tipoSistema:
   - rociadores-automaticos
   - red-hidrantes

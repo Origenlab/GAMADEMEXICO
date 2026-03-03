@@ -12,7 +12,6 @@ latitud: 19.4331
 longitud: -99.1942
 telefono: "55 5545 4111"
 email: "reservaciones@pujol.com.mx"
-website: "https://www.pujol.com.mx"
 tipoSistema:
   - rociadores-automaticos
   - deteccion-alarma

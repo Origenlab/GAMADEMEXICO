@@ -12,7 +12,6 @@ latitud: 25.6528
 longitud: -100.3622
 telefono: "81 8888 0500"
 email: "contacto@tecsalud.mx"
-website: "https://www.tecsalud.mx/zambrano-hellion"
 tipoSistema:
   - rociadores-automaticos
   - red-hidrantes

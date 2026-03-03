@@ -12,7 +12,6 @@ latitud: 21.1320
 longitud: -86.7510
 telefono: "998 891 4300"
 email: "palace.lasamericas@riu.com"
-website: "https://www.riu.com/riu-palace-las-americas"
 tipoSistema:
   - rociadores-automaticos
   - red-hidrantes

@@ -16,7 +16,7 @@ draft: false
 tiempoLectura: 24
 productosRelacionados: ["manguera-millhose-2-5-30m", "manguera-blindex-premium-pemex", "manguera-forestal-kit-brigada", "manguera-succion-4-6m", "manguera-millhose-storz-2-5"]
 articulosRelacionados: ["como-elegir-manguera-contra-incendios", "lineamientos-monitor-contra-incendios-mexico", "manual-tecnico-monitores-contra-incendios-empresas"]
-canonical: "https://gamademexico.com/blog/mangueras/lineamientos-mangueras-contra-incendios-empresas-mexico"
+canonical: "https://gamademexico.com/blog/mangueras-contra-incendios/lineamientos-mangueras-contra-incendios-empresas-mexico"
 noindex: false
 ---
 

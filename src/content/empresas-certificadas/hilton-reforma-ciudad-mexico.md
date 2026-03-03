@@ -12,7 +12,6 @@ latitud: 19.4350
 longitud: -99.1456
 telefono: "55 5130 5300"
 email: "mexicocityreforma.info@hilton.com"
-website: "https://www.hilton.com/mexico-city-reforma"
 tipoSistema:
   - rociadores-automaticos
   - red-hidrantes

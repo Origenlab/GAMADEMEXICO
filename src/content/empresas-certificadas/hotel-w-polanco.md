@@ -12,7 +12,6 @@ latitud: 19.4315
 longitud: -99.2025
 telefono: "55 9138 1800"
 email: "w.mexicocity@whotels.com"
-website: "https://www.marriott.com/w-mexico-city"
 tipoSistema:
   - rociadores-automaticos
   - red-hidrantes

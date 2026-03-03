@@ -12,7 +12,6 @@ latitud: 19.7167
 longitud: -99.2167
 telefono: "800 288 6622"
 email: "fulfillment-mx@amazon.com"
-website: "https://www.amazon.com.mx"
 tipoSistema:
   - rociadores-automaticos
   - red-hidrantes

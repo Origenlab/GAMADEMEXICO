@@ -12,7 +12,6 @@ latitud: 19.3705
 longitud: -99.2636
 telefono: "55 5950 4000"
 email: "informes@ibero.mx"
-website: "https://www.ibero.mx"
 tipoSistema:
   - rociadores-automaticos
   - red-hidrantes

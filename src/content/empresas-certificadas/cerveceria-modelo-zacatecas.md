@@ -12,7 +12,6 @@ latitud: 22.9667
 longitud: -102.6500
 telefono: "492 923 1000"
 email: "contacto@modelorama.com"
-website: "https://www.grupomodelo.com"
 tipoSistema:
   - rociadores-automaticos
   - red-hidrantes

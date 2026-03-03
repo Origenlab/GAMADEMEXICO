@@ -12,7 +12,6 @@ latitud: 21.9444
 longitud: -100.8833
 telefono: "444 824 1000"
 email: "contacto@bmw.com.mx"
-website: "https://www.bmw.com.mx"
 tipoSistema:
   - rociadores-automaticos
   - red-hidrantes

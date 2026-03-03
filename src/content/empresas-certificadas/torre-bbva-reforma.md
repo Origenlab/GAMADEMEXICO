@@ -12,7 +12,6 @@ latitud: 19.4251
 longitud: -99.1689
 telefono: "55 5621 3434"
 email: "contacto@bbva.mx"
-website: "https://www.bbva.mx"
 tipoSistema:
   - rociadores-automaticos
   - red-hidrantes

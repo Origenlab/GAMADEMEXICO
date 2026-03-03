@@ -12,7 +12,6 @@ latitud: 21.0528
 longitud: -101.4467
 telefono: "472 722 5000"
 email: "contacto@gm.com"
-website: "https://www.gm.com.mx"
 tipoSistema:
   - rociadores-automaticos
   - red-hidrantes

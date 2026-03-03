@@ -12,7 +12,6 @@ latitud: 19.2983
 longitud: -99.1569
 telefono: "55 5424 7200"
 email: "atencion@medicasur.org.mx"
-website: "https://www.medicasur.com.mx"
 tipoSistema:
   - rociadores-automaticos
   - red-hidrantes

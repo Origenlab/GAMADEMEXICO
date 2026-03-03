@@ -12,7 +12,6 @@ latitud: 21.3500
 longitud: -101.9333
 telefono: "474 742 0100"
 email: "contacto@mx.nestle.com"
-website: "https://www.nestle.com.mx"
 tipoSistema:
   - rociadores-automaticos
   - red-hidrantes

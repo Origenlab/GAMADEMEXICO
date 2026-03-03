@@ -12,7 +12,6 @@ latitud: 20.4897
 longitud: -87.3514
 telefono: "984 877 4400"
 email: "reservaciones@grandvelas.com"
-website: "https://www.grandvelas.com"
 tipoSistema:
   - rociadores-automaticos
   - red-hidrantes

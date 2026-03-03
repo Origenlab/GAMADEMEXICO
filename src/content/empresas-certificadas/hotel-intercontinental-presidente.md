@@ -12,7 +12,6 @@ latitud: 19.4321
 longitud: -99.2012
 telefono: "55 5327 7700"
 email: "mexico@ihg.com"
-website: "https://www.ihg.com/intercontinental/mexico-city"
 tipoSistema:
   - rociadores-automaticos
   - red-hidrantes

@@ -72,7 +72,7 @@ La **boquilla FM Industrial 1725 de Akron Brass** está específicamente diseña
 **Para verificar la aprobación FM:**
 
 1. Localice el número FM grabado en el cuerpo
-2. Visite [approvals.fmglobal.com](https://approvals.fmglobal.com)
+2. Visite [fmglobal.com](https://www.fmglobal.com)
 3. Ingrese el número de aprobación
 4. Descargue el certificado actualizado
 

@@ -12,7 +12,6 @@ latitud: 19.4028
 longitud: -99.2806
 telefono: "55 5627 0210"
 email: "informes@anahuac.mx"
-website: "https://www.anahuac.mx/mexico"
 tipoSistema:
   - rociadores-automaticos
   - red-hidrantes

@@ -12,7 +12,6 @@ latitud: 20.5500
 longitud: -100.6833
 telefono: "461 616 2000"
 email: "contacto@toyota.com.mx"
-website: "https://www.toyota.mx"
 tipoSistema:
   - rociadores-automaticos
   - red-hidrantes

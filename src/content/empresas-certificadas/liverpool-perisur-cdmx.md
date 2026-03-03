@@ -12,7 +12,6 @@ latitud: 19.3050
 longitud: -99.1900
 telefono: "55 5326 6000"
 email: "atencionaclientes@liverpool.com.mx"
-website: "https://www.liverpool.com.mx"
 tipoSistema:
   - rociadores-automaticos
   - red-hidrantes

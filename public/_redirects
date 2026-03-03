@@ -7,3 +7,20 @@
 
 # www a non-www (Cloudflare lo maneja via DNS, pero por seguridad)
 # Nota: Este redirect se configura mejor en Cloudflare Dashboard > Rules
+
+# =============================================================================
+# URLs rotas con tráfico activo — Redirects 301
+# =============================================================================
+
+# Extintores (URL antigua que genera 404 — segunda página más visitada)
+/equipos-contra-incendios/extintores-de-incendios  /  301
+/equipos-contra-incendios/extintores-de-ince*  /  301
+
+# Variantes posibles de URLs antiguas de categorías
+/equipos-contra-incendios/valvulas*  /valvulas-contra-incendios  301
+/equipos-contra-incendios/mangueras*  /mangueras-contra-incendios  301
+/equipos-contra-incendios/monitores*  /monitores-contra-incendios  301
+/equipos-contra-incendios/boquillas*  /boquillas-contra-incendios  301
+/equipos-contra-incendios/conexiones*  /conexiones-herrajes-contra-incendios  301
+/equipos-contra-incendios/gabinetes*  /gabinetes-hidrantes-contra-incendios  301
+/equipos-contra-incendios  /equipos  301

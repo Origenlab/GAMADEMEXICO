@@ -12,7 +12,6 @@ latitud: 19.5089
 longitud: -99.2356
 telefono: "55 5374 7300"
 email: "servicio@costco.com.mx"
-website: "https://www.costco.com.mx"
 tipoSistema:
   - rociadores-automaticos
   - red-hidrantes

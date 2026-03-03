@@ -12,7 +12,6 @@ latitud: 25.7542
 longitud: -99.9667
 telefono: "81 8215 1000"
 email: "contacto@kia.com.mx"
-website: "https://www.kia.com/mx"
 tipoSistema:
   - rociadores-automaticos
   - red-hidrantes

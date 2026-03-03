@@ -12,7 +12,6 @@ latitud: 19.4284
 longitud: -99.1723
 telefono: "55 5228 1818"
 email: "stregis.mexicocity@stregis.com"
-website: "https://www.marriott.com/stregis-mexico-city"
 tipoSistema:
   - rociadores-automaticos
   - red-hidrantes

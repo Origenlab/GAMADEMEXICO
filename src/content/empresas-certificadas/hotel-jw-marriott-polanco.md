@@ -12,7 +12,6 @@ latitud: 19.4347
 longitud: -99.2001
 telefono: "55 5999 0000"
 email: "reservaciones@jwmarriott.mx"
-website: "https://www.marriott.com/jw-marriott-mexico-city"
 tipoSistema:
   - rociadores-automaticos
   - red-hidrantes

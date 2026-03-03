@@ -14,6 +14,10 @@ export async function getStaticPaths() {
 const { hidrante } = Astro.props;
 const { Content } = await render(hidrante);
 
+function createSlug(text: string): string {
+  return text.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\s+/g, '-');
+}
+
 // Mapeo de colores
 const colorLabels: Record<string, string> = {
   rojo: 'Rojo (< 500 GPM)',
@@ -88,7 +92,7 @@ const hidrantesCercanos = todosHidrantes
       <ol class="breadcrumb__list">
         <li class="breadcrumb__item"><a href="/">Inicio</a></li>
         <li class="breadcrumb__item"><a href="/hidrantes">Hidrantes</a></li>
-        <li class="breadcrumb__item"><a href={`/hidrantes/estado/${hidrante.data.estado.toLowerCase().replace(/ /g, '-')}`}>{hidrante.data.estado}</a></li>
+        <li class="breadcrumb__item"><a href={`/hidrantes/estado/${createSlug(hidrante.data.estado)}`}>{hidrante.data.estado}</a></li>
         <li class="breadcrumb__item breadcrumb__item--active">{hidrante.data.id}</li>
       </ol>
     </div>
@@ -319,7 +323,7 @@ const hidrantesCercanos = todosHidrantes
         </div>
 
         <div class="view-all">
-          <a href={`/hidrantes/estado/${hidrante.data.estado.toLowerCase().replace(/ /g, '-')}`} class="btn btn--outline">
+          <a href={`/hidrantes/estado/${createSlug(hidrante.data.estado)}`} class="btn btn--outline">
             Ver todos los hidrantes en {hidrante.data.estado}
           </a>
         </div>

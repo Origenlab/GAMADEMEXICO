@@ -85,8 +85,11 @@ const ciudadesDelEstado = [...new Set(
 )].slice(0, 5);
 
 // Slug del estado
-const estadoSlug = empresa.estado.toLowerCase().replace(/ /g, '-');
-const ciudadSlug = empresa.ciudad.toLowerCase().replace(/ /g, '-');
+function createSlug(text: string): string {
+  return text.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\s+/g, '-');
+}
+const estadoSlug = createSlug(empresa.estado);
+const ciudadSlug = createSlug(empresa.ciudad);
 ---
 
 <aside class="sidebar-directorio">
@@ -173,7 +176,7 @@ const ciudadSlug = empresa.ciudad.toLowerCase().replace(/ /g, '-');
   </div>
 
   <!-- Contacto -->
-  {(empresa.telefono || empresa.website || empresa.email) && (
+  {(empresa.telefono || empresa.email || empresa.website) && (
     <div class="sidebar-card">
       <h3 class="sidebar-card__title">Contacto</h3>
       <div class="contact-links">
@@ -235,7 +238,7 @@ const ciudadSlug = empresa.ciudad.toLowerCase().replace(/ /g, '-');
       <div class="ciudades-tags">
         {ciudadesDelEstado.map((ciudad) => (
           <a
-            href={`/empresas-certificadas/estado/${estadoSlug}/${ciudad.toLowerCase().replace(/ /g, '-')}`}
+            href={`/empresas-certificadas/estado/${estadoSlug}/${createSlug(ciudad)}`}
             class="ciudad-tag"
           >
             {ciudad}
@@ -287,7 +290,7 @@ const ciudadSlug = empresa.ciudad.toLowerCase().replace(/ /g, '-');
   <div class="sidebar-card sidebar-card--seo">
     <h3 class="sidebar-card__title">Enlaces Rápidos</h3>
     <div class="quick-links">
-      <a href="/blog/normativas">Normativas NFPA</a>
+      <a href="/blog">Blog Técnico</a>
       <a href="/equipos">Catálogo de Equipos</a>
       <a href="/servicios">Nuestros Servicios</a>
       <a href="/nosotros">Sobre Nosotros</a>

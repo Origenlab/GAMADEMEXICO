@@ -158,4 +158,4 @@ NFPA recomienda supervisión electrónica (interruptores de posición) para vál
 Las válvulas de bola pueden usarse en ciertas aplicaciones si cuentan con certificación UL/FM para servicio contra incendios. Sin embargo, NFPA generalmente prefiere válvulas OS&Y o de mariposa con indicador de posición visible para control principal porque ofrecen mejor verificación visual del estado.
 
 ![Válvula de compuerta OS&Y para sistemas contra incendios certificados](/img/valvulas-contra-incendios/valvula-compuerta-osy-ranurada-contra-incendios-fondo-blanco-01.avif)
-*Descripción técnica: [válvula OS&Y](/valvulas-contra-incendios/compuerta) con vástago exterior visible para verificación de posición en sistemas contra incendios.*
+*Descripción técnica: [válvula OS&Y](/valvulas/compuerta) con vástago exterior visible para verificación de posición en sistemas contra incendios.*

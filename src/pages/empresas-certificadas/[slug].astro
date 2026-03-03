@@ -175,7 +175,7 @@ const businessSchema = {
   },
   ...(empresa.data.telefono && { "telephone": empresa.data.telefono }),
   ...(empresa.data.email && { "email": empresa.data.email }),
-  ...(empresa.data.website && { "url": empresa.data.website })
+  "url": empresa.data.website || `https://gamademexico.com/empresas-certificadas/${empresa.data.slug}`
 };
 
 // Breadcrumb Schema
@@ -223,10 +223,14 @@ const formatDate = (dateStr: string) => {
       <strong>{empresa.data.direccion}</strong><br/>
       {empresa.data.colonia}, {empresa.data.ciudad}, {empresa.data.estado} C.P. {empresa.data.codigoPostal}
     </div>
-    {(empresa.data.telefono || empresa.data.website) && (
+    {empresa.data.telefono && (
       <div class="empresa-contacto">
-        {empresa.data.telefono && <a href={`tel:${empresa.data.telefono}`}>{empresa.data.telefono}</a>}
-        {empresa.data.website && <a href={empresa.data.website} target="_blank" rel="noopener noreferrer">Sitio web</a>}
+        <a href={`tel:${empresa.data.telefono}`}>{empresa.data.telefono}</a>
+      </div>
+    )}
+    {empresa.data.website && (
+      <div class="empresa-contacto">
+        <a href={empresa.data.website} target="_blank" rel="noopener noreferrer">Sitio web</a>
       </div>
     )}
   </Fragment>

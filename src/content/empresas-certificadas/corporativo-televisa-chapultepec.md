@@ -12,7 +12,6 @@ latitud: 19.4147
 longitud: -99.1528
 telefono: "55 5261 2000"
 email: "contacto@televisa.com"
-website: "https://www.televisa.com"
 tipoSistema:
   - rociadores-automaticos
   - red-hidrantes

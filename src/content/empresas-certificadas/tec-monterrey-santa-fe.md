@@ -12,7 +12,6 @@ latitud: 19.3592
 longitud: -99.2753
 telefono: "55 9177 8000"
 email: "admisiones.sf@tec.mx"
-website: "https://tec.mx/es/santa-fe"
 tipoSistema:
   - rociadores-automaticos
   - red-hidrantes

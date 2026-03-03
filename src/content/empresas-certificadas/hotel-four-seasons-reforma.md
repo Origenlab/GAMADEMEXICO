@@ -12,7 +12,6 @@ latitud: 19.4267
 longitud: -99.1721
 telefono: "55 5230 1818"
 email: "reservations.mex@fourseasons.com"
-website: "https://www.fourseasons.com/mexico"
 tipoSistema:
   - rociadores-automaticos
   - red-hidrantes

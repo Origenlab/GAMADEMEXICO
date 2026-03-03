@@ -12,7 +12,6 @@ latitud: 20.5218
 longitud: -103.3111
 telefono: "33 3688 5248"
 email: "atencion@aeropuertogdl.com.mx"
-website: "https://www.aeropuertogdl.com.mx"
 tipoSistema:
   - rociadores-automaticos
   - red-hidrantes

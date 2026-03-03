@@ -12,7 +12,6 @@ latitud: 19.4889
 longitud: -99.1456
 telefono: "55 5268 5000"
 email: "cedis@liverpool.com.mx"
-website: "https://www.liverpool.com.mx"
 tipoSistema:
   - rociadores-automaticos
   - red-hidrantes

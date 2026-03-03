@@ -12,7 +12,6 @@ latitud: 20.6889
 longitud: -103.3947
 telefono: "33 3669 0222"
 email: "atencion@hospitalsanjavier.com.mx"
-website: "https://www.hospitalsanjavier.com.mx"
 tipoSistema:
   - rociadores-automaticos
   - red-hidrantes

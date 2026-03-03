@@ -12,7 +12,6 @@ latitud: 20.0667
 longitud: -99.3500
 telefono: "773 732 2000"
 email: "atencion.ciudadana@pemex.com"
-website: "https://www.pemex.com"
 tipoSistema:
   - rociadores-automaticos
   - red-hidrantes

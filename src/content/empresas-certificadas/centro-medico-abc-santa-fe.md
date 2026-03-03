@@ -12,7 +12,6 @@ latitud: 19.3642
 longitud: -99.2712
 telefono: "55 1103 1600"
 email: "atencion@abchospital.com"
-website: "https://www.abchospital.com"
 tipoSistema:
   - rociadores-automaticos
   - red-hidrantes

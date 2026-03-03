@@ -12,7 +12,6 @@ latitud: 19.4325
 longitud: -99.1978
 telefono: "55 5280 1660"
 email: "reservaciones@quintonil.com"
-website: "https://www.quintonil.com"
 tipoSistema:
   - rociadores-automaticos
   - deteccion-alarma

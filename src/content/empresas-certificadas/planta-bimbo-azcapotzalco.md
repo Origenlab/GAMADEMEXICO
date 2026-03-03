@@ -12,7 +12,6 @@ latitud: 19.4812
 longitud: -99.1634
 telefono: "55 5265 8000"
 email: "contacto@grupobimbo.com"
-website: "https://www.grupobimbo.com"
 tipoSistema:
   - rociadores-automaticos
   - red-hidrantes

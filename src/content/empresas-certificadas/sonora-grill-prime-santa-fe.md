@@ -12,7 +12,6 @@ latitud: 19.3650
 longitud: -99.2610
 telefono: "55 2167 2400"
 email: "santafe@sonoragrill.com.mx"
-website: "https://www.sonoragrill.com.mx"
 tipoSistema:
   - rociadores-automaticos
   - deteccion-alarma

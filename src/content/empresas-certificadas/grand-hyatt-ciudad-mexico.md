@@ -12,7 +12,6 @@ latitud: 19.4285
 longitud: -99.2010
 telefono: "55 1083 1234"
 email: "mexicocity.grand@hyatt.com"
-website: "https://www.hyatt.com/grand-hyatt/mexgh-grand-hyatt-ciudad-de-mexico"
 tipoSistema:
   - rociadores-automaticos
   - red-hidrantes
