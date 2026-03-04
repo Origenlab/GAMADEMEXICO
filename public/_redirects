@@ -13,10 +13,12 @@
 # =============================================================================
 # CATEGORÍA 1 — Blog Tags con %20 (99 errores)
 # Causa: encodeURIComponent generaba URLs con %20 en vez de guiones
-# Solución: Código corregido con slugifyTag(). Redirect catch-all para
-# URLs antiguas que Google ya indexó con %20
+# Solución: Código corregido con slugifyTag() en 5 archivos.
+# Las URLs nuevas usan guiones: /blog/tag/proteccion-contra-incendios
+# Las URLs viejas con %20 darán 404 temporalmente hasta que Google
+# re-indexe las nuevas URLs (a través de los links internos corregidos).
+# NO usar catch-all /blog/tag/* porque bloquearía las páginas nuevas.
 # =============================================================================
-/blog/tag/*  /blog  301
 
 # =============================================================================
 # CATEGORÍA 2 — Productos de Boquillas inexistentes (20 errores)
