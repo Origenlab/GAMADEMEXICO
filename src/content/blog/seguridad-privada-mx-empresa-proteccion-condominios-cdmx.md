@@ -64,7 +64,7 @@ El servicio insignia de la empresa incluye:
 - Uniformes e identificación oficial
 - Radios de comunicación
 - Linternas y equipo de seguridad
-- Acceso a [extintores certificados](/extintores-certificados) en puntos estratégicos
+- Acceso a [extintores certificados](/equipos) en puntos estratégicos
 
 ### 2. Control de Accesos
 
@@ -372,7 +372,7 @@ La empresa cuenta con un equipo directivo con amplia experiencia en seguridad:
 Seguridad Privada MX entiende que la protección de una comunidad va más allá de la vigilancia. Por ello, han establecido protocolos que incluyen:
 
 **Capacitación del personal:**
-- Uso de [extintores certificados](/extintores-certificados)
+- Uso de [extintores certificados](/equipos)
 - Operación de [mangueras contra incendios](/mangueras-contra-incendios)
 - Activación de alarmas
 - Coordinación de evacuaciones
@@ -380,7 +380,7 @@ Seguridad Privada MX entiende que la protección de una comunidad va más allá 
 **Verificación de equipos:**
 - Revisión mensual de extintores
 - Inspección de [gabinetes hidrantes](/gabinetes-hidrantes-contra-incendios)
-- Verificación de [conexiones siamesas](/tomas-siamesas-bomberos)
+- Verificación de [conexiones siamesas](/conexiones/siamesa)
 - Pruebas de alarmas
 
 **Coordinación con proveedores:**

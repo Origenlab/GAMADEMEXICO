@@ -107,7 +107,7 @@ Para facilitar el proceso con aseguradoras:
 
 - [Monitor FM Approved](/productos/monitor-certificado-fm) - Alternativa con certificación FM
 - [Monitor UL Listed Fixed Flow](/productos/monitor-ul-listed-fixed-flow-foam) - Con sistema de espuma
-- [Válvulas UL Listed](/productos/valvulas-ul-listed) - Accesorios certificados
+- [Válvulas UL Listed](/valvulas-contra-incendios) - Accesorios certificados
 
 ---
 

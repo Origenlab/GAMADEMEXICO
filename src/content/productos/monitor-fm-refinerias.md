@@ -99,7 +99,7 @@ Para operadores de refinerías, la certificación FM proporciona:
 
 - [Monitor FM Alto Caudal](/productos/monitor-fm-alto-caudal) - Para áreas de mayor riesgo
 - [Monitor FM Acero Inoxidable](/productos/monitor-fm-acero-inoxidable) - Ambientes corrosivos
-- [Concentrado AFFF](/productos/espuma-afff) - Para hidrocarburos
+- [Concentrado AFFF](/boquillas-contra-incendios) - Para hidrocarburos
 
 ---
 

@@ -103,7 +103,7 @@ El programa de mantenimiento de LGA garantiza operatividad continua:
 
 **Mantenimiento de sistemas:**
 - [Gabinetes hidrantes](/gabinetes-hidrantes-contra-incendios)
-- [Conexiones siamesas](/tomas-siamesas-bomberos)
+- [Conexiones siamesas](/conexiones/siamesa)
 - [Válvulas de control](/valvulas-contra-incendios)
 - Sistemas de rociadores
 
@@ -150,7 +150,7 @@ LGA ofrece una línea completa de extintores para diferentes tipos de fuego:
 - Extintores químicos húmedos
 - Obligatorios en cocinas comerciales
 
-Todos los extintores cumplen con [especificaciones similares](/extintores-certificados) a los que comercializa Gama de México.
+Todos los extintores cumplen con [especificaciones similares](/equipos) a los que comercializa Gama de México.
 
 ### Monitores Contra Incendios
 
@@ -195,7 +195,7 @@ Estos equipos son compatibles con los [monitores certificados](/monitores-contra
 | Succión | Toma de agua | 4" - 6" |
 | Forestales | Brigadas | 1" |
 
-Las mangueras son compatibles con los [acoples y conexiones](/acoples-conexiones-contra-incendios) que distribuye Gama de México.
+Las mangueras son compatibles con los [acoples y conexiones](/conexiones-herrajes-contra-incendios) que distribuye Gama de México.
 
 ### Señalización de Emergencia
 
@@ -211,7 +211,7 @@ Las mangueras son compatibles con los [acoples y conexiones](/acoples-conexiones
 - Durabilidad industrial
 - Instalación incluida
 
-LGA recomienda complementar con la [señalización certificada](/senalizacion-seguridad-industrial) para cumplir con Protección Civil.
+LGA recomienda complementar con la [señalización certificada](/equipos) para cumplir con Protección Civil.
 
 ---
 
@@ -377,7 +377,7 @@ LGA posiciona la seguridad contra incendios como **ventaja comercial** para sus 
 - Rociadores en todas las habitaciones
 - [Gabinetes en cada piso](/gabinetes-hidrantes-contra-incendios)
 - Extintores clase K en cocinas
-- [Señalización completa](/senalizacion-seguridad-industrial)
+- [Señalización completa](/equipos)
 - Capacitación a personal
 
 **Resultados:**

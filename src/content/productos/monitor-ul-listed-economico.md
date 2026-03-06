@@ -103,8 +103,8 @@ Cada monitor UL Listed económico incluye:
 ## Productos Relacionados
 
 - [Monitor UL Listed Estándar](/productos/monitor-ul-listed) - Versión completa
-- [Boquillas Industriales](/productos/boquillas-industriales) - Para el monitor
-- [Kit de Instalación](/productos/kit-instalacion-monitor) - Accesorios
+- [Boquillas Industriales](/boquillas-contra-incendios) - Para el monitor
+- [Kit de Instalación](/monitores-contra-incendios) - Accesorios
 
 ---
 

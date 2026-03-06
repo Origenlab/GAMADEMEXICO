@@ -127,7 +127,7 @@ Aunque el detalle exacto cambia por giro y localidad, esta es la documentación 
 
 Si quieres que tu carpeta de cumplimiento funcione en la práctica, usa un criterio simple: cada documento debe responder tres preguntas: **qué se hizo, cuándo se hizo y quién lo validó**.
 
-![Boquilla certificada para sistemas contra incendios industriales](/img/boquillas-contra-incendios/boquilla-turbo-jet-akron-1720-detalle.avif)
+![Boquilla certificada para sistemas contra incendios industriales](/img/productos/boquilla-turbo-jet-akron-1720-detalle.avif)
 *Descripción técnica: las [boquillas contra incendios certificadas](/boquillas-contra-incendios) son componentes esenciales que deben documentarse en el expediente de cumplimiento.*
 
 ---
@@ -148,7 +148,7 @@ En proyectos multisitio, conviene estandarizar tus criterios técnicos desde un 
 
 Cuando tu operación requiere ataque inicial con mayor autonomía, los gabinetes e hidrantes deben integrarse con mangueras y accesorios compatibles, presión disponible y personal capacitado. Aquí no basta con “instalar”; necesitas validar desempeño en condiciones de operación y mantener evidencia de servicio.
 
-![Sistema de mangueras contra incendios para respuesta inicial en entorno industrial](/img/mangueras-contra-incendios/manguera-blindex-2-5-15m-modular.avif)
+![Sistema de mangueras contra incendios para respuesta inicial en entorno industrial](/img/productos/manguera-blindex-2-5-15m-modular.avif)
 *Descripción técnica: sistema de mangueras para respuesta inicial con enfoque en disponibilidad operativa y trazabilidad documental.*
 
 ### Detección, alarma y sistemas complementarios
@@ -178,7 +178,7 @@ Para simulacros y entrenamiento, la NOM-002-STPS-2010 marca una referencia míni
 
 También conviene profesionalizar el control de proveedores: pide alcance técnico de servicio, evidencias de ejecución, trazabilidad de refacciones y formato estandarizado de reportes. Esto eleva la calidad técnica y fortalece tu defensa documental.
 
-![Manguera contra incendios profesional para sistemas de gabinetes e hidrantes](/img/mangueras-contra-incendios/manguera-blindex-1-5-15m-frontal.avif)
+![Manguera contra incendios profesional para sistemas de gabinetes e hidrantes](/img/productos/manguera-blindex-1-5-15m-frontal.avif)
 *Descripción técnica: las [mangueras contra incendios certificadas](/mangueras-contra-incendios) requieren verificación periódica y registro de mantenimiento en bitácoras.*
 
 ---

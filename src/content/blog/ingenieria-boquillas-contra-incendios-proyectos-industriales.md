@@ -7,9 +7,9 @@ categoria: "boquillas"
 autor:
   nombre: "Ing. Alejandro Méndez"
   cargo: "Consultor Senior en Ingeniería de Protección Contra Incendios"
-imagen: "/img/boquillas-contra-incendios/boquilla-industrial-contra-incendios-ambiente-industrial-08.avif"
+imagen: "/img/productos/boquilla-industrial-contra-incendios-ambiente-industrial-08.avif"
 imagenAlt: "Boquilla industrial contra incendios instalada en entorno de proceso"
-imagenOg: "/img/boquillas-contra-incendios/boquilla-tipo-pistola-contra-incendios-nfpa-certificada-31.avif"
+imagenOg: "/img/productos/boquilla-tipo-pistola-contra-incendios-nfpa-certificada-31.avif"
 tags: ["boquillas contra incendios", "ingeniería contra incendios", "boquillas industriales", "NFPA 1964", "sistemas contra incendios", "especificación técnica", "brigadas industriales", "NOM-002-STPS-2010"]
 destacado: true
 draft: false
@@ -26,7 +26,7 @@ Muchas empresas cometen un error estructural: comprar boquillas por disponibilid
 
 Este artículo está diseñado para directores de planta, líderes EHS, gerencias de mantenimiento, compras técnicas e ingenierías de proyecto que requieren un criterio de especificación profesional para **boquillas contra incendios**. Incluye lineamientos prácticos para diseño, integración con brigadas y sistemas fijos, programa de pruebas, mantenimiento y control documental para operaciones en México.
 
-![Boquilla industrial en entorno de proceso con exigencia técnica](/img/boquillas-contra-incendios/boquilla-industrial-contra-incendios-ambiente-industrial-08.avif)
+![Boquilla industrial en entorno de proceso con exigencia técnica](/img/productos/boquilla-industrial-contra-incendios-ambiente-industrial-08.avif)
 *Descripción técnica: Boquilla industrial en aplicación de alto desempeño para cobertura de áreas críticas de proceso.*
 
 ---
@@ -113,7 +113,7 @@ En brigadas industriales, la boquilla correcta debe permitir ejecución rápida 
 
 Estos errores reducen efectividad táctica y elevan el riesgo de fallo humano en emergencia.
 
-![Boquilla certificada para brigada y cumplimiento técnico](/img/boquillas-contra-incendios/boquilla-tipo-pistola-contra-incendios-nfpa-certificada-31.avif)
+![Boquilla certificada para brigada y cumplimiento técnico](/img/productos/boquilla-tipo-pistola-contra-incendios-nfpa-certificada-31.avif)
 *Descripción técnica: Boquilla para brigadas con enfoque en control operativo, repetibilidad de descarga y trazabilidad técnica.*
 
 ---
@@ -243,7 +243,7 @@ Un programa de mantenimiento eficaz debe priorizar criticidad operativa, no solo
 
 La reposición o reparación debe liberarse solo con evidencia de prueba posterior y registro formal.
 
-![Boquilla turbo jet de alto desempeño para pruebas y operación](/img/boquillas-contra-incendios/boquilla-turbo-jet-contra-incendios-presion-constante-03.avif)
+![Boquilla turbo jet de alto desempeño para pruebas y operación](/img/productos/boquilla-turbo-jet-contra-incendios-presion-constante-03.avif)
 *Descripción técnica: Boquilla turbo jet en configuración de alto desempeño para aplicaciones de cobertura exigente.*
 
 ---
@@ -301,7 +301,7 @@ La **ingeniería de boquillas contra incendios** es una disciplina de desempeño
 
 Si tu organización está por actualizar su infraestructura o cerrar un proyecto nuevo, la recomendación es clara: definir boquillas con criterio de ingeniería integral, no por inercia comercial. Ese cambio de enfoque marca la diferencia entre cumplir en papel y responder con eficacia en campo.
 
-![Boquilla industrial con vista técnica de componentes](/img/boquillas-contra-incendios/boquilla-industrial-contra-incendios-vista-explosionada-11.avif)
+![Boquilla industrial con vista técnica de componentes](/img/productos/boquilla-industrial-contra-incendios-vista-explosionada-11.avif)
 *Descripción técnica: Vista de componentes clave para análisis de mantenibilidad y confiabilidad de boquilla industrial.*
 
 ---

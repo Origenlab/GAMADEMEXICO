@@ -98,7 +98,7 @@ Cuando surgen fallas, SAELES responde con:
 - Comunicación con autoridades si es necesario
 - Coordinación con personal de seguridad del edificio
 
-En situaciones de emergencia, es crucial que los edificios cuenten con [extintores certificados](/extintores-certificados) y [mangueras contra incendios](/mangueras-contra-incendios) operativas.
+En situaciones de emergencia, es crucial que los edificios cuenten con [extintores certificados](/equipos) y [mangueras contra incendios](/mangueras-contra-incendios) operativas.
 
 ### 4. Modernización de Equipos
 
@@ -439,7 +439,7 @@ SAELES mantiene inventario de refacciones para las principales marcas:
 SAELES entiende que la seguridad en edificios va más allá de los elevadores. Por ello, durante sus intervenciones, los técnicos:
 
 **Verifican:**
-- Estado de [extintores](/extintores-certificados) en cuartos de máquinas
+- Estado de [extintores](/equipos) en cuartos de máquinas
 - Accesibilidad de [gabinetes de mangueras](/gabinetes-hidrantes-contra-incendios)
 - Funcionamiento de alarmas contra incendios
 - Señalización de evacuación

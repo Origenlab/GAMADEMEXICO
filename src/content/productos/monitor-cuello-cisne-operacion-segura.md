@@ -84,7 +84,7 @@ Este monitor cumple con los requerimientos de seguridad laboral aplicables:
 ## Productos Relacionados
 
 - [Monitor Tipo Corazón Doble Cremallera](/productos/monitor-corazon-doble-cremallera) - Control preciso con dos volantes
-- [Equipo de Protección para Brigadas](/productos/equipo-proteccion-brigadas) - EPP complementario
+- [Equipo de Protección para Brigadas](/equipos) - EPP complementario
 - [Monitor Certificado FM](/productos/monitor-certificado-fm) - Para instalaciones con requerimientos especiales
 
 ---

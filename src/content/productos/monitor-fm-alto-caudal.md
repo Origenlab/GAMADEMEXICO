@@ -94,7 +94,7 @@ Para lograr el rendimiento especificado:
 
 - [Monitor ST611 FM Approved](/productos/monitor-st611-fm-approved) - Versión estándar 1,250 GPM
 - [Monitor Certificado FM](/productos/monitor-certificado-fm) - Información general FM
-- [Boquillas de Alto Caudal](/productos/boquillas-alto-caudal) - Hasta 2,000 GPM
+- [Boquillas de Alto Caudal](/boquillas-contra-incendios) - Hasta 2,000 GPM
 
 ---
 

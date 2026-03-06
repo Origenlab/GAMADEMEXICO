@@ -94,7 +94,7 @@ El monitor tipo corazón se integra con:
 
 - [Monitor Cuello de Cisne Petroquímica](/productos/monitor-cuello-cisne-petroquimica) - Para enfriamiento de esferas
 - [Monitor Certificado FM](/productos/monitor-certificado-fm) - Para requerimientos de aseguradoras
-- [Concentrado de Espuma AFFF](/productos/espuma-afff) - Para incendios de hidrocarburos
+- [Concentrado de Espuma AFFF](/boquillas-contra-incendios) - Para incendios de hidrocarburos
 
 ---
 

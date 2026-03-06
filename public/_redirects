@@ -1,70 +1,81 @@
 # =============================================================================
 # Gama de Mexico — Redirects para Cloudflare Pages
-# Actualizado: 2026-03-03
-# Total de errores 404 corregidos: 164
+# Actualizado: 2026-03-04
+# Errores 404 corregidos: 164 originales + 66 del segundo crawl
 # =============================================================================
 
 # Redirect index.html a raiz
 /index.html  /  301
 
-# www a non-www (Cloudflare lo maneja via DNS, pero por seguridad)
-# Nota: Este redirect se configura mejor en Cloudflare Dashboard > Rules
-
 # =============================================================================
 # CATEGORÍA 1 — Blog Tags con %20 (99 errores)
-# Causa: encodeURIComponent generaba URLs con %20 en vez de guiones
 # Solución: Código corregido con slugifyTag() en 5 archivos.
-# Las URLs nuevas usan guiones: /blog/tag/proteccion-contra-incendios
-# Las URLs viejas con %20 darán 404 temporalmente hasta que Google
-# re-indexe las nuevas URLs (a través de los links internos corregidos).
 # NO usar catch-all /blog/tag/* porque bloquearía las páginas nuevas.
 # =============================================================================
+# /blog/tag/ sin slug → al blog principal
+/blog/tag/  /blog  301
 
 # =============================================================================
-# CATEGORÍA 2 — Productos de Boquillas inexistentes (20 errores)
-# Causa: URLs antiguas /boquillas-contra-incendios/[slug] ya no existen
-# Los productos ahora viven en /productos/[slug]
-# Redirect al listado de categoría
+# GRUPO A — Boquillas contra incendios (20 errores)
+# URLs antiguas /boquillas-contra-incendios/[slug]
+# Productos que EXISTEN → redirigen a /productos/[slug]
+# Productos que NO existen → redirigen a categoría
+# En Cloudflare Pages, reglas estáticas siempre ganan sobre dinámicas (*)
 # =============================================================================
+# Productos CON página real en /productos/
+/boquillas-contra-incendios/boquilla-turbo-jet-akron-1720  /productos/boquilla-turbo-jet-akron-1720  301
+/boquillas-contra-incendios/boquilla-turbo-jet-master-stream-500-1250  /productos/boquilla-turbo-jet-master-stream-500-1250  301
+/boquillas-contra-incendios/boquilla-certificada-dual-ul-fm  /productos/boquilla-certificada-dual-ul-fm  301
+/boquillas-contra-incendios/boquilla-certificada-pemex-petroleo  /productos/boquilla-certificada-pemex-petroleo  301
+/boquillas-contra-incendios/boquilla-turbo-jet  /productos/boquilla-turbo-jet  301
+/boquillas-contra-incendios/boquilla-industrial-bronce-marino-offshore  /productos/boquilla-industrial-bronce-marino-offshore  301
+/boquillas-contra-incendios/boquilla-tipo-pistola  /productos/boquilla-tipo-pistola  301
+/boquillas-contra-incendios/boquilla-certificada-nom-mexicana  /productos/boquilla-certificada-nom-mexicana  301
+/boquillas-contra-incendios/boquilla-pistola-alta-presion-200-psi  /productos/boquilla-pistola-alta-presion-200-psi  301
+/boquillas-contra-incendios/boquilla-certificada-nfpa-1964-bomberos  /productos/boquilla-certificada-nfpa-1964-bomberos  301
+/boquillas-contra-incendios/boquilla-certificada  /productos/boquilla-certificada  301
+/boquillas-contra-incendios/boquilla-industrial-antideflagrante-atex  /productos/boquilla-industrial-antideflagrante-atex  301
+/boquillas-contra-incendios/boquilla-industrial-alta-temperatura  /productos/boquilla-industrial-alta-temperatura  301
+/boquillas-contra-incendios/boquilla-industrial-acero-inoxidable  /productos/boquilla-industrial-acero-inoxidable  301
+/boquillas-contra-incendios/boquilla-pistola-nacional-economica  /productos/boquilla-pistola-nacional-economica  301
+/boquillas-contra-incendios/boquilla-industrial  /productos/boquilla-industrial  301
 /boquillas-contra-incendios/boquilla-industrial-mineria-pesada  /productos/boquilla-industrial-mineria-pesada  301
 /boquillas-contra-incendios/boquilla-industrial-espuma-afff  /productos/boquilla-industrial-espuma-afff  301
-/boquillas-contra-incendios/boquilla-pistola-nacional-economica  /productos/boquilla-pistola-nacional-economica  301
-/boquillas-contra-incendios/boquilla-certificada-nom-mexicana  /productos/boquilla-certificada-nom-mexicana  301
-/boquillas-contra-incendios/boquilla-industrial-bronce-marino-offshore  /productos/boquilla-industrial-bronce-marino-offshore  301
-# Productos que no existen como contenido → redirigen a categoría
+# Productos SIN página real → categoría
 /boquillas-contra-incendios/boquilla-industrial-alta-expansion  /boquillas-contra-incendios  301
+/boquillas-contra-incendios/boquilla-agua-bruma  /boquillas-contra-incendios  301
 /boquillas-contra-incendios/boquilla-foam-maker-espuma  /boquillas-contra-incendios  301
 /boquillas-contra-incendios/boquilla-largo-alcance-industrial  /boquillas-contra-incendios  301
 /boquillas-contra-incendios/boquilla-rociador-industrial  /boquillas-contra-incendios  301
-/boquillas-contra-incendios/boquilla-agua-bruma  /boquillas-contra-incendios  301
 # Catch-all para cualquier otra boquilla antigua
 /boquillas-contra-incendios/*  /boquillas-contra-incendios  301
 
 # =============================================================================
-# CATEGORÍA 3 — Productos de Mangueras inexistentes (14 errores)
-# Causa: URLs antiguas /mangueras-contra-incendios/[slug]
-# Los productos ahora viven en /productos/[slug]
+# GRUPO B — Mangueras contra incendios (14 errores)
+# URLs antiguas /mangueras-contra-incendios/[slug]
+# Todos los productos de este grupo EXISTEN como contenido
 # =============================================================================
-/mangueras-contra-incendios/manguera-succion-nbr-hidrocarburos  /productos/manguera-succion-nbr-hidrocarburos  301
-/mangueras-contra-incendios/manguera-millhose-2-5-30m  /productos/manguera-millhose-2-5-30m  301
 /mangueras-contra-incendios/manguera-blindex-afff-espuma  /productos/manguera-blindex-afff-espuma  301
-/mangueras-contra-incendios/manguera-millhose  /productos/manguera-millhose  301
-/mangueras-contra-incendios/manguera-succion-4-6m  /productos/manguera-succion-4-6m  301
-/mangueras-contra-incendios/manguera-blindex-premium-pemex  /productos/manguera-blindex-premium-pemex  301
-/mangueras-contra-incendios/manguera-forestal-amarilla-alta-vis  /productos/manguera-forestal-amarilla-alta-vis  301
-/mangueras-contra-incendios/manguera-succion  /productos/manguera-succion  301
-/mangueras-contra-incendios/manguera-millhose-1-5-15m  /productos/manguera-millhose-1-5-15m  301
 /mangueras-contra-incendios/manguera-forestal-kit-brigada  /productos/manguera-forestal-kit-brigada  301
-/mangueras-contra-incendios/manguera-forestal  /productos/manguera-forestal  301
+/mangueras-contra-incendios/manguera-blindex-2-5-30m  /productos/manguera-blindex-2-5-30m  301
+/mangueras-contra-incendios/manguera-millhose-1-5-15m  /productos/manguera-millhose-1-5-15m  301
+/mangueras-contra-incendios/manguera-forestal-amarilla-alta-vis  /productos/manguera-forestal-amarilla-alta-vis  301
+/mangueras-contra-incendios/manguera-millhose-2-5-30m  /productos/manguera-millhose-2-5-30m  301
 /mangueras-contra-incendios/manguera-blindex  /productos/manguera-blindex  301
+/mangueras-contra-incendios/manguera-blindex-premium-pemex  /productos/manguera-blindex-premium-pemex  301
+/mangueras-contra-incendios/manguera-forestal  /productos/manguera-forestal  301
+/mangueras-contra-incendios/manguera-millhose  /productos/manguera-millhose  301
+/mangueras-contra-incendios/manguera-succion-nbr-hidrocarburos  /productos/manguera-succion-nbr-hidrocarburos  301
+/mangueras-contra-incendios/manguera-succion-4-6m  /productos/manguera-succion-4-6m  301
 /mangueras-contra-incendios/manguera-forestal-uso-rudo-militar  /productos/manguera-forestal-uso-rudo-militar  301
 /mangueras-contra-incendios/manguera-forestal-alta-visibilidad  /productos/manguera-forestal-amarilla-alta-vis  301
+/mangueras-contra-incendios/manguera-succion  /productos/manguera-succion  301
 # Catch-all para cualquier otra manguera antigua
 /mangueras-contra-incendios/*  /mangueras-contra-incendios  301
 
 # =============================================================================
-# CATEGORÍA 4 — Estructura antigua /productos/ (12 errores)
-# Causa: Reestructuración del catálogo dejó URLs huérfanas
+# GRUPO C — Estructura antigua /productos/ (12 errores)
+# URLs de categorías viejas que ya no existen como productos individuales
 # =============================================================================
 /productos/deteccion-incendio  /equipos  301
 /productos/valvulas-ul-listed  /valvulas-contra-incendios  301
@@ -80,8 +91,8 @@
 /productos/equipo-proteccion-brigadas  /equipos  301
 
 # =============================================================================
-# CATEGORÍA 5 — Conexiones y Herrajes inexistentes (6 errores)
-# Causa: URLs de producto antiguas bajo /conexiones-herrajes-contra-incendios/
+# GRUPO D — Conexiones y Herrajes (6 errores)
+# Redirigen a subcategorías específicas de conexiones
 # =============================================================================
 /conexiones-herrajes-contra-incendios/adaptadores-bronce  /conexiones/adaptadores  301
 /conexiones-herrajes-contra-incendios/conexion-storz  /conexiones/coples  301
@@ -93,41 +104,38 @@
 /conexiones-herrajes-contra-incendios/*  /conexiones-herrajes-contra-incendios  301
 
 # =============================================================================
-# CATEGORÍA 6 — Secciones del Blog sin página de categoría (5 errores)
-# Causa: Links internos apuntan a categorías que usan slug diferente
-# =============================================================================
-/blog/monitores/guia-seleccion-monitores-contra-incendios  /blog/monitores-contra-incendios/guia-seleccion-monitores-contra-incendios  301
-/blog/boquillas  /blog/boquillas-contra-incendios  301
-/blog/mangueras  /blog/mangueras-contra-incendios  301
-/blog/valvulas  /blog/valvulas-contra-incendios  301
-/blog/conexiones-herrajes-contra-incendios  /blog  301
-
-# =============================================================================
-# CATEGORÍA 7 — Categorías de producto sin página (3 errores)
-# Causa: Páginas que nunca existieron o se eliminaron
+# GRUPO E — Categorías de producto sin página (6 errores)
+# Páginas que nunca existieron → redirigen a equivalente más cercano
 # =============================================================================
 /extintores-certificados  /equipos  301
 /hidrantes-contra-incendios  /gabinetes-hidrantes-contra-incendios  301
 /tomas-siamesas-bomberos  /conexiones/siamesa  301
-
-# =============================================================================
-# CATEGORÍA 8 — Directorio y páginas misceláneas (5 errores)
-# =============================================================================
-/empresas-certificadas/estado  /empresas-certificadas  301
-/empresas-certificadas/giro  /empresas-certificadas  301
+/gabinetes-hidrantes  /gabinetes-hidrantes-contra-incendios  301
 /senalizacion-seguridad-industrial  /equipos  301
 /acoples-conexiones-contra-incendios  /conexiones-herrajes-contra-incendios  301
-/gabinetes-hidrantes  /gabinetes-hidrantes-contra-incendios  301
+
+# =============================================================================
+# GRUPO F — Secciones del Blog sin página (4 errores)
+# Slugs cortos → slugs largos correctos
+# =============================================================================
+/blog/conexiones-herrajes-contra-incendios  /blog  301
+/blog/boquillas  /blog/boquillas-contra-incendios  301
+/blog/mangueras  /blog/mangueras-contra-incendios  301
+
+# =============================================================================
+# GRUPO G — Directorio y filtros (2 errores)
+# URLs de filtro sin parámetro → página principal del directorio
+# =============================================================================
+/empresas-certificadas/estado  /empresas-certificadas  301
+/empresas-certificadas/estado/  /empresas-certificadas  301
+/empresas-certificadas/giro  /empresas-certificadas  301
+/empresas-certificadas/giro/  /empresas-certificadas  301
 
 # =============================================================================
 # REDIRECTS ORIGINALES — URLs rotas con tráfico activo
 # =============================================================================
-
-# Extintores (URL antigua que genera 404 — segunda página más visitada)
 /equipos-contra-incendios/extintores-de-incendios  /  301
 /equipos-contra-incendios/extintores-de-ince*  /  301
-
-# Variantes posibles de URLs antiguas de categorías
 /equipos-contra-incendios/valvulas*  /valvulas-contra-incendios  301
 /equipos-contra-incendios/mangueras*  /mangueras-contra-incendios  301
 /equipos-contra-incendios/monitores*  /monitores-contra-incendios  301

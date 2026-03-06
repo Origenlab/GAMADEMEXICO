@@ -261,7 +261,7 @@ Atendemos requerimientos en toda la República Mexicana con enfoque técnico y l
 
 Además de entrega de equipo, apoyamos en especificación por sitio, estandarización entre plantas y consolidación de criterios técnicos para empresas con múltiples sedes.
 
-![Boquilla profesional para integración con monitores contra incendios](/img/boquillas-contra-incendios/boquilla-turbo-jet-akron-1720-frontal.avif)
+![Boquilla profesional para integración con monitores contra incendios](/img/productos/boquilla-turbo-jet-akron-1720-frontal.avif)
 *Descripción técnica: la correcta selección de [boquillas](/boquillas-contra-incendios) es esencial para el desempeño óptimo del sistema de monitores.*
 
 ## Preguntas frecuentes de interés para empresas

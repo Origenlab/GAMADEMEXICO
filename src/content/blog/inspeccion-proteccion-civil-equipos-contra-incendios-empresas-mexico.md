@@ -27,7 +27,7 @@ Para las empresas en México, prepararse correctamente para una inspección sign
 
 > **Nota importante:** Los requisitos específicos pueden variar según estado, municipio y giro de tu empresa. Confirma siempre con tu autoridad local de Protección Civil y con tu responsable de seguridad e higiene antes de una inspección oficial.
 
-![Manguera contra incendios certificada instalada en gabinete industrial - equipo que verifica Protección Civil](/img/mangueras-contra-incendios/manguera-blindex-1-5-15m-gabinete.avif)
+![Manguera contra incendios certificada instalada en gabinete industrial - equipo que verifica Protección Civil](/img/productos/manguera-blindex-1-5-15m-gabinete.avif)
 *Sistema de manguera contra incendios correctamente instalado: conexiones certificadas, acceso libre y señalización visible. Este es el estándar que buscan los inspectores de Protección Civil.*
 
 ---
@@ -102,7 +102,7 @@ El inspector realiza un recorrido físico verificando que los equipos declarados
 - Estaciones manuales accesibles
 - Prueba de funcionamiento documentada
 
-![Manguera contra incendios industrial de 2.5 pulgadas certificada para brigadas de emergencia](/img/mangueras-contra-incendios/manguera-blindex-2-5-15m-brigada.avif)
+![Manguera contra incendios industrial de 2.5 pulgadas certificada para brigadas de emergencia](/img/productos/manguera-blindex-2-5-15m-brigada.avif)
 *Manguera contra incendios industrial de 2½" para brigadas: capacidad de flujo superior para respuesta ante emergencias. Los inspectores verifican la integridad del tejido, conexiones y certificaciones vigentes.*
 
 ### 3. Documentación de Mantenimiento
@@ -133,7 +133,7 @@ El inspector verifica que tu personal de brigada cuente con capacitación docume
 
 Para empresas con [sistemas de mangueras](/mangueras-contra-incendios) o [monitores contra incendios](/monitores-contra-incendios), la capacitación debe incluir operación específica de estos equipos. Un extintor cualquiera puede usarlo después de ver un video; una manguera de 2½" a 100 PSI requiere técnica y práctica.
 
-![Boquilla contra incendios certificada UL/FM para sistemas de protección industrial](/img/boquillas-contra-incendios/boquilla-certificada-dual-ul-fm-csw-lb-frontal.avif)
+![Boquilla contra incendios certificada UL/FM para sistemas de protección industrial](/img/productos/boquilla-certificada-dual-ul-fm-csw-lb-frontal.avif)
 *Boquilla contra incendios con doble certificación UL/FM: cumple estándares internacionales de seguridad. Los inspectores verifican que las boquillas estén en condición operativa y compatibles con las mangueras del sistema.*
 
 ### 5. Programa Interno de Protección Civil

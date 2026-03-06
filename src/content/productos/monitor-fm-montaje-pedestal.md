@@ -106,7 +106,7 @@ Cada kit incluye:
 
 - [Monitor ST611 FM Approved](/productos/monitor-st611-fm-approved) - Monitor sin pedestal
 - [Monitor FM para Refinerías](/productos/monitor-fm-refinerias) - Aplicaciones específicas
-- [Válvulas de Control](/productos/valvulas-control) - Accesorios de instalación
+- [Válvulas de Control](/valvulas-contra-incendios) - Accesorios de instalación
 
 ---
 

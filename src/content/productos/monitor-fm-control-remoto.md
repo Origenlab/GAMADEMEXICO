@@ -111,7 +111,7 @@ El sistema cumple con:
 
 - [Monitor ST611 FM Approved](/productos/monitor-st611-fm-approved) - Versión manual estándar
 - [Monitor FM para Refinerías](/productos/monitor-fm-refinerias) - Aplicación específica
-- [Sistemas de Detección](/productos/deteccion-incendio) - Activación automática
+- [Sistemas de Detección](/equipos) - Activación automática
 
 ---
 

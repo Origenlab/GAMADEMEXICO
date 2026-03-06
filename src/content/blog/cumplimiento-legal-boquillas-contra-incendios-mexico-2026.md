@@ -7,9 +7,9 @@ categoria: "boquillas"
 autor:
   nombre: "Ing. Sergio Castañeda"
   cargo: "Director de Cumplimiento Técnico en Protección Contra Incendios"
-imagen: "/img/boquillas-contra-incendios/boquilla-tipo-pistola-contra-incendios-ul-listed-32.avif"
+imagen: "/img/productos/boquilla-tipo-pistola-contra-incendios-ul-listed-32.avif"
 imagenAlt: "Boquilla contra incendios certificada para cumplimiento técnico en planta industrial"
-imagenOg: "/img/boquillas-contra-incendios/boquilla-industrial-contra-incendios-fabrica-fondo-10.avif"
+imagenOg: "/img/productos/boquilla-industrial-contra-incendios-fabrica-fondo-10.avif"
 tags: ["cumplimiento legal boquillas contra incendios", "NOM-002-STPS-2010", "RFSSST", "Ley General de Protección Civil", "boquillas contra incendios", "brigadas industriales", "auditoría contra incendios", "equipos contra incendios industriales"]
 destacado: true
 draft: false
@@ -28,7 +28,7 @@ Alcance del documento: centros de trabajo con uso de boquillas en brigadas inter
 
 > **Corte normativo de esta guía:** información validada con fuentes oficiales al **16 de febrero de 2026**.
 
-![Boquilla certificada para cumplimiento en instalaciones industriales](/img/boquillas-contra-incendios/boquilla-tipo-pistola-contra-incendios-ul-listed-32.avif)
+![Boquilla certificada para cumplimiento en instalaciones industriales](/img/productos/boquilla-tipo-pistola-contra-incendios-ul-listed-32.avif)
 *Descripción técnica: Boquilla contra incendios certificada para operación en centros de trabajo con alta exigencia de cumplimiento técnico.*
 
 ---
@@ -117,7 +117,7 @@ En instalaciones de mayor exigencia se recomienda integración con:
 - [Boquillas industriales](/productos/boquilla-industrial) para servicio continuo.
 - [Boquillas certificadas](/productos/boquilla-certificada) cuando el proyecto exige trazabilidad técnica reforzada.
 
-![Boquilla industrial integrada a entorno de fabricación](/img/boquillas-contra-incendios/boquilla-industrial-contra-incendios-fabrica-fondo-10.avif)
+![Boquilla industrial integrada a entorno de fabricación](/img/productos/boquilla-industrial-contra-incendios-fabrica-fondo-10.avif)
 *Descripción técnica: Boquilla industrial para operación de sistema fijo con criterios de estabilidad hidráulica y continuidad operativa.*
 
 ---
@@ -303,7 +303,7 @@ En Gama de México integramos producto, ingeniería y soporte documental para pr
 - Configuración para brigadas y sistemas fijos.
 - Acompañamiento técnico para auditoría y mejora continua.
 
-![Boquilla profesional para aplicación en entorno industrial complejo](/img/boquillas-contra-incendios/boquilla-industrial-contra-incendios-planta-manufactura-09.avif)
+![Boquilla profesional para aplicación en entorno industrial complejo](/img/productos/boquilla-industrial-contra-incendios-planta-manufactura-09.avif)
 *Descripción técnica: Boquilla de alto desempeño en aplicación industrial con enfoque de seguridad operacional y cumplimiento normativo.*
 
 ---

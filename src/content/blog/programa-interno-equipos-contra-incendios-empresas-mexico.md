@@ -7,7 +7,7 @@ categoria: "gabinetes-hidrantes"
 autor:
   nombre: "Ing. Roberto Hernández"
   cargo: "Consultor Senior en Protección Contra Incendios y Cumplimiento Normativo"
-imagen: "/img/mangueras-contra-incendios/manguera-blindex-1-5-30m-industrial.avif"
+imagen: "/img/productos/manguera-blindex-1-5-30m-industrial.avif"
 imagenAlt: "Manguera contra incendios industrial instalada correctamente en empresa - equipos para Programa Interno"
 tags: ["programa interno protección civil", "equipos contra incendios empresas", "NOM-002-STPS-2010", "cumplimiento protección civil", "mantenimiento equipos", "brigadas emergencia", "auditoría seguridad", "gabinetes contra incendios"]
 destacado: true
@@ -27,7 +27,7 @@ Esta guía está diseñada para responsables de seguridad, HSE/EHS, gerentes de 
 
 > **Nota importante:** Los requisitos específicos pueden variar según estado, municipio y giro de tu empresa. Confirma siempre con tu autoridad local de Protección Civil y con tu responsable de seguridad e higiene.
 
-![Sistema de mangueras contra incendios industrial instalado en planta de producción](/img/mangueras-contra-incendios/manguera-blindex-1-5-30m-industrial.avif)
+![Sistema de mangueras contra incendios industrial instalado en planta de producción](/img/productos/manguera-blindex-1-5-30m-industrial.avif)
 *Sistema de mangueras contra incendios correctamente instalado: acceso libre, señalización visible y componentes completos. Este nivel de instalación es lo que valida tu Programa Interno.*
 
 ---
@@ -59,7 +59,7 @@ No se trata solo de cumplir con un trámite. Un programa sólido te da:
 - **Reducción de primas:** Las aseguradoras valoran sistemas documentados
 - **Continuidad del negocio:** Menor tiempo de recuperación ante incidentes
 
-![Manguera contra incendios enrollada lista para despliegue en brigada industrial](/img/mangueras-contra-incendios/manguera-blindex-2-5-15m-enrollada.avif)
+![Manguera contra incendios enrollada lista para despliegue en brigada industrial](/img/productos/manguera-blindex-2-5-15m-enrollada.avif)
 *Estación de manguera retráctil: respuesta rápida para control de conatos. Este tipo de equipos debe aparecer en tu inventario con ubicación exacta y programa de mantenimiento.*
 
 ---
@@ -201,7 +201,7 @@ Este checklist te guía desde el diagnóstico inicial hasta la operación contin
   - Simula visita de inspector
   - Cierra brechas antes de verificación oficial
 
-![Boquilla contra incendios certificada FM para sistemas industriales](/img/boquillas-contra-incendios/boquilla-certificada-fm-approved-monitor-incendio-frontal.avif)
+![Boquilla contra incendios certificada FM para sistemas industriales](/img/productos/boquilla-certificada-fm-approved-monitor-incendio-frontal.avif)
 *Estación de manguera automática: despliegue rápido para respuesta inmediata. Incluye conexión a red hidráulica y boquilla certificada.*
 
 ---

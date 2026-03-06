@@ -104,9 +104,9 @@ El **monitor FM Approved para agua y espuma** ofrece la máxima versatilidad en 
 
 ## Productos Relacionados
 
-- [Concentrado AFFF 3%](/productos/espuma-afff-3) - Para hidrocarburos
-- [Concentrado AR-AFFF](/productos/espuma-ar-afff) - Para solventes polares
-- [Eductores de Espuma](/productos/eductores-espuma) - Proporcionamiento
+- [Concentrado AFFF 3%](/boquillas-contra-incendios) - Para hidrocarburos
+- [Concentrado AR-AFFF](/boquillas-contra-incendios) - Para solventes polares
+- [Eductores de Espuma](/boquillas-contra-incendios) - Proporcionamiento
 - [Monitor ST611 FM Approved](/productos/monitor-st611-fm-approved) - Versión estándar
 
 ---

@@ -102,10 +102,10 @@ El diseño del monitor permite cambio de boquilla en menos de 60 segundos:
 
 ## Productos Relacionados
 
-- [Concentrado de Espuma AFFF](/productos/espuma-afff) - Para uso con el monitor
+- [Concentrado de Espuma AFFF](/boquillas-contra-incendios) - Para uso con el monitor
 - [Boquillas Industriales](/productos/boquilla-industrial) - Opciones de descarga
 - [Monitor ST611 FM Approved](/productos/monitor-st611-fm-approved) - Versión certificada FM
-- [Eductores de Espuma](/productos/eductores-espuma) - Sistemas de proporcionamiento
+- [Eductores de Espuma](/boquillas-contra-incendios) - Sistemas de proporcionamiento
 
 ---
 

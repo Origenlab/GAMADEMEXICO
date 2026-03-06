@@ -7,9 +7,9 @@ categoria: "boquillas"
 autor:
   nombre: "Ing. Mariana Ortega"
   cargo: "Especialista Senior en Auditoría de Sistemas Contra Incendios"
-imagen: "/img/boquillas-contra-incendios/boquilla-tipo-pistola-contra-incendios-producto-profesional-34.avif"
+imagen: "/img/productos/boquilla-tipo-pistola-contra-incendios-producto-profesional-34.avif"
 imagenAlt: "Boquilla contra incendios profesional para programas de auditoría industrial"
-imagenOg: "/img/boquillas-contra-incendios/boquilla-industrial-contra-incendios-vista-explosionada-11.avif"
+imagenOg: "/img/productos/boquilla-industrial-contra-incendios-vista-explosionada-11.avif"
 tags: ["manual de auditoría boquillas contra incendios", "boquillas contra incendios", "auditoría interna", "sistemas contra incendios", "brigadas industriales", "cumplimiento técnico", "equipos contra incendios industriales", "protección contra incendios industrial"]
 destacado: true
 draft: false
@@ -26,7 +26,7 @@ Este **Manual Maestro de Auditoría para Boquillas Contra Incendios** fue desarr
 
 La guía está diseñada para uso práctico. Además de criterios técnicos, integra anexos listos para implementación en sitio: checklist preauditoría, formato de pruebas FAT/SAT, matriz de competencias y tablero de KPIs de confiabilidad. El objetivo es transformar auditorías reactivas en un modelo de gobernanza preventiva.
 
-![Boquilla profesional para control de desempeño en auditorías internas](/img/boquillas-contra-incendios/boquilla-tipo-pistola-contra-incendios-producto-profesional-34.avif)
+![Boquilla profesional para control de desempeño en auditorías internas](/img/productos/boquilla-tipo-pistola-contra-incendios-producto-profesional-34.avif)
 *Descripción técnica: Boquilla contra incendios de nivel profesional, utilizada como referencia para evaluación de desempeño y control documental.*
 
 ---
@@ -125,7 +125,7 @@ La boquilla debe evaluarse con el sistema completo, incluyendo:
 
 Sin esta visión integral, la auditoría puede declarar “equipo conforme” con un sistema funcionalmente deficiente.
 
-![Vista explosionada para auditoría de componentes de boquilla](/img/boquillas-contra-incendios/boquilla-industrial-contra-incendios-vista-explosionada-11.avif)
+![Vista explosionada para auditoría de componentes de boquilla](/img/productos/boquilla-industrial-contra-incendios-vista-explosionada-11.avif)
 *Descripción técnica: Vista de componentes críticos para evaluación de integridad, mantenibilidad y confiabilidad de la boquilla.*
 
 ---
@@ -247,7 +247,7 @@ Una boquilla técnicamente correcta no compensa una brigada sin competencia oper
 
 Hallazgos críticos deben escalarse a dirección operativa y no pueden cerrarse sin verificación técnica en campo.
 
-![Boquilla turbo jet para validación periódica de desempeño](/img/boquillas-contra-incendios/boquilla-turbo-jet-contra-incendios-selector-flujo-06.avif)
+![Boquilla turbo jet para validación periódica de desempeño](/img/productos/boquilla-turbo-jet-contra-incendios-selector-flujo-06.avif)
 *Descripción técnica: Boquilla turbo jet con control de patrón, utilizada en protocolos de prueba funcional y mantenimiento preventivo.*
 
 ---

@@ -203,7 +203,7 @@ El personal de SEPRICO pasa por un proceso exhaustivo:
 - Atención al cliente
 - Uso de tecnología
 - Primeros auxilios
-- Uso de [extintores](/extintores-certificados) y equipos de emergencia
+- Uso de [extintores](/equipos) y equipos de emergencia
 
 ### Formación Continua
 
@@ -326,7 +326,7 @@ SEPRICO opera en las zonas residenciales más demandantes:
 - Cámaras perimetrales
 - Sistema de alarmas residenciales
 - Control de acceso principal
-- [Extintores certificados](/extintores-certificados) en caseta y área común
+- [Extintores certificados](/equipos) en caseta y área común
 
 **Resultados:**
 - Comunidad más cohesionada
@@ -343,7 +343,7 @@ SEPRICO opera en las zonas residenciales más demandantes:
 SEPRICO entiende que la seguridad en condominios abarca múltiples dimensiones. Por ello, han desarrollado protocolos que incluyen:
 
 **Capacitación del personal:**
-- Uso de [extintores portátiles](/extintores-certificados)
+- Uso de [extintores portátiles](/equipos)
 - Operación de [mangueras contra incendios](/mangueras-contra-incendios)
 - Activación de alarmas
 - Coordinación de evacuaciones

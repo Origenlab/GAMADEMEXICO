@@ -124,7 +124,7 @@ De Calentadores Solares entiende que trabajar en azoteas y con sistemas hidrául
 Un aspecto distintivo de De Calentadores Solares es su enfoque integral de seguridad. En proyectos comerciales e industriales, la empresa coordina con proveedores especializados para asegurar que las instalaciones cuenten con:
 
 **Equipos de primera respuesta:**
-- [Extintores certificados](/extintores-certificados) en áreas de trabajo
+- [Extintores certificados](/equipos) en áreas de trabajo
 - [Mangueras contra incendios](/mangueras-contra-incendios) en ubicaciones estratégicas
 - [Boquillas y pitones](/boquillas-contra-incendios) para equipos de emergencia
 
@@ -134,7 +134,7 @@ Un aspecto distintivo de De Calentadores Solares es su enfoque integral de segur
 - Rociadores en áreas de almacenamiento
 
 **Señalización normativa:**
-- [Señalización de seguridad](/senalizacion-seguridad-industrial) según NOM-026-STPS
+- [Señalización de seguridad](/equipos) según NOM-026-STPS
 - Rutas de evacuación claramente marcadas
 - Identificación de equipos contra incendios
 
@@ -188,7 +188,7 @@ El personal de De Calentadores Solares cuenta con:
 - Sustitución de boilers antiguos
 - Instalación de 8 calentadores solares
 - Sistema de recirculación eficiente
-- Equipamiento con [conexiones siamesas](/tomas-siamesas-bomberos) para bomberos
+- Equipamiento con [conexiones siamesas](/conexiones/siamesa) para bomberos
 
 **Resultados:**
 - Reducción del 65% en factura de gas

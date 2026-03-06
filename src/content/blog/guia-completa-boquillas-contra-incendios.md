@@ -6,7 +6,7 @@ categoria: "boquillas"
 autor:
   nombre: "Ing. Fernando Castillo"
   cargo: "Especialista en Equipos de Descarga"
-imagen: "/img/boquillas-contra-incendios/boquilla-turbo-jet-frontal.avif"
+imagen: "/img/productos/boquilla-turbo-jet-frontal.avif"
 imagenAlt: "Boquilla turbo jet contra incendios de alto rendimiento"
 tags: ["boquillas contra incendios", "NFPA 1964", "pitones industriales", "brigadas contra incendio", "equipos de descarga", "protección contra fuego"]
 destacado: true
@@ -29,7 +29,7 @@ La importancia de una selección correcta trasciende el aspecto técnico inmedia
 
 Una [boquilla contra incendios](/boquillas-contra-incendios) opera bajo principios hidráulicos fundamentales que determinan su rendimiento. El agua presurizada que llega desde el sistema de bombeo atraviesa un orificio de descarga calibrado que convierte la presión estática en velocidad, creando el chorro o patrón de descarga deseado. La relación entre presión de entrada, diámetro del orificio y caudal resultante sigue ecuaciones hidrodinámicas que los fabricantes optimizan para cada modelo específico.
 
-El diseño interno de la boquilla determina características críticas como el alcance efectivo, el patrón de descarga, la capacidad de penetración en las llamas y la formación de gotas. Las boquillas de chorro sólido concentran toda la energía en un flujo coherente que puede alcanzar distancias superiores a 30 metros, mientras que las boquillas de niebla dispersan el agua en partículas finas que absorben calor de manera más eficiente pero con menor alcance. Las boquillas combinadas, como los modelos [turbo jet](/boquillas-contra-incendios/boquilla-turbo-jet), permiten ajustar el patrón según las necesidades del momento.
+El diseño interno de la boquilla determina características críticas como el alcance efectivo, el patrón de descarga, la capacidad de penetración en las llamas y la formación de gotas. Las boquillas de chorro sólido concentran toda la energía en un flujo coherente que puede alcanzar distancias superiores a 30 metros, mientras que las boquillas de niebla dispersan el agua en partículas finas que absorben calor de manera más eficiente pero con menor alcance. Las boquillas combinadas, como los modelos [turbo jet](/productos/boquilla-turbo-jet), permiten ajustar el patrón según las necesidades del momento.
 
 La presión de operación influye directamente en el rendimiento. Una presión insuficiente resulta en alcances reducidos y patrones de descarga deficientes, mientras que una presión excesiva puede dificultar el control de la boquilla por parte del operador y acelerar el desgaste de los componentes internos. Los fabricantes especifican rangos de presión óptimos, típicamente entre 75 y 150 PSI para boquillas de brigada industrial, que deben respetarse para garantizar el rendimiento diseñado.
 
@@ -37,7 +37,7 @@ La presión de operación influye directamente en el rendimiento. Una presión i
 
 Las boquillas modernas incorporan múltiples componentes diseñados para funciones específicas. El cuerpo principal, fabricado típicamente en bronce, aluminio anodizado o materiales compuestos de alta resistencia, proporciona la estructura que soporta las presiones de operación. Los materiales de construcción se seleccionan según la aplicación: el bronce marino resiste ambientes corrosivos, el aluminio reduce el peso para operaciones prolongadas, y los compuestos avanzados ofrecen resistencia química para aplicaciones especiales.
 
-El mecanismo de ajuste de patrón, presente en boquillas combinadas como la [boquilla tipo pistola](/boquillas-contra-incendios/boquilla-tipo-pistola), permite al operador modificar la descarga desde chorro sólido hasta niebla amplia mediante rotación del cabezal o accionamiento de palancas. Este mecanismo debe operar suavemente incluso bajo presión, una característica que diferencia los equipos de calidad de las alternativas económicas que pueden trabarse o filtrar en el momento crítico.
+El mecanismo de ajuste de patrón, presente en boquillas combinadas como la [boquilla tipo pistola](/productos/boquilla-tipo-pistola), permite al operador modificar la descarga desde chorro sólido hasta niebla amplia mediante rotación del cabezal o accionamiento de palancas. Este mecanismo debe operar suavemente incluso bajo presión, una característica que diferencia los equipos de calidad de las alternativas económicas que pueden trabarse o filtrar en el momento crítico.
 
 Las válvulas de cierre, cuando están incorporadas, permiten interrumpir el flujo sin necesidad de cerrar la válvula en el origen. Los modelos con válvula de bola ofrecen apertura y cierre rápidos con mínima pérdida de presión, mientras que los diseños con válvula de asiento proporcionan control más gradual. La selección entre estos tipos depende de la aplicación y las preferencias operativas del usuario.
 
@@ -47,7 +47,7 @@ Las válvulas de cierre, cuando están incorporadas, permiten interrumpir el flu
 
 ### Boquillas Tipo Pistola: Control y Versatilidad
 
-La [boquilla tipo pistola](/boquillas-contra-incendios/boquilla-tipo-pistola) representa la configuración más común para brigadas industriales y gabinetes contra incendios. Su diseño ergonómico incorpora una empuñadura similar a una pistola que facilita el control direccional, una válvula de cierre integrada para control de flujo, y típicamente un mecanismo de ajuste de patrón que permite variar entre chorro sólido y niebla.
+La [boquilla tipo pistola](/productos/boquilla-tipo-pistola) representa la configuración más común para brigadas industriales y gabinetes contra incendios. Su diseño ergonómico incorpora una empuñadura similar a una pistola que facilita el control direccional, una válvula de cierre integrada para control de flujo, y típicamente un mecanismo de ajuste de patrón que permite variar entre chorro sólido y niebla.
 
 Estas boquillas están optimizadas para operación por personal con entrenamiento básico, característica fundamental en entornos industriales donde los primeros respondedores frecuentemente no son bomberos profesionales. La facilidad de uso no compromete la efectividad: los modelos de calidad proporcionan caudales de 95 a 250 GPM con alcances efectivos de 15 a 25 metros en configuración de chorro sólido.
 
@@ -62,13 +62,13 @@ Estas boquillas están optimizadas para operación por personal con entrenamient
 | Peso | 1.5-3.5 kg |
 | Certificaciones | NFPA 1964, UL Listed |
 
-La [boquilla pistola de alta presión 200 PSI](/boquillas-contra-incendios/boquilla-pistola-alta-presion-200-psi) está diseñada para sistemas con presiones elevadas, como los utilizados en plataformas petroleras offshore y terminales de almacenamiento de hidrocarburos. Su construcción reforzada soporta las demandas mecánicas de operación continua a presiones que exceden los límites de boquillas estándar.
+La [boquilla pistola de alta presión 200 PSI](/productos/boquilla-pistola-alta-presion-200-psi) está diseñada para sistemas con presiones elevadas, como los utilizados en plataformas petroleras offshore y terminales de almacenamiento de hidrocarburos. Su construcción reforzada soporta las demandas mecánicas de operación continua a presiones que exceden los límites de boquillas estándar.
 
-Para aplicaciones en ambientes marinos o costeros, donde la corrosión representa un desafío significativo, la [boquilla pistola de bronce marino](/boquillas-contra-incendios/boquilla-pistola-bronce-marino-nst) ofrece resistencia superior a la degradación por salinidad. Las instalaciones en Veracruz, Campeche, Tabasco y otras zonas del Golfo de México se benefician particularmente de esta configuración.
+Para aplicaciones en ambientes marinos o costeros, donde la corrosión representa un desafío significativo, la [boquilla pistola de bronce marino](/productos/boquilla-pistola-bronce-marino-nst) ofrece resistencia superior a la degradación por salinidad. Las instalaciones en Veracruz, Campeche, Tabasco y otras zonas del Golfo de México se benefician particularmente de esta configuración.
 
 ### Boquillas Turbo Jet: Máximo Rendimiento
 
-Las [boquillas turbo jet](/boquillas-contra-incendios/boquilla-turbo-jet) representan la evolución tecnológica en equipos de descarga. Su diseño incorpora un mecanismo de rotación interna que genera un patrón de descarga helicoidal, combinando las ventajas del chorro sólido (alcance y penetración) con las de la niebla (absorción de calor y protección del operador). Esta tecnología, desarrollada originalmente para cuerpos de bomberos profesionales, se ha convertido en el estándar para brigadas industriales de alto rendimiento.
+Las [boquillas turbo jet](/productos/boquilla-turbo-jet) representan la evolución tecnológica en equipos de descarga. Su diseño incorpora un mecanismo de rotación interna que genera un patrón de descarga helicoidal, combinando las ventajas del chorro sólido (alcance y penetración) con las de la niebla (absorción de calor y protección del operador). Esta tecnología, desarrollada originalmente para cuerpos de bomberos profesionales, se ha convertido en el estándar para brigadas industriales de alto rendimiento.
 
 El principio de funcionamiento turbo jet implica la división del flujo en múltiples chorros que rotan sobre un eje central, creando un cono de agua con características únicas. Este patrón maximiza la superficie de contacto con las llamas y el aire caliente, incrementando la eficiencia de absorción térmica hasta un 40% comparado con patrones convencionales. Simultáneamente, el componente de chorro central mantiene la capacidad de penetración necesaria para alcanzar el corazón del incendio.
 
@@ -83,35 +83,35 @@ El principio de funcionamiento turbo jet implica la división del flujo en múlt
 | Conexión | 1.5" NH, 2.5" NH, Storz |
 | Certificaciones | NFPA 1964, FM Approved |
 
-La [boquilla turbo jet Akron 1720](/boquillas-contra-incendios/boquilla-turbo-jet-akron-1720) es reconocida internacionalmente como referencia en su categoría. Su construcción con componentes de precisión y aluminio anodizado tipo III proporciona durabilidad excepcional incluso en condiciones de uso intensivo. Los cuerpos de bomberos de Nuevo León, Jalisco y Ciudad de México han adoptado este modelo como equipamiento estándar.
+La [boquilla turbo jet Akron 1720](/productos/boquilla-turbo-jet-akron-1720) es reconocida internacionalmente como referencia en su categoría. Su construcción con componentes de precisión y aluminio anodizado tipo III proporciona durabilidad excepcional incluso en condiciones de uso intensivo. Los cuerpos de bomberos de Nuevo León, Jalisco y Ciudad de México han adoptado este modelo como equipamiento estándar.
 
-Para aplicaciones que requieren caudales excepcionales, la [boquilla turbo jet Master Stream 500-1250 GPM](/boquillas-contra-incendios/boquilla-turbo-jet-master-stream-500-1250) proporciona capacidad de descarga equivalente a varios chorros convencionales combinados. Esta configuración se utiliza típicamente montada en [monitores contra incendios](/monitores-contra-incendios) para protección de áreas extensas como parques de tanques, hangares y plantas de proceso.
+Para aplicaciones que requieren caudales excepcionales, la [boquilla turbo jet Master Stream 500-1250 GPM](/productos/boquilla-turbo-jet-master-stream-500-1250) proporciona capacidad de descarga equivalente a varios chorros convencionales combinados. Esta configuración se utiliza típicamente montada en [monitores contra incendios](/monitores-contra-incendios) para protección de áreas extensas como parques de tanques, hangares y plantas de proceso.
 
 ### Boquillas Industriales: Aplicaciones Especializadas
 
-Las [boquillas industriales](/boquillas-contra-incendios/boquilla-industrial) están diseñadas para condiciones de operación que exceden los parámetros de equipos convencionales. Ambientes con temperaturas extremas, exposición a químicos agresivos, atmósferas potencialmente explosivas y requisitos de higiene especiales demandan construcciones y materiales específicos que estos modelos proporcionan.
+Las [boquillas industriales](/productos/boquilla-industrial) están diseñadas para condiciones de operación que exceden los parámetros de equipos convencionales. Ambientes con temperaturas extremas, exposición a químicos agresivos, atmósferas potencialmente explosivas y requisitos de higiene especiales demandan construcciones y materiales específicos que estos modelos proporcionan.
 
-La [boquilla industrial de acero inoxidable](/boquillas-contra-incendios/boquilla-industrial-acero-inoxidable) es la elección correcta para industrias alimentaria y farmacéutica, donde los requisitos sanitarios prohíben el uso de materiales que puedan contaminar productos o procesos. El acero inoxidable 316L resiste los agentes de limpieza y desinfección utilizados en estos ambientes mientras mantiene las características de rendimiento necesarias para la protección contra incendios.
+La [boquilla industrial de acero inoxidable](/productos/boquilla-industrial-acero-inoxidable) es la elección correcta para industrias alimentaria y farmacéutica, donde los requisitos sanitarios prohíben el uso de materiales que puedan contaminar productos o procesos. El acero inoxidable 316L resiste los agentes de limpieza y desinfección utilizados en estos ambientes mientras mantiene las características de rendimiento necesarias para la protección contra incendios.
 
-Para instalaciones petroleras y petroquímicas, la [boquilla industrial para espuma AFFF](/boquillas-contra-incendios/boquilla-industrial-espuma-afff) incorpora diseños específicos que optimizan la formación y distribución de espuma extintora. Los materiales de construcción son compatibles con los surfactantes y fluorotensoactivos presentes en estos agentes, garantizando la integridad del equipo y la efectividad de la descarga.
+Para instalaciones petroleras y petroquímicas, la [boquilla industrial para espuma AFFF](/productos/boquilla-industrial-espuma-afff) incorpora diseños específicos que optimizan la formación y distribución de espuma extintora. Los materiales de construcción son compatibles con los surfactantes y fluorotensoactivos presentes en estos agentes, garantizando la integridad del equipo y la efectividad de la descarga.
 
 | Aplicación | Modelo Recomendado | Característica Principal |
 |------------|-------------------|-------------------------|
-| Alimentaria/Farmacéutica | [Acero inoxidable](/boquillas-contra-incendios/boquilla-industrial-acero-inoxidable) | Materiales sanitarios |
-| Petroquímica | [Espuma AFFF](/boquillas-contra-incendios/boquilla-industrial-espuma-afff) | Compatibilidad química |
-| Minería | [Minería pesada](/boquillas-contra-incendios/boquilla-industrial-mineria-pesada) | Resistencia a abrasión |
-| Offshore | [Bronce marino](/boquillas-contra-incendios/boquilla-industrial-bronce-marino-offshore) | Resistencia corrosión marina |
-| Áreas clasificadas | [Antideflagrante ATEX](/boquillas-contra-incendios/boquilla-industrial-antideflagrante-atex) | Certificación explosivos |
+| Alimentaria/Farmacéutica | [Acero inoxidable](/productos/boquilla-industrial-acero-inoxidable) | Materiales sanitarios |
+| Petroquímica | [Espuma AFFF](/productos/boquilla-industrial-espuma-afff) | Compatibilidad química |
+| Minería | [Minería pesada](/productos/boquilla-industrial-mineria-pesada) | Resistencia a abrasión |
+| Offshore | [Bronce marino](/productos/boquilla-industrial-bronce-marino-offshore) | Resistencia corrosión marina |
+| Áreas clasificadas | [Antideflagrante ATEX](/productos/boquilla-industrial-antideflagrante-atex) | Certificación explosivos |
 
-La [boquilla industrial para alta temperatura](/boquillas-contra-incendios/boquilla-industrial-alta-temperatura) está construida con materiales y sellos que mantienen su integridad funcional en proximidad a fuentes de calor intenso. Las operaciones de enfriamiento de tanques de almacenamiento en llamas y la protección de estructuras expuestas a radiación térmica requieren esta capacidad especializada.
+La [boquilla industrial para alta temperatura](/productos/boquilla-industrial-alta-temperatura) está construida con materiales y sellos que mantienen su integridad funcional en proximidad a fuentes de calor intenso. Las operaciones de enfriamiento de tanques de almacenamiento en llamas y la protección de estructuras expuestas a radiación térmica requieren esta capacidad especializada.
 
 ### Boquillas Certificadas: Cumplimiento Normativo
 
-Las [boquillas certificadas](/boquillas-contra-incendios/boquilla-certificada) han sido sometidas a pruebas rigurosas por organismos reconocidos internacionalmente, proporcionando documentación que demuestra el cumplimiento de estándares específicos. Esta certificación es frecuentemente un requisito contractual en industrias reguladas y un factor determinante en la validez de coberturas de seguro.
+Las [boquillas certificadas](/productos/boquilla-certificada) han sido sometidas a pruebas rigurosas por organismos reconocidos internacionalmente, proporcionando documentación que demuestra el cumplimiento de estándares específicos. Esta certificación es frecuentemente un requisito contractual en industrias reguladas y un factor determinante en la validez de coberturas de seguro.
 
-La certificación NFPA 1964 establece requisitos para boquillas de chorro combinado utilizadas en servicio de bomberos. Incluye pruebas de rendimiento hidráulico, resistencia mecánica, durabilidad de componentes y funcionamiento bajo condiciones extremas. Las [boquillas certificadas NFPA 1964](/boquillas-contra-incendios/boquilla-certificada-nfpa-1964-bomberos) son el estándar para cuerpos de bomberos profesionales y brigadas industriales de primer nivel.
+La certificación NFPA 1964 establece requisitos para boquillas de chorro combinado utilizadas en servicio de bomberos. Incluye pruebas de rendimiento hidráulico, resistencia mecánica, durabilidad de componentes y funcionamiento bajo condiciones extremas. Las [boquillas certificadas NFPA 1964](/productos/boquilla-certificada-nfpa-1964-bomberos) son el estándar para cuerpos de bomberos profesionales y brigadas industriales de primer nivel.
 
-La certificación FM Approved implica evaluación adicional por Factory Mutual, con énfasis en confiabilidad para aplicaciones de protección de propiedad. Las aseguradoras que operan bajo lineamientos FM frecuentemente requieren esta certificación como condición para coberturas en instalaciones industriales de alto valor. La [boquilla certificada FM Approved industrial](/boquillas-contra-incendios/boquilla-certificada-fm-approved-industrial) satisface estos requisitos.
+La certificación FM Approved implica evaluación adicional por Factory Mutual, con énfasis en confiabilidad para aplicaciones de protección de propiedad. Las aseguradoras que operan bajo lineamientos FM frecuentemente requieren esta certificación como condición para coberturas en instalaciones industriales de alto valor. La [boquilla certificada FM Approved industrial](/productos/boquilla-certificada-fm-approved-industrial) satisface estos requisitos.
 
 | Certificación | Organismo | Aplicación Principal | Requisitos Destacados |
 |---------------|-----------|---------------------|----------------------|
@@ -121,7 +121,7 @@ La certificación FM Approved implica evaluación adicional por Factory Mutual, 
 | NOM | México | Nacional | Cumplimiento local |
 | PEMEX | PEMEX | Petrolera | Requisitos específicos sector |
 
-Para instalaciones del sector petrolero mexicano, la [boquilla certificada PEMEX](/boquillas-contra-incendios/boquilla-certificada-pemex-petroleo) cumple con los requisitos específicos establecidos por Petróleos Mexicanos para equipos de protección contra incendios en refinerías, terminales y plataformas. Esta certificación es requisito contractual para proveedores y contratistas del sector.
+Para instalaciones del sector petrolero mexicano, la [boquilla certificada PEMEX](/productos/boquilla-certificada-pemex-petroleo) cumple con los requisitos específicos establecidos por Petróleos Mexicanos para equipos de protección contra incendios en refinerías, terminales y plataformas. Esta certificación es requisito contractual para proveedores y contratistas del sector.
 
 ---
 
@@ -133,12 +133,12 @@ La clasificación del riesgo de tu instalación determina los requisitos mínimo
 
 | Nivel de Riesgo | Ejemplos | Caudal Mínimo | Tipo Recomendado |
 |-----------------|----------|---------------|------------------|
-| Bajo | Oficinas, comercios | 95 GPM | [Pistola estándar](/boquillas-contra-incendios/boquilla-tipo-pistola) |
-| Moderado | Manufactura ligera | 125-150 GPM | [Pistola alta capacidad](/boquillas-contra-incendios/boquilla-pistola-alta-presion-200-psi) |
-| Alto | Almacenes, plásticos | 200-250 GPM | [Turbo jet](/boquillas-contra-incendios/boquilla-turbo-jet) |
-| Especial | Petroquímica, refinería | 250+ GPM | [Industrial certificada](/boquillas-contra-incendios/boquilla-industrial) |
+| Bajo | Oficinas, comercios | 95 GPM | [Pistola estándar](/productos/boquilla-tipo-pistola) |
+| Moderado | Manufactura ligera | 125-150 GPM | [Pistola alta capacidad](/productos/boquilla-pistola-alta-presion-200-psi) |
+| Alto | Almacenes, plásticos | 200-250 GPM | [Turbo jet](/productos/boquilla-turbo-jet) |
+| Especial | Petroquímica, refinería | 250+ GPM | [Industrial certificada](/productos/boquilla-industrial) |
 
-Las instalaciones con materiales combustibles de alta velocidad de propagación, como plásticos, textiles o productos químicos, requieren boquillas con caudales superiores que permitan la aplicación rápida de volúmenes de agua suficientes para superar la tasa de liberación de calor. En estos casos, las [boquillas turbo jet de caudal ajustable](/boquillas-contra-incendios/boquilla-turbo-jet) ofrecen la flexibilidad necesaria para adaptar la descarga a las condiciones específicas del incendio.
+Las instalaciones con materiales combustibles de alta velocidad de propagación, como plásticos, textiles o productos químicos, requieren boquillas con caudales superiores que permitan la aplicación rápida de volúmenes de agua suficientes para superar la tasa de liberación de calor. En estos casos, las [boquillas turbo jet de caudal ajustable](/productos/boquilla-turbo-jet) ofrecen la flexibilidad necesaria para adaptar la descarga a las condiciones específicas del incendio.
 
 ### Compatibilidad con el Sistema Hidráulico
 
@@ -146,7 +146,7 @@ La integración correcta de las boquillas con el sistema de bombeo y distribuci�
 
 La curva de rendimiento de la bomba debe cruzarse con los requisitos de la boquilla en un punto de operación estable. Para sistemas con múltiples boquillas operando simultáneamente, el cálculo hidráulico debe considerar el caudal total demandado y las pérdidas por fricción en la red de distribución. Las [mangueras contra incendios](/mangueras-contra-incendios) dimensionadas correctamente minimizan estas pérdidas y garantizan que la presión disponible en la boquilla sea adecuada.
 
-Las conexiones de entrada deben ser compatibles con los acoples de las mangueras utilizadas en la instalación. En México predominan las conexiones NH/NST (National Hose) en configuraciones de 1.5" y 2.5", aunque instalaciones industriales frecuentemente utilizan coples Storz por su capacidad de conexión rápida. Los [adaptadores de bronce](/conexiones-herrajes-contra-incendios/adaptadores-bronce) permiten la interoperabilidad entre diferentes estándares cuando es necesario.
+Las conexiones de entrada deben ser compatibles con los acoples de las mangueras utilizadas en la instalación. En México predominan las conexiones NH/NST (National Hose) en configuraciones de 1.5" y 2.5", aunque instalaciones industriales frecuentemente utilizan coples Storz por su capacidad de conexión rápida. Los [adaptadores de bronce](/conexiones/adaptadores) permiten la interoperabilidad entre diferentes estándares cuando es necesario.
 
 ### Consideraciones Ergonómicas y de Entrenamiento
 
@@ -154,7 +154,7 @@ El factor humano es frecuentemente subestimado en la selección de boquillas. Un
 
 Las boquillas de alto caudal generan fuerzas de reacción significativas que requieren técnicas de sujeción específicas y, en algunos casos, múltiples operadores o soportes auxiliares. Para brigadas con personal de rotación frecuente o entrenamiento limitado, las boquillas de caudal moderado con patrones de fácil control son preferibles sobre equipos de máximo rendimiento que requieren operadores experimentados.
 
-La [boquilla pistola nacional económica](/boquillas-contra-incendios/boquilla-pistola-nacional-economica) ofrece un balance apropiado para aplicaciones donde la simplicidad y facilidad de uso son prioritarias sobre el rendimiento máximo. Su diseño intuitivo permite operación efectiva con entrenamiento básico, característica valiosa para gabinetes de edificios comerciales donde los primeros respondedores frecuentemente son personal administrativo o de mantenimiento.
+La [boquilla pistola nacional económica](/productos/boquilla-pistola-nacional-economica) ofrece un balance apropiado para aplicaciones donde la simplicidad y facilidad de uso son prioritarias sobre el rendimiento máximo. Su diseño intuitivo permite operación efectiva con entrenamiento básico, característica valiosa para gabinetes de edificios comerciales donde los primeros respondedores frecuentemente son personal administrativo o de mantenimiento.
 
 ---
 
@@ -242,7 +242,7 @@ La norma NFPA 1964 "Standard for Spray Nozzles" establece requisitos de diseño,
 
 El marco normativo mexicano establece requisitos específicos para equipos de protección contra incendios utilizados en centros de trabajo. La NOM-002-STPS-2010 "Condiciones de seguridad - Prevención y protección contra incendios en los centros de trabajo" establece que los equipos de combate de incendios deben cumplir con estándares reconocidos y mantenerse en condiciones de operación.
 
-Las boquillas utilizadas en instalaciones reguladas deben contar con documentación que demuestre su cumplimiento con normas aplicables. La [boquilla certificada NOM mexicana](/boquillas-contra-incendios/boquilla-certificada-nom-mexicana) incluye esta documentación para facilitar el cumplimiento de requisitos de inspección por autoridades de Protección Civil.
+Las boquillas utilizadas en instalaciones reguladas deben contar con documentación que demuestre su cumplimiento con normas aplicables. La [boquilla certificada NOM mexicana](/productos/boquilla-certificada-nom-mexicana) incluye esta documentación para facilitar el cumplimiento de requisitos de inspección por autoridades de Protección Civil.
 
 ### Requisitos de Aseguradoras
 
@@ -253,7 +253,7 @@ Las aseguradoras que operan en México frecuentemente establecen requisitos espe
 - Programas de mantenimiento documentados
 - Inspecciones periódicas certificadas
 
-Las empresas con coberturas de aseguradoras internacionales o que operan bajo estándares de matrices extranjeras deben verificar los requisitos específicos aplicables a su caso. Las [boquillas con certificación dual UL/FM](/boquillas-contra-incendios/boquilla-certificada-dual-ul-fm) satisfacen los requisitos más exigentes del mercado.
+Las empresas con coberturas de aseguradoras internacionales o que operan bajo estándares de matrices extranjeras deben verificar los requisitos específicos aplicables a su caso. Las [boquillas con certificación dual UL/FM](/productos/boquilla-certificada-dual-ul-fm) satisfacen los requisitos más exigentes del mercado.
 
 ---
 
@@ -266,13 +266,13 @@ En Gama de México entendemos que la protección contra incendios no puede esper
 Nuestra capacidad de distribución abarca las principales zonas industriales del país, incluyendo:
 
 **Zona Norte:**
-Contamos con entregas regulares a Nuevo León, Coahuila, Chihuahua, Sonora, Baja California, Tamaulipas y Durango. Las plantas manufactureras de Monterrey, los parques industriales de Saltillo, las maquiladoras de Ciudad Juárez y las instalaciones mineras de la región reciben servicio prioritario con inventario disponible para entrega inmediata de productos de alta rotación. Los cuerpos de bomberos municipales de la zona norte confían en nuestro suministro de [boquillas turbo jet certificadas](/boquillas-contra-incendios/boquilla-turbo-jet) para sus operaciones.
+Contamos con entregas regulares a Nuevo León, Coahuila, Chihuahua, Sonora, Baja California, Tamaulipas y Durango. Las plantas manufactureras de Monterrey, los parques industriales de Saltillo, las maquiladoras de Ciudad Juárez y las instalaciones mineras de la región reciben servicio prioritario con inventario disponible para entrega inmediata de productos de alta rotación. Los cuerpos de bomberos municipales de la zona norte confían en nuestro suministro de [boquillas turbo jet certificadas](/productos/boquilla-turbo-jet) para sus operaciones.
 
 **Zona Centro:**
 La Ciudad de México, Estado de México, Querétaro, Guanajuato, Aguascalientes, San Luis Potosí y Jalisco conforman nuestro territorio de mayor concentración de clientes industriales. Desde nuestra ubicación estratégica, podemos atender pedidos con entrega en 24-48 horas para productos en existencia. Las brigadas industriales del corredor del Bajío y los parques industriales de Querétaro representan un segmento importante de nuestra base de clientes.
 
 **Zona Sur y Golfo:**
-Las regiones petroleras de Veracruz, Tabasco, Campeche y la zona industrial de Puebla reciben atención especializada considerando los requisitos específicos de la industria de hidrocarburos. Mantenemos inventario de [boquillas certificadas PEMEX](/boquillas-contra-incendios/boquilla-certificada-pemex-petroleo) y equipos con certificación FM Approved para proyectos en refinería y plataformas. Las instalaciones offshore del Golfo de México confían en nuestras [boquillas de bronce marino](/boquillas-contra-incendios/boquilla-industrial-bronce-marino-offshore) resistentes a la corrosión.
+Las regiones petroleras de Veracruz, Tabasco, Campeche y la zona industrial de Puebla reciben atención especializada considerando los requisitos específicos de la industria de hidrocarburos. Mantenemos inventario de [boquillas certificadas PEMEX](/productos/boquilla-certificada-pemex-petroleo) y equipos con certificación FM Approved para proyectos en refinería y plataformas. Las instalaciones offshore del Golfo de México confían en nuestras [boquillas de bronce marino](/productos/boquilla-industrial-bronce-marino-offshore) resistentes a la corrosión.
 
 **Zona Sureste:**
 Yucatán, Quintana Roo, Oaxaca y Chiapas son atendidos mediante nuestra red de distribución con tiempos de entrega de 3-5 días hábiles para la mayoría de productos estándar. Los desarrollos turísticos de la Riviera Maya y los complejos hoteleros de Cancún requieren equipos que cumplan con estándares internacionales, necesidad que satisfacemos con nuestro portafolio de productos certificados.
@@ -293,11 +293,11 @@ Nuestro equipo de ingenieros proporciona asesoría técnica sin costo para ayuda
 
 ### ¿Cuál es la diferencia entre boquilla tipo pistola y turbo jet?
 
-La [boquilla tipo pistola](/boquillas-contra-incendios/boquilla-tipo-pistola) utiliza un diseño convencional con ajuste de patrón por rotación del cabezal, ofreciendo simplicidad y facilidad de uso. La [boquilla turbo jet](/boquillas-contra-incendios/boquilla-turbo-jet) incorpora un mecanismo de rotación interna que genera un patrón helicoidal con mayor eficiencia de absorción térmica y mejor penetración. La turbo jet ofrece rendimiento superior pero a mayor costo; la elección depende del nivel de riesgo y presupuesto disponible.
+La [boquilla tipo pistola](/productos/boquilla-tipo-pistola) utiliza un diseño convencional con ajuste de patrón por rotación del cabezal, ofreciendo simplicidad y facilidad de uso. La [boquilla turbo jet](/productos/boquilla-turbo-jet) incorpora un mecanismo de rotación interna que genera un patrón helicoidal con mayor eficiencia de absorción térmica y mejor penetración. La turbo jet ofrece rendimiento superior pero a mayor costo; la elección depende del nivel de riesgo y presupuesto disponible.
 
 ### ¿Qué certificación necesito para cumplir con las normas mexicanas?
 
-Para cumplimiento básico con NOM-002-STPS, las boquillas deben provenir de fabricantes reconocidos y contar con especificaciones técnicas documentadas. Para instalaciones industriales con seguros o auditorías frecuentes, se recomienda certificación NFPA 1964 o UL Listed. Las instalaciones petroleras típicamente requieren [certificación FM Approved o PEMEX](/boquillas-contra-incendios/boquilla-certificada) específica según los términos contractuales aplicables.
+Para cumplimiento básico con NOM-002-STPS, las boquillas deben provenir de fabricantes reconocidos y contar con especificaciones técnicas documentadas. Para instalaciones industriales con seguros o auditorías frecuentes, se recomienda certificación NFPA 1964 o UL Listed. Las instalaciones petroleras típicamente requieren [certificación FM Approved o PEMEX](/productos/boquilla-certificada) específica según los términos contractuales aplicables.
 
 ### ¿Cada cuánto debo reemplazar las boquillas contra incendios?
 
@@ -305,7 +305,7 @@ La vida útil depende del modelo, materiales de construcción, condiciones de al
 
 ### ¿Puedo usar cualquier boquilla con espuma AFFF?
 
-No todas las boquillas son compatibles con espumas AFFF. Los materiales de construcción estándar pueden degradarse con los surfactantes presentes en estos agentes. Para aplicaciones con espuma, utiliza específicamente [boquillas industriales para espuma AFFF](/boquillas-contra-incendios/boquilla-industrial-espuma-afff) diseñadas con materiales compatibles y geometrías que optimizan la formación de espuma.
+No todas las boquillas son compatibles con espumas AFFF. Los materiales de construcción estándar pueden degradarse con los surfactantes presentes en estos agentes. Para aplicaciones con espuma, utiliza específicamente [boquillas industriales para espuma AFFF](/productos/boquilla-industrial-espuma-afff) diseñadas con materiales compatibles y geometrías que optimizan la formación de espuma.
 
 ### ¿Qué caudal necesito para mi instalación?
 
@@ -328,16 +328,16 @@ Te invitamos a explorar nuestro [catálogo completo de boquillas contra incendio
 Explora nuestra línea completa de equipos para sistemas de protección contra incendios:
 
 ### Boquillas por Tipo
-- [Boquillas Tipo Pistola](/boquillas-contra-incendios/boquilla-tipo-pistola) - Control intuitivo para brigadas
-- [Boquillas Turbo Jet](/boquillas-contra-incendios/boquilla-turbo-jet) - Máximo rendimiento profesional
-- [Boquillas Industriales](/boquillas-contra-incendios/boquilla-industrial) - Aplicaciones especializadas
-- [Boquillas Certificadas](/boquillas-contra-incendios/boquilla-certificada) - Cumplimiento normativo
+- [Boquillas Tipo Pistola](/productos/boquilla-tipo-pistola) - Control intuitivo para brigadas
+- [Boquillas Turbo Jet](/productos/boquilla-turbo-jet) - Máximo rendimiento profesional
+- [Boquillas Industriales](/productos/boquilla-industrial) - Aplicaciones especializadas
+- [Boquillas Certificadas](/productos/boquilla-certificada) - Cumplimiento normativo
 
 ### Mangueras y Conexiones
 - [Mangueras Contra Incendios](/mangueras-contra-incendios) - Líneas de descarga certificadas
-- [Adaptadores y Conexiones](/conexiones-herrajes-contra-incendios/adaptadores-bronce) - Compatibilidad entre sistemas
-- [Conexiones Wye](/conexiones-herrajes-contra-incendios/conexion-wye) - División de líneas
-- [Coples y Reducciones](/conexiones-herrajes-contra-incendios/coples-reducciones) - Adaptación de diámetros
+- [Adaptadores y Conexiones](/conexiones/adaptadores) - Compatibilidad entre sistemas
+- [Conexiones Wye](/productos/conexion-wye) - División de líneas
+- [Coples y Reducciones](/productos/coples-reducciones) - Adaptación de diámetros
 
 ### Equipos Complementarios
 - [Monitores Contra Incendios](/monitores-contra-incendios) - Descarga de alto caudal

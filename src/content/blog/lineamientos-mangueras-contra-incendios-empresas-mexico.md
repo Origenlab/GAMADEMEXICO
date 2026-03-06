@@ -7,9 +7,9 @@ categoria: "mangueras"
 autor:
   nombre: "Ing. Mariana Ortega"
   cargo: "Especialista Senior en Ingeniería y Cumplimiento Contra Incendios"
-imagen: "/img/mangueras-contra-incendios/manguera-blindex-2-5-30m-refineria.avif"
+imagen: "/img/productos/manguera-blindex-2-5-30m-refineria.avif"
 imagenAlt: "Manguera contra incendios industrial instalada en entorno de refinería"
-imagenOg: "/img/mangueras-contra-incendios/manguera-millhose-2-5-30m-frontal.avif"
+imagenOg: "/img/productos/manguera-millhose-2-5-30m-frontal.avif"
 tags: ["mangueras contra incendios", "manguera contra incendios industrial", "lineamientos de mangueras", "cumplimiento contra incendios", "NFPA 1961", "NOM-002-STPS", "equipos contra incendios industriales", "protección contra incendios en México"]
 destacado: true
 draft: false
@@ -26,7 +26,7 @@ Para empresas industriales, comerciales, logísticas e institucionales en Méxic
 
 En Gama de México acompañamos proyectos con enfoque integral: diagnóstico de riesgo, especificación técnica, suministro de **manguera contra incendios industrial**, integración con boquillas y conexiones, y soporte para inspección periódica. El objetivo es simple: que tu sistema funcione cuando más lo necesitas y que tu empresa opere con respaldo técnico verificable.
 
-![Manguera industrial contra incendios para aplicaciones de alto riesgo](/img/mangueras-contra-incendios/manguera-blindex-2-5-30m-refineria.avif)
+![Manguera industrial contra incendios para aplicaciones de alto riesgo](/img/productos/manguera-blindex-2-5-30m-refineria.avif)
 *Descripción técnica: Manguera de alto desempeño para aplicaciones industriales con exposición severa, diseñada para operación en instalaciones de proceso crítico.*
 
 ---
@@ -62,7 +62,7 @@ Este marco permite estandarizar criterios entre ingeniería, mantenimiento, comp
 | Matriz de capacitación de brigada | Evidenciar competencia en despliegue y operación | Seguridad / RH |
 | Procedimiento de reemplazo y baja | Retirar equipo no conforme con criterio técnico | Seguridad / Dirección técnica |
 
-![Documentación técnica para trazabilidad de mangueras contra incendios](/img/mangueras-contra-incendios/manguera-blindex-pemex-documentos.avif)
+![Documentación técnica para trazabilidad de mangueras contra incendios](/img/productos/manguera-blindex-pemex-documentos.avif)
 *Descripción técnica: Paquete documental de control técnico para validar cumplimiento, trazabilidad y auditoría de líneas de manguera en instalaciones industriales.*
 
 ---
@@ -79,11 +79,11 @@ El enfoque correcto consiste en especificar la manguera como parte del sistema c
 
 | Aplicación | Requisito operativo | Solución recomendada |
 |------------|----------------------|----------------------|
-| Edificios corporativos y comerciales | Maniobra rápida, almacenamiento en gabinete y control de primer ataque | [Manguera Millhose](/mangueras-contra-incendios/manguera-millhose) 1.5" o 2.5" |
-| Plantas industriales y almacenes de alto riesgo | Mayor resistencia a abrasión, presión estable y operación continua | [Manguera Blindex](/mangueras-contra-incendios/manguera-blindex) 2.5" |
-| Refinería, química y petróleo | Resistencia mejorada a hidrocarburos y exigencia documental | [Manguera Blindex Premium PEMEX](/mangueras-contra-incendios/manguera-blindex-premium-pemex) |
-| Brigadas forestales y respuesta móvil | Bajo peso, rápida portabilidad y alta visibilidad | [Manguera forestal](/mangueras-contra-incendios/manguera-forestal) |
-| Abastecimiento desde cisterna o fuente abierta | Resistencia a vacío sin colapso de línea | [Manguera de succión](/mangueras-contra-incendios/manguera-succion) |
+| Edificios corporativos y comerciales | Maniobra rápida, almacenamiento en gabinete y control de primer ataque | [Manguera Millhose](/productos/manguera-millhose) 1.5" o 2.5" |
+| Plantas industriales y almacenes de alto riesgo | Mayor resistencia a abrasión, presión estable y operación continua | [Manguera Blindex](/productos/manguera-blindex) 2.5" |
+| Refinería, química y petróleo | Resistencia mejorada a hidrocarburos y exigencia documental | [Manguera Blindex Premium PEMEX](/productos/manguera-blindex-premium-pemex) |
+| Brigadas forestales y respuesta móvil | Bajo peso, rápida portabilidad y alta visibilidad | [Manguera forestal](/productos/manguera-forestal) |
+| Abastecimiento desde cisterna o fuente abierta | Resistencia a vacío sin colapso de línea | [Manguera de succión](/productos/manguera-succion) |
 
 ### Parámetros de desempeño que no deben negociarse
 
@@ -96,7 +96,7 @@ El enfoque correcto consiste en especificar la manguera como parte del sistema c
 | Conexión/acople | Compatible con estándar operativo del sitio (NST/NH, Storz u otros) |
 | Peso operativo | Debe ser gestionable para la brigada real por turno |
 
-![Manguera de doble forro para red industrial y brigada interna](/img/mangueras-contra-incendios/manguera-millhose-2-5-30m-frontal.avif)
+![Manguera de doble forro para red industrial y brigada interna](/img/productos/manguera-millhose-2-5-30m-frontal.avif)
 *Descripción técnica: Manguera de doble forro para sistemas de hidrantes y estaciones de manguera, con balance entre resistencia mecánica y maniobrabilidad de brigada.*
 
 ---
@@ -109,7 +109,7 @@ Toda instalación debe partir de un levantamiento técnico del sistema existente
 
 ### 2. Compatibilidad de conexiones y accesorios
 
-No se debe instalar una línea con adaptaciones improvisadas ni piezas sin trazabilidad. El estándar profesional exige conexiones compatibles y seguras, preferentemente con [adaptadores de bronce](/conexiones-herrajes-contra-incendios/adaptadores-bronce) y [conexiones tipo wye](/conexiones-herrajes-contra-incendios/conexion-wye) cuando el diseño requiera derivaciones controladas.
+No se debe instalar una línea con adaptaciones improvisadas ni piezas sin trazabilidad. El estándar profesional exige conexiones compatibles y seguras, preferentemente con [adaptadores de bronce](/conexiones/adaptadores) y [conexiones tipo wye](/productos/conexion-wye) cuando el diseño requiera derivaciones controladas.
 
 ### 3. Integración con gabinetes y estaciones de manguera
 
@@ -145,7 +145,7 @@ Durante el ataque inicial, el líder de brigada debe controlar tres factores: po
 
 Finalizada la atención, la línea debe drenarse, inspeccionarse visualmente y limpiarse antes de reenrollado. Nunca se recomienda guardar manguera húmeda por periodos prolongados, ya que acelera deterioro del forro y de los acoples. Cualquier signo de daño debe registrarse y escalarse para evaluación técnica.
 
-![Kit de manguera forestal para operación de brigada en campo](/img/mangueras-contra-incendios/manguera-forestal-contra-incendios-vista-lateral-06.avif)
+![Kit de manguera forestal para operación de brigada en campo](/img/productos/manguera-forestal-contra-incendios-vista-lateral-06.avif)
 *Descripción técnica: Configuración de manguera forestal para despliegue táctico en escenarios de difícil acceso, con énfasis en portabilidad y velocidad de respuesta.*
 
 ---
@@ -170,7 +170,7 @@ Una manguera debe salir de operación cuando presenta corte profundo, ampollamie
 
 La prueba hidrostática debe realizarse con procedimiento definido, personal competente y equipo calibrado. El objetivo no es “cumplir un formato”, sino confirmar que la línea conserva integridad bajo carga. El resultado debe incluir identificación de la manguera, presión de prueba aplicada, tiempo de sostenimiento, observaciones y dictamen final.
 
-![Manguera de succión para respaldo hidráulico en sistemas contra incendios](/img/mangueras-contra-incendios/manguera-succion-4-6m-cisterna.avif)
+![Manguera de succión para respaldo hidráulico en sistemas contra incendios](/img/productos/manguera-succion-4-6m-cisterna.avif)
 *Descripción técnica: Línea de succión reforzada para abastecimiento de bombas desde cisterna, diseñada para resistir vacío operativo sin colapso estructural.*
 
 ---
@@ -246,7 +246,7 @@ La frecuencia depende del nivel de riesgo y del programa interno de seguridad, p
 
 ### ¿Puedo usar la misma línea para agua, espuma y ambientes con hidrocarburos?
 
-No siempre. La compatibilidad depende del forro interno y de la resistencia química del conjunto. Para escenarios con hidrocarburos o requerimientos específicos de agente, se deben seleccionar líneas diseñadas para ese servicio, como [mangueras Blindex para aplicaciones exigentes](/mangueras-contra-incendios/manguera-blindex).
+No siempre. La compatibilidad depende del forro interno y de la resistencia química del conjunto. Para escenarios con hidrocarburos o requerimientos específicos de agente, se deben seleccionar líneas diseñadas para ese servicio, como [mangueras Blindex para aplicaciones exigentes](/productos/manguera-blindex).
 
 ### ¿Cómo asegurar que mi inversión en mangueras realmente reduzca riesgo?
 
@@ -266,10 +266,10 @@ Consulta nuestro [catálogo de mangueras contra incendios](/mangueras-contra-inc
 
 ## Productos recomendados para tu proyecto
 
-- [Manguera Millhose 2.5" x 30 m](/mangueras-contra-incendios/manguera-millhose-2-5-30m)
-- [Manguera Blindex Premium PEMEX](/mangueras-contra-incendios/manguera-blindex-premium-pemex)
-- [Manguera Forestal Kit Brigada](/mangueras-contra-incendios/manguera-forestal-kit-brigada)
-- [Manguera de Succión 4" x 6 m](/mangueras-contra-incendios/manguera-succion-4-6m)
+- [Manguera Millhose 2.5" x 30 m](/productos/manguera-millhose-2-5-30m)
+- [Manguera Blindex Premium PEMEX](/productos/manguera-blindex-premium-pemex)
+- [Manguera Forestal Kit Brigada](/productos/manguera-forestal-kit-brigada)
+- [Manguera de Succión 4" x 6 m](/productos/manguera-succion-4-6m)
 - [Conexiones y herrajes contra incendios](/conexiones-herrajes-contra-incendios)
 
 

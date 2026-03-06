@@ -7,9 +7,9 @@ categoria: "boquillas"
 autor:
   nombre: "Ing. Ricardo Salgado"
   cargo: "Especialista en Ingeniería de Protección Contra Incendios"
-imagen: "/img/boquillas-contra-incendios/boquilla-tipo-pistola-contra-incendios-brigada-industrial-17.avif"
+imagen: "/img/productos/boquilla-tipo-pistola-contra-incendios-brigada-industrial-17.avif"
 imagenAlt: "Boquilla contra incendios tipo pistola en brigada industrial de respuesta"
-imagenOg: "/img/boquillas-contra-incendios/boquilla-industrial-contra-incendios-planta-manufactura-09.avif"
+imagenOg: "/img/productos/boquilla-industrial-contra-incendios-planta-manufactura-09.avif"
 tags: ["boquillas contra incendios", "boquillas para brigadas", "boquillas para sistemas fijos", "NFPA 1964", "sistemas contra incendios", "equipos contra incendios industriales", "brigadas de emergencia", "NOM-002-STPS-2010"]
 destacado: true
 draft: false
@@ -26,7 +26,7 @@ En entornos industriales, comerciales e institucionales de México, la selecció
 
 Esta guía profesional está orientada a responsables de seguridad, mantenimiento, compras técnicas, ingeniería de proyectos y líderes de [brigadas de emergencia](/servicios/empresas). El objetivo es ayudarte a diseñar una solución funcional para brigadas y sistemas fijos, con visión de cumplimiento, desempeño y continuidad operativa.
 
-![Boquilla contra incendios para brigadas industriales en operación](/img/boquillas-contra-incendios/boquilla-tipo-pistola-contra-incendios-brigada-industrial-17.avif)
+![Boquilla contra incendios para brigadas industriales en operación](/img/productos/boquilla-tipo-pistola-contra-incendios-brigada-industrial-17.avif)
 *Descripción técnica: Boquilla tipo pistola utilizada por brigada industrial para ataque inicial y control direccional del chorro.*
 
 ---
@@ -63,7 +63,7 @@ La [boquilla tipo pistola](/productos/boquilla-tipo-pistola) es una solución ba
 
 En centros con brigada interna, es una opción eficiente para respuesta en fase incipiente, apoyo a evacuación y protección de rutas de acceso. También es común en estaciones de manguera donde se necesita un equilibrio entre simplicidad, confiabilidad y desempeño hidráulico.
 
-![Boquilla tipo pistola con selector de flujo para brigadas](/img/boquillas-contra-incendios/boquilla-tipo-pistola-contra-incendios-selector-flujo-03.avif)
+![Boquilla tipo pistola con selector de flujo para brigadas](/img/productos/boquilla-tipo-pistola-contra-incendios-selector-flujo-03.avif)
 *Descripción técnica: Boquilla tipo pistola con mecanismo de ajuste de patrón y control de apertura para operación por brigadistas.*
 
 ### Boquillas turbo jet: mayor rendimiento en escenarios exigentes
@@ -72,7 +72,7 @@ La [boquilla turbo jet](/productos/boquilla-turbo-jet) se utiliza cuando la estr
 
 En instalaciones con carga combustible elevada, la turbo jet aporta mayor capacidad de enfriamiento y penetración del chorro, siempre que la red hidráulica soporte los parámetros de diseño. Es una excelente alternativa para plantas industriales, patios logísticos y áreas de proceso con riesgo moderado a alto.
 
-![Boquilla turbo jet en escenario de emergencia industrial](/img/boquillas-contra-incendios/boquilla-turbo-jet-contra-incendios-emergencia-nocturna-11.avif)
+![Boquilla turbo jet en escenario de emergencia industrial](/img/productos/boquilla-turbo-jet-contra-incendios-emergencia-nocturna-11.avif)
 *Descripción técnica: Boquilla turbo jet para operación en escenarios de alta demanda térmica y control de incendio con mayor alcance.*
 
 ### Boquillas industriales para sistemas fijos y activos críticos
@@ -81,7 +81,7 @@ La [boquilla industrial](/productos/boquilla-industrial) está orientada a opera
 
 Cuando la instalación requiere compatibilidad con condiciones de operación severas, estas boquillas entregan robustez mecánica y estabilidad de desempeño. Su selección debe considerar tipo de agente, compatibilidad de conexiones y características del riesgo protegido.
 
-![Boquilla industrial en planta de manufactura para sistema fijo](/img/boquillas-contra-incendios/boquilla-industrial-contra-incendios-planta-manufactura-09.avif)
+![Boquilla industrial en planta de manufactura para sistema fijo](/img/productos/boquilla-industrial-contra-incendios-planta-manufactura-09.avif)
 *Descripción técnica: Boquilla industrial instalada para protección de área de proceso con criterios de continuidad operativa y cobertura técnica.*
 
 ### Boquillas certificadas: soporte documental para cumplimiento

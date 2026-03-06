@@ -94,7 +94,7 @@ Para lograr el alcance máximo especificado:
 
 - [Monitor UL Listed Estándar](/productos/monitor-ul-listed) - Versión convencional
 - [Monitor UL Listed Fixed Flow Foam](/productos/monitor-ul-listed-fixed-flow-foam) - Con sistema de espuma
-- [Boquillas de Largo Alcance](/productos/boquillas-largo-alcance) - Accesorios
+- [Boquillas de Largo Alcance](/boquillas-contra-incendios) - Accesorios
 
 ---
 

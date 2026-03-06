@@ -7,9 +7,9 @@ categoria: "boquillas"
 autor:
   nombre: "Ing. Laura Villaseñor"
   cargo: "Arquitecta de Sistemas de Protección Contra Incendios"
-imagen: "/img/boquillas-contra-incendios/boquilla-tipo-pistola-contra-incendios-catalogo-35.avif"
+imagen: "/img/productos/boquilla-tipo-pistola-contra-incendios-catalogo-35.avif"
 imagenAlt: "Boquilla contra incendios profesional para aplicaciones industriales y corporativas"
-imagenOg: "/img/boquillas-contra-incendios/boquilla-industrial-contra-incendios-vista-explosionada-11.avif"
+imagenOg: "/img/productos/boquilla-industrial-contra-incendios-vista-explosionada-11.avif"
 tags: ["boquillas contra incendios", "estándar corporativo", "ingeniería contra incendios", "brigadas industriales", "sistemas fijos contra incendios", "auditoría de cumplimiento", "equipos contra incendios industriales", "protección contra incendios industrial"]
 destacado: true
 draft: false
@@ -26,7 +26,7 @@ Este documento presenta un **estándar corporativo profesional** para diseñar, 
 
 Objetivo principal: asegurar que cada boquilla instalada en tu organización cumpla simultáneamente con desempeño hidráulico, control operativo, trazabilidad documental y alineación con marcos de seguridad aplicables en México.
 
-![Boquilla contra incendios para aplicación profesional en sistemas corporativos](/img/boquillas-contra-incendios/boquilla-tipo-pistola-contra-incendios-catalogo-35.avif)
+![Boquilla contra incendios para aplicación profesional en sistemas corporativos](/img/productos/boquilla-tipo-pistola-contra-incendios-catalogo-35.avif)
 *Descripción técnica: Boquilla profesional de uso industrial diseñada para programas corporativos de protección contra incendios.*
 
 ---
@@ -153,7 +153,7 @@ La boquilla no debe verse como elemento final independiente. Debe operar como pa
 
 Cuando se requiere descarga de alto alcance o cobertura de áreas de riesgo elevado, la boquilla debe validarse para su uso con [monitores contra incendios](/monitores-contra-incendios). La compatibilidad mecánica e hidráulica debe quedar documentada antes de liberar operación.
 
-![Vista técnica de componentes de boquilla para ingeniería de integración](/img/boquillas-contra-incendios/boquilla-industrial-contra-incendios-componentes-12.avif)
+![Vista técnica de componentes de boquilla para ingeniería de integración](/img/productos/boquilla-industrial-contra-incendios-componentes-12.avif)
 *Descripción técnica: Componentes clave de boquilla industrial para evaluación de integrabilidad y mantenibilidad en sistemas corporativos.*
 
 ---
@@ -248,7 +248,7 @@ Una boquilla sin mantenimiento preventivo es un punto de falla latente. El está
 
 La reintegración de servicio debe quedar condicionada a prueba exitosa y registro de liberación.
 
-![Boquilla turbo jet de alto caudal para pruebas de desempeño](/img/boquillas-contra-incendios/boquilla-turbo-jet-contra-incendios-alto-caudal-10.avif)
+![Boquilla turbo jet de alto caudal para pruebas de desempeño](/img/productos/boquilla-turbo-jet-contra-incendios-alto-caudal-10.avif)
 *Descripción técnica: Boquilla turbo jet para validación de desempeño hidráulico en pruebas de aceptación y mantenimiento.*
 
 ---
