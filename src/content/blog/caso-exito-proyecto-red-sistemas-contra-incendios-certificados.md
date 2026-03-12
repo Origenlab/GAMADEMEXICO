@@ -1,6 +1,6 @@
 ---
 title: "Caso de Éxito: Sistemas Contra Incendios con Certificación UL y FM"
-description: "Cómo una empresa de ingeniería implementó sistemas de protección contra incendios con equipos certificados UL y FM. Proceso de selección, normatividad y resulta..."
+description: "Cómo una empresa de ingeniería implementó sistemas de protección contra incendios con equipos certificados UL y FM. Proceso de selección, normatividad y result..."
 fecha: "2026-02-26"
 categoria: "gabinetes-hidrantes"
 autor:

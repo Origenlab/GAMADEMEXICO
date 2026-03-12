@@ -1,6 +1,6 @@
 ---
 title: "Mangueras Contra Incendios en Empresas: Estándar Técnico y Legal"
-description: "Guía técnica para seleccionar e instalar mangueras contra incendios en México con criterios NFPA, NOM-002-STPS, pruebas hidrostáticas y operación segura en empr..."
+description: "Guía técnica para seleccionar e instalar mangueras contra incendios en México con criterios NFPA, NOM-002-STPS, pruebas hidrostáticas y operación segura en emp..."
 fecha: "2026-02-17"
 fechaActualizacion: "2026-02-17"
 categoria: "mangueras"

@@ -1,5 +1,5 @@
 ---
-title: "Ingeniería de Boquillas Contra Incendios para Proyectos Industriales"
+title: "Ingeniería de Boquillas Contra Incendios para Proyectos Industri..."
 description: "Guía profesional para boquillas contra incendios en proyectos industriales: selección hidráulica, cumplimiento técnico, pruebas de aceptación y operación segura."
 fecha: "2026-02-16"
 fechaActualizacion: "2026-02-16"

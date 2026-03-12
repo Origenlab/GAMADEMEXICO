@@ -1,5 +1,5 @@
 ---
-title: "Inspección Protección Civil: Qué Revisan en Equipos Contra Incendios"
+title: "Inspección Protección Civil: Qué Revisan en Equipos Contra Incen..."
 description: "Guía para preparar tu empresa ante inspecciones de Protección Civil en México: equipos, documentos, mantenimiento y checklist técnico."
 fecha: "2026-02-17"
 fechaActualizacion: "2026-02-17"
