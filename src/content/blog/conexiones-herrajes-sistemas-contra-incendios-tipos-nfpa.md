@@ -1,6 +1,6 @@
 ---
-title: "Conexiones y Herrajes para Sistemas Contra Incendios: Guía Técni..."
-description: "Guía técnica completa sobre conexiones y herrajes para sistemas contra incendios: acoplamientos Storz, NST, BSP, tomas siamesas, wyes, adaptadores y compatibil..."
+title: "Conexiones y Herrajes Contra Incendios: Guía Técnica NFPA"
+description: "Acoplamientos Storz, NST y BSP, tomas siamesas, wyes, adaptadores de bronce y aluminio para sistemas contra incendios."
 fecha: "2025-03-07"
 categoria: "conexiones-herrajes"
 autor:

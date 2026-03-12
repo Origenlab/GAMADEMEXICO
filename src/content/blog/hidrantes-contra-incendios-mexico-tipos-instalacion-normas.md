@@ -1,6 +1,6 @@
 ---
-title: "Hidrantes Contra Incendios en México: Tipos, Instalación y Norma..."
-description: "Guía técnica sobre hidrantes contra incendios en México: tipos de hidrante, presión mínima, distancias NFPA 24, conexión Storz vs roscada, normativa NOM y resp..."
+title: "Hidrantes Contra Incendios en México: Tipos e Instalación"
+description: "Guía de hidrantes contra incendios: banqueta vs privado, presión NFPA 24, conexión Storz y normativa NOM en México."
 fecha: "2025-03-06"
 categoria: "gabinetes-hidrantes"
 autor:

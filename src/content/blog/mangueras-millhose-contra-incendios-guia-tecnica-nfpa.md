@@ -1,6 +1,6 @@
 ---
-title: "Mangueras Millhose para Incendios: Especificaciones Técnicas y N..."
-description: "Guía técnica completa sobre mangueras Millhose para sistemas contra incendios: construcción doble jacket, comparativa con manguera Blindex, diámetros, presione..."
+title: "Mangueras Millhose: Especificaciones Técnicas y NFPA 14"
+description: "Mangueras Millhose doble jacket vs Blindex: diámetros, presiones de trabajo, prueba hidrostática y NFPA 14 México."
 fecha: "2025-03-09"
 categoria: "mangueras"
 autor:

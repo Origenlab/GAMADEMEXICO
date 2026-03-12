@@ -1,6 +1,6 @@
 ---
-title: "Gabinetes de Manguera Contra Incendios: Tipos, Normas NOM y Sele..."
-description: "Guía técnica completa sobre gabinetes de manguera contra incendios en México: tipos I, II y III, normas NOM-002-STPS y NOM-093-SCFI, equipos incluidos, instala..."
+title: "Gabinetes de Manguera Contra Incendios: Tipos, NOM y Selección"
+description: "Tipos de gabinetes contra incendios en México (I, II, III), normas NOM-002-STPS, equipos incluidos y mantenimiento."
 fecha: "2025-03-05"
 categoria: "gabinetes-hidrantes"
 autor:
