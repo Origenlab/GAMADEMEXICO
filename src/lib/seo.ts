@@ -341,6 +341,8 @@ interface ArticleSchemaInput {
   tags?: string[];
   wordCount?: number;
   readingTime?: number;
+  datePublished?: string;
+  dateModified?: string;
 }
 
 export function buildArticleSchema(article: ArticleSchemaInput) {
@@ -352,15 +354,23 @@ export function buildArticleSchema(article: ArticleSchemaInput) {
     ? article.author.cargo
     : undefined;
 
+  const canonicalUrl = article.url.startsWith('http') ? article.url : `${SITE_URL}${article.url}`;
+
   const schema: Record<string, unknown> = {
     '@context': 'https://schema.org',
-    '@type': 'Article',
+    '@type': 'TechArticle',
+    '@id': `${canonicalUrl}#article`,
     headline: article.title,
     description: article.description,
     author: {
       '@type': 'Person',
       name: authorName,
       ...(authorJobTitle && { jobTitle: authorJobTitle }),
+      worksFor: {
+        '@type': 'Organization',
+        name: SITE_NAME,
+        url: SITE_URL,
+      },
     },
     publisher: {
       '@type': 'Organization',
@@ -369,14 +379,19 @@ export function buildArticleSchema(article: ArticleSchemaInput) {
       logo: {
         '@type': 'ImageObject',
         url: toAbsoluteImageUrl(LOGO_PATH, SITE_URL),
+        width: 200,
+        height: 60,
       },
     },
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': article.url.startsWith('http') ? article.url : `${SITE_URL}${article.url}`,
+      '@id': canonicalUrl,
     },
+    url: canonicalUrl,
     articleSection: article.category,
     inLanguage: 'es-MX',
+    ...(article.datePublished && { datePublished: article.datePublished }),
+    ...(article.dateModified && { dateModified: article.dateModified }),
   };
 
   if (article.image) {

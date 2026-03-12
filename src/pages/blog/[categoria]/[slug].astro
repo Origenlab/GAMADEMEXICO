@@ -155,12 +155,14 @@ const heroImage = getOptimizedImageUrl(heroImageSource, {
 const articleSchema = buildArticleSchema({
   title: post.data.title,
   description: post.data.description,
-  url: `/blog/${categorySlug}/${post.id}`,
+  url: post.data.canonical || `/blog/${categorySlug}/${post.id}`,
   image: post.data.imagen,
   author: post.data.autor,
   category: categoryLabel,
   tags: post.data.tags,
   readingTime,
+  datePublished: post.data.fecha,
+  dateModified: post.data.fechaActualizacion || post.data.fecha,
 });
 
 // Schema Breadcrumb

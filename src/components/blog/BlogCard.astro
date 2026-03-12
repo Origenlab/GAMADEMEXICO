@@ -4,7 +4,7 @@
 // Sigue el patrón de SubcategoryProductCard
 // =============================================================================
 
-import { getAuthorName, CATEGORY_LABELS, CATEGORY_SLUGS } from '../../lib/blogHelpers';
+import { getAuthorName, CATEGORY_LABELS, CATEGORY_SLUGS, formatDateSpanish } from '../../lib/blogHelpers';
 import { generateSrcset, getOptimizedImageUrl } from '../../lib/images';
 
 interface Props {
@@ -25,6 +25,7 @@ const {
   title,
   description,
   slug,
+  fecha,
   categoria,
   autor = 'Equipo Técnico Gama de México',
   imagen,
@@ -48,6 +49,7 @@ const imageResponsiveData = generateSrcset(effectiveImage, {
 const authorName = getAuthorName(autor);
 const categoryLabel = CATEGORY_LABELS[categoria] || categoria;
 const categorySlug = CATEGORY_SLUGS[categoria] || categoria;
+const fechaFormateada = fecha ? formatDateSpanish(fecha) : null;
 ---
 
 <article class={`blog-card ${destacado ? 'blog-card--featured' : ''}`}>
@@ -69,7 +71,7 @@ const categorySlug = CATEGORY_SLUGS[categoria] || categoria;
       <div class="blog-card__meta">
         {tiempoLectura && <span>{tiempoLectura} min de lectura</span>}
         {tiempoLectura && <span class="blog-card__separator">·</span>}
-        <span>Guía Técnica</span>
+        {fechaFormateada && <time datetime={fecha} class="blog-card__date">{fechaFormateada}</time>}
       </div>
 
       <h3 class="blog-card__title">{title}</h3>
@@ -77,7 +79,7 @@ const categorySlug = CATEGORY_SLUGS[categoria] || categoria;
 
       <div class="blog-card__footer">
         <span class="blog-card__author">{authorName}</span>
-        <span class="blog-card__cta">Leer más →</span>
+        <span class="blog-card__cta">Leer artículo →</span>
       </div>
     </div>
   </a>
