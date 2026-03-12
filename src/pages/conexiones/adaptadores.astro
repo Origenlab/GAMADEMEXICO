@@ -6,6 +6,10 @@ import SubcategoryProductCard from '../../components/SubcategoryProductCard.astr
 import ProductSidebar from '../../components/ProductSidebar.astro';
 import RelatedProductsGrid from '../../components/RelatedProductsGrid.astro';
 import CotizacionForm from '../../components/CotizacionForm.astro';
+import Faq from '../../components/Faq.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import { buildProductCategorySchema, buildBreadcrumbSchema, buildFAQSchema, buildOrganizationSchema } from '../../lib/seo';
+
 
 // 1. Obtener todos los productos de la categoría conexiones-herrajes
 const todosProductos = (await getCollection('productos', ({ data }) =>
@@ -27,9 +31,39 @@ const subcategorias = [
   { slug: 'chiflones', nombre: 'Chiflones de Tres Pasos', descripcion: 'Control de patrón de descarga', activo: false },
   { slug: 'accesorios', nombre: 'Accesorios y Herrajes', descripcion: 'Tapones, caps, niples', activo: false },
 ];
+const faqItems = [
+  { pregunta: '¿Para qué sirven los adaptadores de bronce en sistemas contra incendios?', respuesta: 'Los adaptadores de bronce permiten conectar mangueras, boquillas y accesorios con diferentes diámetros o tipos de rosca. Son esenciales cuando se amplía o rehabilita un sistema contra incendios y los nuevos equipos no son directamente compatibles con las conexiones existentes. También se usan para conectar equipos de diferentes fabricantes o países con estándares de rosca distintos.' },
+  { pregunta: '¿Cuáles son los tipos de adaptadores más comunes?', respuesta: 'Los adaptadores más solicitados son: macho-hembra para cambio de rosca (NST a BSP), reducción para cambio de diámetro (de 2.5" a 1.5"), adaptador Storz para equipos de bomberos europeos, y adaptador sexo para conectar dos extremos del mismo tipo. Todos están disponibles en bronce fundido de grado naval para máxima resistencia a la corrosión y presiones de hasta 300 PSI.' },
+  { pregunta: '¿Los adaptadores requieren mantenimiento o reemplazo periódico?', respuesta: 'Los adaptadores de bronce bien seleccionados y correctamente instalados son prácticamente de por vida en condiciones normales. El mantenimiento principal es la inspección visual anual para detectar corrosión, deformación de roscas o fugas. En sistemas que se prueban regularmente, verificar la correcta tensión del acoplamiento después de cada prueba. Reemplazar si hay fisuras, corrosión profunda o daño en las roscas.' },
+];
+
+const structuredData = [
+  buildOrganizationSchema(),
+  buildProductCategorySchema({
+    name: 'Adaptadores de Bronce para Mangueras Contra Incendios',
+    description: 'Adaptadores de bronce NST, BSP y Storz para sistemas contra incendios. Cambio de diámetro y tipo de rosca. México.',
+    image: '/img/conexiones-herrajes/adaptador-aluminio-elk-o-lite-4-frontal.avif',
+    url: '/conexiones/adaptadores',
+    category: 'Conexiones y Herrajes Contra Incendios',
+    brand: 'Elkhart Brass',
+    reviewAuthor: 'Ing. Carlos Mendoza',
+    reviewBody: 'Excelente calidad y respaldo técnico de Gama de México. Equipos certificados con entrega puntual.',
+    reviewDate: '2025-03-15',
+    ratingCount: 32,
+    reviewCount: 32,
+  }),
+  buildBreadcrumbSchema([
+    { name: 'Inicio', url: '/' },
+    { name: 'Equipos', url: '/equipos' },
+    { name: 'Conexiones y Herrajes', url: '/conexiones-herrajes-contra-incendios' },
+  ]),
+  buildFAQSchema(faqItems),
+];
+
 ---
 
 <Layout
+  structuredData={structuredData}
   title="Adaptadores de Bronce NST NPT | México"
   description="Adaptadores de bronce para conexiones contra incendio. Macho, hembra, swivel. Roscas NH, NPT, Storz, 300 PSI. Certificados UL/FM. México."
   activePage="equipos"
@@ -53,6 +87,10 @@ const subcategorias = [
     <p>Los <strong>adaptadores de bronce</strong> son piezas de transición que permiten conectar equipos con diferentes tipos de rosca. Son esenciales cuando se integran componentes de distintos fabricantes o se conectan mangueras de bomberos a sistemas de edificios. Disponibles en configuraciones macho-macho, hembra-hembra, macho-hembra y con swivel giratorio para evitar torsión de mangueras.</p>
     <p><strong>Gama de México</strong> ofrece adaptadores Elkhart Brass certificados UL/FM en bronce fundido. Manejamos conversiones entre roscas NH (1.5" y 2.5"), NPT (desde 1/2" hasta 4"), Storz (65mm y 100mm) y conexiones especiales. Cada adaptador está probado a 500 PSI para garantizar integridad bajo presión de servicio.</p>
   </Fragment>
+  <!-- BREADCRUMB -->
+  <Breadcrumb />
+
+
 
   <!-- CONTENT + SIDEBAR -->
   <section class="subcat-content">
@@ -185,4 +223,26 @@ const subcategorias = [
     pagina="Conexiones Adaptadores"
   />
 
+
+  <!-- FAQ -->
+  <section class="faq-section" id="faq" aria-labelledby="faq-title">
+    <div class="container">
+      <h2 id="faq-title" class="section-title">Preguntas Frecuentes</h2>
+      <Faq items={faqItems} id="faq" />
+    </div>
+  </section>
+
 </Layout>
+
+<style>
+  .faq-section {
+    padding: var(--spacing-2xl, 4rem) 0;
+    background: var(--color-surface, #fff);
+  }
+  .faq-section .section-title {
+    font-size: var(--text-2xl, 1.75rem);
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+</style>

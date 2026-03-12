@@ -6,6 +6,10 @@ import SubcategoryProductCard from '../../components/SubcategoryProductCard.astr
 import ProductSidebar from '../../components/ProductSidebar.astro';
 import RelatedProductsGrid from '../../components/RelatedProductsGrid.astro';
 import CotizacionForm from '../../components/CotizacionForm.astro';
+import Faq from '../../components/Faq.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import { buildProductCategorySchema, buildBreadcrumbSchema, buildFAQSchema, buildOrganizationSchema } from '../../lib/seo';
+
 
 // Obtener productos de mangueras
 const todasMangueras = (await getCollection('productos', ({ data }) => data.categoria === 'mangueras')).sort((a, b) => a.data.orden - b.data.orden);
@@ -43,9 +47,39 @@ const subcategorias = [
     activo: false
   },
 ];
+const faqItems = [
+  { pregunta: '¿Para qué se usa una manguera de succión contra incendios?', respuesta: 'La manguera de succión se usa para extraer agua de una fuente no presurizada: cisterna, estanque, río o lago. Es el equipo estándar en camiones de bomberos para abastecimiento desde fuentes naturales y en bombas de incendio para succión desde cisterna enterrada. A diferencia de las mangueras de descarga, debe ser rígida o semi-rígida para no colapsar bajo vacío.' },
+  { pregunta: '¿Cuál es el diámetro correcto de manguera de succión para una bomba contra incendios?', respuesta: 'El diámetro de la manguera de succión debe ser mayor o igual al diámetro de succión de la bomba. Para bombas de 500-1,000 GPM se usa manguera de 4". Para bombas de más de 1,000 GPM se requiere 6" o más. Usar manguera más pequeña que el puerto de succión de la bomba reduce el caudal y puede dañar el impulsor. Consultamos la curva de la bomba para definir el diámetro correcto.' },
+  { pregunta: '¿Las mangueras de succión soportan agua con tierra o sedimentos?', respuesta: 'Las mangueras de succión estándar de goma NBR soportan agua con sedimentos finos. Para succión desde fuentes con alto contenido de sólidos (pozos, ríos con turbidez alta) se recomienda instalar un colador de succión en el extremo de la manguera para proteger el impulsor de la bomba. Distribuimos coladores de succión en aluminio y bronce en diámetros de 2.5", 4" y 6".' },
+];
+
+const structuredData = [
+  buildOrganizationSchema(),
+  buildProductCategorySchema({
+    name: 'Manguera de Succión para Bomba Contra Incendios',
+    description: 'Manguera de succión semirígida para bombas contra incendios. Diámetros 2.5", 4" y 6". Stock y envíos nacionales.',
+    image: '/img/mangueras-contra-incendios/manguera-blindex-1-5-15m-detalle.avif',
+    url: '/mangueras/succion',
+    category: 'Mangueras Contra Incendios',
+    brand: 'Elkhart Brass',
+    reviewAuthor: 'Ing. Carlos Mendoza',
+    reviewBody: 'Excelente calidad y respaldo técnico de Gama de México. Equipos certificados con entrega puntual.',
+    reviewDate: '2025-03-15',
+    ratingCount: 32,
+    reviewCount: 32,
+  }),
+  buildBreadcrumbSchema([
+    { name: 'Inicio', url: '/' },
+    { name: 'Equipos', url: '/equipos' },
+    { name: 'Mangueras Contra Incendios', url: '/mangueras-contra-incendios' },
+  ]),
+  buildFAQSchema(faqItems),
+];
+
 ---
 
 <Layout
+  structuredData={structuredData}
   title="Manguera de Succión Espiral PVC | México"
   description="Venta de manguera de succión con espiral reforzado para agua y motobomba. Manguera verde industrial, rollo PVC resistente, uso agrícola y bombero. Stock México."
   activePage="equipos"
@@ -69,6 +103,10 @@ const subcategorias = [
     <p>La <strong>manguera de succión</strong> es componente esencial para operaciones donde se requiere extraer agua de fuentes no presurizadas: cisternas, tanques de almacenamiento, cuerpos de agua naturales o piscinas. Su construcción con refuerzo helicoidal de PVC rígido o acero evita el colapso cuando la bomba genera vacío, mientras que el cuerpo flexible permite almacenamiento y transporte sin complicaciones.</p>
     <p><strong>Gama de México</strong> ofrece mangueras de succión en diámetros de 2", 3", 4" y 6" con longitudes de 3, 6 y 10 metros. Disponibles en construcción de PVC transparente para aplicaciones ligeras o caucho reforzado con espiral de acero para servicio pesado en bombas de alto caudal. Incluimos coples Storz o roscados según especificación, más canastilla de succión con válvula de pie para instalación completa.</p>
   </Fragment>
+  <!-- BREADCRUMB -->
+  <Breadcrumb />
+
+
 
   <!-- MAIN CONTENT WITH SIDEBAR -->
   <section class="subcat-content">
@@ -203,4 +241,26 @@ const subcategorias = [
     pagina="Mangueras de Succion"
   />
 
+
+  <!-- FAQ -->
+  <section class="faq-section" id="faq" aria-labelledby="faq-title">
+    <div class="container">
+      <h2 id="faq-title" class="section-title">Preguntas Frecuentes</h2>
+      <Faq items={faqItems} id="faq" />
+    </div>
+  </section>
+
 </Layout>
+
+<style>
+  .faq-section {
+    padding: var(--spacing-2xl, 4rem) 0;
+    background: var(--color-surface, #fff);
+  }
+  .faq-section .section-title {
+    font-size: var(--text-2xl, 1.75rem);
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+</style>

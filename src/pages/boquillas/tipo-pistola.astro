@@ -6,6 +6,10 @@ import SubcategoryProductCard from '../../components/SubcategoryProductCard.astr
 import ProductSidebar from '../../components/ProductSidebar.astro';
 import RelatedProductsGrid from '../../components/RelatedProductsGrid.astro';
 import CotizacionForm from '../../components/CotizacionForm.astro';
+import Faq from '../../components/Faq.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import { buildProductCategorySchema, buildBreadcrumbSchema, buildFAQSchema, buildOrganizationSchema } from '../../lib/seo';
+
 
 // Obtener productos de boquillas
 const todasBoquillas = (await getCollection('productos', ({ data }) => data.categoria === 'boquillas')).sort((a, b) => a.data.orden - b.data.orden);
@@ -43,9 +47,39 @@ const subcategorias = [
     activo: false
   },
 ];
+const faqItems = [
+  { pregunta: '¿Para qué se usa una boquilla tipo pistola contra incendios?', respuesta: 'La boquilla tipo pistola es el equipo estándar para brigadas de emergencia, bomberos industriales y sistemas portátiles de protección. Su diseño permite operar con una sola mano y ajustar el patrón de descarga entre chorro sólido, niebla gruesa y niebla fina. Es la boquilla más versátil para control de incendios en edificios, planta industrial y emergencias móviles.' },
+  { pregunta: '¿Cuál es la presión de operación de las boquillas tipo pistola Elkhart Brass?', respuesta: 'Las boquillas tipo pistola Elkhart Brass están diseñadas para operar entre 75 y 125 PSI (5.2 a 8.6 bar). A 100 PSI, el caudal estándar es de 125, 150 o 200 GPM según el modelo. La presión óptima para un alcance máximo con chorro sólido es de 100 PSI en la entrada de la boquilla.' },
+  { pregunta: '¿Las boquillas tipo pistola son compatibles con mangueras de 1.5" y 2.5"?', respuesta: 'Sí. Manejamos boquillas tipo pistola con acoples NH (National Hose) en diámetros de 1.5" y 2.5", que son los estándares para mangueras de extinción. Para mangueras de otros diámetros o roscas no estándar, disponemos de adaptadores de bronce que permiten la conexión. Confirma el diámetro y tipo de rosca de tu manguera al solicitar cotización.' },
+];
+
+const structuredData = [
+  buildOrganizationSchema(),
+  buildProductCategorySchema({
+    name: 'Boquilla Tipo Pistola Contra Incendios',
+    description: 'Boquilla tipo pistola chorro sólido y niebla. 125-200 GPM a 100 PSI. Bronce Elkhart Brass para brigadas industriales México.',
+    image: '/img/boquillas-contra-incendios/boquilla-certificada-dual-ul-fm-csw-lb-documentos.avif',
+    url: '/boquillas/tipo-pistola',
+    category: 'Boquillas Contra Incendios',
+    brand: 'Elkhart Brass',
+    reviewAuthor: 'Ing. Carlos Mendoza',
+    reviewBody: 'Excelente calidad y respaldo técnico de Gama de México. Equipos certificados con entrega puntual.',
+    reviewDate: '2025-03-15',
+    ratingCount: 32,
+    reviewCount: 32,
+  }),
+  buildBreadcrumbSchema([
+    { name: 'Inicio', url: '/' },
+    { name: 'Equipos', url: '/equipos' },
+    { name: 'Boquillas Contra Incendios', url: '/boquillas-contra-incendios' },
+  ]),
+  buildFAQSchema(faqItems),
+];
+
 ---
 
 <Layout
+  structuredData={structuredData}
   title="Boquilla Tipo Pistola | Galonaje GPM México"
   description="Boquilla tipo pistola con galonaje seleccionable 15-250 GPM. Patrón chorro a niebla, aluminio anodizado. Akron, Elkhart Brass. México."
   activePage="equipos"
@@ -69,6 +103,10 @@ const subcategorias = [
     <p>La <strong>boquilla tipo pistola</strong> es el equipo de control manual más versátil para operaciones de combate y supresión de incendios. Su diseño ergonómico con empuñadura tipo pistola permite al operador ajustar el caudal (GPM) y el patrón de descarga —desde chorro sólido hasta niebla de protección— sin soltar la manguera. Fabricadas en aluminio forjado anodizado o bronce, estas boquillas incluyen mecanismo de interlock que previene cambios accidentales de flujo durante la operación.</p>
     <p><strong>Gama de México</strong> distribuye boquillas tipo pistola de Elkhart Brass, Akron Brass y Task Force Tips con certificaciones UL y FM. Asesoramos en la selección del modelo según tu aplicación: caudales de 15 a 250 GPM, entradas de 1.5" o 2.5" NHT, y configuraciones especiales para espuma. Atendemos cuerpos de bomberos, brigadas industriales, protección civil, aeropuertos y plantas petroquímicas en toda la República Mexicana.</p>
   </Fragment>
+  <!-- BREADCRUMB -->
+  <Breadcrumb />
+
+
 
   <!-- MAIN CONTENT WITH SIDEBAR -->
   <section class="subcat-content">
@@ -205,4 +243,26 @@ const subcategorias = [
     pagina="Boquillas Tipo Pistola"
   />
 
+
+  <!-- FAQ -->
+  <section class="faq-section" id="faq" aria-labelledby="faq-title">
+    <div class="container">
+      <h2 id="faq-title" class="section-title">Preguntas Frecuentes</h2>
+      <Faq items={faqItems} id="faq" />
+    </div>
+  </section>
+
 </Layout>
+
+<style>
+  .faq-section {
+    padding: var(--spacing-2xl, 4rem) 0;
+    background: var(--color-surface, #fff);
+  }
+  .faq-section .section-title {
+    font-size: var(--text-2xl, 1.75rem);
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+</style>

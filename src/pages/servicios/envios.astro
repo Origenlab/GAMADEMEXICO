@@ -446,7 +446,30 @@ const structuredData = [
   </section>
 
   <!-- LEAD CAPTURE -->
-  <LeadCapture />
+  
+  <!-- SERVICE IMAGE -->
+  <section class="service-image-section">
+    <div class="container">
+      <img
+        src="/img/logistica-carga-valvulas-contra-incendios-camion.avif"
+        alt="Logística y envío de equipos contra incendios en camión a toda la República Mexicana"
+        width="1408" height="768"
+        loading="lazy" decoding="async"
+        class="service-feature-img"
+      />
+    </div>
+  </section>
+
+
+  <!-- SERVICE IMAGES EXTRA -->
+  <section class="service-image-section">
+    <div class="container service-img-grid-auto">
+      <img src="/img/logistica-nocturna-envio-equipos-contra-incendios.avif" alt="Logística nocturna de envío de equipos contra incendios a toda la República" width="1408" height="768" loading="lazy" decoding="async" class="service-feature-img" />
+
+    </div>
+  </section>
+
+<LeadCapture />
 
   <!-- FAQ -->
   <section class="faq" id="faq" aria-labelledby="faq-title">
@@ -519,225 +542,76 @@ const structuredData = [
 </Layout>
 
 <style>
-  /* Service Sections */
-  .service-sections {
-    padding: var(--spacing-3xl) 0;
-    background: var(--color-white);
-  }
+  
+  
 
-  .service-block {
-    background: var(--color-white);
-    border: 1px solid var(--color-border);
-    border-radius: var(--border-radius);
-    margin-bottom: var(--spacing-xl);
-    overflow: hidden;
-    box-shadow: var(--shadow-md);
-  }
+  
 
-  .service-block__header {
-    display: flex;
-    align-items: center;
-    gap: var(--spacing-md);
-    padding: var(--spacing-lg);
-    background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-white) 100%);
-    border-bottom: 1px solid var(--color-border);
-  }
+  
 
-  .service-block__icon {
-    flex-shrink: 0;
-    width: 56px;
-    height: 56px;
-    background: var(--color-primary);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--color-white);
-  }
+  
 
-  .service-block__icon svg {
-    width: 28px;
-    height: 28px;
-  }
+  
 
-  .service-block__title-wrap {
-    flex: 1;
-  }
+  
 
-  .service-block__title {
-    font-size: var(--font-size-xl);
-    font-weight: 700;
-    color: var(--color-secondary);
-    margin-bottom: 0.25rem;
-  }
+  
 
-  .service-block__subtitle {
-    font-size: var(--font-size-sm);
-    color: var(--color-text-light);
-  }
+  
 
-  .service-block__content {
-    padding: var(--spacing-lg);
-  }
+  
 
-  .service-block__text {
-    margin-bottom: var(--spacing-lg);
-  }
+  
 
-  .service-block__text p {
-    margin-bottom: var(--spacing-sm);
-    color: var(--color-text);
-    line-height: var(--line-height-base);
-  }
+  
 
-  .service-block__text p:last-child {
-    margin-bottom: 0;
-  }
+  
 
-  .service-block__features {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: var(--spacing-md);
-    margin-top: var(--spacing-lg);
-  }
+  
 
-  .feature-card {
-    background: var(--color-accent);
-    padding: var(--spacing-md);
-    border-radius: var(--border-radius-sm);
-    border-left: 3px solid var(--color-primary);
-  }
+  
 
-  .feature-card__title {
-    font-size: var(--font-size-base);
-    font-weight: 700;
-    color: var(--color-secondary);
-    margin-bottom: 0.5rem;
-  }
+  
 
-  .feature-card__desc {
-    font-size: var(--font-size-sm);
-    color: var(--color-text-light);
-    line-height: 1.5;
-  }
+  
 
-  .service-block__list {
-    margin-top: var(--spacing-lg);
-    padding: var(--spacing-md);
-    background: var(--color-accent);
-    border-radius: var(--border-radius-sm);
-  }
+  
 
-  .service-block__list-title {
-    font-size: var(--font-size-base);
-    font-weight: 700;
-    color: var(--color-secondary);
-    margin-bottom: var(--spacing-sm);
-  }
+  
 
-  .check-list {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 0.5rem;
-  }
+  
 
-  .check-list__item {
-    display: flex;
-    align-items: flex-start;
-    gap: 0.5rem;
-    font-size: var(--font-size-sm);
-    color: var(--color-text);
-  }
+  
 
-  .check-list__item::before {
-    content: "✓";
-    color: var(--color-primary);
-    font-weight: 700;
-    flex-shrink: 0;
-  }
+  
 
-  .service-block__contact {
-    margin-top: var(--spacing-lg);
-    padding: var(--spacing-lg);
-    background: var(--color-accent);
-    border-radius: var(--border-radius-sm);
-  }
+  
 
-  .service-block__contact-title {
-    font-size: var(--font-size-base);
-    font-weight: 700;
-    color: var(--color-secondary);
-    margin-bottom: var(--spacing-md);
-    text-align: center;
-  }
+  
 
-  .contact-channels {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: var(--spacing-sm);
-  }
+  
 
-  .contact-channel {
-    display: flex;
-    align-items: center;
-    gap: var(--spacing-sm);
-    padding: var(--spacing-sm) var(--spacing-md);
-    background: var(--color-white);
-    border-radius: var(--border-radius-sm);
-    border: 1px solid var(--color-border);
-    transition: all var(--transition-fast);
-  }
+  
 
-  .contact-channel:hover {
-    border-color: var(--color-primary);
-    box-shadow: var(--shadow-md);
-  }
+  
 
-  .contact-channel__icon {
-    width: 40px;
-    height: 40px;
-    background: var(--color-primary);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--color-white);
-    flex-shrink: 0;
-  }
+  
 
-  .contact-channel__icon svg {
-    width: 20px;
-    height: 20px;
-  }
+  
 
-  .contact-channel__info {
-    display: flex;
-    flex-direction: column;
-  }
+  
 
-  .contact-channel__label {
-    font-size: var(--font-size-xs);
-    color: var(--color-text-light);
-  }
+  
 
-  .contact-channel__value {
-    font-size: var(--font-size-sm);
-    font-weight: 600;
-    color: var(--color-secondary);
-  }
+  
 
-  /* Coverage Section */
+  
   .coverage {
     padding: var(--spacing-3xl) 0;
     background: var(--color-accent);
   }
 
-  .coverage__grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: var(--spacing-md);
-    margin-bottom: var(--spacing-lg);
-  }
+  
 
   .coverage__card {
     background: var(--color-white);
@@ -796,55 +670,20 @@ const structuredData = [
     font-style: italic;
   }
 
-  /* Process Section */
-  .process {
-    padding: var(--spacing-3xl) 0;
-    background: var(--color-white);
-  }
+  
+  
 
-  .process__steps {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: var(--spacing-lg);
-  }
+  
 
-  .process__step {
-    background: var(--color-accent);
-    padding: var(--spacing-lg);
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow-md);
-    text-align: center;
-    position: relative;
-  }
+  
 
-  .process__number {
-    width: 48px;
-    height: 48px;
-    background: var(--color-primary);
-    color: var(--color-white);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: var(--font-size-xl);
-    font-weight: 700;
-    margin: 0 auto var(--spacing-sm);
-  }
+  
 
-  .process__step-title {
-    font-size: var(--font-size-lg);
-    font-weight: 700;
-    color: var(--color-secondary);
-    margin-bottom: 0.5rem;
-  }
+  
 
-  .process__step-desc {
-    font-size: var(--font-size-sm);
-    color: var(--color-text-light);
-    line-height: 1.5;
-  }
+  
 
-  /* Carriers Section */
+  
   .carriers {
     padding: var(--spacing-3xl) 0;
     background: var(--color-accent);
@@ -862,11 +701,7 @@ const structuredData = [
     line-height: var(--line-height-base);
   }
 
-  .carriers__list {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: var(--spacing-md);
-  }
+  
 
   .carriers__item {
     background: var(--color-white);
@@ -888,7 +723,7 @@ const structuredData = [
     line-height: 1.5;
   }
 
-  /* Responsive */
+  
   @media (min-width: 640px) {
     .service-block__features {
       grid-template-columns: repeat(2, 1fr);
@@ -943,6 +778,25 @@ const structuredData = [
     .cta-section__title {
       font-size: var(--font-size-3xl);
     }
+  }
+  .service-image-section {
+    padding: 0 0 var(--spacing-xl);
+  }
+  .service-feature-img {
+    width: 100%;
+    max-height: 460px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+  }
+  .service-img-grid-auto {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+    margin-bottom: 0;
+  }
+  .service-img-grid-auto .service-feature-img {
+    height: 220px;
   }
 </style>
 

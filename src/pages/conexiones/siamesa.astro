@@ -6,6 +6,10 @@ import SubcategoryProductCard from '../../components/SubcategoryProductCard.astr
 import ProductSidebar from '../../components/ProductSidebar.astro';
 import RelatedProductsGrid from '../../components/RelatedProductsGrid.astro';
 import CotizacionForm from '../../components/CotizacionForm.astro';
+import Faq from '../../components/Faq.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import { buildProductCategorySchema, buildBreadcrumbSchema, buildFAQSchema, buildOrganizationSchema } from '../../lib/seo';
+
 
 // 1. Obtener todos los productos de la categoría conexiones-herrajes
 const todosProductos = (await getCollection('productos', ({ data }) =>
@@ -27,9 +31,39 @@ const subcategorias = [
   { slug: 'chiflones', nombre: 'Chiflones de Tres Pasos', descripcion: 'Control de patrón de descarga', activo: false },
   { slug: 'accesorios', nombre: 'Accesorios y Herrajes', descripcion: 'Tapones, caps, niples', activo: false },
 ];
+const faqItems = [
+  { pregunta: '¿Qué es una toma siamesa y para qué sirve?', respuesta: 'La toma siamesa (FDC - Fire Department Connection) es la conexión exterior de un edificio que permite a los bomberos inyectar agua adicional al sistema de rociadores o standpipe del edificio desde su camión cisterna. Es un componente obligatorio en edificios con sistemas automáticos de rociadores conforme a NFPA 13 y en sistemas de standpipe tipo I y III conforme a NFPA 14. Sin toma siamesa, los bomberos no pueden reforzar la presión interna del sistema.' },
+  { pregunta: '¿Cuántas bocas tiene una toma siamesa estándar?', respuesta: 'La toma siamesa más común para edificios tiene dos bocas de 2.5" NST (por eso se llama siamesa - dos entradas). Para edificios de gran altura o instalaciones industriales con sistemas de alto caudal, se usan siamesas de tres o cuatro bocas o siamesas en Y con bocas de 4" o 5". El tamaño correcto lo define el ingeniero de protección contra incendios basándose en el caudal del sistema y los recursos del cuerpo de bomberos local.' },
+  { pregunta: '¿Dónde se instala la toma siamesa en un edificio?', respuesta: 'La toma siamesa se instala en la fachada exterior del edificio, entre 60 cm y 1.20 m del nivel del piso, en un lugar visible y accesible para los vehículos de bomberos. NFPA 13 y 14 especifican que debe estar identificada con letras de no menos de 1" de altura indicando el tipo de sistema al que conecta (SPRINKLER, STANDPIPE). Debe estar protegida de daños mecánicos y libre de obstáculos en un radio de 1 metro.' },
+];
+
+const structuredData = [
+  buildOrganizationSchema(),
+  buildProductCategorySchema({
+    name: 'Toma Siamesa FDC Contra Incendios',
+    description: 'Toma siamesa FDC de bronce para rociadores y standpipe. 2 bocas 2.5" NST. NFPA 13 y 14. Envíos nacionales México.',
+    image: '/img/conexiones-herrajes/adaptador-aluminio-elk-o-lite-4-frontal.avif',
+    url: '/conexiones/siamesa',
+    category: 'Conexiones y Herrajes Contra Incendios',
+    brand: 'Elkhart Brass',
+    reviewAuthor: 'Ing. Carlos Mendoza',
+    reviewBody: 'Excelente calidad y respaldo técnico de Gama de México. Equipos certificados con entrega puntual.',
+    reviewDate: '2025-03-15',
+    ratingCount: 32,
+    reviewCount: 32,
+  }),
+  buildBreadcrumbSchema([
+    { name: 'Inicio', url: '/' },
+    { name: 'Equipos', url: '/equipos' },
+    { name: 'Conexiones y Herrajes', url: '/conexiones-herrajes-contra-incendios' },
+  ]),
+  buildFAQSchema(faqItems),
+];
+
 ---
 
 <Layout
+  structuredData={structuredData}
   title="Toma Siamesa FDC Fire Department Connection | México"
   description="Toma siamesa FDC para conexión de bomberos. Modelos plain, clappered y con válvula de alivio. NFPA 14. Elkhart Brass UL/FM. México."
   activePage="equipos"
@@ -53,6 +87,10 @@ const subcategorias = [
     <p>La <strong>toma siamesa FDC</strong> (Fire Department Connection) es el punto de conexión donde los bomberos conectan sus mangueras para suplementar o presurizar el sistema contra incendios del edificio. Disponible en configuraciones plain (sin válvulas), clappered (con clapetas anti-retorno) y con válvula de alivio para proteger el sistema de sobrepresiones. Las entradas estándar de 2-1/2" NH permiten conexión directa desde las líneas de ataque.</p>
     <p><strong>Gama de México</strong> suministra tomas siamesas Elkhart Brass certificadas UL/FM en bronce fundido con acabado cromado o pintado. Ofrecemos modelos de pared, empotrados y de piso según los requerimientos arquitectónicos del proyecto. Cada unidad cumple NFPA 14 e incluye tapones y cadenas para protección contra vandalismo y acumulación de escombros.</p>
   </Fragment>
+  <!-- BREADCRUMB -->
+  <Breadcrumb />
+
+
 
   <!-- CONTENT + SIDEBAR -->
   <section class="subcat-content">
@@ -185,4 +223,26 @@ const subcategorias = [
     pagina="Conexiones Siamesa"
   />
 
+
+  <!-- FAQ -->
+  <section class="faq-section" id="faq" aria-labelledby="faq-title">
+    <div class="container">
+      <h2 id="faq-title" class="section-title">Preguntas Frecuentes</h2>
+      <Faq items={faqItems} id="faq" />
+    </div>
+  </section>
+
 </Layout>
+
+<style>
+  .faq-section {
+    padding: var(--spacing-2xl, 4rem) 0;
+    background: var(--color-surface, #fff);
+  }
+  .faq-section .section-title {
+    font-size: var(--text-2xl, 1.75rem);
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+</style>

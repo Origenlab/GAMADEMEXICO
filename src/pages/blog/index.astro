@@ -1,4 +1,6 @@
 ---
+import Faq from '../../components/Faq.astro';
+
 // =============================================================================
 // Blog Index - Listado principal de artículos
 // Diseño profesional con secciones alternadas
@@ -67,7 +69,13 @@ const breadcrumbSchema = buildBreadcrumbSchema([
   { name: 'Inicio', url: '/' },
   { name: 'Blog', url: '/blog' },
 ]);
+const faqItems = [
+  { pregunta: '¿De qué temas tratan los artículos del blog de Gama de México?', respuesta: 'Nuestro blog cubre normativas de protección contra incendios (NFPA, NOM-002-STPS), guías técnicas de selección de equipos, casos de aplicación en industria petroquímica, manufactura y edificios, mantenimiento de sistemas de extinción y novedades del sector de seguridad industrial en México.' },
+  { pregunta: '¿Con qué frecuencia publican contenido nuevo?', respuesta: 'Publicamos artículos técnicos con regularidad sobre temas relevantes para ingenieros de seguridad, responsables de protección civil y compradores de equipos contra incendios. Los artículos están basados en experiencia real de proyectos en México.' },
+  { pregunta: '¿Puedo solicitar asesoría técnica a partir de un artículo del blog?', respuesta: 'Sí. Al final de cada artículo encontrarás un formulario de contacto directo a nuestro equipo técnico. También puedes escribirnos por WhatsApp al 55 6529 8240 o llamar al 55 1543 7164. Atendemos consultas técnicas sin costo para proyectos en México.' },
+];
 ---
+
 
 <Layout
   title="Blog de Equipos Contra Incendios | Gama de México"
@@ -196,6 +204,13 @@ const breadcrumbSchema = buildBreadcrumbSchema([
           );
         })}
       </div>
+    </div>
+  </section>
+
+  <section class="faq-section" style="padding:3rem 0;">
+    <div class="container" style="max-width:900px;margin:0 auto;padding:0 1rem;">
+      <h2 style="font-size:1.5rem;font-weight:700;margin-bottom:1.5rem;">Preguntas Frecuentes</h2>
+      <Faq items={faqItems} id="blog-faq" />
     </div>
   </section>
 </Layout>

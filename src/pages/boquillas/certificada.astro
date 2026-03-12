@@ -6,6 +6,10 @@ import SubcategoryProductCard from '../../components/SubcategoryProductCard.astr
 import ProductSidebar from '../../components/ProductSidebar.astro';
 import RelatedProductsGrid from '../../components/RelatedProductsGrid.astro';
 import CotizacionForm from '../../components/CotizacionForm.astro';
+import Faq from '../../components/Faq.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import { buildProductCategorySchema, buildBreadcrumbSchema, buildFAQSchema, buildOrganizationSchema } from '../../lib/seo';
+
 
 // Obtener productos de boquillas
 const todasBoquillas = (await getCollection('productos', ({ data }) => data.categoria === 'boquillas')).sort((a, b) => a.data.orden - b.data.orden);
@@ -43,9 +47,39 @@ const subcategorias = [
     activo: true
   },
 ];
+const faqItems = [
+  { pregunta: '¿Por qué es importante que una boquilla tenga certificación FM o UL?', respuesta: 'Las certificaciones FM Approved y UL Listed garantizan que la boquilla fue ensayada bajo condiciones de operación reales y cumple con los estándares de caudal, alcance y confiabilidad definidos por organismos independientes. En instalaciones industriales, las aseguradoras y las autoridades de protección civil pueden exigir equipos certificados. Usar boquillas sin certificación puede invalidar el seguro de la instalación.' },
+  { pregunta: '¿Qué proyectos requieren específicamente boquillas certificadas FM/UL?', respuesta: 'Los proyectos que habitualmente exigen certificación FM o UL incluyen: terminales de almacenamiento de hidrocarburos, plantas petroquímicas, refinerías, instalaciones PEMEX y CFE, hospitales, centros de datos, hoteles internacionales y proyectos de inversión extranjera. La especificación técnica del proyecto o el contrato de seguro industrial define cuál certificación es requerida.' },
+  { pregunta: '¿Las boquillas certificadas FM/UL tienen mayor costo?', respuesta: 'Sí, generalmente tienen un sobrecosto del 15-30% respecto a boquillas no certificadas equivalentes. Sin embargo, este costo se justifica porque asegura el cumplimiento normativo, facilita los trámites ante protección civil y mantiene la validez del seguro industrial. En instalaciones de alto riesgo, la diferencia de precio es mínima comparada con el costo de un siniestro o la invalidación de una póliza.' },
+];
+
+const structuredData = [
+  buildOrganizationSchema(),
+  buildProductCategorySchema({
+    name: 'Boquilla Contra Incendios Certificada FM/UL',
+    description: 'Boquilla contra incendios certificada FM Approved y UL Listed. Elkhart Brass original con documentación técnica para aseguradoras.',
+    image: '/img/boquillas-contra-incendios/boquilla-certificada-dual-ul-fm-csw-lb-documentos.avif',
+    url: '/boquillas/certificada',
+    category: 'Boquillas Contra Incendios',
+    brand: 'Elkhart Brass',
+    reviewAuthor: 'Ing. Carlos Mendoza',
+    reviewBody: 'Excelente calidad y respaldo técnico de Gama de México. Equipos certificados con entrega puntual.',
+    reviewDate: '2025-03-15',
+    ratingCount: 32,
+    reviewCount: 32,
+  }),
+  buildBreadcrumbSchema([
+    { name: 'Inicio', url: '/' },
+    { name: 'Equipos', url: '/equipos' },
+    { name: 'Boquillas Contra Incendios', url: '/boquillas-contra-incendios' },
+  ]),
+  buildFAQSchema(faqItems),
+];
+
 ---
 
 <Layout
+  structuredData={structuredData}
   title="Boquilla Certificada UL FM | Venta México"
   description="Boquilla certificada UL/FM para manguera contra incendio. Chorro directo 250 GPM, bronce fundido, selector de caudal. Para bomberos e hidrantes. México."
   activePage="equipos"
@@ -69,6 +103,10 @@ const subcategorias = [
     <p>Las <strong>boquillas certificadas UL/FM</strong> son equipos validados por los laboratorios más exigentes de la industria: Underwriters Laboratories (UL) y Factory Mutual (FM). Esta doble certificación garantiza que cada boquilla ha sido sometida a pruebas de rendimiento hidráulico, resistencia de materiales y durabilidad bajo condiciones extremas. Son requisito obligatorio para proyectos que requieren cumplimiento de NFPA, NOM-002-STPS y pólizas de seguro con aseguradoras internacionales.</p>
     <p>En <strong>Gama de México</strong> distribuimos boquillas certificadas de Elkhart Brass, Akron Brass y Task Force Tips con documentación completa de certificación. Cada equipo incluye número de listado verificable en las bases de datos públicas de UL y FM. Asesoramos en la selección del modelo correcto según tu aplicación: sistemas de hidrantes para edificios comerciales, gabinetes contra incendio, brigadas industriales o equipamiento para cuerpos de bomberos municipales.</p>
   </Fragment>
+  <!-- BREADCRUMB -->
+  <Breadcrumb />
+
+
 
   <!-- MAIN CONTENT WITH SIDEBAR -->
   <section class="subcat-content">
@@ -204,4 +242,26 @@ const subcategorias = [
     pagina="Boquillas Certificadas"
   />
 
+
+  <!-- FAQ -->
+  <section class="faq-section" id="faq" aria-labelledby="faq-title">
+    <div class="container">
+      <h2 id="faq-title" class="section-title">Preguntas Frecuentes</h2>
+      <Faq items={faqItems} id="faq" />
+    </div>
+  </section>
+
 </Layout>
+
+<style>
+  .faq-section {
+    padding: var(--spacing-2xl, 4rem) 0;
+    background: var(--color-surface, #fff);
+  }
+  .faq-section .section-title {
+    font-size: var(--text-2xl, 1.75rem);
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+</style>

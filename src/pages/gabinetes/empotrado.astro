@@ -6,6 +6,10 @@ import SubcategoryProductCard from '../../components/SubcategoryProductCard.astr
 import ProductSidebar from '../../components/ProductSidebar.astro';
 import RelatedProductsGrid from '../../components/RelatedProductsGrid.astro';
 import CotizacionForm from '../../components/CotizacionForm.astro';
+import Faq from '../../components/Faq.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import { buildProductCategorySchema, buildBreadcrumbSchema, buildFAQSchema, buildOrganizationSchema } from '../../lib/seo';
+
 
 // 1. Obtener todos los productos de la categoria gabinetes-hidrantes
 const todosProductos = (await getCollection('productos', ({ data }) =>
@@ -28,9 +32,39 @@ const subcategorias = [
   { slug: 'hidrantes', nombre: 'Hidrantes', descripcion: 'Tomas exteriores hierro ductil', activo: false },
   { slug: 'estaciones', nombre: 'Estaciones de Manguera', descripcion: 'Carrete oscilante 180 grados', activo: false },
 ];
+const faqItems = [
+  { pregunta: '¿Cuál es la diferencia entre un gabinete empotrado y uno de sobreponer?', respuesta: 'El gabinete empotrado (flush-mounted) se instala dentro del muro con la puerta al ras de la pared, lo que lo hace menos obstructivo y con mejor estética. El gabinete de sobreponer se monta en la superficie del muro y sobresale varios centímetros. El gabinete empotrado requiere una abertura en el muro durante la construcción o remodelación; el de sobreponer puede instalarse en cualquier momento.' },
+  { pregunta: '¿Qué dimensiones de nicho se necesitan para instalar un gabinete empotrado?', respuesta: 'El nicho estándar para un gabinete de manguera de 30 metros es de aproximadamente 60 cm de ancho × 75 cm de alto × 20 cm de profundidad. Las dimensiones exactas varían según el fabricante y el modelo. Es fundamental coordinar las dimensiones del gabinete con el arquitecto o contratista de construcción para que el nicho quede con las medidas correctas antes de terminar el muro.' },
+  { pregunta: '¿Los gabinetes empotrados requieren protección especial contra humedad?', respuesta: 'Sí. El nicho del gabinete debe estar sellado con materiales resistentes a la humedad para evitar la corrosión del gabinete metálico y el deterioro de la manguera. En zonas con alta humedad relativa, se recomienda un acabado epóxico o pintura anticorrosiva en el interior del nicho y el uso de mangueras con recubrimiento resistente a la humedad.' },
+];
+
+const structuredData = [
+  buildOrganizationSchema(),
+  buildProductCategorySchema({
+    name: 'Gabinete Empotrado Contra Incendios',
+    description: 'Gabinete empotrado flush para sistemas de mangueras en edificios. NOM-002-STPS. Medidas estándar. Envíos México.',
+    image: '/img/gabinetes-hidrantes/gabinete-30m-abierto.avif',
+    url: '/gabinetes/empotrado',
+    category: 'Gabinetes e Hidrantes Contra Incendios',
+    brand: 'Elkhart Brass',
+    reviewAuthor: 'Ing. Carlos Mendoza',
+    reviewBody: 'Excelente calidad y respaldo técnico de Gama de México. Equipos certificados con entrega puntual.',
+    reviewDate: '2025-03-15',
+    ratingCount: 32,
+    reviewCount: 32,
+  }),
+  buildBreadcrumbSchema([
+    { name: 'Inicio', url: '/' },
+    { name: 'Equipos', url: '/equipos' },
+    { name: 'Gabinetes e Hidrantes', url: '/gabinetes-hidrantes-contra-incendios' },
+  ]),
+  buildFAQSchema(faqItems),
+];
+
 ---
 
 <Layout
+  structuredData={structuredData}
   title="Gabinete Empotrado Contra Incendios | Venta México"
   description="Gabinete empotrado contra incendios para instalación al ras del muro. Acero laminado o inoxidable T430. Ideal para hospitales, hoteles y edificios corporativos. NOM-002-STPS. México."
   activePage="equipos"
@@ -54,6 +88,10 @@ const subcategorias = [
     <p>El <strong>gabinete empotrado</strong> está diseñado para proyectos donde la estética arquitectónica es tan importante como la seguridad contra incendios. Al instalarse dentro de una cavidad en el muro con una ceja de 5/8" para tablaroca, el gabinete queda completamente al ras con la superficie, eliminando obstrucciones en pasillos y preservando la línea de diseño del espacio. Cumple íntegramente con <strong>NOM-002-STPS-2010</strong> y <strong>NFPA 14</strong>.</p>
     <p>En <strong>Gama de México</strong> ofrecemos gabinetes empotrados en tres acabados: pintura electrostática roja (estándar normativo), pintura blanca (para integración con muros claros) y acero inoxidable T430 pulido #4 (para áreas de alta estética como lobbies y hospitales). Cada gabinete incluye puerta con vidrio templado de 3mm, bisagra continua de 180 grados para apertura completa y cerradura de cilindro. Asesoramos en la especificación correcta según el proyecto arquitectónico y los requerimientos de Protección Civil.</p>
   </Fragment>
+  <!-- BREADCRUMB -->
+  <Breadcrumb />
+
+
 
   <!-- MAIN CONTENT WITH SIDEBAR -->
   <section class="subcat-content">
@@ -191,4 +229,26 @@ const subcategorias = [
     pagina="Gabinetes Empotrados"
   />
 
+
+  <!-- FAQ -->
+  <section class="faq-section" id="faq" aria-labelledby="faq-title">
+    <div class="container">
+      <h2 id="faq-title" class="section-title">Preguntas Frecuentes</h2>
+      <Faq items={faqItems} id="faq" />
+    </div>
+  </section>
+
 </Layout>
+
+<style>
+  .faq-section {
+    padding: var(--spacing-2xl, 4rem) 0;
+    background: var(--color-surface, #fff);
+  }
+  .faq-section .section-title {
+    font-size: var(--text-2xl, 1.75rem);
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+</style>

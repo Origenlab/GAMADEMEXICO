@@ -6,6 +6,10 @@ import SubcategoryProductCard from '../../components/SubcategoryProductCard.astr
 import ProductSidebar from '../../components/ProductSidebar.astro';
 import RelatedProductsGrid from '../../components/RelatedProductsGrid.astro';
 import CotizacionForm from '../../components/CotizacionForm.astro';
+import Faq from '../../components/Faq.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import { buildProductCategorySchema, buildBreadcrumbSchema, buildFAQSchema, buildOrganizationSchema } from '../../lib/seo';
+
 
 // 1. Obtener todos los productos de la categoría gabinetes-hidrantes
 const todosProductos = (await getCollection('productos', ({ data }) =>
@@ -25,9 +29,39 @@ const subcategorias = [
   { slug: 'hidrantes', nombre: 'Hidrantes', descripcion: 'Tomas exteriores hierro dúctil', activo: false },
   { slug: 'estaciones', nombre: 'Estaciones de Manguera', descripcion: 'Carrete oscilante 180 grados', activo: true },
 ];
+const faqItems = [
+  { pregunta: '¿Qué es una estación de mangueras y en qué se diferencia del gabinete?', respuesta: 'Una estación de mangueras (hose station) es un punto de conexión de manguera sin gabinete cerrado, usado en aplicaciones industriales y exteriores donde la accesibilidad rápida es prioritaria sobre la estética. Incluye una válvula angular o de bola, soporte de manguera y en algunos casos la manguera pre-conectada. Se usa en plantas industriales, muelles, estacionamientos y patios de maniobras.' },
+  { pregunta: '¿Las estaciones de mangueras exteriores requieren protección especial?', respuesta: 'Sí. En instalaciones exteriores expuestas a la intemperie, se utilizan cubiertas de aluminio o acero inoxidable, y las válvulas y herrajes deben ser de bronce de grado naval. En zonas con riesgo de heladas, se instalan válvulas de drenaje automático para evitar que el agua congele en la tubería de la estación. Se recomienda también señalización con material retroreflectante visible de noche.' },
+  { pregunta: '¿Cuántas estaciones de mangueras se necesitan en una planta industrial?', respuesta: 'El número y ubicación de estaciones de mangueras se calcula mediante análisis hidráulico conforme a NFPA 24 o NFPA 14, considerando el área a proteger, el tipo de riesgo, la presión y caudal disponibles, y la distancia máxima de alcance de la manguera. Como regla general, cada estación debe cubrir un radio de 30 metros con la manguera extendida. Asesoramos en el diseño del sistema completo.' },
+];
+
+const structuredData = [
+  buildOrganizationSchema(),
+  buildProductCategorySchema({
+    name: 'Estaciones de Mangueras Contra Incendios',
+    description: 'Estaciones de mangueras para plantas industriales y exteriores. Válvula angular bronce, soporte y manguera. México.',
+    image: '/img/gabinetes-hidrantes/gabinete-30m-abierto.avif',
+    url: '/gabinetes/estaciones',
+    category: 'Gabinetes e Hidrantes Contra Incendios',
+    brand: 'Elkhart Brass',
+    reviewAuthor: 'Ing. Carlos Mendoza',
+    reviewBody: 'Excelente calidad y respaldo técnico de Gama de México. Equipos certificados con entrega puntual.',
+    reviewDate: '2025-03-15',
+    ratingCount: 32,
+    reviewCount: 32,
+  }),
+  buildBreadcrumbSchema([
+    { name: 'Inicio', url: '/' },
+    { name: 'Equipos', url: '/equipos' },
+    { name: 'Gabinetes e Hidrantes', url: '/gabinetes-hidrantes-contra-incendios' },
+  ]),
+  buildFAQSchema(faqItems),
+];
+
 ---
 
 <Layout
+  structuredData={structuredData}
   title="Estaciones de Manguera Carrete Oscilante | Gama de México"
   description='Estaciones de manguera con carrete oscilante 180° y despliegue automático. Manguera 1.5" x 30m. NFPA 14 Clase II/III. Envío nacional. Cotiza aquí.'
   activePage="equipos"
@@ -50,6 +84,10 @@ const subcategorias = [
     <p>Las estaciones de manguera con carrete oscilante representan la solución ideal para respuesta inmediata ante emergencias de incendio en instalaciones industriales y comerciales. Estos sistemas montados en pared integran manguera de alta presión, boquilla cromada y mecanismo de despliegue automático, permitiendo una operación rápida incluso por personal sin entrenamiento especializado. Su diseño compacto y funcional cumple con los requerimientos de sistemas standpipe Clase II y III según NFPA 14.</p>
     <p>Nuestras estaciones de manguera están fabricadas con materiales de primera calidad, incluyendo carretes de acero con recubrimiento anticorrosivo y mangueras de poliéster con forro de hule sintético. La oscilación de 180 grados proporciona cobertura amplia sin necesidad de desplazar el equipo, mientras que la válvula integrada permite control preciso del flujo. Ideales para bodegas, estacionamientos, plantas industriales y edificios comerciales que requieren protección confiable contra incendios.</p>
   </Fragment>
+  <!-- BREADCRUMB -->
+  <Breadcrumb />
+
+
 
   <!-- CONTENT + SIDEBAR -->
   <section class="subcat-content">
@@ -182,4 +220,26 @@ const subcategorias = [
     pagina="Gabinetes Estaciones"
   />
 
+
+  <!-- FAQ -->
+  <section class="faq-section" id="faq" aria-labelledby="faq-title">
+    <div class="container">
+      <h2 id="faq-title" class="section-title">Preguntas Frecuentes</h2>
+      <Faq items={faqItems} id="faq" />
+    </div>
+  </section>
+
 </Layout>
+
+<style>
+  .faq-section {
+    padding: var(--spacing-2xl, 4rem) 0;
+    background: var(--color-surface, #fff);
+  }
+  .faq-section .section-title {
+    font-size: var(--text-2xl, 1.75rem);
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+</style>

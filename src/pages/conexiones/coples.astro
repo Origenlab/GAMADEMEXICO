@@ -6,6 +6,10 @@ import SubcategoryProductCard from '../../components/SubcategoryProductCard.astr
 import ProductSidebar from '../../components/ProductSidebar.astro';
 import RelatedProductsGrid from '../../components/RelatedProductsGrid.astro';
 import CotizacionForm from '../../components/CotizacionForm.astro';
+import Faq from '../../components/Faq.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import { buildProductCategorySchema, buildBreadcrumbSchema, buildFAQSchema, buildOrganizationSchema } from '../../lib/seo';
+
 
 // 1. Obtener todos los productos de la categoría conexiones-herrajes
 const todosProductos = (await getCollection('productos', ({ data }) =>
@@ -27,9 +31,39 @@ const subcategorias = [
   { slug: 'chiflones', nombre: 'Chiflones de Tres Pasos', descripcion: 'Control de patrón de descarga', activo: false },
   { slug: 'accesorios', nombre: 'Accesorios y Herrajes', descripcion: 'Tapones, caps, niples', activo: false },
 ];
+const faqItems = [
+  { pregunta: '¿Qué es un cople de manguera y cuándo se usa?', respuesta: 'El cople es el accesorio que permite unir dos secciones de manguera en línea para extender el alcance del sistema. Se usa cuando la longitud de una manguera no es suficiente para cubrir la distancia al riesgo más alejado o para reparar una manguera dañada uniendo dos segmentos en buen estado. Los coples estándar tienen rosca NST y están disponibles en aluminio y bronce.' },
+  { pregunta: '¿Cuántos coples se pueden usar en serie en una línea de mangueras?', respuesta: 'Técnicamente no hay un límite fijo en el número de coples por línea, pero cada unión añade pérdida de carga y es un punto potencial de falla bajo presión. NFPA 25 recomienda minimizar las conexiones. En la práctica, para tendidos de más de 60 metros se evalúa la hidráulica para asegurar que la presión residual en la boquilla sea suficiente. Asesoramos en el diseño del tendido.' },
+  { pregunta: '¿Los coples de aluminio son compatibles con mangueras de bronce?', respuesta: 'Sí, son físicamente compatibles si el tipo de rosca coincide. Sin embargo, en ambientes marinos o con alta concentración de cloruros, la mezcla de metales diferentes (aluminio y bronce) puede provocar corrosión galvánica en las roscas. Para instalaciones permanentes en costas o industria química, se recomienda usar coples y chiflones del mismo material.' },
+];
+
+const structuredData = [
+  buildOrganizationSchema(),
+  buildProductCategorySchema({
+    name: 'Coples de Manguera Contra Incendios',
+    description: 'Coples de aluminio y bronce para unión de mangueras contra incendios. 1.5" y 2.5" NST. Envíos a toda la República.',
+    image: '/img/conexiones-herrajes/adaptador-aluminio-elk-o-lite-4-frontal.avif',
+    url: '/conexiones/coples',
+    category: 'Conexiones y Herrajes Contra Incendios',
+    brand: 'Elkhart Brass',
+    reviewAuthor: 'Ing. Carlos Mendoza',
+    reviewBody: 'Excelente calidad y respaldo técnico de Gama de México. Equipos certificados con entrega puntual.',
+    reviewDate: '2025-03-15',
+    ratingCount: 32,
+    reviewCount: 32,
+  }),
+  buildBreadcrumbSchema([
+    { name: 'Inicio', url: '/' },
+    { name: 'Equipos', url: '/equipos' },
+    { name: 'Conexiones y Herrajes', url: '/conexiones-herrajes-contra-incendios' },
+  ]),
+  buildFAQSchema(faqItems),
+];
+
 ---
 
 <Layout
+  structuredData={structuredData}
   title="Coples Storz y Reducciones Cuarto de Vuelta | México"
   description="Coples Storz de conexión rápida cuarto de vuelta y reducciones swivel. Aluminio o bronce. Despliegue 50% más rápido. UL/FM. México."
   activePage="equipos"
@@ -53,6 +87,10 @@ const subcategorias = [
     <p>Los <strong>coples Storz</strong> son el estándar internacional para conexión rápida de mangueras contra incendio. Su diseño simétrico permite que cualquier cople se conecte con otro sin importar la orientación, eliminando los segundos críticos que se pierden buscando el extremo macho o hembra. El mecanismo de cuarto de vuelta asegura una conexión hermética que resiste presiones de hasta 300 PSI sin fugas.</p>
     <p><strong>Gama de México</strong> ofrece coples Storz en aluminio forjado para aplicaciones de peso ligero y en bronce fundido para instalaciones permanentes. Disponibles en diámetros de 1.5" a 5", con adaptadores para conversión desde roscas NH y NPT. Las reducciones swivel permiten conectar mangueras de diferentes calibres manteniendo la flexibilidad del sistema sin puntos de torsión.</p>
   </Fragment>
+  <!-- BREADCRUMB -->
+  <Breadcrumb />
+
+
 
   <!-- CONTENT + SIDEBAR -->
   <section class="subcat-content">
@@ -185,4 +223,26 @@ const subcategorias = [
     pagina="Conexiones Coples"
   />
 
+
+  <!-- FAQ -->
+  <section class="faq-section" id="faq" aria-labelledby="faq-title">
+    <div class="container">
+      <h2 id="faq-title" class="section-title">Preguntas Frecuentes</h2>
+      <Faq items={faqItems} id="faq" />
+    </div>
+  </section>
+
 </Layout>
+
+<style>
+  .faq-section {
+    padding: var(--spacing-2xl, 4rem) 0;
+    background: var(--color-surface, #fff);
+  }
+  .faq-section .section-title {
+    font-size: var(--text-2xl, 1.75rem);
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+</style>

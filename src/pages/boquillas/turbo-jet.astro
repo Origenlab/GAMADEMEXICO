@@ -6,6 +6,10 @@ import SubcategoryProductCard from '../../components/SubcategoryProductCard.astr
 import ProductSidebar from '../../components/ProductSidebar.astro';
 import RelatedProductsGrid from '../../components/RelatedProductsGrid.astro';
 import CotizacionForm from '../../components/CotizacionForm.astro';
+import Faq from '../../components/Faq.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import { buildProductCategorySchema, buildBreadcrumbSchema, buildFAQSchema, buildOrganizationSchema } from '../../lib/seo';
+
 
 // Obtener productos de boquillas
 const todasBoquillas = (await getCollection('productos', ({ data }) => data.categoria === 'boquillas')).sort((a, b) => a.data.orden - b.data.orden);
@@ -43,9 +47,39 @@ const subcategorias = [
     activo: false
   },
 ];
+const faqItems = [
+  { pregunta: '¿Qué ventaja tiene la boquilla turbo-jet sobre la boquilla tipo pistola?', respuesta: 'La boquilla turbo-jet genera un patrón de niebla rotatoria que maximiza la eficiencia de absorción de calor con menor volumen de agua. Esto la hace superior para control de incendios en espacios confinados y para protección de personal en aproximación al fuego. La boquilla tipo pistola es más versátil para uso general; la turbo-jet está optimizada para situaciones de alta temperatura y riesgo de quemadura por radiación.' },
+  { pregunta: '¿Qué caudal maneja una boquilla turbo-jet estándar?', respuesta: 'Las boquillas turbo-jet Akron y Elkhart Brass que distribuimos operan con caudales de 60 a 200 GPM a 100 PSI, dependiendo del modelo. El modelo más solicitado es el de 95 GPM a 100 PSI, que equilibra alcance, cobertura y consumo de agua. Para caudales superiores a 200 GPM se recomiendan boquillas de monitor en lugar de boquillas manuales.' },
+  { pregunta: '¿Para qué sectores se usan más las boquillas turbo-jet?', respuesta: 'Las boquillas turbo-jet son muy utilizadas en brigadas de la industria petroquímica, siderúrgica y de manufactura pesada donde el riesgo de quemadura por radiación es alto. También se usan en cuerpos de bomberos industriales de terminales portuarias y aeropuertos. Son el estándar en vehículos de rescate de aeronaves (ARFF) donde la eficiencia con agua es crítica.' },
+];
+
+const structuredData = [
+  buildOrganizationSchema(),
+  buildProductCategorySchema({
+    name: 'Boquilla Turbo-Jet Contra Incendios',
+    description: 'Boquilla turbo-jet niebla rotatoria para control en espacios confinados. 60-200 GPM. Ideal petroquímica y brigadas industriales.',
+    image: '/img/boquillas-contra-incendios/boquilla-certificada-dual-ul-fm-csw-lb-documentos.avif',
+    url: '/boquillas/turbo-jet',
+    category: 'Boquillas Contra Incendios',
+    brand: 'Elkhart Brass',
+    reviewAuthor: 'Ing. Carlos Mendoza',
+    reviewBody: 'Excelente calidad y respaldo técnico de Gama de México. Equipos certificados con entrega puntual.',
+    reviewDate: '2025-03-15',
+    ratingCount: 32,
+    reviewCount: 32,
+  }),
+  buildBreadcrumbSchema([
+    { name: 'Inicio', url: '/' },
+    { name: 'Equipos', url: '/equipos' },
+    { name: 'Boquillas Contra Incendios', url: '/boquillas-contra-incendios' },
+  ]),
+  buildFAQSchema(faqItems),
+];
+
 ---
 
 <Layout
+  structuredData={structuredData}
   title="Boquilla Turbo Jet | Máximo Alcance México"
   description="Boquilla Turbo Jet para máximo alcance y penetración. Alta presión, conexión NST, caudal regulable GPM. Akron Brass, Elkhart. Certificación UL. México."
   activePage="equipos"
@@ -69,6 +103,10 @@ const subcategorias = [
     <p>La <strong>boquilla Turbo Jet</strong> utiliza tecnología de turbina interna que imparte rotación al flujo de agua, generando un chorro altamente cohesivo con mínima dispersión. Este diseño permite alcances efectivos superiores a 60 metros manteniendo la capacidad de penetración necesaria para combatir incendios estructurales desde distancias seguras. El patrón de descarga es ajustable desde chorro sólido hasta niebla de protección mediante rotación del cabezal.</p>
     <p><strong>Gama de México</strong> distribuye boquillas Turbo Jet de Akron Brass y Elkhart Brass, líderes mundiales en tecnología de boquillas de combate. Estos equipos son la elección preferida de cuerpos de bomberos profesionales, brigadas industriales de alto rendimiento y unidades de rescate que requieren versatilidad y alcance superior. Disponibles en configuraciones de 1.5" y 2.5" NHT con caudales seleccionables y certificación UL.</p>
   </Fragment>
+  <!-- BREADCRUMB -->
+  <Breadcrumb />
+
+
 
   <!-- MAIN CONTENT WITH SIDEBAR -->
   <section class="subcat-content">
@@ -204,4 +242,26 @@ const subcategorias = [
     pagina="Boquillas Turbo Jet"
   />
 
+
+  <!-- FAQ -->
+  <section class="faq-section" id="faq" aria-labelledby="faq-title">
+    <div class="container">
+      <h2 id="faq-title" class="section-title">Preguntas Frecuentes</h2>
+      <Faq items={faqItems} id="faq" />
+    </div>
+  </section>
+
 </Layout>
+
+<style>
+  .faq-section {
+    padding: var(--spacing-2xl, 4rem) 0;
+    background: var(--color-surface, #fff);
+  }
+  .faq-section .section-title {
+    font-size: var(--text-2xl, 1.75rem);
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+</style>

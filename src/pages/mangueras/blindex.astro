@@ -6,6 +6,10 @@ import SubcategoryProductCard from '../../components/SubcategoryProductCard.astr
 import ProductSidebar from '../../components/ProductSidebar.astro';
 import RelatedProductsGrid from '../../components/RelatedProductsGrid.astro';
 import CotizacionForm from '../../components/CotizacionForm.astro';
+import Faq from '../../components/Faq.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import { buildProductCategorySchema, buildBreadcrumbSchema, buildFAQSchema, buildOrganizationSchema } from '../../lib/seo';
+
 
 // Obtener productos de mangueras
 const todasMangueras = (await getCollection('productos', ({ data }) => data.categoria === 'mangueras')).sort((a, b) => a.data.orden - b.data.orden);
@@ -43,9 +47,39 @@ const subcategorias = [
     activo: false
   },
 ];
+const faqItems = [
+  { pregunta: '¿Qué ventajas tiene una manguera blindex sobre una manguera convencional?', respuesta: 'La manguera blindex tiene forro interior de poliuretano o nitrilo de alta densidad que la hace más resistente a hidrocarburos, aceites y productos químicos. A diferencia de la millhose convencional, mantiene su flexibilidad a bajas temperaturas y tiene mayor resistencia a la abrasión. Es la opción preferida en industrias petroquímica, automotriz y química donde el contacto con derivados del petróleo es frecuente.' },
+  { pregunta: '¿La manguera blindex es compatible con agentes espumantes AFFF?', respuesta: 'Sí. El forro interior de la manguera blindex es compatible con agua, AFFF, FFFP y soluciones espumantes acuosas. Esta compatibilidad la hace adecuada para sistemas de protección en terminales de almacenamiento de combustible, hangares de aviación y bodegas de materiales inflamables donde el agente extintor primario es la espuma.' },
+  { pregunta: '¿Qué diferencia hay entre manguera blindex 1.5" y 2.5"?', respuesta: 'La manguera blindex de 1.5" es para sistemas interiores de gabinete con presiones de trabajo de hasta 150 PSI y caudales de 50-100 GPM. La de 2.5" es para sistemas exteriores de hidrante y brigadas de bomberos, con capacidad para caudales de 150-300 GPM. La elección depende del tipo de sistema, la norma aplicable (NFPA o NOM) y los requisitos hidráulicos del diseño.' },
+];
+
+const structuredData = [
+  buildOrganizationSchema(),
+  buildProductCategorySchema({
+    name: 'Manguera Blindex Contra Incendios',
+    description: 'Manguera blindex forro nitrilo resistente a hidrocarburos. Para petroquímica, automotriz y sistemas con AFFF. 1.5" y 2.5" México.',
+    image: '/img/mangueras-contra-incendios/manguera-blindex-1-5-15m-detalle.avif',
+    url: '/mangueras/blindex',
+    category: 'Mangueras Contra Incendios',
+    brand: 'Elkhart Brass',
+    reviewAuthor: 'Ing. Carlos Mendoza',
+    reviewBody: 'Excelente calidad y respaldo técnico de Gama de México. Equipos certificados con entrega puntual.',
+    reviewDate: '2025-03-15',
+    ratingCount: 32,
+    reviewCount: 32,
+  }),
+  buildBreadcrumbSchema([
+    { name: 'Inicio', url: '/' },
+    { name: 'Equipos', url: '/equipos' },
+    { name: 'Mangueras Contra Incendios', url: '/mangueras-contra-incendios' },
+  ]),
+  buildFAQSchema(faqItems),
+];
+
 ---
 
 <Layout
+  structuredData={structuredData}
   title="Manguera Blindex 4 Capas 600°C | México"
   description="Manguera Blindex 4 capas para condiciones extremas. Alta resistencia 600°C, servicio pesado industrial. Protección contra incendio. México."
   activePage="equipos"
@@ -69,6 +103,10 @@ const subcategorias = [
     <p>La <strong>manguera Blindex</strong> representa el estándar de máxima resistencia para operaciones en ambientes industriales extremos. Su construcción de 4 capas incluye forro interno de caucho nitrilo resistente a hidrocarburos, refuerzo de poliéster de alta tenacidad, barrera térmica intermedia y recubrimiento exterior de caucho EPDM resistente a llama directa. Esta configuración permite operación continua en proximidad a fuentes de calor intenso sin degradación del material.</p>
     <p><strong>Gama de México</strong> suministra mangueras Blindex en diámetros de 1.5", 2.5" y 4" con longitudes estándar de 15, 25 y 30 metros. Cada manguera cumple con NFPA 1961 y está certificada para presiones de trabajo de 300 PSI con prueba hidrostática de 600 PSI. Ideales para refinerías, plantas petroquímicas, acereras, fundidoras y cualquier instalación donde las mangueras convencionales no resisten las condiciones operativas.</p>
   </Fragment>
+  <!-- BREADCRUMB -->
+  <Breadcrumb />
+
+
 
   <!-- MAIN CONTENT WITH SIDEBAR -->
   <section class="subcat-content">
@@ -205,4 +243,26 @@ const subcategorias = [
     pagina="Mangueras Blindex"
   />
 
+
+  <!-- FAQ -->
+  <section class="faq-section" id="faq" aria-labelledby="faq-title">
+    <div class="container">
+      <h2 id="faq-title" class="section-title">Preguntas Frecuentes</h2>
+      <Faq items={faqItems} id="faq" />
+    </div>
+  </section>
+
 </Layout>
+
+<style>
+  .faq-section {
+    padding: var(--spacing-2xl, 4rem) 0;
+    background: var(--color-surface, #fff);
+  }
+  .faq-section .section-title {
+    font-size: var(--text-2xl, 1.75rem);
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+</style>

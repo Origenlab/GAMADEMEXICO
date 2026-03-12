@@ -6,6 +6,10 @@ import SubcategoryProductCard from '../../components/SubcategoryProductCard.astr
 import ProductSidebar from '../../components/ProductSidebar.astro';
 import RelatedProductsGrid from '../../components/RelatedProductsGrid.astro';
 import CotizacionForm from '../../components/CotizacionForm.astro';
+import Faq from '../../components/Faq.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import { buildProductCategorySchema, buildBreadcrumbSchema, buildFAQSchema, buildOrganizationSchema } from '../../lib/seo';
+
 
 // 1. Obtener todos los productos de la categoría válvulas
 const todosProductos = (await getCollection('productos', ({ data }) =>
@@ -25,9 +29,39 @@ const subcategorias = [
   { slug: 'retencion', nombre: 'Válvula de Retención', descripcion: 'Prevención de reflujo', activo: false },
   { slug: 'mariposa', nombre: 'Válvula Mariposa', descripcion: 'Apertura rápida 90°', activo: true },
 ];
+const faqItems = [
+  { pregunta: '¿Cuál es la ventaja de la válvula mariposa sobre la válvula de compuerta?', respuesta: 'La válvula mariposa tiene menor pérdida de carga en posición abierta, es más compacta y liviana, y tiene un menor costo que la válvula de compuerta en diámetros superiores a 3". Para sistemas de rociadores, la válvula mariposa con supervisión (tamper switch) es aceptada por NFPA 13 como alternativa a la válvula OS&Y. Su cuarto de vuelta de operación facilita la apertura y cierre rápido.' },
+  { pregunta: '¿Qué es una válvula mariposa con supervisión y cuándo se requiere?', respuesta: 'Una válvula mariposa con supervisión incluye un tamper switch eléctrico que envía señal al panel de alarma si la válvula se cierra más del 20%. NFPA 13 y 72 requieren supervisión en todas las válvulas de control de sistemas automáticos de rociadores. Distribuimos válvulas mariposa con supervisión integrada para montaje wafer, ranurado y bridado en diámetros de 2" a 12".' },
+  { pregunta: '¿Las válvulas mariposa son aptas para montaje en tuberías de acero ranurado (Victaulic)?', respuesta: 'Sí. Distribuimos válvulas mariposa de extremos ranurados compatibles con acoplamientos Victaulic y similares, que son el estándar más común en sistemas de rociadores nuevos por su facilidad de instalación. También disponemos de versiones wafer (entre bridas) y bridadas según el tipo de sistema y el diámetro requerido.' },
+];
+
+const structuredData = [
+  buildOrganizationSchema(),
+  buildProductCategorySchema({
+    name: 'Válvula Mariposa con Supervisión Contra Incendios',
+    description: 'Válvula mariposa con tamper switch para sistemas de rociadores NFPA 13. Wafer y ranurada. Bronce y hierro. México.',
+    image: '/img/valvulas-contra-incendios/valvula-check-swing-bridada-contra-incendios-ambiente-bombas-27.avif',
+    url: '/valvulas/mariposa',
+    category: 'Válvulas Contra Incendios',
+    brand: 'Elkhart Brass',
+    reviewAuthor: 'Ing. Carlos Mendoza',
+    reviewBody: 'Excelente calidad y respaldo técnico de Gama de México. Equipos certificados con entrega puntual.',
+    reviewDate: '2025-03-15',
+    ratingCount: 32,
+    reviewCount: 32,
+  }),
+  buildBreadcrumbSchema([
+    { name: 'Inicio', url: '/' },
+    { name: 'Equipos', url: '/equipos' },
+    { name: 'Válvulas Contra Incendios', url: '/valvulas-contra-incendios' },
+  ]),
+  buildFAQSchema(faqItems),
+];
+
 ---
 
 <Layout
+  structuredData={structuredData}
   title="Válvula Mariposa Control Flujo | México"
   description="Válvula mariposa con asiento EPDM y acero inoxidable. Apertura rápida 90°, presión 175-300 PSI. Certificadas UL/FM para uso industrial. México."
   activePage="equipos"
@@ -51,6 +85,10 @@ const subcategorias = [
     <p>La <strong>válvula mariposa</strong> utiliza un disco circular que gira 90° sobre un eje central para controlar el flujo. Su diseño wafer o lug ocupa significativamente menos espacio que las válvulas de compuerta equivalentes, reduciendo costos de instalación y facilitando el mantenimiento en cuartos de bombas con espacio limitado. El indicador visual de posición permite verificar el estado de la válvula sin necesidad de operar el volante.</p>
     <p><strong>Gama de México</strong> suministra válvulas mariposa certificadas UL/FM con cuerpo de hierro dúctil, disco de acero inoxidable y asiento de EPDM o NBR según aplicación. Disponibles con actuador de palanca para operación manual rápida o reductor de engranajes para diámetros mayores a 6". Incluimos opciones con interruptor de supervisión integrado para monitoreo remoto según NFPA 72.</p>
   </Fragment>
+  <!-- BREADCRUMB -->
+  <Breadcrumb />
+
+
 
   <!-- CONTENT + SIDEBAR -->
   <section class="subcat-content">
@@ -184,4 +222,26 @@ const subcategorias = [
     pagina="Válvulas Mariposa"
   />
 
+
+  <!-- FAQ -->
+  <section class="faq-section" id="faq" aria-labelledby="faq-title">
+    <div class="container">
+      <h2 id="faq-title" class="section-title">Preguntas Frecuentes</h2>
+      <Faq items={faqItems} id="faq" />
+    </div>
+  </section>
+
 </Layout>
+
+<style>
+  .faq-section {
+    padding: var(--spacing-2xl, 4rem) 0;
+    background: var(--color-surface, #fff);
+  }
+  .faq-section .section-title {
+    font-size: var(--text-2xl, 1.75rem);
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+</style>

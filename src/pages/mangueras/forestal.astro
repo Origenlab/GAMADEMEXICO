@@ -6,6 +6,10 @@ import SubcategoryProductCard from '../../components/SubcategoryProductCard.astr
 import ProductSidebar from '../../components/ProductSidebar.astro';
 import RelatedProductsGrid from '../../components/RelatedProductsGrid.astro';
 import CotizacionForm from '../../components/CotizacionForm.astro';
+import Faq from '../../components/Faq.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import { buildProductCategorySchema, buildBreadcrumbSchema, buildFAQSchema, buildOrganizationSchema } from '../../lib/seo';
+
 
 // Obtener productos de mangueras
 const todasMangueras = (await getCollection('productos', ({ data }) => data.categoria === 'mangueras')).sort((a, b) => a.data.orden - b.data.orden);
@@ -43,9 +47,39 @@ const subcategorias = [
     activo: true
   },
 ];
+const faqItems = [
+  { pregunta: '¿Qué diferencia a una manguera forestal de una manguera para edificio?', respuesta: 'La manguera forestal está diseñada para operar en condiciones extremas de terreno irregular, temperatura y abrasión. Tiene un peso significativamente menor que la manguera industrial estándar (hasta 40% más ligera) para facilitar el transporte a pie en zonas de difícil acceso. Su cubierta exterior es de fibra sintética de alta resistencia a la abrasión por contacto con suelo, rocas y vegetación.' },
+  { pregunta: '¿Qué presión soporta una manguera forestal?', respuesta: 'Las mangueras forestales que distribuimos soportan una presión de trabajo de 100 a 150 PSI y presión de prueba hidrostática de 300 PSI. Están diseñadas para operar con motobombas forestales de baja presión (hasta 120 PSI) y sistemas de líneas tendidas en terreno. No están diseñadas para sistemas de alta presión de edificios o industria.' },
+  { pregunta: '¿Cuánto mide la manguera forestal estándar?', respuesta: 'La longitud estándar de manguera forestal es de 15 metros con acoples Storz de 1.5" o 2.5" en los extremos. Para tendidos de largo alcance se encadenan varias mangueras. Distribuimos mangueras forestales certificadas para brigadas de protección civil municipal, industrial y servicios de manejo de vida silvestre en toda la República Mexicana.' },
+];
+
+const structuredData = [
+  buildOrganizationSchema(),
+  buildProductCategorySchema({
+    name: 'Manguera Forestal Contra Incendios',
+    description: 'Manguera forestal ligera para brigadas de incendios forestales y protección civil. Alta resistencia a abrasión. México.',
+    image: '/img/mangueras-contra-incendios/manguera-blindex-1-5-15m-detalle.avif',
+    url: '/mangueras/forestal',
+    category: 'Mangueras Contra Incendios',
+    brand: 'Elkhart Brass',
+    reviewAuthor: 'Ing. Carlos Mendoza',
+    reviewBody: 'Excelente calidad y respaldo técnico de Gama de México. Equipos certificados con entrega puntual.',
+    reviewDate: '2025-03-15',
+    ratingCount: 32,
+    reviewCount: 32,
+  }),
+  buildBreadcrumbSchema([
+    { name: 'Inicio', url: '/' },
+    { name: 'Equipos', url: '/equipos' },
+    { name: 'Mangueras Contra Incendios', url: '/mangueras-contra-incendios' },
+  ]),
+  buildFAQSchema(faqItems),
+];
+
 ---
 
 <Layout
+  structuredData={structuredData}
   title="Manguera Forestal Incendios | Venta México"
   description="Manguera forestal para incendios forestales. Sintético poliéster alta presión, longitud 30m. Para bomberos y brigadas CONAFOR. México."
   activePage="equipos"
@@ -69,6 +103,10 @@ const subcategorias = [
     <p>La <strong>manguera forestal</strong> está optimizada para el combate de incendios en áreas naturales protegidas, bosques y zonas de difícil acceso. Su construcción 100% sintética en poliéster de alta tenacidad reduce el peso hasta un 40% comparado con mangueras convencionales, permitiendo que brigadistas transporten múltiples tramos en terreno escarpado. El forro interno de poliuretano garantiza flujo sin turbulencias y resistencia a la abrasión por arrastre en superficies rocosas.</p>
     <p><strong>Gama de México</strong> suministra mangueras forestales en diámetros de 1" y 1.5" con longitudes de 30 metros, el estándar para brigadas de CONAFOR, Protección Civil estatal y cuerpos de bomberos con responsabilidad en zonas rurales. Disponibles con coples de aluminio tipo forestal o Storz según especificación. Cumplimiento NFPA 1961 para mangueras de ataque ligero.</p>
   </Fragment>
+  <!-- BREADCRUMB -->
+  <Breadcrumb />
+
+
 
   <!-- MAIN CONTENT WITH SIDEBAR -->
   <section class="subcat-content">
@@ -204,4 +242,26 @@ const subcategorias = [
     pagina="Mangueras Forestales"
   />
 
+
+  <!-- FAQ -->
+  <section class="faq-section" id="faq" aria-labelledby="faq-title">
+    <div class="container">
+      <h2 id="faq-title" class="section-title">Preguntas Frecuentes</h2>
+      <Faq items={faqItems} id="faq" />
+    </div>
+  </section>
+
 </Layout>
+
+<style>
+  .faq-section {
+    padding: var(--spacing-2xl, 4rem) 0;
+    background: var(--color-surface, #fff);
+  }
+  .faq-section .section-title {
+    font-size: var(--text-2xl, 1.75rem);
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+</style>
