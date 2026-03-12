@@ -6,8 +6,8 @@ categoria: "conexiones-herrajes"
 autor:
   nombre: "Ing. Roberto Hernández"
   cargo: "Director Técnico"
-imagen: "/img/conexiones-herrajes/adaptador-aluminio-elk-o-lite-4-frontal.avif"
-imagenAlt: "Adaptador de aluminio Elk-O-Lite para sistemas contra incendios vista frontal"
+imagen: "/img/blog/adaptadores-herrajes-bronce-contra-incendios-profesional.avif"
+imagenAlt: "Conexiones y herrajes para sistemas contra incendios NFPA"
 tags: ["conexiones", "herrajes", "NFPA 1963", "Storz", "toma siamesa", "acoplamiento NST", "bronce aluminio"]
 destacado: false
 draft: false

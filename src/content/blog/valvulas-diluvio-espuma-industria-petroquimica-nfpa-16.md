@@ -7,8 +7,8 @@ categoria: "valvulas"
 autor:
   nombre: "Ing. Roberto Hernández"
   cargo: "Director Técnico en Sistemas Contra Incendios"
-imagen: "/img/gamademexico-equipos-contra-incendios.avif"
-imagenAlt: "Válvula diluvio para sistemas de espuma contra incendios en tanques de almacenamiento petroquímica"
+imagen: "/img/blog/valvula-compuerta-osy-sistema-rociadores-industrial.avif"
+imagenAlt: "Válvula de diluvio y espuma para industria petroquímica NFPA 16"
 tags: ["válvulas diluvio", "sistemas espuma", "NFPA 11", "NFPA 16", "petroquímica México", "tanques hidrocarburos", "deluge valve"]
 destacado: false
 draft: false

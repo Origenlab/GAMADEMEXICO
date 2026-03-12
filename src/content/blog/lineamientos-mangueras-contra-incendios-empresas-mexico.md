@@ -7,8 +7,8 @@ categoria: "mangueras"
 autor:
   nombre: "Ing. Mariana Ortega"
   cargo: "Especialista Senior en Ingeniería y Cumplimiento Contra Incendios"
-imagen: "/img/productos/manguera-blindex-2-5-30m-refineria.avif"
-imagenAlt: "Manguera contra incendios industrial instalada en entorno de refinería"
+imagen: "/img/blog/sistema-contra-incendios-hotel-centro-comercial-mexico.avif"
+imagenAlt: "Lineamientos de mangueras contra incendios para empresas"
 imagenOg: "/img/productos/manguera-millhose-2-5-30m-frontal.avif"
 tags: ["mangueras contra incendios", "manguera contra incendios industrial", "lineamientos de mangueras", "cumplimiento contra incendios", "NFPA 1961", "NOM-002-STPS", "equipos contra incendios industriales", "protección contra incendios en México"]
 destacado: true

@@ -6,8 +6,8 @@ categoria: "valvulas"
 autor:
   nombre: "Ing. Roberto Hernández"
   cargo: "Director Técnico"
-imagen: "/img/valvulas-contra-incendios/valvula-compuerta-osy-ranurada-contra-incendios-ambiente-fabrica-33.avif"
-imagenAlt: "Válvula de compuerta OS&Y ranurada para sistemas de sprinklers en planta industrial"
+imagen: "/img/blog/valvula-compuerta-osy-sistema-rociadores-industrial.avif"
+imagenAlt: "Válvula de compuerta OS&Y para sistema de rociadores industrial"
 tags: ["válvulas OS&Y", "NFPA 13", "sprinklers", "válvulas contra incendios", "UL Listed", "FM Approved", "México"]
 destacado: false
 draft: false

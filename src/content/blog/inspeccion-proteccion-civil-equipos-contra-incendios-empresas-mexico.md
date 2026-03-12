@@ -7,8 +7,8 @@ categoria: "gabinetes-hidrantes"
 autor:
   nombre: "Ing. Roberto Hernández"
   cargo: "Consultor Senior en Protección Contra Incendios y Cumplimiento Normativo"
-imagen: "/img/valvulas-contra-incendios/valvula-compuerta-osy-ranurada-contra-incendios-vista-frontal-16.avif"
-imagenAlt: "Válvula OS&Y certificada para sistemas contra incendios industriales - equipos que revisa Protección Civil"
+imagen: "/img/blog/inspeccion-proteccion-civil-empresa-industrial-mexico.avif"
+imagenAlt: "Inspección de protección civil equipos contra incendios México"
 tags: ["inspección Protección Civil", "equipos contra incendios México", "NOM-002-STPS-2010", "cumplimiento normativo empresas", "mantenimiento equipos contra incendios", "documentación contra incendios", "brigadas de emergencia", "checklist protección civil", "auditoría seguridad industrial", "gabinetes contra incendios"]
 destacado: true
 draft: false

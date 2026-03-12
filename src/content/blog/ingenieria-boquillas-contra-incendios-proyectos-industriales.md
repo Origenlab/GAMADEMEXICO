@@ -7,8 +7,8 @@ categoria: "boquillas"
 autor:
   nombre: "Ing. Alejandro Méndez"
   cargo: "Consultor Senior en Ingeniería de Protección Contra Incendios"
-imagen: "/img/productos/boquilla-industrial-contra-incendios-ambiente-industrial-08.avif"
-imagenAlt: "Boquilla industrial contra incendios instalada en entorno de proceso"
+imagen: "/img/blog/auditoria-equipos-contra-incendios-sala-juntas-corporativa.avif"
+imagenAlt: "Ingeniería de boquillas contra incendios proyectos industriales"
 imagenOg: "/img/productos/boquilla-tipo-pistola-contra-incendios-nfpa-certificada-31.avif"
 tags: ["boquillas contra incendios", "ingeniería contra incendios", "boquillas industriales", "NFPA 1964", "sistemas contra incendios", "especificación técnica", "brigadas industriales", "NOM-002-STPS-2010"]
 destacado: true

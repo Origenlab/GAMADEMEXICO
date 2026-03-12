@@ -6,8 +6,8 @@ categoria: "gabinetes-hidrantes"
 autor:
   nombre: "Ing. Roberto Hernández"
   cargo: "Director Técnico"
-imagen: "/img/monitores-contra-incendios/monitor-certificado-fm-contra-incendios-angulo-frontal-14.avif"
-imagenAlt: "Equipo contra incendios certificado FM para cumplimiento normativo en empresas"
+imagen: "/img/blog/inspeccion-proteccion-civil-empresa-industrial-mexico.avif"
+imagenAlt: "Cumplimiento NOM-002-STPS protección contra incendios empresas"
 tags: ["NOM-002-STPS", "protección civil", "cumplimiento normativo", "extintores", "gabinetes", "brigada contra incendios", "México"]
 destacado: true
 draft: false

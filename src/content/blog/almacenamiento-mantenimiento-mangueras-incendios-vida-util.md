@@ -7,8 +7,8 @@ categoria: "mangueras"
 autor:
   nombre: "Ing. Roberto Hernández"
   cargo: "Director Técnico en Sistemas Contra Incendios"
-imagen: "/img/gamademexico-equipos-contra-incendios.avif"
-imagenAlt: "Almacenamiento correcto de mangueras contra incendios en gabinete industrial con plegado técnico"
+imagen: "/img/blog/mangueras-contra-incendios-prueba-hidraulica-laboratorio.avif"
+imagenAlt: "Almacenamiento y mantenimiento de mangueras contra incendios"
 tags: ["almacenamiento mangueras", "mantenimiento mangueras", "vida útil mangueras", "NFPA 1962", "plegado mangueras", "inspección mangueras", "protección incendios"]
 destacado: false
 draft: false

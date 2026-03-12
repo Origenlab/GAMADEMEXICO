@@ -7,8 +7,8 @@ categoria: "boquillas"
 autor:
   nombre: "Ing. Laura Villaseñor"
   cargo: "Arquitecta de Sistemas de Protección Contra Incendios"
-imagen: "/img/productos/boquilla-tipo-pistola-contra-incendios-catalogo-35.avif"
-imagenAlt: "Boquilla contra incendios profesional para aplicaciones industriales y corporativas"
+imagen: "/img/blog/auditoria-equipos-contra-incendios-sala-juntas-corporativa.avif"
+imagenAlt: "Estándar corporativo boquillas contra incendios industria"
 imagenOg: "/img/productos/boquilla-industrial-contra-incendios-vista-explosionada-11.avif"
 tags: ["boquillas contra incendios", "estándar corporativo", "ingeniería contra incendios", "brigadas industriales", "sistemas fijos contra incendios", "auditoría de cumplimiento", "equipos contra incendios industriales", "protección contra incendios industrial"]
 destacado: true

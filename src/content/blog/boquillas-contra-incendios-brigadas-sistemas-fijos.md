@@ -7,8 +7,8 @@ categoria: "boquillas"
 autor:
   nombre: "Ing. Ricardo Salgado"
   cargo: "Especialista en Ingeniería de Protección Contra Incendios"
-imagen: "/img/productos/boquilla-tipo-pistola-contra-incendios-brigada-industrial-17.avif"
-imagenAlt: "Boquilla contra incendios tipo pistola en brigada industrial de respuesta"
+imagen: "/img/blog/boquillas-contra-incendios-tipos-seleccion-tecnica.avif"
+imagenAlt: "Boquillas contra incendios para brigadas y sistemas fijos"
 imagenOg: "/img/productos/boquilla-industrial-contra-incendios-planta-manufactura-09.avif"
 tags: ["boquillas contra incendios", "boquillas para brigadas", "boquillas para sistemas fijos", "NFPA 1964", "sistemas contra incendios", "equipos contra incendios industriales", "brigadas de emergencia", "NOM-002-STPS-2010"]
 destacado: true

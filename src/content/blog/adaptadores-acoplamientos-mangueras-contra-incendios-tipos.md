@@ -7,8 +7,8 @@ categoria: "conexiones-herrajes"
 autor:
   nombre: "Ing. Roberto Hernández"
   cargo: "Director Técnico en Sistemas Contra Incendios"
-imagen: "/img/gamademexico-equipos-contra-incendios.avif"
-imagenAlt: "Adaptadores y acoplamientos NH Storz y roscados para mangueras contra incendios industriales"
+imagen: "/img/blog/adaptadores-herrajes-bronce-contra-incendios-profesional.avif"
+imagenAlt: "Adaptadores y herrajes de bronce para mangueras contra incendios"
 tags: ["adaptadores mangueras", "acoplamientos NH", "Storz", "NFPA 1963", "conexiones incendios", "brigadas industriales", "compatibilidad mangueras"]
 destacado: false
 draft: false

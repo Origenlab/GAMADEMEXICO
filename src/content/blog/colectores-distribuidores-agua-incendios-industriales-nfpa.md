@@ -7,8 +7,8 @@ categoria: "conexiones-herrajes"
 autor:
   nombre: "Ing. Roberto Hernández"
   cargo: "Director Técnico en Sistemas Contra Incendios"
-imagen: "/img/gamademexico-equipos-contra-incendios.avif"
-imagenAlt: "Colectores y distribuidores manifold para sistemas de agua contra incendios industriales petroquímica"
+imagen: "/img/blog/adaptadores-herrajes-bronce-contra-incendios-profesional.avif"
+imagenAlt: "Colectores y distribuidores de agua contra incendios NFPA"
 tags: ["colectores agua incendios", "distribuidores manifold", "NFPA 20", "petroquímica México", "hidráulica incendios", "manifold incendios", "sistemas industriales"]
 destacado: false
 draft: false

@@ -7,8 +7,8 @@ categoria: "gabinetes-hidrantes"
 autor:
   nombre: "Ing. Roberto Hernández"
   cargo: "Consultor Senior en Protección Contra Incendios y Cumplimiento Normativo"
-imagen: "/img/productos/manguera-blindex-1-5-30m-industrial.avif"
-imagenAlt: "Manguera contra incendios industrial instalada correctamente en empresa - equipos para Programa Interno"
+imagen: "/img/blog/inspeccion-proteccion-civil-empresa-industrial-mexico.avif"
+imagenAlt: "Programa interno de equipos contra incendios empresas México"
 tags: ["programa interno protección civil", "equipos contra incendios empresas", "NOM-002-STPS-2010", "cumplimiento protección civil", "mantenimiento equipos", "brigadas emergencia", "auditoría seguridad", "gabinetes contra incendios"]
 destacado: true
 draft: false

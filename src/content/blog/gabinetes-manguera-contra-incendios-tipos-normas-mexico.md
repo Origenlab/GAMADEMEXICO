@@ -6,8 +6,8 @@ categoria: "gabinetes-hidrantes"
 autor:
   nombre: "Ing. Roberto Hernández"
   cargo: "Director Técnico"
-imagen: "/img/gabinetes-hidrantes/gabinete-30m-abierto.avif"
-imagenAlt: "Gabinete de manguera contra incendios tipo 30ME abierto con equipo completo"
+imagen: "/img/blog/gabinete-contra-incendios-instalacion-edificio-mexico.avif"
+imagenAlt: "Gabinete contra incendios instalado en edificio México"
 tags: ["gabinetes", "NOM-002-STPS", "NOM-093-SCFI", "mangueras contra incendios", "protección civil", "México"]
 destacado: false
 draft: false

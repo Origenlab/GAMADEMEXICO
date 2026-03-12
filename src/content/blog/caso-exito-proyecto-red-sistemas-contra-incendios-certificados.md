@@ -6,8 +6,8 @@ categoria: "gabinetes-hidrantes"
 autor:
   nombre: "Ing. Roberto Hernández"
   cargo: "Director Técnico"
-imagen: "/img/equipo-gama-mexico-showroom-elkhart-brass.avif"
-imagenAlt: "Equipo de Gama de México en showroom con equipos Elkhart Brass certificados"
+imagen: "/img/blog/gama-mexico-equipo-instalacion-certificacion-elkhart-brass.avif"
+imagenAlt: "Equipo Gama de México instalando equipos Elkhart Brass certificados"
 tags: ["caso de éxito", "certificación UL", "certificación FM", "sistemas contra incendios", "ingeniería", "normatividad", "protección civil"]
 destacado: true
 tiempoLectura: 18

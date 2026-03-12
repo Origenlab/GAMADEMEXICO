@@ -7,8 +7,8 @@ categoria: "valvulas"
 autor:
   nombre: "Ing. Roberto Hernández"
   cargo: "Director Técnico en Sistemas Contra Incendios"
-imagen: "/img/gamademexico-equipos-contra-incendios.avif"
-imagenAlt: "Válvula de alarma para sistemas rociadores contra incendios con gong hidráulico instalada"
+imagen: "/img/blog/valvulas-contra-incendios-nfpa-sala-control-industrial.avif"
+imagenAlt: "Válvula de alarma para rociadores contra incendios NFPA 25"
 tags: ["válvula de alarma", "rociadores", "NFPA 25", "gong hidráulico", "tubería húmeda", "tubería seca", "sprinkler systems"]
 destacado: false
 draft: false

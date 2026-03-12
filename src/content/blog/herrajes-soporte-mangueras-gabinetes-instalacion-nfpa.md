@@ -7,8 +7,8 @@ categoria: "conexiones-herrajes"
 autor:
   nombre: "Ing. Roberto Hernández"
   cargo: "Director Técnico en Sistemas Contra Incendios"
-imagen: "/img/gamademexico-equipos-contra-incendios.avif"
-imagenAlt: "Herrajes y soportes anticorrosión para mangueras y gabinetes contra incendios industriales"
+imagen: "/img/blog/adaptadores-herrajes-bronce-contra-incendios-profesional.avif"
+imagenAlt: "Herrajes y soporte para mangueras y gabinetes NFPA"
 tags: ["herrajes contra incendios", "porta-mangueras", "soportes gabinetes", "NFPA 1", "NOM-002-STPS", "abrazaderas anticorrosión", "instalación mangueras"]
 destacado: false
 draft: false

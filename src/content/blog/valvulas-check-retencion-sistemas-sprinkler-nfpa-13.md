@@ -7,8 +7,8 @@ categoria: "valvulas"
 autor:
   nombre: "Ing. Roberto Hernández"
   cargo: "Director Técnico en Sistemas Contra Incendios"
-imagen: "/img/gamademexico-equipos-contra-incendios.avif"
-imagenAlt: "Válvulas check de retención para sistemas sprinkler contra incendios certificadas UL FM"
+imagen: "/img/blog/valvulas-contra-incendios-nfpa-sala-control-industrial.avif"
+imagenAlt: "Válvulas check de retención para sistemas sprinkler NFPA 13"
 tags: ["válvulas check", "NFPA 13", "sistemas sprinkler", "válvula retención", "UL FM", "mantenimiento válvulas", "protección incendios"]
 destacado: false
 draft: false

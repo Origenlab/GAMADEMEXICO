@@ -6,8 +6,8 @@ categoria: "valvulas"
 autor:
   nombre: "Ing. Carlos Mendoza Ruiz"
   cargo: "Especialista en Normatividad contra Incendios"
-imagen: "/img/tecnico-mantenimiento-valvula-elkhart-brass-refineria.avif"
-imagenAlt: "Técnico especializado realizando mantenimiento a válvula Elkhart Brass en instalación industrial"
+imagen: "/img/blog/mantenimiento-equipos-contra-incendios-tecnico-industrial.avif"
+imagenAlt: "Técnico realizando mantenimiento de equipos contra incendios"
 tags: ["mantenimiento", "extintores", "NOM-154-SCFI", "certificaciones", "proveedores", "equipos contra incendios", "normatividad"]
 destacado: true
 tiempoLectura: 22

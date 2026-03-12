@@ -7,8 +7,8 @@ categoria: "mangueras"
 autor:
   nombre: "Ing. Roberto Hernández"
   cargo: "Director Técnico en Sistemas Contra Incendios"
-imagen: "/img/gamademexico-equipos-contra-incendios.avif"
-imagenAlt: "Mangueras contra incendios clasificadas por presión de trabajo NFPA 1961 industria México"
+imagen: "/img/blog/mangueras-contra-incendios-prueba-hidraulica-laboratorio.avif"
+imagenAlt: "Clasificación de presión de trabajo de mangueras NFPA 1961"
 tags: ["NFPA 1961", "presión de trabajo mangueras", "mangueras incendios", "clasificación mangueras", "prueba hidrostática", "vida útil manguera", "protección industrial"]
 destacado: false
 draft: false

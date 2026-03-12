@@ -6,8 +6,8 @@ categoria: "monitores"
 autor:
   nombre: "Ing. Ricardo Solís Garza"
   cargo: "Consultor Senior en Seguridad Industrial"
-imagen: "/img/capacitacion-brigada-contra-incendios-nom-002-boquilla.avif"
-imagenAlt: "Capacitación de brigada contra incendios con boquilla certificada según NOM-002-STPS"
+imagen: "/img/blog/brigada-industrial-entrenamiento-contra-incendios.avif"
+imagenAlt: "Brigada industrial en entrenamiento de emergencia contra incendios"
 tags: ["seguridad industrial", "protección contra incendios", "NOM-002-STPS", "EPP", "gestión de riesgos", "brigadas", "NFPA"]
 destacado: true
 tiempoLectura: 25

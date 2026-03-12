@@ -8,8 +8,8 @@ tags: ["empresas verificadas", "protección contra incendios", "Querétaro", "ex
 autor:
   nombre: "Equipo Editorial Gama de México"
   cargo: "Contenido Corporativo"
-imagen: "/img/blog/lga-contra-incendios-empresa.jpg"
-imagenAlt: "Equipos contra incendios certificados exhibidos en showroom profesional"
+imagen: "/img/blog/gama-mexico-equipo-instalacion-certificacion-elkhart-brass.avif"
+imagenAlt: "Instalación de equipos certificados contra incendios Querétaro"
 destacado: true
 draft: false
 ---

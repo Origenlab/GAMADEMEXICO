@@ -6,8 +6,8 @@ categoria: "boquillas"
 autor:
   nombre: "Ing. Roberto Hernández"
   cargo: "Director Técnico"
-imagen: "/img/boquillas-contra-incendios/boquilla-certificada-dual-ul-fm-csw-lb-frontal.avif"
-imagenAlt: "Boquilla certificada dual UL FM para sistemas contra incendios industriales vista frontal"
+imagen: "/img/blog/boquillas-contra-incendios-tipos-seleccion-tecnica.avif"
+imagenAlt: "Boquillas contra incendios turbo-jet y tipo pistola comparación"
 tags: ["boquillas contra incendios", "turbo jet", "tipo pistola", "NFPA 1964", "UL Listed", "FM Approved", "México"]
 destacado: false
 draft: false

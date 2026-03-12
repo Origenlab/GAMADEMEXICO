@@ -7,8 +7,8 @@ categoria: "mangueras"
 autor:
   nombre: "Ing. Roberto Hernández"
   cargo: "Director Técnico en Sistemas Contra Incendios"
-imagen: "/img/gamademexico-equipos-contra-incendios.avif"
-imagenAlt: "Equipo de prueba hidrostática para mangueras contra incendios en instalación industrial México"
+imagen: "/img/blog/mangueras-contra-incendios-prueba-hidraulica-laboratorio.avif"
+imagenAlt: "Prueba hidrostática de mangueras contra incendios en laboratorio"
 tags: ["prueba hidrostática", "NFPA 1962", "mangueras incendios", "inspección mangueras", "mantenimiento preventivo", "certificación mangueras", "protección incendios"]
 destacado: false
 draft: false

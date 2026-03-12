@@ -6,8 +6,8 @@ categoria: "monitores"
 autor:
   nombre: "Ing. Alejandro Vega Domínguez"
   cargo: "Especialista en Protección de Instalaciones Industriales"
-imagen: "/img/tecnico-mantenimiento-valvula-industrial-nom-002.avif"
-imagenAlt: "Técnico realizando mantenimiento a sistema de protección contra incendios en instalación industrial"
+imagen: "/img/blog/mantenimiento-equipos-contra-incendios-tecnico-industrial.avif"
+imagenAlt: "Protección contra incendios en maquinaria y talleres"
 tags: ["maquinaria pesada", "construcción", "talleres", "hidrocarburos", "NFPA 30A", "monitores", "protección industrial"]
 destacado: true
 tiempoLectura: 24

@@ -6,8 +6,8 @@ categoria: "gabinetes-hidrantes"
 autor:
   nombre: "Ing. Roberto Hernández"
   cargo: "Director Técnico"
-imagen: "/img/gabinetes-hidrantes/gabinete-30m-abierto.avif"
-imagenAlt: "Hidrante contra incendios instalado en zona industrial México"
+imagen: "/img/blog/gabinete-contra-incendios-instalacion-edificio-mexico.avif"
+imagenAlt: "Hidrantes contra incendios tipos e instalación México"
 tags: ["hidrantes", "NFPA 24", "NOM-164-SCT2", "instalación contra incendios", "hidrante de banqueta", "México"]
 destacado: false
 draft: false

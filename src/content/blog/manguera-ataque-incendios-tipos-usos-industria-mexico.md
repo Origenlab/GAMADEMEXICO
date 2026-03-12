@@ -7,8 +7,8 @@ categoria: "mangueras"
 autor:
   nombre: "Ing. Roberto Hernández"
   cargo: "Director Técnico en Sistemas Contra Incendios"
-imagen: "/img/gamademexico-equipos-contra-incendios.avif"
-imagenAlt: "Mangueras de ataque contra incendios doble jacket para industria manufacturera y petroquímica México"
+imagen: "/img/blog/manguera-forestal-brigada-incendio-bosque-mexico.avif"
+imagenAlt: "Manguera de ataque contra incendios en operación industrial"
 tags: ["manguera de ataque", "doble jacket", "single jacket", "NFPA 1961", "mangueras industriales", "brigadas incendios", "manufactura México"]
 destacado: false
 draft: false

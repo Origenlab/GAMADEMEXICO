@@ -7,8 +7,8 @@ categoria: "boquillas"
 autor:
   nombre: "Ing. Mariana Ortega"
   cargo: "Especialista Senior en Auditoría de Sistemas Contra Incendios"
-imagen: "/img/productos/boquilla-tipo-pistola-contra-incendios-producto-profesional-34.avif"
-imagenAlt: "Boquilla contra incendios profesional para programas de auditoría industrial"
+imagen: "/img/blog/auditoria-equipos-contra-incendios-sala-juntas-corporativa.avif"
+imagenAlt: "Manual de auditoría de boquillas contra incendios"
 imagenOg: "/img/productos/boquilla-industrial-contra-incendios-vista-explosionada-11.avif"
 tags: ["manual de auditoría boquillas contra incendios", "boquillas contra incendios", "auditoría interna", "sistemas contra incendios", "brigadas industriales", "cumplimiento técnico", "equipos contra incendios industriales", "protección contra incendios industrial"]
 destacado: true

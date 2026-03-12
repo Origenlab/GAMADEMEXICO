@@ -7,8 +7,8 @@ categoria: "mangueras"
 autor:
   nombre: "Ing. Roberto Hernández"
   cargo: "Director Técnico en Sistemas Contra Incendios"
-imagen: "/img/gamademexico-equipos-contra-incendios.avif"
-imagenAlt: "Manguera forestal wildland ligera para brigadas contra incendios en bosques y zonas rurales México"
+imagen: "/img/blog/manguera-forestal-brigada-incendio-bosque-mexico.avif"
+imagenAlt: "Brigada forestal desplegando manguera en bosque de México"
 tags: ["manguera forestal", "wildland hose", "NFPA 1977", "incendios forestales", "brigadas forestales", "CONAFOR", "manguera ligera"]
 destacado: false
 draft: false

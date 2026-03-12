@@ -7,8 +7,8 @@ categoria: "conexiones-herrajes"
 autor:
   nombre: "Ing. Roberto Hernández"
   cargo: "Director Técnico en Sistemas Contra Incendios"
-imagen: "/img/gamademexico-equipos-contra-incendios.avif"
-imagenAlt: "Reducción siamesa y toma para bomberos instalada en fachada de edificio industrial México"
+imagen: "/img/blog/adaptadores-herrajes-bronce-contra-incendios-profesional.avif"
+imagenAlt: "Toma siamesa y reducción para bomberos NFPA"
 tags: ["reducción siamesa", "toma bomberos", "NFPA 14", "standpipe", "conexión siamesa", "protección incendios", "NOM-002-STPS"]
 destacado: false
 draft: false

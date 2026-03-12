@@ -7,8 +7,8 @@ categoria: "boquillas"
 autor:
   nombre: "Ing. Sergio Castañeda"
   cargo: "Director de Cumplimiento Técnico en Protección Contra Incendios"
-imagen: "/img/productos/boquilla-tipo-pistola-contra-incendios-ul-listed-32.avif"
-imagenAlt: "Boquilla contra incendios certificada para cumplimiento técnico en planta industrial"
+imagen: "/img/blog/inspeccion-proteccion-civil-empresa-industrial-mexico.avif"
+imagenAlt: "Inspección de protección civil en empresa industrial México"
 imagenOg: "/img/productos/boquilla-industrial-contra-incendios-fabrica-fondo-10.avif"
 tags: ["cumplimiento legal boquillas contra incendios", "NOM-002-STPS-2010", "RFSSST", "Ley General de Protección Civil", "boquillas contra incendios", "brigadas industriales", "auditoría contra incendios", "equipos contra incendios industriales"]
 destacado: true

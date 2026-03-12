@@ -7,8 +7,8 @@ categoria: "valvulas"
 autor:
   nombre: "Ing. Roberto Hernández"
   cargo: "Director Técnico en Sistemas Contra Incendios"
-imagen: "/img/gamademexico-equipos-contra-incendios.avif"
-imagenAlt: "Válvulas de control OS&Y y mariposa supervisadas para sistemas contra incendios industriales"
+imagen: "/img/blog/valvulas-contra-incendios-nfpa-sala-control-industrial.avif"
+imagenAlt: "Sistema de válvulas de control contra incendios con supervisión"
 tags: ["válvulas control", "OS&Y", "válvula mariposa", "NFPA 72", "NFPA 25", "supervisión eléctrica", "sistemas incendios"]
 destacado: false
 draft: false

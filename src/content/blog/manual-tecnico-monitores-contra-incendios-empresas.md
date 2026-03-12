@@ -7,8 +7,8 @@ categoria: "monitores"
 autor:
   nombre: "Ing. Roberto Hernández"
   cargo: "Director Técnico en Sistemas Contra Incendios"
-imagen: "/img/monitores-contra-incendios/monitor-contra-incendio-aplicacion-industrial-04.avif"
-imagenAlt: "Monitor contra incendios industrial en aplicación de alto riesgo"
+imagen: "/img/blog/monitor-contra-incendios-refineria-industrial-mexico.avif"
+imagenAlt: "Monitor contra incendios industrial para empresas"
 imagenOg: "/img/monitores-contra-incendios/monitor-certificado-fm-contra-incendios-parque-industrial-12.avif"
 tags: ["monitores contra incendios", "monitor contra incendios industrial", "manual técnico", "sistemas contra incendios", "protección contra incendios industrial", "venta de monitores contra incendios en México", "equipos contra incendios industriales", "NOM-002-STPS-2010"]
 destacado: true

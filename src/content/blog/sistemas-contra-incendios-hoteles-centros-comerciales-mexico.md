@@ -1,17 +1,20 @@
 ---
 title: "Sistemas Contra Incendios para Hoteles y Centros Comerciales"
 description: "Normativa para hoteles en México: sprinklers, gabinetes cada 30m, hidrantes privados, inspección y costos estimados."
-fecha: "2025-03-10"
+fecha: "2026-03-12"
 categoria: "monitores"
 autor:
   nombre: "Ing. Roberto Hernández"
   cargo: "Director Técnico"
-imagen: "/img/monitores-contra-incendios/monitor-certificado-fm-contra-incendios-angulo-derecho-07.avif"
-imagenAlt: "Monitor certificado FM en sistema contra incendios para instalación industrial"
+imagen: "/img/blog/sistema-contra-incendios-hotel-centro-comercial-mexico.avif"
+imagenAlt: "Sistema contra incendios en hotel y centro comercial México"
 tags: ["hoteles", "centros comerciales", "NOM-002-STPS", "sprinklers", "protección civil", "sistemas contra incendios México"]
 destacado: false
 draft: false
 productosRelacionados: ["gabinete-30me", "gabinete-empotrado", "hidrante-banqueta", "monitor-corazon-una-cremallera", "valvula-compuerta-osy-4-ranurada", "manguera-millhose"]
+fechaActualizacion: "2026-03-12"
+canonical: "https://gamademexico.com/blog/monitores/sistemas-contra-incendios-hoteles-centros-comerciales-mexico"
+noindex: false
 tiempoLectura: 9
 ---
 

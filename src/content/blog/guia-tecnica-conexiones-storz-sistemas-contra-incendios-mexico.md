@@ -7,8 +7,8 @@ categoria: "conexiones-herrajes"
 autor:
   nombre: "Ing. Roberto Hernández"
   cargo: "Director Técnico en Sistemas Contra Incendios"
-imagen: "/img/gamademexico-equipos-contra-incendios.avif"
-imagenAlt: "Conexiones Storz para sistemas contra incendios industriales en México diámetros DN50 a DN100"
+imagen: "/img/blog/adaptadores-herrajes-bronce-contra-incendios-profesional.avif"
+imagenAlt: "Conexiones Storz para sistemas contra incendios México"
 tags: ["conexiones Storz", "NFPA 1963", "DN65", "DN80", "sistemas contra incendios", "conexiones mangueras", "protección industrial"]
 destacado: false
 draft: false

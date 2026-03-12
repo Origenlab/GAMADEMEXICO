@@ -7,8 +7,8 @@ categoria: "conexiones-herrajes"
 autor:
   nombre: "Ing. Roberto Hernández"
   cargo: "Director Técnico en Sistemas Contra Incendios"
-imagen: "/img/gamademexico-equipos-contra-incendios.avif"
-imagenAlt: "Llaves y herramientas para operación de válvulas e hidrantes contra incendios industriales"
+imagen: "/img/blog/adaptadores-herrajes-bronce-contra-incendios-profesional.avif"
+imagenAlt: "Llaves y herramientas para operación de válvulas e hidrantes"
 tags: ["llaves hidrantes", "herramientas válvulas", "llave de capucha", "llave de ángulo", "operación hidrantes", "NFPA 291", "protección incendios"]
 destacado: false
 draft: false
