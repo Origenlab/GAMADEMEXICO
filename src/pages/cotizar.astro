@@ -1,0 +1,264 @@
+---
+import Layout from '../layouts/Base.astro';
+import '../styles/contacto.css';
+import LeadCapture from '../components/LeadCapture.astro';
+import Faq from '../components/Faq.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+import { buildOrganizationSchema, buildServiceSchema, buildFAQSchema, buildBreadcrumbSchema } from '../lib/seo';
+import { PHONE_PRIMARY, WHATSAPP_NUMBER, WHATSAPP_DISPLAY } from '../lib/config';
+
+const faqItems = [
+  {
+    pregunta: '¿Cuánto tiempo tarda en llegar mi cotización?',
+    respuesta: 'Respondemos todas las cotizaciones en menos de 24 horas hábiles. Para equipos en stock (monitores, boquillas, mangueras, válvulas y conexiones Elkhart Brass), la respuesta suele ser el mismo día. Para proyectos de mayor escala con asesoría técnica, programamos una llamada sin costo adicional.',
+  },
+  {
+    pregunta: '¿Qué información necesito para cotizar?',
+    respuesta: 'Con esta información básica podemos cotizar: tipo de equipo (monitor, boquilla, manguera, válvula, conexión o gabinete), cantidades aproximadas, especificaciones técnicas si las tienes (caudal, presión, certificación requerida) y estado o ciudad de entrega. Si tienes planos o especificaciones técnicas del proyecto, puedes enviárlos por WhatsApp al ' + WHATSAPP_DISPLAY + '.',
+  },
+  {
+    pregunta: '¿Venden a empresas y gobierno además de particulares?',
+    respuesta: 'Sí. Atendemos a empresas industriales, constructoras, contratistas de sistemas contra incendios, dependencias de gobierno (municipios, PEMEX, CFE, hospitales públicos) y particulares. Para ventas a gobierno emitimos factura electrónica y tenemos experiencia en procedimientos de licitación y adjudicación directa conforme a la Ley de Adquisiciones.',
+  },
+  {
+    pregunta: '¿Los precios incluyen IVA y envío?',
+    respuesta: 'Los precios de lista no incluyen IVA ni envío. El IVA (16%) se agrega a todos los pedidos. El costo de envío depende del volumen, peso y destino; para pedidos grandes frecuentemente incluimos el flete sin costo. En la cotización desglosamos precio unitario, IVA y costo logístico por separado para transparencia total.',
+  },
+  {
+    pregunta: '¿Cuál es el tiempo de entrega?',
+    respuesta: 'Para equipos en stock en CDMX: entrega el mismo día o siguiente día hábil en CDMX metropolitano. Para envíos foráneos: 2-5 días hábiles según el destino. Para equipos bajo pedido especial (modelos no estándar, cantidades grandes): 5-15 días hábiles. Confirmamos el tiempo de entrega exacto en la cotización.',
+  },
+  {
+    pregunta: '¿Aceptan crédito o financiamiento?',
+    respuesta: 'Para clientes empresariales con volumen regular ofrecemos crédito a 30 días con apertura de cuenta. Para proyectos de mayor envergadura evaluamos esquemas a 60 días. Requerimos información fiscal y referencias comerciales para la apertura de crédito. Aceptamos pago con transferencia bancaria, depósito o tarjeta empresarial.',
+  },
+];
+
+const structuredData = [
+  buildOrganizationSchema(),
+  buildServiceSchema({
+    name: 'Cotización de Equipos Contra Incendios',
+    description: 'Solicita cotización de monitores, boquillas, mangueras, válvulas y conexiones Elkhart Brass certificados UL/FM. Respuesta en 24 horas.',
+    url: '/cotizar',
+  }),
+  buildBreadcrumbSchema([
+    { name: 'Inicio', url: '/' },
+    { name: 'Cotizar', url: '/cotizar' },
+  ]),
+  buildFAQSchema(faqItems),
+];
+---
+
+<Layout
+  title="Cotiza Equipos Contra Incendios | Gama de México"
+  description="Solicita cotización de monitores, boquillas, mangueras, válvulas y conexiones Elkhart Brass certificados. Respuesta en 24 horas. CDMX y toda México."
+  activePage="cotizar"
+  structuredData={structuredData}
+  ogImage="/img/og-gama-mexico-equipos-contra-incendios.jpg"
+  heroTitle="Cotiza tus Equipos Contra Incendios"
+  heroIntro="Monitores, boquillas, mangueras, válvulas y conexiones Elkhart Brass certificados FM/UL. Asesoría técnica gratuita. Respuesta en menos de 24 horas."
+  heroBadge="Cotización"
+  heroMetrics={[
+    { valor: "<24h", texto: "Tiempo de respuesta" },
+    { valor: "100%", texto: "Equipos certificados" },
+    { valor: "NL", texto: "Envíos nacionales" }
+  ]}
+  heroPrimaryText="Enviar por WhatsApp"
+  heroPrimaryLink={`https://wa.me/${WHATSAPP_NUMBER}?text=Hola,%20necesito%20cotizar%20equipos%20contra%20incendios`}
+  heroSecondaryText="Llamar ahora"
+  heroSecondaryLink={`tel:${PHONE_PRIMARY}`}
+  heroShowRightContent={true}
+  showLeadCapture={false}
+>
+  <Fragment slot="hero-content">
+    <p>Como distribuidores autorizados de <strong>Elkhart Brass</strong> en México, suministramos equipos con certificación FM Approved y UL Listed para proyectos industriales, comerciales y de gobierno en toda la República.</p>
+    <p>Nuestro equipo de ingenieros especializados te asesora en la selección del equipo correcto para tu proyecto — sin costo y sin compromiso de compra.</p>
+  </Fragment>
+
+  <Breadcrumb />
+
+  <!-- FORMULARIO PRINCIPAL -->
+  <section class="contact-section" id="formulario" aria-labelledby="cotizar-title">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- FORM -->
+        <div class="contact-form-wrapper">
+          <h2 id="cotizar-title" class="contact-form-title">Solicita tu Cotización</h2>
+          <p class="contact-form-intro">Completa el formulario y recibirás tu cotización en menos de 24 horas hábiles. También puedes contactarnos directo por WhatsApp.</p>
+
+          <form class="contact-form" id="cotizacion-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nombre" class="form-label">Nombre completo *</label>
+                <input type="text" id="nombre" name="nombre" class="form-input" placeholder="Tu nombre" required autocomplete="name" />
+              </div>
+              <div class="form-group">
+                <label for="empresa" class="form-label">Empresa</label>
+                <input type="text" id="empresa" name="empresa" class="form-input" placeholder="Nombre de la empresa" autocomplete="organization" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="telefono" class="form-label">Teléfono / WhatsApp *</label>
+                <input type="tel" id="telefono" name="telefono" class="form-input" placeholder="55 1234 5678" required autocomplete="tel" />
+              </div>
+              <div class="form-group">
+                <label for="email" class="form-label">Correo electrónico</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="correo@empresa.com" autocomplete="email" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="estado" class="form-label">Estado de entrega *</label>
+              <select id="estado" name="estado" class="form-input" required>
+                <option value="">Selecciona tu estado</option>
+                <option>Ciudad de México</option>
+                <option>Estado de México</option>
+                <option>Querétaro</option>
+                <option>Jalisco</option>
+                <option>Nuevo León</option>
+                <option>Guanajuato</option>
+                <option>Veracruz</option>
+                <option>Puebla</option>
+                <option>Hidalgo</option>
+                <option>Otro estado</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="equipo" class="form-label">Tipo de equipo que necesitas *</label>
+              <select id="equipo" name="equipo" class="form-input" required>
+                <option value="">Selecciona el tipo de equipo</option>
+                <option>Monitores contra incendios</option>
+                <option>Boquillas contra incendios</option>
+                <option>Mangueras contra incendios</option>
+                <option>Válvulas contra incendios</option>
+                <option>Conexiones y herrajes</option>
+                <option>Gabinetes e hidrantes</option>
+                <option>Múltiples equipos (proyecto completo)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="descripcion" class="form-label">Descripción del proyecto o equipo *</label>
+              <textarea id="descripcion" name="descripcion" class="form-input form-textarea" rows="4" placeholder="Describe el equipo que necesitas: tipo, modelo, cantidades, especificaciones técnicas (caudal, presión, certificación), o adjunta el número de parte si lo tienes." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--lg" style="width:100%">
+              Enviar cotización por WhatsApp →
+            </button>
+
+            <p class="form-disclaimer">Al enviar este formulario, tu solicitud se redirigirá a nuestro WhatsApp. Respondemos en menos de 24 horas hábiles.</p>
+          </form>
+
+          <script>
+            document.getElementById('cotizacion-form').addEventListener('submit', function(e) {
+              e.preventDefault();
+              const nombre = (document.getElementById('nombre') as HTMLInputElement).value;
+              const empresa = (document.getElementById('empresa') as HTMLInputElement).value;
+              const telefono = (document.getElementById('telefono') as HTMLInputElement).value;
+              const estado = (document.getElementById('estado') as HTMLSelectElement).value;
+              const equipo = (document.getElementById('equipo') as HTMLSelectElement).value;
+              const descripcion = (document.getElementById('descripcion') as HTMLTextAreaElement).value;
+              
+              const msg = `*Solicitud de Cotización - Gama de México*\n\n` +
+                `👤 Nombre: ${nombre}\n` +
+                `🏢 Empresa: ${empresa || 'No especificada'}\n` +
+                `📞 Teléfono: ${telefono}\n` +
+                `📍 Estado: ${estado}\n` +
+                `🔧 Equipo: ${equipo}\n\n` +
+                `📋 Descripción:\n${descripcion}`;
+              
+              const waUrl = `https://wa.me/5215565298240?text=${encodeURIComponent(msg)}`;
+              window.open(waUrl, '_blank');
+            });
+          </script>
+        </div>
+
+        <!-- SIDEBAR INFO -->
+        <aside class="contact-sidebar">
+          <div class="contact-card">
+            <h3 class="contact-card__title">Contacto Directo</h3>
+            <ul class="contact-list">
+              <li class="contact-list__item">
+                <span class="contact-list__icon">📞</span>
+                <div>
+                  <strong>Teléfono</strong>
+                  <a href="tel:+525515437164" class="contact-list__link">55 1543 7164</a>
+                </div>
+              </li>
+              <li class="contact-list__item">
+                <span class="contact-list__icon">💬</span>
+                <div>
+                  <strong>WhatsApp</strong>
+                  <a href="https://wa.me/5215565298240" class="contact-list__link">55 6529 8240</a>
+                </div>
+              </li>
+              <li class="contact-list__item">
+                <span class="contact-list__icon">📧</span>
+                <div>
+                  <strong>Email</strong>
+                  <a href="mailto:ventas@gamademexico.com" class="contact-list__link">ventas@gamademexico.com</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="contact-card">
+            <h3 class="contact-card__title">¿Por qué cotizar con nosotros?</h3>
+            <ul class="trust-list">
+              <li>✅ Distribuidores autorizados Elkhart Brass</li>
+              <li>✅ Equipos certificados FM y UL</li>
+              <li>✅ Asesoría técnica sin costo</li>
+              <li>✅ Stock permanente CDMX y Querétaro</li>
+              <li>✅ Envíos a toda la República</li>
+              <li>✅ Facturación electrónica</li>
+              <li>✅ Crédito para empresas</li>
+            </ul>
+          </div>
+
+          <div class="contact-card contact-card--highlight">
+            <h3 class="contact-card__title">Horario de Atención</h3>
+            <p>Lunes a Viernes<br><strong>9:00 AM – 6:00 PM</strong></p>
+            <p>Sábados<br><strong>9:00 AM – 2:00 PM</strong></p>
+            <p style="margin-top:1rem;font-size:0.875rem;opacity:0.8">WhatsApp disponible fuera de horario para consultas urgentes.</p>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq-section" id="faq" aria-labelledby="faq-cotizar-title">
+    <div class="container">
+      <h2 id="faq-cotizar-title" class="section-title">Preguntas Frecuentes sobre Cotizaciones</h2>
+      <Faq items={faqItems} id="cotizar-faq" />
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+.faq-section {
+  padding: 4rem 0;
+  background: var(--color-surface, #f8f9fa);
+}
+.faq-section .section-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.trust-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+</style>
