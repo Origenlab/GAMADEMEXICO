@@ -1,5 +1,5 @@
 ---
-title: "Guía de Selección de Monitores Contra Incendios: Tipos y Aplicaciones"
+title: "Guía de Selección de Monitores Contra Incendios: Tipos y Aplicaci..."
 description: "Guía técnica completa para elegir el monitor contra incendios ideal según su aplicación industrial. Tipos, caudales, certificaciones y criterios de selección."
 fecha: "2025-02-14"
 categoria: "monitores"

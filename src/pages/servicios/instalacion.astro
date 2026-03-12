@@ -1,0 +1,168 @@
+---
+import Layout from '../../layouts/Base.astro';
+import '../../styles/services-shared.css';
+import Faq from '../../components/Faq.astro';
+import SectionHeader from '../../components/SectionHeader.astro';
+import LeadCapture from '../../components/LeadCapture.astro';
+import { buildOrganizationSchema, buildServiceSchema, buildFAQSchema, buildBreadcrumbSchema } from '../../lib/seo';
+
+const faqItems = [
+  {
+    pregunta: '¿Gama de México instala los equipos contra incendios que vende?',
+    respuesta: 'Gama de México es especialista en suministro y distribución de equipos certificados. Para la instalación de sistemas fijos (sprinklers, redes de gabinetes, sistemas de espuma), trabajamos con una red de instaladores certificados que podemos recomendar según tu ubicación y tipo de proyecto. Si necesitas un instalador certificado, contáctanos y te ponemos en contacto.',
+  },
+  {
+    pregunta: '¿Qué equipos puedo instalar yo mismo sin necesitar un especialista?',
+    respuesta: 'Equipos portátiles como extintores, gabinetes de manguera tipo empotrado y señalización pueden ser instalados por personal capacitado de la empresa. Sin embargo, sistemas fijos (sprinklers, tuberías de agua contra incendios, hidrantes privados) requieren diseño hidráulico por ingeniero y supervisión de Protección Civil — estos deben ser instalados por empresa certificada.',
+  },
+  {
+    pregunta: '¿Qué documentación necesito para instalar un sistema contra incendios en mi empresa?',
+    respuesta: 'Para sistemas fijos en empresas de más de 100 trabajadores o con riesgo alto, generalmente necesitas: (1) Diseño hidráulico firmado por ingeniero con cédula, (2) Permiso de Protección Civil municipal/delegacional, (3) Memoria de cálculo del sistema, (4) Ficha técnica de los equipos con certificación UL/FM. Gama de México provee las fichas técnicas y certificados de todos nuestros equipos.',
+  },
+  {
+    pregunta: '¿Cuánto tiempo tarda instalar un sistema de gabinetes en una planta industrial?',
+    respuesta: 'Depende del tamaño. Un sistema básico de 5-10 gabinetes en planta de hasta 5,000 m² puede instalarse en 3-7 días hábiles por equipo especializado. Sistemas más complejos con red de tuberías y conexión a hidrante privado pueden tardar 2-4 semanas. La planeación previa y la disponibilidad de equipos certificados son los factores que más afectan el tiempo.',
+  },
+  {
+    pregunta: '¿Los equipos de Gama de México incluyen manual de instalación?',
+    respuesta: 'Sí. Todos nuestros productos incluyen ficha técnica con dimensiones, especificaciones de conexión y notas de instalación. Para monitores y boquillas Elkhart Brass, incluimos además el manual técnico del fabricante en español. Nuestro equipo de asesoría puede resolver dudas técnicas de instalación sin costo.',
+  },
+  {
+    pregunta: '¿Qué pasa si el instalador daña un equipo durante la instalación?',
+    respuesta: 'Los daños mecánicos durante instalación no están cubiertos por la garantía del fabricante. Por eso recomendamos que los equipos sean manipulados por instaladores con experiencia en sistemas contra incendios. Si tienes dudas sobre el procedimiento correcto de conexión, contáctanos antes de la instalación — es más rápido que resolver un problema después.',
+  },
+];
+
+const structuredData = [
+  buildOrganizationSchema(),
+  buildServiceSchema({
+    name: 'Asesoría de Instalación de Equipos Contra Incendios',
+    description: 'Orientación técnica para instalación de monitores, boquillas, mangueras, gabinetes y sistemas contra incendios. Recomendación de instaladores certificados.',
+    url: '/servicios/instalacion',
+  }),
+  buildBreadcrumbSchema([
+    { name: 'Inicio', url: '/' },
+    { name: 'Servicios', url: '/servicios' },
+    { name: 'Instalación', url: '/servicios/instalacion' },
+  ]),
+  buildFAQSchema(faqItems),
+];
+---
+
+<Layout
+  title="Instalación de Equipos Contra Incendios | Gama de México"
+  description="Guía de instalación de equipos contra incendios certificados. Qué instalar tú mismo, qué requiere especialista, documentación para Protección Civil y recomendación de instaladores certificados en México."
+  activePage="servicios"
+  structuredData={structuredData}
+  heroTitle="Instalación de Equipos"
+  heroBadge="Servicios"
+  heroIntro="Orientación técnica para la correcta instalación de sistemas contra incendios y red de instaladores certificados en México."
+  heroMetrics={[
+    { valor: "NOM/NFPA", texto: "Normativas" },
+    { valor: "UL/FM", texto: "Certificados" },
+    { valor: "Nacional", texto: "Cobertura" }
+  ]}
+  canonicalPath="/servicios/instalacion"
+>
+
+  <section class="service-intro">
+    <div class="container">
+      <SectionHeader
+        badge="Instalación"
+        title="¿Quién Puede Instalar Equipos Contra Incendios en México?"
+        subtitle="La diferencia entre equipos portátiles y sistemas fijos — y por qué importa para tu cumplimiento con Protección Civil"
+      />
+
+      <div class="service-grid">
+        <div class="service-card">
+          <div class="service-card__icon">🔧</div>
+          <h3>Equipos Portátiles</h3>
+          <p>Gabinetes de manguera tipo empotrado, extintores, señalización y equipos portátiles pueden ser instalados por personal interno capacitado. Gama de México provee fichas técnicas y orientación sin costo.</p>
+          <ul>
+            <li>Gabinetes tipo 30ME y estaciones</li>
+            <li>Extintores (colgado y señalización)</li>
+            <li>Carretes de manguera manual</li>
+            <li>Señalización NOM-003-SEGOB</li>
+          </ul>
+        </div>
+
+        <div class="service-card service-card--highlight">
+          <div class="service-card__icon">🏭</div>
+          <h3>Sistemas Fijos — Requieren Especialista</h3>
+          <p>Redes de sprinklers, tuberías de agua contra incendios, hidrantes privados y sistemas de espuma requieren diseño hidráulico y deben ser instalados por empresa certificada ante Protección Civil.</p>
+          <ul>
+            <li>Sistemas de sprinklers NFPA 13</li>
+            <li>Redes de gabinetes con tubería NFPA 14</li>
+            <li>Monitores fijos sobre plataformas</li>
+            <li>Hidrantes privados NFPA 24</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon">📋</div>
+          <h3>Documentación Requerida</h3>
+          <p>Para sistemas fijos en instalaciones con riesgo alto o más de 100 trabajadores, Protección Civil solicita documentación técnica. Gama de México entrega todo lo que necesitas.</p>
+          <ul>
+            <li>Ficha técnica con certificación UL/FM</li>
+            <li>Manual de instalación del fabricante</li>
+            <li>Declaración de conformidad</li>
+            <li>Soporte técnico post-instalación</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="service-cta-block">
+        <h3>¿Necesitas un Instalador Certificado?</h3>
+        <p>Gama de México trabaja con una red de instaladores especializados en sistemas contra incendios en CDMX, Estado de México, Querétaro, Jalisco y Nuevo León. Contáctanos y te referimos con el instalador correcto para tu proyecto.</p>
+        <div class="service-cta-buttons">
+          <a href="https://wa.me/5215565298240?text=Hola%20Gama%20de%20México%2C%20necesito%20un%20instalador%20certificado%20para%20mi%20proyecto%20contra%20incendios." class="btn btn--primary" target="_blank" rel="noopener">WhatsApp: 55 6529 8240</a>
+          <a href="/contacto" class="btn btn--outline">Formulario de Contacto</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Faq items={faqItems} title="Preguntas sobre Instalación de Equipos Contra Incendios" />
+
+  <LeadCapture
+    title="¿Tienes un Proyecto de Instalación?"
+    subtitle="Cuéntanos el tipo de instalación y te orientamos sobre equipos, normativas y documentación."
+  />
+
+</Layout>
+
+<style>
+  .service-intro { padding: 4rem 0; }
+  .service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin: 2.5rem 0;
+  }
+  .service-card {
+    background: var(--color-surface, #1a1a2e);
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 12px;
+    padding: 1.75rem;
+    transition: border-color .2s;
+  }
+  .service-card:hover { border-color: var(--color-accent, #e05800); }
+  .service-card--highlight { border-color: rgba(224,88,0,.3); }
+  .service-card__icon { font-size: 2rem; margin-bottom: 1rem; }
+  .service-card h3 { font-size: 1.0625rem; font-weight: 700; color: #fff; margin-bottom: .75rem; }
+  .service-card p { font-size: .875rem; line-height: 1.7; color: rgba(255,255,255,.6); margin-bottom: 1rem; }
+  .service-card ul { list-style: none; padding: 0; margin: 0; }
+  .service-card ul li { font-size: .8125rem; color: rgba(255,255,255,.5); padding: .2rem 0; }
+  .service-card ul li::before { content: "→ "; color: var(--color-accent, #e05800); }
+  .service-cta-block {
+    background: rgba(224,88,0,.08);
+    border: 1px solid rgba(224,88,0,.25);
+    border-radius: 12px;
+    padding: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .service-cta-block h3 { font-size: 1.25rem; color: #fff; margin-bottom: .75rem; }
+  .service-cta-block p { color: rgba(255,255,255,.65); margin-bottom: 1.5rem; max-width: 600px; margin-left: auto; margin-right: auto; }
+  .service-cta-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+</style>

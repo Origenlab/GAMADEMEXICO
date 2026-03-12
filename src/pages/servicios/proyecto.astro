@@ -1,0 +1,201 @@
+---
+import Layout from '../../layouts/Base.astro';
+import '../../styles/services-shared.css';
+import Faq from '../../components/Faq.astro';
+import SectionHeader from '../../components/SectionHeader.astro';
+import LeadCapture from '../../components/LeadCapture.astro';
+import { buildOrganizationSchema, buildServiceSchema, buildFAQSchema, buildBreadcrumbSchema } from '../../lib/seo';
+
+const faqItems = [
+  {
+    pregunta: '¿Qué tipo de proyectos atiende Gama de México?',
+    respuesta: 'Atendemos proyectos de cualquier escala: desde el equipamiento de una sola planta industrial hasta proyectos multi-sitio para cadenas de retail, franquicias, desarrollos inmobiliarios y plantas del sector petroquímico. Nuestros proyectos más frecuentes incluyen: hospitales y clínicas, centros de datos, plantas manufactureras, almacenes y CEDIS, hoteles y torres corporativas, y terminales de almacenamiento de combustibles.',
+  },
+  {
+    pregunta: '¿Emiten facturas CFDI 4.0 para proyectos empresariales?',
+    respuesta: 'Sí, emitimos facturas CFDI 4.0 con todos los usos fiscales disponibles. Podemos facturar a nombre de empresas con RFC, a nombre del proyecto o fraccionado por etapas según lo requiera tu departamento de finanzas. Aceptamos transferencia bancaria, cheque certificado y, en proyectos de más de $100,000 MXN, condiciones de crédito a 30 días para clientes con historial establecido.',
+  },
+  {
+    pregunta: '¿Cuál es el tiempo de entrega para proyectos con grandes volúmenes?',
+    respuesta: 'Para proyectos con más de 50 piezas, recomendamos cotizar con 2-3 semanas de anticipación para asegurar inventario. Tenemos stock disponible inmediato para la mayoría de nuestros monitores, boquillas y conexiones. Para pedidos especiales o configuraciones no estándar (certificados FM para sectores aseguradores, calibres especiales), el tiempo de importación puede ser de 4-8 semanas.',
+  },
+  {
+    pregunta: '¿Pueden manejar proyectos en múltiples ubicaciones en México?',
+    respuesta: 'Sí. Para cadenas con múltiples sucursales o proyectos multi-sitio, coordinamos entregas parciales por etapas, emitimos facturas separadas por ubicación y mantenemos comunicación con el coordinador de proyecto designado. Operamos desde CDMX y Querétaro con cobertura logística a los 32 estados.',
+  },
+  {
+    pregunta: '¿Participan en licitaciones de gobierno o compras consolidadas?',
+    respuesta: 'Sí. Gama de México está preparada para participar en licitaciones públicas federales, estatales y municipales. Emitimos toda la documentación requerida: acta constitutiva, constancia de situación fiscal, declaración de integridad, ficha técnica con certificaciones y cotización en el formato oficial solicitado. Para más información sobre nuestra participación en licitaciones, contacta a nuestro equipo de ventas corporativas.',
+  },
+  {
+    pregunta: '¿Tienen experiencia con proyectos PEMEX, CFE o instalaciones de alto riesgo?',
+    respuesta: 'Sí. Hemos suministrado monitores tipo corazón y boquillas Elkhart Brass certificadas FM para instalaciones de almacenamiento de combustibles, terminales portuarias y plantas industriales que requieren el nivel más alto de certificación. Para proyectos en instalaciones PEMEX o CFE, proporcionamos la documentación técnica específica que requieren sus departamentos de ingeniería y seguridad.',
+  },
+];
+
+const structuredData = [
+  buildOrganizationSchema(),
+  buildServiceSchema({
+    name: 'Suministro para Proyectos Corporativos de Protección Contra Incendios',
+    description: 'Suministro de equipos contra incendios certificados para proyectos corporativos, industriales y de construcción en México. Cotizaciones formales, facturación CFDI 4.0 y entregas programadas.',
+    url: '/servicios/proyecto',
+  }),
+  buildBreadcrumbSchema([
+    { name: 'Inicio', url: '/' },
+    { name: 'Servicios', url: '/servicios' },
+    { name: 'Proyectos Corporativos', url: '/servicios/proyecto' },
+  ]),
+  buildFAQSchema(faqItems),
+];
+---
+
+<Layout
+  title="Suministro para Proyectos Contra Incendios | Gama de México"
+  description="Suministro de equipos contra incendios certificados UL/FM para proyectos corporativos, industriales y de construcción en México. Cotizaciones formales, CFDI 4.0 y entregas programadas a 32 estados."
+  activePage="servicios"
+  structuredData={structuredData}
+  heroTitle="Proyectos Corporativos"
+  heroBadge="Servicios"
+  heroIntro="Suministro de equipos contra incendios certificados para proyectos de cualquier escala — desde una sola planta hasta programas multi-sitio nacionales."
+  heroMetrics={[
+    { valor: "53+", texto: "Empresas equipadas" },
+    { valor: "CFDI 4.0", texto: "Facturación" },
+    { valor: "32 estados", texto: "Cobertura" }
+  ]}
+  canonicalPath="/servicios/proyecto"
+>
+
+  <section class="project-intro">
+    <div class="container">
+      <SectionHeader
+        badge="Proyectos"
+        title="Equipamos Proyectos de Protección Contra Incendios en Todo México"
+        subtitle="Desde plantas industriales hasta cadenas de retail — suministro con documentación técnica completa y logística coordinada"
+      />
+
+      <div class="sectors-grid">
+        <div class="sector-item">
+          <span class="sector-icon">🏭</span>
+          <h4>Industria Manufacturera</h4>
+          <p>Plantas de producción, líneas de ensamble y zonas de almacenamiento de materia prima con riesgo de incendio industrial.</p>
+        </div>
+        <div class="sector-item">
+          <span class="sector-icon">🛢️</span>
+          <h4>Petroquímica y Energía</h4>
+          <p>Terminales de almacenamiento, plantas de proceso y instalaciones PEMEX/CFE con requerimientos FM certificados.</p>
+        </div>
+        <div class="sector-item">
+          <span class="sector-icon">🏢</span>
+          <h4>Inmobiliario Corporativo</h4>
+          <p>Torres de oficinas, desarrollos mixtos y parques empresariales que requieren sistemas integrados de protección.</p>
+        </div>
+        <div class="sector-item">
+          <span class="sector-icon">🏥</span>
+          <h4>Hospitales y Salud</h4>
+          <p>Instalaciones hospitalarias con requerimientos especiales de continuidad operativa y normativa NOM-016-SSA3.</p>
+        </div>
+        <div class="sector-item">
+          <span class="sector-icon">🏪</span>
+          <h4>Retail y Centros Comerciales</h4>
+          <p>Cadenas con múltiples sucursales, programas de estandarización de equipos y entregas coordinadas por etapas.</p>
+        </div>
+        <div class="sector-item">
+          <span class="sector-icon">📦</span>
+          <h4>Logística y CEDIS</h4>
+          <p>Centros de distribución de alto volumen, almacenes con rack de gran altura y operaciones 24/7 sin interrupciones.</p>
+        </div>
+      </div>
+
+      <div class="project-process">
+        <h3>Proceso de Proyecto</h3>
+        <div class="process-steps">
+          <div class="process-step">
+            <span class="step-num">01</span>
+            <h4>Cotización Formal</h4>
+            <p>Enviamos cotización en 24h con precios unitarios, totales, condiciones de pago y tiempo de entrega comprometido.</p>
+          </div>
+          <div class="process-step">
+            <span class="step-num">02</span>
+            <h4>Documentación Técnica</h4>
+            <p>Fichas técnicas con certificaciones UL/FM, manuales del fabricante y declaración de conformidad listos para Protección Civil.</p>
+          </div>
+          <div class="process-step">
+            <span class="step-num">03</span>
+            <h4>Logística Coordinada</h4>
+            <p>Entregas por etapas según avance de obra, coordinación directa con residente de proyecto y confirmación de recepción.</p>
+          </div>
+          <div class="process-step">
+            <span class="step-num">04</span>
+            <h4>Soporte Post-Entrega</h4>
+            <p>Garantía activa, soporte técnico para dudas de instalación y gestión de garantía de fábrica si aplica.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-cta">
+        <h3>Iniciar Proyecto</h3>
+        <p>Cuéntanos el tipo de instalación, número de equipos aproximado y ubicaciones. Te enviamos cotización formal en menos de 24 horas.</p>
+        <div class="cta-buttons">
+          <a href="https://wa.me/5215565298240?text=Hola%20Gama%20de%20México%2C%20tengo%20un%20proyecto%20de%20equipamiento%20contra%20incendios%20que%20quisiera%20cotizar." class="btn btn--primary" target="_blank" rel="noopener">WhatsApp: 55 6529 8240</a>
+          <a href="/servicios/cotizaciones" class="btn btn--outline">Ver Servicio de Cotizaciones</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Faq items={faqItems} title="Preguntas sobre Proyectos Corporativos" />
+
+  <LeadCapture
+    title="¿Tienes un Proyecto que Cotizar?"
+    subtitle="Envíanos los detalles y te respondemos con cotización formal en menos de 24 horas."
+  />
+
+</Layout>
+
+<style>
+  .project-intro { padding: 4rem 0; }
+  .sectors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.25rem;
+    margin: 2.5rem 0;
+  }
+  .sector-item {
+    background: var(--color-surface, #1a1a2e);
+    border: 1px solid rgba(255,255,255,.07);
+    border-radius: 10px;
+    padding: 1.5rem;
+    transition: border-color .2s, transform .2s;
+  }
+  .sector-item:hover { border-color: rgba(224,88,0,.3); transform: translateY(-2px); }
+  .sector-icon { font-size: 1.75rem; display: block; margin-bottom: .75rem; }
+  .sector-item h4 { font-size: .9375rem; font-weight: 700; color: #fff; margin-bottom: .5rem; }
+  .sector-item p { font-size: .8125rem; line-height: 1.65; color: rgba(255,255,255,.5); margin: 0; }
+  .project-process { margin: 3rem 0; }
+  .project-process h3 { font-size: 1.375rem; font-weight: 700; color: #fff; margin-bottom: 1.5rem; }
+  .process-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1rem;
+  }
+  .process-step {
+    background: rgba(224,88,0,.06);
+    border: 1px solid rgba(224,88,0,.15);
+    border-radius: 10px;
+    padding: 1.5rem;
+  }
+  .step-num { font-size: 2rem; font-weight: 900; color: rgba(224,88,0,.4); display: block; margin-bottom: .5rem; }
+  .process-step h4 { font-size: .9375rem; font-weight: 700; color: #fff; margin-bottom: .5rem; }
+  .process-step p { font-size: .8125rem; line-height: 1.65; color: rgba(255,255,255,.55); margin: 0; }
+  .project-cta {
+    background: rgba(255,255,255,.04);
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .project-cta h3 { font-size: 1.25rem; color: #fff; margin-bottom: .75rem; }
+  .project-cta p { color: rgba(255,255,255,.6); max-width: 560px; margin: 0 auto 1.5rem; }
+  .cta-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+</style>

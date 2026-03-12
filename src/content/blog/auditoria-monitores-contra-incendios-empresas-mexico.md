@@ -1,5 +1,5 @@
 ---
-title: "Auditoría de Monitores Contra Incendios: Guía para Empresas en México"
+title: "Auditoría de Monitores Contra Incendios: Guía para Empresas en Mé..."
 description: "Guía técnica para empresas en México: audita, instala y opera monitores contra incendios con cumplimiento NOM-002-STPS-2010 y enfoque de seguridad industrial."
 fecha: "2026-02-16"
 fechaActualizacion: "2026-02-16"
