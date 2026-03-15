@@ -153,7 +153,7 @@ const structuredData = [
             <p class="form-disclaimer">Al enviar este formulario, tu solicitud se redirigirá a nuestro WhatsApp. Respondemos en menos de 24 horas hábiles.</p>
           </form>
 
-          <script>
+          <script is:inline>
             document.getElementById('cotizacion-form').addEventListener('submit', function(e) {
               e.preventDefault();
               const nombre = (document.getElementById('nombre') as HTMLInputElement).value;
