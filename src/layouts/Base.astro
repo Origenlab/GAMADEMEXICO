@@ -132,6 +132,19 @@ const heroCta = getPageCtaContent(pathname, pageTitle);
 
   <!-- Rybbit Analytics -->
   <script src="https://app.rybbit.io/api/script.js" data-site-id="7e67c404e911" defer></script>
+  <!-- ExactDN CDN -->
+  <script is:inline>
+    (function(){
+      var cdn = "https://egsev2ykn2x.exactdn.com";
+      if (window.location.hostname === "localhost") return;
+      document.addEventListener("DOMContentLoaded", function(){
+        var imgs = document.querySelectorAll("img[src^=\"/img/\"]");
+        for (var i = 0; i < imgs.length; i++) {
+          imgs[i].src = cdn + imgs[i].getAttribute("src");
+        }
+      });
+    })();
+  </script>
 </head>
 
 <body>
