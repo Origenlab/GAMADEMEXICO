@@ -248,7 +248,7 @@ Envíos a Yucatán, Quintana Roo, Oaxaca y Chiapas mediante red logística nacio
 
 Además de los envíos, ofrecemos acompañamiento técnico en especificación de equipos, revisión de alcance y soporte para integración del monitor en tu arquitectura de seguridad.
 
-## Nuestro compromiso con la seguridad y el cumplimiento de normas
+## Nuestro enfoque en seguridad real y el cumplimiento de normas
 
 En proyectos de protección contra incendios, el error más costoso es elegir por precio sin validar desempeño, compatibilidad y cumplimiento. Nuestro compromiso es ayudarte a evitar ese riesgo.
 
