@@ -1,8 +1,6 @@
 ---
 title: "Válvulas Diluvio en Industria Petroquímica: NFPA 11 y NFPA 16"
 description: "Válvulas diluvio para sistemas de espuma en petroquímica: NFPA 11 y NFPA 16, accionamiento neumático y eléctrico en tanques de hidrocarburos México."
-fecha: "2026-03-12"
-fechaActualizacion: "2026-03-12"
 categoria: "valvulas"
 autor:
   nombre: "Ing. Roberto Hernández"

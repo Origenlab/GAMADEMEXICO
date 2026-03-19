@@ -1,8 +1,6 @@
 ---
 title: "Especificación de Equipos Certificados en Proyectos Reales"
 description: "Cómo se especifican equipos contra incendios certificados UL y FM en proyectos industriales reales: criterios, errores comunes y lecciones de implementación."
-fecha: "2026-02-26"
-fechaActualizacion: "2026-03-19"
 categoria: "gabinetes-hidrantes"
 autor:
   nombre: "Equipo Gama de México"

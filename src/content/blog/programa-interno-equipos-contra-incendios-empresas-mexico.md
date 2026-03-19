@@ -1,8 +1,6 @@
 ---
 title: "Programa Interno de Protección Civil: Equipos Contra Incendios"
 description: "Cómo estructurar tu Programa Interno de Protección Civil y cumplir con equipos contra incendios en México. Guía técnica completa."
-fecha: "2026-02-17"
-fechaActualizacion: "2026-02-17"
 categoria: "gabinetes-hidrantes"
 autor:
   nombre: "Ing. Roberto Hernández"

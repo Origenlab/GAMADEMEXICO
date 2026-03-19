@@ -1,8 +1,6 @@
 ---
 title: "LGA Contra Incendios: Expertos en Querétaro"
 description: "Conoce a LGA Contra Incendios, empresa líder en equipos y sistemas de protección contra incendios en Querétaro con certificaciones NFPA y NOM."
-fecha: "2025-02-17"
-fechaActualizacion: "2025-02-26"
 categoria: "gabinetes-hidrantes"
 tags: ["empresas verificadas", "protección contra incendios", "Querétaro", "extintores", "equipos certificados", "NFPA"]
 autor:

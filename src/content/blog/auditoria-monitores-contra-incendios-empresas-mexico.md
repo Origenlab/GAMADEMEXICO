@@ -1,8 +1,6 @@
 ---
 title: "Auditoría de Monitores Contra Incendios en Empresas"
 description: "Cómo auditar monitores contra incendios en instalaciones industriales: qué revisar, errores comunes, criterios técnicos y cómo prepararse para protección civil."
-fecha: "2026-02-16"
-fechaActualizacion: "2026-03-19"
 categoria: "monitores"
 autor:
   nombre: "Equipo Gama de México"

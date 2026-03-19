@@ -1,8 +1,6 @@
 ---
 title: "Manual Maestro de Auditoría para Boquillas Contra Incendios"
 description: "Manual profesional para auditar boquillas contra incendios en empresas: requisitos técnicos, control documental, pruebas FAT/SAT y cumplimiento operativo en Mé..."
-fecha: "2026-02-16"
-fechaActualizacion: "2026-02-16"
 categoria: "boquillas"
 autor:
   nombre: "Ing. Mariana Ortega"

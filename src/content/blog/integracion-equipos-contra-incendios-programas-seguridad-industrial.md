@@ -1,7 +1,6 @@
 ---
 title: "Equipos Contra Incendios en Programas de Seguridad Industrial"
 description: "Análisis técnico sobre la integración de sistemas contra incendios en programas corporativos de seguridad industrial. Normatividad STPS y estrategias."
-fecha: "2026-02-26"
 categoria: "monitores"
 autor:
   nombre: "Ing. Ricardo Solís Garza"

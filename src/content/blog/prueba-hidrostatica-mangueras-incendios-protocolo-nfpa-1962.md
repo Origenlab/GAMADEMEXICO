@@ -1,8 +1,6 @@
 ---
 title: "Prueba Hidrostática de Mangueras: Protocolo NFPA 1962"
 description: "Protocolo de prueba hidrostática para mangueras contra incendios según NFPA 1962: frecuencia, equipo requerido, criterios de aprobación y registros técnicos."
-fecha: "2026-03-12"
-fechaActualizacion: "2026-03-12"
 categoria: "mangueras"
 autor:
   nombre: "Ing. Roberto Hernández"

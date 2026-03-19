@@ -1,8 +1,6 @@
 ---
 title: "Presión de Trabajo en Mangueras: Clasificación NFPA 1961"
 description: "Clasificación de mangueras por presión de trabajo según NFPA 1961: tipos 100, 150 y 250 psi, pruebas hidrostáticas y vida útil en instalaciones industriales México."
-fecha: "2026-03-12"
-fechaActualizacion: "2026-03-12"
 categoria: "mangueras"
 autor:
   nombre: "Ing. Roberto Hernández"

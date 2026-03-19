@@ -1,8 +1,6 @@
 ---
 title: "Válvula de Alarma en Rociadores: Funcionamiento y Prueba NFPA 25"
 description: "Funcionamiento y prueba de válvulas de alarma en sistemas rociadores: húmeda vs seca, cámara retardadora, gong hidráulico y procedimientos NFPA 25 actualizados."
-fecha: "2026-03-12"
-fechaActualizacion: "2026-03-12"
 categoria: "valvulas"
 autor:
   nombre: "Ing. Roberto Hernández"

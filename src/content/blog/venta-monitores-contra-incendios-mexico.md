@@ -1,8 +1,6 @@
 ---
 title: "Monitores Contra Incendios en México: Guía Técnica y Soluciones"
 description: "Conoce cómo seleccionar monitores contra incendios industriales, cumplir normas y comprar con asesoría experta, disponibilidad y envíos a todo México."
-fecha: "2026-02-16"
-fechaActualizacion: "2026-02-16"
 categoria: "monitores"
 autor:
   nombre: "Ing. Roberto Hernández"

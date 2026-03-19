@@ -1,8 +1,6 @@
 ---
 title: "Conexiones y Herrajes en Sistemas Contra Incendios"
 description: "Tomas siamesas, wyes, reducciones y herrajes para sistemas contra incendios: función, ubicación, materiales y errores de instalación más comunes en México."
-fecha: "2025-03-07"
-fechaActualizacion: "2026-03-19"
 categoria: "conexiones-herrajes"
 autor:
   nombre: "Equipo Gama de México"

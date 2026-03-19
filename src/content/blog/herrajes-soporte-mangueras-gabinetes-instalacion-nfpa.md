@@ -1,8 +1,6 @@
 ---
 title: "Herrajes y Soportes para Mangueras y Gabinetes Contra Incendios"
 description: "Tipos de herrajes y soportes para mangueras y gabinetes contra incendios: porta-mangueras, abrazaderas anticorrosión, cumplimiento NFPA 1 y NOM-002-STPS."
-fecha: "2026-03-12"
-fechaActualizacion: "2026-03-12"
 categoria: "conexiones-herrajes"
 autor:
   nombre: "Ing. Roberto Hernández"

@@ -1,8 +1,6 @@
 ---
 title: "Selección de Proveedores de Equipos Contra Incendios"
 description: "Criterios reales para seleccionar proveedores de equipos contra incendios certificados: cómo verificar certificaciones, qué documentación exigir y errores comunes."
-fecha: "2026-02-26"
-fechaActualizacion: "2026-03-19"
 categoria: "valvulas"
 autor:
   nombre: "Equipo Gama de México"

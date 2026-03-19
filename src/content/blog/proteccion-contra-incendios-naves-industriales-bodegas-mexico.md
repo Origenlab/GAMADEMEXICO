@@ -1,7 +1,6 @@
 ---
 title: "Protección Contra Incendios en Naves Industriales y Bodegas México"
 description: "Guía completa de protección contra incendios para naves industriales, bodegas y centros de distribución en México. NOM-002-STPS, NFPA y equipos recomendados."
-fecha: "2026-03-12"
 categoria: "mangueras"
 autor:
   nombre: "Ing. Fernando Castillo"
@@ -10,7 +9,6 @@ imagen: "/img/blog/brigada-industrial-entrenamiento-contra-incendios.avif"
 imagenAlt: "Protección contra incendios en nave industrial México"
 tags: ["naves industriales", "bodegas", "protección contra incendios", "NOM-002-STPS", "NFPA", "centros de distribución"]
 destacado: false
-fechaActualizacion: "2026-03-12"
 canonical: "https://gamademexico.com/blog/mangueras/proteccion-contra-incendios-naves-industriales-bodegas-mexico"
 noindex: false
 tiempoLectura: 16

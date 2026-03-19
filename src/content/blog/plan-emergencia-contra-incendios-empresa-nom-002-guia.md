@@ -1,7 +1,6 @@
 ---
 title: "Plan de Emergencia Contra Incendios: Guía NOM-002 para Empresas"
 description: "Cómo elaborar un plan de emergencia contra incendios conforme a NOM-002-STPS. Brigadas, simulacros, equipos y documentación requerida en México."
-fecha: "2026-03-12"
 categoria: "mangueras"
 autor:
   nombre: "Lic. Ana Torres"
@@ -10,7 +9,6 @@ imagen: "/img/blog/inspeccion-proteccion-civil-empresa-industrial-mexico.avif"
 imagenAlt: "Plan de emergencia contra incendios en empresa industrial"
 tags: ["mangueras contra incendios", "brigadas industriales", "protección contra incendios", "México"]
 destacado: false
-fechaActualizacion: "2026-03-12"
 canonical: "https://gamademexico.com/blog/mangueras/plan-emergencia-contra-incendios-empresa-nom-002-guia"
 noindex: false
 tiempoLectura: 14

@@ -1,8 +1,6 @@
 ---
 title: "Mangueras de Ataque para Incendios: Tipos y Usos Industriales"
 description: "Mangueras de ataque para incendios industriales: doble jacket, single jacket, diámetros 1.5 a 2.5 pulgadas, materiales y aplicaciones en manufactura y petroquímica."
-fecha: "2026-03-12"
-fechaActualizacion: "2026-03-12"
 categoria: "mangueras"
 autor:
   nombre: "Ing. Roberto Hernández"

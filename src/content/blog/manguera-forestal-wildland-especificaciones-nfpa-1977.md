@@ -1,8 +1,6 @@
 ---
 title: "Manguera Forestal Wildland: Especificaciones NFPA 1977 México"
 description: "Especificaciones técnicas de mangueras forestales wildland según NFPA 1977: materiales livianos, diferencias con estructural y uso en brigadas forestales de México."
-fecha: "2026-03-12"
-fechaActualizacion: "2026-03-12"
 categoria: "mangueras"
 autor:
   nombre: "Ing. Roberto Hernández"

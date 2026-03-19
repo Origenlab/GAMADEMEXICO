@@ -1,8 +1,6 @@
 ---
 title: "Adaptadores y Acoplamientos para Mangueras Contra Incendios"
 description: "Tipos de adaptadores y acoplamientos NH, Storz y roscados para mangueras contra incendios: compatibilidad, materiales y criterios de selección industrial."
-fecha: "2026-03-12"
-fechaActualizacion: "2026-03-19"
 categoria: "conexiones-herrajes"
 autor:
   nombre: "Equipo Gama de México"

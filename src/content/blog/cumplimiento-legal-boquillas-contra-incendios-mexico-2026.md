@@ -1,8 +1,6 @@
 ---
 title: "Cumplimiento Legal de Boquillas Contra Incendios en México"
 description: "Qué exige la ley mexicana para boquillas contra incendios en centros de trabajo: NOM-002-STPS, protección civil, brigadas y lo que realmente revisa el inspector."
-fecha: "2026-02-16"
-fechaActualizacion: "2026-03-19"
 categoria: "boquillas"
 autor:
   nombre: "Equipo Gama de México"

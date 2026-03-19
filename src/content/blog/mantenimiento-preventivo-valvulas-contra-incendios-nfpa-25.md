@@ -1,7 +1,6 @@
 ---
 title: "Mantenimiento Preventivo de Válvulas Contra Incendios NFPA 25"
 description: "Programa de mantenimiento preventivo para válvulas contra incendios conforme a NFPA 25. Inspección, prueba y frecuencias recomendadas."
-fecha: "2026-03-12"
 categoria: "valvulas"
 autor:
   nombre: "Ing. Fernando Castillo"
@@ -10,7 +9,6 @@ imagen: "/img/blog/mantenimiento-equipos-contra-incendios-tecnico-industrial.avi
 imagenAlt: "Técnico realizando mantenimiento preventivo de válvulas contra incendios"
 tags: ["válvulas contra incendios", "NFPA", "protección industrial", "México"]
 destacado: false
-fechaActualizacion: "2026-03-12"
 canonical: "https://gamademexico.com/blog/valvulas/mantenimiento-preventivo-valvulas-contra-incendios-nfpa-25"
 noindex: false
 tiempoLectura: 14

@@ -1,8 +1,6 @@
 ---
 title: "Manual Técnico de Monitores Contra Incendios para Empresas México"
 description: "Manual profesional para empresas en México: diseño, instalación, operación y mantenimiento de monitores contra incendios con matrices y checklist funcionales."
-fecha: "2026-02-16"
-fechaActualizacion: "2026-02-16"
 categoria: "monitores"
 autor:
   nombre: "Ing. Roberto Hernández"

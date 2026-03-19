@@ -1,7 +1,6 @@
 ---
 title: "Monitor Corazón vs Cuello de Cisne: Cuál Elegir"
 description: "Compara monitor tipo corazón y cuello de cisne según caudal, altura, maniobra y aplicación para elegir la configuración correcta en tu sistema."
-fecha: "2026-03-19"
 categoria: "monitores"
 tags: ["monitor tipo corazón", "monitor cuello de cisne", "monitores contra incendios", "Elkhart Brass", "ingeniería contra incendios"]
 imagen: "/img/blog/monitor-tipo-corazon-vs-cuello-de-cisne.avif"
@@ -10,7 +9,6 @@ autor:
   nombre: "Equipo Gama de México"
   cargo: "Asesoría Técnica"
 destacado: false
-fechaActualizacion: "2026-03-19"
 noindex: false
 ---
 

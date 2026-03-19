@@ -1,8 +1,6 @@
 ---
 title: "Detectores de Humo y Calor en Sistemas Contra Incendios"
 description: "Tipos de detectores de humo y calor para sistemas de alarma contra incendios NFPA 72: cómo funcionan, dónde usar cada uno y errores de instalación comunes."
-fecha: "2026-03-12"
-fechaActualizacion: "2026-03-19"
 categoria: "monitores"
 autor:
   nombre: "Equipo Gama de México"

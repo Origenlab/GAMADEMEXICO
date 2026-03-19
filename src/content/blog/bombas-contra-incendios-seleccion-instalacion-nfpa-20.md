@@ -1,7 +1,6 @@
 ---
 title: "Bombas Contra Incendios y NFPA 20: Selección Real"
 description: "Cómo seleccionar e instalar una bomba contra incendios conforme a NFPA 20. Tipos, válvulas, dimensionamiento y errores comunes en proyectos industriales en México."
-fecha: "2026-03-12"
 categoria: "valvulas"
 autor:
   nombre: "Equipo Gama de México"
@@ -10,7 +9,6 @@ imagen: "/img/blog/valvula-compuerta-osy-sistema-rociadores-industrial.avif"
 imagenAlt: "Bomba contra incendios con válvulas de control industrial"
 tags: ["bombas contra incendios", "NFPA 20", "válvulas de control", "sistema de bombeo", "protección contra incendios"]
 destacado: false
-fechaActualizacion: "2026-03-19"
 canonical: "https://gamademexico.com/blog/valvulas/bombas-contra-incendios-seleccion-instalacion-nfpa-20"
 noindex: false
 tiempoLectura: 15

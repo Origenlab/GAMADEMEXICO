@@ -1,8 +1,6 @@
 ---
 title: "Gabinetes de Manguera Contra Incendios: Tipos y Normas"
 description: "Tipos de gabinetes contra incendios en México, normas NOM-002-STPS, equipos incluidos, distancias de instalación y errores que generan observaciones."
-fecha: "2025-03-05"
-fechaActualizacion: "2026-03-19"
 categoria: "gabinetes-hidrantes"
 autor:
   nombre: "Equipo Gama de México"

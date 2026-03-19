@@ -1,8 +1,6 @@
 ---
 title: "Cómo Cumplir la NOM-002-STPS: Guía Protección Incendios"
 description: "Guía para cumplir NOM-002-STPS en empresas: qué exige la norma, cómo preparar la inspección de protección civil y errores que generan multas en México."
-fecha: "2025-03-12"
-fechaActualizacion: "2026-03-19"
 categoria: "gabinetes-hidrantes"
 autor:
   nombre: "Equipo Gama de México"

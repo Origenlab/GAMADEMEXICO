@@ -1,7 +1,6 @@
 ---
 title: "Verificación de Protección Civil: Cómo Pasar sin Observaciones"
 description: "Guía práctica para preparar documentos, equipos y evidencias antes de una verificación de protección civil y reducir observaciones evitables."
-fecha: "2026-03-19"
 categoria: "monitores"
 tags: ["verificación de protección civil", "NOM-002-STPS", "equipos contra incendios", "UL FM", "seguridad industrial"]
 imagen: "/img/blog/verificacion-proteccion-civil-sin-observaciones.avif"
@@ -10,7 +9,6 @@ autor:
   nombre: "Equipo Gama de México"
   cargo: "Asesoría Técnica"
 destacado: false
-fechaActualizacion: "2026-03-19"
 noindex: false
 ---
 

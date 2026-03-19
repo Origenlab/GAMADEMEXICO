@@ -1,7 +1,6 @@
 ---
 title: "Certificaciones UL y FM en Equipos Contra Incendios"
 description: "Qué significan UL Listed y FM Approved en equipos contra incendios, qué evalúa cada laboratorio y por qué importan para aseguradoras e ingeniería en México."
-fecha: "2026-03-12"
 categoria: "monitores"
 autor:
   nombre: "Equipo Gama de México"
@@ -10,7 +9,6 @@ imagen: "/img/blog/auditoria-equipos-contra-incendios-sala-juntas-corporativa.av
 imagenAlt: "Certificaciones UL y FM en equipos contra incendios"
 tags: ["certificaciones UL FM", "UL Listed", "FM Approved", "equipos contra incendios", "protección industrial", "aseguradoras"]
 destacado: false
-fechaActualizacion: "2026-03-19"
 canonical: "https://gamademexico.com/blog/monitores/certificaciones-ul-fm-equipos-contra-incendios-importancia"
 noindex: false
 tiempoLectura: 14

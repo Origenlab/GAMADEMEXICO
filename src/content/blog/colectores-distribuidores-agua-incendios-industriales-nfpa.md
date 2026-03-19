@@ -1,8 +1,6 @@
 ---
 title: "Colectores y Distribuidores en Sistemas Contra Incendios"
 description: "Selección e ingeniería de colectores y manifolds para sistemas contra incendios industriales: hidráulica, materiales, petroquímica y errores comunes en México."
-fecha: "2026-03-12"
-fechaActualizacion: "2026-03-19"
 categoria: "conexiones-herrajes"
 autor:
   nombre: "Equipo Gama de México"

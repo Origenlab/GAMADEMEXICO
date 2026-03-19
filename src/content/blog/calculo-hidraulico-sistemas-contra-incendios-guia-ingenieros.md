@@ -1,8 +1,6 @@
 ---
 title: "Cálculo Hidráulico en Sistemas Contra Incendios"
 description: "Fundamentos del cálculo hidráulico para sistemas contra incendios: Hazen-Williams, pérdidas por fricción, curvas de bomba y errores comunes en proyectos reales."
-fecha: "2026-03-12"
-fechaActualizacion: "2026-03-19"
 categoria: "valvulas"
 autor:
   nombre: "Equipo Gama de México"

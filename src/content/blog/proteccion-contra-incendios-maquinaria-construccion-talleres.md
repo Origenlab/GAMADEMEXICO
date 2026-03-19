@@ -1,7 +1,6 @@
 ---
 title: "Protección Contra Incendios en Talleres de Maquinaria Pesada"
 description: "Guía técnica de sistemas contra incendios para talleres de maquinaria de construcción. Normatividad NFPA 30A, riesgos de hidrocarburos y equipos certificados."
-fecha: "2026-02-26"
 categoria: "monitores"
 autor:
   nombre: "Ing. Alejandro Vega Domínguez"

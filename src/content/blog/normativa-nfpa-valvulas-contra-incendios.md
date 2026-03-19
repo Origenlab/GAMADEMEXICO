@@ -1,7 +1,6 @@
 ---
 title: "Guía NFPA para Válvulas Contra Incendios: Normativa y Requisitos"
 description: "Todo lo que necesitas saber sobre normativas NFPA para válvulas contra incendios: tipos, instalación, pruebas y mantenimiento según estándares."
-fecha: "2025-02-10"
 categoria: "valvulas"
 autor:
   nombre: "Ing. Carlos Ramírez"

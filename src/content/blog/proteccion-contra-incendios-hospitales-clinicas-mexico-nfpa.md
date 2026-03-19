@@ -1,7 +1,6 @@
 ---
 title: "Protección Contra Incendios en Hospitales y Clínicas México"
 description: "Sistemas de protección contra incendios para hospitales, clínicas y centros de salud en México. NFPA 99, rociadores, gabinetes y equipos requeridos."
-fecha: "2026-03-12"
 categoria: "gabinetes-hidrantes"
 autor:
   nombre: "Ing. Carlos Mendoza"
@@ -10,7 +9,6 @@ imagen: "/img/blog/sistema-contra-incendios-hotel-centro-comercial-mexico.avif"
 imagenAlt: "Sistema de protección contra incendios en hospital México"
 tags: ["gabinetes contra incendios", "hidrantes", "NOM-002-STPS", "protección contra incendios"]
 destacado: false
-fechaActualizacion: "2026-03-12"
 canonical: "https://gamademexico.com/blog/gabinetes-hidrantes/proteccion-contra-incendios-hospitales-clinicas-mexico-nfpa"
 noindex: false
 tiempoLectura: 14

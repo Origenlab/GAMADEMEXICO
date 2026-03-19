@@ -1,8 +1,6 @@
 ---
 title: "Reducción Siamesa y Toma Bomberos: Instalación y NFPA 14"
 description: "Criterios de instalación, tipos y mantenimiento de reducciones siamesas y tomas para bomberos según NFPA 14 en instalaciones industriales de México."
-fecha: "2026-03-12"
-fechaActualizacion: "2026-03-12"
 categoria: "conexiones-herrajes"
 autor:
   nombre: "Ing. Roberto Hernández"

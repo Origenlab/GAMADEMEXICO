@@ -1,8 +1,6 @@
 ---
 title: "Lineamientos para Instalar Monitores Contra Incendios en México"
 description: "Guía técnica y legal para empresas en México: requisitos, diseño, instalación y mantenimiento de monitores contra incendios con enfoque de cumplimiento."
-fecha: "2026-02-16"
-fechaActualizacion: "2026-02-16"
 categoria: "monitores"
 autor:
   nombre: "Ing. Roberto Hernández"

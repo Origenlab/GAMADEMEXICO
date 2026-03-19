@@ -1,7 +1,6 @@
 ---
 title: "Sistemas de Rociadores Automáticos NFPA 13: Guía para México"
 description: "Guía técnica completa sobre sistemas de rociadores automáticos conforme a NFPA 13. Diseño, componentes, válvulas y normativa aplicable en México."
-fecha: "2026-03-12"
 categoria: "valvulas"
 autor:
   nombre: "Ing. Roberto Méndez"
@@ -10,7 +9,6 @@ imagen: "/img/blog/valvulas-contra-incendios-nfpa-sala-control-industrial.avif"
 imagenAlt: "Sistema de rociadores automáticos contra incendios NFPA 13"
 tags: ["rociadores automáticos", "NFPA 13", "sprinklers", "válvulas contra incendios", "protección automática", "diseño hidráulico"]
 destacado: false
-fechaActualizacion: "2026-03-12"
 canonical: "https://gamademexico.com/blog/valvulas/sistemas-rociadores-automaticos-nfpa-13-mexico"
 noindex: false
 tiempoLectura: 18

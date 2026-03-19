@@ -1,8 +1,6 @@
 ---
 title: "Extinción Automática en Cocinas Industriales: UL 300"
 description: "Sistemas de extinción automática para cocinas industriales y restaurantes conforme a UL 300 y NFPA 17A: cómo funcionan, por qué fallan y qué exige la norma."
-fecha: "2026-03-12"
-fechaActualizacion: "2026-03-19"
 categoria: "boquillas"
 autor:
   nombre: "Equipo Gama de México"

@@ -1,8 +1,6 @@
 ---
 title: "Almacenamiento y Mantenimiento de Mangueras Contra Incendios"
 description: "Cómo almacenar y mantener mangueras contra incendios para maximizar su vida útil. Protocolos NFPA 1962, errores comunes y criterios técnicos para industria."
-fecha: "2026-03-12"
-fechaActualizacion: "2026-03-19"
 categoria: "mangueras"
 autor:
   nombre: "Equipo Gama de México"

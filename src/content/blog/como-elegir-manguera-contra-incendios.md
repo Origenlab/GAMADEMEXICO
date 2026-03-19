@@ -1,8 +1,6 @@
 ---
 title: "Cómo Elegir la Manguera Contra Incendios Correcta"
 description: "Guía técnica para seleccionar mangueras contra incendios según NFPA 1961: tipos de construcción, presión, materiales y errores de especificación en México."
-fecha: "2025-01-15"
-fechaActualizacion: "2026-03-19"
 categoria: "mangueras"
 autor:
   nombre: "Equipo Gama de México"

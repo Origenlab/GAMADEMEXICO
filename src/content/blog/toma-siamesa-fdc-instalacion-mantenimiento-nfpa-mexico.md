@@ -1,7 +1,6 @@
 ---
 title: "Toma Siamesa FDC: Instalación y Mantenimiento Conforme a NFPA"
 description: "Guía completa sobre tomas siamesas FDC para edificios. Instalación, mantenimiento, tipos y normativa NFPA 13 y 14 aplicable en México."
-fecha: "2026-03-12"
 categoria: "conexiones-herrajes"
 autor:
   nombre: "Ing. Roberto Méndez"
@@ -10,7 +9,6 @@ imagen: "/img/blog/adaptadores-herrajes-bronce-contra-incendios-profesional.avif
 imagenAlt: "Toma siamesa FDC de bronce instalada en edificio"
 tags: ["conexiones contra incendios", "herrajes", "toma siamesa", "NFPA"]
 destacado: false
-fechaActualizacion: "2026-03-12"
 canonical: "https://gamademexico.com/blog/conexiones-herrajes/toma-siamesa-fdc-instalacion-mantenimiento-nfpa-mexico"
 noindex: false
 tiempoLectura: 14

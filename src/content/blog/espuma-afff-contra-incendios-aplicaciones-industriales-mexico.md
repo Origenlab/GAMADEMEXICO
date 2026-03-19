@@ -1,8 +1,6 @@
 ---
 title: "Espuma AFFF Contra Incendios: Aplicaciones Industriales"
 description: "Cómo funcionan los sistemas de espuma AFFF, dónde se aplican, qué componentes requieren y por qué la transición a espumas libres de flúor cambia la ingeniería."
-fecha: "2026-03-12"
-fechaActualizacion: "2026-03-19"
 categoria: "boquillas"
 autor:
   nombre: "Equipo Gama de México"

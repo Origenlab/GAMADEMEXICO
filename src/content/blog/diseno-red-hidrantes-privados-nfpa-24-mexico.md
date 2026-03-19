@@ -1,8 +1,6 @@
 ---
 title: "Diseño de Red de Hidrantes Privados NFPA 24 en México"
 description: "Cómo diseñar una red de hidrantes privados conforme a NFPA 24: ubicación, presión residual, caudal, válvulas de seccionamiento y errores de diseño comunes."
-fecha: "2026-03-12"
-fechaActualizacion: "2026-03-19"
 categoria: "gabinetes-hidrantes"
 autor:
   nombre: "Equipo Gama de México"

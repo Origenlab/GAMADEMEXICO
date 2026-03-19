@@ -1,7 +1,6 @@
 ---
 title: "Mantenimiento de Gabinetes y Mangueras: Checklist Completo"
 description: "Checklist de mantenimiento para gabinetes contra incendios y mangueras. Inspección mensual, prueba hidrostática y frecuencias NFPA 25."
-fecha: "2026-03-12"
 categoria: "gabinetes-hidrantes"
 autor:
   nombre: "Ing. Carlos Mendoza"
@@ -10,7 +9,6 @@ imagen: "/img/blog/mantenimiento-equipos-contra-incendios-tecnico-industrial.avi
 imagenAlt: "Mantenimiento de gabinete contra incendios con manguera"
 tags: ["gabinetes contra incendios", "hidrantes", "NOM-002-STPS", "protección contra incendios"]
 destacado: false
-fechaActualizacion: "2026-03-12"
 canonical: "https://gamademexico.com/blog/gabinetes-hidrantes/mantenimiento-gabinetes-mangueras-contra-incendios-checklist"
 noindex: false
 tiempoLectura: 14

@@ -1,8 +1,6 @@
 ---
 title: "Monitores Contra Incendio: Tipos y Aplicaciones Industriales"
 description: "Guía técnica sobre tipos de monitores contra incendio y sus aplicaciones en petroquímica, minería, energía y manufactura. Criterios NFPA y NOM para México."
-fecha: "2026-03-15"
-fechaActualizacion: "2026-03-15"
 categoria: "monitores"
 autor:
   nombre: "Ing. Roberto Hernández"

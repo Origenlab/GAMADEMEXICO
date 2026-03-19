@@ -1,8 +1,6 @@
 ---
 title: "Válvulas de Control en Sistemas Contra Incendios: OS&Y y NFPA"
 description: "Válvulas OS&Y y mariposa para sistemas contra incendios: supervisión eléctrica conforme NFPA 72 y NFPA 25 en edificios e instalaciones industriales de México."
-fecha: "2026-03-12"
-fechaActualizacion: "2026-03-12"
 categoria: "valvulas"
 autor:
   nombre: "Ing. Roberto Hernández"

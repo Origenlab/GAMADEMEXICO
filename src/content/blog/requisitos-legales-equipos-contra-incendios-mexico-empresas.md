@@ -1,8 +1,6 @@
 ---
 title: "Requisitos Legales de Equipos Contra Incendios en México"
 description: "Conoce qué exige la ley en México para equipos contra incendios: diagnóstico, plan, bitácoras, capacitación y mantenimiento para mantener tu empresa en regla."
-fecha: "2026-02-17"
-fechaActualizacion: "2026-02-17"
 categoria: "gabinetes-hidrantes"
 autor:
   nombre: "Ing. Roberto Hernández"

@@ -1,7 +1,6 @@
 ---
 title: "Red Contra Incendios en Edificios de Altura: NFPA 14 Standpipe"
 description: "Sistemas de tubería vertical standpipe para edificios de gran altura en México. NFPA 14, clasificación, componentes y conexiones de manguera."
-fecha: "2026-03-12"
 categoria: "mangueras"
 autor:
   nombre: "Ing. Carlos Mendoza"
@@ -10,7 +9,6 @@ imagen: "/img/blog/gabinete-contra-incendios-instalacion-edificio-mexico.avif"
 imagenAlt: "Red contra incendios en edificio de gran altura NFPA 14"
 tags: ["mangueras contra incendios", "brigadas industriales", "protección contra incendios", "México"]
 destacado: false
-fechaActualizacion: "2026-03-12"
 canonical: "https://gamademexico.com/blog/mangueras/red-contra-incendios-edificios-altura-nfpa-14-standpipe"
 noindex: false
 tiempoLectura: 14

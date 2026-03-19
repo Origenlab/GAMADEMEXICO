@@ -1,8 +1,6 @@
 ---
 title: "Boquillas Contra Incendios para Brigadas y Sistemas Fijos"
 description: "Cómo seleccionar boquillas contra incendios para brigadas industriales y sistemas fijos: criterios de caudal, presión, patrón y compatibilidad con monitores."
-fecha: "2026-02-16"
-fechaActualizacion: "2026-03-19"
 categoria: "boquillas"
 autor:
   nombre: "Equipo Gama de México"

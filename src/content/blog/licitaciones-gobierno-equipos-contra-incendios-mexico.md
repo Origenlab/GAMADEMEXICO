@@ -1,7 +1,6 @@
 ---
 title: "Licitaciones de Gobierno: Equipos Contra Incendios en México"
 description: "Cómo participar en licitaciones gubernamentales de equipos contra incendios en México. Requisitos, especificaciones técnicas y documentación."
-fecha: "2026-03-12"
 categoria: "monitores"
 autor:
   nombre: "Lic. Ana Torres"
@@ -10,7 +9,6 @@ imagen: "/img/blog/inspeccion-proteccion-civil-empresa-industrial-mexico.avif"
 imagenAlt: "Licitaciones gubernamentales de equipos contra incendios México"
 tags: ["monitores contra incendios", "equipos certificados", "protección industrial", "México"]
 destacado: false
-fechaActualizacion: "2026-03-12"
 canonical: "https://gamademexico.com/blog/monitores/licitaciones-gobierno-equipos-contra-incendios-mexico"
 noindex: false
 tiempoLectura: 14

@@ -1,8 +1,6 @@
 ---
 title: "Estandarización de Boquillas Contra Incendios en Industria"
 description: "Cómo estandarizar boquillas contra incendios en plantas industriales multisede: criterios de selección por zona, compatibilidad y errores de especificación."
-fecha: "2026-02-16"
-fechaActualizacion: "2026-03-19"
 categoria: "boquillas"
 autor:
   nombre: "Equipo Gama de México"

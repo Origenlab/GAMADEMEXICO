@@ -1,8 +1,6 @@
 ---
 title: "Válvulas Check en Sistemas Sprinkler: NFPA 13 y Mantenimiento"
 description: "Tipos de válvulas check swing, disco y bola para sistemas sprinkler NFPA 13: selección hidráulica, mantenimiento, certificaciones UL/FM en industria mexicana."
-fecha: "2026-03-12"
-fechaActualizacion: "2026-03-12"
 categoria: "valvulas"
 autor:
   nombre: "Ing. Roberto Hernández"
