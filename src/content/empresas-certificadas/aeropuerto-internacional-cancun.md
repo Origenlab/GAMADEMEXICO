@@ -173,5 +173,5 @@ Diseñado para evacuación masiva de pasajeros:
 
 ### Inversión en Seguridad
 
-ASUR ha invertido más de $320 millones de pesos en sistemas de protección contra incendios y servicios ARFF en la Terminal 3, garantizando los más altos estándares de seguridad para los más de 15 millones de pasajeros que transitan anualmente por este importante hub turístico internacional.
+ASUR ha invertido más de $320 millones de pesos en sistemas de protección contra incendios y servicios ARFF en la Terminal 3, garantizando estándares de seguridad exigentes para los más de 15 millones de pasajeros que transitan anualmente por este importante hub turístico internacional.
 

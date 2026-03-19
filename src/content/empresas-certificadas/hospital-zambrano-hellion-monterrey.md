@@ -33,7 +33,7 @@ fechaRegistro: "2024-11-20"
 
 ## Sistema de Protección Contra Incendios en Hospital de Alta Especialidad del Tecnológico de Monterrey
 
-El Hospital Zambrano Hellion representa la vanguardia de la medicina en México, fusionando la excelencia clínica del Sistema TecSalud con la innovación tecnológica que caracteriza al Tecnológico de Monterrey. Este centro hospitalario de tercer nivel atiende las patologías más complejas del noreste de México, desde trasplantes de órganos hasta cirugías robóticas de mínima invasión. La protección contra incendios debe garantizar no solo la evacuación segura de pacientes, sino la continuidad de tratamientos que no pueden interrumpirse y la protección de equipos médicos con valor superior a los $800 millones de pesos.
+El Hospital Zambrano Hellion representactualizados de la medicina en México, fusionando la excelencia clínica del Sistema TecSalud con la innovación tecnológica que caracteriza al Tecnológico de Monterrey. Este centro hospitalario de tercer nivel atiende las patologías más complejas del noreste de México, desde trasplantes de órganos hasta cirugías robóticas de mínima invasión. La protección contra incendios debe garantizar no solo la evacuación segura de pacientes, sino la continuidad de tratamientos que no pueden interrumpirse y la protección de equipos médicos con valor superior a los $800 millones de pesos.
 
 ### Complejidad Única del Hospital Zambrano Hellion
 

@@ -327,5 +327,5 @@ El COEA es la instalación desde donde se coordinan todas las respuestas a emerg
 - Concentrado AFFF y agentes: $4.5 millones MXN
 - Personal SSEI: $35 millones MXN
 
-El Aeropuerto Internacional de Guadalajara mantiene los más altos estándares de seguridad aeroportuaria en México, protegiendo a más de 16 millones de pasajeros anuales y garantizando la continuidad de una infraestructura crítica para la economía del occidente de México.
+El Aeropuerto Internacional de Guadalajara mantiene estándares de seguridad exigentes aeroportuaria en México, protegiendo a más de 16 millones de pasajeros anuales y garantizando la continuidad de una infraestructura crítica para la economía del occidente de México.
 

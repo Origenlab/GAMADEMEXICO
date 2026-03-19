@@ -32,7 +32,7 @@ fechaRegistro: "2024-07-20"
 
 ## Sistema de Protección Contra Incendios en Cervecería de Clase Mundial
 
-La Cervecería Modelo de Zacatecas es una de las instalaciones cerveceras más modernas del planeta, inaugurada en 2019 con tecnología de punta y los más altos estándares de seguridad de AB InBev. La planta produce marcas icónicas como Corona, Victoria, Modelo Especial y Pacífico.
+La Cervecería Modelo de Zacatecas es una de las instalaciones cerveceras más modernas del planeta, inaugurada en 2019 con tecnología de punta y estándares de seguridad exigentes de AB InBev. La planta produce marcas icónicas como Corona, Victoria, Modelo Especial y Pacífico.
 
 ### Proceso Cervecero y Riesgos Asociados
 

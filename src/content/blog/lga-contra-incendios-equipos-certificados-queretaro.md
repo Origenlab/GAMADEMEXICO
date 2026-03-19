@@ -16,7 +16,7 @@ draft: false
 
 ## Protección Integral Desde el Corazón de México
 
-**LGA Contra Incendios** se ha establecido como una de las empresas más reconocidas en el sector de protección contra incendios en la región del Bajío mexicano. Con sede en **Santiago de Querétaro**, esta empresa ofrece soluciones integrales que van desde la asesoría técnica hasta la instalación de sistemas completos de protección.
+**LGA Contra Incendios** se ha establecido como una de las empresas más reconocidas en el sector de protección contra incendios en la región del Bajío mexicano. Con sede en **Santiago de Querétaro**, esta empresa ofrece equipos y asesoría que van desde la asesoría técnica hasta la instalación de sistemas completos de protección.
 
 Su filosofía empresarial es clara: *"Tu seguridad es nuestra prioridad"*. Este compromiso se refleja en cada aspecto de su operación, desde la selección de productos certificados hasta el servicio de mantenimiento proactivo que mantiene los sistemas funcionando óptimamente.
 

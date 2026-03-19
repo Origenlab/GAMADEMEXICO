@@ -274,7 +274,7 @@ SUPRESIÓN:
 
 **Sistema de Detección Inteligente:**
 
-Toyota implementó en TMMGT un sistema de **detección basada en inteligencia artificial** que representa la vanguardia mundial en protección de plantas automotrices:
+Toyota implementó en TMMGT un sistema de **detección basada en inteligencia artificial** que representactualizados mundial en protección de plantas automotrices:
 
 *Detección por Video Analytics (AI-Based):*
 - **48 cámaras térmicas** FLIR A700 sobre células robotizadas

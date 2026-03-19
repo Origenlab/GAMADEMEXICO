@@ -118,4 +118,4 @@ El Monitor ST611 es la elección profesional cuando necesitas:
 - **Caudal de 1,250 GPM** para incendios de escala industrial
 - **Mantenimiento simplificado** con alemites accesibles
 
-La combinación de **certificación FM**, **construcción premium en bronce** y **diseño de fácil operación** hace del ST611 el monitor ideal para instalaciones industriales que requieren los más altos estándares de protección contra incendio.
+La combinación de **certificación FM**, **construcción premium en bronce** y **diseño de fácil operación** hace del ST611 el monitor ideal para instalaciones industriales que requieren estándares técnicos estrictos de protección contra incendio.

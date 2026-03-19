@@ -110,4 +110,4 @@ Este monitor es la elección profesional cuando necesitas:
 - **Compatibilidad** con sistemas Jet-Ratio existentes
 - **Instalación fija** con entrada bridada estándar
 
-La combinación de **certificación UL**, **construcción en acero inoxidable** y **sistema de inducción de espuma** hace de este monitor la solución premium para instalaciones industriales que requieren los más altos estándares de protección contra incendios de líquidos inflamables.
+La combinación de **certificación UL**, **construcción en acero inoxidable** y **sistema de inducción de espuma** hace de este monitor la solución premium para instalaciones industriales que requieren estándares técnicos estrictos de protección contra incendios de líquidos inflamables.

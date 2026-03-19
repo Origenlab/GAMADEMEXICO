@@ -71,7 +71,7 @@ Para aplicaciones en gabinetes de edificios comerciales, la [manguera Millhose d
 
 ### Manguera Blindex: Resistencia Industrial de Alto Rendimiento
 
-Cuando las condiciones de operación incluyen exposición a hidrocarburos, químicos agresivos o temperaturas extremas, la [manguera Blindex de 4 capas](/productos/manguera-blindex) emerge como la única opción técnicamente viable. Su construcción multicapa incorpora un revestimiento interior de caucho nitrilo (NBR) que resiste el contacto con combustibles, solventes y una amplia gama de químicos industriales, mientras que su cubierta exterior de poliuretano proporciona resistencia excepcional a la abrasión y degradación UV.
+Cuando las condiciones de operación incluyen exposición a hidrocarburos, químicos agresivos o temperaturas extremas, la [manguera Blindex de 4 capas](/productos/manguera-blindex) emerge como la única opción técnicamente viable. Su construcción multicapa incorpora un revestimiento interior de caucho nitrilo (NBR) que resiste el contacto con combustibles, solventes y una variedad de químicos industriales, mientras que su cubierta exterior de poliuretano proporciona resistencia excepcional a la abrasión y degradación UV.
 
 La manguera Blindex ha sido adoptada como estándar por PEMEX, CFE y las principales empresas petroquímicas que operan en México. Su capacidad para mantener la integridad estructural incluso tras exposición breve a llama directa (hasta 600°C) la convierte en un componente de seguridad crítico en instalaciones donde el riesgo de incendio involucra líquidos inflamables o materiales peligrosos.
 

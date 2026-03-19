@@ -30,7 +30,7 @@ fechaRegistro: "2024-08-15"
 
 ## Sistema de Protección Contra Incendios Certificado
 
-Pujol, reconocido consistentemente entre los 50 mejores restaurantes del mundo, ha implementado un sistema de protección contra incendios que cumple con los más altos estándares de seguridad sin comprometer la experiencia gastronómica de sus comensales.
+Pujol, reconocido consistentemente entre los 50 mejores restaurantes del mundo, ha implementado un sistema de protección contra incendios que cumple con estándares de seguridad exigentes sin comprometer la experiencia gastronómica de sus comensales.
 
 ### Sistemas Instalados
 

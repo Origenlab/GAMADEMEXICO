@@ -155,5 +155,5 @@ Diseñado para 2,000+ personas en hora pico:
 
 ### Compromiso con la Seguridad
 
-Hilton Hotels & Resorts mantiene los más altos estándares de seguridad en todas sus propiedades. El Hilton Mexico City Reforma ha recibido más de $65 millones de pesos en inversiones en sistemas de protección contra incendios, garantizando la seguridad de más de 500,000 huéspedes anuales.
+Hilton Hotels & Resorts mantiene estándares de seguridad exigentes en todas sus propiedades. El Hilton Mexico City Reforma ha recibido más de $65 millones de pesos en inversiones en sistemas de protección contra incendios, garantizando la seguridad de más de 500,000 huéspedes anuales.
 

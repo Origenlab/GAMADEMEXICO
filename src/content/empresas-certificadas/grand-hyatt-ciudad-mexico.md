@@ -155,5 +155,5 @@ El hotel cumple con los estándares corporativos más exigentes:
 
 ### Inversión en Seguridad
 
-Hyatt Hotels Corporation ha invertido más de $85 millones de pesos en sistemas de protección contra incendios en esta propiedad, con actualizaciones tecnológicas cada 5 años para mantener los más altos estándares de seguridad para sus huéspedes y 1,200 colaboradores.
+Hyatt Hotels Corporation ha invertido más de $85 millones de pesos en sistemas de protección contra incendios en esta propiedad, con actualizaciones tecnológicas cada 5 años para mantener estándares de seguridad exigentes para sus huéspedes y 1,200 colaboradores.
 

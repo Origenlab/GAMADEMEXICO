@@ -32,7 +32,7 @@ fechaRegistro: "2024-11-01"
 
 ## Sistema de Protección Contra Incendios Certificado
 
-La Torre BBVA es uno de los edificios corporativos más modernos y sustentables de América Latina. Diseñada con los más altos estándares de seguridad, cuenta con sistemas de protección contra incendios de última generación.
+La Torre BBVA es uno de los edificios corporativos más modernos y sustentables de América Latina. Diseñada con estándares de seguridad exigentes, cuenta con sistemas de protección contra incendios de última generación.
 
 ### Sistemas Instalados
 

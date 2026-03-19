@@ -57,4 +57,4 @@ ProyectoRed, ubicada en Paseo de la Reforma 26 en la colonia Juárez, opera como
 
 ### ¿Por Qué ProyectoRed Eligió Gama de México?
 
-ProyectoRed seleccionó a Gama de México como su proveedor de certificación de sistemas contra incendios por la experiencia comprobada en protección de establecimientos comerciales con inventario de alto valor. La verificación integral de los 5 sistemas instalados garantiza que tanto el personal como la mercancía estén protegidos bajo los más altos estándares de seguridad contra incendios en México.
+ProyectoRed seleccionó a Gama de México como su proveedor de certificación de sistemas contra incendios por la experiencia comprobada en protección de establecimientos comerciales con inventario de alto valor. La verificación integral de los 5 sistemas instalados garantiza que tanto el personal como la mercancía estén protegidos bajo estándares de seguridad exigentes contra incendios en México.

@@ -932,7 +932,7 @@ La planta Mazda Salamanca cumple con los siguientes estándares NFPA:
 
 ## Conclusión: El Compromiso Mazda con la Seguridad
 
-La Planta Mazda de Salamanca representa la perfecta integración de la filosofía japonesa de manufactura con los más altos estándares internacionales de protección contra incendios. Con una inversión de $62 millones USD en sistemas de seguridad —el 8.05% de la inversión total de la planta— Mazda demuestra que la protección de sus colaboradores, sus procesos y sus productos es un valor fundamental, no un costo a minimizar.
+La Planta Mazda de Salamanca representa la perfecta integración de la filosofía japonesa de manufactura con estándares rigurosos internacionales de protección contra incendios. Con una inversión de $62 millones USD en sistemas de seguridad —el 8.05% de la inversión total de la planta— Mazda demuestra que la protección de sus colaboradores, sus procesos y sus productos es un valor fundamental, no un costo a minimizar.
 
 El historial de cero incidentes mayores desde 2014, la certificación sostenida FM Global HPR, y el ROI demostrado del 485% en 15 años validan que la inversión en protección de clase mundial no solo protege vidas y activos, sino que genera valor tangible para el negocio.
 

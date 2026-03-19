@@ -17,7 +17,7 @@ destacado: true
 orden: 26
 ---
 
-El **monitor FM Approved con control remoto** permite la operación segura del equipo desde una **sala de control, estación remota o panel local** ubicado fuera de la zona de riesgo. Este sistema protege al personal de brigada al eliminar la necesidad de exposición directa al fuego, calor radiante o vapores tóxicos durante una emergencia, cumpliendo con los más altos estándares de seguridad operativa.
+El **monitor FM Approved con control remoto** permite la operación segura del equipo desde una **sala de control, estación remota o panel local** ubicado fuera de la zona de riesgo. Este sistema protege al personal de brigada al eliminar la necesidad de exposición directa al fuego, calor radiante o vapores tóxicos durante una emergencia, cumpliendo con estándares de seguridad exigentes operativa.
 
 ## Protección del Personal
 

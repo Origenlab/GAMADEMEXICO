@@ -32,7 +32,7 @@ fechaRegistro: "2024-08-20"
 
 ## Sistema de Protección Contra Incendios en Refinería
 
-La Refinería Miguel Hidalgo es una de las seis refinerías más importantes de México, procesando diariamente 315,000 barriles de petróleo crudo para producir gasolinas, diésel, turbosina y otros derivados. La protección contra incendios en instalaciones de esta naturaleza es crítica y requiere los más altos estándares de la industria petrolera mundial.
+La Refinería Miguel Hidalgo es una de las seis refinerías más importantes de México, procesando diariamente 315,000 barriles de petróleo crudo para producir gasolinas, diésel, turbosina y otros derivados. La protección contra incendios en instalaciones de esta naturaleza es crítica y requiere estándares técnicos estrictos de la industria petrolera mundial.
 
 ### Clasificación de Áreas de Riesgo
 
