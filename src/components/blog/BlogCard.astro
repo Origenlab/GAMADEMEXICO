@@ -70,8 +70,6 @@ const fechaFormateada = fecha ? formatDateSpanish(fecha) : null;
     <div class="blog-card__body">
       <div class="blog-card__meta">
         {tiempoLectura && <span>{tiempoLectura} min de lectura</span>}
-        {tiempoLectura && <span class="blog-card__separator">·</span>}
-        {fechaFormateada && <time datetime={fecha} class="blog-card__date">{fechaFormateada}</time>}
       </div>
 
       <h3 class="blog-card__title">{title}</h3>

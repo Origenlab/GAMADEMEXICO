@@ -136,7 +136,7 @@ Combinación de ambos: la mitad de la profundidad entra en la pared y la otra mi
 
 ---
 
-## Precios Orientativos (MXN, 2025)
+## Precios Orientativos (MXN)
 
 Los precios varían según el tipo, material de la carcasa y equipamiento incluido:
 
