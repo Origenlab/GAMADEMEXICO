@@ -1241,3 +1241,49 @@ figure {
   animation: none !important;
   transition: none !important;
 }
+
+/* ── Sticky CTA Mobile ── */
+.sticky-cta-mobile {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9998;
+  background: #fff;
+  border-top: 1px solid #ddd;
+  padding: 0.5rem;
+  gap: 0.5rem;
+}
+.sticky-cta__wa,
+.sticky-cta__cotizar {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: var(--font-primary);
+}
+.sticky-cta__wa {
+  background: #25D366;
+  color: #fff;
+}
+.sticky-cta__wa:hover { background: #1fb855; }
+.sticky-cta__cotizar {
+  background: var(--color-primary, #C41E3A);
+  color: #fff;
+}
+.sticky-cta__cotizar:hover { background: var(--color-primary-dark, #9A1829); }
+
+@media (max-width: 768px) {
+  .sticky-cta-mobile {
+    display: flex;
+  }
+  /* Hide WA bubble when sticky CTA is visible on mobile */
+  .wa-bubble { display: none !important; }
+}
