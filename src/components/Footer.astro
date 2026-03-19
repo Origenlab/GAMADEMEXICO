@@ -458,14 +458,8 @@ const currentYear = new Date().getFullYear();
     color: var(--color-white);
   }
 
-  /* Tablet */
-  @media (min-width: 768px) {
-    .footer__cta-inner {
-      flex-direction: row;
-      justify-content: space-between;
-      text-align: left;
-    }
-
+  /* Mobile-Tablet: 2 columnas desde 640px */
+  @media (min-width: 640px) {
     .footer__grid {
       grid-template-columns: repeat(2, 1fr);
     }
@@ -477,6 +471,15 @@ const currentYear = new Date().getFullYear();
     .footer__bottom-inner {
       flex-direction: row;
       justify-content: space-between;
+    }
+  }
+
+  /* Tablet */
+  @media (min-width: 768px) {
+    .footer__cta-inner {
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: left;
     }
   }
 

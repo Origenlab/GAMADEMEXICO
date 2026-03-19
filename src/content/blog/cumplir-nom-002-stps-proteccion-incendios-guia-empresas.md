@@ -1,301 +1,73 @@
 ---
 title: "Cómo Cumplir la NOM-002-STPS: Guía Protección Incendios"
-description: "Guía para cumplir NOM-002-STPS en empresas: extintores, gabinetes, brigadas, simulacros, inspección y sanciones."
+description: "Guía para cumplir NOM-002-STPS en empresas: qué exige la norma, cómo preparar la inspección de protección civil y errores que generan multas en México."
 fecha: "2025-03-12"
+fechaActualizacion: "2026-03-19"
 categoria: "gabinetes-hidrantes"
 autor:
-  nombre: "Ing. Roberto Hernández"
-  cargo: "Director Técnico"
+  nombre: "Equipo Gama de México"
+  cargo: "Asesoría Técnica"
 imagen: "/img/blog/inspeccion-proteccion-civil-empresa-industrial-mexico.avif"
 imagenAlt: "Cumplimiento NOM-002-STPS protección contra incendios empresas"
-tags: ["NOM-002-STPS", "protección civil", "cumplimiento normativo", "extintores", "gabinetes", "brigada contra incendios", "México"]
+tags: ["NOM-002-STPS", "protección civil", "cumplimiento normativo", "gabinetes", "brigada contra incendios"]
 destacado: true
 draft: false
-productosRelacionados: ["gabinete-30me", "gabinete-empotrado", "manguera-millhose", "valvula-compuerta-osy", "hidrante-banqueta", "boquilla-certificada-dual-ul-fm"]
-tiempoLectura: 9
+productosRelacionados: ["gabinete-30me", "manguera-millhose", "valvula-compuerta-osy", "boquilla-certificada-dual-ul-fm"]
+tiempoLectura: 16
+canonical: "https://gamademexico.com/blog/gabinetes-hidrantes/cumplir-nom-002-stps-proteccion-incendios-guia-empresas"
+noindex: false
 ---
 
-La **NOM-002-STPS-2010** ("Condiciones de seguridad — Prevención y protección contra incendios en los centros de trabajo") es la norma mexicana que establece los requisitos mínimos de prevención y protección contra incendios que **todo centro de trabajo** en el país debe cumplir, sin importar su tamaño, giro o número de empleados. Un taller mecánico con 5 personas, un corporativo con 500 y una planta petroquímica con 3,000 están sujetos a esta norma. Lo que cambia es el nivel de exigencia según el grado de riesgo.
+La NOM-002-STPS-2010 es una de esas normas que todo mundo dice cumplir hasta que llega la inspección. En ese momento se descubre que el plan de emergencias no se ha actualizado desde que la empresa cambió de giro, que los extintores del pasillo llevan dos años sin recarga, que la brigada contra incendios está formada por personas que ya no trabajan ahí y que el croquis de evacuación que está pegado en la recepción muestra una distribución que dejó de existir cuando se amplió la bodega. Cada uno de esos hallazgos es una observación. Cada observación puede convertirse en una multa. Y las multas se calculan por infracción individual, no por visita. Una empresa con diez extintores caducados no recibe una multa; recibe diez. Esa aritmética sorprende a muchos responsables de seguridad la primera vez que la enfrentan.
 
-Esta guía le explica, paso a paso, qué necesita implementar, cómo calcular sus necesidades y qué esperar durante la inspección de Protección Civil.
+La norma aplica a todos los centros de trabajo en territorio mexicano. No hay mínimo de empleados. No hay exención por tamaño, giro ni antigüedad. Un taller mecánico con cinco personas, un corporativo con quinientas y una planta petroquímica con tres mil están sujetos al mismo marco normativo. Lo que cambia entre ellos es el nivel de exigencia, porque la norma clasifica el riesgo de incendio del centro de trabajo como ordinario o alto, y esa clasificación determina cuántos equipos necesitas, qué tipo de brigada debes tener, con qué frecuencia debes hacer simulacros y qué nivel de protección se considera adecuado para tu operación.
 
-## ¿A Quién Aplica la NOM-002-STPS?
+## La clasificación de riesgo que define todo lo demás
 
-A **todos los centros de trabajo** establecidos en territorio mexicano, entendiéndose como centro de trabajo cualquier lugar donde se realicen actividades laborales, productivas, comerciales o de servicio con al menos un trabajador subordinado.
+La clasificación de riesgo es el punto de partida de todo el sistema de cumplimiento y es donde muchas empresas cometen el primer error: no clasificar o clasificar incorrectamente. La norma separa los centros de trabajo en riesgo ordinario y riesgo alto, considerando el tipo de materiales que se manejan y almacenan, las cantidades presentes y las características de los procesos. Un edificio de oficinas con papel, mobiliario y equipo de cómputo es riesgo ordinario. Una bodega de supermercado con grandes volúmenes de material combustible, una carpintería, una imprenta o una fábrica textil son riesgo alto. Una gasolinera, una planta química, una refinería o una bodega de solventes con líquidos inflamables de punto de inflamación bajo son riesgo alto con manejo de inflamables.
 
-Esto incluye:
-- Oficinas corporativas
-- Plantas industriales y manufactureras
-- Bodegas y centros de distribución
-- Hoteles, restaurantes y centros de entretenimiento
-- Hospitales, clínicas y laboratorios
-- Centros educativos y guarderías
-- Comercios minoristas y mayoristas
-- Talleres automotrices y de servicios
+Esa clasificación no es un trámite que se llena una vez y se archiva. Debe revisarse cada vez que cambian las condiciones de operación: ampliación de la nave, cambio de materiales almacenados, incorporación de un nuevo proceso, modificación del layout. He visto plantas que fueron clasificadas como riesgo ordinario cuando eran un almacén de productos terminados y que después empezaron a almacenar solventes para limpieza sin actualizar la clasificación. Cuando llegó la inspección, la clasificación documentada no correspondía con la realidad del centro de trabajo, y esa discrepancia generó observaciones que pudieron haberse evitado con una actualización de cinco minutos.
 
-> **Excepción:** Los trabajadores independientes sin local fijo (ejemplo: freelancer que trabaja desde casa sin empleados) no están sujetos a la norma. Pero en el momento en que existe un local y al menos un empleado, la NOM-002-STPS aplica.
+## Los cinco pilares que la norma exige a todos
 
----
+Independientemente del grado de riesgo, todo centro de trabajo debe cumplir con cinco elementos básicos que la inspección de protección civil va a buscar.
 
-## Clasificación del Riesgo: ¿Qué Nivel de Protección Necesito?
+El primero es la brigada de emergencias. La empresa debe formar una brigada interna con personal capacitado en combate de incendios incipientes, primeros auxilios, evacuación y, en instalaciones complejas, búsqueda y rescate. La capacitación debe ser teórico-práctica, con frecuencia mínima anual, y debe estar documentada con constancias que incluyan nombre del instructor, temario cubierto, fecha y listas de asistencia firmadas. Lo que he encontrado con frecuencia es que la brigada existe en el organigrama pero no en la práctica: los brigadistas designados nunca han operado un extintor en un ejercicio real, nunca han desplegado una [manguera](/mangueras/) de gabinete ni han practicado la coordinación de una evacuación bajo condiciones simuladas de estrés.
 
-La NOM-002-STPS clasifica los centros de trabajo en tres niveles de riesgo según el tipo de materiales que se manejan y almacenan:
+El segundo son los simulacros de evacuación. La norma exige al menos dos al año, documentados con fecha, hora, duración, número de participantes, tiempo de evacuación y observaciones. He participado en auditorías donde la empresa tenía las actas de simulacro perfectamente redactadas pero el personal no sabía dónde estaba el punto de reunión. Las actas eran ficticias. El inspector se dio cuenta en treinta segundos cuando preguntó a un empleado al azar por dónde evacuar y la respuesta fue una mirada de confusión. Los simulacros que no se hacen de verdad no protegen a nadie y no resisten una verificación mínimamente rigurosa.
 
-| Grado de riesgo | Tipo de materiales | Ejemplos |
-|----------------|-------------------|---------|
-| **Ordinario** | Materiales combustibles comunes (madera, papel, tela, plástico en cantidades moderadas) | Oficinas, escuelas, tiendas de ropa, hoteles |
-| **Alto** | Materiales combustibles en grandes cantidades, líquidos inflamables con punto de inflamación >37.8°C | Bodegas de supermercado, carpinterías, fábricas textiles, imprentas |
-| **Alto con manejo de inflamables** | Líquidos/gases inflamables con punto de inflamación ≤37.8°C, polvos combustibles | Gasolineras, plantas químicas, refinerías, fábricas de pintura, bodegas de solventes |
+El tercero son los extintores portátiles, que son la primera línea de defensa en los primeros segundos de un incendio incipiente. La distribución exige que ningún punto del centro de trabajo esté a más de quince metros de un extintor en riesgo alto ni a más de veintitrés metros en riesgo ordinario. Deben ser del tipo correcto para los materiales presentes: PQS tipo ABC para la mayoría de las aplicaciones, CO2 para equipos eléctricos o áreas con riesgo de daño por residuos, agente húmedo para cocinas industriales. Deben estar señalizados conforme a NOM-026-STPS, montados a una altura de 1.10 a 1.50 metros y con etiqueta de recarga vigente con máximo doce meses de antigüedad. Cada extintor caducado es una infracción individual.
 
-Esta clasificación determina directamente la cantidad de extintores, el tipo de gabinetes, la necesidad de sprinklers y el nivel de capacitación de la brigada.
+El cuarto es la señalización de seguridad conforme a NOM-026-STPS: flechas de ruta de evacuación, señales de salida de emergencia, ubicación de equipos contra incendios, señales de prohibición donde aplique y, en edificios de más de tres pisos, señalización fotoluminiscente que funcione en condiciones de corte de energía.
 
----
+El quinto es el plan de emergencias y evacuación: un documento formal que identifique los riesgos específicos del centro de trabajo, incluya un croquis actualizado con rutas de evacuación, salidas de emergencia, ubicación de equipos y puntos de reunión, y contenga el directorio de emergencias, la designación de roles en la brigada y el procedimiento de conteo de personal después de la evacuación.
 
-## Los 5 Elementos Obligatorios de la NOM-002-STPS
+## Gabinetes y sistemas hidráulicos: cuando el riesgo lo exige
 
-Independientemente del grado de riesgo, todo centro de trabajo debe contar con estos cinco elementos como mínimo:
+Para centros de trabajo con riesgo alto o con superficie mayor a quinientos metros cuadrados, la NOM-002-STPS y los reglamentos de construcción municipales exigen la instalación de [gabinetes de manguera](/gabinetes/) con equipo completo: manguera de treinta metros, [boquilla tipo pistola](/boquillas/tipo-pistola), válvula angular y llave de operación. La distribución debe garantizar que la manguera alcance cualquier punto del área con tres metros de sobrante, lo cual determina la cantidad y ubicación de gabinetes necesarios.
 
-### 1. Brigada de Emergencias
+Para edificios de más de tres pisos, se requiere además un sistema de tubería vertical conforme a NFPA 14 con salidas de manguera en cada piso. Para instalaciones industriales con riesgo alto, la protección puede escalar a hidrantes privados conforme a NFPA 24, [monitores contra incendios](/monitores/) para cobertura perimetral de áreas de proceso y sistemas de rociadores automáticos conforme a NFPA 13. Cada uno de esos sistemas tiene sus propios requisitos de [válvulas](/valvulas/), conexiones, pruebas y mantenimiento que deben documentarse para que la inspección los valide.
 
-La empresa debe formar una brigada interna de emergencias con personal voluntario capacitado en:
+## Lo que el inspector realmente busca
 
-- **Combate de incendios incipientes:** Uso de extintores y mangueras de gabinete
-- **Primeros auxilios:** Atención básica hasta la llegada de paramédicos
-- **Evacuación:** Coordinación de la salida ordenada del personal
-- **Búsqueda y rescate:** Solo en instalaciones complejas con personal capacitado
+La inspección de protección civil puede ser programada, para renovación de licencia de funcionamiento, o sorpresiva, por denuncia o campaña de verificación. En ambos casos, el patrón de revisión es predecible después de participar en suficientes inspecciones.
 
-**Requisitos de la brigada:**
-- Mínimo 1 brigadista por cada 20-30 trabajadores (regla práctica, no explícita en la norma)
-- Capacitación anual documentada con constancias
-- Identificación visible (chaleco, casco o brazalete naranja)
-- Conocimiento de las rutas de evacuación y puntos de reunión
+Lo primero que se revisa es la documentación. El Programa Interno de Protección Civil vigente y firmado por el representante legal. El croquis actualizado. El directorio de emergencias. Las constancias de capacitación del último año. Las actas de simulacros. La bitácora de mantenimiento de equipos. Si esos documentos no están o están desactualizados, la inspección ya tiene hallazgos antes de que el inspector camine por la planta.
 
-### 2. Simulacros de Evacuación
+Cuando el inspector recorre las instalaciones, busca consistencia entre lo documentado y lo real. Si el plano dice que hay un gabinete en el punto B-7, en el punto B-7 debe haber un gabinete con equipo completo y acceso libre. Si la bitácora dice que los extintores se inspeccionan mensualmente, los extintores deben tener etiquetas de inspección con fechas recientes. Si el plan de emergencias dice que hay una salida de emergencia al final del pasillo norte, esa puerta debe abrir hacia afuera, no debe estar cerrada con candado y no debe tener una estantería bloqueando el acceso.
 
-Todo centro de trabajo debe realizar **al menos 2 simulacros al año**, documentados con:
+Los errores más comunes que generan observaciones son predecibles: extintores caducados o mal ubicados, gabinetes obstruidos o incompletos, señalización decolorada o ilegible, plan de emergencias desactualizado, brigada sin capacitación documentada, simulacros sin documentar, puertas de emergencia con candado, tableros eléctricos sin tapa o con materiales encima, rutas de evacuación obstruidas. Cada uno de esos hallazgos es una infracción individual, y las multas pueden ir de cinco mil a doscientos cincuenta mil pesos por infracción dependiendo de la gravedad. En caso de reincidencia en infracción grave, la consecuencia puede ser clausura temporal o definitiva del centro de trabajo.
 
-- Fecha, hora y duración del simulacro
-- Número de participantes
-- Tiempo de evacuación total (desde la alarma hasta el último evacuado)
-- Observaciones y áreas de mejora
-- Evidencia fotográfica y lista de asistencia firmada
+## Las consecuencias que van más allá de la multa
 
-**Tip:** Los simulacros deben incluir al menos un escenario nocturno o con corte de energía si la empresa opera en turnos nocturnos.
+Lo que mucha gente no contempla es que el incumplimiento de la NOM-002-STPS tiene consecuencias que exceden las multas administrativas. En caso de un incendio con víctimas donde se demuestre incumplimiento de la norma, el responsable del centro de trabajo puede enfrentar proceso penal por homicidio culposo, responsabilidad civil por daños y perjuicios a víctimas y sus familias, y demandas laborales por parte de trabajadores lesionados. Esas consecuencias no se resuelven con una cotización de extintores. Se previenen con un sistema de protección que funcione de verdad, documentado de manera que se pueda demostrar el cumplimiento cuando se necesite.
 
-### 3. Extintores Portátiles
+La inversión para cumplir desde cero no es prohibitiva. Para una empresa de cincuenta empleados en una nave de ochocientos metros cuadrados, un estimado razonable incluye extintores, señalización, gabinetes de manguera, capacitación de brigada y elaboración del Programa Interno de Protección Civil. El total puede estar en un rango de cincuenta mil a cien mil pesos, que es significativamente menor que una sola multa por infracción grave. Cuando se compara con la exposición penal y civil de un siniestro no cubierto, la proporción es aún más clara.
 
-Los extintores son la primera línea de defensa contra incendios incipientes (primeros 30 segundos). La NOM-002-STPS exige:
+## El mantenimiento que mantiene el cumplimiento vivo
 
-- Extintores en cada área del centro de trabajo
-- Distribuidos de forma que la distancia máxima de recorrido para alcanzar uno no exceda **15 metros** en riesgo alto ni **23 metros** en riesgo ordinario
-- Señalizados conforme a NOM-026-STPS (señal roja con pictograma blanco)
-- Montados a una altura de **1.10 m a 1.50 m** (medida al soporte superior)
-- Con etiqueta de mantenimiento vigente (recarga anual mínima)
+Cumplir una vez no es cumplir. El cumplimiento es un estado permanente que requiere un programa de mantenimiento con disciplina de ejecución. Inspección visual mensual de extintores, gabinetes, señalización y rutas de evacuación. Prueba trimestral de alumbrado de emergencia y verificación de [válvulas](/valvulas/). Revisión semestral completa de gabinetes y ejecución de simulacro. Recarga anual de extintores, prueba hidrostática de [mangueras](/mangueras/), capacitación de brigada y actualización del Programa Interno. Cada cinco años, prueba hidrostática de extintores e inspección interna de hidrantes.
 
-### 4. Señalización de Seguridad
+Ese programa, ejecutado con constancia y documentado con rigor, es lo que convierte un centro de trabajo vulnerable en uno preparado. No es complicado. No es caro. Lo que sí es, con frecuencia, es ignorado hasta que la inspección aparece y el costo de no haberlo hecho se vuelve inmediato y tangible.
 
-Conforme a **NOM-026-STPS** ("Colores y señales de seguridad e higiene"), el centro de trabajo debe contar con:
-
-- **Señales de evacuación:** Flechas de ruta de salida, salida de emergencia, punto de reunión (fondo verde, pictograma blanco)
-- **Señales de equipo contra incendios:** Ubicación de extintores, gabinetes, hidrantes, alarmas (fondo rojo, pictograma blanco)
-- **Señales de prohibición:** No fumar, no obstruir, no usar elevador durante emergencia (fondo blanco, círculo rojo, pictograma negro)
-- **Señalización fotoluminiscente:** En rutas de evacuación de edificios con más de 3 pisos o zonas sin iluminación natural
-
-### 5. Plan de Emergencias y Evacuación
-
-Documento formal que contiene:
-
-- Identificación de riesgos específicos del centro de trabajo
-- Croquis o plano con rutas de evacuación, salidas de emergencia, ubicación de equipos y puntos de reunión
-- Procedimiento de activación de la alarma
-- Directorio de emergencias (bomberos, Cruz Roja, Protección Civil, hospital más cercano)
-- Designación de roles en la brigada
-- Procedimiento de conteo de personal después de la evacuación
-
----
-
-## Cómo Calcular el Número de Extintores por Área
-
-La NOM-002-STPS no da una fórmula exacta de "X extintores por m²", pero combinando la norma con el criterio técnico de la NFPA 10 (estándar internacional de referencia), el cálculo práctico es:
-
-### Método de distancia máxima de recorrido
-
-| Tipo de riesgo | Distancia máxima al extintor más cercano | Regla práctica |
-|---------------|----------------------------------------|---------------|
-| Ordinario | 23 m (75 ft) | 1 extintor por cada 500 m² |
-| Alto | 15 m (50 ft) | 1 extintor por cada 200 m² |
-| Alto con inflamables | 15 m (50 ft) + extintor especial (CO₂ o PQS) | 1 extintor por cada 150 m² |
-
-### Tipo de extintor según el riesgo
-
-| Clase de fuego | Material combustible | Tipo de extintor |
-|---------------|---------------------|-----------------|
-| Clase A | Sólidos (madera, papel, tela) | Agua presurizada o PQS tipo ABC |
-| Clase B | Líquidos inflamables (gasolina, pintura, solventes) | PQS tipo BC o ABC, CO₂ |
-| Clase C | Equipo eléctrico energizado | CO₂, PQS tipo ABC |
-| Clase D | Metales combustibles (magnesio, titanio) | Polvo especial clase D |
-| Clase K | Aceites de cocina | Agente húmedo especial (Wet Chemical) |
-
-> **Ejemplo práctico:** Una bodega de 1,000 m² con riesgo alto necesita al menos 5 extintores de PQS 6 kg distribuidos de forma que ningún punto esté a más de 15 m de un extintor. Si hay un área de carga de baterías de montacargas, se requiere además un extintor de CO₂ de 4.5 kg en esa zona.
-
----
-
-## Requisitos de Gabinetes de Manguera
-
-Para centros de trabajo con riesgo alto o con superficie mayor a 500 m², la NOM-002-STPS y los reglamentos de construcción municipales exigen la instalación de [gabinetes de manguera contra incendios](/gabinetes-hidrantes-contra-incendios):
-
-- **Distribución:** Que la manguera (30 m) alcance cualquier punto del área con 3 m de sobrante
-- **Equipamiento completo:** Manguera, boquilla tipo pistola, válvula angular y llave de espárrago (modelo 30ME)
-- **Mantenimiento:** Inspección visual mensual + revisión semestral completa con registro en bitácora
-- **Señalización:** Conforme a NOM-026-STPS, visible a 10 m de distancia
-
-Para instalaciones de más de 3 pisos, adicionalmente se requiere un sistema de tubería vertical (NFPA 14) con salidas de manguera en cada piso.
-
----
-
-## Cómo Pasar la Inspección de Protección Civil
-
-La inspección de Protección Civil puede ser programada (anual para renovación de licencia) o sorpresa (por denuncia o campaña de verificación). Aquí está lo que verifican:
-
-### Lo que el inspector busca
-
-| Elemento | Qué revisa el inspector | Error más común |
-|---------|------------------------|----------------|
-| Extintores | Cantidad, tipo, ubicación, fecha de recarga, señalización | Extintor caducado o mal ubicado |
-| Gabinetes de manguera | Equipamiento completo, acceso libre, etiqueta de mantenimiento | Gabinete obstruido o sin boquilla |
-| Señalización | NOM-026-STPS, fotoluminiscente si aplica, legible | Señales decoloradas, ruta no señalizada |
-| Plan de emergencias | Documento actualizado, croquis visible, directorio vigente | Plan desactualizado o inexistente |
-| Brigada | Constancias de capacitación, organigrama, equipo | Sin capacitación documentada |
-| Simulacros | Actas de los 2 simulacros anuales con evidencia | Simulacro sin documentar |
-| Instalaciones eléctricas | Tableros cerrados, sin cables expuestos, interruptores accesibles | Tablero sin tapa o con materiales encima |
-| Rutas de evacuación | Libres de obstáculos, puertas de emergencia funcionales | Puerta de emergencia cerrada con candado |
-| Alumbrado de emergencia | Funcional en corte de energía | Baterías agotadas |
-
-### Documentación que debe tener lista
-
-1. Programa Interno de Protección Civil (PIPC) firmado por el representante legal
-2. Croquis de planta con ubicación de equipos, rutas y puntos de reunión
-3. Bitácora de mantenimiento de extintores y gabinetes
-4. Constancias de capacitación de la brigada (último año)
-5. Actas de simulacros (mínimo 2 por año)
-6. Póliza de seguro de responsabilidad civil vigente (en algunos estados)
-7. Dictamen de instalación eléctrica (en estados que lo requieren)
-
----
-
-## Sanciones por Incumplimiento
-
-La Ley Federal del Trabajo y su reglamento en materia de seguridad establecen sanciones progresivas:
-
-| Tipo de infracción | Sanción | Monto aproximado (2025) |
-|-------------------|---------|------------------------|
-| Observación menor (primera vez) | Plazo para corrección (30-90 días) | Sin multa |
-| Infracción ordinaria | Multa económica | $5,000 – $50,000 MXN por infracción |
-| Infracción grave | Multa + orden de corrección inmediata | $50,000 – $250,000 MXN |
-| Infracción que pone en peligro la vida | Clausura temporal parcial o total | Hasta cierre del centro de trabajo |
-| Reincidencia en infracción grave | Clausura definitiva | Pérdida de licencia de funcionamiento |
-
-> **Dato clave:** Las multas se calculan por **cada infracción individual**. Una empresa con 10 extintores caducados puede recibir 10 multas separadas, no una sola. Esto puede escalar rápidamente a cientos de miles de pesos en una sola inspección.
-
-Adicionalmente, en caso de un incendio con víctimas donde se demuestre incumplimiento de la NOM-002-STPS, el responsable del centro de trabajo puede enfrentar:
-
-- **Proceso penal por homicidio culposo** (1-5 años de prisión según el código penal estatal)
-- **Responsabilidad civil** por daños y perjuicios a víctimas y sus familias
-- **Demandas laborales** por parte de trabajadores lesionados
-
----
-
-## Checklist de Cumplimiento NOM-002-STPS
-
-Use esta lista como referencia para una autoevaluación antes de la inspección:
-
-### Organización y Documentación
-- [ ] Programa Interno de Protección Civil (PIPC) vigente y firmado
-- [ ] Croquis actualizado con rutas de evacuación, equipos y puntos de reunión
-- [ ] Directorio de emergencias actualizado (bomberos, Cruz Roja, hospital)
-- [ ] Organigrama de la brigada de emergencias
-- [ ] Constancias de capacitación de brigadistas (último año)
-- [ ] Actas de simulacros (mínimo 2 anuales) con evidencia fotográfica
-- [ ] Bitácora de mantenimiento de equipos contra incendios
-
-### Extintores
-- [ ] Cantidad correcta según área y nivel de riesgo
-- [ ] Tipo adecuado para los materiales presentes (A, B, C, D, K)
-- [ ] Ubicación señalizada conforme a NOM-026-STPS
-- [ ] Altura de montaje entre 1.10 m y 1.50 m
-- [ ] Etiqueta de recarga vigente (máximo 12 meses)
-- [ ] Sin obstrucciones (mínimo 1 m libre de acceso)
-- [ ] Manómetro en zona verde
-
-### Gabinetes de Manguera (si aplica)
-- [ ] Distribución que cubra toda el área (30 m de manguera + 3 m de sobrante)
-- [ ] Equipo completo: manguera, boquilla, válvula angular, llave
-- [ ] Manguera en buen estado (sin grietas, dobladuras permanentes o moho)
-- [ ] Válvula angular funcional (abre y cierra sin esfuerzo excesivo)
-- [ ] Señalización visible conforme a NOM-026-STPS
-- [ ] Etiqueta de mantenimiento con fecha vigente
-- [ ] Acceso libre (mínimo 1 m frente al gabinete)
-
-### Señalización
-- [ ] Rutas de evacuación señalizadas con flechas de dirección
-- [ ] Señales de salida de emergencia en todas las salidas
-- [ ] Punto de reunión señalizado en exterior
-- [ ] Señales de ubicación de equipos contra incendios
-- [ ] Señales de prohibición donde aplique (no fumar, no obstruir)
-- [ ] Señalización fotoluminiscente en edificios >3 pisos
-
-### Instalaciones
-- [ ] Rutas de evacuación libres de obstáculos
-- [ ] Puertas de emergencia abren hacia afuera, sin candado
-- [ ] Alumbrado de emergencia funcional (probar periódicamente)
-- [ ] Tableros eléctricos cerrados, señalizados, sin materiales encima
-- [ ] Áreas de almacenamiento de materiales peligrosos señalizadas
-
-### Sistema Hidráulico (si aplica)
-- [ ] [Válvulas OS&Y](/valvulas-contra-incendios) en posición abierta y señalizadas
-- [ ] Presión adecuada en el sistema (verificar manómetro)
-- [ ] [Hidrantes](/gabinetes-hidrantes-contra-incendios) accesibles y funcionales
-- [ ] Toma siamesa visible y accesible desde la calle
-- [ ] Bomba contra incendios operativa (si aplica)
-
----
-
-## Calendario de Mantenimiento Recomendado
-
-| Frecuencia | Actividad |
-|-----------|----------|
-| Mensual | Inspección visual de extintores, gabinetes, señalización y rutas de evacuación |
-| Trimestral | Prueba de alumbrado de emergencia, verificación de válvulas |
-| Semestral | Revisión completa de gabinetes, simulacro de evacuación |
-| Anual | Recarga de extintores, prueba hidrostática de mangueras, capacitación de brigada, actualización del PIPC |
-| Cada 5 años | Prueba hidrostática de extintores, inspección interna de hidrantes |
-
----
-
-## Preguntas Frecuentes (FAQ)
-
-**¿Una empresa de 3 empleados necesita cumplir la NOM-002-STPS?**
-Sí. La norma aplica a todos los centros de trabajo sin mínimo de empleados. Un local con 3 personas necesita al menos extintores, señalización básica, plan de emergencias y rutas de evacuación. No necesita brigada formal ni gabinetes de manguera necesariamente, pero sí que todo el personal conozca el procedimiento de evacuación.
-
-**¿Quién puede dar la capacitación a la brigada?**
-Personal certificado en protección civil, bomberos profesionales o empresas de capacitación registradas ante la STPS. Las constancias deben incluir nombre del instructor, registro STPS (si aplica), temario cubierto y fecha.
-
-**¿Puedo hacer el simulacro sin avisar a los empleados?**
-El primer simulacro del año puede ser avisado (para que el personal conozca el procedimiento). El segundo puede ser de sorpresa. Sin embargo, siempre avise a la recepción, seguridad y bomberos de la zona para que no se genere una falsa alarma.
-
-**¿La NOM-002-STPS aplica a trabajadores que hacen home office?**
-La NOM no aplica al domicilio particular del trabajador. Solo aplica al centro de trabajo del patrón. Sin embargo, la NOM-037-STPS (teletrabajo) tiene requisitos separados sobre condiciones de seguridad en el lugar de teletrabajo.
-
-**¿Cuánto cuesta implementar todo esto desde cero para una empresa de 50 empleados en una nave de 800 m²?**
-Un estimado conservador: extintores ($8,000-$15,000), señalización ($5,000-$10,000), gabinetes de manguera ($15,000-$30,000), capacitación ($8,000-$15,000), elaboración del PIPC ($10,000-$25,000). Total: $46,000-$95,000 MXN. Comparado con una multa potencial de $50,000-$250,000 por infracción grave, el cumplimiento es significativamente más barato que la sanción.
-
----
-
-## Conclusión
-
-Cumplir con la NOM-002-STPS no es un trámite burocrático: es un sistema de gestión que protege vidas, patrimonio y la continuidad del negocio. Los cinco elementos obligatorios (brigada, simulacros, extintores, señalización y plan de emergencias) son el mínimo. Para empresas de riesgo alto, los [gabinetes de manguera](/gabinetes-hidrantes-contra-incendios), [hidrantes privados](/gabinetes-hidrantes-contra-incendios), [válvulas de control](/valvulas-contra-incendios) y sistemas de sprinklers completan la protección.
-
-En [Gama de México](/) asesoramos a empresas de todos los tamaños en el diseño e implementación de sistemas contra incendios que cumplen con la NOM-002-STPS y los estándares NFPA. Desde la selección de equipos hasta la capacitación de brigadas, somos su aliado en protección contra incendios.
-
-📞 **Solicite asesoría sin costo:** [55 1543 7164](tel:+525515437164) | [ventas@gamademexico.com](mailto:ventas@gamademexico.com)  
-💬 **WhatsApp:** [55 6529 8240](https://wa.me/5215565298240)
+En [Gama de México](/gabinetes/) distribuimos [gabinetes de manguera](/gabinetes/) equipados, [hidrantes](/gabinetes/hidrantes), [válvulas](/valvulas/) de control, [boquillas](/boquillas/) certificadas y todos los componentes que el sistema de protección contra incendios de tu centro de trabajo necesita para cumplir con la NOM-002-STPS y con los estándares NFPA aplicables. Si necesitas evaluar el estado de cumplimiento de tu instalación o especificar los equipos para un proyecto nuevo, desde [**/cotizar**](/cotizar) lo revisamos con criterio técnico y normativo.

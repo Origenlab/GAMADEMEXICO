@@ -1,241 +1,65 @@
 ---
-title: "Colectores y Distribuidores de Agua en Incendios Industriales"
-description: "Selección de colectores y distribuidores de agua para incendios industriales: manifolds, hidráulica, materiales y aplicaciones en plantas petroquímicas México."
+title: "Colectores y Distribuidores en Sistemas Contra Incendios"
+description: "Selección e ingeniería de colectores y manifolds para sistemas contra incendios industriales: hidráulica, materiales, petroquímica y errores comunes en México."
 fecha: "2026-03-12"
-fechaActualizacion: "2026-03-12"
+fechaActualizacion: "2026-03-19"
 categoria: "conexiones-herrajes"
 autor:
-  nombre: "Ing. Roberto Hernández"
-  cargo: "Director Técnico en Sistemas Contra Incendios"
+  nombre: "Equipo Gama de México"
+  cargo: "Asesoría Técnica"
 imagen: "/img/blog/adaptadores-herrajes-bronce-contra-incendios-profesional.avif"
 imagenAlt: "Colectores y distribuidores de agua contra incendios NFPA"
-tags: ["colectores agua incendios", "distribuidores manifold", "NFPA 20", "petroquímica México", "hidráulica incendios", "manifold incendios", "sistemas industriales"]
+tags: ["colectores agua incendios", "distribuidores manifold", "NFPA 20", "hidráulica incendios", "manifold incendios"]
 destacado: false
 draft: false
-tiempoLectura: 12
+tiempoLectura: 14
 canonical: "https://gamademexico.com/blog/conexiones-herrajes/colectores-distribuidores-agua-incendios-industriales-nfpa"
 noindex: false
+productosRelacionados: []
 ---
 
-En instalaciones industriales de gran escala —refinerías, plantas petroquímicas, terminales de almacenamiento, plantas de manufactura de alta densidad— los sistemas contra incendios deben distribuir enormes volúmenes de agua a múltiples puntos de aplicación simultáneamente. Los **colectores y distribuidores** (manifolds) son los componentes que hacen posible esta distribución eficiente, permitiendo que una sola fuente de suministro alimente varios monitores, rociadores o líneas de espuma al mismo tiempo.
+En instalaciones industriales de cierta escala, hay un punto del sistema contra incendios donde la tubería deja de ser un conducto simple y se convierte en un problema de distribución. La bomba genera presión y caudal, pero ese caudal tiene que llegar a múltiples destinos al mismo tiempo: rociadores en la nave, [monitores](/monitores/) en el perímetro, hidrantes para el servicio de bomberos, líneas de espuma en el área de proceso. El componente que resuelve esa distribución es el colector, también llamado header o manifold, y su diseño correcto determina si todos esos sistemas reciben lo que necesitan simultáneamente o si algunos se quedan cortos porque la hidráulica del punto de distribución no estaba bien resuelta.
 
-Esta guía técnica aborda la selección, el diseño hidráulico, los materiales y las aplicaciones de colectores y distribuidores en instalaciones industriales mexicanas, con referencia a las normativas NFPA aplicables.
+Es un componente que rara vez aparece en las conversaciones de especificación porque se asume que es "solo tubería". Pero un colector mal diseñado puede ser el cuello de botella que explica por qué la presión en el rociador más remoto no alcanza, por qué el monitor perimetral no entrega su caudal nominal o por qué la prueba de flujo muestra valores diferentes a los del cálculo hidráulico. He revisado cuartos de bombas en plantas del corredor industrial de Veracruz donde el colector de descarga tenía un diámetro que funcionaba perfectamente cuando solo operaba la bomba principal, pero que se convertía en un restrictor cuando entraban simultáneamente la bomba principal y la auxiliar, porque el diámetro no estaba dimensionado para el caudal combinado. El caudal de cada bomba por separado era correcto. El caudal combinado a través de ese colector subdimensionado generaba velocidades de flujo excesivas, pérdidas por fricción desproporcionadas y una caída de presión que afectaba a todos los sistemas aguas abajo.
 
-## Definición y Función
+## Colector vs manifold: no es lo mismo aunque se usen indistintamente
 
-### Colector (Header)
+En la práctica, los términos colector y manifold se usan a veces como sinónimos, pero técnicamente describen configuraciones diferentes. El colector es un tramo de tubería principal, generalmente de gran diámetro, del que se derivan múltiples salidas mediante tees, cruces o derivaciones soldadas. Es la columna vertebral del sistema de distribución, recibe el caudal de una o más bombas y lo envía hacia las diferentes zonas de la planta. Su fabricación se hace en campo con tubería estándar, accesorios de tubería y [válvulas](/valvulas/) de seccionamiento en cada derivación.
 
-Un **colector** es un tramo de tubería principal del que se derivan múltiples salidas secundarias. Su función es recibir el flujo de una o más fuentes de suministro (bombas, tanques, acometidas) y distribuirlo hacia el sistema de distribución o hacia múltiples puntos de descarga.
+El manifold es un accesorio más compacto, generalmente una pieza fundida o mecanizada, con múltiples salidas configuradas en un espacio reducido. Se usa cuando la distribución debe resolverse en un punto concentrado: la descarga de la bomba, una estación de control de zonas, un punto de distribución de espuma. Su ventaja es la compacidad y la reducción de conexiones en campo. Su limitación es que viene en configuraciones predefinidas y no se puede modificar tan fácilmente como un colector armado con tubería estándar.
 
-En sistemas contra incendios, los colectores principales suelen ser de gran diámetro (4" a 12") y alimentan las redes de distribución de rociadores, monitores y gabinetes.
+La selección entre uno y otro depende del espacio disponible, la complejidad de la distribución y las condiciones del proyecto. En cuartos de bomba donde el espacio es limitado y la distribución debe hacerse en un área concentrada, el manifold suele ser la opción más eficiente. En redes de distribución extensas donde las derivaciones están espaciadas a lo largo de la planta, el colector con tubería estándar ofrece más flexibilidad.
 
-### Distribuidor (Manifold)
+## La hidráulica que hace funcionar o fallar el colector
 
-Un **manifold** o distribuidor es un accesorio con múltiples salidas configuradas de forma compacta, diseñado para distribuir el flujo desde una entrada principal a varias salidas independientes, cada una controlable por su propia válvula.
+El diseño hidráulico de un colector no es simplemente seleccionar un diámetro de tubería y colocar las derivaciones. Es un ejercicio de balance donde varias fuerzas compiten. La velocidad del flujo dentro del colector debe mantenerse por debajo de ciertos límites: en tramos principales de sistemas contra incendios, la práctica recomendada es no exceder los seis metros por segundo para agua limpia. Velocidades mayores generan pérdidas por fricción que crecen exponencialmente, erosión en las paredes internas, ruido hidráulico que puede ser problemático en instalaciones cercanas a áreas ocupadas, y golpes de ariete más severos durante el arranque y paro de las bombas.
 
-Los manifolds son particularmente útiles en:
-- Salas de bombas: para distribuir el caudal de las bombas hacia diferentes sectores.
-- Estaciones de control: para alimentar múltiples zonas de sprinklers.
-- Monitores fijos: para distribuir el agua a varios monitores desde un punto de suministro.
-- Sistemas de espuma: para mezclar y distribuir el agente espumante hacia múltiples aplicadores.
+El balance hidráulico es probablemente el aspecto más difícil de resolver correctamente. Cuando un colector tiene múltiples salidas que alimentan sistemas con diferentes presiones de operación, el caudal tiende a distribuirse de forma desigual. La salida más cercana a la bomba recibe más presión que la más lejana. La salida que alimenta un sistema de menor resistencia recibe más caudal que la que alimenta un sistema de mayor resistencia. Si las derivaciones no están balanceadas, algunos sistemas van a recibir más de lo que necesitan y otros menos, y la protección global de la planta queda comprometida de forma asimétrica.
 
-### Diferencia práctica
+La solución técnica pasa por una combinación de dimensionamiento correcto de la tubería del colector para minimizar la pérdida de presión entre la primera y la última derivación, [válvulas](/valvulas/) de balanceo en las salidas que lo requieran, y un cálculo hidráulico que modele la red completa con todas las condiciones de demanda simultánea que el sistema debe satisfacer. En plantas grandes, ese cálculo se hace con software especializado porque las interacciones entre sistemas son demasiado complejas para resolverse con ecuaciones manuales.
 
-| Característica | Colector (Header) | Manifold (Distribuidor) |
-|---|---|---|
-| Configuración | Tubería lineal con derivaciones | Accesorio compacto con múltiples salidas |
-| Fabricación | Tubería estándar + tees + válvulas | Pieza fundida o mecanizada especial |
-| Flexibilidad | Alta (puede modificarse en campo) | Limitada (diseño fijo) |
-| Compacidad | Media | Alta |
-| Costo | Variable (depende del diseño) | Mayor por pieza, menor instalación |
-| Aplicación | Distribución principal, grandes sistemas | Puntos de descarga, estaciones de control |
+## NFPA 20 y el colector de descarga de la bomba
 
-## Diseño Hidráulico
+NFPA 20 regula específicamente el diseño del colector de descarga en la sala de bombas, porque ese punto es donde todo el sistema contra incendios comienza su camino hacia los puntos de protección. La norma exige que el colector de descarga sea capaz de soportar la presión de choque hidráulico que se genera durante el arranque de la bomba, que puede ser significativamente mayor que la presión de operación normal. También exige que la tubería de prueba se derive del colector principal con su propio sistema de medición de flujo, para que la bomba pueda probarse sin descargar agua al sistema de distribución.
 
-El diseño correcto de colectores y manifolds es fundamental para garantizar que todos los puntos de descarga reciban el caudal y la presión adecuados. Los errores hidráulicos son la causa más común de deficiencias en los sistemas de aplicación.
+Cuando hay múltiples bombas conectadas al mismo colector, como es habitual en instalaciones con bomba principal eléctrica, bomba auxiliar diésel y bomba jockey, cada bomba debe conectarse al colector a través de su propia [válvula de retención](/valvulas/retencion) para impedir la recirculación entre bombas. Si una bomba está parada y la otra operando, la retención impide que el flujo de la bomba activa se devuelva hacia la bomba inactiva, lo cual reduciría el caudal disponible para el sistema. Las [válvulas de compuerta OS&Y](/valvulas/compuerta) en la descarga de cada bomba permiten aislar una bomba para mantenimiento sin afectar la operación de las demás. Ese arreglo de válvulas no es opcional; es la configuración mínima que NFPA 20 exige para garantizar la disponibilidad del sistema.
 
-### Principios básicos
+## Materiales: lo que determina cuánto dura el colector
 
-**1. Velocidad de flujo:**
-En colectores de sistemas contra incendios, la velocidad máxima recomendada es:
-- **Tramos principales:** 4-6 m/s (13-20 ft/s) para agua limpia.
-- **Tramos secundarios:** 2-4 m/s.
-- **Velocidades mayores** producen pérdidas de presión excesivas, erosión de paredes y ruido hidráulico inaceptable.
+La selección del material del colector depende del ambiente, la presión, el medio transportado y la vida útil esperada. En la mayoría de las instalaciones industriales estándar, el hierro dúctil con recubrimiento interior epóxico es la opción más común para colectores principales de gran diámetro. Tiene una excelente relación entre resistencia, costo y durabilidad, y soporta presiones de trabajo de hasta 300 PSI en configuraciones estándar. Su limitación principal es el peso, que requiere soportes estructurales calculados para la carga del colector lleno de agua; un metro lineal de colector de doce pulgadas lleno pesa aproximadamente 750 kilogramos.
 
-**2. Pérdida de presión:**
-Cada derivación y cambio de dirección genera pérdida de presión que debe calcularse con las ecuaciones de Hazen-Williams o Darcy-Weisbach. Para diseños de alta confiabilidad, se recomienda usar software hidráulico certificado (HydraCAD, SprinkCAD) con los parámetros exactos del sistema.
+Para sistemas de alta presión en refinerías y plantas petroquímicas, el acero al carbono con recubrimiento epóxico de dos capas es la opción más frecuente. Soporta presiones muy superiores al hierro dúctil y es compatible con las temperaturas de operación más altas que se encuentran en estos ambientes. Pero requiere un plan de inspección de corrosión con medición de espesores periódica, porque sin recubrimiento interior de calidad, el acero al carbono se corroe desde adentro y pierde espesor de pared de forma progresiva.
 
-**3. Balance hidráulico:**
-En manifolds con múltiples salidas del mismo tamaño, el caudal tiende a distribuirse desigualmente si las salidas tienen diferentes presiones de referencia. Esto debe compensarse con:
-- **Válvulas de balanceo** en cada salida.
-- **Diseño de tubería balanceada** (misma longitud de recorrido hidráulico a cada salida — "circuito tree-ring").
-- **Cálculo de presiones disponibles** en cada punto de descarga.
+El bronce naval aparece en manifolds de mediano tamaño y en colectores de cuartos de bomba de edificios donde la resistencia a la corrosión, la compatibilidad con agua potable y la vida útil prolongada justifican su mayor costo. Y el acero inoxidable 316L se reserva para los ambientes más agresivos: plantas costeras con exposición a atmósfera salina, sistemas que operan con agua de mar como fuente de suministro, o instalaciones de la industria alimentaria donde los requisitos de higiene exigen materiales que no contaminen el medio.
 
-### Criterios NFPA 20 para sala de bombas
+## Petroquímica: donde los colectores se especifican con otra exigencia
 
-La **NFPA 20** ("Standard for the Installation of Stationary Pumps for Fire Protection") regula específicamente el diseño del colector de descarga de las bombas contra incendios:
+En la industria petroquímica mexicana, con refinerías, plantas de proceso y terminales de almacenamiento distribuidas a lo largo de la costa del Golfo y en puntos estratégicos del territorio, los colectores y manifolds de sistemas contra incendios operan bajo un nivel de exigencia que no se compara con el de una instalación comercial o de manufactura convencional. NFPA 15 exige que los colectores de suministro para sistemas de agua pulverizada mantengan la presión de diseño durante todo el tiempo de aplicación especificado, que suele ser un mínimo de treinta minutos pero puede extenderse según el escenario de riesgo. NFPA 11 exige que los colectores de solución espumante sean de materiales compatibles con los concentrados de espuma, lo cual excluye el aluminio en contacto con algunos concentrados AFFF y AR-AFFF.
 
-- El colector de descarga debe ser de un material y diseño que soporte la presión de choque hidráulico del arranque de la bomba.
-- La tubería de prueba (test header) debe derivarse del colector principal con una válvula de globo calibrada y medidor de flujo.
-- Los colectores no deben tener reducción de diámetro en el sentido del flujo sin justificación hidráulica documentada.
-- Las derivaciones del colector de descarga deben incluir válvulas de seccionamiento supervisadas.
+En estas instalaciones, el colector no es un componente pasivo. Es un componente que debe resistir décadas de exposición a atmósferas corrosivas, ciclos de presión durante pruebas y eventos, posible contacto con sustancias químicas agresivas y las vibraciones que transmiten las bombas de alta capacidad. La selección del material, el plan de mantenimiento y la inspección periódica de espesores de pared son la diferencia entre un colector que dura la vida útil prevista y uno que desarrolla una fuga en el peor momento posible.
 
-## Materiales de Fabricación
+## Inspección y mantenimiento: lo que mantiene vivo al colector
 
-La selección del material para colectores y manifolds depende del medio a transportar, la presión de trabajo, el ambiente de instalación y los requisitos de certificación del sistema.
+NFPA 25 establece los intervalos de inspección para los componentes del sistema de distribución. Para colectores y manifolds, la inspección trimestral debe verificar que todas las [válvulas](/valvulas/) de seccionamiento están en posición correcta, que los indicadores de posición funcionan y son legibles, que no hay fugas visibles en uniones, bridas o empaques, y que los soportes estructurales están en buen estado. La prueba anual de flujo debe verificar que cada zona alimentada por el colector recibe el caudal y la presión de diseño. Y cada cinco años, la inspección debe incluir limpieza interna del colector y medición de espesores de pared en los puntos críticos: codos, derivaciones y cambios de diámetro donde la erosión y la corrosión tienden a concentrarse.
 
-### Hierro dúctil (Ductile Iron)
-
-El material más usado en colectores principales de sistemas de alta capacidad:
-
-- **Norma:** ASTM A536, ISO 1083.
-- **Presión de trabajo:** Hasta 300 psi (21 bar) en rangos estándar.
-- **Recubrimiento interior:** Epóxico de alta resistencia o recubrimiento cementoso.
-- **Recubrimiento exterior:** Epóxico o polietileno para instalaciones enterradas.
-- **Ventaja:** Excelente relación resistencia/costo para grandes diámetros (4" a 24").
-- **Limitación:** Peso elevado; requiere soportes adecuados para colectores horizontales.
-
-### Acero al carbono con recubrimiento
-
-Para sistemas de alta presión y alta temperatura:
-
-- **Norma:** ASTM A53/A106 para tubería, ASTM A105 para bridas y fittings.
-- **Presión de trabajo:** Hasta 1,500 psi con schedule apropiado.
-- **Recubrimiento:** Pintura epóxica de dos capas para protección contra corrosión.
-- **Aplicación:** Sistemas con presión >300 psi, sistemas con vapor o agua caliente, refinería y petroquímica.
-- **Requiere:** Plan de inspección de corrosión (thickness measurement) cada 3 años.
-
-### Bronce y latón
-
-Para manifolds de mediano tamaño en aplicaciones donde el contacto frecuente con agua potable es crítico:
-
-- **Norma:** ASTM B584 (bronce C905), ASTM B62.
-- **Presión de trabajo:** Hasta 400 psi (27.6 bar).
-- **Ventaja:** Resistencia a la corrosión superior, compatible con agua potable, larga vida útil.
-- **Limitación:** Costo elevado en grandes diámetros.
-- **Aplicación:** Colectores de cuartos de bomba de edificios, manifolds de distribución en sistemas de mediano caudal.
-
-### Acero inoxidable (AISI 316L)
-
-Para ambientes agresivos:
-
-- **Aplicación:** Plantas en costas, sistemas con agua de mar, industria alimentaria.
-- **Norma:** ASTM A312/A358 para tubería, ASTM A351 para fundiciones.
-- **Costo:** El más elevado; justificado solo en ambientes con alta corrosividad documentada.
-
-### Tabla comparativa de materiales
-
-| Material | Presión Máx. | Costo Relativo | Resistencia Corrosión | Peso | Aplicación Recomendada |
-|---|---|---|---|---|---|
-| Hierro dúctil | 300 psi | Bajo | Media (requiere recubrimiento) | Alto | Colectores principales grandes |
-| Acero carbono | 1,500+ psi | Bajo-Medio | Baja (requiere recubrimiento) | Alto | Alta presión, petroquímica |
-| Bronce C905 | 400 psi | Alto | Alta | Medio | Manifolds interiores, agua potable |
-| Acero inoxidable 316L | 800 psi | Muy alto | Muy alta | Medio | Ambientes costeros, industria alimentaria |
-
-## Configuraciones Estándar de Manifolds
-
-### Manifold de testeo (Test Header)
-
-Ubicado en el cuarto de bombas, permite probar la capacidad de la bomba sin descargar agua al sistema de distribución. Componentes:
-
-- **Válvula de globo calibrada:** De cada tamaño para simular diferentes caudales.
-- **Manómetro:** Para lectura de presión de descarga.
-- **Medidor de flujo:** Tipo pitot, ultrasónico o de placa orificio.
-- **Conexión de descarga:** A drenaje o sistema de recuperación de agua.
-
-### Manifold de distribución con válvulas de seccionamiento
-
-El más común en instalaciones industriales con múltiples zonas:
-
-```
-[Bomba] → [Colector principal] → Salida 1 → Válvula → Zona A (Sprinklers)
-                                 Salida 2 → Válvula → Zona B (Monitores)
-                                 Salida 3 → Válvula → Zona C (Espuma)
-                                 Salida 4 → Válvula → Zona D (Reserva)
-```
-
-Cada válvula de seccionamiento debe ser:
-- **Supervisada eléctricamente** conforme a NFPA 72 (detectar apertura/cierre).
-- **Normalmente abierta** (flujo libre en operación normal).
-- De tipo **OS&Y** o mariposa con indicador de posición visible.
-
-### Manifold de carga (Pump Discharge Header)
-
-Para sistemas con múltiples bombas (principal + auxiliar + jockey), el manifold de descarga permite que cualquier combinación de bombas opere simultáneamente:
-
-- Cada bomba conecta al manifold con su propia válvula de retención (check).
-- El manifold tiene suficiente diámetro para el caudal combinado de todas las bombas.
-- Las válvulas de retención impiden la recirculación entre bombas.
-
-## Aplicaciones en Industria Petroquímica
-
-La industria petroquímica en México (Pemex, Grupo Alfa, BASF, Shell, Dow Chemical) representa el sector de mayor exigencia técnica para los sistemas contra incendios, con instalaciones en:
-
-- **Refinerías:** Tula (Hgo.), Cadereyta (NL), Salina Cruz (Oax.), Minatitlán (Ver.).
-- **Petroquímica:** Veracruz, Tabasco, Coatzacoalcos.
-- **Terminales de almacenamiento:** Todo el país.
-
-### Requisitos especiales para petroquímica
-
-Los sistemas de colectores y manifolds en instalaciones con riesgo de incendio de hidrocarburos deben cumplir:
-
-**Conforme a NFPA 15 (Sistemas de Agua Pulverizada):**
-- Colectores de suministro capaces de mantener la presión de diseño durante el tiempo de aplicación especificado (mínimo 30 minutos para la mayoría de los escenarios).
-- Manifolds de distribución a monitores y rociadores con válvulas de control individual para cada aplicador.
-- Pruebas hidrostáticas documentadas a 200 psi o 1.5 veces la presión de trabajo, la que sea mayor.
-
-**Conforme a NFPA 11 (Sistemas de Espuma):**
-- Colectores de solución espumante con materiales compatibles con los concentrados de espuma utilizados.
-- Manifolds de distribución con flushing connections para limpiar el concentrado de espuma después del uso.
-- Todos los materiales en contacto con espuma deben ser de acero inoxidable, bronce o plástico aprobado (no aluminio en contacto con algunos concentrados AFFF/AR-AFFF).
-
-**Conforme a NFPA 20:**
-- El arreglo de bombas y colectores debe diseñarse para que ningún escenario de emergencia resulte en la operación de solo una bomba sin respaldo.
-- Los colectores de succión y descarga deben tener dimensiones suficientes para la suma de todos los caudales de diseño más el 20% de reserva de diseño.
-
-## Instalación y Soporte
-
-### Soportes para colectores horizontales
-
-Los colectores de gran diámetro y longitud requieren soportes estructurales calculados para:
-
-- **Peso del contenido:** La densidad del agua es 1,000 kg/m³. Un metro lineal de colector de 12" lleno pesa aproximadamente 750 kg.
-- **Expansión térmica:** En ambientes industriales con variaciones de temperatura, la tubería se expande. Deben preverse anclajes fijos y juntas de expansión.
-- **Cargas de prueba hidrostática:** Durante las pruebas, la presión adicional genera fuerzas longitudinales que los soportes deben resistir.
-- **Vibración:** En colectores cerca de bombas de alta velocidad, los soportes deben incluir amortiguadores de vibración.
-
-### Separación de colectores de agua de otros sistemas
-
-Los colectores de sistemas contra incendios deben estar físicamente separados de:
-- Líneas de proceso con hidrocarburos o productos químicos.
-- Sistemas de agua caliente o vapor.
-- Líneas eléctricas y bandejas de cable.
-
-La separación mínima es de 1 metro (3 pies) en horizontal, conforme a la práctica recomendada por NFPA 20 y las guías de API para instalaciones petroquímicas.
-
-## Inspección y Mantenimiento (NFPA 25)
-
-### Inspección trimestral
-
-- Verificar que todas las válvulas de seccionamiento del manifold están en posición correcta (normalmente abiertas).
-- Comprobar que los indicadores de posición funcionan y son legibles.
-- Verificar ausencia de fugas en uniones, bridas y empaques.
-- Revisar estado de soportes y abrazaderas.
-
-### Prueba anual de flujo
-
-- Realizar prueba de flujo en cada zona alimentada por el manifold para verificar que el caudal y la presión de diseño están disponibles.
-- Documentar resultados y comparar con los caudales de diseño del sistema.
-- Identificar cualquier bloqueo parcial o pérdida de presión inusual.
-
-### Inspección quinquenal
-
-- Limpieza interna del manifold (hidrolavado o pigging en colectores de gran diámetro).
-- Inspección de espesores de pared en puntos críticos (codos, derivaciones, cambios de diámetro) mediante ultrasonido.
-- Reemplazo de empaques de bridas según condiciones.
-
-## Conclusión
-
-Los colectores y distribuidores son la columna vertebral de los sistemas contra incendios industriales. Su diseño hidráulico correcto, la selección adecuada de materiales según el ambiente de instalación y el cumplimiento de las normativas NFPA 20, NFPA 15 y NOM-002-STPS-2010 son los factores que determinan si el sistema funcionará cuando ocurra el incendio.
-
-Para proyectos en industria petroquímica, manufactura y edificios industriales en México, Gama de México provee soluciones técnicas de colectores y manifolds con equipos certificados y soporte de ingeniería especializado.
+En [Gama de México](/conexiones-herrajes/) distribuimos los componentes que integran el arreglo de colectores y manifolds: [válvulas de compuerta OS&Y](/valvulas/compuerta) para seccionamiento, [válvulas de retención](/valvulas/retencion) para prevención de recirculación, [válvulas mariposa](/valvulas/mariposa) con supervisión eléctrica, [conexiones](/conexiones-herrajes/) de bronce y accesorios certificados para la presión y el servicio que cada proyecto requiere. Si estás en la etapa de diseño de un cuarto de bombas o necesitas revisar el arreglo de distribución de una instalación existente, desde [**/cotizar**](/cotizar) lo trabajamos con los criterios de ingeniería que NFPA 20 y NFPA 25 exigen.

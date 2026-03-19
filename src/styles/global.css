@@ -60,6 +60,8 @@ html {
   font-size: var(--font-size-base);
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 body {
@@ -154,7 +156,7 @@ select {
    HERO SECTION
    ======================================== */
 .hero-section {
-  padding: 4rem 0 5rem;
+  padding: calc(var(--topbar-height, 36px) + var(--header-height, 70px) + 1rem) 0 5rem;
   background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-white) 100%);
 }
 

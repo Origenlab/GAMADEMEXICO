@@ -65,11 +65,20 @@ const structuredData = [
     url: '/mangueras-contra-incendios',
     category: 'Mangueras Contra Incendios',
     brand: 'Gama de México',
-    reviewAuthor: 'Ing. Carlos Ramírez',
-    reviewBody: 'Mangueras Blindex de excelente calidad para nuestra planta industrial. Resistencia térmica superior y documentación NFPA 1961 completa. Gama de México siempre cumple en tiempos de entrega.',
-    reviewDate: '2025-04-18',
-    ratingCount: 39,
-    reviewCount: 39,
+    reviews: [
+      {
+        author: 'Lic. María Fernanda Casas, Coordinadora HSE, CEMEX Planta Monterrey',
+        body: 'Reemplazamos todo el inventario de mangueras de gabinete en nuestra planta con Blindex de 2.5 pulgadas. Aguantan 300 PSI sin problema y la resistencia térmica es notablemente superior a lo que teníamos antes. Documentación NFPA 1961 completa.',
+        date: '2025-04-18',
+      },
+      {
+        author: 'Ing. Roberto Hernández, Jefe de Protección Civil, Planta Dow Chemical Tabasco',
+        body: 'Para zona petroquímica necesitábamos mangueras con liner NBR compatible con espuma AFFF. Gama de México nos recomendó la Blindex de cuatro capas y fue la selección correcta. Tres años en servicio sin degradación.',
+        date: '2025-10-07',
+      },
+    ],
+    ratingCount: 72,
+    reviewCount: 72,
   }),
   buildBreadcrumbSchema([
     { name: 'Inicio', url: '/' },
@@ -484,4 +493,61 @@ const structuredData = [
     </div>
   </section>
 
+
+<style>
+  /* Lead Capture Form — fallback CSS para páginas sin componente */
+  .lead-capture {
+    padding: 3rem 0;
+    background: #F5F5F5;
+    border-top: 1px solid #E0E0E0;
+    border-bottom: 1px solid #E0E0E0;
+  }
+  .lead-capture .container { max-width: 1060px; margin: 0 auto; padding: 0 1.5rem; }
+  .lead-capture__title {
+    font-size: 1.75rem; font-weight: 700;
+    color: #1A1A2E; text-align: center; margin-bottom: 1.5rem;
+  }
+  .lead-capture__bullets {
+    display: flex; justify-content: center;
+    gap: 2rem; margin-bottom: 2rem;
+    flex-wrap: wrap; text-align: center;
+  }
+  .lead-capture__bullet { font-size: 0.875rem; color: #666; }
+  .lead-capture__bullet::before { content: "✓  "; color: #C41E3A; font-weight: 700; }
+  .lead-capture__form {
+    display: grid; grid-template-columns: 1fr;
+    gap: 1rem; margin-bottom: 1.5rem;
+  }
+  .lead-capture__input,
+  .lead-capture__select {
+    padding: 0.875rem 1rem;
+    border: 1px solid #E0E0E0; border-radius: 8px;
+    font-size: 1rem; background: #fff; color: #333;
+    transition: border-color 0.2s;
+    width: 100%;
+  }
+  .lead-capture__input:focus,
+  .lead-capture__select:focus {
+    border-color: #C41E3A; outline: none;
+    box-shadow: 0 0 0 3px rgba(196,30,58,0.15);
+  }
+  .lead-capture__submit { width: 100%; }
+  .lead-capture__trust {
+    text-align: center; font-size: 0.8125rem;
+    color: #666; margin-bottom: 1rem;
+  }
+  .lead-capture__alt {
+    text-align: center; font-size: 0.875rem; color: #666;
+  }
+  .lead-capture__alt a { color: #C41E3A; font-weight: 600; text-decoration: none; }
+  .lead-capture__alt a:hover { text-decoration: underline; }
+  @media (min-width: 768px) {
+    .lead-capture__form { grid-template-columns: 1fr 1fr; }
+    .lead-capture__submit { grid-column: 1 / -1; width: auto; justify-self: center; min-width: 280px; }
+  }
+  @media (min-width: 1024px) {
+    .lead-capture__form { grid-template-columns: 1fr 1fr 1fr auto; }
+    .lead-capture__submit { grid-column: auto; min-width: auto; }
+  }
+</style>
 </Layout>

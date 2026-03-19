@@ -1,204 +1,69 @@
 ---
-title: "Conexiones y Herrajes Contra Incendios: Guía Técnica NFPA"
-description: "Acoplamientos Storz, NST y BSP, tomas siamesas, wyes, adaptadores de bronce y aluminio para sistemas contra incendios."
+title: "Conexiones y Herrajes en Sistemas Contra Incendios"
+description: "Tomas siamesas, wyes, reducciones y herrajes para sistemas contra incendios: función, ubicación, materiales y errores de instalación más comunes en México."
 fecha: "2025-03-07"
+fechaActualizacion: "2026-03-19"
 categoria: "conexiones-herrajes"
 autor:
-  nombre: "Ing. Roberto Hernández"
-  cargo: "Director Técnico"
+  nombre: "Equipo Gama de México"
+  cargo: "Asesoría Técnica"
 imagen: "/img/blog/adaptadores-herrajes-bronce-contra-incendios-profesional.avif"
-imagenAlt: "Conexiones y herrajes para sistemas contra incendios NFPA"
-tags: ["conexiones", "herrajes", "NFPA 1963", "Storz", "toma siamesa", "acoplamiento NST", "bronce aluminio"]
+imagenAlt: "Conexiones y herrajes para sistemas contra incendios"
+tags: ["conexiones", "herrajes", "NFPA 1963", "toma siamesa", "wye", "bronce aluminio"]
 destacado: false
 draft: false
-productosRelacionados: ["conexion-wye", "conexion-wye-bronce-2-5", "conexion-wye-b100a-2-5-1-5", "adaptadores-bronce", "adaptador-bronce-nh-storz-2-5", "accesorios-herrajes"]
-tiempoLectura: 8
+productosRelacionados: ["conexion-wye", "conexion-wye-bronce-2-5", "adaptadores-bronce", "adaptador-bronce-nh-storz-2-5"]
+tiempoLectura: 14
+canonical: "https://gamademexico.com/blog/conexiones-herrajes/conexiones-herrajes-sistemas-contra-incendios-tipos-nfpa"
+noindex: false
 ---
 
-Las conexiones y herrajes para sistemas contra incendios son los elementos que permiten unir mangueras, monitores, hidrantes, tomas siamesas y otros componentes del sistema. Una incompatibilidad de acoplamiento —un rosca NST donde se necesita Storz, o un bronce donde se requiere aluminio certificado— puede hacer inoperable todo el sistema justo cuando más se necesita. Esta guía técnica cubre los tipos, materiales, normas y criterios de selección que todo responsable de protección contra incendios debe conocer.
+Las conexiones y herrajes de un sistema contra incendios son los componentes que permiten que todo lo demás funcione como conjunto. La bomba genera presión, la tubería la transporta, las [válvulas](/valvulas/) la regulan, las [mangueras](/mangueras/) la llevan al punto de ataque y las [boquillas](/boquillas/) la convierten en chorro. Pero sin las conexiones correctas, esos componentes no pueden hablar entre sí. Una toma siamesa mal ubicada impide que los bomberos alimenten el sistema. Un wye sin válvulas individuales obliga a sacrificar control cuando se divide la línea. Una reducción de diámetro incorrecto introduce una pérdida de carga que reduce el caudal aguas abajo sin que nadie lo note hasta la prueba de flujo. Cada conexión es una decisión de ingeniería, no un accesorio de ferretería.
 
-## La Norma que Rige las Roscas: NFPA 1963
+Lo que encuentro con frecuencia en instalaciones industriales mexicanas es que las conexiones se especifican al final del proyecto, cuando el presupuesto ya está comprometido y la atención del equipo de ingeniería está en otros componentes. El resultado son herrajes seleccionados por disponibilidad inmediata, sin verificar compatibilidad de rosca, presión nominal o material. He visto sistemas donde la toma siamesa exterior tiene conexiones NST porque el contratista tenía ese modelo en inventario, pero el cuerpo de bomberos del municipio opera exclusivamente con Storz. El día del primer simulacro, los bomberos no pudieron conectar. No por falta de equipo ni por falta de agua. Por una rosca que no coincidía.
 
-La **NFPA 1963** ("Estándar para Conexiones de Manguera de Incendios") es la norma de referencia internacional para roscas, dimensiones y tolerancias en todos los acoplamientos de sistemas contra incendios. Define:
+## La toma siamesa: la conexión que los bomberos necesitan y que muchos edificios tienen mal
 
-- **NST (National Standard Thread):** El estándar americano, también llamado NH (National Hose) para mangueras y NHT para hidrantes. Es el más común en Estados Unidos y en equipos importados a México.
-- **Dimensiones:** Paso de rosca, diámetro nominal, longitud de rosca y tolerancias de fabricación.
-- **Pruebas de intercambiabilidad:** Los acoplamientos certificados deben poder enroscarse correctamente con cualquier otro accesorio del mismo estándar.
+La toma siamesa, también llamada FDC por sus siglas en inglés de Fire Department Connection, es una conexión dual montada en el exterior del edificio que permite a los bomberos inyectar agua desde su camión cisterna hacia el interior del sistema de rociadores o de tubería vertical del edificio. Es diferente al hidrante: el hidrante provee agua desde la red pública; la siamesa recibe agua desde afuera para alimentar el sistema interior. Esa distinción es fundamental porque muchos responsables de mantenimiento confunden una con la otra, y la confusión resulta en siamesas obstruidas, sin señalización o inaccesibles.
 
-En México no existe una norma nacional equivalente a NFPA 1963. Los cuerpos de bomberos y sistemas de protección industrial adoptan el estándar NST o el acoplamiento Storz según la región y el equipo disponible.
+NFPA 13 la exige para edificios con sistema de rociadores. NFPA 14 la exige para sistemas de tubería vertical. El Reglamento de Construcción de la Ciudad de México la requiere para edificios de más de tres pisos. Su ubicación debe ser en el exterior del edificio, visible desde la calle o desde el acceso de bomberos, a una altura de entre 45 centímetros y 1.22 metros sobre el nivel del terreno, y a no más de 46 metros de un hidrante público para que el camión de bomberos pueda conectar ambos con sus mangueras de suministro. Debe tener una placa metálica que indique a qué sistema está conectada: rociadores, tubería vertical o ambos.
 
----
+He visitado edificios en la Ciudad de México donde la toma siamesa estaba detrás de un contenedor de basura. En un centro comercial de Querétaro, la siamesa tenía la pintura intacta y los tapones cromados perfectamente puestos, pero al intentar conectar una manguera durante un ejercicio, la válvula de retención interna estaba trabada y no dejaba pasar agua. En una nave industrial del Estado de México, la siamesa era de conexión NST pero los bomberos del municipio solo tenían acoples Storz, y no había un solo [adaptador](/conexiones-herrajes/) de transición en la instalación. Tres instalaciones, tres problemas completamente diferentes, el mismo resultado: cuando los bomberos intentaron usar la siamesa, no funcionó.
 
-## Tipos de Acoplamiento: Ventajas y Aplicaciones
+La configuración estándar de una siamesa tiene dos entradas de dos pulgadas y media que convergen en una salida de cuatro o seis pulgadas hacia el sistema interior. Las entradas pueden ser roscadas NST o con acoplamiento Storz, y la selección debe corresponder con el tipo de conexión que usa el cuerpo de bomberos del municipio donde está el edificio. Esto no es una recomendación; es una necesidad operativa. Si los bomberos no pueden conectar a la siamesa, la siamesa no cumple su función. No importa que tenga la rosca correcta según NFPA si esa rosca no es la que usan los bomberos locales.
 
-### 1. Acoplamiento Roscado NST (National Standard Thread)
+## El wye: dividir sin perder control
 
-El acoplamiento roscado tradicional. La manguera o accesorio tiene una rosca helicoidal que se enrosca manualmente en la conexión complementaria.
+La conexión wye divide una línea principal en dos salidas de menor diámetro. Su aplicación más común es tomar una línea de dos pulgadas y media que sale de un hidrante y dividirla en dos líneas de pulgada y media para brigadas con [mangueras](/mangueras/) de ataque. Eso permite que dos equipos de brigada operen desde un solo punto de suministro, lo cual es muy útil cuando el hidrante más cercano está lejos del punto de incidencia y no se quiere tender dos líneas largas hasta la fuente.
 
-**Características:**
-- Diámetros estándar: 1", 1½", 2½", 3", 4", 5", 6"
-- Rosca hembra en manguera, macho en accesorio fijo (válvula, hidrante, monitor)
-- Requiere llave o tuerza de mano firme para asegurar; puede requerir herramienta bajo presión
-- Compatible con la mayoría de equipos importados de EE.UU.
+La diferencia entre un wye simple y un wye con válvulas individuales es más importante de lo que parece. El wye simple divide el flujo pero no permite controlar cada ramal de forma independiente. Si un equipo de brigada necesita cerrar su línea para reposicionarse, la única opción es cerrar la válvula del hidrante, lo cual interrumpe el suministro al segundo equipo también. Un wye con válvulas individuales en cada ramal permite que cada equipo abra y cierre su línea sin afectar al otro. En un incendio real donde los brigadistas necesitan maniobrar, reposicionar y coordinar sus líneas de ataque, esa independencia de control no es un lujo sino una necesidad operativa.
 
-**Aplicación típica:** Conexión de mangueras a gabinetes interiores (válvula angular 1½" NST), conexión a hidrantes en ciudades con equipamiento americano, redes de rociadores.
+Los wyes se fabrican en bronce para instalaciones fijas y en aluminio para equipos portátiles de brigada donde el peso importa. Las presiones de trabajo típicas están en el rango de 250 a 300 PSI, que es compatible con la mayoría de los sistemas contra incendios industriales. Las configuraciones más comunes son wye de dos y media a dos y media con salidas iguales para bifurcación simétrica, y wye de dos y media a pulgada y media con reducción integrada para alimentar líneas de ataque de brigada directamente.
 
-### 2. Acoplamiento Storz
+## Reducciones: el cambio de diámetro que introduce pérdidas
 
-Sistema de acoplamiento simétrico de ¼ de vuelta. No tiene diferencia entre macho y hembra: cualquier extremo conecta con otro igual. Developed originally in Germany, adopted widely in firefighting worldwide.
+Las reducciones son necesarias cada vez que el sistema necesita transicionar de un diámetro a otro: de la salida de dos y media del hidrante a la manguera de pulgada y media de la brigada, de la línea principal de cuatro pulgadas a las derivaciones de dos y media del manifold, del colector de seis pulgadas a las salidas individuales de tres pulgadas para monitores. Cada reducción cumple una función legítima de adaptación de diámetro, pero cada reducción también introduce una pérdida de carga que debe considerarse en el cálculo hidráulico del sistema.
 
-**Características:**
-- Conexión en menos de 3 segundos sin herramientas
-- Disponible en 2", 2½", 3", 4", 5", 6"
-- Requiere empaque de goma en buen estado para estanqueidad
-- Estándar en CDMX, Guadalajara, Monterrey y la mayoría de cuerpos de bomberos municipales de México
+Lo que he visto con frecuencia es que las reducciones se colocan donde se necesitan sin que nadie evalúe su efecto acumulativo en la presión disponible aguas abajo. En un sistema con cinco reducciones entre la bomba y el punto de descarga más remoto, la suma de pérdidas por cada cambio de diámetro puede representar varios PSI que no aparecen en el cálculo si el ingeniero solo consideró las pérdidas por fricción de la tubería recta y las longitudes equivalentes de los codos y válvulas. Esos PSI perdidos se restan de la presión disponible en el punto de descarga, y si el margen era justo, la diferencia puede ser la que lleve al sistema por debajo de la presión mínima de operación.
 
-**Aplicación típica:** Conexión a hidrantes de banqueta, mangueras de bomberos, tomas siamesas en edificios, conexiones de llenado de cisternas.
+## Materiales: bronce donde la corrosión manda, aluminio donde el peso importa
 
-| Característica | Roscado NST | Storz |
-|---------------|------------|-------|
-| Velocidad de conexión | 15-30 segundos | 2-3 segundos |
-| Requiere herramienta | A veces | No |
-| Simétrico (macho = hembra) | No | Sí |
-| Adopción en México | Equipos importados | Bomberos municipales |
-| Compatibilidad sin adaptador | Solo NST | Solo Storz |
+La regla general para conexiones y herrajes de sistemas contra incendios es relativamente simple. El bronce es el material correcto para conexiones fijas: tomas siamesas, [válvulas](/valvulas/) angulares de gabinete, adaptadores en hidrantes, manifolds de distribución y cualquier componente que va a vivir instalado permanentemente en el sistema, expuesto a las condiciones ambientales del sitio durante años. El bronce naval resiste la corrosión de forma excepcional, es compatible con agua potable y con la mayoría de los agentes de espuma, tiene una vida útil que supera los veinte años con mantenimiento mínimo y soporta sin problema las presiones de trabajo de cualquier sistema contra incendios estándar.
 
-### 3. Acoplamiento Roscado BSP (British Standard Pipe)
+El aluminio es la opción correcta cuando el peso es un factor determinante: kits portátiles de brigada, equipos de respuesta rápida, vehículos de emergencia, operaciones forestales donde cada kilogramo cuenta. El aluminio aeronáutico 6061-T6 con anodizado clase II ofrece una reducción de peso cercana al cuarenta por ciento respecto al bronce con resistencia mecánica suficiente para el servicio previsto. Pero su resistencia a la corrosión en ambientes agresivos es significativamente inferior, y en instalaciones costeras, marinas o con atmósferas industriales cargadas de contaminantes, el aluminio puede degradarse en pocos años mientras que el bronce seguiría en perfecto estado.
 
-Menos común en sistemas contra incendios en México. Se encuentra principalmente en instalaciones de origen europeo (especialmente en plantas de empresas españolas, alemanas o inglesas) y en algunas redes de rociadores con componentes importados de Europa.
+Un punto que genera confusión frecuente es la mezcla de materiales en el mismo sistema. Se puede usar bronce y aluminio en un mismo sistema siempre que las conexiones sean del mismo estándar de rosca y las presiones sean compatibles. Lo que no debe hacerse es mezclar materiales en uniones soldadas o bridadas, porque la diferencia de potencial electroquímico entre el bronce y el aluminio genera corrosión galvánica en la interfaz que deteriora el aluminio de forma acelerada. En conexiones roscadas donde hay un empaque entre los dos materiales, ese riesgo se mitiga significativamente.
 
-El paso de rosca BSP es diferente al NST: **nunca intente forzar una rosca BSP en una NST**, pues los hilos se dañan y la unión pierde estanqueidad.
+## Presión de trabajo: el dato que no puede faltar
 
----
+Todo herraje de un sistema contra incendios debe tener marcada su presión máxima de trabajo. No es opcional. Un accesorio sin identificación de presión no tiene respaldo técnico frente a una auditoría y no debería instalarse en ningún sistema donde la integridad bajo presión es un requisito de seguridad. Las presiones típicas de trabajo varían según la aplicación: 175 PSI para gabinetes interiores y sistemas de rociadores estándar, 250 PSI para sistemas de tubería vertical y standpipe, y 300 PSI o más para sistemas petroquímicos y aplicaciones de alta presión.
 
-## Toma Siamesa: Qué es y Cuándo Instalarla
+La presión de prueba de fábrica es generalmente el doble de la presión de trabajo, y esa prueba debe estar documentada para que el componente pueda integrarse en el expediente técnico del sistema. Cuando una auditoría de protección civil o de aseguradora revisa las conexiones del sistema, la presión nominal de cada componente debe poder verificarse ya sea por el marcado en el cuerpo del herraje o por la documentación del fabricante. Un componente sin esa trazabilidad es un componente cuya integridad bajo presión no puede garantizarse.
 
-La toma siamesa (Fire Department Connection o FDC) es una conexión dual que permite a los bomberos inyectar agua desde su camión cisterna *hacia dentro* del sistema de sprinklers o mangueras del edificio. Es diferente al hidrante: el hidrante provee agua *desde* la red; la siamesa recibe agua *desde* el camión.
+## La compatibilidad como decisión de diseño, no como problema de campo
 
-### Cuándo es obligatoria
+La inconsistencia de estándares de conexión es uno de los problemas más frecuentes y más evitables en instalaciones industriales mexicanas. Plantas que crecieron orgánicamente, combinando equipos de diferentes proveedores, diferentes épocas y diferentes países de origen, terminan con un sistema donde coexisten roscas NST, acoplamientos Storz, algunas conexiones BSP heredadas de equipos europeos y ocasionalmente conectores industriales tipo Camlock que alguien instaló porque era lo que tenía. Esa mezcla obliga a cada brigada a cargar múltiples adaptadores, aumenta el riesgo de error bajo presión durante una emergencia real y complica el mantenimiento y los reemplazos.
 
-- Edificios con sistema de rociadores (NFPA 13)
-- Sistemas de tubería vertical y manguera (NFPA 14)
-- Edificios de más de 3 pisos en CDMX (Reglamento de Construcción)
-- Hoteles, hospitales, centros comerciales y edificios de uso mixto
+La solución no es reemplazar todo el sistema de una vez, sino establecer un estándar de conexión para la instalación y migrar hacia él de forma progresiva. Si la mayoría del equipo local es Storz, estandarizar en Storz y mantener adaptadores NST-Storz en cada punto de conexión como respaldo. Si el sistema existente es NST y el cuerpo de bomberos usa Storz, instalar adaptadores permanentes en todas las tomas exteriores. La estandarización reduce errores, simplifica el inventario de repuestos y acelera la conexión en emergencias, que es cuando cada segundo cuenta.
 
-### Dónde instalarla
-
-- **Exterior del edificio**, visible desde la calle o el acceso de bomberos
-- **Accesible:** a no más de 46 m de un hidrante (para que el camión pueda conectar ambos)
-- **Altura:** entre 0.45 m y 1.22 m sobre el nivel del terreno (NFPA 14)
-- **Señalización:** placa metálica indicando el sistema al que está conectada (rociadores, mangueras, etc.)
-
-### Configuración estándar
-
-La siamesa típica tiene dos entradas de 2½" (en paralelo) que convergen en una salida de 4" o 6" hacia el sistema. Las entradas pueden ser roscadas NST o con acoplamiento Storz según el tipo de camión de bomberos local.
-
----
-
-## Conexión Y (Wye): División de Flujo
-
-La conexión Y o wye divide un flujo principal en dos o tres ramales de menor diámetro. Es fundamental en sistemas de distribución de agua para incendios.
-
-### Aplicaciones
-
-- Dividir una manguera de 2½" en dos mangueras de 1½" para brigadas con gabinetes
-- Conectar dos monitores a una sola línea de suministro
-- Puntos de distribución en sistemas móviles de combate de incendios forestales
-
-### Modelos disponibles
-
-| Modelo | Configuración | Material | Presión de trabajo |
-|--------|--------------|----------|------------------|
-| Wye simple 2½" × 2½" | 1 entrada → 2 salidas iguales | Bronce | 300 psi |
-| Wye reducción 2½" × 1½" | 1 entrada → 2 salidas menores | Bronce | 300 psi |
-| Wye Storz 5" × 2½" | 1 entrada grande → 2 salidas | Aluminio | 250 psi |
-| Wye con válvulas individuales | Control independiente por ramal | Bronce | 300 psi |
-
-Los modelos con válvulas individuales permiten controlar cada ramal por separado, lo que es indispensable cuando los dos ramales tienen caudales o presiones diferentes.
-
----
-
-## Chiflones y Reducidores de Diámetro
-
-Los chiflones (reducers) adaptan una conexión de mayor diámetro a una de menor diámetro. Son imprescindibles cuando el sistema tiene componentes de diferentes generaciones o estándares.
-
-**Ejemplos comunes:**
-- Reducción 2½" a 1½" NST: para conectar manguera de gabinete interior a una salida de hidrante principal
-- Reducción Storz 4" a Storz 2½": para conectar manguera de bomberos a una salida de gran diámetro
-- Reducción NST a BSP: para compatibilidad con equipos europeos
-
----
-
-## Materiales: Bronce vs. Aluminio
-
-La elección del material depende de la aplicación, el ambiente y el presupuesto.
-
-| Criterio | Bronce | Aluminio |
-|---------|--------|---------|
-| Resistencia a corrosión | Excelente (marina, química) | Buena (estándar industrial) |
-| Peso | Pesado (factor en uso manual) | Ligero (preferido en mangueras portátiles) |
-| Resistencia mecánica | Alta | Moderada (más susceptible a golpes) |
-| Temperatura de trabajo | Hasta 200°C | Hasta 150°C |
-| Costo | Mayor | Menor |
-| Certificaciones UL/FM | Amplia disponibilidad | Disponible (líneas específicas) |
-| Uso típico | Instalaciones fijas, válvulas, siamesas | Mangueras portátiles, wyes de bomberos |
-
-**Regla general:** Use bronce para conexiones fijas (siamesas, válvulas angulares, adaptadores en hidrantes). Use aluminio solo cuando el peso sea crítico (equipos portátiles de bomberos forestales o brigadas móviles).
-
----
-
-## Presión de Trabajo y Presión de Prueba
-
-Todo herraje de sistemas contra incendios debe identificarse con su presión máxima de trabajo (MWP) y haber sido sometido a prueba hidrostática de fábrica.
-
-| Aplicación | Presión de trabajo típica | Presión de prueba fábrica |
-|-----------|--------------------------|--------------------------|
-| Gabinetes interiores | 175 psi (12 bar) | 350 psi (24 bar) |
-| Sistemas de rociadores | 175 psi (12 bar) | 350 psi (24 bar) |
-| Sistemas de tubería vertical | 250 psi (17 bar) | 500 psi (34 bar) |
-| Sistemas petroquímicos | 300 psi (21 bar) | 600 psi (41 bar) |
-
-> **Alerta:** Nunca use herrajes sin marcado de presión máxima en aplicaciones de sistemas contra incendios. Un accesorio no especificado puede fallas catastróficamente a presiones de prueba o de operación de emergencia.
-
----
-
-## Compatibilidad entre Sistemas: El Riesgo de la Inconsistencia
-
-Uno de los problemas más frecuentes en instalaciones industriales de México es la mezcla de estándares: parte del sistema con roscas NST, parte con Storz, y algunas conexiones BSP en equipos importados. Esta inconsistencia:
-
-1. Requiere que cada brigada cargue múltiples adaptadores
-2. Aumenta el riesgo de error bajo presión durante un incendio real
-3. Complica el mantenimiento y los reemplazos
-4. Puede impedir que los bomberos locales (con equipo Storz) conecten a una siamesa NST
-
-**Recomendación:** Estandarice un tipo de acoplamiento en toda la instalación. Si la mayoría de los equipos locales son Storz, instale siamesas y salidas de hidrante con Storz. Mantenga un juego de adaptadores NST-Storz en cada punto de conexión como respaldo.
-
----
-
-## Preguntas Frecuentes (FAQ)
-
-**¿Puedo mezclar accesorios de bronce y aluminio en el mismo sistema?**
-Sí, siempre que las conexiones sean del mismo estándar (NST o Storz) y las presiones sean compatibles. No mezcle materiales en uniones soldadas o bridadas, pues la galvanización electrolítica puede generar corrosión en la interfaz.
-
-**¿La NFPA 1963 especifica solo roscas NST?**
-Principalmente sí, aunque la NFPA 1963 también incluye especificaciones para conexiones Storz a partir de la edición 2014. Para verificar si sus accesorios cumplen, solicite la hoja de especificaciones del fabricante con referencia a la norma.
-
-**¿Necesito certificación UL o FM para los herrajes?**
-Para sistemas de rociadores (NFPA 13) y algunos seguros industriales, las aseguradoras exigen que todos los componentes sean UL Listed o FM Approved. Para sistemas de manguera en gabinetes interiores, la NOM-002-STPS no exige explícitamente UL/FM, pero sí conformidad con normas de fabricación.
-
-**¿Qué es una llave de espárrago y para qué sirve?**
-Es una herramienta de bronce o aluminio con perfil pentagonal (5 lados) o cuadrado que se usa para abrir y cerrar válvulas de hidrantes. Las llaves pentagonales son el estándar en CDMX y la mayoría de las ciudades mexicanas; las cuadradas se usan en algunos modelos industriales.
-
-**¿Con qué frecuencia debo inspeccionar los herrajes?**
-La inspección visual mensual es suficiente para detectar daños físicos, corrosión o fugas. La inspección funcional (apertura/cierre, prueba de estanqueidad) debe realizarse anualmente o cada vez que se haga mantenimiento al sistema.
-
----
-
-## Conclusión
-
-La selección correcta de conexiones y herrajes es el fundamento de un sistema contra incendios que funcione cuando se necesita. Un adaptador equivocado, una rosca dañada o un material inadecuado pueden convertir una inversión de millones en un sistema inoperable. Estandarice su instalación, documente cada componente y realice inspecciones periódicas.
-
-En [Gama de México](/conexiones-herrajes-contra-incendios) contamos con la gama completa de herrajes de bronce y aluminio: adaptadores NST-Storz, wyes, siamesas, chiflones y accesorios certificados UL/FM. Asesoramos proyectos nuevos y soluciones de compatibilidad para sistemas existentes.
-
-📞 **Cotice su proyecto:** [55 1543 7164](tel:+525515437164) | [ventas@gamademexico.com](mailto:ventas@gamademexico.com)  
-💬 **WhatsApp:** [55 6529 8240](https://wa.me/5215565298240)
+En [Gama de México](/conexiones-herrajes/) distribuimos la gama completa de conexiones y herrajes para sistemas contra incendios: tomas siamesas, wyes con y sin válvulas, reducciones, [adaptadores](/conexiones-herrajes/) de transición NST-Storz, tapones, llaves de operación y accesorios certificados en bronce y aluminio. Si necesitas estandarizar las conexiones de tu instalación, resolver incompatibilidades con el servicio de bomberos o especificar herrajes para un proyecto nuevo, desde [**/cotizar**](/cotizar) lo revisamos con criterio de ingeniería.

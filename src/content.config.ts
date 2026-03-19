@@ -43,7 +43,7 @@ const blog = defineCollection({
       .max(165, 'Descripción muy larga para SEO'),
 
     // --- Fechas (formato ISO para n8n) ---
-    fecha: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, 'Usar formato YYYY-MM-DD'),
+    fecha: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, 'Usar formato YYYY-MM-DD').optional(),
     fechaActualizacion: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).optional(),
 
     // --- Categoría (enum validado - DEBE coincidir con productos del sitio) ---
@@ -54,6 +54,7 @@ const blog = defineCollection({
       'valvulas',
       'conexiones-herrajes',
       'gabinetes-hidrantes',
+      'equipos-contra-incendios',
     ]).default('monitores'),
 
     // --- Tags ---

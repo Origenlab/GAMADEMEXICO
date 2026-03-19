@@ -1,7 +1,6 @@
 ---
 title: "Válvulas OS&Y para Sprinklers: NFPA 13 y Selección México"
 description: "Válvulas de compuerta OS&Y para rociadores: requisitos NFPA 13, diferencia vs mariposa, certificación UL/FM México."
-fecha: "2025-03-08"
 categoria: "valvulas"
 autor:
   nombre: "Ing. Roberto Hernández"

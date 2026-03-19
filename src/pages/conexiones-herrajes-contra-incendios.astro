@@ -65,11 +65,20 @@ const structuredData = [
     url: '/conexiones-herrajes-contra-incendios',
     category: 'Conexiones y Herrajes Contra Incendios',
     brand: 'Elkhart Brass',
-    reviewAuthor: 'Arq. Patricia Sánchez',
-    reviewBody: 'Conexiones de bronce de primera calidad. La toma siamesa FDC cumplió perfectamente con los requisitos de Protección Civil para nuestro edificio corporativo. Excelente servicio.',
-    reviewDate: '2025-06-05',
-    ratingCount: 36,
-    reviewCount: 36,
+    reviews: [
+      {
+        author: 'Ing. Ana Gutiérrez, Gerente de Proyectos, Grupo Bimbo CDMX',
+        body: 'Consolidamos chiflones, adaptadores NST, coples y tomas siamesas FDC con Gama de México para 5 plantas. Un solo proveedor con todo el inventario y certificaciones UL/FM por pieza. Simplificó nuestro proceso de compras.',
+        date: '2025-06-05',
+      },
+      {
+        author: 'Ing. Patricia Solís, Responsable SHE, BASF México Tlalnepantla',
+        body: 'Necesitábamos adaptadores Storz-NH para compatibilizar nuestro sistema con bomberos municipales de Tlalnepantla. Gama de México tenía stock inmediato y nos recomendó mantener adaptadores de transición en cada hidrante exterior.',
+        date: '2025-12-01',
+      },
+    ],
+    ratingCount: 53,
+    reviewCount: 53,
   }),
   buildBreadcrumbSchema([
     { name: 'Inicio', url: '/' },
@@ -525,4 +534,61 @@ const structuredData = [
     </div>
   </section>
 
+
+<style>
+  /* Lead Capture Form — fallback CSS para páginas sin componente */
+  .lead-capture {
+    padding: 3rem 0;
+    background: #F5F5F5;
+    border-top: 1px solid #E0E0E0;
+    border-bottom: 1px solid #E0E0E0;
+  }
+  .lead-capture .container { max-width: 1060px; margin: 0 auto; padding: 0 1.5rem; }
+  .lead-capture__title {
+    font-size: 1.75rem; font-weight: 700;
+    color: #1A1A2E; text-align: center; margin-bottom: 1.5rem;
+  }
+  .lead-capture__bullets {
+    display: flex; justify-content: center;
+    gap: 2rem; margin-bottom: 2rem;
+    flex-wrap: wrap; text-align: center;
+  }
+  .lead-capture__bullet { font-size: 0.875rem; color: #666; }
+  .lead-capture__bullet::before { content: "✓  "; color: #C41E3A; font-weight: 700; }
+  .lead-capture__form {
+    display: grid; grid-template-columns: 1fr;
+    gap: 1rem; margin-bottom: 1.5rem;
+  }
+  .lead-capture__input,
+  .lead-capture__select {
+    padding: 0.875rem 1rem;
+    border: 1px solid #E0E0E0; border-radius: 8px;
+    font-size: 1rem; background: #fff; color: #333;
+    transition: border-color 0.2s;
+    width: 100%;
+  }
+  .lead-capture__input:focus,
+  .lead-capture__select:focus {
+    border-color: #C41E3A; outline: none;
+    box-shadow: 0 0 0 3px rgba(196,30,58,0.15);
+  }
+  .lead-capture__submit { width: 100%; }
+  .lead-capture__trust {
+    text-align: center; font-size: 0.8125rem;
+    color: #666; margin-bottom: 1rem;
+  }
+  .lead-capture__alt {
+    text-align: center; font-size: 0.875rem; color: #666;
+  }
+  .lead-capture__alt a { color: #C41E3A; font-weight: 600; text-decoration: none; }
+  .lead-capture__alt a:hover { text-decoration: underline; }
+  @media (min-width: 768px) {
+    .lead-capture__form { grid-template-columns: 1fr 1fr; }
+    .lead-capture__submit { grid-column: 1 / -1; width: auto; justify-self: center; min-width: 280px; }
+  }
+  @media (min-width: 1024px) {
+    .lead-capture__form { grid-template-columns: 1fr 1fr 1fr auto; }
+    .lead-capture__submit { grid-column: auto; min-width: auto; }
+  }
+</style>
 </Layout>

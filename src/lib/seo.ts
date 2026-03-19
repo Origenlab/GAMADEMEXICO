@@ -182,8 +182,14 @@ export function buildProductSchema(product: ProductSchemaInput) {
   return schema;
 }
 
-// -- Product Category Schema con AggregateRating y Review --
-// Genera schema Product para categorias de producto con calificacion 5 estrellas
+// -- Product Category Schema con AggregateRating y Reviews --
+// Genera schema Product para categorias de producto con calificacion 4.9 estrellas
+interface ProductCategoryReview {
+  author: string;
+  body: string;
+  date?: string;
+}
+
 interface ProductCategorySchemaInput {
   name: string;
   description: string;
@@ -191,14 +197,44 @@ interface ProductCategorySchemaInput {
   url: string;
   category: string;
   brand?: string;
-  reviewAuthor: string;
-  reviewBody: string;
+  /** @deprecated Usar reviews[] en su lugar */
+  reviewAuthor?: string;
+  /** @deprecated Usar reviews[] en su lugar */
+  reviewBody?: string;
+  /** @deprecated Usar reviews[] en su lugar */
   reviewDate?: string;
+  reviews?: ProductCategoryReview[];
   ratingCount?: number;
   reviewCount?: number;
 }
 
 export function buildProductCategorySchema(product: ProductCategorySchemaInput) {
+  // Construir array de reviews (soporta legacy single review o nuevo array)
+  const reviewItems: ProductCategoryReview[] = product.reviews
+    ? product.reviews
+    : product.reviewAuthor && product.reviewBody
+      ? [{ author: product.reviewAuthor, body: product.reviewBody, date: product.reviewDate }]
+      : [];
+
+  const reviewSchemas = reviewItems.map((r) => ({
+    '@type': 'Review' as const,
+    reviewRating: {
+      '@type': 'Rating' as const,
+      ratingValue: '5',
+      bestRating: '5',
+    },
+    author: {
+      '@type': 'Person' as const,
+      name: r.author,
+    },
+    datePublished: r.date || '2025-01-15',
+    reviewBody: r.body,
+    publisher: {
+      '@type': 'Organization' as const,
+      name: SITE_NAME,
+    },
+  }));
+
   return {
     '@context': 'https://schema.org',
     '@type': 'Product',
@@ -230,30 +266,13 @@ export function buildProductCategorySchema(product: ProductCategorySchemaInput) 
     },
     aggregateRating: {
       '@type': 'AggregateRating',
-      ratingValue: '5',
+      ratingValue: '4.9',
       bestRating: '5',
       worstRating: '1',
       ratingCount: String(product.ratingCount || 48),
       reviewCount: String(product.reviewCount || 48),
     },
-    review: {
-      '@type': 'Review',
-      reviewRating: {
-        '@type': 'Rating',
-        ratingValue: '5',
-        bestRating: '5',
-      },
-      author: {
-        '@type': 'Person',
-        name: product.reviewAuthor,
-      },
-      datePublished: product.reviewDate || '2025-01-15',
-      reviewBody: product.reviewBody,
-      publisher: {
-        '@type': 'Organization',
-        name: SITE_NAME,
-      },
-    },
+    review: reviewSchemas.length === 1 ? reviewSchemas[0] : reviewSchemas,
   };
 }
 
