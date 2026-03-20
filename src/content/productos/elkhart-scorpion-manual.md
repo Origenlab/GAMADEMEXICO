@@ -1,6 +1,6 @@
 ---
-title: "Monitor Scorpion | Elkhart Brass Certificado UL/FM"
-description: "El monitor Scorpion es la solución perfecta donde se requiere bajo perfil y peso ligero. Construcción en aluminio durable para operaciones de alto caudal en br"
+title: "Monitor Scorpion Elkhart Brass | Monitor Manual Ligero"
+description: "Monitor manual Scorpion de Elkhart Brass. Construccion en aluminio ligero, bajo perfil, ideal para brigadas municipales e industriales. Distribuidor en Mexico."
 categoria: "monitores"
 subcategoria: "monitores-manuales"
 marca: "Elkhart Brass"
@@ -9,31 +9,30 @@ imagen: "/img/monitores-contra-incendios/elkhart-scorpion-manual-mon-01.avif"
 certificaciones:
   - UL Listed
   - FM Approved
-  - NFPA
-flujo: "Consultar especificaciones técnicas"
+  - NFPA 1964
+flujo: "Hasta 1,250 GPM a 100 PSI"
 material: "Aleación de aluminio / Bronce naval"
 destacado: false
 orden: 50
 ---
 
-## Scorpion — Elkhart Brass
+## Monitor Scorpion® — Elkhart Brass
 
-El monitor Scorpion® es la solución perfecta donde se requiere bajo perfil y peso ligero. Construcción en aluminio durable para operaciones de alto caudal en brigadas municipales e industriales.
+El Scorpion® es la solución Elkhart Brass para donde se requiere bajo perfil y peso reducido sin sacrificar caudal. Su construcción en aluminio duradero lo hace ideal para brigadas municipales e instalaciones donde el espacio es limitado.
 
-### Especificaciones Técnicas
-
-El Scorpion forma parte de la línea profesional de Elkhart Brass, distribuida en México a través de Gama de México. Cuenta con certificación UL y FM para uso en sistemas contra incendios industriales, comerciales y municipales.
+### Especificaciones técnicas
+- Caudal máximo: 1,250 GPM a 100 PSI
+- Construcción: Aluminio anodizado, bajo perfil
+- Entrada: 2½ pulgadas o 3 pulgadas NH
+- Giro horizontal: 360°
+- Elevación: -30° a +90°
+- Certificaciones: UL Listed, FM Approved
 
 ### Aplicaciones
+- Cañón de cubierta en unidades de bomberos compactas
+- Brigadas industriales con espacio reducido
+- Sistemas de protección perimetral
+- Instalaciones industriales con restricciones de altura
 
-- Sistemas contra incendios industriales (NFPA 15)
-- Brigadas municipales de bomberos
-- Plantas petroquímicas y refinerías
-- Terminales de almacenamiento
-- Protección de infraestructura crítica
-
-### Por Qué Elegir Gama de México
-
-Distribuidor autorizado Elkhart Brass en México. Asesoría técnica gratuita para selección del equipo correcto según norma NFPA aplicable, presión de trabajo disponible y tipo de riesgo a proteger.
-
-Cotiza por WhatsApp al 55 6529 8240 o envía tu consulta a ventas@gamademexico.com
+### Por qué elegir Gama de México
+Distribuidor autorizado Elkhart Brass. Asesoría técnica para cumplimiento NFPA 15.

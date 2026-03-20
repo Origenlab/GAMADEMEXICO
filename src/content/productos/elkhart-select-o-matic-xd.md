@@ -1,39 +1,41 @@
 ---
-title: "Boquilla Select-O-Matic XD | Elkhart Brass Certificado UL/FM"
-description: "La boquilla Select-O-Matic XD automática ajusta el flujo a las fluctuaciones de presión del sistema manteniendo siempre la presión de boquilla óptima. Ideal p"
-categoria: "boquillas"
-subcategoria: "boquillas-handline"
+title: "Boquilla Select-O-Matic XD Elkhart Brass | Boquilla Automatica"
+description: "Boquilla Select-O-Matic XD automatica de Elkhart Brass. Ajuste automatico de flujo ante variaciones de presion. Certificada NFPA 1964. Distribuidor en Mexico."
+categoria: "select"
+subcategoria: "boquillas-automaticas"
 marca: "Elkhart Brass"
-modelo: "Select-O-Matic XD"
+modelo: "Select-O-Matic® XD™"
 imagen: "/img/boquillas-contra-incendios/elkhart-select-o-matic-xd-boq-01.avif"
 certificaciones:
   - UL Listed
   - FM Approved
-  - NFPA
-flujo: "Consultar especificaciones técnicas"
+  - NFPA 1964
+flujo: "70 a 200 GPM automático según presión"
 material: "Aleación de aluminio / Bronce naval"
 destacado: false
 orden: 50
 ---
 
-## select-o-matic-xd — Elkhart Brass
+## Boquilla Select-O-Matic® XD™ — Elkhart Brass
 
-La boquilla Select-O-Matic® XD™ automática ajusta el flujo a las fluctuaciones de presión del sistema manteniendo siempre la presión de boquilla óptima. Ideal para sistemas con variaciones hidráulicas.
+La Select-O-Matic® XD™ es la boquilla automática de Elkhart Brass. Su diseño hidráulico ajusta automáticamente el flujo cuando la presión del sistema fluctúa, manteniendo siempre la presión de boquilla en el rango óptimo de operación sin necesidad de intervención del operador.
 
-### Especificaciones Técnicas
+### Especificaciones técnicas
+- Rango de flujo automático: 70 a 200 GPM
+- Presión de boquilla nominal: 100 PSI
+- Ajuste: Automático ante cambios de presión en la línea
+- Patrones: Chorro recto, niebla, niebla amplia
+- Material: Aluminio anodizado con interior de bronce
+- Certificaciones: NFPA 1964, UL Listed
 
-El select-o-matic-xd forma parte de la línea profesional de Elkhart Brass, distribuida en México a través de Gama de México. Cuenta con certificación UL y FM para uso en sistemas contra incendios industriales, comerciales y municipales.
+### Ventaja operativa
+Cuando la presión sube o baja por apertura de otras líneas o cambios en la bomba, la Select-O-Matic XD™ ajusta su apertura interna automáticamente — el operador recibe siempre el mismo patrón y alcance sin tener que modificar la boquilla manualmente.
 
 ### Aplicaciones
+- Sistemas con múltiples líneas de ataque simultáneo
+- Bomberos que operan con variaciones de presión frecuentes
+- Sistemas de alta complejidad hidráulica
+- Brigadas industriales con instalaciones de bombeo variables
 
-- Sistemas contra incendios industriales (NFPA 15)
-- Brigadas municipales de bomberos
-- Plantas petroquímicas y refinerías
-- Terminales de almacenamiento
-- Protección de infraestructura crítica
-
-### Por Qué Elegir Gama de México
-
-Distribuidor autorizado Elkhart Brass en México. Asesoría técnica gratuita para selección del equipo correcto según norma NFPA aplicable, presión de trabajo disponible y tipo de riesgo a proteger.
-
-Cotiza por WhatsApp al 55 6529 8240 o envía tu consulta a ventas@gamademexico.com
+### Por qué elegir Gama de México
+Distribuidor autorizado Elkhart Brass en México. Asesoría técnica en selección de boquilla según el análisis hidráulico de tu sistema.
