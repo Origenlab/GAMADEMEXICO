@@ -14,6 +14,12 @@ flujo: "Hasta 500 GPM"
 material: "Aluminio de aviación / alta resistencia"
 destacado: false
 orden: 40
+galeria:
+  - "/img/monitores-contra-incendios/elkhart-ram-xd-mon-01.avif"
+  - "/img/monitores-contra-incendios/monitor-manual-ram-xd-01.avif"
+  - "/img/monitores-contra-incendios/monitor-contra-incendio-aplicacion-industrial-04.avif"
+  - "/img/monitores-contra-incendios/monitor-contra-incendio-aplicacion-industrial-05.avif"
+  - "/img/monitores-contra-incendios/monitor-contra-incendio-aplicacion-industrial-06.avif"
 ---
 
 ## Monitor RAM XD — Ataque rápido donde ningún vehículo llega

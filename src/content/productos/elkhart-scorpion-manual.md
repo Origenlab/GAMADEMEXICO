@@ -14,6 +14,12 @@ flujo: "Hasta 1,250 GPM a 100 PSI"
 material: "Aluminio anodizado — bajo perfil"
 destacado: false
 orden: 30
+galeria:
+  - "/img/monitores-contra-incendios/elkhart-scorpion-manual-mon-01.avif"
+  - "/img/monitores-contra-incendios/monitor-elkhart-brass-scorpion-2500gpm-vista-frontal.avif"
+  - "/img/monitores-contra-incendios/monitor-elkhart-brass-scorpion-2500gpm-vista-lateral.avif"
+  - "/img/monitores-contra-incendios/monitor-elkhart-brass-scorpion-base-bridada.avif"
+  - "/img/monitores-contra-incendios/monitor-elkhart-brass-scorpion-aplicacion-industrial.avif"
 ---
 
 ## Monitor Scorpion® — Máximo caudal en mínimo espacio

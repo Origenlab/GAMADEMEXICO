@@ -14,6 +14,12 @@ flujo: "Hasta 1,500 GPM a 100 PSI"
 material: "Aleación de aluminio anodizado"
 destacado: true
 orden: 10
+galeria:
+  - "/img/monitores-contra-incendios/elkhart-vulcan-mon-01.avif"
+  - "/img/monitores-contra-incendios/monitor-elkhart-brass-vulcan-vista-frontal.avif"
+  - "/img/monitores-contra-incendios/monitor-elkhart-brass-vulcan-vista-lateral.avif"
+  - "/img/monitores-contra-incendios/monitor-elkhart-brass-vulcan-detalle-volantes.avif"
+  - "/img/monitores-contra-incendios/monitor-elkhart-brass-vulcan-canal-eliptico.avif"
 ---
 
 ## Monitor Vulcan™ — El estándar de la industria

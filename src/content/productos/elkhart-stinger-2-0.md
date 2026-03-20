@@ -14,6 +14,12 @@ flujo: "Hasta 1,000 GPM"
 material: "Aluminio de grado marino"
 destacado: true
 orden: 20
+galeria:
+  - "/img/monitores-contra-incendios/elkhart-stinger-2-0-mon-01.avif"
+  - "/img/monitores-contra-incendios/monitor-contra-incendio-aplicacion-industrial-01.avif"
+  - "/img/monitores-contra-incendios/monitor-contra-incendio-aplicacion-industrial-02.avif"
+  - "/img/monitores-contra-incendios/monitor-contra-incendio-aplicacion-industrial-03.avif"
+  - "/img/monitores-contra-incendios/monitor-certificado-fm-elkhart-01.avif"
 ---
 
 ## Monitor Stinger 2.0 — Dos monitores en uno
