@@ -2,7 +2,7 @@
 title: "Monitor Stinger 2.0 Elkhart Brass | Monitor Portátil y Cubierta"
 description: "Monitor Stinger 2.0 de doble uso: cañon de cubierta o monitor portatil. Diseño break-apart para despliegue rapido. Certificado UL/FM. Distribuidor Elkhart Brass en Mexico."
 categoria: "monitores"
-subcategoria: "monitores-manuales"
+subcategoria: "monitores"
 marca: "Elkhart Brass"
 modelo: "Stinger 2.0"
 imagen: "/img/monitores-contra-incendios/elkhart-stinger-2-0-mon-01.avif"

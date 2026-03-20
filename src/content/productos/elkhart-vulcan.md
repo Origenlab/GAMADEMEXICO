@@ -2,7 +2,7 @@
 title: "Monitor Vulcan Elkhart Brass | Monitor Manual para Bomberos"
 description: "Monitor manual Vulcan de Elkhart Brass con paso hidraulico eliptico de 3-3/8 pulgadas. Baja perdida de friccion, construccion en aluminio, certificado UL/FM. Distribuidor en Mexico."
 categoria: "monitores"
-subcategoria: "monitores-manuales"
+subcategoria: "monitores"
 marca: "Elkhart Brass"
 modelo: "Vulcan™"
 imagen: "/img/monitores-contra-incendios/elkhart-vulcan-mon-01.avif"

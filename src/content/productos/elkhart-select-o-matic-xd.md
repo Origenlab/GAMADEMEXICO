@@ -1,8 +1,8 @@
 ---
 title: "Boquilla Select-O-Matic XD Elkhart Brass | Boquilla Automatica"
 description: "Boquilla Select-O-Matic XD automatica de Elkhart Brass. Ajuste automatico de flujo ante variaciones de presion. Certificada NFPA 1964. Distribuidor en Mexico."
-categoria: "select"
-subcategoria: "boquillas-automaticas"
+categoria: "boquillas"
+subcategoria: "boquillas"
 marca: "Elkhart Brass"
 modelo: "Select-O-Matic® XD™"
 imagen: "/img/boquillas-contra-incendios/elkhart-select-o-matic-xd-boq-01.avif"

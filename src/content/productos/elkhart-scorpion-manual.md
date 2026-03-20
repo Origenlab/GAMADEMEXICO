@@ -2,7 +2,7 @@
 title: "Monitor Scorpion Elkhart Brass | Monitor Manual Ligero"
 description: "Monitor manual Scorpion de Elkhart Brass. Construccion en aluminio ligero, bajo perfil, ideal para brigadas municipales e industriales. Distribuidor en Mexico."
 categoria: "monitores"
-subcategoria: "monitores-manuales"
+subcategoria: "monitores"
 marca: "Elkhart Brass"
 modelo: "Scorpion®"
 imagen: "/img/monitores-contra-incendios/elkhart-scorpion-manual-mon-01.avif"

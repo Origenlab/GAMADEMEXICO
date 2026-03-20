@@ -2,7 +2,7 @@
 title: "Monitor Copperhead Elkhart Brass | Monitor Industrial FM Approved"
 description: "Monitor industrial Copperhead de Elkhart Brass. FM Approved para refineras, plantas petroquimicas y ambientes corrosivos. Bajo mantenimiento. Distribuidor en Mexico."
 categoria: "monitores"
-subcategoria: "monitores-industriales"
+subcategoria: "monitores"
 marca: "Elkhart Brass"
 modelo: "Copperhead®"
 imagen: "/img/monitores-contra-incendios/elkhart-copperhead-mon-01.avif"

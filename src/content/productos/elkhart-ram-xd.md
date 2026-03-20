@@ -2,7 +2,7 @@
 title: "Monitor RAM XD Elkhart Brass | Monitor Portátil Ataque Rápido"
 description: "Monitor portátil RAM XD para ataque rápido, edificios de gran altura e instalaciones industriales. Elkhart Brass certificado UL/FM. Distribuidor en Mexico."
 categoria: "monitores"
-subcategoria: "monitores-portatiles"
+subcategoria: "monitores"
 marca: "Elkhart Brass"
 modelo: "RAM XD"
 imagen: "/img/monitores-contra-incendios/elkhart-ram-xd-mon-01.avif"
