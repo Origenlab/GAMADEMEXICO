@@ -16,6 +16,11 @@ destacado: true
 orden: 50
 galeria:
   - "/img/conexiones-herrajes-contra-incendios/siamesa-clappered-elkhart-01.avif"
+  - "/img/conexiones-herrajes/toma-siamesa-4a-clappered-frontal.avif"
+  - "/img/conexiones-herrajes/toma-siamesa-4a-clappered-clapper.avif"
+  - "/img/conexiones-herrajes/toma-siamesa-4a-clappered-corte.avif"
+  - "/img/conexiones-herrajes/toma-siamesa-4a-clappered-instalacion.avif"
+  - "/img/conexiones-herrajes-contra-incendios/toma-siamesa-fdc-bronce-contra-incendios-bomberos-dos-bocas-01.avif"
 ---
 
 ## Toma Siamesa Clappered — El componente que no puedes especificar mal

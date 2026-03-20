@@ -32,7 +32,7 @@ const todosProductos = await getCollection('productos', ({ data }) => data.categ
 const relacionados = todosProductos
   .filter((p) => p.id !== producto.id)
   .sort((a, b) => a.data.orden - b.data.orden)
-  .slice(0, 3);
+  .slice(0, 4);
 
 /* ── Subcategorías dinámicas para el sidebar según categoría ── */
 const subcategoriasMonitores = [
@@ -204,6 +204,27 @@ const heroMetrics = [
             </div>
           )}
 
+          <!-- PRODUCT GALLERY -->
+          {producto.data.galeria && producto.data.galeria.length > 1 && (
+            <div class="tech-info product-gallery">
+              <h3 class="tech-info__title">Galería del Producto</h3>
+              <div class="product-gallery__grid">
+                {producto.data.galeria.slice(0, 6).map((img: string, i: number) => (
+                  <div class="product-gallery__item">
+                    <img
+                      src={img}
+                      alt={`${producto.data.title} — vista ${i + 1}`}
+                      width="400"
+                      height="300"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
           <!-- RENDERED MARKDOWN CONTENT -->
           <div class="tech-info">
             <div class="product-content">
@@ -290,7 +311,7 @@ const heroMetrics = [
     titulo={`Otros ${categoriaNombre}`}
     subtitulo={`Explora más opciones de ${categoriaNombre.toLowerCase()} para tu proyecto`}
     productos={relacionados}
-    maxProductos={3}
+    maxProductos={4}
     verTodosLink={categoriaUrl}
     verTodosTexto={`Ver todos los ${categoriaNombre.toLowerCase()}`}
   />

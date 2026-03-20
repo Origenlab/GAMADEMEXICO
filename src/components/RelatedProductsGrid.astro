@@ -138,7 +138,7 @@ function getProductAnchorText(rawTitle: string): string {
 
   .related-products__grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: var(--spacing-md);
   }
 
@@ -232,7 +232,7 @@ function getProductAnchorText(rawTitle: string): string {
     justify-content: center;
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1200px) {
     .related-products__grid {
       grid-template-columns: repeat(2, 1fr);
     }

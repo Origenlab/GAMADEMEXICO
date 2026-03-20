@@ -1,0 +1,17 @@
+file 'frames/01-escena1-fuego-hook.png'
+duration 3.75
+file 'frames/02-escena2-silueta-bombero.png'
+duration 3.75
+file 'frames/03-escena3-macro-tela-nomex.png'
+duration 3.75
+file 'frames/04-escena4-barrera-termica-capas.png'
+duration 3.75
+file 'frames/05-escena5-combate-accion.png'
+duration 3.75
+file 'frames/06-escena6-reflectivos-noche.png'
+duration 3.75
+file 'frames/07-escena7-retrato-bombero.png'
+duration 3.75
+file 'frames/08-escena8-producto-traje-completo.png'
+duration 3.75
+file 'frames/08-escena8-producto-traje-completo.png'
