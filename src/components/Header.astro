@@ -36,9 +36,6 @@ const logoUrl = getOptimizedImageUrl('/img/gama-de-mexico.avif', {
     <nav class="nav-desktop" role="navigation" aria-label="Navegación principal">
       <ul class="nav-desktop__list">
         <li class="nav-desktop__item">
-          <a href="/" class={`nav-desktop__link ${activePage === 'inicio' ? 'nav-desktop__link--active' : ''}`}>Inicio</a>
-        </li>
-        <li class="nav-desktop__item">
           <a href="/equipos" class={`nav-desktop__link ${activePage === 'equipos' ? 'nav-desktop__link--active' : ''}`} aria-haspopup="true" aria-expanded="false">
             Equipos y Accesorios <span class="nav-desktop__arrow" aria-hidden="true">&#9660;</span>
           </a>
@@ -177,42 +174,6 @@ const logoUrl = getOptimizedImageUrl('/img/gama-de-mexico.avif', {
           </div>
         </li>
         <li class="nav-desktop__item">
-          <a href="/empresas-certificadas" class={`nav-desktop__link ${activePage === 'directorio' ? 'nav-desktop__link--active' : ''}`} aria-haspopup="true" aria-expanded="false">
-            Directorio <span class="nav-desktop__arrow" aria-hidden="true">&#9660;</span>
-          </a>
-
-          <div class="mega-menu mega-menu--directorio" role="menu" aria-label="Directorio de empresas">
-            <div class="mega-menu__category">
-              <h3 class="mega-menu__title">Empresas Certificadas</h3>
-              <ul class="mega-menu__list">
-                <li><a href="/empresas-certificadas" class="mega-menu__link" role="menuitem">Ver todas las empresas</a></li>
-                <li><a href="/empresas-certificadas/giro/hotel" class="mega-menu__link" role="menuitem">Hoteles certificados</a></li>
-                <li><a href="/empresas-certificadas/giro/restaurante" class="mega-menu__link" role="menuitem">Restaurantes certificados</a></li>
-                <li><a href="/empresas-certificadas/giro/almacen" class="mega-menu__link" role="menuitem">Almacenes certificados</a></li>
-                <li><a href="/empresas-certificadas/giro/industria" class="mega-menu__link" role="menuitem">Industrias certificadas</a></li>
-              </ul>
-              <a href="/empresas-certificadas#giros" class="mega-menu__view-all">Ver todos los giros &rarr;</a>
-            </div>
-
-            <div class="mega-menu__category">
-              <h3 class="mega-menu__title">Por Ubicación</h3>
-              <ul class="mega-menu__list">
-                <li><a href="/empresas-certificadas/estado/ciudad-de-mexico" class="mega-menu__link" role="menuitem">Ciudad de México</a></li>
-                <li><a href="/empresas-certificadas/estado/estado-de-mexico" class="mega-menu__link" role="menuitem">Estado de México</a></li>
-                <li><a href="/empresas-certificadas/estado/jalisco" class="mega-menu__link" role="menuitem">Jalisco</a></li>
-                <li><a href="/empresas-certificadas/estado/nuevo-leon" class="mega-menu__link" role="menuitem">Nuevo León</a></li>
-              </ul>
-              <a href="/empresas-certificadas#estados" class="mega-menu__view-all">Ver todos los estados &rarr;</a>
-            </div>
-
-            <div class="mega-menu__category mega-menu__category--cta">
-              <h3 class="mega-menu__title">¿Tu empresa tiene sistemas contra incendios?</h3>
-              <p class="mega-menu__desc">Registra tu negocio en el directorio de empresas certificadas y obtén el badge de verificación para mostrar a clientes y aseguradoras.</p>
-              <a href="/empresas-certificadas#registrar" class="btn btn--primary btn--sm">Solicitar certificación</a>
-            </div>
-          </div>
-        </li>
-        <li class="nav-desktop__item">
           <a href="/nosotros" class="nav-desktop__link">Nosotros</a>
         </li>
         <li class="nav-desktop__item">
@@ -235,9 +196,6 @@ const logoUrl = getOptimizedImageUrl('/img/gama-de-mexico.avif', {
 
 <nav class="mobile-nav" id="mobile-nav" role="navigation" aria-label="Navegación móvil" aria-hidden="true">
   <ul>
-    <li class="mobile-nav__item">
-      <a href="/" class="mobile-nav__link">Inicio</a>
-    </li>
     <li class="mobile-nav__item">
       <button class="mobile-nav__link" aria-expanded="false" aria-controls="mobile-submenu-equipos" id="mobile-toggle-equipos">
         Equipos y Accesorios <span class="mobile-nav__arrow" aria-hidden="true">&#9660;</span>
@@ -323,29 +281,6 @@ const logoUrl = getOptimizedImageUrl('/img/gama-de-mexico.avif', {
           <a href="/blog/gabinetes-hidrantes-contra-incendios" class="mobile-nav__sublink">Gabinetes e Hidrantes</a>
         </div>
         <a href="/blog" class="mobile-nav__sublink mobile-nav__sublink--all">Ver todos los artículos &rarr;</a>
-      </div>
-    </li>
-    <li class="mobile-nav__item">
-      <button class="mobile-nav__link" aria-expanded="false" aria-controls="mobile-submenu-directorio" id="mobile-toggle-directorio">
-        Directorio <span class="mobile-nav__arrow" aria-hidden="true">&#9660;</span>
-      </button>
-      <div class="mobile-nav__submenu" id="mobile-submenu-directorio" role="region" aria-labelledby="mobile-toggle-directorio">
-        <div class="mobile-nav__subcategory">
-          <div class="mobile-nav__subtitle">Empresas Certificadas</div>
-          <a href="/empresas-certificadas" class="mobile-nav__sublink">Ver todas las empresas</a>
-          <a href="/empresas-certificadas/giro/hotel" class="mobile-nav__sublink">Hoteles certificados</a>
-          <a href="/empresas-certificadas/giro/restaurante" class="mobile-nav__sublink">Restaurantes certificados</a>
-          <a href="/empresas-certificadas/giro/almacen" class="mobile-nav__sublink">Almacenes certificados</a>
-          <a href="/empresas-certificadas/giro/industria" class="mobile-nav__sublink">Industrias certificadas</a>
-        </div>
-        <div class="mobile-nav__subcategory">
-          <div class="mobile-nav__subtitle">Por Ubicación</div>
-          <a href="/empresas-certificadas/estado/ciudad-de-mexico" class="mobile-nav__sublink">Ciudad de México</a>
-          <a href="/empresas-certificadas/estado/estado-de-mexico" class="mobile-nav__sublink">Estado de México</a>
-          <a href="/empresas-certificadas/estado/jalisco" class="mobile-nav__sublink">Jalisco</a>
-          <a href="/empresas-certificadas/estado/nuevo-leon" class="mobile-nav__sublink">Nuevo León</a>
-        </div>
-        <a href="/empresas-certificadas#registrar" class="mobile-nav__sublink mobile-nav__sublink--all">Registrar mi empresa &rarr;</a>
       </div>
     </li>
     <li class="mobile-nav__item">
