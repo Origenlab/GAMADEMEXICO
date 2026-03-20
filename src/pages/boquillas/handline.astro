@@ -1,0 +1,272 @@
+---
+import Layout from '../../layouts/Base.astro';
+import '../../styles/subcategory.css';
+import { getCollection } from 'astro:content';
+import SubcategoryProductCard from '../../components/SubcategoryProductCard.astro';
+import ProductSidebar from '../../components/ProductSidebar.astro';
+import RelatedProductsGrid from '../../components/RelatedProductsGrid.astro';
+import CotizacionForm from '../../components/CotizacionForm.astro';
+import Faq from '../../components/Faq.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import { buildProductCategorySchema, buildBreadcrumbSchema, buildFAQSchema, buildOrganizationSchema } from '../../lib/seo';
+
+
+// Obtener productos de boquillas
+const todasBoquillas = (await getCollection('productos', ({ data }) => data.categoria === 'boquillas')).sort((a, b) => a.data.orden - b.data.orden);
+
+// Filtrar boquillas handline
+const productosHandline = todasBoquillas.filter(p => p.data.subcategoria === 'boquillas-handline');
+
+// Otros productos para la seccion de relacionados
+const otrasBoquillas = todasBoquillas.filter(p => !productosHandline.includes(p));
+
+// Subcategorias de boquillas para el sidebar
+const subcategorias = [
+  {
+    slug: 'tipo-pistola',
+    nombre: 'Boquilla Tipo Pistola',
+    descripcion: 'Control ergonómico seleccionable',
+    activo: false
+  },
+  {
+    slug: 'turbo-jet',
+    nombre: 'Boquilla Turbo Jet',
+    descripcion: 'Máximo alcance y penetración',
+    activo: false
+  },
+  {
+    slug: 'industrial',
+    nombre: 'Boquilla Industrial',
+    descripcion: 'Alto caudal para industria',
+    activo: false
+  },
+  {
+    slug: 'certificada',
+    nombre: 'Boquilla Certificada',
+    descripcion: 'Certificación UL/FM',
+    activo: false
+  },
+  {
+    slug: 'handline',
+    nombre: 'Boquillas Handline XD',
+    descripcion: 'Chief XD, Phantom XD',
+    activo: true
+  },
+  {
+    slug: 'master-stream',
+    nombre: 'Master Stream',
+    descripcion: 'X-Stream, gran caudal',
+    activo: false
+  },
+];
+
+const faqItems = [
+  { pregunta: '¿Que diferencia hay entre la Chief XD, Phantom XD y Select-O-Matic XD?', respuesta: 'La Chief XD es de flujo fijo: eliges el caudal al comprarla (95, 150, 200 o 300 GPM) y ese flujo no cambia en campo. La Phantom XD es de flujo seleccionable: el operador rota un selector para elegir entre varios caudales preconfigurados segun el escenario. La Select-O-Matic XD es automatica: ajusta el flujo sola cuando la presion del sistema cambia, manteniendo siempre la presion optima en la boquilla sin intervencion del bombero.' },
+  { pregunta: '¿Las boquillas XD de Elkhart Brass cumplen con NFPA 1964?', respuesta: 'Si. Toda la linea XD de Elkhart Brass — Chief XD, Phantom XD y Select-O-Matic XD — esta certificada conforme a NFPA 1964, que es el estandar para boquillas de ataque manual para cuerpos de bomberos. La certificacion garantiza patrones de descarga uniformes, resistencia a impactos y presion de operacion dentro de los rangos establecidos.' },
+  { pregunta: '¿Las boquillas handline XD son compatibles con las mangueras que ya tenemos?', respuesta: 'Si. Las boquillas handline XD usan conexiones NH (National Hose) estandar en diametros de 1½ y 2½ pulgadas, que son las roscas que usan los cuerpos de bomberos en Mexico. No necesitas adaptadores ni cambiar tus mangueras para usar las boquillas Elkhart Brass XD.' },
+];
+
+const structuredData = [
+  buildOrganizationSchema(),
+  buildProductCategorySchema({
+    name: 'Boquillas Handline XD Elkhart Brass',
+    description: 'Boquillas handline XD Elkhart Brass: Chief XD, Phantom XD, Select-O-Matic XD. Certificadas NFPA 1964. Flujo fijo, seleccionable y automatico. Mexico.',
+    image: '/img/boquillas-contra-incendios/elkhart-chief-xd-boq-01.avif',
+    url: '/boquillas/handline',
+    category: 'Boquillas Contra Incendios',
+    brand: 'Elkhart Brass',
+    reviewAuthor: 'Cmte. Jorge Navarro',
+    reviewBody: 'Las Chief XD son las boquillas que usamos en nuestras unidades. Gama de Mexico nos surte con stock inmediato en CDMX.',
+    reviewDate: '2025-07-08',
+    ratingCount: 30,
+    reviewCount: 30,
+  }),
+  buildBreadcrumbSchema([
+    { name: 'Inicio', url: '/' },
+    { name: 'Equipos', url: '/equipos' },
+    { name: 'Boquillas Contra Incendios', url: '/boquillas-contra-incendios' },
+    { name: 'Boquillas Handline XD', url: '/boquillas/handline' },
+  ]),
+  buildFAQSchema(faqItems),
+];
+
+---
+
+<Layout
+  structuredData={structuredData}
+  title="Boquillas Handline XD Elkhart Brass | Chief XD, Phantom XD"
+  description="Boquillas handline XD Elkhart Brass: Chief XD flujo fijo, Phantom XD seleccionable, Select-O-Matic XD automatica. Certificadas NFPA 1964. Distribuidor Mexico."
+  activePage="equipos"
+  heroTitle="Boquillas Handline XD"
+  heroIntro="Linea completa de boquillas de ataque manual Elkhart Brass: flujo fijo, seleccionable y automatico. Todas certificadas NFPA 1964 con patrones de chorro directo y niebla. Conexion NH estandar de 1½ y 2½ pulgadas."
+  heroBadge="Boquillas Contra Incendios"
+  heroMetrics={[
+    { valor: "95-300", texto: "GPM rango" },
+    { valor: "NFPA", texto: "1964 certificada" },
+    { valor: "100", texto: "PSI nominal" }
+  ]}
+  heroPrimaryText="Ver Catálogo"
+  heroPrimaryLink="#catalogo"
+  heroSecondaryText="Solicitar Cotización"
+  heroSecondaryLink="#cotizar"
+  heroShowRightContent={true}
+>
+
+  <!-- HERO CONTENT -->
+  <Fragment slot="hero-content">
+    <p>Las <strong>boquillas handline XD</strong> de Elkhart Brass son la linea de boquillas de ataque manual que usan los cuerpos de bomberos mas exigentes. La serie XD incluye tres tipos de control de flujo — fijo (Chief XD), seleccionable (Phantom XD) y automatico (Select-O-Matic XD) — para que cada departamento elija el tipo de boquilla que mejor se adapta a su doctrina operativa y experiencia del personal.</p>
+    <p>En <strong>Gama de Mexico</strong> distribuimos la linea completa de boquillas handline XD con stock permanente en CDMX y Queretaro. Asesoramos a cuerpos de bomberos, brigadas industriales y proteccion civil en la seleccion del tipo de boquilla correcto segun el caudal disponible, diametro de manguera y tipo de emergencia.</p>
+  </Fragment>
+  <!-- BREADCRUMB -->
+  <Breadcrumb />
+
+
+  <!-- MAIN CONTENT WITH SIDEBAR -->
+  <section class="subcat-content">
+    <div class="container">
+      <div class="subcat-layout">
+
+        <!-- MAIN CONTENT (LEFT) -->
+        <main class="subcat-main">
+
+          <!-- CATALOG HEADER -->
+          <div class="catalog-header" id="catalogo">
+            <div class="catalog-header__text">
+              <h2 class="catalog-header__title">Boquillas Handline XD Elkhart Brass</h2>
+              <p class="catalog-header__desc">Boquillas de ataque manual certificadas NFPA 1964</p>
+            </div>
+            <div class="catalog-header__count">
+              <span class="catalog-header__number">{productosHandline.length}</span>
+              <span class="catalog-header__label">producto{productosHandline.length !== 1 ? 's' : ''}</span>
+            </div>
+          </div>
+
+          <!-- PRODUCTS GRID -->
+          <div class="categories__grid">
+            {productosHandline.map((producto) => (
+              <SubcategoryProductCard
+                title={producto.data.title}
+                description={producto.data.description}
+                brand={producto.data.marca}
+                image={producto.data.imagen}
+                productSlug={producto.id}
+                flow={producto.data.flujo}
+                material={producto.data.material}
+                certifications={producto.data.certificaciones}
+              />
+            ))}
+          </div>
+
+          {productosHandline.length === 0 && (
+            <div class="catalog-empty">
+              <div class="catalog-empty__icon">🔍</div>
+              <h3 class="catalog-empty__title">Proximamente mas opciones</h3>
+              <p class="catalog-empty__text">Estamos agregando mas boquillas handline. Solicita cotizacion con especificaciones.</p>
+              <a href="#cotizar" class="btn btn--primary">Solicitar Cotización</a>
+            </div>
+          )}
+
+          <!-- TECHNICAL INFO -->
+          <div class="tech-info">
+            <h3 class="tech-info__title">Comparativa de Boquillas Handline XD</h3>
+            <div class="tech-info__grid">
+              <div class="tech-info__item">
+                <span class="tech-info__label">Chief XD</span>
+                <span class="tech-info__value">Flujo fijo</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Phantom XD</span>
+                <span class="tech-info__value">Flujo seleccionable</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Select-O-Matic XD</span>
+                <span class="tech-info__value">Flujo automatico</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Presion nominal</span>
+                <span class="tech-info__value">100 PSI</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Conexiones</span>
+                <span class="tech-info__value">1½" y 2½" NH</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Certificacion</span>
+                <span class="tech-info__value">NFPA 1964</span>
+              </div>
+            </div>
+          </div>
+
+        </main>
+
+        <!-- SIDEBAR (RIGHT) -->
+        <ProductSidebar
+          navTitulo="Tipos de Boquillas"
+          subcategorias={subcategorias}
+          baseUrl="/boquillas"
+          backLinkHref="/boquillas-contra-incendios"
+          backLinkTexto="Ver todas las boquillas"
+          certificaciones={[
+            { siglas: "FM", nombre: "Factory Mutual" },
+            { siglas: "UL", nombre: "UL Listed" },
+            { siglas: "NOM", nombre: "NOM-002-STPS" }
+          ]}
+          marcas={["Elkhart Brass", "Akron Brass", "Task Force Tips", "POK"]}
+          aplicaciones={[
+            "Cuerpos de bomberos",
+            "Brigadas industriales",
+            "Protección civil",
+            "Aeropuertos",
+            "Plantas petroquímicas"
+          ]}
+          productosRelacionados={[
+            { href: "/gabinetes-hidrantes-contra-incendios", nombre: "Gabinetes e Hidrantes" },
+            { href: "/mangueras-contra-incendios", nombre: "Mangueras Contra Incendios" },
+            { href: "/valvulas-contra-incendios", nombre: "Válvulas Contra Incendios" },
+            { href: "/conexiones-herrajes-contra-incendios", nombre: "Conexiones y Herrajes" }
+          ]}
+        />
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RELATED PRODUCTS -->
+  <RelatedProductsGrid
+    titulo="Otras Boquillas Contra Incendios"
+    subtitulo="Boquillas industriales, turbo jet y certificadas"
+    productos={otrasBoquillas}
+    maxProductos={3}
+    verTodosLink="/boquillas-contra-incendios"
+    verTodosTexto="Ver todas las boquillas"
+  />
+
+  <CotizacionForm
+    titulo="Cotiza Boquillas Handline XD"
+    tipoEquipo="Boquillas"
+    pagina="Boquillas Handline XD"
+  />
+
+
+  <!-- FAQ -->
+  <section class="faq-section" id="faq" aria-labelledby="faq-title">
+    <div class="container">
+      <h2 id="faq-title" class="section-title">Preguntas Frecuentes</h2>
+      <Faq items={faqItems} id="faq" />
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  .faq-section {
+    padding: var(--spacing-2xl, 4rem) 0;
+    background: var(--color-surface, #fff);
+  }
+  .faq-section .section-title {
+    font-size: var(--text-2xl, 1.75rem);
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+</style>

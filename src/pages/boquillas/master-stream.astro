@@ -1,0 +1,272 @@
+---
+import Layout from '../../layouts/Base.astro';
+import '../../styles/subcategory.css';
+import { getCollection } from 'astro:content';
+import SubcategoryProductCard from '../../components/SubcategoryProductCard.astro';
+import ProductSidebar from '../../components/ProductSidebar.astro';
+import RelatedProductsGrid from '../../components/RelatedProductsGrid.astro';
+import CotizacionForm from '../../components/CotizacionForm.astro';
+import Faq from '../../components/Faq.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import { buildProductCategorySchema, buildBreadcrumbSchema, buildFAQSchema, buildOrganizationSchema } from '../../lib/seo';
+
+
+// Obtener productos de boquillas
+const todasBoquillas = (await getCollection('productos', ({ data }) => data.categoria === 'boquillas')).sort((a, b) => a.data.orden - b.data.orden);
+
+// Filtrar boquillas master stream
+const productosMasterStream = todasBoquillas.filter(p => p.data.subcategoria === 'boquillas-master-stream');
+
+// Otros productos para la seccion de relacionados
+const otrasBoquillas = todasBoquillas.filter(p => !productosMasterStream.includes(p));
+
+// Subcategorias de boquillas para el sidebar
+const subcategorias = [
+  {
+    slug: 'tipo-pistola',
+    nombre: 'Boquilla Tipo Pistola',
+    descripcion: 'Control ergonómico seleccionable',
+    activo: false
+  },
+  {
+    slug: 'turbo-jet',
+    nombre: 'Boquilla Turbo Jet',
+    descripcion: 'Máximo alcance y penetración',
+    activo: false
+  },
+  {
+    slug: 'industrial',
+    nombre: 'Boquilla Industrial',
+    descripcion: 'Alto caudal para industria',
+    activo: false
+  },
+  {
+    slug: 'certificada',
+    nombre: 'Boquilla Certificada',
+    descripcion: 'Certificación UL/FM',
+    activo: false
+  },
+  {
+    slug: 'handline',
+    nombre: 'Boquillas Handline XD',
+    descripcion: 'Chief XD, Phantom XD',
+    activo: false
+  },
+  {
+    slug: 'master-stream',
+    nombre: 'Master Stream',
+    descripcion: 'X-Stream, gran caudal',
+    activo: true
+  },
+];
+
+const faqItems = [
+  { pregunta: '¿Que es una boquilla master stream?', respuesta: 'Una boquilla master stream es una boquilla de gran caudal disenada para montarse en monitores fijos o portatiles, no para operacion manual con manguera. Manejan flujos de 500 a 2,000 GPM o mas, y se usan para ataque defensivo en incendios de gran magnitud, proteccion perimetral de tanques y enfriamiento de estructuras. Son el complemento indispensable de los monitores industriales.' },
+  { pregunta: '¿Que boquillas master stream maneja Elkhart Brass?', respuesta: 'Elkhart Brass fabrica la linea X-Stream de boquillas master stream, disponibles en configuraciones de chorro solido, niebla y combinadas. Los modelos varian segun el caudal requerido (500 a 2,000 GPM) y el tipo de monitor donde se instalan. Gama de Mexico asesora en la seleccion del modelo correcto segun tu monitor y sistema hidraulico.' },
+  { pregunta: '¿Las boquillas master stream son compatibles con espuma AFFF?', respuesta: 'Si. Las boquillas master stream Elkhart Brass son compatibles con agua, espuma AFFF y FFFP. Para aplicaciones con espuma, se recomienda usar modelos con patrones de descarga que maximicen la expansion de la espuma sobre la superficie del combustible. Verificamos la compatibilidad del modelo con tu sistema de proporcion antes de cotizar.' },
+];
+
+const structuredData = [
+  buildOrganizationSchema(),
+  buildProductCategorySchema({
+    name: 'Boquillas Master Stream Elkhart Brass',
+    description: 'Boquillas master stream X-Stream Elkhart Brass para monitores industriales. 500-2,000 GPM. Chorro solido y niebla. Distribuidor Mexico.',
+    image: '/img/boquillas-contra-incendios/elkhart-chief-xd-boq-01.avif',
+    url: '/boquillas/master-stream',
+    category: 'Boquillas Contra Incendios',
+    brand: 'Elkhart Brass',
+    reviewAuthor: 'Ing. Ricardo Solis',
+    reviewBody: 'Las X-Stream funcionan perfecto en nuestros monitores de terminal. Gama de Mexico nos ayudo a seleccionar el patron correcto.',
+    reviewDate: '2025-09-05',
+    ratingCount: 18,
+    reviewCount: 18,
+  }),
+  buildBreadcrumbSchema([
+    { name: 'Inicio', url: '/' },
+    { name: 'Equipos', url: '/equipos' },
+    { name: 'Boquillas Contra Incendios', url: '/boquillas-contra-incendios' },
+    { name: 'Master Stream', url: '/boquillas/master-stream' },
+  ]),
+  buildFAQSchema(faqItems),
+];
+
+---
+
+<Layout
+  structuredData={structuredData}
+  title="Boquillas Master Stream | X-Stream, Select-O-Stream Elkhart Brass"
+  description="Boquillas master stream X-Stream Elkhart Brass para monitores industriales. Caudales 500-2,000 GPM. Chorro solido y niebla. Compatibles con espuma AFFF. Mexico."
+  activePage="equipos"
+  heroTitle="Boquillas Master Stream"
+  heroIntro="Boquillas de gran caudal para monitores fijos y portatiles. Linea X-Stream de Elkhart Brass con flujos de 500 a 2,000 GPM. Patrones de chorro solido, niebla y combinados para proteccion perimetral y ataque defensivo."
+  heroBadge="Boquillas Contra Incendios"
+  heroMetrics={[
+    { valor: "2,000", texto: "GPM máximo" },
+    { valor: "X-Stream", texto: "Línea Elkhart" },
+    { valor: "AFFF", texto: "Compatible espuma" }
+  ]}
+  heroPrimaryText="Ver Catálogo"
+  heroPrimaryLink="#catalogo"
+  heroSecondaryText="Solicitar Cotización"
+  heroSecondaryLink="#cotizar"
+  heroShowRightContent={true}
+>
+
+  <!-- HERO CONTENT -->
+  <Fragment slot="hero-content">
+    <p>Las <strong>boquillas master stream</strong> son el componente que define el rendimiento de un monitor contra incendios. A diferencia de las boquillas handline que opera un bombero con manguera, las master stream se montan directamente en monitores fijos o portatiles y manejan caudales que superan los 500 GPM — hasta 2,000 GPM en los modelos industriales.</p>
+    <p>En <strong>Gama de Mexico</strong> distribuimos la linea X-Stream de Elkhart Brass, disenada para integrarse con los monitores Vulcan, Copperhead y la serie EXM2. Asesoramos en la seleccion de la boquilla correcta segun el caudal requerido, presion disponible, tipo de agente extintor y patron de descarga necesario para tu aplicacion especifica.</p>
+  </Fragment>
+  <!-- BREADCRUMB -->
+  <Breadcrumb />
+
+
+  <!-- MAIN CONTENT WITH SIDEBAR -->
+  <section class="subcat-content">
+    <div class="container">
+      <div class="subcat-layout">
+
+        <!-- MAIN CONTENT (LEFT) -->
+        <main class="subcat-main">
+
+          <!-- CATALOG HEADER -->
+          <div class="catalog-header" id="catalogo">
+            <div class="catalog-header__text">
+              <h2 class="catalog-header__title">Boquillas Master Stream para Monitores</h2>
+              <p class="catalog-header__desc">Boquillas de gran caudal X-Stream de Elkhart Brass</p>
+            </div>
+            <div class="catalog-header__count">
+              <span class="catalog-header__number">{productosMasterStream.length}</span>
+              <span class="catalog-header__label">producto{productosMasterStream.length !== 1 ? 's' : ''}</span>
+            </div>
+          </div>
+
+          <!-- PRODUCTS GRID -->
+          <div class="categories__grid">
+            {productosMasterStream.map((producto) => (
+              <SubcategoryProductCard
+                title={producto.data.title}
+                description={producto.data.description}
+                brand={producto.data.marca}
+                image={producto.data.imagen}
+                productSlug={producto.id}
+                flow={producto.data.flujo}
+                material={producto.data.material}
+                certifications={producto.data.certificaciones}
+              />
+            ))}
+          </div>
+
+          {productosMasterStream.length === 0 && (
+            <div class="catalog-empty">
+              <div class="catalog-empty__icon">🔍</div>
+              <h3 class="catalog-empty__title">Proximamente mas opciones</h3>
+              <p class="catalog-empty__text">Estamos agregando fichas de boquillas master stream. Solicita cotizacion con especificaciones de tu monitor.</p>
+              <a href="#cotizar" class="btn btn--primary">Solicitar Cotización</a>
+            </div>
+          )}
+
+          <!-- TECHNICAL INFO -->
+          <div class="tech-info">
+            <h3 class="tech-info__title">Especificaciones Tecnicas Generales</h3>
+            <div class="tech-info__grid">
+              <div class="tech-info__item">
+                <span class="tech-info__label">Caudal</span>
+                <span class="tech-info__value">500 - 2,000 GPM</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Presion</span>
+                <span class="tech-info__value">80 - 150 PSI</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Patrones</span>
+                <span class="tech-info__value">Chorro / Niebla</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Montaje</span>
+                <span class="tech-info__value">Monitores fijos</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Material</span>
+                <span class="tech-info__value">Aluminio / Bronce</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Agente</span>
+                <span class="tech-info__value">Agua / AFFF / FFFP</span>
+              </div>
+            </div>
+          </div>
+
+        </main>
+
+        <!-- SIDEBAR (RIGHT) -->
+        <ProductSidebar
+          navTitulo="Tipos de Boquillas"
+          subcategorias={subcategorias}
+          baseUrl="/boquillas"
+          backLinkHref="/boquillas-contra-incendios"
+          backLinkTexto="Ver todas las boquillas"
+          certificaciones={[
+            { siglas: "FM", nombre: "Factory Mutual" },
+            { siglas: "UL", nombre: "UL Listed" },
+            { siglas: "NOM", nombre: "NOM-002-STPS" }
+          ]}
+          marcas={["Elkhart Brass", "Akron Brass", "Task Force Tips", "POK"]}
+          aplicaciones={[
+            "Monitores industriales",
+            "Protección perimetral",
+            "Terminales de almacenamiento",
+            "Refinerías",
+            "Hangares de aviación"
+          ]}
+          productosRelacionados={[
+            { href: "/monitores-contra-incendios", nombre: "Monitores Contra Incendios" },
+            { href: "/mangueras-contra-incendios", nombre: "Mangueras Contra Incendios" },
+            { href: "/valvulas-contra-incendios", nombre: "Válvulas Contra Incendios" },
+            { href: "/conexiones-herrajes-contra-incendios", nombre: "Conexiones y Herrajes" }
+          ]}
+        />
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RELATED PRODUCTS -->
+  <RelatedProductsGrid
+    titulo="Otras Boquillas Contra Incendios"
+    subtitulo="Boquillas handline, industriales y certificadas"
+    productos={otrasBoquillas}
+    maxProductos={3}
+    verTodosLink="/boquillas-contra-incendios"
+    verTodosTexto="Ver todas las boquillas"
+  />
+
+  <CotizacionForm
+    titulo="Cotiza Boquillas Master Stream"
+    tipoEquipo="Boquillas"
+    pagina="Boquillas Master Stream"
+  />
+
+
+  <!-- FAQ -->
+  <section class="faq-section" id="faq" aria-labelledby="faq-title">
+    <div class="container">
+      <h2 id="faq-title" class="section-title">Preguntas Frecuentes</h2>
+      <Faq items={faqItems} id="faq" />
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  .faq-section {
+    padding: var(--spacing-2xl, 4rem) 0;
+    background: var(--color-surface, #fff);
+  }
+  .faq-section .section-title {
+    font-size: var(--text-2xl, 1.75rem);
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+</style>

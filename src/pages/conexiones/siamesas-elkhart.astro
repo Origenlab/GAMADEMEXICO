@@ -1,0 +1,246 @@
+---
+import Layout from '../../layouts/Base.astro';
+import '../../styles/subcategory.css';
+import { getCollection } from 'astro:content';
+import SubcategoryProductCard from '../../components/SubcategoryProductCard.astro';
+import ProductSidebar from '../../components/ProductSidebar.astro';
+import RelatedProductsGrid from '../../components/RelatedProductsGrid.astro';
+import CotizacionForm from '../../components/CotizacionForm.astro';
+import Faq from '../../components/Faq.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import { buildProductCategorySchema, buildBreadcrumbSchema, buildFAQSchema, buildOrganizationSchema } from '../../lib/seo';
+
+
+// Obtener todos los productos de conexiones-herrajes
+const todosProductos = (await getCollection('productos', ({ data }) =>
+  data.categoria === 'conexiones-herrajes'
+)).sort((a, b) => a.data.orden - b.data.orden);
+
+// Filtrar tomas siamesas
+const productosSubcategoria = todosProductos.filter(p => p.data.subcategoria === 'tomas-siamesas');
+
+// Otros productos para seccion de relacionados
+const otrosProductos = todosProductos.filter(p => !productosSubcategoria.includes(p));
+
+// Subcategorias para navegacion
+const subcategorias = [
+  { slug: 'adaptadores', nombre: 'Adaptadores de Bronce', descripcion: 'Conversión entre roscas NH, NPT, Storz', activo: false },
+  { slug: 'wye', nombre: 'Conexión Y (Wye)', descripcion: 'Derivación en dos salidas', activo: false },
+  { slug: 'siamesa', nombre: 'Toma Siamesa FDC', descripcion: 'Conexión para bomberos', activo: false },
+  { slug: 'coples', nombre: 'Coples y Reducciones', descripcion: 'Conexión rápida Storz', activo: false },
+  { slug: 'chiflones', nombre: 'Chiflones de Tres Pasos', descripcion: 'Control de patrón de descarga', activo: false },
+  { slug: 'accesorios', nombre: 'Accesorios y Herrajes', descripcion: 'Tapones, caps, niples', activo: false },
+  { slug: 'siamesas-elkhart', nombre: 'Siamesas Elkhart Brass', descripcion: 'Clappered y Valved', activo: true },
+  { slug: 'wye-elkhart', nombre: 'Wye Elkhart Brass', descripcion: 'Gated y Plain', activo: false },
+];
+
+const faqItems = [
+  { pregunta: '¿Que diferencia hay entre una siamesa clappered y una valved?', respuesta: 'La siamesa clappered tiene clapetas internas (check valves) que se abren con la presion del agua y se cierran automaticamente cuando el bombero desconecta la manguera. Esto evita que el agua del sistema salga por las bocas. La siamesa valved tiene valvulas de cierre manual en cada boca, lo que permite mayor control pero requiere operacion activa. La mayoria de instalaciones en Mexico usan siamesas clappered por su funcionamiento automatico.' },
+  { pregunta: '¿Las siamesas Elkhart Brass cumplen con NFPA 13 y 14?', respuesta: 'Si. Las tomas siamesas Elkhart Brass cumplen con los requisitos de NFPA 13 (rociadores), NFPA 14 (standpipe) y NFPA 20 (bombas contra incendio) para conexiones del departamento de bomberos (FDC). Estan disponibles en configuraciones de 2 y 3 bocas con conexiones de 2½ pulgadas NST estandar.' },
+  { pregunta: '¿Que materiales estan disponibles para las siamesas Elkhart Brass?', respuesta: 'Elkhart Brass fabrica siamesas en bronce cromado para fachadas de edificios, bronce natural para instalaciones industriales y aluminio para aplicaciones donde el peso es un factor. El acabado cromado resiste la intemperie y mantiene la estetica de la fachada. Para ambientes marinos o quimicos, se recomienda bronce con recubrimiento especial.' },
+];
+
+const structuredData = [
+  buildOrganizationSchema(),
+  buildProductCategorySchema({
+    name: 'Tomas Siamesas Clappered y Valved Elkhart Brass',
+    description: 'Tomas siamesas Elkhart Brass clappered y valved. Bronce cromado, 2 y 3 bocas, NFPA 13/14. Distribuidor Mexico.',
+    image: '/img/conexiones-herrajes/adaptador-aluminio-elk-o-lite-4-frontal.avif',
+    url: '/conexiones/siamesas-elkhart',
+    category: 'Conexiones y Herrajes Contra Incendios',
+    brand: 'Elkhart Brass',
+    reviewAuthor: 'Arq. Patricia Gomez',
+    reviewBody: 'Las siamesas cromadas Elkhart Brass quedan muy bien en fachada. Gama de Mexico nos entrego a tiempo para la entrega del edificio.',
+    reviewDate: '2025-04-20',
+    ratingCount: 20,
+    reviewCount: 20,
+  }),
+  buildBreadcrumbSchema([
+    { name: 'Inicio', url: '/' },
+    { name: 'Equipos', url: '/equipos' },
+    { name: 'Conexiones y Herrajes', url: '/conexiones-herrajes-contra-incendios' },
+    { name: 'Siamesas Elkhart Brass', url: '/conexiones/siamesas-elkhart' },
+  ]),
+  buildFAQSchema(faqItems),
+];
+
+---
+
+<Layout
+  structuredData={structuredData}
+  title="Tomas Siamesas Clappered y Valved | Elkhart Brass México"
+  description="Tomas siamesas Elkhart Brass: clappered y valved. Bronce cromado, 2 y 3 bocas 2½ NST. NFPA 13, 14 y 20. Distribuidor autorizado Mexico."
+  activePage="equipos"
+  heroTitle="Siamesas Elkhart Brass"
+  heroIntro="Tomas siamesas FDC de Elkhart Brass en configuraciones clappered (automatica) y valved (manual). Bronce cromado, bronce natural y aluminio. Bocas de 2½ pulgadas NST en modelos de 2 y 3 entradas."
+  heroBadge="Conexiones y Herrajes"
+  heroMetrics={[
+    { valor: "2½\"", texto: "NST estándar" },
+    { valor: "NFPA", texto: "13 / 14 / 20" },
+    { valor: "Bronce", texto: "Cromado / Natural" }
+  ]}
+  heroPrimaryText="Ver Catálogo"
+  heroPrimaryLink="#catalogo"
+  heroSecondaryText="Solicitar Cotización"
+  heroSecondaryLink="#cotizar"
+  heroShowRightContent={true}
+>
+
+  <!-- HERO CONTENT -->
+  <Fragment slot="hero-content">
+    <p>Las <strong>tomas siamesas Elkhart Brass</strong> son conexiones FDC (Fire Department Connection) de alta calidad para sistemas de rociadores y standpipe. Disponibles en configuraciones clappered — con check valves automaticos que se abren y cierran con la presion — y valved, con valvulas de cierre manual para mayor control operativo.</p>
+    <p>En <strong>Gama de Mexico</strong> distribuimos siamesas Elkhart Brass en bronce cromado para fachadas de edificios, bronce natural para instalaciones industriales y aluminio ligero. Asesoramos en la seleccion del modelo correcto segun el tipo de sistema (rociadores NFPA 13, standpipe NFPA 14) y los requisitos del proyecto.</p>
+  </Fragment>
+  <!-- BREADCRUMB -->
+  <Breadcrumb />
+
+
+  <!-- MAIN CONTENT WITH SIDEBAR -->
+  <section class="subcat-content">
+    <div class="container">
+      <div class="subcat-layout">
+
+        <!-- MAIN CONTENT (LEFT) -->
+        <main class="subcat-main">
+
+          <!-- CATALOG HEADER -->
+          <div class="catalog-header" id="catalogo">
+            <div class="catalog-header__text">
+              <h2 class="catalog-header__title">Siamesas Elkhart Brass</h2>
+              <p class="catalog-header__desc">Tomas siamesas clappered y valved para sistemas contra incendios</p>
+            </div>
+            <div class="catalog-header__count">
+              <span class="catalog-header__number">{productosSubcategoria.length}</span>
+              <span class="catalog-header__label">producto{productosSubcategoria.length !== 1 ? 's' : ''}</span>
+            </div>
+          </div>
+
+          <!-- PRODUCTS GRID -->
+          <div class="categories__grid">
+            {productosSubcategoria.map((producto) => (
+              <SubcategoryProductCard
+                title={producto.data.title}
+                description={producto.data.description}
+                brand={producto.data.marca}
+                image={producto.data.imagen}
+                productSlug={producto.id}
+                flow={producto.data.flujo}
+                material={producto.data.material}
+                certifications={producto.data.certificaciones}
+              />
+            ))}
+          </div>
+
+          {productosSubcategoria.length === 0 && (
+            <div class="catalog-empty">
+              <div class="catalog-empty__icon">🔍</div>
+              <h3 class="catalog-empty__title">Proximamente mas opciones</h3>
+              <p class="catalog-empty__text">Estamos agregando fichas de siamesas Elkhart Brass. Solicita cotizacion con las especificaciones de tu proyecto.</p>
+              <a href="#cotizar" class="btn btn--primary">Solicitar Cotización</a>
+            </div>
+          )}
+
+          <!-- TECHNICAL INFO -->
+          <div class="tech-info">
+            <h3 class="tech-info__title">Especificaciones Tecnicas</h3>
+            <div class="tech-info__grid">
+              <div class="tech-info__item">
+                <span class="tech-info__label">Bocas</span>
+                <span class="tech-info__value">2 o 3 × 2½" NST</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Tipos</span>
+                <span class="tech-info__value">Clappered / Valved</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Material</span>
+                <span class="tech-info__value">Bronce cromado</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Presion</span>
+                <span class="tech-info__value">300 PSI prueba</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Norma</span>
+                <span class="tech-info__value">NFPA 13 / 14</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Instalacion</span>
+                <span class="tech-info__value">Fachada / Muro</span>
+              </div>
+            </div>
+          </div>
+
+        </main>
+
+        <!-- SIDEBAR (RIGHT) -->
+        <ProductSidebar
+          navTitulo="Tipos de Conexiones"
+          subcategorias={subcategorias}
+          baseUrl="/conexiones"
+          backLinkHref="/conexiones-herrajes-contra-incendios"
+          backLinkTexto="Ver todas las conexiones"
+          certificaciones={[
+            { siglas: "UL", nombre: "UL Listed" },
+            { siglas: "FM", nombre: "Factory Mutual" },
+            { siglas: "NOM", nombre: "NOM-002-STPS" }
+          ]}
+          marcas={["Elkhart Brass", "Dixon", "Harrington", "POK"]}
+          aplicaciones={[
+            "Edificios comerciales",
+            "Torres residenciales",
+            "Naves industriales",
+            "Centros comerciales",
+            "Hospitales"
+          ]}
+          productosRelacionados={[
+            { href: "/monitores-contra-incendios", nombre: "Monitores Contra Incendios" },
+            { href: "/boquillas-contra-incendios", nombre: "Boquillas Contra Incendios" },
+            { href: "/valvulas-contra-incendios", nombre: "Válvulas Contra Incendios" },
+            { href: "/mangueras-contra-incendios", nombre: "Mangueras Contra Incendios" }
+          ]}
+        />
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RELATED PRODUCTS -->
+  <RelatedProductsGrid
+    titulo="Otras Conexiones y Herrajes"
+    subtitulo="Adaptadores, wyes y accesorios para sistemas contra incendios"
+    productos={otrosProductos}
+    maxProductos={3}
+    verTodosLink="/conexiones-herrajes-contra-incendios"
+    verTodosTexto="Ver todas las conexiones"
+  />
+
+  <CotizacionForm
+    titulo="Cotiza Siamesas Elkhart Brass"
+    tipoEquipo="Conexiones y herrajes"
+    pagina="Siamesas Elkhart Brass"
+  />
+
+
+  <!-- FAQ -->
+  <section class="faq-section" id="faq" aria-labelledby="faq-title">
+    <div class="container">
+      <h2 id="faq-title" class="section-title">Preguntas Frecuentes</h2>
+      <Faq items={faqItems} id="faq" />
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  .faq-section {
+    padding: var(--spacing-2xl, 4rem) 0;
+    background: var(--color-surface, #fff);
+  }
+  .faq-section .section-title {
+    font-size: var(--text-2xl, 1.75rem);
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+</style>

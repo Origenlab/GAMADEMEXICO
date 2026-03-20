@@ -2,7 +2,7 @@
 title: "Boquilla Phantom XD Elkhart Brass | Boquilla Flujo Seleccionable Premium"
 description: "Boquilla Phantom XD de flujo seleccionable Elkhart Brass. Certificada NFPA 1964, flujos preconfigurados por el operador. La boquilla premium para bomberos exigentes. Distribuidor Mexico."
 categoria: "boquillas"
-subcategoria: "boquillas"
+subcategoria: "boquillas-handline"
 marca: "Elkhart Brass"
 modelo: "Phantom® XD™"
 imagen: "/img/boquillas-contra-incendios/elkhart-phantom-xd-boq-01.avif"

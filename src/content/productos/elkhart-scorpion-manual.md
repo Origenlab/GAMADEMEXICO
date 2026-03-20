@@ -1,38 +1,58 @@
 ---
-title: "Monitor Scorpion Elkhart Brass | Monitor Manual Ligero"
-description: "Monitor manual Scorpion de Elkhart Brass. Construccion en aluminio ligero, bajo perfil, ideal para brigadas municipales e industriales. Distribuidor en Mexico."
+title: "Monitor Scorpion® Elkhart Brass | Monitor Manual Bajo Perfil"
+description: "Monitor Scorpion® de Elkhart Brass. Perfil bajo, aluminio ligero, hasta 1,250 GPM. Ideal donde el espacio es limitado. UL Listed, FM Approved. Distribuidor en México."
 categoria: "monitores"
-subcategoria: "monitores"
+subcategoria: "monitores-manuales"
 marca: "Elkhart Brass"
 modelo: "Scorpion®"
 imagen: "/img/monitores-contra-incendios/elkhart-scorpion-manual-mon-01.avif"
 certificaciones:
   - UL Listed
   - FM Approved
-  - NFPA 1964
+  - NFPA 15
 flujo: "Hasta 1,250 GPM a 100 PSI"
-material: "Aleación de aluminio / Bronce naval"
+material: "Aluminio anodizado — bajo perfil"
 destacado: false
-orden: 50
+orden: 30
 ---
 
-## Monitor Scorpion® — Elkhart Brass
+## Monitor Scorpion® — Máximo caudal en mínimo espacio
 
-El Scorpion® es la solución Elkhart Brass para donde se requiere bajo perfil y peso reducido sin sacrificar caudal. Su construcción en aluminio duradero lo hace ideal para brigadas municipales e instalaciones donde el espacio es limitado.
+El Scorpion® resuelve un problema específico: instalar un monitor de alto caudal donde la geometría del espacio no permite un monitor convencional.
+
+Su diseño de perfil bajo reduce la altura total del conjunto, lo que lo hace viable en unidades donde el espacio sobre el techo es limitado, en posiciones de montaje bajo cubierta y en instalaciones industriales con restricciones de altura de paso o de trayectoria de piping.
+
+Con hasta 1,250 GPM a 100 PSI, no sacrifica capacidad de descarga. Lo que cambia es la geometría.
 
 ### Especificaciones técnicas
-- Caudal máximo: 1,250 GPM a 100 PSI
-- Construcción: Aluminio anodizado, bajo perfil
-- Entrada: 2½ pulgadas o 3 pulgadas NH
-- Giro horizontal: 360°
-- Elevación: -30° a +90°
-- Certificaciones: UL Listed, FM Approved
 
-### Aplicaciones
-- Cañón de cubierta en unidades de bomberos compactas
-- Brigadas industriales con espacio reducido
-- Sistemas de protección perimetral
-- Instalaciones industriales con restricciones de altura
+| Parámetro | Valor |
+|---|---|
+| Caudal máximo | 1,250 GPM a 100 PSI |
+| Diseño | Bajo perfil (low-profile) |
+| Giro horizontal | 360° continuo |
+| Rango de elevación | -30° a +90° |
+| Material | Aluminio anodizado durable |
+| Peso | Reducido — adecuado para montaje elevado |
+| Certificaciones | UL Listed, FM Approved |
 
-### Por qué elegir Gama de México
-Distribuidor autorizado Elkhart Brass. Asesoría técnica para cumplimiento NFPA 15.
+### Cuándo el bajo perfil marca la diferencia
+
+**Unidades de bomberos con limitación de altura:** en países donde las unidades deben cumplir altura máxima para circular bajo puentes o ingresar a estacionamientos, el Scorpion® permite mantener la capacidad de caudal sin exceder las restricciones de altura vehicular.
+
+**Instalaciones industriales con clearance limitado:** en plataformas, mezanines y áreas de proceso donde el espacio vertical está restringido por estructura o por piping existente, el Scorpion® entra donde un monitor de perfil estándar no cabe.
+
+**Montaje en posiciones no convencionales:** el bajo perfil facilita la integración en sistemas donde el monitor debe quedar por debajo de una cubierta o baranda de protección.
+
+### Lo que comparte con el resto de la línea
+
+El Scorpion® usa el mismo sistema de rotación y elevación que el Vulcan™ y el Stinger 2.0. Compatible con la misma línea de boquillas XD de Elkhart Brass, lo que simplifica el inventario de refacciones y consumibles cuando se tienen múltiples monitores de distintos modelos en la misma instalación.
+
+### Normativa aplicable
+- **NFPA 15** — Water Spray Fixed Systems for Fire Protection
+- **NFPA 1901** — Automotive Fire Apparatus
+- **NOM-002-STPS** — Condiciones de seguridad, prevención y protección contra incendios
+
+### Stock y entrega — Gama de México
+
+Stock disponible en CDMX y Querétaro. Cotización con ficha técnica, certificados UL/FM y hoja de datos incluidos. El Scorpion® está disponible en múltiples configuraciones de entrada (2½" y 3" NH). Consulta disponibilidad por WhatsApp al 55 6529 8240.

@@ -2,7 +2,7 @@
 title: "Boquilla Chief XD Elkhart Brass | Boquilla Fog Nozzle Flujo Fijo"
 description: "Boquilla Chief XD de flujo fijo Elkhart Brass. La fog nozzle mas usada en bomberos municipales de Mexico. Certificada NFPA 1964. Distribuidor en Mexico."
 categoria: "boquillas"
-subcategoria: "boquillas"
+subcategoria: "boquillas-handline"
 marca: "Elkhart Brass"
 modelo: "Chief XD®"
 imagen: "/img/boquillas-contra-incendios/elkhart-chief-xd-boq-01.avif"

@@ -11,22 +11,22 @@ import Breadcrumb from '../../components/Breadcrumb.astro';
 import { buildProductCategorySchema, buildBreadcrumbSchema, buildFAQSchema, buildOrganizationSchema } from '../../lib/seo';
 
 
-// Obtener productos de monitores
+// Obtener todos los monitores
 const todosMonitores = (await getCollection('productos', ({ data }) => data.categoria === 'monitores')).sort((a, b) => a.data.orden - b.data.orden);
 
-// Filtrar productos tipo corazón por subcategoria
-const productosCorazon = todosMonitores.filter(p => p.data.subcategoria === 'tipo-corazon');
+// Filtrar monitores industriales
+const productosIndustriales = todosMonitores.filter(p => p.data.subcategoria === 'monitores-industriales');
 
-// Otros monitores para la sección de relacionados
-const otrosMonitores = todosMonitores.filter(p => !productosCorazon.includes(p));
+// Otros monitores para la seccion de relacionados
+const otrosMonitores = todosMonitores.filter(p => !productosIndustriales.includes(p));
 
-// Definir las subcategorías de monitores para el sidebar
+// Subcategorias de monitores para el sidebar
 const subcategorias = [
   {
     slug: 'tipo-corazon',
     nombre: 'Monitor Tipo Corazón',
     descripcion: 'Protección perimetral 360°',
-    activo: true
+    activo: false
   },
   {
     slug: 'cuello-cisne',
@@ -61,36 +61,37 @@ const subcategorias = [
   {
     slug: 'industriales',
     nombre: 'Monitores Industriales',
-    descripcion: 'FM Approved para industria',
-    activo: false
+    descripcion: 'FM Approved, Copperhead',
+    activo: true
   },
 ];
 
 const faqItems = [
-  { pregunta: '¿Cuál es el caudal máximo de un monitor tipo corazón?', respuesta: 'Los monitores tipo corazón Elkhart Brass que distribuimos alcanzan caudales de 500 a 1,250 GPM dependiendo del modelo y la presión de operación. El modelo standard opera entre 500 y 800 GPM a 100 PSI, mientras que los modelos de alta capacidad superan los 1,000 GPM a 150 PSI. Consultamos la hidráulica de tu sistema para recomendarte el modelo exacto.' },
-  { pregunta: '¿Requiere mantenimiento periódico el monitor tipo corazón?', respuesta: 'Sí. Se recomienda inspección semestral y mantenimiento anual conforme a NFPA 25. El mantenimiento incluye lubricación de cremalleras, verificación de juntas y sellos, prueba de flujo y revisión de la boquilla. Gama de México ofrece servicio de mantenimiento preventivo y correctivo para monitores instalados en México.' },
-  { pregunta: '¿El monitor tipo corazón es compatible con espuma AFFF?', respuesta: 'Sí. Los monitores tipo corazón de bronce fundido son compatibles con agentes espumantes AFFF, FFFP y agua. Para aplicaciones con espuma, se recomienda usar boquillas combinadas de chorro sólido/niebla que maximizan la cobertura. Especifica el tipo de agente extintor al cotizar para asegurarnos de seleccionar los materiales correctos.' },
+  { pregunta: '¿Que significa que un monitor sea FM Approved?', respuesta: 'FM Approved indica que el monitor fue probado y aprobado por Factory Mutual, una de las aseguradoras industriales mas exigentes del mundo. La aprobacion FM verifica que el equipo cumple con los estandares de desempeno bajo condiciones reales de incendio, incluyendo resistencia a corrosion, presion de trabajo y caudal minimo. Las aseguradoras industriales en Mexico y el mundo exigen equipos FM Approved para reducir primas y validar sistemas de proteccion.' },
+  { pregunta: '¿En que industrias se instalan monitores industriales?', respuesta: 'Los monitores industriales FM Approved se instalan en refinerias, plantas petroquimicas, terminales de almacenamiento de hidrocarburos, plantas de generacion electrica (CFE), instalaciones de PEMEX y empresas privadas del sector energetico. Tambien se usan en hangares de aviacion, muelles industriales y almacenes de materiales peligrosos. El monitor Copperhead de Elkhart Brass esta disenado especificamente para estos entornos corrosivos y de alto riesgo.' },
+  { pregunta: '¿Que mantenimiento requiere un monitor industrial segun NFPA 25?', respuesta: 'NFPA 25 establece inspeccion visual trimestral, prueba funcional semestral (movimiento completo horizontal y vertical) y prueba de flujo anual. El mantenimiento incluye lubricacion de mecanismos, verificacion de sellos y juntas, limpieza de orificios de la boquilla y revision de la base de montaje. Gama de Mexico ofrece contratos de mantenimiento preventivo para monitores industriales instalados en Mexico.' },
 ];
 
 const structuredData = [
   buildOrganizationSchema(),
   buildProductCategorySchema({
-    name: 'Monitor Tipo Corazón Contra Incendios 360°',
-    description: 'Monitor tipo corazón doble cremallera, rotación 360°. Caudal 500-1,250 GPM. Bronce fundido Elkhart Brass, certificación FM/UL.',
-    image: '/img/monitores-contra-incendios/monitor-certificado-fm-contra-incendios-angulo-derecho-07.avif',
-    url: '/monitores/tipo-corazon',
+    name: 'Monitores Industriales FM Approved Contra Incendios',
+    description: 'Monitores industriales FM Approved Elkhart Brass para refinerias y petroquimica. Copperhead bajo mantenimiento, hasta 2,500 GPM. Distribuidor Mexico.',
+    image: '/img/monitores-contra-incendios/elkhart-copperhead-mon-01.avif',
+    url: '/monitores/industriales',
     category: 'Monitores Contra Incendios',
     brand: 'Elkhart Brass',
-    reviewAuthor: 'Ing. Carlos Mendoza',
-    reviewBody: 'Excelente calidad y respaldo técnico de Gama de México. Equipos certificados con entrega puntual.',
-    reviewDate: '2025-03-15',
-    ratingCount: 32,
-    reviewCount: 32,
+    reviewAuthor: 'Ing. Fernando Torres',
+    reviewBody: 'Instalamos Copperhead en nuestra terminal de almacenamiento. Tres anos sin mantenimiento correctivo. Gama de Mexico cumplio con los tiempos de entrega.',
+    reviewDate: '2025-05-12',
+    ratingCount: 25,
+    reviewCount: 25,
   }),
   buildBreadcrumbSchema([
     { name: 'Inicio', url: '/' },
     { name: 'Equipos', url: '/equipos' },
     { name: 'Monitores Contra Incendios', url: '/monitores-contra-incendios' },
+    { name: 'Monitores Industriales', url: '/monitores/industriales' },
   ]),
   buildFAQSchema(faqItems),
 ];
@@ -99,16 +100,16 @@ const structuredData = [
 
 <Layout
   structuredData={structuredData}
-  title="Monitor Tipo Corazón 360° | Venta México"
-  description="Monitor tipo corazón doble cremallera. Giro 360° horizontal, 120° vertical. Caudal 500-2000 GPM. Bronce fundido Elkhart Brass. Cotización México."
+  title="Monitores Industriales FM Approved | Refinerías y Petroquímica"
+  description="Monitores industriales FM Approved Elkhart Brass: Copperhead hasta 2,500 GPM. Para refinerias, PEMEX, CFE y terminales de almacenamiento. Bajo mantenimiento. Mexico."
   activePage="equipos"
-  heroTitle="Monitor Tipo Corazón"
-  heroIntro="Monitores fijos de alta capacidad con rotación horizontal de 360° y elevación vertical de hasta 150°. Diseñados para protección perimetral en refinerías, plantas petroquímicas y terminales de almacenamiento. Manejamos Elkhart Brass, ARMECO y Joperz con certificaciones FM, UL y NFPA."
+  heroTitle="Monitores Industriales"
+  heroIntro="Monitores fijos FM Approved para instalaciones de alto riesgo: refinerias, plantas petroquimicas, terminales de almacenamiento y generacion electrica. Construccion resistente a corrosion, bajo mantenimiento, caudales de hasta 2,500 GPM."
   heroBadge="Monitores Contra Incendios"
   heroMetrics={[
-    { valor: "360°", texto: "Giro horizontal" },
-    { valor: "150°", texto: "Elevación vertical" },
-    { valor: "1,250", texto: "GPM máximo" }
+    { valor: "FM", texto: "Factory Mutual" },
+    { valor: "2,500", texto: "GPM máximo" },
+    { valor: "NFPA 15", texto: "Cumplimiento" }
   ]}
   heroPrimaryText="Ver Catálogo"
   heroPrimaryLink="#catalogo"
@@ -119,12 +120,11 @@ const structuredData = [
 
   <!-- HERO CONTENT -->
   <Fragment slot="hero-content">
-    <p>El <strong>monitor tipo corazón</strong> es el estándar de la industria para protección perimetral en instalaciones de alto riesgo. Su diseño de doble cremallera permite una rotación horizontal completa de 360° y elevación vertical controlada, lo que garantiza cobertura total desde un punto fijo. Fabricados en bronce fundido o aluminio de grado marino, estos monitores operan a presiones de trabajo entre 100 y 150 PSI con caudales que van desde 250 hasta 1,250 GPM según el modelo y boquilla seleccionada.</p>
-    <p>En <strong>Gama de México</strong> distribuimos monitores tipo corazón de Elkhart Brass, ARMECO y Joperz con certificaciones FM, UL y cumplimiento NFPA 11/15. Asesoramos en la selección del modelo correcto según las características de tu proyecto: tipo de riesgo, distancia de alcance requerida, agente extintor (agua o espuma) y condiciones ambientales. Atendemos refinerías, plantas petroquímicas, terminales de almacenamiento, muelles industriales y hangares de aviación en toda la República Mexicana.</p>
+    <p>Los <strong>monitores industriales</strong> Elkhart Brass estan disenados para entornos donde la corrosion, las temperaturas extremas y la exposicion continua a la intemperie destruirian un monitor convencional. El Copperhead, su modelo insignia para aplicaciones industriales, opera sin mantenimiento durante anos gracias a su construccion sellada y materiales resistentes a ambientes quimicos.</p>
+    <p>En <strong>Gama de Mexico</strong> suministramos monitores industriales FM Approved para proyectos de PEMEX, CFE, terminales privadas de almacenamiento y plantas petroquimicas. Asesoramos en la seleccion del modelo correcto segun el caudal requerido, tipo de riesgo, agente extintor y requisitos de la aseguradora. Entregamos con documentacion FM completa para verificacion de proteccion civil.</p>
   </Fragment>
   <!-- BREADCRUMB -->
   <Breadcrumb />
-
 
 
   <!-- MAIN CONTENT WITH SIDEBAR -->
@@ -138,18 +138,18 @@ const structuredData = [
           <!-- CATALOG HEADER -->
           <div class="catalog-header" id="catalogo">
             <div class="catalog-header__text">
-              <h2 class="catalog-header__title">Catálogo de Monitores Tipo Corazón</h2>
-              <p class="catalog-header__desc">Selecciona el producto que mejor se adapte a tu proyecto industrial</p>
+              <h2 class="catalog-header__title">Monitores Industriales FM Approved</h2>
+              <p class="catalog-header__desc">Monitores Elkhart Brass para refineras, petroquimica y terminales de almacenamiento</p>
             </div>
             <div class="catalog-header__count">
-              <span class="catalog-header__number">{productosCorazon.length}</span>
-              <span class="catalog-header__label">producto{productosCorazon.length !== 1 ? 's' : ''}</span>
+              <span class="catalog-header__number">{productosIndustriales.length}</span>
+              <span class="catalog-header__label">producto{productosIndustriales.length !== 1 ? 's' : ''}</span>
             </div>
           </div>
 
           <!-- PRODUCTS GRID -->
           <div class="categories__grid">
-            {productosCorazon.map((producto) => (
+            {productosIndustriales.map((producto) => (
               <SubcategoryProductCard
                 title={producto.data.title}
                 description={producto.data.description}
@@ -163,42 +163,42 @@ const structuredData = [
             ))}
           </div>
 
-          {productosCorazon.length === 0 && (
+          {productosIndustriales.length === 0 && (
             <div class="catalog-empty">
               <div class="catalog-empty__icon">🔍</div>
-              <h3 class="catalog-empty__title">Próximamente más opciones</h3>
-              <p class="catalog-empty__text">Estamos agregando más productos de monitores tipo corazón de diferentes marcas. Mientras tanto, solicita una cotización personalizada.</p>
+              <h3 class="catalog-empty__title">Proximamente mas opciones</h3>
+              <p class="catalog-empty__text">Estamos agregando fichas de monitores industriales. Solicita cotizacion con especificaciones para tu proyecto.</p>
               <a href="#cotizar" class="btn btn--primary">Solicitar Cotización</a>
             </div>
           )}
 
           <!-- TECHNICAL INFO -->
           <div class="tech-info">
-            <h3 class="tech-info__title">Especificaciones Técnicas del Monitor Tipo Corazón</h3>
+            <h3 class="tech-info__title">Especificaciones Tecnicas Generales</h3>
             <div class="tech-info__grid">
               <div class="tech-info__item">
                 <span class="tech-info__label">Caudal</span>
-                <span class="tech-info__value">250 - 1000 GPM</span>
+                <span class="tech-info__value">500 - 2,500 GPM</span>
               </div>
               <div class="tech-info__item">
-                <span class="tech-info__label">Giro horizontal</span>
-                <span class="tech-info__value">360° por manivela</span>
+                <span class="tech-info__label">Certificacion</span>
+                <span class="tech-info__value">FM Approved</span>
               </div>
               <div class="tech-info__item">
-                <span class="tech-info__label">Giro vertical</span>
-                <span class="tech-info__value">120° accionado</span>
-              </div>
-              <div class="tech-info__item">
-                <span class="tech-info__label">Base bridada</span>
-                <span class="tech-info__value">4" cara realzada</span>
-              </div>
-              <div class="tech-info__item">
-                <span class="tech-info__label">Salida macho</span>
-                <span class="tech-info__value">2.5" NST/NSHT</span>
+                <span class="tech-info__label">Presion</span>
+                <span class="tech-info__value">100 - 175 PSI</span>
               </div>
               <div class="tech-info__item">
                 <span class="tech-info__label">Material</span>
-                <span class="tech-info__value">Bronce fundido</span>
+                <span class="tech-info__value">Aluminio / Bronce naval</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Mantenimiento</span>
+                <span class="tech-info__value">Diseño bajo mant.</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Norma</span>
+                <span class="tech-info__value">NFPA 15 / NFPA 25</span>
               </div>
             </div>
           </div>
@@ -219,12 +219,12 @@ const structuredData = [
           ]}
           marcas={["Elkhart Brass", "Akron Brass", "Task Force Tips", "POK"]}
           aplicaciones={[
-            "Refinerías",
+            "Refinerías (PEMEX)",
             "Plantas petroquímicas",
             "Terminales de almacenamiento",
-            "Muelles y puertos",
+            "Generación eléctrica (CFE)",
             "Hangares de aviación",
-            "Plantas químicas"
+            "Muelles industriales"
           ]}
           productosRelacionados={[
             { href: "/boquillas-contra-incendios", nombre: "Boquillas Contra Incendios" },
@@ -241,7 +241,7 @@ const structuredData = [
   <!-- RELATED MONITORS -->
   <RelatedProductsGrid
     titulo="Otros Tipos de Monitores"
-    subtitulo="Explora más opciones según tu aplicación específica"
+    subtitulo="Monitores manuales y electricos para distintas aplicaciones"
     productos={otrosMonitores}
     maxProductos={3}
     verTodosLink="/monitores-contra-incendios"
@@ -249,9 +249,9 @@ const structuredData = [
   />
 
   <CotizacionForm
-    titulo="Cotiza Monitores Tipo Corazon"
+    titulo="Cotiza Monitores Industriales"
     tipoEquipo="Monitores"
-    pagina="Monitores Tipo Corazon"
+    pagina="Monitores Industriales FM"
   />
 
 

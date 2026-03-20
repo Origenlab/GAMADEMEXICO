@@ -1,0 +1,246 @@
+---
+import Layout from '../../layouts/Base.astro';
+import '../../styles/subcategory.css';
+import { getCollection } from 'astro:content';
+import SubcategoryProductCard from '../../components/SubcategoryProductCard.astro';
+import ProductSidebar from '../../components/ProductSidebar.astro';
+import RelatedProductsGrid from '../../components/RelatedProductsGrid.astro';
+import CotizacionForm from '../../components/CotizacionForm.astro';
+import Faq from '../../components/Faq.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import { buildProductCategorySchema, buildBreadcrumbSchema, buildFAQSchema, buildOrganizationSchema } from '../../lib/seo';
+
+
+// Obtener todos los productos de conexiones-herrajes
+const todosProductos = (await getCollection('productos', ({ data }) =>
+  data.categoria === 'conexiones-herrajes'
+)).sort((a, b) => a.data.orden - b.data.orden);
+
+// Filtrar distribuidores wye
+const productosSubcategoria = todosProductos.filter(p => p.data.subcategoria === 'distribuidores-wye');
+
+// Otros productos para seccion de relacionados
+const otrosProductos = todosProductos.filter(p => !productosSubcategoria.includes(p));
+
+// Subcategorias para navegacion
+const subcategorias = [
+  { slug: 'adaptadores', nombre: 'Adaptadores de Bronce', descripcion: 'Conversión entre roscas NH, NPT, Storz', activo: false },
+  { slug: 'wye', nombre: 'Conexión Y (Wye)', descripcion: 'Derivación en dos salidas', activo: false },
+  { slug: 'siamesa', nombre: 'Toma Siamesa FDC', descripcion: 'Conexión para bomberos', activo: false },
+  { slug: 'coples', nombre: 'Coples y Reducciones', descripcion: 'Conexión rápida Storz', activo: false },
+  { slug: 'chiflones', nombre: 'Chiflones de Tres Pasos', descripcion: 'Control de patrón de descarga', activo: false },
+  { slug: 'accesorios', nombre: 'Accesorios y Herrajes', descripcion: 'Tapones, caps, niples', activo: false },
+  { slug: 'siamesas-elkhart', nombre: 'Siamesas Elkhart Brass', descripcion: 'Clappered y Valved', activo: false },
+  { slug: 'wye-elkhart', nombre: 'Wye Elkhart Brass', descripcion: 'Gated y Plain', activo: true },
+];
+
+const faqItems = [
+  { pregunta: '¿Que diferencia hay entre un wye gated y uno plain?', respuesta: 'El wye gated tiene valvulas de cierre independientes (gate valves) en cada salida, lo que permite controlar el flujo de cada linea por separado sin afectar a la otra. El wye plain no tiene valvulas — las dos salidas estan abiertas permanentemente. Para operaciones de bomberos donde se necesita controlar el flujo por linea, el gated es el estandar. El plain se usa en instalaciones fijas donde ambas salidas siempre operan simultaneamente.' },
+  { pregunta: '¿Que presion de trabajo soportan los wyes Elkhart Brass?', respuesta: 'Los distribuidores wye Elkhart Brass estan disenados para presiones de trabajo de 200 PSI y se prueban hidrostaticamente a 400 PSI. Esto los hace compatibles con cualquier sistema municipal o industrial de suministro de agua contra incendios. Los materiales — bronce o aluminio — resisten la corrosion y el desgaste por uso frecuente en operaciones de campo.' },
+  { pregunta: '¿Los wyes Elkhart Brass son compatibles con conexiones NH mexicanas?', respuesta: 'Si. Los distribuidores wye Elkhart Brass usan roscas NH (National Hose) estandar, que es la misma rosca que usan los cuerpos de bomberos y los hidrantes en Mexico. Disponibles en configuraciones de 2½ a dos salidas de 1½ y de 2½ a dos salidas de 2½. No requieren adaptadores para conectarse a las mangueras que ya tienes.' },
+];
+
+const structuredData = [
+  buildOrganizationSchema(),
+  buildProductCategorySchema({
+    name: 'Distribuidores Wye Gated y Plain Elkhart Brass',
+    description: 'Distribuidores wye Elkhart Brass gated y plain. Bronce y aluminio, 2½ a 1½ NST. Presion 200 PSI. Distribuidor Mexico.',
+    image: '/img/conexiones-herrajes/adaptador-aluminio-elk-o-lite-4-frontal.avif',
+    url: '/conexiones/wye-elkhart',
+    category: 'Conexiones y Herrajes Contra Incendios',
+    brand: 'Elkhart Brass',
+    reviewAuthor: 'Cmte. Miguel Angel Ruiz',
+    reviewBody: 'Los wyes Elkhart Brass aguantan el uso rudo del campo. Llevamos tres anos usandolos y no hemos tenido una sola falla.',
+    reviewDate: '2025-06-15',
+    ratingCount: 22,
+    reviewCount: 22,
+  }),
+  buildBreadcrumbSchema([
+    { name: 'Inicio', url: '/' },
+    { name: 'Equipos', url: '/equipos' },
+    { name: 'Conexiones y Herrajes', url: '/conexiones-herrajes-contra-incendios' },
+    { name: 'Wye Elkhart Brass', url: '/conexiones/wye-elkhart' },
+  ]),
+  buildFAQSchema(faqItems),
+];
+
+---
+
+<Layout
+  structuredData={structuredData}
+  title="Distribuidores Wye Gated y Plain | Elkhart Brass México"
+  description="Distribuidores wye Elkhart Brass: gated con valvulas independientes y plain. Bronce y aluminio, conexiones 2½ y 1½ NST. Presion 200 PSI. Mexico."
+  activePage="equipos"
+  heroTitle="Wye Elkhart Brass"
+  heroIntro="Distribuidores wye de Elkhart Brass en configuraciones gated (con valvulas de cierre) y plain (sin valvulas). Bronce y aluminio de alta resistencia. Presion de trabajo 200 PSI, prueba hidrostatica 400 PSI."
+  heroBadge="Conexiones y Herrajes"
+  heroMetrics={[
+    { valor: "200", texto: "PSI trabajo" },
+    { valor: "2½\"", texto: "NH estándar" },
+    { valor: "Gated", texto: "Válvulas indep." }
+  ]}
+  heroPrimaryText="Ver Catálogo"
+  heroPrimaryLink="#catalogo"
+  heroSecondaryText="Solicitar Cotización"
+  heroSecondaryLink="#cotizar"
+  heroShowRightContent={true}
+>
+
+  <!-- HERO CONTENT -->
+  <Fragment slot="hero-content">
+    <p>Los <strong>distribuidores wye Elkhart Brass</strong> dividen un suministro de agua en dos lineas independientes para que dos equipos operen desde una sola toma. Los modelos gated incluyen valvulas de cierre de cuarto de vuelta en cada salida para controlar el flujo por linea; los modelos plain operan con ambas salidas abiertas permanentemente.</p>
+    <p>En <strong>Gama de Mexico</strong> distribuimos wyes Elkhart Brass en bronce fundido y aluminio con conexiones NH estandar. Configuraciones de 2½ a dos salidas de 1½ para operaciones de bomberos, y de 2½ a dos salidas de 2½ para aplicaciones industriales de alto caudal. Todos probados a 400 PSI.</p>
+  </Fragment>
+  <!-- BREADCRUMB -->
+  <Breadcrumb />
+
+
+  <!-- MAIN CONTENT WITH SIDEBAR -->
+  <section class="subcat-content">
+    <div class="container">
+      <div class="subcat-layout">
+
+        <!-- MAIN CONTENT (LEFT) -->
+        <main class="subcat-main">
+
+          <!-- CATALOG HEADER -->
+          <div class="catalog-header" id="catalogo">
+            <div class="catalog-header__text">
+              <h2 class="catalog-header__title">Distribuidores Wye Elkhart Brass</h2>
+              <p class="catalog-header__desc">Wyes gated y plain para operaciones de bomberos e industria</p>
+            </div>
+            <div class="catalog-header__count">
+              <span class="catalog-header__number">{productosSubcategoria.length}</span>
+              <span class="catalog-header__label">producto{productosSubcategoria.length !== 1 ? 's' : ''}</span>
+            </div>
+          </div>
+
+          <!-- PRODUCTS GRID -->
+          <div class="categories__grid">
+            {productosSubcategoria.map((producto) => (
+              <SubcategoryProductCard
+                title={producto.data.title}
+                description={producto.data.description}
+                brand={producto.data.marca}
+                image={producto.data.imagen}
+                productSlug={producto.id}
+                flow={producto.data.flujo}
+                material={producto.data.material}
+                certifications={producto.data.certificaciones}
+              />
+            ))}
+          </div>
+
+          {productosSubcategoria.length === 0 && (
+            <div class="catalog-empty">
+              <div class="catalog-empty__icon">🔍</div>
+              <h3 class="catalog-empty__title">Proximamente mas opciones</h3>
+              <p class="catalog-empty__text">Estamos agregando fichas de wyes Elkhart Brass. Solicita cotizacion con las especificaciones de tu operacion.</p>
+              <a href="#cotizar" class="btn btn--primary">Solicitar Cotización</a>
+            </div>
+          )}
+
+          <!-- TECHNICAL INFO -->
+          <div class="tech-info">
+            <h3 class="tech-info__title">Especificaciones Tecnicas</h3>
+            <div class="tech-info__grid">
+              <div class="tech-info__item">
+                <span class="tech-info__label">Presion trabajo</span>
+                <span class="tech-info__value">200 PSI</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Prueba</span>
+                <span class="tech-info__value">400 PSI</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Entrada</span>
+                <span class="tech-info__value">2½" NH</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Salidas</span>
+                <span class="tech-info__value">2 × 1½" o 2½"</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Material</span>
+                <span class="tech-info__value">Bronce / Aluminio</span>
+              </div>
+              <div class="tech-info__item">
+                <span class="tech-info__label">Valvulas</span>
+                <span class="tech-info__value">Gated / Plain</span>
+              </div>
+            </div>
+          </div>
+
+        </main>
+
+        <!-- SIDEBAR (RIGHT) -->
+        <ProductSidebar
+          navTitulo="Tipos de Conexiones"
+          subcategorias={subcategorias}
+          baseUrl="/conexiones"
+          backLinkHref="/conexiones-herrajes-contra-incendios"
+          backLinkTexto="Ver todas las conexiones"
+          certificaciones={[
+            { siglas: "UL", nombre: "UL Listed" },
+            { siglas: "FM", nombre: "Factory Mutual" },
+            { siglas: "NOM", nombre: "NOM-002-STPS" }
+          ]}
+          marcas={["Elkhart Brass", "Dixon", "Harrington", "POK"]}
+          aplicaciones={[
+            "Cuerpos de bomberos",
+            "Brigadas industriales",
+            "Protección civil",
+            "Instalaciones fijas",
+            "Primera respuesta"
+          ]}
+          productosRelacionados={[
+            { href: "/monitores-contra-incendios", nombre: "Monitores Contra Incendios" },
+            { href: "/boquillas-contra-incendios", nombre: "Boquillas Contra Incendios" },
+            { href: "/mangueras-contra-incendios", nombre: "Mangueras Contra Incendios" },
+            { href: "/valvulas-contra-incendios", nombre: "Válvulas Contra Incendios" }
+          ]}
+        />
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RELATED PRODUCTS -->
+  <RelatedProductsGrid
+    titulo="Otras Conexiones y Herrajes"
+    subtitulo="Siamesas, adaptadores y accesorios para sistemas contra incendios"
+    productos={otrosProductos}
+    maxProductos={3}
+    verTodosLink="/conexiones-herrajes-contra-incendios"
+    verTodosTexto="Ver todas las conexiones"
+  />
+
+  <CotizacionForm
+    titulo="Cotiza Wyes Elkhart Brass"
+    tipoEquipo="Conexiones y herrajes"
+    pagina="Wye Elkhart Brass"
+  />
+
+
+  <!-- FAQ -->
+  <section class="faq-section" id="faq" aria-labelledby="faq-title">
+    <div class="container">
+      <h2 id="faq-title" class="section-title">Preguntas Frecuentes</h2>
+      <Faq items={faqItems} id="faq" />
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  .faq-section {
+    padding: var(--spacing-2xl, 4rem) 0;
+    background: var(--color-surface, #fff);
+  }
+  .faq-section .section-title {
+    font-size: var(--text-2xl, 1.75rem);
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+</style>
