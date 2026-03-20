@@ -1,5 +1,17 @@
 ---
 title: "Plan de Emergencia Contra Incendios: Guía NOM-002 para Empresas"
+fechaActualizacion: "2026-03-19"
+schema:
+  - type: "Article"
+    headline: "Plan de Emergencia Contra Incendios: Guía NOM-002 para Empresas"
+    author: "Gama de México"
+    dateModified: "2026-03-19"
+  - type: "FAQPage"
+    questions:
+      - q: "¿Qué debe incluir un plan de emergencia contra incendios?"
+        a: "Análisis de riesgo de la instalación, procedimientos de evacuación con rutas y puntos de reunión, organigrama de brigada con nombres actualizados, inventario de equipos contra incendios con ubicación, calendario de simulacros (mínimo 2 al año), y protocolo de comunicación con servicios de emergencia externos."
+      - q: "¿Es obligatorio el plan de emergencia contra incendios?"
+        a: "Sí. NOM-002-STPS lo exige para todos los centros de trabajo en México sin excepción. No hay mínimo de empleados ni exención por giro. El plan debe ser específico para tu instalación (no genérico), estar actualizado con la distribución actual de la planta y ser verificable mediante simulacros documentados."
 description: "Cómo elaborar un plan de emergencia contra incendios conforme a NOM-002-STPS. Brigadas, simulacros, equipos y documentación requerida en México."
 categoria: "mangueras"
 autor:

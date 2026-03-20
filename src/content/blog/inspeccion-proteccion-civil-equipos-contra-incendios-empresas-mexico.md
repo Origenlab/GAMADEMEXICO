@@ -14,6 +14,23 @@ tiempoLectura: 20
 productosRelacionados: ["gabinete-30me", "hidrante-banqueta", "estacion-manguera", "manguera-millhose", "boquilla-certificada", "valvula-compuerta-osy"]
 canonical: "https://gamademexico.com/blog/gabinetes-hidrantes/inspeccion-proteccion-civil-equipos-contra-incendios-empresas-mexico"
 noindex: false
+schema:
+  - type: "Article"
+    headline: "Inspección de Protección Civil: Qué Revisan en Equipos Contra Incendios"
+    author: "Gama de México"
+    datePublished: "2026-02-17"
+    dateModified: "2026-03-19"
+    image: "/img/blog/inspeccion-proteccion-civil-empresa-industrial-mexico.avif"
+  - type: "FAQPage"
+    questions:
+      - q: "¿Qué revisa protección civil en una inspección de equipos contra incendios?"
+        a: "Tres cosas: equipo que realmente opera (abrirán gabinetes, pedirán demostración de hidrantes), documentación que demuestre mantenimiento (bitácoras con fechas y responsables) y personal que sabe usar el equipo (pueden pedir a un brigadista que opere un extintor o despliegue una manguera)."
+      - q: "¿Qué documentos pide protección civil en una inspección?"
+        a: "Programa interno de protección civil actualizado, bitácoras de mantenimiento de extintores/gabinetes/hidrantes, constancias de capacitación de brigada, actas de simulacros con evidencia fotográfica, certificados de equipos y plano de evacuación actualizado. Tenerlos accesibles en menos de 5 minutos."
+      - q: "¿Pueden cerrar mi empresa por una inspección de protección civil?"
+        a: "Sí. En casos de riesgo inminente, el inspector puede ordenar suspensión parcial o total hasta corregir. Restaurantes cerrados 3 semanas por no tener sistema de cocina, bodegas detenidas por falta de gabinetes. Las observaciones normales tienen plazo de 15-90 días para corregir."
+      - q: "¿Cuántas observaciones puede generar un solo gabinete?"
+        a: "Múltiples. Un gabinete con manguera pegada, sin boquilla, sin llave y con la puerta trabada puede generar 4 observaciones. Si 10 gabinetes tienen el mismo patrón, son 40 observaciones que demuestran un problema sistémico de mantenimiento, no incidentes aislados."
 ---
 
 El inspector de protección civil no llega a verificar que tengas extintores colgados en la pared. Llega a verificar si tu sistema de protección contra incendios funciona o es decorativo. Y la diferencia entre esas dos cosas se demuestra con tres elementos que la mayoría de las empresas en México no tienen completos: equipo que realmente opera, documentación que demuestra que lo mantienes, y personal que sabe usarlo. Falla cualquiera de los tres y la inspección genera observaciones que pueden escalar desde una condicionante hasta la suspensión de actividades.

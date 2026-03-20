@@ -10,7 +10,7 @@ imagenAlt: "Monitor contra incendios tipo corazón Elkhart Brass en instalación
 tags: ["monitores contra incendios", "flujo GPM", "presión PSI", "Elkhart Brass", "NFPA"]
 destacado: false
 tiempoLectura: 10
-draft: false
+draft: true
 productosRelacionados: ["monitor-tipo-corazon-1250gpm", "monitor-cuello-cisne-2000gpm"]
 canonical: "https://gamademexico.com/blog/monitores/monitor-contra-incendios-como-elegir-flujo-presion"
 noindex: false

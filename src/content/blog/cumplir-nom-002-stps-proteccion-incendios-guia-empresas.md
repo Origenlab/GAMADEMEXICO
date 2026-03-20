@@ -1,19 +1,40 @@
 ---
-title: "Cómo Cumplir la NOM-002-STPS: Guía Protección Incendios"
-description: "Guía para cumplir NOM-002-STPS en empresas: qué exige la norma, cómo preparar la inspección de protección civil y errores que generan multas en México."
+title: "Cómo Cumplir la NOM-002-STPS: Guía Protección Contra Incendios"
+description: "NOM-002-STPS paso a paso: clasificación de riesgo, brigada, extintores, gabinetes, simulacros y errores que generan multas por infracción individual en México."
+fecha: "2026-02-14"
+fechaActualizacion: "2026-03-19"
 categoria: "gabinetes-hidrantes"
 autor:
   nombre: "Equipo Gama de México"
   cargo: "Asesoría Técnica"
 imagen: "/img/blog/inspeccion-proteccion-civil-empresa-industrial-mexico.avif"
-imagenAlt: "Cumplimiento NOM-002-STPS protección contra incendios empresas"
-tags: ["NOM-002-STPS", "protección civil", "cumplimiento normativo", "gabinetes", "brigada contra incendios"]
+imagenAlt: "Inspección de cumplimiento NOM-002-STPS en empresa industrial"
+tags: ["NOM-002-STPS", "protección civil", "cumplimiento normativo", "inspección protección civil", "multas protección civil"]
 destacado: true
 draft: false
 productosRelacionados: ["gabinete-30me", "manguera-millhose", "valvula-compuerta-osy", "boquilla-certificada-dual-ul-fm"]
-tiempoLectura: 16
+tiempoLectura: 18
 canonical: "https://gamademexico.com/blog/gabinetes-hidrantes/cumplir-nom-002-stps-proteccion-incendios-guia-empresas"
 noindex: false
+schema:
+  - type: "Article"
+    headline: "Cómo Cumplir la NOM-002-STPS: Guía Protección Contra Incendios"
+    author: "Gama de México"
+    datePublished: "2026-02-14"
+    dateModified: "2026-03-19"
+    image: "/img/blog/inspeccion-proteccion-civil-empresa-industrial-mexico.avif"
+  - type: "FAQPage"
+    questions:
+      - q: "¿A quién aplica la NOM-002-STPS?"
+        a: "A todos los centros de trabajo en México sin excepción. No hay mínimo de empleados ni exención por tamaño o giro. Un taller con 5 personas y una planta con 3,000 están sujetos a la misma norma. Lo que cambia es el nivel de exigencia según la clasificación de riesgo (ordinario o alto)."
+      - q: "¿Cuánto es la multa por incumplir la NOM-002-STPS?"
+        a: "Las multas se calculan por infracción individual, no por visita. Cada extintor vencido, cada gabinete sin mantenimiento, cada falta de señalización es una infracción separada. En CDMX las multas pueden ir de 500 a 5,000 veces la UMA por infracción. Una empresa con 10 extintores caducados recibe 10 multas, no una."
+      - q: "¿Cuántos simulacros de evacuación exige la NOM-002-STPS?"
+        a: "Mínimo dos al año, documentados con fecha, hora, duración, número de participantes, tiempo de evacuación y observaciones. Deben ser reales, no solo actas. El inspector puede verificar preguntando a empleados aleatorios por la ruta de evacuación y el punto de reunión."
+      - q: "¿Qué distancia máxima debe haber entre extintores?"
+        a: "Máximo 15 metros de recorrido hasta un extintor en riesgo alto y 23 metros en riesgo ordinario. La distancia se mide por recorrido real, no en línea recta. En plantas que crecieron agregando áreas sin actualizar la distribución de extintores, las zonas nuevas frecuentemente quedan fuera de cobertura."
+      - q: "¿Necesito gabinetes de manguera para cumplir la NOM-002-STPS?"
+        a: "Depende de la clasificación de riesgo y el tamaño de la instalación. Para riesgo alto y superficies mayores a 3,000m², los gabinetes de manguera son prácticamente obligatorios porque los extintores portátiles no tienen capacidad suficiente para controlar un incendio más allá de la fase incipiente."
 ---
 
 La NOM-002-STPS-2010 es una de esas normas que todo mundo dice cumplir hasta que llega la inspección. En ese momento se descubre que el plan de emergencias no se ha actualizado desde que la empresa cambió de giro, que los extintores del pasillo llevan dos años sin recarga, que la brigada contra incendios está formada por personas que ya no trabajan ahí y que el croquis de evacuación que está pegado en la recepción muestra una distribución que dejó de existir cuando se amplió la bodega. Cada uno de esos hallazgos es una observación. Cada observación puede convertirse en una multa. Y las multas se calculan por infracción individual, no por visita. Una empresa con diez extintores caducados no recibe una multa; recibe diez. Esa aritmética sorprende a muchos responsables de seguridad la primera vez que la enfrentan.

@@ -1,5 +1,17 @@
 ---
 title: "Verificación de Protección Civil: Cómo Pasar sin Observaciones"
+fechaActualizacion: "2026-03-19"
+schema:
+  - type: "Article"
+    headline: "Verificación de Protección Civil: Cómo Pasar sin Observaciones"
+    author: "Gama de México"
+    dateModified: "2026-03-19"
+  - type: "FAQPage"
+    questions:
+      - q: "¿Cómo preparar mi empresa para una verificación de protección civil?"
+        a: "Antes de la visita: actualizar programa interno, verificar que extintores tengan recarga vigente, abrir todos los gabinetes confirmando que la manguera se despliega, tener bitácoras de mantenimiento completas, confirmar que la brigada actual coincide con el organigrama y que los planos de evacuación reflejan la distribución real."
+      - q: "¿Cuáles son las observaciones más comunes en protección civil?"
+        a: "Extintores con recarga vencida, brigada con nombres de personas que ya no trabajan ahí, plano de evacuación que no corresponde con la distribución actual, gabinetes sin llave de operación o con manguera inaccesible, señalización deteriorada o cubierta por pintura, y falta de actas de simulacros con evidencia fotográfica."
 description: "Guía práctica para preparar documentos, equipos y evidencias antes de una verificación de protección civil y reducir observaciones evitables."
 categoria: "monitores"
 tags: ["verificación de protección civil", "NOM-002-STPS", "equipos contra incendios", "UL FM", "seguridad industrial"]

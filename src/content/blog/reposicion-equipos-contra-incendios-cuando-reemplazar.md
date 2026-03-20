@@ -1,5 +1,17 @@
 ---
 title: "Reposición de Equipos Contra Incendios: Cuándo Reemplazar"
+fechaActualizacion: "2026-03-19"
+schema:
+  - type: "Article"
+    headline: "Reposición de Equipos Contra Incendios: Cuándo Reemplazar"
+    author: "Gama de México"
+    dateModified: "2026-03-19"
+  - type: "FAQPage"
+    questions:
+      - q: "¿Cada cuánto se reemplazan los equipos contra incendios?"
+        a: "No hay fecha fija universal. Mangueras: cuando fallan prueba hidrostática anual (vida útil 15-20 años con buen cuidado). Boquillas: cuando el mecanismo falla o hay corrosión significativa. Válvulas: cuando no sellan o el vástago está irrecuperable. Extintores: cada 20 años o cuando fallan prueba hidrostática de 5 años."
+      - q: "¿Cómo sé si mi equipo contra incendios necesita reemplazo?"
+        a: "Señales: falla en prueba hidrostática, mecanismos trabados que no responden a mantenimiento, corrosión que compromete integridad estructural, componentes descontinuados sin repuestos disponibles, o cambio en el riesgo de la instalación que hace el equipo actual insuficiente."
 description: "Aprende cuándo reemplazar mangueras, válvulas, boquillas y otros equipos contra incendios para evitar fallas, fugas y riesgos operativos."
 categoria: "valvulas"
 tags: ["reposición de equipos contra incendios", "NFPA 25", "mangueras contra incendios", "válvulas contra incendios", "mantenimiento industrial"]

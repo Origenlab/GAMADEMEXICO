@@ -1,6 +1,20 @@
 ---
 title: "Válvulas Compuerta, Globo y Angular: Cuándo Usar Cada Una"
-description: "Diferencias entre válvulas de compuerta OS&Y, globo y angular para sistemas contra incendio. Presiones, NFPA 13, cuándo especificar cada tipo."
+description: "Compuerta vs globo vs angular: cuándo usar cada válvula en sistemas contra incendios, pérdida de carga real de cada tipo y errores de especificación comunes."
+fechaActualizacion: "2026-03-19"
+schema:
+  - type: "Article"
+    headline: "Válvulas Compuerta, Globo y Angular: Cuándo Usar Cada Una"
+    author: "Gama de México"
+    dateModified: "2026-03-19"
+  - type: "FAQPage"
+    questions:
+      - q: "¿Cuál es la diferencia entre válvula de compuerta, globo y angular?"
+        a: "Compuerta (OS&Y): flujo recto, mínima pérdida de carga, para posición abierta/cerrada — NO para regular flujo. Globo: flujo cambia dirección dentro de la válvula, mayor pérdida de carga pero permite regular flujo con precisión. Angular: cambia dirección del flujo 90°, combina función de codo y válvula en gabinetes de manguera."
+      - q: "¿Puedo usar una válvula de compuerta para regular flujo?"
+        a: "No. La compuerta parcialmente abierta genera turbulencia que erosiona el disco y el asiento, causando fuga permanente. La compuerta es ON/OFF: totalmente abierta o totalmente cerrada. Para regular flujo usar globo o mariposa con actuador de posicionamiento."
+      - q: "¿Por qué el gabinete de manguera usa válvula angular?"
+        a: "Porque la tubería llega por la pared (horizontal) y la manguera sale hacia adelante (perpendicular). La válvula angular hace el cambio de dirección de 90° y funciona como válvula de control al mismo tiempo, eliminando la necesidad de un codo más una válvula separada. Ahorra espacio dentro del gabinete."
 categoria: "valvulas"
 autor:
   nombre: "Equipo Gama de México"

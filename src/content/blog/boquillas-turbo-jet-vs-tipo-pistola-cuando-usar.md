@@ -9,7 +9,7 @@ imagen: "/img/blog/boquillas-contra-incendios-tipos-seleccion-tecnica.avif"
 imagenAlt: "Boquillas contra incendios turbo-jet y tipo pistola comparación"
 tags: ["boquillas contra incendios", "turbo jet", "tipo pistola", "NFPA 1964", "UL Listed", "FM Approved"]
 destacado: false
-draft: false
+draft: true
 productosRelacionados: ["boquilla-pistola-akron-turbojet-1723", "boquilla-certificada-dual-ul-fm", "boquilla-certificada-nfpa-1964-bomberos", "boquilla-industrial"]
 tiempoLectura: 14
 canonical: "https://gamademexico.com/blog/boquillas/boquillas-turbo-jet-vs-tipo-pistola-cuando-usar"

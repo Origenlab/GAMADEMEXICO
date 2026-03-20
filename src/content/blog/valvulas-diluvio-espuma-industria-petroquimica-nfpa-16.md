@@ -1,6 +1,20 @@
 ---
 title: "Válvulas Diluvio en Industria Petroquímica: NFPA 11 y NFPA 16"
-description: "Válvulas diluvio para sistemas de espuma en petroquímica: NFPA 11 y NFPA 16, accionamiento neumático y eléctrico en tanques de hidrocarburos México."
+description: "Válvulas diluvio para sistemas de espuma en petroquímica: cómo funcionan, por qué fallan y qué exigen NFPA 11 y NFPA 16 en tanques de hidrocarburos."
+fechaActualizacion: "2026-03-19"
+schema:
+  - type: "Article"
+    headline: "Válvulas Diluvio en Industria Petroquímica: NFPA 11 y NFPA 16"
+    author: "Gama de México"
+    dateModified: "2026-03-19"
+  - type: "FAQPage"
+    questions:
+      - q: "¿Qué es una válvula diluvio y cómo funciona?"
+        a: "Es una válvula que permanece cerrada hasta recibir una señal de activación (detector de calor, sistema de detección o disparo manual). Al activarse, se abre completamente y descarga agua o espuma por TODOS los rociadores/boquillas de la zona simultáneamente. A diferencia de un rociador individual, el sistema diluvio inunda toda el área protegida."
+      - q: "¿Cuándo se necesita un sistema diluvio en vez de rociadores convencionales?"
+        a: "Cuando el riesgo requiere cobertura simultánea de toda el área: tanques de hidrocarburos, racks de tuberías con inflamables, transformadores eléctricos de potencia, zonas de carga de combustible. Los rociadores convencionales se activan individualmente por calor — el diluvio descarga todo al mismo tiempo para abrumar el fuego antes de que se propague."
+      - q: "¿Qué diferencia hay entre accionamiento neumático y eléctrico en válvulas diluvio?"
+        a: "El neumático usa presión de aire de una línea piloto: cuando el detector funde o la señal libera la presión, la válvula abre mecánicamente. No necesita electricidad — funciona aunque el fuego haya quemado el cableado. El eléctrico usa un solenoide: más preciso en control pero depende de alimentación eléctrica que puede fallar en un incendio."
 categoria: "valvulas"
 autor:
   nombre: "Ing. Roberto Hernández"

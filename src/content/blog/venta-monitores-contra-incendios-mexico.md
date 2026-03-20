@@ -10,7 +10,7 @@ imagenAlt: "Venta de monitores contra incendios en México"
 imagenOg: "/img/monitores-contra-incendios/monitor-tipo-corazon-contra-incendios-industrial-angulo-frontal-19.avif"
 tags: ["monitores contra incendios", "monitor contra incendios industrial", "venta de monitores contra incendios en México", "equipos contra incendios industriales", "sistemas contra incendios", "protección contra incendios industrial", "proveedor de equipos contra incendios", "monitores de agua contra incendios"]
 destacado: true
-draft: false
+draft: true
 tiempoLectura: 15
 productosRelacionados: ["monitor-corazon-una-cremallera", "monitor-cuello-cisne", "monitor-certificado-fm", "monitor-ul-listed", "monitor-fm-control-remoto"]
 articulosRelacionados: ["guia-seleccion-monitores-contra-incendios", "mantenimiento-monitores-contra-incendios"]

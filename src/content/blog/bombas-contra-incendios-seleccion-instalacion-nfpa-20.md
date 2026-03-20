@@ -1,6 +1,19 @@
 ---
 title: "Bombas Contra Incendios y NFPA 20: Selección Real"
-description: "Cómo seleccionar e instalar una bomba contra incendios conforme a NFPA 20. Tipos, válvulas, dimensionamiento y errores comunes en proyectos industriales en México."
+description: "Bombas contra incendios NFPA 20: horizontal vs vertical, NPSH que nadie calcula, bomba jockey y errores de succión que se descubren en la prueba de aceptación."
+schema:
+  - type: "Article"
+    headline: "Bombas Contra Incendios y NFPA 20: Selección Real"
+    author: "Gama de México"
+    dateModified: "2026-03-19"
+  - type: "FAQPage"
+    questions:
+      - q: "¿Qué tipo de bomba contra incendios necesito?"
+        a: "Centrífuga horizontal si la succión es positiva (agua arriba de la bomba). Vertical tipo turbina si la cisterna está debajo de la bomba o si el suministro es pozo profundo. La selección empieza por la cota del agua respecto a la bomba, no por el catálogo del fabricante."
+      - q: "¿Qué es la NPSH y por qué importa?"
+        a: "Net Positive Suction Head — la presión disponible en la entrada de la bomba. Si la NPSH disponible es menor que la requerida por la bomba, ocurre cavitación: burbujas de vapor que implosionan dentro del impulsor, destruyendo los álabes y reduciendo caudal. Es la causa #1 de fallas prematuras en bombas contra incendios."
+      - q: "¿Para qué sirve la bomba jockey?"
+        a: "Mantiene la presión en la red sin que la bomba principal arranque por cada pequeña fuga o fluctuación. Si la bomba principal arrancara cada vez que la presión baja 2 PSI por una microfuga, el desgaste sería excesivo. La jockey compensa pérdidas menores. Si la jockey no puede mantener la presión, la caída activa la bomba principal."
 categoria: "valvulas"
 autor:
   nombre: "Equipo Gama de México"

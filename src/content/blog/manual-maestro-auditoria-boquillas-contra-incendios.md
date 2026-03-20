@@ -10,7 +10,7 @@ imagenAlt: "Manual de auditoría de boquillas contra incendios"
 imagenOg: "/img/productos/boquilla-industrial-contra-incendios-vista-explosionada-11.avif"
 tags: ["manual de auditoría boquillas contra incendios", "boquillas contra incendios", "auditoría interna", "sistemas contra incendios", "brigadas industriales", "cumplimiento técnico", "equipos contra incendios industriales", "protección contra incendios industrial"]
 destacado: true
-draft: false
+draft: true
 tiempoLectura: 22
 productosRelacionados: ["boquilla-certificada", "boquilla-certificada-dual-ul-fm", "boquilla-tipo-pistola", "boquilla-turbo-jet", "boquilla-industrial"]
 articulosRelacionados: ["estandar-corporativo-boquillas-contra-incendios-industria", "cumplimiento-legal-boquillas-contra-incendios-mexico-2026", "ingenieria-boquillas-contra-incendios-proyectos-industriales"]

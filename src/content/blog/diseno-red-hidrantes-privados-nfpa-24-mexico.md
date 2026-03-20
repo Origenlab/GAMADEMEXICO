@@ -1,19 +1,40 @@
 ---
 title: "Diseño de Red de Hidrantes Privados NFPA 24 en México"
-description: "Cómo diseñar una red de hidrantes privados conforme a NFPA 24: ubicación, presión residual, caudal, válvulas de seccionamiento y errores de diseño comunes."
+description: "Cómo diseñar una red de hidrantes privados: anillo vs árbol, presión residual real, caudal simultáneo y errores que dejan hidrantes sin presión en emergencia."
+fecha: "2026-02-14"
+fechaActualizacion: "2026-03-19"
 categoria: "gabinetes-hidrantes"
 autor:
   nombre: "Equipo Gama de México"
   cargo: "Asesoría Técnica"
 imagen: "/img/blog/monitor-contra-incendios-refineria-industrial-mexico.avif"
-imagenAlt: "Red de hidrantes privados en instalación industrial"
-tags: ["hidrantes privados", "NFPA 24", "red contra incendios", "válvulas hidrantes", "protección industrial"]
+imagenAlt: "Red de hidrantes privados contra incendios en planta industrial"
+tags: ["hidrantes privados", "NFPA 24", "red contra incendios", "diseño hidráulico", "protección industrial"]
 destacado: false
 canonical: "https://gamademexico.com/blog/gabinetes-hidrantes/diseno-red-hidrantes-privados-nfpa-24-mexico"
 noindex: false
-tiempoLectura: 16
+tiempoLectura: 18
 draft: false
-productosRelacionados: []
+productosRelacionados: ["hidrante-banqueta", "hidrante-banqueta-350psi", "valvula-compuerta-osy", "llave-hidrante-pentagonal"]
+schema:
+  - type: "Article"
+    headline: "Diseño de Red de Hidrantes Privados NFPA 24 en México"
+    author: "Gama de México"
+    datePublished: "2026-02-14"
+    dateModified: "2026-03-19"
+    image: "/img/blog/monitor-contra-incendios-refineria-industrial-mexico.avif"
+  - type: "FAQPage"
+    questions:
+      - q: "¿Cuántos hidrantes privados necesita mi planta?"
+        a: "Depende de la clasificación de riesgo y el tamaño del predio. NFPA 24 establece que ningún punto del inmueble debe estar a más de 45 metros de un hidrante por ruta real de manguera. Separación máxima entre hidrantes: 120m riesgo medio, 90m riesgo alto, 60m petroquímica. El cálculo debe considerar operación simultánea de 2-3 hidrantes mínimo."
+      - q: "¿Qué es mejor, red en anillo o en árbol para hidrantes?"
+        a: "Red en anillo es muy superior: el agua llega por dos caminos a cada hidrante, las pérdidas por fricción son menores porque el caudal se divide, y si un tramo falla el sistema sigue operando. La red en árbol es más barata pero deja hidrantes remotos sin respaldo. Para riesgo medio o alto, el anillo se justifica siempre."
+      - q: "¿Qué presión necesito en los hidrantes privados?"
+        a: "NFPA 24 exige mínimo 20 PSI residuales en la boca del hidrante más desfavorable con el caudal de diseño fluyendo. En la práctica, la mayoría de los diseños apuntan a 100 PSI como referencia operativa porque con 20 PSI las mangueras funcionan pero el alcance del chorro es insuficiente para incendios establecidos."
+      - q: "¿Puedo depender del hidrante de banqueta para mi empresa?"
+        a: "No como fuente primaria. En zonas industriales de México la presión pública suele estar entre 15-40 PSI, insuficiente para protección contra incendios. El hidrante de banqueta es complemento. La fuente primaria debe ser un sistema privado con cisterna dedicada, bomba NFPA 20 y red de hidrantes diseñada conforme a NFPA 24."
+      - q: "¿Qué diámetro de tubería necesita la red de hidrantes?"
+        a: "Mínimo 6 pulgadas (150mm) para la tubería principal conforme a NFPA 24. La derivación a cada hidrante no debe reducirse a menos de 6 pulgadas. Diámetros menores crean cuellos de botella que limitan caudal y presión. El diámetro exacto se determina con cálculo hidráulico para mantener velocidad de flujo bajo 6 m/s."
 ---
 
 Una red de hidrantes privados es la infraestructura que permite que una instalación industrial tenga puntos de suministro de agua para combate de incendios distribuidos estratégicamente en su perímetro y en puntos interiores críticos, independientemente de la red pública municipal. En la mayoría de las plantas industriales mexicanas de escala media a grande, la red pública de agua no tiene ni la presión ni el caudal suficientes para alimentar un sistema de protección contra incendios serio. NFPA 24, el estándar para la instalación de tuberías de servicio privado contra incendios y sus accesorios, establece los criterios bajo los cuales esa red privada debe diseñarse, instalarse y mantenerse para que funcione cuando se necesite.

@@ -14,6 +14,21 @@ draft: false
 productosRelacionados: ["boquilla-tipo-pistola", "boquilla-turbo-jet", "boquilla-certificada", "boquilla-certificada-dual-ul-fm"]
 canonical: "https://gamademexico.com/blog/boquillas/diferencia-boquilla-pistola-turbojet-incendios"
 noindex: false
+schema:
+  - type: "Article"
+    headline: "Boquilla Tipo Pistola vs Turbo Jet: Cuándo Usar Cada Una"
+    author: "Gama de México"
+    datePublished: "2026-03-01"
+    dateModified: "2026-03-19"
+    image: "/img/boquillas-contra-incendios/boquilla-tipo-pistola-contra-incendios-estacion-bomberos-01.avif"
+  - type: "FAQPage"
+    questions:
+      - q: "¿Cuánta fuerza de reacción tiene una boquilla contra incendios?"
+        a: "Se calcula con: 1.57 × GPM × √PSI / 10. A 95 GPM y 100 PSI = 45 libras (un operador). A 250 GPM y 100 PSI = 120 libras (dos operadores). A 500 GPM = 240+ libras (requiere monitor fijo). La fuerza determina si la boquilla es manejable por la brigada o no."
+      - q: "¿Puede un brigadista solo operar una turbo jet?"
+        a: "No de forma segura. A 250 GPM la fuerza de reacción es de 120 libras, incontrolable para una persona sin punto de apoyo sólido. La turbo jet requiere mínimo dos operadores: uno controla dirección y otro estabiliza la manguera. Sin capacitación específica para dos personas, la turbo jet es un riesgo."
+      - q: "¿Por qué la niebla protege al brigadista?"
+        a: "La niebla fragmenta el agua en miles de gotas con superficie de contacto cientos de veces mayor que el chorro recto. Cada gota absorbe calor del aire y se evapora. El vapor desplaza oxígeno y reduce la temperatura. La nube resultante reduce la radiación térmica sobre el operador, permitiéndole avanzar hacia el fuego."
 ---
 
 La boquilla es el último componente del sistema contra incendios antes de que el agua toque el fuego. Todo lo demás — la cisterna, la bomba, la tubería, las [válvulas](/valvulas/), las [mangueras](/mangueras/), las [conexiones](/conexiones-herrajes/) — existe para entregar agua a la presión y caudal correctos hasta ese punto final donde la boquilla convierte un flujo de agua presurizada en un patrón de descarga que puede apagar un incendio. Si la boquilla es la incorrecta para el escenario, todo el sistema que la alimenta es irrelevante. Es como tener un rifle perfecto con la munición equivocada.

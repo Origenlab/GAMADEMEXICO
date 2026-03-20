@@ -1,19 +1,38 @@
 ---
 title: "Adaptadores y Acoplamientos para Mangueras Contra Incendios"
-description: "Tipos de adaptadores y acoplamientos NH, Storz y roscados para mangueras contra incendios: compatibilidad, materiales y criterios de selección industrial."
+description: "Adaptadores Storz-NST, acoplamientos NH, reductores y bifurcadores para mangueras contra incendios. Compatibilidad con bomberos y errores comunes."
+fecha: "2026-03-01"
+fechaActualizacion: "2026-03-19"
 categoria: "conexiones-herrajes"
 autor:
   nombre: "Equipo Gama de México"
   cargo: "Asesoría Técnica"
 imagen: "/img/blog/adaptadores-herrajes-bronce-contra-incendios-profesional.avif"
-imagenAlt: "Adaptadores y herrajes de bronce para mangueras contra incendios"
-tags: ["adaptadores mangueras", "acoplamientos NH", "Storz", "NFPA 1963", "conexiones incendios", "compatibilidad mangueras"]
+imagenAlt: "Adaptadores de bronce Storz-NST para mangueras contra incendios"
+tags: ["adaptadores mangueras", "acoplamientos Storz NST", "NFPA 1963", "conexiones contra incendios", "compatibilidad bomberos"]
 destacado: false
 draft: false
-tiempoLectura: 14
+tiempoLectura: 16
 canonical: "https://gamademexico.com/blog/conexiones-herrajes/adaptadores-acoplamientos-mangueras-contra-incendios-tipos"
 noindex: false
 productosRelacionados: []
+schema:
+  - type: "Article"
+    headline: "Adaptadores y Acoplamientos para Mangueras Contra Incendios"
+    author: "Gama de México"
+    datePublished: "2026-03-01"
+    dateModified: "2026-03-19"
+    image: "/img/blog/adaptadores-herrajes-bronce-contra-incendios-profesional.avif"
+  - type: "FAQPage"
+    questions:
+      - q: "¿Qué adaptador necesito si mi hidrante es Storz y los bomberos usan NST?"
+        a: "Un adaptador Storz a NST de bronce naval del diámetro correspondiente (generalmente 2.5 pulgadas). Debe estar permanentemente instalado o encadenado junto al hidrante, no en el almacén. Verificar empaques semestralmente porque la exposición al sol los degrada y un empaque seco sella en prueba pero fuga bajo presión."
+      - q: "¿Por qué no es compatible mi manguera con el hidrante?"
+        a: "Las causas más comunes son: manguera con rosca NST conectando a hidrante Storz (o viceversa), diferencia de diámetro (manguera 1.5 pulgadas en hidrante 2.5 pulgadas sin reductor), o rosca BSP de equipo europeo que no coincide con NST aunque el diámetro parezca igual."
+      - q: "¿De qué material deben ser los adaptadores contra incendios?"
+        a: "Bronce naval C46400 para instalaciones fijas y ambientes agresivos (costa, refinería) — vida útil 20+ años. Aluminio 6061-T6 anodizado para kits portátiles donde el peso importa — 40% más ligero. Nunca aluminio en ambientes marinos o con cloruros. La presión de trabajo debe corresponder con la clase del sistema (250, 400 o 600 PSI)."
+      - q: "¿Dónde debo colocar los adaptadores contra incendios?"
+        a: "En el punto de uso: junto al hidrante, dentro del gabinete, en la estación de manguera. Nunca en el almacén de mantenimiento. Señalizados con los tamaños de cada extremo y accesibles sin llave ni herramienta. Si el adaptador no está donde se necesita cuando se necesita, es como si no existiera."
 ---
 
 En protección contra incendios, hay componentes que nadie menciona hasta que fallan. Los adaptadores y acoplamientos son exactamente eso. Nadie abre una reunión de proyecto diciendo "hablemos de los adaptadores". La conversación se centra en la bomba, en los [monitores](/monitores/), en el cálculo hidráulico, en las [válvulas](/valvulas/) y en la cobertura de rociadores. Pero cuando llega la emergencia real y el carro bomba del municipio no puede conectar su manguera al hidrante de la planta porque las roscas no coinciden, ahí se descubre que el eslabón más pequeño del sistema era también el más crítico. Y lo peor es que ese problema no se resuelve en el momento. Se resuelve antes, en la especificación, o no se resuelve.

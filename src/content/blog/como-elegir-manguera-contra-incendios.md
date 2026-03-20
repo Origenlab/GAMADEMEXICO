@@ -1,19 +1,40 @@
 ---
 title: "Cómo Elegir la Manguera Contra Incendios Correcta"
-description: "Guía técnica para seleccionar mangueras contra incendios según NFPA 1961: tipos de construcción, presión, materiales y errores de especificación en México."
+description: "Cómo elegir mangueras contra incendios por presión, forro y construcción: EPDM vs nitrilo, doble forro vs forestal, y errores que causan fallas bajo presión."
+fecha: "2025-02-14"
+fechaActualizacion: "2026-03-19"
 categoria: "mangueras"
 autor:
   nombre: "Equipo Gama de México"
   cargo: "Asesoría Técnica"
 imagen: "/img/productos/manguera-blindex-2-5-30m-frontal.avif"
-imagenAlt: "Manguera contra incendios Blindex de 2.5 pulgadas certificada NFPA"
-tags: ["mangueras contra incendios", "NFPA 1961", "guía de selección", "manguera industrial", "certificación UL"]
+imagenAlt: "Manguera contra incendios Blindex 2.5 pulgadas certificada NFPA"
+tags: ["mangueras contra incendios", "NFPA 1961", "selección mangueras", "manguera industrial", "forro EPDM nitrilo"]
 destacado: true
-tiempoLectura: 16
+tiempoLectura: 18
 draft: false
 productosRelacionados: ["manguera-millhose-1-5-30m", "manguera-blindex-2-5-30m", "manguera-forestal-1-5-30m"]
 canonical: "https://gamademexico.com/blog/mangueras/como-elegir-manguera-contra-incendios"
 noindex: false
+schema:
+  - type: "Article"
+    headline: "Cómo Elegir la Manguera Contra Incendios Correcta"
+    author: "Gama de México"
+    datePublished: "2025-02-14"
+    dateModified: "2026-03-19"
+    image: "/img/productos/manguera-blindex-2-5-30m-frontal.avif"
+  - type: "FAQPage"
+    questions:
+      - q: "¿Qué tipo de manguera contra incendios necesito para mi planta?"
+        a: "Depende de tres factores: presión del sistema (la manguera debe soportar la presión máxima incluyendo golpe de ariete), tipo de agente (EPDM para agua, nitrilo para espuma AFFF o contacto con hidrocarburos), y uso previsto (doble forro 300 PSI para industrial estándar, forestal ligera para brigada portátil, cuatro capas para alta presión ESFR)."
+      - q: "¿Cuál es la diferencia entre manguera de 1.5 y 2.5 pulgadas?"
+        a: "La de 1.5 pulgadas entrega 60-150 GPM, pesa menos y un operador solo puede manejarla. Ideal para gabinetes interiores y primera intervención. La de 2.5 pulgadas entrega 150-300+ GPM pero pesa el doble y requiere dos operadores. Se usa para ataque principal, alimentación de monitores y líneas de suministro a bomberos."
+      - q: "¿Qué significa NFPA 1961 en una manguera contra incendios?"
+        a: "NFPA 1961 es el estándar que define los requisitos de fabricación, presión de prueba, resistencia a la abrasión y desempeño bajo servicio de las mangueras contra incendios. Una manguera certificada NFPA 1961 fue probada a presión de prueba (típicamente 450 PSI para doble forro), presión de servicio (300 PSI) y presión de ruptura (900+ PSI) por un laboratorio independiente."
+      - q: "¿Puedo usar la misma manguera para agua y espuma AFFF?"
+        a: "Solo si el forro interior es de caucho nitrilo (NBR). Las mangueras con forro EPDM resisten agua pero los surfactantes fluorados de la espuma AFFF degradan el EPDM progresivamente. El deterioro no es inmediato — puede tomar meses — pero eventualmente compromete la integridad del forro y causa fallas bajo presión."
+      - q: "¿Cada cuánto se debe reemplazar una manguera contra incendios?"
+        a: "No hay fecha fija de reemplazo. La vida útil depende del almacenamiento, uso y mantenimiento. Una manguera bien cuidada dura 15-20 años. La prueba hidrostática anual conforme a NFPA 1962 determina si sigue apta. Reemplazar inmediatamente si falla la prueba, muestra daño visible en el forro, o tiene puntos de abrasión que exponen el refuerzo textil."
 ---
 
 La manguera contra incendios es el componente del sistema que la mayoría de las personas puede reconocer con los ojos cerrados. Es roja, está enrollada en un gabinete, tiene un acople metálico en cada extremo y una boquilla en la punta. Todo el mundo sabe qué es. Muy poca gente sabe cómo elegirla bien. Y esa brecha entre el reconocimiento superficial y el conocimiento técnico real es la que produce instalaciones donde la manguera que está en el gabinete no corresponde con la presión del sistema, no resiste el ambiente donde vive, no es compatible con los acoples del cuerpo de bomberos local o no tiene la construcción necesaria para sobrevivir el tipo de servicio que la planta requiere.

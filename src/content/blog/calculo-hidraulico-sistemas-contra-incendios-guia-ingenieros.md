@@ -1,19 +1,38 @@
 ---
-title: "Cálculo Hidráulico en Sistemas Contra Incendios"
-description: "Fundamentos del cálculo hidráulico para sistemas contra incendios: Hazen-Williams, pérdidas por fricción, curvas de bomba y errores comunes en proyectos reales."
+title: "Cálculo Hidráulico en Sistemas Contra Incendios: Guía Técnica"
+description: "Cálculo hidráulico para sistemas contra incendios: Hazen-Williams, pérdidas por fricción, coeficiente C real vs asumido, y errores que subdimensionan el sistema."
+fecha: "2026-03-01"
+fechaActualizacion: "2026-03-19"
 categoria: "valvulas"
 autor:
   nombre: "Equipo Gama de México"
   cargo: "Asesoría Técnica"
 imagen: "/img/blog/valvula-compuerta-osy-sistema-rociadores-industrial.avif"
 imagenAlt: "Cálculo hidráulico de sistema contra incendios industrial"
-tags: ["cálculo hidráulico", "Hazen-Williams", "sistemas contra incendios", "NFPA", "ingeniería contra incendios"]
+tags: ["cálculo hidráulico", "Hazen-Williams", "sistemas contra incendios", "pérdidas por fricción", "ingeniería contra incendios"]
 destacado: false
 canonical: "https://gamademexico.com/blog/valvulas/calculo-hidraulico-sistemas-contra-incendios-guia-ingenieros"
 noindex: false
-tiempoLectura: 16
+tiempoLectura: 18
 draft: false
-productosRelacionados: []
+productosRelacionados: ["valvula-compuerta-osy", "valvula-retencion", "valvula-mariposa"]
+schema:
+  - type: "Article"
+    headline: "Cálculo Hidráulico en Sistemas Contra Incendios: Guía Técnica"
+    author: "Gama de México"
+    datePublished: "2026-03-01"
+    dateModified: "2026-03-19"
+    image: "/img/blog/valvula-compuerta-osy-sistema-rociadores-industrial.avif"
+  - type: "FAQPage"
+    questions:
+      - q: "¿Qué es el cálculo hidráulico en sistemas contra incendios?"
+        a: "Es la verificación matemática de que el agua llega desde la bomba hasta cada punto de descarga (rociadores, hidrantes, monitores) con la presión y caudal suficientes. Usa la ecuación de Hazen-Williams para calcular pérdidas por fricción en tubería, válvulas y accesorios, considerando el escenario de demanda máxima simultánea."
+      - q: "¿Qué es el coeficiente C de Hazen-Williams?"
+        a: "Es un factor de rugosidad que depende del material y la condición de la tubería. Acero nuevo con recubrimiento: C=120. Acero sin recubrimiento: C=100. Tubería vieja con depósitos: C=80-90. Usar C=120 en tubería vieja puede subestimar las pérdidas en más del 30%, resultando en un sistema que no entrega lo calculado."
+      - q: "¿Por qué mi bomba contra incendios no entrega la presión calculada?"
+        a: "Generalmente el problema no es la bomba sino las pérdidas entre la bomba y el punto de descarga: válvulas que introducen pérdidas equivalentes no calculadas, tubería vieja con coeficiente C menor al asumido, demanda simultánea mayor a la prevista, y longitudes equivalentes de accesorios que pueden representar más del 40% de la pérdida total."
+      - q: "¿Cada cuánto se debe verificar el cálculo hidráulico?"
+        a: "Cada vez que se modifica el sistema: agregar rociadores, extender tubería, cambiar bomba, agregar hidrantes. También cuando la prueba de flujo anual muestra presiones residuales menores a las esperadas, lo cual puede indicar que la tubería se degradó internamente y el coeficiente C real ya no corresponde con el del cálculo original."
 ---
 
 El cálculo hidráulico es la columna vertebral de todo sistema contra incendios que pretenda funcionar en la realidad y no solo en el plano. Sin embargo, es probablemente el paso que más se simplifica, que más se asume y que más se delega sin verificación en todo el proceso de ingeniería de protección contra incendios. He revisado proyectos donde el diseñador seleccionó la bomba, dimensionó la tubería, eligió los rociadores y especificó los [monitores](/monitores/) basándose en tablas generales y reglas de dedo que funcionan razonablemente bien en edificios simples, pero que se desmoronan cuando la instalación tiene longitudes de tubería largas, cambios de elevación significativos, múltiples puntos de demanda simultánea o una combinación de rociadores, hidrantes y monitores que compiten por el mismo caudal. El cálculo hidráulico no es un trámite para rellenar la carpeta del proyecto. Es la verificación matemática de que el agua va a llegar donde tiene que llegar, con la presión que necesita y en la cantidad suficiente para controlar el incendio.

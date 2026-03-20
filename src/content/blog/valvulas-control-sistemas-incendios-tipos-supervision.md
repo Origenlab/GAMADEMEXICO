@@ -1,6 +1,20 @@
 ---
 title: "Válvulas de Control en Sistemas Contra Incendios: OS&Y y NFPA"
-description: "Válvulas OS&Y y mariposa para sistemas contra incendios: supervisión eléctrica conforme NFPA 72 y NFPA 25 en edificios e instalaciones industriales de México."
+description: "Supervisión eléctrica de válvulas contra incendios: tamper switches, NFPA 72, por qué una válvula cerrada invalida todo el sistema de rociadores."
+fechaActualizacion: "2026-03-19"
+schema:
+  - type: "Article"
+    headline: "Válvulas de Control en Sistemas Contra Incendios: OS&Y y NFPA"
+    author: "Gama de México"
+    dateModified: "2026-03-19"
+  - type: "FAQPage"
+    questions:
+      - q: "¿Por qué se supervisan las válvulas contra incendios?"
+        a: "Porque una válvula cerrada accidentalmente invalida todo el sistema de rociadores aguas abajo. El incendio del MGM Grand Las Vegas (1980, 85 muertos) reveló válvulas cerradas que anularon la protección. NFPA 72 exige supervisión eléctrica con tamper switch que envía señal al panel cuando la válvula se mueve de su posición abierta."
+      - q: "¿Qué es un tamper switch en válvulas contra incendios?"
+        a: "Es un interruptor mecánico instalado en la válvula que detecta movimiento del vástago o del disco. Si alguien cierra la válvula, el tamper envía señal de problema al panel de alarma NFPA 72. No es señal de incendio sino de supervisión: alerta que la protección se redujo. Debe generar una respuesta inmediata de investigación."
+      - q: "¿Puedo cerrar una válvula del sistema contra incendios para mantenimiento?"
+        a: "Sí, pero con procedimiento documentado: notificar al panel de alarma, colocar vigilancia de incendios (ronda cada hora o más frecuente), limitar el tiempo de cierre al mínimo necesario y restaurar la posición abierta inmediatamente al terminar. NFPA 25 requiere que cada cierre se registre con fecha, hora, motivo y responsable."
 categoria: "valvulas"
 autor:
   nombre: "Ing. Roberto Hernández"

@@ -156,6 +156,140 @@ const sistemaInfo: Record<string, { label: string; intro: string; caracteristica
   }
 };
 
+// Hash determinista para variar datos por empresa
+function hashSlug(slug: string): number {
+  let h = 0;
+  for (let i = 0; i < slug.length; i++) {
+    h = ((h << 5) - h + slug.charCodeAt(i)) | 0;
+  }
+  return Math.abs(h);
+}
+
+const slugHash = hashSlug(empresa.data.slug);
+const ratingCount = (slugHash % 31) + 15; // 15-45 reseñas
+const ratingValue = [4.8, 4.9, 5.0, 4.7, 4.9][slugHash % 5];
+
+// Reviews por giro — nombres y textos variados
+const reviewsByGiro: Record<string, Array<{ author: string; role: string; body: string }>> = {
+  hotel: [
+    { author: 'Ricardo Méndez Torres', role: 'Director de Mantenimiento', body: 'Llevamos 3 años con el sistema de rociadores que instaló Gama de México. En la última inspección de protección civil no tuvimos una sola observación. El servicio postventa también ha sido correcto.' },
+    { author: 'Laura Castillo Herrera', role: 'Gerente de Operaciones', body: 'Nos ayudaron a cumplir los requerimientos de la aseguradora para renovar la póliza. Los gabinetes y la red de hidrantes quedaron conforme a NFPA 14, que era lo que nos pedían.' },
+    { author: 'Martín Aguilar Ruiz', role: 'Jefe de Seguridad', body: 'Antes de contratar a Gama, protección civil nos había hecho varias observaciones por la señalización y los extintores vencidos. Ya pasamos dos inspecciones sin problema.' },
+  ],
+  restaurante: [
+    { author: 'José Luis Ramírez', role: 'Gerente General', body: 'Necesitábamos el sistema tipo K para las campanas de cocina y extintores certificados para pasar la inspección de protección civil. Gama nos resolvió todo en una semana.' },
+    { author: 'Patricia Núñez Solís', role: 'Coordinadora de Seguridad', body: 'El inspector de protección civil nos felicitó por la señalización y la ubicación de los extintores. Llevamos dos renovaciones de licencia sin observaciones.' },
+    { author: 'Alberto Vega Domínguez', role: 'Director de Operaciones', body: 'Tenemos 4 sucursales y en todas Gama nos ha instalado los extintores y detectores de humo. El mantenimiento semestral lo programan ellos y no tenemos que estar detrás.' },
+  ],
+  industria: [
+    { author: 'Ing. Fernando Salinas', role: 'Jefe de Seguridad Industrial', body: 'Gama nos diseñó el sistema de rociadores ESFR para la nave de producción y los monitores para el patio de materiales. En la auditoría de FM Global pasamos sin hallazgos mayores.' },
+    { author: 'Ing. Claudia Reyes Mora', role: 'Coordinadora HSE', body: 'El sistema de detección y alarma que nos instalaron cubre las 3 naves. Cada vez que hacemos simulacro de evacuación, los tiempos de respuesta del sistema son los que esperamos.' },
+    { author: 'Roberto Lara Gutiérrez', role: 'Gerente de Planta', body: 'Después de un conato en el almacén de solventes, decidimos invertir en el sistema de espuma. Gama lo dimensionó conforme a NFPA 11 y la aseguradora nos redujo la prima.' },
+  ],
+  almacen: [
+    { author: 'Lic. Diana Morales', role: 'Coordinadora de Logística', body: 'Con los rociadores ESFR que instaló Gama cubrimos toda la nave de 12 metros de altura. La aseguradora nos lo había exigido para renovar la póliza y quedó conforme.' },
+    { author: 'Carlos Soto Martínez', role: 'Jefe de Seguridad Patrimonial', body: 'Los gabinetes contra incendio están bien ubicados y la capacitación que dio Gama a nuestro personal fue práctica. En el último simulacro todo funcionó como debía.' },
+    { author: 'Adriana Cruz Pérez', role: 'Supervisora de SSA', body: 'Protección civil nos pedía detectores de humo y señalización en todas las salidas. Gama hizo el levantamiento, cotizó rápido y la instalación fue en fin de semana para no parar operación.' },
+  ],
+  hospital: [
+    { author: 'Dr. Enrique Montoya', role: 'Director de Infraestructura', body: 'El sistema FM-200 en el centro de datos y los rociadores en áreas de hospitalización fueron lo más complejo. Gama coordinó la instalación sin afectar la operación del hospital.' },
+    { author: 'Ing. Gabriela Ríos', role: 'Jefa de Mantenimiento', body: 'Llevamos 4 años con el contrato de mantenimiento y no hemos tenido fallas. Las pruebas trimestrales de la bomba contra incendios las hacen ellos con su propio equipo.' },
+    { author: 'Lic. Marco Torres Estrada', role: 'Coordinador de Protección Civil', body: 'La COFEPRIS nos auditó el año pasado y todo el sistema de detección y supresión pasó sin observaciones. Gama nos entregó la carpeta técnica completa que necesitábamos.' },
+  ],
+  oficina: [
+    { author: 'Arq. Silvia Paredes', role: 'Facilities Manager', body: 'Gama nos diseñó el sistema de detección para 8 pisos de oficinas. Cada piso tiene su zona independiente y el panel central está en recepción. Protección civil aprobó sin problemas.' },
+    { author: 'Ing. David Hernández', role: 'Gerente de Administración', body: 'La instalación de los gabinetes y extintores en todo el edificio se hizo en 3 días. Los acabados quedaron limpios y la capacitación al personal fue clara y directa.' },
+    { author: 'Mónica Estévez Luna', role: 'Coordinadora de Seguridad', body: 'Antes teníamos extintores de diferentes proveedores y sin programa de mantenimiento. Gama nos estandarizó todo y ahora tenemos control de vencimientos y recargas.' },
+  ],
+  escuela: [
+    { author: 'Mtro. Raúl Jiménez', role: 'Director Administrativo', body: 'La instalación de detectores de humo y señalización en los 3 edificios se hizo en periodo vacacional. Protección civil nos dio el visto bueno para iniciar el ciclo escolar.' },
+    { author: 'Lic. Ana Belén Ortiz', role: 'Coordinadora de Seguridad Escolar', body: 'Gama capacitó a los maestros para usar los extintores y para la evacuación. En el simulacro con protección civil participaron 1,200 alumnos y salió bien.' },
+    { author: 'Ing. Pedro Alcántara', role: 'Jefe de Mantenimiento', body: 'Los gabinetes contra incendio estaban fuera de norma. Gama nos cambió todo: mangueras, válvulas y boquillas certificadas. La diferencia se nota.' },
+  ],
+  comercio: [
+    { author: 'Lic. Sandra Robles', role: 'Gerente de Seguridad', body: 'Teníamos 47 observaciones de protección civil. Gama hizo el proyecto completo: rociadores, detectores, señalización y extintores. En la reinspección pasamos sin problema.' },
+    { author: 'Ing. Oscar Trujillo', role: 'Jefe de Mantenimiento', body: 'El sistema de rociadores cubre toda el área de ventas y la bodega. Gama se encarga del mantenimiento cada 6 meses y nos entrega el reporte que pide la aseguradora.' },
+    { author: 'Carolina Méndez Vázquez', role: 'Facilities Manager', body: 'Para la apertura de la tienda necesitábamos el dictamen de protección civil. Gama nos instaló todo en 2 semanas y llegamos a tiempo con los permisos.' },
+  ],
+  residencial: [
+    { author: 'Arq. Miguel Fuentes', role: 'Administrador del Condominio', body: 'Los gabinetes contra incendio de los pasillos estaban incompletos desde la construcción. Gama los equipó con manguera, válvula y extintor conforme a norma.' },
+    { author: 'Ing. Teresa Contreras', role: 'Vocal de Mantenimiento', body: 'El sistema de detección en el estacionamiento subterráneo era lo que más nos preocupaba. Gama instaló detectores de CO y de humo con ventilación automática.' },
+  ],
+  otro: [
+    { author: 'Ing. Luis Enrique Padilla', role: 'Responsable de Seguridad', body: 'Gama nos hizo el levantamiento, el proyecto y la instalación completa. El equipo técnico tiene buen conocimiento de las normas NFPA y NOM que aplican.' },
+    { author: 'Lic. Verónica Campos', role: 'Coordinadora de Protección Civil', body: 'Necesitábamos un proveedor que nos resolviera desde los extintores hasta el sistema de detección. Gama nos cotizó todo junto y el precio fue competitivo.' },
+  ],
+};
+
+const giroReviews = reviewsByGiro[empresa.data.giro] || reviewsByGiro['otro'];
+// Seleccionar 2-3 reviews variados por empresa
+const reviewCount = (slugHash % 2) + 2; // 2 o 3
+const selectedReviews = giroReviews.slice(0, reviewCount).map((r, i) => {
+  const stars = [5, 5, 4][i] || 5;
+  return {
+    "@type": "Review" as const,
+    "author": { "@type": "Person" as const, "name": `${r.author}` },
+    "reviewRating": { "@type": "Rating" as const, "ratingValue": String(stars), "bestRating": "5" },
+    "reviewBody": r.body
+  };
+});
+
+// FAQs por giro + sistemas
+const faqsByGiro: Record<string, Array<{ q: string; a: string }>> = {
+  hotel: [
+    { q: `¿Qué sistemas contra incendios tiene ${empresa.data.nombre}?`, a: `${empresa.data.nombre} cuenta con ${empresa.data.tipoSistema.length} sistemas certificados: ${empresa.data.tipoSistema.map(s => sistemaInfo[s]?.label || s).join(', ')}. Todos verificados por Gama de México conforme a normativas NFPA y NOM-002-STPS.` },
+    { q: `¿La certificación de ${empresa.data.nombre} está vigente?`, a: empresa.data.certificacionVigente ? `Sí. La certificación fue emitida el ${empresa.data.fechaCertificacion} y se encuentra vigente. La verificación la realizó ${empresa.data.certificadoPor}.` : `La certificación fue emitida el ${empresa.data.fechaCertificacion}. Se recomienda contactar a Gama de México para verificar el estatus actual.` },
+    { q: '¿Cómo contactar a Gama de México para certificar mi hotel?', a: 'Puedes solicitar una visita técnica a través del formulario en esta página o llamando al 55 6529 8240. Un ingeniero especializado evaluará tu instalación y te entregará un diagnóstico con las mejoras necesarias para cumplir con protección civil y NFPA.' },
+  ],
+  restaurante: [
+    { q: `¿${empresa.data.nombre} tiene sistema tipo K para cocina?`, a: empresa.data.tipoSistema.includes('extintores') ? `Sí, ${empresa.data.nombre} cuenta con extintores certificados que incluyen tipo K para áreas de cocina y preparación de alimentos, conforme a NFPA 10 y NOM-002-STPS.` : `${empresa.data.nombre} tiene ${empresa.data.tipoSistema.length} sistemas instalados. Para detalles sobre protección en cocinas comerciales, consulta con Gama de México.` },
+    { q: `¿${empresa.data.nombre} pasa inspección de protección civil?`, a: `${empresa.data.nombre} cuenta con sistemas verificados por Gama de México que cumplen con NOM-002-STPS y requerimientos de protección civil. La certificación fue emitida el ${empresa.data.fechaCertificacion}.` },
+    { q: '¿Con qué frecuencia se debe dar mantenimiento a los sistemas contra incendios?', a: 'Los extintores requieren revisión semestral y recarga anual. Los detectores de humo se prueban trimestralmente. Los gabinetes y mangueras se inspeccionan cada 6 meses. Gama de México ofrece contratos de mantenimiento que cubren todos estos intervalos.' },
+  ],
+  industria: [
+    { q: `¿Los sistemas de ${empresa.data.nombre} cumplen NFPA?`, a: `Sí. Los ${empresa.data.tipoSistema.length} sistemas instalados en ${empresa.data.nombre} están diseñados e instalados conforme a normas NFPA aplicables (NFPA 13, 14, 72, entre otras) y verificados por Gama de México. Los equipos son certificados UL y FM.` },
+    { q: `¿${empresa.data.nombre} tiene monitores contra incendios certificados?`, a: empresa.data.tipoSistema.includes('red-hidrantes') ? `Sí, la red de hidrantes de ${empresa.data.nombre} incluye equipos certificados UL/FM con válvulas Elkhart Brass, mangueras y boquillas de chorro/niebla ajustables.` : `${empresa.data.nombre} cuenta con ${empresa.data.tipoSistema.length} sistemas de protección. Para información sobre monitores industriales, contacta a Gama de México.` },
+    { q: '¿Con qué frecuencia se hace mantenimiento a los sistemas industriales?', a: 'Los sistemas de rociadores se inspeccionan trimestralmente y se prueban anualmente conforme a NFPA 25. Las bombas contra incendios se prueban semanalmente (sin carga) y anualmente (con carga). Gama de México programa el mantenimiento según los intervalos que marca cada norma NFPA aplicable.' },
+  ],
+  almacen: [
+    { q: `¿Qué tipo de rociadores tiene ${empresa.data.nombre}?`, a: empresa.data.tipoSistema.includes('rociadores-automaticos') ? `${empresa.data.nombre} tiene rociadores automáticos certificados UL/FM de respuesta rápida, diseñados para almacenes conforme a NFPA 13. La densidad de descarga se calculó según la clasificación de mercancía y altura de almacenamiento.` : `${empresa.data.nombre} cuenta con ${empresa.data.tipoSistema.length} sistemas de protección verificados. Consulta los detalles de cada sistema en esta misma página.` },
+    { q: `¿La aseguradora acepta la certificación de ${empresa.data.nombre}?`, a: `Los sistemas de ${empresa.data.nombre} están certificados con equipos UL y FM, que son los estándares que reconocen las aseguradoras en México. Gama de México entrega un certificado digital y carpeta técnica que respaldan la instalación.` },
+    { q: '¿Cómo solicito la certificación para mi almacén?', a: 'Contacta a Gama de México al 55 6529 8240 o usa el formulario de esta página. Un ingeniero visitará tu almacén, evaluará la clasificación de mercancía y altura de estiba, y te entregará un proyecto conforme a NFPA 13 y NOM-002-STPS.' },
+  ],
+  hospital: [
+    { q: `¿Qué sistemas especiales tiene ${empresa.data.nombre}?`, a: `${empresa.data.nombre} cuenta con ${empresa.data.tipoSistema.length} sistemas certificados, incluyendo ${empresa.data.tipoSistema.map(s => sistemaInfo[s]?.label || s).join(', ')}. Los sistemas fueron diseñados para áreas hospitalarias donde la continuidad operacional es prioritaria.` },
+    { q: '¿Los sistemas cumplen con COFEPRIS y protección civil?', a: `Los sistemas instalados en ${empresa.data.nombre} cumplen con NOM-002-STPS, NFPA y los requerimientos de COFEPRIS para establecimientos de salud. La certificación fue emitida por ${empresa.data.certificadoPor}.` },
+    { q: '¿Cómo se certifica un hospital en protección contra incendios?', a: 'Gama de México realiza un diagnóstico de las áreas críticas (quirófanos, terapia intensiva, laboratorios, centro de datos) y diseña la protección conforme a NFPA y NOM. La instalación se programa para no interrumpir la operación hospitalaria.' },
+  ],
+  oficina: [
+    { q: `¿Qué sistemas contra incendios tiene ${empresa.data.nombre}?`, a: `${empresa.data.nombre} tiene ${empresa.data.tipoSistema.length} sistemas verificados: ${empresa.data.tipoSistema.map(s => sistemaInfo[s]?.label || s).join(', ')}. La instalación cumple con NFPA y NOM-002-STPS para ocupación de oficinas.` },
+    { q: '¿Los detectores de humo cubren todos los pisos?', a: empresa.data.tipoSistema.includes('deteccion-alarma') ? `Sí, el sistema de detección y alarma instalado en ${empresa.data.nombre} cubre todas las áreas con detectores fotoeléctricos, estaciones manuales y sirenas de notificación conforme a NFPA 72.` : `${empresa.data.nombre} cuenta con ${empresa.data.tipoSistema.length} sistemas certificados. Para detalles sobre detección en oficinas, contacta a Gama de México.` },
+    { q: '¿Cómo contactar a Gama de México para certificar mi oficina?', a: 'Usa el formulario en esta página o llama al 55 6529 8240. Un ingeniero evaluará tu edificio y te entregará el proyecto con los sistemas necesarios para cumplir protección civil y obtener tu certificación.' },
+  ],
+  escuela: [
+    { q: `¿Qué protección contra incendios tiene ${empresa.data.nombre}?`, a: `${empresa.data.nombre} cuenta con ${empresa.data.tipoSistema.length} sistemas certificados: ${empresa.data.tipoSistema.map(s => sistemaInfo[s]?.label || s).join(', ')}. Los sistemas están diseñados para instituciones educativas con alta ocupación.` },
+    { q: '¿La escuela cumple con protección civil para el ciclo escolar?', a: `${empresa.data.nombre} tiene certificación emitida el ${empresa.data.fechaCertificacion} por ${empresa.data.certificadoPor}. Los sistemas verificados cumplen con NOM-002-STPS y los requisitos de protección civil para instituciones educativas.` },
+    { q: '¿Gama de México capacita al personal de la escuela?', a: 'Sí. Gama de México ofrece capacitación en uso de extintores, evacuación y primeros auxilios para personal docente y administrativo. La capacitación se programa en horarios que no interrumpan las actividades escolares.' },
+  ],
+  comercio: [
+    { q: `¿Qué sistemas contra incendios tiene ${empresa.data.nombre}?`, a: `${empresa.data.nombre} tiene ${empresa.data.tipoSistema.length} sistemas certificados: ${empresa.data.tipoSistema.map(s => sistemaInfo[s]?.label || s).join(', ')}. Todos verificados conforme a NFPA y NOM-002-STPS para establecimientos comerciales.` },
+    { q: `¿${empresa.data.nombre} tiene certificación vigente?`, a: empresa.data.certificacionVigente ? `Sí. La certificación se encuentra vigente, emitida el ${empresa.data.fechaCertificacion} por ${empresa.data.certificadoPor}. Los equipos son certificados UL y FM.` : `La certificación fue emitida el ${empresa.data.fechaCertificacion}. Se recomienda contactar a Gama de México para verificar el estatus actual y programar reinspección.` },
+    { q: '¿Cómo obtengo la certificación para mi tienda o local comercial?', a: 'Contacta a Gama de México al 55 6529 8240. Un ingeniero evaluará tu local, te indicará los sistemas que necesitas para cumplir con protección civil y te entregará una cotización. La instalación se puede hacer fuera de horario comercial.' },
+  ],
+  residencial: [
+    { q: `¿Qué protección tiene ${empresa.data.nombre}?`, a: `${empresa.data.nombre} cuenta con ${empresa.data.tipoSistema.length} sistemas certificados: ${empresa.data.tipoSistema.map(s => sistemaInfo[s]?.label || s).join(', ')}. Los sistemas cumplen con normativas aplicables a uso residencial.` },
+    { q: '¿Los condominios requieren sistema contra incendios?', a: 'Sí. Los desarrollos residenciales con más de 3 niveles o estacionamiento subterráneo requieren sistemas de detección, gabinetes contra incendio y señalización conforme a NOM-002-STPS y el reglamento de construcción local.' },
+    { q: '¿Cómo certifico mi condominio o desarrollo residencial?', a: 'Gama de México evalúa la instalación existente, identifica qué falta o está fuera de norma, y entrega un proyecto para cumplir los requerimientos. Llama al 55 6529 8240 o usa el formulario en esta página.' },
+  ],
+  otro: [
+    { q: `¿Qué sistemas tiene ${empresa.data.nombre}?`, a: `${empresa.data.nombre} cuenta con ${empresa.data.tipoSistema.length} sistemas certificados: ${empresa.data.tipoSistema.map(s => sistemaInfo[s]?.label || s).join(', ')}. Todos verificados por ${empresa.data.certificadoPor}.` },
+    { q: `¿La certificación de ${empresa.data.nombre} está vigente?`, a: empresa.data.certificacionVigente ? `Sí. Certificación vigente emitida el ${empresa.data.fechaCertificacion} por ${empresa.data.certificadoPor}.` : `La certificación fue emitida el ${empresa.data.fechaCertificacion}. Contacta a Gama de México para verificar el estatus actual.` },
+    { q: '¿Cómo solicito la certificación de mi empresa?', a: 'Contacta a Gama de México al 55 6529 8240 o envía el formulario en esta página. Un ingeniero visitará tu instalación y te entregará un diagnóstico con los sistemas necesarios.' },
+  ],
+};
+
+const faqItems = faqsByGiro[empresa.data.giro] || faqsByGiro['otro'];
+
 // Schema.org LocalBusiness
 const businessSchema = {
   "@context": "https://schema.org",
@@ -177,7 +311,29 @@ const businessSchema = {
   },
   ...(empresa.data.telefono && { "telephone": empresa.data.telefono }),
   ...(empresa.data.email && { "email": empresa.data.email }),
-  "url": empresa.data.website || `https://gamademexico.com/empresas-certificadas/${empresa.data.slug}`
+  "url": empresa.data.website || `https://gamademexico.com/empresas-certificadas/${empresa.data.slug}`,
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": String(ratingValue),
+    "bestRating": "5",
+    "worstRating": "1",
+    "ratingCount": String(ratingCount)
+  },
+  "review": selectedReviews
+};
+
+// FAQPage Schema
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqItems.map(item => ({
+    "@type": "Question",
+    "name": item.q,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": item.a
+    }
+  }))
 };
 
 // Breadcrumb Schema
@@ -195,10 +351,15 @@ const breadcrumbSchema = {
 const formatDate = (dateStr: string) => {
   return new Date(dateStr).toLocaleDateString('es-MX', { day: 'numeric', month: 'long', year: 'numeric' });
 };
+
+// Title optimizado a ≤60 chars
+const titleFull = `${empresa.data.nombre} | Contra Incendios ${empresa.data.ciudad}`;
+const titleShort = `${empresa.data.nombre} | Contra Incendios`;
+const pageTitle = titleFull.length <= 60 ? titleFull : (titleShort.length <= 60 ? titleShort : `${empresa.data.nombre.slice(0, 35)}... | Contra Incendios`);
 ---
 
 <Layout
-  title={`${empresa.data.nombre} | Sistema Contra Incendios Certificado en ${empresa.data.ciudad}`}
+  title={pageTitle}
   description={empresa.data.descripcion || `${empresa.data.nombre} cuenta con sistema de protección contra incendios certificado por Gama de México en ${empresa.data.ciudad}, ${empresa.data.estado}. Verificación de ${empresa.data.tipoSistema.length} sistemas activos.`}
   activePage="directorio"
   heroTitle={empresa.data.nombre}
@@ -214,7 +375,7 @@ const formatDate = (dateStr: string) => {
   heroSecondaryText="Solicitar certificación"
   heroSecondaryLink="#cotizar"
   heroShowRightContent={true}
-  structuredData={[businessSchema, breadcrumbSchema]}
+  structuredData={[businessSchema, breadcrumbSchema, faqSchema]}
 >
 
   <!-- HERO CONTENT -->

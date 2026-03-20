@@ -1,5 +1,17 @@
 ---
 title: "Mantenimiento de Monitores Contra Incendios: Guía Completa"
+fechaActualizacion: "2026-03-19"
+schema:
+  - type: "Article"
+    headline: "Mantenimiento de Monitores Contra Incendios: Guía Completa"
+    author: "Gama de México"
+    dateModified: "2026-03-19"
+  - type: "FAQPage"
+    questions:
+      - q: "¿Cada cuánto se debe dar mantenimiento a un monitor contra incendios?"
+        a: "Inspección visual semanal. Operación de movimiento completo (giro + elevación) mensual con lubricación. Prueba de flujo a presión de operación anual. Un monitor sin operar en 2+ años puede tener mecanismos trabados, boquillas obstruidas por insectos y sellos resecos que impiden la operación en emergencia."
+      - q: "¿Qué pasa si un monitor no se mueve cuando intento operarlo?"
+        a: "Vástago de giro trabado por corrosión o depósitos calcáreos. No forzar — se puede dañar el mecanismo. Aplicar penetrante, esperar, intentar movimiento gradual. Si no cede, requiere desmontaje y servicio profesional. La causa es falta de operación mensual y lubricación — la corrosión trabaja sin oposición en mecanismos inmóviles."
 description: "Aprende a mantener tus monitores contra incendios en óptimas condiciones. Programa de inspección, lubricación y pruebas para garantizar funcionamiento confiable."
 categoria: "monitores"
 autor:

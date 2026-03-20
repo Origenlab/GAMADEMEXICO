@@ -1,5 +1,19 @@
 ---
 title: "Sistemas de Rociadores Automáticos NFPA 13: Guía para México"
+fechaActualizacion: "2026-03-19"
+schema:
+  - type: "Article"
+    headline: "Sistemas de Rociadores Automáticos NFPA 13: Guía para México"
+    author: "Gama de México"
+    dateModified: "2026-03-19"
+  - type: "FAQPage"
+    questions:
+      - q: "¿Cuándo son obligatorios los rociadores automáticos en México?"
+        a: "Depende del municipio y el uso. En CDMX, el Reglamento de Construcción los exige en edificios de más de 25m de altura, centros comerciales mayores a 2,500m², y estacionamientos subterráneos. Las aseguradoras los exigen para reducir primas en bodegas, manufactura y cualquier instalación con carga combustible significativa."
+      - q: "¿Cómo funcionan los rociadores automáticos?"
+        a: "Cada rociador tiene un elemento fusible (ampolla de vidrio o eslabón metálico) que se rompe a una temperatura específica (generalmente 68°C o 93°C). Solo se activa el rociador directamente sobre el fuego — no todos los rociadores al mismo tiempo. El agua descarga solo donde se necesita, minimizando daño por agua."
+      - q: "¿Los rociadores pueden activarse accidentalmente?"
+        a: "Es extremadamente raro. El elemento fusible requiere temperaturas sostenidas de 68°C+ para romperse. Un día caluroso, vapor de cocina o un calentador normal no alcanzan esa temperatura. Las activaciones accidentales generalmente son por daño mecánico (golpe con montacargas, impacto durante construcción) no por calor ambiental."
 description: "Guía técnica completa sobre sistemas de rociadores automáticos conforme a NFPA 13. Diseño, componentes, válvulas y normativa aplicable en México."
 categoria: "valvulas"
 autor:

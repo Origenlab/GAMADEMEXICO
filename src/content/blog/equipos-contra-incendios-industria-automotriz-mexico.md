@@ -1,5 +1,15 @@
 ---
 title: "Equipos Contra Incendios en la Industria Automotriz"
+fechaActualizacion: "2026-03-19"
+schema:
+  - type: "Article"
+    headline: "Equipos Contra Incendios en la Industria Automotriz"
+    author: "Gama de México"
+    dateModified: "2026-03-19"
+  - type: "FAQPage"
+    questions:
+      - q: "¿Qué zonas de una planta automotriz tienen mayor riesgo de incendio?"
+        a: "Cabina de pintura (overspray en ductos como combustible sólido), soldadura (chispas a 5m sobre charcos de aceite), almacén de plásticos y espumas (carga combustible que supera Extra Hazard), y área de prueba de motores (combustible + calor + escape). Cada zona requiere protección específica diferente."
 description: "Protección contra incendios en plantas automotrices: riesgos por área, equipos por proceso, cabinas de pintura, soldadura y almacenamiento según NFPA y FM."
 categoria: "mangueras"
 autor:

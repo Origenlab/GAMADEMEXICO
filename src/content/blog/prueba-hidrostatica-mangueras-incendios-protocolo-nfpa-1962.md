@@ -1,5 +1,17 @@
 ---
 title: "Prueba Hidrostática de Mangueras: Protocolo NFPA 1962"
+fechaActualizacion: "2026-03-19"
+schema:
+  - type: "Article"
+    headline: "Prueba Hidrostática de Mangueras: Protocolo NFPA 1962"
+    author: "Gama de México"
+    dateModified: "2026-03-19"
+  - type: "FAQPage"
+    questions:
+      - q: "¿Cómo se hace la prueba hidrostática de una manguera contra incendios?"
+        a: "Conectar manguera a fuente de presión. Llenar completamente purgando aire. Presurizar al 110% de la presión de servicio (330 PSI para manguera de 300 PSI). Mantener 3 minutos. Inspeccionar buscando fugas, deformación o comportamiento anómalo. Si pasa, registrar en bitácora. Si falla, retirar de servicio."
+      - q: "¿Cada cuánto se debe hacer la prueba hidrostática?"
+        a: "Anualmente conforme a NFPA 1962. También después de cada uso en incendio real, después de reparación de acoples, y cuando se detecte daño visible durante inspección. La prueba anual es la ÚNICA forma de verificar que la manguera soportará presión real — la inspección visual no detecta degradación interna."
 description: "Protocolo de prueba hidrostática para mangueras contra incendios según NFPA 1962: frecuencia, equipo requerido, criterios de aprobación y registros técnicos."
 categoria: "mangueras"
 autor:

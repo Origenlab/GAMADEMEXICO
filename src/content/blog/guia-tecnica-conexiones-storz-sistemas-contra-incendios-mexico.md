@@ -13,6 +13,21 @@ draft: false
 tiempoLectura: 16
 canonical: "https://gamademexico.com/blog/conexiones-herrajes/guia-tecnica-conexiones-storz-sistemas-contra-incendios-mexico"
 noindex: false
+schema:
+  - type: "Article"
+    headline: "Conexiones Storz: Guía Técnica para Sistemas Contra Incendios"
+    author: "Gama de México"
+    datePublished: "2026-03-12"
+    dateModified: "2026-03-19"
+    image: "/img/blog/adaptadores-herrajes-bronce-contra-incendios-profesional.avif"
+  - type: "FAQPage"
+    questions:
+      - q: "¿Qué es una conexión Storz y por qué es mejor que la roscada?"
+        a: "Es un acoplamiento simétrico de cuarto de vuelta sin macho ni hembra. Se conecta en 3 segundos vs 15-30 de la rosca NST. No tiene riesgo de rosca cruzada. Se opera con guantes en oscuridad. Diseñada en 1882 en Alemania, es el estándar dominante en industria y bomberos de ciudades principales de México."
+      - q: "¿Qué tamaño de Storz necesito?"
+        a: "DN50 para gabinetes de oficina (2 pulgadas). DN65 para mangueras de ataque y la mayoría de hidrantes (2.5 pulgadas — el más usado en México). DN80/DN100 para alimentación de bombas, manifolds y tomas siamesas de edificios altos. No son compatibles entre sí: DN65 NO conecta con DN80."
+      - q: "¿Necesito adaptadores Storz a NST?"
+        a: "Sí, si los bomberos de tu zona usan mangueras NST. Los adaptadores deben estar encadenados junto al hidrante, no en el almacén. Verificar empaques semestralmente: la exposición al sol los reseca y un empaque dañado sella en seco pero fuga bajo presión."
 ---
 
 Para entender por qué la conexión Storz existe, hay que entender primero el problema que resuelve. Imagina un incendio industrial a las tres de la mañana. Los bomberos llegan, bajan las mangueras del camión y corren al hidrante más cercano. La visibilidad es mínima por el humo. Están usando guantes gruesos que reducen la destreza manual. Necesitan conectar una manguera de 65 milímetros al hidrante en segundos, no en minutos. Con una conexión roscada NST, eso significa alinear la rosca macho con la rosca hembra en la oscuridad, con guantes, bajo estrés, e iniciar el giro en la dirección correcta sin cruzar la rosca. Si la rosca se cruza, la conexión no sella. Si no sella, la manguera pierde presión por la fuga. Si el bombero fuerza la rosca cruzada con la llave de manguera, puede dañar las roscas permanentemente y hacer esa boca del hidrante inutilizable hasta que se reemplace la conexión.

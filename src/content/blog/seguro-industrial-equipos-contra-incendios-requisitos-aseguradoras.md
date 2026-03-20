@@ -1,5 +1,17 @@
 ---
 title: "Seguro Industrial: Requisitos de Equipos Contra Incendios"
+fechaActualizacion: "2026-03-19"
+schema:
+  - type: "Article"
+    headline: "Seguro Industrial: Requisitos de Equipos Contra Incendios"
+    author: "Gama de México"
+    dateModified: "2026-03-19"
+  - type: "FAQPage"
+    questions:
+      - q: "¿La aseguradora puede rechazar un siniestro por equipo contra incendios deficiente?"
+        a: "Sí. Si la póliza condiciona cobertura a equipos certificados y mantenidos, y la investigación del siniestro encuentra equipo sin certificación, sin mantenimiento documentado o insuficiente para el riesgo asegurado, la aseguradora puede reducir o rechazar la indemnización por incumplimiento del asegurado."
+      - q: "¿Qué equipos contra incendios exige la aseguradora?"
+        a: "Depende del riesgo asegurado y la aseguradora. FM Global exige equipos FM Approved con mantenimiento documentado NFPA 25. Aseguradoras locales generalmente piden equipos certificados (UL o equivalente), bitácoras de mantenimiento y brigada capacitada. El corredor de seguros puede especificar los requisitos exactos de la póliza."
 description: "Qué equipos contra incendios exigen las aseguradoras industriales en México. Certificaciones, mantenimiento y documentación para pólizas."
 categoria: "valvulas"
 autor:

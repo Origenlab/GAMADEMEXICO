@@ -1,6 +1,20 @@
 ---
 title: "Válvulas OS&Y para Sprinklers: NFPA 13 y Selección México"
-description: "Válvulas de compuerta OS&Y para rociadores: requisitos NFPA 13, diferencia vs mariposa, certificación UL/FM México."
+description: "Válvulas OS&Y para rociadores: por qué NFPA 13 las exige, cómo verificar posición a distancia, diferencia vs mariposa y certificación UL/FM en México."
+fechaActualizacion: "2026-03-19"
+schema:
+  - type: "Article"
+    headline: "Válvulas OS&Y para Sprinklers: NFPA 13 y Selección México"
+    author: "Gama de México"
+    dateModified: "2026-03-19"
+  - type: "FAQPage"
+    questions:
+      - q: "¿Qué significa OS&Y en una válvula contra incendios?"
+        a: "Outside Screw and Yoke — vástago exterior y yugo. El vástago roscado sobresale cuando la válvula está abierta: vástago largo visible = abierta, vástago retraído = cerrada. NFPA 13 la exige porque permite verificar visualmente la posición sin instrumentos ni desmontaje."
+      - q: "¿Cuándo usar OS&Y y cuándo válvula mariposa?"
+        a: "OS&Y cuando se necesita indicación visual de posición y mínima pérdida de carga (tuberías principales, conexión de bomba). Mariposa cuando el espacio es limitado y se acepta mayor pérdida de carga (derivaciones, zonas con restricción de espacio). Ambas deben tener tamper switch para supervisión eléctrica NFPA 72."
+      - q: "¿Necesita certificación UL o FM la válvula OS&Y?"
+        a: "Para sistemas de rociadores conforme a NFPA 13, sí. Debe ser UL Listed como mínimo. Si la aseguradora es FM Global, FM Approved. La certificación verifica que la válvula sella correctamente, soporta la presión de trabajo y el mecanismo de indicación de posición funciona de forma confiable."
 categoria: "valvulas"
 autor:
   nombre: "Ing. Roberto Hernández"

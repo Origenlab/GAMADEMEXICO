@@ -1,5 +1,15 @@
 ---
 title: "Equipos Contra Incendios en Programas de Seguridad Industrial"
+fechaActualizacion: "2026-03-19"
+schema:
+  - type: "Article"
+    headline: "Equipos Contra Incendios en Programas de Seguridad Industrial"
+    author: "Gama de México"
+    dateModified: "2026-03-19"
+  - type: "FAQPage"
+    questions:
+      - q: "¿Cómo integrar equipos contra incendios al programa de seguridad industrial?"
+        a: "Los equipos contra incendios no son independientes del programa de seguridad — son parte de él. El programa debe incluir: inventario de equipos con ubicación y estado, calendario de mantenimiento integrado con NFPA 25, capacitación de brigada como parte del plan de capacitación, simulacros que prueben los equipos reales."
 description: "Análisis técnico sobre la integración de sistemas contra incendios en programas corporativos de seguridad industrial. Normatividad STPS y estrategias."
 categoria: "monitores"
 autor:

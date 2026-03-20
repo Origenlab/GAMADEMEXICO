@@ -1,6 +1,20 @@
 ---
 title: "Válvulas Check en Sistemas Sprinkler: NFPA 13 y Mantenimiento"
-description: "Tipos de válvulas check swing, disco y bola para sistemas sprinkler NFPA 13: selección hidráulica, mantenimiento, certificaciones UL/FM en industria mexicana."
+description: "Válvulas check para sprinklers: swing vs disco vs bola, por qué fallan silenciosamente, pérdida de carga real y mantenimiento que evita retroflujo en incendio."
+fechaActualizacion: "2026-03-19"
+schema:
+  - type: "Article"
+    headline: "Válvulas Check en Sistemas Sprinkler: NFPA 13 y Mantenimiento"
+    author: "Gama de México"
+    dateModified: "2026-03-19"
+  - type: "FAQPage"
+    questions:
+      - q: "¿Qué hace una válvula check en un sistema de rociadores?"
+        a: "Permite el flujo de agua en una sola dirección e impide el retroflujo. En sprinklers, evita que el agua del sistema regrese a la cisterna o contamine la red pública. También mantiene la presión en la red de rociadores cuando la bomba se apaga. Sin check funcional, el sistema puede perder presión gradualmente."
+      - q: "¿Cuál es la diferencia entre check swing, disco y bola?"
+        a: "Swing: disco articulado en bisagra, baja pérdida de carga, estándar para tuberías horizontales grandes. Disco: resorte que mantiene cerrado hasta que la presión lo abre, funciona en cualquier posición, mayor pérdida de carga. Bola: esfera que sella por gravedad, para tuberías verticales y aplicaciones con sedimentos."
+      - q: "¿Cómo sé si mi válvula check está fallando?"
+        a: "Síntomas: presión del sistema que cae lentamente cuando la bomba se apaga (retroflujo), bomba jockey que arranca con frecuencia excesiva (compensa fugas por check defectuoso), o ruido de golpeteo en la tubería cuando la bomba cicla (disco de la check rebotando). NFPA 25 exige inspección interna cada 5 años."
 categoria: "valvulas"
 autor:
   nombre: "Ing. Roberto Hernández"

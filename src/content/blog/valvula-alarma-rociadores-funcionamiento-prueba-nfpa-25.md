@@ -1,6 +1,20 @@
 ---
 title: "Válvula de Alarma en Rociadores: Funcionamiento y Prueba NFPA 25"
-description: "Funcionamiento y prueba de válvulas de alarma en sistemas rociadores: húmeda vs seca, cámara retardadora, gong hidráulico y procedimientos NFPA 25 actualizados."
+description: "Válvula de alarma en rociadores: cómo funciona, por qué suena sin incendio, prueba trimestral NFPA 25 y errores que desactivan la alarma sin que nadie lo sepa."
+fechaActualizacion: "2026-03-19"
+schema:
+  - type: "Article"
+    headline: "Válvula de Alarma en Rociadores: Funcionamiento y Prueba NFPA 25"
+    author: "Gama de México"
+    dateModified: "2026-03-19"
+  - type: "FAQPage"
+    questions:
+      - q: "¿Cómo funciona una válvula de alarma en rociadores?"
+        a: "Detecta el flujo de agua cuando un rociador se activa. El agua pasa por la válvula check interna, llena la cámara de alarma y activa el gong hidráulico (campana mecánica) y/o el presostato eléctrico que envía señal al panel de alarma. La cámara retardadora previene falsas alarmas por fluctuaciones de presión."
+      - q: "¿Por qué suena la alarma de rociadores sin que haya incendio?"
+        a: "Falsas alarmas por: fluctuaciones de presión en la red que mueven la clapper (válvula check interna), cámara retardadora obstruida que no absorbe picos transitorios, presostato mal calibrado, o fuga en la red de rociadores que genera flujo suficiente para activar la alarma."
+      - q: "¿Cada cuánto se prueba la válvula de alarma?"
+        a: "NFPA 25 exige prueba trimestral del gong hidráulico mediante la válvula de prueba (inspector's test). Inspección visual semanal. Prueba completa con flujo anual. La prueba trimestral verifica que la alarma suena cuando hay flujo — si no suena, un rociador puede activarse en incendio real sin que nadie lo sepa."
 categoria: "valvulas"
 autor:
   nombre: "Ing. Roberto Hernández"

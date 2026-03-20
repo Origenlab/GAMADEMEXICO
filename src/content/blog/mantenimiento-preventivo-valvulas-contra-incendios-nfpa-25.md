@@ -1,6 +1,20 @@
 ---
 title: "Mantenimiento Preventivo de Válvulas Contra Incendios NFPA 25"
-description: "Programa de mantenimiento preventivo para válvulas contra incendios conforme a NFPA 25. Inspección, prueba y frecuencias recomendadas."
+description: "Mantenimiento de válvulas contra incendios NFPA 25: frecuencias de inspección, prueba de operación, y por qué una válvula sin mantenimiento puede trabarse cerrada."
+fechaActualizacion: "2026-03-19"
+schema:
+  - type: "Article"
+    headline: "Mantenimiento Preventivo de Válvulas Contra Incendios NFPA 25"
+    author: "Gama de México"
+    dateModified: "2026-03-19"
+  - type: "FAQPage"
+    questions:
+      - q: "¿Cada cuánto se deben inspeccionar las válvulas contra incendios?"
+        a: "NFPA 25: inspección visual semanal para válvulas supervisadas (verificar tamper, posición abierta). Operación completa (abrir/cerrar) anual. Inspección interna cada 5 años para válvulas check y de compuerta. Después de cada activación del sistema, inspección inmediata de todas las válvulas del circuito."
+      - q: "¿Qué pasa si no doy mantenimiento a las válvulas contra incendios?"
+        a: "La válvula se traba por corrosión y depósitos calcáreos. En válvulas OS&Y, el vástago se congela y no gira. En check valves, el disco no sella y permite retroflujo. En mariposas, el disco se adhiere al asiento. El resultado: cuando necesitas abrir o cerrar la válvula en emergencia, no responde."
+      - q: "¿Puedo dar mantenimiento a las válvulas yo mismo?"
+        a: "La inspección visual semanal sí — verificar posición abierta, tamper funcional, sin fugas visibles. La operación anual y la inspección interna deben hacerlas técnicos con experiencia en sistemas contra incendios, documentando resultados en bitácora conforme a NFPA 25 para que la aseguradora y protección civil la acepten."
 categoria: "valvulas"
 autor:
   nombre: "Ing. Fernando Castillo"

@@ -1,19 +1,38 @@
 ---
 title: "Certificaciones UL y FM en Equipos Contra Incendios"
-description: "Qué significan UL Listed y FM Approved en equipos contra incendios, qué evalúa cada laboratorio y por qué importan para aseguradoras e ingeniería en México."
+description: "UL Listed vs FM Approved: qué evalúa cada certificación, cuándo exige cada una la aseguradora, y cómo verificar que tu equipo contra incendios sea legítimo."
+fecha: "2026-03-01"
+fechaActualizacion: "2026-03-19"
 categoria: "monitores"
 autor:
   nombre: "Equipo Gama de México"
   cargo: "Asesoría Técnica"
 imagen: "/img/blog/auditoria-equipos-contra-incendios-sala-juntas-corporativa.avif"
-imagenAlt: "Certificaciones UL y FM en equipos contra incendios"
-tags: ["certificaciones UL FM", "UL Listed", "FM Approved", "equipos contra incendios", "protección industrial", "aseguradoras"]
+imagenAlt: "Auditoría de certificaciones de equipos contra incendios"
+tags: ["certificaciones UL FM", "UL Listed", "FM Approved", "equipos contra incendios", "aseguradoras contra incendios"]
 destacado: false
 canonical: "https://gamademexico.com/blog/monitores/certificaciones-ul-fm-equipos-contra-incendios-importancia"
 noindex: false
-tiempoLectura: 14
+tiempoLectura: 16
 draft: false
-productosRelacionados: []
+productosRelacionados: ["boquilla-certificada", "boquilla-certificada-dual-ul-fm", "monitor-certificado-fm", "monitor-ul-listed"]
+schema:
+  - type: "Article"
+    headline: "Certificaciones UL y FM en Equipos Contra Incendios"
+    author: "Gama de México"
+    datePublished: "2026-03-01"
+    dateModified: "2026-03-19"
+    image: "/img/blog/auditoria-equipos-contra-incendios-sala-juntas-corporativa.avif"
+  - type: "FAQPage"
+    questions:
+      - q: "¿Cuál es la diferencia entre UL Listed y FM Approved?"
+        a: "UL Listed es una certificación de laboratorio independiente que verifica seguridad y desempeño del producto. FM Approved es una certificación de la aseguradora FM Global que verifica que el equipo cumple con sus estándares de protección de propiedades. No son intercambiables: la aseguradora define cuál necesitas según tu póliza."
+      - q: "¿Cómo verifico si un equipo contra incendios tiene certificación UL real?"
+        a: "Busca el número de archivo UL del fabricante en el directorio en línea de UL (productiq.ulprospector.com). Si el equipo no aparece listado bajo ese número de archivo con la categoría correcta, la certificación puede ser falsa o estar vencida. No basta con que tenga una etiqueta UL visible."
+      - q: "¿Mi aseguradora puede rechazar un siniestro por equipo sin certificación?"
+        a: "Sí. Si la póliza condiciona la cobertura a equipos certificados FM Approved o UL Listed y el equipo instalado no tiene certificación verificable, la aseguradora puede cuestionar o rechazar la reclamación argumentando incumplimiento de las condiciones del contrato."
+      - q: "¿Necesito certificación dual UL y FM?"
+        a: "Solo si tu póliza exige FM Approved y tu código local exige UL Listed, o si tu corporativo establece ambas como requisito. La certificación dual cubre ambos escenarios y es la especificación más segura para instalaciones que pueden cambiar de aseguradora o que necesitan cumplir múltiples estándares."
 ---
 
 En equipos contra incendios, las siglas UL y FM aparecen en casi todas las conversaciones de especificación. Se mencionan en licitaciones, en requisitos de aseguradoras, en revisiones de protección civil y en pliegos de ingeniería. Sin embargo, es muy común que se traten como una etiqueta genérica, como si bastara con que el equipo "traiga certificación" para quedar cubierto. Eso es un error que puede salir caro. UL Listed y FM Approved no son la misma cosa, no evalúan exactamente lo mismo, no sirven para los mismos contextos y no ofrecen el mismo tipo de respaldo frente a una auditoría, una reclamación de seguro o una revisión técnica seria. Para un ingeniero de seguridad, un gerente de mantenimiento o un responsable de compras industriales, entender esa diferencia no es un tema académico. Es una decisión que afecta trazabilidad, cobertura de póliza, cumplimiento normativo y credibilidad del sistema instalado.

@@ -10,7 +10,7 @@ imagenAlt: "Monitor contra incendios industrial para empresas"
 imagenOg: "/img/monitores-contra-incendios/monitor-certificado-fm-contra-incendios-parque-industrial-12.avif"
 tags: ["monitores contra incendios", "monitor contra incendios industrial", "manual técnico", "sistemas contra incendios", "protección contra incendios industrial", "venta de monitores contra incendios en México", "equipos contra incendios industriales", "NOM-002-STPS-2010"]
 destacado: true
-draft: false
+draft: true
 tiempoLectura: 19
 productosRelacionados: ["monitor-corazon-una-cremallera", "monitor-cuello-cisne", "monitor-certificado-fm", "monitor-ul-listed", "monitor-fm-control-remoto"]
 articulosRelacionados: ["lineamientos-monitor-contra-incendios-mexico", "auditoria-monitores-contra-incendios-empresas-mexico", "mantenimiento-monitores-contra-incendios"]

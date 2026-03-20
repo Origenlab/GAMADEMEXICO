@@ -1,5 +1,15 @@
 ---
 title: "Manguera Forestal Wildland: Especificaciones NFPA 1977 México"
+fechaActualizacion: "2026-03-19"
+schema:
+  - type: "Article"
+    headline: "Manguera Forestal Wildland: Especificaciones NFPA 1977 México"
+    author: "Gama de México"
+    dateModified: "2026-03-19"
+  - type: "FAQPage"
+    questions:
+      - q: "¿Qué diferencia tiene una manguera forestal de una industrial?"
+        a: "La forestal es single jacket (una capa textil), más ligera (se carga en terreno irregular), menor presión de trabajo (200-250 PSI vs 300 PSI industrial), y diámetro menor (generalmente 1 pulgada). Prioriza peso y portabilidad sobre presión máxima porque en incendios forestales el equipo se transporta a pie."
 description: "Especificaciones técnicas de mangueras forestales wildland según NFPA 1977: materiales livianos, diferencias con estructural y uso en brigadas forestales de México."
 categoria: "mangueras"
 autor:

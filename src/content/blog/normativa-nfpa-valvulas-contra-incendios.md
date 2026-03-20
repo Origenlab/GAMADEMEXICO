@@ -1,5 +1,17 @@
 ---
 title: "Guía NFPA para Válvulas Contra Incendios: Normativa y Requisitos"
+fechaActualizacion: "2026-03-19"
+schema:
+  - type: "Article"
+    headline: "Guía NFPA para Válvulas Contra Incendios: Normativa y Requisitos"
+    author: "Gama de México"
+    dateModified: "2026-03-19"
+  - type: "FAQPage"
+    questions:
+      - q: "¿Qué normas NFPA aplican a válvulas contra incendios?"
+        a: "NFPA 13 para válvulas en sistemas de rociadores. NFPA 20 para válvulas en cuartos de bomba. NFPA 24 para válvulas en redes de hidrantes. NFPA 25 para inspección y mantenimiento de todas las válvulas del sistema. NFPA 72 para supervisión eléctrica con tamper switches."
+      - q: "¿Todas las válvulas contra incendios necesitan certificación?"
+        a: "Las que están en el camino del flujo de agua del sistema de protección, sí. NFPA 13 exige que las válvulas de control principales sean UL Listed o FM Approved. Las válvulas de drenaje y prueba no requieren la misma certificación pero deben ser compatibles con las presiones del sistema."
 description: "Todo lo que necesitas saber sobre normativas NFPA para válvulas contra incendios: tipos, instalación, pruebas y mantenimiento según estándares."
 categoria: "valvulas"
 autor:

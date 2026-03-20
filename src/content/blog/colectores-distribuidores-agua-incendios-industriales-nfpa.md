@@ -1,19 +1,38 @@
 ---
-title: "Colectores y Distribuidores en Sistemas Contra Incendios"
-description: "Selección e ingeniería de colectores y manifolds para sistemas contra incendios industriales: hidráulica, materiales, petroquímica y errores comunes en México."
+title: "Colectores y Distribuidores para Sistemas Contra Incendios"
+description: "Diseño de colectores y manifolds para sistemas contra incendios industriales: hidráulica del punto de distribución, balance de caudal y errores que causan fallas."
+fecha: "2026-03-01"
+fechaActualizacion: "2026-03-19"
 categoria: "conexiones-herrajes"
 autor:
   nombre: "Equipo Gama de México"
   cargo: "Asesoría Técnica"
 imagen: "/img/blog/adaptadores-herrajes-bronce-contra-incendios-profesional.avif"
-imagenAlt: "Colectores y distribuidores de agua contra incendios NFPA"
-tags: ["colectores agua incendios", "distribuidores manifold", "NFPA 20", "hidráulica incendios", "manifold incendios"]
+imagenAlt: "Colector de distribución de agua contra incendios en cuarto de bombas"
+tags: ["colectores contra incendios", "manifold distribución", "cuarto de bombas", "hidráulica contra incendios", "NFPA 20"]
 destacado: false
 draft: false
-tiempoLectura: 14
+tiempoLectura: 16
 canonical: "https://gamademexico.com/blog/conexiones-herrajes/colectores-distribuidores-agua-incendios-industriales-nfpa"
 noindex: false
-productosRelacionados: []
+productosRelacionados: ["valvula-compuerta-osy", "valvula-retencion", "valvula-mariposa"]
+schema:
+  - type: "Article"
+    headline: "Colectores y Distribuidores para Sistemas Contra Incendios"
+    author: "Gama de México"
+    datePublished: "2026-03-01"
+    dateModified: "2026-03-19"
+    image: "/img/blog/adaptadores-herrajes-bronce-contra-incendios-profesional.avif"
+  - type: "FAQPage"
+    questions:
+      - q: "¿Qué es un colector en un sistema contra incendios?"
+        a: "Es el tramo de tubería principal en el cuarto de bombas que recibe el caudal de una o más bombas y lo distribuye hacia las diferentes zonas de la planta: rociadores, hidrantes, monitores y líneas de espuma. Su diámetro y diseño determinan si todos los sistemas reciben el caudal necesario simultáneamente."
+      - q: "¿Cuál es la diferencia entre colector y manifold?"
+        a: "El colector se arma en campo con tubería estándar y accesorios, permite mayor flexibilidad y se usa en distribuciones extensas. El manifold es una pieza fundida o mecanizada compacta con múltiples salidas predefinidas, ideal para cuartos de bomba con espacio limitado. Ambos cumplen la función de distribuir caudal."
+      - q: "¿Qué velocidad máxima debe tener el agua en un colector contra incendios?"
+        a: "La práctica recomendada es no exceder 6 metros por segundo. Velocidades mayores generan pérdidas por fricción exponenciales, erosión en las paredes, ruido hidráulico y golpes de ariete más severos. El diámetro del colector debe calcularse para mantener la velocidad dentro de este límite al caudal máximo de diseño."
+      - q: "¿Por qué la presión en mis rociadores es menor a la calculada?"
+        a: "Las causas más frecuentes son: colector subdimensionado para demanda simultánea, coeficiente C de Hazen-Williams asumido para tubería nueva pero con tubería vieja instalada, válvulas parcialmente cerradas que generan pérdidas no calculadas, y balance hidráulico deficiente donde las salidas cercanas roban caudal a las lejanas."
 ---
 
 En instalaciones industriales de cierta escala, hay un punto del sistema contra incendios donde la tubería deja de ser un conducto simple y se convierte en un problema de distribución. La bomba genera presión y caudal, pero ese caudal tiene que llegar a múltiples destinos al mismo tiempo: rociadores en la nave, [monitores](/monitores/) en el perímetro, hidrantes para el servicio de bomberos, líneas de espuma en el área de proceso. El componente que resuelve esa distribución es el colector, también llamado header o manifold, y su diseño correcto determina si todos esos sistemas reciben lo que necesitan simultáneamente o si algunos se quedan cortos porque la hidráulica del punto de distribución no estaba bien resuelta.

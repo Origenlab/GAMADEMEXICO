@@ -1,5 +1,15 @@
 ---
 title: "Mangueras Millhose: Especificaciones Técnicas y NFPA 14"
+fechaActualizacion: "2026-03-19"
+schema:
+  - type: "Article"
+    headline: "Mangueras Millhose: Especificaciones Técnicas y NFPA 14"
+    author: "Gama de México"
+    dateModified: "2026-03-19"
+  - type: "FAQPage"
+    questions:
+      - q: "¿Qué es una manguera Millhose?"
+        a: "Es una manguera de single jacket (una capa textil) diseñada para gabinetes de manguera Clase II conforme a NFPA 14. Más ligera y compacta que la doble jacket, ideal para uso por personal no profesional en edificios de oficinas, hoteles, hospitales y centros comerciales. Presión de trabajo típica de 200-250 PSI."
 description: "Mangueras Millhose doble jacket vs Blindex: diámetros, presiones de trabajo, prueba hidrostática y NFPA 14 México."
 categoria: "mangueras"
 autor:

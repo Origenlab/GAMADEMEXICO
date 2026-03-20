@@ -1,19 +1,38 @@
 ---
-title: "Detectores de Humo y Calor en Sistemas Contra Incendios"
-description: "Tipos de detectores de humo y calor para sistemas de alarma contra incendios NFPA 72: cómo funcionan, dónde usar cada uno y errores de instalación comunes."
+title: "Detectores de Humo y Calor: Cómo Elegir para Tu Instalación"
+description: "Detectores de humo fotoeléctricos vs ionización, detectores de calor fijos vs compensados: cuándo usar cada uno según NFPA 72 y errores que causan falsas alarmas."
+fecha: "2026-03-01"
+fechaActualizacion: "2026-03-19"
 categoria: "monitores"
 autor:
   nombre: "Equipo Gama de México"
   cargo: "Asesoría Técnica"
 imagen: "/img/blog/valvulas-contra-incendios-nfpa-sala-control-industrial.avif"
-imagenAlt: "Sistema de detección de incendios en instalación industrial"
+imagenAlt: "Panel de sistema de detección de incendios en planta industrial"
 tags: ["detectores de humo", "detectores de calor", "NFPA 72", "sistemas de alarma", "detección de incendios"]
 destacado: false
 canonical: "https://gamademexico.com/blog/monitores/detector-humo-calor-sistemas-deteccion-incendios-nfpa-72"
 noindex: false
-tiempoLectura: 14
+tiempoLectura: 16
 draft: false
 productosRelacionados: []
+schema:
+  - type: "Article"
+    headline: "Detectores de Humo y Calor: Cómo Elegir para Tu Instalación"
+    author: "Gama de México"
+    datePublished: "2026-03-01"
+    dateModified: "2026-03-19"
+    image: "/img/blog/valvulas-contra-incendios-nfpa-sala-control-industrial.avif"
+  - type: "FAQPage"
+    questions:
+      - q: "¿Cuál es la diferencia entre detector de humo fotoeléctrico e ionización?"
+        a: "El fotoeléctrico detecta partículas grandes de humo denso (combustión lenta: cables, tapicería, plásticos). El de ionización detecta partículas finas de combustión rápida con llama (papel, solventes). En oficinas y hospitales, fotoeléctrico. En áreas con inflamables, ionización. Los multicriteria combinan ambos para mayor cobertura."
+      - q: "¿Dónde se debe instalar un detector de calor en vez de humo?"
+        a: "En ambientes donde el humo es condición normal de operación: cocinas industriales, talleres de soldadura, áreas de pintura, cuartos de calderas. El detector de humo generaría falsas alarmas constantes. El detector de calor solo se activa cuando la temperatura sube anormalmente, eliminando falsas alarmas."
+      - q: "¿Cada cuánto se deben probar los detectores contra incendios?"
+        a: "NFPA 72 exige prueba funcional anual de cada detector y prueba de sensibilidad cada 5 años. Inspección visual semestral verificando que no hay obstrucciones, polvo excesivo o daño físico. Los detectores de ionización deben reemplazarse cada 10 años por degradación de la fuente radiactiva."
+      - q: "¿Por qué mi sistema de detección genera tantas falsas alarmas?"
+        a: "Las causas más frecuentes son: detector fotoeléctrico en cocina o taller (humo normal lo activa), detector demasiado cerca de difusores de aire acondicionado, polvo acumulado en la cámara de detección, insectos dentro del detector, o detector de ionización en área con partículas finas normales como harina o aserrín."
 ---
 
 En un sistema contra incendios, la detección es lo que compra tiempo. Tiempo para evacuar, tiempo para activar los sistemas de supresión, tiempo para que la brigada se organice y tiempo para que el fuego se enfrente en su fase incipiente, cuando todavía es controlable, en lugar de su fase de desarrollo pleno, cuando ya no lo es. Sin detección temprana, el sistema de supresión más sofisticado del mundo puede activarse demasiado tarde. Los [rociadores](/equipos/) responden al calor, no al humo, y en muchos tipos de fuego el humo precede al calor por minutos que pueden ser la diferencia entre un conato controlado y un incendio que escala más allá de la capacidad del sistema. NFPA 72 existe para definir cómo deben diseñarse, instalarse, probarse y mantenerse los sistemas de detección y alarma contra incendios, y dentro de ese estándar, la selección correcta del tipo de detector es una de las decisiones que más impacto tiene en la eficacia del sistema completo.

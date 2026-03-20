@@ -1,19 +1,38 @@
 ---
 title: "Hidrantes Contra Incendios en México: Tipos e Instalación"
-description: "Guía de hidrantes contra incendios: banqueta vs privado, presión real vs diseño, barril seco y húmedo, conexiones Storz y errores de instalación en México."
+description: "Hidrantes contra incendios: banqueta vs privado, presión real vs diseño, barril seco y húmedo, Storz vs NST y errores que dejan tu sistema sin agua."
+fecha: "2025-03-06"
+fechaActualizacion: "2026-03-19"
 categoria: "gabinetes-hidrantes"
 autor:
   nombre: "Equipo Gama de México"
   cargo: "Asesoría Técnica"
 imagen: "/img/blog/gabinete-contra-incendios-instalacion-edificio-mexico.avif"
 imagenAlt: "Hidrante contra incendios instalado en predio industrial México"
-tags: ["hidrantes", "NFPA 24", "instalación contra incendios", "hidrante de banqueta", "hidrante privado"]
+tags: ["hidrantes contra incendios", "NFPA 24", "hidrante privado", "hidrante de banqueta", "presión hidrante"]
 destacado: false
 draft: false
 productosRelacionados: ["hidrante-banqueta", "hidrante-banqueta-350psi", "hidrante-banqueta-4-salidas", "hidrante-banqueta-trafico", "llave-hidrante-pentagonal"]
 tiempoLectura: 18
 canonical: "https://gamademexico.com/blog/gabinetes-hidrantes/hidrantes-contra-incendios-mexico-tipos-instalacion-normas"
 noindex: false
+schema:
+  - type: "Article"
+    headline: "Hidrantes Contra Incendios en México: Tipos e Instalación"
+    author: "Gama de México"
+    datePublished: "2025-03-06"
+    dateModified: "2026-03-19"
+    image: "/img/blog/gabinete-contra-incendios-instalacion-edificio-mexico.avif"
+  - type: "FAQPage"
+    questions:
+      - q: "¿Puedo depender del hidrante de banqueta para proteger mi empresa?"
+        a: "No como fuente primaria. En zonas industriales de México la presión pública suele estar entre 15-40 PSI, insuficiente para combate de incendios que requiere mínimo 100 PSI operativos. La fuente primaria debe ser un sistema privado con cisterna, bomba NFPA 20 y red de hidrantes NFPA 24."
+      - q: "¿Qué presión debe tener un hidrante contra incendios?"
+        a: "NFPA 24 exige mínimo 20 PSI residuales con caudal de diseño fluyendo en la boca más desfavorable. En la práctica, los diseños apuntan a 100 PSI porque con 20 PSI el chorro no tiene alcance ni penetración útiles. Verificar con prueba de flujo anual usando medidor pitot."
+      - q: "¿Cada cuánto se debe probar un hidrante contra incendios?"
+        a: "Inspección visual mensual, operación de apertura/cierre semestral con lubricación del vástago, y prueba de flujo anual con pitot conforme a NFPA 25. La lubricación semestral del vástago es una tarea de 5 minutos que previene que la válvula se trabe por corrosión."
+      - q: "¿Cuál es la diferencia entre hidrante de barril seco y húmedo?"
+        a: "En el barril húmedo, el agua está permanentemente dentro del hidrante — respuesta inmediata pero riesgo de congelamiento. En el barril seco, el agua solo entra al abrir la válvula de base — sin riesgo de helada. En el norte de México (Chihuahua, Saltillo, Durango) donde hay heladas, usar barril seco."
 ---
 
 Hay una prueba simple que revela si un sistema contra incendios es real o decorativo. Ve al hidrante más alejado del cuarto de bombas, ábrelo a flujo completo y mide la presión residual con un pitot. Si la presión cae por debajo de 20 PSI con el caudal de diseño fluyendo, el sistema completo es una ilusión. Los rociadores del último piso no van a abrir con suficiente fuerza. Las mangueras de la brigada van a escupir un chorro que no alcanza el techo. Y los bomberos que lleguen y conecten al hidrante van a encontrar que el agua que sale no tiene la energía para hacer nada útil contra un fuego que ya lleva veinte minutos creciendo.

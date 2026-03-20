@@ -1,5 +1,15 @@
 ---
 title: "Mangueras Contra Incendios en Empresas: Estándar Técnico y Legal"
+fechaActualizacion: "2026-03-19"
+schema:
+  - type: "Article"
+    headline: "Mangueras Contra Incendios en Empresas"
+    author: "Gama de México"
+    dateModified: "2026-03-19"
+  - type: "FAQPage"
+    questions:
+      - q: "¿Qué norma regula las mangueras contra incendios en empresas?"
+        a: "NOM-002-STPS exige equipos proporcionales al riesgo. NFPA 1961 define la fabricación y prueba de mangueras. NFPA 1962 define el mantenimiento. NFPA 14 define los sistemas de manguera fija (standpipe). La combinación de estas normas determina qué manguera necesita cada instalación."
 description: "Guía técnica para seleccionar e instalar mangueras contra incendios en México con criterios NFPA, NOM-002-STPS, pruebas hidrostáticas y operación segura en emp..."
 categoria: "mangueras"
 autor:

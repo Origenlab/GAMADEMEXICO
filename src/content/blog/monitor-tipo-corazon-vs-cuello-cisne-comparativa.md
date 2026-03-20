@@ -1,5 +1,17 @@
 ---
 title: "Monitor Corazón vs Cuello de Cisne: Cuál Elegir"
+fechaActualizacion: "2026-03-19"
+schema:
+  - type: "Article"
+    headline: "Monitor Corazón vs Cuello de Cisne: Cuál Elegir"
+    author: "Gama de México"
+    dateModified: "2026-03-19"
+  - type: "FAQPage"
+    questions:
+      - q: "¿Cuál es mejor, monitor tipo corazón o cuello de cisne?"
+        a: "No hay mejor universal. Corazón: cremallera que bloquea elevación contra fuerza de reacción (hasta 800+ lb), giro 360°, ideal para la mayoría de aplicaciones industriales. Cuello de cisne: perfil bajo para espacios con altura limitada (hangares, plataformas), pero la curva genera pérdida de carga adicional y generalmente sin cremallera."
+      - q: "¿En qué situaciones necesito un cuello de cisne?"
+        a: "Cuando la altura libre es limitada y el monitor tipo corazón no cabe: debajo de estructuras industriales, en plataformas elevadas, en hangares de aviación. También cuando se necesita menor resistencia al viento (ambientes costeros expuestos). En todos los demás casos, el tipo corazón es la opción más versátil."
 description: "Compara monitor tipo corazón y cuello de cisne según caudal, altura, maniobra y aplicación para elegir la configuración correcta en tu sistema."
 categoria: "monitores"
 tags: ["monitor tipo corazón", "monitor cuello de cisne", "monitores contra incendios", "Elkhart Brass", "ingeniería contra incendios"]

@@ -1,5 +1,17 @@
 ---
 title: "Selección de Proveedores de Equipos Contra Incendios"
+fechaActualizacion: "2026-03-19"
+schema:
+  - type: "Article"
+    headline: "Selección de Proveedores de Equipos Contra Incendios"
+    author: "Gama de México"
+    dateModified: "2026-03-19"
+  - type: "FAQPage"
+    questions:
+      - q: "¿Cómo verifico que un proveedor de equipos contra incendios es confiable?"
+        a: "Verificar que los productos tengan certificación UL Listed o FM Approved consultable en los directorios oficiales de UL y FM. Pedir fichas técnicas del fabricante original, no genéricas. Confirmar que tiene inventario real (no solo catálogo). Pedir referencias de proyectos similares al tuyo con datos de contacto verificables."
+      - q: "¿Es mejor comprar equipos nacionales o importados?"
+        a: "Depende del componente. Gabinetes y soportes pueden ser nacionales sin problema. Boquillas, monitores y válvulas de control deben tener certificación internacional (UL/FM) independientemente del origen. Lo importante no es dónde se fabrica sino que tenga certificación verificable de un laboratorio reconocido."
 description: "Criterios reales para seleccionar proveedores de equipos contra incendios certificados: cómo verificar certificaciones, qué documentación exigir y errores comunes."
 categoria: "valvulas"
 autor:
