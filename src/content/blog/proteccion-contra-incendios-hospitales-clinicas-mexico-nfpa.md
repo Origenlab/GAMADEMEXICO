@@ -1,5 +1,17 @@
 ---
-title: "Protección Contra Incendios en Hospitales y Clínicas México"
+title: "Protección Contra Incendios en Hospitales México"
+fechaActualizacion: "2026-03-19"
+schema:
+  - type: "Article"
+    headline: "Protección Contra Incendios en Hospitales y Clínicas México"
+    author: "Gama de México"
+    dateModified: "2026-03-19"
+  - type: "FAQPage"
+    questions:
+      - q: "¿Por qué los hospitales tienen requisitos especiales de protección contra incendios?"
+        a: "Los pacientes no pueden evacuarse rápidamente — muchos están en cama, conectados a equipos, sedados o en condición que impide movilidad. La estrategia es 'defender en su lugar' (defend in place): contener el fuego en la zona de origen con compartimentación y supresión mientras se reubican pacientes horizontalmente al compartimiento adyacente, no verticalmente por escaleras."
+      - q: "¿Qué sistema de extinción necesita un hospital?"
+        a: "Rociadores automáticos en todo el edificio (NFPA 13), gabinetes de manguera Clase III en cada piso (NFPA 14), sistema de detección y alarma con zonificación por piso y por ala (NFPA 72), extinción automática en cocina (UL 300), y supresión especial en áreas con gases medicinales (oxígeno es comburente que intensifica cualquier fuego)."
 description: "Sistemas de protección contra incendios para hospitales, clínicas y centros de salud en México. NFPA 99, rociadores, gabinetes y equipos requeridos."
 categoria: "gabinetes-hidrantes"
 autor:
@@ -89,6 +101,15 @@ Todo sistema de protección contra incendios requiere un programa de mantenimien
 6. **Documentación completa** — hojas técnicas, certificados y guías de instalación
 
 [Solicita una cotización personalizada →](/servicios/cotizaciones)
+
+
+---
+
+### Lecturas relacionadas
+
+- [Rociadores automáticos NFPA 13](/blog/valvulas-contra-incendios/sistemas-rociadores-automaticos-nfpa-13-mexico)
+- [Extinción automática en cocinas del hospital](/blog/boquillas-contra-incendios/extincion-automatica-cocinas-industriales-ul-300-nfpa-17a)
+- [Detectores de humo y calor NFPA 72](/blog/monitores-contra-incendios/detector-humo-calor-sistemas-deteccion-incendios-nfpa-72)
 
 ## Preguntas frecuentes
 

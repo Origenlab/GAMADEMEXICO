@@ -70,6 +70,14 @@ Blindex para estaciones de brigada en refinerías, plantas petroquímicas, termi
 
 Para [boquillas](/boquillas-contra-incendios) compatibles y acoples, ambas mangueras trabajan con conexiones NST y Storz estándar. La selección de [manguera](/mangueras-contra-incendios) debe hacerse en conjunto con la boquilla para verificar que el caudal nominal de la boquilla sea alcanzable con la presión disponible en el punto de descarga.
 
+
+---
+
+### Lecturas relacionadas
+
+- [Las especificaciones técnicas de mangueras millhose](/blog/mangueras-contra-incendios/mangueras-millhose-contra-incendios-guia-tecnica-nfpa)
+- [Los criterios para elegir manguera correcta](/blog/mangueras-contra-incendios/como-elegir-manguera-contra-incendios)
+
 ## Preguntas frecuentes
 
 ### Puedo usar Millhose en una planta petroquímica si la presión de la red es baja?

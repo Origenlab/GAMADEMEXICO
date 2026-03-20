@@ -1,5 +1,17 @@
 ---
 title: "Cumplimiento Legal de Boquillas Contra Incendios en México"
+fechaActualizacion: "2026-03-19"
+schema:
+  - type: "Article"
+    headline: "Cumplimiento Legal de Boquillas Contra Incendios en México"
+    author: "Gama de México"
+    dateModified: "2026-03-19"
+  - type: "FAQPage"
+    questions:
+      - q: "¿Qué norma mexicana exige boquillas certificadas contra incendios?"
+        a: "NOM-002-STPS exige equipos proporcionales al riesgo pero no especifica marcas ni certificaciones. En la práctica, protección civil y las aseguradoras exigen certificación UL Listed o FM Approved como evidencia de que el equipo cumple. Sin certificación verificable, la boquilla es legalmente un componente sin respaldo técnico documentable."
+      - q: "¿Protección civil puede sancionar por boquillas sin certificación?"
+        a: "Puede generar observaciones por equipos que no demuestran cumplimiento con estándares reconocidos. Si la inspección solicita ficha técnica y certificación del fabricante y no puedes presentarla, es una observación documentable. Acumulada con otras deficiencias, puede escalar a condicionante o multa."
 description: "Qué exige la ley mexicana para boquillas contra incendios en centros de trabajo: NOM-002-STPS, protección civil, brigadas y lo que realmente revisa el inspector."
 categoria: "boquillas"
 autor:
@@ -53,6 +65,15 @@ En la práctica profesional, la mayoría de los proyectos serios de protección 
 La NOM-017-STPS-2024, que entró en vigor a finales del año pasado, reforzó las obligaciones relacionadas con el equipo de protección personal para trabajadores expuestos a riesgos, incluyendo brigadistas que operan equipos contra incendios. Para los brigadistas que operan boquillas, esto implica que el EPP debe seleccionarse específicamente para el riesgo de la tarea, no de forma genérica. Debe haber registro de entrega por persona. Debe existir control del ciclo de vida del equipo: cuándo se entregó, cuándo se inspeccionó, cuándo se reemplazó. Y debe haber capacitación documentada sobre el uso correcto y las limitaciones del EPP asignado.
 
 En términos prácticos, un brigadista que opera una [boquilla tipo pistola](/boquillas/tipo-pistola) en un gabinete interior de un edificio de oficinas tiene requerimientos de EPP muy diferentes a uno que opera una [turbo jet](/boquillas/turbo-jet) en un monitor de una planta petroquímica. La exposición térmica, el riesgo de contacto con agentes químicos, la fuerza de reacción del equipo y la proximidad al fuego son completamente distintas, y el EPP debe reflejar esas diferencias. Tener un "kit de brigada" genérico igual para todos no cumple con el espíritu de la NOM-017 cuando los riesgos son evidentemente diferentes.
+
+
+---
+
+### Lecturas relacionadas
+
+- [El marco legal completo de equipos contra incendios en México](/blog/gabinetes-hidrantes-contra-incendios/requisitos-legales-equipos-contra-incendios-mexico-empresas)
+- [Qué revisa protección civil en una inspección](/blog/gabinetes-hidrantes-contra-incendios/inspeccion-proteccion-civil-equipos-contra-incendios-empresas-mexico)
+- [La importancia de certificaciones ul y fm](/blog/monitores-contra-incendios/certificaciones-ul-fm-equipos-contra-incendios-importancia)
 
 ## La conclusión práctica para el responsable de seguridad
 

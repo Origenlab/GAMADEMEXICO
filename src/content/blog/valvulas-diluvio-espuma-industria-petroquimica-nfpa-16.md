@@ -1,5 +1,5 @@
 ---
-title: "Válvulas Diluvio en Industria Petroquímica: NFPA 11 y NFPA 16"
+title: "Válvulas Diluvio en Petroquímica: NFPA 11 y 16"
 description: "Válvulas diluvio para sistemas de espuma en petroquímica: cómo funcionan, por qué fallan y qué exigen NFPA 11 y NFPA 16 en tanques de hidrocarburos."
 fechaActualizacion: "2026-03-19"
 schema:
@@ -291,6 +291,14 @@ En zonas sísmicas de México (particularmente las refinerías en Oaxaca y las t
 - Las válvulas diluvio deben tener soportes antisísmicos.
 - La tubería de distribución debe incluir juntas flexibles.
 - Después de un sismo significativo (>5.0 Richter), inspeccionar inmediatamente todas las válvulas y realizar prueba funcional.
+
+
+---
+
+### Lecturas relacionadas
+
+- [Espuma afff para aplicaciones industriales](/blog/boquillas-contra-incendios/espuma-afff-contra-incendios-aplicaciones-industriales-mexico)
+- [Monitores contra incendios industriales](/blog/monitores-contra-incendios/monitores-contra-incendio-tipos-aplicaciones-industriales)
 
 ## Conclusión
 

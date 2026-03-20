@@ -1,5 +1,5 @@
 ---
-title: "Guía NFPA para Válvulas Contra Incendios: Normativa y Requisitos"
+title: "Normas NFPA para Válvulas Contra Incendios"
 fechaActualizacion: "2026-03-19"
 schema:
   - type: "Article"
@@ -145,6 +145,15 @@ El cumplimiento de las normativas NFPA para válvulas es esencial para la integr
 
 
 
+
+
+---
+
+### Lecturas relacionadas
+
+- [Mantenimiento preventivo de válvulas](/blog/valvulas-contra-incendios/mantenimiento-preventivo-valvulas-contra-incendios-nfpa-25)
+- [Válvulas os&y para rociadores NFPA 13](/blog/valvulas-contra-incendios/valvulas-compuerta-osy-sprinklers-nfpa-13-mexico)
+- [Supervisión de válvulas de control](/blog/valvulas-contra-incendios/valvulas-control-sistemas-incendios-tipos-supervision)
 
 ## Preguntas frecuentes sobre válvulas NFPA
 

@@ -1,5 +1,5 @@
 ---
-title: "Plan de Emergencia Contra Incendios: Guía NOM-002 para Empresas"
+title: "Plan de Emergencia Contra Incendios NOM-002"
 fechaActualizacion: "2026-03-19"
 schema:
   - type: "Article"
@@ -101,6 +101,15 @@ Todo sistema de protección contra incendios requiere un programa de mantenimien
 6. **Documentación completa** — hojas técnicas, certificados y guías de instalación
 
 [Solicita una cotización personalizada →](/servicios/cotizaciones)
+
+
+---
+
+### Lecturas relacionadas
+
+- [Los requisitos de la nom-002-stps](/blog/gabinetes-hidrantes-contra-incendios/cumplir-nom-002-stps-proteccion-incendios-guia-empresas)
+- [El programa interno de protección civil](/blog/gabinetes-hidrantes-contra-incendios/programa-interno-equipos-contra-incendios-empresas-mexico)
+- [Qué revisa protección civil](/blog/gabinetes-hidrantes-contra-incendios/inspeccion-proteccion-civil-equipos-contra-incendios-empresas-mexico)
 
 ## Preguntas frecuentes
 

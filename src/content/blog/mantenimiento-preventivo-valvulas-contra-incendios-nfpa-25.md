@@ -1,5 +1,5 @@
 ---
-title: "Mantenimiento Preventivo de Válvulas Contra Incendios NFPA 25"
+title: "Mantenimiento de Válvulas Contra Incendios NFPA 25"
 description: "Mantenimiento de válvulas contra incendios NFPA 25: frecuencias de inspección, prueba de operación, y por qué una válvula sin mantenimiento puede trabarse cerrada."
 fechaActualizacion: "2026-03-19"
 schema:
@@ -103,6 +103,14 @@ Todo sistema de protección contra incendios requiere un programa de mantenimien
 6. **Documentación completa** — hojas técnicas, certificados y guías de instalación
 
 [Solicita una cotización personalizada →](/servicios/cotizaciones)
+
+
+---
+
+### Lecturas relacionadas
+
+- [La normativa nfpa aplicable a válvulas](/blog/valvulas-contra-incendios/normativa-nfpa-valvulas-contra-incendios)
+- [Cuándo reemplazar equipos en lugar de reparar](/blog/valvulas-contra-incendios/reposicion-equipos-contra-incendios-cuando-reemplazar)
 
 ## Preguntas frecuentes
 

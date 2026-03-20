@@ -1,5 +1,5 @@
 ---
-title: "Herrajes y Soportes para Mangueras y Gabinetes Contra Incendios"
+title: "Herrajes para Mangueras y Gabinetes Contra Incendios"
 description: "Herrajes para mangueras y gabinetes contra incendios: porta-mangueras, bisagras, abrazaderas y errores de instalación que generan observaciones en inspecciones."
 fecha: "2026-03-12"
 fechaActualizacion: "2026-03-19"
@@ -67,6 +67,14 @@ Los soportes y pedestales para [monitores contra incendios](/monitores/) deben d
 La base debe ser de concreto reforzado con pernos de anclaje embebidos, no taquetes de expansión. Los taquetes de expansión se aflojan con la vibración cíclica de las pruebas de flujo. Los pernos embebidos en el concreto durante el colado mantienen su capacidad de anclaje indefinidamente si el concreto está correctamente dimensionado.
 
 El pedestal de acero entre la base de concreto y el monitor debe estar fabricado con espesor de pared suficiente para resistir la fatiga por vibración. Un pedestal de tubo delgado puede desarrollar grietas de fatiga después de varios años de pruebas de flujo anuales, que aunque son solo una vez al año, someten al pedestal a cargas dinámicas que acumulan daño con cada ciclo.
+
+
+---
+
+### Lecturas relacionadas
+
+- [Los tipos de gabinetes de manguera](/blog/gabinetes-hidrantes-contra-incendios/gabinetes-manguera-contra-incendios-tipos-normas-mexico)
+- [Las conexiones y herrajes del sistema](/blog/conexiones-herrajes-contra-incendios/conexiones-herrajes-sistemas-contra-incendios-tipos-nfpa)
 
 ## El mantenimiento que previene que un herraje de doscientos pesos pare un sistema de millones
 

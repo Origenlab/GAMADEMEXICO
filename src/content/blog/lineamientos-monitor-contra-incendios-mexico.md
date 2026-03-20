@@ -89,6 +89,14 @@ Cuando el auditor de la aseguradora llega a tu planta y pide "la documentación 
 
 He acompañado auditorías donde la planta tenía monitores FM Approved perfectamente instalados y mantenidos, pero no tenía el cálculo hidráulico original que justificaba la selección. El auditor no pudo verificar que el caudal de los monitores correspondía con el escenario de riesgo porque no había documento que mostrara cuál era ese escenario. La observación resultante fue "sistema de monitores sin evidencia de diseño por ingeniería de protección contra incendios", lo cual cuestiona la validez de toda la instalación aunque el equipo físico sea de primera calidad.
 
+
+---
+
+### Lecturas relacionadas
+
+- [Los tipos de monitores industriales](/blog/monitores-contra-incendios/monitores-contra-incendio-tipos-aplicaciones-industriales)
+- [La guía de selección](/blog/monitores-contra-incendios/guia-seleccion-monitores-contra-incendios)
+
 ## El mantenimiento como requisito operativo y legal
 
 Un monitor que no se ha movido en un año puede no moverse cuando lo necesites. Los mecanismos de giro acumulan corrosión, depósitos y rigidez por falta de uso. La cremallera de elevación puede trabarse. Las [boquillas](/boquillas/) pueden obstruirse con insectos, nidos o sedimentos. Y la tubería de alimentación puede tener depósitos internos que reducen el diámetro efectivo y la presión disponible.

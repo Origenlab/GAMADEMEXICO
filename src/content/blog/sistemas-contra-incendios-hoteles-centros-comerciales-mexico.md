@@ -209,6 +209,15 @@ Depende de la póliza. Muchos seguros tienen cláusulas de exclusión si el sist
 
 ---
 
+
+---
+
+### Lecturas relacionadas
+
+- [Sistemas de extinción en cocinas](/blog/boquillas-contra-incendios/extincion-automatica-cocinas-industriales-ul-300-nfpa-17a)
+- [Gabinetes de manguera por piso](/blog/gabinetes-hidrantes-contra-incendios/gabinetes-manguera-contra-incendios-tipos-normas-mexico)
+- [Sistemas de detección de humo](/blog/monitores-contra-incendios/detector-humo-calor-sistemas-deteccion-incendios-nfpa-72)
+
 ## Conclusión
 
 Invertir en un sistema contra incendios completo, bien instalado y documentado en un hotel o centro comercial no es solo una obligación legal: es la única manera de demostrar diligencia debida ante una emergencia. El rango de inversión de $400,000 – $950,000 MXN para un hotel de 50 habitaciones representa menos del 5% del costo total de construcción del inmueble, pero puede significar la diferencia entre un incendio controlado y una catástrofe.

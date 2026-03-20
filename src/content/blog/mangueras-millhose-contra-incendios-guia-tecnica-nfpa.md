@@ -204,6 +204,14 @@ Técnicamente es posible, pero no se recomienda. Los acoples instalados en fábr
 
 ---
 
+
+---
+
+### Lecturas relacionadas
+
+- [Comparativa entre millhose y blindex](/blog/mangueras-contra-incendios/manguera-millhose-blindex-diferencias-industrial)
+- [Sistemas standpipe donde se utilizan mangueras millhose](/blog/mangueras-contra-incendios/red-contra-incendios-edificios-altura-nfpa-14-standpipe)
+
 ## Conclusión
 
 La manguera Millhose de doble jacket no es un lujo sino el estándar mínimo para sistemas contra incendios en instalaciones industriales, hoteleras y comerciales. Su mayor durabilidad, resistencia a la abrasión y desempeño en prueba hidrostática justifican la diferencia de precio frente a alternativas de simple jacket.

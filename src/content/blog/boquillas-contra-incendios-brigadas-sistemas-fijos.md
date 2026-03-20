@@ -1,5 +1,17 @@
 ---
 title: "Boquillas Contra Incendios para Brigadas y Sistemas Fijos"
+fechaActualizacion: "2026-03-19"
+schema:
+  - type: "Article"
+    headline: "Boquillas Contra Incendios para Brigadas y Sistemas Fijos"
+    author: "Gama de México"
+    dateModified: "2026-03-19"
+  - type: "FAQPage"
+    questions:
+      - q: "¿Qué boquilla necesita una brigada industrial?"
+        a: "Tipo pistola de 60-150 GPM con selección de patrón (chorro/niebla/cierre). Debe ser intuitiva porque el brigadista no es bombero profesional — opera bajo estrés con entrenamiento limitado. La fuerza de reacción a 95 GPM (~45 lb) permite operación por una persona. La turbo jet de 250+ GPM es para brigadas capacitadas de dos personas."
+      - q: "¿Las boquillas de sistemas fijos son diferentes a las de brigada?"
+        a: "Sí. Las de sistemas fijos (monitores, rociadores abiertos, deluge) se diseñan para caudal específico a presión específica sin intervención humana. No necesitan selección de patrón ni ergonomía manual. Se especifican por el cálculo hidráulico del sistema, no por la capacidad del operador."
 description: "Cómo seleccionar boquillas contra incendios para brigadas industriales y sistemas fijos: criterios de caudal, presión, patrón y compatibilidad con monitores."
 categoria: "boquillas"
 autor:
@@ -47,6 +59,14 @@ En las pruebas funcionales que NFPA 25 establece como parte del programa de mant
 La boquilla debe ser compatible con todo lo que la rodea. Con la manguera o la línea donde se conecta, en diámetro y tipo de rosca. Con la presión dinámica real que llega al punto de descarga bajo demanda, no con la presión estática que muestra el manómetro cuando nadie está consumiendo agua. Con la estrategia operativa del sistema: si es para brigada, debe permitir maniobra manual; si es para monitor, debe acoplarse mecánicamente al cuerpo del monitor y soportar la reacción sin transmitirla de forma descontrolada.
 
 He visto boquillas especificadas para 100 PSI instaladas en puntos donde la presión dinámica real bajo demanda era 65 PSI, lo cual reducía el caudal un treinta por ciento y el alcance casi a la mitad de lo esperado. También he visto lo contrario: puntos donde la presión llegaba a 140 PSI y la reacción de la boquilla excedía lo que el operador podía controlar, convirtiendo cada apertura en un forcejeo peligroso. Ambos problemas se evitan con un cálculo hidráulico que verifique la presión real en el punto de descarga bajo la condición de demanda más desfavorable del sistema. Seleccionar la boquilla por su caudal nominal a 100 PSI sin validar que los 100 PSI realmente existen en ese punto es especificar con los ojos cerrados.
+
+
+---
+
+### Lecturas relacionadas
+
+- [Los tipos de boquillas disponibles](/blog/boquillas-contra-incendios/guia-completa-boquillas-contra-incendios)
+- [Cómo integrar boquillas en el plan de emergencia](/blog/mangueras-contra-incendios/plan-emergencia-contra-incendios-empresa-nom-002-guia)
 
 ## Certificaciones: no es un extra, es parte de la especificación
 

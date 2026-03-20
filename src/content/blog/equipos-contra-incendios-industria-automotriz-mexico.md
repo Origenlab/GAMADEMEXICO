@@ -60,6 +60,14 @@ Las [válvulas](/valvulas/) del arreglo de bombeo deben cumplir con NFPA 20 y, e
 
 La red de hidrantes perimetrales conforme a NFPA 24, con tubería en anillo para redundancia, [válvulas](/valvulas/) de seccionamiento supervisadas y espaciamiento que permita cobertura completa del perímetro, es el complemento exterior del sistema interior de rociadores. En plantas del corredor de Saltillo-Ramos Arizpe, donde los parques industriales automotrices pueden tener varias naves de producción contiguas, la red de hidrantes debe diseñarse considerando la exposición entre edificios: un incendio en una nave que no se controla puede transmitirse por radiación térmica a la nave adyacente si la distancia entre edificios es insuficiente y la protección de exposición no está diseñada.
 
+
+---
+
+### Lecturas relacionadas
+
+- [Las certificaciones que exige la industria automotriz](/blog/monitores-contra-incendios/certificaciones-ul-fm-equipos-contra-incendios-importancia)
+- [Requisitos de aseguradoras para equipos](/blog/valvulas-contra-incendios/seguro-industrial-equipos-contra-incendios-requisitos-aseguradoras)
+
 ## Lo que las OEM corporativas realmente exigen
 
 Los fabricantes automotrices que operan en México, ya sean americanos, europeos, japoneses o coreanos, tienen estándares corporativos de protección contra incendios que frecuentemente superan los requisitos de la normatividad mexicana. Esos estándares pueden especificar FM Approved como certificación obligatoria para todos los componentes del sistema, pueden exigir pruebas de flujo con frecuencia superior a la que NFPA 25 requiere como mínimo, pueden pedir redundancia en sistemas que la norma no exige como redundantes y pueden condicionar la aprobación de la planta para producción a la verificación completa del sistema de protección por un auditor corporativo.

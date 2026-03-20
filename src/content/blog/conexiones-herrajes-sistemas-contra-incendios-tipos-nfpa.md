@@ -1,5 +1,15 @@
 ---
 title: "Conexiones y Herrajes en Sistemas Contra Incendios"
+fechaActualizacion: "2026-03-19"
+schema:
+  - type: "Article"
+    headline: "Conexiones y Herrajes en Sistemas Contra Incendios"
+    author: "Gama de México"
+    dateModified: "2026-03-19"
+  - type: "FAQPage"
+    questions:
+      - q: "¿Qué tipos de conexiones se usan en sistemas contra incendios?"
+        a: "Roscadas NST/NH (estándar en México para bomberos y gabinetes), Storz (encastre rápido simétrico, dominante en industria y ciudades grandes), ranuradas Victaulic (unión mecánica para tubería, instalación sin soldadura), bridadas (conexiones permanentes de alta presión en cuartos de bomba). La compatibilidad entre sistemas se resuelve con adaptadores."
 description: "Tomas siamesas, wyes, reducciones y herrajes para sistemas contra incendios: función, ubicación, materiales y errores de instalación más comunes en México."
 categoria: "conexiones-herrajes"
 autor:
@@ -57,6 +67,15 @@ Un punto que genera confusión frecuente es la mezcla de materiales en el mismo 
 Todo herraje de un sistema contra incendios debe tener marcada su presión máxima de trabajo. No es opcional. Un accesorio sin identificación de presión no tiene respaldo técnico frente a una auditoría y no debería instalarse en ningún sistema donde la integridad bajo presión es un requisito de seguridad. Las presiones típicas de trabajo varían según la aplicación: 175 PSI para gabinetes interiores y sistemas de rociadores estándar, 250 PSI para sistemas de tubería vertical y standpipe, y 300 PSI o más para sistemas petroquímicos y aplicaciones de alta presión.
 
 La presión de prueba de fábrica es generalmente el doble de la presión de trabajo, y esa prueba debe estar documentada para que el componente pueda integrarse en el expediente técnico del sistema. Cuando una auditoría de protección civil o de aseguradora revisa las conexiones del sistema, la presión nominal de cada componente debe poder verificarse ya sea por el marcado en el cuerpo del herraje o por la documentación del fabricante. Un componente sin esa trazabilidad es un componente cuya integridad bajo presión no puede garantizarse.
+
+
+---
+
+### Lecturas relacionadas
+
+- [Las conexiones storz en detalle](/blog/conexiones-herrajes-contra-incendios/guia-tecnica-conexiones-storz-sistemas-contra-incendios-mexico)
+- [Adaptadores y acoplamientos](/blog/conexiones-herrajes-contra-incendios/adaptadores-acoplamientos-mangueras-contra-incendios-tipos)
+- [Llaves y herramientas de operación](/blog/conexiones-herrajes-contra-incendios/llaves-herramientas-operacion-valvulas-hidrantes-sistemas)
 
 ## La compatibilidad como decisión de diseño, no como problema de campo
 

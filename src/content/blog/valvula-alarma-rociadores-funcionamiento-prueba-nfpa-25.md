@@ -1,5 +1,5 @@
 ---
-title: "Válvula de Alarma en Rociadores: Funcionamiento y Prueba NFPA 25"
+title: "Válvula de Alarma en Rociadores: Prueba NFPA 25"
 description: "Válvula de alarma en rociadores: cómo funciona, por qué suena sin incendio, prueba trimestral NFPA 25 y errores que desactivan la alarma sin que nadie lo sepa."
 fechaActualizacion: "2026-03-19"
 schema:
@@ -285,6 +285,15 @@ En varias ciudades de México, la presión de la red municipal varía significat
 - Reducir la presión disponible para los rociadores en el momento del incendio.
 
 **Solución:** Instalar bomba de incendio con tanque de succión o cisterna de reserva para independizar la presión del sistema de la red municipal.
+
+
+---
+
+### Lecturas relacionadas
+
+- [Los sistemas de rociadores automáticos](/blog/valvulas-contra-incendios/sistemas-rociadores-automaticos-nfpa-13-mexico)
+- [El programa de mantenimiento NFPA 25](/blog/valvulas-contra-incendios/mantenimiento-preventivo-valvulas-contra-incendios-nfpa-25)
+- [Las válvulas check en sistemas sprinkler](/blog/valvulas-contra-incendios/valvulas-check-retencion-sistemas-sprinkler-nfpa-13)
 
 ## Conclusión
 

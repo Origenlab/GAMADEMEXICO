@@ -1,5 +1,5 @@
 ---
-title: "Boquillas Contra Incendios: Tipos, Selección y Certificación"
+title: "Boquillas Contra Incendios: Tipos y Selección"
 description: "Tipos de boquillas contra incendios, cómo elegir por riesgo y caudal, certificaciones UL y FM, y errores que comprometen la protección. Guía para ingenieros."
 fecha: "2025-02-14"
 fechaActualizacion: "2026-03-19"
@@ -108,6 +108,15 @@ La inspección mensual de una boquilla es una tarea de dos minutos que previene 
 La prueba de flujo semestral conecta la boquilla al sistema y verifica con descarga real que el caudal y el patrón corresponden con las especificaciones. Un chorro recto que se abre en abanico a tres metros de la boquilla indica un problema en el orificio: desgaste, obstrucción parcial o deformación. Una niebla que no se forma uniformemente indica un problema en los deflectores internos del cabezal. Cualquiera de esos síntomas requiere revisión y posible reemplazo de la boquilla.
 
 Después de cada uso real en un incendio o después de cada práctica con agua, la boquilla debe limpiarse completamente, verificarse que todos los mecanismos operan y almacenarse en posición cerrada dentro del [gabinete](/gabinetes/). El agua que queda dentro de la boquilla después del uso puede generar depósitos calcáreos que con el tiempo traban los mecanismos de patrón si no se limpia.
+
+
+---
+
+### Lecturas relacionadas
+
+- [La comparativa técnica entre boquilla tipo pistola y turbo jet](/blog/boquillas-contra-incendios/diferencia-boquilla-pistola-turbojet-incendios)
+- [Seleccionar boquillas para brigadas y sistemas fijos](/blog/boquillas-contra-incendios/boquillas-contra-incendios-brigadas-sistemas-fijos)
+- [Los requisitos legales de boquillas en México](/blog/boquillas-contra-incendios/cumplimiento-legal-boquillas-contra-incendios-mexico-2026)
 
 ## Los errores de especificación que comprometen la protección
 

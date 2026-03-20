@@ -1,5 +1,17 @@
 ---
 title: "Mantenimiento de Gabinetes y Mangueras: Checklist Completo"
+fechaActualizacion: "2026-03-19"
+schema:
+  - type: "Article"
+    headline: "Mantenimiento de Gabinetes y Mangueras: Checklist Completo"
+    author: "Gama de México"
+    dateModified: "2026-03-19"
+  - type: "FAQPage"
+    questions:
+      - q: "¿Qué incluye el mantenimiento mensual de un gabinete contra incendios?"
+        a: "5 minutos por gabinete: verificar que la puerta abre completamente, sello intacto, manguera en su lugar sin daño visible, boquilla presente y accesible, llave de operación dentro del gabinete, señalización visible, y sin obstrucciones frente al gabinete. Marcar presente/ausente cada item — no solo 'OK' genérico."
+      - q: "¿Cada cuánto se prueba la manguera del gabinete?"
+        a: "Inspección visual mensual. Rotación de dobleces semestral (NFPA 1962). Prueba hidrostática anual al 110% de la presión de servicio durante 3 minutos. Si la manguera falla la prueba, no regresa al gabinete. Si pasa, se registra en bitácora con fecha y responsable."
 description: "Checklist de mantenimiento para gabinetes contra incendios y mangueras. Inspección mensual, prueba hidrostática y frecuencias NFPA 25."
 categoria: "gabinetes-hidrantes"
 autor:
@@ -89,6 +101,14 @@ Todo sistema de protección contra incendios requiere un programa de mantenimien
 6. **Documentación completa** — hojas técnicas, certificados y guías de instalación
 
 [Solicita una cotización personalizada →](/servicios/cotizaciones)
+
+
+---
+
+### Lecturas relacionadas
+
+- [Los tipos de gabinetes](/blog/gabinetes-hidrantes-contra-incendios/gabinetes-manguera-contra-incendios-tipos-normas-mexico)
+- [La prueba hidrostática de las mangueras del gabinete](/blog/mangueras-contra-incendios/prueba-hidrostatica-mangueras-incendios-protocolo-nfpa-1962)
 
 ## Preguntas frecuentes
 

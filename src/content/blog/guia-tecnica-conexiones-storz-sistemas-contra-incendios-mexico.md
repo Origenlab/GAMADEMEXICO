@@ -1,5 +1,5 @@
 ---
-title: "Conexiones Storz: Guía Técnica para Sistemas Contra Incendios"
+title: "Conexiones Storz para Sistemas Contra Incendios"
 description: "Conexiones Storz para sistemas contra incendios en México: cómo funcionan, por qué reemplazaron a las roscas, tamaños DN65 a DN100 y errores de compatibilidad."
 categoria: "conexiones-herrajes"
 autor:
@@ -87,6 +87,14 @@ Las garras de enclavamiento deben revisarse buscando deformaciones, rebabas o co
 El mecanismo de acoplamiento debe probarse en seco: conectar y desconectar verificando que las garras deslizan suavemente y que el seguro anti-desacoplamiento funciona en las conexiones que lo tienen. Si el acoplamiento requiere fuerza excesiva, la causa generalmente es corrosión en las superficies de contacto o deformación de las garras. La lubricación de las superficies de contacto con silicona aprobada para agua potable reduce la fricción y protege contra la corrosión.
 
 Un criterio de reemplazo que muchos ignoran es la antigüedad. Las conexiones de aluminio con más de quince años de servicio deben evaluarse técnicamente con prueba de carga, incluso si visualmente se ven bien. La fatiga del material y la corrosión interna pueden debilitar las garras sin que sea visible externamente.
+
+
+---
+
+### Lecturas relacionadas
+
+- [Todos los tipos de conexiones y herrajes](/blog/conexiones-herrajes-contra-incendios/conexiones-herrajes-sistemas-contra-incendios-tipos-nfpa)
+- [Los adaptadores para compatibilidad storz-nst](/blog/conexiones-herrajes-contra-incendios/adaptadores-acoplamientos-mangueras-contra-incendios-tipos)
 
 ## Los adaptadores que deberían estar ahí y generalmente no están
 

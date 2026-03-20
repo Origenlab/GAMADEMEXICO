@@ -1,5 +1,5 @@
 ---
-title: "Cómo Elegir un Monitor Contra Incendios: Flujo, Presión y Alcance"
+title: "Cómo Elegir un Monitor Contra Incendios"
 description: "Guía para seleccionar monitores contra incendios según flujo GPM, presión PSI y alcance. Oscilante vs fijo, datos Elkhart Brass."
 categoria: "monitores"
 autor:

@@ -180,6 +180,15 @@ Sí. En ambientes marinos o con agua de alta conductividad, utilice válvulas de
 
 ---
 
+
+---
+
+### Lecturas relacionadas
+
+- [La supervisión eléctrica de válvulas de control](/blog/valvulas-contra-incendios/valvulas-control-sistemas-incendios-tipos-supervision)
+- [Los sistemas de rociadores automáticos NFPA 13](/blog/valvulas-contra-incendios/sistemas-rociadores-automaticos-nfpa-13-mexico)
+- [El mantenimiento de válvulas según NFPA 25](/blog/valvulas-contra-incendios/mantenimiento-preventivo-valvulas-contra-incendios-nfpa-25)
+
 ## Conclusión
 
 La válvula OS&Y no es una opción técnica más: es el guardián de todo el sistema de sprinklers. Su indicación visual de posición, su capacidad de bloqueo y su robustez bajo presión la hacen insustituible en sistemas de protección contra incendios serios. No escatime en certificación: una válvula OS&Y UL Listed o FM Approved es una inversión de $3,000 – $12,000 MXN según el diámetro; un sistema de sprinklers inoperable por una válvula no certificada puede costar cientos de veces más en daños y responsabilidades legales.

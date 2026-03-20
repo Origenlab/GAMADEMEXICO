@@ -74,6 +74,14 @@ También conviene hablar de operación. No todos los proyectos requieren la mism
 
 En refinerías y terminales de combustibles, el cuello de cisne suele destacar cuando hay que cubrir coronas de tanque, sellos, zonas elevadas o trayectorias que deben vencer obstáculos estructurales. En plantas de manufactura con patios abiertos y puntos bien definidos de exposición, el corazón puede ser más racional por su compacidad y por la forma en que transmite la reacción a la estructura. En patios de contenedores, hangares, puertos o instalaciones químicas, cualquiera de los dos puede ser correcto dependiendo de la geometría del riesgo. La clave no es memorizar una regla, sino entender la lógica: cuando la trayectoria y la altura dominan, el cuello de cisne toma ventaja; cuando la cobertura está bien resuelta desde una base contenida y el proyecto valora compacidad, el corazón suele ofrecer una solución más limpia.
 
+
+---
+
+### Lecturas relacionadas
+
+- [Todos los tipos de monitores contra incendios](/blog/monitores-contra-incendios/monitores-contra-incendio-tipos-aplicaciones-industriales)
+- [La guía de selección de monitores](/blog/monitores-contra-incendios/guia-seleccion-monitores-contra-incendios)
+
 ## Cómo se debería tomar esta decisión
 
 En proyectos bien llevados, la selección debería seguir un orden lógico. Primero se define el riesgo: tanque, dársena, patio, transformador, manifold, edificio crítico o equipo de proceso. Después se define el objetivo del monitor: enfriamiento, supresión, aplicación de espuma, protección de exposición o ataque a un punto concreto. Luego se cruzan caudal, presión y altura necesaria. Solo ahí entra la decisión de geometría: corazón o cuello de cisne. Si se salta ese orden, se termina eligiendo primero la forma y después tratando de justificar que sirve. Y eso rara vez termina bien.

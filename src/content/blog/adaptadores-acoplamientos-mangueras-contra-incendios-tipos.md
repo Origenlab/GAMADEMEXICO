@@ -60,3 +60,10 @@ El mantenimiento de adaptadores y acoplamientos es mecánicamente simple pero op
 La recomendación más práctica para cualquier responsable de seguridad industrial en México es esta: contactar al jefe del cuerpo de bomberos del municipio, pedirle información sobre los estándares de rosca y los diámetros de sus equipos, e instalar los adaptadores de transición correspondientes en cada toma exterior de la planta. Después, al menos una vez al año, coordinar un ejercicio de interoperabilidad donde bomberos y brigada intenten conectar realmente sus equipos al sistema. No en papel. No en un checklist. En la toma. Con la manguera. Bajo presión si es posible. Ese ejercicio revela incompatibilidades que ningún inventario descubre. Y si se encuentra un problema, la solución es un adaptador de bronce que cuesta una fracción de lo que cuesta un minuto de un incendio no controlado.
 
 En [Gama de México](/conexiones-herrajes/) distribuimos adaptadores y acoplamientos en bronce y aluminio, con conexiones NST, Storz y transiciones entre estándares en los diámetros y clases de presión que el proyecto requiera. Si necesitas validar la compatibilidad de tu instalación con el servicio de emergencia local, armar kits por punto de control o especificar los adaptadores correctos para un proyecto nuevo, desde [**/cotizar**](/cotizar) lo revisamos con el detalle que esta parte del sistema merece.
+
+---
+
+### Lecturas relacionadas
+
+- [Las conexiones storz](/blog/conexiones-herrajes-contra-incendios/guia-tecnica-conexiones-storz-sistemas-contra-incendios-mexico)
+- [La guía general de conexiones y herrajes](/blog/conexiones-herrajes-contra-incendios/conexiones-herrajes-sistemas-contra-incendios-tipos-nfpa)

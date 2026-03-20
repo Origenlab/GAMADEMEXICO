@@ -1,5 +1,17 @@
 ---
-title: "Toma Siamesa FDC: Instalación y Mantenimiento Conforme a NFPA"
+title: "Toma Siamesa FDC: Instalación y Mantenimiento"
+fechaActualizacion: "2026-03-19"
+schema:
+  - type: "Article"
+    headline: "Toma Siamesa FDC: Instalación y Mantenimiento Conforme a NFPA"
+    author: "Gama de México"
+    dateModified: "2026-03-19"
+  - type: "FAQPage"
+    questions:
+      - q: "¿Qué es FDC en sistemas contra incendios?"
+        a: "Fire Department Connection — conexión para el departamento de bomberos. Es el punto donde los bomberos inyectan agua de su camión hacia el sistema interno del edificio (rociadores, standpipes). Sin FDC funcional, los bomberos no pueden reforzar la presión y caudal del sistema interno cuando la demanda del incendio supera la capacidad de la bomba del edificio."
+      - q: "¿Cada cuánto se inspecciona la toma siamesa?"
+        a: "NFPA 25 exige inspección trimestral: verificar que las tapas están en su lugar y se retiran sin esfuerzo, que las roscas o acoples Storz están limpios y sin daño, que la válvula check interna (clapper) sella correctamente, que no hay obstrucciones visibles dentro de las bocas, y que la señalización identifica qué sistema alimenta la siamesa."
 description: "Guía completa sobre tomas siamesas FDC para edificios. Instalación, mantenimiento, tipos y normativa NFPA 13 y 14 aplicable en México."
 categoria: "conexiones-herrajes"
 autor:
@@ -89,6 +101,14 @@ Todo sistema de protección contra incendios requiere un programa de mantenimien
 6. **Documentación completa** — hojas técnicas, certificados y guías de instalación
 
 [Solicita una cotización personalizada →](/servicios/cotizaciones)
+
+
+---
+
+### Lecturas relacionadas
+
+- [Reducciones siamesas y toma de bomberos](/blog/conexiones-herrajes-contra-incendios/reduccion-siamesa-toma-bomberos-instalacion-normas-nfpa)
+- [Sistemas standpipe en edificios de altura](/blog/mangueras-contra-incendios/red-contra-incendios-edificios-altura-nfpa-14-standpipe)
 
 ## Preguntas frecuentes
 

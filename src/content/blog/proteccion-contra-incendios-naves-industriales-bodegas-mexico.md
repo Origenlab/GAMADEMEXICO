@@ -1,5 +1,5 @@
 ---
-title: "Protección Contra Incendios en Naves Industriales y Bodegas México"
+title: "Protección Contra Incendios en Naves y Bodegas"
 fechaActualizacion: "2026-03-19"
 schema:
   - type: "Article"
@@ -87,6 +87,15 @@ Para naves industriales de alto riesgo, el sistema de rociadores automáticos es
 ### NFPA 14 — Standpipes
 
 Los sistemas de tubería vertical (standpipe) proporcionan conexiones de manguera en puntos estratégicos de la nave para uso de brigadas y bomberos.
+
+
+---
+
+### Lecturas relacionadas
+
+- [Sistemas de rociadores automáticos NFPA 13](/blog/valvulas-contra-incendios/sistemas-rociadores-automaticos-nfpa-13-mexico)
+- [La red de hidrantes para naves industriales](/blog/gabinetes-hidrantes-contra-incendios/hidrantes-contra-incendios-mexico-tipos-instalacion-normas)
+- [Detectores de humo y calor para grandes espacios](/blog/monitores-contra-incendios/detector-humo-calor-sistemas-deteccion-incendios-nfpa-72)
 
 ## Plan de protección para tu nave industrial
 

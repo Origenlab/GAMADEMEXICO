@@ -1,5 +1,5 @@
 ---
-title: "Mangueras Contra Incendios en Empresas: Estándar Técnico y Legal"
+title: "Mangueras Contra Incendios en Empresas: Normas"
 fechaActualizacion: "2026-03-19"
 schema:
   - type: "Article"
@@ -271,6 +271,15 @@ Si tu organización busca elevar su estándar de seguridad y cumplimiento, en Ga
 Consulta nuestro [catálogo de mangueras contra incendios](/mangueras-contra-incendios) y solicita asesoría técnica para definir la mejor configuración para tu instalación.
 
 ---
+
+
+---
+
+### Lecturas relacionadas
+
+- [Los requisitos legales de equipos contra incendios](/blog/gabinetes-hidrantes-contra-incendios/requisitos-legales-equipos-contra-incendios-mexico-empresas)
+- [Cómo cumplir la nom-002-stps](/blog/gabinetes-hidrantes-contra-incendios/cumplir-nom-002-stps-proteccion-incendios-guia-empresas)
+- [El protocolo de prueba hidrostática](/blog/mangueras-contra-incendios/prueba-hidrostatica-mangueras-incendios-protocolo-nfpa-1962)
 
 ## Productos recomendados para tu proyecto
 

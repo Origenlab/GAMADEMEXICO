@@ -1,5 +1,5 @@
 ---
-title: "Mangueras de Ataque para Incendios: Tipos y Usos Industriales"
+title: "Mangueras de Ataque Contra Incendios: Tipos y Usos"
 fechaActualizacion: "2026-03-19"
 schema:
   - type: "Article"
@@ -254,6 +254,15 @@ En los racks de los gabinetes, los pliegues deben asegurar estos radios mínimos
 | NFPA 14 | Sistemas standpipe | Tipo de manguera por clase de sistema |
 | NFPA 25 | Mantenimiento | Inspección trimestral y anual del sistema |
 | NOM-002-STPS-2010 | Seguridad en centros de trabajo | Disponibilidad y estado de equipos de combate |
+
+
+---
+
+### Lecturas relacionadas
+
+- [Los criterios de selección de mangueras](/blog/mangueras-contra-incendios/como-elegir-manguera-contra-incendios)
+- [Clasificación por presión de trabajo](/blog/mangueras-contra-incendios/presion-trabajo-mangueras-incendios-clasificacion-nfpa-1961)
+- [Adaptadores y acoplamientos compatibles](/blog/conexiones-herrajes-contra-incendios/adaptadores-acoplamientos-mangueras-contra-incendios-tipos)
 
 ## Conclusión
 

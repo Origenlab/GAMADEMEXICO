@@ -1,5 +1,5 @@
 ---
-title: "Cálculo Hidráulico en Sistemas Contra Incendios: Guía Técnica"
+title: "Cálculo Hidráulico en Sistemas Contra Incendios"
 description: "Cálculo hidráulico para sistemas contra incendios: Hazen-Williams, pérdidas por fricción, coeficiente C real vs asumido, y errores que subdimensionan el sistema."
 fecha: "2026-03-01"
 fechaActualizacion: "2026-03-19"
@@ -80,6 +80,15 @@ En la prueba de aceptación de la bomba conforme a NFPA 20, se verifican tres pu
 Los síntomas de un cálculo hidráulico deficiente son predecibles. Rociadores remotos que no entregan el caudal mínimo de diseño. Monitores que no alcanzan el patrón o la distancia especificada. Hidrantes exteriores con presión residual por debajo de lo aceptable. Pruebas de flujo que no coinciden con los valores del cálculo. Alarmas de flujo que se activan con retraso porque la presión en la red no es suficiente para operar las estaciones de monitoreo. Cada uno de esos síntomas apunta al mismo problema de raíz: la presión y el caudal disponibles en los puntos de descarga no son los que la ingeniería asumía.
 
 La consecuencia práctica es un sistema que en papel cumple pero que en campo no protege. Cuando la auditoría de la aseguradora o la inspección de protección civil llega y pide la prueba de flujo, los resultados revelan la brecha entre el diseño y la realidad. Y esa brecha no se cierra con documentos ni con explicaciones. Se cierra con ingeniería: revisar el cálculo, medir las condiciones reales, identificar dónde se están perdiendo la presión y el caudal, y corregir lo que sea necesario, ya sea redimensionando tubería, reemplazando [válvulas](/valvulas/) que introducen pérdidas excesivas, ajustando la bomba o reconfigurando la demanda simultánea del sistema.
+
+
+---
+
+### Lecturas relacionadas
+
+- [La selección de bombas contra incendios](/blog/valvulas-contra-incendios/bombas-contra-incendios-seleccion-instalacion-nfpa-20)
+- [Rociadores automáticos NFPA 13](/blog/valvulas-contra-incendios/sistemas-rociadores-automaticos-nfpa-13-mexico)
+- [El diseño de redes de hidrantes](/blog/gabinetes-hidrantes-contra-incendios/diseno-red-hidrantes-privados-nfpa-24-mexico)
 
 ## El cálculo hidráulico como herramienta de especificación
 

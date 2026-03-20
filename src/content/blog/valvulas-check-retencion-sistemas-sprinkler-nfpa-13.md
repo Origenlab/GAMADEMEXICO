@@ -1,5 +1,5 @@
 ---
-title: "Válvulas Check en Sistemas Sprinkler: NFPA 13 y Mantenimiento"
+title: "Válvulas Check en Sprinklers: NFPA 13"
 description: "Válvulas check para sprinklers: swing vs disco vs bola, por qué fallan silenciosamente, pérdida de carga real y mantenimiento que evita retroflujo en incendio."
 fechaActualizacion: "2026-03-19"
 schema:
@@ -271,6 +271,14 @@ Muchas instalaciones industriales en México usan agua de pozo con alto contenid
 - Válvulas con recubrimiento interior epóxico.
 - Tratamiento bactericida del agua del sistema.
 - Inspección de corrosión interna más frecuente (semestral).
+
+
+---
+
+### Lecturas relacionadas
+
+- [Las válvulas de alarma en rociadores](/blog/valvulas-contra-incendios/valvula-alarma-rociadores-funcionamiento-prueba-nfpa-25)
+- [Las bombas contra incendios donde se instalan válvulas check](/blog/valvulas-contra-incendios/bombas-contra-incendios-seleccion-instalacion-nfpa-20)
 
 ## Conclusión
 

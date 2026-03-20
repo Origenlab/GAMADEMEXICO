@@ -79,6 +79,14 @@ También hay un aspecto que muchas veces pasa desapercibido: la falsificación y
 
 La forma correcta de verificar una certificación UL es a través del directorio público de UL Product iQ, donde cada producto listado tiene un número de archivo que puede consultarse. Para FM, el directorio FM Approvals Guide cumple la misma función: permite buscar por fabricante, tipo de producto y número de aprobación. Cuando un ingeniero o un responsable de compras necesita confirmar que el equipo propuesto realmente tiene la certificación declarada, esos directorios son la referencia final. No la ficha del proveedor, no la hoja del catálogo, no la palabra del vendedor. El directorio del laboratorio.
 
+
+---
+
+### Lecturas relacionadas
+
+- [Requisitos de aseguradoras para equipos](/blog/valvulas-contra-incendios/seguro-industrial-equipos-contra-incendios-requisitos-aseguradoras)
+- [Selección de proveedores certificados](/blog/valvulas-contra-incendios/empresas-mantenimiento-extintores-proveedores-equipos-certificados)
+
 ## Qué conviene hacer en la práctica
 
 En la práctica de especificación en México, la recomendación es directa. Si el proyecto tiene requisitos de aseguradora, revisar con la póliza qué marca de certificación exige. Si la ingeniería del proyecto define un estándar, verificar que el equipo cumpla exactamente con ese estándar y no con uno "equivalente" que luego no se pueda defender. Si el proyecto no tiene un requisito explícito pero se trata de una instalación industrial seria, contar con equipo certificado UL, FM o ambos sigue siendo la opción más inteligente porque da trazabilidad, reduce riesgo documental y mejora la posición del responsable frente a cualquier revisión futura.

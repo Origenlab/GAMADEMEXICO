@@ -101,6 +101,15 @@ El resultado es un hidrante que no se ha operado en años. El vástago de la vá
 
 La lubricación del vástago es una tarea de cinco minutos que previene la mayoría de los problemas mecánicos. Un poco de grasa para válvulas aplicada en el vástago dos veces al año mantiene el mecanismo operando suavemente durante décadas. Sin esa lubricación, la corrosión trabaja sin oposición y cada año que pasa hace que abrir la válvula requiera más fuerza hasta que un día simplemente no abre.
 
+
+---
+
+### Lecturas relacionadas
+
+- [Diseño de red de hidrantes privados](/blog/gabinetes-hidrantes-contra-incendios/diseno-red-hidrantes-privados-nfpa-24-mexico)
+- [Llaves y herramientas para operar hidrantes](/blog/conexiones-herrajes-contra-incendios/llaves-herramientas-operacion-valvulas-hidrantes-sistemas)
+- [Conexiones y herrajes compatibles](/blog/conexiones-herrajes-contra-incendios/conexiones-herrajes-sistemas-contra-incendios-tipos-nfpa)
+
 ## Lo que protección civil va a verificar
 
 Cuando el inspector de protección civil llega a tu planta y revisa el sistema de hidrantes, va a preguntar tres cosas. La primera es la bitácora de mantenimiento: quiere ver fechas, nombres de quien hizo la inspección, resultados de la prueba de flujo y acciones correctivas documentadas. La segunda es una demostración: puede pedir que abras un hidrante y le muestres que opera correctamente, que la presión es adecuada y que las bocas no tienen fugas. La tercera es la documentación del diseño: el cálculo hidráulico que demuestra que la cisterna, la bomba y la red de tuberías entregan el caudal y la presión requeridos para el nivel de riesgo de tu instalación.

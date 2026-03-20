@@ -1,5 +1,5 @@
 ---
-title: "Válvulas de Control en Sistemas Contra Incendios: OS&Y y NFPA"
+title: "Válvulas de Control Contra Incendios: Supervisión"
 description: "Supervisión eléctrica de válvulas contra incendios: tamper switches, NFPA 72, por qué una válvula cerrada invalida todo el sistema de rociadores."
 fechaActualizacion: "2026-03-19"
 schema:
@@ -265,6 +265,14 @@ Las válvulas de control en zonas de alta sismicidad (CDMX, Oaxaca, Guerrero, Co
 | NFPA 25 | Programa de inspección, prueba y mantenimiento |
 | NFPA 72 | Circuitos de supervisión eléctrica |
 | Reglamento de Construcciones CDMX | Sistemas contra incendios en edificaciones |
+
+
+---
+
+### Lecturas relacionadas
+
+- [Las válvulas os&y para rociadores](/blog/valvulas-contra-incendios/valvulas-compuerta-osy-sprinklers-nfpa-13-mexico)
+- [La normativa nfpa para válvulas](/blog/valvulas-contra-incendios/normativa-nfpa-valvulas-contra-incendios)
 
 ## Conclusión
 

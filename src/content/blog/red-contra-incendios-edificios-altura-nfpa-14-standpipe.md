@@ -1,5 +1,5 @@
 ---
-title: "Red Contra Incendios en Edificios de Altura: NFPA 14 Standpipe"
+title: "Standpipe NFPA 14: Red Contra Incendios en Altura"
 fechaActualizacion: "2026-03-19"
 schema:
   - type: "Article"
@@ -101,6 +101,15 @@ Todo sistema de protección contra incendios requiere un programa de mantenimien
 6. **Documentación completa** — hojas técnicas, certificados y guías de instalación
 
 [Solicita una cotización personalizada →](/servicios/cotizaciones)
+
+
+---
+
+### Lecturas relacionadas
+
+- [Las mangueras millhose para sistemas standpipe](/blog/mangueras-contra-incendios/mangueras-millhose-contra-incendios-guia-tecnica-nfpa)
+- [Gabinetes de manguera por piso](/blog/gabinetes-hidrantes-contra-incendios/gabinetes-manguera-contra-incendios-tipos-normas-mexico)
+- [La toma siamesa fdc del sistema](/blog/conexiones-herrajes-contra-incendios/toma-siamesa-fdc-instalacion-mantenimiento-nfpa-mexico)
 
 ## Preguntas frecuentes
 

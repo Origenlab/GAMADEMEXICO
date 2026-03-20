@@ -99,6 +99,15 @@ En la práctica mexicana, la diferencia que importa es esta: si tu aseguradora e
 
 La certificación no es un sello que se compra. Es el resultado de pruebas de desempeño que verifican que el monitor entrega el caudal especificado a la presión especificada, que los materiales resisten las condiciones de servicio, que los mecanismos de control operan correctamente bajo carga y que la integridad estructural del equipo soporta las fuerzas de operación durante su vida útil. Un monitor sin certificación puede funcionar perfectamente. O puede fallar en la primera prueba de flujo. Sin certificación, no hay forma de saberlo hasta que se prueba, y probar un monitor bajo condiciones de incendio real no es una opción que ningún ingeniero responsable debería contemplar.
 
+
+---
+
+### Lecturas relacionadas
+
+- [Comparativa entre monitor corazón y cuello de cisne](/blog/monitores-contra-incendios/monitor-tipo-corazon-vs-cuello-cisne-comparativa)
+- [Los tipos de monitores y sus aplicaciones](/blog/monitores-contra-incendios/monitores-contra-incendio-tipos-aplicaciones-industriales)
+- [Mantenimiento después de la selección](/blog/monitores-contra-incendios/mantenimiento-monitores-contra-incendios)
+
 ## El mantenimiento que mantiene al monitor como primera línea de defensa
 
 Un monitor contra incendios puede pasar años sin activarse para un incendio real. Pero "sin activarse" no debe significar "sin moverse". Un monitor que no se ha operado en dos años puede tener los sellos internos resecos, los mecanismos de giro trabados por corrosión, la cremallera con depósitos que impiden el avance suave y las [boquillas](/boquillas/) obstruidas por insectos o nidos de avispas que encontraron en el tubo de descarga un lugar perfecto para anidar.

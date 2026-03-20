@@ -70,6 +70,15 @@ Un buen programa de reposición no reemplaza el mantenimiento; lo vuelve más cr
 
 Por eso sirve mucho trabajar con un mapa real de condición. No necesariamente una gran plataforma compleja, sino un control técnico que permita ver qué componentes tienen fuga, cuáles muestran desgaste, cuáles ya fueron intervenidos demasiadas veces, cuáles tienen trazabilidad débil y cuáles representan mayor impacto si fallan. Cuando el mantenimiento se apoya en esa evidencia, la conversación presupuestal mejora. Ya no estás pidiendo reemplazos "porque sí". Estás defendiendo continuidad operativa con base en condición del sistema.
 
+
+---
+
+### Lecturas relacionadas
+
+- [Mantenimiento preventivo de válvulas](/blog/valvulas-contra-incendios/mantenimiento-preventivo-valvulas-contra-incendios-nfpa-25)
+- [Prueba hidrostática de mangueras](/blog/mangueras-contra-incendios/prueba-hidrostatica-mangueras-incendios-protocolo-nfpa-1962)
+- [Selección de proveedores de equipos](/blog/valvulas-contra-incendios/empresas-mantenimiento-extintores-proveedores-equipos-certificados)
+
 ## Cuándo la reposición deja de ser gasto y se vuelve decisión técnica
 
 En Gama de México vemos esta necesidad todos los días. Hay clientes que llegan porque una manguera ya no da confianza, otros porque una válvula sigue trabajando pero ya con fuga constante, otros porque una conexión adaptada dejó de ser defendible y otros porque una auditoría interna exhibió que el sistema lleva demasiado tiempo operando con tolerancias que ya no deberían aceptarse. En todos esos casos, la mejor decisión no es solo comprar una pieza nueva. Es revisar la lógica de reposición para que el mismo problema no regrese en el siguiente ciclo.

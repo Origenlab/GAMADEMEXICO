@@ -290,6 +290,24 @@ const faqsByGiro: Record<string, Array<{ q: string; a: string }>> = {
 
 const faqItems = faqsByGiro[empresa.data.giro] || faqsByGiro['otro'];
 
+
+// Imagen por giro para el directorio
+const giroImagenes: Record<string, string> = {
+  hotel: '/img/directorio/directorio-hotel-sistema-contra-incendios.avif',
+  restaurante: '/img/directorio/directorio-restaurante-sistema-contra-incendios.avif',
+  industria: '/img/directorio/directorio-industria-sistema-contra-incendios.avif',
+  almacen: '/img/directorio/directorio-almacen-sistema-contra-incendios.avif',
+  hospital: '/img/directorio/directorio-hospital-sistema-contra-incendios.avif',
+  escuela: '/img/directorio/directorio-escuela-sistema-contra-incendios.avif',
+  comercio: '/img/directorio/directorio-comercio-sistema-contra-incendios.avif',
+  oficina: '/img/directorio/directorio-oficina-sistema-contra-incendios.avif',
+  residencial: '/img/directorio/directorio-oficina-sistema-contra-incendios.avif',
+  otro: '/img/directorio/directorio-certificacion-gama-mexico.avif',
+};
+const empresaImagen = empresa.data.imagen && empresa.data.imagen !== '/img/gama-de-mexico.avif' 
+  ? empresa.data.imagen 
+  : (giroImagenes[empresa.data.giro] || '/img/directorio/directorio-certificacion-gama-mexico.avif');
+
 // Schema.org LocalBusiness
 const businessSchema = {
   "@context": "https://schema.org",

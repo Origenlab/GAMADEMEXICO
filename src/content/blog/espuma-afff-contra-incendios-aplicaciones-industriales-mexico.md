@@ -1,5 +1,23 @@
 ---
 title: "Espuma AFFF Contra Incendios: Aplicaciones Industriales"
+fechaActualizacion: "2026-03-19"
+schema:
+  - type: "Article"
+    headline: "Espuma AFFF Contra Incendios: Aplicaciones Industriales en México"
+    author: "Gama de México"
+    datePublished: "2026-03-12"
+    dateModified: "2026-03-19"
+    image: "/img/blog/monitor-contra-incendios-refineria-industrial-mexico.avif"
+  - type: "FAQPage"
+    questions:
+      - q: "¿Cómo funciona la espuma AFFF contra incendios?"
+        a: "Doble acción: supresión mecánica (la manta de espuma cubre la superficie del líquido inflamable cortando el suministro de oxígeno) + sellado químico (los surfactantes fluorados forman una película acuosa sobre el combustible que impide la liberación de vapores inflamables). Sin ambas acciones simultáneas, el combustible vuelve a arder al romper la manta."
+      - q: "¿Para qué tipo de incendios se usa espuma AFFF?"
+        a: "Clase B: líquidos inflamables no polares como gasolina, diesel, jet fuel, aceites combustibles y solventes de hidrocarburos. NO funciona en alcoholes, cetonas ni solventes polares — para esos se necesita espuma AR-AFFF (alcohol resistant). La espuma AFFF convencional se disuelve al contacto con solventes polares y pierde su capacidad de sellado."
+      - q: "¿Qué es un proporcionador y por qué es crítico?"
+        a: "Es el dispositivo que mezcla el concentrado de espuma con agua en la proporción correcta (generalmente 3% o 6%). Un proporcionador descalibrado produce espuma que se VE como espuma pero no sella. Al 1% la película acuosa no se forma correctamente. Al 8% se desperdicia concentrado y el costo se dispara. La calibración se verifica con refractómetro — no a ojo."
+      - q: "¿La espuma AFFF se está prohibiendo?"
+        a: "Los AFFF con PFOS ya están restringidos en muchos países por contaminación ambiental persistente. La transición va hacia espumas fluorine-free (F3) que son biodegradables. En México aún no hay prohibición formal pero las plantas que exportan a Europa o EE.UU. ya están migrando. La recomendación es planificar la transición y no acumular inventario de AFFF convencional."
 description: "Cómo funcionan los sistemas de espuma AFFF, dónde se aplican, qué componentes requieren y por qué la transición a espumas libres de flúor cambia la ingeniería."
 categoria: "boquillas"
 autor:
@@ -45,6 +63,15 @@ Los surfactantes fluorados que le dan al AFFF su capacidad de formar película a
 La regulación de PFAS está avanzando rápidamente en Europa, Estados Unidos y otros mercados. La FAA de Estados Unidos ha establecido plazos para la transición a espumas sin flúor en aeropuertos. La Unión Europea está en proceso de restricción amplia de PFAS. Varios estados de Estados Unidos ya han prohibido el uso de AFFF con PFAS para pruebas y entrenamiento. En México, la regulación específica de PFAS todavía no tiene la misma urgencia, pero las empresas multinacionales que operan en el país están adoptando las políticas de sus casas matrices, y las aseguradoras están empezando a considerar el riesgo ambiental de los PFAS como parte de su evaluación de riesgo industrial.
 
 Lo que esto significa en la práctica para un ingeniero de seguridad en México es que la especificación de un sistema de espuma nuevo debe considerar no solo la eficacia actual del AFFF sino la viabilidad futura de seguir usando concentrados fluorados. Las espumas libres de flúor, también llamadas F3 por fluorine-free foam, han mejorado significativamente en rendimiento y varias ya cuentan con aprobación de organismos como ICAO para aviación y con listados UL para aplicaciones industriales. La transición no es inmediata ni sencilla porque las espumas F3 tienen características de aplicación diferentes al AFFF tradicional y pueden requerir ajustes en el proporcionador, en las boquillas y en los procedimientos de aplicación. Pero es una transición que está en marcha y que todo proyecto nuevo debería contemplar.
+
+
+---
+
+### Lecturas relacionadas
+
+- [Válvulas diluvio para sistemas de espuma en petroquímica](/blog/valvulas-contra-incendios/valvulas-diluvio-espuma-industria-petroquimica-nfpa-16)
+- [Los monitores industriales que aplican espuma](/blog/monitores-contra-incendios/monitores-contra-incendio-tipos-aplicaciones-industriales)
+- [Certificaciones ul y fm en equipos de espuma](/blog/monitores-contra-incendios/certificaciones-ul-fm-equipos-contra-incendios-importancia)
 
 ## Lo que NFPA 11 exige y lo que la práctica agrega
 

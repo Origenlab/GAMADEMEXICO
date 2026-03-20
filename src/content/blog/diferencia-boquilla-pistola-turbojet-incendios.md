@@ -83,6 +83,15 @@ Una boquilla sin certificación puede funcionar perfectamente. O puede entregar 
 
 En protección contra incendios, el costo de la boquilla certificada versus la no certificada es una fracción del costo total del sistema. Ahorrar en la boquilla mientras se invierten cientos de miles de pesos en cisterna, bomba, tubería y gabinetes es una economía que no tiene sentido cuando la función de todo el sistema depende de que el último componente funcione correctamente.
 
+
+---
+
+### Lecturas relacionadas
+
+- [Nuestra guía completa de boquillas contra incendios](/blog/boquillas-contra-incendios/guia-completa-boquillas-contra-incendios)
+- [Estandarización de boquillas a nivel corporativo](/blog/boquillas-contra-incendios/estandar-corporativo-boquillas-contra-incendios-industria)
+- [Especificación de boquillas en proyectos industriales](/blog/boquillas-contra-incendios/ingenieria-boquillas-contra-incendios-proyectos-industriales)
+
 ## Lo que tu brigada necesita para operar cada boquilla
 
 La tipo pistola es la boquilla que cualquier brigadista con capacitación básica puede operar. Un operador solo, manguera de pulgada y media, presión estándar de 100 PSI. La capacitación se enfoca en control direccional, alternancia de patrones, técnica de avance con niebla y ataque con chorro recto, y manejo de la fuerza de reacción con postura y apoyo de la pierna trasera. Un brigadista puede estar operando una tipo pistola con competencia básica después de cuatro horas de práctica con agua real.

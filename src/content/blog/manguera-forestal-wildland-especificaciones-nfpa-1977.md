@@ -1,5 +1,5 @@
 ---
-title: "Manguera Forestal Wildland: Especificaciones NFPA 1977 México"
+title: "Manguera Forestal Wildland: NFPA 1977 en México"
 fechaActualizacion: "2026-03-19"
 schema:
   - type: "Article"
@@ -236,6 +236,14 @@ Las mangueras forestales requieren cuidados específicos por su construcción m�
 | Acoplamiento con rosca dañada | Reemplazar acoplamiento o la manguera |
 | Fuga en prueba hidrostática | Retiro o reparación profesional |
 | Manguera que no pasa 5 años sin falla | Evaluación técnica |
+
+
+---
+
+### Lecturas relacionadas
+
+- [Cómo elegir mangueras para diferentes aplicaciones](/blog/mangueras-contra-incendios/como-elegir-manguera-contra-incendios)
+- [Mantenimiento correcto de mangueras](/blog/mangueras-contra-incendios/almacenamiento-mantenimiento-mangueras-incendios-vida-util)
 
 ## Conclusión
 

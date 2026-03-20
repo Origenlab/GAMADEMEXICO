@@ -1,5 +1,5 @@
 ---
-title: "Sistemas de Rociadores Automáticos NFPA 13: Guía para México"
+title: "Rociadores Automáticos NFPA 13: Guía para México"
 fechaActualizacion: "2026-03-19"
 schema:
   - type: "Article"
@@ -130,6 +130,15 @@ Como distribuidores autorizados de **Elkhart Brass** en México, ofrecemos:
 6. **Garantía del fabricante** respaldada por Gama de México
 
 [Cotiza los componentes para tu sistema de rociadores →](/servicios/cotizaciones)
+
+
+---
+
+### Lecturas relacionadas
+
+- [Las válvulas os&y para rociadores](/blog/valvulas-contra-incendios/valvulas-compuerta-osy-sprinklers-nfpa-13-mexico)
+- [Las válvulas de alarma del sistema](/blog/valvulas-contra-incendios/valvula-alarma-rociadores-funcionamiento-prueba-nfpa-25)
+- [Las bombas que alimentan el sistema](/blog/valvulas-contra-incendios/bombas-contra-incendios-seleccion-instalacion-nfpa-20)
 
 ## Preguntas frecuentes sobre rociadores NFPA 13
 

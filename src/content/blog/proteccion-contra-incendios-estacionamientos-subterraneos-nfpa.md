@@ -1,5 +1,17 @@
 ---
-title: "Protección Contra Incendios en Estacionamientos Subterráneos"
+title: "Incendios en Estacionamientos Subterráneos: Protección"
+fechaActualizacion: "2026-03-19"
+schema:
+  - type: "Article"
+    headline: "Protección Contra Incendios en Estacionamientos Subterráneos"
+    author: "Gama de México"
+    dateModified: "2026-03-19"
+  - type: "FAQPage"
+    questions:
+      - q: "¿Por qué los estacionamientos subterráneos son alto riesgo de incendio?"
+        a: "Ventilación limitada (el humo se acumula rápidamente y reduce visibilidad a cero), combustible concentrado (cada auto tiene 40-60 litros de gasolina + plásticos del interior + neumáticos), acceso restringido para bomberos (rampas estrechas, altura limitada para camiones), y la estructura de concreto actúa como horno que retiene calor."
+      - q: "¿Necesitan rociadores los estacionamientos subterráneos?"
+        a: "En CDMX, el Reglamento de Construcción los exige en estacionamientos subterráneos de edificios de más de 25m de altura. NFPA 88A los recomienda para todos los estacionamientos cerrados. Con la proliferación de autos eléctricos cuyas baterías de litio arden de forma sostenida y difícil de extinguir, los rociadores son cada vez más críticos."
 description: "Sistemas de protección contra incendios para estacionamientos subterráneos en México. Ventilación, rociadores, hidrantes y normativa NFPA."
 categoria: "gabinetes-hidrantes"
 autor:
@@ -89,6 +101,14 @@ Todo sistema de protección contra incendios requiere un programa de mantenimien
 6. **Documentación completa** — hojas técnicas, certificados y guías de instalación
 
 [Solicita una cotización personalizada →](/servicios/cotizaciones)
+
+
+---
+
+### Lecturas relacionadas
+
+- [Rociadores automáticos para estacionamientos](/blog/valvulas-contra-incendios/sistemas-rociadores-automaticos-nfpa-13-mexico)
+- [Detectores de humo en espacios confinados](/blog/monitores-contra-incendios/detector-humo-calor-sistemas-deteccion-incendios-nfpa-72)
 
 ## Preguntas frecuentes
 

@@ -1,5 +1,17 @@
 ---
-title: "Programa Interno de Protección Civil: Equipos Contra Incendios"
+title: "Programa Interno de Protección Civil y Equipos"
+fechaActualizacion: "2026-03-19"
+schema:
+  - type: "Article"
+    headline: "Programa Interno de Protección Civil: Equipos Contra Incendios"
+    author: "Gama de México"
+    dateModified: "2026-03-19"
+  - type: "FAQPage"
+    questions:
+      - q: "¿Qué debe incluir el programa interno de protección civil sobre equipos contra incendios?"
+        a: "Inventario completo de equipos con ubicación, tipo, marca, modelo, fecha de instalación y estado. Calendario de mantenimiento con frecuencias NFPA 25 (mensual, trimestral, semestral, anual). Responsables designados por nombre. Procedimiento de operación de cada equipo. Bitácora de inspecciones con formato estandarizado."
+      - q: "¿Cada cuánto se actualiza el programa interno?"
+        a: "Cada vez que cambia algo: se agrega o retira equipo, cambia la distribución de planta, se incorporan nuevos procesos con riesgos diferentes, rotan los brigadistas designados. En la práctica, revisar al menos anualmente. Un programa con información de hace 5 años es peor que no tener programa porque genera falsa confianza."
 description: "Cómo estructurar tu Programa Interno de Protección Civil y cumplir con equipos contra incendios en México. Guía técnica completa."
 categoria: "gabinetes-hidrantes"
 autor:

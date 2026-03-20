@@ -77,6 +77,15 @@ NFPA 1961 define los requisitos de diseño, construcción, rendimiento y pruebas
 
 En el contexto mexicano, la NOM-002-STPS complementa los requisitos de NFPA estableciendo condiciones de seguridad para equipos de protección contra incendios en centros de trabajo. Las aseguradoras, especialmente las que operan bajo lineamientos FM o que cubren riesgos industriales importantes, suelen exigir documentación que demuestre cumplimiento con ambos marcos normativos. Para aplicaciones en petroquímica, refinerías o instalaciones con pólizas de riesgo alto, certificaciones adicionales como FM Approved o UL Listed pueden ser condición de cobertura. Una manguera que dice "cumple con normas internacionales" en su etiqueta pero que no puede verificarse en el directorio de ningún laboratorio reconocido no tiene el mismo peso documental frente a una auditoría seria.
 
+
+---
+
+### Lecturas relacionadas
+
+- [La clasificación por presión de trabajo según NFPA 1961](/blog/mangueras-contra-incendios/presion-trabajo-mangueras-incendios-clasificacion-nfpa-1961)
+- [Las diferencias entre millhose y blindex](/blog/mangueras-contra-incendios/manguera-millhose-blindex-diferencias-industrial)
+- [El almacenamiento correcto para maximizar vida útil](/blog/mangueras-contra-incendios/almacenamiento-mantenimiento-mangueras-incendios-vida-util)
+
 ## La selección correcta empieza por el riesgo, no por el catálogo
 
 La forma correcta de elegir una manguera contra incendios sigue una lógica que empieza muy lejos del catálogo de producto. Primero se define el riesgo: ¿qué tipo de fuego es probable en esa instalación? ¿Materiales sólidos, líquidos inflamables, equipos eléctricos, una combinación? Después se define la estrategia de respuesta: ¿la manguera es para primera intervención por brigada, para conexión de bomberos, para alimentación de un monitor, para aplicación de espuma? Luego se verifican las condiciones hidráulicas: ¿qué presión y caudal hay disponibles en el punto de conexión? Después se evalúan las condiciones ambientales: ¿exposición UV, temperatura extrema, atmósfera corrosiva, riesgo de contacto con químicos? Solo con esas respuestas claras se puede ir al catálogo y seleccionar la manguera que corresponde a ese conjunto específico de requisitos.

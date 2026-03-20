@@ -1,5 +1,17 @@
 ---
-title: "Ingeniería de Boquillas Contra Incendios para Proyectos Industri..."
+title: "Boquillas Contra Incendios en Proyectos Industriales"
+fechaActualizacion: "2026-03-19"
+schema:
+  - type: "Article"
+    headline: "Ingeniería de Boquillas Contra Incendios para Proyectos Industriales"
+    author: "Gama de México"
+    dateModified: "2026-03-19"
+  - type: "FAQPage"
+    questions:
+      - q: "¿Cómo se especifica una boquilla para un proyecto industrial?"
+        a: "Se empieza por el análisis de riesgo de cada zona, no por el catálogo. Para cada zona: clasificar el riesgo (bajo/medio/alto), determinar el escenario de incendio de diseño, calcular la tasa de aplicación requerida (NFPA 15), verificar la presión disponible en el punto de descarga y entonces seleccionar la boquilla que entrega el caudal necesario a esa presión."
+      - q: "¿Qué son las pruebas FAT y SAT en boquillas contra incendios?"
+        a: "FAT (Factory Acceptance Test): prueba en fábrica antes del envío — verificar que la boquilla entrega caudal nominal a presión especificada, que el patrón corresponde y que los mecanismos operan. SAT (Site Acceptance Test): prueba en sitio después de instalación — verificar lo mismo pero con las condiciones hidráulicas reales del sistema, no con banco de pruebas."
 description: "Guía profesional para boquillas contra incendios en proyectos industriales: selección hidráulica, cumplimiento técnico, pruebas de aceptación y operación segura."
 categoria: "boquillas"
 autor:
@@ -303,6 +315,15 @@ Si tu organización está por actualizar su infraestructura o cerrar un proyecto
 *Descripción técnica: Vista de componentes clave para análisis de mantenibilidad y confiabilidad de boquilla industrial.*
 
 ---
+
+
+---
+
+### Lecturas relacionadas
+
+- [Comparativa entre pistola y turbo jet para selección técnica](/blog/boquillas-contra-incendios/diferencia-boquilla-pistola-turbojet-incendios)
+- [El cálculo hidráulico del sistema](/blog/valvulas-contra-incendios/calculo-hidraulico-sistemas-contra-incendios-guia-ingenieros)
+- [Especificación de equipos certificados en proyectos reales](/blog/gabinetes-hidrantes-contra-incendios/caso-exito-proyecto-red-sistemas-contra-incendios-certificados)
 
 ## 13. Productos Destacados
 

@@ -1,5 +1,5 @@
 ---
-title: "Licitaciones de Gobierno: Equipos Contra Incendios en México"
+title: "Licitaciones Gobierno: Equipos Contra Incendios"
 fechaActualizacion: "2026-03-19"
 schema:
   - type: "Article"
@@ -101,6 +101,14 @@ Todo sistema de protección contra incendios requiere un programa de mantenimien
 6. **Documentación completa** — hojas técnicas, certificados y guías de instalación
 
 [Solicita una cotización personalizada →](/servicios/cotizaciones)
+
+
+---
+
+### Lecturas relacionadas
+
+- [Certificaciones ul y fm](/blog/monitores-contra-incendios/certificaciones-ul-fm-equipos-contra-incendios-importancia)
+- [Especificación de equipos en proyectos reales](/blog/gabinetes-hidrantes-contra-incendios/caso-exito-proyecto-red-sistemas-contra-incendios-certificados)
 
 ## Preguntas frecuentes
 

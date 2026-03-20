@@ -1,5 +1,5 @@
 ---
-title: "Detectores de Humo y Calor: Cómo Elegir para Tu Instalación"
+title: "Detectores de Humo y Calor: Cuál Elegir y Por Qué"
 description: "Detectores de humo fotoeléctricos vs ionización, detectores de calor fijos vs compensados: cuándo usar cada uno según NFPA 72 y errores que causan falsas alarmas."
 fecha: "2026-03-01"
 fechaActualizacion: "2026-03-19"
@@ -72,6 +72,14 @@ He revisado instalaciones donde los detectores estaban correctamente espaciados 
 NFPA 72 exige pruebas funcionales de todos los dispositivos de detección al menos una vez al año. Eso significa que cada detector debe probarse individualmente para verificar que detecta correctamente, que comunica la señal al panel de control central, que el panel la interpreta correctamente y que la activación genera la respuesta apropiada: alarma audible, notificación al puesto de monitoreo, activación de sistemas auxiliares. En la práctica, he encontrado instalaciones donde los detectores no se habían probado desde la puesta en marcha original, años atrás. Cuando se hizo la prueba, un porcentaje significativo de los detectores no respondió: algunos por acumulación de polvo en la cámara de detección, otros por degradación del sensor, otros por falla en el cableado.
 
 La limpieza de los detectores es otro requisito que se ignora con frecuencia. Los detectores de humo acumulan polvo, grasa, insectos y residuos ambientales que con el tiempo reducen su sensibilidad o, al revés, aumentan las falsas alarmas. NFPA 72 recomienda que los detectores de humo se limpien conforme a las instrucciones del fabricante como parte del programa de mantenimiento regular. En ambientes industriales con alta concentración de partículas, la frecuencia de limpieza puede necesitar ser trimestral o incluso mensual para mantener la sensibilidad dentro de los parámetros de diseño.
+
+
+---
+
+### Lecturas relacionadas
+
+- [Los rociadores automáticos que complementan la detección](/blog/valvulas-contra-incendios/sistemas-rociadores-automaticos-nfpa-13-mexico)
+- [Detección en data centers](/blog/valvulas-contra-incendios/proteccion-contra-incendios-data-centers-centros-datos-mexico)
 
 ## Cómo se conecta la detección con el resto del sistema
 

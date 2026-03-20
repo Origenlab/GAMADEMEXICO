@@ -56,3 +56,11 @@ Un error que se repite con frecuencia en proyectos medianos es separar la selecc
 Para cerrar con un criterio práctico: la selección de una bomba contra incendios no es una decisión que se pueda tomar con un catálogo y una tabla de caudales. Requiere conocer la fuente de agua, la cota de succión, la demanda hidráulica real del sistema, las pérdidas de la red, la condición eléctrica del sitio, los requisitos de la aseguradora, la norma aplicable y la logística de mantenimiento a largo plazo. Cuando todos esos puntos están resueltos, la selección se vuelve clara. Cuando alguno se asume o se salta, el riesgo de que el sistema falle exactamente cuando se necesita sube de forma proporcional.
 
 En [Gama de México](/equipos/) suministramos los componentes de válvulas y conexiones que rodean a la bomba: [OS&Y](/valvulas/compuerta) para succión y descarga, [retención](/valvulas/retencion) para protección de flujo inverso, [mariposa con supervisión](/valvulas/mariposa) para monitoreo, conexiones de prueba, manómetros y tomas siamesas. Si estás en la etapa de especificación o necesitas validar que el arreglo de válvulas de tu cuarto de bombas cumpla con NFPA 20, desde [**/cotizar**](/cotizar) lo revisamos con el detalle que el proyecto necesita.
+
+---
+
+### Lecturas relacionadas
+
+- [El cálculo hidráulico del sistema](/blog/valvulas-contra-incendios/calculo-hidraulico-sistemas-contra-incendios-guia-ingenieros)
+- [Las válvulas check que protegen la bomba](/blog/valvulas-contra-incendios/valvulas-check-retencion-sistemas-sprinkler-nfpa-13)
+- [Los rociadores que alimenta la bomba](/blog/valvulas-contra-incendios/sistemas-rociadores-automaticos-nfpa-13-mexico)

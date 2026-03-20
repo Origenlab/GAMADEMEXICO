@@ -214,6 +214,14 @@ El historial permite rastrear mangueras próximas a su límite de vida útil y p
 3. **Usar mangueras de presión diferente en el mismo sistema:** Mezclar clases de presión en un sistema puede llevar a que una manguera opere por encima de su capacidad si se conecta en un punto de alta presión.
 4. **Ignorar el factor de altitud:** En CDMX (2,240 m), Querétaro (1,800 m) y Aguascalientes (1,880 m), las bombas trabajan a menor eficiencia y pueden generar presiones variables. Calcular siempre la presión de trabajo real a la altitud del proyecto.
 
+
+---
+
+### Lecturas relacionadas
+
+- [El protocolo de prueba hidrostática NFPA 1962](/blog/mangueras-contra-incendios/prueba-hidrostatica-mangueras-incendios-protocolo-nfpa-1962)
+- [Cómo elegir la manguera correcta](/blog/mangueras-contra-incendios/como-elegir-manguera-contra-incendios)
+
 ## Conclusión
 
 La correcta clasificación de mangueras por presión de trabajo según NFPA 1961 no es un detalle técnico menor: es la base de la seguridad de los operadores y la eficacia del sistema en emergencias reales. Clase 100 psi para sistemas de baja presión, clase 150 psi para instalaciones industriales estándar y clase 250 psi para sistemas de alta presión en petroquímica y refinería.

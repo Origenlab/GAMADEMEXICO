@@ -105,6 +105,15 @@ No esperes a que el inspector te los pida. Tenlos organizados en una carpeta fí
 
 El programa interno de protección civil actualizado con el análisis de riesgo, procedimientos de respuesta, organigrama de brigada con personal vigente y calendario de simulacros con evidencia. La bitácora de mantenimiento de extintores con fechas de recarga y empresa responsable. La bitácora de mantenimiento de gabinetes de manguera con inspecciones semestrales documentadas. La bitácora de mantenimiento de hidrantes con prueba de flujo anual. Las constancias de capacitación de la brigada. Las actas del último simulacro con fecha, fotografías y evaluación de desempeño. Los certificados de los equipos contra incendios que demuestren que cumplen con normas aplicables. Y la póliza de seguro vigente que cubra daños por incendio, que aunque no es requisito de la NOM-002 es algo que muchos inspectores verifican como indicador de responsabilidad del propietario.
 
+
+---
+
+### Lecturas relacionadas
+
+- [Cómo cumplir la nom-002-stps](/blog/gabinetes-hidrantes-contra-incendios/cumplir-nom-002-stps-proteccion-incendios-guia-empresas)
+- [Cómo pasar la verificación sin observaciones](/blog/monitores-contra-incendios/verificacion-proteccion-civil-sin-observaciones-guia)
+- [Los requisitos legales aplicables](/blog/gabinetes-hidrantes-contra-incendios/requisitos-legales-equipos-contra-incendios-mexico-empresas)
+
 ## Qué pasa cuando hay observaciones
 
 Las observaciones se documentan en un acta de inspección que firma el inspector y el representante de la empresa. Cada observación tiene un plazo de corrección que generalmente varía entre quince y noventa días dependiendo de la gravedad. Dentro de ese plazo, la empresa debe corregir la deficiencia y presentar evidencia de la corrección ante la autoridad.

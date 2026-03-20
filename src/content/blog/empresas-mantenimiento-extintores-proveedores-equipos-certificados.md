@@ -58,6 +58,14 @@ Un proveedor que solo vende producto es un almacén con facturas. Un proveedor q
 
 Cada una de esas preguntas tiene una respuesta técnica correcta que depende del proyecto específico. Un proveedor con conocimiento técnico puede orientar esa respuesta. Un proveedor que solo compara precios no puede, y el costo del error de especificación recae sobre quien compró sin preguntar.
 
+
+---
+
+### Lecturas relacionadas
+
+- [Las certificaciones ul y fm](/blog/monitores-contra-incendios/certificaciones-ul-fm-equipos-contra-incendios-importancia)
+- [Cuándo reemplazar equipos](/blog/valvulas-contra-incendios/reposicion-equipos-contra-incendios-cuando-reemplazar)
+
 ## Lo que realmente distingue a un proveedor de uno que solo vende
 
 La diferencia entre un proveedor de equipos contra incendios y un comercializador genérico se resume en cuatro puntos. El primero es la verificabilidad de las certificaciones: ¿los equipos que vende pueden confirmarse en los directorios públicos de UL y FM? El segundo es la documentación: ¿entrega fichas técnicas, certificados de conformidad y datos de trazabilidad con cada producto? El tercero es la disponibilidad: ¿tiene inventario local que permita entregas en tiempos razonables o todo depende de importación bajo pedido? El cuarto es la capacidad técnica: ¿puede orientar sobre la especificación correcta para cada aplicación o solo puede cotizar lo que le piden?

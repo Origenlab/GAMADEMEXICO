@@ -1,5 +1,5 @@
 ---
-title: "Llaves y Herramientas para Válvulas e Hidrantes Contra Incendios"
+title: "Llaves y Herramientas para Válvulas e Hidrantes"
 description: "Llaves de hidrante, llaves de manguera y herramientas para operar válvulas contra incendios: tipos, por qué faltan cuando se necesitan y cómo evitarlo."
 categoria: "conexiones-herrajes"
 autor:
@@ -69,6 +69,14 @@ La llave de poste, también llamada llave de cruceta, es una barra vertical con 
 Los extensores de vástago son tubos que se conectan al vástago de una válvula instalada en una posición alta o inaccesible, llevando el punto de operación a una altura donde el operador puede girar el volante sin escalera. Son comunes en cuartos de bombas donde las válvulas de descarga están a tres o cuatro metros de altura, en pasillos de tubería elevados y en fosas de válvulas donde el acceso es restringido.
 
 Cada una de estas herramientas especializadas debe estar identificada en el inventario del sistema contra incendios, ubicada en un punto accesible y verificada en las inspecciones periódicas. La tendencia que he encontrado en plantas mexicanas es que las herramientas especializadas están documentadas en el diseño original del sistema pero desaparecen progresivamente durante los primeros años de operación porque nadie las usa regularmente y nadie las extraña hasta que se necesitan.
+
+
+---
+
+### Lecturas relacionadas
+
+- [Hidrantes contra incendios](/blog/gabinetes-hidrantes-contra-incendios/hidrantes-contra-incendios-mexico-tipos-instalacion-normas)
+- [Los tipos de válvulas](/blog/valvulas-contra-incendios/valvulas-compuerta-globo-angular-sistemas-incendio-diferencias)
 
 ## El problema sistémico: por qué las herramientas desaparecen
 

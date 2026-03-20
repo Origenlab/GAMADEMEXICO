@@ -58,6 +58,15 @@ La conversación cambia de forma significativa cuando quien revisa no es protecc
 
 La diferencia práctica se traduce en la conversación de siniestro. Si una planta tiene un evento de incendio y el monitor que debía proteger esa área no estaba operando en su punto de diseño porque nadie lo había probado, la aseguradora puede cuestionar la cobertura. No es una amenaza teórica; es un riesgo financiero documentado que ha afectado a empresas reales en México. La inversión en tener la documentación correcta, las pruebas vigentes y el mantenimiento al día es marginal comparada con la exposición que implica no tenerla.
 
+
+---
+
+### Lecturas relacionadas
+
+- [Mantenimiento de monitores](/blog/monitores-contra-incendios/mantenimiento-monitores-contra-incendios)
+- [Inspecciones de protección civil](/blog/gabinetes-hidrantes-contra-incendios/inspeccion-proteccion-civil-equipos-contra-incendios-empresas-mexico)
+- [Certificaciones ul y fm](/blog/monitores-contra-incendios/certificaciones-ul-fm-equipos-contra-incendios-importancia)
+
 ## La diferencia entre cumplir y proteger
 
 Hay plantas que cumplen con la NOM-002-STPS porque tienen el equipo mínimo requerido, la señalización visible y los registros básicos que la norma pide. Eso es cumplimiento regulatorio y es necesario. Pero hay una distancia importante entre cumplir la norma y estar realmente protegido. Cumplir significa que los documentos están en orden. Proteger significa que cuando el fuego aparece, el sistema responde con la presión correcta, el caudal completo, la cobertura sin obstáculos y el personal entrenado para que el evento se controle antes de que escale. La auditoría de monitores, bien ejecutada, es la herramienta que permite medir esa distancia y cerrarla.

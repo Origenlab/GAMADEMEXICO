@@ -75,6 +75,14 @@ En la industria petroquímica mexicana, con refinerías, plantas de proceso y te
 
 En estas instalaciones, el colector no es un componente pasivo. Es un componente que debe resistir décadas de exposición a atmósferas corrosivas, ciclos de presión durante pruebas y eventos, posible contacto con sustancias químicas agresivas y las vibraciones que transmiten las bombas de alta capacidad. La selección del material, el plan de mantenimiento y la inspección periódica de espesores de pared son la diferencia entre un colector que dura la vida útil prevista y uno que desarrolla una fuga en el peor momento posible.
 
+
+---
+
+### Lecturas relacionadas
+
+- [Diseño de redes de hidrantes](/blog/gabinetes-hidrantes-contra-incendios/diseno-red-hidrantes-privados-nfpa-24-mexico)
+- [El cálculo hidráulico](/blog/valvulas-contra-incendios/calculo-hidraulico-sistemas-contra-incendios-guia-ingenieros)
+
 ## Inspección y mantenimiento: lo que mantiene vivo al colector
 
 NFPA 25 establece los intervalos de inspección para los componentes del sistema de distribución. Para colectores y manifolds, la inspección trimestral debe verificar que todas las [válvulas](/valvulas/) de seccionamiento están en posición correcta, que los indicadores de posición funcionan y son legibles, que no hay fugas visibles en uniones, bridas o empaques, y que los soportes estructurales están en buen estado. La prueba anual de flujo debe verificar que cada zona alimentada por el colector recibe el caudal y la presión de diseño. Y cada cinco años, la inspección debe incluir limpieza interna del colector y medición de espesores de pared en los puntos críticos: codos, derivaciones y cambios de diámetro donde la erosión y la corrosión tienden a concentrarse.

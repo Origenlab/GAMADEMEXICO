@@ -269,6 +269,15 @@ En zonas de México con agua dura (alto contenido mineral) o con alto contenido 
 
 Si bien la NOM-002-STPS-2010 no especifica el protocolo de prueba hidrostática con el detalle de la NFPA 1962, sí requiere que los equipos de protección contra incendios estén en "condiciones de operación". La prueba hidrostática conforme a NFPA 1962 es la forma aceptada de demostrar este cumplimiento ante Protección Civil y la STPS en inspecciones.
 
+
+---
+
+### Lecturas relacionadas
+
+- [La clasificación de presiones de trabajo NFPA 1961](/blog/mangueras-contra-incendios/presion-trabajo-mangueras-incendios-clasificacion-nfpa-1961)
+- [Almacenamiento y mantenimiento para prolongar la vida útil](/blog/mangueras-contra-incendios/almacenamiento-mantenimiento-mangueras-incendios-vida-util)
+- [Cuándo reemplazar equipos contra incendios](/blog/valvulas-contra-incendios/reposicion-equipos-contra-incendios-cuando-reemplazar)
+
 ## Conclusión
 
 La prueba hidrostática conforme a NFPA 1962 es un procedimiento de seguridad no negociable para toda instalación que cuente con mangueras contra incendios. El costo de realizar la prueba anual es insignificante comparado con el riesgo de una falla durante una emergencia real. El protocolo es claro: presurizar, mantener, observar, registrar. Si pasa, la manguera continúa en servicio. Si falla, se retira o se repara el acoplamiento si el cuerpo está íntegro.

@@ -72,6 +72,15 @@ La regla general que aplico en los proyectos que revisamos: compuerta OS&Y en l�
 
 Si en el proyecto hay duda entre dos tipos, el cálculo hidráulico de pérdidas resuelve la discusión. Nosotros dimensionamos las [válvulas](/valvulas-contra-incendios) de cada proyecto considerando la presión disponible, el caudal de demanda y las pérdidas acumuladas en la red. Eso se complementa con los [herrajes y conexiones](/conexiones-herrajes-contra-incendios) correctos para cada punto de la instalación y, cuando el sistema incluye [monitores](/monitores-contra-incendios), con la selección de válvulas de alimentación que soporten el caudal y la presión que el monitor exige.
 
+
+---
+
+### Lecturas relacionadas
+
+- [Válvulas os&y específicas para rociadores](/blog/valvulas-contra-incendios/valvulas-compuerta-osy-sprinklers-nfpa-13-mexico)
+- [Mantenimiento preventivo según NFPA 25](/blog/valvulas-contra-incendios/mantenimiento-preventivo-valvulas-contra-incendios-nfpa-25)
+- [Los gabinetes donde se instalan válvulas angulares](/blog/gabinetes-hidrantes-contra-incendios/gabinetes-manguera-contra-incendios-tipos-normas-mexico)
+
 ## Preguntas frecuentes
 
 ### Cuál es la diferencia entre una válvula OS&Y y una NRS en protección contra incendios

@@ -79,6 +79,15 @@ He participado en pruebas de flujo en plantas del Estado de México donde los re
 
 La prueba de flujo no es un trámite para el expediente. Es la verificación de que la red va a funcionar cuando el incendio aparezca. Y debe repetirse periódicamente porque las condiciones de la red cambian con el tiempo: la tubería acumula depósitos internos, las válvulas pueden cerrarse parcialmente por maniobra de mantenimiento mal restaurada, la demanda del sistema puede haber aumentado por ampliaciones que nadie incorporó al cálculo original.
 
+
+---
+
+### Lecturas relacionadas
+
+- [Los tipos de hidrantes disponibles](/blog/gabinetes-hidrantes-contra-incendios/hidrantes-contra-incendios-mexico-tipos-instalacion-normas)
+- [El cálculo hidráulico de la red](/blog/valvulas-contra-incendios/calculo-hidraulico-sistemas-contra-incendios-guia-ingenieros)
+- [La selección de la bomba que alimenta la red](/blog/valvulas-contra-incendios/bombas-contra-incendios-seleccion-instalacion-nfpa-20)
+
 ## Mantenimiento de la red: lo que NFPA 25 exige
 
 NFPA 25 establece los intervalos de inspección, prueba y mantenimiento para redes de hidrantes privados. La inspección trimestral debe verificar que los hidrantes sean accesibles, que las tapas y cadenas estén en su lugar, que no haya daño visible y que las válvulas de seccionamiento estén en posición correcta. La prueba anual debe incluir el flujo de cada hidrante para verificar que opera correctamente, la verificación de drenaje y la inspección del mecanismo de operación. Cada cinco años, NFPA 25 recomienda una inspección más profunda que puede incluir la evaluación de la condición interna de la tubería.

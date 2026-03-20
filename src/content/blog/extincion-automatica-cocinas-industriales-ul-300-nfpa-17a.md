@@ -1,5 +1,25 @@
 ---
 title: "Extinción Automática en Cocinas Industriales: UL 300"
+fechaActualizacion: "2026-03-19"
+schema:
+  - type: "Article"
+    headline: "Extinción Automática en Cocinas Industriales: UL 300"
+    author: "Gama de México"
+    datePublished: "2026-03-12"
+    dateModified: "2026-03-19"
+    image: "/img/blog/sistema-contra-incendios-hotel-centro-comercial-mexico.avif"
+  - type: "FAQPage"
+    questions:
+      - q: "¿Por qué no se puede usar agua para apagar grasa de cocina?"
+        a: "El aceite de cocina arde a temperaturas superiores a 360°C. Al contacto con agua, ésta se convierte instantáneamente en vapor, se expande más de 1,500 veces su volumen y proyecta grasa ardiente en todas direcciones. No es una teoría — es una reacción violenta que puede quemar gravemente a todo el personal en la zona. Por eso se necesita agente húmedo, no agua."
+      - q: "¿Qué es el agente húmedo y cómo apaga un incendio de aceite?"
+        a: "Es una solución acuosa de acetato o carbonato de potasio que actúa con triple mecanismo: enfriamiento (reduce la temperatura del aceite por debajo de su punto de autoignición), saponificación (los componentes alcalinos reaccionan con los ácidos grasos formando una capa de jabón que sella la superficie) y sofocamiento (esa capa bloquea el oxígeno). Ningún otro agente extintor hace las tres cosas simultáneamente sobre aceite de cocina."
+      - q: "¿Qué restaurantes y cocinas necesitan sistema UL 300?"
+        a: "Toda cocina comercial o industrial con freidoras, planchas o parrillas que generen grasa. Incluye: restaurantes, hoteles, hospitales, comedores industriales, centros de convenciones, cocinas centrales de cadenas de comida rápida. En muchas jurisdicciones mexicanas es requisito para obtener licencia de funcionamiento. Las aseguradoras cada vez lo condicionan más para cobertura de incendio."
+      - q: "¿Qué pasa si el sistema de extinción de cocina no tiene cierre automático de gas?"
+        a: "Si el sistema descarga agente húmedo pero el quemador sigue encendido, la fuente de calor puede reiniciar el fuego después de que la capa de saponificación se rompa. El cierre de gas debe activarse SIMULTÁNEAMENTE con la descarga, no después. Sin cierre de gas integrado, el sistema puede extinguir el fuego momentáneamente y luego el fuego regresa sin agente para una segunda descarga."
+      - q: "¿Cada cuánto se le da mantenimiento al sistema de cocina?"
+        a: "NFPA 17A exige inspección semestral por personal calificado: verificar carga del tanque, boquillas sin obstrucción por grasa, cable fusible sin deterioro, mecanismo de disparo funcional (automático y manual), válvula de corte de gas operativa, y cobertura de boquillas acorde a la configuración actual de equipos de cocción. Después de CADA activación, recarga completa antes de volver a servicio."
 description: "Sistemas de extinción automática para cocinas industriales y restaurantes conforme a UL 300 y NFPA 17A: cómo funcionan, por qué fallan y qué exige la norma."
 categoria: "boquillas"
 autor:
@@ -59,6 +79,14 @@ El cuarto error es instalar un sistema de supresión sin integrar el cierre auto
 En inspecciones de protección civil para restaurantes, hoteles y cocinas industriales, el inspector va a verificar tres cosas relacionadas con el sistema de cocina. La primera es si existe. En muchas jurisdicciones mexicanas, la instalación de un sistema automático de supresión en cocinas comerciales es requisito para obtener la licencia de funcionamiento, especialmente para cocinas con freidoras de alto volumen. La segunda es si tiene mantenimiento vigente, documentado con fecha de última inspección, prueba del mecanismo de disparo y verificación del cierre de gas. La tercera es si la cobertura corresponde con la configuración actual de la cocina.
 
 Las aseguradoras que cubren restaurantes y hoteles están empezando a condicionar la cobertura de incendio a la existencia y mantenimiento de un sistema UL 300 en la cocina. Un siniestro en una cocina sin sistema de supresión puede resultar en rechazo de la reclamación si la póliza exigía el sistema como condición de cobertura. Y un siniestro en una cocina con sistema instalado pero sin mantenimiento vigente puede cuestionarse argumentando que el sistema no estaba en condición operativa.
+
+
+---
+
+### Lecturas relacionadas
+
+- [Protección contra incendios en hospitales que incluyen cocinas](/blog/gabinetes-hidrantes-contra-incendios/proteccion-contra-incendios-hospitales-clinicas-mexico-nfpa)
+- [Sistemas contra incendios en hoteles y centros comerciales](/blog/monitores-contra-incendios/sistemas-contra-incendios-hoteles-centros-comerciales-mexico)
 
 ## El mantenimiento que mantiene vivo al sistema
 

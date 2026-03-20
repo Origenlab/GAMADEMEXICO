@@ -1,5 +1,5 @@
 ---
-title: "Equipos Contra Incendios en Programas de Seguridad Industrial"
+title: "Equipos Contra Incendios en Seguridad Industrial"
 fechaActualizacion: "2026-03-19"
 schema:
   - type: "Article"
@@ -435,6 +435,14 @@ La integración efectiva de equipos contra incendios en programas de seguridad i
 El éxito de la integración depende de decisiones fundamentales: selección de proveedores especializados que ofrezcan [equipos certificados](/equipos) con soporte técnico real, diseño de sistemas basado en análisis de riesgos riguroso, implementación con personal calificado, y mantenimiento que preserve la inversión. Las organizaciones que invierten en estas decisiones construyen capacidades de protección que contribuyen directamente a la continuidad operativa y la sostenibilidad del negocio.
 
 ---
+
+
+---
+
+### Lecturas relacionadas
+
+- [Los requisitos de la nom-002-stps](/blog/gabinetes-hidrantes-contra-incendios/cumplir-nom-002-stps-proteccion-incendios-guia-empresas)
+- [El programa interno de protección civil](/blog/gabinetes-hidrantes-contra-incendios/programa-interno-equipos-contra-incendios-empresas-mexico)
 
 ## Productos Recomendados para Programas de Seguridad Industrial
 

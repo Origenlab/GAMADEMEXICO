@@ -77,6 +77,14 @@ Cada manguera debería tener un código de identificación único, la fecha de f
 
 Para instalaciones con más de veinte mangueras, un inventario digital con alertas automáticas de fechas de prueba y reportes para auditoría se paga solo en la primera revisión donde evita observaciones. Para instalaciones más pequeñas, una hoja de cálculo con los mismos datos cumple perfectamente siempre que se mantenga actualizada. Lo que no funciona es no tener ningún registro y confiar en que alguien recuerde cuándo se probó cada manguera por última vez.
 
+
+---
+
+### Lecturas relacionadas
+
+- [La prueba hidrostática anual NFPA 1962](/blog/mangueras-contra-incendios/prueba-hidrostatica-mangueras-incendios-protocolo-nfpa-1962)
+- [El checklist de mantenimiento de gabinetes y mangueras](/blog/gabinetes-hidrantes-contra-incendios/mantenimiento-gabinetes-mangueras-contra-incendios-checklist)
+
 ## Lo que realmente mata la vida útil
 
 Si tuviera que resumir los errores que acortan la vida de las mangueras en instalaciones industriales mexicanas, serían cinco. Primero, asumir que si está en el gabinete está bien, sin inspeccionar. Segundo, creer que una manguera que nunca se ha usado no necesita mantenimiento, cuando en realidad se degrada igual o más que una usada porque los pliegues son siempre los mismos y los empaques se endurecen sin ejercicio. Tercero, guardarla mojada esperando que se seque sola dentro del gabinete, lo cual no sucede. Cuarto, dejar que el sol directo la castigue durante años a través de la ventanilla del gabinete sin protección. Y quinto, ignorar la prueba hidrostática anual, que es la única forma de verificar que la manguera va a resistir la presión cuando realmente importe.

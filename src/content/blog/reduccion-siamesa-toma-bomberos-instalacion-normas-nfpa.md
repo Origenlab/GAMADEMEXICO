@@ -1,5 +1,17 @@
 ---
 title: "Reducción Siamesa y Toma Bomberos: Instalación y NFPA 14"
+fechaActualizacion: "2026-03-19"
+schema:
+  - type: "Article"
+    headline: "Reducción Siamesa y Toma Bomberos: Instalación y NFPA 14"
+    author: "Gama de México"
+    dateModified: "2026-03-19"
+  - type: "FAQPage"
+    questions:
+      - q: "¿Qué es una toma siamesa y para qué sirve?"
+        a: "Es la conexión en la fachada del edificio donde los bomberos conectan sus mangueras para INYECTAR agua al sistema de rociadores o standpipes desde su camión cisterna. Funciona al revés de un hidrante: el hidrante ENTREGA agua hacia afuera, la siamesa RECIBE agua hacia adentro. Son complementarios, no equivalentes."
+      - q: "¿Dónde debe instalarse la toma siamesa?"
+        a: "En la fachada principal del edificio, a menos de 30 metros del punto de acceso de los bomberos, a una altura de 0.45-1.20m del piso, señalizada con letrero que indique qué sistema alimenta (rociadores, standpipe o combinado), y con tapas que protejan las bocas de suciedad pero que se retiren sin herramienta."
 description: "Criterios de instalación, tipos y mantenimiento de reducciones siamesas y tomas para bomberos según NFPA 14 en instalaciones industriales de México."
 categoria: "conexiones-herrajes"
 autor:
@@ -204,6 +216,14 @@ En México, la aprobación de sistemas standpipe y sus conexiones FDC requiere l
 ### Proyectos en CDMX: RASCACIELOS y Edificios Clase A
 
 Para edificios de más de 60 metros en la Zona Metropolitana de la Ciudad de México, el Reglamento de Construcciones del D.F. y las normas técnicas complementarias requieren sistemas standpipe clase I con FDC en cada nivel de bomberos y en la calle, con capacidad mínima de 500 GPM por sistema.
+
+
+---
+
+### Lecturas relacionadas
+
+- [La guía completa de toma siamesa fdc](/blog/conexiones-herrajes-contra-incendios/toma-siamesa-fdc-instalacion-mantenimiento-nfpa-mexico)
+- [Las conexiones del sistema](/blog/conexiones-herrajes-contra-incendios/conexiones-herrajes-sistemas-contra-incendios-tipos-nfpa)
 
 ## Conclusión
 

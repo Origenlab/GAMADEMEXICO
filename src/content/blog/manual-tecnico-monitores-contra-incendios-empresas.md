@@ -1,5 +1,5 @@
 ---
-title: "Manual Técnico de Monitores Contra Incendios para Empresas México"
+title: "Manual Técnico de Monitores Contra Incendios"
 description: "Manual profesional para empresas en México: diseño, instalación, operación y mantenimiento de monitores contra incendios con matrices y checklist funcionales."
 categoria: "monitores"
 autor:

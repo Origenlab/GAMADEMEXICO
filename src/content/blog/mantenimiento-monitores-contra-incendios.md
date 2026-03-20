@@ -179,6 +179,14 @@ Un programa de mantenimiento preventivo bien implementado garantiza que tus moni
 ¿Necesitas servicio de mantenimiento para tus monitores? Contamos con técnicos certificados por Elkhart Brass para inspección y servicio de todos los modelos.
 
 
+
+---
+
+### Lecturas relacionadas
+
+- [Los tipos de monitores industriales](/blog/monitores-contra-incendios/monitores-contra-incendio-tipos-aplicaciones-industriales)
+- [La auditoría de monitores contra incendios](/blog/monitores-contra-incendios/auditoria-monitores-contra-incendios-empresas-mexico)
+
 ## Preguntas frecuentes sobre mantenimiento de monitores
 
 ### ¿Con qué frecuencia debo lubricar un monitor contra incendios?

@@ -1,5 +1,23 @@
 ---
 title: "Gabinetes de Manguera Contra Incendios: Tipos y Normas"
+fechaActualizacion: "2026-03-19"
+schema:
+  - type: "Article"
+    headline: "Gabinetes de Manguera Contra Incendios: Tipos y Normas"
+    author: "Gama de México"
+    datePublished: "2025-03-05"
+    dateModified: "2026-03-19"
+    image: "/img/blog/gabinete-contra-incendios-instalacion-edificio-mexico.avif"
+  - type: "FAQPage"
+    questions:
+      - q: "¿Qué debe contener un gabinete contra incendios completo?"
+        a: "Cinco componentes: manguera de 30 metros con acoples, boquilla tipo pistola, válvula angular de bronce, llave de operación pentagonal y devanadera o sistema de plegado. La ausencia de CUALQUIERA invalida el gabinete — sin llave nadie puede abrir el agua, sin boquilla la manguera descarga chorro incontrolable."
+      - q: "¿Empotrado, sobrepuesto o semiempotrado?"
+        a: "Lo determina el muro, no la estética. Empotrado: requiere cavidad de 30×70×15cm, ideal en obra nueva, no reduce ancho de pasillo. Sobrepuesto: se fija sobre la pared, instalación rápida, pero proyecta 15-20cm — verificar que no reduzca el ancho de ruta de evacuación por debajo del mínimo normativo. Semiempotrado: compromiso cuando el muro es delgado."
+      - q: "¿Cuántos gabinetes necesita mi instalación?"
+        a: "La manguera de 30m tiene radio efectivo de 27m (30m menos 3m de sobrante mínimo). Separación máxima entre gabinetes: 60m (NOM-002-STPS y NFPA 14). Las distancias se miden por recorrido REAL con la manguera, no en línea recta sobre el plano. Si hay obstáculos que obligan a rodear, se necesitan gabinetes adicionales."
+      - q: "¿Qué altura debe tener un gabinete contra incendios?"
+        a: "El eje de la válvula angular entre 0.9m y 1.5m del piso. Este rango permite operar la válvula de pie sin agacharse ni estirarse. El espacio libre frente al gabinete debe ser mínimo 1 metro para desplegar la manguera sin obstáculos."
 description: "Tipos de gabinetes contra incendios en México, normas NOM-002-STPS, equipos incluidos, distancias de instalación y errores que generan observaciones."
 categoria: "gabinetes-hidrantes"
 autor:
@@ -45,6 +63,15 @@ En todos los casos, el anclaje del gabinete debe ser capaz de soportar el torque
 La separación máxima entre gabinetes conforme a NOM-002-STPS y NFPA 14 es de sesenta metros en línea recta, lo cual garantiza que con mangueras de treinta metros en cada gabinete, las coberturas se traslapen lo suficiente para no dejar puntos ciegos. La altura del eje de la válvula angular debe estar entre 0.9 y 1.5 metros del piso, que es el rango ergonómico que permite operar la válvula de pie sin necesidad de agacharse ni de alcanzar por encima de la cabeza. Y el espacio libre frente al gabinete debe ser de al menos un metro para permitir que el brigadista abra la puerta, tome la manguera y la despliegue sin obstáculos.
 
 La regla que muchos ignoran es que las distancias se miden por recorrido real, no en línea recta sobre el plano. En una planta industrial con racks de almacenamiento, maquinaria, muros divisorios y áreas restringidas, la manguera no va a viajar en línea recta desde el gabinete hasta el incendio. Va a tener que rodear obstáculos, pasar por puertas, cruzar pasillos y posiblemente subir o bajar niveles. Si el gabinete está a veinticinco metros del punto más lejano en el plano pero el recorrido real con la manguera es de cuarenta metros por los obstáculos en el camino, la cobertura es insuficiente y se necesita un gabinete adicional o una reubicación.
+
+
+---
+
+### Lecturas relacionadas
+
+- [El checklist de mantenimiento de gabinetes](/blog/gabinetes-hidrantes-contra-incendios/mantenimiento-gabinetes-mangueras-contra-incendios-checklist)
+- [Cómo elegir la manguera correcta para el gabinete](/blog/mangueras-contra-incendios/como-elegir-manguera-contra-incendios)
+- [Herrajes de soporte e instalación](/blog/conexiones-herrajes-contra-incendios/herrajes-soporte-mangueras-gabinetes-instalacion-nfpa)
 
 ## El mantenimiento que nadie hace y todos necesitan
 

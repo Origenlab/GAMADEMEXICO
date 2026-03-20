@@ -102,6 +102,14 @@ Todo sistema de protección contra incendios requiere un programa de mantenimien
 
 [Solicita una cotización personalizada →](/servicios/cotizaciones)
 
+
+---
+
+### Lecturas relacionadas
+
+- [Las certificaciones que exigen las aseguradoras](/blog/monitores-contra-incendios/certificaciones-ul-fm-equipos-contra-incendios-importancia)
+- [El marco legal de equipos contra incendios](/blog/gabinetes-hidrantes-contra-incendios/requisitos-legales-equipos-contra-incendios-mexico-empresas)
+
 ## Preguntas frecuentes
 
 ### ¿Cuánto tiempo tarda la cotización?
