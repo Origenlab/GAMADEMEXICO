@@ -14,6 +14,10 @@ destacado: false
 orden: 22
 galeria:
   - "/img/monitores-contra-incendios/monitor-elkhart-brass-spitfire-vista-frontal.avif"
+  - "/img/monitores-contra-incendios/monitor-contra-incendio-aplicacion-industrial-01.avif"
+  - "/img/monitores-contra-incendios/monitor-contra-incendio-aplicacion-industrial-02.avif"
+  - "/img/monitores-contra-incendios/monitor-contra-incendio-aplicacion-industrial-03.avif"
+  - "/img/monitores-contra-incendios/monitor-contra-incendio-aplicacion-industrial-04.avif"
 ---
 
 ## Monitor Spitfire™ — Industrial compacto para espacios reducidos

@@ -15,6 +15,10 @@ destacado: false
 orden: 57
 galeria:
   - "/img/conexiones-herrajes-contra-incendios/wye-plain-elkhart-01.avif"
+  - "/img/conexiones-herrajes/conexion-wye-bronce-2-5-frontal.avif"
+  - "/img/conexiones-herrajes/conexion-wye-bronce-2-5-instalacion.avif"
+  - "/img/conexiones-herrajes/conexion-wye-bronce-2-5-lateral.avif"
+  - "/img/conexiones-herrajes/conexion-wye-bronce-2-5-valvulas.avif"
 ---
 
 ## Wye Plain — Menos componentes, menos pérdida de presión

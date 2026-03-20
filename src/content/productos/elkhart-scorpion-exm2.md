@@ -15,6 +15,10 @@ destacado: false
 orden: 13
 galeria:
   - "/img/monitores-contra-incendios/monitor-elkhart-brass-scorpion-exm2-vista-frontal.avif"
+  - "/img/monitores-contra-incendios/monitor-elkhart-brass-scorpion-2500gpm-vista-frontal.avif"
+  - "/img/monitores-contra-incendios/monitor-elkhart-brass-scorpion-2500gpm-vista-lateral.avif"
+  - "/img/monitores-contra-incendios/monitor-elkhart-brass-scorpion-aplicacion-industrial.avif"
+  - "/img/monitores-contra-incendios/monitor-elkhart-brass-scorpion-base-bridada.avif"
 ---
 
 ## Monitor Scorpion™ EXM2 — Perfil bajo, rendimiento completo

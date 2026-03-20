@@ -14,6 +14,10 @@ destacado: false
 orden: 35
 galeria:
   - "/img/boquillas-contra-incendios/boquilla-elkhart-brass-xd-smooth-bore-frontal.avif"
+  - "/img/boquillas-contra-incendios/boquilla-handline-xd-elkhart-01.avif"
+  - "/img/boquillas-contra-incendios/boquilla-pistola-phantom-xd-frontal.avif"
+  - "/img/boquillas-contra-incendios/boquilla-pistola-phantom-xd-empunadura.avif"
+  - "/img/boquillas-contra-incendios/boquilla-pistola-phantom-xd-lateral.avif"
 ---
 
 ## Boquilla XD Smooth Bore — El argumento del chorro liso

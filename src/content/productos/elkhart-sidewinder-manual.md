@@ -15,6 +15,10 @@ destacado: false
 orden: 15
 galeria:
   - "/img/monitores-contra-incendios/monitor-elkhart-brass-sidewinder-manual-vista-frontal.avif"
+  - "/img/monitores-contra-incendios/monitor-elkhart-brass-sidewinder-exm2-vista-frontal.avif"
+  - "/img/monitores-contra-incendios/monitor-elkhart-brass-sidewinder-exm2-angulo-derecho.avif"
+  - "/img/monitores-contra-incendios/monitor-elkhart-brass-sidewinder-exm2-vista-lateral.avif"
+  - "/img/monitores-contra-incendios/monitor-elkhart-brass-sidewinder-exm2-perfil-vertical.avif"
 ---
 
 ## Monitor Sidewinder™ Manual — Compacto, versátil, probado

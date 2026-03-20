@@ -15,6 +15,10 @@ destacado: true
 orden: 55
 galeria:
   - "/img/conexiones-herrajes-contra-incendios/wye-gated-elkhart-01.avif"
+  - "/img/conexiones-herrajes/conexion-wye-b100a-frontal.avif"
+  - "/img/conexiones-herrajes/conexion-wye-b100a-instalacion.avif"
+  - "/img/conexiones-herrajes/conexion-wye-b100a-lateral.avif"
+  - "/img/conexiones-herrajes/conexion-wye-b100a-valvulas.avif"
 ---
 
 ## Wye Gated — Dividir la línea sin perder el control

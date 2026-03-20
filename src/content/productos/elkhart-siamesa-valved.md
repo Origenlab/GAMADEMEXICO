@@ -16,6 +16,10 @@ destacado: false
 orden: 52
 galeria:
   - "/img/conexiones-herrajes-contra-incendios/toma-siamesa-bronce-dos-bocas-frontal.avif"
+  - "/img/conexiones-herrajes/toma-siamesa-2a-plain-frontal.avif"
+  - "/img/conexiones-herrajes/toma-siamesa-2a-plain-entradas.avif"
+  - "/img/conexiones-herrajes/toma-siamesa-2a-plain-instalacion.avif"
+  - "/img/conexiones-herrajes/toma-siamesa-2a-plain-lateral.avif"
 ---
 
 ## Toma Siamesa Valved — Control individual donde los clappers no alcanzan
