@@ -209,6 +209,23 @@
     text-decoration: none;
   }
 
+  /* Imagen de la empresa */
+  .empresa-imagen-section {
+    padding: var(--spacing-xl) 0 0;
+    background: var(--color-white);
+  }
+
+  .empresa-imagen-hero {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: var(--border-radius-lg, 12px);
+    display: block;
+    margin: 0 auto;
+  }
+
   /* Main Content with Sidebar */
   .main-content {
     padding: var(--spacing-3xl) 0;

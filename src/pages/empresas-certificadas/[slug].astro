@@ -416,6 +416,21 @@ const pageTitle = titleFull.length <= 60 ? titleFull : (titleShort.length <= 60 
     )}
   </Fragment>
 
+  <!-- Imagen de la empresa -->
+  <section class="empresa-imagen-section">
+    <div class="container">
+      <img
+        src={empresaImagen}
+        alt={`Sistema de protección contra incendios certificado en ${empresa.data.nombre}, ${empresa.data.ciudad}`}
+        class="empresa-imagen-hero"
+        width="1200"
+        height="675"
+        loading="eager"
+        decoding="async"
+      />
+    </div>
+  </section>
+
   <!-- Contenido Principal con Sidebar -->
   <section class="main-content">
     <div class="container">

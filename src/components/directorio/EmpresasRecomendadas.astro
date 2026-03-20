@@ -45,6 +45,25 @@ const giroLabels: Record<string, string> = {
   otro: 'Otro'
 };
 
+const giroImagenes: Record<string, string> = {
+  hotel: '/img/directorio/directorio-hotel-sistema-contra-incendios.avif',
+  restaurante: '/img/directorio/directorio-restaurante-sistema-contra-incendios.avif',
+  industria: '/img/directorio/directorio-industria-sistema-contra-incendios.avif',
+  almacen: '/img/directorio/directorio-almacen-sistema-contra-incendios.avif',
+  hospital: '/img/directorio/directorio-hospital-sistema-contra-incendios.avif',
+  escuela: '/img/directorio/directorio-escuela-sistema-contra-incendios.avif',
+  comercio: '/img/directorio/directorio-comercio-sistema-contra-incendios.avif',
+  oficina: '/img/directorio/directorio-oficina-sistema-contra-incendios.avif',
+  otro: '/img/directorio/directorio-certificacion-gama-mexico.avif',
+};
+
+function getEmpresaImagen(empresa: any): string {
+  if (empresa.data.imagen && empresa.data.imagen !== '/img/gama-de-mexico.avif') {
+    return empresa.data.imagen;
+  }
+  return giroImagenes[empresa.data.giro] || '/img/directorio/directorio-certificacion-gama-mexico.avif';
+}
+
 const sistemaLabels: Record<string, string> = {
   'rociadores-automaticos': 'Rociadores Automáticos',
   'red-hidrantes': 'Red de Hidrantes',
@@ -204,6 +223,17 @@ empresasConScore.forEach(({ empresa }) => {
 
           return (
             <article class="empresa-card-enhanced">
+              <a href={`/empresas-certificadas/${empresa.data.slug}`} class="empresa-card-enhanced__img-link">
+                <img
+                  src={getEmpresaImagen(empresa)}
+                  alt={`Sistema contra incendios certificado en ${empresa.data.nombre}`}
+                  class="empresa-card-enhanced__img"
+                  width="400"
+                  height="225"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
               <div class="empresa-card-enhanced__badge">
                 {empresa.data.giro === empresaActual.giro ? (
                   <span class="badge badge--giro">Mismo giro</span>
@@ -317,8 +347,31 @@ empresasConScore.forEach(({ empresa }) => {
     background: var(--color-white);
     border: 1px solid var(--color-border, #e5e7eb);
     border-radius: var(--border-radius-lg);
-    padding: var(--spacing-lg);
+    padding: 0;
+    overflow: hidden;
     transition: all var(--transition-base);
+  }
+
+  .empresa-card-enhanced__img-link {
+    display: block;
+    line-height: 0;
+  }
+
+  .empresa-card-enhanced__img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    display: block;
+  }
+
+  .empresa-card-enhanced__badge,
+  .empresa-card-enhanced__title,
+  .empresa-card-enhanced__meta,
+  .empresa-card-enhanced__sistemas,
+  .empresa-card-enhanced__footer {
+    padding-left: var(--spacing-lg);
+    padding-right: var(--spacing-lg);
   }
 
   .empresa-card-enhanced:hover {
@@ -329,8 +382,10 @@ empresasConScore.forEach(({ empresa }) => {
 
   .empresa-card-enhanced__badge {
     position: absolute;
-    top: var(--spacing-md);
-    right: var(--spacing-md);
+    top: var(--spacing-sm);
+    right: var(--spacing-sm);
+    padding: 0 !important;
+    z-index: 2;
   }
 
   .badge {
@@ -365,6 +420,7 @@ empresasConScore.forEach(({ empresa }) => {
     font-size: var(--font-size-lg);
     font-weight: 700;
     margin: 0 0 var(--spacing-xs);
+    padding-top: var(--spacing-md);
     padding-right: 100px;
   }
 
@@ -419,6 +475,7 @@ empresasConScore.forEach(({ empresa }) => {
     justify-content: space-between;
     align-items: center;
     padding-top: var(--spacing-md);
+    padding-bottom: var(--spacing-lg);
     border-top: 1px solid var(--color-accent);
   }
 
