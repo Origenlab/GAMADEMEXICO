@@ -8,6 +8,8 @@ galeria:
   - "/img/gabinetes-hidrantes/gabinete-30m-instalado.avif"
   - "/img/gabinetes-hidrantes/gabinete-30m-abierto.avif"
   - "/img/gabinetes-hidrantes/gabinete-30m-detalle.avif"
+  - "/img/gabinetes-hidrantes-contra-incendios/gabinete-30me-rojo-elkhart-01.avif"
+  - "/img/gabinetes-hidrantes-contra-incendios/gabinete-contra-incendios-30me-rojo-frontal.avif"
 certificaciones: ["NOM-002-STPS-2010", "NFPA 14"]
 flujo: "300 PSI manguera"
 material: "Acero calibre 22"

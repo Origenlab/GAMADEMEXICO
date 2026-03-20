@@ -16,6 +16,10 @@ orden: 12
 galeria:
   - "/img/monitores-contra-incendios/monitor-elkhart-brass-sidewinder-exm2-angulo-derecho.avif"
   - "/img/monitores-contra-incendios/monitor-elkhart-brass-sidewinder-exm2-angulo-izquierdo.avif"
+  - "/img/monitores-contra-incendios/monitor-elkhart-brass-sidewinder-exm2-perfil-vertical.avif"
+  - "/img/monitores-contra-incendios/monitor-elkhart-brass-sidewinder-exm2-vista-frontal.avif"
+  - "/img/monitores-contra-incendios/monitor-elkhart-brass-sidewinder-exm2-vista-lateral.avif"
+
 ---
 
 ## Monitor Sidewinder™ EXM2 — Control eléctrico, cero exposición

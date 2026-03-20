@@ -9,6 +9,7 @@ galeria:
   - "/img/productos/manguera-forestal-contra-incendios-doble-cople-05.avif"
   - "/img/productos/manguera-forestal-contra-incendios-estacion-bomberos-11.avif"
   - "/img/productos/manguera-forestal-contra-incendios-garage-bomberos-12.avif"
+  - "/img/mangueras-contra-incendios/manguera-forestal-amarilla-01.avif"
 certificaciones: ["NFPA 1961", "CONAFOR"]
 flujo: "250 PSI trabajo"
 material: "Forro simple alta densidad"

@@ -9,6 +9,7 @@ galeria:
   - "/img/productos/boquilla-industrial-contra-incendios-fondo-gris-05.avif"
   - "/img/productos/boquilla-industrial-contra-incendios-perfil-profesional-06.avif"
   - "/img/productos/boquilla-industrial-contra-incendios-nave-bodega-07.avif"
+  - "/img/boquillas-contra-incendios/boquilla-industrial-limpieza-emergencia-niebla-aplicacion.avif"
 certificaciones: ["NFPA 1964"]
 flujo: "50 - 150 GPM"
 material: "Aluminio anodizado"

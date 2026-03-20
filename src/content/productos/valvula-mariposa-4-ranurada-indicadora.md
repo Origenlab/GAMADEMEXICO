@@ -9,6 +9,7 @@ galeria:
   - "/img/valvulas-contra-incendios/valvula-mariposa-indicadora-contra-incendios-planta-proceso-31.avif"
   - "/img/valvulas-contra-incendios/valvula-mariposa-indicadora-contra-incendios-instalacion-profesional-32.avif"
   - "/img/valvulas-contra-incendios/valvula-mariposa-indicadora-contra-incendios-red-tuberias-22.avif"
+  - "/img/valvulas-contra-incendios/valvula-mariposa-indicadora-contra-incendios-conexion-ranurada-16.avif"
 certificaciones: ["UL Listed", "FM 1112", "AWWA C606"]
 flujo: "175 PSI trabajo"
 material: "Hierro dúctil ASTM A536"

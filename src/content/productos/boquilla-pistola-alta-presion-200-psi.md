@@ -9,6 +9,7 @@ galeria:
   - "/img/productos/boquilla-tipo-pistola-contra-incendios-angulo-superior-24.avif"
   - "/img/productos/boquilla-tipo-pistola-contra-incendios-camion-rojo-25.avif"
   - "/img/productos/boquilla-tipo-pistola-contra-incendios-tres-cuartos-26.avif"
+  - "/img/boquillas-contra-incendios/boquilla-pistola-alta-presion-200psi-detalle.avif"
 certificaciones: ["NFPA 1964", "NFPA 11"]
 flujo: "30 - 95 GPM"
 material: "Bronce fundido"

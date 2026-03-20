@@ -9,6 +9,7 @@ galeria:
   - "/img/gabinetes-hidrantes/gabinete-manguera-nave-industrial.avif"
   - "/img/gabinetes-hidrantes/gabinete-manguera-hospital-pasillo.avif"
   - "/img/gabinetes-hidrantes/gabinete-manguera-estadio-tribuna.avif"
+  - "/img/gabinetes-hidrantes-contra-incendios/estacion-manguera-gabinete-01.avif"
 certificaciones: ["NFPA 14", "NOM-002-STPS-2010"]
 flujo: "100 PSI máx salida"
 material: "Acero calibre 20 / Bronce"

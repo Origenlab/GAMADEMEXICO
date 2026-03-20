@@ -9,6 +9,7 @@ galeria:
   - "/img/productos/manguera-blindex-pemex-refineria.avif"
   - "/img/productos/manguera-blindex-pemex-brigada.avif"
   - "/img/productos/manguera-blindex-pemex-documentos.avif"
+  - "/img/mangueras-contra-incendios/manguera-blindex-pemex-brigada.avif"
 certificaciones: ["NFPA 1961", "NRF-PEMEX", "NOM-002-STPS-2010"]
 flujo: "300 PSI trabajo"
 material: "4 capas Hypalon / NBR Premium"

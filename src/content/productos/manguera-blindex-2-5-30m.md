@@ -9,6 +9,7 @@ galeria:
   - "/img/productos/manguera-blindex-2-5-30m-capas.avif"
   - "/img/productos/manguera-blindex-2-5-30m-refineria.avif"
   - "/img/productos/manguera-blindex-2-5-30m-brigada.avif"
+  - "/img/mangueras-contra-incendios/manguera-blindex-1-5-30m-capas.avif"
 certificaciones: ["NFPA 1961", "NOM-002-STPS-2010"]
 flujo: "300 PSI trabajo"
 material: "4 capas Hypalon / NBR"

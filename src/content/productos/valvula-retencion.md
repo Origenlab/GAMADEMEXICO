@@ -9,6 +9,7 @@ galeria:
   - "/img/valvulas-contra-incendios/valvula-check-swing-bridada-contra-incendios-cuarto-bombas-03.avif"
   - "/img/valvulas-contra-incendios/valvula-check-swing-bridada-contra-incendios-sistema-sprinkler-04.avif"
   - "/img/valvulas-contra-incendios/valvula-check-swing-bridada-contra-incendios-instalacion-industrial-05.avif"
+  - "/img/valvulas-contra-incendios/valvula-retencion-check-01.avif"
 certificaciones: ["UL 312", "FM Approved", "NOM-002-STPS-2010"]
 flujo: "175 PSI trabajo"
 material: "Hierro dúctil ASTM A536 / EPDM"

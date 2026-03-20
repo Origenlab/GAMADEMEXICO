@@ -9,6 +9,7 @@ galeria:
   - "/img/productos/manguera-blindex-afff-aplicacion.avif"
   - "/img/productos/manguera-blindex-afff-aeropuerto.avif"
   - "/img/productos/manguera-blindex-afff-detalle.avif"
+  - "/img/mangueras-contra-incendios/manguera-blindex-afff-espuma.avif"
 certificaciones: ["NFPA 1961", "NFPA 11", "NOM-002-STPS-2010"]
 flujo: "300 PSI trabajo"
 material: "4 capas Hypalon / NBR AFFF"

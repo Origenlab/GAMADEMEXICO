@@ -7,6 +7,9 @@ imagen: "/img/monitores-contra-incendios/monitor-certificado-fm-contra-incendios
 galeria:
   - "/img/monitores-contra-incendios/monitor-contra-incendio-aplicacion-industrial-03.avif"
   - "/img/monitores-contra-incendios/monitor-st611-fm-approved-valvulas-laterales.avif"
+  - "/img/monitores-contra-incendios/monitor-certificado-fm-contra-incendios-angulo-derecho-07.avif"
+  - "/img/monitores-contra-incendios/monitor-certificado-fm-contra-incendios-angulo-frontal-14.avif"
+  - "/img/monitores-contra-incendios/monitor-certificado-fm-contra-incendios-camion-fondo-05.avif"
 certificaciones: ["FM Approved", "FM 1421", "NFPA 24", "ASME B16.5"]
 flujo: "500 - 1,250 GPM"
 material: "Bronce forjado + Pedestal acero"

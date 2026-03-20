@@ -9,6 +9,7 @@ galeria:
   - "/img/productos/boquilla-industrial-contra-incendios-detalle-bronce-13.avif"
   - "/img/productos/boquilla-industrial-contra-incendios-close-up-14.avif"
   - "/img/productos/boquilla-industrial-contra-incendios-bronce-frontal-01.avif"
+  - "/img/boquillas-contra-incendios/boquilla-industrial-bronce-marino-npsh-2-pulgadas-base.avif"
 certificaciones: ["SOLAS", "NFPA 1964", "USCG"]
 flujo: "95 - 250 GPM"
 material: "Bronce marino C95800"

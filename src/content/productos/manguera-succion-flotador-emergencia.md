@@ -9,6 +9,7 @@ galeria:
   - "/img/productos/manguera-succion-flotador-rio.avif"
   - "/img/productos/manguera-succion-flotador-detalle.avif"
   - "/img/productos/manguera-succion-flotador-operacion.avif"
+  - "/img/mangueras-contra-incendios/manguera-succion-flotador-agua.avif"
 certificaciones: ["NFPA 1901"]
 flujo: "Vacío hasta -0.8 bar"
 material: "Refuerzo helicoidal galvanizado / EPDM"

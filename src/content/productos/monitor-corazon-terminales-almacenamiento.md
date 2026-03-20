@@ -7,6 +7,9 @@ imagen: "/img/monitores-contra-incendios/monitor-tipo-corazon-contra-incendios-i
 galeria:
   - "/img/monitores-contra-incendios/monitor-contra-incendio-tipo-corazon-giro-360-bronce.avif"
   - "/img/monitores-contra-incendios/monitor-corazon-inclinado-giro-vertical-120.avif"
+  - "/img/monitores-contra-incendios/monitor-tipo-corazon-bronce-fundido-detalle.avif"
+  - "/img/monitores-contra-incendios/monitor-tipo-corazon-contra-incendios-industrial-angulo-bajo-14.avif"
+  - "/img/monitores-contra-incendios/monitor-tipo-corazon-contra-incendios-industrial-angulo-bajo-34.avif"
 certificaciones: ["PEMEX", "NFPA 30", "API 2510", "NOM-001-SECRE"]
 flujo: "250 - 1,000 GPM"
 material: "Bronce fundido"

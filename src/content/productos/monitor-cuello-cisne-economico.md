@@ -7,6 +7,9 @@ imagen: "/img/monitores-contra-incendios/monitor-cuello-cisne-contra-incendios-f
 galeria:
   - "/img/monitores-contra-incendios/monitor-cuello-cisne-detalle-curva.avif"
   - "/img/monitores-contra-incendios/monitor-cuello-cisne-perfil-completo.avif"
+  - "/img/monitores-contra-incendios/monitor-cuello-cisne-angulo-izquierdo.avif"
+  - "/img/monitores-contra-incendios/monitor-cuello-cisne-base-bridada-4pulg.avif"
+  - "/img/monitores-contra-incendios/monitor-cuello-cisne-base-bridada-roja.avif"
 certificaciones: ["PEMEX", "NFPA", "Fabricación Nacional"]
 flujo: "250 - 1,000 GPM"
 material: "Bronce fundido"

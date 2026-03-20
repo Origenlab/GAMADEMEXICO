@@ -8,6 +8,8 @@ galeria:
   - "/img/conexiones-herrajes/cap-proteccion-2-5-cadena.avif"
   - "/img/conexiones-herrajes/cap-proteccion-2-5-rosca.avif"
   - "/img/conexiones-herrajes/cap-proteccion-2-5-instalacion.avif"
+  - "/img/conexiones-herrajes-contra-incendios/cap-proteccion-bronce-frontal.avif"
+  - "/img/conexiones-herrajes-contra-incendios/adaptador-bronce-nh-nst-2-5-frontal.avif"
 certificaciones: ["UL Listed", "NOM-002-STPS-2010"]
 flujo: "175 PSI trabajo"
 material: "Bronce fundido"

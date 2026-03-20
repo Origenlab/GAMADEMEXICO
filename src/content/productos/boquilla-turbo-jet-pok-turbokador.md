@@ -9,6 +9,7 @@ galeria:
   - "/img/productos/boquilla-turbo-jet-contra-incendios-emergencia-nocturna-11.avif"
   - "/img/productos/boquilla-turbo-jet-contra-incendios-humo-fuego-12.avif"
   - "/img/productos/boquilla-turbo-jet-contra-incendios-fondo-dramatico-13.avif"
+  - "/img/boquillas-contra-incendios/boquilla-turbo-jet-pok-turbokador-detalle.avif"
 certificaciones: ["EN 15182-2", "NFPA 1964"]
 flujo: "30 - 125 GPM"
 material: "Aluminio anodizado"

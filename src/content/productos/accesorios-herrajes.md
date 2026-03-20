@@ -8,6 +8,8 @@ galeria:
   - "/img/conexiones-herrajes/tapon-rocker-lug-2-5-cadena.avif"
   - "/img/conexiones-herrajes/tapon-rocker-lug-2-5-rosca.avif"
   - "/img/conexiones-herrajes/tapon-rocker-lug-2-5-instalacion.avif"
+  - "/img/conexiones-herrajes-contra-incendios/adaptador-bronce-nh-nst-2-5-frontal.avif"
+  - "/img/conexiones-herrajes-contra-incendios/adaptador-storz-bronce-2-5-frontal.avif"
 certificaciones: ["UL Listed", "NOM-002-STPS-2010"]
 flujo: "175 PSI trabajo"
 material: "Bronce fundido"

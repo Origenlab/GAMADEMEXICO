@@ -8,6 +8,8 @@ galeria:
   - "/img/gabinetes-hidrantes/gabinete-manguera-planta-industrial.avif"
   - "/img/gabinetes-hidrantes/gabinete-manguera-interior-equipado.avif"
   - "/img/gabinetes-hidrantes/gabinete-manguera-carrete-detalle.avif"
+  - "/img/gabinetes-hidrantes-contra-incendios/gabinete-doble-compartimento-frontal.avif"
+  - "/img/gabinetes-hidrantes-contra-incendios/estacion-manguera-gabinete-01.avif"
 certificaciones: ["NOM-002-STPS-2010", "NFPA 14", "NFPA 10"]
 flujo: "300 PSI manguera"
 material: "Acero calibre 22"

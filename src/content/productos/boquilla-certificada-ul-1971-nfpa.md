@@ -9,6 +9,7 @@ galeria:
   - "/img/productos/boquilla-certificada-nfpa-close-up-bronce-07.avif"
   - "/img/productos/boquilla-certificada-fm-approved-perfil-lateral-08.avif"
   - "/img/productos/boquilla-certificada-ul-fm-vista-frontal-09.avif"
+  - "/img/boquillas-contra-incendios/boquilla-certificada-nfpa-1964-angulo-superior-10.avif"
 certificaciones: ["UL 1971", "NFPA 15", "NFPA 16"]
 flujo: "50 - 100 GPM"
 material: "Bronce"

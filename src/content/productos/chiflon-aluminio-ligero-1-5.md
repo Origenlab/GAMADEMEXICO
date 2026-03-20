@@ -8,6 +8,8 @@ galeria:
   - "/img/conexiones-herrajes/chiflon-aluminio-1-5-peso.avif"
   - "/img/conexiones-herrajes/chiflon-aluminio-1-5-patron.avif"
   - "/img/conexiones-herrajes/chiflon-aluminio-1-5-operacion.avif"
+  - "/img/conexiones-herrajes-contra-incendios/chiflon-pistola-elkhart-1-5-frontal.avif"
+  - "/img/conexiones-herrajes-contra-incendios/chiflon-turbojet-2-5-frontal.avif"
 certificaciones: ["UL 401", "NFPA 1964"]
 flujo: "75-125 GPM"
 material: "Aluminio Elk-O-Lite"

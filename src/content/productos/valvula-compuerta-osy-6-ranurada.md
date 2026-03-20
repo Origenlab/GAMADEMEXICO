@@ -9,6 +9,7 @@ galeria:
   - "/img/valvulas-contra-incendios/valvula-compuerta-osy-ranurada-contra-incendios-producto-18.avif"
   - "/img/valvulas-contra-incendios/valvula-compuerta-osy-ranurada-contra-incendios-bodega-industrial-19.avif"
   - "/img/valvulas-contra-incendios/valvula-compuerta-osy-ranurada-contra-incendios-planta-manufactura-20.avif"
+  - "/img/valvulas-contra-incendios/valvula-compuerta-osy-ranurada-contra-incendios-ambiente-fabrica-33.avif"
 certificaciones: ["UL 262", "FM 1120", "AWWA C606"]
 flujo: "175 PSI trabajo"
 material: "Hierro dúctil / EPDM"

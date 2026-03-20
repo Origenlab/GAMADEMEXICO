@@ -9,6 +9,7 @@ galeria:
   - "/img/monitores-contra-incendios/monitor-ul-listed-fixed-flow-vista-frontal.avif"
   - "/img/monitores-contra-incendios/monitor-ul-listed-fixed-flow-vista-lateral.avif"
   - "/img/monitores-contra-incendios/monitor-ul-listed-fixed-flow-perfil-derecho.avif"
+  - "/img/monitores-contra-incendios/monitor-ul-listed-fixed-flow-angulo-completo.avif"
 certificaciones: ["UL Listed", "UL 162", "NFPA 11", "NFPA 16"]
 flujo: "Alto caudal variable"
 material: "Acero Inoxidable SS304/SS316/SS316L"

@@ -8,6 +8,8 @@ galeria:
   - "/img/conexiones-herrajes/conexion-wye-nacional-lateral.avif"
   - "/img/conexiones-herrajes/conexion-wye-nacional-valvulas.avif"
   - "/img/conexiones-herrajes/conexion-wye-nacional-instalacion.avif"
+  - "/img/conexiones-herrajes-contra-incendios/conexion-wye-2-5-bronce-frontal.avif"
+  - "/img/conexiones-herrajes-contra-incendios/wye-gated-elkhart-01.avif"
 certificaciones: ["NOM-002-STPS-2010"]
 flujo: "175 PSI trabajo"
 material: "Aluminio fundido"

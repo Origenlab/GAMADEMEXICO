@@ -7,6 +7,9 @@ imagen: "/img/monitores-contra-incendios/monitor-certificado-fm-contra-incendios
 galeria:
   - "/img/monitores-contra-incendios/monitor-st611-fm-approved-angulo-superior.avif"
   - "/img/monitores-contra-incendios/monitor-st611-fm-approved-perfil-completo.avif"
+  - "/img/monitores-contra-incendios/monitor-certificado-fm-contra-incendios-angulo-derecho-07.avif"
+  - "/img/monitores-contra-incendios/monitor-certificado-fm-contra-incendios-angulo-frontal-14.avif"
+  - "/img/monitores-contra-incendios/monitor-certificado-fm-contra-incendios-estacion-bomberos-03.avif"
 certificaciones: ["FM Approved", "FM 1421", "NFPA 15", "NFPA 24"]
 flujo: "500 - 2,000 GPM"
 material: "Bronce forjado / Acero inoxidable"

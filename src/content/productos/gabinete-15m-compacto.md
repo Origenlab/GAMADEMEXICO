@@ -8,6 +8,8 @@ galeria:
   - "/img/gabinetes-hidrantes/gabinete-manguera-tienda-departamental.avif"
   - "/img/gabinetes-hidrantes/gabinete-manguera-plaza-comercial.avif"
   - "/img/gabinetes-hidrantes/gabinete-manguera-centro-comercial.avif"
+  - "/img/gabinetes-hidrantes-contra-incendios/estacion-manguera-gabinete-01.avif"
+  - "/img/gabinetes-hidrantes-contra-incendios/gabinete-30me-rojo-elkhart-01.avif"
 certificaciones: ["NOM-002-STPS-2010"]
 flujo: "300 PSI manguera"
 material: "Acero calibre 22"

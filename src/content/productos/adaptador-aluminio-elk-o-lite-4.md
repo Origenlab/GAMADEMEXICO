@@ -8,6 +8,8 @@ galeria:
   - "/img/conexiones-herrajes/adaptador-aluminio-elk-o-lite-4-lateral.avif"
   - "/img/conexiones-herrajes/adaptador-aluminio-elk-o-lite-4-storz.avif"
   - "/img/conexiones-herrajes/adaptador-aluminio-elk-o-lite-4-peso.avif"
+  - "/img/conexiones-herrajes-contra-incendios/adaptador-bronce-nh-nst-2-5-frontal.avif"
+  - "/img/conexiones-herrajes-contra-incendios/adaptador-storz-bronce-2-5-frontal.avif"
 certificaciones: ["UL Listed", "FM Approved"]
 flujo: "250 PSI trabajo"
 material: "Aluminio Elk-O-Lite forjado"

@@ -7,6 +7,9 @@ imagen: "/img/monitores-contra-incendios/monitor-ul-listed-contra-incendios-ambi
 galeria:
   - "/img/monitores-contra-incendios/monitor-ul-listed-fixed-flow-angulo-completo.avif"
   - "/img/monitores-contra-incendios/monitor-ul-listed-fixed-flow-perfil-completo.avif"
+  - "/img/monitores-contra-incendios/monitor-ul-listed-contra-incendios-ambiente-bomberos-22.avif"
+  - "/img/monitores-contra-incendios/monitor-ul-listed-contra-incendios-angulo-artistico-24.avif"
+  - "/img/monitores-contra-incendios/monitor-ul-listed-contra-incendios-angulo-derecho-04.avif"
 certificaciones: ["UL Listed", "UL 199", "NFPA 15", "NFPA 24"]
 flujo: "750 - 1,500 GPM"
 material: "Bronce forjado"

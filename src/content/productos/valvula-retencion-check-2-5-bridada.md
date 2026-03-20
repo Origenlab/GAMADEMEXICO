@@ -9,6 +9,7 @@ galeria:
   - "/img/valvulas-contra-incendios/valvula-check-swing-bridada-contra-incendios-sistema-tuberias-33.avif"
   - "/img/valvulas-contra-incendios/valvula-check-swing-bridada-contra-incendios-red-contra-incendios-34.avif"
   - "/img/valvulas-contra-incendios/valvula-check-swing-bridada-contra-incendios-aplicacion-industrial-35.avif"
+  - "/img/valvulas-contra-incendios/valvula-retencion-check-01.avif"
 certificaciones: ["UL 312", "FM Approved", "NOM-002-STPS-2010"]
 flujo: "175 PSI trabajo"
 material: "Hierro dúctil / Bronce"

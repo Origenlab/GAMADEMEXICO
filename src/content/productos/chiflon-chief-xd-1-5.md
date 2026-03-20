@@ -8,6 +8,8 @@ galeria:
   - "/img/conexiones-herrajes/chiflon-chief-xd-1-5-mango.avif"
   - "/img/conexiones-herrajes/chiflon-chief-xd-1-5-patron.avif"
   - "/img/conexiones-herrajes/chiflon-chief-xd-1-5-operacion.avif"
+  - "/img/conexiones-herrajes-contra-incendios/chiflon-pistola-elkhart-1-5-frontal.avif"
+  - "/img/conexiones-herrajes-contra-incendios/chiflon-turbojet-2-5-frontal.avif"
 certificaciones: ["UL 401", "NFPA 1964"]
 flujo: "160-200 GPM"
 material: "Aluminio forjado"

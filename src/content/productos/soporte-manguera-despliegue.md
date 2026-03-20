@@ -8,6 +8,8 @@ galeria:
   - "/img/conexiones-herrajes/soporte-manguera-despliegue-gabinete.avif"
   - "/img/conexiones-herrajes/soporte-manguera-despliegue-manguera.avif"
   - "/img/conexiones-herrajes/soporte-manguera-despliegue-extraccion.avif"
+  - "/img/conexiones-herrajes-contra-incendios/adaptador-bronce-nh-nst-2-5-frontal.avif"
+  - "/img/conexiones-herrajes-contra-incendios/adaptador-storz-bronce-2-5-frontal.avif"
 certificaciones: ["NOM-002-STPS-2010"]
 flujo: "N/A"
 material: "Bronce fundido / Acero galvanizado"

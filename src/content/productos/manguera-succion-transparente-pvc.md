@@ -9,6 +9,7 @@ galeria:
   - "/img/productos/manguera-succion-transparente-espiral.avif"
   - "/img/productos/manguera-succion-transparente-conexion.avif"
   - "/img/productos/manguera-succion-transparente-uso.avif"
+  - "/img/mangueras-contra-incendios/manguera-succion-pvc-espiral-01.avif"
 certificaciones: []
 flujo: "Vacío hasta -0.6 bar"
 material: "PVC reforzado espiral"

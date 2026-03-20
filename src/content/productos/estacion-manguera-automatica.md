@@ -8,6 +8,8 @@ galeria:
   - "/img/gabinetes-hidrantes/gabinete-manguera-recepcion-elegante.avif"
   - "/img/gabinetes-hidrantes/gabinete-manguera-edificio-premium.avif"
   - "/img/gabinetes-hidrantes/gabinete-manguera-carrete-detalle.avif"
+  - "/img/gabinetes-hidrantes-contra-incendios/estacion-manguera-gabinete-01.avif"
+  - "/img/gabinetes-hidrantes-contra-incendios/estacion-manguera-portatil-frontal.avif"
 certificaciones: ["NFPA 14", "NFPA 1963"]
 flujo: "100 PSI máx salida"
 material: "Acero / Bronce cromado"

@@ -8,6 +8,8 @@ galeria:
   - "/img/gabinetes-hidrantes/hidrante-trafico-seccion.avif"
   - "/img/gabinetes-hidrantes/hidrante-trafico-base.avif"
   - "/img/gabinetes-hidrantes/hidrante-trafico-instalado.avif"
+  - "/img/gabinetes-hidrantes-contra-incendios/hidrante-banqueta-rojo-350psi-frontal.avif"
+  - "/img/gabinetes-hidrantes-contra-incendios/hidrante-barril-seco-frontal.avif"
 certificaciones: ["AWWA C502", "UL 246"]
 flujo: "250 PSI trabajo"
 material: "Hierro dúctil ASTM A-536"

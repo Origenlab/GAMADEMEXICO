@@ -8,6 +8,8 @@ galeria:
   - "/img/conexiones-herrajes/reduccion-campana-102a-lateral.avif"
   - "/img/conexiones-herrajes/reduccion-campana-102a-flujo.avif"
   - "/img/conexiones-herrajes/reduccion-campana-102a-instalacion.avif"
+  - "/img/conexiones-herrajes-contra-incendios/reduccion-bronce-2-5-1-5-frontal.avif"
+  - "/img/conexiones-herrajes-contra-incendios/adaptador-bronce-nh-nst-2-5-frontal.avif"
 certificaciones: ["UL Listed", "FM Approved"]
 flujo: "250 PSI trabajo"
 material: "Aluminio Elk-O-Lite forjado"

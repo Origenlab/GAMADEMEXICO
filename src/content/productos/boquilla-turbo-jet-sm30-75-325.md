@@ -9,6 +9,7 @@ galeria:
   - "/img/productos/boquilla-turbo-jet-contra-incendios-close-up-08.avif"
   - "/img/productos/boquilla-turbo-jet-contra-incendios-profesional-09.avif"
   - "/img/productos/boquilla-turbo-jet-contra-incendios-alto-caudal-10.avif"
+  - "/img/boquillas-contra-incendios/boquilla-turbo-jet-sm30-75-325-detalle.avif"
 certificaciones: ["NFPA 1964", "Construcción XD"]
 flujo: "75 - 325 GPM"
 material: "Aluminio forjado Elk-O-Lite"

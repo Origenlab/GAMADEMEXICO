@@ -7,6 +7,9 @@ imagen: "/img/monitores-contra-incendios/monitor-cuello-cisne-contra-incendios-t
 galeria:
   - "/img/monitores-contra-incendios/monitor-cuello-cisne-vista-lateral.avif"
   - "/img/monitores-contra-incendios/monitor-cuello-cisne-curva-perfil.avif"
+  - "/img/monitores-contra-incendios/monitor-cuello-cisne-angulo-izquierdo.avif"
+  - "/img/monitores-contra-incendios/monitor-cuello-cisne-base-bridada-4pulg.avif"
+  - "/img/monitores-contra-incendios/monitor-cuello-cisne-base-bridada-roja.avif"
 certificaciones: ["PEMEX NRF-015", "NFPA 15", "NFPA 24", "Protección Civil"]
 flujo: "250 - 1,000 GPM"
 material: "Bronce fundido certificado"

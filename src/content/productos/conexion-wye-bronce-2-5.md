@@ -8,6 +8,8 @@ galeria:
   - "/img/conexiones-herrajes/conexion-wye-bronce-2-5-lateral.avif"
   - "/img/conexiones-herrajes/conexion-wye-bronce-2-5-valvulas.avif"
   - "/img/conexiones-herrajes/conexion-wye-bronce-2-5-instalacion.avif"
+  - "/img/conexiones-herrajes-contra-incendios/conexion-wye-2-5-bronce-frontal.avif"
+  - "/img/conexiones-herrajes-contra-incendios/wye-gated-elkhart-01.avif"
 certificaciones: ["UL Listed", "FM Approved"]
 flujo: "200 PSI trabajo"
 material: "Bronce fundido"

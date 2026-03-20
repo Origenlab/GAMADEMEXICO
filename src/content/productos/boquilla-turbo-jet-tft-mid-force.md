@@ -9,6 +9,7 @@ galeria:
   - "/img/productos/boquilla-turbo-jet-contra-incendios-vista-frontal-16.avif"
   - "/img/productos/boquilla-turbo-jet-contra-incendios-camion-bomberos-17.avif"
   - "/img/productos/boquilla-turbo-jet-contra-incendios-nocturna-lluvia-01.avif"
+  - "/img/boquillas-contra-incendios/boquilla-turbo-jet-tft-mid-force-detalle.avif"
 certificaciones: ["NFPA 1964"]
 flujo: "70 - 200 GPM"
 material: "Aluminio reforzado"

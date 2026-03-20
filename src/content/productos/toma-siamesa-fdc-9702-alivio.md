@@ -8,6 +8,8 @@ galeria:
   - "/img/conexiones-herrajes/toma-siamesa-9702-alivio-valvula.avif"
   - "/img/conexiones-herrajes/toma-siamesa-9702-alivio-ajuste.avif"
   - "/img/conexiones-herrajes/toma-siamesa-9702-alivio-instalacion.avif"
+  - "/img/conexiones-herrajes-contra-incendios/toma-siamesa-fdc-bronce-contra-incendios-bomberos-dos-bocas-01.avif"
+  - "/img/conexiones-herrajes-contra-incendios/toma-siamesa-bronce-dos-bocas-frontal.avif"
 certificaciones: ["UL Listed", "FM Approved", "NFPA 14"]
 flujo: "500 GPM por entrada"
 material: "Bronce fundido"

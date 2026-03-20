@@ -9,6 +9,7 @@ galeria:
   - "/img/productos/boquilla-turbo-jet-contra-incendios-nocturna-lluvia-01.avif"
   - "/img/productos/boquilla-turbo-jet-contra-incendios-nocturna-ciudad-02.avif"
   - "/img/productos/boquilla-turbo-jet-contra-incendios-presion-constante-03.avif"
+  - "/img/boquillas-contra-incendios/boquilla-turbo-jet-baja-presion-50psi-detalle.avif"
 certificaciones: ["NFPA 1964"]
 flujo: "60 - 125 GPM"
 material: "Aluminio forjado"

@@ -8,6 +8,8 @@ galeria:
   - "/img/conexiones-herrajes/toma-siamesa-tres-entradas-lateral.avif"
   - "/img/conexiones-herrajes/toma-siamesa-tres-entradas-entradas.avif"
   - "/img/conexiones-herrajes/toma-siamesa-tres-entradas-instalacion.avif"
+  - "/img/conexiones-herrajes-contra-incendios/toma-siamesa-tres-entradas-frontal.avif"
+  - "/img/conexiones-herrajes-contra-incendios/toma-siamesa-fdc-bronce-contra-incendios-bomberos-dos-bocas-01.avif"
 certificaciones: ["UL Listed", "FM Approved", "NFPA 14"]
 flujo: "1,500 GPM total"
 material: "Bronce fundido"

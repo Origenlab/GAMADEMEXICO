@@ -9,6 +9,7 @@ galeria:
   - "/img/valvulas-contra-incendios/valvula-check-swing-bridada-contra-incendios-perspectiva-profesional-23.avif"
   - "/img/valvulas-contra-incendios/valvula-check-swing-bridada-contra-incendios-lateral-derecho-24.avif"
   - "/img/valvulas-contra-incendios/valvula-check-swing-bridada-contra-incendios-frontal-catalogo-25.avif"
+  - "/img/valvulas-contra-incendios/valvula-retencion-check-01.avif"
 certificaciones: ["UL 312", "FM Approved", "AWWA C606"]
 flujo: "175 PSI trabajo"
 material: "Hierro dúctil / EPDM"

@@ -9,6 +9,7 @@ galeria:
   - "/img/productos/boquilla-certificada-fm-ul-nave-industrial-06.avif"
   - "/img/productos/boquilla-certificada-fm-camion-bomberos-manguera-11.avif"
   - "/img/productos/boquilla-certificada-ul-listed-estacion-bomberos-12.avif"
+  - "/img/boquillas-contra-incendios/boquilla-certificada-pemex-nrf-elkhart-frontal.avif"
 certificaciones: ["NRF-PEMEX", "NFPA 1964", "API"]
 flujo: "95 - 200 GPM"
 material: "Bronce fundido"

@@ -7,6 +7,9 @@ imagen: "/img/monitores-contra-incendios/monitor-ul-listed-contra-incendios-cami
 galeria:
   - "/img/monitores-contra-incendios/monitor-ul-listed-fixed-flow-detalle-manometro.avif"
   - "/img/monitores-contra-incendios/monitor-ul-listed-fixed-flow-perfil-derecho.avif"
+  - "/img/monitores-contra-incendios/monitor-ul-listed-contra-incendios-ambiente-bomberos-22.avif"
+  - "/img/monitores-contra-incendios/monitor-ul-listed-contra-incendios-ambiente-operativo-09.avif"
+  - "/img/monitores-contra-incendios/monitor-ul-listed-contra-incendios-angulo-artistico-24.avif"
 certificaciones: ["UL Listed", "UL 199", "cUL", "NFPA 13", "NFPA 15", "NFPA 24"]
 flujo: "500 - 1,250 GPM"
 material: "Bronce forjado"

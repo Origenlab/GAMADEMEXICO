@@ -9,6 +9,7 @@ galeria:
   - "/img/productos/boquilla-tipo-pistola-contra-incendios-producto-profesional-34.avif"
   - "/img/productos/boquilla-tipo-pistola-contra-incendios-catalogo-35.avif"
   - "/img/productos/boquilla-tipo-pistola-contra-incendios-vista-derecha-22.avif"
+  - "/img/boquillas-contra-incendios/boquilla-pistola-select-o-flow-empunadura.avif"
 certificaciones: ["NFPA 1964", "Construcción XD"]
 flujo: "125 - 250 GPM"
 material: "Bronce satinado"

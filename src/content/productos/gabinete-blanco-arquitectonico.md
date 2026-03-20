@@ -8,6 +8,8 @@ galeria:
   - "/img/gabinetes-hidrantes/gabinete-manguera-lobby-hotel.avif"
   - "/img/gabinetes-hidrantes/gabinete-manguera-edificio-premium.avif"
   - "/img/gabinetes-hidrantes/gabinete-manguera-tienda-departamental.avif"
+  - "/img/gabinetes-hidrantes-contra-incendios/gabinete-empotrado-blanco-acero-frontal.avif"
+  - "/img/gabinetes-hidrantes-contra-incendios/gabinete-empotrado-blanco-elkhart-01.avif"
 certificaciones: ["NOM-002-STPS-2010", "NFPA 14"]
 flujo: "300 PSI manguera"
 material: "Acero calibre 22"

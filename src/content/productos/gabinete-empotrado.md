@@ -8,6 +8,8 @@ galeria:
   - "/img/gabinetes-hidrantes/gabinete-manguera-edificio-premium.avif"
   - "/img/gabinetes-hidrantes/gabinete-manguera-hospital-pasillo.avif"
   - "/img/gabinetes-hidrantes/gabinete-manguera-recepcion-elegante.avif"
+  - "/img/gabinetes-hidrantes-contra-incendios/gabinete-empotrado-blanco-acero-frontal.avif"
+  - "/img/gabinetes-hidrantes-contra-incendios/gabinete-empotrado-blanco-elkhart-01.avif"
 certificaciones: ["NOM-002-STPS-2010", "NFPA 14"]
 flujo: "300 PSI manguera"
 material: "Acero laminado / Inoxidable T430"

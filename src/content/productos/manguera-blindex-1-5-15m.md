@@ -9,6 +9,7 @@ galeria:
   - "/img/productos/manguera-blindex-1-5-15m-gabinete.avif"
   - "/img/productos/manguera-blindex-1-5-15m-detalle.avif"
   - "/img/productos/manguera-blindex-1-5-15m-instalada.avif"
+  - "/img/mangueras-contra-incendios/manguera-blindex-1-5-15m-detalle.avif"
 certificaciones: ["NFPA 1961", "NOM-002-STPS-2010"]
 flujo: "300 PSI trabajo"
 material: "4 capas Hypalon / NBR"

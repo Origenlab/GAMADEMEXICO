@@ -9,6 +9,7 @@ galeria:
   - "/img/productos/manguera-millhose-amarilla-aeropuerto.avif"
   - "/img/productos/manguera-millhose-amarilla-noche.avif"
   - "/img/productos/manguera-millhose-amarilla-detalle.avif"
+  - "/img/mangueras-contra-incendios/manguera-millhose-amarilla-aeropuerto.avif"
 certificaciones: ["NFPA 1961", "NFPA 414"]
 flujo: "300 PSI trabajo"
 material: "Poliéster doble forro / EPDM"

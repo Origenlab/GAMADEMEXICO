@@ -8,6 +8,8 @@ galeria:
   - "/img/conexiones-herrajes/adaptador-universal-435-mecanismo.avif"
   - "/img/conexiones-herrajes/adaptador-universal-435-rosca.avif"
   - "/img/conexiones-herrajes/adaptador-universal-435-instalacion.avif"
+  - "/img/conexiones-herrajes-contra-incendios/adaptador-bronce-nh-nst-2-5-frontal.avif"
+  - "/img/conexiones-herrajes-contra-incendios/adaptador-storz-bronce-2-5-frontal.avif"
 certificaciones: ["UL Listed", "FM Approved"]
 flujo: "300 PSI trabajo"
 material: "Aluminio Elk-O-Lite forjado"

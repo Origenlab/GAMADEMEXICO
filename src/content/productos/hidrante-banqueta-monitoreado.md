@@ -8,6 +8,8 @@ galeria:
   - "/img/gabinetes-hidrantes/hidrante-monitoreado-sensor.avif"
   - "/img/gabinetes-hidrantes/hidrante-monitoreado-panel.avif"
   - "/img/gabinetes-hidrantes/hidrante-monitoreado-app.avif"
+  - "/img/gabinetes-hidrantes-contra-incendios/hidrante-banqueta-rojo-350psi-frontal.avif"
+  - "/img/gabinetes-hidrantes-contra-incendios/hidrante-barril-seco-frontal.avif"
 certificaciones: ["AWWA C502", "UL 246", "FCC"]
 flujo: "250 PSI trabajo"
 material: "Hierro dúctil ASTM A-536"

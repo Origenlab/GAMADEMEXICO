@@ -9,6 +9,7 @@ galeria:
   - "/img/productos/manguera-forestal-contra-incendios-detalle-tejido-08.avif"
   - "/img/productos/manguera-forestal-contra-incendios-plegada-compacta-09.avif"
   - "/img/productos/manguera-forestal-contra-incendios-angulo-superior-10.avif"
+  - "/img/mangueras-contra-incendios/manguera-forestal-amarilla-01.avif"
 certificaciones: ["NFPA 1961", "CONAFOR"]
 flujo: "200 PSI trabajo"
 material: "Forro simple ultraligero"

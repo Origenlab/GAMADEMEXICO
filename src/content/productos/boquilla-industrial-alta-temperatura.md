@@ -9,6 +9,7 @@ galeria:
   - "/img/productos/boquilla-industrial-contra-incendios-luces-emergencia-04.avif"
   - "/img/productos/boquilla-industrial-contra-incendios-fondo-gris-05.avif"
   - "/img/productos/boquilla-industrial-contra-incendios-perfil-profesional-06.avif"
+  - "/img/boquillas-contra-incendios/boquilla-industrial-alta-temperatura-manguera-incendios-aplicacion.avif"
 certificaciones: ["NFPA 1964", "NFPA 850"]
 flujo: "100 - 200 GPM"
 material: "Bronce alto silicio"

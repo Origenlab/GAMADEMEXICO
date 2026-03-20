@@ -8,6 +8,8 @@ galeria:
   - "/img/conexiones-herrajes/cople-storz-5-bronce-lateral.avif"
   - "/img/conexiones-herrajes/cople-storz-5-bronce-conexion.avif"
   - "/img/conexiones-herrajes/cople-storz-5-bronce-instalacion.avif"
+  - "/img/conexiones-herrajes-contra-incendios/adaptador-storz-bronce-2-5-frontal.avif"
+  - "/img/conexiones-herrajes-contra-incendios/cople-storz-4-aluminio-frontal.avif"
 certificaciones: ["UL Listed", "FM Approved"]
 flujo: "300 PSI trabajo"
 material: "Bronce fundido"

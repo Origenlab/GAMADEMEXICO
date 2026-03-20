@@ -9,6 +9,7 @@ galeria:
   - "/img/productos/manguera-millhose-elkhart-marca.avif"
   - "/img/productos/manguera-millhose-elkhart-acoples.avif"
   - "/img/productos/manguera-millhose-elkhart-certificacion.avif"
+  - "/img/mangueras-contra-incendios/manguera-millhose-elkhart-acoples.avif"
 certificaciones: ["NFPA 1961", "UL Listed", "FM Approved"]
 flujo: "400 PSI trabajo"
 material: "Poliéster premium / EPDM reforzado"

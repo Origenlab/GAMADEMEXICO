@@ -8,6 +8,8 @@ galeria:
   - "/img/conexiones-herrajes/cap-storz-proteccion-cable.avif"
   - "/img/conexiones-herrajes/cap-storz-proteccion-cierre.avif"
   - "/img/conexiones-herrajes/cap-storz-proteccion-instalacion.avif"
+  - "/img/conexiones-herrajes-contra-incendios/cap-proteccion-bronce-frontal.avif"
+  - "/img/conexiones-herrajes-contra-incendios/adaptador-storz-bronce-2-5-frontal.avif"
 certificaciones: ["UL Listed"]
 flujo: "250 PSI trabajo"
 material: "Aluminio anodizado"

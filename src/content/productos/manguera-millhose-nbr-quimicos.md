@@ -9,6 +9,7 @@ galeria:
   - "/img/productos/manguera-millhose-nbr-detalle.avif"
   - "/img/productos/manguera-millhose-nbr-industrial.avif"
   - "/img/productos/manguera-millhose-nbr-aplicacion.avif"
+  - "/img/mangueras-contra-incendios/manguera-millhose-nbr-aplicacion.avif"
 certificaciones: ["NFPA 1961", "NOM-002-STPS-2010"]
 flujo: "300 PSI trabajo"
 material: "Poliéster doble forro / NBR"

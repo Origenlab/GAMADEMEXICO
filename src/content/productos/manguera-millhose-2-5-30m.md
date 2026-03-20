@@ -9,6 +9,7 @@ galeria:
   - "/img/productos/manguera-millhose-2-5-30m-detalle.avif"
   - "/img/productos/manguera-millhose-2-5-30m-acoples.avif"
   - "/img/productos/manguera-millhose-2-5-30m-desplegada.avif"
+  - "/img/mangueras-contra-incendios/manguera-millhose-1-5-30m-acoples.avif"
 certificaciones: ["NFPA 1961", "NOM-002-STPS-2010"]
 flujo: "300 PSI trabajo"
 material: "Poliéster doble forro / EPDM"

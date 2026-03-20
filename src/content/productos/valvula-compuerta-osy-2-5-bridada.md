@@ -9,6 +9,7 @@ galeria:
   - "/img/valvulas-contra-incendios/valvula-compuerta-osy-ranurada-contra-incendios-compacta-23.avif"
   - "/img/valvulas-contra-incendios/valvula-compuerta-osy-ranurada-contra-incendios-lateral-derecho-24.avif"
   - "/img/valvulas-contra-incendios/valvula-compuerta-osy-ranurada-contra-incendios-vista-completa-25.avif"
+  - "/img/valvulas-contra-incendios/valvula-compuerta-osy-01.avif"
 certificaciones: ["UL 262", "FM 1130", "NOM-002-STPS-2010"]
 flujo: "175 PSI trabajo"
 material: "Hierro dúctil / Bronce"

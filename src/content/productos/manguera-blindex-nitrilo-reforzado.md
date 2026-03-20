@@ -9,6 +9,7 @@ galeria:
   - "/img/productos/manguera-blindex-nitrilo-quimica.avif"
   - "/img/productos/manguera-blindex-nitrilo-laboratorio.avif"
   - "/img/productos/manguera-blindex-nitrilo-detalle.avif"
+  - "/img/mangueras-contra-incendios/manguera-blindex-nitrilo-corte.avif"
 certificaciones: ["NFPA 1961", "NOM-002-STPS-2010"]
 flujo: "300 PSI trabajo"
 material: "4 capas Hypalon / NBR reforzado"

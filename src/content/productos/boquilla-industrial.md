@@ -9,6 +9,7 @@ galeria:
   - "/img/productos/boquilla-industrial-contra-incendios-emergencia-nocturna-03.avif"
   - "/img/productos/boquilla-industrial-contra-incendios-luces-emergencia-04.avif"
   - "/img/productos/boquilla-industrial-contra-incendios-fondo-gris-05.avif"
+  - "/img/boquillas-contra-incendios/boquilla-certificada-fm-ul-nave-industrial-06.avif"
 certificaciones: ["UL 401", "NFPA 10"]
 flujo: "75 - 125 GPM"
 material: "Bronce macizo"

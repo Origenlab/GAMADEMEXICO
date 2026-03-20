@@ -7,6 +7,9 @@ imagen: "/img/monitores-contra-incendios/monitor-certificado-fm-contra-incendios
 galeria:
   - "/img/monitores-contra-incendios/monitor-contra-incendio-aplicacion-industrial-04.avif"
   - "/img/monitores-contra-incendios/monitor-st611-fm-approved-vista-trasera.avif"
+  - "/img/monitores-contra-incendios/monitor-certificado-fm-contra-incendios-angulo-derecho-07.avif"
+  - "/img/monitores-contra-incendios/monitor-certificado-fm-contra-incendios-angulo-frontal-14.avif"
+  - "/img/monitores-contra-incendios/monitor-certificado-fm-contra-incendios-camion-fondo-05.avif"
 certificaciones: ["FM Approved", "FM 1421", "NFPA 15", "IEC 61508"]
 flujo: "500 - 1,500 GPM"
 material: "Bronce forjado + Actuadores eléctricos"

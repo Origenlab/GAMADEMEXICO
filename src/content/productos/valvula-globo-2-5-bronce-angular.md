@@ -9,6 +9,7 @@ galeria:
   - "/img/valvulas-contra-incendios/valvula-globo-bridada-acero-inoxidable-contra-incendios-vista-frontal-13.avif"
   - "/img/valvulas-contra-incendios/valvula-globo-bridada-acero-inoxidable-contra-incendios-tres-cuartos-14.avif"
   - "/img/valvulas-contra-incendios/valvula-globo-bridada-acero-inoxidable-contra-incendios-refineria-15.avif"
+  - "/img/valvulas-contra-incendios/valvula-globo-bronce-01.avif"
 certificaciones: ["UL Listed", "FM Approved", "NOM-002-STPS-2010"]
 flujo: "250 PSI trabajo"
 material: "Bronce forjado C84400"

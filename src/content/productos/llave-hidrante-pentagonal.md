@@ -8,6 +8,8 @@ galeria:
   - "/img/conexiones-herrajes/llave-hidrante-pentagonal-cabeza.avif"
   - "/img/conexiones-herrajes/llave-hidrante-pentagonal-mango.avif"
   - "/img/conexiones-herrajes/llave-hidrante-pentagonal-uso.avif"
+  - "/img/conexiones-herrajes-contra-incendios/adaptador-bronce-nh-nst-2-5-frontal.avif"
+  - "/img/conexiones-herrajes-contra-incendios/adaptador-storz-bronce-2-5-frontal.avif"
 certificaciones: ["NOM-002-STPS-2010"]
 flujo: "N/A"
 material: "Bronce fundido"

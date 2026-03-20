@@ -8,6 +8,8 @@ galeria:
   - "/img/monitores-contra-incendios/monitor-corazon-miniatura-thumbnail.avif"
   - "/img/monitores-contra-incendios/monitor-doble-cremallera-render-05.avif"
   - "/img/monitores-contra-incendios/monitor-doble-cremallera-render-06.avif"
+  - "/img/monitores-contra-incendios/monitor-tipo-corazon-elkhart-01.avif"
+  - "/img/monitores-contra-incendios/monitor-tipo-corazon-elkhart-02.avif"
 certificaciones: ["FM Approved", "UL Listed"]
 flujo: "Hasta 1,250 GPM"
 material: "Latón C83600"

@@ -7,6 +7,9 @@ imagen: "/img/monitores-contra-incendios/monitor-ul-listed-contra-incendios-fond
 galeria:
   - "/img/monitores-contra-incendios/monitor-ul-listed-foam-boquilla-amarilla-01.avif"
   - "/img/monitores-contra-incendios/monitor-ul-listed-foam-boquilla-amarilla-02.avif"
+  - "/img/monitores-contra-incendios/monitor-ul-listed-contra-incendios-ambiente-bomberos-22.avif"
+  - "/img/monitores-contra-incendios/monitor-ul-listed-contra-incendios-ambiente-operativo-09.avif"
+  - "/img/monitores-contra-incendios/monitor-ul-listed-contra-incendios-angulo-artistico-24.avif"
 certificaciones: ["UL Listed", "USCG", "SOLAS", "ABS", "DNV-GL"]
 flujo: "500 - 1,250 GPM"
 material: "Acero inoxidable 316L"

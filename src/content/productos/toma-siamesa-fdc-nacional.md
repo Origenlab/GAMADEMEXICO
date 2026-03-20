@@ -8,6 +8,8 @@ galeria:
   - "/img/conexiones-herrajes/toma-siamesa-nacional-entradas.avif"
   - "/img/conexiones-herrajes/toma-siamesa-nacional-lateral.avif"
   - "/img/conexiones-herrajes/toma-siamesa-nacional-instalacion.avif"
+  - "/img/conexiones-herrajes-contra-incendios/toma-siamesa-fdc-bronce-contra-incendios-bomberos-dos-bocas-01.avif"
+  - "/img/conexiones-herrajes-contra-incendios/toma-siamesa-bronce-dos-bocas-frontal.avif"
 certificaciones: ["NOM-002-STPS-2010"]
 flujo: "400 GPM por entrada"
 material: "Bronce fundido"

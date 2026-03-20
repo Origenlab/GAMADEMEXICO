@@ -9,6 +9,7 @@ galeria:
   - "/img/productos/manguera-forestal-contra-incendios-angulo-superior-10.avif"
   - "/img/productos/manguera-forestal-contra-incendios-close-up-cople-13.avif"
   - "/img/productos/manguera-forestal-contra-incendios-detalle-rosca-14.avif"
+  - "/img/mangueras-contra-incendios/manguera-forestal-amarilla-01.avif"
 certificaciones: ["NFPA 1961", "CONAFOR"]
 flujo: "250 PSI trabajo"
 material: "Forro simple reforzado Kevlar"

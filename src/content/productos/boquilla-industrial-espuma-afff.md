@@ -9,6 +9,7 @@ galeria:
   - "/img/productos/boquilla-industrial-contra-incendios-planta-manufactura-09.avif"
   - "/img/productos/boquilla-industrial-contra-incendios-fabrica-fondo-10.avif"
   - "/img/productos/boquilla-industrial-contra-incendios-vista-explosionada-11.avif"
+  - "/img/boquillas-contra-incendios/boquilla-industrial-espuma-afff-flujo-constante-aplicacion.avif"
 certificaciones: ["UL 162", "NFPA 11", "FM Approved"]
 flujo: "60 - 200 GPM"
 material: "Bronce niquelado"

@@ -9,6 +9,7 @@ galeria:
   - "/img/productos/manguera-succion-colador-malla.avif"
   - "/img/productos/manguera-succion-colador-instalado.avif"
   - "/img/productos/manguera-succion-colador-operacion.avif"
+  - "/img/mangueras-contra-incendios/manguera-succion-colador-canastilla.avif"
 certificaciones: ["NFPA 1901", "NOM-002-STPS-2010"]
 flujo: "Vacío hasta -0.8 bar"
 material: "Refuerzo helicoidal galvanizado / EPDM"

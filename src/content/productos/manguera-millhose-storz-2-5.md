@@ -9,6 +9,7 @@ galeria:
   - "/img/productos/manguera-millhose-storz-conexion.avif"
   - "/img/productos/manguera-millhose-storz-detalle.avif"
   - "/img/productos/manguera-millhose-storz-brigada.avif"
+  - "/img/mangueras-contra-incendios/manguera-millhose-storz-acople.avif"
 certificaciones: ["NFPA 1961", "NOM-002-STPS-2010", "DIN 14811"]
 flujo: "300 PSI trabajo"
 material: "Poliéster doble forro / EPDM"

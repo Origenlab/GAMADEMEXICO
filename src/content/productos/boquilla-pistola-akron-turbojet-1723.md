@@ -9,6 +9,7 @@ galeria:
   - "/img/productos/boquilla-tipo-pistola-contra-incendios-brigada-industrial-17.avif"
   - "/img/productos/boquilla-tipo-pistola-contra-incendios-equipo-bomberos-18.avif"
   - "/img/productos/boquilla-tipo-pistola-contra-incendios-estacion-lateral-20.avif"
+  - "/img/boquillas-contra-incendios/boquilla-tipo-pistola-contra-incendios-alta-presion-19.avif"
 certificaciones: ["NFPA 1964"]
 flujo: "95 - 200 GPM"
 material: "Pyrolite extruido"

@@ -9,6 +9,7 @@ galeria:
   - "/img/productos/manguera-blindex-storz-conexion.avif"
   - "/img/productos/manguera-blindex-storz-refineria.avif"
   - "/img/productos/manguera-blindex-storz-brigada.avif"
+  - "/img/mangueras-contra-incendios/manguera-blindex-storz-refineria.avif"
 certificaciones: ["NFPA 1961", "DIN 14811", "NOM-002-STPS-2010"]
 flujo: "300 PSI trabajo"
 material: "4 capas Hypalon / NBR"

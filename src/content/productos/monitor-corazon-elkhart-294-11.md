@@ -8,6 +8,8 @@ galeria:
   - "/img/monitores-contra-incendios/monitor-incendio-corazon-vista-lateral-volante.avif"
   - "/img/monitores-contra-incendios/monitor-doble-cremallera-render-03.avif"
   - "/img/monitores-contra-incendios/monitor-doble-cremallera-render-04.avif"
+  - "/img/monitores-contra-incendios/monitor-tipo-corazon-elkhart-01.avif"
+  - "/img/monitores-contra-incendios/monitor-tipo-corazon-elkhart-02.avif"
 certificaciones: ["FM Approved", "UL Listed"]
 flujo: "350 - 1,250 GPM"
 material: "Bronce fundido"

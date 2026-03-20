@@ -9,6 +9,7 @@ galeria:
   - "/img/valvulas-contra-incendios/valvula-globo-bridada-acero-inoxidable-contra-incendios-sistema-proceso-08.avif"
   - "/img/valvulas-contra-incendios/valvula-globo-bridada-acero-inoxidable-contra-incendios-close-up-brida-09.avif"
   - "/img/valvulas-contra-incendios/valvula-globo-bridada-acero-inoxidable-contra-incendios-detalle-cuerpo-10.avif"
+  - "/img/valvulas-contra-incendios/valvula-globo-bridada-acero-inoxidable-contra-incendios-ambiente-fabrica-24.avif"
 certificaciones: ["UL Listed", "FM Approved", "NOM-002-STPS-2010"]
 flujo: "200 PSI trabajo"
 material: "Hierro fundido ASTM A126"

@@ -9,6 +9,7 @@ galeria:
   - "/img/valvulas-contra-incendios/valvula-mariposa-indicadora-contra-incendios-sistema-sprinkler-17.avif"
   - "/img/valvulas-contra-incendios/valvula-mariposa-indicadora-contra-incendios-ambiente-profesional-23.avif"
   - "/img/valvulas-contra-incendios/valvula-mariposa-indicadora-contra-incendios-detalle-cuerpo-27.avif"
+  - "/img/valvulas-contra-incendios/valvula-mariposa-indicadora-contra-incendios-ambiente-fabrica-12.avif"
 certificaciones: ["UL Listed", "FM 1112", "AWWA C606"]
 flujo: "175 PSI trabajo"
 material: "Hierro dúctil / EPDM"

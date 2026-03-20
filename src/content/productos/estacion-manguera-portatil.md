@@ -8,6 +8,8 @@ galeria:
   - "/img/gabinetes-hidrantes/gabinete-manguera-arena-deportiva.avif"
   - "/img/gabinetes-hidrantes/gabinete-manguera-recinto-deportivo.avif"
   - "/img/gabinetes-hidrantes/gabinete-manguera-estadio-gradas.avif"
+  - "/img/gabinetes-hidrantes-contra-incendios/estacion-manguera-portatil-frontal.avif"
+  - "/img/gabinetes-hidrantes-contra-incendios/estacion-manguera-gabinete-01.avif"
 certificaciones: ["NFPA 14"]
 flujo: "100 PSI máx salida"
 material: "Acero / Bronce"

@@ -9,6 +9,7 @@ galeria:
   - "/img/productos/boquilla-certificada-fm-ul-nave-industrial-06.avif"
   - "/img/productos/boquilla-certificada-nfpa-close-up-bronce-07.avif"
   - "/img/productos/boquilla-certificada-fm-approved-perfil-lateral-08.avif"
+  - "/img/boquillas-contra-incendios/boquilla-certificada-nom-stps-monitor-incendio-documentos.avif"
 certificaciones: ["NOM-002-STPS-2010", "NMX-S-061-SCFI", "NFPA 1964"]
 flujo: "60 - 125 GPM"
 material: "Aluminio fundido"

@@ -9,6 +9,7 @@ galeria:
   - "/img/productos/manguera-forestal-contra-incendios-perfil-completo-18.avif"
   - "/img/productos/manguera-forestal-contra-incendios-service-test-enrollada-02.avif"
   - "/img/productos/manguera-forestal-contra-incendios-coples-aluminio-03.avif"
+  - "/img/mangueras-contra-incendios/manguera-forestal-amarilla-01.avif"
 certificaciones: ["NFPA 1961", "MIL-SPEC"]
 flujo: "300 PSI trabajo"
 material: "Forro reforzado especificación militar"

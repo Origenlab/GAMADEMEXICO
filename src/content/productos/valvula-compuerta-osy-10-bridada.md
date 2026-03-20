@@ -9,6 +9,7 @@ galeria:
   - "/img/valvulas-contra-incendios/valvula-compuerta-osy-ranurada-contra-incendios-cuarto-bombas-05.avif"
   - "/img/valvulas-contra-incendios/valvula-compuerta-osy-ranurada-contra-incendios-sistema-sprinkler-29.avif"
   - "/img/valvulas-contra-incendios/valvula-compuerta-osy-ranurada-contra-incendios-instalada-techo-30.avif"
+  - "/img/valvulas-contra-incendios/valvula-compuerta-osy-01.avif"
 certificaciones: ["UL 262", "FM 1120", "NOM-002-STPS-2010"]
 flujo: "175 PSI trabajo"
 material: "Hierro dúctil ASTM A536"

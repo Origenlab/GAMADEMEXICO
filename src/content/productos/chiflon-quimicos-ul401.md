@@ -8,6 +8,8 @@ galeria:
   - "/img/conexiones-herrajes/chiflon-quimicos-ul401-patron.avif"
   - "/img/conexiones-herrajes/chiflon-quimicos-ul401-certificacion.avif"
   - "/img/conexiones-herrajes/chiflon-quimicos-ul401-operacion.avif"
+  - "/img/conexiones-herrajes-contra-incendios/chiflon-pistola-elkhart-1-5-frontal.avif"
+  - "/img/conexiones-herrajes-contra-incendios/chiflon-turbojet-2-5-frontal.avif"
 certificaciones: ["UL 401", "FM Approved", "NFPA 1964"]
 flujo: "95-125 GPM"
 material: "Bronce fundido"

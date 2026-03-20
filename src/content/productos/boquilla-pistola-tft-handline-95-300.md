@@ -9,6 +9,7 @@ galeria:
   - "/img/productos/boquilla-tipo-pistola-contra-incendios-camion-rojo-25.avif"
   - "/img/productos/boquilla-tipo-pistola-contra-incendios-tres-cuartos-26.avif"
   - "/img/productos/boquilla-tipo-pistola-contra-incendios-emergencia-27.avif"
+  - "/img/boquillas-contra-incendios/boquilla-pistola-tft-handline-detalle.avif"
 certificaciones: ["NFPA 1964"]
 flujo: "95 - 300 GPM"
 material: "Aluminio anodizado"

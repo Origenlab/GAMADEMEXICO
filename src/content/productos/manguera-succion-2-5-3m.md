@@ -9,6 +9,7 @@ galeria:
   - "/img/productos/manguera-succion-2-5-3m-acople.avif"
   - "/img/productos/manguera-succion-2-5-3m-bomba.avif"
   - "/img/productos/manguera-succion-2-5-3m-operacion.avif"
+  - "/img/mangueras-contra-incendios/manguera-succion-2-5-3m-acople.avif"
 certificaciones: ["NFPA 1901"]
 flujo: "Vacío hasta -0.8 bar"
 material: "Refuerzo helicoidal galvanizado / EPDM"

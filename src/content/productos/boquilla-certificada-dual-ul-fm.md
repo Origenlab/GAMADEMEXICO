@@ -9,6 +9,7 @@ galeria:
   - "/img/productos/boquilla-certificada-fm-approved-perfil-lateral-08.avif"
   - "/img/productos/boquilla-certificada-ul-fm-vista-frontal-09.avif"
   - "/img/productos/boquilla-certificada-nfpa-1964-angulo-superior-10.avif"
+  - "/img/boquillas-contra-incendios/boquilla-certificada-dual-ul-fm-csw-lb-documentos.avif"
 certificaciones: ["UL 401", "FM Approved", "NFPA 1964", "cUL"]
 flujo: "60 - 250 GPM"
 material: "Aluminio forjado Elk-O-Lite"

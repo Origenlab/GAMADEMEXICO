@@ -8,6 +8,8 @@ galeria:
   - "/img/conexiones-herrajes/reduccion-storz-4-2-5-lateral.avif"
   - "/img/conexiones-herrajes/reduccion-storz-4-2-5-conexion.avif"
   - "/img/conexiones-herrajes/reduccion-storz-4-2-5-instalacion.avif"
+  - "/img/conexiones-herrajes-contra-incendios/adaptador-storz-bronce-2-5-frontal.avif"
+  - "/img/conexiones-herrajes-contra-incendios/cople-storz-4-aluminio-frontal.avif"
 certificaciones: ["UL Listed", "FM Approved"]
 flujo: "250 PSI trabajo"
 material: "Aluminio forjado"

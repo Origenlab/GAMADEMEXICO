@@ -8,6 +8,8 @@ galeria:
   - "/img/monitores-contra-incendios/monitor-doble-cremallera-par-angulo-45.avif"
   - "/img/monitores-contra-incendios/monitor-doble-cremallera-render-01.avif"
   - "/img/monitores-contra-incendios/monitor-doble-cremallera-render-02.avif"
+  - "/img/monitores-contra-incendios/monitor-contra-incendio-tipo-corazon-giro-360-bronce.avif"
+  - "/img/monitores-contra-incendios/monitor-tipo-corazon-bronce-fundido-detalle.avif"
 certificaciones: ["NFPA", "NOM-002-STPS"]
 flujo: "250 - 1,000 GPM"
 material: "Bronce fundido"

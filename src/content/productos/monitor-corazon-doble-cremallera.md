@@ -9,6 +9,7 @@ galeria:
   - "/img/monitores-contra-incendios/monitor-doble-cremallera-perfil-inclinado.avif"
   - "/img/monitores-contra-incendios/monitor-doble-cremallera-vista-trasera-manivelas.avif"
   - "/img/monitores-contra-incendios/monitor-doble-cremallera-par-espejo-frente.avif"
+  - "/img/monitores-contra-incendios/monitor-corazon-doble-cremallera-volante-manivela.avif"
 certificaciones: ["PEMEX", "NFPA", "ANSI"]
 flujo: "250 - 1,000 GPM"
 material: "Bronce fundido"

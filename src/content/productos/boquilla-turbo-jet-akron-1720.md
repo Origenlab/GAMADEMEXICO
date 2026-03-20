@@ -9,6 +9,7 @@ galeria:
   - "/img/productos/boquilla-turbo-jet-contra-incendios-fondo-dramatico-13.avif"
   - "/img/productos/boquilla-turbo-jet-contra-incendios-angulo-superior-14.avif"
   - "/img/productos/boquilla-turbo-jet-contra-incendios-perfil-profesional-15.avif"
+  - "/img/boquillas-contra-incendios/boquilla-turbo-jet-akron-1720-detalle.avif"
 certificaciones: ["NFPA 1964"]
 flujo: "30 - 125 GPM"
 material: "Pyrolite extruido"

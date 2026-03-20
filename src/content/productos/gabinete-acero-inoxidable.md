@@ -8,6 +8,8 @@ galeria:
   - "/img/gabinetes-hidrantes/gabinete-manguera-hospital-pasillo.avif"
   - "/img/gabinetes-hidrantes/gabinete-manguera-lobby-hotel.avif"
   - "/img/gabinetes-hidrantes/gabinete-manguera-producto-abierto.avif"
+  - "/img/gabinetes-hidrantes-contra-incendios/gabinete-acero-inoxidable-frontal.avif"
+  - "/img/gabinetes-hidrantes-contra-incendios/gabinete-empotrado-blanco-acero-frontal.avif"
 certificaciones: ["NOM-002-STPS-2010", "NFPA 14"]
 flujo: "300 PSI manguera"
 material: "Acero inoxidable T430"

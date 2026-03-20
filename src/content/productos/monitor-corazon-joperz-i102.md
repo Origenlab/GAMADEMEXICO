@@ -9,6 +9,7 @@ galeria:
   - "/img/monitores-contra-incendios/monitor-corazon-inclinado-giro-vertical-120.avif"
   - "/img/monitores-contra-incendios/monitor-tipo-corazon-fondo-gris-profesional.avif"
   - "/img/monitores-contra-incendios/monitor-corazon-doble-cremallera-volante-manivela.avif"
+  - "/img/monitores-contra-incendios/monitor-contra-incendio-tipo-corazon-giro-360-bronce.avif"
 certificaciones: ["ASTM", "NFPA", "PEMEX"]
 flujo: "250 - 1,000 GPM"
 material: "Bronce"

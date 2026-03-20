@@ -9,6 +9,7 @@ galeria:
   - "/img/productos/boquilla-tipo-pistola-contra-incendios-vista-completa-12.avif"
   - "/img/productos/boquilla-tipo-pistola-contra-incendios-cierre-neopreno-11.avif"
   - "/img/productos/boquilla-tipo-pistola-contra-incendios-patron-agua-08.avif"
+  - "/img/boquillas-contra-incendios/boquilla-pistola-bronce-marino-acabado.avif"
 certificaciones: ["NFPA 1964", "SOLAS"]
 flujo: "40 - 125 GPM"
 material: "Bronce marino C95800"

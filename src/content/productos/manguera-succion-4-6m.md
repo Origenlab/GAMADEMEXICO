@@ -9,6 +9,7 @@ galeria:
   - "/img/productos/manguera-succion-4-6m-cisterna.avif"
   - "/img/productos/manguera-succion-4-6m-acople.avif"
   - "/img/productos/manguera-succion-4-6m-operacion.avif"
+  - "/img/mangueras-contra-incendios/manguera-succion-2-5-3m-acople.avif"
 certificaciones: ["NFPA 1901", "NOM-002-STPS-2010"]
 flujo: "Vacío hasta -0.8 bar"
 material: "Refuerzo helicoidal galvanizado / EPDM"

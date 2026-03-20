@@ -9,6 +9,7 @@ galeria:
   - "/img/productos/boquilla-industrial-contra-incendios-fabrica-fondo-10.avif"
   - "/img/productos/boquilla-industrial-contra-incendios-vista-explosionada-11.avif"
   - "/img/productos/boquilla-industrial-contra-incendios-componentes-12.avif"
+  - "/img/boquillas-contra-incendios/boquilla-industrial-atex-manguera-contra-incendios-detalle.avif"
 certificaciones: ["ATEX", "IECEx", "NFPA 1964"]
 flujo: "60 - 125 GPM"
 material: "Bronce libre de chispas"

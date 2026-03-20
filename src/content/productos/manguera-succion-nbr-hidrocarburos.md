@@ -9,6 +9,7 @@ galeria:
   - "/img/productos/manguera-succion-nbr-petrolera.avif"
   - "/img/productos/manguera-succion-nbr-industrial.avif"
   - "/img/productos/manguera-succion-nbr-acople.avif"
+  - "/img/mangueras-contra-incendios/manguera-succion-nbr-acople.avif"
 certificaciones: ["NFPA 1901", "API"]
 flujo: "Vacío hasta -0.8 bar"
 material: "Refuerzo helicoidal galvanizado / NBR"

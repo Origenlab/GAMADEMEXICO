@@ -8,6 +8,8 @@ galeria:
   - "/img/conexiones-herrajes/chiflon-205b-1-5-posiciones.avif"
   - "/img/conexiones-herrajes/chiflon-205b-1-5-patron.avif"
   - "/img/conexiones-herrajes/chiflon-205b-1-5-operacion.avif"
+  - "/img/conexiones-herrajes-contra-incendios/toma-siamesa-tres-entradas-frontal.avif"
+  - "/img/conexiones-herrajes-contra-incendios/adaptador-bronce-nh-nst-2-5-frontal.avif"
 certificaciones: ["UL 401", "NFPA 1964"]
 flujo: "75-125 GPM"
 material: "Bronce fundido"

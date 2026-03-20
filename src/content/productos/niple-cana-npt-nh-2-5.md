@@ -8,6 +8,8 @@ galeria:
   - "/img/conexiones-herrajes/niple-cana-npt-nh-2-5-hexagono.avif"
   - "/img/conexiones-herrajes/niple-cana-npt-nh-2-5-rosca.avif"
   - "/img/conexiones-herrajes/niple-cana-npt-nh-2-5-instalacion.avif"
+  - "/img/conexiones-herrajes-contra-incendios/adaptador-bronce-nh-nst-2-5-frontal.avif"
+  - "/img/conexiones-herrajes-contra-incendios/adaptador-storz-bronce-2-5-frontal.avif"
 certificaciones: ["UL Listed", "NOM-002-STPS-2010"]
 flujo: "1,200 PSI trabajo"
 material: "Bronce fundido"

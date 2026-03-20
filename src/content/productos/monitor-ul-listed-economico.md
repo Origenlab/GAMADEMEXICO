@@ -7,6 +7,9 @@ imagen: "/img/monitores-contra-incendios/monitor-ul-listed-contra-incendios-pers
 galeria:
   - "/img/monitores-contra-incendios/monitor-ul-listed-fixed-flow-instalacion-industrial.avif"
   - "/img/monitores-contra-incendios/monitor-ul-listed-fixed-flow-aplicacion-planta.avif"
+  - "/img/monitores-contra-incendios/monitor-ul-listed-contra-incendios-ambiente-bomberos-22.avif"
+  - "/img/monitores-contra-incendios/monitor-ul-listed-contra-incendios-ambiente-operativo-09.avif"
+  - "/img/monitores-contra-incendios/monitor-ul-listed-contra-incendios-angulo-artistico-24.avif"
 certificaciones: ["UL Listed", "UL 199", "NFPA 15"]
 flujo: "500 - 1,000 GPM"
 material: "Bronce fundido"

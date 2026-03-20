@@ -9,6 +9,7 @@ galeria:
   - "/img/valvulas-contra-incendios/valvula-check-swing-bridada-contra-incendios-vista-posterior-38.avif"
   - "/img/valvulas-contra-incendios/valvula-check-swing-bridada-contra-incendios-detalle-conexion-39.avif"
   - "/img/valvulas-contra-incendios/valvula-check-swing-bridada-contra-incendios-angulo-lateral-40.avif"
+  - "/img/valvulas-contra-incendios/valvula-retencion-check-01.avif"
 certificaciones: ["UL Listed", "FM Approved"]
 flujo: "250 PSI trabajo"
 material: "Bronce forjado C83600"

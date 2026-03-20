@@ -9,6 +9,7 @@ galeria:
   - "/img/valvulas-contra-incendios/valvula-mariposa-indicadora-contra-incendios-sistema-completo-24.avif"
   - "/img/valvulas-contra-incendios/valvula-mariposa-indicadora-contra-incendios-nfpa-listada-25.avif"
   - "/img/valvulas-contra-incendios/valvula-mariposa-indicadora-contra-incendios-angulo-superior-28.avif"
+  - "/img/valvulas-contra-incendios/valvula-mariposa-indicadora-contra-incendios-ambiente-fabrica-12.avif"
 certificaciones: ["UL Listed", "FM 1112", "NOM-002-STPS-2010"]
 flujo: "175 PSI trabajo"
 material: "Hierro dúctil / Disco inoxidable"

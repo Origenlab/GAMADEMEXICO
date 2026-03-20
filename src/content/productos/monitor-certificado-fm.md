@@ -8,6 +8,8 @@ galeria:
   - "/img/monitores-contra-incendios/monitor-st611-fm-approved-perfil-profesional.avif"
   - "/img/monitores-contra-incendios/monitor-st611-fm-approved-vista-angular.avif"
   - "/img/monitores-contra-incendios/monitor-st611-fm-approved-detalle-boquilla.avif"
+  - "/img/monitores-contra-incendios/monitor-certificado-fm-contra-incendios-angulo-derecho-07.avif"
+  - "/img/monitores-contra-incendios/monitor-certificado-fm-contra-incendios-angulo-frontal-14.avif"
 certificaciones: ["FM Approved", "FM 1421", "NOM-002-STPS-2010", "NFPA 15", "NFPA 24"]
 flujo: "Según modelo"
 material: "Bronce forjado"

@@ -8,6 +8,8 @@ galeria:
   - "/img/gabinetes-hidrantes/hidrante-4salidas-superior.avif"
   - "/img/gabinetes-hidrantes/hidrante-4salidas-detalle.avif"
   - "/img/gabinetes-hidrantes/hidrante-4salidas-instalado.avif"
+  - "/img/gabinetes-hidrantes-contra-incendios/hidrante-banqueta-rojo-350psi-frontal.avif"
+  - "/img/gabinetes-hidrantes-contra-incendios/hidrante-barril-seco-frontal.avif"
 certificaciones: ["AWWA C503", "UL 246", "FM Approved"]
 flujo: "250 PSI trabajo"
 material: "Hierro dúctil ASTM A-536"

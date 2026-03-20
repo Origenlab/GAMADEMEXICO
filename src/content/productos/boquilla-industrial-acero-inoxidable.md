@@ -9,6 +9,7 @@ galeria:
   - "/img/productos/boquilla-industrial-contra-incendios-ambiente-industrial-08.avif"
   - "/img/productos/boquilla-industrial-contra-incendios-planta-manufactura-09.avif"
   - "/img/productos/boquilla-industrial-contra-incendios-fabrica-fondo-10.avif"
+  - "/img/boquillas-contra-incendios/boquilla-industrial-acero-inoxidable-servicio-pesado-detalle.avif"
 certificaciones: ["NFPA 1964", "ATEX"]
 flujo: "60 - 150 GPM"
 material: "Acero inoxidable 316L"

@@ -9,6 +9,7 @@ galeria:
   - "/img/productos/boquilla-turbo-jet-contra-incendios-presion-constante-03.avif"
   - "/img/productos/boquilla-turbo-jet-contra-incendios-automatica-04.avif"
   - "/img/productos/boquilla-turbo-jet-contra-incendios-vista-lateral-05.avif"
+  - "/img/boquillas-contra-incendios/boquilla-turbo-jet-akron-1720-detalle.avif"
 certificaciones: ["NFPA 1964", "Construcción XD"]
 flujo: "60 - 200 GPM"
 material: "Aluminio forjado Elk-O-Lite"

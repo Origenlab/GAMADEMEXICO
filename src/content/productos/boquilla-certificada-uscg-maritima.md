@@ -9,6 +9,7 @@ galeria:
   - "/img/productos/boquilla-certificada-ul-fm-vista-frontal-09.avif"
   - "/img/productos/boquilla-certificada-fm-camion-bomberos-manguera-11.avif"
   - "/img/productos/boquilla-certificada-ul-listed-estacion-bomberos-12.avif"
+  - "/img/boquillas-contra-incendios/boquilla-certificada-uscg-solas-monitor-frontal.avif"
 certificaciones: ["USCG", "SOLAS", "MED"]
 flujo: "60 - 150 GPM"
 material: "Bronce marino"

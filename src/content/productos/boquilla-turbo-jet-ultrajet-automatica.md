@@ -9,6 +9,7 @@ galeria:
   - "/img/productos/boquilla-turbo-jet-contra-incendios-angulo-superior-14.avif"
   - "/img/productos/boquilla-turbo-jet-contra-incendios-perfil-profesional-15.avif"
   - "/img/productos/boquilla-turbo-jet-contra-incendios-vista-frontal-16.avif"
+  - "/img/boquillas-contra-incendios/boquilla-turbo-jet-ultrajet-automatica-detalle.avif"
 certificaciones: ["NFPA 1964"]
 flujo: "150 - 350 GPM"
 material: "Aluminio forjado"

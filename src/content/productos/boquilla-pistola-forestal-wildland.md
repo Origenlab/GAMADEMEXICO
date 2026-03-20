@@ -9,6 +9,7 @@ galeria:
   - "/img/productos/boquilla-tipo-pistola-contra-incendios-detalle-boquilla-07.avif"
   - "/img/productos/boquilla-tipo-pistola-contra-incendios-angulo-frontal-09.avif"
   - "/img/productos/boquilla-tipo-pistola-contra-incendios-estacion-bomberos-02.avif"
+  - "/img/boquillas-contra-incendios/boquilla-pistola-forestal-wildland-detalle.avif"
 certificaciones: ["NFPA 1964", "USDA Forest Service Approved"]
 flujo: "10 - 60 GPM"
 material: "Aluminio forjado"

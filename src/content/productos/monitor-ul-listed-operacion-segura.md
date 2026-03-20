@@ -7,6 +7,9 @@ imagen: "/img/monitores-contra-incendios/monitor-ul-listed-contra-incendios-deta
 galeria:
   - "/img/monitores-contra-incendios/monitor-ul-listed-foam-perfil-completo.avif"
   - "/img/monitores-contra-incendios/monitor-ul-listed-foam-vista-lateral.avif"
+  - "/img/monitores-contra-incendios/monitor-ul-listed-contra-incendios-operacion-campo-20.avif"
+  - "/img/monitores-contra-incendios/monitor-ul-listed-contra-incendios-ambiente-bomberos-22.avif"
+  - "/img/monitores-contra-incendios/monitor-ul-listed-contra-incendios-ambiente-operativo-09.avif"
 certificaciones: ["UL Listed", "UL 199", "NFPA 600", "OSHA"]
 flujo: "500 - 1,250 GPM"
 material: "Bronce forjado"

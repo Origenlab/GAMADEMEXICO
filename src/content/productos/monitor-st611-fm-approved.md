@@ -9,6 +9,7 @@ galeria:
   - "/img/monitores-contra-incendios/monitor-st611-fm-approved-valvulas-laterales.avif"
   - "/img/monitores-contra-incendios/monitor-st611-fm-approved-perfil-derecho.avif"
   - "/img/monitores-contra-incendios/monitor-st611-fm-approved-boquilla-dorada.avif"
+  - "/img/monitores-contra-incendios/monitor-st611-fm-approved-angulo-derecho.avif"
 certificaciones: ["FM Approved", "UL Listed"]
 flujo: "Hasta 1,250 GPM"
 material: "Bronce resistente a corrosión"

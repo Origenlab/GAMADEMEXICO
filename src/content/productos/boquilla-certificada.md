@@ -9,6 +9,7 @@ galeria:
   - "/img/productos/boquilla-certificada-fm-approved-luces-emergencia-03.avif"
   - "/img/productos/boquilla-certificada-nfpa-1964-bronce-profesional-04.avif"
   - "/img/productos/boquilla-certificada-ul-listed-detalle-selector-05.avif"
+  - "/img/boquillas-contra-incendios/boquilla-certificada-dual-ul-fm-csw-lb-documentos.avif"
 certificaciones: ["UL 401", "FM Approved", "NFPA 1964"]
 flujo: "150 - 250 GPM"
 material: "Aluminio forjado Elk-O-Lite"

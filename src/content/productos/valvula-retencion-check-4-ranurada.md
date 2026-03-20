@@ -9,6 +9,7 @@ galeria:
   - "/img/valvulas-contra-incendios/valvula-check-swing-bridada-contra-incendios-instalacion-sistema-28.avif"
   - "/img/valvulas-contra-incendios/valvula-check-swing-bridada-contra-incendios-producto-aislado-29.avif"
   - "/img/valvulas-contra-incendios/valvula-check-swing-bridada-contra-incendios-perfil-izquierdo-30.avif"
+  - "/img/valvulas-contra-incendios/valvula-retencion-check-01.avif"
 certificaciones: ["UL 312", "FM Approved", "AWWA C606"]
 flujo: "175 PSI trabajo"
 material: "Hierro dúctil ASTM A536"

@@ -9,6 +9,7 @@ galeria:
   - "/img/productos/manguera-forestal-contra-incendios-detalle-rosca-14.avif"
   - "/img/productos/manguera-forestal-contra-incendios-vista-lateral-06.avif"
   - "/img/productos/manguera-forestal-contra-incendios-profesional-bomberos-07.avif"
+  - "/img/mangueras-contra-incendios/manguera-forestal-amarilla-01.avif"
 certificaciones: ["NFPA 1961"]
 flujo: "250 PSI trabajo"
 material: "Forro simple alta densidad"

@@ -8,6 +8,8 @@ galeria:
   - "/img/conexiones-herrajes/cap-alta-presion-nfpa1901-mango.avif"
   - "/img/conexiones-herrajes/cap-alta-presion-nfpa1901-rosca.avif"
   - "/img/conexiones-herrajes/cap-alta-presion-nfpa1901-instalacion.avif"
+  - "/img/conexiones-herrajes-contra-incendios/cap-proteccion-bronce-frontal.avif"
+  - "/img/conexiones-herrajes-contra-incendios/adaptador-bronce-nh-nst-2-5-frontal.avif"
 certificaciones: ["UL Listed", "NFPA 1901"]
 flujo: "500 PSI trabajo"
 material: "Bronce fundido"

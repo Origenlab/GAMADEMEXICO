@@ -8,6 +8,8 @@ galeria:
   - "/img/conexiones-herrajes/kit-accesorios-gabinete-contenido.avif"
   - "/img/conexiones-herrajes/kit-accesorios-gabinete-detalle.avif"
   - "/img/conexiones-herrajes/kit-accesorios-gabinete-instalado.avif"
+  - "/img/conexiones-herrajes-contra-incendios/adaptador-bronce-nh-nst-2-5-frontal.avif"
+  - "/img/conexiones-herrajes-contra-incendios/adaptador-storz-bronce-2-5-frontal.avif"
 certificaciones: ["UL Listed", "NOM-002-STPS-2010"]
 flujo: "175-500 PSI según pieza"
 material: "Bronce fundido"

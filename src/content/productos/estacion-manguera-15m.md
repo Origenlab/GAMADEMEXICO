@@ -8,6 +8,8 @@ galeria:
   - "/img/gabinetes-hidrantes/gabinete-manguera-plaza-comercial.avif"
   - "/img/gabinetes-hidrantes/gabinete-manguera-producto-abierto.avif"
   - "/img/gabinetes-hidrantes/gabinete-manguera-centro-comercial.avif"
+  - "/img/gabinetes-hidrantes-contra-incendios/estacion-manguera-gabinete-01.avif"
+  - "/img/gabinetes-hidrantes-contra-incendios/estacion-manguera-portatil-frontal.avif"
 certificaciones: ["NFPA 14"]
 flujo: "100 PSI máx salida"
 material: "Acero / Bronce"

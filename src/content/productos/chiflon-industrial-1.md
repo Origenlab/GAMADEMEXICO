@@ -8,6 +8,8 @@ galeria:
   - "/img/conexiones-herrajes/chiflon-industrial-1-gabinete.avif"
   - "/img/conexiones-herrajes/chiflon-industrial-1-patron.avif"
   - "/img/conexiones-herrajes/chiflon-industrial-1-operacion.avif"
+  - "/img/conexiones-herrajes-contra-incendios/chiflon-pistola-elkhart-1-5-frontal.avif"
+  - "/img/conexiones-herrajes-contra-incendios/chiflon-turbojet-2-5-frontal.avif"
 certificaciones: ["UL 401", "NOM-002-STPS-2010"]
 flujo: "30-60 GPM"
 material: "Bronce fundido"

@@ -9,6 +9,7 @@ galeria:
   - "/img/productos/boquilla-certificada-nfpa-1964-angulo-superior-10.avif"
   - "/img/productos/boquilla-certificada-fm-camion-bomberos-manguera-11.avif"
   - "/img/productos/boquilla-certificada-ul-listed-estacion-bomberos-12.avif"
+  - "/img/boquillas-contra-incendios/boquilla-certificada-nfpa-1964-angulo-superior-10.avif"
 certificaciones: ["NFPA 1964", "ISO 9001"]
 flujo: "30 - 200 GPM"
 material: "Aluminio forjado"

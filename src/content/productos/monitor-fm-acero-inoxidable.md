@@ -7,6 +7,9 @@ imagen: "/img/monitores-contra-incendios/monitor-certificado-fm-contra-incendios
 galeria:
   - "/img/monitores-contra-incendios/monitor-st611-fm-approved-detalle-anillos.avif"
   - "/img/monitores-contra-incendios/monitor-st611-fm-approved-vista-lateral.avif"
+  - "/img/monitores-contra-incendios/monitor-certificado-fm-contra-incendios-angulo-derecho-07.avif"
+  - "/img/monitores-contra-incendios/monitor-certificado-fm-contra-incendios-angulo-frontal-14.avif"
+  - "/img/monitores-contra-incendios/monitor-certificado-fm-contra-incendios-camion-fondo-05.avif"
 certificaciones: ["FM Approved", "FM 1421", "ASTM A351", "NACE MR0175"]
 flujo: "500 - 1,500 GPM"
 material: "Acero inoxidable 316L"

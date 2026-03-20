@@ -9,6 +9,7 @@ galeria:
   - "/img/valvulas-contra-incendios/valvula-globo-bridada-acero-inoxidable-contra-incendios-detalle-volante-03.avif"
   - "/img/valvulas-contra-incendios/valvula-globo-bridada-acero-inoxidable-contra-incendios-perfil-derecho-04.avif"
   - "/img/valvulas-contra-incendios/valvula-globo-bridada-acero-inoxidable-contra-incendios-planta-industrial-05.avif"
+  - "/img/valvulas-contra-incendios/valvula-globo-bridada-acero-inoxidable-contra-incendios-ambiente-fabrica-24.avif"
 certificaciones: ["UL Listed", "FM Approved"]
 flujo: "300 PSI trabajo"
 material: "Bronce forjado / Asiento EPDM"

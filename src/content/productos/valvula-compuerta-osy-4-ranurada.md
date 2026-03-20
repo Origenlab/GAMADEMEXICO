@@ -9,6 +9,7 @@ galeria:
   - "/img/valvulas-contra-incendios/valvula-compuerta-osy-ranurada-contra-incendios-angulo-superior-13.avif"
   - "/img/valvulas-contra-incendios/valvula-compuerta-osy-ranurada-contra-incendios-detalle-cuerpo-14.avif"
   - "/img/valvulas-contra-incendios/valvula-compuerta-osy-ranurada-contra-incendios-conexion-ranurada-15.avif"
+  - "/img/valvulas-contra-incendios/valvula-compuerta-osy-ranurada-contra-incendios-ambiente-fabrica-33.avif"
 certificaciones: ["UL 262", "FM 1120", "NOM-002-STPS-2010"]
 flujo: "175 PSI trabajo"
 material: "Hierro dúctil ASTM A536"

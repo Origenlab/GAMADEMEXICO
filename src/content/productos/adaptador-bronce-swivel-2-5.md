@@ -8,6 +8,8 @@ galeria:
   - "/img/conexiones-herrajes/adaptador-swivel-2-5-rotacion.avif"
   - "/img/conexiones-herrajes/adaptador-swivel-2-5-corte.avif"
   - "/img/conexiones-herrajes/adaptador-swivel-2-5-instalacion.avif"
+  - "/img/conexiones-herrajes-contra-incendios/adaptador-bronce-nh-nst-2-5-frontal.avif"
+  - "/img/conexiones-herrajes-contra-incendios/adaptador-storz-bronce-2-5-frontal.avif"
 certificaciones: ["UL Listed", "FM Approved"]
 flujo: "300 PSI trabajo"
 material: "Bronce fundido"

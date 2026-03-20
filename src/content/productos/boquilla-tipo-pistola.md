@@ -9,6 +9,7 @@ galeria:
   - "/img/productos/boquilla-tipo-pistola-contra-incendios-selector-flujo-03.avif"
   - "/img/productos/boquilla-tipo-pistola-contra-incendios-mango-ergonomico-06.avif"
   - "/img/productos/boquilla-tipo-pistola-contra-incendios-bombero-operando-10.avif"
+  - "/img/boquillas-contra-incendios/boquilla-tipo-pistola-contra-incendios-alta-presion-19.avif"
 certificaciones: ["NFPA 1964", "Construcción XD"]
 flujo: "15 - 250 GPM"
 material: "Aluminio forjado Elk-O-Lite"

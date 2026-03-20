@@ -9,6 +9,7 @@ galeria:
   - "/img/monitores-contra-incendios/monitor-corazon-una-cremallera-engranaje-manivela.avif"
   - "/img/monitores-contra-incendios/monitor-corazon-una-cremallera-lateral-derecha.avif"
   - "/img/monitores-contra-incendios/monitor-corazon-una-cremallera-lateral-izquierda.avif"
+  - "/img/monitores-contra-incendios/monitor-corazon-una-cremallera-bronce-fundido.avif"
 certificaciones: ["PEMEX", "NFPA", "ANSI"]
 flujo: "500 - 1,000 GPM"
 material: "Bronce fundido"

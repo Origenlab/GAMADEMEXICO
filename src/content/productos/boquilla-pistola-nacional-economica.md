@@ -9,6 +9,7 @@ galeria:
   - "/img/productos/boquilla-tipo-pistola-contra-incendios-lateral-izquierdo-29.avif"
   - "/img/productos/boquilla-tipo-pistola-contra-incendios-vista-posterior-30.avif"
   - "/img/productos/boquilla-tipo-pistola-contra-incendios-nfpa-certificada-31.avif"
+  - "/img/boquillas-contra-incendios/boquilla-pistola-nacional-economica-detalle.avif"
 certificaciones: ["NOM-002-STPS-2010", "NFPA 1964"]
 flujo: "60 - 125 GPM"
 material: "Aluminio fundido"

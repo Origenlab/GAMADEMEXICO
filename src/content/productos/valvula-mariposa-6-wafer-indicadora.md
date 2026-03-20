@@ -9,6 +9,7 @@ galeria:
   - "/img/valvulas-contra-incendios/valvula-mariposa-indicadora-contra-incendios-hierro-ductil-07.avif"
   - "/img/valvulas-contra-incendios/valvula-mariposa-indicadora-contra-incendios-planta-industrial-11.avif"
   - "/img/valvulas-contra-incendios/valvula-mariposa-indicadora-contra-incendios-ambiente-fabrica-12.avif"
+  - "/img/valvulas-contra-incendios/valvula-mariposa-indicadora-contra-incendios-wafer-style-26.avif"
 certificaciones: ["UL Listed", "FM 1112", "NOM-002-STPS-2010"]
 flujo: "175 PSI trabajo"
 material: "Hierro dúctil / Disco inoxidable"

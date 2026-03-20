@@ -8,6 +8,8 @@ galeria:
   - "/img/conexiones-herrajes/conexion-wye-flush-purga.avif"
   - "/img/conexiones-herrajes/conexion-wye-flush-valvulas.avif"
   - "/img/conexiones-herrajes/conexion-wye-flush-instalacion.avif"
+  - "/img/conexiones-herrajes-contra-incendios/conexion-wye-2-5-bronce-frontal.avif"
+  - "/img/conexiones-herrajes-contra-incendios/wye-gated-elkhart-01.avif"
 certificaciones: ["UL Listed", "FM Approved"]
 flujo: "200 PSI trabajo"
 material: "Aluminio Elk-O-Lite forjado"

@@ -9,6 +9,7 @@ galeria:
   - "/img/productos/boquilla-turbo-jet-contra-incendios-selector-flujo-06.avif"
   - "/img/productos/boquilla-turbo-jet-contra-incendios-detalle-07.avif"
   - "/img/productos/boquilla-turbo-jet-contra-incendios-close-up-08.avif"
+  - "/img/boquillas-contra-incendios/boquilla-turbo-jet-master-stream-500-1250-detalle.avif"
 certificaciones: ["NFPA 1964"]
 flujo: "500 - 1250 GPM"
 material: "Aluminio fundido reforzado"

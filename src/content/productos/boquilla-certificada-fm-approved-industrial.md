@@ -9,6 +9,7 @@ galeria:
   - "/img/productos/boquilla-certificada-nfpa-1964-bronce-profesional-04.avif"
   - "/img/productos/boquilla-certificada-ul-listed-detalle-selector-05.avif"
   - "/img/productos/boquilla-certificada-fm-ul-nave-industrial-06.avif"
+  - "/img/boquillas-contra-incendios/boquilla-certificada-fm-approved-emergencia-nocturna-lluvia-02.avif"
 certificaciones: ["FM Approved", "NFPA 1964"]
 flujo: "95 - 200 GPM"
 material: "Aluminio anodizado"

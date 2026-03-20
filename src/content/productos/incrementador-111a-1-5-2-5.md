@@ -8,6 +8,8 @@ galeria:
   - "/img/conexiones-herrajes/incrementador-111a-lateral.avif"
   - "/img/conexiones-herrajes/incrementador-111a-flujo.avif"
   - "/img/conexiones-herrajes/incrementador-111a-instalacion.avif"
+  - "/img/conexiones-herrajes-contra-incendios/adaptador-bronce-nh-nst-2-5-frontal.avif"
+  - "/img/conexiones-herrajes-contra-incendios/adaptador-storz-bronce-2-5-frontal.avif"
 certificaciones: ["UL Listed", "FM Approved"]
 flujo: "250 PSI trabajo"
 material: "Aluminio Elk-O-Lite forjado"

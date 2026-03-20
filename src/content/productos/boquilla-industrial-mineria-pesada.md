@@ -9,6 +9,7 @@ galeria:
   - "/img/productos/boquilla-industrial-contra-incendios-close-up-14.avif"
   - "/img/productos/boquilla-industrial-contra-incendios-bronce-frontal-01.avif"
   - "/img/productos/boquilla-industrial-contra-incendios-bronce-lateral-02.avif"
+  - "/img/boquillas-contra-incendios/boquilla-industrial-mineria-servicio-pesado-npsh-aplicacion.avif"
 certificaciones: ["NFPA 1964", "MSHA"]
 flujo: "150 - 500 GPM"
 material: "Aluminio fundido reforzado"

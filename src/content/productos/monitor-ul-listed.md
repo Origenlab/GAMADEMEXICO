@@ -8,6 +8,8 @@ galeria:
   - "/img/monitores-contra-incendios/monitor-ul-listed-fixed-flow-perfil-completo.avif"
   - "/img/monitores-contra-incendios/monitor-ul-listed-fixed-flow-detalle-manometro.avif"
   - "/img/monitores-contra-incendios/monitor-ul-listed-fixed-flow-instalacion-industrial.avif"
+  - "/img/monitores-contra-incendios/monitor-ul-listed-contra-incendios-ambiente-bomberos-22.avif"
+  - "/img/monitores-contra-incendios/monitor-ul-listed-contra-incendios-ambiente-operativo-09.avif"
 certificaciones: ["UL Listed", "NOM-002-STPS-2010"]
 flujo: "Según modelo"
 material: "Bronce forjado"

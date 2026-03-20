@@ -8,6 +8,8 @@ galeria:
   - "/img/conexiones-herrajes/chiflon-nacional-posiciones.avif"
   - "/img/conexiones-herrajes/chiflon-nacional-patron.avif"
   - "/img/conexiones-herrajes/chiflon-nacional-operacion.avif"
+  - "/img/conexiones-herrajes-contra-incendios/chiflon-pistola-elkhart-1-5-frontal.avif"
+  - "/img/conexiones-herrajes-contra-incendios/chiflon-turbojet-2-5-frontal.avif"
 certificaciones: ["NOM-002-STPS-2010"]
 flujo: "60-100 GPM"
 material: "Bronce fundido"
