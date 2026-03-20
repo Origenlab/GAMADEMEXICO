@@ -308,6 +308,34 @@ const empresaImagen = empresa.data.imagen && empresa.data.imagen !== '/img/gama-
   ? empresa.data.imagen 
   : (giroImagenes[empresa.data.giro] || '/img/directorio/directorio-certificacion-gama-mexico.avif');
 
+// Galería de 8 imágenes variadas por giro
+const allGiroImgs = [
+  '/img/directorio/directorio-hotel-sistema-contra-incendios.avif',
+  '/img/directorio/directorio-industria-sistema-contra-incendios.avif',
+  '/img/directorio/directorio-hospital-sistema-contra-incendios.avif',
+  '/img/directorio/directorio-comercio-sistema-contra-incendios.avif',
+  '/img/directorio/directorio-oficina-sistema-contra-incendios.avif',
+  '/img/directorio/directorio-almacen-sistema-contra-incendios.avif',
+  '/img/directorio/directorio-escuela-sistema-contra-incendios.avif',
+  '/img/directorio/directorio-restaurante-sistema-contra-incendios.avif',
+  '/img/directorio/directorio-infraestructura-industrial.avif',
+  '/img/directorio/directorio-certificacion-gama-mexico.avif',
+];
+// Poner la imagen del giro actual al final para evitar repetir la principal
+const giroImg = giroImagenes[empresa.data.giro] || '';
+const galeriaImgs = allGiroImgs.filter(img => img !== giroImg && img !== empresaImagen).slice(0, 8);
+
+const galeriaAlts = [
+  'Rociadores automáticos instalados',
+  'Panel de detección y alarma',
+  'Red de hidrantes verificada',
+  'Gabinete contra incendio certificado',
+  'Sistema de supresión especializado',
+  'Señalización de emergencia',
+  'Equipo de extinción profesional',
+  'Inspección de protección civil',
+];
+
 // Schema.org LocalBusiness
 const businessSchema = {
   "@context": "https://schema.org",
@@ -416,21 +444,6 @@ const pageTitle = titleFull.length <= 60 ? titleFull : (titleShort.length <= 60 
     )}
   </Fragment>
 
-  <!-- Imagen de la empresa -->
-  <section class="empresa-imagen-section">
-    <div class="container">
-      <img
-        src={empresaImagen}
-        alt={`Sistema de protección contra incendios certificado en ${empresa.data.nombre}, ${empresa.data.ciudad}`}
-        class="empresa-imagen-hero"
-        width="1200"
-        height="675"
-        loading="eager"
-        decoding="async"
-      />
-    </div>
-  </section>
-
   <!-- Contenido Principal con Sidebar -->
   <section class="main-content">
     <div class="container">
@@ -438,6 +451,35 @@ const pageTitle = titleFull.length <= 60 ? titleFull : (titleShort.length <= 60 
 
         <!-- Columna Principal -->
         <div class="main-content__primary">
+
+          <!-- Imagen principal de la empresa -->
+          <div class="empresa-imagen-wrapper">
+            <img
+              src={empresaImagen}
+              alt={`Sistema de protección contra incendios certificado en ${empresa.data.nombre}, ${empresa.data.ciudad}`}
+              class="empresa-imagen-hero"
+              width="800"
+              height="450"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+
+          <!-- Galería de imágenes -->
+          <div class="empresa-galeria">
+            {galeriaImgs.map((img, i) => (
+              <img
+                src={img}
+                alt={`${galeriaAlts[i] || 'Sistema contra incendios'} — ${empresa.data.nombre}`}
+                class="empresa-galeria__img"
+                width="280"
+                height="158"
+                loading="lazy"
+                decoding="async"
+              />
+            ))}
+          </div>
+
           <SectionHeader
             titulo={`Sistemas de Protección Contra Incendios Certificados en ${empresa.data.nombre}`}
             subtitulo={`${empresa.data.tipoSistema.length} sistemas verificados por Gama de México con equipos certificados UL y FM`}
