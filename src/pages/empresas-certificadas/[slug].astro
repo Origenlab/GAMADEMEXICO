@@ -308,7 +308,12 @@ const empresaImagen = empresa.data.imagen && empresa.data.imagen !== '/img/gama-
   ? empresa.data.imagen 
   : (giroImagenes[empresa.data.giro] || '/img/directorio/directorio-certificacion-gama-mexico.avif');
 
-// Galería de 8 imágenes variadas por giro
+// Galería de 8 imágenes — usa fotos únicas si existen, fallback a genéricas por giro
+const slug = empresa.data.slug;
+const galeriaBase = `/img/directorio/empresas/galeria/${slug}`;
+
+// Intentar usar imágenes únicas de la empresa (generadas desde Google Maps)
+// Fallback: imágenes genéricas por giro
 const allGiroImgs = [
   '/img/directorio/directorio-hotel-sistema-contra-incendios.avif',
   '/img/directorio/directorio-industria-sistema-contra-incendios.avif',
@@ -321,19 +326,27 @@ const allGiroImgs = [
   '/img/directorio/directorio-infraestructura-industrial.avif',
   '/img/directorio/directorio-certificacion-gama-mexico.avif',
 ];
-// Poner la imagen del giro actual al final para evitar repetir la principal
 const giroImg = giroImagenes[empresa.data.giro] || '';
-const galeriaImgs = allGiroImgs.filter(img => img !== giroImg && img !== empresaImagen).slice(0, 8);
+const fallbackImgs = allGiroImgs.filter(img => img !== giroImg && img !== empresaImagen).slice(0, 8);
+
+// Verificar si existen imágenes únicas de galería
+import fs from 'node:fs';
+const galeriaDir = `public/img/directorio/empresas/galeria`;
+const hasGaleria = fs.existsSync(`${galeriaDir}/${slug}-1.avif`);
+
+const galeriaImgs = hasGaleria
+  ? Array.from({length: 8}, (_, i) => `${galeriaBase}-${i + 1}.avif`)
+  : fallbackImgs;
 
 const galeriaAlts = [
-  'Rociadores automáticos instalados',
-  'Panel de detección y alarma',
-  'Red de hidrantes verificada',
-  'Gabinete contra incendio certificado',
-  'Sistema de supresión especializado',
-  'Señalización de emergencia',
-  'Equipo de extinción profesional',
-  'Inspección de protección civil',
+  `Fachada principal de ${empresa.data.nombre} en ${empresa.data.ciudad}`,
+  `Recepción de ${empresa.data.nombre} — sistema contra incendios certificado`,
+  `Área de operaciones de ${empresa.data.nombre} con protección contra incendios`,
+  `Gabinete contra incendio certificado en ${empresa.data.nombre}`,
+  `Señalización de emergencia en ${empresa.data.nombre}, ${empresa.data.ciudad}`,
+  `Área técnica con sistemas de protección en ${empresa.data.nombre}`,
+  `Exterior de ${empresa.data.nombre} — certificado por Gama de México`,
+  `Vista panorámica de ${empresa.data.nombre} en ${empresa.data.estado}`,
 ];
 
 // Schema.org LocalBusiness
