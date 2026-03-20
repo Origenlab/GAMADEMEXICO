@@ -24,7 +24,7 @@ fechaCertificacion: "2024-09-01"
 fechaVencimiento: "2025-09-01"
 certificacionVigente: true
 certificadoPor: "Gama de México"
-imagen: "/img/gama-de-mexico.avif"
+imagen: "/img/directorio/empresas/torre-mayor-corporativo.avif"
 destacado: true
 verificado: true
 fechaRegistro: "2024-09-01"

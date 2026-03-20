@@ -26,7 +26,7 @@ fechaCertificacion: "2024-12-01"
 fechaVencimiento: "2025-12-01"
 certificacionVigente: true
 certificadoPor: "Gama de México"
-imagen: "/img/gama-de-mexico.avif"
+imagen: "/img/directorio/empresas/toyota-motor-manufacturing-guanajuato.avif"
 destacado: true
 verificado: true
 fechaRegistro: "2024-12-01"

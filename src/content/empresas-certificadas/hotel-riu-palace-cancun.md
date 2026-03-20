@@ -23,7 +23,7 @@ fechaCertificacion: "2024-09-30"
 fechaVencimiento: "2025-09-30"
 certificacionVigente: true
 certificadoPor: "Gama de México"
-imagen: "/img/gama-de-mexico.avif"
+imagen: "/img/directorio/empresas/hotel-riu-palace-cancun.avif"
 destacado: false
 verificado: true
 fechaRegistro: "2024-09-30"

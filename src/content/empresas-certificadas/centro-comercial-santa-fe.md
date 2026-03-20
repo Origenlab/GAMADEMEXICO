@@ -23,7 +23,7 @@ fechaCertificacion: "2024-04-20"
 fechaVencimiento: "2025-04-20"
 certificacionVigente: true
 certificadoPor: "Gama de México"
-imagen: "/img/gama-de-mexico.avif"
+imagen: "/img/directorio/empresas/centro-comercial-santa-fe.avif"
 destacado: true
 verificado: true
 fechaRegistro: "2024-04-20"

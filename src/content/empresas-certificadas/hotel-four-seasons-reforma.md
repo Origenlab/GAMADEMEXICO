@@ -23,7 +23,7 @@ fechaCertificacion: "2024-07-10"
 fechaVencimiento: "2025-07-10"
 certificacionVigente: true
 certificadoPor: "Gama de México"
-imagen: "/img/gama-de-mexico.avif"
+imagen: "/img/directorio/empresas/hotel-four-seasons-reforma.avif"
 destacado: true
 verificado: true
 fechaRegistro: "2024-07-10"

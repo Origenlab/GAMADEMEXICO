@@ -23,7 +23,7 @@ fechaCertificacion: "2024-09-10"
 fechaVencimiento: "2025-09-10"
 certificacionVigente: true
 certificadoPor: "Gama de México"
-imagen: "/img/gama-de-mexico.avif"
+imagen: "/img/directorio/empresas/hotel-jw-marriott-polanco.avif"
 destacado: false
 verificado: true
 fechaRegistro: "2024-09-10"

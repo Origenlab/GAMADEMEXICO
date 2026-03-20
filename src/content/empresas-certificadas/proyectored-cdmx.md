@@ -23,7 +23,7 @@ fechaCertificacion: "2025-01-15"
 fechaVencimiento: "2026-01-15"
 certificacionVigente: true
 certificadoPor: "Gama de México"
-imagen: "/img/gama-de-mexico.avif"
+imagen: "/img/directorio/empresas/proyectored-cdmx.avif"
 destacado: true
 verificado: true
 fechaRegistro: "2025-01-15"

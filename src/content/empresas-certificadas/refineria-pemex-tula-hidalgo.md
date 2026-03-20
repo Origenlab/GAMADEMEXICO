@@ -24,7 +24,7 @@ fechaCertificacion: "2024-08-20"
 fechaVencimiento: "2025-08-20"
 certificacionVigente: true
 certificadoPor: "Gama de México"
-imagen: "/img/gama-de-mexico.avif"
+imagen: "/img/directorio/empresas/refineria-pemex-tula-hidalgo.avif"
 destacado: true
 verificado: true
 fechaRegistro: "2024-08-20"

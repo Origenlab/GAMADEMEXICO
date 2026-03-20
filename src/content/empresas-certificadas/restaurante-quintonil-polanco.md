@@ -22,7 +22,7 @@ fechaCertificacion: "2024-05-20"
 fechaVencimiento: "2025-05-20"
 certificacionVigente: true
 certificadoPor: "Gama de México"
-imagen: "/img/gama-de-mexico.avif"
+imagen: "/img/directorio/empresas/restaurante-quintonil-polanco.avif"
 destacado: false
 verificado: true
 fechaRegistro: "2024-05-20"

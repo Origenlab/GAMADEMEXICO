@@ -25,7 +25,7 @@ fechaCertificacion: "2024-10-01"
 fechaVencimiento: "2025-10-01"
 certificacionVigente: true
 certificadoPor: "Gama de México"
-imagen: "/img/gama-de-mexico.avif"
+imagen: "/img/directorio/empresas/universidad-anahuac-norte.avif"
 destacado: true
 verificado: true
 fechaRegistro: "2024-10-01"

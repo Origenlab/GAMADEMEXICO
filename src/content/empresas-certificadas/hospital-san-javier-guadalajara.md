@@ -25,7 +25,7 @@ fechaCertificacion: "2024-07-15"
 fechaVencimiento: "2025-07-15"
 certificacionVigente: true
 certificadoPor: "Gama de México"
-imagen: "/img/gama-de-mexico.avif"
+imagen: "/img/directorio/empresas/hospital-san-javier-guadalajara.avif"
 destacado: true
 verificado: true
 fechaRegistro: "2024-07-15"

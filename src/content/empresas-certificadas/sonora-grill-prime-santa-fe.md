@@ -22,7 +22,7 @@ fechaCertificacion: "2024-06-20"
 fechaVencimiento: "2025-06-20"
 certificacionVigente: true
 certificadoPor: "Gama de México"
-imagen: "/img/gama-de-mexico.avif"
+imagen: "/img/directorio/empresas/sonora-grill-prime-santa-fe.avif"
 destacado: false
 verificado: true
 fechaRegistro: "2024-06-20"

@@ -24,7 +24,7 @@ fechaCertificacion: "2024-02-15"
 fechaVencimiento: "2025-02-15"
 certificacionVigente: true
 certificadoPor: "Gama de México"
-imagen: "/img/gama-de-mexico.avif"
+imagen: "/img/directorio/empresas/universidad-iberoamericana.avif"
 destacado: false
 verificado: true
 fechaRegistro: "2024-02-15"

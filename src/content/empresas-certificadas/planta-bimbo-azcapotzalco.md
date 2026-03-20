@@ -24,7 +24,7 @@ fechaCertificacion: "2024-07-25"
 fechaVencimiento: "2025-07-25"
 certificacionVigente: true
 certificadoPor: "Gama de México"
-imagen: "/img/gama-de-mexico.avif"
+imagen: "/img/directorio/empresas/planta-bimbo-azcapotzalco.avif"
 destacado: false
 verificado: true
 fechaRegistro: "2024-07-25"

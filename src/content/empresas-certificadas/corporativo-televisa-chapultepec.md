@@ -25,7 +25,7 @@ fechaCertificacion: "2024-09-15"
 fechaVencimiento: "2025-09-15"
 certificacionVigente: true
 certificadoPor: "Gama de México"
-imagen: "/img/gama-de-mexico.avif"
+imagen: "/img/directorio/empresas/corporativo-televisa-chapultepec.avif"
 destacado: true
 verificado: true
 fechaRegistro: "2024-09-15"

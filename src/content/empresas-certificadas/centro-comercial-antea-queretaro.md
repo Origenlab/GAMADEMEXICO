@@ -25,7 +25,7 @@ fechaCertificacion: "2024-08-25"
 fechaVencimiento: "2025-08-25"
 certificacionVigente: true
 certificadoPor: "Gama de México"
-imagen: "/img/gama-de-mexico.avif"
+imagen: "/img/directorio/empresas/centro-comercial-antea-queretaro.avif"
 destacado: true
 verificado: true
 fechaRegistro: "2024-08-25"

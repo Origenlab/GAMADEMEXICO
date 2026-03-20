@@ -22,7 +22,7 @@ fechaCertificacion: "2024-03-20"
 fechaVencimiento: "2025-03-20"
 certificacionVigente: true
 certificadoPor: "Gama de México"
-imagen: "/img/gama-de-mexico.avif"
+imagen: "/img/directorio/empresas/almacen-liverpool-tepeyac.avif"
 destacado: false
 verificado: true
 fechaRegistro: "2024-03-20"

@@ -24,7 +24,7 @@ fechaCertificacion: "2024-05-15"
 fechaVencimiento: "2025-05-15"
 certificacionVigente: true
 certificadoPor: "Gama de México"
-imagen: "/img/gama-de-mexico.avif"
+imagen: "/img/directorio/empresas/liverpool-perisur-cdmx.avif"
 destacado: true
 verificado: true
 fechaRegistro: "2024-05-15"

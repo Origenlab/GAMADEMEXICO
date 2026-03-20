@@ -25,7 +25,7 @@ fechaCertificacion: "2024-11-10"
 fechaVencimiento: "2025-11-10"
 certificacionVigente: true
 certificadoPor: "Gama de México"
-imagen: "/img/gama-de-mexico.avif"
+imagen: "/img/directorio/empresas/planta-volkswagen-puebla.avif"
 destacado: true
 verificado: true
 fechaRegistro: "2024-11-10"

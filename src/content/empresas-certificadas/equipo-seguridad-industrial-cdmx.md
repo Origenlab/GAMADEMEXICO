@@ -22,7 +22,7 @@ fechaCertificacion: "2025-04-20"
 fechaVencimiento: "2026-04-20"
 certificacionVigente: true
 certificadoPor: "Gama de México"
-imagen: "/img/gama-de-mexico.avif"
+imagen: "/img/directorio/empresas/equipo-seguridad-industrial-cdmx.avif"
 destacado: true
 verificado: true
 fechaRegistro: "2025-04-20"

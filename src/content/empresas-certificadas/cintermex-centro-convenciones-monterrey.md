@@ -25,7 +25,7 @@ fechaCertificacion: "2024-10-05"
 fechaVencimiento: "2025-10-05"
 certificacionVigente: true
 certificadoPor: "Gama de México"
-imagen: "/img/gama-de-mexico.avif"
+imagen: "/img/directorio/empresas/cintermex-centro-convenciones-monterrey.avif"
 destacado: true
 verificado: true
 fechaRegistro: "2024-10-05"

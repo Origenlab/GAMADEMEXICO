@@ -24,7 +24,7 @@ fechaCertificacion: "2024-09-05"
 fechaVencimiento: "2025-09-05"
 certificacionVigente: true
 certificadoPor: "Gama de México"
-imagen: "/img/gama-de-mexico.avif"
+imagen: "/img/directorio/empresas/planta-nestle-lagos-moreno.avif"
 destacado: true
 verificado: true
 fechaRegistro: "2024-09-05"

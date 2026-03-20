@@ -24,7 +24,7 @@ fechaCertificacion: "2024-10-20"
 fechaVencimiento: "2025-10-20"
 certificacionVigente: true
 certificadoPor: "Gama de México"
-imagen: "/img/gama-de-mexico.avif"
+imagen: "/img/directorio/empresas/grand-hyatt-ciudad-mexico.avif"
 destacado: true
 verificado: true
 fechaRegistro: "2024-10-20"

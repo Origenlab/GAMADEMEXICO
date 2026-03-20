@@ -23,7 +23,7 @@ fechaCertificacion: "2024-06-10"
 fechaVencimiento: "2025-06-10"
 certificacionVigente: true
 certificadoPor: "Gama de México"
-imagen: "/img/gama-de-mexico.avif"
+imagen: "/img/directorio/empresas/costco-satelite-naucalpan.avif"
 destacado: false
 verificado: true
 fechaRegistro: "2024-06-10"

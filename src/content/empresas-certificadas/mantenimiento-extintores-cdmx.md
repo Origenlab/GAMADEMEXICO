@@ -22,7 +22,7 @@ fechaCertificacion: "2025-06-10"
 fechaVencimiento: "2026-06-10"
 certificacionVigente: true
 certificadoPor: "Gama de México"
-imagen: "/img/gama-de-mexico.avif"
+imagen: "/img/directorio/empresas/mantenimiento-extintores-cdmx.avif"
 destacado: true
 verificado: true
 fechaRegistro: "2025-06-10"

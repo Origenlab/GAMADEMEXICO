@@ -25,7 +25,7 @@ fechaCertificacion: "2024-11-20"
 fechaVencimiento: "2025-11-20"
 certificacionVigente: true
 certificadoPor: "Gama de México"
-imagen: "/img/gama-de-mexico.avif"
+imagen: "/img/directorio/empresas/hospital-zambrano-hellion-monterrey.avif"
 destacado: true
 verificado: true
 fechaRegistro: "2024-11-20"
