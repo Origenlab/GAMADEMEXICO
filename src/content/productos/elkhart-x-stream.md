@@ -15,6 +15,10 @@ destacado: true
 orden: 30
 galeria:
   - "/img/boquillas-contra-incendios/boquilla-elkhart-brass-x-stream-master-stream-frontal.avif"
+  - "/img/boquillas-contra-incendios/boquilla-master-stream-elkhart-01.avif"
+  - "/img/boquillas-contra-incendios/boquilla-turbo-jet-master-stream-500-1250-frontal.avif"
+  - "/img/boquillas-contra-incendios/boquilla-turbo-jet-master-stream-500-1250-lateral.avif"
+  - "/img/boquillas-contra-incendios/boquilla-turbo-jet-master-stream-500-1250-detalle.avif"
 ---
 
 ## Boquilla X-Stream™ Master Stream — El cañón de la línea Elkhart
