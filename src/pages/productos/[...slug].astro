@@ -189,38 +189,36 @@ const heroMetrics = [
         <!-- MAIN CONTENT (LEFT) -->
         <main class="subcat-main">
 
-          <!-- PRODUCT IMAGE -->
+          <!-- PRODUCT IMAGE + GALLERY -->
           {mainImage && (
-            <div class="tech-info" style="padding: 0; overflow: hidden;">
-              <img
-                src={mainImage}
-                alt={producto.data.title}
-                width="800"
-                height="600"
-                loading="eager"
-                decoding="async"
-                style="width: 100%; height: auto; display: block; border-radius: var(--border-radius);"
-              />
-            </div>
-          )}
-
-          <!-- PRODUCT GALLERY -->
-          {producto.data.galeria && producto.data.galeria.length > 1 && (
-            <div class="tech-info product-gallery">
-              <h3 class="tech-info__title">Galería del Producto</h3>
-              <div class="product-gallery__grid">
-                {producto.data.galeria.slice(0, 6).map((img: string, i: number) => (
-                  <div class="product-gallery__item">
-                    <img
-                      src={img}
-                      alt={`${producto.data.title} — vista ${i + 1}`}
-                      width="400"
-                      height="300"
-                      loading="lazy"
-                      decoding="async"
-                    />
+            <div class="tech-info product-hero-gallery" style="padding: 0; overflow: hidden;">
+              <div class="product-hero-gallery__layout">
+                <div class="product-hero-gallery__main">
+                  <img
+                    src={mainImage}
+                    alt={producto.data.title}
+                    width="800"
+                    height="600"
+                    loading="eager"
+                    decoding="async"
+                  />
+                </div>
+                {producto.data.galeria && producto.data.galeria.length > 1 && (
+                  <div class="product-hero-gallery__thumbs">
+                    {producto.data.galeria.slice(1, 5).map((img: string, i: number) => (
+                      <div class="product-hero-gallery__thumb">
+                        <img
+                          src={img}
+                          alt={`${producto.data.title} — vista ${i + 2}`}
+                          width="400"
+                          height="300"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </div>
+                    ))}
                   </div>
-                ))}
+                )}
               </div>
             </div>
           )}
