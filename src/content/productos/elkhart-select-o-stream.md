@@ -5,7 +5,7 @@ categoria: "boquillas"
 subcategoria: "boquillas-master-stream"
 marca: "Elkhart Brass"
 modelo: "Select-O-Stream™"
-imagen: "/img/boquillas-contra-incendios/boquilla-elkhart-brass-select-o-stream-frontal.avif"
+imagen: "/img/boquillas-contra-incendios/elkhart-select-o-stream-fondo-blanco.avif"
 certificaciones:
   - UL Listed
 flujo: "350-1,250 GPM (seleccionable)"
@@ -13,11 +13,11 @@ material: "Aluminio anodizado"
 destacado: false
 orden: 32
 galeria:
-  - "/img/boquillas-contra-incendios/boquilla-elkhart-brass-select-o-stream-frontal.avif"
   - "/img/boquillas-contra-incendios/elkhart-select-o-stream-fondo-blanco.avif"
   - "/img/boquillas-contra-incendios/elkhart-select-o-stream-fondo-negro.avif"
   - "/img/boquillas-contra-incendios/elkhart-select-o-stream-fondo-industrial.avif"
   - "/img/boquillas-contra-incendios/elkhart-select-o-stream-fondo-gris.avif"
+  - "/img/boquillas-contra-incendios/boquilla-elkhart-brass-select-o-stream-frontal.avif"
 ---
 
 ## Boquilla Select-O-Stream™ — Flujo seleccionable para caudales medios

@@ -5,7 +5,7 @@ categoria: "monitores"
 subcategoria: "monitores-manuales"
 marca: "Elkhart Brass"
 modelo: "Stinger 2.0"
-imagen: "/img/monitores-contra-incendios/elkhart-stinger-2-0-mon-01.avif"
+imagen: "/img/monitores-contra-incendios/elkhart-stinger-2-0-fondo-blanco.avif"
 certificaciones:
   - UL Listed
   - FM Approved
@@ -15,7 +15,6 @@ material: "Aluminio de grado marino"
 destacado: true
 orden: 20
 galeria:
-  - "/img/monitores-contra-incendios/elkhart-stinger-2-0-mon-01.avif"
   - "/img/monitores-contra-incendios/elkhart-stinger-2-0-fondo-blanco.avif"
   - "/img/monitores-contra-incendios/elkhart-stinger-2-0-fondo-negro.avif"
   - "/img/monitores-contra-incendios/elkhart-stinger-2-0-fondo-industrial.avif"

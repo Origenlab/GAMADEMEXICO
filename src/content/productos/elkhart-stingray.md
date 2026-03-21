@@ -5,7 +5,7 @@ categoria: "monitores"
 subcategoria: "monitores-industriales"
 marca: "Elkhart Brass"
 modelo: "Stingray™"
-imagen: "/img/monitores-contra-incendios/monitor-elkhart-brass-stingray-vista-frontal.avif"
+imagen: "/img/monitores-contra-incendios/elkhart-stingray-fondo-blanco.avif"
 certificaciones:
   - FM Approved
   - NFPA 15
@@ -14,11 +14,11 @@ material: "Bronce macizo"
 destacado: false
 orden: 20
 galeria:
-  - "/img/monitores-contra-incendios/monitor-elkhart-brass-stingray-vista-frontal.avif"
   - "/img/monitores-contra-incendios/elkhart-stingray-fondo-blanco.avif"
   - "/img/monitores-contra-incendios/elkhart-stingray-fondo-negro.avif"
   - "/img/monitores-contra-incendios/elkhart-stingray-fondo-industrial.avif"
   - "/img/monitores-contra-incendios/elkhart-stingray-fondo-gris.avif"
+  - "/img/monitores-contra-incendios/monitor-elkhart-brass-stingray-vista-frontal.avif"
 ---
 
 ## Monitor Stingray™ — Industrial pesado, sin concesiones

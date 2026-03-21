@@ -5,7 +5,7 @@ categoria: "boquillas"
 subcategoria: "boquillas-master-stream"
 marca: "Elkhart Brass"
 modelo: "X-Stream™ Master Stream"
-imagen: "/img/boquillas-contra-incendios/boquilla-elkhart-brass-x-stream-master-stream-frontal.avif"
+imagen: "/img/boquillas-contra-incendios/elkhart-x-stream-fondo-blanco.avif"
 certificaciones:
   - UL Listed
   - FM Approved
@@ -14,7 +14,6 @@ material: "Aluminio anodizado"
 destacado: true
 orden: 30
 galeria:
-  - "/img/boquillas-contra-incendios/boquilla-elkhart-brass-x-stream-master-stream-frontal.avif"
   - "/img/boquillas-contra-incendios/elkhart-x-stream-fondo-blanco.avif"
   - "/img/boquillas-contra-incendios/elkhart-x-stream-fondo-negro.avif"
   - "/img/boquillas-contra-incendios/elkhart-x-stream-fondo-industrial.avif"

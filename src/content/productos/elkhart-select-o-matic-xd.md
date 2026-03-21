@@ -5,7 +5,7 @@ categoria: "boquillas"
 subcategoria: "boquillas-handline"
 marca: "Elkhart Brass"
 modelo: "Select-O-Matic® XD™"
-imagen: "/img/boquillas-contra-incendios/elkhart-select-o-matic-xd-boq-01.avif"
+imagen: "/img/boquillas-contra-incendios/elkhart-select-o-matic-xd-fondo-blanco.avif"
 certificaciones:
   - NFPA 1964
   - UL Listed
@@ -14,7 +14,6 @@ material: "Aluminio con internos de bronce"
 destacado: false
 orden: 20
 galeria:
-  - "/img/boquillas-contra-incendios/elkhart-select-o-matic-xd-boq-01.avif"
   - "/img/boquillas-contra-incendios/elkhart-select-o-matic-xd-fondo-blanco.avif"
   - "/img/boquillas-contra-incendios/elkhart-select-o-matic-xd-fondo-negro.avif"
   - "/img/boquillas-contra-incendios/elkhart-select-o-matic-xd-fondo-industrial.avif"

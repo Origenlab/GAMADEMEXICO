@@ -5,7 +5,7 @@ categoria: "monitores"
 subcategoria: "monitores-industriales"
 marca: "Elkhart Brass"
 modelo: "Spitfire™"
-imagen: "/img/monitores-contra-incendios/monitor-elkhart-brass-spitfire-vista-frontal.avif"
+imagen: "/img/monitores-contra-incendios/elkhart-spitfire-fondo-blanco.avif"
 certificaciones:
   - FM Approved
 flujo: "Hasta 1,000 GPM a 100 PSI"
@@ -13,11 +13,11 @@ material: "Bronce / aluminio (según modelo)"
 destacado: false
 orden: 22
 galeria:
-  - "/img/monitores-contra-incendios/monitor-elkhart-brass-spitfire-vista-frontal.avif"
   - "/img/monitores-contra-incendios/elkhart-spitfire-fondo-blanco.avif"
   - "/img/monitores-contra-incendios/elkhart-spitfire-fondo-negro.avif"
   - "/img/monitores-contra-incendios/elkhart-spitfire-fondo-industrial.avif"
   - "/img/monitores-contra-incendios/elkhart-spitfire-fondo-gris.avif"
+  - "/img/monitores-contra-incendios/monitor-elkhart-brass-spitfire-vista-frontal.avif"
 ---
 
 ## Monitor Spitfire™ — Industrial compacto para espacios reducidos

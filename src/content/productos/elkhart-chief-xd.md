@@ -5,7 +5,7 @@ categoria: "boquillas"
 subcategoria: "boquillas-handline"
 marca: "Elkhart Brass"
 modelo: "Chief XD®"
-imagen: "/img/boquillas-contra-incendios/elkhart-chief-xd-boq-01.avif"
+imagen: "/img/boquillas-contra-incendios/elkhart-chief-xd-fondo-blanco.avif"
 certificaciones:
   - NFPA 1964
   - UL Listed
@@ -14,7 +14,6 @@ material: "Aluminio anodizado de alta resistencia"
 destacado: true
 orden: 10
 galeria:
-  - "/img/boquillas-contra-incendios/elkhart-chief-xd-boq-01.avif"
   - "/img/boquillas-contra-incendios/elkhart-chief-xd-fondo-blanco.avif"
   - "/img/boquillas-contra-incendios/elkhart-chief-xd-fondo-negro.avif"
   - "/img/boquillas-contra-incendios/elkhart-chief-xd-fondo-industrial.avif"

@@ -5,7 +5,7 @@ categoria: "monitores"
 subcategoria: "monitores-manuales"
 marca: "Elkhart Brass"
 modelo: "Sidewinder™ Manual"
-imagen: "/img/monitores-contra-incendios/monitor-elkhart-brass-sidewinder-manual-vista-frontal.avif"
+imagen: "/img/monitores-contra-incendios/elkhart-sidewinder-manual-fondo-blanco.avif"
 certificaciones:
   - UL Listed
   - FM Approved
@@ -14,11 +14,11 @@ material: "Aleación de aluminio anodizado"
 destacado: false
 orden: 15
 galeria:
-  - "/img/monitores-contra-incendios/monitor-elkhart-brass-sidewinder-manual-vista-frontal.avif"
   - "/img/monitores-contra-incendios/elkhart-sidewinder-manual-fondo-blanco.avif"
   - "/img/monitores-contra-incendios/elkhart-sidewinder-manual-fondo-negro.avif"
   - "/img/monitores-contra-incendios/elkhart-sidewinder-manual-fondo-industrial.avif"
   - "/img/monitores-contra-incendios/elkhart-sidewinder-manual-fondo-gris.avif"
+  - "/img/monitores-contra-incendios/monitor-elkhart-brass-sidewinder-manual-vista-frontal.avif"
 ---
 
 ## Monitor Sidewinder™ Manual — Compacto, versátil, probado

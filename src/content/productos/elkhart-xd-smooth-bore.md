@@ -5,7 +5,7 @@ categoria: "boquillas"
 subcategoria: "boquillas-handline"
 marca: "Elkhart Brass"
 modelo: "XD Smooth Bore"
-imagen: "/img/boquillas-contra-incendios/boquilla-elkhart-brass-xd-smooth-bore-frontal.avif"
+imagen: "/img/boquillas-contra-incendios/elkhart-xd-smooth-bore-fondo-blanco.avif"
 certificaciones:
   - NFPA 1964
 flujo: "150-350 GPM (según orificio)"
@@ -13,11 +13,11 @@ material: "Latón cromado / aluminio"
 destacado: false
 orden: 35
 galeria:
-  - "/img/boquillas-contra-incendios/boquilla-elkhart-brass-xd-smooth-bore-frontal.avif"
   - "/img/boquillas-contra-incendios/elkhart-xd-smooth-bore-fondo-blanco.avif"
   - "/img/boquillas-contra-incendios/elkhart-xd-smooth-bore-fondo-negro.avif"
   - "/img/boquillas-contra-incendios/elkhart-xd-smooth-bore-fondo-industrial.avif"
   - "/img/boquillas-contra-incendios/elkhart-xd-smooth-bore-fondo-gris.avif"
+  - "/img/boquillas-contra-incendios/boquilla-elkhart-brass-xd-smooth-bore-frontal.avif"
 ---
 
 ## Boquilla XD Smooth Bore — El argumento del chorro liso

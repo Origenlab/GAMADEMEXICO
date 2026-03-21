@@ -5,7 +5,7 @@ categoria: "monitores"
 subcategoria: "monitores-industriales"
 marca: "Elkhart Brass"
 modelo: "Copperhead®"
-imagen: "/img/monitores-contra-incendios/elkhart-copperhead-mon-01.avif"
+imagen: "/img/monitores-contra-incendios/elkhart-copperhead-fondo-blanco.avif"
 certificaciones:
   - FM Approved
   - CE Certified
@@ -15,7 +15,6 @@ material: "Bronce naval resistente a corrosión"
 destacado: true
 orden: 10
 galeria:
-  - "/img/monitores-contra-incendios/elkhart-copperhead-mon-01.avif"
   - "/img/monitores-contra-incendios/elkhart-copperhead-fondo-blanco.avif"
   - "/img/monitores-contra-incendios/elkhart-copperhead-fondo-negro.avif"
   - "/img/monitores-contra-incendios/elkhart-copperhead-fondo-industrial.avif"

@@ -5,7 +5,7 @@ categoria: "monitores"
 subcategoria: "monitores-electricos"
 marca: "Elkhart Brass"
 modelo: "Scorpion™ EXM2"
-imagen: "/img/monitores-contra-incendios/monitor-elkhart-brass-scorpion-exm2-vista-frontal.avif"
+imagen: "/img/monitores-contra-incendios/elkhart-scorpion-exm2-fondo-blanco.avif"
 certificaciones:
   - UL Listed
   - FM Approved
@@ -14,11 +14,11 @@ material: "Aleación de aluminio anodizado"
 destacado: false
 orden: 13
 galeria:
-  - "/img/monitores-contra-incendios/monitor-elkhart-brass-scorpion-exm2-vista-frontal.avif"
   - "/img/monitores-contra-incendios/elkhart-scorpion-exm2-fondo-blanco.avif"
   - "/img/monitores-contra-incendios/elkhart-scorpion-exm2-fondo-negro.avif"
   - "/img/monitores-contra-incendios/elkhart-scorpion-exm2-fondo-industrial.avif"
   - "/img/monitores-contra-incendios/elkhart-scorpion-exm2-fondo-gris.avif"
+  - "/img/monitores-contra-incendios/monitor-elkhart-brass-scorpion-exm2-vista-frontal.avif"
 ---
 
 ## Monitor Scorpion™ EXM2 — Perfil bajo, rendimiento completo

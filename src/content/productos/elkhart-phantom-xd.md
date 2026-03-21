@@ -5,7 +5,7 @@ categoria: "boquillas"
 subcategoria: "boquillas-handline"
 marca: "Elkhart Brass"
 modelo: "Phantom® XD™"
-imagen: "/img/boquillas-contra-incendios/elkhart-phantom-xd-boq-01.avif"
+imagen: "/img/boquillas-contra-incendios/elkhart-phantom-xd-fondo-blanco.avif"
 certificaciones:
   - UL Listed
   - FM Approved
@@ -15,7 +15,6 @@ material: "Aleación de aluminio / Bronce naval"
 destacado: false
 orden: 50
 galeria:
-  - "/img/boquillas-contra-incendios/elkhart-phantom-xd-boq-01.avif"
   - "/img/boquillas-contra-incendios/elkhart-phantom-xd-fondo-blanco.avif"
   - "/img/boquillas-contra-incendios/elkhart-phantom-xd-fondo-negro.avif"
   - "/img/boquillas-contra-incendios/elkhart-phantom-xd-fondo-industrial.avif"
