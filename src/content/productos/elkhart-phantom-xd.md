@@ -16,10 +16,10 @@ destacado: false
 orden: 50
 galeria:
   - "/img/boquillas-contra-incendios/elkhart-phantom-xd-boq-01.avif"
-  - "/img/boquillas-contra-incendios/boquilla-pistola-phantom-xd-frontal.avif"
-  - "/img/boquillas-contra-incendios/boquilla-pistola-phantom-xd-lateral.avif"
-  - "/img/boquillas-contra-incendios/boquilla-pistola-phantom-xd-empunadura.avif"
-  - "/img/boquillas-contra-incendios/boquilla-pistola-phantom-xd-patron-niebla.avif"
+  - "/img/boquillas-contra-incendios/elkhart-phantom-xd-fondo-blanco.avif"
+  - "/img/boquillas-contra-incendios/elkhart-phantom-xd-fondo-negro.avif"
+  - "/img/boquillas-contra-incendios/elkhart-phantom-xd-fondo-industrial.avif"
+  - "/img/boquillas-contra-incendios/elkhart-phantom-xd-fondo-gris.avif"
 ---
 
 ## Boquilla Phantom® XD™ — Elkhart Brass

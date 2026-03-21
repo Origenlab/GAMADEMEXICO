@@ -15,10 +15,10 @@ destacado: true
 orden: 10
 galeria:
   - "/img/boquillas-contra-incendios/elkhart-chief-xd-boq-01.avif"
-  - "/img/boquillas-contra-incendios/boquilla-certificada-nfpa-1964-elkhart-brass-frontal.avif"
-  - "/img/boquillas-contra-incendios/boquilla-certificada-nfpa-1964-elkhart-brass-lateral.avif"
-  - "/img/boquillas-contra-incendios/boquilla-certificada-nfpa-1964-elkhart-brass-patron.avif"
-  - "/img/boquillas-contra-incendios/boquilla-certificada-nfpa-1964-elkhart-brass-selector.avif"
+  - "/img/boquillas-contra-incendios/elkhart-chief-xd-fondo-blanco.avif"
+  - "/img/boquillas-contra-incendios/elkhart-chief-xd-fondo-negro.avif"
+  - "/img/boquillas-contra-incendios/elkhart-chief-xd-fondo-industrial.avif"
+  - "/img/boquillas-contra-incendios/elkhart-chief-xd-fondo-gris.avif"
 ---
 
 ## Boquilla Chief XD® — La referencia en fog nozzles de flujo fijo

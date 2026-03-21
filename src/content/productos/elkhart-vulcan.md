@@ -16,10 +16,10 @@ destacado: true
 orden: 10
 galeria:
   - "/img/monitores-contra-incendios/elkhart-vulcan-mon-01.avif"
-  - "/img/monitores-contra-incendios/monitor-elkhart-brass-vulcan-vista-frontal.avif"
-  - "/img/monitores-contra-incendios/monitor-elkhart-brass-vulcan-vista-lateral.avif"
-  - "/img/monitores-contra-incendios/monitor-elkhart-brass-vulcan-detalle-volantes.avif"
-  - "/img/monitores-contra-incendios/monitor-elkhart-brass-vulcan-canal-eliptico.avif"
+  - "/img/monitores-contra-incendios/elkhart-vulcan-fondo-blanco.avif"
+  - "/img/monitores-contra-incendios/elkhart-vulcan-fondo-negro.avif"
+  - "/img/monitores-contra-incendios/elkhart-vulcan-fondo-industrial.avif"
+  - "/img/monitores-contra-incendios/elkhart-vulcan-fondo-gris.avif"
 ---
 
 ## Monitor Vulcan™ — El estándar de la industria

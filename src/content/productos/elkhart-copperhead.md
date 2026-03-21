@@ -16,10 +16,10 @@ destacado: true
 orden: 10
 galeria:
   - "/img/monitores-contra-incendios/elkhart-copperhead-mon-01.avif"
-  - "/img/monitores-contra-incendios/monitor-certificado-fm-contra-incendios-vista-urbana-01.avif"
-  - "/img/monitores-contra-incendios/monitor-certificado-fm-contra-incendios-angulo-frontal-14.avif"
-  - "/img/monitores-contra-incendios/monitor-certificado-fm-contra-incendios-parque-industrial-12.avif"
-  - "/img/monitores-contra-incendios/monitor-certificado-fm-contra-incendios-perfil-completo-09.avif"
+  - "/img/monitores-contra-incendios/elkhart-copperhead-fondo-blanco.avif"
+  - "/img/monitores-contra-incendios/elkhart-copperhead-fondo-negro.avif"
+  - "/img/monitores-contra-incendios/elkhart-copperhead-fondo-industrial.avif"
+  - "/img/monitores-contra-incendios/elkhart-copperhead-fondo-gris.avif"
 ---
 
 ## Monitor Copperhead® — Para instalaciones donde el mantenimiento no es una opción fácil

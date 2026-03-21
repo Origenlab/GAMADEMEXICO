@@ -15,10 +15,10 @@ destacado: false
 orden: 20
 galeria:
   - "/img/monitores-contra-incendios/monitor-elkhart-brass-stingray-vista-frontal.avif"
-  - "/img/monitores-contra-incendios/monitor-st611-fm-approved-angulo-derecho.avif"
-  - "/img/monitores-contra-incendios/monitor-st611-fm-approved-aplicacion-real.avif"
-  - "/img/monitores-contra-incendios/monitor-st611-fm-approved-boquilla-dorada.avif"
-  - "/img/monitores-contra-incendios/monitor-st611-fm-approved-detalle-anillos.avif"
+  - "/img/monitores-contra-incendios/elkhart-stingray-fondo-blanco.avif"
+  - "/img/monitores-contra-incendios/elkhart-stingray-fondo-negro.avif"
+  - "/img/monitores-contra-incendios/elkhart-stingray-fondo-industrial.avif"
+  - "/img/monitores-contra-incendios/elkhart-stingray-fondo-gris.avif"
 ---
 
 ## Monitor Stingray™ — Industrial pesado, sin concesiones

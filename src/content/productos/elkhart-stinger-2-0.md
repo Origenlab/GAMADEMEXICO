@@ -16,10 +16,10 @@ destacado: true
 orden: 20
 galeria:
   - "/img/monitores-contra-incendios/elkhart-stinger-2-0-mon-01.avif"
-  - "/img/monitores-contra-incendios/monitor-contra-incendio-aplicacion-industrial-01.avif"
-  - "/img/monitores-contra-incendios/monitor-contra-incendio-aplicacion-industrial-02.avif"
-  - "/img/monitores-contra-incendios/monitor-contra-incendio-aplicacion-industrial-03.avif"
-  - "/img/monitores-contra-incendios/monitor-certificado-fm-elkhart-01.avif"
+  - "/img/monitores-contra-incendios/elkhart-stinger-2-0-fondo-blanco.avif"
+  - "/img/monitores-contra-incendios/elkhart-stinger-2-0-fondo-negro.avif"
+  - "/img/monitores-contra-incendios/elkhart-stinger-2-0-fondo-industrial.avif"
+  - "/img/monitores-contra-incendios/elkhart-stinger-2-0-fondo-gris.avif"
 ---
 
 ## Monitor Stinger 2.0 — Dos monitores en uno

@@ -16,10 +16,10 @@ destacado: true
 orden: 11
 galeria:
   - "/img/monitores-contra-incendios/monitor-elkhart-brass-cobra-exm2-vista-frontal.avif"
-  - "/img/monitores-contra-incendios/monitor-elkhart-brass-sidewinder-exm2-angulo-derecho.avif"
-  - "/img/monitores-contra-incendios/monitor-elkhart-brass-sidewinder-exm2-vista-lateral.avif"
-  - "/img/monitores-contra-incendios/monitor-elkhart-brass-sidewinder-exm2-perfil-vertical.avif"
-  - "/img/monitores-contra-incendios/monitor-elkhart-brass-sidewinder-exm2-angulo-izquierdo.avif"
+  - "/img/monitores-contra-incendios/elkhart-cobra-exm2-fondo-blanco.avif"
+  - "/img/monitores-contra-incendios/elkhart-cobra-exm2-fondo-negro.avif"
+  - "/img/monitores-contra-incendios/elkhart-cobra-exm2-fondo-industrial.avif"
+  - "/img/monitores-contra-incendios/elkhart-cobra-exm2-fondo-gris.avif"
 ---
 
 ## Monitor Cobra™ EXM2 — Cuando el caudal estándar no alcanza

@@ -14,10 +14,10 @@ destacado: false
 orden: 32
 galeria:
   - "/img/boquillas-contra-incendios/boquilla-elkhart-brass-select-o-stream-frontal.avif"
-  - "/img/boquillas-contra-incendios/boquilla-pistola-select-o-flow-frontal.avif"
-  - "/img/boquillas-contra-incendios/boquilla-pistola-select-o-flow-lateral.avif"
-  - "/img/boquillas-contra-incendios/boquilla-pistola-select-o-flow-empunadura.avif"
-  - "/img/boquillas-contra-incendios/boquilla-pistola-select-o-flow-patron.avif"
+  - "/img/boquillas-contra-incendios/elkhart-select-o-stream-fondo-blanco.avif"
+  - "/img/boquillas-contra-incendios/elkhart-select-o-stream-fondo-negro.avif"
+  - "/img/boquillas-contra-incendios/elkhart-select-o-stream-fondo-industrial.avif"
+  - "/img/boquillas-contra-incendios/elkhart-select-o-stream-fondo-gris.avif"
 ---
 
 ## Boquilla Select-O-Stream™ — Flujo seleccionable para caudales medios

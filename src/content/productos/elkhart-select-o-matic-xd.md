@@ -15,10 +15,10 @@ destacado: false
 orden: 20
 galeria:
   - "/img/boquillas-contra-incendios/elkhart-select-o-matic-xd-boq-01.avif"
-  - "/img/boquillas-contra-incendios/boquilla-pistola-select-o-flow-frontal.avif"
-  - "/img/boquillas-contra-incendios/boquilla-pistola-select-o-flow-lateral.avif"
-  - "/img/boquillas-contra-incendios/boquilla-pistola-select-o-flow-empunadura.avif"
-  - "/img/boquillas-contra-incendios/boquilla-pistola-select-o-flow-patron.avif"
+  - "/img/boquillas-contra-incendios/elkhart-select-o-matic-xd-fondo-blanco.avif"
+  - "/img/boquillas-contra-incendios/elkhart-select-o-matic-xd-fondo-negro.avif"
+  - "/img/boquillas-contra-incendios/elkhart-select-o-matic-xd-fondo-industrial.avif"
+  - "/img/boquillas-contra-incendios/elkhart-select-o-matic-xd-fondo-gris.avif"
 ---
 
 ## Select-O-Matic® XD™ — Cuando la presión del sistema no es predecible
