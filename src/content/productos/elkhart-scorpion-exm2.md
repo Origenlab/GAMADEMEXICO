@@ -18,7 +18,6 @@ galeria:
   - "/img/monitores-contra-incendios/elkhart-scorpion-exm2-fondo-negro.avif"
   - "/img/monitores-contra-incendios/elkhart-scorpion-exm2-fondo-industrial.avif"
   - "/img/monitores-contra-incendios/elkhart-scorpion-exm2-fondo-gris.avif"
-  - "/img/monitores-contra-incendios/monitor-elkhart-brass-scorpion-exm2-vista-frontal.avif"
 ---
 
 ## Monitor Scorpion™ EXM2 — Perfil bajo, rendimiento completo

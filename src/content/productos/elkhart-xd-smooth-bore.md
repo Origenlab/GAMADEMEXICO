@@ -17,7 +17,6 @@ galeria:
   - "/img/boquillas-contra-incendios/elkhart-xd-smooth-bore-fondo-negro.avif"
   - "/img/boquillas-contra-incendios/elkhart-xd-smooth-bore-fondo-industrial.avif"
   - "/img/boquillas-contra-incendios/elkhart-xd-smooth-bore-fondo-gris.avif"
-  - "/img/boquillas-contra-incendios/boquilla-elkhart-brass-xd-smooth-bore-frontal.avif"
 ---
 
 ## Boquilla XD Smooth Bore — El argumento del chorro liso

@@ -18,7 +18,6 @@ galeria:
   - "/img/monitores-contra-incendios/elkhart-sidewinder-manual-fondo-negro.avif"
   - "/img/monitores-contra-incendios/elkhart-sidewinder-manual-fondo-industrial.avif"
   - "/img/monitores-contra-incendios/elkhart-sidewinder-manual-fondo-gris.avif"
-  - "/img/monitores-contra-incendios/monitor-elkhart-brass-sidewinder-manual-vista-frontal.avif"
 ---
 
 ## Monitor Sidewinder™ Manual — Compacto, versátil, probado

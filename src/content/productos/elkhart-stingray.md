@@ -18,7 +18,6 @@ galeria:
   - "/img/monitores-contra-incendios/elkhart-stingray-fondo-negro.avif"
   - "/img/monitores-contra-incendios/elkhart-stingray-fondo-industrial.avif"
   - "/img/monitores-contra-incendios/elkhart-stingray-fondo-gris.avif"
-  - "/img/monitores-contra-incendios/monitor-elkhart-brass-stingray-vista-frontal.avif"
 ---
 
 ## Monitor Stingray™ — Industrial pesado, sin concesiones

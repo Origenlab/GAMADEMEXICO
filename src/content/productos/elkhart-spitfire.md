@@ -17,7 +17,6 @@ galeria:
   - "/img/monitores-contra-incendios/elkhart-spitfire-fondo-negro.avif"
   - "/img/monitores-contra-incendios/elkhart-spitfire-fondo-industrial.avif"
   - "/img/monitores-contra-incendios/elkhart-spitfire-fondo-gris.avif"
-  - "/img/monitores-contra-incendios/monitor-elkhart-brass-spitfire-vista-frontal.avif"
 ---
 
 ## Monitor Spitfire™ — Industrial compacto para espacios reducidos

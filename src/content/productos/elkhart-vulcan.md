@@ -19,7 +19,6 @@ galeria:
   - "/img/monitores-contra-incendios/elkhart-vulcan-fondo-negro.avif"
   - "/img/monitores-contra-incendios/elkhart-vulcan-fondo-industrial.avif"
   - "/img/monitores-contra-incendios/elkhart-vulcan-fondo-gris.avif"
-  - "/img/monitores-contra-incendios/monitor-elkhart-brass-vulcan-vista-frontal.avif"
 ---
 
 ## Monitor Vulcan™ — El estándar de la industria

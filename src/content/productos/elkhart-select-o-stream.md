@@ -17,7 +17,6 @@ galeria:
   - "/img/boquillas-contra-incendios/elkhart-select-o-stream-fondo-negro.avif"
   - "/img/boquillas-contra-incendios/elkhart-select-o-stream-fondo-industrial.avif"
   - "/img/boquillas-contra-incendios/elkhart-select-o-stream-fondo-gris.avif"
-  - "/img/boquillas-contra-incendios/boquilla-elkhart-brass-select-o-stream-frontal.avif"
 ---
 
 ## Boquilla Select-O-Stream™ — Flujo seleccionable para caudales medios

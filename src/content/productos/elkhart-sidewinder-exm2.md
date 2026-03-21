@@ -18,7 +18,6 @@ galeria:
   - "/img/monitores-contra-incendios/elkhart-sidewinder-exm2-fondo-negro.avif"
   - "/img/monitores-contra-incendios/elkhart-sidewinder-exm2-fondo-industrial.avif"
   - "/img/monitores-contra-incendios/elkhart-sidewinder-exm2-fondo-gris.avif"
-  - "/img/monitores-contra-incendios/monitor-elkhart-brass-sidewinder-exm2-vista-frontal.avif"
 
 ---
 
