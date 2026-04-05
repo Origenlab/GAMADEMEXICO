@@ -8,32 +8,32 @@ import { buildOrganizationSchema, buildServiceSchema, buildFAQSchema, buildBread
 
 const faqItems = [
   {
-    pregunta: '¿Cómo puedo solicitar una cotización de equipos contra incendios en Gama de México?',
-    respuesta: 'Puedes solicitar tu cotización a través de nuestro formulario en línea (se envía directo a WhatsApp), escribiéndonos al WhatsApp 55 6529 8240, o llamando al 55 1543 7164. Solo necesitamos el tipo de equipo, las cantidades aproximadas y la ubicación de entrega. Respondemos en menos de 24 horas.',
+    pregunta: '¿Con qué frecuencia debo dar mantenimiento a los equipos contra incendios?',
+    respuesta: 'La NFPA 25 establece las frecuencias de inspección y mantenimiento. En términos generales: las mangueras contra incendios deben inspeccionarse anualmente y someterse a prueba hidrostática cada 5 años. Las válvulas de control deben inspeccionarse semanalmente en sistemas críticos o mensualmente en instalaciones de menor riesgo. Los monitores requieren prueba de operación semestral. La NOM-002-STPS-2010 también establece requerimientos de mantenimiento preventivo para equipos en centros de trabajo.',
   },
   {
-    pregunta: '¿Qué tipos de equipos contra incendios venden?',
-    respuesta: 'Manejamos un catálogo completo en seis categorías: Monitores (tipo corazón, cuello de cisne, certificados y UL Listed), Boquillas (tipo pistola, turbo jet y certificadas), Mangueras (millhose, blindex y de succión), Válvulas (compuerta, globo y angular), Conexiones y herrajes de bronce (chiflones, adaptadores, coples, toma siamesa, conexión Y), y Gabinetes e hidrantes (tipo 30ME e hidrante de banqueta).',
+    pregunta: '¿Qué refacciones para mantenimiento tienen disponibles?',
+    respuesta: 'Contamos con stock inmediato de: empaques y sellos para válvulas de compuerta y globo, acoples y conectores de bronce, juntas y anillos de presión para conexiones, boquillas de repuesto, y herrajes de sujeción para gabinetes. Para componentes internos de monitores Elkhart Brass, podemos gestionar la refacción directamente con el fabricante. Descríbenos el equipo y la pieza que necesitas para verificar disponibilidad.',
   },
   {
-    pregunta: '¿Realizan envíos de equipos contra incendios a todo México?',
-    respuesta: 'Sí, realizamos envíos a toda la República Mexicana. Operamos desde Ciudad de México (Santa Fe) y Querétaro, lo que permite coordinar logística eficiente al centro, norte y sureste del país.',
+    pregunta: '¿Cada cuánto años se debe hacer prueba hidrostática a las mangueras?',
+    respuesta: 'Según NFPA 1962, las mangueras contra incendios deben someterse a prueba hidrostática cada 5 años. La presión de prueba es 1.5 veces la presión de trabajo nominal de la manguera. Mangueras que reprueben la prueba deben retirarse de servicio y reemplazarse. Gama de México tiene disponibilidad de mangueras millhose y blindex de reposición para no interrumpir la operación durante el mantenimiento.',
   },
   {
-    pregunta: '¿Ofrecen asesoría técnica para elegir equipos contra incendios?',
-    respuesta: 'Sí. Nuestros asesores técnicos evalúan tipo de riesgo, normativa aplicable (NOM-002-STPS, protección civil), especificaciones hidráulicas y de diseño para recomendarte los componentes exactos. La asesoría es gratuita y sin compromiso.',
+    pregunta: '¿Puedo comprar válvulas y conexiones de repuesto compatibles con equipos ya instalados?',
+    respuesta: 'Sí. Manejamos válvulas de compuerta, globo y angular, así como conexiones de bronce en los diámetros más comunes (1½", 2", 2½", 3"). Para verificar compatibilidad exacta con tu instalación, compártenos el diámetro nominal, el tipo de rosca (NPT, NST) y el material del equipo existente. Así confirmamos que la pieza de repuesto sea intercambiable.',
   },
   {
-    pregunta: '¿Los equipos contra incendios que venden tienen certificaciones?',
-    respuesta: 'Sí. Como distribuidores autorizados de Elkhart Brass contamos con monitores y boquillas certificados UL (Underwriters Laboratories) y FM (Factory Mutual). Proporcionamos documentación técnica para verificaciones de protección civil.',
+    pregunta: '¿Qué documentación necesito presentar ante Protección Civil del mantenimiento realizado?',
+    respuesta: 'Protección Civil suele solicitar: registro del mantenimiento con fecha, empresa responsable y equipos revisados; resultados de prueba hidrostática para mangueras; estado de funcionamiento de válvulas y gabinetes; y, en algunos municipios, firma de responsiva de ingeniero. Gama de México provee las fichas técnicas y certificados de los equipos que suministramos, que complementan el registro de mantenimiento que elabore la empresa que realizó el servicio.',
   },
   {
-    pregunta: '¿Dónde se ubican las sucursales de Gama de México?',
-    respuesta: 'Tenemos dos sucursales: Prol. Paseo de la Reforma 1015, Piso 1, Santa Fe, 01376 Ciudad de México, y Avenida Constituyentes 120, Santiago de Querétaro, 76030. Horario: lunes a domingo de 6:00 a 16:00 horas.',
+    pregunta: '¿Tienen refacciones para monitores industriales de alto caudal?',
+    respuesta: 'Sí. Para monitores Elkhart Brass (tipo corazón y cuello de cisne), podemos gestionar refacciones directamente con el fabricante al ser distribuidores autorizados. Esto incluye mecanismos de rotación, juntas de sellado, boquillas de repuesto y componentes de control de flujo. El tiempo de disponibilidad depende del modelo específico — contáctanos con el número de parte del monitor para verificar.',
   },
   {
-    pregunta: '¿Qué sectores o industrias atiende Gama de México?',
-    respuesta: 'Atendemos plantas manufactureras, industria química y petroquímica, terminales de almacenamiento, centros de datos, constructoras, hospitales, hoteles, corporativos, firmas de ingeniería, instaladores certificados y brigadas de protección civil. Ofrecemos venta unitaria y cotizaciones corporativas.',
+    pregunta: '¿Puedo comprar equipos de reposición si uno queda fuera de servicio durante mantenimiento?',
+    respuesta: 'Sí, y es la situación más frecuente en mantenimientos preventivos programados. Si durante la inspección detectas que una manguera, válvula o monitor debe retirarse de servicio, podemos entregarte el equipo de reposición en 1-3 días hábiles según tu ubicación. Para empresas con mantenimientos recurrentes, podemos apartarte inventario de reposición con anticipación para no afectar la continuidad operativa.',
   },
 ];
 
@@ -46,12 +46,12 @@ const structuredData = [
 ---
 
 <Layout
-  title="Suministro para Mantenimiento | Refacciones Contra Incendios | Gama de México"
-  description="Refacciones y accesorios para mantenimiento de sistemas contra incendios. Válvulas, conexiones, mangueras y herrajes de bronce. Disponibilidad inmediata para reparaciones."
+  title="Mantenimiento de Sistemas Contra Incendios en México | Gama de México"
+  description="Refacciones y equipos de reposición para mantenimiento conforme NFPA 25 y NOM-002-STPS. Válvulas, mangueras y conexiones con stock inmediato en México."
   activePage="servicios"
   structuredData={structuredData}
   heroTitle="Mantenimiento de Equipos"
-  heroIntro="Servicios de mantenimiento preventivo y correctivo para equipos contra incendios. Inspección, pruebas hidrostáticas, recarga y reparación de mangueras, válvulas y monitores."
+  heroIntro="Refacciones y equipos de reposición para cumplir con NFPA 25 y NOM-002-STPS. Stock inmediato de válvulas, mangueras, conexiones y componentes para monitores Elkhart Brass — para que tu mantenimiento no espere."
   heroBadge="Servicios"
   heroMetrics={[
     { valor: "Preventivo", texto: "Tipo de servicio" },

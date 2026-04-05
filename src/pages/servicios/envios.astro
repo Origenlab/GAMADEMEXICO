@@ -8,32 +8,32 @@ import { buildOrganizationSchema, buildServiceSchema, buildFAQSchema, buildBread
 
 const faqItems = [
   {
-    pregunta: '¿Cómo puedo solicitar una cotización de equipos contra incendios en Gama de México?',
-    respuesta: 'Puedes solicitar tu cotización a través de nuestro formulario en línea (se envía directo a WhatsApp), escribiéndonos al WhatsApp 55 6529 8240, o llamando al 55 1543 7164. Solo necesitamos el tipo de equipo, las cantidades aproximadas y la ubicación de entrega. Respondemos en menos de 24 horas.',
+    pregunta: '¿Cuánto tarda en llegar un pedido a mi ciudad?',
+    respuesta: 'Los tiempos aproximados desde nuestros almacenes en CDMX y Querétaro son: Zona Metro (CDMX, Estado de México, Querétaro, Puebla, Hidalgo): 1-2 días hábiles. Guadalajara, Monterrey, San Luis Potosí, Bajío: 2-3 días hábiles. Norte (Chihuahua, Sonora, Coahuila) y Sureste (Yucatán, Oaxaca, Chiapas): 3-5 días hábiles. Los tiempos pueden variar según disponibilidad del transportista y condiciones de acceso a obra.',
   },
   {
-    pregunta: '¿Qué tipos de equipos contra incendios venden?',
-    respuesta: 'Manejamos un catálogo completo en seis categorías: Monitores (tipo corazón, cuello de cisne, certificados y UL Listed), Boquillas (tipo pistola, turbo jet y certificadas), Mangueras (millhose, blindex y de succión), Válvulas (compuerta, globo y angular), Conexiones y herrajes de bronce (chiflones, adaptadores, coples, toma siamesa, conexión Y), y Gabinetes e hidrantes (tipo 30ME e hidrante de banqueta).',
+    pregunta: '¿Cómo embalan los equipos para que no lleguen dañados?',
+    respuesta: 'Cada equipo se embala según su tipo y fragilidad. Los monitores y boquillas Elkhart Brass viajan en caja individual con espuma protectora. Las válvulas y conexiones de bronce se protegen con tapas en las bocas y papel burbuja. Las mangueras van enrolladas y protegidas. Para envíos de múltiples piezas, utilizamos tarima y fleje cuando el volumen lo justifica. Adjuntamos lista de empaque para facilitar la recepción en almacén u obra.',
   },
   {
-    pregunta: '¿Realizan envíos de equipos contra incendios a todo México?',
-    respuesta: 'Sí, realizamos envíos a toda la República Mexicana. Operamos desde Ciudad de México (Santa Fe) y Querétaro, lo que permite coordinar logística eficiente al centro, norte y sureste del país.',
+    pregunta: '¿Realizan envíos directos a obra o solo a domicilio comercial?',
+    respuesta: 'Enviamos a la dirección que indiques: almacén empresarial, obra en construcción, planta industrial o sucursal. Para entregas en obra, es importante que haya un responsable designado para recibir el pedido con identificación. Coordinar el nombre y teléfono del receptor ayuda a agilizar la entrega con el transportista.',
   },
   {
-    pregunta: '¿Ofrecen asesoría técnica para elegir equipos contra incendios?',
-    respuesta: 'Sí. Nuestros asesores técnicos evalúan tipo de riesgo, normativa aplicable (NOM-002-STPS, protección civil), especificaciones hidráulicas y de diseño para recomendarte los componentes exactos. La asesoría es gratuita y sin compromiso.',
+    pregunta: '¿Quién absorbe el costo del flete?',
+    respuesta: 'El costo de envío se agrega a la cotización de forma desglosada. Para pedidos de alto volumen o cuentas corporativas con compras recurrentes, evaluamos condiciones de flete preferencial. El costo varía según el destino, el peso del pedido y la paquetería disponible para esa zona. Te informamos el costo exacto antes de confirmar la orden.',
   },
   {
-    pregunta: '¿Los equipos contra incendios que venden tienen certificaciones?',
-    respuesta: 'Sí. Como distribuidores autorizados de Elkhart Brass contamos con monitores y boquillas certificados UL (Underwriters Laboratories) y FM (Factory Mutual). Proporcionamos documentación técnica para verificaciones de protección civil.',
+    pregunta: '¿Qué pasa si el pedido llega dañado o incompleto?',
+    respuesta: 'Revisa el pedido al recibirlo y anota cualquier daño visible en el comprobante del transportista antes de firmar. Notifícanos en las primeras 24 horas con foto del daño y número de guía. Gestionamos el reenvío de piezas faltantes o dañadas sin costo adicional cuando el daño ocurrió en tránsito. Si la pieza dañada es crítica para obra, lo priorizamos.',
   },
   {
-    pregunta: '¿Dónde se ubican las sucursales de Gama de México?',
-    respuesta: 'Tenemos dos sucursales: Prol. Paseo de la Reforma 1015, Piso 1, Santa Fe, 01376 Ciudad de México, y Avenida Constituyentes 120, Santiago de Querétaro, 76030. Horario: lunes a domingo de 6:00 a 16:00 horas.',
+    pregunta: '¿Pueden enviar pedidos urgentes el mismo día?',
+    respuesta: 'Para envíos urgentes dentro de la Zona Metro (CDMX y Estado de México), podemos coordinar servicio de mensajería express o entrega en mano el mismo día si el pedido se confirma antes de las 11:00 am y el equipo está en stock. Para otras ciudades, utilizamos servicio de paquetería express (Estafeta, DHL) que puede reducir el tiempo de tránsito. Indica en tu solicitud que es urgente para evaluar opciones.',
   },
   {
-    pregunta: '¿Qué sectores o industrias atiende Gama de México?',
-    respuesta: 'Atendemos plantas manufactureras, industria química y petroquímica, terminales de almacenamiento, centros de datos, constructoras, hospitales, hoteles, corporativos, firmas de ingeniería, instaladores certificados y brigadas de protección civil. Ofrecemos venta unitaria y cotizaciones corporativas.',
+    pregunta: '¿Envían equipos pesados como monitores industriales o gabinetes completos?',
+    respuesta: 'Sí. Monitores tipo corazón, gabinetes 30ME y otros equipos de mayor dimensión se envían en embalaje reforzado. Para pedidos con piezas muy pesadas o de gran volumen coordinamos el envío con fleteras especializadas que pueden entregar directamente en el área de descarga de tu planta u obra. Informa si la entrega requiere rampa o equipo de descarga para coordinar con el transportista.',
   },
 ];
 
@@ -46,12 +46,12 @@ const structuredData = [
 ---
 
 <Layout
-  title="Envíos Nacionales de Equipos Contra Incendios | Gama de México"
-  description="Envíos de equipos contra incendios a toda la República Mexicana. Entregas directas en obra, embalaje especializado y seguimiento en tiempo real. Logística coordinada."
+  title="Envíos de Equipos Contra Incendios a Todo México | Gama de México"
+  description="Enviamos equipos contra incendios a los 32 estados. Entrega en 1-5 días hábiles, embalaje especializado para equipos frágiles y entregas directas a obra."
   activePage="servicios"
   structuredData={structuredData}
   heroTitle="Envíos a Todo México"
-  heroIntro="Logística especializada para equipos contra incendios. Envíos seguros a toda la República Mexicana con embalaje profesional y seguimiento en tiempo real."
+  heroIntro="Enviamos equipos certificados UL/FM a los 32 estados desde CDMX y Querétaro. Embalaje especializado para monitores, válvulas y boquillas, con entrega directa en obra y en 1 a 5 días hábiles según destino."
   heroBadge="Servicios"
   heroMetrics={[
     { valor: "Nacional", texto: "Cobertura total" },

@@ -8,32 +8,32 @@ import { buildOrganizationSchema, buildServiceSchema, buildFAQSchema, buildBread
 
 const faqItems = [
   {
-    pregunta: '¿Cómo puedo solicitar una cotización de equipos contra incendios en Gama de México?',
-    respuesta: 'Puedes solicitar tu cotización a través de nuestro formulario en línea (se envía directo a WhatsApp), escribiéndonos al WhatsApp 55 6529 8240, o llamando al 55 1543 7164. Solo necesitamos el tipo de equipo, las cantidades aproximadas y la ubicación de entrega. Respondemos en menos de 24 horas.',
+    pregunta: '¿Cuánto tarda en llegar una cotización?',
+    respuesta: 'En menos de 24 horas hábiles. Si envías tu solicitud por WhatsApp al 55 6529 8240 con la lista de equipos y cantidades, muchas veces respondemos el mismo día. Para proyectos con listas largas o especificaciones poco comunes, el plazo puede extenderse a 48 horas para asegurar que la información sea exacta.',
   },
   {
-    pregunta: '¿Qué tipos de equipos contra incendios venden?',
-    respuesta: 'Manejamos un catálogo completo en seis categorías: Monitores (tipo corazón, cuello de cisne, certificados y UL Listed), Boquillas (tipo pistola, turbo jet y certificadas), Mangueras (millhose, blindex y de succión), Válvulas (compuerta, globo y angular), Conexiones y herrajes de bronce (chiflones, adaptadores, coples, toma siamesa, conexión Y), y Gabinetes e hidrantes (tipo 30ME e hidrante de banqueta).',
+    pregunta: '¿Qué información necesito proporcionar para cotizar?',
+    respuesta: 'Con esto podemos cotizar: nombre del equipo o categoría (monitor, boquilla, válvula, manguera, etc.), modelo o número de parte si lo tienes, cantidad de piezas, y estado o ciudad de entrega. Si no conoces el modelo exacto, describen el uso y nosotros recomendamos la opción correcta.',
   },
   {
-    pregunta: '¿Realizan envíos de equipos contra incendios a todo México?',
-    respuesta: 'Sí, realizamos envíos a toda la República Mexicana. Operamos desde Ciudad de México (Santa Fe) y Querétaro, lo que permite coordinar logística eficiente al centro, norte y sureste del país.',
+    pregunta: '¿La cotización incluye especificaciones técnicas y certificaciones?',
+    respuesta: 'Sí. Cada cotización incluye descripción técnica del producto, modelo, marca, país de origen, certificaciones aplicables (UL Listed, FM Approved), precio unitario, cantidad, IVA desglosado, tiempo de entrega estimado y vigencia de precios. La cotización está firmada y puede presentarse ante cualquier comité de compras o proceso de licitación.',
   },
   {
-    pregunta: '¿Ofrecen asesoría técnica para elegir equipos contra incendios?',
-    respuesta: 'Sí. Nuestros asesores técnicos evalúan tipo de riesgo, normativa aplicable (NOM-002-STPS, protección civil), especificaciones hidráulicas y de diseño para recomendarte los componentes exactos. La asesoría es gratuita y sin compromiso.',
+    pregunta: '¿Puedo pedir cotización por volumen con descuento?',
+    respuesta: 'Sí. Manejamos precios por volumen para proyectos o compras de 10 piezas o más en la misma categoría. Para proyectos grandes (50 piezas o más), asignamos un ejecutivo de cuenta que puede ofrecer condiciones especiales. Indica en tu solicitud que es una compra de volumen para que el asesor considere esto en la propuesta.',
   },
   {
-    pregunta: '¿Los equipos contra incendios que venden tienen certificaciones?',
-    respuesta: 'Sí. Como distribuidores autorizados de Elkhart Brass contamos con monitores y boquillas certificados UL (Underwriters Laboratories) y FM (Factory Mutual). Proporcionamos documentación técnica para verificaciones de protección civil.',
+    pregunta: '¿En qué formatos entregan la cotización?',
+    respuesta: 'La cotización llega por correo electrónico en PDF con membrete oficial. Si la necesitas también en Word o Excel para integrarla a tu sistema de compras, puedes solicitarlo. Para licitaciones que requieren formato específico de dependencia gubernamental, podemos adaptarnos al formato que indiques.',
   },
   {
-    pregunta: '¿Dónde se ubican las sucursales de Gama de México?',
-    respuesta: 'Tenemos dos sucursales: Prol. Paseo de la Reforma 1015, Piso 1, Santa Fe, 01376 Ciudad de México, y Avenida Constituyentes 120, Santiago de Querétaro, 76030. Horario: lunes a domingo de 6:00 a 16:00 horas.',
+    pregunta: '¿Puedo cotizar equipos que no están en el catálogo del sitio web?',
+    respuesta: 'Sí. Si necesitas un equipo específico que no ves en el catálogo (diámetro especial, material alternativo, configuración personalizada), descríbelo en tu solicitud. Como distribuidores autorizados de Elkhart Brass tenemos acceso a líneas de producto más amplias y podemos consultar disponibilidad de importación para requerimientos especiales.',
   },
   {
-    pregunta: '¿Qué sectores o industrias atiende Gama de México?',
-    respuesta: 'Atendemos plantas manufactureras, industria química y petroquímica, terminales de almacenamiento, centros de datos, constructoras, hospitales, hoteles, corporativos, firmas de ingeniería, instaladores certificados y brigadas de protección civil. Ofrecemos venta unitaria y cotizaciones corporativas.',
+    pregunta: '¿Cuánto tiempo tiene vigencia una cotización?',
+    respuesta: 'Las cotizaciones tienen una vigencia de 15 a 30 días naturales, indicada en el documento. Los precios de equipos importados pueden verse afectados por variación del tipo de cambio, por lo que recomendamos confirmar la orden dentro del período de vigencia para fijar el precio. Si la vigencia venció, podemos reemitir la cotización con precios actualizados en menos de 24 horas.',
   },
 ];
 
@@ -46,12 +46,12 @@ const structuredData = [
 ---
 
 <Layout
-  title="Cotizaciones Corporativas | Licitaciones y Mayoreo | Gama de México"
-  description="Cotizaciones formales para empresas, licitaciones públicas y proyectos gubernamentales. Precios por volumen, documentación técnica completa y facturación CFDI 4.0."
+  title="Solicita Cotización de Equipos Contra Incendios en México | Gama de México"
+  description="Cotización formal en menos de 24h: precios por volumen, especificaciones UL/FM, CFDI 4.0 y documentación para licitaciones. Monitores, válvulas, mangueras y más."
   activePage="servicios"
   structuredData={structuredData}
   heroTitle="Cotizaciones Rápidas"
-  heroIntro="Obtén precios y disponibilidad de equipos contra incendios en menos de 24 horas. Cotizaciones detalladas con especificaciones técnicas, fichas y tiempos de entrega."
+  heroIntro="Cotización formal en menos de 24 horas con precios actualizados, especificaciones técnicas UL/FM, tiempos de entrega confirmados y CFDI 4.0. Lista para presentar a comités de compras y licitaciones."
   heroBadge="Servicios"
   heroMetrics={[
     { valor: "24h", texto: "Tiempo de respuesta" },

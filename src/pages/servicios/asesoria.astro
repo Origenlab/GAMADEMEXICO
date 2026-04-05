@@ -8,51 +8,55 @@ import { buildOrganizationSchema, buildServiceSchema, buildFAQSchema, buildBread
 
 const faqItems = [
   {
-    pregunta: '¿Cómo puedo solicitar una cotización de equipos contra incendios en Gama de México?',
-    respuesta: 'Puedes solicitar tu cotización a través de nuestro formulario en línea (se envía directo a WhatsApp), escribiéndonos al WhatsApp 55 6529 8240, o llamando al 55 1543 7164. Solo necesitamos el tipo de equipo, las cantidades aproximadas y la ubicación de entrega. Respondemos en menos de 24 horas.',
+    pregunta: '¿Qué información necesito para recibir asesoría técnica?',
+    respuesta: 'Con datos básicos podemos orientarte desde el primer contacto: tipo de instalación (planta industrial, bodega, hospital, etc.), superficie aproximada en m², tipo de riesgo o actividad que se realiza, y si ya cuentas con algún diseño hidráulico previo. Con esto evaluamos qué normativas aplican y qué equipos necesitas. No se requiere proyecto completo para iniciar la asesoría.',
   },
   {
-    pregunta: '¿Qué tipos de equipos contra incendios venden?',
-    respuesta: 'Manejamos un catálogo completo en seis categorías: Monitores (tipo corazón, cuello de cisne, certificados y UL Listed), Boquillas (tipo pistola, turbo jet y certificadas), Mangueras (millhose, blindex y de succión), Válvulas (compuerta, globo y angular), Conexiones y herrajes de bronce (chiflones, adaptadores, coples, toma siamesa, conexión Y), y Gabinetes e hidrantes (tipo 30ME e hidrante de banqueta).',
+    pregunta: '¿Cuánto tarda en responder un asesor técnico?',
+    respuesta: 'Respondemos en menos de 24 horas hábiles. Si el requerimiento es urgente (proyecto en licitación, verificación próxima de Protección Civil), puedes indicarlo en tu mensaje de WhatsApp al 55 6529 8240 y priorizamos la atención. La asesoría es gratuita y sin compromiso de compra.',
   },
   {
-    pregunta: '¿Realizan envíos de equipos contra incendios a todo México?',
-    respuesta: 'Sí, realizamos envíos a toda la República Mexicana. Operamos desde Ciudad de México (Santa Fe) y Querétaro, lo que permite coordinar logística eficiente al centro, norte y sureste del país.',
+    pregunta: '¿Pueden orientarme sobre las normas NOM-002-STPS y NFPA aplicables a mi empresa?',
+    respuesta: 'Sí. Te orientamos sobre qué normativas aplican según tu sector y tamaño de empresa. La NOM-002-STPS-2010 aplica a la mayoría de centros de trabajo en México. Las NFPA 13, 14, 20 y 24 aplican a sistemas fijos de sprinklers, mangueras, bombas e hidrantes privados. También consideramos los requerimientos de tu aseguradora, que en muchos casos exige certificación FM en los equipos.',
   },
   {
-    pregunta: '¿Ofrecen asesoría técnica para elegir equipos contra incendios?',
-    respuesta: 'Sí. Nuestros asesores técnicos evalúan tipo de riesgo, normativa aplicable (NOM-002-STPS, protección civil), especificaciones hidráulicas y de diseño para recomendarte los componentes exactos. La asesoría es gratuita y sin compromiso.',
+    pregunta: '¿La asesoría técnica incluye especificación de equipos con ficha técnica?',
+    respuesta: 'Sí. Al finalizar la asesoría, te proporcionamos una lista de equipos recomendados con sus especificaciones técnicas: modelo, caudal, presión de trabajo, material, certificaciones (UL/FM) y número de parte. Esta especificación puede usarse directamente para tu proceso de cotización formal o licitación.',
   },
   {
-    pregunta: '¿Los equipos contra incendios que venden tienen certificaciones?',
-    respuesta: 'Sí. Como distribuidores autorizados de Elkhart Brass contamos con monitores y boquillas certificados UL (Underwriters Laboratories) y FM (Factory Mutual). Proporcionamos documentación técnica para verificaciones de protección civil.',
+    pregunta: '¿Pueden revisar un proyecto de sistema contra incendios ya diseñado por otro ingeniero?',
+    respuesta: 'Sí. Si tienes un proyecto de ingeniería o memoria de cálculo, podemos revisar que los equipos especificados (monitores, boquillas, válvulas, conexiones) sean los correctos según el diseño hidráulico y las normativas aplicables. También podemos sugerir alternativas equivalentes certificadas UL/FM si algún producto no está disponible.',
   },
   {
-    pregunta: '¿Dónde se ubican las sucursales de Gama de México?',
-    respuesta: 'Tenemos dos sucursales: Prol. Paseo de la Reforma 1015, Piso 1, Santa Fe, 01376 Ciudad de México, y Avenida Constituyentes 120, Santiago de Querétaro, 76030. Horario: lunes a domingo de 6:00 a 16:00 horas.',
+    pregunta: '¿Qué diferencia hay entre un equipo UL Listed y uno FM Approved?',
+    respuesta: 'UL Listed (Underwriters Laboratories) es la certificación más común y requerida por Protección Civil para la mayoría de instalaciones en México. FM Approved (Factory Mutual) es un estándar más riguroso exigido principalmente por aseguradoras industriales para instalaciones de alto riesgo como petroquímicas, terminales de combustibles y plantas de manufactura con riesgo elevado. Gama de México cuenta con equipos Elkhart Brass con ambas certificaciones.',
   },
   {
-    pregunta: '¿Qué sectores o industrias atiende Gama de México?',
-    respuesta: 'Atendemos plantas manufactureras, industria química y petroquímica, terminales de almacenamiento, centros de datos, constructoras, hospitales, hoteles, corporativos, firmas de ingeniería, instaladores certificados y brigadas de protección civil. Ofrecemos venta unitaria y cotizaciones corporativas.',
+    pregunta: '¿Proporcionan documentación técnica para verificaciones de Protección Civil?',
+    respuesta: 'Sí. Entregamos fichas técnicas oficiales, certificados UL/FM, cartas de garantía del fabricante y, cuando aplica, la documentación de importación de Elkhart Brass. Este paquete documental cubre los requerimientos típicos de verificación de Protección Civil municipal y federal en México.',
+  },
+  {
+    pregunta: '¿Pueden asesorar en el diseño de sistemas de espuma para tanques de combustible?',
+    respuesta: 'Sí. Contamos con equipos para sistemas de protección con espuma: monitores de espuma, generadores, boquillas y accesorios certificados. La asesoría incluye orientación sobre las normas NFPA 11 y NFPA 30 aplicables a sistemas de extinción en tanques de almacenamiento de combustibles e instalaciones petroquímicas.',
   },
 ];
 
 const structuredData = [
   buildOrganizationSchema(),
-  buildServiceSchema({ name: 'Asesoría Técnica en Equipos Contra Incendios', description: 'Asesoría técnica gratuita para selección de equipos contra incendios. Evaluación de riesgos, orientación normativa NOM/NFPA y documentación para proyectos.', url: '/servicios/asesoria' }),
+  buildServiceSchema({ name: 'Asesoría Técnica en Equipos Contra Incendios', description: 'Asesoría técnica gratuita para selección de equipos contra incendios certificados UL/FM. Evaluación de riesgos, orientación normativa NOM-002-STPS y NFPA, documentación para Protección Civil. Respuesta en 24h.', url: '/servicios/asesoria' }),
   buildBreadcrumbSchema([{ name: 'Inicio', url: '/' }, { name: 'Servicios', url: '/servicios' }, { name: 'Asesoría Técnica', url: '/servicios/asesoria' }]),
   buildFAQSchema(faqItems),
 ];
 ---
 
 <Layout
-  title="Asesoría Técnica Contra Incendios | Gama de México"
-  description="Asesoría técnica gratuita para selección de equipos contra incendios. Evaluación de riesgos, orientación normativa NOM/NFPA y documentación para proyectos."
+  title="Obtén Asesoría Técnica en Protección Contra Incendios en México | Gama de México"
+  description="Asesoría técnica gratuita: evaluación de riesgo, normativas NOM/NFPA, especificación de equipos UL/FM y documentación para Protección Civil. Respuesta en 24h."
   activePage="servicios"
   structuredData={structuredData}
   heroTitle="Asesoría Técnica"
   heroBadge="Servicios"
-  heroIntro="Orientación especializada para diseñar sistemas de protección contra incendios que cumplan con normativas y especificaciones técnicas."
+  heroIntro="Asesoría técnica gratuita por especialistas en NOM-002-STPS y NFPA. Evaluamos tu instalación, especificamos equipos UL/FM y entregamos documentación lista para Protección Civil — sin costo ni compromiso."
   heroMetrics={[
     { valor: "24h", texto: "Respuesta" },
     { valor: "NOM/NFPA", texto: "Normativas" },
