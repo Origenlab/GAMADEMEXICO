@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Base.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
 import { getCollection } from 'astro:content';
 import Faq from '../components/Faq.astro';
 import { getBackgroundImageUrl } from '../lib/images';
@@ -90,12 +91,18 @@ const structuredData = [
 ---
 
 <Layout
-  title="Conexiones y Herrajes Contra Incendio | México"
-  description="Conexiones y herrajes contra incendio. Adaptadores bronce, toma siamesa, Wye, coples Storz. Certificados UL/FM. Distribuidor Elkhart Brass México."
+  title="Conexiones Contra Incendios NH/NPT/Storz | Elkhart Brass | Distribuidor México"
+  description="Adaptadores NH/NPT/Storz, tomas siamesas FDC y coples Elkhart Brass. Bronce forjado 300 PSI, certificados UL/FM NFPA 13/14/24. Distribuidor México — Cotiza hoy."
   activePage="equipos"
   structuredData={structuredData}
   ogImage="/img/categorias/conexiones-herrajes-hero.avif"
   heroTitle="Conexiones y Herrajes"
+  heroIntro="Adaptadores NH/NPT/Storz, tomas siamesas FDC, conexiones Y con válvula y coples de acoplamiento rápido. Bronce forjado certificado UL/FM para sistemas NFPA 13, 14 y 24."
+  heroMetrics={[
+    { valor: "UL/FM", texto: "Certificadas" },
+    { valor: "300", texto: "PSI máximo" },
+    { valor: "NFPA", texto: "Cumplimiento" }
+  ]}
   heroBadge="Equipos Contra Incendios"
   heroShowRightContent={true}
   heroImage="/img/categorias/conexiones-herrajes-hero.avif"
@@ -107,16 +114,7 @@ const structuredData = [
     <p>Todos nuestros herrajes cuentan con certificación UL y FM, garantizando compatibilidad universal y operación confiable bajo presión. Como distribuidor autorizado Elkhart Brass, proporcionamos productos originales con documentación completa para auditorías y cumplimiento normativo.</p>
   </Fragment>
 
-  <!-- BREADCRUMB -->
-  <nav class="breadcrumb" aria-label="Navegación de migas de pan">
-    <div class="container">
-      <ol class="breadcrumb__list">
-        <li class="breadcrumb__item"><a href="/" class="breadcrumb__link">Inicio</a></li>
-        <li class="breadcrumb__item"><a href="/equipos" class="breadcrumb__link">Equipos</a></li>
-        <li class="breadcrumb__item breadcrumb__item--active" aria-current="page">Conexiones y Herrajes</li>
-      </ol>
-    </div>
-  </nav><!-- PRODUCTOS DINAMICOS -->
+  <Breadcrumb /><!-- PRODUCTOS DINAMICOS -->
   <section class="categories" id="conexiones">
     <div class="container">
       <div class="section-header">
@@ -216,7 +214,7 @@ const structuredData = [
             <a href="/conexiones/siamesa" class="btn btn--outline">Ver catálogo completo →</a>
           </div>
         </div>
-        <div class="service-detail__image" role="img" aria-label="Toma siamesa FDC para bomberos" style={`background-image: url('${detailImage('/img/conexiones-herrajes/toma-siamesa-2a-plain-frontal.avif')}'); background-size: cover; background-position: center;`}></div>
+        <div class="service-detail__image" role="img" aria-label="Conexión siamesa de bronce para sistema contra incendios" style={`background-image: url('${detailImage('/img/conexiones-herrajes/producto-conexion-siamesa-bronce.avif')}'); background-size: cover; background-position: center;`}></div>
       </div>
 
       <div class="service-detail" id="detalle-storz">

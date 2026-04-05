@@ -17,8 +17,8 @@ categoria: "boquillas"
 autor:
   nombre: "Equipo Gama de México"
   cargo: "Asesoría Técnica"
-imagen: "/img/blog/boquillas-contra-incendios-tipos-seleccion-tecnica.avif"
-imagenAlt: "Boquillas contra incendios para brigadas y sistemas fijos"
+imagen: "/img/blog/blog-comparativa-boquillas-tipos.avif"
+imagenAlt: "Comparativa de tipos de boquillas contra incendios para brigadas y sistemas fijos"
 tags: ["boquillas contra incendios", "boquillas para brigadas", "sistemas fijos", "NFPA 1964", "equipos contra incendios industriales"]
 destacado: true
 draft: false

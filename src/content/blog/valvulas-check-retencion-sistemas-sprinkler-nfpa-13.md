@@ -19,8 +19,8 @@ categoria: "valvulas"
 autor:
   nombre: "Ing. Roberto Hernández"
   cargo: "Director Técnico en Sistemas Contra Incendios"
-imagen: "/img/blog/valvulas-contra-incendios-nfpa-sala-control-industrial.avif"
-imagenAlt: "Válvulas check de retención para sistemas sprinkler NFPA 13"
+imagen: "/img/blog/blog-normativa-nfpa-valvulas.avif"
+imagenAlt: "Normativa NFPA para válvulas contra incendios en sistemas de protección activa"
 tags: ["válvulas check", "NFPA 13", "sistemas sprinkler", "válvula retención", "UL FM", "mantenimiento válvulas", "protección incendios"]
 destacado: false
 draft: false
