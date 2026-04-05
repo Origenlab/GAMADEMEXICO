@@ -51,6 +51,26 @@ Los coples Storz y reducciones son componentes esenciales para el despliegue rá
 - Operaciones de despliegue rápido
 - Transiciones de diámetro en líneas
 
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Elkhart Brass |
+| Modelos | S-25 (Storz 2.5"), 101A (reducción swivel), 102A (campana), 111A (incrementador) |
+| Material | Aluminio forjado / Bronce fundido |
+| Diámetros disponibles | 1", 1.5", 2.5", 4", 5", 6" |
+| Presión de trabajo | 300 PSI (coples 2.5"), 250 PSI (coples 4"–6") |
+| Presión de prueba | 900 PSI |
+| Certificaciones | UL Listed, FM Approved |
+
+## Normas Aplicables
+
+- **NFPA 1963** — Roscas estándar para conexiones de mangueras (NH/NST)
+- **DIN 14821** — Estándar internacional para acoplamientos Storz
+- **NFPA 14** — Sistemas de tuberías verticales y mangueras
+- **UL Listed** — UL 405 (fire hose connections)
+- **NOM-002-STPS-2010** — Condiciones de seguridad contra incendios
+
 ## Certificaciones
 
 Estos coples y reducciones cuentan con certificación **UL Listed** y **FM Approved**, garantizando su compatibilidad con sistemas contra incendios certificados.

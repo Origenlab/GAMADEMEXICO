@@ -53,6 +53,28 @@ La estación de manguera con carrete oscilante permite el despliegue rápido y s
 - Estacionamientos y bodegas
 - Plantas químicas
 
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Elkhart Brass |
+| Modelo | EST-MAN-180 |
+| Material del carrete | Acero galvanizado, diámetro 18" |
+| Manguera | 1.5" × 30 m, 300 PSI de trabajo |
+| Boquilla | Bronce cromado ajustable 1.5" NST |
+| Presión máx. de salida | 100 PSI (NFPA 14) |
+| PRV requerida | Sí, si presión estática > 175 PSI |
+| Radio de cobertura | 39.7 m (130 ft) por estación |
+| Giro del carrete | 180° (brazo oscilante) |
+| Certificaciones | NFPA 14, NFPA 1963 |
+
+## Normas Aplicables
+
+- **NOM-002-STPS-2010** — Condiciones de seguridad contra incendios en centros de trabajo
+- **NFPA 14** — Standard for the Installation of Standpipe and Hose Systems (sección 6.6)
+- **NFPA 1962** — Standard for the Care, Use, Inspection, Service Testing of Fire Hose
+- **NFPA 1963** — Standard for Fire Hose Connections (roscas NH/NST)
+
 ## Certificaciones
 
 Esta estación de manguera es compatible con **NFPA 14** (Standard for the Installation of Standpipe and Hose Systems) y **NFPA 1963** (Standard for Fire Hose Connections), cumpliendo con los requisitos para sistemas Class II y Class III.
