@@ -20,40 +20,62 @@ destacado: true
 orden: 25
 ---
 
-Válvula mariposa indicadora con apertura rápida de 90° y sello hermético bubble-tight. Incluye indicador visual de posición y switch tamper para monitoreo eléctrico.
+Válvula mariposa indicadora con apertura rápida de 90° y sello hermético bubble-tight. Incluye indicador visual de posición y switch tamper para monitoreo eléctrico, siendo la opción de mayor uso en sistemas de control seccional por zonas donde se requiere supervisión continua del estado de la válvula desde un tablero centralizado.
 
-## Características principales
+A diferencia de la válvula OS&Y que ocupa más espacio axial, la válvula mariposa en configuración wafer tiene una longitud facial mínima, lo que la hace ideal para instalaciones con espacio reducido entre bridas. Su bajo par de operación (comparado con compuerta o globo del mismo diámetro) permite apertura con operador de engranaje manual o actuador eléctrico, facilitando automatización de sistemas de supresión.
 
-- Apertura/cierre rápido: rotación 90°
-- Sello hermético bubble-tight
-- Indicador visual integrado de posición
-- Switch tamper para supervisión eléctrica
-- Presión de trabajo: 175, 250 y 300 PSI
-- Presión de prueba: 2x presión de trabajo
-- Diámetros: 2", 2.5", 3", 4", 6", 8", 10" y 12"
+## Especificaciones técnicas
 
-## Materiales
+| Parámetro | Detalle |
+|---|---|
+| **Marca** | Nibco |
+| **Modelo** | WD-3510-8N (wafer) / LD-3510-8N (lug) |
+| **Material cuerpo** | Hierro dúctil ASTM A536 / Hierro gris |
+| **Material disco** | Bronce C83600 / Acero inoxidable 316 |
+| **Eje** | Acero inoxidable ASTM 316 de dos piezas |
+| **Asiento** | EPDM moldeado (sello bubble-tight) |
+| **Presión trabajo** | 175 PSI (estándar), 250 PSI, 300 PSI |
+| **Presión prueba** | 2x presión de trabajo |
+| **Temperatura** | 32°F a 230°F (0°C a 110°C) |
+| **Diámetros** | 2", 2.5", 3", 4", 6", 8", 10" y 12" |
+| **Conexiones** | Wafer AWWA C606 / Extremos ranurados / Bridada |
+| **Operador** | Engranaje con indicador + switch tamper integrado |
+| **Certificaciones** | UL Listed, FM 1112, NOM-002-STPS-2010 |
 
-- Cuerpo: hierro dúctil o bronce
-- Disco: bronce / acero inoxidable
-- Eje: acero inoxidable ASTM 316
-- Asiento: EPDM
+## Características destacadas
+
+- Switch tamper integrado de fábrica: al mover la válvula más de 1/4 de vuelta desde la posición abierta, envía señal al tablero de alarma contra incendios —no requiere instalar switch externo adicional
+- Sello bubble-tight con asiento de EPDM moldeado al cuerpo: sella a presiones bajas donde otros sellos elastoméricos fallan, incluyendo prueba con presión de aire
+- Eje de acero inoxidable 316 en dos piezas: elimina el punto de fuga por eje que presentan diseños de eje pasante, cumpliendo requisito de sello axial de NFPA
+- Disco en bronce o acero inoxidable 316: resistente a agua de red con cloro residual hasta 4 ppm sin corrosión interna
+- Diseño wafer de mínima longitud facial: ocupa hasta 60% menos espacio axial que válvula OS&Y del mismo diámetro, crítico en cuartos de bombas y cuartos de rociadores compactos
+- Bajo par de operación en comparación con compuerta: apto para actuador eléctrico en sistemas de supresión automatizados
 
 ## Conexiones
 
-- Wafer (ranuras estándar IPS AWWA C606)
-- Extremos ranurados
-- Bridadas disponibles
+- Wafer (ranuras estándar IPS AWWA C606): comprimida entre bridas existentes, instalación más económica
+- Extremos ranurados: para sistemas con acopladores Victaulic o similares, sin necesidad de bridas
+- Bridada ANSI B16.1 o B16.5: disponible en modelos lug para instalaciones donde se requiere retirar la válvula sin desconectar la línea completa
 
 ## Operador
 
-- Operador de engranaje con indicador de posición
-- Switch tamper integrado para supervisión
-- Apertura/cierre gradual con mínimo esfuerzo
+- Operador de engranaje estándar con indicador visual de posición (escala 0-90°) visible en la tapa
+- Switch tamper de dos posiciones con dos contactos normalmente abiertos (NA): envía señal de supervisión a panel de alarma al detectar movimiento de válvula
+- Volante de cierre de emergencia disponible como accesorio para operación manual rápida sin herramientas
 
 ## Aplicaciones
 
-- Control seccional en sistemas grandes
-- Aislamiento de zonas
-- Puntos de prueba y drenaje
-- Control de flujo con supervisión
+- Control seccional por zonas en sistemas de rociadores de edificios de múltiples pisos o grandes plantas industriales
+- Aislamiento de secciones para mantenimiento sin apagar el sistema completo
+- Puntos de prueba y drenaje donde se requiere supervisión eléctrica del estado
+- Sistemas de supresión a base de agentes especiales (espuma, CO2, Novec) donde la supervisión de la válvula es requisito de la normativa
+- Cuartos de bombas: aislamiento de líneas de prueba con supervisión integrada al tablero
+
+## Normas aplicables
+
+- **UL Listed** — Underwriters Laboratories: diseño, construcción y pruebas para servicio de incendios
+- **FM 1112** — Factory Mutual: válvulas mariposa para sistemas de protección contra incendios
+- **NFPA 13** — Standard for the Installation of Sprinkler Systems: válvulas de control de zona con supervisión
+- **NFPA 14** — Standard for the Installation of Standpipe and Hose Systems: control seccional en risers
+- **NFPA 72** — National Fire Alarm and Signaling Code: requisitos de switch tamper y supervisión eléctrica
+- **NOM-002-STPS-2010** — Condiciones de seguridad para prevención y protección contra incendios en centros de trabajo
