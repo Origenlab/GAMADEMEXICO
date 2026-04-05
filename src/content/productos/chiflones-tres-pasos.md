@@ -55,3 +55,20 @@ Chiflón de tres pasos que permite seleccionar entre cerrado, neblina (fog) y ch
 - Brigadas industriales
 - Control de descarga en operaciones ofensivas
 - Áreas con solventes químicos (UL 401)
+
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Elkhart Brass |
+| Modelo | 205-B |
+| Material | Bronce fundido |
+| Diámetros | 1.5" NHT y 2.5" NHT |
+| Presión de trabajo | 75–125 GPM a 100 PSI |
+| Certificaciones | UL 401, NFPA 1964 |
+
+## Normas Aplicables
+
+- **NFPA 1964** — Norma para boquillas rociadores y pistolas de agua (spray nozzles)
+- **UL 401** — Estándar para boquillas de agua y espuma para combate de incendios
+- **NOM-002-STPS-2010** — Condiciones de seguridad contra incendio en centros de trabajo

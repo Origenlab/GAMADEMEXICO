@@ -42,3 +42,22 @@ Toma siamesa FDC de alto caudal con tres entradas 2.5" NH para sistemas que requ
 - Complejos industriales
 - Almacenes de alta ocupación
 - Instalaciones de alto riesgo
+
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Elkhart Brass |
+| Modelo | 6-A |
+| Material | Bronce fundido |
+| Diámetros | Entradas (3) 2.5" NH hembra swivel / Salida 5"–6" bridada |
+| Presión de trabajo | 1,500 GPM total |
+| Certificaciones | UL Listed, FM Approved, NFPA 14 |
+
+## Normas Aplicables
+
+- **NFPA 13** — Norma para la instalación de sistemas de rociadores (sección 12, FDC para rociadores)
+- **NFPA 14** — Norma para sistemas de tubería vertical y mangueras (FDC para standpipes)
+- **UL 405** — Estándar para tomas de conexión de departamento de bomberos
+- **FM Approved** — Aprobación Factory Mutual para equipos contra incendios
+- **NOM-002-STPS-2010** — Condiciones de seguridad contra incendio en centros de trabajo

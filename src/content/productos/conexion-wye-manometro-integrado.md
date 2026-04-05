@@ -42,3 +42,21 @@ Conexión Y con manómetro de presión integrado que permite monitorear la presi
 - Control de presión en líneas de ataque
 - Entrenamiento de bomberos
 - Pruebas de sistemas
+
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Elkhart Brass |
+| Modelo | B-97-AG |
+| Material | Aluminio Elk-O-Lite forjado |
+| Diámetros | Entrada 2.5" NH / Salidas (2) 2.5" NH |
+| Presión de trabajo | 200 PSI (manómetro 0–300 PSI) |
+| Certificaciones | UL Listed, FM Approved |
+
+## Normas Aplicables
+
+- **NFPA 14** — Norma para sistemas de tubería vertical y mangueras (standpipe Class I/II/III)
+- **NFPA 1963** — Norma para roscas de acoplamiento de mangueras contra incendios (rosca NH)
+- **UL Listed** — Certificación Underwriters Laboratories para equipos contra incendios
+- **NOM-002-STPS-2010** — Condiciones de seguridad contra incendio en centros de trabajo

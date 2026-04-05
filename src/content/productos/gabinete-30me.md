@@ -51,3 +51,27 @@ El gabinete tipo 30ME es la solución integral para primera respuesta contra inc
 ## Certificaciones
 
 Este gabinete cumple con **NOM-002-STPS-2010** (Condiciones de seguridad - Prevención y protección contra incendios en los centros de trabajo) y es compatible con **NFPA 14** (Standard for the Installation of Standpipe and Hose Systems).
+
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Nacional |
+| Modelo | GAB-30ME |
+| Material | Acero calibre 22 / Bronce |
+| Dimensiones | 88 cm alto x 85 cm ancho x 21 cm fondo |
+| Manguera | 1.5" x 30 m, doble forro, coples bronce NST |
+| Válvula angular | Bronce 1.5", entrada NPT, salida NST |
+| Presión de trabajo | 300 PSI |
+| Boquilla | Tres posiciones (chorro, neblina, cerrado) |
+| Puerta | Vidrio templado 3 mm o acrílico 1 mm |
+| Acabado | Pintura electrostática roja |
+| Espacio extintor | 4.5 o 6 kg |
+| Certificaciones | NOM-002-STPS-2010, NFPA 14 |
+
+## Normas Aplicables
+
+- **NOM-002-STPS-2010** — Condiciones de seguridad, prevención y protección contra incendios en los centros de trabajo (sección 6.2 gabinetes)
+- **NOM-003-SEGOB-2011** — Señales y avisos para protección civil (señalización del gabinete)
+- **NOM-018-STPS** — Sistema armonizado para identificación y comunicación de peligros y riesgos
+- **NFPA 14** — Standard for the Installation of Standpipe and Hose Systems (Clase II: gabinete manguera 1.5")

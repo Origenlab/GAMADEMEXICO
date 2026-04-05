@@ -37,6 +37,25 @@ Adaptador de bronce que permite conectar equipos con rosca NH/NST a sistemas con
 - Empaque: EPDM resistente a temperaturas extremas
 - Dientes de retención: acero inoxidable
 
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Elkhart Brass |
+| Modelo | D-327-S |
+| Material | Bronce fundido forjado |
+| Presión de trabajo | 300 PSI |
+| Presión de prueba | 1,000 PSI |
+| Conexión(es) | NH hembra 2.5" a Storz macho 2.5" (cuarto de vuelta) |
+| Certificaciones | UL Listed, FM Approved |
+
+## Normas Aplicables
+
+- **NFPA 1963** — Roscas para mangueras contra incendios (NH/NST)
+- **NFPA 14** — Sistemas de tuberías verticales y mangueras
+- **UL Listed** — UL 405: Conexiones para mangueras contra incendios
+- **NOM-002-STPS-2010** — Condiciones de seguridad contra incendios
+
 ## Aplicaciones
 
 - Modernización de sistemas con rosca NH

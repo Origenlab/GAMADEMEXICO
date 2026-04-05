@@ -48,3 +48,20 @@ Chiflón de tres pasos de mayor diámetro para líneas de 2.5" con mayor capacid
 - Protección de exposiciones
 - Combate exterior
 - Brigadas industriales
+
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Elkhart Brass |
+| Modelo | 205-B-25 |
+| Material | Bronce fundido |
+| Diámetros | 2.5" NH |
+| Presión de trabajo | 150–250 GPM a 100 PSI |
+| Certificaciones | UL 401, NFPA 1964 |
+
+## Normas Aplicables
+
+- **NFPA 1964** — Norma para boquillas rociadores y pistolas de agua (spray nozzles)
+- **UL 401** — Estándar para boquillas de agua y espuma para combate de incendios
+- **NOM-002-STPS-2010** — Condiciones de seguridad contra incendio en centros de trabajo

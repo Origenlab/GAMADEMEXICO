@@ -36,6 +36,25 @@ Cap de protección para acoplamientos Storz que protege los dientes y el empaque
 - Cable: acero inoxidable flexible
 - Terminales: aluminio prensado
 
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Elkhart Brass |
+| Modelo | CS-25 |
+| Material | Aluminio anodizado |
+| Presión de trabajo | 250 PSI |
+| Presión de prueba | 750 PSI |
+| Conexión(es) | Storz 2.5" (cuarto de vuelta) con cable acero inoxidable 16" |
+| Certificaciones | UL Listed |
+
+## Normas Aplicables
+
+- **NFPA 1901** — Norma para aparatos de extinción de incendios automotrices
+- **NFPA 14** — Sistemas de tuberías verticales y mangueras
+- **UL Listed** — UL 405: Conexiones para mangueras contra incendios
+- **NOM-002-STPS-2010** — Condiciones de seguridad contra incendios
+
 ## Aplicaciones
 
 - Protección de mangueras Storz almacenadas

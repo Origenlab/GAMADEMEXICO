@@ -50,3 +50,20 @@ Chiflón premium de la serie Chief XD con cuerpo forjado (no fundido) y mango ba
 - Bomberos profesionales
 - Situaciones de alta demanda
 - Brigadas elite
+
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Elkhart Brass |
+| Modelo | Chief XD |
+| Material | Aluminio forjado |
+| Diámetros | 1.5" NH |
+| Presión de trabajo | 160–200 GPM a 50–75 PSI |
+| Certificaciones | UL 401, NFPA 1964 |
+
+## Normas Aplicables
+
+- **NFPA 1964** — Norma para boquillas rociadores y pistolas de agua (spray nozzles)
+- **UL 401** — Estándar para boquillas de agua y espuma para combate de incendios
+- **NOM-002-STPS-2010** — Condiciones de seguridad contra incendio en centros de trabajo

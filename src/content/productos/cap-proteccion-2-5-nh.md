@@ -36,6 +36,25 @@ Cap de protección para cubrir y proteger roscas hembra de tomas siamesas, hidra
 - Cadena: acero con eslabones soldados
 - Acabado: pulido natural o cromado
 
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Elkhart Brass |
+| Modelo | C-17 |
+| Material | Bronce fundido |
+| Presión de trabajo | 175 PSI |
+| Presión de prueba | 525 PSI |
+| Conexión(es) | Hembra NH 2.5" con cadena de seguridad 9" |
+| Certificaciones | UL Listed, NOM-002-STPS-2010 |
+
+## Normas Aplicables
+
+- **NFPA 1901** — Norma para aparatos de extinción de incendios automotrices
+- **NFPA 14** — Sistemas de tuberías verticales y mangueras
+- **UL Listed** — UL 405: Conexiones para mangueras contra incendios
+- **NOM-002-STPS-2010** — Condiciones de seguridad contra incendios
+
 ## Aplicaciones
 
 - Protección de tomas siamesas FDC

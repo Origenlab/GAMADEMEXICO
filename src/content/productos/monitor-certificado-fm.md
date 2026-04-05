@@ -52,3 +52,25 @@ La certificación FM Approved representa el estándar más riguroso de la indust
 ## Certificaciones
 
 Este monitor cuenta con aprobación **FM Approved** bajo estándar **FM 1421**, además de cumplir con **NOM-002-STPS-2010**, **NFPA 15** y **NFPA 24**, garantizando su aceptación por aseguradoras internacionales y autoridades locales.
+
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Elkhart Brass |
+| Modelo | FM-STD-001 |
+| Material | Bronce forjado |
+| Materiales alternativos | Acero inoxidable 316, aluminio Elk-O-Lite |
+| Flujo | Según modelo seleccionado |
+| Estándar de certificación | FM 1421 |
+| Inspecciones | Trimestrales de fábrica |
+| Documentación | Certificado FM con número de listado, curvas de desempeño |
+| Certificaciones | FM Approved, FM 1421, NOM-002-STPS-2010, NFPA 15, NFPA 24 |
+
+## Normas Aplicables
+
+- **NFPA 15** — Standard for Water Spray Fixed Systems for Fire Protection (sistemas de agua en spray)
+- **NFPA 24** — Standard for the Installation of Private Fire Service Mains and Their Appurtenances
+- **FM 1421** — Factory Mutual Standard for Fire Monitor Nozzles (aprobación FM)
+- **UL Listed** — Underwriters Laboratories (componentes de monitor)
+- **NOM-002-STPS-2010** — Condiciones de seguridad, prevención y protección contra incendios en los centros de trabajo

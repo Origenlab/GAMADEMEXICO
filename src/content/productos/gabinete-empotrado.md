@@ -53,3 +53,26 @@ El gabinete empotrado está diseñado para instalaciones donde la estética es t
 ## Certificaciones
 
 Este gabinete cumple con **NOM-002-STPS-2010** y es compatible con **NFPA 14**, garantizando su aceptación en instalaciones reguladas en México.
+
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Elkhart Brass |
+| Modelo | GAB-EMP-24 |
+| Material | Acero laminado / Inoxidable T430 |
+| Dimensiones (empotrado) | 24" x 30" x 5.5" |
+| Dimensiones (sobrepuesto) | 24" x 30" x 8" |
+| Ceja (empotrado) | 5/8" para tablaroca |
+| Puerta | Acero calibre 16, vidrio templado 3 mm |
+| Bisagra | Continua 180° |
+| Presión de trabajo | 300 PSI |
+| Acabados disponibles | Rojo electrostático, blanco, acero inoxidable T430 #4 |
+| Certificaciones | NOM-002-STPS-2010, NFPA 14 |
+
+## Normas Aplicables
+
+- **NOM-002-STPS-2010** — Condiciones de seguridad, prevención y protección contra incendios en los centros de trabajo (sección 6.2 gabinetes)
+- **NOM-003-SEGOB-2011** — Señales y avisos para protección civil (señalización del gabinete)
+- **NOM-018-STPS** — Sistema armonizado para identificación y comunicación de peligros y riesgos
+- **NFPA 14** — Standard for the Installation of Standpipe and Hose Systems (Clase II: gabinete manguera 1.5")

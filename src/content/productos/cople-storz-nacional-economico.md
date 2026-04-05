@@ -36,6 +36,24 @@ Cople Storz de fabricación nacional que ofrece funcionalidad de conexión rápi
 - Dientes: acero tratado
 - Empaque: EPDM estándar
 
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Nacional |
+| Modelo | STZ-25 |
+| Material | Aluminio fundido |
+| Presión de trabajo | 200 PSI |
+| Presión de prueba | 600 PSI |
+| Conexión(es) | Storz 2.5" simétrico (cuarto de vuelta) |
+| Certificaciones | NOM-002-STPS-2010 |
+
+## Normas Aplicables
+
+- **DIN 14821** — Estándar internacional para acoplamientos Storz
+- **NFPA 1963** — Roscas para mangueras contra incendios
+- **NOM-002-STPS-2010** — Condiciones de seguridad contra incendios
+
 ## Aplicaciones
 
 - Brigadas industriales básicas

@@ -49,3 +49,28 @@ El hidrante enterrado flush mount queda a nivel del piso con tapa removible, man
 ## Certificaciones
 
 Certificado **AWWA C502** y **UL 246**.
+
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | National |
+| Modelo | HID-FLUSH-250 |
+| Material | Hierro dúctil / Acero inoxidable |
+| Instalación | A nivel de piso (flush mount) |
+| Tapa | Acero inoxidable 304 con marco |
+| Acceso | Llave especial removible |
+| Salidas | 2 x 2.5" NST en cámara |
+| Presión de trabajo | 250 PSI |
+| Profundidad cámara | 60 cm |
+| Cámara | Hierro dúctil revestido |
+| Conexiones | Bronce |
+| Certificaciones | AWWA C502, UL 246 |
+
+## Normas Aplicables
+
+- **NFPA 24** — Standard for the Installation of Private Fire Service Mains and Their Appurtenances (tuberías subterráneas para servicio de incendios)
+- **NFPA 291** — Recommended Practice for Fire Flow Testing and Marking of Hydrants (pruebas de flujo en hidrantes)
+- **UL 246** — Hydrants for Fire-Protection Service (certificación de hidrantes)
+- **AWWA C502** — Dry-Barrel Fire Hydrants (hidrantes barril seco)
+- **NOM-002-STPS-2010** — Condiciones de seguridad, prevención y protección contra incendios en los centros de trabajo

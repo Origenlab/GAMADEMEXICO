@@ -48,3 +48,28 @@ El hidrante resistente a tráfico incorpora una sección de ruptura controlada q
 ## Certificaciones
 
 Certificado **AWWA C502** y **UL 246**.
+
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Mueller |
+| Modelo | HID-TRF-250 |
+| Material | Hierro dúctil ASTM A-536 |
+| Sección de ruptura | Controlada a 75% de la altura |
+| Válvula ante ruptura | Cierre automático |
+| Presión de trabajo | 250 PSI |
+| Salidas | 2 x 2.5" NST + 1 x 4.5" NST |
+| Reparación | Solo reemplazo de parte superior |
+| Base | Hierro dúctil reforzado, permanece bajo tierra |
+| Válvula anti-robo | Bronce al silicio |
+| Pernos de ruptura | Acero calibrado |
+| Certificaciones | AWWA C502, UL 246 |
+
+## Normas Aplicables
+
+- **NFPA 24** — Standard for the Installation of Private Fire Service Mains and Their Appurtenances (tuberías subterráneas para servicio de incendios)
+- **NFPA 291** — Recommended Practice for Fire Flow Testing and Marking of Hydrants (pruebas de flujo en hidrantes)
+- **UL 246** — Hydrants for Fire-Protection Service (certificación de hidrantes)
+- **AWWA C502** — Dry-Barrel Fire Hydrants (hidrantes barril seco)
+- **NOM-002-STPS-2010** — Condiciones de seguridad, prevención y protección contra incendios en los centros de trabajo

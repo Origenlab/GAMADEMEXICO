@@ -55,3 +55,21 @@ La conexión Y permite derivar una línea de suministro de agua en dos salidas i
 ## Certificaciones
 
 Esta conexión cuenta con certificación **UL Listed** y **FM Approved**, garantizando su aceptación en sistemas contra incendios regulados y operaciones de bomberos.
+
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Elkhart Brass |
+| Modelo | B-97-A |
+| Material | Aluminio Elk-O-Lite forjado |
+| Diámetros | Entrada 2.5" NH / Salidas (2) 2.5" NH |
+| Presión de trabajo | 200 PSI |
+| Certificaciones | UL Listed, FM Approved |
+
+## Normas Aplicables
+
+- **NFPA 14** — Norma para sistemas de tubería vertical y mangueras (standpipe Class I/II/III)
+- **NFPA 1963** — Norma para roscas de acoplamiento de mangueras contra incendios (rosca NH)
+- **UL Listed** — Certificación Underwriters Laboratories para equipos contra incendios
+- **NOM-002-STPS-2010** — Condiciones de seguridad contra incendio en centros de trabajo

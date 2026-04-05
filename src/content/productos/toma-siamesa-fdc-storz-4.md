@@ -42,3 +42,22 @@ Toma siamesa con salida Storz de 4" para conexión rápida al sistema. Combina e
 - Sistemas con líneas Storz
 - Conexión rápida de gran caudal
 - Instalaciones industriales
+
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Elkhart Brass |
+| Modelo | 4-AS |
+| Material | Bronce fundido |
+| Diámetros | Entradas (2) 2.5" NH hembra swivel / Salida Storz 4" |
+| Presión de trabajo | 1,000 GPM total |
+| Certificaciones | UL Listed, FM Approved, NFPA 14 |
+
+## Normas Aplicables
+
+- **NFPA 13** — Norma para la instalación de sistemas de rociadores (sección 12, FDC para rociadores)
+- **NFPA 14** — Norma para sistemas de tubería vertical y mangueras (FDC para standpipes)
+- **UL 405** — Estándar para tomas de conexión de departamento de bomberos
+- **FM Approved** — Aprobación Factory Mutual para equipos contra incendios
+- **NOM-002-STPS-2010** — Condiciones de seguridad contra incendio en centros de trabajo

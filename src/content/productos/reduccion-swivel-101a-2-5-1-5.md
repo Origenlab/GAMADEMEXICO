@@ -36,6 +36,25 @@ Reducción con mecanismo swivel giratorio que evita torsión de mangueras durant
 - Rodamientos: sellados de baja fricción
 - Empaque: EPDM de alta resistencia
 
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Elkhart Brass |
+| Modelo | 101A |
+| Material | Aluminio Elk-O-Lite forjado |
+| Presión de trabajo | 250 PSI |
+| Presión de prueba | 750 PSI |
+| Conexión(es) | Entrada NH hembra swivel 2.5" (360°) / Salida NH macho 1.5" |
+| Certificaciones | UL Listed, FM Approved |
+
+## Normas Aplicables
+
+- **NFPA 1963** — Roscas para mangueras contra incendios (NH/NST)
+- **NFPA 14** — Sistemas de tuberías verticales y mangueras
+- **UL Listed** — UL 405: Conexiones para mangueras contra incendios
+- **NOM-002-STPS-2010** — Condiciones de seguridad contra incendios
+
 ## Aplicaciones
 
 - Transición suministro a ataque

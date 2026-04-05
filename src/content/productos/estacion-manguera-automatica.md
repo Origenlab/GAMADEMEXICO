@@ -48,3 +48,27 @@ La estación de manguera automática elimina pasos adicionales durante una emerg
 ## Certificaciones
 
 Compatible con **NFPA 14** y **NFPA 1963**.
+
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Elkhart Brass |
+| Modelo | EST-AUTO-180 |
+| Material | Acero / Bronce cromado |
+| Activación | Automática al girar el carrete |
+| Manguera | 1.5" x 30 m, doble forro, 300 PSI |
+| Carrete | Oscilante 180°, diámetro 18" |
+| Boquilla | Bronce cromado ajustable |
+| Válvula | Integrada con apertura por rotación |
+| Mecanismo | Acero inoxidable |
+| Presión máx. salida | 100 PSI |
+| Montaje | Muro o gabinete |
+| Certificaciones | NFPA 14, NFPA 1963 |
+
+## Normas Aplicables
+
+- **NOM-002-STPS-2010** — Condiciones de seguridad, prevención y protección contra incendios en los centros de trabajo
+- **NFPA 14** — Standard for the Installation of Standpipe and Hose Systems (sección 6.6 hose stations, Clase II)
+- **NFPA 1962** — Standard for the Care, Use, Inspection, Service Testing, and Replacement of Fire Hose (prueba de servicio de mangueras)
+- **UL Listed** — Underwriters Laboratories (componentes certificados)

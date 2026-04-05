@@ -46,3 +46,27 @@ El gabinete doble compartimento integra el sistema de manguera con espacio dedic
 ## Certificaciones
 
 Cumple con **NOM-002-STPS-2010**, **NFPA 14** y **NFPA 10**.
+
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Nacional |
+| Modelo | GAB-DC-30E |
+| Material | Acero calibre 22 |
+| Dimensiones | 88 cm alto x 110 cm ancho x 21 cm fondo |
+| Compartimento izquierdo | Manguera 1.5" x 30 m |
+| Compartimento derecho | Extintor 4.5 o 6 kg (no incluido) |
+| Puertas | Dos independientes con vidrio templado |
+| Válvula angular | Bronce 1.5" |
+| División interna | Acero calibre 24 |
+| Acabado | Pintura electrostática roja |
+| Certificaciones | NOM-002-STPS-2010, NFPA 14, NFPA 10 |
+
+## Normas Aplicables
+
+- **NOM-002-STPS-2010** — Condiciones de seguridad, prevención y protección contra incendios en los centros de trabajo (sección 6.2 gabinetes)
+- **NOM-003-SEGOB-2011** — Señales y avisos para protección civil (señalización del gabinete)
+- **NOM-018-STPS** — Sistema armonizado para identificación y comunicación de peligros y riesgos
+- **NFPA 14** — Standard for the Installation of Standpipe and Hose Systems (Clase II: gabinete manguera 1.5")
+- **NFPA 10** — Standard for Portable Fire Extinguishers (aplica al compartimento de extintor)

@@ -49,3 +49,29 @@ La estación de manguera en acero inoxidable 304 está diseñada para ambientes 
 ## Certificaciones
 
 Compatible con **NFPA 14** y certificación **NSF**.
+
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Elkhart Brass |
+| Modelo | EST-INOX-30 |
+| Material | Acero inoxidable 304 |
+| Manguera | 1.5" x 30 m, compatible FDA (EPDM grado alimenticio) |
+| Carrete | Oscilante 180°, acero inoxidable 304 |
+| Conexiones | Acero inoxidable 1.5" |
+| Válvula | Acero inoxidable tipo globo |
+| Boquilla | Acero inoxidable ajustable |
+| Herrajes | Acero inoxidable 316 |
+| Acabado | Pulido sanitario |
+| Soldaduras | TIG pulidas |
+| Presión máx. salida | 100 PSI |
+| Certificaciones | NFPA 14, NSF |
+
+## Normas Aplicables
+
+- **NOM-002-STPS-2010** — Condiciones de seguridad, prevención y protección contra incendios en los centros de trabajo
+- **NFPA 14** — Standard for the Installation of Standpipe and Hose Systems (sección 6.6 hose stations)
+- **NFPA 1962** — Standard for the Care, Use, Inspection, Service Testing, and Replacement of Fire Hose (prueba de servicio de mangueras)
+- **UL Listed** — Underwriters Laboratories (componentes certificados)
+- **NSF** — National Sanitation Foundation (contacto con agua potable/aplicaciones alimentarias)

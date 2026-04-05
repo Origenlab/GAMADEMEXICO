@@ -48,3 +48,30 @@ El hidrante de barril seco está diseñado para regiones con temperaturas bajo c
 ## Certificaciones
 
 Certificado **AWWA C502**, **UL 246** y **NSF 61**.
+
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | American AVK |
+| Modelo | HID-BS-250 |
+| Material | Hierro dúctil ASTM A-536 |
+| Tipo | Barril seco con drenaje automático |
+| Presión de trabajo | 250 PSI |
+| Profundidad enterramiento | 1.2 a 2.4 m (ajustable) |
+| Salidas | 2 x 2.5" NST + 1 x 4.5" NST |
+| Válvula | Compresión en base |
+| Drenaje | Automático al cerrar |
+| Barril superior | Hierro dúctil |
+| Vástago | Acero inoxidable |
+| Sellos | EPDM para baja temperatura |
+| Certificaciones | AWWA C502, UL 246, NSF 61 |
+
+## Normas Aplicables
+
+- **NFPA 24** — Standard for the Installation of Private Fire Service Mains and Their Appurtenances (tuberías subterráneas para servicio de incendios)
+- **NFPA 291** — Recommended Practice for Fire Flow Testing and Marking of Hydrants (pruebas de flujo en hidrantes)
+- **UL 246** — Hydrants for Fire-Protection Service (certificación de hidrantes)
+- **AWWA C502** — Dry-Barrel Fire Hydrants (hidrantes barril seco)
+- **NOM-002-STPS-2010** — Condiciones de seguridad, prevención y protección contra incendios en los centros de trabajo
+- **NSF 61** — Drinking Water System Components (contacto con agua potable)

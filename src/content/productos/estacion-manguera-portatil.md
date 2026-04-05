@@ -49,3 +49,27 @@ La estación de manguera portátil permite llevar la capacidad de combate de inc
 ## Certificaciones
 
 Compatible con **NFPA 14** para aplicaciones móviles.
+
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Nacional |
+| Modelo | EST-PORT-30 |
+| Material | Acero / Bronce |
+| Manguera | 1.5" x 30 m en carrete |
+| Conexión alimentación | Manguera 2.5" x 10 m |
+| Válvula | Globo 1.5" con manija |
+| Boquilla | Bronce ajustable |
+| Ruedas | 4 industriales con freno, hule 6" |
+| Estructura | Acero tubular calibre 14 |
+| Acabado | Pintura epóxica roja |
+| Presión máx. salida | 100 PSI |
+| Certificaciones | NFPA 14 |
+
+## Normas Aplicables
+
+- **NOM-002-STPS-2010** — Condiciones de seguridad, prevención y protección contra incendios en los centros de trabajo
+- **NFPA 14** — Standard for the Installation of Standpipe and Hose Systems (sección 6.6 hose stations)
+- **NFPA 1962** — Standard for the Care, Use, Inspection, Service Testing, and Replacement of Fire Hose (prueba de servicio de mangueras)
+- **UL Listed** — Underwriters Laboratories (componentes certificados)

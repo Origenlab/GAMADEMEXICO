@@ -37,6 +37,25 @@ Adaptador universal revolucionario con mecanismo de trinquete positivo que acept
 - Mecanismo: acero inoxidable
 - Empaque: EPDM de alta resistencia
 
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Elkhart Brass |
+| Modelo | 435 |
+| Material | Aluminio Elk-O-Lite forjado |
+| Presión de trabajo | 300 PSI |
+| Presión de prueba | 900 PSI |
+| Conexión(es) | Universal 2.5" — acepta NH, NPT, NPSH, British Instantaneous |
+| Certificaciones | UL Listed, FM Approved |
+
+## Normas Aplicables
+
+- **NFPA 1963** — Roscas para mangueras contra incendios (NH/NST)
+- **NFPA 14** — Sistemas de tuberías verticales y mangueras
+- **UL Listed** — UL 405: Conexiones para mangueras contra incendios
+- **NOM-002-STPS-2010** — Condiciones de seguridad contra incendios
+
 ## Aplicaciones
 
 - Interoperabilidad entre cuerpos de bomberos

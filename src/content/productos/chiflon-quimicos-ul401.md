@@ -48,3 +48,21 @@ Chiflón con certificación UL 401 específica para combate de fuegos Clase B qu
 - Refinerías
 - Plantas petroquímicas
 - Almacenes de solventes
+
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Elkhart Brass |
+| Modelo | 205-B-C |
+| Material | Bronce fundido |
+| Diámetros | 1.5" NH |
+| Presión de trabajo | 95–125 GPM a 100 PSI |
+| Certificaciones | UL 401, FM Approved, NFPA 1964 |
+
+## Normas Aplicables
+
+- **NFPA 1964** — Norma para boquillas rociadores y pistolas de agua (spray nozzles)
+- **UL 401** — Estándar para boquillas de agua y espuma para combate de incendios (Clase A y B)
+- **FM Approved** — Aprobación Factory Mutual para equipos contra incendios
+- **NOM-002-STPS-2010** — Condiciones de seguridad contra incendio en centros de trabajo

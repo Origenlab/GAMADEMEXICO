@@ -36,6 +36,25 @@ Incrementador que permite expandir el diámetro de una línea de 1.5" a 2.5" par
 - Interior pulido para flujo óptimo
 - Empaque: EPDM de alta resistencia
 
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Elkhart Brass |
+| Modelo | 111A |
+| Material | Aluminio Elk-O-Lite forjado |
+| Presión de trabajo | 250 PSI |
+| Presión de prueba | 750 PSI |
+| Conexión(es) | Entrada NH hembra 1.5" / Salida NH macho 2.5" |
+| Certificaciones | UL Listed, FM Approved |
+
+## Normas Aplicables
+
+- **NFPA 1963** — Roscas para mangueras contra incendios (NH/NST)
+- **NFPA 14** — Sistemas de tuberías verticales y mangueras
+- **UL Listed** — UL 405: Conexiones para mangueras contra incendios
+- **NOM-002-STPS-2010** — Condiciones de seguridad contra incendios
+
 ## Aplicaciones
 
 - Conexión de líneas menores a equipos mayores

@@ -52,3 +52,24 @@ La certificación UL Listed es el sello de confianza más reconocido en América
 ## Certificaciones
 
 Este monitor cuenta con certificación **UL Listed** y es compatible con la normativa **NOM-002-STPS-2010**, garantizando su aceptación por Protección Civil, bomberos y aseguradoras en México.
+
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Elkhart Brass |
+| Modelo | UL-STD-001 |
+| Material | Bronce forjado |
+| Materiales alternativos | Acero inoxidable, aluminio Elk-O-Lite |
+| Flujo | Según modelo seleccionado |
+| Pruebas | Rendimiento hidráulico, resistencia a presión, durabilidad, seguridad operativa |
+| Documentación | Certificado UL con número de archivo, manual de instalación |
+| Certificaciones | UL Listed, NOM-002-STPS-2010 |
+
+## Normas Aplicables
+
+- **NFPA 15** — Standard for Water Spray Fixed Systems for Fire Protection (sistemas de agua en spray)
+- **NFPA 24** — Standard for the Installation of Private Fire Service Mains and Their Appurtenances
+- **FM 1421** — Factory Mutual Standard for Fire Monitor Nozzles
+- **UL Listed** — Underwriters Laboratories (certificación integral del monitor)
+- **NOM-002-STPS-2010** — Condiciones de seguridad, prevención y protección contra incendios en los centros de trabajo

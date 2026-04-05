@@ -44,3 +44,26 @@ A diferencia de las boquillas automáticas, la Phantom XD™ mantiene el flujo e
 
 ### Por qué elegir Gama de México
 Distribuidor autorizado Elkhart Brass en México. La Phantom XD™ disponible en múltiples configuraciones de flujo. Asesoría técnica sin costo.
+
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Elkhart Brass |
+| Modelo | Phantom® XD™ |
+| Material | Aleación de aluminio / Bronce naval |
+| Flujos seleccionables | 95, 125, 150, 200 GPM (según modelo) |
+| Presión nominal | 100 PSI en cada flujo seleccionado |
+| Patrones de descarga | Chorro directo, niebla, fog amplio |
+| Selector | Rotatorio de posición fija con indicadores visuales |
+| Internos | Bronce |
+| Conexión | 1.5" NST (estándar) |
+| Certificaciones | UL Listed, FM Approved, NFPA 1964 |
+
+## Normas Aplicables
+
+- **NFPA 15** — Standard for Water Spray Fixed Systems for Fire Protection
+- **NFPA 1964** — Standard for Spray Nozzles (Certificate of Conformance para boquillas)
+- **FM 1421** — Factory Mutual Standard for Fire Monitor Nozzles (FM Approved)
+- **UL Listed** — Underwriters Laboratories (certificación del producto)
+- **NOM-002-STPS-2010** — Condiciones de seguridad, prevención y protección contra incendios en los centros de trabajo

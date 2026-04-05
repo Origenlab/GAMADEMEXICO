@@ -46,3 +46,25 @@ El gabinete semiempotrado combina las ventajas del empotrado con menor profundid
 ## Certificaciones
 
 Cumple con **NOM-002-STPS-2010** y **NFPA 14**.
+
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Nacional |
+| Modelo | GAB-SE-30 |
+| Material | Acero calibre 22 |
+| Dimensiones | 88 cm alto x 85 cm ancho x 15 cm empotrado + 6 cm proyección |
+| Ceja decorativa | 2" (5 cm) perímetro completo |
+| Manguera | 1.5" x 30 m, doble forro |
+| Válvula angular | Bronce 1.5" |
+| Puerta | Vidrio templado 3 mm |
+| Acabado | Pintura electrostática roja o blanca |
+| Certificaciones | NOM-002-STPS-2010, NFPA 14 |
+
+## Normas Aplicables
+
+- **NOM-002-STPS-2010** — Condiciones de seguridad, prevención y protección contra incendios en los centros de trabajo (sección 6.2 gabinetes)
+- **NOM-003-SEGOB-2011** — Señales y avisos para protección civil (señalización del gabinete)
+- **NOM-018-STPS** — Sistema armonizado para identificación y comunicación de peligros y riesgos
+- **NFPA 14** — Standard for the Installation of Standpipe and Hose Systems (Clase II: gabinete manguera 1.5")

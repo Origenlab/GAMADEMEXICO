@@ -47,3 +47,27 @@ El hidrante con indicador de posición permite verificar visualmente si la válv
 ## Certificaciones
 
 Certificado **AWWA C502** y **UL 246**.
+
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Mueller |
+| Modelo | HID-IND-250 |
+| Material | Hierro dúctil ASTM A-536 |
+| Indicador | Bandera roja/verde visible |
+| Posición abierta | Bandera roja vertical |
+| Posición cerrada | Bandera verde horizontal |
+| Presión de trabajo | 250 PSI |
+| Salidas | 2 x 2.5" NST + 1 x 4.5" NST |
+| Salidas material | Bronce ASTM B-62 |
+| Mecanismo indicador | Acero inoxidable con pintura |
+| Certificaciones | AWWA C502, UL 246 |
+
+## Normas Aplicables
+
+- **NFPA 24** — Standard for the Installation of Private Fire Service Mains and Their Appurtenances (tuberías subterráneas para servicio de incendios)
+- **NFPA 291** — Recommended Practice for Fire Flow Testing and Marking of Hydrants (pruebas de flujo en hidrantes)
+- **UL 246** — Hydrants for Fire-Protection Service (certificación de hidrantes)
+- **AWWA C502** — Dry-Barrel Fire Hydrants (hidrantes barril seco)
+- **NOM-002-STPS-2010** — Condiciones de seguridad, prevención y protección contra incendios en los centros de trabajo

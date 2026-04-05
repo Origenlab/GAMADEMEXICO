@@ -42,3 +42,20 @@ Toma siamesa FDC de fabricación nacional que cumple con normativa mexicana a pr
 - Instalaciones básicas
 - Cumplimiento normativo NOM
 - Respaldo de sistemas
+
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Nacional |
+| Modelo | FDC-25 |
+| Material | Bronce fundido |
+| Diámetros | Entradas (2) 2.5" NH hembra |
+| Presión de trabajo | 400 GPM por entrada |
+| Certificaciones | NOM-002-STPS-2010 |
+
+## Normas Aplicables
+
+- **NFPA 13** — Norma para la instalación de sistemas de rociadores (sección 12, FDC para rociadores)
+- **NFPA 14** — Norma para sistemas de tubería vertical y mangueras (FDC para standpipes)
+- **NOM-002-STPS-2010** — Condiciones de seguridad contra incendio en centros de trabajo

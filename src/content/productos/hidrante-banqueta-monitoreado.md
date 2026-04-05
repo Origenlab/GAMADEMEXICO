@@ -48,3 +48,29 @@ El hidrante monitoreado incorpora sensores IoT que reportan en tiempo real el es
 ## Certificaciones
 
 Certificado **AWWA C502**, **UL 246** y **FCC** para comunicaciones.
+
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Mueller |
+| Modelo | HID-SMART-250 |
+| Material | Hierro dúctil ASTM A-536 |
+| Sensor de apertura | Magnético sin contacto |
+| Medición de flujo | Ultrasónico integrado |
+| Comunicación | LoRaWAN / NB-IoT / LTE-M |
+| Vida útil batería | 10 años |
+| Protección sensores | IP68 |
+| Electrónica | Caja NEMA 4X |
+| Presión de trabajo | 250 PSI |
+| Alarmas | Apertura, flujo anormal, impacto |
+| Certificaciones | AWWA C502, UL 246, FCC |
+
+## Normas Aplicables
+
+- **NFPA 24** — Standard for the Installation of Private Fire Service Mains and Their Appurtenances (tuberías subterráneas para servicio de incendios)
+- **NFPA 291** — Recommended Practice for Fire Flow Testing and Marking of Hydrants (pruebas de flujo en hidrantes)
+- **UL 246** — Hydrants for Fire-Protection Service (certificación de hidrantes)
+- **AWWA C502** — Dry-Barrel Fire Hydrants (hidrantes barril seco)
+- **NOM-002-STPS-2010** — Condiciones de seguridad, prevención y protección contra incendios en los centros de trabajo
+- **FCC** — Federal Communications Commission (certificación de comunicaciones inalámbricas)

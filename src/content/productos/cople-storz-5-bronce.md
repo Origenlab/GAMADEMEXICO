@@ -36,6 +36,25 @@ Cople Storz de 5" en bronce fundido para aplicaciones de alto caudal que requier
 - Dientes: acero inoxidable
 - Empaque: EPDM de alta resistencia
 
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Elkhart Brass |
+| Modelo | S-50-B |
+| Material | Bronce fundido |
+| Presión de trabajo | 300 PSI |
+| Presión de prueba | 900 PSI |
+| Conexión(es) | Storz 5" simétrico (cuarto de vuelta) |
+| Certificaciones | UL Listed, FM Approved |
+
+## Normas Aplicables
+
+- **DIN 14821** — Estándar internacional para acoplamientos Storz
+- **NFPA 1963** — Roscas para mangueras contra incendios
+- **UL Listed** — UL 405: Conexiones para mangueras contra incendios
+- **NOM-002-STPS-2010** — Condiciones de seguridad contra incendios
+
 ## Aplicaciones
 
 - Líneas principales de suministro

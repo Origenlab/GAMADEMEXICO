@@ -48,3 +48,19 @@ Chiflón de tres pasos de fabricación nacional que cumple con normativa mexican
 - Sistemas de respaldo
 - Entrenamiento y prácticas
 - Proyectos con presupuesto limitado
+
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Nacional |
+| Modelo | CHF-15 |
+| Material | Bronce fundido |
+| Diámetros | 1.5" NH |
+| Presión de trabajo | 60–100 GPM a 100 PSI |
+| Certificaciones | NOM-002-STPS-2010 |
+
+## Normas Aplicables
+
+- **NFPA 1964** — Norma para boquillas rociadores y pistolas de agua (spray nozzles)
+- **NOM-002-STPS-2010** — Condiciones de seguridad contra incendio en centros de trabajo

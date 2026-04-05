@@ -36,6 +36,25 @@ Adaptador de aluminio Elk-O-Lite forjado que ofrece la misma resistencia que el 
 - Acabado: anodizado duro negro
 - Empaque: EPDM de alta resistencia
 
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Elkhart Brass |
+| Modelo | D-327-L |
+| Material | Aluminio Elk-O-Lite forjado |
+| Presión de trabajo | 250 PSI |
+| Presión de prueba | 750 PSI |
+| Conexión(es) | NH hembra 4" a Storz macho 4" (cuarto de vuelta) |
+| Certificaciones | UL Listed, FM Approved |
+
+## Normas Aplicables
+
+- **NFPA 1963** — Roscas para mangueras contra incendios (NH/NST)
+- **NFPA 14** — Sistemas de tuberías verticales y mangueras
+- **UL Listed** — UL 405: Conexiones para mangueras contra incendios
+- **NOM-002-STPS-2010** — Condiciones de seguridad contra incendios
+
 ## Aplicaciones
 
 - Operaciones de bomberos

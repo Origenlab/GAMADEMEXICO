@@ -42,6 +42,24 @@ Soporte de gabinete que permite almacenar manguera plegada en forma de acordeón
 - Altura recomendada: 1.2-1.5 metros
 - Tornillería incluida
 
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Elkhart Brass |
+| Modelo | HR-25 |
+| Material | Bronce fundido / Acero galvanizado |
+| Presión de trabajo | N/A (accesorio de montaje) |
+| Presión de prueba | N/A |
+| Conexión(es) | Compatible con mangueras 1.5" y 2.5" — capacidad hasta 30 m |
+| Certificaciones | NOM-002-STPS-2010 |
+
+## Normas Aplicables
+
+- **NFPA 14** — Sistemas de tuberías verticales y mangueras
+- **NFPA 10** — Extintores portátiles contra incendios (almacenamiento y equipamiento)
+- **NOM-002-STPS-2010** — Condiciones de seguridad contra incendios
+
 ## Aplicaciones
 
 - Gabinetes contra incendios

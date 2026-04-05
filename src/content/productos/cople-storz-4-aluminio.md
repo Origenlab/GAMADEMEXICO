@@ -36,6 +36,25 @@ Cople Storz de 4" para líneas de suministro de gran diámetro. Conexión asexua
 - Dientes: acero inoxidable
 - Empaque: EPDM resistente a temperaturas extremas
 
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Elkhart Brass |
+| Modelo | S-40 |
+| Material | Aluminio forjado |
+| Presión de trabajo | 250 PSI |
+| Presión de prueba | 750 PSI |
+| Conexión(es) | Storz 4" simétrico (cuarto de vuelta) |
+| Certificaciones | UL Listed, FM Approved |
+
+## Normas Aplicables
+
+- **DIN 14821** — Estándar internacional para acoplamientos Storz
+- **NFPA 1963** — Roscas para mangueras contra incendios
+- **UL Listed** — UL 405: Conexiones para mangueras contra incendios
+- **NOM-002-STPS-2010** — Condiciones de seguridad contra incendios
+
 ## Aplicaciones
 
 - Líneas de suministro de gran caudal

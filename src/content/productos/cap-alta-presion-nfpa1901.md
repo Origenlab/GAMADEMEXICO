@@ -36,6 +36,25 @@ Cap de alta presión diseñado según NFPA 1901 para aplicaciones en vehículos 
 - Mango: bronce sólido
 - Empaque: EPDM de alta presión
 
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Elkhart Brass |
+| Modelo | C-50 |
+| Material | Bronce fundido |
+| Presión de trabajo | 500 PSI |
+| Presión de prueba | 1,500 PSI |
+| Conexión(es) | Hembra NH 2.5" |
+| Certificaciones | UL Listed, NFPA 1901 |
+
+## Normas Aplicables
+
+- **NFPA 1901** — Norma para aparatos de extinción de incendios automotrices
+- **NFPA 14** — Sistemas de tuberías verticales y mangueras
+- **UL Listed** — UL 405: Conexiones para mangueras contra incendios
+- **NOM-002-STPS-2010** — Condiciones de seguridad contra incendios
+
 ## Aplicaciones
 
 - Vehículos de bomberos

@@ -42,3 +42,21 @@ Conexión Y con acoplamientos Storz de cuarto de vuelta para despliegue ultra r�
 - Operaciones de gran caudal
 - Refinerías y petroquímicas
 - Aeropuertos y terminales
+
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Elkhart Brass |
+| Modelo | B-97-S |
+| Material | Aluminio Elk-O-Lite forjado |
+| Diámetros | Entrada Storz 5" / Salidas (2) Storz 2.5" |
+| Presión de trabajo | 200 PSI |
+| Certificaciones | UL Listed, FM Approved |
+
+## Normas Aplicables
+
+- **NFPA 14** — Norma para sistemas de tubería vertical y mangueras (standpipe Class I/II/III)
+- **NFPA 1963** — Norma para roscas de acoplamiento de mangueras contra incendios (rosca NH)
+- **UL Listed** — Certificación Underwriters Laboratories para equipos contra incendios
+- **NOM-002-STPS-2010** — Condiciones de seguridad contra incendio en centros de trabajo

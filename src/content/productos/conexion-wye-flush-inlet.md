@@ -42,3 +42,21 @@ Conexión Y con válvula de purga (flush) en la entrada que permite limpiar resi
 - Operaciones con agua con sedimentos
 - Drafting desde cuerpos de agua
 - Limpieza de líneas contaminadas
+
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Elkhart Brass |
+| Modelo | B-97-AF |
+| Material | Aluminio Elk-O-Lite forjado |
+| Diámetros | Entrada 2.5" NH swivel / Salidas (2) 2.5" NH / Purga 1" |
+| Presión de trabajo | 200 PSI |
+| Certificaciones | UL Listed, FM Approved |
+
+## Normas Aplicables
+
+- **NFPA 14** — Norma para sistemas de tubería vertical y mangueras (standpipe Class I/II/III)
+- **NFPA 1963** — Norma para roscas de acoplamiento de mangueras contra incendios (rosca NH)
+- **UL Listed** — Certificación Underwriters Laboratories para equipos contra incendios
+- **NOM-002-STPS-2010** — Condiciones de seguridad contra incendio en centros de trabajo

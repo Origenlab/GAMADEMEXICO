@@ -48,3 +48,27 @@ La estación de manguera compacta de 15 metros está diseñada para instalacione
 ## Certificaciones
 
 Compatible con **NFPA 14** para sistemas Class II.
+
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Nacional |
+| Modelo | EST-15M-90 |
+| Material | Acero / Bronce |
+| Manguera | 1.5" x 15 m, doble forro |
+| Carrete | Oscilante 90°, diámetro 14" |
+| Conexión | 1.5" NST |
+| Válvula | Globo bronce 1.5" |
+| Boquilla | Bronce cromado ajustable |
+| Cobertura | Hasta 20 m de radio |
+| Presión máx. salida | 100 PSI |
+| Montaje | Muro directo |
+| Certificaciones | NFPA 14 |
+
+## Normas Aplicables
+
+- **NOM-002-STPS-2010** — Condiciones de seguridad, prevención y protección contra incendios en los centros de trabajo
+- **NFPA 14** — Standard for the Installation of Standpipe and Hose Systems (sección 6.6 hose stations, Clase II)
+- **NFPA 1962** — Standard for the Care, Use, Inspection, Service Testing, and Replacement of Fire Hose (prueba de servicio de mangueras)
+- **UL Listed** — Underwriters Laboratories (componentes certificados)

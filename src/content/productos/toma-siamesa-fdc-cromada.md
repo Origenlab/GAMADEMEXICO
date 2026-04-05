@@ -42,3 +42,22 @@ Toma siamesa FDC con acabado cromado espejo para instalaciones donde la estétic
 - Fachadas de hoteles
 - Centros comerciales premium
 - Instalaciones arquitectónicas
+
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Elkhart Brass |
+| Modelo | 4-A-C |
+| Material | Bronce cromado |
+| Diámetros | Entradas (2) 2.5" NH hembra swivel |
+| Presión de trabajo | 500 GPM por entrada |
+| Certificaciones | UL Listed, FM Approved, NFPA 14 |
+
+## Normas Aplicables
+
+- **NFPA 13** — Norma para la instalación de sistemas de rociadores (sección 12, FDC para rociadores)
+- **NFPA 14** — Norma para sistemas de tubería vertical y mangueras (FDC para standpipes)
+- **UL 405** — Estándar para tomas de conexión de departamento de bomberos
+- **FM Approved** — Aprobación Factory Mutual para equipos contra incendios
+- **NOM-002-STPS-2010** — Condiciones de seguridad contra incendio en centros de trabajo

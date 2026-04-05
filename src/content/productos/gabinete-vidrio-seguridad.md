@@ -46,3 +46,25 @@ El gabinete con vidrio de seguridad templado de 4mm ofrece mayor resistencia a i
 ## Certificaciones
 
 Cumple con **NOM-002-STPS-2010** y **NFPA 14**.
+
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Nacional |
+| Modelo | GAB-VS-30 |
+| Material | Acero calibre 20 / Vidrio 4mm |
+| Dimensiones | 88 cm alto x 85 cm ancho x 21 cm fondo |
+| Vidrio | Templado de seguridad 4 mm |
+| Marco puerta | Perfil reforzado de acero |
+| Cerradura | Cilindro con llave maestra y acceso de emergencia |
+| Manguera | 1.5" x 30 m, coples NST |
+| Acabado | Pintura electrostática texturizada |
+| Certificaciones | NOM-002-STPS-2010, NFPA 14 |
+
+## Normas Aplicables
+
+- **NOM-002-STPS-2010** — Condiciones de seguridad, prevención y protección contra incendios en los centros de trabajo (sección 6.2 gabinetes)
+- **NOM-003-SEGOB-2011** — Señales y avisos para protección civil (señalización del gabinete)
+- **NOM-018-STPS** — Sistema armonizado para identificación y comunicación de peligros y riesgos
+- **NFPA 14** — Standard for the Installation of Standpipe and Hose Systems (Clase II: gabinete manguera 1.5")

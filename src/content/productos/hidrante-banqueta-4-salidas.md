@@ -48,3 +48,29 @@ El hidrante de 4 salidas proporciona máxima capacidad de conexión simultánea 
 ## Certificaciones
 
 Certificado **AWWA C503**, **UL 246** y **FM Approved**.
+
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | American AVK |
+| Modelo | HID-4S-250 |
+| Material | Hierro dúctil ASTM A-536 |
+| Salidas | 4 x 2.5" NST (7.5 TPI) |
+| Presión de trabajo | 250 PSI |
+| Entrada | 8" brida ANSI |
+| Caudal máximo | 2,500 GPM |
+| Altura total | 48" |
+| Salidas material | Bronce ASTM B-62 |
+| Vástago | Acero inoxidable |
+| Recubrimiento | Epóxico rojo |
+| Certificaciones | AWWA C503, UL 246, FM Approved |
+
+## Normas Aplicables
+
+- **NFPA 24** — Standard for the Installation of Private Fire Service Mains and Their Appurtenances (tuberías subterráneas para servicio de incendios)
+- **NFPA 291** — Recommended Practice for Fire Flow Testing and Marking of Hydrants (pruebas de flujo en hidrantes)
+- **UL 246** — Hydrants for Fire-Protection Service (certificación de hidrantes)
+- **AWWA C503** — Wet-Barrel Fire Hydrants (hidrantes barril húmedo)
+- **FM Approved** — Factory Mutual (aprobación para instalaciones industriales aseguradas)
+- **NOM-002-STPS-2010** — Condiciones de seguridad, prevención y protección contra incendios en los centros de trabajo

@@ -42,6 +42,25 @@ Niple caña con cuerpo hexagonal para conversión de rosca NPT (tubería) a NH (
 - Usar llave de tubo en hexágono central
 - No aplicar torque en rosca NH
 
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Elkhart Brass |
+| Modelo | N-127 |
+| Material | Bronce fundido |
+| Presión de trabajo | 1,200 PSI |
+| Presión de prueba | 3,600 PSI |
+| Conexión(es) | Entrada NPT macho 2.5" / Salida NH macho 2.5" |
+| Certificaciones | UL Listed, NOM-002-STPS-2010 |
+
+## Normas Aplicables
+
+- **NFPA 1963** — Roscas para mangueras contra incendios (NH/NST)
+- **NFPA 14** — Sistemas de tuberías verticales y mangueras
+- **UL Listed** — UL 405: Conexiones para mangueras contra incendios
+- **NOM-002-STPS-2010** — Condiciones de seguridad contra incendios
+
 ## Aplicaciones
 
 - Conexión a tuberías industriales

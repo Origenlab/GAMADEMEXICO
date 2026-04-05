@@ -42,3 +42,21 @@ Conexión Y de tres vías que permite alimentar tres líneas de ataque independi
 - Protección de exposiciones
 - Combate de incendios de gran escala
 - Brigadas industriales
+
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Elkhart Brass |
+| Modelo | B-103-A |
+| Material | Aluminio Elk-O-Lite forjado |
+| Diámetros | Entrada 2.5" NH / Salidas (3) 1.5" NH |
+| Presión de trabajo | 200 PSI |
+| Certificaciones | UL Listed, FM Approved |
+
+## Normas Aplicables
+
+- **NFPA 14** — Norma para sistemas de tubería vertical y mangueras (standpipe Class I/II/III)
+- **NFPA 1963** — Norma para roscas de acoplamiento de mangueras contra incendios (rosca NH)
+- **UL Listed** — Certificación Underwriters Laboratories para equipos contra incendios
+- **NOM-002-STPS-2010** — Condiciones de seguridad contra incendio en centros de trabajo

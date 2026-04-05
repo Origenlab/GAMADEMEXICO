@@ -36,6 +36,25 @@ Reducción Storz asimétrica que permite transicionar de líneas de suministro 4
 - Dientes: acero inoxidable
 - Empaque: EPDM de alta resistencia
 
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Elkhart Brass |
+| Modelo | SR-40-25 |
+| Material | Aluminio forjado |
+| Presión de trabajo | 250 PSI |
+| Presión de prueba | 750 PSI |
+| Conexión(es) | Entrada Storz 4" / Salida Storz 2.5" (cuarto de vuelta en ambos extremos) |
+| Certificaciones | UL Listed, FM Approved |
+
+## Normas Aplicables
+
+- **DIN 14821** — Estándar internacional para acoplamientos Storz
+- **NFPA 1963** — Roscas para mangueras contra incendios
+- **UL Listed** — UL 405: Conexiones para mangueras contra incendios
+- **NOM-002-STPS-2010** — Condiciones de seguridad contra incendios
+
 ## Aplicaciones
 
 - Transición de líneas de suministro

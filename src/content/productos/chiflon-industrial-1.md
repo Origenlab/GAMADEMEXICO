@@ -48,3 +48,20 @@ Chiflón compacto de 1" para uso en gabinetes contra incendios y líneas de mang
 - Líneas de 1" para primera respuesta
 - Espacios confinados
 - Edificios comerciales
+
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Elkhart Brass |
+| Modelo | 205-B-10 |
+| Material | Bronce fundido |
+| Diámetros | 1" NH |
+| Presión de trabajo | 30–60 GPM a 100 PSI |
+| Certificaciones | UL 401, NOM-002-STPS-2010 |
+
+## Normas Aplicables
+
+- **NFPA 1964** — Norma para boquillas rociadores y pistolas de agua (spray nozzles)
+- **UL 401** — Estándar para boquillas de agua y espuma para combate de incendios
+- **NOM-002-STPS-2010** — Condiciones de seguridad contra incendio en centros de trabajo

@@ -42,6 +42,31 @@ Kit completo con todos los accesorios necesarios para equipar un gabinete contra
 - Kit certificado UL Listed
 - Cumple NOM-002-STPS-2010
 
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Elkhart Brass |
+| Modelo | KIT-GAB |
+| Material | Bronce fundido |
+| Tapón | Rocker lug 2.5" NH con cadena |
+| Cap protección | 2.5" NH con cadena |
+| Niple | Caña NPT a NH 1.5" |
+| Llave hidrante | Pentagonal |
+| Soportes | 2 soportes de manguera |
+| Presión de trabajo | 175–500 PSI según pieza |
+| Tornillería | Acero inoxidable |
+| Cadenas | Acero galvanizado |
+| Certificaciones | UL Listed, NOM-002-STPS-2010 |
+
+## Normas Aplicables
+
+- **NOM-002-STPS-2010** — Condiciones de seguridad, prevención y protección contra incendios en los centros de trabajo (sección 6.2 gabinetes)
+- **NOM-003-SEGOB-2011** — Señales y avisos para protección civil (señalización del gabinete)
+- **NOM-018-STPS** — Sistema armonizado para identificación y comunicación de peligros y riesgos
+- **NFPA 14** — Standard for the Installation of Standpipe and Hose Systems (Clase II: gabinete manguera 1.5")
+- **UL Listed** — Underwriters Laboratories (componentes certificados)
+
 ## Aplicaciones
 
 - Equipamiento de gabinetes nuevos

@@ -49,3 +49,20 @@ Chiflón de tres pasos en aluminio Elk-O-Lite que reduce el peso en 40% comparad
 - Brigadas con equipamiento pesado
 - Entrenamiento intensivo
 - Respuesta a incendios forestales
+
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Elkhart Brass |
+| Modelo | 205-A |
+| Material | Aluminio Elk-O-Lite |
+| Diámetros | 1.5" NH |
+| Presión de trabajo | 75–125 GPM a 100 PSI |
+| Certificaciones | UL 401, NFPA 1964 |
+
+## Normas Aplicables
+
+- **NFPA 1964** — Norma para boquillas rociadores y pistolas de agua (spray nozzles)
+- **UL 401** — Estándar para boquillas de agua y espuma para combate de incendios
+- **NOM-002-STPS-2010** — Condiciones de seguridad contra incendio en centros de trabajo

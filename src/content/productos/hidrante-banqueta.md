@@ -52,3 +52,30 @@ El hidrante de banqueta es el punto de toma de agua exterior que permite a los c
 ## Certificaciones
 
 Este hidrante cuenta con certificación **AWWA C502/C503**, **UL 246** y **NSF 61** (contacto con agua potable), cumpliendo con los estándares más exigentes para redes de hidrantes municipales e industriales.
+
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Elkhart Brass |
+| Modelo | HID-BAN-250 |
+| Material | Hierro dúctil ASTM A-536 / Bronce |
+| Presión de trabajo | 250–350 PSI |
+| Prueba hidrostática | Doble de la presión de trabajo |
+| Salidas | 2 x 2.5" NST (7.5 TPI) + 1 x 4.5" NST bomba (4 TPI) |
+| Entrada | 6" brida ANSI B16.1 Clase 125 |
+| Cuerpo | Hierro dúctil ASTM A-536 con recubrimiento epóxico |
+| Salidas material | Bronce ASTM B-62 |
+| Vástago | Acero inoxidable o bronce al silicio |
+| Tipos disponibles | Barril seco / Barril húmedo |
+| Certificaciones | AWWA C502, AWWA C503, UL 246, NSF 61 |
+
+## Normas Aplicables
+
+- **NFPA 24** — Standard for the Installation of Private Fire Service Mains and Their Appurtenances (tuberías subterráneas para servicio de incendios)
+- **NFPA 291** — Recommended Practice for Fire Flow Testing and Marking of Hydrants (pruebas de flujo en hidrantes)
+- **UL 246** — Hydrants for Fire-Protection Service (certificación de hidrantes)
+- **AWWA C502** — Dry-Barrel Fire Hydrants (hidrantes barril seco)
+- **AWWA C503** — Wet-Barrel Fire Hydrants (hidrantes barril húmedo)
+- **NOM-002-STPS-2010** — Condiciones de seguridad, prevención y protección contra incendios en los centros de trabajo
+- **NSF 61** — Drinking Water System Components (contacto con agua potable)

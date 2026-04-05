@@ -48,3 +48,26 @@ La estación de manguera retráctil incorpora un mecanismo de resorte que recoge
 ## Certificaciones
 
 Compatible con **NFPA 14** para sistemas Class II.
+
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Nacional |
+| Modelo | EST-RET-25 |
+| Material | Acero / Bronce |
+| Retracción | Automática por resorte de acero templado |
+| Manguera | 1.5" x 25 m, semi-rígida |
+| Carrete | 360° con freno ajustable |
+| Conexión | 1.5" NST |
+| Boquilla | Bronce cromado con cierre |
+| Tensión | Ajustable según longitud |
+| Presión máx. salida | 100 PSI |
+| Certificaciones | NFPA 14 |
+
+## Normas Aplicables
+
+- **NOM-002-STPS-2010** — Condiciones de seguridad, prevención y protección contra incendios en los centros de trabajo
+- **NFPA 14** — Standard for the Installation of Standpipe and Hose Systems (sección 6.6 hose stations, Clase II)
+- **NFPA 1962** — Standard for the Care, Use, Inspection, Service Testing, and Replacement of Fire Hose (prueba de servicio de mangueras)
+- **UL Listed** — Underwriters Laboratories (componentes certificados)

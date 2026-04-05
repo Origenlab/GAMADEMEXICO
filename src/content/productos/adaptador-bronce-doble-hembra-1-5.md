@@ -36,6 +36,25 @@ Adaptador doble hembra que permite unir dos conexiones macho NH de 1.5". Esencia
 - Empaque: EPDM resistente
 - Acabado: pulido natural o cromado
 
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Elkhart Brass |
+| Modelo | F-327 |
+| Material | Bronce fundido |
+| Presión de trabajo | 300 PSI |
+| Presión de prueba | 1,000 PSI |
+| Conexión(es) | Doble hembra NH/NST 1.5" |
+| Certificaciones | UL Listed, FM Approved |
+
+## Normas Aplicables
+
+- **NFPA 1963** — Roscas para mangueras contra incendios (NH/NST)
+- **NFPA 14** — Sistemas de tuberías verticales y mangueras
+- **UL Listed** — UL 405: Conexiones para mangueras contra incendios
+- **NOM-002-STPS-2010** — Condiciones de seguridad contra incendios
+
 ## Aplicaciones
 
 - Extensión de líneas de manguera

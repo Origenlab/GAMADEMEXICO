@@ -36,6 +36,24 @@ Llave de bronce para operación de hidrantes con vástago pentagonal. Fabricada 
 - Mango: bronce sólido
 - Acabado: natural resistente a corrosión
 
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Elkhart Brass |
+| Modelo | HK-5 |
+| Material | Bronce fundido |
+| Presión de trabajo | N/A (herramienta manual) |
+| Presión de prueba | N/A |
+| Conexión(es) | Cabeza pentagonal para vástagos estándar de hidrante |
+| Certificaciones | NOM-002-STPS-2010 |
+
+## Normas Aplicables
+
+- **NFPA 291** — Pruebas de flujo de agua e hidrantería
+- **NFPA 14** — Sistemas de tuberías verticales y mangueras
+- **NOM-002-STPS-2010** — Condiciones de seguridad contra incendios
+
 ## Aplicaciones
 
 - Operación de hidrantes municipales

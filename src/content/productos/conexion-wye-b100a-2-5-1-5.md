@@ -43,3 +43,21 @@ Conexión Y con configuración de reducción que permite alimentar dos líneas d
 - Líneas de respaldo
 - Brigadas industriales
 - Combate de incendios estructurales
+
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Elkhart Brass |
+| Modelo | B-100-A |
+| Material | Aluminio Elk-O-Lite forjado |
+| Diámetros | Entrada 2.5" NH / Salidas (2) 1.5" NH |
+| Presión de trabajo | 200 PSI |
+| Certificaciones | UL Listed, FM Approved |
+
+## Normas Aplicables
+
+- **NFPA 14** — Norma para sistemas de tubería vertical y mangueras (standpipe Class I/II/III)
+- **NFPA 1963** — Norma para roscas de acoplamiento de mangueras contra incendios (rosca NH)
+- **UL Listed** — Certificación Underwriters Laboratories para equipos contra incendios
+- **NOM-002-STPS-2010** — Condiciones de seguridad contra incendio en centros de trabajo

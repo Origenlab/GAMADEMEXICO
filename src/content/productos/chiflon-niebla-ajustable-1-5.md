@@ -49,3 +49,20 @@ Chiflón con control de ángulo de niebla ajustable que permite seleccionar desd
 - Protección de personal variable
 - Combate de incendios multi-escenario
 - Entrenamiento avanzado
+
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Elkhart Brass |
+| Modelo | 205-BA |
+| Material | Bronce fundido |
+| Diámetros | 1.5" NH |
+| Presión de trabajo | 95–125 GPM a 100 PSI |
+| Certificaciones | UL 401, NFPA 1964 |
+
+## Normas Aplicables
+
+- **NFPA 1964** — Norma para boquillas rociadores y pistolas de agua (spray nozzles)
+- **UL 401** — Estándar para boquillas de agua y espuma para combate de incendios
+- **NOM-002-STPS-2010** — Condiciones de seguridad contra incendio en centros de trabajo
