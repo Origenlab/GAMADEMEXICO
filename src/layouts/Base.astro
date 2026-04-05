@@ -109,6 +109,8 @@ const heroCta = getPageCtaContent(pathname, pageTitle);
   <meta property="og:locale" content="es_MX">
 
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@gamademexico">
+  <meta name="twitter:creator" content="@gamademexico">
   <meta name="twitter:title" content={twitterTitle || ogTitle || title}>
   <meta name="twitter:description" content={twitterDescription || ogDescription || description}>
   <meta name="twitter:image" content={ogImageUrl}>
@@ -140,7 +142,13 @@ const heroCta = getPageCtaContent(pathname, pageTitle);
       document.addEventListener("DOMContentLoaded", function(){
         var imgs = document.querySelectorAll("img[src^=\"/img/\"]");
         for (var i = 0; i < imgs.length; i++) {
-          imgs[i].src = cdn + imgs[i].getAttribute("src");
+          var img = imgs[i];
+          var src = img.getAttribute("src");
+          if (src) img.src = cdn + src;
+          var srcset = img.getAttribute("srcset");
+          if (srcset) {
+            img.srcset = srcset.replace(/(\s)(\/img\/)/g, "$1" + cdn + "$2").replace(/^(\/img\/)/, cdn + "$1");
+          }
         }
       });
     })();
@@ -224,7 +232,9 @@ const heroCta = getPageCtaContent(pathname, pageTitle);
     </a>
   </div>
 
-  <script src="../scripts/main.ts"></script>
+  <script>
+    import '../scripts/main.ts';
+  </script>
 
 </body>
 

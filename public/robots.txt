@@ -4,12 +4,11 @@
 # Permitir acceso completo a todos los bots legítimos
 User-agent: *
 Allow: /
-
-# Bloquear páginas que no deben indexarse
 Disallow: /404
 Disallow: /404.html
 Disallow: /api/
 Disallow: /_astro/
+Crawl-delay: 1
 
 # Bots específicos de motores de búsqueda principales
 User-agent: Googlebot
@@ -45,10 +44,6 @@ Disallow: /
 
 User-agent: DotBot
 Disallow: /
-
-# Crawl delay para evitar sobrecarga del servidor
-User-agent: *
-Crawl-delay: 1
 
 # Ubicación del sitemap XML
 Sitemap: https://gamademexico.com/sitemap-index.xml
