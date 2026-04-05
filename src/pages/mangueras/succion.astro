@@ -51,6 +51,9 @@ const faqItems = [
   { pregunta: '¿Para qué se usa una manguera de succión contra incendios?', respuesta: 'La manguera de succión se usa para extraer agua de una fuente no presurizada: cisterna, estanque, río o lago. Es el equipo estándar en camiones de bomberos para abastecimiento desde fuentes naturales y en bombas de incendio para succión desde cisterna enterrada. A diferencia de las mangueras de descarga, debe ser rígida o semi-rígida para no colapsar bajo vacío.' },
   { pregunta: '¿Cuál es el diámetro correcto de manguera de succión para una bomba contra incendios?', respuesta: 'El diámetro de la manguera de succión debe ser mayor o igual al diámetro de succión de la bomba. Para bombas de 500-1,000 GPM se usa manguera de 4". Para bombas de más de 1,000 GPM se requiere 6" o más. Usar manguera más pequeña que el puerto de succión de la bomba reduce el caudal y puede dañar el impulsor. Consultamos la curva de la bomba para definir el diámetro correcto.' },
   { pregunta: '¿Las mangueras de succión soportan agua con tierra o sedimentos?', respuesta: 'Las mangueras de succión estándar de goma NBR soportan agua con sedimentos finos. Para succión desde fuentes con alto contenido de sólidos (pozos, ríos con turbidez alta) se recomienda instalar un colador de succión en el extremo de la manguera para proteger el impulsor de la bomba. Distribuimos coladores de succión en aluminio y bronce en diámetros de 2.5", 4" y 6".' },
+  { pregunta: '¿Cuál es la diferencia entre manguera de succión rígida y manguera de succión blanda?', respuesta: 'La manguera de succión rígida tiene refuerzo helicoidal de acero galvanizado que le da rigidez para resistir el colapso bajo vacío completo. La manguera de succión blanda (soft suction) es flexible y se usa únicamente cuando ya existe presión en la fuente, como en la conexión entre un hidrante y el camión de bomberos. Para bombas de cebado desde cisterna o fuente abierta siempre se requiere manguera de succión rígida.' },
+  { pregunta: '¿Cuánto puede elevar una bomba contra incendios con manguera de succión?', respuesta: 'Conforme a NFPA 1901, la altura máxima de succión para una bomba estándar de camión de bomberos es de 10 pies (3 metros) medidos desde la superficie del agua hasta el eje del impulsor, en condiciones normales. A mayor altura, el caudal de la bomba se reduce significativamente. Para instalaciones fijas con cisterna enterrada profunda se debe consultar la curva NPSH de la bomba seleccionada para garantizar operación sin cavitación.' },
+  { pregunta: '¿Cómo se inspecciona una manguera de succión conforme a NFPA 1962?', respuesta: 'NFPA 1962 requiere inspección visual anual de las mangueras de succión para detectar: cortes, grietas o abrasión en el cuerpo exterior, deformaciones en el refuerzo helicoidal, daños o corrosión en los acoples y pérdida de hermeticidad. Adicionalmente se debe realizar prueba de vacío conectando la manguera a la bomba y verificando que mantiene el vacío durante al menos 10 minutos sin caída mayor a 1" Hg. Mangueras que no pasen la prueba deben retirarse del servicio.' },
 ];
 
 const structuredData = [
@@ -80,8 +83,8 @@ const structuredData = [
 
 <Layout
   structuredData={structuredData}
-  title="Manguera de Succión Espiral PVC | México"
-  description="Venta de manguera de succión con espiral reforzado para agua y motobomba. Manguera verde industrial, rollo PVC resistente, uso agrícola y bombero. Stock México."
+  title="Manguera de Succión Semirígida para Bomba Contra Incendios | Gama de México"
+  description="Manguera de succión con refuerzo helicoidal de acero para bombas contra incendio. Diámetros 2.5\", 4\" y 6\". Vacío -0.8 bar, acoples Storz/NH. Cumple NFPA 1962. Stock en México."
   activePage="equipos"
   heroTitle="Manguera de Succión"
   heroIntro="Mangueras con refuerzo helicoidal diseñadas para operaciones de succión en bombas contra incendio y motobombas portátiles. Su construcción rígida pero flexible resiste el colapso por vacío, permitiendo extraer agua de cisternas, pozos, ríos y otras fuentes no presurizadas."
@@ -209,9 +212,9 @@ const structuredData = [
           marcas={["Key Fire Hose", "Snap-Tite", "All American Hose", "Kuriyama"]}
           aplicaciones={[
             "Bombas contra incendio",
-            "Succion de agua en pozos",
+            "Succión de agua en pozos",
             "Cuerpos de bomberos",
-            "Motobombas portatiles"
+            "Motobombas portátiles"
           ]}
           productosRelacionados={[
             { href: "/boquillas-contra-incendios", nombre: "Boquillas Contra Incendios" },
@@ -236,9 +239,9 @@ const structuredData = [
   />
 
   <CotizacionForm
-    titulo="Cotiza Mangueras de Succion"
+    titulo="Cotiza Mangueras de Succión"
     tipoEquipo="Mangueras"
-    pagina="Mangueras de Succion"
+    pagina="Mangueras de Succión"
   />
 
 

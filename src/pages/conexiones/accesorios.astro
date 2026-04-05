@@ -33,7 +33,10 @@ const subcategorias = [
 ];
 const faqItems = [
   { pregunta: '¿Qué accesorios de herraje se necesitan para completar un sistema de mangueras contra incendios?', respuesta: 'Un sistema de mangueras completo incluye: chiflón de entrada (para conectar al hidrante), mangueras certificadas, cople intermedio si se necesita extensión, adaptadores de compatibilidad si hay diferentes tipos de rosca en el sistema, llave de manguera para apriete correcto, y soporte o carro portamanguera. Para gabinetes de edificio también se requiere soporte de manguera enrollable o doblada y gabinete certificado.' },
+  { pregunta: '¿Qué mantenimiento requieren los tapones y caps de tomas siamesas según NFPA?', respuesta: 'NFPA 25 sección 6.3 establece que las tapas (caps) de las tomas siamesas deben inspeccionarse trimestralmente para verificar que estén presentes, sin daño y accesibles. Los tapones deben retirarse, lubricarse las roscas y reinstalarse durante el mantenimiento anual para asegurar que puedan retirarse fácilmente en emergencia. Las cadenas de sujeción deben estar intactas para evitar pérdida de los tapones. Si los tapones tienen señal de vandalismo o daño por impacto, reemplazar inmediatamente.' },
+  { pregunta: '¿Cuál es la diferencia entre un tapón Storz y un tapón NH para tomas siamesas?', respuesta: 'Un tapón NH (National Hose) es roscado y se instala girando; es el estándar más común en México para bocas de 1.5" y 2.5". Un tapón Storz es de un cuarto de vuelta, sin roscas, compatible con coples Storz. No son intercambiables: si la toma siamesa tiene bocas Storz, se requieren tapones Storz, y viceversa. Es fundamental verificar el tipo de boca en el campo antes de pedir refacciones para no comprar accesorios incompatibles.' },
   { pregunta: '¿Qué es una llave de manguera y es obligatoria?', respuesta: 'La llave de manguera es una herramienta de aluminio o bronce que facilita el apriete y afloje de las conexiones de manguera sin dañar las roscas. Si bien no está listada como equipo obligatorio en todas las normas, la NFPA 25 recomienda su uso en el mantenimiento de sistemas de mangueras para evitar daños en las roscas. Su costo es mínimo comparado con el costo de reponer una manguera o chiflón dañado.' },
+  { pregunta: '¿Qué accesorios son compatibles con conexiones Storz versus NH?', respuesta: 'Los accesorios Storz y NH no son directamente compatibles: los tapones, reduciones, adaptadores y coples son específicos para cada tipo de rosca. Sin embargo, existen adaptadores de conversión Storz a NH y viceversa que permiten mezclar ambos sistemas. Para inventario de mantenimiento, es importante identificar correctamente el tipo de rosca de cada equipo en la instalación (Storz o NH) para pedir los accesorios correctos. Gama de México asesora en la identificación y selección de accesorios compatibles.' },
   { pregunta: '¿Los herrajes y accesorios de bronce requieren algún mantenimiento especial?', respuesta: 'Los herrajes de bronce fundido son prácticamente de mantenimiento nulo en condiciones normales. La inspección anual recomendada incluye: verificación visual de corrosión o deformaciones, prueba de funcionamiento de válvulas de control, verificación de tapas de protección en bocas de hidrante no utilizadas y revisión de la correcta identificación de cada accesorio. En ambientes costeros, lavar con agua limpia después de exposición a agua salada.' },
 ];
 
@@ -64,8 +67,8 @@ const structuredData = [
 
 <Layout
   structuredData={structuredData}
-  title="Accesorios y Herrajes Contra Incendios | México"
-  description="Accesorios y herrajes de bronce: tapones, caps, niples, llaves de hidrante, soportes de manguera. Elkhart Brass UL Listed. México."
+  title="Accesorios y Herrajes Contra Incendios Elkhart Brass | NFPA 25 México"
+  description="Tapones, caps con cadena, niples, llaves pentagonales y soportes de manguera para sistemas contra incendio. Bronce UL Listed, NH y Storz. NFPA 25. Distribuidor México."
   activePage="equipos"
   heroTitle="Accesorios y Herrajes"
   heroIntro="Componentes complementarios esenciales para sistemas contra incendio: tapones protectores, caps con cadena, niples de extensión, llaves de hidrante y soportes de manguera. Fabricados en bronce fundido o aluminio de alta resistencia para servicio exterior e interior."

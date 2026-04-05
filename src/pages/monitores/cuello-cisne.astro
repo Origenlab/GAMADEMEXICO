@@ -66,9 +66,12 @@ const subcategorias = [
   },
 ];
 const faqItems = [
-  { pregunta: '¿Para qué tipo de instalaciones se recomienda el monitor cuello de cisne?', respuesta: 'El monitor cuello de cisne está diseñado para aplicaciones donde el agua debe proyectarse hacia arriba y hacia abajo simultáneamente, como techos de tanques de almacenamiento, sistemas de enfriamiento perimetral en refinerías y terminales. Su forma articulada permite coberturas de ángulo negativo imposibles con monitores convencionales.' },
-  { pregunta: '¿Cuál es la diferencia entre el monitor cuello de cisne y el tipo corazón?', respuesta: 'El monitor cuello de cisne tiene un brazo curvo que permite proyección descendente y un rango de elevación de -45° a +90°, ideal para tanques y superficies elevadas. El monitor tipo corazón tiene rotación horizontal completa de 360° para protección perimetral en planta. La elección depende del tipo de riesgo y geometría de la instalación.' },
+  { pregunta: '¿Para qué tipo de instalaciones se recomienda el monitor cuello de cisne?', respuesta: 'El monitor cuello de cisne está diseñado para aplicaciones donde el agua debe proyectarse hacia abajo sobre superficies elevadas: techos de tanques de almacenamiento, sistemas de enfriamiento en refinerías, muelles de carga con estructuras en altura y plantas donde la geometría impide el uso de monitores convencionales. Su forma articulada permite coberturas de ángulo negativo imposibles con monitores tipo corazón.' },
+  { pregunta: '¿Cuál es la diferencia entre el monitor cuello de cisne y el tipo corazón?', respuesta: 'El monitor cuello de cisne tiene un brazo curvo que permite proyección descendente y un rango de elevación de -45° a +90°, ideal para tanques y superficies elevadas. El monitor tipo corazón tiene rotación horizontal completa de 360° para protección perimetral en planta. La elección depende del tipo de riesgo y la geometría de la instalación. Para una refinería con tanques de techo flotante se usa cuello de cisne; para protección de perímetro horizontal se usa tipo corazón.' },
   { pregunta: '¿Los monitores cuello de cisne están certificados FM o UL?', respuesta: 'Sí. Distribuimos monitores cuello de cisne de Elkhart Brass con certificación FM Approved y UL Listed. Estos monitores cumplen con NFPA 11 y 15 para sistemas de espuma y agua. Proporcionamos documentación técnica completa para verificaciones de protección civil y aseguradoras industriales.' },
+  { pregunta: '¿Qué normas aplican a la protección de tanques con monitores cuello de cisne?', respuesta: 'Para protección de tanques de almacenamiento con monitores cuello de cisne aplican principalmente: NFPA 11 (sistemas de espuma para tanques), NFPA 15 (sistemas de agua para riesgos especiales), API 2030 (aplicación de espuma en tanques de petróleo) y la norma FM 1421 para instalaciones que requieren aprobación de Factory Mutual. La selección del modelo, caudal y tipo de boquilla se determina según el diámetro del tanque y el tipo de producto almacenado.' },
+  { pregunta: '¿Cuál es el caudal típico para enfriamiento de tanques con monitor cuello de cisne?', respuesta: 'El caudal necesario para enfriamiento de tanques se calcula según NFPA 15 con una densidad mínima de 0.10 GPM/pie² sobre la superficie del tanque. Para tanques de 30 metros de diámetro, esto representa caudales de 600 a 1,200 GPM por monitor. Los modelos cuello de cisne Elkhart Brass que distribuimos están disponibles en rangos de 500 a 2,000 GPM para cubrir instalaciones de cualquier escala.' },
+  { pregunta: '¿El monitor cuello de cisne puede operar en posición autosoportada?', respuesta: 'Existen dos configuraciones: autosoportada (self-supporting) donde el monitor se instala directamente sobre la tubería de suministro sin estructura adicional, y soportada (supported) donde el cuerpo se fija a una estructura metálica y la tubería viene independiente. La versión autosoportada simplifica la instalación pero requiere que la tubería de suministro esté diseñada para absorber los esfuerzos de reacción del chorro. Asesoramos en la selección según las condiciones de tu instalación.' },
 ];
 
 const structuredData = [
@@ -98,11 +101,11 @@ const structuredData = [
 
 <Layout
   structuredData={structuredData}
-  title="Monitor Cuello de Cisne | Protección Tanques México"
-  description="Monitor fijo cuello de cisne para protección de tanques. Giro 360° horizontal, bronce fundido resistente a intemperie. Elkhart Brass, ARMECO. Cotización México."
+  title="Monitor Cuello de Cisne Contra Incendios | Tanques y Refinerías México"
+  description="Monitor cuello de cisne para protección de tanques, refinerías y terminales. Proyección -45° a +90°, caudal hasta 2,000 GPM. Elkhart Brass FM/UL. Cotización México."
   activePage="equipos"
   heroTitle="Monitor Cuello de Cisne"
-  heroIntro="Monitores fijos diseñados para protección de tanques de almacenamiento y estructuras elevadas. Su configuración de cuello extendido permite dirigir el flujo hacia abajo o en ángulos específicos, ideal para enfriamiento de tanques y protección de áreas críticas desde puntos elevados."
+  heroIntro="Monitores fijos para protección de tanques de almacenamiento, refinerías y terminales de almacenamiento. El brazo curvo del cuello de cisne permite proyección descendente desde -45° hasta +90°, cubriendo superficies de tanques verticales que los monitores convencionales no pueden alcanzar. Distribuidor autorizado Elkhart Brass México — modelos certificados FM Approved y UL Listed, cumplimiento NFPA 11, 15 y API 2030."
   heroBadge="Monitores Contra Incendios"
   heroMetrics={[
     { valor: "360°", texto: "Giro horizontal" },

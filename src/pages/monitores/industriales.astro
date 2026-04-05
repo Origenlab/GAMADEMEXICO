@@ -67,9 +67,12 @@ const subcategorias = [
 ];
 
 const faqItems = [
-  { pregunta: '¿Que significa que un monitor sea FM Approved?', respuesta: 'FM Approved indica que el monitor fue probado y aprobado por Factory Mutual, una de las aseguradoras industriales mas exigentes del mundo. La aprobacion FM verifica que el equipo cumple con los estandares de desempeno bajo condiciones reales de incendio, incluyendo resistencia a corrosion, presion de trabajo y caudal minimo. Las aseguradoras industriales en Mexico y el mundo exigen equipos FM Approved para reducir primas y validar sistemas de proteccion.' },
-  { pregunta: '¿En que industrias se instalan monitores industriales?', respuesta: 'Los monitores industriales FM Approved se instalan en refinerias, plantas petroquimicas, terminales de almacenamiento de hidrocarburos, plantas de generacion electrica (CFE), instalaciones de PEMEX y empresas privadas del sector energetico. Tambien se usan en hangares de aviacion, muelles industriales y almacenes de materiales peligrosos. El monitor Copperhead de Elkhart Brass esta disenado especificamente para estos entornos corrosivos y de alto riesgo.' },
-  { pregunta: '¿Que mantenimiento requiere un monitor industrial segun NFPA 25?', respuesta: 'NFPA 25 establece inspeccion visual trimestral, prueba funcional semestral (movimiento completo horizontal y vertical) y prueba de flujo anual. El mantenimiento incluye lubricacion de mecanismos, verificacion de sellos y juntas, limpieza de orificios de la boquilla y revision de la base de montaje. Gama de Mexico ofrece contratos de mantenimiento preventivo para monitores industriales instalados en Mexico.' },
+  { pregunta: '¿Qué significa que un monitor sea FM Approved?', respuesta: 'FM Approved indica que el monitor fue probado y aprobado por Factory Mutual, una de las aseguradoras industriales más exigentes del mundo. La aprobación FM verifica que el equipo cumple con los estándares de desempeño bajo condiciones reales de incendio, incluyendo resistencia a corrosión, presión de trabajo y caudal mínimo. Las aseguradoras industriales en México y el mundo exigen equipos FM Approved para reducir primas y validar sistemas de protección.' },
+  { pregunta: '¿En qué industrias se instalan monitores industriales?', respuesta: 'Los monitores industriales FM Approved se instalan en refinerías, plantas petroquímicas, terminales de almacenamiento de hidrocarburos, plantas de generación eléctrica (CFE), instalaciones de PEMEX y empresas privadas del sector energético. También se usan en hangares de aviación, muelles industriales y almacenes de materiales peligrosos. El monitor Copperhead de Elkhart Brass está diseñado específicamente para estos entornos corrosivos y de alto riesgo.' },
+  { pregunta: '¿Qué mantenimiento requiere un monitor industrial según NFPA 25?', respuesta: 'NFPA 25 establece inspección visual trimestral, prueba funcional semestral (movimiento completo horizontal y vertical) y prueba de flujo anual. El mantenimiento incluye lubricación de mecanismos, verificación de sellos y juntas, limpieza de orificios de la boquilla y revisión de la base de montaje. Gama de México ofrece contratos de mantenimiento preventivo para monitores industriales instalados en México.' },
+  { pregunta: '¿Qué ventaja tiene el Copperhead de Elkhart Brass frente a otros monitores industriales?', respuesta: 'El Copperhead está construido en aleación de aluminio marino con acabado anodizado duro y mecanismos sellados que eliminan la necesidad de lubricación periódica. Su diseño "low maintenance" reduce los costos de operación en instalaciones donde acceder al monitor para mantenimiento es costoso o implica parar procesos industriales. A diferencia de monitores convencionales que requieren lubricación mensual, el Copperhead puede operar años sin intervención en ambientes industriales controlados.' },
+  { pregunta: '¿Los monitores industriales cumplen con las especificaciones NRF de PEMEX?', respuesta: 'Sí, con condiciones. Los monitores FM Approved de Elkhart Brass cumplen con los requisitos base de NFPA 15 y FM que las especificaciones NRF de PEMEX toman como referencia. Sin embargo, PEMEX puede tener requisitos adicionales de materiales, conexiones o configuración que deben verificarse contra la NRF específica del proyecto. En Gama de México asesoramos en la revisión de las NRF aplicables y la selección del modelo que cumple con todos los requisitos del proyecto.' },
+  { pregunta: '¿Qué normas aplican al diseño de sistemas con monitores industriales?', respuesta: 'Para sistemas con monitores industriales aplican principalmente: NFPA 15 (sistemas de agua para riesgos especiales), NFPA 11 (sistemas de espuma), NFPA 25 (inspección y mantenimiento), FM Data Sheet 4-4N (criterios de diseño para monitores aprobados FM) y NOM-002-STPS-2010 para instalaciones en México. En refinería y petroquímica también aplica API 2030 para protección de tanques y las especificaciones propias del operador (PEMEX-NRF, Shell DEP, etc.). El diseño del sistema debe integrarse a la memoria de cálculo del ingeniero de seguridad del proyecto.' },
 ];
 
 const structuredData = [
@@ -101,10 +104,10 @@ const structuredData = [
 <Layout
   structuredData={structuredData}
   title="Monitores Industriales FM Approved | Refinerías y Petroquímica"
-  description="Monitores industriales FM Approved Elkhart Brass: Copperhead hasta 2,500 GPM. Para refinerias, PEMEX, CFE y terminales de almacenamiento. Bajo mantenimiento. Mexico."
+  description="Monitores industriales FM Approved Elkhart Brass: Copperhead hasta 2,500 GPM. Para refinerías, PEMEX, CFE y terminales de almacenamiento. Bajo mantenimiento. México."
   activePage="equipos"
   heroTitle="Monitores Industriales"
-  heroIntro="Monitores fijos FM Approved para instalaciones de alto riesgo: refinerias, plantas petroquimicas, terminales de almacenamiento y generacion electrica. Construccion resistente a corrosion, bajo mantenimiento, caudales de hasta 2,500 GPM."
+  heroIntro="Monitores fijos FM Approved para instalaciones de alto riesgo: refinerías, plantas petroquímicas, terminales de almacenamiento y generación eléctrica. Construcción resistente a corrosión, bajo mantenimiento, caudales de hasta 2,500 GPM. Cumplimiento NFPA 15, FM 1421 y NOM-002-STPS."
   heroBadge="Monitores Contra Incendios"
   heroMetrics={[
     { valor: "FM", texto: "Factory Mutual" },
@@ -120,8 +123,8 @@ const structuredData = [
 
   <!-- HERO CONTENT -->
   <Fragment slot="hero-content">
-    <p>Los <strong>monitores industriales</strong> Elkhart Brass estan disenados para entornos donde la corrosion, las temperaturas extremas y la exposicion continua a la intemperie destruirian un monitor convencional. El Copperhead, su modelo insignia para aplicaciones industriales, opera sin mantenimiento durante anos gracias a su construccion sellada y materiales resistentes a ambientes quimicos.</p>
-    <p>En <strong>Gama de Mexico</strong> suministramos monitores industriales FM Approved para proyectos de PEMEX, CFE, terminales privadas de almacenamiento y plantas petroquimicas. Asesoramos en la seleccion del modelo correcto segun el caudal requerido, tipo de riesgo, agente extintor y requisitos de la aseguradora. Entregamos con documentacion FM completa para verificacion de proteccion civil.</p>
+    <p>Los <strong>monitores industriales</strong> Elkhart Brass están diseñados para entornos donde la corrosión, las temperaturas extremas y la exposición continua a la intemperie destruirían un monitor convencional. El Copperhead, su modelo insignia para aplicaciones industriales, opera sin mantenimiento durante años gracias a su construcción sellada y materiales resistentes a ambientes químicos.</p>
+    <p>En <strong>Gama de México</strong> suministramos monitores industriales FM Approved para proyectos de PEMEX, CFE, terminales privadas de almacenamiento y plantas petroquímicas. Asesoramos en la selección del modelo correcto según el caudal requerido, tipo de riesgo, agente extintor y requisitos de la aseguradora. Entregamos con documentación FM completa para verificación de protección civil.</p>
   </Fragment>
   <!-- BREADCRUMB -->
   <Breadcrumb />
@@ -139,7 +142,7 @@ const structuredData = [
           <div class="catalog-header" id="catalogo">
             <div class="catalog-header__text">
               <h2 class="catalog-header__title">Monitores Industriales FM Approved</h2>
-              <p class="catalog-header__desc">Monitores Elkhart Brass para refineras, petroquimica y terminales de almacenamiento</p>
+              <p class="catalog-header__desc">Monitores Elkhart Brass para refinerías, petroquímica y terminales de almacenamiento</p>
             </div>
             <div class="catalog-header__count">
               <span class="catalog-header__number">{productosIndustriales.length}</span>
@@ -166,26 +169,26 @@ const structuredData = [
           {productosIndustriales.length === 0 && (
             <div class="catalog-empty">
               <div class="catalog-empty__icon">🔍</div>
-              <h3 class="catalog-empty__title">Proximamente mas opciones</h3>
-              <p class="catalog-empty__text">Estamos agregando fichas de monitores industriales. Solicita cotizacion con especificaciones para tu proyecto.</p>
+              <h3 class="catalog-empty__title">Próximamente más opciones</h3>
+              <p class="catalog-empty__text">Estamos agregando fichas de monitores industriales. Solicita cotización con especificaciones para tu proyecto.</p>
               <a href="#cotizar" class="btn btn--primary">Solicitar Cotización</a>
             </div>
           )}
 
           <!-- TECHNICAL INFO -->
           <div class="tech-info">
-            <h3 class="tech-info__title">Especificaciones Tecnicas Generales</h3>
+            <h3 class="tech-info__title">Especificaciones Técnicas Generales</h3>
             <div class="tech-info__grid">
               <div class="tech-info__item">
                 <span class="tech-info__label">Caudal</span>
                 <span class="tech-info__value">500 - 2,500 GPM</span>
               </div>
               <div class="tech-info__item">
-                <span class="tech-info__label">Certificacion</span>
+                <span class="tech-info__label">Certificación</span>
                 <span class="tech-info__value">FM Approved</span>
               </div>
               <div class="tech-info__item">
-                <span class="tech-info__label">Presion</span>
+                <span class="tech-info__label">Presión</span>
                 <span class="tech-info__value">100 - 175 PSI</span>
               </div>
               <div class="tech-info__item">
@@ -241,7 +244,7 @@ const structuredData = [
   <!-- RELATED MONITORS -->
   <RelatedProductsGrid
     titulo="Otros Tipos de Monitores"
-    subtitulo="Monitores manuales y electricos para distintas aplicaciones"
+    subtitulo="Monitores manuales y eléctricos para distintas aplicaciones"
     productos={otrosMonitores}
     maxProductos={3}
     verTodosLink="/monitores-contra-incendios"

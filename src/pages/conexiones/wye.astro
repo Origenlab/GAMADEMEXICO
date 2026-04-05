@@ -33,8 +33,11 @@ const subcategorias = [
 ];
 const faqItems = [
   { pregunta: '¿Para qué se usa una conexión Y (Wye) en sistemas contra incendios?', respuesta: 'La conexión Y divide un suministro de agua de una sola manguera en dos salidas independientes, permitiendo que dos equipos (boquillas o mangueras) operen simultáneamente desde una sola toma de hidrante. Es usada por brigadas de bomberos cuando se necesita atacar un incendio desde dos frentes con una sola conexión al hidrante, o cuando se necesita una línea de ataque y una línea de enfriamiento simultáneamente.' },
+  { pregunta: '¿Cómo aplica la conexión Wye en sistemas standpipe según NFPA 14?', respuesta: 'NFPA 14 contempla el uso de conexiones Wye en salidas de sistemas standpipe Clase III para permitir que el personal de bomberos conecte simultáneamente dos líneas de manguera de 1.5" a una sola salida de 2.5". Esto es especialmente útil en pisos de edificios altos donde el espacio limita el número de salidas standpipe. La conexión Wye debe estar listada (UL/FM) y ser compatible con las roscas NH del sistema.' },
+  { pregunta: '¿Cuál es la diferencia entre un Wye con válvulas y uno sin válvulas?', respuesta: 'El Wye con válvulas (gated wye) tiene una válvula de cierre de cuarto de vuelta en cada salida, lo que permite controlar el caudal por línea de forma independiente o conectar/desconectar una manguera sin afectar la otra. El Wye plain (sin válvulas) tiene ambas salidas permanentemente abiertas y solo puede controlarse desde la fuente aguas arriba. Para operaciones de bomberos, el gated es el estándar; el plain se usa en instalaciones fijas donde ambas líneas operan siempre juntas.' },
   { pregunta: '¿Cuál es el diámetro estándar de una conexión Y?', respuesta: 'La conexión Y estándar para bomberos tiene entrada de 2.5" NST y dos salidas de 1.5" NST, que es la configuración más común para hidrantes municipales. También existen versiones de 2.5" a dos salidas de 2.5" para operaciones industriales de alto caudal. Disponemos de conexiones Y en aluminio y bronce según la aplicación y el tipo de ambiente.' },
-  { pregunta: '¿La conexión Y tiene válvulas de cierre independientes en cada salida?', respuesta: 'Sí. Las conexiones Y profesionales tienen una válvula de cierre de cuarto de vuelta en cada salida, lo que permite controlar el caudal en cada línea de forma independiente. Esto es fundamental para ajustar el flujo según las necesidades del ataque y para conectar o desconectar una línea sin interrumpir la otra. Es el estándar para operaciones de bomberos industriales.' },
+  { pregunta: '¿Cómo se calcula la pérdida de presión en una conexión Wye?', respuesta: 'La pérdida de presión en un Wye se calcula usando el coeficiente de flujo (Cv) del dispositivo y el caudal total que pasa por él. Los fabricantes como Elkhart Brass publican tablas de pérdida de carga para cada modelo a distintos caudales. Como referencia, un Wye de bronce de 2.5" bien diseñado tiene una pérdida de aproximadamente 2-5 PSI a 250 GPM totales. Al dividir el flujo en dos salidas iguales, la pérdida por cada salida es menor que en una sola línea, lo que puede ser ventajoso en instalaciones con presión limitada.' },
+  { pregunta: '¿La conexión Y tiene válvulas de cierre independientes en cada salida?', respuesta: 'Sí. Las conexiones Y profesionales tienen una válvula de cierre de cuarto de vuelta en cada salida, lo que permite controlar el caudal en cada línea de forma independiente. Esto es fundamental para ajustar el flujo según las necesidades del ataque y para conectar o desconectar una línea sin interrumpir la otra. Es el estándar para operaciones de bomberos industriales y cumple con los requerimientos de NFPA 14 para sistemas standpipe.' },
 ];
 
 const structuredData = [
@@ -64,8 +67,8 @@ const structuredData = [
 
 <Layout
   structuredData={structuredData}
-  title="Conexión Y Wye con Válvulas de Bola | México"
-  description="Conexión Y (Wye) con válvulas de bola para derivar líneas de manguera. Modelos B-97-A y B-100-A Elkhart Brass. UL/FM. México."
+  title="Conexión Y Wye Gated y Plain Elkhart Brass | NFPA 14 México"
+  description="Conexión Y (Wye) gated y plain Elkhart Brass para sistemas standpipe NFPA 14. Modelos B-97-A y B-100-A, 2.5\" a 2×1.5\" NH, 300 PSI, UL/FM. Distribuidor México."
   activePage="equipos"
   heroTitle="Conexión Y (Wye)"
   heroIntro="Bifurcadores que permiten dividir una línea de manguera en dos salidas independientes, cada una con válvula de bola para control individual del flujo. Esenciales para operaciones de combate de incendios que requieren múltiples líneas de ataque desde una sola fuente de agua."

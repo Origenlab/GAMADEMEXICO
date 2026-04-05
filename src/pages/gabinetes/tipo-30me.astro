@@ -28,14 +28,17 @@ const otrosProductos = todosProductos.filter(p => !productosTipo30ME.includes(p)
 // 4. Definir subcategorias para navegacion del sidebar
 const subcategorias = [
   { slug: 'tipo-30me', nombre: 'Gabinete Tipo 30ME', descripcion: 'Gabinete completo con manguera 30m', activo: true },
-  { slug: 'empotrado', nombre: 'Gabinete Empotrado', descripcion: 'Instalacion al ras del muro', activo: false },
-  { slug: 'hidrantes', nombre: 'Hidrantes', descripcion: 'Tomas exteriores hierro ductil', activo: false },
+  { slug: 'empotrado', nombre: 'Gabinete Empotrado', descripcion: 'Instalación al ras del muro', activo: false },
+  { slug: 'hidrantes', nombre: 'Hidrantes', descripcion: 'Tomas exteriores hierro dúctil', activo: false },
   { slug: 'estaciones', nombre: 'Estaciones de Manguera', descripcion: 'Carrete oscilante 180 grados', activo: false },
 ];
 const faqItems = [
   { pregunta: '¿Qué es el gabinete tipo 30ME y qué incluye?', respuesta: 'El gabinete tipo 30ME es el estándar de gabinete contra incendios más utilizado en México, definido por la NOM-002-STPS. Incluye: manguera de 30 metros de longitud (de ahí el "30") con boquilla tipo pistola, válvula de cierre angular y soporte giratorio de manguera. El número de materiales (ME) indica que es para materiales ordinarios clase A. Se instala en edificios de oficinas, comercios, bodegas y plantas industriales.' },
-  { pregunta: '¿Dónde se instala un gabinete tipo 30ME?', respuesta: 'Se instala en lugares accesibles y visibles para que cualquier persona pueda usarlo en emergencia. La NOM-002-STPS establece que la distancia máxima desde cualquier punto del área protegida hasta el gabinete debe ser menor a 30 metros (la longitud de la manguera). Se coloca a una altura de entre 0.90 m y 1.50 m del centro del gabinete al piso para facilitar su operación.' },
-  { pregunta: '¿El gabinete tipo 30ME requiere mantenimiento?', respuesta: 'Sí. Conforme a NOM-002-STPS y NFPA 25, el gabinete requiere inspección mensual visual y mantenimiento semestral que incluye: prueba de la válvula angular, verificación del estado de la manguera (sin grietas, hongos ni deterioro), prueba de la boquilla y verificación del soporte. El mantenimiento anual incluye presurización de la manguera a 300 PSI para prueba hidrostática.' },
+  { pregunta: '¿Qué establece NOM-003-SEGOB-2011 sobre los gabinetes contra incendio?', respuesta: 'NOM-003-SEGOB-2011 es la norma que regula los equipos de seguridad contra incendios y establece los requisitos de fabricación, materiales y marcado para gabinetes contra incendio en México. Complementa a NOM-002-STPS que regula la instalación y uso. La norma establece que los gabinetes deben fabricarse de acero laminado calibre 22 mínimo, con pintura electroestática roja, puerta con vidrio de 3mm mínimo y señalización con texto "EXTINTOR" o "MANGUERA CONTRA INCENDIO" en letras de 5 cm de altura.' },
+  { pregunta: '¿Qué tipo de vidrio requiere la puerta del gabinete tipo 30ME?', respuesta: 'La puerta del gabinete tipo 30ME debe tener vidrio rompible que permita acceso rápido en emergencia. NOM-003-SEGOB establece vidrio sencillo de 3mm (el vidrio estándar de ventanas), que se rompe fácilmente con el puño o una herramienta de emergencia. No se debe usar vidrio templado ni laminado en la puerta, ya que estos son mucho más difíciles de romper en una emergencia. Algunos modelos usan acrílico rompible como alternativa al vidrio.' },
+  { pregunta: '¿Dónde se instala un gabinete tipo 30ME según NOM-002-STPS?', respuesta: 'Se instala en lugares accesibles y visibles para que cualquier persona pueda usarlo en emergencia. La NOM-002-STPS establece que la distancia máxima desde cualquier punto del área protegida hasta el gabinete debe ser menor a 30 metros (la longitud de la manguera). Se coloca a una altura de entre 0.90 m y 1.50 m del centro del gabinete al piso para facilitar su operación. Debe estar libre de obstrucciones en un radio de 1 metro.' },
+  { pregunta: '¿Qué contenido completo establece NFPA 14 para un gabinete de manguera?', respuesta: 'NFPA 14 sección 7.3 establece que un gabinete de manguera (hose cabinet) para sistemas standpipe debe contener: manguera certificada del diámetro correspondiente al tipo de sistema (1.5" para Clase II y III), boquilla aprobada, y en Clase I una válvula de 2.5". La manguera debe estar en soporte que permita despliegue inmediato sin enredos. En México, NOM-002-STPS complementa estos requisitos para brigadas industriales, añadiendo la opción de extintor en el mismo gabinete.' },
+  { pregunta: '¿El gabinete tipo 30ME requiere mantenimiento periódico?', respuesta: 'Sí. Conforme a NOM-002-STPS y NFPA 25, el gabinete requiere inspección mensual visual y mantenimiento semestral que incluye: prueba de la válvula angular, verificación del estado de la manguera (sin grietas, hongos ni deterioro), prueba de la boquilla y verificación del soporte. El mantenimiento anual incluye presurización de la manguera a 300 PSI para prueba hidrostática. Las empresas con más de 15 trabajadores deben llevar registro de estos mantenimientos ante la STPS.' },
 ];
 
 const structuredData = [
@@ -65,8 +68,8 @@ const structuredData = [
 
 <Layout
   structuredData={structuredData}
-  title="Gabinete Tipo 30ME con Manguera | Venta México"
-  description="Gabinete contra incendios tipo 30ME completo: manguera 30m, válvula angular bronce, boquilla tres pasos y espacio extintor. Acero calibre 22. NOM-002-STPS. Cotización México."
+  title="Gabinete Tipo 30ME NOM-002-STPS Manguera 30m | Venta México"
+  description="Gabinete tipo 30ME completo: manguera 30m 300 PSI, válvula angular bronce 1.5\", boquilla 3 pasos, espacio extintor. Acero cal. 22, NOM-002-STPS, NOM-003-SEGOB. Cotización México."
   activePage="equipos"
   heroTitle="Gabinete Tipo 30ME"
   heroIntro="El gabinete tipo 30ME es el estándar de la industria para protección contra incendios en edificios comerciales e industriales. Integra manguera de 30 metros, válvula angular de bronce, boquilla de tres posiciones y espacio para extintor portátil, cumpliendo con NOM-002-STPS-2010 y NFPA 14."
@@ -104,8 +107,8 @@ const structuredData = [
           <!-- CATALOG HEADER -->
           <div class="catalog-header" id="catalogo">
             <div class="catalog-header__text">
-              <h2 class="catalog-header__title">Catalogo de Gabinetes Tipo 30ME</h2>
-              <p class="catalog-header__desc">Gabinetes completos con manguera, valvula, boquilla y espacio para extintor</p>
+              <h2 class="catalog-header__title">Catálogo de Gabinetes Tipo 30ME</h2>
+              <p class="catalog-header__desc">Gabinetes completos con manguera, válvula, boquilla y espacio para extintor</p>
             </div>
             <div class="catalog-header__count">
               <span class="catalog-header__number">{productosTipo30ME.length}</span>
@@ -132,15 +135,15 @@ const structuredData = [
           {productosTipo30ME.length === 0 && (
             <div class="catalog-empty">
               <div class="catalog-empty__icon">🔍</div>
-              <h3 class="catalog-empty__title">Proximamente mas opciones</h3>
-              <p class="catalog-empty__text">Estamos agregando mas gabinetes tipo 30ME de diferentes configuraciones. Mientras tanto, solicita una cotizacion personalizada.</p>
-              <a href="#cotizar" class="btn btn--primary">Solicitar Cotizacion</a>
+              <h3 class="catalog-empty__title">Próximamente más opciones</h3>
+              <p class="catalog-empty__text">Estamos agregando más gabinetes tipo 30ME de diferentes configuraciones. Mientras tanto, solicita una cotización personalizada.</p>
+              <a href="#cotizar" class="btn btn--primary">Solicitar Cotización</a>
             </div>
           )}
 
           <!-- TECHNICAL INFO -->
           <div class="tech-info">
-            <h3 class="tech-info__title">Especificaciones Tecnicas del Gabinete Tipo 30ME</h3>
+            <h3 class="tech-info__title">Especificaciones Técnicas del Gabinete Tipo 30ME</h3>
             <div class="tech-info__grid">
               <div class="tech-info__item">
                 <span class="tech-info__label">Dimensiones</span>
@@ -151,7 +154,7 @@ const structuredData = [
                 <span class="tech-info__value">1.5" x 30m, 300 PSI</span>
               </div>
               <div class="tech-info__item">
-                <span class="tech-info__label">Valvula angular</span>
+                <span class="tech-info__label">Válvula angular</span>
                 <span class="tech-info__value">Bronce 1.5" NPT/NST</span>
               </div>
               <div class="tech-info__item">
@@ -172,10 +175,10 @@ const structuredData = [
           <!-- CTA FINAL -->
           <div class="subcat-cta-final">
             <div class="subcat-cta-final__content">
-              <h3 class="subcat-cta-final__title">Necesitas gabinetes para un proyecto de construccion?</h3>
-              <p class="subcat-cta-final__desc">Ofrecemos precios especiales por volumen para desarrolladores, constructoras y proyectos de remodelacion. Incluimos asesoria en la ubicacion segun NOM-002-STPS.</p>
+              <h3 class="subcat-cta-final__title">¿Necesitas gabinetes para un proyecto de construcción?</h3>
+              <p class="subcat-cta-final__desc">Ofrecemos precios especiales por volumen para desarrolladores, constructoras y proyectos de remodelación. Incluimos asesoría en la ubicación según NOM-002-STPS.</p>
             </div>
-            <a href="#cotizar" class="btn btn--primary">Solicitar Cotizacion por Volumen</a>
+            <a href="#cotizar" class="btn btn--primary">Solicitar Cotización por Volumen</a>
           </div>
 
         </main>
@@ -204,7 +207,7 @@ const structuredData = [
           productosRelacionados={[
             { href: "/mangueras-contra-incendios", nombre: "Mangueras Contra Incendios" },
             { href: "/boquillas-contra-incendios", nombre: "Boquillas Contra Incendios" },
-            { href: "/valvulas-contra-incendios", nombre: "Valvulas Contra Incendios" },
+            { href: "/valvulas-contra-incendios", nombre: "Válvulas Contra Incendios" },
             { href: "/gabinetes-hidrantes-contra-incendios", nombre: "Gabinetes e Hidrantes" }
           ]}
         />
@@ -216,7 +219,7 @@ const structuredData = [
   <!-- RELATED PRODUCTS -->
   <RelatedProductsGrid
     titulo="Otros Gabinetes e Hidrantes"
-    subtitulo="Explora mas opciones para tu sistema de proteccion contra incendios"
+    subtitulo="Explora más opciones para tu sistema de protección contra incendios"
     productos={otrosProductos}
     maxProductos={3}
     verTodosLink="/gabinetes-hidrantes-contra-incendios"

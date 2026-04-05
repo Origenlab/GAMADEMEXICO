@@ -35,22 +35,25 @@ const subcategorias = [
 ];
 
 const faqItems = [
-  { pregunta: '¿Que diferencia hay entre un wye gated y uno plain?', respuesta: 'El wye gated tiene valvulas de cierre independientes (gate valves) en cada salida, lo que permite controlar el flujo de cada linea por separado sin afectar a la otra. El wye plain no tiene valvulas — las dos salidas estan abiertas permanentemente. Para operaciones de bomberos donde se necesita controlar el flujo por linea, el gated es el estandar. El plain se usa en instalaciones fijas donde ambas salidas siempre operan simultaneamente.' },
-  { pregunta: '¿Que presion de trabajo soportan los wyes Elkhart Brass?', respuesta: 'Los distribuidores wye Elkhart Brass estan disenados para presiones de trabajo de 200 PSI y se prueban hidrostaticamente a 400 PSI. Esto los hace compatibles con cualquier sistema municipal o industrial de suministro de agua contra incendios. Los materiales — bronce o aluminio — resisten la corrosion y el desgaste por uso frecuente en operaciones de campo.' },
-  { pregunta: '¿Los wyes Elkhart Brass son compatibles con conexiones NH mexicanas?', respuesta: 'Si. Los distribuidores wye Elkhart Brass usan roscas NH (National Hose) estandar, que es la misma rosca que usan los cuerpos de bomberos y los hidrantes en Mexico. Disponibles en configuraciones de 2½ a dos salidas de 1½ y de 2½ a dos salidas de 2½. No requieren adaptadores para conectarse a las mangueras que ya tienes.' },
+  { pregunta: '¿Qué diferencia hay entre un wye gated y uno plain?', respuesta: 'El wye gated tiene válvulas de cierre independientes (gate valves) en cada salida, lo que permite controlar el flujo de cada línea por separado sin afectar a la otra. El wye plain no tiene válvulas — las dos salidas están abiertas permanentemente. Para operaciones de bomberos donde se necesita controlar el flujo por línea, el gated es el estándar. El plain se usa en instalaciones fijas donde ambas salidas siempre operan simultáneamente.' },
+  { pregunta: '¿Cómo se usan los wyes Elkhart Brass en operaciones con camiones cisterna?', respuesta: 'En operaciones con tanques cisterna (tanker operations), el wye gated permite conectar dos líneas de ataque desde una sola salida del camión o de una manguera de suministro, maximizando el uso del agua disponible. El operador puede abrir una salida a la vez o ambas según la demanda táctica. Los wyes de aluminio son preferidos para aplicaciones móviles por su menor peso, mientras que el bronce se usa para instalaciones semifijas o permanentes en plantas industriales.' },
+  { pregunta: '¿Qué presión de trabajo soportan los wyes Elkhart Brass?', respuesta: 'Los distribuidores wye Elkhart Brass están diseñados para presiones de trabajo de 200 PSI y se prueban hidrostáticamente a 400 PSI. Esto los hace compatibles con cualquier sistema municipal o industrial de suministro de agua contra incendios. Los materiales — bronce o aluminio — resisten la corrosión y el desgaste por uso frecuente en operaciones de campo.' },
+  { pregunta: '¿Cuál es el diseño "flow-through" de los wyes Elkhart Brass?', respuesta: 'El diseño flow-through de Elkhart Brass optimiza el interior del cuerpo del wye para minimizar la turbulencia y la caída de presión cuando el agua pasa a través. Esto significa que hay menos energía hidráulica perdida en la bifurcación en comparación con diseños más básicos. En operaciones donde la presión disponible es limitada (como en redes municipales de baja presión), este diseño permite mantener presiones de trabajo adecuadas en las líneas de ataque.' },
+  { pregunta: '¿Los wyes Elkhart Brass son compatibles con conexiones NH mexicanas?', respuesta: 'Sí. Los distribuidores wye Elkhart Brass usan roscas NH (National Hose) estándar, que es la misma rosca que usan los cuerpos de bomberos y los hidrantes en México. Disponibles en configuraciones de 2½" a dos salidas de 1½" y de 2½" a dos salidas de 2½". No requieren adaptadores para conectarse a las mangueras del parque de equipos existente.' },
+  { pregunta: '¿Cuál es la vida útil de un wye Elkhart Brass en uso de campo?', respuesta: 'Los wyes Elkhart Brass fabricados en bronce fundido o aluminio forjado tienen una vida útil prácticamente indefinida cuando reciben mantenimiento adecuado. Las válvulas de bola deben lubricarse anualmente con grasa resistente al agua para mantener el giro suave. Los empaques de las conexiones NH deben inspeccionarse después de cada uso y reemplazarse si muestran cortes, deformaciones o dureza excesiva. Elkhart Brass tiene más de 125 años fabricando equipo de bomberos, con disponibilidad garantizada de refacciones.' },
 ];
 
 const structuredData = [
   buildOrganizationSchema(),
   buildProductCategorySchema({
     name: 'Distribuidores Wye Gated y Plain Elkhart Brass',
-    description: 'Distribuidores wye Elkhart Brass gated y plain. Bronce y aluminio, 2½ a 1½ NST. Presion 200 PSI. Distribuidor Mexico.',
+    description: 'Distribuidores wye Elkhart Brass gated y plain. Bronce y aluminio, 2½" a 1½" NST. Presión 200 PSI. Distribuidor México.',
     image: '/img/conexiones-herrajes/adaptador-aluminio-elk-o-lite-4-frontal.avif',
     url: '/conexiones/wye-elkhart',
     category: 'Conexiones y Herrajes Contra Incendios',
     brand: 'Elkhart Brass',
     reviewAuthor: 'Cmte. Miguel Angel Ruiz',
-    reviewBody: 'Los wyes Elkhart Brass aguantan el uso rudo del campo. Llevamos tres anos usandolos y no hemos tenido una sola falla.',
+    reviewBody: 'Los wyes Elkhart Brass aguantan el uso rudo del campo. Llevamos tres años usándolos y no hemos tenido una sola falla.',
     reviewDate: '2025-06-15',
     ratingCount: 22,
     reviewCount: 22,
@@ -68,11 +71,11 @@ const structuredData = [
 
 <Layout
   structuredData={structuredData}
-  title="Distribuidores Wye Gated y Plain | Elkhart Brass México"
-  description="Distribuidores wye Elkhart Brass: gated con valvulas independientes y plain. Bronce y aluminio, conexiones 2½ y 1½ NST. Presion 200 PSI. Mexico."
+  title="Wye Gated y Plain Elkhart Brass 2.5\" NH | Distribuidores México"
+  description="Distribuidores wye Elkhart Brass: gated con válvulas independientes y plain. Bronce y aluminio, conexiones 2½\" y 1½\" NH, 200 PSI trabajo / 400 PSI prueba. Operaciones de bomberos México."
   activePage="equipos"
   heroTitle="Wye Elkhart Brass"
-  heroIntro="Distribuidores wye de Elkhart Brass en configuraciones gated (con valvulas de cierre) y plain (sin valvulas). Bronce y aluminio de alta resistencia. Presion de trabajo 200 PSI, prueba hidrostatica 400 PSI."
+  heroIntro="Distribuidores wye de Elkhart Brass en configuraciones gated (con válvulas de cierre) y plain (sin válvulas). Bronce y aluminio de alta resistencia. Presión de trabajo 200 PSI, prueba hidrostática 400 PSI."
   heroBadge="Conexiones y Herrajes"
   heroMetrics={[
     { valor: "200", texto: "PSI trabajo" },
@@ -88,8 +91,8 @@ const structuredData = [
 
   <!-- HERO CONTENT -->
   <Fragment slot="hero-content">
-    <p>Los <strong>distribuidores wye Elkhart Brass</strong> dividen un suministro de agua en dos lineas independientes para que dos equipos operen desde una sola toma. Los modelos gated incluyen valvulas de cierre de cuarto de vuelta en cada salida para controlar el flujo por linea; los modelos plain operan con ambas salidas abiertas permanentemente.</p>
-    <p>En <strong>Gama de Mexico</strong> distribuimos wyes Elkhart Brass en bronce fundido y aluminio con conexiones NH estandar. Configuraciones de 2½ a dos salidas de 1½ para operaciones de bomberos, y de 2½ a dos salidas de 2½ para aplicaciones industriales de alto caudal. Todos probados a 400 PSI.</p>
+    <p>Los <strong>distribuidores wye Elkhart Brass</strong> dividen un suministro de agua en dos líneas independientes para que dos equipos operen desde una sola toma. Los modelos gated incluyen válvulas de cierre de cuarto de vuelta en cada salida para controlar el flujo por línea; los modelos plain operan con ambas salidas abiertas permanentemente.</p>
+    <p>En <strong>Gama de México</strong> distribuimos wyes Elkhart Brass en bronce fundido y aluminio con conexiones NH estándar. Configuraciones de 2½" a dos salidas de 1½" para operaciones de bomberos, y de 2½" a dos salidas de 2½" para aplicaciones industriales de alto caudal. Todos probados a 400 PSI.</p>
   </Fragment>
   <!-- BREADCRUMB -->
   <Breadcrumb />
@@ -134,18 +137,18 @@ const structuredData = [
           {productosSubcategoria.length === 0 && (
             <div class="catalog-empty">
               <div class="catalog-empty__icon">🔍</div>
-              <h3 class="catalog-empty__title">Proximamente mas opciones</h3>
-              <p class="catalog-empty__text">Estamos agregando fichas de wyes Elkhart Brass. Solicita cotizacion con las especificaciones de tu operacion.</p>
+              <h3 class="catalog-empty__title">Próximamente más opciones</h3>
+              <p class="catalog-empty__text">Estamos agregando fichas de wyes Elkhart Brass. Solicita cotización con las especificaciones de tu operación.</p>
               <a href="#cotizar" class="btn btn--primary">Solicitar Cotización</a>
             </div>
           )}
 
           <!-- TECHNICAL INFO -->
           <div class="tech-info">
-            <h3 class="tech-info__title">Especificaciones Tecnicas</h3>
+            <h3 class="tech-info__title">Especificaciones Técnicas</h3>
             <div class="tech-info__grid">
               <div class="tech-info__item">
-                <span class="tech-info__label">Presion trabajo</span>
+                <span class="tech-info__label">Presión trabajo</span>
                 <span class="tech-info__value">200 PSI</span>
               </div>
               <div class="tech-info__item">
@@ -165,7 +168,7 @@ const structuredData = [
                 <span class="tech-info__value">Bronce / Aluminio</span>
               </div>
               <div class="tech-info__item">
-                <span class="tech-info__label">Valvulas</span>
+                <span class="tech-info__label">Válvulas</span>
                 <span class="tech-info__value">Gated / Plain</span>
               </div>
             </div>

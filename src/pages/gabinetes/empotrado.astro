@@ -28,14 +28,17 @@ const otrosProductos = todosProductos.filter(p => !productosEmpotrados.includes(
 // 4. Definir subcategorias para navegacion del sidebar
 const subcategorias = [
   { slug: 'tipo-30me', nombre: 'Gabinete Tipo 30ME', descripcion: 'Gabinete completo con manguera 30m', activo: false },
-  { slug: 'empotrado', nombre: 'Gabinete Empotrado', descripcion: 'Instalacion al ras del muro', activo: true },
-  { slug: 'hidrantes', nombre: 'Hidrantes', descripcion: 'Tomas exteriores hierro ductil', activo: false },
+  { slug: 'empotrado', nombre: 'Gabinete Empotrado', descripcion: 'Instalación al ras del muro', activo: true },
+  { slug: 'hidrantes', nombre: 'Hidrantes', descripcion: 'Tomas exteriores hierro dúctil', activo: false },
   { slug: 'estaciones', nombre: 'Estaciones de Manguera', descripcion: 'Carrete oscilante 180 grados', activo: false },
 ];
 const faqItems = [
-  { pregunta: '¿Cuál es la diferencia entre un gabinete empotrado y uno de sobreponer?', respuesta: 'El gabinete empotrado (flush-mounted) se instala dentro del muro con la puerta al ras de la pared, lo que lo hace menos obstructivo y con mejor estética. El gabinete de sobreponer se monta en la superficie del muro y sobresale varios centímetros. El gabinete empotrado requiere una abertura en el muro durante la construcción o remodelación; el de sobreponer puede instalarse en cualquier momento.' },
-  { pregunta: '¿Qué dimensiones de nicho se necesitan para instalar un gabinete empotrado?', respuesta: 'El nicho estándar para un gabinete de manguera de 30 metros es de aproximadamente 60 cm de ancho × 75 cm de alto × 20 cm de profundidad. Las dimensiones exactas varían según el fabricante y el modelo. Es fundamental coordinar las dimensiones del gabinete con el arquitecto o contratista de construcción para que el nicho quede con las medidas correctas antes de terminar el muro.' },
-  { pregunta: '¿Los gabinetes empotrados requieren protección especial contra humedad?', respuesta: 'Sí. El nicho del gabinete debe estar sellado con materiales resistentes a la humedad para evitar la corrosión del gabinete metálico y el deterioro de la manguera. En zonas con alta humedad relativa, se recomienda un acabado epóxico o pintura anticorrosiva en el interior del nicho y el uso de mangueras con recubrimiento resistente a la humedad.' },
+  { pregunta: '¿Cuál es la diferencia entre un gabinete empotrado y uno de sobreponer?', respuesta: 'El gabinete empotrado (flush-mounted) se instala dentro del muro con la puerta al ras de la pared, lo que lo hace menos obstructivo y con mejor estética. El gabinete de sobreponer se monta en la superficie del muro y sobresale varios centímetros. El gabinete empotrado requiere una abertura en el muro durante la construcción o remodelación; el de sobreponer puede instalarse en cualquier momento sin modificar el muro.' },
+  { pregunta: '¿Qué requisitos establece NOM-003-SEGOB para gabinetes empotrados?', respuesta: 'NOM-003-SEGOB-2011 establece que los gabinetes de manguera contra incendio, sean empotrados o de sobreponer, deben fabricarse con acero laminado de calibre 22 mínimo, pintura electroestática roja o blanca, puerta con vidrio rompible de 3mm y señalización visible con letras de 5cm. Para gabinetes empotrados, el marco perimetral (ceja) debe sobresalir de la pared para cubrir el corte del muro. La norma aplica tanto para muros de tablaroca como de mampostería.' },
+  { pregunta: '¿Cómo se instala un gabinete empotrado en tablaroca versus mampostería?', respuesta: 'En tablaroca (drywall), el nicho se forma durante la construcción del muro dejando el espacio exacto entre los postes metálicos; el gabinete tiene una ceja de 5/8" que cubre la orilla del corte. En mampostería (block o ladrillo), el nicho requiere corte de la pared con amoladora y refuerzo del marco con anclas de expansión. La instalación en mampostería es más costosa y requiere que el nicho esté perfectamente a plomo y nivel para que la puerta cierre correctamente.' },
+  { pregunta: '¿Qué dimensiones de nicho se necesitan para instalar un gabinete empotrado?', respuesta: 'El nicho estándar para un gabinete de manguera de 30 metros es de aproximadamente 60 cm de ancho × 75 cm de alto × 20 cm de profundidad. Las dimensiones exactas varían según el fabricante y el modelo. Es fundamental coordinar las dimensiones del gabinete con el arquitecto o contratista de construcción para que el nicho quede con las medidas correctas antes de terminar el muro. Gama de México proporciona planos de instalación con cada gabinete.' },
+  { pregunta: '¿Qué tipos de puerta están disponibles para gabinetes empotrados?', respuesta: 'Los gabinetes empotrados pueden tener puerta de vidrio sencillo rompible (estándar normativo), puerta de panel metálico pintado (para instalaciones donde el vidrio podría romperse accidentalmente), o puerta de vidrio templado en lugares de alto tráfico (aunque el vidrio templado dificulta el acceso en emergencia). En edificios de lujo se ofrece puerta con marco de aluminio anodizado o acero inoxidable T430 pulido que se integra con la arquitectura del espacio.' },
+  { pregunta: '¿Los gabinetes empotrados requieren protección especial contra humedad?', respuesta: 'Sí. El nicho del gabinete debe estar sellado con materiales resistentes a la humedad para evitar la corrosión del gabinete metálico y el deterioro de la manguera. En zonas con alta humedad relativa, se recomienda un acabado epóxico o pintura anticorrosiva en el interior del nicho y el uso de mangueras con recubrimiento resistente a la humedad. Los gabinetes de acero inoxidable T430 son la mejor opción para instalaciones en zonas costeras o con humedad muy alta.' },
 ];
 
 const structuredData = [
@@ -65,8 +68,8 @@ const structuredData = [
 
 <Layout
   structuredData={structuredData}
-  title="Gabinete Empotrado Contra Incendios | Venta México"
-  description="Gabinete empotrado contra incendios para instalación al ras del muro. Acero laminado o inoxidable T430. Ideal para hospitales, hoteles y edificios corporativos. NOM-002-STPS. México."
+  title="Gabinete Empotrado Flush Manguera NOM-003-SEGOB | Venta México"
+  description="Gabinete empotrado al ras del muro para manguera 30m. Acero cal. 16 o inoxidable T430, puerta vidrio rompible. NOM-002-STPS, NOM-003-SEGOB. Hospitales, hoteles. México."
   activePage="equipos"
   heroTitle="Gabinete Empotrado"
   heroIntro="Los gabinetes empotrados se instalan dentro del muro quedando al ras con la superficie, ofreciendo una solución estética sin sacrificar funcionalidad. Fabricados en acero laminado o inoxidable T430, son la opción preferida para hospitales, hoteles de lujo, edificios corporativos y espacios donde la arquitectura es prioritaria."
@@ -104,8 +107,8 @@ const structuredData = [
           <!-- CATALOG HEADER -->
           <div class="catalog-header" id="catalogo">
             <div class="catalog-header__text">
-              <h2 class="catalog-header__title">Catalogo de Gabinetes Empotrados</h2>
-              <p class="catalog-header__desc">Gabinetes para instalacion al ras del muro con acabados premium</p>
+              <h2 class="catalog-header__title">Catálogo de Gabinetes Empotrados</h2>
+              <p class="catalog-header__desc">Gabinetes para instalación al ras del muro con acabados premium</p>
             </div>
             <div class="catalog-header__count">
               <span class="catalog-header__number">{productosEmpotrados.length}</span>
@@ -132,15 +135,15 @@ const structuredData = [
           {productosEmpotrados.length === 0 && (
             <div class="catalog-empty">
               <div class="catalog-empty__icon">🔍</div>
-              <h3 class="catalog-empty__title">Proximamente mas opciones</h3>
-              <p class="catalog-empty__text">Estamos agregando mas gabinetes empotrados de diferentes acabados. Mientras tanto, solicita una cotizacion personalizada.</p>
-              <a href="#cotizar" class="btn btn--primary">Solicitar Cotizacion</a>
+              <h3 class="catalog-empty__title">Próximamente más opciones</h3>
+              <p class="catalog-empty__text">Estamos agregando más gabinetes empotrados de diferentes acabados. Mientras tanto, solicita una cotización personalizada.</p>
+              <a href="#cotizar" class="btn btn--primary">Solicitar Cotización</a>
             </div>
           )}
 
           <!-- TECHNICAL INFO -->
           <div class="tech-info">
-            <h3 class="tech-info__title">Especificaciones Tecnicas del Gabinete Empotrado</h3>
+            <h3 class="tech-info__title">Especificaciones Técnicas del Gabinete Empotrado</h3>
             <div class="tech-info__grid">
               <div class="tech-info__item">
                 <span class="tech-info__label">Dimensiones</span>
@@ -172,10 +175,10 @@ const structuredData = [
           <!-- CTA FINAL -->
           <div class="subcat-cta-final">
             <div class="subcat-cta-final__content">
-              <h3 class="subcat-cta-final__title">Proyecto arquitectonico con requerimientos especiales?</h3>
+              <h3 class="subcat-cta-final__title">¿Proyecto arquitectónico con requerimientos especiales?</h3>
               <p class="subcat-cta-final__desc">Fabricamos gabinetes empotrados en dimensiones especiales, acabados personalizados y configuraciones a medida para proyectos de hospitales, hoteles y edificios corporativos.</p>
             </div>
-            <a href="#cotizar" class="btn btn--primary">Solicitar Cotizacion Especial</a>
+            <a href="#cotizar" class="btn btn--primary">Solicitar Cotización Especial</a>
           </div>
 
         </main>
@@ -194,17 +197,17 @@ const structuredData = [
           ]}
           marcas={["Potter Roemer", "JL Industries", "Larsen's", "Guardian", "Elkhart Brass"]}
           aplicaciones={[
-            "Hospitales y clinicas",
+            "Hospitales y clínicas",
             "Hoteles de lujo",
             "Edificios corporativos",
             "Centros comerciales premium",
             "Lobbies y recepciones",
-            "Pasillos de alta estetica"
+            "Pasillos de alta estética"
           ]}
           productosRelacionados={[
             { href: "/mangueras-contra-incendios", nombre: "Mangueras Contra Incendios" },
             { href: "/boquillas-contra-incendios", nombre: "Boquillas Contra Incendios" },
-            { href: "/valvulas-contra-incendios", nombre: "Valvulas Contra Incendios" },
+            { href: "/valvulas-contra-incendios", nombre: "Válvulas Contra Incendios" },
             { href: "/gabinetes-hidrantes-contra-incendios", nombre: "Gabinetes e Hidrantes" }
           ]}
         />
@@ -216,7 +219,7 @@ const structuredData = [
   <!-- RELATED PRODUCTS -->
   <RelatedProductsGrid
     titulo="Otros Gabinetes e Hidrantes"
-    subtitulo="Explora mas opciones para tu sistema de proteccion contra incendios"
+    subtitulo="Explora más opciones para tu sistema de protección contra incendios"
     productos={otrosProductos}
     maxProductos={3}
     verTodosLink="/gabinetes-hidrantes-contra-incendios"

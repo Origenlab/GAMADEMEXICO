@@ -61,22 +61,25 @@ const subcategorias = [
 ];
 
 const faqItems = [
-  { pregunta: '¿Que diferencia hay entre la Chief XD, Phantom XD y Select-O-Matic XD?', respuesta: 'La Chief XD es de flujo fijo: eliges el caudal al comprarla (95, 150, 200 o 300 GPM) y ese flujo no cambia en campo. La Phantom XD es de flujo seleccionable: el operador rota un selector para elegir entre varios caudales preconfigurados segun el escenario. La Select-O-Matic XD es automatica: ajusta el flujo sola cuando la presion del sistema cambia, manteniendo siempre la presion optima en la boquilla sin intervencion del bombero.' },
-  { pregunta: '¿Las boquillas XD de Elkhart Brass cumplen con NFPA 1964?', respuesta: 'Si. Toda la linea XD de Elkhart Brass — Chief XD, Phantom XD y Select-O-Matic XD — esta certificada conforme a NFPA 1964, que es el estandar para boquillas de ataque manual para cuerpos de bomberos. La certificacion garantiza patrones de descarga uniformes, resistencia a impactos y presion de operacion dentro de los rangos establecidos.' },
-  { pregunta: '¿Las boquillas handline XD son compatibles con las mangueras que ya tenemos?', respuesta: 'Si. Las boquillas handline XD usan conexiones NH (National Hose) estandar en diametros de 1½ y 2½ pulgadas, que son las roscas que usan los cuerpos de bomberos en Mexico. No necesitas adaptadores ni cambiar tus mangueras para usar las boquillas Elkhart Brass XD.' },
+  { pregunta: '¿Qué diferencia hay entre la Chief XD, Phantom XD y Select-O-Matic XD?', respuesta: 'La Chief XD es de flujo fijo: eliges el caudal al comprarla (95, 150, 200 o 300 GPM) y ese flujo no cambia en campo. La Phantom XD es de flujo seleccionable: el operador rota un selector para elegir entre varios caudales preconfigurados según el escenario. La Select-O-Matic XD es automática: ajusta el flujo sola cuando la presión del sistema cambia, manteniendo siempre la presión óptima en la boquilla sin intervención del bombero.' },
+  { pregunta: '¿Las boquillas XD de Elkhart Brass cumplen con NFPA 1964?', respuesta: 'Sí. Toda la línea XD de Elkhart Brass — Chief XD, Phantom XD y Select-O-Matic XD — está certificada conforme a NFPA 1964, que es el estándar para boquillas de ataque manual para cuerpos de bomberos. La certificación garantiza patrones de descarga uniformes, resistencia a impactos y presión de operación dentro de los rangos establecidos.' },
+  { pregunta: '¿Las boquillas handline XD son compatibles con las mangueras que ya tenemos?', respuesta: 'Sí. Las boquillas handline XD usan conexiones NH (National Hose) estándar en diámetros de 1½ y 2½ pulgadas, que son las roscas que usan los cuerpos de bomberos en México. No necesitas adaptadores ni cambiar tus mangueras para usar las boquillas Elkhart Brass XD.' },
+  { pregunta: '¿Qué ventajas ergonómicas ofrecen las boquillas handline XD para uso prolongado?', respuesta: 'Las boquillas handline XD de Elkhart Brass están diseñadas con empuñadura de pistola con agarre antideslizante que reduce la fatiga durante operaciones extendidas. El mecanismo de apertura/cierre requiere menor fuerza que boquillas convencionales, lo que es crítico cuando el operador lleva ya varios minutos combatiendo un incendio. El diseño balanceado distribuye el peso hacia la mano de agarre, reduciendo la torsión de muñeca causada por la reacción del chorro. Para brigadas industriales que realizan guardias largas, estas características marcan la diferencia en el desempeño del operador.' },
+  { pregunta: '¿Las boquillas handline XD tienen opciones de control de flujo para diferentes escenarios?', respuesta: 'Sí. La línea XD ofrece tres modos de control de flujo para adaptarse a diferentes doctrinas operativas. La Chief XD entrega flujo fijo sin posibilidad de error del operador, ideal para brigadas con entrenamiento básico. La Phantom XD permite al bombero seleccionar entre 3 a 6 caudales según el tamaño del incendio y el abastecimiento disponible. La Select-O-Matic XD es la opción más avanzada: compensa automáticamente las variaciones de presión en el sistema, manteniendo el caudal nominal incluso cuando la presión de la bomba fluctúa. Los tres modelos incluyen cierre total (shut-off) y patrón ajustable de chorro a niebla.' },
+  { pregunta: '¿Las boquillas handline XD son compatibles con sistemas CAFS (Compressed Air Foam Systems)?', respuesta: 'Sí. Elkhart Brass ofrece versiones de la línea XD compatibles con CAFS (sistemas de espuma con aire comprimido). Estos sistemas mezclan agua, concentrado de espuma y aire comprimido para generar una espuma húmeda o seca con alta capacidad de adherencia. Para uso con CAFS se recomienda la Chief XD o Phantom XD en configuración de flujo fijo, ya que los sistemas de flujo automático pueden tener comportamientos no predecibles con mezclas de aire y agua. Gama de México asesora en la compatibilidad entre la boquilla, el proporcionador y el compresor de aire de tu sistema.' },
 ];
 
 const structuredData = [
   buildOrganizationSchema(),
   buildProductCategorySchema({
     name: 'Boquillas Handline XD Elkhart Brass',
-    description: 'Boquillas handline XD Elkhart Brass: Chief XD, Phantom XD, Select-O-Matic XD. Certificadas NFPA 1964. Flujo fijo, seleccionable y automatico. Mexico.',
+    description: 'Boquillas handline XD Elkhart Brass: Chief XD, Phantom XD, Select-O-Matic XD. Certificadas NFPA 1964. Flujo fijo, seleccionable y automático. México.',
     image: '/img/boquillas-contra-incendios/elkhart-chief-xd-boq-01.avif',
     url: '/boquillas/handline',
     category: 'Boquillas Contra Incendios',
     brand: 'Elkhart Brass',
     reviewAuthor: 'Cmte. Jorge Navarro',
-    reviewBody: 'Las Chief XD son las boquillas que usamos en nuestras unidades. Gama de Mexico nos surte con stock inmediato en CDMX.',
+    reviewBody: 'Las Chief XD son las boquillas que usamos en nuestras unidades. Gama de México nos surte con stock inmediato en CDMX.',
     reviewDate: '2025-07-08',
     ratingCount: 30,
     reviewCount: 30,
@@ -94,11 +97,11 @@ const structuredData = [
 
 <Layout
   structuredData={structuredData}
-  title="Boquillas Handline XD Elkhart Brass | Chief XD, Phantom XD"
-  description="Boquillas handline XD Elkhart Brass: Chief XD flujo fijo, Phantom XD seleccionable, Select-O-Matic XD automatica. Certificadas NFPA 1964. Distribuidor Mexico."
+  title="Boquillas Handline XD Elkhart Brass | Chief XD Phantom XD NFPA 1964 | Bomberos México"
+  description="Boquillas handline XD Elkhart Brass: Chief XD flujo fijo (95-300 GPM), Phantom XD seleccionable, Select-O-Matic XD automática. Certificadas NFPA 1964. Compatibles CAFS. Distribuidor autorizado México."
   activePage="equipos"
   heroTitle="Boquillas Handline XD"
-  heroIntro="Linea completa de boquillas de ataque manual Elkhart Brass: flujo fijo, seleccionable y automatico. Todas certificadas NFPA 1964 con patrones de chorro directo y niebla. Conexion NH estandar de 1½ y 2½ pulgadas."
+  heroIntro="Línea completa de boquillas handline XD Elkhart Brass: Chief XD (flujo fijo 95-300 GPM), Phantom XD (seleccionable) y Select-O-Matic XD (automática). Todas certificadas NFPA 1964. Compatibles con CAFS. Conexión NH estándar 1½ y 2½ pulgadas. Distribuidor autorizado para cuerpos de bomberos y brigadas industriales en México."
   heroBadge="Boquillas Contra Incendios"
   heroMetrics={[
     { valor: "95-300", texto: "GPM rango" },
@@ -114,8 +117,8 @@ const structuredData = [
 
   <!-- HERO CONTENT -->
   <Fragment slot="hero-content">
-    <p>Las <strong>boquillas handline XD</strong> de Elkhart Brass son la linea de boquillas de ataque manual que usan los cuerpos de bomberos mas exigentes. La serie XD incluye tres tipos de control de flujo — fijo (Chief XD), seleccionable (Phantom XD) y automatico (Select-O-Matic XD) — para que cada departamento elija el tipo de boquilla que mejor se adapta a su doctrina operativa y experiencia del personal.</p>
-    <p>En <strong>Gama de Mexico</strong> distribuimos la linea completa de boquillas handline XD con stock permanente en CDMX y Queretaro. Asesoramos a cuerpos de bomberos, brigadas industriales y proteccion civil en la seleccion del tipo de boquilla correcto segun el caudal disponible, diametro de manguera y tipo de emergencia.</p>
+    <p>Las <strong>boquillas handline XD</strong> de Elkhart Brass son la línea de boquillas de ataque manual que usan los cuerpos de bomberos más exigentes. La serie XD incluye tres tipos de control de flujo — fijo (Chief XD), seleccionable (Phantom XD) y automático (Select-O-Matic XD) — para que cada departamento elija el tipo de boquilla que mejor se adapta a su doctrina operativa y experiencia del personal.</p>
+    <p>En <strong>Gama de México</strong> distribuimos la línea completa de boquillas handline XD con stock permanente en CDMX y Querétaro. Asesoramos a cuerpos de bomberos, brigadas industriales y protección civil en la selección del tipo de boquilla correcto según el caudal disponible, diámetro de manguera y tipo de emergencia.</p>
   </Fragment>
   <!-- BREADCRUMB -->
   <Breadcrumb />
@@ -160,8 +163,8 @@ const structuredData = [
           {productosHandline.length === 0 && (
             <div class="catalog-empty">
               <div class="catalog-empty__icon">🔍</div>
-              <h3 class="catalog-empty__title">Proximamente mas opciones</h3>
-              <p class="catalog-empty__text">Estamos agregando mas boquillas handline. Solicita cotizacion con especificaciones.</p>
+              <h3 class="catalog-empty__title">Próximamente más opciones</h3>
+              <p class="catalog-empty__text">Estamos agregando más boquillas handline. Solicita cotización con especificaciones.</p>
               <a href="#cotizar" class="btn btn--primary">Solicitar Cotización</a>
             </div>
           )}
@@ -180,10 +183,10 @@ const structuredData = [
               </div>
               <div class="tech-info__item">
                 <span class="tech-info__label">Select-O-Matic XD</span>
-                <span class="tech-info__value">Flujo automatico</span>
+                <span class="tech-info__value">Flujo automático</span>
               </div>
               <div class="tech-info__item">
-                <span class="tech-info__label">Presion nominal</span>
+                <span class="tech-info__label">Presión nominal</span>
                 <span class="tech-info__value">100 PSI</span>
               </div>
               <div class="tech-info__item">
@@ -191,7 +194,7 @@ const structuredData = [
                 <span class="tech-info__value">1½" y 2½" NH</span>
               </div>
               <div class="tech-info__item">
-                <span class="tech-info__label">Certificacion</span>
+                <span class="tech-info__label">Certificación</span>
                 <span class="tech-info__value">NFPA 1964</span>
               </div>
             </div>

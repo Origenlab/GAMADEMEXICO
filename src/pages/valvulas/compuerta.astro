@@ -33,6 +33,9 @@ const faqItems = [
   { pregunta: '¿Para qué se usa una válvula de compuerta en sistemas contra incendios?', respuesta: 'La válvula de compuerta OS&Y (vástago exterior) es el control principal de tuberías en sistemas de rociadores, hidrantes y redes contra incendios. Su vástago exterior indica visualmente si la válvula está abierta o cerrada, lo cual es un requisito de NFPA 13 para sistemas de rociadores. Permite aislar secciones del sistema para mantenimiento sin detener toda la instalación.' },
   { pregunta: '¿Qué es una válvula OS&Y y por qué se exige en rociadores?', respuesta: 'OS&Y significa Outside Screw and Yoke (vástago exterior). NFPA 13 exige válvulas OS&Y en la conexión entre el suministro de agua y el sistema de rociadores porque su posición (abierto/cerrado) es visible de inmediato sin necesidad de abrir y cerrar para verificar. Esto reduce el riesgo de dejar el sistema sin agua accidentalmente.' },
   { pregunta: '¿Las válvulas de compuerta requieren supervisión eléctrica?', respuesta: 'En sistemas automáticos de rociadores, NFPA 13 y NFPA 72 requieren supervisión eléctrica de las válvulas de control para generar una señal de alarma si la válvula se cierra accidentalmente. Esto se logra con un tamper switch (interruptor de posición) instalado en la válvula OS&Y. Distribuimos válvulas con tamper switch integrado o adaptable según el sistema de supervisión del proyecto.' },
+  { pregunta: '¿Con qué frecuencia exige NFPA 25 inspeccionar la válvula OS&Y?', respuesta: 'NFPA 25 "Standard for the Inspection, Testing, and Maintenance of Water-Based Fire Protection Systems" requiere inspección visual semanal o mensual de todas las válvulas de control para verificar que estén en posición abierta y no presenten daños. Adicionalmente, se requiere prueba de operación anual que consiste en abrir y cerrar completamente la válvula para confirmar que opera sin obstrucciones. El registro de estas inspecciones debe mantenerse en el archivo del sistema.' },
+  { pregunta: '¿Cómo se instala un tamper switch en una válvula OS&Y existente?', respuesta: 'La mayoría de las válvulas OS&Y tienen una ranura o adaptador en el vástago que permite instalar un tamper switch de posición sin desmontar la válvula. El interruptor detecta el movimiento del vástago y envía señal de supervisión al panel de alarma cuando la válvula se mueve de la posición abierta. Gama de México suministra tamper switches compatibles con los principales fabricantes de válvulas y puede asesorar en la integración con paneles de alarma NOTIFIER, EST, Hochiki y otros.' },
+  { pregunta: '¿Cuál es la diferencia entre válvula OS&Y y válvula PIV (Post Indicator Valve) para sistemas de rociadores?', respuesta: 'La válvula OS&Y se instala dentro del cuarto de bombas o en interiores, con el vástago visible y accesible. La válvula PIV (Post Indicator Valve) se instala en el exterior del edificio, sobresale del suelo y tiene una ventana indicadora que muestra "OPEN" o "SHUT" desde lejos. Ambas son aceptadas por NFPA 13 como válvulas de control supervisadas; la elección depende de la ubicación de la acometida de agua y los requerimientos del proyecto.' },
 ];
 
 const structuredData = [
@@ -62,8 +65,8 @@ const structuredData = [
 
 <Layout
   structuredData={structuredData}
-  title="Válvula Compuerta OS&Y Bridada | México"
-  description="Válvula compuerta OS&Y bridada para sistema contra incendio. Vástago exterior, cierre hermético, 175-350 PSI. Certificadas UL/FM. México."
+  title="Válvula de Compuerta OS&Y UL/FM para Rociadores NFPA 13 | Gama de México"
+  description="Válvula de compuerta OS&Y bridada con vástago exterior visible para sistemas de rociadores. 175-350 PSI, hierro dúctil y bronce, certificación UL 262 y FM 1120. Con tamper switch. Distribuidores en México."
   activePage="equipos"
   heroTitle="Válvula de Compuerta OS&Y"
   heroIntro="Válvulas de compuerta con vástago exterior y yugo (Outside Screw & Yoke) para aislamiento en líneas principales de sistemas contra incendio. El diseño OS&Y permite verificación visual instantánea del estado de apertura, requisito fundamental para cumplimiento de NFPA 25."
