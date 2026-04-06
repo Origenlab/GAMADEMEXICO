@@ -21,46 +21,49 @@ galeria:
   - "/img/conexiones-herrajes/conexion-wye-b100a-valvulas.avif"
 ---
 
-## Wye Gated — Dividir la línea sin perder el control
+El Distribuidor Wye Gated de Elkhart Brass divide una línea de entrada 2.5" NH en dos salidas de 1.5" o 2.5" NH, con válvulas de bola de cuarto de giro en cada salida para control independiente de flujo, presión de trabajo de 175 PSI y presión de prueba de 500 PSI, certificado UL Listed. La posibilidad de abrir, cerrar y regular cada salida de forma independiente sin afectar la otra elimina el golpe de ariete que ocurre cuando una línea se cierra en un wye sin válvulas. Es el distribuidor estándar para operaciones en standpipe, alimentación de múltiples líneas desde hidrante y protección industrial donde se requiere control selectivo de salidas bajo presión activa.
 
-En operaciones de combate de incendios, hay un momento donde una sola línea de manguera no alcanza. Necesitas dos líneas trabajando simultáneamente — una para ataque, otra para protección de exposiciones. O necesitas alimentar dos pisos de un edificio desde un solo standpipe. El Wye es la pieza que convierte una línea en dos, y la versión Gated de Elkhart Brass es la que te permite controlar cada salida de forma independiente.
+## Especificaciones Técnicas
 
-La diferencia entre un wye gated y uno plain es operativa, no cosmética. Las válvulas de bola de cuarto de giro en cada salida permiten abrir, cerrar y regular flujo por salida sin afectar la otra. Cuando estás alimentando dos equipos de manguera y uno necesita cerrar para reposicionarse, el operador del wye cierra esa salida y la presión en la otra línea se mantiene estable. Sin válvulas, cerrar una línea significa que toda la presión se va a la otra — un golpe de ariete que puede tumbar al bombero en la otra punta.
-
-### Especificaciones técnicas
-
-| Parámetro | Valor |
-|---|---|
-| Tipo | Distribuidor Wye con válvulas de bola |
-| Entrada | 2½" NH (National Standard Thread) |
-| Salidas | 2 x 1½" NH o 2 x 2½" NH (según modelo) |
-| Material | Bronce fundido |
-| Válvulas | Bola de cuarto de giro, operación con una mano |
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Elkhart Brass |
+| Modelo | Gated Wye |
+| Material del cuerpo | Bronce fundido |
+| Conexión entrada | 2.5" NH (National Standard Thread) |
+| Salidas | 2 x 1.5" NH o 2 x 2.5" NH (según modelo) |
+| Tipo de válvulas | Bola de cuarto de giro, operación con una mano |
 | Presión de trabajo | 175 PSI |
 | Presión de prueba | 500 PSI |
-| Certificaciones | UL Listed |
-| Peso | Aprox. 3.6 kg (modelo 2½" x 1½" x 1½") |
+| Roscas NH | Mecanizadas post-fundición para acoplamiento preciso |
+| Peso aproximado | 3.6 kg (modelo 2.5" x 1.5" x 1.5") |
+| Certificaciones | UL Listed, NFPA 1965 |
 
-### Cuándo especificar el Gated Wye
+## Características Principales
 
-**Operaciones de combate en estructuras:** el capitán posiciona el wye en el piso de ataque y divide la línea. Una manguera de 1½" para búsqueda y rescate, otra para ataque directo. Si el equipo de búsqueda necesita cerrar para moverse, el operador del wye cierra sin afectar la línea de ataque. Esta flexibilidad operativa salva tiempos y reduce riesgos.
+- Válvulas de bola de cuarto de giro en cada salida: control individual que permite abrir, cerrar y regular caudal por línea sin afectar la operación de la otra
+- Eliminación del golpe de ariete: cuando una línea cierra, la presión en la línea activa se mantiene estable gracias al cierre controlado de la válvula
+- Bronce fundido de Elkhart Brass con roscas NH mecanizadas post-fundición para acoplamiento hermético sin fuga desde la primera conexión
+- Operación con una mano: las válvulas de cuarto de giro permiten apertura y cierre incluso con guantes de combate puestos
+- Empaque de elastómero en válvulas que mantiene cierre hermético tras años de ciclos de apertura y cierre en condiciones de campo
+- Compatible con sistemas de standpipe NFPA 14 y con operaciones de combate desde unidad de bomberos
+- Modelos disponibles en configuración 2.5" x 1.5" x 1.5" para uso en standpipe y 2.5" x 2.5" x 2.5" para operaciones de alto caudal
+- Certificación UL Listed con certificado de conformidad disponible para proyectos con requisitos documentales de aseguradora
 
-**Alimentación de múltiples líneas desde hidrante:** cuando la bomba no puede posicionarse cerca del incendio, se tiende una línea maestra de 2½" y se coloca el wye gated cerca del punto de operación. Dos equipos trabajan desde un solo tendido largo — más eficiente que tender dos líneas separadas.
+## Aplicaciones
 
-**Sistemas standpipe secos (NFPA 14):** en escaleras de edificios, el bombero conecta al standpipe y monta el wye gated para alimentar dos líneas de 1½" por piso. Los gated wyes de Elkhart tienen roscas NST precisas que acoplan al primer intento — en un standpipe oscuro y con humo, eso importa.
+- Operaciones de combate interior en standpipe: divide la toma de piso en dos líneas de ataque independientes con control por salida
+- Alimentación simultánea de dos equipos de manguera desde un solo tendido largo de 2.5", reduciendo la cantidad de manguera necesaria en campo
+- Protección industrial temporal durante paradas de planta con control selectivo de zonas sin manipular el hidrante principal
+- Sistemas de standpipe seco en edificios de más de cuatro pisos donde los bomberos necesitan alimentar dos líneas de 1.5" por piso
+- Operaciones de rescate y búsqueda donde una línea puede cerrarse para reposicionar el equipo sin interrumpir la línea de ataque activa
 
-**Protección industrial temporal:** durante paradas de planta, se instalan wyes gated en hidrantes estratégicos para tener dos líneas listas. Si una zona necesita agua y la otra no, las válvulas permiten control selectivo sin manipular el hidrante.
+## Normas Aplicables
 
-### Construcción y durabilidad
+- **NFPA 1965** — Standard for Fire Hose Appliances: aplica directamente a distribuidores Wye como accesorios de manguera contra incendios
+- **NFPA 14** — Standard for the Installation of Standpipe and Hose Systems: uso de distribuidores en sistemas de standpipe para alimentación de múltiples líneas
+- **NFPA 1963** — Standard for Fire Hose Connections: roscas NH/NST para todas las conexiones de manguera contra incendios
+- **UL Listed** — Underwriters Laboratories: certificación del producto bajo estándares UL para herrajes de manguera
+- **NOM-002-STPS-2010** — Condiciones de seguridad, prevención y protección contra incendios en centros de trabajo
 
-El bronce fundido de Elkhart no es bronce genérico. Las roscas NH se mecanizan después del fundido, no se forman en el molde. Esto asegura un acoplamiento preciso que no fuga bajo presión y que aguanta ciclos repetidos de conexión/desconexión. Los bomberos que llevan años usando herrajes Elkhart notan la diferencia inmediatamente cuando acoplan una pieza genérica.
-
-### Normativa aplicable
-- **NFPA 1965** — Standard for Fire Hose Appliances
-- **NFPA 14** — Standard for Standpipe and Hose Systems
-- **NFPA 1901** — Standard for Automotive Fire Apparatus
-- **NOM-002-STPS** — Condiciones de seguridad contra incendios
-
-### Stock y entrega — Gama de México
-
-Modelos de mayor demanda (2½" x 1½" x 1½") disponibles en stock con entrega en 48-72 horas en zona metropolitana. Configuraciones especiales en 2-3 semanas. Cotización incluye ficha técnica y certificado UL.
+Gama de México es distribuidor autorizado Elkhart Brass en México. El Wye Gated en configuraciones de mayor demanda está disponible en stock en CDMX y Querétaro con entrega en 48–72 horas. La cotización incluye ficha técnica oficial y certificado UL vigente.

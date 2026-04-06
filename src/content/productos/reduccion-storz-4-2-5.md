@@ -20,21 +20,7 @@ destacado: false
 orden: 31
 ---
 
-Reducción Storz asimétrica que permite transicionar de líneas de suministro 4" a líneas de ataque 2.5" manteniendo la conexión rápida de cuarto de vuelta.
-
-## Características principales
-
-- Entrada: Storz 4"
-- Salida: Storz 2.5"
-- Conexión de cuarto de vuelta en ambos extremos
-- Presión de trabajo: 250 PSI
-- Transición suave de diámetros
-
-## Materiales
-
-- Cuerpo: aluminio forjado anodizado
-- Dientes: acero inoxidable
-- Empaque: EPDM de alta resistencia
+La Reducción Storz SR-40-25 de Elkhart Brass permite transicionar de líneas de suministro de gran diámetro (4" Storz) a líneas de ataque de 2.5" Storz mediante conexión simétrica de cuarto de vuelta en ambos extremos, con presión de trabajo de 250 PSI y presión de prueba de 750 PSI. Fabricada en aluminio forjado anodizado con dientes de acero inoxidable, ofrece el perfil resistencia-peso requerido en operaciones de alto caudal industrial. Certificada UL Listed y FM Approved, es la reducción Storz estándar para sistemas de suministro en terminales, aeropuertos y operaciones de espuma AFFF.
 
 ## Especificaciones Técnicas
 
@@ -42,22 +28,41 @@ Reducción Storz asimétrica que permite transicionar de líneas de suministro 4
 |----------------|----------------|
 | Marca | Elkhart Brass |
 | Modelo | SR-40-25 |
-| Material | Aluminio forjado |
+| Material del cuerpo | Aluminio forjado anodizado |
+| Conexión entrada | Storz 4" (cuarto de vuelta) |
+| Conexión salida | Storz 2.5" (cuarto de vuelta) |
 | Presión de trabajo | 250 PSI |
 | Presión de prueba | 750 PSI |
-| Conexión(es) | Entrada Storz 4" / Salida Storz 2.5" (cuarto de vuelta en ambos extremos) |
+| Dientes de acoplamiento | Acero inoxidable |
+| Empaque | EPDM de alta resistencia |
+| Compatibilidad de fluido | Agua, AFFF, AR-AFFF |
 | Certificaciones | UL Listed, FM Approved |
 
-## Normas Aplicables
+## Características Principales
 
-- **DIN 14821** — Estándar internacional para acoplamientos Storz
-- **NFPA 1963** — Roscas para mangueras contra incendios
-- **UL Listed** — UL 405: Conexiones para mangueras contra incendios
-- **NOM-002-STPS-2010** — Condiciones de seguridad contra incendios
+- Conexión Storz de cuarto de vuelta en ambos extremos: acoplamiento y desacoplamiento sin herramientas en menos de dos segundos
+- Transición asimétrica de 4" a 2.5" con paso hidráulico interno optimizado para minimizar pérdida de presión
+- Aluminio forjado anodizado: resistencia superior a la corrosión en ambientes marítimos, costeros e industriales
+- Dientes de acoplamiento de acero inoxidable que mantienen precisión dimensional tras ciclos intensivos de conexión
+- Empaque EPDM resistente a agentes espumantes (AFFF y AR-AFFF) para aplicaciones en terminales de combustibles
+- Diseño simétrico Storz compatible con equipos de bomberos nacionales e internacionales sin adaptadores
+- Certificación UL Listed y FM Approved para instalaciones que requieren validación de aseguradoras
+- Construcción sin rosca expuesta que elimina daños por golpe en condiciones de campo
 
 ## Aplicaciones
 
-- Transición de líneas de suministro
-- Conexión de mangueras de diferente diámetro
-- Operaciones de alto caudal
-- Despliegue rápido industrial
+- Transición de línea maestra de suministro 4" a línea de ataque 2.5" en operaciones de alto caudal industrial
+- Sistemas de espuma AFFF en terminales de almacenamiento de combustibles y aeropuertos
+- Conexión de carrete o hidrante de 4" a manguera de ataque de 2.5" en parques de tanques
+- Despliegue rápido en operaciones forestales y emergencias donde la velocidad de conexión es crítica
+- Integración de equipos internacionales con conexión Storz en sistemas nacionales de respuesta
+
+## Normas Aplicables
+
+- **DIN 14821** — Estándar internacional para acoplamientos Storz: define geometría y tolerancias de la conexión simétrica
+- **NFPA 1963** — Standard for Fire Hose Connections: roscas y acoplamientos para mangueras contra incendios
+- **UL 405** — Standard for Fire Department Connections: certificación de conexiones para cuerpos de bomberos
+- **NFPA 14** — Standard for the Installation of Standpipe and Hose Systems: aplicaciones en sistemas de suministro interior
+- **NOM-002-STPS-2010** — Condiciones de seguridad, prevención y protección contra incendios en centros de trabajo
+
+Gama de México es distribuidor autorizado Elkhart Brass en México. La Reducción Storz SR-40-25 se entrega con ficha técnica oficial, certificado UL vigente y asesoría para selección de configuración según el sistema hidráulico del proyecto.
