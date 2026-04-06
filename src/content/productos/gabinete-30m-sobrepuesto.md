@@ -20,33 +20,7 @@ destacado: false
 orden: 2
 ---
 
-El gabinete tipo 30M sobrepuesto es la solución práctica cuando no es posible realizar obra civil para empotrar. Se monta directamente sobre la superficie del muro con taquetes, facilitando la instalación en edificios existentes o remodelaciones.
-
-## Características principales
-
-- Dimensiones: 88 cm alto x 85 cm ancho x 21 cm fondo
-- Manguera incluida: 1.5" x 30 m, doble forro con coples bronce NST
-- Válvula angular: bronce 1.5", entrada NPT, salida NST
-- Puerta: vidrio templado 3 mm, bisagra continua 180°
-- Rack portamanguera oscilante
-- Montaje sobrepuesto con taquetes
-
-## Materiales
-
-- Cuerpo: lámina de acero calibre 22
-- Acabado: pintura electrostática rojo brillante
-- Herrajes: acero galvanizado
-
-## Aplicaciones
-
-- Edificios comerciales existentes
-- Remodelaciones sin obra civil
-- Bodegas y naves industriales
-- Estacionamientos
-
-## Certificaciones
-
-Cumple con **NOM-002-STPS-2010** y es compatible con **NFPA 14**.
+El gabinete tipo 30M sobrepuesto resuelve la instalación de sistemas de manguera contra incendios en edificios donde no es viable realizar la obra civil necesaria para empotrar, montándose directamente sobre la superficie del muro con taquetes y sin requerir corte de pared ni reconstrucción. Fabricado en lámina de acero calibre 22 con pintura electrostática rojo brillante, incluye manguera de 1.5" x 30 m con coples de bronce NST, válvula angular de bronce a 300 PSI y rack oscilante, cumpliendo con NOM-002-STPS-2010 y NFPA 14 Clase II para uso de ocupantes.
 
 ## Especificaciones Técnicas
 
@@ -54,20 +28,45 @@ Cumple con **NOM-002-STPS-2010** y es compatible con **NFPA 14**.
 |----------------|----------------|
 | Marca | Nacional |
 | Modelo | GAB-30M-SP |
-| Material | Acero calibre 22 |
+| Material cuerpo | Lámina de acero calibre 22 |
+| Acabado exterior | Pintura electrostática rojo brillante |
 | Dimensiones | 88 cm alto x 85 cm ancho x 21 cm fondo |
+| Tipo de montaje | Sobrepuesto, anclaje a muro con taquetes |
 | Manguera | 1.5" x 30 m, doble forro, coples bronce NST |
-| Válvula angular | Bronce 1.5", entrada NPT, salida NST |
-| Presión de trabajo | 300 PSI |
+| Válvula angular | Bronce 1.5", entrada NPT, salida NST, 300 PSI |
 | Puerta | Vidrio templado 3 mm, bisagra continua 180° |
-| Rack portamanguera | Oscilante |
-| Montaje | Sobrepuesto con taquetes |
-| Acabado | Pintura electrostática rojo brillante |
+| Cerradura | Cilindro con llave |
+| Rack portamanguera | Oscilante de 180° para despliegue rápido |
+| Herrajes de anclaje | Acero galvanizado |
 | Certificaciones | NOM-002-STPS-2010, NFPA 14 |
+
+## Contenido del Gabinete
+
+- Manguera contra incendios 1.5" x 30 m, doble forro con coples de bronce NST
+- Válvula angular de bronce 1.5" con entrada NPT y salida NST
+- Boquilla chiflón de dos posiciones (chorro y cerrado)
+- Niple hexagonal de bronce para conexión a la red
+- Llave spanner para coples NST
+- Rack portamanguera oscilante
+- Instrucciones de uso en caso de emergencia
+- Kit de anclaje con taquetes y tornillos para montaje sobrepuesto
+
+## Aplicaciones
+
+- Edificios comerciales y de oficinas existentes donde la remodelación o adecuación requiere protección contra incendios sin intervención estructural en muros
+- Bodegas, naves industriales y almacenes donde la velocidad de instalación es prioritaria y la disponibilidad del área no puede interrumpirse por obras mayores
+- Estacionamientos cubiertos y semiabiertos donde la pared de concreto o block impide el empotrado convencional
+- Locales en plazas comerciales y centros de negocio que deben cumplir con protección civil antes de la apertura sin acceso a la losa o muro estructural
+- Instalaciones temporales, pabellones de exposición y estructuras prefabricadas donde el gabinete debe poder reubicarse o retirarse con facilidad
 
 ## Normas Aplicables
 
-- **NOM-002-STPS-2010** — Condiciones de seguridad, prevención y protección contra incendios en los centros de trabajo (sección 6.2 gabinetes)
-- **NOM-003-SEGOB-2011** — Señales y avisos para protección civil (señalización del gabinete)
-- **NOM-018-STPS** — Sistema armonizado para identificación y comunicación de peligros y riesgos
-- **NFPA 14** — Standard for the Installation of Standpipe and Hose Systems (Clase II: gabinete manguera 1.5")
+- **NFPA 14** — Standard for the Installation of Standpipe and Hose Systems, Clase II, Sección 7.10: sistemas de manguera de 1.5" para uso por ocupantes del edificio
+- **NOM-002-STPS-2010** — Condiciones de seguridad, prevención y protección contra incendios en los centros de trabajo, sección 6.2: dotación y ubicación de gabinetes
+- **NOM-003-SEGOB-2011** — Señales y avisos para protección civil: señalización reglamentaria del gabinete y su ubicación en el inmueble
+- **NFPA 1962** — Standard for the Inspection, Care, and Use of Fire Hose: pruebas hidrostáticas anuales de la manguera a 300 PSI
+- **Reglamento de Construcciones para el Distrito Federal** — Artículo 86: requisitos de sistemas de extinción de incendios en edificaciones según uso y superficie
+
+---
+
+**Gama de México** suministra el gabinete 30M sobrepuesto con entrega inmediata en CDMX y envío a toda la República. Contáctenos para cotización por proyecto, asesoría en distribución de puntos de manguera y cumplimiento ante protección civil.

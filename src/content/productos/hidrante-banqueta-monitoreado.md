@@ -20,34 +20,7 @@ destacado: true
 orden: 6
 ---
 
-El hidrante monitoreado incorpora sensores IoT que reportan en tiempo real el estado de apertura, flujo de agua y posibles manipulaciones no autorizadas. Ideal para ciudades inteligentes y gestión remota de redes.
-
-## Características principales
-
-- Sensor de apertura: magnético sin contacto
-- Medición de flujo: ultrasónico integrado
-- Comunicación: LoRaWAN / NB-IoT / LTE-M
-- Batería: 10 años vida útil
-- Alarmas: apertura, flujo anormal, impacto
-- Dashboard: plataforma web y app móvil
-
-## Materiales
-
-- Cuerpo: hierro dúctil estándar
-- Sensores: encapsulados IP68
-- Electrónica: caja NEMA 4X
-- Antena: integrada en tapa
-
-## Aplicaciones
-
-- Smart cities
-- Redes municipales modernas
-- Control de pérdidas de agua
-- Detección de uso no autorizado
-
-## Certificaciones
-
-Certificado **AWWA C502**, **UL 246** y **FCC** para comunicaciones.
+El hidrante de banqueta Mueller con monitoreo electrónico integra sensores IoT de apertura magnética y medición de flujo ultrasónico que reportan en tiempo real el estado del hidrante, el caudal entregado y cualquier manipulación no autorizada, todo desde un dashboard web o aplicación móvil. Construido sobre el mismo cuerpo de hierro dúctil ASTM A-536 certificado bajo AWWA C502 y UL 246, mantiene las prestaciones de un hidrante de 250 PSI con 2 salidas de 2.5" NST y 1 salida de 4.5" NST, añadiendo inteligencia operativa sin modificar el protocolo de operación mecánica estándar.
 
 ## Especificaciones Técnicas
 
@@ -55,22 +28,40 @@ Certificado **AWWA C502**, **UL 246** y **FCC** para comunicaciones.
 |----------------|----------------|
 | Marca | Mueller |
 | Modelo | HID-SMART-250 |
-| Material | Hierro dúctil ASTM A-536 |
+| Material cuerpo | Hierro dúctil ASTM A-536 |
+| Salidas | 2 x 2.5" NST + 1 x 4.5" NST |
+| Presión de trabajo | 250 PSI |
 | Sensor de apertura | Magnético sin contacto |
 | Medición de flujo | Ultrasónico integrado |
-| Comunicación | LoRaWAN / NB-IoT / LTE-M |
-| Vida útil batería | 10 años |
-| Protección sensores | IP68 |
-| Electrónica | Caja NEMA 4X |
-| Presión de trabajo | 250 PSI |
-| Alarmas | Apertura, flujo anormal, impacto |
+| Comunicación | LoRaWAN / NB-IoT / LTE-M (seleccionable) |
+| Vida útil de batería | 10 años (reemplazable en campo) |
+| Protección sensores | IP68 (sumergible) |
+| Electrónica | Caja NEMA 4X anticorrosión |
+| Tuerca de operación | Pentagonal 1-1/2" estándar AWWA |
+| Alarmas | Apertura no autorizada, flujo anormal, impacto/golpe |
 | Certificaciones | AWWA C502, UL 246, FCC |
+
+## Norma AWWA y Características de Operación
+
+La base hidráulica del hidrante monitoreado cumple íntegramente con **AWWA C502** (barril seco, tuerca pentagonal 1-1/2", presión de prueba 500 PSI) y **UL 246**, garantizando que la tecnología embarcada no compromete las prestaciones mecánicas certificadas. La tuerca de operación pentagonal estándar asegura compatibilidad total con equipos de bomberos. Los sensores encapsulados en IP68 operan de forma autónoma con batería de 10 años, transmitiendo alertas vía LoRaWAN o NB-IoT hacia la plataforma de gestión de la red, donde el historial de eventos queda registrado para auditoría y cumplimiento normativo.
+
+## Aplicaciones
+
+- Ciudades inteligentes y municipios que implementan gestión centralizada de infraestructura hidráulica con tableros de control en tiempo real
+- Redes municipales de gran extensión donde la detección temprana de uso no autorizado reduce pérdidas de agua y costos operativos
+- Parques industriales y zonas económicas especiales con seguros que exigen trazabilidad completa del uso del sistema contra incendios
+- Instalaciones críticas —plantas de energía, centros de datos, hospitales— donde el tiempo de respuesta ante una apertura de emergencia debe documentarse automáticamente
+- Proyectos de ciudades nuevas o ampliaciones urbanas donde la infraestructura conectada es requisito del desarrollo desde la etapa de diseño
 
 ## Normas Aplicables
 
-- **NFPA 24** — Standard for the Installation of Private Fire Service Mains and Their Appurtenances (tuberías subterráneas para servicio de incendios)
-- **NFPA 291** — Recommended Practice for Fire Flow Testing and Marking of Hydrants (pruebas de flujo en hidrantes)
-- **UL 246** — Hydrants for Fire-Protection Service (certificación de hidrantes)
-- **AWWA C502** — Dry-Barrel Fire Hydrants (hidrantes barril seco)
+- **AWWA C502** — Dry-Barrel Fire Hydrants: especificaciones de construcción, materiales, presión y tuerca de operación pentagonal estándar
+- **UL 246** — Hydrants for Fire-Protection Service: certificación de desempeño bajo condiciones de flujo y presión para servicio contra incendios
+- **FM 1121** — Fire Hydrants: requisitos Factory Mutual para hidrantes en instalaciones industriales y comerciales aseguradas
+- **NFPA 24** — Standard for the Installation of Private Fire Service Mains and Their Appurtenances: diseño e instalación de redes subterráneas privadas que alimentan hidrantes
 - **NOM-002-STPS-2010** — Condiciones de seguridad, prevención y protección contra incendios en los centros de trabajo
-- **FCC** — Federal Communications Commission (certificación de comunicaciones inalámbricas)
+- **FCC** — Federal Communications Commission: certificación de los módulos de comunicación inalámbrica integrados (LoRaWAN / NB-IoT / LTE-M)
+
+---
+
+**Gama de México** distribuye hidrantes Mueller con monitoreo IoT e integra la solución completa incluyendo gateway de red, plataforma de gestión y capacitación de operadores. Contáctenos para cotización, piloto de demostración y soporte en la integración con su sistema SCADA o GIS municipal.

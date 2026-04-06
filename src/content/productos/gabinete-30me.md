@@ -20,37 +20,7 @@ destacado: true
 orden: 1
 ---
 
-El gabinete tipo 30ME es la solución integral para primera respuesta contra incendios en edificios comerciales e industriales. Viene completamente equipado con manguera, válvula, boquilla y espacio para extintor, permitiendo una respuesta inmediata ante cualquier emergencia sin necesidad de esperar al cuerpo de bomberos.
-
-## Características principales
-
-- Dimensiones: 88 cm alto x 85 cm ancho x 21 cm fondo
-- Manguera incluida: 1.5" x 30 m, doble forro con coples bronce NST, 300 PSI
-- Válvula angular: bronce 1.5", entrada NPT, salida NST, 300 PSI
-- Boquilla: tres posiciones (chorro, neblina, cerrado) en bronce o polímero
-- Puerta: vidrio templado 3 mm o acrílico 1 mm, bisagra continua 180°, cerradura de cilindro
-- Rack portamanguera oscilante
-- Niple hexagonal de bronce
-- Llave spanner
-- Espacio para extintor de 4.5 o 6 kg
-
-## Materiales
-
-- Cuerpo: lámina de acero calibre 22, acabado electrostático rojo
-- Puerta: vidrio templado 3 mm o acrílico 1 mm
-- Componentes internos: bronce para resistencia a corrosión
-
-## Aplicaciones
-
-- Edificios comerciales
-- Instalaciones industriales
-- Centros de servicios
-- Oficinas y hoteles
-- Hospitales y bodegas
-
-## Certificaciones
-
-Este gabinete cumple con **NOM-002-STPS-2010** (Condiciones de seguridad - Prevención y protección contra incendios en los centros de trabajo) y es compatible con **NFPA 14** (Standard for the Installation of Standpipe and Hose Systems).
+El gabinete tipo 30ME es la estación de primera respuesta contra incendios más completa del mercado: integra manguera de 1.5" x 30 m con coples de bronce NST a 300 PSI, válvula angular de bronce, boquilla de tres posiciones y espacio dedicado para extintor de 4.5 o 6 kg, todo dentro de un gabinete de acero calibre 22 con pintura electrostática roja y puerta de vidrio templado. Cumple con NOM-002-STPS-2010 y NFPA 14 Clase II, lo que lo convierte en la solución reglamentaria estándar para edificios comerciales, industriales y de uso mixto en México.
 
 ## Especificaciones Técnicas
 
@@ -58,20 +28,46 @@ Este gabinete cumple con **NOM-002-STPS-2010** (Condiciones de seguridad - Preve
 |----------------|----------------|
 | Marca | Nacional |
 | Modelo | GAB-30ME |
-| Material | Acero calibre 22 / Bronce |
+| Material cuerpo | Lámina de acero calibre 22 |
+| Acabado exterior | Pintura electrostática roja RAL 3000 |
 | Dimensiones | 88 cm alto x 85 cm ancho x 21 cm fondo |
-| Manguera | 1.5" x 30 m, doble forro, coples bronce NST |
-| Válvula angular | Bronce 1.5", entrada NPT, salida NST |
-| Presión de trabajo | 300 PSI |
-| Boquilla | Tres posiciones (chorro, neblina, cerrado) |
-| Puerta | Vidrio templado 3 mm o acrílico 1 mm |
-| Acabado | Pintura electrostática roja |
-| Espacio extintor | 4.5 o 6 kg |
+| Manguera | 1.5" x 30 m, doble forro, coples bronce NST, 300 PSI |
+| Válvula angular | Bronce 1.5", entrada NPT, salida NST, 300 PSI |
+| Boquilla | Tres posiciones: chorro sólido, neblina y cerrado |
+| Material boquilla | Bronce o polímero de alta resistencia |
+| Puerta | Vidrio templado 3 mm o acrílico 1 mm, bisagra continua 180° |
+| Cerradura | Cilindro con llave |
+| Rack portamanguera | Oscilante de 180° para despliegue rápido |
+| Espacio para extintor | Compatible con extintores de 4.5 o 6 kg |
 | Certificaciones | NOM-002-STPS-2010, NFPA 14 |
+
+## Contenido del Gabinete
+
+- Manguera contra incendios 1.5" x 30 m, doble forro con coples de bronce NST
+- Válvula angular de bronce 1.5" con entrada NPT y salida NST
+- Boquilla chiflón de tres posiciones (chorro, neblina, cerrado)
+- Niple hexagonal de bronce para conexión a la red
+- Llave spanner para coples NST
+- Rack portamanguera oscilante
+- Señalización interna con instrucciones de uso en caso de emergencia
+- Espacio habilitado para extintor de 4.5 o 6 kg (extintor no incluido)
+
+## Aplicaciones
+
+- Edificios comerciales, plazas y centros de servicios que requieren cumplimiento NOM-002-STPS-2010 con estación de manguera y extintor en un solo punto
+- Instalaciones industriales, naves de manufactura y almacenes donde el Reglamento de Construcciones exige sistemas de standpipe Clase II con gabinete completo
+- Hoteles, hospitales y edificios de oficinas donde la brigada de emergencia necesita equipo de primera respuesta antes de la llegada de bomberos
+- Bodegas de logística y centros de distribución con áreas de más de 1,000 m² que exigen cobertura mínima de 30 m por punto de manguera
+- Teatros, auditorios y recintos de eventos masivos donde las autoridades de protección civil verifican la dotación completa del gabinete durante inspecciones
 
 ## Normas Aplicables
 
-- **NOM-002-STPS-2010** — Condiciones de seguridad, prevención y protección contra incendios en los centros de trabajo (sección 6.2 gabinetes)
-- **NOM-003-SEGOB-2011** — Señales y avisos para protección civil (señalización del gabinete)
-- **NOM-018-STPS** — Sistema armonizado para identificación y comunicación de peligros y riesgos
-- **NFPA 14** — Standard for the Installation of Standpipe and Hose Systems (Clase II: gabinete manguera 1.5")
+- **NFPA 14** — Standard for the Installation of Standpipe and Hose Systems, Clase II, Sección 7.10: sistemas de manguera de 1.5" para uso por ocupantes del edificio
+- **NOM-002-STPS-2010** — Condiciones de seguridad, prevención y protección contra incendios en los centros de trabajo, sección 6.2: dotación y ubicación de gabinetes
+- **NOM-003-SEGOB-2011** — Señales y avisos para protección civil: señalización reglamentaria del gabinete y su ubicación en el inmueble
+- **NFPA 1962** — Standard for the Inspection, Care, and Use of Fire Hose: pruebas hidrostáticas anuales de la manguera a 300 PSI
+- **Reglamento de Construcciones para el Distrito Federal** — Artículo 86: requisitos de sistemas de extinción de incendios en edificaciones según uso y superficie
+
+---
+
+**Gama de México** suministra el gabinete 30ME con inventario disponible para entrega inmediata en Ciudad de México y envío a toda la República. Contáctenos para cotización por volumen, asesoría en layout de instalación y gestión de permisos ante protección civil.
