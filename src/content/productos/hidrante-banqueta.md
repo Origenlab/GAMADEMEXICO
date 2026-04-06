@@ -20,38 +20,7 @@ destacado: true
 orden: 2
 ---
 
-El hidrante de banqueta es el punto de toma de agua exterior que permite a los cuerpos de bomberos conectar sus mangueras directamente a la red de agua. Su construcción en hierro dúctil ASTM A-536 proporciona resistencia superior al impacto vehicular y a la corrosión, garantizando disponibilidad cuando más se necesita.
-
-## Características principales
-
-- Presión de trabajo: 250 PSI (estándar) a 350 PSI (alta presión)
-- Prueba hidrostática: el doble de la presión de trabajo
-- Salidas: dos 2.5" NST (7.5 TPI) + una 4.5" NST para bomba (4 TPI)
-- Entrada: 6" brida ANSI B16.1 Clase 125, orientación horizontal o vertical
-- Tipos: barril seco (zonas con heladas) y barril húmedo (climas templados/tropicales)
-
-## Materiales
-
-- Cuerpo: hierro dúctil ASTM A-536 con recubrimiento epóxico interior/exterior
-- Salidas: bronce ASTM B-62
-- Vástago principal: acero inoxidable o bronce al silicio
-- Válvula: hule encapsulado
-
-## Configuraciones
-
-- Barril seco: para zonas con riesgo de heladas
-- Barril húmedo: para climas templados y tropicales
-
-## Aplicaciones
-
-- Redes de hidrantes contra incendio
-- Instalaciones industriales
-- Sistemas comerciales y residenciales
-- Zonas de alto riesgo con acceso inmediato a agua
-
-## Certificaciones
-
-Este hidrante cuenta con certificación **AWWA C502/C503**, **UL 246** y **NSF 61** (contacto con agua potable), cumpliendo con los estándares más exigentes para redes de hidrantes municipales e industriales.
+El **hidrante de banqueta HID-BAN-250** de Elkhart Brass en hierro dúctil ASTM A-536 con salidas de bronce ASTM B-62 es el punto de toma de agua exterior que permite a los cuerpos de bomberos conectar mangueras directamente a la red de agua privada o municipal para combatir incendios con caudales de hasta 1,500 GPM. Disponible en versión barril seco (AWWA C502) para zonas con riesgo de heladas y barril húmedo (AWWA C503) para climas templados y tropicales, este hidrante incorpora la característica de ruptura por impacto vehicular (traffic-breakaway) que protege la estanqueidad de la red en caso de choque accidental. Certificado UL 246, AWWA C502/C503 y NSF 61, cumple con todos los requisitos de NFPA 24 para redes privadas de servicio contra incendio.
 
 ## Especificaciones Técnicas
 
@@ -59,23 +28,45 @@ Este hidrante cuenta con certificación **AWWA C502/C503**, **UL 246** y **NSF 6
 |----------------|----------------|
 | Marca | Elkhart Brass |
 | Modelo | HID-BAN-250 |
-| Material | Hierro dúctil ASTM A-536 / Bronce |
-| Presión de trabajo | 250–350 PSI |
-| Prueba hidrostática | Doble de la presión de trabajo |
-| Salidas | 2 x 2.5" NST (7.5 TPI) + 1 x 4.5" NST bomba (4 TPI) |
-| Entrada | 6" brida ANSI B16.1 Clase 125 |
-| Cuerpo | Hierro dúctil ASTM A-536 con recubrimiento epóxico |
-| Salidas material | Bronce ASTM B-62 |
-| Vástago | Acero inoxidable o bronce al silicio |
-| Tipos disponibles | Barril seco / Barril húmedo |
+| Material Cuerpo | Hierro dúctil ASTM A-536 con recubrimiento epóxico |
+| Material Salidas | Bronce ASTM B-62 |
+| Vástago Principal | Acero inoxidable o bronce al silicio |
+| Presión de Trabajo | 250–350 PSI |
+| Prueba Hidrostática | Doble de la presión de trabajo |
+| Salidas de Manguera | 2 x 2.5" NST (7.5 TPI) |
+| Salida de Bomba | 1 x 4.5" NST (4 TPI) |
+| Entrada | 6" brida ANSI B16.1 Clase 125 (horizontal o vertical) |
+| Tuerca Operación | Pentagonal 1-1/2" conforme AWWA |
+| Tipos Disponibles | Barril seco (AWWA C502) / Barril húmedo (AWWA C503) |
+| Ruptura por Impacto | Sistema traffic-breakaway integrado |
 | Certificaciones | AWWA C502, AWWA C503, UL 246, NSF 61 |
+
+## Diseño Hidrante de Banqueta
+
+Los hidrantes de banqueta se dividen en dos tipos constructivos fundamentales según las condiciones climáticas del sitio de instalación. El **barril húmedo** (wet barrel, AWWA C503) mantiene agua a presión en todo el cuerpo del hidrante en todo momento; cada salida cuenta con su propia válvula individual que el bombero opera directamente, lo que permite abrir salidas independientes sin afectar las demás. Este diseño es adecuado para climas donde las temperaturas nunca descienden por debajo del punto de congelamiento, como la mayor parte del sureste y costas de México.
+
+El **barril seco** (dry barrel, AWWA C502) resuelve el problema de congelamiento ubicando la válvula principal de operación bajo la línea de heladas, dentro de la conexión subterránea. El barril —la columna visible sobre el nivel de banqueta— permanece sin agua cuando el hidrante está cerrado; al abrirlo, el vástago transmite el movimiento hasta la válvula de compresión enterrada, llenando el barril de abajo hacia arriba. Cuando se cierra el hidrante, un drenaje automático en la base vacía el barril de agua residual antes de que pueda congelarse. Este mecanismo es esencial en el norte de México, zonas de altiplano y cualquier región con temperaturas invernales bajo cero.
+
+La **salida de bomba (pumper outlet)** de 4.5" NST está diseñada para la conexión directa de carros bomba de los cuerpos de bomberos, proporcionando el mayor caudal posible en emergencias de gran escala. Las **salidas de manguera** de 2.5" NST son para conexión de mangueras de ataque de 2.5" o para uso con adaptadores de manguera de 1.5". La **tuerca de operación pentagonal** de 1-1/2" es el estándar AWWA que garantiza que cualquier llave de bombero en México y Estados Unidos pueda operar el hidrante. El sistema **traffic-breakaway** incorpora un plano de ruptura diseñado en el barril que, ante un impacto vehicular, rompe de forma controlada permitiendo reemplazar solo la sección superior sin desenterrar el hidrante ni cortar el suministro a la red.
+
+## Aplicaciones
+
+- Redes privadas de hidrantes contra incendio en complejos industriales y parques logísticos
+- Instalaciones comerciales de gran formato: centros comerciales, hospitales, hoteles
+- Desarrollos residenciales y fraccionamientos con red contra incendio propia
+- Zonas de alto riesgo que requieren punto de conexión para carros bomba municipales
+- Plantas de manufactura y naves industriales bajo norma NOM-002-STPS
+- Instalaciones portuarias, aeroportuarias y de infraestructura crítica
 
 ## Normas Aplicables
 
-- **NFPA 24** — Standard for the Installation of Private Fire Service Mains and Their Appurtenances (tuberías subterráneas para servicio de incendios)
-- **NFPA 291** — Recommended Practice for Fire Flow Testing and Marking of Hydrants (pruebas de flujo en hidrantes)
-- **UL 246** — Hydrants for Fire-Protection Service (certificación de hidrantes)
-- **AWWA C502** — Dry-Barrel Fire Hydrants (hidrantes barril seco)
-- **AWWA C503** — Wet-Barrel Fire Hydrants (hidrantes barril húmedo)
+- **AWWA C502** — Dry-Barrel Fire Hydrants (hidrantes de barril seco para zonas con heladas)
+- **AWWA C503** — Wet-Barrel Fire Hydrants (hidrantes de barril húmedo para climas templados)
+- **UL 246** — Hydrants for Fire-Protection Service (certificación de hidrantes para protección contra incendios)
+- **FM 1121** — Fire Hydrants (aprobación Factory Mutual para hidrantes en instalaciones aseguradas)
+- **NFPA 24** — Standard for the Installation of Private Fire Service Mains and Their Appurtenances (tuberías subterráneas y accesorios para servicio de incendios privado)
 - **NOM-002-STPS-2010** — Condiciones de seguridad, prevención y protección contra incendios en los centros de trabajo
-- **NSF 61** — Drinking Water System Components (contacto con agua potable)
+
+---
+
+**Gama de México** es distribuidor de hidrantes de banqueta Elkhart Brass con cobertura nacional y soporte técnico especializado en diseño de redes NFPA 24. Nuestros ingenieros le asesoran en la selección del tipo de barril correcto para su clima, espaciado de hidrantes, presión de red y documentación de cumplimiento para autoridades y aseguradoras. Solicite cotización y proyecto ejecutivo.

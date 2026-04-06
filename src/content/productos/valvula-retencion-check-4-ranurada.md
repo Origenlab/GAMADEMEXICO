@@ -20,7 +20,7 @@ destacado: false
 orden: 21
 ---
 
-La **válvula check G-2880-4** de Mueller ofrece prevención de reflujo confiable en instalaciones de 4" con sistema de acople mecánico. Diseño optimizado para mínima pérdida de presión y máxima confiabilidad.
+La **válvula check G-2880-4** de Mueller en diámetro 4" con conexión ranurada IPS estándar ofrece prevención de reflujo de alto rendimiento para el tamaño más común en líneas principales de rociadores y descargas de bombas industriales, fabricada en cuerpo de hierro dúctil ASTM A536 con clapper encapsulado en EPDM y eje de acero inoxidable 316. Su apertura de 85° garantiza flujo sin restricción significativa mientras que la tapa atornillada superior facilita inspecciones in situ sin retirar la válvula de la línea. Certificada UL 312 y FM Approved, opera a 175 PSI de trabajo con prueba hidrostática a 350 PSI cumpliendo los requisitos de NFPA 13 y NFPA 20 para válvulas de retención listadas.
 
 ## Especificaciones Técnicas
 
@@ -34,35 +34,37 @@ La **válvula check G-2880-4** de Mueller ofrece prevención de reflujo confiabl
 | Presión de Prueba | 350 PSI (24 bar) |
 | Conexión | Ranurada IPS estándar |
 | Cuerpo | Hierro dúctil ASTM A536 |
-| Clapper | Hierro + EPDM encapsulado |
+| Clapper | Hierro dúctil con EPDM encapsulado |
 | Eje | Acero inoxidable 316 |
+| Ángulo de Apertura | 85° (full-bore) |
+| Tapa Superior | Atornillada para inspección in situ |
+| Recubrimiento Interior | FBE (Fusion Bonded Epoxy) |
 | Peso | 18 kg |
 
-## Características Destacadas
+## Mecánica del Disco Oscilante
 
-- **4" ranurada** tamaño más común
-- **Ranura IPS estándar** universal
-- **Clapper encapsulado** durabilidad máxima
-- **Eje 316** ambientes corrosivos
-- **Apertura 85°** flujo sin restricción
-- **Tapa atornillada** inspección fácil
-- **Recubrimiento FBE** protección interior
+El principio de funcionamiento swing check opera con un clapper articulado en un eje horizontal que atraviesa la parte superior del cuerpo de la válvula. La presión del flujo en dirección correcta actúa sobre la cara aguas arriba del disco, haciéndolo girar sobre su eje hasta alcanzar un ángulo de apertura máximo de 85°, lo que resulta en una sección de paso prácticamente igual al diámetro interno de la tubería y una pérdida de presión mínima. Cuando el flujo se detiene o intenta revertirse, el clapper cae por gravedad y la diferencia de presión cierra el disco contra el asiento EPDM, formando un sello hermético que previene cualquier flujo de retorno.
+
+En líneas de descarga de bombas contra incendio, la correcta operación del check valve es fundamental para dos funciones: impedir el reflujo hacia la bomba cuando ésta se apaga, protegiendo sellos y rodamientos, y mantener la presión en la red durante los intervalos entre arranques. La **presión de craqueo** del modelo G-2880-4 está optimizada para el rango de presiones típico de sistemas NFPA 13 y NFPA 20, permitiendo apertura rápida al inicio del flujo sin generación de golpe de ariete. El recubrimiento FBE interior protege contra la corrosión del agua de red, extendiendo la vida útil del cuerpo en ambientes con agua con alta dureza o cloro residual.
 
 ## Aplicaciones
 
-- Líneas de rociadores principales
-- Descarga bombas de presión constante
-- Sistemas pre-ensamblados
-- Instalaciones industriales
-- Retrofits de emergencia
-- Sistemas de espuma AFFF
+- Líneas principales de rociadores automáticos en sistemas Clase I y II
+- Descarga de bombas de presión constante en estaciones contra incendio
+- Sistemas pre-ensamblados y módulos de distribución en planta
+- Instalaciones industriales en naves, bodegas y plantas manufactureras
+- Retrofits de emergencia en sistemas existentes que requieren actualización
+- Sistemas de extinción por espuma AFFF en plantas químicas y terminales
 
-## Especificaciones de Ranura
+## Normas Aplicables
 
-| Parámetro | Medida |
-|-----------|--------|
-| Diámetro exterior | 114.3 mm |
-| Ancho ranura | 9.5 mm |
-| Profundidad | 2.4 mm |
-| Tolerancia | ±0.4 mm |
+- **UL 312** — Check Valves for Fire-Protection Service (válvulas de retención para protección contra incendios)
+- **FM 1120** — Check Valves (válvulas de retención aprobadas por Factory Mutual)
+- **NFPA 13 Sec. 8.17** — Valves, Waterflow Devices, and Supervisory Devices (válvulas en sistemas de rociadores)
+- **NFPA 20 Sec. 4.17** — Check Valves on Pump Discharge (válvulas de retención en descarga de bombas contra incendio)
+- **AWWA C508** — Swing-Check Valves for Waterworks Service (válvulas check para servicio de agua)
+- **NOM-002-STPS-2010** — Condiciones de seguridad, prevención y protección contra incendios en los centros de trabajo
 
+---
+
+**Gama de México** distribuye válvulas de retención ranuradas Mueller con stock permanente para el mercado industrial mexicano. Contamos con ingenieros especializados en diseño de sistemas contra incendios NFPA que le asesoran en selección de tamaños, compatibilidad de acoples y documentación para autoridades. Solicite su cotización con entrega a nivel nacional.
