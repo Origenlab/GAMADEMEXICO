@@ -20,7 +20,7 @@ destacado: false
 orden: 20
 ---
 
-La **válvula check G-918-W-3** de Nibco con extremos ranurados combina la confiabilidad del diseño swing check con la facilidad de instalación del sistema de acople mecánico. Ideal para retrofits y nuevas instalaciones.
+La **válvula check G-918-W-3** de Nibco en diámetro 3" con extremos ranurados AWWA C606 integra la confiabilidad probada del diseño swing check con la instalación rápida y sin soldadura del sistema de acople mecánico tipo Victaulic, fabricada en cuerpo de hierro dúctil ASTM A536 con clapper resiliente recubierto de EPDM. Esta combinación la convierte en la solución preferida para proyectos de retrofitting donde se requiere reemplazar componentes sin cortar tubería, así como para instalaciones prefabricadas de ramales de rociadores. Opera a 175 PSI de trabajo con prueba hidrostática a 350 PSI, y cumple con los requisitos de válvulas de retención listadas exigidos por NFPA 13 y NFPA 20.
 
 ## Especificaciones Técnicas
 
@@ -36,33 +36,35 @@ La **válvula check G-918-W-3** de Nibco con extremos ranurados combina la confi
 | Cuerpo | Hierro dúctil ASTM A536 |
 | Clapper | EPDM sobre hierro dúctil |
 | Eje | Acero inoxidable 304 |
+| Puerto de Drenaje | 1/4" NPT incluido |
+| Orientación | Horizontal y vertical (flujo ascendente) |
+| Prueba de Fábrica | Leak test 100% individual |
 | Peso | 12 kg |
 
-## Características Destacadas
+## Mecánica del Disco Oscilante
 
-- **Extremos ranurados** instalación rápida
-- **Compatible Victaulic** acoples estándar
-- **Sin soldadura** mantenimiento fácil
-- **Clapper resiliente** cierre hermético
-- **Puerto 1/4" NPT** drenaje incluido
-- **Horizontal/vertical** multidireccional
-- **Probada leak-test** antes de envío
+Las válvulas check tipo swing funcionan mediante un disco oscilante (clapper) articulado en un eje horizontal en la parte superior del cuerpo. El flujo en dirección correcta ejerce presión sobre la cara del clapper, girándolo sobre su eje y abriéndolo completamente para minimizar la caída de presión; al cesar o invertirse el flujo, el peso propio del clapper y la diferencia de presión entre la cara aguas abajo y aguas arriba provocan su cierre inmediato contra el asiento, sellando el paso con el EPDM encapsulado.
+
+En sistemas contra incendios, la **presión de craqueo (cracking pressure)** mínima determina la velocidad de respuesta al inicio del flujo; el clapper resiliente EPDM de este modelo ofrece baja resistencia de apertura, lo que resulta crítico en ramales de rociadores donde la presión inicial puede ser reducida. Conforme a NFPA 20 Sección 4.17, toda válvula de retención instalada en la descarga de bombas contra incendio debe ser del tipo listado UL, función que cumple esta válvula cuando se emplea en grupos de bombeo. La conexión ranurada simplifica la inspección y el mantenimiento periódico requerido por NFPA 25 sin necesidad de desmontar bridas ni usar equipo de soldadura.
 
 ## Aplicaciones
 
-- Ramales de rociadores ranurados
-- Descarga de bombas jockey
-- Instalaciones prefabricadas
-- Retrofits sin corte de tubería
-- Sistemas de espuma
-- Líneas de servicio
+- Ramales de rociadores automáticos en sistemas de tubería ranurada
+- Descarga de bombas jockey en estaciones contra incendio
+- Instalaciones industriales prefabricadas y modulares
+- Retrofits de sistemas existentes sin corte de tubería ni soldadura
+- Sistemas de extinción por espuma (AFFF) en aeronaves y hangares
+- Líneas de servicio en plantas de proceso y almacenes logísticos
 
-## Compatibilidad de Acoples
+## Normas Aplicables
 
-| Sistema | Modelo Compatible |
-|---------|-------------------|
-| Victaulic | Style 07, 77, 107 |
-| Gruvlok | Fig. 7001, 7401 |
-| Star Pipe | Series 4000 |
-| Shurjoint | SJ-400 |
+- **UL 312** — Check Valves for Fire-Protection Service (válvulas de retención para protección contra incendios)
+- **FM 1120** — Check Valves (válvulas de retención aprobadas por Factory Mutual)
+- **NFPA 13 Sec. 8.17** — Valves, Waterflow Devices, and Supervisory Devices (válvulas en sistemas de rociadores)
+- **NFPA 20 Sec. 4.17** — Check Valves on Pump Discharge (válvulas de retención en descarga de bombas contra incendio)
+- **AWWA C508** — Swing-Check Valves for Waterworks Service (válvulas check para servicio de agua)
+- **NOM-002-STPS-2010** — Condiciones de seguridad, prevención y protección contra incendios en los centros de trabajo
 
+---
+
+**Gama de México** suministra válvulas de retención ranuradas con inventario disponible para entrega inmediata en todo el país. Nuestros ingenieros especializados apoyan en la selección del modelo correcto, compatibilidad de acoples mecánicos y cumplimiento con los requisitos NFPA/NOM de cada proyecto. Solicite cotización y asesoría técnica sin costo.

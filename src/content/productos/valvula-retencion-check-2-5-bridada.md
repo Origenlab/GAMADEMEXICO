@@ -20,7 +20,7 @@ destacado: false
 orden: 22
 ---
 
-La **válvula check F-918-W-25** de Nibco en 2.5" es ideal para derivaciones de standpipe, conexiones siamesas individuales y ramales secundarios donde se requiere prevención de reflujo compacta y confiable.
+La **válvula check F-918-W-25** de Nibco en diámetro 2.5" con conexión bridada ANSI B16.1 Clase 125 combina cuerpo de hierro dúctil ASTM A536 con clapper de bronce B62 y sello EPDM para garantizar prevención de reflujo confiable en derivaciones de standpipe, conexiones siamesas individuales y ramales secundarios de sistemas contra incendios. Su perfil compacto permite instalación en espacios reducidos manteniendo la capacidad de sello hermético que exigen las normas NFPA 13 y NFPA 20. Certificada UL 312 y FM Approved, esta válvula está diseñada para operar a 175 PSI de trabajo con prueba hidrostática a 350 PSI.
 
 ## Especificaciones Técnicas
 
@@ -34,36 +34,37 @@ La **válvula check F-918-W-25** de Nibco en 2.5" es ideal para derivaciones de 
 | Presión de Prueba | 350 PSI (24 bar) |
 | Conexión | Bridada ANSI B16.1 Clase 125 |
 | Cuerpo | Hierro dúctil ASTM A536 |
-| Clapper | Bronce B62 + EPDM |
+| Clapper | Bronce B62 con sello EPDM |
 | Eje | Bronce silicón |
+| Puerto de Drenaje | 1/2" NPT incluido |
+| Recubrimiento Interior | Epóxico anti-corrosión |
+| Prueba de Fábrica | Leak test 100% individual |
 | Peso | 9 kg |
 
-## Características Destacadas
+## Mecánica del Disco Oscilante
 
-- **2.5" compacta** espacios reducidos
-- **Clapper bronce** durabilidad superior
-- **Asiento EPDM** cierre hermético
-- **Instalación vertical** flujo ascendente
-- **Puerto drenaje** 1/2" NPT incluido
-- **Probada 100%** leak test
-- **Acabado epóxico** protección corrosión
+Las válvulas check tipo swing (columpio) operan mediante un disco o clapper articulado sobre un eje horizontal ubicado en la parte superior del cuerpo. Cuando el flujo circula en la dirección correcta, la presión del agua empuja el disco hacia atrás abriéndolo completamente y dejando paso libre al caudal; en cuanto el flujo cesa o intenta invertirse, el propio peso del clapper y la presión hidrostática aguas abajo lo cierran de inmediato contra el asiento, formando un sello hermético que impide el reflujo.
+
+En sistemas contra incendios, la **presión de apertura (cracking pressure)** es un parámetro crítico: el disco debe abrirse con la menor caída de presión posible para no penalizar la demanda del sistema. El modelo F-918-W-25 logra esto gracias al clapper de bronce ligero y al sello EPDM de bajo perfil. En aplicaciones NFPA 20 — descarga de bombas contra incendio — estas válvulas actúan como elemento de protección que impide que el agua regrese hacia la bomba cuando ésta se detiene, preservando la cebadura y evitando daños mecánicos por flujo invertido. La sección 4.17 de NFPA 20 exige válvulas de retención listadas UL en la línea de descarga de cada bomba, requisito que esta válvula cumple plenamente.
 
 ## Aplicaciones
 
-- Derivaciones de standpipe
-- Conexiones FDC individuales
-- Ramales de rociadores
-- Sistemas jockey
-- Tomas de bomberos
-- Derivaciones de gabinetes
+- Derivaciones y ramales de sistemas de standpipe Clase I, II y III
+- Conexiones individuales de siamesa FDC (Fire Department Connection)
+- Ramales secundarios de rociadores automáticos NFPA 13
+- Descarga de bombas jockey en grupos de presión contra incendios
+- Tomas de manguera en gabinetes de emergencia
+- Derivaciones de gabinetes manguera en edificios de oficinas y hoteles
 
-## Especificaciones de Brida
+## Normas Aplicables
 
-| Parámetro | Clase 125 |
-|-----------|-----------|
-| Diámetro exterior | 178 mm |
-| Círculo tornillos | 140 mm |
-| Cantidad | 4 tornillos |
-| Diámetro | 5/8" |
-| Espesor | 17 mm |
+- **UL 312** — Check Valves for Fire-Protection Service (válvulas de retención para protección contra incendios)
+- **FM 1120** — Check Valves (válvulas de retención aprobadas por Factory Mutual)
+- **NFPA 13 Sec. 8.17** — Valves, Waterflow Devices, and Supervisory Devices (válvulas en sistemas de rociadores)
+- **NFPA 20 Sec. 4.17** — Check Valves on Pump Discharge (válvulas de retención en descarga de bombas contra incendio)
+- **AWWA C508** — Swing-Check Valves for Waterworks Service (válvulas check para servicio de agua)
+- **NOM-002-STPS-2010** — Condiciones de seguridad, prevención y protección contra incendios en los centros de trabajo
 
+---
+
+**Gama de México** es distribuidor autorizado de válvulas de retención para sistemas contra incendios con presencia nacional. Nuestro equipo de ingeniería brinda soporte técnico en selección, dimensionamiento y cumplimiento normativo NFPA/NOM para cada proyecto. Contáctenos para cotización, disponibilidad en almacén y asesoría especializada.
