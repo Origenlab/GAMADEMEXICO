@@ -1,6 +1,6 @@
 ---
-title: "Adaptador Doble Hembra NH 1.5\" Bronce"
-description: "Adaptador doble hembra NH 1.5\" para unión de dos conexiones macho. Bronce fundido con rosca NH/NST. Presión 300 PSI."
+title: "Adaptador Doble Hembra NH 1.5\" Bronce F-327 UL FM | Elkhart Brass | Distribuidor México"
+description: "Adaptador doble hembra NH/NST 1.5\" bronce fundido Elkhart Brass F-327. 300 PSI trabajo, prueba 1000 PSI. UL Listed FM. Standpipe, gabinetes y brigadas México."
 categoria: "conexiones-herrajes"
 subcategoria: "adaptadores"
 imagen: "/img/conexiones-herrajes/adaptador-doble-hembra-1-5-frontal.avif"
@@ -59,6 +59,27 @@ El adaptador doble hembra se especifica cuando el sistema presenta dos terminaci
 - **NFPA 1901** — Standard for Automotive Fire Apparatus: aplica cuando el adaptador se utiliza para conectar líneas de 1.5" en salidas laterales de camiones de bomberos o unidades de primera respuesta.
 - **NFPA 14** — Standard for the Installation of Standpipe and Hose Systems: rige la especificación de conexiones en sistemas de tuberías verticales con salidas de 1.5" para uso de brigadas internas conforme a las clases II y III.
 - **NOM-002-STPS-2010** — Condiciones de seguridad contra incendios en los centros de trabajo: norma de cumplimiento obligatorio en México para los componentes de los sistemas de protección contra incendio en instalaciones industriales y comerciales.
+
+## Productos Relacionados
+
+- [Adaptador Doble Macho NH 2.5" Bronce M-327-A](/productos/adaptador-bronce-doble-macho-2-5) — solución complementaria para unir dos conexiones hembra en líneas de 2.5"
+- [Manguera Blindex 1.5" × 15m](/productos/manguera-blindex-1-5-15m) — manguera de ataque 1.5" NH que se acopla con este adaptador en sistemas standpipe
+- [Gabinete de Manguera Empotrado](/productos/gabinete-empotrado) — gabinetes clase II con salidas de 1.5" NH donde se instala este adaptador
+- [Boquilla Tipo Pistola Elkhart](/productos/boquilla-tipo-pistola) — lanza de ataque 1.5" NH para uso junto al adaptador en líneas de combate
+
+## Preguntas Frecuentes
+
+**¿Cuándo necesito un adaptador doble hembra NH 1.5" en campo?**
+Lo necesita cuando tiene dos terminaciones macho de 1.5" NH que deben conectarse entre sí: por ejemplo, al unir la salida macho de una manguera con la entrada macho de una boquilla de cuerpo macho, o al empalmar dos tramos de manguera que presentan macho en ambos extremos de unión. Sin el adaptador, estas conexiones son físicamente incompatibles.
+
+**¿Es compatible el adaptador F-327 con conexiones NST además de NH?**
+Sí. Las roscas NH (National Hose) y NST (National Standard Thread) son estándares equivalentes que comparten las mismas dimensiones; los términos se usan indistintamente en la industria. El modelo F-327 es compatible con cualquier equipo que especifique rosca NH o NST de 1.5".
+
+**¿Por qué se especifica bronce y no aluminio para instalaciones fijas de standpipe?**
+En instalaciones fijas el adaptador puede permanecer acoplado meses o años sin ser manipulado. El bronce mantiene tolerancias dimensionales y resistencia a la corrosión galvánica durante décadas, garantizando que el adaptador pueda desmontarse bajo presión en una emergencia sin problemas de agarrotamiento. El aluminio es preferible en aplicaciones portátiles donde el peso es factor crítico.
+
+**¿El empaque EPDM integrado requiere reemplazo periódico?**
+El empaque EPDM tiene una vida útil superior a 10 años en condiciones normales de almacenamiento (temperatura y humedad controladas). Se recomienda inspección visual anual; reemplácelo si presenta grietas, deformación permanente o pérdida de elasticidad. Los empaques de reemplazo están disponibles como repuesto Elkhart Brass compatible.
 
 ---
 

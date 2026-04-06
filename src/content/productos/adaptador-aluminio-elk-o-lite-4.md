@@ -1,6 +1,6 @@
 ---
-title: "Adaptador Aluminio Elk-O-Lite NH 4\" Storz"
-description: "Adaptador de aluminio Elk-O-Lite para conversión NH a Storz 4\". 60% más ligero que bronce. Presión 250 PSI. UL Listed."
+title: "Adaptador NH a Storz 4\" Aluminio Elk-O-Lite D-327-L | Elkhart Brass UL FM | México"
+description: "Adaptador NH a Storz 4\" aluminio Elk-O-Lite forjado Elkhart Brass D-327-L. 60% más ligero. 250 PSI. UL Listed FM Approved. Plantas industriales México."
 categoria: "conexiones-herrajes"
 subcategoria: "adaptadores"
 imagen: "/img/conexiones-herrajes/adaptador-aluminio-elk-o-lite-4-frontal.avif"
@@ -60,6 +60,27 @@ Este adaptador se especifica cuando una instalación dispone de hidrantes o toma
 - **NFPA 1901** — Standard for Automotive Fire Apparatus: aplica cuando el adaptador se instala de forma permanente en camiones autobomba o en tomas laterales de vehículos de emergencia.
 - **NFPA 14** — Standard for the Installation of Standpipe and Hose Systems: referencia para la especificación de adaptadores en sistemas de tuberías verticales con salidas de gran diámetro.
 - **NOM-002-STPS-2010** — Condiciones de seguridad contra incendios en los centros de trabajo: norma oficial mexicana que exige la compatibilidad y correcto desempeño de todos los componentes del sistema contra incendio en instalaciones industriales.
+
+## Productos Relacionados
+
+- [Adaptador NH a Storz 2.5" Bronce D-327-S](/productos/adaptador-bronce-nh-storz-2-5) — mismo concepto de conversión NH–Storz en diámetro 2.5" para líneas de ataque
+- [Manguera Blindex Storz Refinería 2.5"](/productos/manguera-blindex-storz-refineria) — manguera de alta presión con acoplamientos Storz para conectar al adaptador
+- [Hidrante de Banqueta NH](/productos/hidrante-banqueta) — hidrante de salida NH donde se instala este adaptador para habilitación Storz
+- [Adaptador Aluminio Elk-O-Lite NH 4" en catálogo completo](/productos/adaptadores-bronce) — ver toda la línea de adaptadores disponibles
+
+## Preguntas Frecuentes
+
+**¿Por qué se usa aluminio Elk-O-Lite forjado y no bronce en adaptadores de 4"?**
+El bronce en diámetro de 4" genera un componente muy pesado que dificulta el acoplamiento rápido bajo condiciones de emergencia. El aluminio Elk-O-Lite forjado ofrece la misma resistencia mecánica con un 60% menos de peso. El proceso de forja —frente a la fundición— elimina porosidades y garantiza integridad estructural bajo ciclos de presión repetidos.
+
+**¿El adaptador D-327-L es compatible con todos los hidrantes NH de 4" en México?**
+Sí, siempre que la rosca sea NH (National Hose) de 4" conforme a NFPA 1963. Esta es la rosca estándar en la mayoría de los hidrantes industriales y municipales de gran diámetro en México y América Latina. Antes de especificarlo, confirme que el hidrante tiene rosca NH y no NPT u otro estándar local.
+
+**¿El anodizado duro negro del adaptador resiste contacto con espuma AFFF?**
+Sí. El aluminio anodizado duro es compatible con los concentrados de espuma AFFF y FFFP utilizados en protección de hidrocarburos. Se recomienda enjuague con agua limpia después de cada uso con espuma para prolongar la vida del empaque EPDM y mantener el libre movimiento del mecanismo Storz.
+
+**¿Se puede instalar el adaptador de forma permanente en la toma del hidrante?**
+Sí, es una de sus aplicaciones más comunes. Al instalarlo permanentemente, cada hidrante NH de la planta queda listo para recibir mangueras Storz sin pasos intermedios durante una emergencia. En instalaciones permanentes se recomienda lubricar el mecanismo de giro Storz anualmente con grasa de silicona compatible con EPDM.
 
 ---
 

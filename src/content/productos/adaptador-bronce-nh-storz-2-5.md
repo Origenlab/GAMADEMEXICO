@@ -1,6 +1,6 @@
 ---
-title: "Adaptador Bronce NH a Storz 2.5\" Elkhart Brass"
-description: "Adaptador de bronce para conversión NH a Storz 2.5\". Conexión rápida cuarto de vuelta. Presión 300 PSI. Certificado UL/FM."
+title: "Adaptador NH a Storz 2.5\" Bronce D-327-S UL FM | Elkhart Brass | México"
+description: "Adaptador NH/NST a Storz 2.5\" bronce forjado Elkhart Brass D-327-S. 300 PSI, prueba 1000 PSI. UL Listed FM Approved. Modernización red NH a Storz México."
 categoria: "conexiones-herrajes"
 subcategoria: "adaptadores"
 imagen: "/img/conexiones-herrajes/adaptador-bronce-nh-storz-2-5-frontal.avif"
@@ -60,6 +60,27 @@ Este adaptador se especifica en proyectos de modernización donde la red de hidr
 - **NFPA 1901** — Standard for Automotive Fire Apparatus: aplica cuando el adaptador se instala en salidas laterales de camiones autobomba o en puntos de suministro montados en vehículo que operan con roscas NH.
 - **NFPA 14** — Standard for the Installation of Standpipe and Hose Systems: rige la especificación de conexiones y adaptadores en sistemas de tuberías verticales con salidas de 2.5" utilizadas por los cuerpos de bomberos y brigadas internas.
 - **NOM-002-STPS-2010** — Condiciones de seguridad contra incendios en los centros de trabajo: norma oficial mexicana que establece los requisitos de los componentes de protección contra incendio en instalaciones industriales, incluyendo la compatibilidad de conexiones y adaptadores.
+
+## Productos Relacionados
+
+- [Adaptador Aluminio Elk-O-Lite NH a Storz 4" D-327-L](/productos/adaptador-aluminio-elk-o-lite-4) — mismo concepto en diámetro 4" para líneas maestras de gran caudal
+- [Manguera Blindex Storz Refinería 2.5"](/productos/manguera-blindex-storz-refineria) — manguera alta presión con acoplamientos Storz para usar con este adaptador
+- [Hidrante de Banqueta NH](/productos/hidrante-banqueta) — hidrante con salidas NH donde se instala permanentemente este adaptador
+- [Cople Storz 4" Aluminio](/productos/cople-storz-4-aluminio) — acoplamiento Storz complementario para extensión de líneas de gran diámetro
+
+## Preguntas Frecuentes
+
+**¿Qué diferencia hay entre la rosca NH y la conexión Storz?**
+La rosca NH (National Hose) es un sistema roscado helicoidal que requiere varias vueltas para acoplar o desacoplar. La conexión Storz es un acoplamiento de bayoneta de cuarto de vuelta: se engancha y gira 90° para quedar bloqueado en segundos. El adaptador D-327-S convierte la toma roscada NH fija en un punto de conexión rápida Storz sin demoler la infraestructura.
+
+**¿Es más conveniente instalar adaptadores NH–Storz o reemplazar todos los hidrantes de la planta?**
+En la gran mayoría de los casos, los adaptadores NH–Storz son la solución más costo-eficiente. Reemplazar hidrantes implica corte de servicio, obra civil y costos de material considerablemente mayores. Un adaptador D-327-S por salida, instalado en horas sin interrumpir el servicio, logra la misma interoperabilidad operativa a una fracción del presupuesto.
+
+**¿El adaptador Storz de bronce es compatible con mangueras Storz de cualquier marca?**
+Sí, siempre que sean Storz de 2.5" conforme a DIN 14821 o NFPA 1963. La geometría del cuarto de vuelta y las dimensiones del cuerpo Storz están normalizadas internacionalmente, por lo que el adaptador D-327-S es intercambiable con mangueras Storz de Angus, Novelty, Task Force Tips, Coupling Specialists y otros fabricantes certificados.
+
+**¿Se requiere herramienta especial para el acoplamiento Storz de cuarto de vuelta?**
+No se requiere herramienta para el acoplamiento operativo en emergencia —se hace manualmente girando el extremo Storz de la manguera 90°. Para la instalación permanente del adaptador en el hidrante (la rosca NH base), se recomienda llave de gancho para asegurar el torque correcto y prevenir fugas bajo presión. El empaque EPDM no requiere sellante adicional.
 
 ---
 

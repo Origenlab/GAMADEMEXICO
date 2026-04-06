@@ -1,6 +1,6 @@
 ---
-title: "Tapón Rocker Lug 2.5\" NH Bronce con Cadena"
-description: "Tapón rocker lug de bronce 2.5\" NH macho con cadena de 9\". Sella salidas de hidrantes y conexiones. Presión 175 PSI. UL Listed."
+title: "Tapón Rocker Lug NH 2.5\" Bronce P-17 UL Listed | Elkhart Brass | México"
+description: "Tapones rocker lug y caps NH 2.5\" bronce Elkhart Brass P-17. UL Listed. 175-500 PSI. Cadena retención 9\". Hidrantes, gabinetes y camiones bomberos México."
 categoria: "conexiones-herrajes"
 subcategoria: "accesorios"
 imagen: "/img/conexiones-herrajes/tapon-rocker-lug-2-5-frontal.avif"
@@ -82,3 +82,30 @@ La correcta selección de tapones, caps y niples garantiza la integridad de las 
 - **NFPA 14** — Standard for the Installation of Standpipe and Hose Systems: accesorios para sistemas de manguera
 - **NOM-002-STPS-2010** — Condiciones de seguridad para prevención y protección contra incendios en centros de trabajo
 - **AWWA C800** — Roscas NH/NST: norma de referencia para compatibilidad de roscas en equipos contra incendios
+
+Gama de México distribuye la línea completa de tapones, caps y niples Elkhart Brass en México con disponibilidad en inventario. Para cotizaciones, asistencia técnica o especificación por proyecto, contacte a nuestro equipo de ingeniería de ventas.
+
+## Preguntas Frecuentes
+
+**¿Cuál es la diferencia entre un tapón rocker lug y un cap estándar?**
+
+El tapón rocker lug (plug) cierra salidas con rosca macho NH del hidrante; se instala girando sin herramientas. El cap cubre salidas con rosca hembra. Ambos protegen las roscas del daño mecánico y evitan contaminación del sistema entre emergencias.
+
+**¿Los caps de alta presión (500 PSI) son intercambiables con los caps estándar de 175 PSI?**
+
+Son mecánicamente compatibles con las mismas roscas NH/NST, pero los caps de 500 PSI bajo NFPA 1901 tienen mango largo y mayor grosor de pared para soportar la presión de sistemas de camiones autobomba. No deben sustituirse entre sí en operación.
+
+**¿Se puede instalar el tapón rocker lug sin herramientas en una emergencia?**
+
+Sí. El mecanismo rocker lug permite instalación y retiro manual girando el tapón con la mano, sin llave. Esto es crítico en emergencias donde cada segundo cuenta. Sin embargo, para instalaciones permanentes se recomienda ajuste con llave de gancho para garantizar el sello.
+
+**¿Con qué frecuencia se deben revisar los tapones en hidrantes de banqueta?**
+
+La NFPA 25 recomienda inspección visual semestral y prueba de flujo anual en hidrantes. Durante la inspección se verifica el estado del tapón, el empaque y que la cadena esté integra. Los empaques deteriorados deben reemplazarse antes de la siguiente temporada de máxima demanda.
+
+## Productos Relacionados
+
+- [Hidrante de Banqueta NH](/productos/hidrante-banqueta) — para instalación en redes con estas tapas y caps
+- [Gabinete de Manguera 30m Sobrepuesto](/productos/gabinete-30m-sobrepuesto) — requiere tapones para salidas NH en desuso
+- [Adaptador NH a Storz 2.5" Bronce](/productos/adaptador-bronce-nh-storz-2-5) — complementa el sistema de conexiones NH
+- [Manguera Blindex 2.5" × 30m](/productos/manguera-blindex-2-5-30m) — manguera de ataque que se acopla con roscas NH

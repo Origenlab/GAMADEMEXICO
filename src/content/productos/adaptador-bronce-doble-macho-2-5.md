@@ -1,6 +1,6 @@
 ---
-title: "Adaptador Doble Macho NH 2.5\" Bronce"
-description: "Adaptador doble macho NH 2.5\" para unión de dos conexiones hembra. Bronce fundido con rosca NH/NST. Presión 300 PSI."
+title: "Adaptador Doble Macho NH 2.5\" Bronce M-327-A UL FM | Elkhart Brass | México"
+description: "Adaptador doble macho NH/NST 2.5\" bronce fundido Elkhart Brass M-327-A. 300 PSI, prueba 1000 PSI. UL Listed FM. Para camiones autobomba e hidrantes México."
 categoria: "conexiones-herrajes"
 subcategoria: "adaptadores"
 imagen: "/img/conexiones-herrajes/adaptador-doble-macho-2-5-frontal.avif"
@@ -59,6 +59,27 @@ El adaptador doble macho se especifica cuando la interfaz de campo presenta dos 
 - **NFPA 1901** — Standard for Automotive Fire Apparatus: aplica a los adaptadores utilizados en salidas de 2.5" de camiones autobomba y en la interfaz entre el vehículo y la red de hidrantes.
 - **NFPA 14** — Standard for the Installation of Standpipe and Hose Systems: rige los requisitos de conexiones en sistemas de tuberías verticales con salidas de 2.5" para uso de los cuerpos de bomberos conforme a los sistemas clase I y clase III.
 - **NOM-002-STPS-2010** — Condiciones de seguridad contra incendios en los centros de trabajo: norma oficial mexicana de cumplimiento obligatorio que establece los requisitos de los sistemas y componentes de protección contra incendio en la industria.
+
+## Productos Relacionados
+
+- [Adaptador Doble Hembra NH 1.5" Bronce F-327](/productos/adaptador-bronce-doble-hembra-1-5) — solución complementaria para líneas de 1.5" con dos terminaciones macho
+- [Hidrante de Banqueta NH](/productos/hidrante-banqueta) — hidrante con salida hembra NH donde se instala este adaptador para conexión de camiones
+- [Manguera Blindex 2.5" × 30m](/productos/manguera-blindex-2-5-30m) — manguera de suministro 2.5" NH para conectar con este adaptador en operaciones de campo
+- [Conexión Wye 2.5" Bronce](/productos/conexion-wye-bronce-2-5) — distribuidor bifurcado para derivar la línea de 2.5" en dos líneas de ataque
+
+## Preguntas Frecuentes
+
+**¿En qué situación necesito un adaptador doble macho NH 2.5" en campo?**
+Lo necesita cuando debe unir dos conexiones hembra de 2.5" NH: el caso más común es conectar la salida hembra de una manguera al hidrante que también tiene salida hembra, o al unir dos tramos de manguera que presentan hembra en el extremo de empalme. Sin este adaptador, ninguna de estas conexiones es posible directamente.
+
+**¿Puedo conectar directamente la salida hembra de un camión autobomba al hidrante con este adaptador?**
+Sí, esa es precisamente su función principal. La salida lateral hembra del camión autobomba y la toma hembra del hidrante se unen con el adaptador doble macho M-327-A. Asegúrese de que ambas conexiones sean rosca NH 2.5" —y no NST de paso diferente— antes de especificarlo para confirmar compatibilidad dimensional.
+
+**¿El acabado cromado ofrece ventajas reales sobre el pulido natural en ambientes industriales?**
+El acabado cromado mejora la resistencia a la corrosión superficial en ambientes húmedos, costeros o con exposición a productos químicos atmosféricos. En instalaciones interiores y condiciones normales, el pulido natural de bronce es suficiente. Para plantas petroquímicas, refinerías o instalaciones portuarias, se recomienda el cromado.
+
+**¿El adaptador M-327-A incluye empaques de reemplazo o requiere empaque externo para el sello?**
+El adaptador doble macho no incluye empaque integrado —las roscas NH/NST forman el sello mediante el acoplamiento mecánico. Para garantizar hermeticidad total, especialmente en conexiones que permanecen acopladas bajo presión continua, se recomienda usar cinta PTFE (teflón) de 1/2" en las roscas o especificar el modelo con empaque de asiento incluido si está disponible.
 
 ---
 
