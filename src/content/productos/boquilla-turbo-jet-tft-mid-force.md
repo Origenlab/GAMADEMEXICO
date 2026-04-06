@@ -1,6 +1,6 @@
 ---
-title: "Boquilla Turbo Jet TFT Mid-Force 70-200 GPM Dual Presión"
-description: "Boquilla automática dual presión Task Force Tips Mid-Force. Auto-ajuste 70-200 GPM, modos 50 y 100 PSI, entrada 1.5\" NH, construcción aluminio reforzado."
+title: "Boquilla Mid-Force TFT 70-200 GPM Dual Presión 50/100 PSI NFPA 1964 | Task Force Tips | México"
+description: "Boquilla automática Mid-Force TFT 70-200 GPM dual presión 50/100 PSI aluminio reforzado NFPA 1964. Auto-ajuste continuo, modo interior/exterior seleccionable. Bomberos México."
 categoria: "boquillas"
 subcategoria: "turbo-jet"
 imagen: "/img/productos/boquilla-turbo-jet-contra-incendios-angulo-superior-14.avif"
@@ -70,5 +70,26 @@ La **boquilla Task Force Tips Mid-Force** es una boquilla automática de flujo v
 - **NFPA 13** — Standard for the Installation of Sprinkler Systems (referencia de presiones y caudales en protección estructural)
 - **NOM-002-STPS-2010** — Condiciones de seguridad contra incendios en centros de trabajo
 - **NOM-003-SEGOB-2011** — Señales y avisos para protección civil (referencia para equipamiento y capacitación de brigadas internas)
+
+## Productos Relacionados
+
+- [Boquilla SM-LP50 Select-O-Matic Baja Presión 50 PSI](/productos/boquilla-turbo-jet-baja-presion-50psi) — alternativa Elkhart Brass dedicada exclusivamente a operaciones de baja presión con mecanismo de resorte externo
+- [Boquilla TFT Handline H-VPG-IF Automática 95-300 GPM](/productos/boquilla-pistola-tft-handline-95-300) — versión de mayor caudal de la línea automática TFT para incendios de alta energía
+- [Boquilla Turbo Jet SM-30FG 75-325 GPM](/productos/boquilla-turbo-jet-sm30-75-325) — alternativa Elkhart Brass de alto caudal para operaciones donde se requiere más de 200 GPM
+- [Manguera Blindex 1.5" × 30m](/productos/manguera-blindex-1-5-30m) — manguera de ataque 1.5" NH para líneas de avance con la Mid-Force en ataques interiores prolongados
+
+## Preguntas Frecuentes
+
+**¿Cuál es la diferencia operativa entre cambiar de modo en la Mid-Force y cambiar de boquilla para pasar de 100 PSI a 50 PSI?**
+Cambiar de boquilla requiere desacoplar la boquilla actual, acoplar la alternativa y verificar el sello bajo presión —proceso que toma entre 30 y 90 segundos con equipo presurizado y condiciones de ataque activo. El selector de modo de la Mid-Force cambia entre 50 PSI y 100 PSI en menos de 10 segundos sin desacoplar la boquilla ni interrumpir el flujo, manteniendo la integridad del sello en todo momento. Esta diferencia es especialmente relevante en incendios con evolución rápida donde el comandante debe cambiar la táctica de ataque interior a defensa exterior (o viceversa) sin dar la orden de cierre de línea y sin exponer al operador al riesgo de pérdida temporal del flujo de agua.
+
+**¿La Mid-Force puede operarse en modo mixto —iniciando a 50 PSI y subiendo a 100 PSI durante la operación— sin riesgo para el operador?**
+Sí, pero el cambio de modo debe comunicarse al conductor de la bomba antes de ejecutarlo, ya que al pasar de 50 PSI a 100 PSI el mecanismo automático ajusta el orificio para mantener la nueva presión de tobera, y la reacción de la línea aumenta de forma perceptible aunque controlada. Si el operador no está preparado para el incremento de reacción, puede perder el control de la dirección del chorro temporalmente. La práctica recomendada es avisar al conductor, sujetar la manguera firmemente con ambas manos (o apoyarla en el hombro), anunciar el cambio de modo y ejecutarlo; la transición toma 2-3 segundos durante los cuales la Mid-Force ajusta el orificio automáticamente.
+
+**¿La Mid-Force en modo 100 PSI ofrece el mismo alcance que una boquilla de flujo fijo a 100 PSI con igual caudal?**
+El alcance del chorro sólido depende de la presión en la tobera y del diámetro del orificio. A igual presión (100 PSI) y caudal, la Mid-Force y una boquilla de flujo fijo entregan alcances comparables. La diferencia es que la Mid-Force mantiene 100 PSI automáticamente ante variaciones de suministro, mientras que una boquilla de flujo fijo varía la presión con el suministro: si la presión sube a 120 PSI, la boquilla de flujo fijo aumenta el caudal y la reacción; la Mid-Force mantiene 100 PSI y absorbe el exceso reduciendo el orificio, manteniendo el alcance constante. Para operaciones donde el suministro es estable y conocido, la diferencia es mínima; para sistemas de presión variable, la Mid-Force proporciona un alcance más predecible y consistente.
+
+**¿Es la Mid-Force una boquilla adecuada para brigadas industriales con personal de formación básica o se requiere entrenamiento específico?**
+La Mid-Force tiene una curva de aprendizaje intermedia: su operación básica (abrir, dirigir el chorro, cerrar) es idéntica a cualquier boquilla de pistola estándar. El selector de modo de presión requiere entrenamiento específico de 2-4 horas para que el personal comprenda cuándo aplicar cada modo y el procedimiento de cambio seguro durante operaciones activas. Para brigadas industriales con limitación de tiempo de entrenamiento, Gama de México proporciona fichas de referencia rápida sobre los criterios de selección de modo que pueden instalarse en los gabinetes de manguera como guía operativa en campo. La certificación NFPA 1964 garantiza que el comportamiento hidráulico de la boquilla es predecible y conforme a las expectativas del personal entrenado en normas norteamericanas.
 
 Gama de México es **distribuidor autorizado** de Task Force Tips (TFT) en la República Mexicana, con inventario disponible en bodegas de **Ciudad de México y Querétaro**. Ofrecemos asesoría técnica sobre la selección del modo de presión óptimo según el protocolo táctico de cada departamento o brigada, así como compatibilidad con monitores portátiles TFT disponibles en nuestro catálogo.

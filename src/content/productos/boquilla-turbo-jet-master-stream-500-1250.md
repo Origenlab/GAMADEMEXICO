@@ -1,6 +1,6 @@
 ---
-title: "Boquilla Turbo Jet Master Stream 500-1250 GPM Monitor"
-description: "Boquilla automática para monitor Task Force Tips Master Stream 1250. Alto caudal 500-1250 GPM, presión constante 100 PSI, entrada 3\" NST para operaciones defensivas."
+title: "Boquilla Master Stream 1250 TFT 500-1250 GPM Monitor NFPA 1964 | Task Force Tips | México"
+description: "Boquilla Master Stream 1250 TFT automática 500-1250 GPM 100 PSI aluminio fundido NFPA 1964. Entrada 3\" NST, alcance +75 m. Monitores industriales y petroquímica México."
 categoria: "boquillas"
 subcategoria: "turbo-jet"
 imagen: "/img/productos/boquilla-turbo-jet-contra-incendios-automatica-04.avif"
@@ -73,5 +73,26 @@ La **boquilla Task Force Tips Master Stream 1250** es una boquilla automática d
 - **NFPA 1901** — Standard for Automotive Fire Apparatus (boquilla para unidades pumper con monitor de cubierta)
 - **NOM-002-STPS-2010** — Condiciones de seguridad contra incendios en centros de trabajo
 - **NOM-005-STPS-1998** — Manejo, transporte y almacenamiento de sustancias peligrosas (referencia para protección contra incendios en plantas con materiales peligrosos)
+
+## Productos Relacionados
+
+- [Monitor Cuello Cisne](/productos/monitor-cuello-cisne) — monitor estacionario compatible con la boquilla Master Stream 1250 para sistemas de defensa de exposiciones
+- [Boquilla Turbo Jet UltraJet 4820 150-350 GPM](/productos/boquilla-turbo-jet-ultrajet-automatica) — boquilla Akron Brass para líneas de ataque de 2.5" cuando el caudal requerido es menor que el de la Master Stream
+- [Boquilla Turbo Jet SM-30FG 75-325 GPM](/productos/boquilla-turbo-jet-sm30-75-325) — boquilla Elkhart de alto caudal para líneas de manguera cuando no se requiere monitor
+- [Manguera Blindex 2.5" × 30m](/productos/manguera-blindex-2-5-30m) — manguera de suministro 2.5" NST para alimentación de monitor con la boquilla Master Stream
+
+## Preguntas Frecuentes
+
+**¿En qué escenarios se especifica una boquilla de monitor de 500-1250 GPM frente a múltiples líneas de ataque manual?**
+La Master Stream 1250 se especifica cuando el riesgo supera la capacidad de control mediante líneas manuales: incendios en tanques de almacenamiento de hidrocarburos, derrames de combustible con alta tasa de liberación de energía, o edificios industriales con colapso inminente donde el personal no puede operar en interior. A partir de ciertos caudales —generalmente superiores a 500 GPM— resulta más seguro y eficiente concentrar el flujo en un monitor atendido o desatendido que distribuirlo en múltiples líneas con el consiguiente riesgo de exposición del personal de línea.
+
+**¿Cuál es la diferencia entre instalar la Master Stream 1250 en un monitor fijo versus un monitor portátil en operaciones defensivas?**
+En un monitor fijo de cubierta (deck gun) de unidad bomba, la boquilla queda orientada hacia el frente de ataque desde una posición elevada, maximizando el alcance y la cobertura horizontal. En un monitor portátil —como el BlitzFire TFT o monitores de trípode— la Master Stream 1250 se despliega rápidamente en el punto de mayor efectividad táctica, sin limitarse a la posición del vehículo. Los monitores portátiles con la Master Stream 1250 son especialmente valiosos en terminales, almacenamientos de GLP y plantas petroquímicas donde el acceso del vehículo es limitado pero se requiere alto caudal en una posición específica.
+
+**¿La boquilla Master Stream 1250 es compatible con agentes espumógenos AFFF y AR-AFFF en operaciones con monitor?**
+Sí, el cuerpo de aluminio fundido reforzado y los sellos internos de la Master Stream 1250 son compatibles con concentrados de espuma AFFF (aqueous film-forming foam) y AR-AFFF (alcohol-resistant) a las concentraciones estándar del 1%, 3% y 6%. Para operaciones con espuma en monitor, se requiere especificar un proporcionador de alto caudal compatible con el rango de 500-1250 GPM de la boquilla —los proporcionadores tipo eductor estándar son insuficientes a estos caudales— y se recomienda consultar con el fabricante del agente espumógeno la tasa de aplicación requerida para el tipo de hidrocarburo específico.
+
+**¿Qué presión de suministro se necesita en la entrada del monitor para que la Master Stream 1250 opere a 1250 GPM?**
+A 1,250 GPM y 100 PSI en la tobera de la boquilla, la presión de suministro en la entrada del monitor debe ser superior a 100 PSI más las pérdidas friccionales en el monitor, la manguera de alimentación y la instalación hidráulica del sistema. Para una línea de 3" de 30 metros de longitud, las pérdidas son aproximadamente 15-20 PSI adicionales, lo que requiere una presión de entrada al monitor de alrededor de 115-120 PSI. Se recomienda el cálculo hidráulico específico según el layout de la instalación con los datos de pérdida del monitor y la longitud real de la manguera de alimentación.
 
 Gama de México es **distribuidor autorizado** de Task Force Tips (TFT) en la República Mexicana, con inventario disponible en bodegas de **Ciudad de México y Querétaro**. Ofrecemos soporte técnico para la selección e integración de boquillas Master Stream en sistemas de monitor existentes, así como asesoría en el cumplimiento de las normas NFPA y NOM aplicables a instalaciones industriales y petroquímicas.

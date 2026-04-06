@@ -1,6 +1,6 @@
 ---
-title: "Boquilla Turbo Jet POK Turbokador 30-125 GPM"
-description: "Boquilla de flujo seleccionable POK Turbokador con válvula de control integrada. Entrada 1.5\" NST, 4 posiciones de flujo 30-125 GPM, fabricación europea de alta calidad."
+title: "Boquilla Turbokador 500 POK 30-125 GPM EN 15182-2 NFPA 1964 | POK Francia | México"
+description: "Boquilla Turbokador 500 POK 30-125 GPM aluminio anodizado EN 15182-2 NFPA 1964. Válvula integrada 5 posiciones, doble presión 43-87 PSI, Storz 52 disponible. México."
 categoria: "boquillas"
 subcategoria: "turbo-jet"
 imagen: "/img/productos/boquilla-turbo-jet-contra-incendios-profesional-09.avif"
@@ -69,5 +69,26 @@ La **boquilla POK Turbokador 500** es una boquilla de flujo seleccionable de fab
 - **NFPA 1** — Fire Code (requisitos de equipo portátil contra incendios)
 - **NOM-002-STPS-2010** — Condiciones de seguridad contra incendios en centros de trabajo
 - **NOM-003-SEGOB-2011** — Señales y avisos para protección civil (referencia para equipamiento de brigadas)
+
+## Productos Relacionados
+
+- [Boquilla Turbojet 1720 Flujo Constante 30-125 GPM](/productos/boquilla-turbo-jet-akron-1720) — alternativa Akron Brass de flujo constante para el mismo rango de caudal sin válvula integrada
+- [Boquilla Tipo Pistola Phantom XD 15-250 GPM](/productos/boquilla-tipo-pistola) — boquilla Elkhart Brass de rango extendido con certificación exclusiva NFPA 1964
+- [Adaptador NH a Storz 2.5" Bronce D-327-S](/productos/adaptador-bronce-nh-storz-2-5) — adaptador para instalar la Turbokador con conexión Storz en redes NH existentes
+- [Adaptador Universal Trinquete 435](/productos/adaptador-bronce-universal-435) — adaptador multirrosca NH/NPT/NPSH/British para máxima interoperabilidad con la Turbokador
+
+## Preguntas Frecuentes
+
+**¿Qué ventaja práctica ofrece la doble certificación EN 15182-2 y NFPA 1964 de la Turbokador 500 en México?**
+La certificación EN 15182-2 (norma europea) y NFPA 1964 (norma norteamericana) permiten especificar la Turbokador en proyectos que requieren cumplimiento simultáneo con ambos estándares: instalaciones de multinacionales europeas con ingeniería de origen EU, aeropuertos bajo normativa ICAO con mezcla de equipos europeos y norteamericanos, y puertos con cuerpos de bomberos que operan equipos Storz de origen europeo junto a mangueras NST estándar en México. En proyectos con normativa única (solo NFPA 1964), cualquier boquilla certificada es equivalente; el valor de la Turbokador en México está principalmente en la opción Storz 52 y la doble normativa para proyectos internacionales.
+
+**¿La válvula de control integrada con cinco posiciones de la Turbokador 500 reemplaza completamente a la válvula de cierre de línea?**
+Sí, en la práctica operativa. Las cinco posiciones indexadas (0-20-40-60-80-100% de apertura) permiten controlar el caudal desde cierre completo hasta apertura total desde la propia boquilla, sin necesidad de una válvula de paso adicional en la línea entre la manguera y la boquilla. Esto simplifica el equipo, reduce el peso total y elimina un punto potencial de fuga. Sin embargo, para instalaciones permanentes de standpipe o gabinete donde se requiere bloqueo seguro del flujo durante el mantenimiento, se mantiene la válvula de cierre de la toma como segundo punto de control independiente de la boquilla.
+
+**¿Cómo se selecciona el modo de baja presión (3 BAR / 43.5 PSI) en la Turbokador 500 durante una operación activa?**
+El cambio entre los modos de 6 BAR y 3 BAR se realiza con el anillo selector externo del cuerpo de la boquilla, operable con una sola mano incluso con guantes de combate de incendio. El procedimiento es: reducir el flujo a aproximadamente 50% de apertura con la válvula integrada, girar el anillo selector al modo deseado hasta el detente de la posición correspondiente, y volver a abrir el flujo. No es necesario cerrar completamente la boquilla ni interrumpir la operación de la línea para cambiar de modo de presión. La transición toma aproximadamente 5-10 segundos en campo.
+
+**¿La conexión Storz 52 de la Turbokador 500 es intercambiable con acoplamientos Storz de cualquier fabricante?**
+Sí, dentro del estándar Storz 52 conforme a DIN 14821. La geometría del cuarto de vuelta y las dimensiones del cuerpo Storz 52 están normalizadas, haciendo que el acoplamiento sea intercambiable entre fabricantes (POK, Angus, Schneider, Task Force Tips, Coupling Specialists) siempre que la manguera o el adaptador también sea Storz 52 conforme a DIN 14821. Storz 52 corresponde aproximadamente a 2" de diámetro nominal. Es importante no confundir con Storz 65 (2.5") u otros tamaños Storz: la Turbokador 500 en versión Storz tiene entrada de 1.5" de caudal, y el Storz 52 es el acoplamiento correcto para este diámetro en la nomenclatura europea.
 
 Gama de México es **distribuidor autorizado** de POK en la República Mexicana, con inventario disponible en bodegas de **Ciudad de México y Querétaro**. Brindamos asesoría técnica sobre la configuración de conexiones NST o Storz, selección del modo de presión y compatibilidad con redes contra incendios diseñadas bajo estándares europeos o norteamericanos.
