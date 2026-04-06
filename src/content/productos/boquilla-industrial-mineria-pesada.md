@@ -20,7 +20,7 @@ destacado: false
 orden: 22
 ---
 
-La **boquilla Mining Heavy Duty de Task Force Tips** está diseñada para las condiciones extremas de la industria minera. Con construcción reforzada y flujo de **150 a 500 GPM**, maneja los incendios de mayor magnitud en minas subterráneas y a cielo abierto.
+La **boquilla Mining Heavy Duty MHD-500 de Task Force Tips (TFT)** es el equipo de combate de incendios de referencia para operaciones mineras de superficie y subterráneas donde la combinación de **polvo abrasivo, impactos mecánicos severos, visibilidad reducida y flujos de agua de hasta 500 GPM** (1893 LPM) convierte a las boquillas convencionales en una opción inadecuada. Su cuerpo de aluminio fundido de alta resistencia con bumper de goma integral, selector protegido contra golpes y entrada reforzada 2.5" NST están diseñados para el manejo brusco propio de frentes de mina, galerías subterráneas y zonas de cargado de tiros donde el equipo se arrastra, golpea y opera en condiciones de extrema adversidad. Certificada por **MSHA (Mine Safety and Health Administration)** y bajo **NFPA 1964**, es la solución estándar en minas de carbón, metales y minerales industriales de México (Grupo México, Peñoles, ArcelorMittal, Minera Autlán) y América Latina.
 
 ## Especificaciones Técnicas
 
@@ -28,61 +28,50 @@ La **boquilla Mining Heavy Duty de Task Force Tips** está diseñada para las co
 |----------------|----------------|
 | Marca | Task Force Tips (TFT) |
 | Modelo | Mining Heavy Duty MHD-500 |
-| Rango de Flujo | 150 - 250 - 350 - 500 GPM (568 - 946 - 1325 - 1893 LPM) |
-| Presión de Trabajo | 100 PSI (7 BAR) |
-| Entrada | 2.5" NST hembra reforzada |
-| Material Cuerpo | Aluminio fundido reforzado |
-| Selector de Flujo | 4 posiciones con protector |
-| Patrones de Descarga | Chorro sólido a niebla 60° |
+| Rango de Flujo | 150 – 250 – 350 – 500 GPM (568 – 946 – 1325 – 1893 LPM) |
+| Presión de Trabajo Máxima | 100 PSI (7 BAR) |
+| Presión de Trabajo Nominal | 75–100 PSI (5–7 BAR) |
+| Conexión de Entrada | 2.5" NST hembra reforzada con protector de rosca |
+| Material del Cuerpo | Aluminio fundido de alta resistencia (aleación 356-T6) |
+| Bumper de Protección | Goma integral vulcanizada, absorción de impactos |
+| Selector de Flujo | 4 posiciones con protector metálico y detentes táctiles |
+| Patrones de Descarga | Chorro sólido a niebla de 60° |
+| Temperatura de Operación | –20°C a +60°C |
 | Peso | 4.2 kg (9.3 lbs) |
-| Protección | Bumper de goma integral |
-| Certificación | MSHA para minas |
+| Protección de Rosca | Protector deslizable en entrada 2.5" |
+| Certificaciones | MSHA Part 18/Part 33, NFPA 1964 |
 
-## Características Destacadas
+## Características Principales
 
-- **Construcción extra reforzada** para ambiente minero
-- **Capacidad hasta 500 GPM** para incendios de equipo pesado
-- **Bumper de goma integral** protege contra impactos
-- **Selector protegido** contra daño por golpes
-- **Entrada reforzada 2.5"** para mangueras de alto flujo
-- **Resistente a polvo y abrasión** del ambiente minero
-- **Certificación MSHA** para minas en EUA
-- **Diseño robusto TFT** probado en campo
+- **Cuerpo de aluminio fundido 356-T6** con tratamiento térmico que eleva el límite de fluencia a 186 MPa, resistiendo los impactos contra roca, equipo pesado y superficies de concreto que se producen inevitablemente en el manejo en mina subterránea y a cielo abierto
+- **Bumper de goma integral vulcanizada** que absorbe energía de impacto y protege el cuerpo metálico, la rosca de entrada y el selector de flujo cuando la boquilla cae al piso de galería, rueda por pendientes o es arrastrada junto con la manguera durante el despliegue de emergencia
+- **Selector protegido por guardia metálica** que impide cambios accidentales de flujo por golpe lateral, garantizando que el caudal seleccionado se mantenga estable durante el avance del operador en espacios confinados con obstáculos y cables de arrastre
+- **Capacidad de flujo de hasta 500 GPM (1893 LPM)** a 100 PSI, caudal necesario para el control y extinción de incendios en camiones mineros de gran tonelaje (Komatsu 960E, Caterpillar 797), excavadoras de masa superior a 500 toneladas y cintas transportadoras de largo recorrido con gran carga de carbón o mineral
+- **Entrada 2.5" NST reforzada con protector de rosca deslizable** que preserva el acoplamiento ante caídas y golpes, y asegura la hermeticidad de la conexión incluso después de cientos de despliegues y reconexiones en campo
+- **Cuatro posiciones de flujo con detentes táctiles y audibles**, operables con guantes gruesos de faena en condiciones de oscuridad total o visibilidad por humo, sin necesidad de identificación visual del selector
+- **Patrón de niebla de 60°** optimizado para combate en espacios confinados como galerías y socavones, donde un ángulo mayor desperdiciaría agua en paredes y techos; el patrón estrecho concentra la energía calorífica y reduce la tensión de vapor en el punto de impacto
+- **Certificación MSHA Part 18 y Part 33** que valida la construcción antiincendio y la ausencia de materiales que puedan generar chispa o ignición en atmósferas de metano y polvo de carbón propias de minas de carbón subterráneas
 
-## Aplicaciones
+## Aplicaciones Industriales
 
-- Minas subterráneas de carbón y metales
-- Minas a cielo abierto
-- Equipos de transporte minero
-- Plantas de procesamiento mineral
-- Túneles y socavones
-- Equipos de extracción pesados
+- **Minas subterráneas de carbón** (Minera del Norte - Grupo Villacero, Minera Monclova): primera respuesta ante incendios de cinta transportadora de carbón, incendios de cables de potencia y emergencias en frentes de minado con metano y polvo de carbón, cumpliendo MSHA Part 75
+- **Minas a cielo abierto de cobre, zinc, plomo y molibdeno** (Grupo México, Peñoles, Fresnillo plc): control de incendios de equipos de extracción masiva (shovels, camiones de acarreo, perforadoras) con flujos de ataque de 350–500 GPM por el tamaño de los depósitos de combustible de estas máquinas
+- **Minas de hierro y plantas de pelletización** (ArcelorMittal Las Truchas, Minera del Pacífico): protección de bandas transportadoras de mineral a alta temperatura, cintas de pellets calientes y equipos eléctricos en salas de control de plantas de concentración
+- **Minas de minerales industriales y no metálicos** (Minera Autlán, IMERYS México): control de incendios en plantas de procesamiento con hornos de calcinación, secadores de spray y molinos de roca con alta concentración de polvo explosivo
+- **Túneles en construcción y minería de roca dura** (obras de infraestructura carretera y metro): equipo de brigadas contra incendios para respuesta ante incendios de equipo de perforación y jumbo de barrenación en ambiente confinado con humo y polvo
+- **Plantas de beneficio y procesamiento mineral** (flotación, lixiviación, fundición): protección de equipos de gran envergadura como autoclaves, molinos SAG/AG, circuitos de flotación y plantas de fundición con riesgo de incendio de aceites y reactivos inflamables
+- **Operaciones mineras de litio y potasio en zonas áridas** (Sonora Lithium, K+S México): uso en brigadas de emergencia donde la escasez de agua exige maximizar la efectividad de cada GPM descargado, aprovechando la versatilidad de flujo de 150 a 500 GPM según disponibilidad del sistema de bombeo
 
-## Diseño para Ambiente Minero
+## Normas Aplicables
 
-| Desafío Minero | Solución de la Boquilla |
-|----------------|------------------------|
-| Polvo abrasivo | Sellos reforzados, cuerpo endurecido |
-| Impactos frecuentes | Bumper de goma, diseño compacto |
-| Visibilidad reducida | Selector táctil con detentes claros |
-| Equipos masivos | Alto caudal hasta 500 GPM |
-| Espacios confinados | Patrón de niebla ajustable |
+- **MSHA (Mine Safety and Health Administration) 30 CFR Part 75** — Mandatory Safety Standards for Underground Coal Mines: certificación del equipo para uso en minas de carbón con atmósferas de metano y polvo de carbón en EUA y como referencia de facto en proyectos mineros en México
+- **MSHA 30 CFR Part 56 / Part 57** — Safety and Health Standards for Surface and Underground Metal and Nonmetal Mines: estándares de seguridad para equipos de combate de incendios en minas de metal y no metal a cielo abierto y subterráneas
+- **NFPA 1964** — Standard for Spray Nozzles: desempeño hidráulico y requisitos de construcción para boquillas industriales de alto flujo
+- **NFPA 15** — Standard for Water Spray Fixed Systems for Fire Protection: aplicable a los sistemas fijos de water spray instalados en plantas de beneficio y plantas de proceso
+- **NFPA 122** — Standard for Fire Prevention and Control in Metal/Nonmetal Mining and Metal Mineral Processing Facilities: norma integral de prevención y control de incendios en minería metálica y no metálica, con requisitos específicos de equipos de primera respuesta
+- **NFPA 123** — Standard for Fire Prevention and Control in Underground Bituminous Coal Mines: requisitos de equipos de combate de incendios para minas de carbón subterráneas, donde la certificación MSHA de la MHD-500 es determinante
+- **API 2030** — Application of Fixed Water Spray Systems for Fire Protection in the Petroleum and Petrochemical Industries: referencia de diseño para las plantas de procesamiento e instalaciones con hidrocarburos dentro de complejos minero-metalúrgicos
+- **NOM-002-STPS-2010** — Condiciones de seguridad para prevención y protección contra incendios en los centros de trabajo: aplicación obligatoria en instalaciones mineras y plantas de proceso en territorio mexicano, incluyendo brigadas contra incendios y sistemas fijos de supresión
+- **NOM-032-STPS-2008** — Seguridad para minas subterráneas de carbón: norma mexicana que regula las condiciones de seguridad en minas de carbón subterráneas, incluyendo los equipos de protección contra incendios y la calificación de brigadas de emergencia
 
-## Flujos para Tipos de Incendio
-
-| Tipo de Incendio | Flujo Recomendado | Tiempo Estimado |
-|------------------|-------------------|-----------------|
-| Vehículo ligero | 150 GPM | 5-10 minutos |
-| Camión minero | 250-350 GPM | 15-20 minutos |
-| Equipo de excavación | 350-500 GPM | 20-30 minutos |
-| Cinta transportadora | 250 GPM | Variable |
-
-## Cumplimiento MSHA
-
-La certificación **MSHA (Mine Safety and Health Administration)** garantiza:
-
-- Materiales seguros para ambiente de mina
-- Construcción a prueba de chispa
-- Desempeño verificado en condiciones extremas
-- Documentación para auditorías de seguridad
-- Trazabilidad de fabricación
+Gama de México es **distribuidor autorizado** de Task Force Tips en la República Mexicana, con experiencia en proyectos de equipamiento de brigadas contra incendios en operaciones mineras de los estados de Sonora, Chihuahua, Coahuila, Zacatecas y Guerrero, incluyendo asesoría en cumplimiento de la NOM-032-STPS, coordinación con departamentos de seguridad minera e integración con sistemas de hidrantes y bombas de incendios en instalaciones de proceso mineral.
