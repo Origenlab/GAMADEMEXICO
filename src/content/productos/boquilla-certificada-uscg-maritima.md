@@ -1,6 +1,6 @@
 ---
-title: "Boquilla Certificada USCG/SOLAS Marítima 60-150 GPM"
-description: "Boquilla certificada USCG y SOLAS para embarcaciones y plataformas marítimas. Bronce marino, entrada 1.5\" NST, cumple 46 CFR para buques de bandera estadounidense."
+title: "Boquilla Marine USCG-150 USCG SOLAS MED C95800 60-150 GPM | Elkhart Brass | México"
+description: "Boquilla Elkhart Brass Marine USCG-150 bronce marino C95800. Triple cert USCG SOLAS MED. 60-150 GPM. Buques, plataformas offshore y marina mercante México."
 categoria: "boquillas"
 subcategoria: "certificada"
 imagen: "/img/productos/boquilla-certificada-fm-ul-contra-incendios-bronce-fondo-blanco-01.avif"
@@ -76,5 +76,26 @@ La certificación **USCG bajo 46 CFR 76.10** es un requisito legal para todo equ
 | **NFPA 15** | NFPA | Sistemas de agua-spray; aplicable en plataformas offshore y buques tanque |
 | **API 2030** | API | Guía para protección contra incendios en la industria petrolera; aplicable en plataformas |
 | **NOM-002-STPS-2010** | STPS México | Aplica en instalaciones portuarias terrestres y talleres navales en México |
+
+## Productos Relacionados
+
+- [Boquilla Certificada PEMEX Series PX-200 NRF-PEMEX](/productos/boquilla-certificada-pemex-petroleo) — boquilla NRF-PEMEX para plataformas offshore en instalaciones con requisito PEMEX
+- [Boquilla Industrial ATEX AX-125 Zona 1/2](/productos/boquilla-industrial-antideflagrante-atex) — boquilla antideflagrante para zonas clasificadas en plataformas y buques tanque
+- [Manguera Blindex Storz Refinería 2.5"](/productos/manguera-blindex-storz-refineria) — manguera de alta presión para sistemas de brigada marítima e industrial
+- [Monitor Cuello Cisne Certificado PEMEX](/productos/monitor-cuello-cisne-certificado-pemex) — monitor fijo para instalaciones offshore y terminales marítimas
+
+## Preguntas Frecuentes
+
+**¿Qué es la aprobación USCG 46 CFR 76.10 y por qué es obligatoria en buques?**
+La 46 CFR (Code of Federal Regulations, Título 46) regula la seguridad marítima en EE.UU. La sección 76.10 especifica que todo equipo de protección contra incendios instalado en buques de bandera estadounidense debe tener aprobación previa de la Guardia Costera (USCG). Sin este listado, el equipo no puede instalarse legalmente en operación, y el buque puede ser detenido en cualquier inspección de puerto (Port State Control). El número de aprobación USCG de la Marine USCG-150 es verificable en cgmix.uscg.mil.
+
+**¿La certificación SOLAS es suficiente para operar en puertos mexicanos o requiero certificación adicional?**
+SOLAS es el convenio internacional que México ratificó a través de la OMI, y la Secretaría de Marina (SEMAR) la reconoce para buques en navegación internacional. Para buques que operan exclusivamente en aguas nacionales (cabotaje), puede requerirse adicionalmente el cumplimiento de la NOM-SCTSCFI aplicable a embarcaciones nacionales. Consulte con la Capitanía de Puerto correspondiente para confirmar los requisitos específicos de su embarcación.
+
+**¿La aleación C95800 (aluminio-bronce) resiste el agua de mar mejor que el bronce estándar?**
+Sí. La aleación C95800 (aluminio-bronce) tiene una resistencia a la corrosión por cloruro y agua de mar significativamente superior al bronce C836 o C932 (latón-estaño) usados en componentes estándar. El aluminio-bronce forma una capa de óxido de aluminio pasivante que resiste la cavitación y la picadura por cloruros, condiciones típicas en sistemas de agua de mar a bordo de buques y en plataformas offshore en el Golfo de México.
+
+**¿La Marine USCG-150 puede usarse también en instalaciones portuarias terrestres?**
+Sí. La boquilla puede instalarse en sistemas de brigada de terminales portuarias, astilleros y talleres navales en tierra. En estas instalaciones terrestres en México, también aplica la NOM-002-STPS-2010, que acepta equipos con certificaciones internacionales equivalentes. El bronce marino C95800 es especialmente valorado en entornos costeros donde la corrosión por salinidad ambiental es un factor de deterioro acelerado.
 
 Gama de México es distribuidor autorizado de Elkhart Brass en México y entrega la Marine USCG-150 con certificado de aprobación USCG original, declaración de conformidad SOLAS, declaración MED (cuando aplique), ficha técnica del producto, manual de operación en inglés y español y registro de trazabilidad, brindando además soporte técnico local para equipos de protección contra incendios en el sector marítimo y offshore.

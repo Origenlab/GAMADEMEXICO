@@ -1,6 +1,6 @@
 ---
-title: "Boquilla Industrial Antideflagrante ATEX Zona 1/2"
-description: "Boquilla industrial antideflagrante certificada ATEX para atmósferas explosivas Zona 1 y 2. Bronce libre de chispas, entrada 1.5\" NST, flujo 60-125 GPM."
+title: "Boquilla ATEX AX-125 IIC T6 Zona 1/2 Bronce Libre Chispas | Elkhart Brass | Refinerías México"
+description: "Boquilla Elkhart Brass ATEX AX-125 bronce alumínico libre de chispas. ATEX II 2G IIC T6 Gb IECEx. 60-125 GPM. Zonas 1-2 refinerías, petroquímica y farmacéutica México."
 categoria: "boquillas"
 subcategoria: "industrial"
 imagen: "/img/productos/boquilla-industrial-contra-incendios-ambiente-industrial-08.avif"
@@ -74,5 +74,26 @@ La **boquilla ATEX Industrial AX-125 de Elkhart Brass** es el equipo de supresi�
 - **NOM-022-STPS-2015** — Electricidad estática en lugares de trabajo: clasificación de áreas y requisitos de equipos en zonas con riesgo de ignición por carga electrostática
 - **NOM-002-STPS-2010** — Condiciones de seguridad para prevención y protección contra incendios en los centros de trabajo: requisitos para equipos de brigadas contra incendios en instalaciones con atmósferas peligrosas en México
 - **NOM-029-STPS-2011** — Mantenimiento de instalaciones eléctricas en atmósferas explosivas o inflamables: referencia para clasificación de áreas y selección de equipos en instalaciones mexicanas
+
+## Productos Relacionados
+
+- [Boquilla Industrial SS-316 Acero Inoxidable 316L ATEX](/productos/boquilla-industrial-acero-inoxidable) — boquilla 316L también con clasificación ATEX para ambientes con vapores ácidos y corrosivos
+- [Boquilla Certificada PEMEX PX-200 NRF-PEMEX](/productos/boquilla-certificada-pemex-petroleo) — boquilla con certificación NRF-PEMEX para brigadas en refinerías y plantas petroleras
+- [Monitor Cuello Cisne Petroquímica](/productos/monitor-cuello-cisne-petroquimica) — monitor fijo para instalaciones petroquímicas con zonas clasificadas ATEX
+- [Manguera Blindex NBR Hidrocarburos](/productos/manguera-succion-nbr-hidrocarburos) — manguera resistente a hidrocarburos para sistemas de brigada en zonas ATEX
+
+## Preguntas Frecuentes
+
+**¿Qué significa la clasificación ATEX "II 2 G Ex h IIC T6 Gb" en la boquilla AX-125?**
+Cada parte del código tiene un significado preciso: "II" = grupo de equipos de superficie (no minería), "2" = categoría 2 (Zona 1 y 2), "G" = gas/vapor/neblina, "Ex h" = protección de tipo especial (equipo mecánico no generador de chispas), "IIC" = grupo de gas más restrictivo (hidrógeno, acetileno), "T6" = temperatura máxima de superficie 85°C, "Gb" = nivel de protección de equipo "alta" para gas. Una boquilla con esta clasificación puede usarse en Zona 1 con gases del grupo IIC sin restricciones adicionales.
+
+**¿Puedo usar la boquilla AX-125 en zonas clasificadas NOM-022-STPS en México?**
+La NOM-022-STPS-2015 (Electricidad estática en lugares de trabajo) y la NOM-032-STPS-2008 (Seguridad en instalaciones con inflamables y explosivos) adoptan los criterios de clasificación de áreas de IEC 60079-10, que es la base del estándar ATEX/IECEx. La certificación ATEX II 2 G IIC T6 del modelo AX-125 es técnicamente compatible con las exigencias de equipos no eléctricos en zonas clasificadas bajo estas NOMs. Para instalaciones PEMEX, también se requiere el cumplimiento con NRF-036-PEMEX.
+
+**¿El bronce alumínico "libre de chispas" garantiza que no se produce ningún tipo de chispa bajo ninguna circunstancia?**
+Los materiales "libre de chispas" como el aluminio-bronce y el berilio-cobre tienen una energía de ignición de chispa por impacto muy inferior a la del acero, lo que los hace seguros para uso en atmósferas explosivas. Sin embargo, "libre de chispas" no significa "imposible de producir chispa": un impacto de energía extremadamente alta contra óxidos ferrosos puede generar chispa incluso con materiales clasificados. Por eso, la boquilla AX-125 debe usarse en conjunto con todas las demás medidas de control de la zona clasificada: equipos anti-estáticos, conexión a tierra y procedimientos de trabajo seguro.
+
+**¿La certificación IECEx facilita la aceptación de la boquilla en proyectos de ingeniería internacional?**
+Sí. IECEx es el sistema internacional de certificación de equipos para atmósferas explosivas reconocido en más de 50 países. La doble certificación ATEX/IECEx del modelo AX-125 permite su especificación en proyectos de ingeniería EPCista (Ingeniería, Procura y Construcción) con participantes internacionales, donde los documentos ATEX europeos y los certificados IECEx son los estándares de referencia para la aprobación de materiales. Esto simplifica el proceso de revisión de ingeniería y elimina la necesidad de re-certificar el equipo para mercados de exportación.
 
 Gama de México es **distribuidor autorizado** de Elkhart Brass con cobertura nacional, y ofrece soporte técnico para la correcta selección, documentación de cumplimiento ATEX/IECEx y coordinación con brigadas de protección industrial en proyectos de refinería, petroquímica y otras instalaciones con áreas clasificadas.
