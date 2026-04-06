@@ -1,6 +1,6 @@
 ---
-title: "Boquilla Turbo Jet Baja Presión 50 PSI 60-125 GPM"
-description: "Boquilla automática de baja presión 50 PSI para ataques interiores. Menor reacción, entrada 1.5\" NST, rango 60-125 GPM, ideal para operaciones en espacios confinados."
+title: "Boquilla SM-LP50 Baja Presión 50 PSI 60-125 GPM NFPA 1964 | Elkhart Brass | México"
+description: "Boquilla automática SM-LP50 Select-O-Matic 50 PSI 60-125 GPM aluminio Elk-O-Lite NFPA 1964. Reacción 50% menor, resorte externo. Ataque interior y espacios confinados México."
 categoria: "boquillas"
 subcategoria: "turbo-jet"
 imagen: "/img/productos/boquilla-turbo-jet-contra-incendios-vista-frontal-16.avif"
@@ -70,5 +70,26 @@ La **boquilla Elkhart Brass Select-O-Matic SM-LP50** es una boquilla automática
 - **NFPA 1901** — Standard for Automotive Fire Apparatus (compatibilidad con sistemas de descarga embarcados)
 - **NOM-002-STPS-2010** — Condiciones de seguridad contra incendios en centros de trabajo
 - **NOM-003-SEGOB-2011** — Señales y avisos para protección civil (referencia de capacitación y dotación de equipos)
+
+## Productos Relacionados
+
+- [Boquilla Turbojet 1720 Flujo Constante 30-125 GPM](/productos/boquilla-turbo-jet-akron-1720) — alternativa de flujo constante para operaciones donde la presión del sistema es estable y predecible
+- [Boquilla Tipo Pistola Phantom XD 15-250 GPM](/productos/boquilla-tipo-pistola) — boquilla Elkhart Brass XD de 100 PSI con rango extendido para cuando se requiere mayor alcance
+- [Boquilla TFT Handline H-VPG-IF Automática 95-300 GPM](/productos/boquilla-pistola-tft-handline-95-300) — boquilla automática TFT de 100 PSI para mayor caudal en operaciones de alto riesgo
+- [Manguera Blindex 1.5" × 15m](/productos/manguera-blindex-1-5-15m) — manguera de ataque 1.5" NST ligera para líneas de ataque interior donde el peso total es crítico
+
+## Preguntas Frecuentes
+
+**¿En qué situaciones específicas se justifica especificar la SM-LP50 de 50 PSI frente a una boquilla estándar de 100 PSI?**
+La SM-LP50 se justifica en tres escenarios principales: (1) operaciones de ataque interior ofensivo en habitaciones pequeñas y pasillos estrechos donde la reacción de la línea a 100 PSI dificulta el control con una sola persona; (2) brigadas con personal de menor masa corporal o brigadas donde se anticipa fatiga avanzada en operaciones de larga duración; (3) incendios en edificios con contenidos frágiles o víctimas atrapadas donde minimizar la fuerza de impacto del chorro de agua es una consideración táctica. En operaciones exteriores de largo alcance o en incendios con alta carga de combustible donde se requiere máxima penetración, la boquilla de 100 PSI sigue siendo la especificación correcta.
+
+**¿La reducción de presión de trabajo a 50 PSI en la SM-LP50 sacrifica el alcance efectivo del chorro en ataque directo?**
+El alcance del chorro sólido es proporcional a la presión de tobera: a 50 PSI el alcance es aproximadamente un 30% menor que a 100 PSI con igual caudal. Sin embargo, en ataques interiores de combate estructural, el alcance efectivo necesario rara vez supera los 10-12 metros —distancia que la SM-LP50 supera con chorro sólido a 100 GPM y 50 PSI. La reducción de alcance es irrelevante en la mayoría de los escenarios de ataque interior donde el bombero opera en habitaciones de dimensiones estándar. Para situaciones que requieran alcance superior a 15 metros en exterior o para protección de exposiciones a distancia, se especifica una boquilla de 100 PSI.
+
+**¿Por qué el resorte de ajuste automático del SM-LP50 está ubicado fuera de la vía de agua y qué implicación tiene para el mantenimiento?**
+El posicionamiento externo del resorte elimina el contacto directo del mecanismo de ajuste con el agua que pasa por la boquilla, previniendo la acumulación de cal, sedimentos o productos químicos sobre el resorte y los componentes de ajuste. En boquillas automáticas con resorte interno, la deposición mineral en el resorte puede alterar la fuerza de calibración y desplazar la presión automática de 50 PSI hacia valores más altos o más bajos, comprometiendo la consistencia de la descarga. Con el resorte externo del SM-LP50, la calibración a 50 PSI se mantiene estable durante toda la vida útil sin necesidad de descalcificación del mecanismo, reduciendo las tareas de mantenimiento preventivo a la inspección visual del sello de rotación y la sustitución del empaque EPDM cada 5 años.
+
+**¿Es compatible la SM-LP50 con sistemas de espuma AFFF mediante proporcionador en línea a 50 PSI?**
+Sí, con la selección correcta del proporcionador. Los proporcionadores tipo eductor instalados en línea tienen un rango de presión diferencial de operación especificado por el fabricante —generalmente entre 70 y 200 PSI de presión de entrada— que determina la relación de mezcla. Al operar la SM-LP50 a 50 PSI en la tobera, la presión en la entrada del eductor debe ser suficientemente superior a 50 PSI para que el diferencial de presión esté dentro del rango de operación del proporcionador. Se recomienda verificar con el fabricante del proporcionador (Elkhart, Akron, Stang) el mínimo diferencial de presión requerido y confirmar que la presión de suministro del sistema lo proporciona antes de especificar esta combinación para AFFF.
 
 Gama de México es **distribuidor autorizado** de Elkhart Brass en la República Mexicana, con stock disponible en bodegas de **Ciudad de México y Querétaro**. Nuestro equipo técnico puede orientar sobre la selección entre boquillas de baja presión y presión estándar según el perfil de riesgo y la infraestructura hídrica de cada instalación.

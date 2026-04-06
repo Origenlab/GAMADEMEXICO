@@ -1,6 +1,6 @@
 ---
-title: "Boquilla Tipo Pistola Select-O-Flow 2.5\" 125-250 GPM"
-description: "Boquilla contra incendio tipo pistola Elkhart Brass Select-O-Flow entrada 2.5\" NST. Selector 3 posiciones 125-175-250 GPM, bronce satinado, herradura de cierre y giro libre."
+title: "Boquilla Select-O-Flow DSF-G 2.5\" 125-250 GPM NFPA 1964 | Elkhart Brass | México"
+description: "Boquilla Select-O-Flow DSF-G 2.5\" NST bronce satinado XD Elkhart Brass. 3 posiciones 125-175-250 GPM 100 PSI herradura de cierre NFPA 1964. Incendios industriales México."
 categoria: "boquillas"
 subcategoria: "tipo-pistola"
 imagen: "/img/productos/boquilla-tipo-pistola-contra-incendios-ul-listed-32.avif"
@@ -73,5 +73,26 @@ La **boquilla Elkhart Brass Select-O-Flow DSF-G de 2½"** es una boquilla de flu
 - **NOM-002-STPS-2010** — *Condiciones de seguridad contra incendios en los centros de trabajo*: establece los requisitos de equipos manuales de combate de incendio en instalaciones industriales; el uso de boquillas certificadas NFPA 1964 con las capacidades de caudal de la DSF-G es compatible con el cumplimiento de esta norma en ocupaciones de alto riesgo.
 - **NFPA 13** — *Standard for the Installation of Sprinkler Systems*: norma de referencia cuando la línea de 2½" se utiliza como complemento de ataque manual en instalaciones con rociadores automáticos en instalaciones industriales de alto riesgo.
 - **API RP 2001** — *Fire Protection in Refineries*: práctica recomendada de la industria petrolera que referencia boquillas de alto caudal para sistemas de manguera en refinerías y plantas petroquímicas.
+
+## Productos Relacionados
+
+- [Boquilla Tipo Pistola Phantom XD 15-250 GPM](/productos/boquilla-tipo-pistola) — boquilla de alto rango con selector 4-6 posiciones en aluminio Elk-O-Lite para líneas de 1.5"
+- [Boquilla TFT Handline H-VPG-IF Automática 95-300 GPM](/productos/boquilla-pistola-tft-handline-95-300) — boquilla automática de presión constante 100 PSI para suministro variable
+- [Boquilla Certificada NFPA 1964 para Bomberos](/productos/boquilla-certificada-nfpa-1964-bomberos) — referencia de certificación NFPA 1964 para especificación en licitaciones municipales
+- [Manguera Blindex 2.5" × 30m](/productos/manguera-blindex-2-5-30m) — manguera de suministro 2.5" NH para conectar con la boquilla DSF-G en operaciones de alto caudal
+
+## Preguntas Frecuentes
+
+**¿Por qué especificar una boquilla de entrada 2.5" en lugar de 1.5" para incendios industriales de gran superficie?**
+La boquilla DSF-G con entrada de 2.5" permite caudales máximos de 250 GPM que son físicamente imposibles de alcanzar con una boquilla de 1.5", independientemente de la presión del sistema. En incendios con alta carga de combustible —almacenes, plants de proceso, terminales de almacenamiento— la densidad de aplicación de agua en GPM/ft² es el factor determinante para el control del fuego: una línea de 2.5" con el DSF-G puede lograr la tasa de aplicación requerida en un área de ataque hasta el doble que una línea de 1.5", reduciendo el tiempo hasta el control del fuego y el riesgo de involucración de estructuras adyacentes.
+
+**¿Qué ventaja ofrece el selector de flujo indexado del DSF-G frente a una boquilla automática en operaciones de alto caudal?**
+En operaciones de alto caudal con líneas de 2.5", el operador necesita certeza absoluta del caudal real que está descargando para coordinar el balance hídrico con el conductor de la bomba. El selector indexado del DSF-G entrega exactamente 125, 175 o 250 GPM a 100 PSI, permitiendo al conductor ajustar la presión de descarga de la bomba con precisión. Una boquilla automática ajusta el orificio de forma continua, lo que dificulta la coordinación cuando el sistema opera con hidrantes de alta variabilidad de presión y el conductor necesita calcular el rendimiento real del circuito hidráulico.
+
+**¿La herradura Horseshoe Handle del DSF-G opera correctamente bajo la fuerza de reacción de una línea de 2.5" a 250 GPM?**
+Sí. La herradura del DSF-G fue diseñada específicamente para líneas de 2.5": su geometría proporciona una palanca mecánica que reduce el esfuerzo de cierre bajo la reacción de una línea a 250 GPM y 100 PSI —que puede generar fuerzas de reacción superiores a 50 kg— a un nivel manejable por un solo operador. La construcción XD (Extra Duty) del cuerpo de bronce satinado y el pivote de la herradura están dimensionados para absorber estas fuerzas sin deformación ni fatiga de material en ciclos de uso repetido.
+
+**¿El bronce satinado del DSF-G resiste ambientes químicos industriales sin protección adicional?**
+El bronce fundido es inherentemente resistente a la corrosión por humedad, agua salobre y vapores de hidrocarburos, lo que lo hace adecuado para la mayoría de los ambientes industriales sin recubrimiento adicional. Sin embargo, para instalaciones con vapores de ácido sulfhídrico (H₂S), amoníaco (NH₃) en concentraciones altas o ácidos de proceso, se recomienda consultar la tabla de compatibilidad química de Elkhart Brass para el modelo DSF-G, ya que ciertos compuestos pueden atacar los empaques EPDM internos. En entornos con exposición directa y continua a ácidos fuertes, se evalúa la versión con sellos Viton como alternativa.
 
 Gama de México es **distribuidor autorizado** de Elkhart Brass con inventario disponible en bodegas en **CDMX y Querétaro**. Solicite cotización de la boquilla Select-O-Flow DSF-G de 2½" con ficha técnica oficial, certificado de cumplimiento NFPA 1964 y asesoría técnica para proyectos industriales y de bomberos profesionales.
