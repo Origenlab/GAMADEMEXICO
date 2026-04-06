@@ -21,47 +21,55 @@ galeria:
 
 ---
 
-## Monitor Sidewinder™ EXM2 — Control eléctrico, cero exposición
+El Monitor Sidewinder™ EXM2 de Elkhart Brass lleva la plataforma hidráulica compacta del Sidewinder™ al siguiente nivel operativo con actuadores eléctricos integrados de 24 VDC que permiten control remoto total desde joystick, panel de control o interfaz digital, con una capacidad de hasta 1,250 GPM a 100 PSI. Diseñado para escenarios donde la presencia de personal junto al monitor representa un riesgo inaceptable —incendios de tanques, fugas de gas, atmósferas potencialmente explosivas—, el EXM2 mantiene al operador a distancia segura mientras el monitor realiza la tarea. Su electrónica certificada IP66 soporta ambientes industriales severos con polvo, humedad, vibración y temperaturas extremas.
 
-Hay situaciones donde nadie debería estar parado junto a un monitor operando manivelas. Incendios de tanques de almacenamiento, fugas de gas con riesgo de explosión, escenarios BLEVE. Para eso existe el Sidewinder™ EXM2: el mismo diseño hidráulico del Sidewinder™ manual, pero con actuadores eléctricos que permiten operar desde una cabina, un panel remoto o un joystick a distancia segura.
-
-El sistema EXM2 de Elkhart Brass no es un motor pegado a un monitor manual. Es una plataforma diseñada desde cero para control eléctrico: los actuadores están integrados en la estructura, los sensores de posición reportan ángulo exacto de elevación y rotación, y la electrónica soporta ambientes industriales severos — polvo, humedad, vibración, temperaturas extremas.
-
-### Especificaciones técnicas
+## Especificaciones Técnicas
 
 | Parámetro | Valor |
 |---|---|
 | Caudal máximo | 1,250 GPM a 100 PSI |
+| Paso hidráulico | Trayectoria optimizada de baja turbulencia |
 | Entrada | 2½" NH |
-| Giro horizontal | 370° (con topes programables) |
-| Rango de elevación | -20° a +75° |
+| Giro horizontal | 370° con topes programables |
+| Elevación | -20° a +75° |
 | Material | Aleación de aluminio anodizado |
-| Actuadores | Eléctricos 24 VDC |
+| Actuación | Eléctrica 24 VDC |
 | Control | Joystick, panel remoto o interfaz digital |
 | Protección eléctrica | IP66 |
 | Certificaciones | UL Listed, FM Approved |
-| Compatibilidad | Agua, AFFF, FFFP |
+| Peso | Aproximadamente 11 kg (24 lb) |
 
-### Cuándo especificar el EXM2
+## Aplicaciones Principales
 
-**Terminales de almacenamiento de hidrocarburos:** la NOM-002-STPS y la NFPA 15 exigen protección fija en tanques. El EXM2 se monta sobre la estructura del dique de contención y se opera desde sala de control. El operador no se expone al calor radiante.
+- Sistemas de protección fija en terminales de almacenamiento de hidrocarburos con operación desde sala de control
+- Protección de tanques API en diques de contención donde el operador no puede acercarse al monitor durante el siniestro
+- Plantas petroquímicas y químicas con áreas de atmósfera potencialmente explosiva (zona ATEX)
+- Plataformas offshore y FPSOs con dotación mínima de brigada donde un solo operador controla múltiples monitores desde consola
+- Muelles de carga de buquetanques con riesgo de exposición a vapores inflamables
+- Instalaciones mineras con presencia de gases y polvos combustibles
+- Sistemas de protección automática integrados a detectores de llama IR/UV
 
-**Plataformas marinas y FPSO:** donde el espacio es limitado y el personal mínimo. Un solo operador controla múltiples monitores EXM2 desde consola. En plataformas del Golfo de México, esta configuración reduce la dotación de brigada necesaria.
+## Por Qué Elegir Sidewinder™ EXM2
 
-**Plantas químicas y petroquímicas:** escenarios donde la atmósfera puede ser explosiva. El monitor opera, la persona está a 50 metros detrás de una barrera. Así de simple.
+**Plataforma diseñada desde cero para control eléctrico.** El EXM2 no es un monitor manual con un motor acoplado. Los actuadores están integrados estructuralmente, los sensores de posición reportan ángulo de elevación y azimut en tiempo real, y la arquitectura electrónica fue concebida para entornos industriales desde la primera iteración de diseño.
 
-### Integración con sistemas de detección
+**Perfil dimensional compacto para instalaciones con espacio limitado.** El cuerpo reducido del Sidewinder™ permite montarlo en posiciones donde un monitor eléctrico de mayor tamaño no tiene lugar —plataformas, estructuras sobre diques, mástiles de acceso restringido— sin renunciar a 1,250 GPM de capacidad.
 
-El EXM2 acepta señales de sistemas de detección IR/UV. Cuando el detector identifica una llama, el monitor puede pre-posicionarse automáticamente hacia la zona de riesgo. El operador confirma y activa el flujo. Tiempo de respuesta del sistema completo: menos de 15 segundos desde la detección hasta agua sobre el fuego.
+**Integración nativa con sistemas de detección.** El EXM2 acepta señales de detectores IR/UV para pre-posicionamiento automático hacia la zona de riesgo antes de la activación del flujo. El tiempo de respuesta del sistema completo —desde detección hasta agua sobre el fuego— puede ser inferior a 15 segundos.
 
-### Normativa aplicable
-- **NFPA 15** — Standard for Water Spray Fixed Systems
+**Topes de rotación programables.** Los 370° de giro con límites ajustables por software permiten restringir el arco operativo según el layout del sitio, protegiendo estructuras adyacentes y evitando que el chorro apunte hacia áreas no deseadas durante una activación automática.
+
+**Protección IP66 para condiciones severas.** La clasificación de encapsulado eléctrico IP66 garantiza operación continua en presencia de lluvia, lavados de planta, neblina costera y ambientes con polvo o partículas en suspensión.
+
+**Compatible con AFFF y FFFP sin conversión de materiales.** Los materiales internos del EXM2 son compatibles con los principales concentrados de espuma fluorada, permitiendo operación dual agua/espuma según la demanda del incidente.
+
+## Normas Aplicables
+
+- **NFPA 15** — Standard for Water Spray Fixed Systems for Fire Protection
 - **NFPA 11** — Standard for Low-, Medium-, and High-Expansion Foam
+- **NFPA 1901** — Standard for Automotive Fire Apparatus
 - **API 2030** — Application of Fixed Water Spray Systems for Fire Protection in the Petroleum and Petrochemical Industries
-- **NOM-002-STPS** — Condiciones de seguridad contra incendios
+- **UL 162** — Standard for Foam Equipment and Liquid Concentrates
+- **NOM-002-STPS-2010** — Condiciones de seguridad contra incendios en los centros de trabajo
 
-### Stock y entrega — Gama de México
-
-El Sidewinder™ EXM2 se maneja sobre pedido con tiempos de entrega de 4-6 semanas según configuración. Gama de México proporciona ingeniería de aplicación: selección de boquilla, cálculo hidráulico, layout de montaje y puesta en marcha.
-
-Cotización incluye: precio, ficha técnica, plano dimensional, certificados UL/FM y asesoría de integración sin costo.
+Gama de México es distribuidor autorizado de Elkhart Brass con bodega en Santa Fe CDMX y Querétaro. El Sidewinder™ EXM2 se suministra sobre pedido con tiempo de entrega de 4 a 6 semanas según configuración; el servicio de cotización incluye ingeniería de aplicación, selección de boquilla, cálculo hidráulico, plano dimensional y certificados UL/FM vigentes sin costo adicional.

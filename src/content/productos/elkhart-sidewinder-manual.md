@@ -20,40 +20,53 @@ galeria:
   - "/img/monitores-contra-incendios/elkhart-sidewinder-manual-fondo-gris.avif"
 ---
 
-## Monitor Sidewinder™ Manual — Compacto, versátil, probado
+El Monitor Sidewinder™ Manual de Elkhart Brass combina una capacidad de hasta 1,250 GPM a 100 PSI con un perfil dimensional compacto pensado para aplicaciones donde el espacio de montaje es limitado sin sacrificar alcance ni eficiencia hidráulica. Su geometría interna de paso optimizado minimiza la turbulencia en el flujo, produciendo un chorro más coherente a distancias largas incluso cuando la presión de suministro opera por debajo de los valores nominales. Indicado para deck guns en unidades compactas, protección perimetral industrial y sistemas marinos en ambientes costeros.
 
-El Sidewinder™ Manual nació para resolver un problema recurrente en unidades de bomberos: necesitar un monitor de alto caudal que no ocupe medio techo del camión. Pesa menos que un Vulcan™, se monta en espacios reducidos y entrega hasta 1,250 GPM sin comprometer el alcance.
-
-Lo que distingue al Sidewinder™ de otros monitores compactos es la geometría interna del paso hidráulico. Elkhart Brass diseñó una trayectoria que minimiza las turbulencias en el flujo, lo que se traduce en un chorro más coherente a distancias largas. Cuando operás a 80 PSI en lugar de 100 porque la bomba no da más, la diferencia entre un monitor bien diseñado y uno mediocre se nota en metros de alcance efectivo.
-
-### Especificaciones técnicas
+## Especificaciones Técnicas
 
 | Parámetro | Valor |
 |---|---|
 | Caudal máximo | 1,250 GPM a 100 PSI |
+| Paso hidráulico | Trayectoria optimizada de baja turbulencia |
 | Entrada | 2½" NH |
 | Giro horizontal | 360° continuo |
-| Rango de elevación | -15° a +90° |
+| Elevación | -15° a +90° |
 | Material | Aleación de aluminio anodizado |
-| Certificaciones | UL Listed, FM Approved |
+| Actuación | Manual |
 | Compatibilidad | Agua, AFFF, FFFP |
+| Certificaciones | UL Listed, FM Approved |
 | Peso | Aproximadamente 7.7 kg (17 lb) |
 
-### Aplicaciones principales
+## Aplicaciones Principales
 
-**Deck guns en unidades compactas:** el perfil bajo del Sidewinder™ permite montarlo en camiones donde un monitor convencional no cabe. Unidades de primera respuesta, pick-ups equipados y vehículos de intervención rápida lo usan precisamente por esto.
+- Deck gun en unidades de bomberos compactas, pick-ups equipados y vehículos de intervención rápida
+- Protección perimetral temporal durante paradas de planta y descarga de materiales peligrosos
+- Sistemas de protección fija en embarcaciones, astilleros y plataformas costeras
+- Brigadas industriales de primera respuesta con requerimientos de movilidad elevada
+- Montaje sobre bases portátiles para cobertura de exposiciones en campo abierto
+- Protección de transformadores de mediana potencia y subestaciones en exteriores
+- Instalaciones en zonas con atmósfera salina donde el aluminio anodizado es preferible al hierro fundido
 
-**Protección perimetral temporal:** en eventos industriales donde se necesita cobertura temporal — paradas de planta, descarga de materiales peligrosos — el Sidewinder™ se monta rápido sobre una base portátil y queda operativo en minutos.
+## Por Qué Elegir Sidewinder™ Manual
 
-**Sistemas marinos:** el aluminio anodizado resiste ambientes salinos mejor que el hierro fundido. Varios astilleros y plataformas costeras en el Golfo de México operan Sidewinder™ por esta razón.
+**Perfil dimensional reducido sin sacrificar caudal.** El Sidewinder™ entrega 1,250 GPM en un cuerpo significativamente más compacto que un monitor de caudal equivalente de diseño convencional. Esto lo hace viable en posiciones de montaje donde un Vulcan™ o un Cobra™ no caben físicamente.
 
-### Normativa aplicable
-- **NFPA 15** — Standard for Water Spray Fixed Systems
+**Geometría interna de baja turbulencia.** Elkhart Brass diseñó la trayectoria hidráulica del Sidewinder™ para reducir la pérdida de coherencia del chorro. A presiones de trabajo de 80 PSI, la diferencia en metros de alcance efectivo respecto de un monitor genérico es medible y relevante operativamente.
+
+**Aluminio anodizado resistente a ambientes salinos.** A diferencia del hierro fundido o el acero sin tratamiento, el cuerpo de aluminio anodizado del Sidewinder™ no se degrada en ambientes marinos ni en zonas costeras con alta concentración de cloruros.
+
+**Peso reducido para montaje elevado y sistemas portátiles.** Los 7.7 kg del Sidewinder™ hacen viable su uso sobre mástiles de unidades ligeras, bases portátiles de trípode y estructuras metálicas donde la carga admisible es limitada.
+
+**Compatibilidad con boquillas XD Elkhart Brass.** El Sidewinder™ acepta la línea completa de boquillas XD, lo que permite cambiar el patrón de descarga —chorro recto, niebla o combinado— según el escenario de riesgo sin reemplazar el cuerpo del monitor.
+
+**Inventario en bodega nacional.** Gama de México mantiene el Sidewinder™ Manual en stock permanente, eliminando tiempos de importación y garantizando disponibilidad para proyectos con cronogramas ajustados.
+
+## Normas Aplicables
+
+- **NFPA 15** — Standard for Water Spray Fixed Systems for Fire Protection
+- **NFPA 11** — Standard for Low-, Medium-, and High-Expansion Foam
 - **NFPA 1901** — Standard for Automotive Fire Apparatus
-- **NOM-002-STPS** — Condiciones de seguridad, prevención y protección contra incendios
+- **API 2030** — Application of Fixed Water Spray Systems for Fire Protection in the Petroleum and Petrochemical Industries
+- **NOM-002-STPS-2010** — Condiciones de seguridad contra incendios en los centros de trabajo
 
-### Stock y entrega — Gama de México
-
-Distribuidor autorizado Elkhart Brass con bodega en Santa Fe CDMX y Querétaro. Entrega en zona metropolitana en 24-48 horas. Envíos a toda la República con seguro de carga incluido.
-
-Cotización incluye: precio, ficha técnica del fabricante, certificados de laboratorio UL/FM y asesoría de selección sin costo.
+Gama de México es distribuidor autorizado de Elkhart Brass con bodega en Santa Fe CDMX y Querétaro. El Sidewinder™ Manual está disponible en inventario permanente con entregas en zona metropolitana en 24 a 48 horas y envíos a toda la República con seguro de carga incluido. La cotización incluye precio, ficha técnica del fabricante y certificados UL/FM vigentes, sin costo adicional.

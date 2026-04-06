@@ -21,40 +21,54 @@ galeria:
   - "/img/monitores-contra-incendios/elkhart-vulcan-fondo-gris.avif"
 ---
 
-## Monitor Vulcan™ — El estándar de la industria
+El Monitor Vulcan™ de Elkhart Brass es el monitor manual de referencia en la industria para protección contra incendios de alta demanda, con capacidad de hasta 1,500 GPM a 100 PSI. Su paso hidráulico elíptico patentado de 3-3/8 pulgadas reduce la pérdida de fricción interna en un 35% comparado con diseños convencionales de paso circular, entregando mayor caudal efectivo y alcance superior por chorro. Diseñado para instalaciones fijas en refinerías, terminales de almacenamiento, unidades de bomberos y plantas petroquímicas donde la confiabilidad operativa no admite compromisos.
 
-Un monitor con paso circular descarga bien. Un monitor con paso elíptico hace algo diferente: reduce la pérdida de fricción en un 35% comparado con diseños convencionales. Esa diferencia se nota cuando necesitas 1,200 GPM a distancia máxima y la presión disponible en tu sistema no sobra.
-
-El Vulcan™ es el monitor manual más vendido de Elkhart Brass por una razón que va más allá del marketing: lleva décadas en refinerías, terminales de almacenamiento y unidades de bomberos en condiciones de operación real, y sigue funcionando.
-
-### Especificaciones técnicas
+## Especificaciones Técnicas
 
 | Parámetro | Valor |
 |---|---|
 | Caudal máximo | 1,500 GPM a 100 PSI |
 | Paso hidráulico | 3-3/8 pulgadas (elíptico patentado) |
-| Entrada | 3" o 2½" NH (según modelo) |
+| Entrada | 3" NH o 2½" NH (según modelo) |
 | Giro horizontal | 360° continuo |
-| Rango de elevación | -30° a +90° |
+| Elevación | -30° a +90° |
 | Material | Aleación de aluminio anodizado |
-| Certificaciones | UL Listed, FM Approved |
+| Actuación | Manual |
 | Compatibilidad | Agua, AFFF, FFFP |
+| Certificaciones | UL Listed, FM Approved |
+| Peso | Aproximadamente 11 kg (24 lb) |
 
-### Cuándo especificar el Vulcan™
+## Aplicaciones Principales
 
-**Instalaciones industriales de riesgo alto:** el paso elíptico mantiene caudal cuando la presión de red no es perfecta. En una planta donde la presión fluctúa entre 80 y 120 PSI dependiendo del turno de operación, el Vulcan™ entrega resultados consistentes.
+- Sistemas de protección fija en refinerías y unidades de proceso de hidrocarburos
+- Terminales de almacenamiento de productos inflamables (clases I, II y III)
+- Deck gun principal en unidades de bomberos municipales e industriales
+- Protección perimetral de diques de contención en plantas petroquímicas
+- Sistemas combinados de agua y espuma (AFFF/FFFP) en hangares aeronáuticos
+- Plataformas marinas y buques con sistemas de protección fija
+- Brigadas industriales de primera respuesta con instalaciones semipermanentes
 
-**Unidades de bomberos (deck gun):** el diseño de rotación continua 360° permite apuntar sin restricciones. Los bomberos que lo operan no tienen que recalibrar el recorrido del monitor en mitad de una intervención.
+## Por Qué Elegir Vulcan™
 
-**Sistemas de espuma:** compatible con AFFF y FFFP. Si tu proyecto requiere cobertura simultánea de agua y espuma, el Vulcan™ no necesita modificaciones de materiales.
+**Paso hidráulico elíptico patentado.** El diseño interno del Vulcan™ no es un tubo redondo estándar. La geometría elíptica reduce la turbulencia en el flujo y la pérdida de carga, lo que se traduce directamente en mayor alcance de chorro a igual presión disponible. Cuando la red opera a 80 PSI en lugar de 100 por fluctuaciones de turno, el Vulcan™ mantiene resultados donde un monitor genérico se queda corto.
 
-### Normativa aplicable
-- **NFPA 15** — Standard for Water Spray Fixed Systems (sistemas fijos en industrial)
-- **NFPA 11** — Standard for Low-, Medium-, and High-Expansion Foam (cuando se usa con espuma)
-- **NOM-002-STPS** — Condiciones de seguridad, prevención y protección contra incendios
+**Rotación horizontal 360° sin restricciones.** El mecanismo de giro continuo no tiene topes mecánicos que limiten la dirección de ataque. El operador apunta en cualquier dirección sin recalibrar la posición del cuerpo del monitor, crítico durante maniobras de ataque activo.
 
-### Stock y entrega — Gama de México
+**Compatibilidad nativa con espuma.** Los materiales internos del Vulcan™ son compatibles con AFFF y FFFP sin modificaciones. No se requiere conversión de piezas ni reemplazo de sellos para operar con concentrado de espuma.
 
-Distribuidor autorizado Elkhart Brass con bodega en Santa Fe CDMX y Querétaro. El Vulcan™ se mantiene en inventario permanente en los modelos de mayor demanda. Entrega en zona metropolitana en 24-48 horas. Envíos a toda la República.
+**Décadas de historial en condiciones reales.** El Vulcan™ lleva décadas instalado en refinerías, terminales y unidades de bomberos operando en condiciones de campo. Su trayectoria documentada en instalaciones de alto riesgo respalda la especificación sin necesidad de pruebas piloto.
 
-La cotización incluye: precio, ficha técnica, hoja de datos del fabricante y certificados de laboratorio — sin costo adicional.
+**Amplia disponibilidad de boquillas compatibles.** La línea XD de boquillas Elkhart Brass cubre patrones de chorro recto, niebla y combinado. Una sola plataforma de monitor soporta múltiples escenarios de protección cambiando únicamente la boquilla.
+
+**Mantenimiento simplificado con refacciones en stock local.** Gama de México mantiene refacciones del Vulcan™ en bodega nacional. Esto elimina tiempos de importación en reparaciones urgentes y reduce el costo total de propiedad a largo plazo.
+
+## Normas Aplicables
+
+- **NFPA 15** — Standard for Water Spray Fixed Systems for Fire Protection
+- **NFPA 11** — Standard for Low-, Medium-, and High-Expansion Foam
+- **NFPA 1901** — Standard for Automotive Fire Apparatus
+- **API 2030** — Application of Fixed Water Spray Systems for Fire Protection in the Petroleum and Petrochemical Industries
+- **UL 162** — Standard for Foam Equipment and Liquid Concentrates
+- **NOM-002-STPS-2010** — Condiciones de seguridad contra incendios en los centros de trabajo
+
+Gama de México es distribuidor autorizado de Elkhart Brass con bodega en Santa Fe CDMX y Querétaro. El Monitor Vulcan™ se mantiene en inventario permanente en las configuraciones de mayor demanda, con entregas en zona metropolitana en 24 a 48 horas y envíos a toda la República con seguro de carga incluido. La cotización incluye precio, ficha técnica del fabricante y certificados UL/FM vigentes, sin costo adicional.
