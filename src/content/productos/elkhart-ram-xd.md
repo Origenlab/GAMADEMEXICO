@@ -22,41 +22,54 @@ galeria:
   - "/img/monitores-contra-incendios/monitor-contra-incendio-aplicacion-industrial-06.avif"
 ---
 
-## Monitor RAM XD — Ataque rápido donde ningún vehículo llega
+El Monitor RAM XD (Rapid Attack Monitor) de Elkhart Brass es el monitor portátil de ataque rápido diseñado para llevar hasta 500 GPM a cualquier punto de una instalación donde no puede llegar un vehículo, con despliegue operativo en menos de 90 segundos por una brigada de dos personas. Construido en aluminio de aviación de alta resistencia, combina la robustez estructural necesaria para operación en campo severo con un peso optimizado para transporte manual por escaleras, andamios y accesos restringidos. Indicado para uso en edificios de gran altura conectados a sistemas standpipe conforme a NFPA 14, instalaciones industriales con acceso vehicular restringido y primera respuesta en operaciones extendidas donde se requiere capacidad de caudal independiente de la posición del equipo motorizado.
 
-El RAM XD (Rapid Attack Monitor) parte de una realidad operativa: en edificios de gran altura, instalaciones con acceso vehicular restringido o emergencias donde el tiempo de llegada del equipo fijo es crítico, necesitas capacidad de caudal ahora, no cuando el vehículo esté posicionado.
-
-500 GPM no es lo que entrega un monitor de gran escala. Pero 500 GPM en el tercer piso de un edificio, desplegados en 90 segundos por dos personas, hacen algo que ningún monitor de 2,000 GPM en la calle puede hacer desde ahí.
-
-### Especificaciones técnicas
+## Especificaciones Técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Caudal | Hasta 500 GPM |
-| Tipo de operación | Portátil — despliegue sin vehículo |
-| Base | Trípode integrado o montaje en superficie |
-| Conexión de entrada | 2½ pulgadas NH |
-| Peso | Diseñado para transporte manual por una brigada |
-| Certificaciones | UL Listed, FM Approved |
+| Caudal máximo | 500 GPM |
+| Paso hidráulico | Optimizado para flujo portátil de alta eficiencia |
+| Entrada | 2½" NH |
+| Giro horizontal | 360° continuo |
+| Elevación | Ajustable manualmente por el operador |
+| Material | Aluminio de aviación de alta resistencia |
+| Actuación | Manual |
+| Base | Trípode integrado o montaje directo en superficie |
 | Compatibilidad | Boquillas XD Elkhart Brass |
+| Certificaciones | UL Listed, FM Approved |
+| Peso | Optimizado para transporte manual por brigada |
 
-### Tres escenarios donde el RAM XD es la respuesta correcta
+## Aplicaciones Principales
 
-**Edificios de gran altura con standpipe (NFPA 14):** la brigada sube con el monitor y lo conecta a la toma de piso. En lugar de operar con una sola manguera de 2½", tienen un monitor apuntando con control preciso de elevación y dirección horizontal.
+- Ataque interior en edificios de gran altura conectados a sistema standpipe conforme a NFPA 14
+- Primera respuesta en instalaciones industriales con acceso vehicular bloqueado por compuertas, pasillos estrechos o plataformas elevadas
+- Soporte táctico mientras el equipo pesado motorizado se posiciona en el punto de máxima ventaja
+- Protección de áreas de proceso en plantas con restricción de acceso a vehículos por normas de seguridad
+- Brigadas de respuesta en terminales aéreos, talleres de mantenimiento y hangares sin acceso vehicular directo al área de riesgo
+- Operaciones en zonas con infraestructura limitada donde no existe red de hidrantes pero sí abastecimiento por manguera
+- Dotación adicional en unidades ligeras de primera respuesta que necesitan capacidad de monitor sin comprometer la carga útil del vehículo
 
-**Instalaciones industriales de acceso restringido:** plantas con compuertas de seguridad, pasillos estrechos o plataformas elevadas donde el acceso vehicular está prohibido o es técnicamente imposible. El RAM XD entra con la brigada a pie.
+## Por Qué Elegir RAM XD
 
-**Primera respuesta en operaciones extendidas:** cuando se necesita capacidad adicional mientras el equipo pesado se posiciona. El RAM XD se despliega en la posición de mayor ventaja táctica y opera de forma independiente de cualquier vehículo.
+**500 GPM sin depender de la posición del vehículo.** Un monitor montado en una unidad solo opera donde la unidad puede estar. El RAM XD lleva 500 GPM al tercer piso, al interior de una nave industrial, al fondo de una instalación con control de acceso. Esa movilidad no tiene equivalente en ningún monitor fijo.
 
-### Ventaja del trípode integrado
+**Trípode integrado: operativo sobre cualquier superficie en segundos.** El RAM XD no requiere superficie de montaje preparada ni herramientas de instalación. El trípode integrado lo estabiliza sobre piso de concreto, cubierta metálica o terreno sin preparar, eliminando el tiempo de instalación en campo cuando cada segundo cuenta.
 
-El RAM XD no requiere superficie de montaje preparada. Su trípode integrado lo hace operable sobre cualquier superficie plana — piso de concreto, cubierta metálica, terreno no preparado. Eso elimina el tiempo de instalación en campo.
+**Aluminio de aviación: resistencia estructural sin penalización de peso.** El cuerpo de aluminio de aviación proporciona la rigidez necesaria para absorber las fuerzas de reacción del chorro a 500 GPM sin la penalización de peso del bronce o el hierro fundido. El monitor puede ser transportado y desplegado por dos personas sin equipamiento especial.
 
-### Normativa aplicable
+**Compatible con la línea de boquillas XD Elkhart Brass.** El RAM XD acepta las mismas boquillas intercambiables que el resto de la línea Elkhart, lo que permite seleccionar el patrón de descarga óptimo —chorro recto para alcance máximo, niebla para protección de personal, combinado para escenarios mixtos— en campo, sin herramientas adicionales.
+
+**Conexión directa a toma standpipe o hidrante.** La entrada de 2½" NH estándar permite conectar el RAM XD directamente a tomas de piso en sistemas standpipe (NFPA 14) o a hidrantes con manguera de 2½", sin adaptadores especiales en la mayoría de las instalaciones con norma NH.
+
+**Inventario permanente para entregas inmediatas.** Gama de México mantiene el RAM XD en stock en bodega nacional, disponible para cotizaciones urgentes y entregas en zona metropolitana en 24 a 48 horas.
+
+## Normas Aplicables
+
+- **NFPA 15** — Standard for Water Spray Fixed Systems for Fire Protection
 - **NFPA 14** — Standard for the Installation of Standpipe and Hose Systems
-- **NFPA 1** — Fire Code (primera respuesta)
-- **NOM-002-STPS** — Protección contra incendios en centros de trabajo
+- **NFPA 1901** — Standard for Automotive Fire Apparatus
+- **API 2030** — Application of Fixed Water Spray Systems for Fire Protection in the Petroleum and Petrochemical Industries
+- **NOM-002-STPS-2010** — Condiciones de seguridad contra incendios en los centros de trabajo
 
-### Stock y entrega — Gama de México
-
-El RAM XD se mantiene en inventario en CDMX y Querétaro. Cotización con precio, ficha técnica del fabricante y certificados UL/FM. Para brigadas que requieren múltiples unidades del RAM XD, coordinamos cotización por volumen con asesoría técnica incluida.
+Gama de México es distribuidor autorizado de Elkhart Brass con bodega en Santa Fe CDMX y Querétaro. El Monitor RAM XD se mantiene en inventario permanente con entregas en zona metropolitana en 24 a 48 horas y envíos a toda la República con seguro de carga incluido. La cotización incluye precio, ficha técnica del fabricante y certificados UL/FM vigentes; para brigadas que requieren múltiples unidades se coordina cotización por volumen con asesoría técnica incluida.

@@ -21,45 +21,55 @@ galeria:
   - "/img/monitores-contra-incendios/elkhart-cobra-exm2-fondo-gris.avif"
 ---
 
-## Monitor Cobra™ EXM2 — Cuando el caudal estándar no alcanza
+El Monitor Cobra™ EXM2 de Elkhart Brass es el monitor eléctrico de mayor caudal en la línea, con capacidad de hasta 2,000 GPM a 100 PSI a través de un paso hidráulico de 4 pulgadas y actuadores eléctricos de 24 VDC que permiten operación completamente remota desde joystick, panel de control o sistema SCADA/DCS vía protocolo MODBUS RTU o señales analógicas 4-20 mA. Diseñado específicamente para los escenarios de mayor severidad: tanques de almacenamiento de gran diámetro, muelles de carga de buquetanques, plantas de generación eléctrica y áreas de proceso petroquímico donde los caudales de 1,000 a 1,500 GPM resultan insuficientes según el análisis hidráulico de protección. El Cobra™ EXM2 es el equipo que especifican los ingenieros cuando el riesgo no admite sub-dimensionamiento.
 
-El Cobra™ EXM2 existe para un tipo de escenario específico: incendios donde 1,000 o 1,250 GPM no son suficientes. Tanques de almacenamiento de 30 metros de diámetro. Áreas de proceso con inventario de hidrocarburos pesados. Muelles de carga de buquetanques. Si el análisis hidráulico del proyecto arroja que necesitas más de 1,500 GPM por monitor, el Cobra™ es la respuesta de Elkhart Brass.
-
-Con un paso hidráulico de 4 pulgadas y capacidad de hasta 2,000 GPM, el Cobra™ EXM2 es el monitor eléctrico de mayor caudal en la línea Elkhart. No es un equipo para cualquier aplicación — es para proyectos donde la severidad del riesgo justifica un monitor de esta capacidad.
-
-### Especificaciones técnicas
+## Especificaciones Técnicas
 
 | Parámetro | Valor |
 |---|---|
 | Caudal máximo | 2,000 GPM a 100 PSI |
 | Paso hidráulico | 4" |
 | Entrada | 4" bridada o 3" NH (según modelo) |
-| Giro horizontal | 370° (con topes programables) |
-| Rango de elevación | -30° a +75° |
+| Giro horizontal | 370° con topes programables |
+| Elevación | -30° a +75° |
 | Material | Aluminio anodizado / bronce (según modelo) |
-| Actuadores | Eléctricos 24 VDC |
-| Control | Joystick, panel remoto, interfaz MODBUS/4-20mA |
+| Actuación | Eléctrica 24 VDC |
+| Control | Joystick, panel remoto, MODBUS RTU, señal 4-20 mA |
 | Protección eléctrica | IP66 |
 | Certificaciones | UL Listed, FM Approved |
+| Peso | Según configuración de materiales |
 
-### Aplicaciones críticas
+## Aplicaciones Principales
 
-**Tanques de almacenamiento petrolero:** la NFPA 15 requiere densidad de aplicación específica según diámetro del tanque. Para tanques mayores a 20 metros, los monitores estándar de 1,000 GPM no cubren el área. El Cobra™ a 2,000 GPM reduce la cantidad de monitores necesarios — menos puntos de instalación, menos tubería, menor costo total del sistema.
+- Protección fija de tanques de almacenamiento petrolero de diámetro mayor a 20 metros conforme a NFPA 15
+- Terminales marítimas y muelles de carga de buquetanques con distancias de alcance superiores a 40 metros
+- Plantas de generación eléctrica: transformadores de potencia, tanques de aceite dieléctrico y áreas de turbina
+- Plantas petroquímicas con áreas de proceso de alto inventario de hidrocarburos pesados
+- Terminales de GLP y GNL con requerimientos de caudal mínimo por análisis de riesgo cuantitativo
+- Refinerías clase III con sistemas de protección integrados a sala de control central
+- Instalaciones con integración a sistemas de detección automática de llama IR/UV y arquitecturas DCS/SCADA
 
-**Terminales marítimas:** en muelles de carga de producto, la distancia entre el monitor y el punto de protección puede superar los 40 metros. El Cobra™ con boquilla de alcance extendido mantiene un patrón efectivo a esas distancias.
+## Por Qué Elegir Cobra™ EXM2
 
-**Plantas de generación eléctrica:** transformadores de potencia, tanques de aceite dieléctrico y áreas de turbina requieren caudales altos en ventanas de tiempo cortas. El Cobra™ entrega volumen desde el primer segundo.
+**El mayor caudal en la línea eléctrica Elkhart Brass.** Los 2,000 GPM del Cobra™ EXM2 con paso de 4 pulgadas no son un ajuste de configuración sobre una plataforma menor: son el resultado de una arquitectura hidráulica diseñada para ese caudal desde la concepción del producto. Cuando el análisis de protección exige más de 1,500 GPM por punto de monitor, el Cobra™ es la respuesta técnica correcta.
 
-### Integración con sistemas SCADA
+**Reducción de puntos de instalación en proyectos grandes.** A 2,000 GPM, el Cobra™ cubre el área que requeriría dos monitores de 1,000 GPM. Menos monitores significan menos puntos de tubería, menos cruces de piping, menor complejidad de la red hidráulica y reducción medible del costo total del sistema.
 
-El Cobra™ EXM2 se comunica vía protocolo MODBUS RTU o señales analógicas 4-20mA. Se integra directamente al DCS o SCADA de la planta. El ingeniero de control programa secuencias automáticas: posición de reposo, pre-aim a zonas de riesgo, activación por señal de detector.
+**Integración directa con SCADA y DCS de planta.** La compatibilidad con MODBUS RTU y señales 4-20 mA permite que el Cobra™ EXM2 sea un nodo más del sistema de control de la instalación. El ingeniero de control programa secuencias de posición de reposo, pre-aim a zonas de riesgo y activación por señal de detector sin hardware adicional.
 
-### Normativa aplicable
-- **NFPA 15** — Standard for Water Spray Fixed Systems
+**Topes de rotación programables para seguridad de activación automática.** Los 370° de giro con límites ajustables garantizan que durante una activación por detección automática el chorro no impacte estructuras, equipos o zonas de trabajo adyacentes al área protegida.
+
+**Protección IP66 para instalaciones intemperie de larga vida útil.** La clasificación IP66 garantiza operación continua bajo lluvia, lavados de alta presión y atmósferas con contaminantes industriales, condiciones habituales en terminales y plantas de proceso al exterior.
+
+**Materiales seleccionables según el ambiente de instalación.** El Cobra™ EXM2 se ofrece en cuerpo de aluminio anodizado para aplicaciones estándar y en variante con componentes de bronce para instalaciones en ambientes con corrosivos, H₂S o atmósferas marinas severas donde el aluminio presenta degradación acelerada.
+
+## Normas Aplicables
+
+- **NFPA 15** — Standard for Water Spray Fixed Systems for Fire Protection
 - **NFPA 11** — Standard for Low-, Medium-, and High-Expansion Foam
-- **API 2030** — Application of Fixed Water Spray Systems
-- **NOM-002-STPS** — Condiciones de seguridad contra incendios
+- **NFPA 1901** — Standard for Automotive Fire Apparatus
+- **API 2030** — Application of Fixed Water Spray Systems for Fire Protection in the Petroleum and Petrochemical Industries
+- **UL 162** — Standard for Foam Equipment and Liquid Concentrates
+- **NOM-002-STPS-2010** — Condiciones de seguridad contra incendios en los centros de trabajo
 
-### Stock y entrega — Gama de México
-
-Monitor sobre pedido con ingeniería de aplicación incluida. Tiempo de entrega: 6-8 semanas según configuración. Gama de México realiza el dimensionamiento hidráulico, selección de boquilla y plano de montaje como parte del servicio de cotización.
+Gama de México es distribuidor autorizado de Elkhart Brass con bodega en Santa Fe CDMX y Querétaro. El Cobra™ EXM2 se suministra sobre pedido con tiempo de entrega de 6 a 8 semanas según configuración; el servicio de cotización incluye dimensionamiento hidráulico, selección de boquilla, plano de montaje y certificados UL/FM vigentes sin costo adicional.
