@@ -20,85 +20,59 @@ destacado: true
 orden: 28
 ---
 
-El **monitor UL Listed de largo alcance** está optimizado para proyectar agua a distancias excepcionales, alcanzando hasta **75 metros con chorro sólido** a presión de trabajo estándar. Certificado por Underwriters Laboratories, este equipo es la solución ideal para proteger grandes áreas donde los monitores convencionales no logran la cobertura necesaria, como parques de tanques extensos, áreas de proceso de gran escala y protección perimetral industrial.
+El **Monitor UL Listed Largo Alcance Elkhart Brass UL-LA-750** proyecta chorro sólido a una distancia efectiva de hasta **75 metros** a presión de trabajo estándar de 100 PSI, con un rango de flujo de 750 a 1,500 GPM, cuerpo de bronce forjado y certificación UL Listed bajo UL 199. Este alcance excepcional lo convierte en el monitor idóneo para proteger grandes áreas donde la distancia entre el punto de instalación y la zona de riesgo supera la cobertura de los monitores convencionales, como parques de tanques extensos, áreas de proceso de gran escala y perímetros industriales críticos donde se requiere intervención sin exposición directa del operador al frente de fuego.
 
-## Rendimiento de Alcance
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Elkhart Brass |
+| Modelo | UL-LA-750 |
+| Certificación | UL Listed bajo UL 199 |
+| Caudal de operación | 750 – 1,500 GPM |
+| Alcance máximo (chorro sólido) | 75 metros a 1,500 GPM / 100 PSI |
+| Giro horizontal | 360° con bloqueo positivo |
+| Giro vertical | +85° / −25° |
+| Conexión de entrada | Brida 4" o 6" ANSI 150# |
+| Material del cuerpo | Bronce forjado |
+| Presión de trabajo | 100 – 150 PSI |
+| Presión residual mínima en entrada | 100 PSI |
+| Tubería de alimentación recomendada | 6" mínimo |
+| Normativa adicional | NFPA 15, NFPA 24 |
+
+## Rendimiento de Alcance por Caudal
 
 | Caudal | Presión | Alcance Horizontal | Alcance Vertical |
 |--------|---------|-------------------|------------------|
 | 750 GPM | 100 PSI | 60 m | 45 m |
 | 1,000 GPM | 100 PSI | 68 m | 52 m |
 | 1,250 GPM | 100 PSI | 72 m | 55 m |
-| **1,500 GPM** | 100 PSI | **75 m** | **58 m** |
+| 1,500 GPM | 100 PSI | 75 m | 58 m |
 
-## Especificaciones Técnicas
+## Por Qué UL Listed
 
-| Característica | Especificación |
-|----------------|----------------|
-| Certificación | **UL Listed** bajo UL 199 |
-| Caudal | 750 - 1,500 GPM |
-| Alcance Máximo | **75 metros** (chorro sólido) |
-| Giro Horizontal | **360°** con bloqueo positivo |
-| Giro Vertical | **+85° / -25°** |
-| Entrada | Brida 4" o 6" ANSI 150# |
-| Material | Bronce forjado |
-| Presión de Trabajo | 100-150 PSI |
+El listado **UL Listed bajo UL 199** de este monitor tiene valor técnico y comercial directo para las instalaciones que lo especifican en México:
 
-## Factores que Maximizan el Alcance
+- **Aseguradoras**: Los ingenieros de riesgo de compañías como FM Global, Chubb y AIG evalúan el alcance del monitor como parte de la ingeniería de protección del riesgo. Un monitor de largo alcance UL Listed permite justificar ante la aseguradora una mayor área de cobertura por unidad, lo que puede resultar en un diseño de sistema más eficiente económicamente y en mejores condiciones de suscripción de la póliza. El número de archivo UL es el respaldo documental que valida esas afirmaciones técnicas.
+- **Cumplimiento NFPA 15 y NFPA 24**: La NFPA 15 establece los parámetros de diseño de sistemas de agua spray fijos, incluyendo el alcance y la densidad de aplicación. El uso de un monitor UL Listed con alcance certificado permite al proyectista sustentar el diseño del sistema con datos de desempeño verificados por laboratorio, reduciendo el margen de incertidumbre en el cálculo hidráulico y facilitando la aprobación del proyecto por parte del responsable de obra y la autoridad.
+- **Protección Civil**: Las instalaciones industriales con grandes parques de tanques o áreas de proceso extensas deben demostrar cobertura suficiente de su sistema de protección contra incendio ante Protección Civil y, en su caso, ante la ASEA. El alcance de 75 metros certificado por UL permite acreditar esa cobertura con datos de desempeño respaldados por un organismo independiente de reconocimiento internacional.
 
-### Diseño Hidráulico
-- **Canal interno optimizado** para mínima pérdida de carga
-- **Transiciones suaves** sin turbulencias
-- **Boquilla de alta velocidad** con coeficiente Cv superior
+## Aplicaciones
 
-### Boquilla de Largo Alcance
-- **Perfil convergente** diseñado por CFD
-- **Acabado interno pulido** (Ra < 1.6 μm)
-- **Chorro coherente** que mantiene forma a distancia
+1. **Parques de tanques de almacenamiento de hidrocarburos** — un monitor de largo alcance puede cubrir la cobertura de enfriamiento de múltiples tanques desde una posición fija, reduciendo el número total de equipos y metros de tubería del sistema.
+2. **Áreas de proceso extensas en plantas petroquímicas** — protección desde el perímetro de la instalación sin necesidad de acercar el punto de descarga al área de riesgo, protegiendo al operador durante la activación del sistema.
+3. **Patios de maniobras y zonas de transformadores** — alcance a distancias donde un monitor estándar no logra la cobertura necesaria para enfriamiento de transformadores u otros equipos de alto valor.
+4. **Zonas de carga y descarga marítima** — protección de buquetanques y plataformas de carga desde un punto en tierra, manteniendo la distancia de seguridad exigida por los protocolos de las terminales.
+5. **Protección perimetral de instalaciones críticas** — centrales eléctricas, subestaciones y plantas de tratamiento donde el monitor debe alcanzar el área de riesgo desde la posición de instalación permitida por el plan de emergencia.
+6. **Aeropuertos y hangares de aviación** — protección de plataformas de combustible y zonas de operación de aeronaves desde posiciones fijas que minimizan la interferencia con las operaciones normales del aeropuerto.
 
-## Aplicaciones de Largo Alcance
+## Normas Aplicables
 
-| Aplicación | Distancia Típica | Ventaja |
-|------------|-----------------|---------|
-| **Parque de tanques** | 40-60 m | Un monitor cubre múltiples tanques |
-| **Área de proceso extensa** | 50-75 m | Cobertura desde perímetro |
-| **Patio de maniobras** | 30-50 m | Protección de transformadores lejanos |
-| **Zona de carga marítima** | 40-70 m | Alcance a buquetanques |
+- **NFPA 15** — Standard for Water Spray Fixed Systems for Fire Protection: norma principal para sistemas fijos con monitores; los parámetros de alcance y densidad de aplicación de este monitor se alinean con sus requisitos de diseño.
+- **NFPA 11** — Standard for Low-, Medium-, and High-Expansion Foam: aplica cuando el monitor de largo alcance se integra a sistemas de espuma para protección de grandes superficies de líquido inflamable.
+- **NFPA 1901** — Standard for Automotive Fire Apparatus: referencia cuando el monitor se monta sobre aparatos contra incendio o vehículos de extinción de gran porte.
+- **API 2030** — Application of Fixed Water Spray Systems for the Petroleum and Petrochemical Industries: guía técnica para el diseño de sistemas en instalaciones de hidrocarburo que requieren alcances extendidos.
+- **UL 162** — Standard for Foam Equipment and Liquid Concentrates: aplica en las variantes del monitor equipadas con inductor de espuma.
+- **NOM-002-STPS-2010** — Condiciones de seguridad, prevención y protección contra incendios en los centros de trabajo: norma oficial mexicana aplicable a todas las instalaciones industriales con presencia de este sistema.
 
-## Cálculo de Cobertura
-
-Con alcance de 75 metros, un solo monitor puede cubrir:
-
-- **Área circular**: π × 75² = **17,671 m²** (1.77 hectáreas)
-- **Área efectiva (180°)**: **8,835 m²**
-- **Área práctica (90°)**: **4,418 m²**
-
-## Comparativa con Monitores Estándar
-
-| Característica | Estándar | **Largo Alcance** |
-|----------------|----------|-------------------|
-| Alcance típico | 40-50 m | **70-75 m** |
-| Área de cobertura | 6,300 m² | **17,600 m²** |
-| Monitores para 5 hectáreas | 8 unidades | **3 unidades** |
-| Costo de tubería | $$$$ | **$$** |
-
-## Requisitos de Instalación
-
-Para lograr el alcance máximo especificado:
-
-| Requerimiento | Valor |
-|---------------|-------|
-| Presión mínima en entrada | 100 PSI residual |
-| Tubería de alimentación | 6" mínimo |
-| Pérdida de carga máxima | 10 PSI hasta el monitor |
-| Altura de instalación | 1.5-2.0 m sobre nivel |
-
-## Productos Relacionados
-
-- [Monitor UL Listed Estándar](/productos/monitor-ul-listed) - Versión convencional
-- [Monitor UL Listed Fixed Flow Foam](/productos/monitor-ul-listed-fixed-flow-foam) - Con sistema de espuma
-- [Boquillas de Largo Alcance](/boquillas-contra-incendios) - Accesorios
-
----
-
-**Gama de México** realiza estudios de cobertura para optimizar la cantidad y posición de monitores en su instalación. Solicite análisis sin costo.
+**Gama de México** es distribuidor autorizado de Elkhart Brass y realiza estudios de cobertura para optimizar la cantidad y posición de monitores en parques de tanques, áreas de proceso y perímetros industriales. Contáctenos para análisis de cobertura y cotización de su proyecto.

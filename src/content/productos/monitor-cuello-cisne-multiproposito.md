@@ -20,96 +20,65 @@ destacado: true
 orden: 19
 ---
 
-El **monitor cuello de cisne multipropósito** es la solución versátil para instalaciones que requieren capacidad de respuesta ante diferentes tipos de incendio. Su diseño permite configuración rápida para descarga de **agua, espuma AFFF o espuma FFFP**, adaptándose a escenarios que van desde incendios Clase A convencionales hasta derrames de hidrocarburos Clase B.
-
-## Versatilidad en Agentes Extintores
-
-| Agente | Aplicación | Boquilla Compatible |
-|--------|------------|---------------------|
-| **Agua pura** | Incendios Clase A, enfriamiento | Chorro sólido o niebla |
-| **Espuma AFFF 3%** | Hidrocarburos, combustibles | Boquilla aire-aspirante |
-| **Espuma AFFF 6%** | Solventes polares | Boquilla aire-aspirante |
-| **Espuma FFFP** | Derrames de combustible | Boquilla formadora de película |
-| **Agua + aditivo** | Incendios profundos | Boquilla estándar |
-
-## Configuraciones de Boquilla
-
-La salida NST de 2½" permite intercambio rápido entre diferentes tipos de boquilla:
-
-### Para Agua
-- **Boquilla de chorro sólido** - Máximo alcance (60+ metros)
-- **Boquilla de niebla ajustable** - Protección de personal, enfriamiento
-- **Boquilla de cortina** - Protección de exposiciones
-
-### Para Espuma
-- **Eductor en línea** - Proporciona mezcla agua-concentrado
-- **Boquilla aire-aspirante** - Genera espuma expandida
-- **Cámara de espuma** - Para aplicación suave en tanques
+El **Monitor Cuello de Cisne Multipropósito ARMECO CC-MP-001** opera entre 250 y 1,000 GPM y está diseñado para instalaciones que deben responder ante diferentes tipos de incendio con un solo equipo fijo: su salida de 2½" NST acepta boquillas intercambiables y eductores de espuma proporcional, permitiendo configuración rápida para descarga de **agua, espuma AFFF 3%/6%, FFFP o AR-AFFF** según el escenario de emergencia. El diseño en cuello de cisne aporta la capacidad de orientar el chorro hacia abajo para proteger equipos elevados y tanques, sin articulaciones de cuello que puedan fallar o filtrar bajo la presión de operación.
 
 ## Especificaciones Técnicas
 
 | Característica | Especificación |
 |----------------|----------------|
-| Material | Bronce fundido libre de porosidades |
-| Giro Vertical | **120°** |
-| Giro Horizontal | **360°** con freno |
-| Entrada | Base bridada 4" ANSI 150# |
+| Modelo | ARMECO CC-MP-001 |
+| Material del cuerpo | Bronce fundido libre de porosidades |
+| Rango de flujo | 250 – 1,000 GPM |
+| Presión de trabajo | 150 PSI (operación continua) |
+| Presión máxima | 300 PSI (prueba hidrostática) |
+| Entrada | Brida 4" ANSI 150# cara realzada |
 | Salida | 2½" NST macho (intercambiable) |
-| Rango de Flujo | 250 - 1,000 GPM |
-| Presión de Trabajo | 150 PSI |
-| Presión Máxima | **300 PSI** |
-| Compatibilidad | Agua, AFFF, FFFP, AR-AFFF |
+| Giro vertical | 120° (incluye ángulos de descarga negativos) |
+| Giro horizontal | 360° con freno manual de bloqueo |
+| Compatibilidad de agentes | Agua, AFFF 3%, AFFF 6%, FFFP, AR-AFFF |
+| Acabado exterior | Rojo bermellón anticorrosivo |
+| Compatibilidad con eductores | Eductor en línea NST 2½" estándar |
 
-## Escenarios de Aplicación
+## Ventajas del Diseño Cuello de Cisne
 
-### Escenario 1: Planta Industrial Mixta
-- **Almacén**: Boquilla de agua para materiales sólidos
-- **Área de proceso**: Eductor de espuma para solventes
-- **Subestación**: Niebla de agua para protección eléctrica
+El cuello de cisne del CC-MP-001 es el fundamento que hace posible su versatilidad sin comprometer la confiabilidad hidráulica ni la integridad del equipo.
 
-### Escenario 2: Terminal de Combustibles
-- **Zona de carga**: Espuma AFFF para derrames
-- **Oficinas**: Agua para estructuras
-- **Manifold**: Enfriamiento con agua
+**Sin sello rotativo en el cuello expuesto a espuma.** Los concentrados de espuma AFFF y FFFP son químicamente activos y pueden degradar sellos elastoméricos a lo largo del tiempo. Dado que el cuello del CC-MP-001 es una curva fundida sin articulación, no existe sello en ese punto que pueda verse afectado por el paso de concentrados de espuma. Los únicos sellos en contacto con el agente son los de la salida NST y la entrada bridada, ambos de fácil inspección y reemplazo.
 
-### Escenario 3: Refinería
-- **Tanques**: Espuma FFFP para techo flotante
-- **Rack de tuberías**: Agua de enfriamiento
-- **Área de servicios**: Configuración mixta
+**Flujo sin turbulencia para generar espuma de calidad.** La generación de espuma de baja expansión mediante eductor en línea depende de un flujo de agua uniforme y sin perturbaciones antes del punto de inyección del concentrado. El radio amplio de curvatura del cuello de cisne evita la turbulencia que producen los codos abruptos, entregando al eductor un perfil de flujo más laminar que favorece la mezcla correcta y la calidad de la espuma generada.
 
-## Kit de Versatilidad Opcional
+**Reconversión rápida sin interrumpir el suministro permanente.** Dado que el cuello y el cuerpo del monitor no requieren mantenimiento periódico, el único procedimiento necesario para cambiar de configuración es la sustitución de la boquilla o el eductor en la salida NST. Este cambio se realiza en menos de 60 segundos con la válvula de suministro cerrada, sin necesidad de drenar el sistema ni desmontar el monitor de su brida de soporte.
 
-**Gama de México** ofrece un kit complementario que incluye:
+## Aplicaciones
 
-- Eductor de espuma proporcional 3% / 6%
-- Boquilla aire-aspirante 500 GPM
-- Boquilla de niebla ajustable
-- Adaptadores y conexiones rápidas
-- Maletín de almacenamiento
+- **Terminales de almacenamiento de hidrocarburos** — agua para estructuras y espuma AFFF para derrames en una sola instalación fija
+- **Plantas de proceso con múltiples riesgos** — un monitor con boquillas intercambiables cubre zonas con distintas clases de incendio
+- **Áreas de carga y descarga de autotanques** — espuma para derrames de combustible, agua para enfriamiento de estructuras adyacentes
+- **Parques de tanques de techo flotante** — espuma FFFP para incendio de anillo y agua para enfriamiento de la pared del tanque
+- **Subestaciones eléctricas industriales** — niebla de agua mediante boquilla regulable sin necesidad de cambiar el monitor
+- **Brigadas industriales contra incendio** — equipo versátil que reduce el número de monitores fijos necesarios por área de riesgo
 
-## Cambio Rápido de Configuración
+## Normas Aplicables
 
-El diseño del monitor permite cambio de boquilla en menos de 60 segundos:
+| Norma | Alcance |
+|-------|---------|
+| **NFPA 15** | Water Spray Fixed Systems for Fire Protection — diseño del sistema de agua pulverizada y enfriamiento |
+| **NFPA 11** | Low-, Medium-, and High-Expansion Foam — aplicaciones con espuma de baja expansión AFFF y FFFP |
+| **API 2030** | Application of Fixed Water Spray Systems for Fire Protection in the Petroleum Industry — criterios de densidad de aplicación y caudal en tanques y equipos de proceso |
+| **NRF-005-PEMEX** | Protección contra incendio en instalaciones petroleras mexicanas — referencia para proyectos PEMEX con sistemas de agua y espuma |
+| **UL Listed** | Aplicable a boquillas intercambiables certificadas UL utilizadas con el monitor |
+| **NOM-002-STPS-2010** | Condiciones de seguridad para prevención y protección contra incendios en centros de trabajo |
 
-1. Cerrar válvula de suministro
-2. Desenroscar boquilla actual (conexión NST)
-3. Conectar nueva boquilla o eductor
-4. Verificar acople y abrir suministro
+## Agentes Compatibles y Configuraciones de Boquilla
 
-## Normativas Aplicables
-
-- **NFPA 11**: Sistemas de espuma de baja, media y alta expansión
-- **NFPA 16**: Instalación de sistemas rociadores de agua-espuma
-- **NFPA 30**: Código de líquidos inflamables y combustibles
-- **NRF-015-PEMEX**: Protección contra incendio
-
-## Productos Relacionados
-
-- [Concentrado de Espuma AFFF](/boquillas-contra-incendios) - Para uso con el monitor
-- [Boquillas Industriales](/productos/boquilla-industrial) - Opciones de descarga
-- [Monitor ST611 FM Approved](/productos/monitor-st611-fm-approved) - Versión certificada FM
-- [Eductores de Espuma](/boquillas-contra-incendios) - Sistemas de proporcionamiento
+| Agente | Concentración | Tipo de boquilla | Aplicación principal |
+|--------|--------------|------------------|----------------------|
+| Agua pura | — | Chorro sólido o niebla ajustable | Enfriamiento, incendios Clase A |
+| Espuma AFFF | 3% o 6% | Boquilla aire-aspirante + eductor en línea | Incendios de hidrocarburos Clase B |
+| Espuma FFFP | 3% | Boquilla formadora de película + eductor | Derrames de combustible en tanques |
+| AR-AFFF | 3% o 6% | Boquilla aire-aspirante + eductor | Solventes polares, alcoholes |
+| Agua + aditivo humectante | Variable | Boquilla estándar | Incendios profundos Clase A |
 
 ---
 
-**Gama de México** asesora en la selección de la configuración óptima para su instalación. Contáctenos para un análisis de riesgos y recomendación de equipamiento.
+**Gama de México** asesora en la selección de la configuración óptima de boquillas y eductores para cada escenario de riesgo. Ofrecemos análisis de riesgos, recomendación de agentes extintores y cotización del sistema completo incluyendo concentrados de espuma compatibles. Contáctenos para una evaluación técnica de su instalación.
