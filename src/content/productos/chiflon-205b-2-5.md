@@ -1,6 +1,6 @@
 ---
-title: "Chiflón Tres Pasos 205-B 2.5\" Elkhart Brass"
-description: "Chiflón de tres pasos modelo 205-B de 2.5\" NH. Cerrado, neblina y chorro directo. Flujo 150-250 GPM. Bronce fundido. UL 401."
+title: "Chiflón 205-B-25 Tres Pasos 2.5\" NH 150-250 GPM UL 401 NFPA 1964 | Elkhart Brass | México"
+description: "Chiflón 205-B-25 tres pasos 2.5\" NH bronce fundido 150-250 GPM 100 PSI UL 401 NFPA 1964 Elkhart Brass. Cerrado/niebla/chorro directo. Operaciones industriales y bomberos México."
 categoria: "conexiones-herrajes"
 subcategoria: "chiflones"
 imagen: "/img/conexiones-herrajes/chiflon-205b-2-5-frontal.avif"
@@ -66,5 +66,26 @@ El chiflón Elkhart Brass 205-B-25 en conexión de 2.5" NH duplica la capacidad 
 - **NFPA 1963** — Standard for Fire Hose Connections: garantiza que la rosca 2.5" NH cumple con las dimensiones y tolerancias para interoperabilidad con mangueras, adaptadores y tomas de sistemas fijos.
 - **NOM-002-STPS-2010** — Condiciones de seguridad contra incendio en los centros de trabajo: norma mexicana obligatoria que regula las características de los equipos de combate de incendios utilizados en instalaciones laborales.
 - **NFPA 14** — Standard for the Installation of Standpipe and Hose Systems: aplica en instalaciones con columnas de 2.5" NH de Clase I y III, donde este chiflón opera como boquilla terminal del sistema.
+
+## Productos Relacionados
+
+- [Chiflón Aluminio Ligero 1.5" NH Tres Pasos](/productos/chiflon-aluminio-ligero-1-5) — versión de menor diámetro para líneas de ataque manual donde el peso y la maniobrabilidad son prioritarios
+- [Chiflón Chief XD 1.5" Elkhart Brass](/productos/chiflon-chief-xd-1-5) — chiflón de construcción XD para líneas de 1.5" con mayor resistencia mecánica en brigadas de alto uso
+- [Boquilla Select-O-Flow DSF-G 2.5" 125-250 GPM](/productos/boquilla-pistola-select-o-flow-2-5) — alternativa con selector de flujo indexado para mayor control del caudal en el mismo rango de la 205-B-25
+- [Manguera Blindex 2.5" × 30m](/productos/manguera-blindex-2-5-30m) — manguera de suministro 2.5" NH para conectar con el chiflón 205-B-25 en operaciones de alto caudal
+
+## Preguntas Frecuentes
+
+**¿Por qué especificar el chiflón de tres pasos 205-B-25 de 2.5" en lugar de la versión de 1.5" para operaciones industriales de gran escala?**
+El chiflón de 2.5" permite caudales de 150 a 250 GPM que son físicamente imposibles de alcanzar con una boquilla de 1.5" dentro de los rangos de presión de operación normales. En incendios industriales con alta carga de combustible —tanques de hidrocarburos, bodegas con materiales plásticos, edificios de gran superficie— la densidad de aplicación de agua en GPM por área es el factor determinante para el control del fuego: solo con caudales superiores a 150 GPM se puede superar la tasa de liberación de calor de estos incendios y lograr el knockdown. La manguera de 2.5" es más pesada y rígida, lo que requiere más personal para su manejo, pero esta limitación se acepta a cambio de la capacidad de caudal necesaria para el tipo de riesgo.
+
+**¿La posición de "tres pasos" del 205-B-25 es continua o hay posiciones intermedias además de cerrado, niebla y chorro?**
+El modelo 205-B-25 es un chiflón de tres pasos con posiciones discretas: cerrado completo, niebla (fog) y chorro directo (jet). No existen posiciones intermedias entre niebla y chorro directo, a diferencia de las boquillas tipo pistola con selector de patrón continuo. El cambio de posición se realiza rotando el cuerpo del chiflón entre las tres detentes. Para operaciones donde se requiere ajuste fino del ángulo de niebla entre las posiciones estándar, o para transición suave de chorro a niebla, se especifica una boquilla tipo pistola o turbo jet con ajuste continuo de patrón. El chiflón de tres pasos es la especificación correcta cuando se priorizan la simplicidad de operación y la robustez mecánica sobre la versatilidad de patrón.
+
+**¿Los anillos de uretano del 205-B-25 son más o menos durables que los de EPDM en condiciones de operación con espuma AFFF?**
+El uretano (poliuretano) tiene excelente resistencia a la abrasión y a las presiones de impacto mecánico, siendo más resistente al desgaste físico que el EPDM en aplicaciones de alta frecuencia de apertura y cierre. Sin embargo, el EPDM tiene mejor resistencia química a los agentes espumógenos AFFF concentrados y a las soluciones de spuma diluida que pueden quedar en el chiflón después de operaciones con espuma. Para uso exclusivo con agua, los anillos de uretano del 205-B-25 son completamente adecuados. Para uso frecuente con espuma AFFF, se recomienda enjuagar exhaustivamente con agua dulce después de cada operación con espuma para preservar los anillos de uretano y extender su vida útil.
+
+**¿El chiflón 205-B-25 cumple con los requisitos de NFPA 14 para sistemas de standpipe clase I y III de uso por bomberos?**
+Sí. NFPA 14 requiere que los accesorios instalados en sistemas de standpipe clase I (de uso exclusivo por bomberos) y clase III (uso mixto) tengan roscas NH/NST conforme a NFPA 1963 y que los caudales de diseño sean compatibles con los requisitos hidráulicos del sistema —típicamente 250 GPM para la primera salida y 100 GPM por cada salida adicional hasta un máximo. La certificación conjunta UL 401 y NFPA 1964 del 205-B-25 satisface los requisitos de componente de NFPA 14. Se debe verificar que la presión residual disponible en la salida de standpipe sea suficiente para suministrar al chiflón los 150-250 GPM a 100 PSI en la tobera según el diseño hidráulico del sistema.
 
 Gama de México distribuye el chiflón Elkhart Brass 205-B-25 para proyectos industriales, municipales y de infraestructura crítica en todo el país. Solicite cotización a nuestro equipo de especialistas en protección contra incendios.

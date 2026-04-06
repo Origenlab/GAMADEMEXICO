@@ -1,6 +1,6 @@
 ---
-title: "Cap de Protección 2.5\" NH Bronce con Cadena"
-description: "Cap de protección de bronce 2.5\" NH hembra con cadena de 9\". Protege roscas de tomas siamesas e hidrantes. Presión 175 PSI."
+title: "Cap Protección C-17 2.5\" NH Bronce Cadena 9\" UL Listed | Elkhart Brass | México"
+description: "Cap de protección C-17 Elkhart Brass 2.5\" NH bronce fundido 175 PSI cadena 9\" UL Listed NOM-002. Tomas siamesas, hidrantes y gabinetes contra incendio México."
 categoria: "conexiones-herrajes"
 subcategoria: "accesorios"
 imagen: "/img/conexiones-herrajes/cap-proteccion-2-5-frontal.avif"
@@ -63,5 +63,26 @@ El Cap de Protección Elkhart Brass modelo C-17 es el accesorio estándar para c
 - **NFPA 1963** — Norma para roscas de mangueras contra incendios: define el perfil y dimensiones de la rosca NH 2.5" con la que se fabrica este cap
 - **NFPA 14** — Norma para sistemas de tubería vertical y mangueras: aplica al mantenimiento de las conexiones FDC donde este cap es el componente de protección
 - **NOM-002-STPS-2010** — Condiciones de seguridad contra incendio en los centros de trabajo: aplica a la conservación y mantenimiento de equipos de protección contra incendio incluyendo caps de protección
+
+## Productos Relacionados
+
+- [Cap Alta Presión C-50 500 PSI NFPA 1901](/productos/cap-alta-presion-nfpa1901) — cap de alta presión para descargas vehiculares y sistemas industriales que superan los 175 PSI del C-17
+- [Cap Storz CS-25 Protección 2.5" con Cable](/productos/cap-storz-proteccion-cable) — cap para acoplamientos Storz en instalaciones que han migrado del sistema NH al Storz
+- [Adaptador NH a Storz 2.5" Bronce D-327-S](/productos/adaptador-bronce-nh-storz-2-5) — adaptador para modernizar tomas NH existentes a conexión rápida Storz sin sustituir la toma
+- [Hidrante de Banqueta NH](/productos/hidrante-banqueta) — hidrante con salidas NH 2.5" donde el C-17 es el cap de protección estándar especificado en proyecto
+
+## Preguntas Frecuentes
+
+**¿Con qué frecuencia debe inspeccionarse y reemplazarse el cap C-17 en una toma siamesa o hidrante según las normas aplicables?**
+NFPA 25 (Inspección, Prueba y Mantenimiento de Sistemas de Protección contra Incendio) establece inspección visual trimestral de los caps y cadenas en tomas siamesas FDC, verificando que estén presentes, sin daño visible y con el empaque en buen estado. La prueba de integridad del sello se realiza anualmente. El cap debe reemplazarse si el empaque presenta grietas, deformación permanente, dureza excesiva por envejecimiento, o si la cadena tiene eslabones abiertos o rota. En México, NOM-002-STPS-2010 establece revisión anual mínima del sistema completo; la inspección más frecuente de NFPA 25 es la mejor práctica adoptada por la mayoría de los seguros industriales.
+
+**¿Qué ventaja ofrece el acabado cromado del C-17 frente al pulido natural en instalaciones de fachada expuesta?**
+El cromado proporciona una capa adicional de protección contra la oxidación superficial del bronce en entornos con alta humedad, contaminación marina o industrial, y exposición a productos de limpieza alcalinos utilizados en mantenimiento de fachadas. En tomas siamesas visibles en la fachada de edificios comerciales o corporativos, el acabado cromado también cumple una función estética al mantener un aspecto uniforme con el bronce de la toma siamesa. En instalaciones interiores o en áreas industriales sin requerimientos estéticos, el pulido natural de bronce es completamente adecuado y tiene igual resistencia a la corrosión bajo las condiciones operativas del sistema.
+
+**¿El cap C-17 de 175 PSI es suficiente para una toma siamesa FDC conectada a un sistema de rociadores automáticos con bomba contra incendio?**
+El cap C-17 de 175 PSI es adecuado para la gran mayoría de los sistemas de rociadores, donde la presión máxima de la toma siamesa en condición estática (sin flujo) raramente supera los 150-175 PSI. La presión de prueba hidrostática del C-17 es de 525 PSI —tres veces la presión de trabajo— lo que proporciona un margen de seguridad adecuado. Para sistemas con bomba de alta presión cuya presión estática puede superar los 175 PSI (sistemas de espuma de alta expansión, diluvio de alta densidad o instalaciones en altitudes significativas), se especifica el cap C-50 de 500 PSI.
+
+**¿La longitud de cadena de 9" del C-17 es suficiente para que el cap quede fácilmente accesible durante la operación de emergencia?**
+La cadena de 9" está dimensionada para permitir que el cap se desplace del punto de conexión lo suficiente para que el bombero lo sostenga cómodamente mientras conecta la manguera, sin que la cadena quede bajo la manguera presurizada ni interfiera con el acoplamiento de la conexión. En tomas siamesas con dos entradas, ambos caps quedan colgando independientemente con suficiente separación para que el bombero acople dos mangueras simultáneamente. Para instalaciones en pasillos estrechos o en fachadas donde el cap podría quedar atascado detrás de la toma, se evalúa la posibilidad de una cadena más corta o de un modelo sin cadena con clip de retención como alternativa.
 
 Gama de México mantiene stock permanente del Cap de Protección 2.5" NH modelo C-17 de Elkhart Brass para entregas inmediatas en todo el país. Este accesorio se vende tanto por pieza como en cantidades mayores para programas de mantenimiento preventivo de flotas de tomas siamesas e hidrantes. Podemos también suministrar caps en acabado cromado para tomas siamesas de fachada de alta gama. Contáctenos para cotización por volumen, disponibilidad y asesoría en la gestión de inventarios de repuestos para su sistema contra incendio.
