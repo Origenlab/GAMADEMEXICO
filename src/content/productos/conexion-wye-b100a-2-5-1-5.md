@@ -1,6 +1,6 @@
 ---
-title: "Conexión Y (Wye) B-100-A 2.5\" x 1.5\" Elkhart"
-description: "Conexión Y modelo B-100-A con entrada 2.5\" y dos salidas 1.5\" NH. Válvulas de bola integradas. Aluminio Elk-O-Lite. UL/FM."
+title: "Conexión Wye B-100-A 2.5\"×1.5\" NH Elk-O-Lite UL FM | Elkhart Brass | México"
+description: "Conexión Wye B-100-A Elkhart Brass 2.5\" entrada dos salidas 1.5\" NH aluminio Elk-O-Lite 200 PSI UL Listed FM Approved. Válvulas bola traba positiva. Bomberos industria México."
 categoria: "conexiones-herrajes"
 subcategoria: "wye"
 imagen: "/img/conexiones-herrajes/conexion-wye-b100a-frontal.avif"
@@ -61,5 +61,26 @@ Esta configuración se especifica para combate estructural porque las mangueras 
 - **NFPA 1901** — Norma para aparatos de bomberos automotrices; regula el equipo portátil embarcado, incluyendo conexiones Wye reductoras.
 - **NOM-002-STPS-2010** — Condiciones de seguridad contra incendio en centros de trabajo; norma mexicana que rige los equipos de protección contra incendios en instalaciones industriales y comerciales.
 - **UL 405** — Estándar Underwriters Laboratories para conexiones de departamento de bomberos (fire hose connections); requerido para uso en sistemas certificados.
+
+## Productos Relacionados
+
+- [Conexión Wye B-97-B Bronce 2.5"×2.5" NH](/productos/conexion-wye-bronce-2-5) — versión en bronce con dos salidas 2.5" para cuando se requiere dividir la línea maestra sin reducir el diámetro
+- [Conexión Wye WYE-25 Nacional 2.5" NH](/productos/conexion-wye-economica-nacional) — alternativa económica de fabricación mexicana con NOM-002 cuando no se requiere certificación UL/FM
+- [Adaptador de Reducción NH 2.5" a 1.5" Bronce R-327](/productos/adaptador-bronce-reduccion-2-5-1-5) — alternativa de reducción de diámetro en un solo punto cuando solo se necesita una salida de 1.5" en lugar de dos
+- [Manguera Blindex 1.5" × 30m](/productos/manguera-blindex-1-5-30m) — manguera de ataque 1.5" NH para conectar a las salidas del Wye B-100-A en operaciones de combate estructural
+
+## Preguntas Frecuentes
+
+**¿Cuál es la ventaja táctica concreta de conectar dos líneas de 1.5" desde el B-100-A frente a usar directamente una línea de 2.5"?**
+Una línea de 2.5" con agua a presión pesa entre 25 y 40 kg por tramo de 30 metros, requiere dos o tres personas para maniobrarla en ataque interior y es muy rígida en curvas y escaleras. Dos líneas de 1.5" desde el B-100-A pueden ser operadas cada una por uno o dos bomberos de forma independiente, permitiendo que un equipo ataque el foco primario mientras el segundo cubre el escape o protege una exposición lateral —táctica imposible con una sola línea de 2.5". El B-100-A también permite que un equipo opere con la primera salida mientras la segunda permanece cerrada en reserva, activándola si el incendio escala inesperadamente sin necesidad de desplegar una línea adicional desde el vehículo.
+
+**¿La válvula de bola de cuarto de vuelta del B-100-A puede operarse bajo presión completa o requiere despresurizar la línea antes de cerrar?**
+La válvula de bola del B-100-A está diseñada para apertura y cierre bajo presión de trabajo de hasta 200 PSI. El mecanismo de cuarto de vuelta permite controlar el flujo desde cerrado completo hasta apertura total en una fracción de segundo, incluso con la línea presurizada. La traba twist lock se activa y desactiva con un movimiento rotacional del mango sin necesidad de herramienta, y está dimensionada para resistir la fuerza hidráulica que intenta abrir la válvula cuando está cerrada bajo presión. Esta capacidad de operación bajo presión es fundamental en operaciones tácticas donde no es posible despresurizar la línea de suministro sin interrumpir el ataque activo.
+
+**¿El aluminio Elk-O-Lite forjado del B-100-A puede instalarse de forma permanente en exterior expuesto a intemperie sin protección adicional?**
+El aluminio Elk-O-Lite del B-100-A tiene el acabado en esmalte rojo de poliuretano que proporciona protección contra la corrosión, rayos UV y variaciones de temperatura en instalaciones exteriores. Para instalaciones permanentes en exterior, se recomienda inspección visual semestral del estado del esmalte y retoque en áreas con desprendimiento para mantener la protección del aluminio base. En ambientes costeros con alta salinidad, el aluminio Elk-O-Lite tiene menor resistencia a la corrosión galvánica que el bronce del modelo B-97-B; para instalaciones marinas o portuarias permanentes, se especifica el B-97-B en bronce.
+
+**¿Las dos salidas del B-100-A pueden conectarse a líneas de diferente longitud sin afectar el balance de caudal entre ellas?**
+Sí, y esto es una ventaja operativa del B-100-A. Si una salida alimenta una manguera de 15 metros y la otra una de 30 metros, la línea más corta tendrá menores pérdidas friccionales y, por tanto, mayor presión y caudal en la boquilla que la línea larga. Este desbalance es operativamente manejable: el conductor de la bomba puede compensar aumentando ligeramente la presión de descarga para asegurar que la línea más larga tenga presión suficiente en la boquilla. Para instalaciones fijas de standpipe donde el balance preciso de caudal es crítico para el diseño hidráulico, se especifican las longitudes de manguera y las características de la boquilla para que ambas salidas queden hidráulicamente equilibradas.
 
 Gama de México es distribuidor autorizado de Elkhart Brass en la República Mexicana, con disponibilidad del modelo B-100-A en inventario. Nuestro equipo técnico apoya en la selección del modelo correcto según la configuración del sistema, la presión de operación y los requerimientos normativos del proyecto. Contáctenos para cotización y asesoría especializada en protección contra incendios.
