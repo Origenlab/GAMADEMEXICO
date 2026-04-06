@@ -20,56 +20,46 @@ destacado: true
 orden: 9
 ---
 
-La conexión Y permite derivar una línea de suministro de agua en dos salidas independientes, cada una con su propia válvula de control. Fabricada en aluminio Elk-O-Lite forjado, ofrece la misma resistencia que el bronce tradicional con hasta 60% menos peso, facilitando el manejo durante operaciones de emergencia.
-
-## Características principales
-
-- Modelos: B-97-A (2.5" x 2 salidas 2.5"), B-100-A (2.5" x 1.5")
-- Entrada: 2.5" NHT hembra swivel (también disponible 5" Storz)
-- Salidas: (2) 2.5" NHT macho con válvulas de bola
-- Presión de trabajo: 200 PSI
-- Control de flujo independiente en cada salida
-- Acabado: esmalte rojo poliuretano, trim anodizado duro
-- Manijas de aluminio con traba positiva twist lock
-
-## Materiales
-
-- Aluminio Elk-O-Lite forjado (no fundido)
-- Manijas de aluminio con traba positiva
-- Acabado esmalte rojo poliuretano
-
-## Opcionales
-
-- Manómetro de presión
-- Inlet con flush
-- Configuraciones de 2 y 3 vías
-- Inlet swivel giratorio
-
-## Aplicaciones
-
-- Operaciones de ataque múltiple
-- Suministro dual de agua
-- Sistemas de brigadas industriales
-- Descarga simultánea dual
-
-## Certificaciones
-
-Esta conexión cuenta con certificación **UL Listed** y **FM Approved**, garantizando su aceptación en sistemas contra incendios regulados y operaciones de bomberos.
+La Conexión Y (Wye) modelo B-97-A de Elkhart Brass es una conexión de derivación de dos salidas fabricada en aluminio Elk-O-Lite forjado, que divide una línea de suministro 2.5" NH en dos salidas independientes 2.5" NH, cada una controlada por su propia válvula de bola de cuarto de vuelta. Diseñada para operaciones de combate de incendios en terreno, esta pieza ofrece la misma resistencia mecánica del bronce tradicional con hasta un 60% menos de peso, reduciendo la fatiga del operador durante intervenciones prolongadas. Con certificación UL Listed y FM Approved, es el estándar de referencia para cuerpos de bomberos y brigadas industriales en todo el continente americano.
 
 ## Especificaciones Técnicas
 
 | Característica | Especificación |
-|----------------|----------------|
+|---|---|
 | Marca | Elkhart Brass |
 | Modelo | B-97-A |
-| Material | Aluminio Elk-O-Lite forjado |
-| Diámetros | Entrada 2.5" NH / Salidas (2) 2.5" NH |
+| Material del cuerpo | Aluminio Elk-O-Lite forjado (no fundido) |
+| Entrada | 2.5" NH hembra swivel giratoria |
+| Salidas | (2) 2.5" NH macho |
+| Tipo de válvulas | Bola de bronce de cuarto de vuelta con asiento PTFE |
+| Manijas | Aluminio con traba positiva twist lock |
 | Presión de trabajo | 200 PSI |
+| Acabado | Esmalte rojo poliuretano con trim anodizado duro |
+| Peso aproximado | ~40% más ligero que equivalente en bronce |
 | Certificaciones | UL Listed, FM Approved |
+| Opciones disponibles | Con manómetro, con flush inlet, inlet Storz 5" |
+
+## Funcionamiento y Aplicación
+
+La conexión Wye opera como un divisor de flujo controlado: el agua entra por la conexión swivel giratoria de 2.5" y se distribuye hacia dos salidas independientes, cada una regulada por su válvula de bola. El operador puede abrir, cerrar o estrangular cada salida de forma autónoma sin afectar la otra línea, lo que permite asignar y reasignar caudal durante el desarrollo del incendio. La rosca swivel giratoria en la entrada elimina el torque de torsión al conectar y desconectar la manguera bajo presión, mientras que las manijas de aluminio con traba twist lock garantizan que las válvulas no se desplacen por vibración o impacto.
+
+Se especifica esta conexión cuando se requiere alimentar dos líneas de ataque desde una única salida de hidrante, camión bomba o standpipe de 2.5", maximizando el aprovechamiento de la infraestructura de suministro disponible en la escena. Es la elección prioritaria en operaciones donde la velocidad de despliegue y la reducción de peso son factores críticos.
+
+## Aplicaciones
+
+- **Operaciones de ataque múltiple simultáneo:** divide el caudal de una línea maestra para alimentar dos equipos de ataque actuando en distintos frentes del mismo incendio.
+- **Suministro dual desde hidrante o camión bomba:** maximiza el aprovechamiento de cada salida disponible cuando los puntos de suministro son escasos.
+- **Brigadas industriales de respuesta rápida:** instalación permanente en racks de mangueras dentro de plantas petroquímicas, refinerías y centros de manufactura.
+- **Operaciones de exposición y protección perimetral:** permite proteger edificaciones expuestas mientras se ataca el fuego principal con una segunda línea.
+- **Entrenamiento y simulacros de brigadas:** configuración estándar para ejercicios tácticos que requieran flujo real y control independiente de salidas.
+- **Respaldo y redundancia en sistemas standpipe:** se acopla a la salida de gabinete para derivar hacia una segunda manguera cuando la demanda supera la capacidad de una sola línea.
 
 ## Normas Aplicables
 
-- **NFPA 14** — Norma para sistemas de tubería vertical y mangueras (standpipe Class I/II/III)
-- **NFPA 1963** — Norma para roscas de acoplamiento de mangueras contra incendios (rosca NH)
-- **UL Listed** — Certificación Underwriters Laboratories para equipos contra incendios
-- **NOM-002-STPS-2010** — Condiciones de seguridad contra incendio en centros de trabajo
+- **NFPA 1963** — Norma para roscas de acoplamiento de mangueras contra incendios; establece los requisitos dimensionales de la rosca NH utilizada en todas las conexiones de esta familia.
+- **NFPA 14** — Norma para sistemas de tubería vertical (standpipe) y mangueras; define los requisitos de accesorios de conexión para sistemas Clase I, II y III.
+- **NFPA 1901** — Norma para aparatos de bomberos automotrices; regula el equipo portátil embarcado en unidades, incluyendo conexiones Wye.
+- **NOM-002-STPS-2010** — Condiciones de seguridad contra incendio en centros de trabajo; norma mexicana que rige la instalación y el equipo de protección contra incendios en instalaciones industriales.
+- **UL 405** — Estándar Underwriters Laboratories para conexiones de departamento de bomberos (fire hose connections); requisito de certificación para uso en sistemas regulados.
+
+Gama de México es distribuidor autorizado de Elkhart Brass en la República Mexicana, con inventario disponible de la línea completa de conexiones Wye modelo B-97-A. Nuestro equipo técnico asesora en la selección del modelo adecuado según el tipo de operación, la presión de trabajo del sistema y los requisitos normativos del proyecto. Contáctenos para cotización, disponibilidad y soporte técnico especializado.
