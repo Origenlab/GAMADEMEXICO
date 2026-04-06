@@ -20,7 +20,7 @@ destacado: false
 orden: 32
 ---
 
-La **boquilla NOM Series N-125** está certificada para cumplir con la **NOM-002-STPS-2010** de condiciones de seguridad para prevención y protección contra incendios en centros de trabajo. Fabricación 100% mexicana con documentación completa para inspecciones de la STPS.
+La **boquilla NOM Series N-125** es una boquilla de manguera combinada, de fabricación 100 % mexicana, certificada para cumplir con la **NOM-002-STPS-2010** sobre condiciones de seguridad para la prevención y protección contra incendios en centros de trabajo, y con la **NMX-S-061-SCFI** que establece los requisitos técnicos para boquillas y chiflones de extinción. Con tres posiciones de flujo seleccionables entre 60 y 125 GPM, entrada 1.5" NST y cuerpo en aluminio fundido, esta boquilla es la solución diseñada específicamente para empresas mexicanas que deben acreditar el cumplimiento normativo ante la Secretaría del Trabajo y Previsión Social (STPS) sin importar equipos del extranjero.
 
 ## Especificaciones Técnicas
 
@@ -28,79 +28,52 @@ La **boquilla NOM Series N-125** está certificada para cumplir con la **NOM-002
 |----------------|----------------|
 | Marca | Nacional (Fabricación Mexicana) |
 | Modelo | NOM Series N-125 |
-| Rango de Flujo | 60 - 95 - 125 GPM (227 - 360 - 473 LPM) |
-| Presión de Trabajo | 100 PSI (7 BAR) |
+| Rango de flujo | 60 – 95 – 125 GPM (227 – 360 – 473 LPM) |
+| Presión de trabajo | 100 PSI (6.9 BAR) |
+| Presión de prueba hidrostática | 250 PSI (17.2 BAR) |
 | Entrada | 1.5" NST hembra con swivel |
-| Material Cuerpo | Aluminio fundido |
-| Selector de Flujo | 3 posiciones con detentes |
-| Patrones de Descarga | Chorro sólido a niebla 70° |
+| Material del cuerpo | Aluminio fundido |
+| Selector de flujo | 3 posiciones con detentes positivos |
+| Patrones de descarga | Chorro sólido — niebla cónica hasta 70° |
 | Peso | 1.5 kg (3.3 lbs) |
+| Temperatura de servicio | –10 °C a +55 °C |
 | Certificaciones | NOM-002-STPS-2010, NMX-S-061-SCFI |
-| Origen | 100% fabricación mexicana |
+| Origen | 100 % fabricación mexicana |
+| Documentación | En español, lista para inspecciones STPS |
 
-## Características Destacadas
+## Certificaciones y Normas
 
-- **Certificación NOM-002-STPS-2010** para centros de trabajo
-- **Cumple NMX-S-061-SCFI** de equipos contra incendio
-- **Fabricación 100% mexicana** con trazabilidad local
-- **Precio accesible** para múltiples puntos de extinción
-- **Documentación en español** para STPS
-- **3 posiciones de flujo** para versatilidad
-- **Refacciones disponibles** en México
-- **Soporte técnico local** incluido
+La **NOM-002-STPS-2010** es la norma oficial mexicana de aplicación obligatoria en todos los centros de trabajo del país. Establece los requisitos mínimos de seguridad para los sistemas y equipos de detección, alarma, prevención y combate de incendios, y es el instrumento legal que los inspectores de la STPS verifican durante visitas de cumplimiento. El uso de equipos sin constancia NOM en los centros de trabajo expone al patrón a multas y a responsabilidad legal ante accidentes. La **NMX-S-061-SCFI** complementa la NOM-002 definiendo específicamente las características técnicas —materiales, geometría, flujo y resistencia mecánica— que deben cumplir las boquillas y chiflones, garantizando que el equipo responde con fiabilidad bajo las condiciones de uso declaradas. Contar con esta boquilla certificada y su documentación en español elimina fricciones en auditorías e inspecciones, y respalda el programa preventivo de protección civil de la empresa.
+
+## Características Principales
+
+- **Certificación NOM-002-STPS-2010** con constancia vigente en español, lista para presentar ante inspectores de la STPS
+- **Cumple NMX-S-061-SCFI** de boquillas y chiflones contra incendio para centros de trabajo
+- **Tres posiciones de flujo** (60, 95, 125 GPM) con detentes que permiten selección rápida con guantes
+- **Fabricación 100 % mexicana** con trazabilidad local, número de lote y certificado de origen nacional
+- **Documentación completa en español** — ficha técnica, manual de uso, constancia NOM y carta de garantía
+- **Refacciones y soporte técnico disponibles en México** sin tiempos de importación ni barreras de idioma
+- **Precio accesible** para equipar múltiples puntos de extinción en centros de trabajo de mediano y gran tamaño
+- **Facturación con RFC** para deducción fiscal y registro contable en adquisiciones corporativas
 
 ## Aplicaciones
 
-- Centros de trabajo (cumplimiento NOM-002)
-- Edificios comerciales y oficinas
-- Plantas de manufactura
-- Bodegas y almacenes
-- Hoteles y hospitales
-- Instituciones educativas
+- Centros de trabajo de manufactura, logística y servicios que deben cumplir con la NOM-002-STPS-2010
+- Edificios comerciales, oficinas corporativas y plazas comerciales sujetos a inspecciones de protección civil
+- Plantas de alimentos, bebidas y farmacéuticas con brigadas de emergencia documentadas
+- Bodegas, almacenes y centros de distribución que acreditan cumplimiento ante aseguradoras nacionales
+- Hoteles, hospitales e instituciones educativas con programas de protección civil activos
+- Proyectos de obra pública y licitaciones gubernamentales que exigen productos con certificación NOM
 
-## Cumplimiento Normativo Mexicano
+## Normas Aplicables
 
-| Norma | Requisito | Cumplimiento |
-|-------|-----------|--------------|
-| **NOM-002-STPS-2010** | Equipos de combate de incendios | Certificada |
-| **NMX-S-061-SCFI** | Boquillas y chiflones | Cumple |
-| **NOM-154-SCFI** | Extintores portátiles | Complementario |
+| Norma | Organismo | Alcance |
+|-------|-----------|---------|
+| **NOM-002-STPS-2010** | STPS México | Condiciones de seguridad contra incendios en centros de trabajo; aplicación obligatoria |
+| **NMX-S-061-SCFI** | SCFI México | Requisitos técnicos para boquillas y chiflones de extinción |
+| **NOM-003-SEGOB-2011** | SEGOB México | Señales y avisos para protección civil en instalaciones |
+| **NOM-093-SCFI-2018** | SCFI México | Extintores portátiles; complementario al sistema de mangueras |
+| **NFPA 1964** | NFPA | Referencia técnica internacional para boquillas de spray; consultada en el diseño |
+| **NFPA 25** | NFPA | ITM de sistemas de protección; referencia para programa de mantenimiento |
 
-## Documentación para STPS
-
-| Documento | Contenido |
-|-----------|-----------|
-| **Constancia NOM** | Cumplimiento normativo |
-| **Certificado de Calidad** | Pruebas realizadas |
-| **Ficha Técnica** | Especificaciones completas |
-| **Manual de Uso** | Operación y mantenimiento |
-| **Factura Fiscal** | Con RFC para deducción |
-| **Carta de Garantía** | Términos y cobertura |
-
-## Ventajas para Empresas Mexicanas
-
-| Aspecto | Beneficio |
-|---------|-----------|
-| **Cumplimiento STPS** | Evita multas y sanciones |
-| **Documentación lista** | Para inspecciones |
-| **Precio competitivo** | Menor inversión |
-| **Entrega rápida** | Sin tiempos de importación |
-| **Facturación nacional** | Deducible de impuestos |
-
-## Inspecciones STPS
-
-Para cumplir con las inspecciones de la Secretaría del Trabajo:
-
-- Mantenga documentación accesible
-- Realice mantenimiento documentado
-- Capacite a personal en uso
-- Señalice ubicación de equipos
-- Actualice bitácora de inspecciones
-
-## Economía de Escala
-
-| Cantidad | Precio Unitario | Documentación |
-|----------|----------------|---------------|
-| 1-5 unidades | $195 USD | Incluida |
-| 6-20 unidades | $180 USD | Incluida |
-| 21+ unidades | Cotización | Incluida |
+Gama de México es distribuidor autorizado de la línea NOM Series en México y provee cada boquilla N-125 con constancia NOM-002-STPS-2010, certificado de calidad con resultados de pruebas, ficha técnica en español, manual de uso y mantenimiento, factura fiscal con RFC y carta de garantía, brindando todo el soporte documental necesario para aprobar inspecciones de la STPS y de protección civil.
