@@ -20,7 +20,7 @@ destacado: false
 orden: 7
 ---
 
-La **boquilla SFL-BG Marine de Elkhart Brass** está fabricada en **bronce marino grado C95800** específicamente para resistir los ambientes más corrosivos. Ideal para **embarcaciones, plataformas offshore, zonas portuarias** y cualquier instalación expuesta a agua salada.
+La **boquilla Elkhart Brass SFL-BG Marine** está fabricada íntegramente en **bronce marino aleación C95800** (aluminio-níquel-bronce), el material de mayor resistencia a la corrosión por agua salada disponible para equipos de combate de incendio portátiles. Certificada bajo **NFPA 1964** y compatible con los requerimientos de la **Convención SOLAS** (*Safety of Life at Sea*), es la especificación estándar en embarcaciones comerciales, plataformas *offshore* y terminales portuarias donde la exposición continua al ambiente marino haría que una boquilla de aluminio convencional requiriera reemplazo en menos de tres años. Con selector de cuatro posiciones de flujo (40 – 60 – 95 – 125 GPM) y herradura de cierre rápido (*Horseshoe Handle*), combina versatilidad operativa con la durabilidad que demandan los entornos más agresivos.
 
 ## Especificaciones Técnicas
 
@@ -28,58 +28,47 @@ La **boquilla SFL-BG Marine de Elkhart Brass** está fabricada en **bronce marin
 |----------------|----------------|
 | Marca | Elkhart Brass |
 | Modelo | SFL-BG Marine |
-| Rango de Flujo | 40 - 60 - 95 - 125 GPM (151 - 227 - 360 - 473 LPM) |
-| Presión de Trabajo | 100 PSI (7 BAR) |
-| Entrada | 1.5" NST hembra con giro libre |
-| Material Cuerpo | Bronce marino C95800 (Aluminio-Níquel-Bronce) |
-| Selector de Flujo | 4 posiciones con indexado positivo |
-| Patrones de Descarga | Chorro directo a niebla 90° |
-| Empuñadura | Pistol grip con herradura (Horseshoe) |
+| Tipo de flujo | Seleccionable, 4 posiciones indexadas |
+| Posiciones de flujo | 40 – 60 – 95 – 125 GPM (151 – 227 – 360 – 473 LPM) |
+| Presión de trabajo nominal | 100 PSI (7 BAR) |
+| Presión máxima de trabajo | 150 PSI (10.3 BAR) |
+| Conexión de entrada | 1½" NST hembra con swivel de giro libre permanente |
+| Material del cuerpo | Bronce marino aleación C95800 (Al-Ni-Bronce) |
+| Mecanismo de cierre | Herradura de cierre rápido (*Horseshoe Handle*) |
+| Patrones de descarga | Chorro sólido directo a niebla de 90° |
+| Empuñadura | *Pistol grip* con herradura integrada |
+| Acabado | Bronce natural sin recubrimiento — resistente a UV y salitre |
+| Partes de acero expuestas | Ninguna |
 | Peso | 2.5 kg (5.5 lbs) |
-| Acabado | Bronce natural resistente a corrosión |
-| Certificación Marina | SOLAS compatible |
+| Certificaciones | NFPA 1964, compatible SOLAS |
 
-## Características Destacadas
+## Características Principales
 
-- **Bronce marino C95800** (Aluminio-Níquel-Bronce) máxima resistencia a corrosión
-- **Compatible con agua salada** sin degradación de componentes
-- **4 posiciones de flujo** con selector indexado
-- **Herradura de cierre (Horseshoe Handle)** para operación segura
-- **Giro libre permanente** en entrada NST
-- **Cumple normativa SOLAS** para embarcaciones
-- **Sin partes de acero expuestas** a ambiente marino
-- **Vida útil extendida** en ambientes costeros
+- **Aleación C95800** (aluminio-níquel-bronce): composición especialmente diseñada para resistir la corrosión galvánica, la erosión por cavitación y la corrosión por fisuras en agua de mar, con vida útil estimada superior a 15 años en operación costera
+- **Sin partes de acero o aluminio expuestas** al ambiente marino, eliminando los puntos de inicio de corrosión presentes en diseños de materiales mixtos
+- **Selector de cuatro posiciones de flujo** con indexado positivo táctil y auditivo para confirmación segura de la posición durante operaciones nocturnas o con guantes
+- **Herradura de cierre rápido** (*Horseshoe Handle*) que permite apertura y cierre total de la boquilla con una sola mano en menos de dos segundos, reduciendo el riesgo de reacción brusca en entornos inestables
+- **Swivel de giro libre permanente** en la entrada NST que protege la manguera de ataque de la torsión durante los movimientos del operador en cubierta
+- **Patrón de niebla hasta 90°** para operaciones de control de incendio y protección de exposiciones en espacios semi-cerrados como bodegas y salas de máquinas
+- **Compatible con la normativa SOLAS** para instalación en sistemas fijos y equipos portátiles a bordo de embarcaciones de pasajeros y carga
+- **Menor ciclo de mantenimiento** que boquillas de aluminio en ambiente marino: no requiere enjuague con agua dulce tras cada uso, simplificando los protocolos de operación
 
 ## Aplicaciones
 
-- Embarcaciones comerciales y de pasajeros
-- Plataformas petroleras offshore
-- Terminales portuarias y muelles
-- Instalaciones costeras e industriales
-- Refinerías en zonas costeras
-- Plantas desaladoras
+- Sistemas de combate de incendio a bordo de embarcaciones de carga, pasajeros y buques tanque
+- Plataformas de perforación y producción petrolera *offshore* en el Golfo de México y el Caribe
+- Terminales portuarias, muelles de carga y zonas de almacenamiento costero
+- Instalaciones industriales en zonas costeras y de alta humedad salina
+- Refinerías y plantas petroquímicas ubicadas en litorales
+- Plantas desaladoras y estaciones de bombeo en zonas marítimas
+- Equipos de primera respuesta de guardacostas y brigadas de puertos
 
-## Resistencia a Corrosión Marina
+## Normas Aplicables
 
-| Material | Resistencia Agua Salada | Vida Útil Estimada |
-|----------|------------------------|-------------------|
-| Aluminio estándar | Baja | 2-3 años |
-| Bronce estándar | Media | 5-8 años |
-| **Bronce Marino C95800** | **Excelente** | **15-20+ años** |
+- **NFPA 1964** — *Standard for Spray Nozzles*: la boquilla SFL-BG Marine cumple con los requisitos de rendimiento hidráulico, construcción y pruebas de presión para boquillas de aspersión utilizadas en operaciones de combate de incendios.
+- **SOLAS (Convenio Internacional para la Seguridad de la Vida Humana en el Mar)** — Capítulo II-2, Regla 10: establece los requerimientos de equipos contra incendio a bordo de buques; la construcción en bronce marino C95800 y la compatibilidad con accesorios NST hace a esta boquilla apta para cumplir las especificaciones SOLAS.
+- **IMO MSC.1/Circ.1369** — Directrices revisadas para sistemas de lucha contra incendios a bordo de buques: referencia de la Organización Marítima Internacional para equipos portátiles de combate de incendio en embarcaciones.
+- **UL 401** — *Standard for Hose Nozzles for Fire-Fighting Service*: norma de referencia para la evaluación de resistencia estructural, hermeticidad y rendimiento de boquillas de manguera contra incendio.
+- **NOM-002-STPS-2010** — *Condiciones de seguridad contra incendios en los centros de trabajo*: establece los requisitos de equipo contra incendio en instalaciones industriales en México; aplicable a terminales portuarias y plantas costeras sujetas a la regulación de la STPS.
 
-## Certificación SOLAS
-
-Esta boquilla cumple con los requerimientos de la **Convención Internacional para la Seguridad de la Vida Humana en el Mar (SOLAS)**, siendo aceptada para:
-
-- Sistemas fijos de protección contra incendios en buques
-- Equipos portátiles de combate de incendios marítimos
-- Instalaciones offshore certificadas
-- Plataformas de perforación y producción
-
-## Mantenimiento en Ambiente Marino
-
-A diferencia de las boquillas de aluminio que requieren **enjuague con agua dulce después de cada uso** en ambiente marino, la construcción en bronce marino C95800 permite:
-
-- **Uso continuo con agua salada** sin degradación
-- **Menor mantenimiento** preventivo
-- **Mayor confiabilidad** cuando más se necesita
+Gama de México es **distribuidor autorizado** de Elkhart Brass con presencia nacional y bodegas en **CDMX y Querétaro**. Solicite cotización de la boquilla SFL-BG Marine con ficha técnica oficial, documentación de cumplimiento NFPA 1964 / SOLAS y asesoría técnica para proyectos en ambientes marinos y *offshore*.

@@ -20,7 +20,7 @@ destacado: true
 orden: 15
 ---
 
-La **boquilla TFT Master Stream 1250** es una boquilla automática de alto volumen diseñada para operaciones defensivas y de protección de exposiciones. Con capacidad de **500 a 1250 GPM** y presión constante automática, es la solución profesional para monitores estacionarios y portátiles.
+La **boquilla Task Force Tips Master Stream 1250** es una boquilla automática de alto volumen certificada bajo **NFPA 1964**, diseñada para operaciones defensivas de gran escala donde se requiere un caudal masivo de entre **500 y 1,250 GPM (1,900–4,700 LPM)** con presión constante a 100 PSI. Su construcción en aluminio fundido reforzado y su compatibilidad con monitores estacionarios y portátiles la convierten en el componente central de sistemas de supresión a gran escala en instalaciones industriales, petroquímicas, terminales de almacenamiento y operaciones de defensa de exposiciones en incendios de envergadura.
 
 ## Especificaciones Técnicas
 
@@ -28,66 +28,50 @@ La **boquilla TFT Master Stream 1250** es una boquilla automática de alto volum
 |----------------|----------------|
 | Marca | Task Force Tips (TFT) |
 | Modelo | Master Stream 1250 |
-| Rango de Flujo | 500 - 1250 GPM (1900 - 4700 LPM) |
-| Presión de Operación | 100 PSI (7 BAR) constante |
-| Entrada | 3" NST hembra / Brida 4" disponible |
-| Material Cuerpo | Aluminio fundido reforzado |
+| Rango de Flujo | 500 – 1,250 GPM (1,900 – 4,700 LPM) |
+| Presión de Operación | 100 PSI (6.9 BAR) constante |
+| Conexión de Entrada | 3" NST hembra (brida de 4" disponible como opción) |
+| Material del Cuerpo | Aluminio fundido reforzado |
 | Tipo de Control | Automático de presión constante |
 | Patrones de Descarga | Chorro sólido a niebla 60° |
-| Alcance Máximo | 75+ metros en chorro sólido |
+| Alcance Máximo | Más de 75 metros en modo chorro sólido |
 | Peso | 8.5 kg (18.7 lbs) |
-| Compatibilidad | Monitores TFT y universales |
+| Temperatura de Servicio | -29 °C a +65 °C |
+| Compatibilidad | Monitores TFT y monitores universales con salida 3" |
 
-## Características Destacadas
+## Características Principales
 
-- **Capacidad masiva 500-1250 GPM** para operaciones defensivas
-- **Presión constante automática** a 100 PSI
-- **Alcance superior a 75 metros** en chorro sólido
-- **Compatible con monitores** estacionarios y portátiles
-- **Entrada 3" NST** o brida de 4" opcional
-- **Aluminio fundido reforzado** para máxima durabilidad
-- **Patrones de 0° a 60°** para versatilidad operativa
-- **Diseño robusto** para servicio industrial pesado
+- **Rango de caudal masivo 500–1,250 GPM** con ajuste automático continuo que mantiene 100 PSI constantes independientemente de las variaciones de suministro en la red
+- **Control automático de presión** que elimina los picos de presión dañinos para las mangueras y conexiones durante cambios bruscos de suministro en operaciones de alto flujo
+- **Alcance superior a 75 metros** en modo chorro sólido, permitiendo operaciones defensivas desde posiciones de seguridad alejadas del frente de llamas
+- **Conexión 3" NST de entrada** con opción de brida de 4" para integración directa en monitores de cubierta, torres elevables y sistemas fijos de monitor
+- **Construcción en aluminio fundido reforzado** para resistir las tensiones mecánicas de la alta presión dinámica en operaciones de caudal extremo
+- **Patrones variables de 0° (chorro sólido) a 60° (niebla)** para adaptar la descarga entre penetración de largo alcance y cortina de protección en exposiciones cercanas
+- **Diseño robusto para servicio industrial pesado** con sellos y juntas resistentes a hidrocarburos, espumas y agentes corrosivos frecuentes en instalaciones petroquímicas
+- **Compatibilidad universal** con monitores estacionarios, monitores de cubierta en unidades bomba y monitores portátiles de alto volumen
 
 ## Aplicaciones
 
-- Monitores de torre y estacionarios
-- Operaciones defensivas de gran escala
-- Protección de exposiciones industriales
-- Incendios en tanques de almacenamiento
-- Enfriamiento de estructuras metálicas
-- Combate de incendios en bodegas
+- Monitores de torre, cubierta y estacionarios en unidades bomba pesadas
+- Operaciones defensivas en incendios que superan la capacidad de ataque interior
+- Protección de exposiciones en instalaciones industriales, refinerías y terminales
+- Control y enfriamiento de tanques de almacenamiento de hidrocarburos en incendio o exposición al calor
+- Enfriamiento de estructuras metálicas, recipientes a presión y líneas de proceso durante emergencias
+- Combate de incendios en bodegas de gran superficie y centros de distribución
+- Operaciones de supresión en derrames de combustible con alta velocidad de liberación de energía
+- Apoyo de alto volumen a brigadas de respuesta a emergencias en complejos petroquímicos y parques industriales
 
-## Rendimiento de Alto Volumen
+## Normas Aplicables
 
-| Presión Entrada | Flujo Automático | Alcance Chorro |
-|-----------------|------------------|----------------|
-| 80 PSI | 500 GPM | 55 metros |
-| 100 PSI | 750 GPM | 65 metros |
-| 120 PSI | 1000 GPM | 72 metros |
-| 150 PSI | 1250 GPM | 78 metros |
+- **NFPA 1964** — Standard for Spray Nozzles (certificación directa del producto)
+- **UL 401** — Standard for Hose Nozzles for Fire-Fighting Service
+- **NFPA 15** — Standard for Water Spray Fixed Systems for Fire Protection (aplicable en sistemas fijos de monitor)
+- **NFPA 11** — Standard for Low-, Medium-, and High-Expansion Foam (referencia en operaciones con espuma a alto caudal)
+- **NFPA 30** — Flammable and Combustible Liquids Code (protección de áreas de almacenamiento de hidrocarburos)
+- **API 2001** — Fire Protection in Refineries (aplicable en instalaciones de refinación)
+- **API 2510A** — Fire-Protection Considerations for the Design and Operation of LPG Storage Facilities
+- **NFPA 1901** — Standard for Automotive Fire Apparatus (boquilla para unidades pumper con monitor de cubierta)
+- **NOM-002-STPS-2010** — Condiciones de seguridad contra incendios en centros de trabajo
+- **NOM-005-STPS-1998** — Manejo, transporte y almacenamiento de sustancias peligrosas (referencia para protección contra incendios en plantas con materiales peligrosos)
 
-## Compatibilidad con Monitores
-
-La Master Stream 1250 está diseñada para funcionar con:
-
-**Monitores TFT:**
-- Blitz Attack
-- Crossfire
-- Deck Gun
-- Snorkel monitors
-
-**Monitores Universales:**
-- Monitores tipo corazón con salida 3"
-- Monitores cuello de cisne
-- Torres de monitor elevables
-- Monitores de trailer
-
-## Operaciones Defensivas
-
-Esta boquilla es esencial cuando el incendio ha sobrepasado la capacidad de ataque interior:
-
-- **Protección de estructuras adyacentes** antes de colapso
-- **Enfriamiento de contenedores** de materiales peligrosos
-- **Control de propagación** en complejos industriales
-- **Apoyo a operaciones** de demolición controlada
+Gama de México es **distribuidor autorizado** de Task Force Tips (TFT) en la República Mexicana, con inventario disponible en bodegas de **Ciudad de México y Querétaro**. Ofrecemos soporte técnico para la selección e integración de boquillas Master Stream en sistemas de monitor existentes, así como asesoría en el cumplimiento de las normas NFPA y NOM aplicables a instalaciones industriales y petroquímicas.

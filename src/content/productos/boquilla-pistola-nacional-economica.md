@@ -20,69 +20,54 @@ destacado: false
 orden: 8
 ---
 
-La **boquilla tipo pistola NPG-125 de fabricación nacional** ofrece una excelente relación precio-calidad para brigadas industriales, comerciales y de protección civil. Fabricada en México con materiales de calidad, cumple con las normas aplicables a un **precio significativamente menor** que las marcas importadas.
+La **boquilla tipo pistola NPG-125** es una boquilla de fabricación nacional mexicana en **aluminio fundido** diseñada para brigadas internas, protección civil municipal e instalaciones donde se requiere cumplimiento normativo **NOM-002-STPS-2010** y **NFPA 1964** a un costo de adquisición accesible. Con entrada de 1½" NST, tres posiciones de flujo seleccionables entre 60 y 125 GPM, y acabado en pintura epóxica roja de alta visibilidad, cubre eficazmente los requerimientos de la mayoría de las aplicaciones comerciales e industriales de riesgo moderado. La disponibilidad de refacciones en territorio nacional y el soporte técnico local en español la convierten en la opción más práctica para organizaciones que necesitan equipar múltiples estaciones de combate de incendio con presupuesto controlado.
 
 ## Especificaciones Técnicas
 
 | Característica | Especificación |
 |----------------|----------------|
-| Marca | Nacional (Fabricación Mexicana) |
+| Marca | Nacional (fabricación 100% mexicana) |
 | Modelo | NPG-125 |
-| Rango de Flujo | 60 - 95 - 125 GPM (227 - 360 - 473 LPM) |
-| Presión de Trabajo | 100 PSI (7 BAR) |
-| Entrada | 1.5" NST hembra con swivel |
-| Material Cuerpo | Aluminio fundido |
-| Selector de Flujo | 3 posiciones con detentes |
-| Patrones de Descarga | Chorro directo a niebla 70° |
-| Empuñadura | Pistol grip ergonómico |
+| Tipo de flujo | Seleccionable, 3 posiciones indexadas |
+| Posiciones de flujo | 60 – 95 – 125 GPM (227 – 360 – 473 LPM) |
+| Presión de trabajo nominal | 100 PSI (7 BAR) |
+| Presión máxima de trabajo | 125 PSI (8.6 BAR) |
+| Conexión de entrada | 1½" NST hembra con swivel |
+| Material del cuerpo | Aluminio fundido |
+| Selector de flujo | 3 posiciones con detentes táctiles |
+| Patrones de descarga | Chorro sólido directo a niebla de 70° |
+| Empuñadura | *Pistol grip* ergonómico |
+| Acabado | Pintura epóxica roja de alta visibilidad |
 | Peso | 1.6 kg (3.5 lbs) |
-| Acabado | Pintura epóxica roja |
 | Origen | 100% fabricación mexicana |
+| Certificaciones | NOM-002-STPS-2010, NFPA 1964 |
 
-## Características Destacadas
+## Características Principales
 
-- **Fabricación 100% mexicana** con soporte local
-- **Precio accesible** sin sacrificar funcionalidad
-- **Cumple NOM-002-STPS-2010** de seguridad contra incendios
-- **3 posiciones de flujo** para diferentes aplicaciones
-- **Entrada con swivel** para evitar torsión de manguera
-- **Aluminio fundido** de calidad comercial
-- **Pintura epóxica** resistente a la intemperie
-- **Refacciones disponibles** en territorio nacional
+- **Aluminio fundido** con espesor de pared suficiente para soportar la presión nominal de 100 PSI y los esfuerzos mecánicos del manejo diario en entrenamiento y emergencia
+- **Tres posiciones de flujo** (60 / 95 / 125 GPM) que cubren el rango operativo típico de líneas de ataque de 1½" en edificios comerciales, industriales y hospitalarios
+- **Swivel de giro libre en entrada NST** que absorbe la rotación de la manguera y reduce el esfuerzo en las manos del operador durante la maniobra
+- **Cumplimiento verificado de NOM-002-STPS-2010** para instalaciones sujetas a inspección de la Secretaría del Trabajo y Previsión Social en México
+- **Patrón de descarga regulable** de chorro sólido a niebla de 70° para uso como cortina protectora del operador y supresión en espacios semi-cerrados
+- **Pintura epóxica roja de alta visibilidad** resistente a la intemperie, rayos UV e hidrocarburos, que facilita la localización rápida del equipo en gabinetes y cajas de manguera
+- **Refacciones disponibles localmente** en distribuidores de Gama de México en territorio nacional, con tiempos de entrega que no superan las 72 horas en las principales ciudades
+- **Fabricación nacional**: sin costos de importación, sin arancel y sin riesgo de desabasto por variaciones en el tipo de cambio o retrasos logísticos internacionales
 
 ## Aplicaciones
 
-- Brigadas industriales y comerciales
-- Edificios corporativos y centros comerciales
-- Hoteles y hospitales
-- Protección civil municipal
-- Empresas con brigadas internas
-- Instituciones educativas
+- Brigadas internas de combate de incendio en instalaciones industriales y comerciales bajo NOM-002-STPS-2010
+- Edificios de oficinas, corporativos y centros comerciales con sistemas de manguera de 1½"
+- Hoteles, hospitales e instituciones educativas donde se requiere cumplimiento normativo a bajo costo por punto de protección
+- Protección civil municipal y cuerpos de bomberos voluntarios con presupuesto limitado
+- Plantas manufactureras ligeras y almacenes con riesgo de incendio ordinario (Clase A y B)
+- Instituciones de gobierno federal, estatal y municipal que requieren cumplimiento con normativa nacional vigente
 
-## Comparativa de Precio
+## Normas Aplicables
 
-| Tipo de Boquilla | Precio Aproximado | Origen |
-|------------------|-------------------|--------|
-| Premium importada | $450-600 USD | EUA |
-| Gama media importada | $280-400 USD | EUA |
-| **Nacional NPG-125** | **$185 USD** | **México** |
+- **NOM-002-STPS-2010** — *Condiciones de seguridad contra incendios en los centros de trabajo*: norma oficial mexicana que establece los requisitos mínimos de sistemas de detección, alarma y combate de incendios en instalaciones laborales; la boquilla NPG-125 cumple con las especificaciones de equipo portátil manual contempladas en esta norma.
+- **NFPA 1964** — *Standard for Spray Nozzles*: la boquilla NPG-125 cumple con los requisitos de rendimiento hidráulico, construcción y marcado para boquillas de aspersión destinadas a combate de incendios.
+- **UL 401** — *Standard for Hose Nozzles for Fire-Fighting Service*: norma de referencia para la evaluación de resistencia a la presión, hermeticidad y rendimiento de boquillas de manguera contra incendio; aplicable como criterio técnico de validación del diseño.
+- **NFPA 1** — *Fire Code*: código de incendio que referencia el uso de boquillas conforme a NFPA 1964 en sistemas de manguera instalados en ocupaciones comerciales e industriales.
+- **NOM-003-SEGOB-2011** — *Señales y avisos para protección civil*: aunque orientada a señalización, establece el contexto normativo mexicano de protección civil en el que opera el equipo de combate de incendio en instalaciones laborales.
 
-## Ventajas de Comprar Nacional
-
-Elegir una boquilla de fabricación mexicana ofrece beneficios importantes:
-
-- **Menor costo de adquisición** para equipar brigadas completas
-- **Sin costos de importación** ni tiempos de espera largos
-- **Soporte técnico local** en español
-- **Refacciones de pronta entrega** en territorio nacional
-- **Cumplimiento normativo mexicano** garantizado
-- **Apoyo a la industria nacional** de equipos contra incendio
-
-## Ideal Para
-
-Esta boquilla es la elección inteligente para organizaciones que:
-
-- Necesitan **equipar múltiples brigadas** con presupuesto limitado
-- Requieren **repuestos de entrega rápida** en México
-- Buscan **cumplimiento normativo** sin sobre-especificar
-- Prefieren **soporte técnico local** en su idioma
+Gama de México distribuye la boquilla NPG-125 con cobertura nacional desde bodegas en **CDMX y Querétaro**. Solicite cotización con ficha técnica, certificación de cumplimiento NOM-002-STPS-2010 y NFPA 1964, y asesoría para equipamiento integral de brigadas internas bajo la normativa vigente en México.

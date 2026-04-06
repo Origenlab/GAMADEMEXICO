@@ -20,7 +20,7 @@ destacado: false
 orden: 6
 ---
 
-La **boquilla Wildland Series de Elkhart Brass** está diseñada específicamente para operaciones de combate de incendios forestales. Su construcción **ultraligera en aluminio** y diseño compacto la hacen ideal para brigadas que operan en terreno difícil donde cada gramo cuenta.
+La **boquilla Elkhart Brass Wildland Series** es una boquilla tipo pistola de peso ultraligero fabricada en **aluminio forjado anodizado** y certificada conforme a **NFPA 1964** y los estándares del **USDA Forest Service**, la agencia forestal de referencia mundial para combate de incendios en entornos naturales. Con apenas **0.8 kg de peso total**, entrada de **1" NPSH** compatible con la red de mangueras forestales estándar, y cuatro posiciones de flujo seleccionables entre 10 y 60 GPM, permite al brigadista gestionar el agua disponible con precisión —desde el remojo de puntos calientes hasta la supresión directa de frentes activos— sin comprometer la movilidad en terreno accidentado. Su longitud de 180 mm facilita el transporte y el manejo con una sola mano durante desplazamientos.
 
 ## Especificaciones Técnicas
 
@@ -28,52 +28,47 @@ La **boquilla Wildland Series de Elkhart Brass** está diseñada específicament
 |----------------|----------------|
 | Marca | Elkhart Brass |
 | Modelo | Wildland Series |
-| Rango de Flujo | 10 - 25 - 40 - 60 GPM (38 - 95 - 151 - 227 LPM) |
-| Presión de Trabajo | 100 PSI (7 BAR) |
-| Entrada | 1" NPSH hembra |
-| Material Cuerpo | Aluminio forjado anodizado |
-| Selector de Flujo | 4 posiciones con detentes |
-| Patrones de Descarga | Chorro directo a niebla 90° |
-| Empuñadura | Pistol grip compacto |
+| Tipo de flujo | Seleccionable, 4 posiciones indexadas |
+| Posiciones de flujo | 10 – 25 – 40 – 60 GPM (38 – 95 – 151 – 227 LPM) |
+| Presión de trabajo nominal | 100 PSI (7 BAR) |
+| Presión máxima de trabajo | 125 PSI (8.6 BAR) |
+| Conexión de entrada | 1" NPSH hembra (compatible con mangueras forestales) |
+| Material del cuerpo | Aluminio forjado anodizado duro |
+| Selector de flujo | 4 posiciones con detentes positivos |
+| Patrones de descarga | Chorro sólido directo a niebla de 90° |
+| Empuñadura | *Pistol grip* compacto ergonómico |
+| Longitud total | 180 mm (7") |
 | Peso | 0.8 kg (1.8 lbs) |
-| Longitud Total | 180 mm (7") |
-| Color | Verde forestal o amarillo seguridad |
+| Coloración | Verde forestal o amarillo seguridad (anodizado) |
+| Certificaciones | NFPA 1964, USDA Forest Service Approved |
 
-## Características Destacadas
+## Características Principales
 
-- **Peso ultraligero** de solo 0.8 kg para portabilidad máxima
-- **Diseño compacto** para operaciones en terreno difícil
-- **Aluminio anodizado** resistente a golpes y abrasión
-- **4 posiciones de flujo** para optimizar uso de agua
-- **Entrada 1" NPSH** compatible con mangueras forestales
-- **Empuñadura ergonómica** para uso prolongado
-- **Anodizado de color** para identificación rápida
-- **Construcción robusta** a pesar del bajo peso
+- **Peso de solo 0.8 kg**: diseño forjado que minimiza el material sin comprometer la resistencia estructural, crítico en operaciones donde la carga acumulada del brigadista supera los 20 kg de equipo personal
+- **Aluminio forjado anodizado duro** con mayor densidad y resistencia a impactos que el aluminio fundido; el anodizado proporciona una superficie superficial tipo cerámico que resiste la abrasión con grava, corteza y suelo forestal
+- **Entrada 1" NPSH** compatible con el estándar universal de mangueras forestales utilizado por CONAFOR, USDA Forest Service y los principales cuerpos de bomberos forestales de América
+- **Cuatro posiciones de flujo seleccionables** (10 / 25 / 40 / 60 GPM) que permiten adaptar el consumo de agua al tamaño del contenedor portátil (*slip-on tank*), cisterna o hidrante disponible en campo
+- **Patrón variable de chorro a niebla (0° – 90°)** que cubre desde ataque directo en chorro sólido hasta cortinas de niebla para protección del operador ante el calor radiante
+- **Empuñadura compacta ergonómica** diseñada para su uso con guantes de cuero forestal de hasta 3 mm de espesor, con agarre seguro incluso en condiciones de humedad y polvo
+- **Sin partes móviles expuestas de pequeño diámetro** que puedan atorarse con materiales particulados presentes en operaciones forestales (arena, ceniza, fragmentos vegetales)
+- **Coloración por anodizado** en verde forestal o amarillo seguridad para identificación rápida del equipo en condiciones de visibilidad reducida por humo
 
 ## Aplicaciones
 
-- Combate de incendios forestales
-- Brigadas de CONAFOR
-- Protección de zonas de interfaz urbano-forestal
-- Operaciones de vigilancia y patrullaje
-- Equipos de primera respuesta rural
-- Protección de áreas naturales protegidas
+- Combate directo de frentes de fuego en incendios forestales y de pastizales (*wildland* y *grass fires*)
+- Brigadas de CONAFOR y brigadas comunitarias de manejo del fuego en áreas naturales protegidas de México
+- Protección de zonas de interfaz urbano-forestal (WUI) donde el fuego amenaza viviendas y estructuras periféricas
+- Operaciones de mopping up (extinción de rescoldos y puntos calientes) tras el control del perímetro
+- Patrullaje preventivo y vigilancia en temporada de alto riesgo por personal de guardabosques
+- Equipos de primera respuesta rural en municipios con recursos limitados donde la ligereza y el bajo costo son determinantes
+- Operaciones con unidades de cisterna tipo *slip-on* montadas en vehículos todo terreno
 
-## Posiciones de Flujo Optimizadas
+## Normas Aplicables
 
-| Posición | Flujo | Tiempo con 1000L | Aplicación |
-|----------|-------|------------------|------------|
-| **1** | 10 GPM | 26 minutos | Punto caliente, remojo |
-| **2** | 25 GPM | 10 minutos | Línea de defensa |
-| **3** | 40 GPM | 6.5 minutos | Ataque directo |
-| **4** | 60 GPM | 4.4 minutos | Supresión rápida |
+- **NFPA 1964** — *Standard for Spray Nozzles*: la boquilla Wildland Series cumple con los requisitos de rendimiento, construcción y marcado para boquillas de aspersión en operaciones de combate de incendios.
+- **NFPA 1977** — *Standard on Protective Clothing and Equipment for Wildland Fire Fighting*: norma de referencia para el conjunto de equipo en operaciones forestales; la boquilla Wildland Series está diseñada para ser operada con los guantes y la ropa de protección especificados en esta norma.
+- **USDA Forest Service Equipment Development Center** — Especificación de boquillas forestales: el modelo cumple con los estándares de rendimiento y construcción del Servicio Forestal de los EUA, referencia internacional para equipamiento de combate de incendios forestales.
+- **NOM-002-STPS-2010** — *Condiciones de seguridad contra incendios en los centros de trabajo*: aplicable a instalaciones industriales con riesgo de incendio en zonas de interfaz o con áreas verdes adyacentes; el uso de boquillas certificadas NFPA 1964 es compatible con el cumplimiento de esta norma.
+- **NOM-021-SEMARNAT-2015** — Norma de referencia en operaciones de manejo del fuego en terrenos forestales bajo jurisdicción de SEMARNAT y CONAFOR en México.
 
-## Diseño para Terreno Difícil
-
-La boquilla Wildland Series está pensada para las condiciones extremas del combate forestal:
-
-- **Resistente a caídas** sobre rocas y terreno irregular
-- **Sin partes móviles expuestas** que puedan atorarse
-- **Agarre seguro** incluso con guantes gruesos
-- **Drenaje rápido** para evitar congelamiento
-- **Compatible con retardantes** y agentes espumantes forestales
+Gama de México es **distribuidor autorizado** de Elkhart Brass para la República Mexicana, con inventario disponible en bodegas en **CDMX y Querétaro**. Solicite cotización de la boquilla Wildland Series con ficha técnica, certificado NFPA 1964 / USDA Forest Service y asesoría para equipamiento de brigadas forestales y equipos de primera respuesta rural.
