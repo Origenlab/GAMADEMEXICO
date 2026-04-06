@@ -20,7 +20,7 @@ destacado: false
 orden: 19
 ---
 
-La **manguera de succión SUC-250-3** de **2.5 pulgadas** es la opción más **ligera y portátil** para bombas de emergencia de pequeña y mediana capacidad. Su peso reducido facilita el transporte manual y el despliegue rápido en situaciones de emergencia.
+La **manguera de succión SUC-250-3** de **2.5 pulgadas de diámetro interior (64 mm)** y **3 metros de longitud** es la solución de aspiración preferida para bombas portátiles y motobombas de pequeña y mediana capacidad, con vacío de trabajo de hasta **-0.8 bar**. Con solo **4 kg por tramo**, permite el transporte manual por una sola persona y el despliegue en segundos frente a cualquier fuente de agua abierta, sin necesidad de equipo de apoyo. Es compatible con caudales de hasta 400 GPM, cubriendo la totalidad de las motobombas portátiles utilizadas en brigadas forestales, protección civil y emergencias industriales de baja escala.
 
 ## Especificaciones Técnicas
 
@@ -28,50 +28,41 @@ La **manguera de succión SUC-250-3** de **2.5 pulgadas** es la opción más **l
 |----------------|----------------|
 | Marca | Nacional (Fabricación Mexicana) |
 | Modelo | SUC-250-3 |
-| Diámetro Interior | 2.5" (64 mm) |
+| Diámetro interior | 2.5" (64 mm) |
 | Longitud | 3 metros (10 pies) |
-| Operación | Presión negativa (vacío) |
-| Vacío Máximo | -0.8 bar (-12 PSI) |
-| Caudal Típico | 200-400 GPM |
-| Refuerzo | Alambre galvanizado helicoidal |
-| Cuerpo | Caucho sintético EPDM |
-| Acoples | NH/NST o Storz 65mm (especificar) |
-| Peso Aproximado | 4 kg por tramo |
-| Temperatura | -20°C a +70°C |
+| Presión máx. de trabajo (positiva) | 3.5 bar (50 PSI) temporal |
+| Vacío máximo | -0.8 bar (-12 PSI) |
+| Construcción | Espiral helicoidal de alambre galvanizado embebido |
+| Capa exterior | Caucho sintético EPDM resistente a UV y ozono |
+| Forro interior | EPDM liso, apto para agua potable |
+| Acoples | NH/NST 2.5" o Storz 65 mm aluminio (especificar al ordenar) |
+| Temperatura de trabajo | -20 °C a +70 °C |
+| Peso por tramo | 4 kg |
+| Caudal típico | 200–400 GPM |
 
-## Características Destacadas
+## Por Qué Manguera Rígida para Succión
 
-- **Peso ligero** de solo 4 kg por tramo
-- **Fácil transporte** manual
-- **Ideal para bombas portátiles** pequeñas
-- **Acoples NH/NST o Storz** a elegir
-- **Despliegue rápido** en emergencias
-- **Costo accesible** para brigadas
-- **Tramos modulares** acoplables
-- **Resistente** y durable
+Una manguera flexible colapsa ante la primera presión negativa generada por la bomba, cortando el cebado y dejando el equipo sin agua. El **espiral helicoidal galvanizado** de la SUC-250-3 sostiene la pared del tubo contra el diferencial de presión de -0.8 bar, asegurando que la sección de paso permanezca circular y libre durante toda la operación.
+
+Para el diámetro de 2.5", la velocidad de flujo recomendada es de 2.5 a 3.5 m/s, lo que equivale a caudales de 200 a 400 GPM con pérdidas de carga manejables. Bombas portátiles con motores de 5 a 15 HP trabajan dentro de este rango; si la bomba supera los 500 GPM conviene pasar a 4" de diámetro para evitar cavitación y reducir el nivel de vacío requerido en la aspiración.
 
 ## Aplicaciones
 
-- Bombas portátiles de emergencia
-- Brigadas forestales con motobomba
-- Sistemas de abastecimiento temporal
-- Protección civil municipal
-- Pequeñas motobombas industriales
-- Sistemas de riego de emergencia
+- **Brigadas forestales con motobomba** — equipo ligero que se traslada a pie o en cuatrimoto hacia fuentes de agua en terreno difícil
+- **Protección civil municipal** — despliegue rápido desde camioneta o remolque sin grúa ni equipo de izaje
+- **Bombas portátiles de emergencia en industria** — alimentación de agua para sistemas temporales de extinción en plantas con caudales hasta 400 GPM
+- **Cisternas de vehículos pequeños** — pipas de capacidad reducida donde el espacio y el peso de la acoplería son factores críticos
+- **Sistemas de abastecimiento temporal en obras** — suministro de agua para supresión de polvos o control de incendios durante la construcción
+- **Entrenamiento de brigadas y cuerpos de bomberos** — manguera de práctica robusta pero suficientemente ligera para maniobras de cebado y despliege
 
-## Peso por Diámetro
+## Normas Aplicables
 
-| Diámetro | Peso 3m | Transporte |
-|----------|---------|------------|
-| **2.5"** | 4 kg | Manual fácil |
-| **4"** | 8 kg | Manual moderado |
-| **6"** | 15 kg | Requiere ayuda |
+- **NFPA 1961** — Standard on Fire Hose: requisitos de construcción, presión de prueba hidrostática y marcado para mangueras de succión de todos los diámetros
+- **NFPA 1901** — Standard for Automotive Fire Apparatus: especifica diámetro y longitud de la conexión de aspiración en autobombas; el diámetro 2.5" aplica a bombas de capacidad reducida conforme a este estándar
+- **NFPA 1962** — Standard for the Care, Use, Inspection, Service Testing, and Replacement of Fire Hose, Couplings, Nozzles, and Fire Hose Appliances: periodicidad y método de inspección visual y prueba de vacío para mangueras de succión en servicio
+- **NOM-002-STPS-2010** — Condiciones de seguridad para prevención y protección contra incendios en los centros de trabajo: aplica al uso de mangueras de succión en sistemas de extinción instalados en centros de trabajo
+- **NFPA 1963** — Standard for Fire Hose Connections: dimensiones y tolerancias de los acoples NH/NST 2.5" y Storz 65 mm utilizados en los extremos de la manguera
+- **NFPA 20** — Standard for the Installation of Stationary Pumps for Fire Protection: lineamientos de la tubería de aspiración aplicables cuando esta manguera se usa con bombas estacionarias de capacidad reducida
 
-## Opciones de Acoples
-
-| Tipo | Material | Aplicación |
-|------|----------|------------|
-| **NH/NST** | Aluminio | Compatible USA/México |
-| **Storz 65** | Aluminio | Conexión rápida europea |
-| **NH/NST** | Bronce | Mayor durabilidad |
+**Gama de México** suministra la manguera SUC-250-3 con entrega en todo el territorio nacional. Nuestros especialistas orientan sobre la combinación correcta de diámetro, tipo de acople y longitud de tramo según el modelo de bomba y la fuente de agua disponible. Consulte disponibilidad y precios de lista con o sin IVA para su organización.
 

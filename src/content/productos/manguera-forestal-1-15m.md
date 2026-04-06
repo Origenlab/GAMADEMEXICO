@@ -20,58 +20,52 @@ destacado: false
 orden: 26
 ---
 
-La **manguera forestal FOR-100-15** de **1 pulgada** es la opción de **máxima portabilidad** para brigadas de primera línea. Con solo **2.5 kg** de peso, puede transportarse fácilmente en una mochila forestal para despliegue rápido en puntos de ataque inicial.
+La **manguera forestal FOR-100-15** de **1 pulgada de diámetro interior y 15 metros de longitud** está fabricada con forro simple ultraligero y revestimiento interior de poliuretano, concebida para las **brigadas de primera línea de ataque inicial** en incendios forestales donde cada segundo y cada gramo cuentan. Con solo **2.5 kg por rollo** y un diámetro enrollado de 25 cm, se transporta con facilidad dentro de una mochila forestal reglamentaria, permitiendo que el brigadista llegue al punto de ignición en el menor tiempo posible con su equipo completo. La presión de trabajo de **200 PSI** entrega un caudal concentrado de 30 a 50 GPM suficiente para atacar focos activos de pequeña escala antes de que el incendio gane superficie.
 
 ## Especificaciones Técnicas
 
 | Característica | Especificación |
 |----------------|----------------|
-| Marca | Nacional (Fabricación Mexicana) |
-| Modelo | FOR-100-15 |
-| Diámetro Interior | 1" (25 mm) |
+| Diámetro interior | 1" (25 mm) |
 | Longitud | 15 metros (50 pies) |
-| Presión de Trabajo | 200 PSI (14 bar) |
-| Presión de Prueba | 300 PSI (21 bar) |
+| Peso seco | 2.5 kg por rollo |
+| Presión de trabajo | 200 PSI (14 bar) |
+| Presión de prueba | 300 PSI (21 bar) |
 | Construcción | Forro simple ultraligero |
-| Revestimiento Interior | Poliuretano ligero |
-| Peso Aproximado | 2.5 kg por rollo |
-| Acoples | NH/NST aluminio (incluidos) |
+| Capa exterior | Tejido de poliéster alta tenacidad |
+| Forro interior | Poliuretano ligero |
+| Acoples | NH/NST aluminio ultraligero (incluidos) |
 | Color | Verde bosque |
-| Diámetro Enrollado | 25 cm |
+| Diámetro enrollado | 25 cm |
+| Temperatura de operación | -20°C a +60°C |
 
-## Características Destacadas
+## Características para Uso Forestal
 
-- **Solo 2.5 kg** de peso total
-- **Cabe en mochila** forestal estándar
-- **Máxima portabilidad** para terreno difícil
-- **Despliegue ultrarrápido** en emergencias
-- **Diámetro 1"** para presión concentrada
-- **Acoples aluminio** ultraligeros
-- **Ideal ataque inicial** de fuegos pequeños
-- **Enrollado compacto** de 25 cm
+- **Solo 2.5 kg de peso total:** la manguera más ligera de la línea forestal, diseñada para que el brigadista la transporte junto con herramientas de mano sin exceder la carga máxima reglamentaria de CONAFOR.
+- **Diámetro 1" para presión concentrada:** el diámetro reducido genera mayor velocidad de salida, ideal para atacar directamente la cabeza de fuego o flancos activos con precisión.
+- **Enrollado compacto de 25 cm:** ocupa el espacio de una cantimplora en la mochila forestal, dejando capacidad para equipo de protección personal completo.
+- **Despliegue ultrarrápido en emergencias:** la construcción simple sin capas adicionales permite desplegarlo en pendiente en menos de 60 segundos entre dos personas.
+- **Acoples de aluminio ultraligeros:** reducen el peso muerto en los extremos y permiten conexión rápida a tomas de la pipa o a tramos de manguera 1.5" mediante reductor.
+- **Alta flexibilidad a bajas temperaturas:** crítica en incendios de temporada seca en bosques de pino-encino de la Sierra Madre Occidental y Oriental donde las noches son frías.
+- **Ideal para líneas laterales de ataque:** se puede tender desde la línea principal de 1.5" como derivación hacia puntos de difícil acceso con manguera de mayor diámetro.
+- **Compatibilidad con boquillas forestales estándar:** acepta boquillas de combinación y boquillas rectas de uso forestal de 1" sin necesidad de adaptadores adicionales.
 
 ## Aplicaciones
 
-- Ataque inicial de incendios forestales
-- Líneas de primera respuesta
-- Brigadas en terreno extremo
-- Mochilas de combate forestal
-- Puntos de ignición aislados
-- Operaciones de helitransporte
+- **Ataque inicial de incendios forestales:** primera respuesta ante focos activos de pequeña escala antes de que se conviertan en incendios de gran superficie.
+- **Brigadas CONAFOR de primera línea:** dotación individual para el brigadista de punta que lleva la manguera directa al frente del fuego.
+- **Operaciones de helitransporte:** el peso mínimo la hace ideal para ser transportada en helicóptero a zonas sin acceso terrestre.
+- **Líneas laterales desde manguera principal:** derivación desde tendidos de 1.5" para llegar a puntos de ignición aislados o rodear el perímetro del incendio.
+- **CONANP en reservas de la biosfera:** combate en ecosistemas de alta fragilidad donde el personal opera en condiciones de carga máxima y terreno extremo.
+- **Comunidades rurales y ejidos forestales:** dotación económica para propietarios que requieren capacidad de ataque inicial sin inversión mayor en infraestructura.
 
-## Comparativa por Diámetro
+## Normas Aplicables
 
-| Diámetro | Peso 15m | Caudal | Aplicación |
-|----------|----------|--------|------------|
-| **1"** | 2.5 kg | 30-50 GPM | Ataque inicial |
-| **1.5"** | 4 kg | 60-100 GPM | Línea principal |
+- **NFPA 1961** — Standard on Fire Hose
+- **NFPA 1962** — Standard for the Care, Use, Inspection, Service Testing of Fire Hose
+- **NFPA 1963** — Standard for Fire Hose Connections
+- **NFPA 1977** — Standard on Protective Clothing and Equipment for Wildland Fire Fighting
+- **NOM-002-STPS-2010** — Condiciones de seguridad contra incendios en los centros de trabajo
+- **USDA Forest Service Specification 5100-187a** — Wildland Fire Hose (aplicable a diseño y pruebas)
 
-## Kit de Mochila Forestal
-
-| Componente | Cantidad | Peso |
-|------------|----------|------|
-| **Manguera 1" x 15m** | 2 rollos | 5 kg |
-| **Boquilla forestal** | 1 | 0.5 kg |
-| **Llave spanner** | 1 | 0.2 kg |
-| **Total** | - | 5.7 kg |
-
+**Gama de México** distribuye equipo de combate forestal con bodega y atención técnica en **Ciudad de México y Querétaro**. Contamos con inventario disponible para venta por pieza, por kit de brigada o por contrato de suministro para dependencias gubernamentales, organizaciones ejidales y empresas del sector forestal a nivel nacional. Solicite cotización y asesoría técnica sin costo.

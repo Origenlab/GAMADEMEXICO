@@ -20,7 +20,7 @@ destacado: true
 orden: 17
 ---
 
-La **manguera de succión SUC-400-3** de **4 pulgadas** permite a las bombas contra incendio **aspirar agua desde fuentes abiertas** como ríos, lagos, cisternas o albercas. Su **refuerzo helicoidal de alambre galvanizado** mantiene la forma circular bajo presión negativa, evitando el colapso durante la operación de vacío.
+La **manguera de succión SUC-400-3** de **4 pulgadas de diámetro interior (100 mm)** y **3 metros de longitud** está diseñada para aspirar agua directamente desde tanques, cisternas, ríos o cuerpos de agua abiertos, operando bajo presión negativa de hasta **-0.8 bar de vacío**. Su construcción con **refuerzo helicoidal de alambre galvanizado** impide el colapso de la pared bajo succión continua, garantizando caudales sostenidos de 500 a 800 GPM para pipas contraincendio y motobombas de combate. Es el tramo estándar para conexión de aspiración en autobombas de bomberos, cumpliendo con los requisitos de conexión de toma de agua establecidos en NFPA 1901.
 
 ## Especificaciones Técnicas
 
@@ -28,51 +28,41 @@ La **manguera de succión SUC-400-3** de **4 pulgadas** permite a las bombas con
 |----------------|----------------|
 | Marca | Nacional (Fabricación Mexicana) |
 | Modelo | SUC-400-3 |
-| Diámetro Interior | 4" (100 mm) |
+| Diámetro interior | 4" (100 mm) |
 | Longitud | 3 metros (10 pies) |
-| Operación | Presión negativa (vacío) |
-| Vacío Máximo | -0.8 bar (-12 PSI) |
-| Presión Positiva | Hasta 50 PSI temporal |
-| Refuerzo | Alambre galvanizado helicoidal |
-| Cuerpo | Caucho sintético EPDM |
-| Acoples | Storz 100mm aluminio (incluidos) |
-| Peso Aproximado | 8 kg por tramo |
-| Temperatura | -20°C a +70°C |
+| Presión máx. de trabajo (positiva) | 3.5 bar (50 PSI) temporal |
+| Vacío máximo | -0.8 bar (-12 PSI) |
+| Construcción | Espiral helicoidal de alambre galvanizado embebido |
+| Capa exterior | Caucho sintético EPDM resistente a UV y ozono |
+| Forro interior | EPDM liso, apto para agua potable |
+| Acoples | Storz 100 mm aluminio anodizado (incluidos) |
+| Temperatura de trabajo | -20 °C a +70 °C |
+| Peso por tramo | 8 kg |
+| Caudal típico | 500–800 GPM |
 
-## Características Destacadas
+## Por Qué Manguera Rígida para Succión
 
-- **Refuerzo helicoidal galvanizado** anti-colapso
-- **Opera en vacío** hasta -0.8 bar
-- **Acoples Storz 100mm** incluidos
-- **No colapsa** bajo succión continua
-- **Compatible** con todas las bombas portátiles
-- **Tramos acoplables** para mayor profundidad
-- **Resistente a UV** y ozono
-- **Flotador opcional** disponible
+Una manguera convencional flexible colapsa en cuanto la bomba genera presión negativa, cortando el flujo de agua al instante. La construcción **rígida con espiral helicoidal galvanizado** mantiene la sección circular bajo cualquier nivel de vacío dentro del rango operativo, permitiendo que la bomba trabaje a plena capacidad sin interrupciones. El alambre helicoidal actúa como armadura estructural: transmite las fuerzas radiales de compresión al metal sin deformar el tubo de caucho.
+
+Para dimensionar el diámetro correcto según la capacidad de la bomba, use la siguiente referencia: bombas de hasta 500 GPM trabajan bien con 2.5" de diámetro interior; de 500 a 1,000 GPM se recomienda 4"; por encima de 1,000 GPM es necesario 6". Un diámetro insuficiente eleva la velocidad del fluido, aumenta las pérdidas por fricción y puede provocar cavitación en la bomba. Con 4" a 3 m/s de velocidad media, la pérdida de carga por fricción es mínima y el vacío requerido está lejos del límite de -0.8 bar, incluso a profundidades de aspiración de 5 metros.
 
 ## Aplicaciones
 
-- Bombas portátiles de emergencia
-- Motobombas contra incendio
-- Autobombas de bomberos
-- Abastecimiento desde cisternas
-- Succión de ríos y lagos
-- Pipas de agua contra incendio
+- **Pipas contraincendio municipales y estatales** — conexión estándar de aspiración para llenar el tanque desde hidrante seco, río o pila
+- **Motobombas portátiles de emergencia** — despliegue rápido en incendios forestales o inundaciones para succionar de fuentes naturales
+- **Autobombas de cuerpos de bomberos** — toma de agua directa desde cisternas enterradas o albercas de edificios sin red de hidrantes
+- **Cisternas industriales y plantas de proceso** — abastecimiento de agua para sistemas fijos de rociadores cuando falla el suministro principal
+- **Operaciones PEMEX y petroquímicas** — succión de agua de proceso en zonas sin presión de red (en versión forro NBR para zonas con hidrocarburos)
+- **Protección civil y brigadas municipales** — tramo modular acoplable para alcanzar fuentes distantes o profundas combinando varios tramos
 
-## Operación en Vacío
+## Normas Aplicables
 
-| Profundidad | Vacío Requerido | Capacidad |
-|-------------|-----------------|-----------|
-| **3 metros** | -0.3 bar | Normal |
-| **5 metros** | -0.5 bar | Normal |
-| **7 metros** | -0.7 bar | Límite práctico |
-| **8 metros** | -0.8 bar | Máximo teórico |
+- **NFPA 1961** — Standard on Fire Hose: requisitos de construcción, presión de prueba y marcado para mangueras de succión (suction hose)
+- **NFPA 1901** — Standard for Automotive Fire Apparatus: especifica el diámetro, longitud y tipo de acoples para las conexiones de aspiración en autobombas y pipas contraincendio
+- **NFPA 1962** — Standard for the Care, Use, Inspection, Service Testing, and Replacement of Fire Hose, Couplings, Nozzles, and Fire Hose Appliances: procedimientos de inspección periódica y prueba hidrostática de mangueras de succión en servicio
+- **NOM-002-STPS-2010** — Condiciones de seguridad para prevención y protección contra incendios en los centros de trabajo: aplica a la instalación y mantenimiento de equipos de extinción, incluyendo mangueras de succión
+- **NFPA 1963** — Standard for Fire Hose Connections: dimensiones, tolerancias y materiales de los acoples Storz y NH/NST utilizados en los extremos de la manguera
+- **NFPA 20** — Standard for the Installation of Stationary Pumps for Fire Protection: define los requisitos de la tubería de aspiración y las conexiones de succión para bombas estacionarias de protección contra incendio alimentadas desde cisterna
 
-## Configuración Modular
-
-| Tramos | Longitud Total | Profundidad Alcanzable |
-|--------|----------------|------------------------|
-| **1** | 3 metros | 2.5 metros |
-| **2** | 6 metros | 5 metros |
-| **3** | 9 metros | 7 metros (límite práctico) |
+**Gama de México** es distribuidor especializado de mangueras de succión contra incendio en toda la República Mexicana. Nuestro equipo técnico asesora en la selección de diámetro, longitud y acoplería correcta para cada aplicación, desde brigadas municipales hasta complejos industriales y terminales de almacenamiento. Contáctenos para cotización, disponibilidad en inventario y asesoría sin costo.
 
