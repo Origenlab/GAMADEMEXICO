@@ -20,98 +20,48 @@ destacado: true
 orden: 27
 ---
 
-El **monitor FM Approved para agua y espuma** ofrece la máxima versatilidad en protección contra incendios industriales. Certificado tanto para **descarga de agua** como para **aplicación de espuma AFFF, AR-AFFF y FFFP**, este equipo permite responder eficazmente a incendios Clase A (sólidos) y Clase B (hidrocarburos) con un solo sistema, optimizando la inversión en protección y simplificando la operación durante emergencias.
-
-## Capacidad Dual Certificada
-
-| Agente | Certificación | Aplicación |
-|--------|---------------|------------|
-| **Agua** | FM 1421 | Incendios Clase A, enfriamiento |
-| **AFFF 3%** | FM / UL 162 | Hidrocarburos no polares |
-| **AFFF 6%** | FM / UL 162 | Concentraciones mayores |
-| **AR-AFFF 3x3** | FM / UL 162 | Solventes polares |
-| **FFFP** | FM | Formación de película |
-
-## Configuraciones de Sistema
-
-### Configuración 1: Eductor en Línea
-- Proporcionamiento por venturi
-- Instalación entre válvula y monitor
-- Cambio de concentración manual
-- Menor costo inicial
-
-### Configuración 2: Proporcionador de Presión Balanceada
-- Proporcionamiento automático preciso
-- Ajuste de concentración remoto
-- Mayor precisión en mezcla
-- Ideal para sistemas grandes
-
-### Configuración 3: Sistema Premezclado
-- Tanque de premezcla dedicado
-- Respuesta inmediata
-- Sin ajustes durante emergencia
-- Para áreas críticas específicas
+El **Monitor FM Approved para agua y espuma modelo FM-AE-001** de Stang Industries entrega un caudal de **500 a 1,250 GPM** en modo agua y es compatible con concentrados AFFF, AR-AFFF y FFFP para la extinción de incendios Clase B en hidrocarburos. La doble certificación FM Approved para agua y espuma —respaldada por ensayos FM 1421 y UL 162— garantiza que el equipo es reconocido por aseguradoras industriales tanto en operación con chorro sólido como con solución espumante, eliminando restricciones técnicas en instalaciones con pólizas FM Global y reduciendo las primas al mantener un sistema unificado certificado para ambos agentes.
 
 ## Especificaciones Técnicas
 
 | Característica | Especificación |
 |----------------|----------------|
-| Certificación | **FM Approved** (agua y espuma) |
-| Caudal | 500 - 1,250 GPM |
-| Giro Horizontal | **360°** con bloqueo |
-| Giro Vertical | **+80° / -20°** |
-| Entrada | Brida 4" ANSI 150# |
-| Salida | Compatible con boquillas agua/espuma |
-| Material | Bronce forjado (compatible con AFFF) |
+| Certificación | FM Approved — FM 1421 / UL 162 (agua y espuma) |
+| Caudal | 500 — 1,250 GPM (1,893 — 4,731 LPM) |
+| Agentes compatibles | Agua, AFFF 3%, AFFF 6%, AR-AFFF 3x3, FFFP |
+| Giro horizontal | 360° continuo con bloqueo |
+| Giro vertical | +80° / -20° desde la horizontal |
+| Conexión de entrada | Brida 4" ANSI 150# |
+| Material del cuerpo | Bronce forjado compatible con AFFF |
+| Presión de operación | 80 — 150 PSI |
+| Temperatura de servicio | -20°C a +65°C |
+| Proporcionamiento | Educto en línea o proporcionador de presión balanceada |
+| Boquilla incluida | Combinada agua/espuma ajustable |
+| Peso aproximado | Según configuración de boquilla |
 
-## Boquillas Compatibles
+## Por Qué FM Approved
 
-### Para Agua
-| Tipo | Caudal | Alcance |
-|------|--------|---------|
-| Chorro sólido | 500-1,250 GPM | 50-70 m |
-| Niebla ajustable | 250-750 GPM | 25-40 m |
-| Cortina | 500-1,000 GPM | 15-25 m |
+La certificación **FM Approved** emitida por FM Global distingue este monitor de equipos con certificaciones de menor exigencia. FM Global realiza pruebas de rendimiento en condiciones reales —no solo pruebas de laboratorio estáticas— e inspecciona las instalaciones de fabricación de forma trimestral sin previo aviso para garantizar consistencia en la producción. Esta rigurosidad supera el alcance de certificaciones como UL, que se enfoca principalmente en seguridad del producto sin verificar el desempeño hidráulico en campo.
 
-### Para Espuma
-| Tipo | Caudal | Expansión |
-|------|--------|-----------|
-| Aire-aspirante estándar | 500-1,000 GPM | 8:1 |
-| Aire-aspirante alta | 250-500 GPM | 15:1 |
-| No aspirante (FFFP) | 500-1,250 GPM | 4:1 |
+Para la empresa asegurada, el listado FM Approved tiene impacto directo en las condiciones de su póliza: las aseguradoras afiliadas a FM Global reconocen formalmente los equipos en sus evaluaciones de riesgo, lo que se traduce en **menores primas de seguro de propiedad industrial**. En instalaciones que manejan hidrocarburos o solventes —donde las sumas aseguradas son altas— esta reducción es económicamente significativa. Adicionalmente, la aceptación internacional del listado FM facilita el cumplimiento de especificaciones de proyectos con participación de ingeniería extranjera.
 
-## Escenarios de Aplicación
+## Aplicaciones
 
-### Área de Almacenamiento Mixto
-- **Bodega de materia prima**: Agua para cartón/madera
-- **Zona de solventes**: AR-AFFF para alcoholes
-- **Área de aceites**: AFFF 3% para lubricantes
+- **Terminales de almacenamiento de hidrocarburos** con tanques de techo fijo y flotante que requieren protección combinada agua/espuma para enfriamiento y extinción
+- **Refinerías y plantas petroquímicas** con unidades de proceso que manejan crudos, naftas y solventes polares simultáneamente
+- **Terminales de GNL** donde la espuma AFFF es requerida para derrames criogénicos y el agua para enfriamiento de equipos
+- **Plantas químicas con almacenamiento mixto** de sólidos combustibles e hidrocarburos líquidos en el mismo perímetro protegido
+- **Aeropuertos y hangares de mantenimiento** que requieren espuma para combustible de aviación y agua para estructuras
+- **Muelles de carga de buquetanques** donde la versatilidad del agente es crítica ante diferentes tipos de cargas
 
-### Terminal de Combustibles
-- **Isla de gasolina**: AFFF 3%
-- **Zona de diesel**: AFFF 3%
-- **Edificio administrativo**: Agua
+## Normas Aplicables
 
-### Planta Química
-- **Reactores**: AR-AFFF según proceso
-- **Almacén**: Agua o espuma según contenido
-- **Utilidades**: Agua para enfriamiento
+- **FM 1112 / FM 1121 / FM 1131** — Hojas de datos de pérdida de propiedades FM Global para monitores contra incendio
+- **NFPA 15** — Standard for Water Spray Fixed Systems for Fire Protection
+- **NFPA 11** — Standard for Low-, Medium-, and High-Expansion Foam
+- **API 2030** — Application of Fixed Water Spray Systems for Fire Protection in the Petroleum Industry
+- **NOM-002-STPS-2010** — Condiciones de seguridad, prevención y protección contra incendios en los centros de trabajo
+- **NRF-005-PEMEX** — Protección contra incendio en instalaciones de PEMEX
+- **UL 162** — Standard for Foam Equipment and Liquid Concentrates
 
-## Procedimiento de Cambio de Agente
-
-1. **Cerrar válvula** de suministro de agua
-2. **Activar/desactivar** proporcionador según necesidad
-3. **Verificar** indicador de mezcla (si aplica)
-4. **Seleccionar boquilla** apropiada
-5. **Abrir suministro** y verificar descarga
-
-## Productos Relacionados
-
-- [Concentrado AFFF 3%](/boquillas-contra-incendios) - Para hidrocarburos
-- [Concentrado AR-AFFF](/boquillas-contra-incendios) - Para solventes polares
-- [Eductores de Espuma](/boquillas-contra-incendios) - Proporcionamiento
-- [Monitor ST611 FM Approved](/productos/monitor-st611-fm-approved) - Versión estándar
-
----
-
-**Gama de México** realiza cálculos de proporcionamiento y selección de concentrado para su aplicación específica. Solicite asesoría técnica gratuita.
+**Gama de México** es distribuidor autorizado de monitores FM Approved de Stang Industries en México. Nuestro equipo puede calcular los requerimientos de proporcionamiento, seleccionar el concentrado adecuado para su proceso y entregar las curvas de desempeño certificadas requeridas por su aseguradora. Solicite una evaluación técnica sin costo.

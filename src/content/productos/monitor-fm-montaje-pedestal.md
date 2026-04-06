@@ -20,97 +20,49 @@ destacado: false
 orden: 25
 ---
 
-El **monitor FM Approved con pedestal** ofrece una solución completa de montaje elevado para instalaciones donde no existe riser enterrado o donde se requiere posicionar el monitor a una altura específica. El sistema incluye **monitor certificado FM** y **pedestal de acero estructural** con placa base para anclaje directo sobre losa de concreto, simplificando significativamente la instalación.
-
-## Ventajas del Sistema con Pedestal
-
-| Beneficio | Descripción |
-|-----------|-------------|
-| **Sin excavación** | No requiere riser enterrado ni obra civil |
-| **Altura óptima** | Mejora ángulo de descarga y alcance |
-| **Reubicable** | Puede moverse si cambia la configuración |
-| **Instalación rápida** | Montaje en menos de 4 horas |
-| **Acceso a válvulas** | Controles a altura ergonómica |
-
-## Configuraciones de Pedestal
-
-| Modelo | Altura | Aplicación |
-|--------|--------|------------|
-| **PED-120** | 1.2 m | Áreas de proceso a nivel |
-| **PED-150** | 1.5 m | Instalación estándar |
-| **PED-180** | 1.8 m | Cobertura sobre obstáculos |
-| **PED-240** | 2.4 m | Protección de tanques cercanos |
+El **Monitor FM Approved con pedestal modelo FM-PED-001** de Stang Industries combina un monitor certificado FM Global con capacidad de **500 a 1,250 GPM** y un pedestal de acero estructural que lo eleva entre 1.2 y 2.4 metros sobre la losa, eliminando la necesidad de riser enterrado y obra civil costosa. La certificación FM Approved del monitor —resultado de pruebas de rendimiento en condiciones reales e inspecciones trimestrales de fábrica— es reconocida por aseguradoras industriales afiliadas a FM Global, permitiendo reducción de primas de seguro de propiedad al tiempo que la configuración con pedestal simplifica la instalación en instalaciones existentes donde modificar la red hidráulica subterránea no es viable.
 
 ## Especificaciones Técnicas
 
-### Monitor FM Approved
 | Característica | Especificación |
 |----------------|----------------|
-| Certificación | **FM Approved** bajo FM 1421 |
-| Caudal | 500 - 1,250 GPM |
-| Giro Horizontal | **360°** con bloqueo |
-| Giro Vertical | **+80° / -20°** |
-| Entrada | Brida 4" ANSI 150# |
-| Material | Bronce forjado |
+| Certificación | FM Approved — FM 1421 |
+| Caudal | 500 — 1,250 GPM (1,893 — 4,731 LPM) |
+| Giro horizontal | 360° con bloqueo |
+| Giro vertical | +80° / -20° desde la horizontal |
+| Conexión de entrada | Brida 4" ANSI 150# |
+| Material del monitor | Bronce forjado |
+| Material del pedestal | Acero estructural A36 |
+| Acabado del pedestal | Galvanizado en caliente o recubrimiento epóxico |
+| Placa base | 457 mm × 457 mm × 25 mm con 4 anclas de expansión |
+| Alturas disponibles | 1.2 m / 1.5 m / 1.8 m / 2.4 m |
+| Capacidad de carga de losa | Mínimo 500 kg/m² |
+| Válvula de drenaje | Incluida 1" NPT |
 
-### Pedestal de Montaje
-| Característica | Especificación |
-|----------------|----------------|
-| Material | Acero estructural A36 |
-| Acabado | Galvanizado en caliente o epóxico |
-| Placa base | 18" x 18" x 1" con 4 anclas |
-| Conexión de entrada | Lateral o inferior (según modelo) |
-| Drenaje | Válvula de purga incluida |
+## Por Qué FM Approved
 
-## Componentes del Sistema
+La certificación **FM Approved** otorgada por FM Global es el estándar más exigente disponible para monitores contra incendio. A diferencia de la certificación UL —que evalúa la seguridad del producto—, FM Global verifica el rendimiento real del equipo bajo condiciones de incendio industrial: caudal y alcance a presión nominal, resistencia estructural ante la reacción hidrodinámica del chorro, durabilidad de mecanismos de rotación bajo flujo continuo, y consistencia dimensional entre unidades de producción. Las inspecciones de fábrica son trimestrales y sin aviso previo.
 
-Cada kit incluye:
-- ✓ Monitor FM Approved completo
-- ✓ Pedestal de altura seleccionada
-- ✓ Placa base con anclas de expansión
-- ✓ Bridas de conexión superior e inferior
-- ✓ Empaquetadura y tornillería
-- ✓ Válvula de drenaje 1"
-- ✓ Manual de instalación
+Para el propietario de la instalación, el impacto económico es directo: las aseguradoras afiliadas a FM Global reconocen el listado FM Approved en sus evaluaciones de riesgo, lo que se traduce en **primas de seguro de propiedad industrial más bajas**. En instalaciones con sumas aseguradas elevadas, esta diferencia es económicamente significativa. Adicionalmente, el listado FM cumple con las especificaciones técnicas requeridas por contratos EPC internacionales, eliminando objeciones durante las revisiones de ingeniería.
 
-## Procedimiento de Instalación
+## Aplicaciones
 
-### Paso 1: Preparación de Losa
-- Verificar capacidad de carga (mínimo 500 kg/m²)
-- Marcar posición de anclas según plantilla
-- Perforar 4 barrenos de 1" x 6" profundidad
+- **Áreas de proceso pavimentadas** en refinerías y plantas petroquímicas donde no es posible abrir el pavimento para instalar un riser sin interrumpir la operación
+- **Retrofit de instalaciones existentes** que requieren incrementar la cobertura de monitores sin modificar la red hidráulica subterránea
+- **Parques de tanques** donde la altura adicional del pedestal mejora el ángulo de descarga hacia la envolvente o el sello de techo flotante
+- **Terminales de GNL** con losas de concreto reforzado donde la instalación de pedestales anclados es más rápida que perforar para risers
+- **Plantas de generación eléctrica** con transformadores y equipos a proteger donde la configuración con pedestal evita interferir con cables subterráneos existentes
+- **Instalaciones temporales o piloto** donde la reubicación futura del monitor es probable y el pedestal permite desmontaje y reinstalación sin daño a la red hidráulica
 
-### Paso 2: Montaje del Pedestal
-- Colocar anclas de expansión
-- Posicionar placa base y nivelar
-- Torquear anclas a especificación
+## Normas Aplicables
 
-### Paso 3: Instalación del Monitor
-- Conectar tubería de alimentación
-- Montar monitor sobre pedestal
-- Verificar giro libre y ajustar frenos
+- **FM 1112 / FM 1121 / FM 1131** — Hojas de datos de pérdida de propiedades FM Global para monitores contra incendio
+- **NFPA 15** — Standard for Water Spray Fixed Systems for Fire Protection
+- **NFPA 11** — Standard for Low-, Medium-, and High-Expansion Foam
+- **API 2030** — Application of Fixed Water Spray Systems for Fire Protection in the Petroleum Industry
+- **NOM-002-STPS-2010** — Condiciones de seguridad, prevención y protección contra incendios en los centros de trabajo
+- **NRF-005-PEMEX** — Protección contra incendio en instalaciones de PEMEX
+- **NFPA 24** — Standard for the Installation of Private Fire Service Mains and Their Appurtenances
+- **ASME B16.5** — Pipe Flanges and Flanged Fittings
 
-### Paso 4: Pruebas
-- Prueba hidrostática a 150 PSI
-- Verificar operación de válvulas
-- Documentar con fotografías
-
-## Aplicaciones Recomendadas
-
-| Situación | Ventaja del Pedestal |
-|-----------|---------------------|
-| **Área pavimentada existente** | Evita romper pavimento |
-| **Instalación temporal** | Fácil reubicación |
-| **Terreno irregular** | Permite nivelación |
-| **Protección de tanques** | Mayor altura = mejor ángulo |
-| **Retrofit de instalaciones** | Mínima modificación |
-
-## Productos Relacionados
-
-- [Monitor ST611 FM Approved](/productos/monitor-st611-fm-approved) - Monitor sin pedestal
-- [Monitor FM para Refinerías](/productos/monitor-fm-refinerias) - Aplicaciones específicas
-- [Válvulas de Control](/valvulas-contra-incendios) - Accesorios de instalación
-
----
-
-**Gama de México** ofrece servicio de instalación supervisada y turnkey para sistemas con pedestal. Solicite cotización incluyendo instalación.
+**Gama de México** es distribuidor autorizado del sistema FM-PED-001 en México y ofrece servicio de instalación supervisada con entrega de memoria fotográfica y reporte de prueba hidrostática. Solicite cotización incluyendo instalación turnkey para su proyecto.

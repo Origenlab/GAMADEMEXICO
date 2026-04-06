@@ -20,90 +20,49 @@ destacado: true
 orden: 24
 ---
 
-El **monitor FM Approved para refinerías** ha sido configurado específicamente para cumplir con los requerimientos de protección contra incendio en instalaciones de refinación de petróleo. Con certificación Factory Mutual y diseño compatible con las especificaciones API, este equipo proporciona la cobertura necesaria para **unidades de proceso, parques de tanques y áreas de transferencia** donde el riesgo de incendio de hidrocarburos es inherente a la operación.
-
-## Áreas Críticas en Refinerías
-
-### Unidades de Proceso
-| Área | Riesgo | Protección Requerida |
-|------|--------|---------------------|
-| **Unidad de cracking** | Fugas de hidrocarburos a alta temperatura | Enfriamiento + extinción |
-| **Torres de destilación** | Columnas de vapor inflamable | Diluvio perimetral |
-| **Reformador catalítico** | Hidrógeno + hidrocarburos | Supresión inmediata |
-| **Unidad de alquilación** | HF o H₂SO₄ + hidrocarburos | Neutralización + enfriamiento |
-
-### Parque de Tanques
-| Tipo de Tanque | Aplicación del Monitor |
-|----------------|----------------------|
-| **Techo fijo** | Enfriamiento de envolvente |
-| **Techo flotante** | Protección del sello perimetral |
-| **Esféricos (GLP)** | Enfriamiento crítico |
-| **Horizontales** | Protección de accesorios |
+El **Monitor FM Approved para refinerías modelo FM-REF-001** de Stang Industries ha sido configurado para cumplir con las exigencias de protección contra incendio de instalaciones de refinación, entregando un caudal de **500 a 1,500 GPM** con compatibilidad para agua, AFFF y FFFP. La certificación FM Approved —el estándar más riguroso de la industria— es un requisito habitual en las especificaciones de ingeniería de PEMEX y operadores privados con pólizas internacionales de alto riesgo, ya que las aseguradoras afiliadas a FM Global reconocen formalmente el listado y aplican reducciones de prima que en instalaciones con sumas aseguradas de refinería pueden representar ahorros anuales considerables.
 
 ## Especificaciones Técnicas
 
 | Característica | Especificación |
 |----------------|----------------|
-| Certificación | **FM Approved** bajo FM 1421 |
-| Caudal | 500 - 1,500 GPM |
-| Giro Horizontal | **360°** con bloqueo |
-| Giro Vertical | **+80° / -20°** |
-| Entrada | Brida 4" o 6" ANSI 150# |
-| Material | Bronce forjado o acero inoxidable |
-| Compatibilidad | Agua, AFFF, FFFP |
+| Certificación | FM Approved — FM 1421 |
+| Caudal | 500 — 1,500 GPM (1,893 — 5,678 LPM) |
+| Agentes compatibles | Agua, AFFF 3% / 6%, FFFP, AR-AFFF 3x3 |
+| Giro horizontal | 360° con bloqueo |
+| Giro vertical | +80° / -20° desde la horizontal |
+| Conexión de entrada | Brida 4" o 6" ANSI 150# |
+| Material del cuerpo | Bronce forjado o acero inoxidable 316 |
+| Presión de operación | 80 — 175 PSI |
+| Temperatura de servicio | -20°C a +65°C |
+| Integración con diluvio | Compatible con válvulas de diluvio y proporciones |
+| Activación | Manual, por diluvio automático o control remoto |
+| Documentación incluida | Certificado FM, curvas de desempeño, ficha técnica |
 
-## Integración con Sistemas de Refinería
+## Por Qué FM Approved
 
-### Sistema de Diluvio
-El monitor FM se integra con sistemas de diluvio activados por:
-- Detección de fuego (UV/IR)
-- Detección de gas combustible
-- Activación manual desde sala de control
-- Apertura de válvulas de diluvio
+La certificación **FM Approved** es la exigencia estándar en proyectos de refinerías con participación de ingeniería internacional y en instalaciones aseguradas por compañías afiliadas a FM Global. El proceso de certificación va más allá de las pruebas de laboratorio que exige la certificación UL: FM Global verifica en campo el caudal real, el alcance del chorro a presión nominal, la resistencia estructural del monitor ante la reacción hidrodinámica durante descarga sostenida, y la durabilidad de los mecanismos de rotación bajo condiciones de operación continua. Las instalaciones de fabricación son inspeccionadas trimestralmente de forma no programada para garantizar consistencia productiva.
 
-### Sistema de Espuma
-Compatible con proporcionadores para aplicación de:
-- **AFFF 3%** para hidrocarburos no polares
-- **AR-AFFF 3x3** para solventes polares
-- **FFFP** para formación de película flotante
+El impacto en el costo de operación de la refinería es directo y cuantificable: las aseguradoras afiliadas a FM Global aplican créditos de riesgo a instalaciones que utilizan equipos del listado FM Approved, resultando en **primas de seguro de propiedad más bajas** para la planta. En una refinería con suma asegurada de varios cientos de millones de dólares, la diferencia entre una instalación con equipos FM Approved y una sin certificación equivalente puede representar una reducción de prima anual significativa. Adicionalmente, el cumplimiento con NRF-005-PEMEX requiere el uso de equipos con certificaciones reconocidas internacionalmente, siendo FM Approved la referencia habitual.
 
-## Normativas Aplicables a Refinerías
+## Aplicaciones
 
-| Norma | Descripción |
-|-------|-------------|
-| **FM 1421** | Monitores contra incendio aprobados |
-| **NFPA 15** | Sistemas de agua pulverizada |
-| **NFPA 30** | Líquidos inflamables y combustibles |
-| **API 2030** | Protección contra incendio en refinerías |
-| **API 2510** | Diseño de instalaciones de GLP |
+- **Unidades de cracking catalítico (FCC)** donde las fugas de hidrocarburos a alta temperatura pueden producir incendios de rápido desarrollo que requieren caudales masivos de enfriamiento y extinción
+- **Torres de destilación y columnas de fraccionamiento** con riesgo de derrame de fracciones líquidas inflamables en áreas de proceso densamente instrumentadas
+- **Parques de tanques de techo fijo y flotante** para enfriamiento de envolvente, protección del sello perimetral de techo flotante y extinción de derrames en dique
+- **Esferas de GLP y gases licuados** donde el enfriamiento continuo bajo exposición al fuego es crítico para prevenir BLEVE
+- **Muelles de carga de buquetanques y terminales marítimas** con riesgo de derrame de crudo o productos en zonas de transferencia
+- **Unidades de alquilación y reformado catalítico** con presencia simultánea de hidrógeno e hidrocarburos que requieren respuesta inmediata y cobertura de área amplia
 
-## Distribución Típica en Refinería
+## Normas Aplicables
 
-Para protección de una unidad de proceso de 10,000 BPD:
+- **FM 1112 / FM 1121 / FM 1131** — Hojas de datos de pérdida de propiedades FM Global para monitores contra incendio
+- **NFPA 15** — Standard for Water Spray Fixed Systems for Fire Protection
+- **NFPA 11** — Standard for Low-, Medium-, and High-Expansion Foam
+- **API 2030** — Application of Fixed Water Spray Systems for Fire Protection in the Petroleum Industry
+- **NOM-002-STPS-2010** — Condiciones de seguridad, prevención y protección contra incendios en los centros de trabajo
+- **NRF-005-PEMEX** — Protección contra incendio en instalaciones de PEMEX
+- **NFPA 30** — Flammable and Combustible Liquids Code
+- **API 2510** — Design and Construction of LPG Installations
 
-| Zona | Monitores Recomendados | Caudal Total |
-|------|----------------------|--------------|
-| Columna de destilación | 4 monitores | 4,000 GPM |
-| Intercambiadores | 2 monitores | 2,000 GPM |
-| Bombas de proceso | 2 monitores | 1,500 GPM |
-| Manifold de tuberías | 2 monitores | 1,500 GPM |
-
-## Ventajas de la Certificación FM
-
-Para operadores de refinerías, la certificación FM proporciona:
-
-- **Aceptación inmediata** por FM Global y aseguradoras afiliadas
-- **Reducción de primas** de seguro industrial
-- **Cumplimiento automático** de estándares internacionales
-- **Respaldo técnico** del proceso de certificación
-- **Trazabilidad** de componentes y fabricación
-
-## Productos Relacionados
-
-- [Monitor FM Alto Caudal](/productos/monitor-fm-alto-caudal) - Para áreas de mayor riesgo
-- [Monitor FM Acero Inoxidable](/productos/monitor-fm-acero-inoxidable) - Ambientes corrosivos
-- [Concentrado AFFF](/boquillas-contra-incendios) - Para hidrocarburos
-
----
-
-**Gama de México** ha participado en proyectos de protección contra incendio para refinerías de PEMEX y operadores privados. Contáctenos para una evaluación de su instalación.
+**Gama de México** es distribuidor autorizado de monitores FM Approved para refinerías en México, con experiencia en proyectos para instalaciones de PEMEX y operadores privados. Nuestro equipo puede elaborar memorias de cálculo hidráulico, proporcionar la documentación requerida por la aseguradora y coordinar el suministro integrado con válvulas de diluvio y sistemas de espuma. Solicite evaluación técnica de su instalación.
