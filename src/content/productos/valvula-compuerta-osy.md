@@ -20,56 +20,52 @@ destacado: true
 orden: 1
 ---
 
-Válvula de compuerta OS&Y estándar de la industria para aislamiento en líneas principales de protección contra incendios. Su vástago roscado exterior con yugo visible permite identificar posición abierta/cerrada a simple vista desde cualquier distancia, eliminando la necesidad de abrir cajas o revisar indicadores eléctricos para confirmar el estado de la válvula.
+La válvula compuerta OS&Y 4" bridada (modelo F-617-O) en hierro dúctil ASTM A536 es el componente de control estándar para líneas principales de 4" en sistemas de rociadores y standpipe en México. Su conexión bridada ANSI B16.1 Clase 125 garantiza compatibilidad con tuberías de acero y CPVC en instalaciones comerciales, industriales y de uso mixto. Certificada bajo UL 262 y FM 1130, esta válvula cumple con los requisitos de aislamiento supervisado exigidos por NFPA 13 y NFPA 20.
 
-La válvula OS&Y (Outside Screw and Yoke) es el componente de control preferido por NFPA 13 para sistemas de rociadores y por NFPA 14 para standpipe precisamente porque su indicación de posición es inequívoca: vástago salido significa válvula abierta, vástago retraído significa válvula cerrada. Esta característica es crítica durante inspecciones de Protección Civil y en situaciones de emergencia.
+El diseño Outside Screw and Yoke (OS&Y) expone el vástago roscado fuera del cuerpo de la válvula: cuando el vástago sobresale completamente, la válvula está abierta; cuando está retraído, está cerrada. Esta indicación inequívoca elimina la ambigüedad durante inspecciones de Protección Civil, auditorías de seguros y situaciones de emergencia donde confirmar el estado de cada válvula en segundos puede determinar la efectividad del sistema.
 
-## Especificaciones técnicas
+## Especificaciones Técnicas
 
 | Parámetro | Detalle |
 |---|---|
 | **Marca** | Nibco |
-| **Modelo** | F-617-O (bridada) / W-617-O (ranurada) |
+| **Modelo** | F-617-O |
+| **Diámetro nominal** | 4" (100 mm) |
+| **Conexión** | Bridada ANSI B16.1 Clase 125 |
 | **Material cuerpo** | Hierro dúctil ASTM A536 Grado 65-45-12 |
-| **Material cuña** | EPDM resiliente (sello hermético) |
-| **Vástago y tornillería** | Acero inoxidable 304/316 |
-| **Recubrimiento** | Epóxico interior/exterior AWWA C550, mín. 10 mils |
-| **Presión trabajo** | 175 PSI (estándar), 250 PSI, 300 PSI, 350 PSI |
-| **Presión prueba** | 4x presión de trabajo (700 PSI en modelo estándar) |
-| **Temperatura** | -20°F a 250°F (-29°C a 121°C) |
-| **Diámetros** | 2.5", 3", 4", 6", 8", 10" y 12" |
-| **Conexiones** | Bridada ANSI B16.1 Clase 125 / Ranurada AWWA C606 |
+| **Material cuña** | EPDM resiliente vulcanizado sobre hierro dúctil |
+| **Material vástago** | Acero inoxidable ASTM A276 Grado 304 |
+| **Presión de trabajo** | 175 PSI (12.1 bar) |
+| **Presión de prueba** | 700 PSI (48.3 bar) — 4x presión de trabajo |
+| **Temperatura de servicio** | -20 °F a 250 °F (-29 °C a 121 °C) |
+| **Recubrimiento** | Epóxico interior y exterior AWWA C550, mínimo 10 mils |
+| **Peso** | 22 kg |
+| **Norma brida** | ANSI B16.1 Clase 125 |
 | **Certificaciones** | UL 262, FM 1120/1130, NOM-002-STPS-2010 |
 
-## Características destacadas
+## Por Qué OS&Y en Sistemas Contra Incendios
 
-- Indicación visual inequívoca de posición abierta/cerrada por posición del vástago: no requiere indicadores eléctricos adicionales
-- Cuña de EPDM resiliente que garantiza sello hermético aun después de años sin operación, sin necesidad de asentamiento metálico
-- Recubrimiento epóxico interior de mínimo 10 mils según AWWA C550: resiste corrosión interna en sistemas con agua de red con cloro
-- Tornillería y vástago en acero inoxidable 304/316: elimina riesgo de corrosión galvánica con el cuerpo de hierro dúctil
-- Presión de prueba 4x la presión de trabajo: amplio margen de seguridad para sistemas de alta presión en edificios de gran altura
-- Compatible con switch tamper para supervisión eléctrica y alarma en tableros de control de incendios
+NFPA 13 (Sección 8.16) y NFPA 20 exigen que toda válvula de control en un sistema de protección contra incendios sea del tipo supervisado: su posición debe ser verificable visualmente o mediante señal eléctrica en todo momento, y debe poder asegurarse en posición abierta para impedir el cierre accidental o intencional. El diseño OS&Y satisface estos tres requisitos de forma mecánica, sin depender de energía eléctrica ni componentes adicionales.
 
-## Conexiones
-
-- Bridada ANSI B16.1 Clase 125: estándar para instalaciones nuevas con bridas en tuberías de acero o CPVC
-- Ranurada AWWA C606: conexión rápida para sistemas con acopladores Victaulic o similares
-- Combinación brida × ranura: para transiciones entre tuberías bridadas y sistemas ranurados existentes
+El vástago exterior actúa como indicador de posición permanente: cualquier inspector, bombero o técnico puede confirmar el estado de la válvula a distancia sin abrir cajas, sin consultar tableros y sin herramientas. Adicionalmente, el yugo expuesto permite instalar un switch tamper (supervisión eléctrica) que envía señal de alarma al panel de control si la válvula se cierra parcialmente, cumpliendo el requisito de supervisión continua de NFPA 13 Sección 8.16.1. La combinación de indicación visual y supervisión eléctrica hace del OS&Y la válvula de control mandatoria en sistemas certificados bajo UL y FM.
 
 ## Aplicaciones
 
-- Aislamiento de líneas principales de suministro en sistemas de rociadores NFPA 13
-- Cuartos de bombas: aislamiento de la descarga o succión de bombas contra incendio NFPA 20
-- Risers de standpipe Clase I, II y III según NFPA 14
-- Control seccional por zonas en edificios de gran altura o plantas industriales extensas
-- Puntos de aislamiento en conexiones siamesas FDC (Fire Department Connection)
+- Aislamiento de riser principal en sistemas de rociadores NFPA 13 para edificios comerciales, corporativos y bodegas
+- Aislamiento en descarga y succión de bombas contra incendio en cuartos de bombas NFPA 20
+- Control seccional de zonas independientes en plantas industriales con múltiples áreas de riesgo
+- Punto de aislamiento en risers de standpipe Clase I, II y III conforme a NFPA 14
+- Aislamiento de conexiones siamesas FDC (Fire Department Connection) para acceso del Cuerpo de Bomberos
+- Nodos de corte en redes hidráulicas de protección contra incendios en hospitales, hoteles y centros comerciales
 
-## Normas aplicables
+## Normas Aplicables
 
-- **UL 262** — Standard for Gate Valves for Fire Protection Service: diseño, construcción y pruebas específicas para incendios
-- **FM 1120/1130** — Factory Mutual: aprobación para sistemas con seguros FM Global
-- **NFPA 13** — Standard for the Installation of Sprinkler Systems: válvula OS&Y requerida para aislamiento de sistemas de rociadores
-- **NFPA 14** — Standard for the Installation of Standpipe and Hose Systems: control en risers de standpipe
-- **NFPA 20** — Standard for the Installation of Stationary Pumps for Fire Protection: aislamiento de bombas
-- **AWWA C509 / C515** — Especificaciones para válvulas de compuerta en servicio de agua
-- **NOM-002-STPS-2010** — Condiciones de seguridad para prevención y protección contra incendios en centros de trabajo
+- **UL 262** — Standard for Gate Valves for Fire-Protection Service: cubre diseño, construcción, pruebas de presión y desempeño para servicio en sistemas de incendios
+- **FM 1130** — Property Loss Prevention Data Sheets for Control Valves: requisitos FM Global para aprobación de válvulas de control en riesgos asegurados
+- **NFPA 13** — Standard for the Installation of Sprinkler Systems (Sección 8.16 — supervisory valves): exige válvulas supervisadas tipo OS&Y en todos los puntos de control de sistemas de rociadores
+- **NFPA 14** — Standard for Standpipe and Hose Systems: regula las válvulas de control en risers y conexiones de manguera en edificios
+- **NFPA 20** — Standard for the Installation of Stationary Pumps for Fire Protection: requiere válvulas OS&Y certificadas en la succión y descarga de bombas contra incendio
+- **NOM-002-STPS-2010** — Condiciones de seguridad para prevención y protección contra incendios en centros de trabajo en México
+- **AWWA C500** — Gate Valves for Water and Water/Wastewater Systems: especificaciones dimensionales y de desempeño para válvulas de compuerta de gran diámetro
+
+Gama de México distribuye esta válvula con documentación técnica completa, certificados UL y FM originales, y soporte para ingeniería de detalle. Contáctenos para cotización por proyecto, disponibilidad en inventario y asesoría en selección según diámetro, presión de sistema y tipo de conexión requerido.

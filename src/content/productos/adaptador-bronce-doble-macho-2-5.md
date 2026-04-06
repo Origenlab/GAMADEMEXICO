@@ -20,44 +20,46 @@ destacado: false
 orden: 5
 ---
 
-Adaptador doble macho que permite unir dos conexiones hembra NH de 2.5". Indispensable para conectar hidrantes a mangueras o extender líneas de suministro.
-
-## Características principales
-
-- Doble rosca macho NH/NST 2.5"
-- Presión de trabajo: 300 PSI
-- Presión de prueba: 1,000 PSI
-- Construcción robusta de bronce fundido
-- Resistente a impactos y corrosión
-
-## Materiales
-
-- Cuerpo: bronce fundido de alta calidad
-- Acabado: pulido natural o cromado
-- Tratamiento anticorrosión
+El Adaptador Doble Macho NH 2.5" en bronce fundido de Elkhart Brass permite unir dos conexiones hembra NH de 2.5" que de otro modo no podrían interconectarse directamente, siendo el puente esencial entre hidrantes, salidas de camión y mangueras cuyo extremo libre presenta rosca hembra. Construido íntegramente en bronce fundido con tratamiento anticorrosión y presión de trabajo de 300 PSI —con prueba hidrostática hasta 1,000 PSI—, este adaptador soporta las demandas mecánicas e hidráulicas de líneas de suministro de 2.5" en operaciones de combate de incendios industriales, conexión de camiones autobomba a hidrantes y extensión de redes de standpipe. La robustez del bronce y su resistencia al impacto son factores particularmente valorados en el diámetro de 2.5", donde las fuerzas de torsión durante el acoplamiento bajo presión pueden ser significativas.
 
 ## Especificaciones Técnicas
 
 | Característica | Especificación |
-|----------------|----------------|
+|---|---|
 | Marca | Elkhart Brass |
 | Modelo | M-327-A |
-| Material | Bronce fundido |
-| Presión de trabajo | 300 PSI |
-| Presión de prueba | 1,000 PSI |
-| Conexión(es) | Doble macho NH/NST 2.5" |
+| Material del cuerpo | Bronce fundido |
+| Diámetro nominal | 2.5" (63.5 mm) |
+| Tipo de conexión | Doble macho NH/NST 2.5" |
+| Presión de trabajo | 300 PSI (20.7 bar) |
+| Presión de prueba hidrostática | 1,000 PSI (68.9 bar) |
+| Acabado | Pulido natural o cromado |
+| Tratamiento | Anticorrosión de fábrica |
+| Longitud aproximada | 95 mm (3.75") |
 | Certificaciones | UL Listed, FM Approved |
+| Temperatura de operación | -20 °C a +130 °C |
 
-## Normas Aplicables
+## Cuándo Especificar el Adaptador Doble Macho NH 2.5"
 
-- **NFPA 1963** — Roscas para mangueras contra incendios (NH/NST)
-- **NFPA 14** — Sistemas de tuberías verticales y mangueras
-- **UL Listed** — UL 405: Conexiones para mangueras contra incendios
-- **NOM-002-STPS-2010** — Condiciones de seguridad contra incendios
+El adaptador doble macho se especifica cuando la interfaz de campo presenta dos terminaciones hembra en extremos que deben acoplarse entre sí. El caso más frecuente ocurre al conectar la manguera de suministro —que sale de la salida hembra de un camión autobomba— directamente a la salida hembra de un hidrante: sin el adaptador doble macho, esta conexión es imposible. También se requiere cuando se necesita conectar dos tramos de manguera de 2.5" que ambos presentan hembra en el extremo de unión, o cuando un distribuidor o manifold tiene entradas hembra y se conecta a una línea que igualmente entrega hembra. La elección de bronce en 2.5" obedece a la mayor demanda mecánica de este diámetro: los mayores pesos y fuerzas de roscado durante el acoplamiento en campo requieren un material con resistencia a la deformación y tenacidad al impacto superiores a las del aluminio fundido. La presión de prueba de 1,000 PSI —más de tres veces la presión de trabajo— garantiza un margen de seguridad acorde a los requisitos de NFPA 14 y UL 405.
 
 ## Aplicaciones
 
-- Conexión de mangueras a hidrantes
-- Extensión de líneas de suministro
-- Unión de equipos con entradas hembra
-- Instalaciones industriales
+- **Conexión de camiones autobomba a hidrantes de columna seca:** la salida hembra del carro-bomba y la toma hembra del hidrante se unen mediante este adaptador para establecer la línea de suministro principal.
+- **Extensión de líneas de suministro de 2.5" en grandes incendios:** cuando dos tramos de manguera presentan hembra en los extremos de empalme y se necesita añadir longitud sin reorientar los carretes.
+- **Alimentación de manifolds y distribuidores en operaciones multi-línea:** conexión de la línea maestra a entradas hembra de distribuidores que derivan hacia múltiples líneas de ataque de menor diámetro.
+- **Instalaciones industriales con salidas de válvula tipo hembra:** en tableros de control de sprinklers, cruces y tees que presentan salidas laterales hembra compatibles con 2.5" NH.
+- **Respuesta a desastres y apoyo inter-agencia:** normalización del acoplamiento entre equipos de diferentes corporaciones de bomberos que comparten sistemas de mangueras de 2.5" con variantes de terminación.
+
+## Normas Aplicables
+
+- **NFPA 1963** — Standard for Fire Hose Connections: define las dimensiones de rosca NH/NST 2.5" y los requisitos de acoplamiento que deben cumplir los adaptadores para ser intercambiables con cualquier componente del mismo diámetro.
+- **DIN 14821** — Estándar internacional para acoplamientos Storz: referencia complementaria para sistemas mixtos donde el adaptador doble macho actúa como pieza de transición entre tramos con rosca NH y coples Storz.
+- **UL 405** — Standard for Fire Department Connections: establece los criterios de resistencia mecánica y sello hidráulico que respaldan la certificación UL Listed del modelo M-327-A.
+- **NFPA 1901** — Standard for Automotive Fire Apparatus: aplica a los adaptadores utilizados en salidas de 2.5" de camiones autobomba y en la interfaz entre el vehículo y la red de hidrantes.
+- **NFPA 14** — Standard for the Installation of Standpipe and Hose Systems: rige los requisitos de conexiones en sistemas de tuberías verticales con salidas de 2.5" para uso de los cuerpos de bomberos conforme a los sistemas clase I y clase III.
+- **NOM-002-STPS-2010** — Condiciones de seguridad contra incendios en los centros de trabajo: norma oficial mexicana de cumplimiento obligatorio que establece los requisitos de los sistemas y componentes de protección contra incendio en la industria.
+
+---
+
+Gama de México distribuye el Adaptador Doble Macho NH 2.5" Bronce Modelo M-327-A de Elkhart Brass con existencia disponible. Para cotizaciones, especificación técnica por escrito o asistencia para definir la configuración de adaptadores requerida en su sistema, contacte a nuestro equipo de ingeniería de ventas.
