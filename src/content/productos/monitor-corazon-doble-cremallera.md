@@ -20,41 +20,52 @@ destacado: true
 orden: 9
 ---
 
-**Monitor contra incendio estacionario tipo corazón de dos cremalleras**, con mecanismo de **giro horizontal de 360°** accionado por volante con manivela y **giro vertical de 120°** también accionado mediante volante con manivela. Fabricado en **bronce fundido libre de porosidades**. En los puntos de giro cuenta con graseras de lubricación constante. Base bridada de 4" (150 LBS) cara realzada con salida macho de 2½" NST. Cuenta con rodamientos de acero inoxidable. Acabado en bronce con pintura rojo bermellón. SKU: 100366.
+El monitor contra incendio estacionario tipo corazón **ARMECO-2C** de doble cremallera descarga hasta **1,000 GPM** con giro horizontal de 360° y elevación vertical de 120°, haciendo posible la protección precisa de tanques, manifolds y áreas de transferencia en instalaciones de PEMEX, refinerías y terminales de almacenamiento de hidrocarburos. Su fabricación 100% mexicana en bronce fundido libre de porosidades, acreditada bajo normas PEMEX, NFPA y ANSI, lo convierte en el estándar de facto para proyectos de protección contra incendio en el sector energético nacional.
 
 ## Especificaciones Técnicas
 
 | Característica | Especificación |
 |----------------|----------------|
+| Caudal máximo | 1,000 GPM (3,785 LPM) |
+| Rango de flujo | 250 – 1,000 GPM |
+| Entrada | Base bridada 4" ANSI 150 LBS cara realzada |
+| Salida | 2½" macho rosca NST |
+| Giro horizontal | 360° continuo — volante con manivela y engrane (cremallera principal) |
+| Elevación vertical | 120° — volante con manivela (cremallera secundaria) |
 | Material | Bronce fundido, libre de porosidades |
-| Giro Horizontal | 360° (volante con manivela y engrane) |
-| Giro Vertical | 120° (volante con manivela) |
-| Entrada | Base bridada de 4" (150 LBS) cara realzada |
-| Salida | 2 1/2" macho rosca NST |
-| Presión Máxima | 300 PSI (21 kg/cm²) sin deformaciones |
-| Presión de Trabajo | 150 PSI (10.5 kg/cm²) sin fugas |
-| Rodamientos | Acero inoxidable |
-| Lubricación | Graseras de lubricación constante en puntos de giro |
-| Acabado | Bronce con pintura anticorrosiva rojo bermellón |
-| Fabricación | 100% mexicana |
+| Cremalleras | Doble — mecanismos independientes en cada eje |
+| Presión de trabajo | 150 PSI (10.5 kg/cm²) sin fugas |
+| Presión máxima | 300 PSI (21 kg/cm²) sin deformaciones |
+| Rodamientos | Acero inoxidable en todos los puntos de giro |
+| Lubricación | Graseras de lubricación constante |
+| Acabado | Pintura anticorrosiva rojo bermellón sobre bronce pulido |
+| Fabricación | 100% mexicana — SKU 100366 |
 
-## Características Destacadas
+## Aplicaciones Principales
 
-- Doble volante para control preciso horizontal y vertical
-- Precisión excepcional en la dirección del chorro
-- Compatible con prolongadores y auto-eductores de espuma AFFF
-- Resistente a ambientes marítimos (agua salada)
-- Fabricación bajo normas PEMEX, NFPA y ANSI
-- Rodamientos de acero inoxidable para durabilidad
+- **Instalaciones de PEMEX** — refinerías, plantas de proceso y centros de distribución donde las especificaciones técnicas exigen equipo acreditado bajo normas corporativas
+- **Terminales de almacenamiento de hidrocarburos** — protección de parques de tanques atmosféricos y de presión con enfriamiento de envolvente y supresión de vapores
+- **Plantas petroquímicas** — cobertura de reactores, intercambiadores y tuberías de proceso con agua o espuma AFFF
+- **Plataformas marítimas y offshore** — el bronce fundido resiste la corrosión por agua salada y ambientes de alta humedad sin degradación estructural
+- **Zonas portuarias y muelles de carga** — descarga masiva de agua o espuma para proteger brazos de carga marinos y embarcaciones en eslora
+- **Brigadas municipales de alto rendimiento** — instalación en hidrantes de cabeza o sobre estructuras de acero para operaciones de gran caudal en escenarios urbano-industriales
 
-## Aplicaciones
+## Por Qué Elegir Este Monitor
 
-- Plantas industriales y petroquímicas
-- Refinerías y terminales de almacenamiento
-- Plataformas marítimas y offshore
-- Zonas portuarias y muelles
-- Instalaciones de PEMEX
+- **Doble volante con engrane independiente** — los dos mecanismos de cremallera permiten ajustar simultáneamente la dirección horizontal y la elevación vertical sin que un movimiento interfiera con el otro, logrando una puntería precisa incluso bajo la presión de la línea
+- **120° de elevación vertical** — supera el rango estándar de 90° de los monitores de una cremallera, permitiendo apuntar hacia blancos elevados como la parte superior de tanques o estructuras en altura sin desplazar el monitor de su punto de anclaje
+- **Compatibilidad con eductores de espuma AFFF** — la salida de 2½" NST acepta prolongadores y auto-eductores para descarga combinada agua-espuma en incendios de clase B, fundamental en terminales de hidrocarburos
+- **Resistencia a ambientes marítimos y agresivos** — certificado para uso en instalaciones costeras, plataformas offshore y zonas con neblina salina o vapores corrosivos
+- **Certificación PEMEX vigente** — cumple con las Normas de Referencia PEMEX (NRF) aplicables a sistemas contra incendio, requisito indispensable para proyectos en instalaciones del sector energético nacional
+- **Fabricación 100% mexicana con soporte local** — refacciones, mantenimiento preventivo y asistencia técnica disponibles en México sin dependencia de importaciones ni tiempos de despacho aduanal
 
-## Ventaja del Doble Volante
+## Normas Aplicables
 
-A diferencia de los monitores de una cremallera, el modelo de doble cremallera cuenta con dos manivelas independientes que proporcionan una **precisión excepcional** en la descarga de agua o espuma, permitiendo ajustes finos en ambos ejes de movimiento simultáneamente.
+- **NFPA 15** — Standard for Water Spray Fixed Systems for Fire Protection: rige el diseño, instalación y prueba de sistemas de monitores fijos en instalaciones industriales y de proceso
+- **NFPA 11** — Standard for Low-, Medium-, and High-Expansion Foam: aplica cuando el monitor se conecta a sistemas de espuma para protección de tanques de almacenamiento y áreas de derrames de hidrocarburos
+- **API 2030** — Application of Fixed Water Spray Systems for Fire Protection in the Petroleum Industry: especifica la densidad, caudal y disposición de monitores en plantas de refinación y terminales de almacenamiento
+- **API 2510** — Design and Construction of LPG Installations: referencia para la protección de esferas y tanques de GLP con monitores de agua
+- **NOM-002-STPS-2010** — Condiciones de seguridad contra incendios en los centros de trabajo: marco regulatorio mexicano para la instalación de equipos de protección activa en industria
+- **NRF-015-PEMEX / NRF-032-PEMEX** — Normas de Referencia PEMEX sobre protección contra incendio en instalaciones petroleras: requisito de cumplimiento para proveedores y contratistas de PEMEX
+
+Gama de México distribuye el ARMECO-2C con existencia permanente en bodegas en **CDMX y Querétaro**, con capacidad de entrega en 24 a 72 horas para la República Mexicana. Solicite cotización con certificados PEMEX, ficha técnica completa y carta de garantía a través de nuestro equipo de ventas técnicas.

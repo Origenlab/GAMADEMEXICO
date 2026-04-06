@@ -20,85 +20,53 @@ destacado: true
 orden: 20
 ---
 
-El **monitor tipo corazón para terminales de almacenamiento** ha sido configurado específicamente para las necesidades de protección contra incendio en instalaciones de almacenamiento de hidrocarburos, GLP y productos químicos. Su diseño permite cobertura efectiva de **tanques atmosféricos, áreas de transferencia y manifolds de distribución**, cumpliendo con los requerimientos de PEMEX, API y la Comisión Reguladora de Energía.
-
-## Aplicaciones en Terminales de Almacenamiento
-
-### Parque de Tanques Atmosféricos
-- **Enfriamiento de envolvente** durante emergencias en tanques adyacentes
-- **Protección de accesorios** en techo (venteos, escaleras, plataformas)
-- **Supresión de vapores** con cortina de agua
-- **Cobertura del dique de contención** para derrames
-
-### Área de Carga y Descarga
-- **Protección de islas de carga** de autotanques
-- **Cobertura de brazos de carga** marinos y terrestres
-- **Enfriamiento de manifolds** de transferencia
-- **Seguridad de pipas** durante operación
-
-### Zona de Bombeo
-- **Protección de bombas de transferencia** y sus motores
-- **Cobertura de válvulas** de seccionamiento
-- **Enfriamiento de tuberías** de proceso
+El monitor tipo corazón **ARMECO TC-TAL-001** ha sido configurado específicamente para la protección contra incendio en terminales de almacenamiento de hidrocarburos, GLP y productos químicos, con un caudal de **250 a 1,000 GPM**, giro horizontal de 360° y elevación vertical de 120°. Su diseño cubre las tres zonas críticas de una terminal — parque de tanques, islas de carga y cuarto de bombas — cumpliendo los requerimientos de PEMEX, API, la Comisión Reguladora de Energía (CRE) y la Agencia de Seguridad, Energía y Ambiente (ASEA) para instalaciones del sector energético.
 
 ## Especificaciones Técnicas
 
 | Característica | Especificación |
 |----------------|----------------|
-| Material | Bronce fundido libre de porosidades |
-| Giro Horizontal | **360°** con freno manual |
-| Giro Vertical | **120°** con volante |
-| Entrada | Base bridada 4" ANSI 150# |
-| Salida | 2½" NST macho |
-| Caudal Compatible | 250 - 1,000 GPM |
-| Presión de Trabajo | 150 PSI |
-| Presión Máxima | **300 PSI** |
-| Alcance Efectivo | Hasta 50 metros (boquilla 750 GPM) |
+| Caudal máximo | 1,000 GPM (3,785 LPM) |
+| Rango de flujo | 250 – 1,000 GPM |
+| Entrada | Base bridada 4" ANSI 150# cara realzada |
+| Salida | 2½" macho rosca NST |
+| Giro horizontal | 360° continuo con freno manual |
+| Elevación vertical | 120° — volante con manivela |
+| Material | Bronce fundido, libre de porosidades |
+| Cremalleras | Una (elevación) con opción de doble cremallera |
+| Presión de trabajo | 150 PSI (10.5 kg/cm²) sin fugas |
+| Presión máxima | 300 PSI (21 kg/cm²) sin deformaciones |
+| Alcance efectivo | Hasta 50 m con boquilla de 750 GPM |
+| Lubricación | Graseras de lubricación constante en puntos de giro |
+| Acabado | Pintura anticorrosiva rojo bermellón |
+| Fabricación | 100% mexicana |
 
-## Cumplimiento Normativo para Terminales
+## Aplicaciones Principales
 
-| Norma | Aplicación |
-|-------|------------|
-| **NFPA 30** | Código de líquidos inflamables y combustibles |
-| **API 2510** | Diseño de instalaciones de GLP |
-| **NOM-001-SECRE** | Instalaciones de aprovechamiento de gas natural |
-| **NRF-015-PEMEX** | Protección contra incendio |
-| **NRF-032-PEMEX** | Sistemas contra incendio en instalaciones petroleras |
+- **Parque de tanques atmosféricos en terminal de almacenamiento** — enfriamiento perimetral de la envolvente de tanques adyacentes al incendio, protección de accesorios en techo (venteos, escaleras de caracol, plataformas de aforo) y supresión de vapores inflamables con cortina de agua
+- **Islas de carga y descarga de autotanques** — cobertura directa de conexiones de manguera, brazos de carga terrestres y vehículos cisterna durante operaciones de trasiego, reduciendo el riesgo de ignición en derrames accidentales
+- **Brazos de carga marinos en muelles de terminal** — protección de estructuras de carga a granel y embarcaciones durante la transferencia de hidrocarburos, en cumplimiento con los protocolos de seguridad portuaria
+- **Manifold principal de distribución** — enfriamiento de bridas, válvulas y accesorios de tuberías de proceso durante emergencias, previniendo la escalada del incendio hacia líneas adyacentes
+- **Cuarto de bombas de transferencia y sus motores** — protección de equipos electromecánicos de alto valor y carga de combustible, donde un incendio podría inutilizar la operación completa de la terminal
+- **Dique de contención de tanques** — descarga de espuma AFFF sobre derrames de hidrocarburos acumulados dentro del dique para sofocar el incendio antes de que alcance la envolvente del tanque
 
-## Distribución Típica en Terminal
+## Por Qué Elegir Este Monitor
 
-Para una terminal de almacenamiento tipo, **Gama de México** recomienda:
+- **Configuración específica para terminales de almacenamiento** — el TC-TAL-001 se suministra con boquillas, prolongadores y eductores preseleccionados según el caudal requerido por zona, reduciendo el tiempo de ingeniería del proyecto y asegurando la compatibilidad entre componentes
+- **Alcance de hasta 50 metros** — cubre el diámetro completo de tanques de almacenamiento de mediana capacidad desde un solo punto de anclaje, minimizando el número de monitores por dique y el costo de la red de hidrantes asociada
+- **Compatibilidad con sistemas de espuma AFFF** — la salida de 2½" NST acepta eductores proporcionales para descarga de concentrado de espuma al 3% o 6%, esencial para extinción de incendios de clase B en derrames de gasolina, diesel o combustóleo
+- **Certificación PEMEX vigente** — cumple con NRF-015-PEMEX y NRF-032-PEMEX, habilitando su uso como equipo de suministro en contratos de PEMEX Transformación Industrial, PEMEX Logística y sus filiales
+- **Integración directa con sistemas de diluvio y detección automática** — el cuerpo del monitor es compatible con actuadores neumáticos e hidráulicos para apertura remota desde sala de control, eliminando la necesidad de intervención humana en la zona de peligro durante los primeros minutos del incendio
+- **Soporte técnico especializado en sector energético** — Gama de México cuenta con experiencia documentada en proyectos de terminales de almacenamiento para PEMEX, empresas privadas de gas LP y operadores de combustibles, ofreciendo asesoría normativa para el cumplimiento ante CRE y ASEA
 
-| Área | Cantidad de Monitores | Caudal por Monitor |
-|------|----------------------|-------------------|
-| Parque de tanques | 4-8 (perimetral) | 750 GPM |
-| Islas de carga | 2 por isla | 500 GPM |
-| Manifold principal | 2-4 | 750 GPM |
-| Cuarto de bombas | 2 | 500 GPM |
+## Normas Aplicables
 
-## Ventajas para Operadores de Terminales
+- **NFPA 15** — Standard for Water Spray Fixed Systems for Fire Protection: norma de diseño para sistemas de monitores fijos en terminales de almacenamiento, incluyendo densidades de descarga para enfriamiento de tanques y protección de manifolds
+- **NFPA 11** — Standard for Low-, Medium-, and High-Expansion Foam: aplica para la descarga de espuma AFFF a través del monitor en diques de contención y áreas de derrames de hidrocarburos
+- **NFPA 30** — Flammable and Combustible Liquids Code: código de referencia para la protección de instalaciones de almacenamiento de líquidos inflamables y combustibles, incluyendo requerimientos de sistemas de monitores
+- **API 2030** — Application of Fixed Water Spray Systems for Fire Protection in the Petroleum Industry: especifica el caudal, la disposición y la densidad de descarga de monitores en terminales de almacenamiento de crudo y refinados
+- **API 2510** — Design and Construction of LPG Installations: aplica para la protección de esferas y tanques de GLP con monitores de agua en terminales de gas licuado
+- **NOM-002-STPS-2010** — Condiciones de seguridad contra incendios en los centros de trabajo: marco normativo obligatorio para instalaciones industriales mexicanas; el TC-TAL-001 cumple con los requerimientos de equipos de protección activa establecidos en esta norma
+- **NRF-015-PEMEX / NRF-032-PEMEX** — Normas de Referencia PEMEX para protección contra incendio: requisito de cumplimiento para todos los equipos instalados en instalaciones operadas por PEMEX y sus subsidiarias
 
-- **Cumplimiento regulatorio** documentado para CRE y ASEA
-- **Aceptación por aseguradoras** nacionales e internacionales
-- **Compatibilidad** con sistemas de espuma existentes
-- **Refacciones disponibles** en México
-- **Soporte técnico** especializado en sector energético
-
-## Integración con Sistemas Existentes
-
-El monitor tipo corazón se integra con:
-
-- **Sistemas de diluvio** activados por detección
-- **Redes de hidrantes** con bombas jockey y principales
-- **Sistemas de espuma AFFF** con proporcionadores
-- **Controles remotos** desde sala de control
-
-## Productos Relacionados
-
-- [Monitor Cuello de Cisne Petroquímica](/productos/monitor-cuello-cisne-petroquimica) - Para enfriamiento de esferas
-- [Monitor Certificado FM](/productos/monitor-certificado-fm) - Para requerimientos de aseguradoras
-- [Concentrado de Espuma AFFF](/boquillas-contra-incendios) - Para incendios de hidrocarburos
-
----
-
-**Gama de México** tiene experiencia en proyectos para terminales de almacenamiento de PEMEX, empresas privadas de gas LP y operadores de gasolineras. Solicite asesoría para su proyecto.
+Gama de México tiene experiencia acreditada en proyectos de terminales de almacenamiento de PEMEX, empresas privadas de gas LP y operadores independientes de combustibles en México. Contamos con existencia en bodegas en **CDMX y Querétaro** para entrega en 24 a 72 horas. Solicite asesoría técnica para su proyecto, cotización detallada y documentación completa con certificados ante CRE y ASEA.

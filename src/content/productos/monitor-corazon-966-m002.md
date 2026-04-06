@@ -20,41 +20,52 @@ destacado: true
 orden: 10
 ---
 
-El monitor contra incendios tipo corazón de doble cremallera modelo 966-M002 es un equipo profesional ampliamente utilizado en la industria mexicana. Con rotación horizontal completa de 360° y elevación vertical de 102°, ofrece una cobertura amplia y control preciso del chorro de agua.
+El monitor contra incendios tipo corazón modelo **966-M002** de doble cremallera entrega hasta **1,000 GPM** con giro horizontal de 360° y elevación vertical de 102°, brindando cobertura total en plantas industriales, bodegas de alto riesgo y sistemas de hidrantes perimetrales. Fabricado íntegramente en bronce fundido libre de porosidades, este equipo ofrece la combinación ideal de durabilidad, precisión de maniobra y precio competitivo para proyectos con presupuesto ajustado sin comprometer el desempeño operativo.
 
 ## Especificaciones Técnicas
 
 | Característica | Especificación |
 |----------------|----------------|
+| Caudal máximo | 1,000 GPM (3,785 LPM) |
+| Rango de flujo | 250 – 1,000 GPM |
+| Entrada | Base bridada 4" ANSI 150 LBS cara realzada |
+| Salida | 2½" macho rosca NST para boquillas reguladoras |
+| Giro horizontal | 360° continuo — volante con manivela (doble cremallera) |
+| Elevación vertical | 102° — volante con manivela (doble cremallera) |
 | Material | Bronce fundido, libre de porosidades |
-| Giro Horizontal | 360° (volante con manivela) |
-| Giro Vertical | 102° (volante con manivela) |
-| Entrada | Base bridada de 4" (150 LBS) |
-| Salida | 2 1/2" macho para boquillas reguladoras |
-| Presión Máxima | 300 PSI (21 kg/cm²) |
-| Presión de Trabajo | 150 PSI (10.5 kg/cm²) |
-| Rodamientos | Acero inoxidable |
+| Cremalleras | Doble — control independiente horizontal y vertical |
+| Presión de trabajo | 150 PSI (10.5 kg/cm²) sin fugas |
+| Presión máxima | 300 PSI (21 kg/cm²) sin deformaciones |
+| Rodamientos | Acero inoxidable en puntos de giro |
 | Lubricación | Graseras de lubricación constante |
-| Acabado | Bronce con pintura rojo bermellón |
+| Acabado | Bronce con pintura anticorrosiva rojo bermellón |
+| Peso aproximado | ~38 kg |
 | Fabricación | Nacional |
 
-## Características Destacadas
+## Aplicaciones Principales
 
-- Modelo profesional 966-M002 ampliamente utilizado en la industria
-- Doble volante para ajuste preciso de dirección y elevación
-- Base bridada estándar de 4" compatible con sistemas existentes
-- Construcción robusta para servicio pesado
-- Compatible con boquillas reguladoras de chorro
-- Excelente relación precio-calidad
+- **Sistemas de hidrantes industriales** en plantas de manufactura y ensamble con riesgo de incendio ordinario y de clase B
+- **Bodegas y centros de distribución** con almacenamiento de materiales inflamables que requieren cobertura perimetral rápida
+- **Terminales de almacenamiento** de combustibles donde se necesita protección de bermas y diques de contención
+- **Brigadas municipales y cuerpos de bomberos** que montan el monitor sobre hidrante o unidad vehicular
+- **Plantas de generación de energía** y subestaciones donde se protegen transformadores y cuartos eléctricos
+- **Estaciones de servicio y patios de maniobras** con carga y descarga de pipas de combustible
 
-## Aplicaciones
+## Por Qué Elegir Este Monitor
 
-- Sistemas de hidrantes industriales
-- Plantas de manufactura
-- Bodegas y centros de distribución
-- Estaciones de bomberos
-- Protección perimetral de instalaciones
+- **Doble cremallera independiente** — cada volante controla un eje de forma autónoma, eliminando el acoplamiento de movimientos que dificulta el apuntado fino en monitores de una sola palanca
+- **360° de giro horizontal sin topes** — permite cubrir el arco completo sin necesidad de reubicar el equipo, reduciendo el tiempo de respuesta en emergencias
+- **Bronce fundido sin porosidades** — material resistente a la corrosión por humedad, vapor y productos químicos, con vida útil superior a equipos con piezas fundidas en aluminio o hierro gris
+- **Base bridada estándar ANSI 150** — compatible directamente con instalaciones existentes, evitando adaptadores costosos y puntos débiles de fuga
+- **Precio más accesible del segmento doble cremallera** — el modelo 966-M002 proporciona control de precisión de doble eje al costo más competitivo del mercado nacional, ideal para proyectos con múltiples puntos de protección
+- **Disponibilidad de refacciones local** — al ser fabricación nacional, los componentes de desgaste (empaques, graseras, volantes) se consiguen en México con entrega inmediata
 
-## Precio Competitivo
+## Normas Aplicables
 
-El modelo 966-M002 ofrece la mejor relación **precio-calidad** del mercado mexicano, siendo una opción económica sin sacrificar calidad ni rendimiento para proyectos con presupuesto ajustado.
+- **NFPA 15** — Standard for Water Spray Fixed Systems for Fire Protection: regula el diseño e instalación de sistemas de agua pulverizada en los que se integran monitores fijos como el 966-M002
+- **NFPA 11** — Standard for Low-, Medium-, and High-Expansion Foam: aplica cuando el monitor se usa junto con boquillas eductoras para descarga de espuma AFFF o FFFP en incendios de clase B
+- **API 2030** — Application of Fixed Water Spray Systems for Fire Protection in the Petroleum Industry: referencia para la disposición y caudal de monitores en áreas de proceso y almacenamiento de hidrocarburos
+- **NOM-002-STPS-2010** — Condiciones de seguridad contra incendios en los centros de trabajo: establece los requisitos mínimos de los equipos de protección activa, incluyendo monitores, en instalaciones industriales mexicanas
+- **NFPA 1901** — Standard for Automotive Fire Apparatus: aplica cuando el monitor se monta sobre vehículo de bomberos o unidad de respuesta de emergencia industrial
+
+Gama de México distribuye el monitor 966-M002 con existencia en bodega en **CDMX y Querétaro**, lo que garantiza entregas en 24 a 72 horas para proyectos urgentes en todo el país. Solicite su cotización con ficha técnica, certificados de conformidad y carta de garantía escribiendo a nuestro equipo técnico.
