@@ -1,6 +1,6 @@
 ---
-title: "Boquilla Industrial Bronce Marino Offshore 95-250 GPM"
-description: "Boquilla industrial de bronce marino C95800 para plataformas offshore y ambientes costeros. Resistente a agua salada, entrada 2.5\" NST, certificación SOLAS."
+title: "Boquilla Marine Industrial MIB-250 C95800 SOLAS USCG 95-250 GPM | Elkhart Brass | Offshore México"
+description: "Boquilla Elkhart Brass MIB-250 bronce marino C95800. SOLAS II-2 USCG 46 CFR. 95-250 GPM, 4 posiciones. Plataformas offshore, buques y terminales portuarias México."
 categoria: "boquillas"
 subcategoria: "industrial"
 imagen: "/img/productos/boquilla-industrial-contra-incendios-vista-explosionada-11.avif"
@@ -71,5 +71,26 @@ La **boquilla Marine Industrial MIB-250 de Elkhart Brass** está fabricada compl
 - **API 2030** — Application of Fixed Water Spray Systems for Fire Protection in the Petroleum and Petrochemical Industries: criterios de diseño para instalaciones de refinería costera y terminales de almacenamiento de hidrocarburos
 - **NOM-002-STPS-2010** — Condiciones de seguridad para prevención y protección contra incendios en los centros de trabajo: aplicable a instalaciones terrestres costeras en México
 - **IMO MSC/Circ.1239** — Revised Guidelines for Fixed Carbon Dioxide Fire-Extinguishing Systems: referencia para la integración de sistemas de mangueras junto con sistemas fijos en embarcaciones
+
+## Productos Relacionados
+
+- [Boquilla Marine USCG-150 Triple Certificación SOLAS/MED](/productos/boquilla-certificada-uscg-maritima) — boquilla de menor diámetro 60-150 GPM NST para brigadas de buques con certificación USCG/SOLAS/MED
+- [Boquilla Industrial AFFF/AR-AFFF Foam Master 3060](/productos/boquilla-industrial-espuma-afff) — boquilla para aplicación de espuma AFFF en plataformas con riesgo de incendio de hidrocarburos
+- [Manguera Blindex Storz Refinería 2.5"](/productos/manguera-blindex-storz-refineria) — manguera de alta presión para sistemas de brigada en instalaciones offshore y costeras
+- [Monitor Cuello Cisne Certificado PEMEX](/productos/monitor-cuello-cisne-certificado-pemex) — monitor fijo compatible con NRF-PEMEX para complementar el sistema de brigada en plataformas
+
+## Preguntas Frecuentes
+
+**¿Cuál es la diferencia entre la aleación C95800 y el bronce C836 estándar en términos de resistencia al agua de mar?**
+La aleación C95800 (aluminio-níquel-bronce) contiene aluminio (~10%), níquel (~4.5%) y hierro (~4%), que forman una capa de óxido de aluminio pasivante con resistencia muy superior a la desaleación por cloruros. El bronce C836 (latón-estaño estándar) es susceptible a la lixiviación del zinc en ambientes con cloruros concentrados, lo que genera porosidad interna y pérdida de resistencia mecánica en pocos años. En entornos marinos con salinidad de 35,000 ppm (agua de mar típica del Golfo de México), la C95800 tiene una vida útil esperada 3-5 veces mayor que el C836.
+
+**¿La boquilla MIB-250 puede utilizarse con agua de mar como agente extintor en plataformas offshore?**
+Sí. Las plataformas offshore frecuentemente utilizan agua de mar en sus sistemas de protección contra incendios por razones de disponibilidad. La aleación C95800 es compatible con agua de mar sin limitaciones de tiempo de uso. Después de cada operación con agua de mar, se recomienda enjuague con agua dulce para eliminar residuos de cloruros en las cavidades internas y lubricar el mecanismo swivel para preservar su operación fluida.
+
+**¿La certificación SOLAS de la MIB-250 cubre también las plataformas fijas offshore o solo embarcaciones?**
+SOLAS capítulo II-2 aplica principalmente a embarcaciones de navegación internacional. Las plataformas fijas offshore (plataformas de perforación y producción) están reguladas por MODU Code (IMO) para plataformas flotantes, y por normativas nacionales para instalaciones fijas. En México, las instalaciones fijas de PEMEX en el Golfo de México requieren cumplir con NRF-005-PEMEX. La certificación SOLAS de la MIB-250 sirve como referencia técnica y es generalmente aceptada por los ingenieros de diseño de PEMEX como equivalente técnico para instalaciones fijas.
+
+**¿Cómo se realiza el mantenimiento de la boquilla MIB-250 en ambientes offshore?**
+La boquilla requiere inspección visual semestral del estado del cuerpo, el mecanismo swivel y el selector de flujo. En ambientes offshore, se recomienda adicionalmente: (1) lubricación anual del swivel con grasa de silicona marina, (2) verificación de la integridad del empaque EPDM del swivel, (3) limpieza con agua dulce después de cada uso con agua de mar. La resistencia del C95800 elimina la necesidad de recubrimientos protectores o galvanizados que requieren mantenimiento periódico. La boquilla no necesita desmontaje para el mantenimiento rutinario.
 
 Gama de México es **distribuidor autorizado** de Elkhart Brass con presencia en los principales puertos del Golfo de México y del Pacífico, ofreciendo asesoría técnica para cumplimiento de inspecciones SOLAS, certificaciones de sociedades clasificadoras y proyectos de equipamiento de plataformas offshore y embarcaciones de servicio.

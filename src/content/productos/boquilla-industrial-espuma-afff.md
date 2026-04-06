@@ -1,6 +1,6 @@
 ---
-title: "Boquilla Industrial Espuma AFFF/AR-AFFF 60-200 GPM"
-description: "Boquilla industrial para aplicación de espuma AFFF y AR-AFFF. Diseño de baja expansión, entrada 1.5\" NST, proporcionamiento 3% y 6%, certificada para fuegos Clase B."
+title: "Boquilla Foam Master 3060 AFFF AR-AFFF UL 162 FM 60-200 GPM | Akron Brass | México"
+description: "Boquilla Akron Brass Foam Master 3060 espuma AFFF AR-AFFF. UL 162 FM NFPA 11. 60-200 GPM, bronce niquelado. Tanques hidrocarburos, refinerías y hangares aviación México."
 categoria: "boquillas"
 subcategoria: "industrial"
 imagen: "/img/productos/boquilla-industrial-contra-incendios-nave-bodega-07.avif"
@@ -73,5 +73,26 @@ La **boquilla Foam Master 3060 de Akron Brass** es un equipo de aplicación de e
 - **UL 162** — Standard for Safety Foam Equipment and Liquid Concentrates: certificación de laboratorio independiente para equipos de aplicación de espuma y concentrados compatibles
 - **NOM-002-STPS-2010** — Condiciones de seguridad para prevención y protección contra incendios en los centros de trabajo: aplicación en instalaciones industriales con líquidos inflamables en México
 - **ICAO Airport Services Manual Part 1 (Rescue and Fire Fighting)** — requisitos de agentes y equipos de espuma en protección de aeropuertos internacionales
+
+## Productos Relacionados
+
+- [Boquilla Certificada PEMEX PX-200 NRF-PEMEX AFFF](/productos/boquilla-certificada-pemex-petroleo) — boquilla NRF-PEMEX también compatible con AFFF para brigadas en refinerías PEMEX
+- [Monitor Corazón Terminales Almacenamiento](/productos/monitor-corazon-terminales-almacenamiento) — monitor fijo para aplicación de espuma a larga distancia en tanques de almacenamiento
+- [Monitor FM Refinerías](/productos/monitor-fm-refinerias) — monitor FM Approved para aplicación de espuma en instalaciones de refinería
+- [Manguera Blindex AFFF Espuma 1.5"](/productos/manguera-blindex-afff-espuma) — manguera especialmente compatible con concentrados de espuma AFFF para uso con esta boquilla
+
+## Preguntas Frecuentes
+
+**¿Cuál es la diferencia entre AFFF y AR-AFFF y cómo sé cuál necesito?**
+AFFF (Aqueous Film Forming Foam) es eficaz contra incendios de hidrocarburos insolubles en agua: gasolina, diésel, nafta, crudo, jet fuel. AR-AFFF (Alcohol Resistant) agrega un polisacárido que forma una membrana protectora adicional contra alcoholes, cetonas, ésteres y éteres, que son miscibles con agua y destruyen la capa de AFFF estándar. Si su planta maneja solventes polares (acetona, etanol, metanol, IPA, MIBK), especifique AR-AFFF. Si solo maneja hidrocarburos convencionales, AFFF estándar es suficiente. La boquilla Foam Master 3060 es compatible con ambos.
+
+**¿El proporcionador de espuma debe ajustarse cuando se cambia entre AFFF 3% y AFFF 6%?**
+Sí. La concentración de aplicación (3% o 6%) depende del tipo de combustible y del sistema de proporcionamiento. Los sistemas de espuma de presión balanceada, alrededor de la bomba (around-the-pump) o inline deben ajustarse al porcentaje especificado en el diseño del sistema. La boquilla Foam Master 3060 no altera la concentración definida por el proporcionador; solo descarga la mezcla que recibe a la tasa de flujo seleccionada. No cambie la concentración sin revisar el diseño hidráulico del sistema.
+
+**¿La relación de expansión de 1:20 de la Foam Master 3060 es adecuada para todos los tipos de tanques?**
+Para tanques de techo fijo y de techo flotante, la espuma de baja expansión (1:10 a 1:20) es la especificada en NFPA 11 y API 2021 para control de incendios de superficie. Para espumas de media expansión (1:20 a 1:200) o alta expansión (>1:200) —usadas para inundación total de espacios como salas de máquinas o bodegas de barcos— se requieren generadores de espuma especializados, no boquillas tipo pistola como la Foam Master 3060. Verifique el tipo de sistema diseñado para su instalación antes de especificar la boquilla.
+
+**¿El bronce niquelado de la Foam Master 3060 resiste la degradación por fluorosurfactantes del AFFF?**
+Sí. El recubrimiento de níquel sobre el cuerpo de bronce forma una barrera química resistente a los tensoactivos fluorados (PFAS) presentes en los concentrados AFFF y AR-AFFF. Las formulaciones AFFF modernas sin PFOS (compatibles con la regulación ambiental vigente) también son compatibles. Después de cada uso con espuma, enjuague la boquilla con agua limpia durante al menos 2 minutos y verifique que el selector de flujo opera libremente para prevenir depósitos de concentrado en el mecanismo.
 
 Gama de México es **distribuidor autorizado** de Akron Brass en la República Mexicana, con experiencia en proyectos de sistemas de espuma para refinerías, terminales portuarias y parques de almacenamiento, incluyendo el dimensionamiento hidráulico, la selección del concentrado compatible y el cumplimiento de las normas NFPA 11, API 2021 y los requerimientos de aseguradoras FM.
