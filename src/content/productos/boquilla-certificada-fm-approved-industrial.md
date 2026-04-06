@@ -1,6 +1,6 @@
 ---
-title: "Boquilla Certificada FM Approved Industrial 95-200 GPM"
-description: "Boquilla contra incendio FM Approved para instalaciones industriales aseguradas. Akron Brass con selector 4 posiciones, entrada 1.5\" NST, documentación FM completa."
+title: "Boquilla FM Approved Industrial 1725 Akron 95-200 GPM | Akron Brass | México"
+description: "Boquilla FM Approved Industrial Akron Brass Style 1725. 95-200 GPM, 4 posiciones, aluminio anodizado duro. Documentación FM para auditorías HPR. Plantas industriales México."
 categoria: "boquillas"
 subcategoria: "certificada"
 imagen: "/img/productos/boquilla-certificada-fm-approved-emergencia-nocturna-lluvia-02.avif"
@@ -76,3 +76,28 @@ La **boquilla FM Industrial Style 1725 de Akron Brass** es una boquilla de mangu
 | **NOM-003-SEGOB-2011** | SEGOB México | Señales y avisos para protección civil; aplica al equipo listado |
 
 Gama de México es distribuidor autorizado de Akron Brass en México y entrega la FM Industrial 1725 con certificado de aprobación FM original, ficha técnica, manual de operación y mantenimiento, registro de trazabilidad y tarjeta de garantía de 10 años, proporcionando todo el soporte documental necesario para mantener el cumplimiento ante FM Global.
+
+## Productos Relacionados
+
+- [Boquilla Certificada Dual UL/FM Select-O-Flow XD](/productos/boquilla-certificada-dual-ul-fm) — versión con triple certificación UL 401/FM/cUL para proyectos con requisito UL adicional
+- [Boquilla Certificada NFPA 1964 Task Force Tips](/productos/boquilla-certificada-nfpa-1964-bomberos) — alternativa TFT con 5 posiciones y rango 30-200 GPM para brigadas sin requisito FM
+- [Manguera Blindex 1.5" × 15m NST](/productos/manguera-blindex-1-5-15m) — manguera de ataque compatible con la entrada NST 1.5" de esta boquilla
+- [Conexión Wye 2.5" Bronce](/productos/conexion-wye-bronce-2-5) — distribuidor para derivar de línea maestra 2.5" a dos líneas de ataque 1.5" con esta boquilla
+
+## Preguntas Frecuentes
+
+**¿Qué diferencia hay entre FM Approved y UL Listed para una boquilla industrial?**
+
+FM Global aplica criterios de prueba orientados a la resistencia mecánica y durabilidad en condiciones reales de operación industrial (HPR - High Protection Risk). UL Listed verifica el desempeño funcional bajo UL 401 con metodología de laboratorio. Para instalaciones con póliza FM Global, el número de aprobación FM es condicionante contractual para mantener la cobertura. Si su aseguradora no es FM, UL Listed puede ser suficiente. Consulte los términos de su póliza antes de especificar.
+
+**¿El número de aprobación FM del modelo 1725 puede verificarse independientemente?**
+
+Sí. El número de aprobación FM está grabado permanentemente en el cuerpo de cada boquilla y puede verificarse en el registro público de FM Approvals en fmglobal.com buscando por fabricante (Akron Brass) y modelo (1725). Esta verificación independiente es la que los inspectores de FM Global realizan durante las auditorías anuales de sus instalaciones aseguradas.
+
+**¿El aluminio anodizado duro tipo III ofrece ventajas reales sobre el aluminio estándar en plantas industriales?**
+
+Sí. El anodizado duro tipo III (hard coat) produce una capa de óxido de aluminio de mayor espesor (25-50 μm versus 5-10 μm del anodizado estándar), lo que mejora sustancialmente la resistencia a la abrasión, los impactos superficiales y la corrosión por contacto con productos químicos atmosféricos. En plantas donde la boquilla puede caer al suelo, rozar tuberías o exponerse a vapores ácidos, el anodizado duro tipo III prolonga significativamente la vida útil del equipo.
+
+**¿Con qué frecuencia se debe probar la boquilla FM 1725 en campo?**
+
+La NFPA 25 (Inspection, Testing and Maintenance of Water-Based Fire Protection Systems) recomienda inspección visual semestral de las boquillas en servicio y prueba de flujo quinquenal. Para instalaciones con auditorías FM, se recomienda documentar el estado de la boquilla en cada inspección y conservar los registros al menos 5 años para presentarlos ante los auditores de FM Global.

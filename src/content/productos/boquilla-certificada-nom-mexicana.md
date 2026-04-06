@@ -1,6 +1,6 @@
 ---
-title: "Boquilla Certificada NOM Mexicana 60-125 GPM"
-description: "Boquilla contra incendio certificada NOM-002-STPS para cumplimiento normativo mexicano. Fabricación nacional, entrada 1.5\" NST, documentación para inspecciones STPS."
+title: "Boquilla NOM Series N-125 NOM-002-STPS 60-125 GPM | Fabricación Mexicana | STPS"
+description: "Boquilla NOM Series N-125 fabricación mexicana. NOM-002-STPS-2010 NMX-S-061-SCFI. 60-125 GPM. Documentación en español para inspecciones STPS. Precio accesible México."
 categoria: "boquillas"
 subcategoria: "certificada"
 imagen: "/img/productos/boquilla-certificada-nfpa-1964-bronce-profesional-04.avif"
@@ -77,3 +77,28 @@ La **NOM-002-STPS-2010** es la norma oficial mexicana de aplicación obligatoria
 | **NFPA 25** | NFPA | ITM de sistemas de protección; referencia para programa de mantenimiento |
 
 Gama de México es distribuidor autorizado de la línea NOM Series en México y provee cada boquilla N-125 con constancia NOM-002-STPS-2010, certificado de calidad con resultados de pruebas, ficha técnica en español, manual de uso y mantenimiento, factura fiscal con RFC y carta de garantía, brindando todo el soporte documental necesario para aprobar inspecciones de la STPS y de protección civil.
+
+## Productos Relacionados
+
+- [Boquilla Certificada NFPA 1964 Task Force Tips](/productos/boquilla-certificada-nfpa-1964-bomberos) — opción con certificación NFPA internacional adicional a NOM para licitaciones con doble requisito
+- [Manguera Millhose 1.5" × 15m](/productos/manguera-millhose-1-5-15m) — manguera económica 1.5" NST de fabricación mexicana, complemento natural de esta boquilla NOM
+- [Gabinete de Manguera Empotrado](/productos/gabinete-empotrado) — gabinete para centro de trabajo donde se instala esta boquilla con manguera NOM
+- [Chiflón Nacional Económico](/productos/chiflon-nacional-economico) — chiflón complementario de menor caudal para puntos de extinción secundarios con cumplimiento NOM
+
+## Preguntas Frecuentes
+
+**¿Qué sucede si en una inspección STPS el inspector encuentra boquillas sin certificación NOM?**
+
+El inspector de la STPS puede levantar una "No Conformidad" que obliga al patrón a corregir el hallazgo en un plazo determinado. Las multas por incumplimiento de la NOM-002-STPS-2010 pueden llegar a 315 UMAs por infracción. Adicionalmente, en caso de siniestro, la falta de equipo certificado NOM puede ser usada como argumento por la aseguradora para negar o reducir la cobertura por incumplimiento del deber de cuidado.
+
+**¿La boquilla N-125 cumple con los requisitos de la NOM-002-STPS-2010 para sistemas de mangueras clase III?**
+
+Sí. La NOM-002-STPS-2010 en su Apéndice A define los requisitos para sistemas de manguera en centros de trabajo, incluyendo caudal mínimo, presión de trabajo y marcado. La boquilla N-125 está certificada para cumplir estos requisitos en sus tres posiciones de flujo (60, 95, 125 GPM) a 100 PSI, cubriendo las exigencias de la norma para riesgo bajo, medio y alto según la clasificación del centro de trabajo.
+
+**¿La documentación en español de la boquilla N-125 es suficiente para presentar en auditorías de protección civil?**
+
+Sí. La boquilla N-125 incluye constancia NOM-002-STPS-2010 vigente, certificado de calidad con resultados de pruebas, ficha técnica y manual de uso —todos en español, con datos de fabricante y número de lote. Este paquete documental cubre los requisitos habituales de auditorías de protección civil estatales y municipales, así como las revisiones del Programa Interno de Protección Civil (PIPC) que exige la Ley General de Protección Civil.
+
+**¿Las refacciones y empaques de la boquilla N-125 están disponibles en México?**
+
+Sí. Al ser fabricación 100 % mexicana, las refacciones (empaques, selector de flujo, swivel) se gestionan directamente con el fabricante nacional sin tiempos de importación ni barreras aduanales. Gama de México mantiene kits de mantenimiento en inventario disponibles para entrega inmediata en Ciudad de México y envío a todo el país.

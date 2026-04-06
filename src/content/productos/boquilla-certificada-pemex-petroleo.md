@@ -1,6 +1,6 @@
 ---
-title: "Boquilla Certificada PEMEX Petróleo y Gas 95-200 GPM"
-description: "Boquilla certificada para instalaciones PEMEX y sector petrolero mexicano. Bronce fundido, cumple NRF-PEMEX, entrada 1.5\" NST, documentación para auditorías petroleras."
+title: "Boquilla PEMEX Series PX-200 NRF-005 AFFF 95-200 GPM | Bronce | Sector Petrolero México"
+description: "Boquilla PEMEX Series PX-200 bronce fundido. NRF-005/015-PEMEX NFPA 1964 API 2030. 95-200 GPM, compatible AFFF. Refinerías, terminales y plataformas México."
 categoria: "boquillas"
 subcategoria: "certificada"
 imagen: "/img/productos/boquilla-certificada-fm-approved-emergencia-nocturna-lluvia-02.avif"
@@ -79,3 +79,28 @@ Las **Normas de Referencia PEMEX (NRF)** son el conjunto de especificaciones té
 | **NOM-093-SCFI-2018** | SCFI México | Complementario al sistema integral de extinción de incendios |
 
 Gama de México es distribuidor autorizado de la línea PEMEX Series en México y entrega la boquilla PX-200 con certificado de calidad con resultados de pruebas, declaración de cumplimiento NRF, certificado de origen nacional, ficha técnica completa en español, manual de operación y mantenimiento, y factura fiscal con RFC para compras corporativas y procesos de licitación PEMEX.
+
+## Productos Relacionados
+
+- [Boquilla Certificada FM Approved Industrial Akron 1725](/productos/boquilla-certificada-fm-approved-industrial) — alternativa FM Approved para instalaciones petroleras con póliza FM Global en lugar de NRF
+- [Manguera Blindex Premium PEMEX 2.5"](/productos/manguera-blindex-premium-pemex) — manguera certificada PEMEX para uso con esta boquilla en operaciones de brigada
+- [Monitor Cuello Cisne Certificado PEMEX](/productos/monitor-cuello-cisne-certificado-pemex) — monitor fijo compatible con NRF-PEMEX para complementar el sistema de brigada
+- [Manguera Blindex Storz Refinería 2.5"](/productos/manguera-blindex-storz-refineria) — manguera de alta presión para sistemas de brigada en refinería con acoplamiento Storz
+
+## Preguntas Frecuentes
+
+**¿Qué NRF específicas debe cumplir el equipo de combate de incendios en una instalación PEMEX?**
+
+Las normas de referencia principales para equipos de combate de incendios en PEMEX son: NRF-005-PEMEX (Sistemas de Protección Contra Incendio), NRF-015-PEMEX (Sistemas de Espuma para Instalaciones Petroleras) y NRF-036-PEMEX (Clasificación de Áreas Peligrosas). La boquilla PX-200 está certificada para cumplir NRF-005 y NRF-015, y es el modelo especificado en los proyectos de ingeniería de detalle de PEMEX para líneas de brigada con capacidad de combate de fuegos clase B con espuma AFFF.
+
+**¿El bronce fundido es necesario en aplicaciones PEMEX o puede usarse aluminio?**
+
+En instalaciones PEMEX con presencia de H2S, vapores de hidrocarburos y ambientes costeros u offshore, el bronce fundido libre de porosidades es el material preferido por las NRF frente al aluminio. El bronce ofrece mayor resistencia a la corrosión galvánica en ambientes marinos y a la degradación por vapores ácidos. Para instalaciones en tierra con condiciones benignas, el aluminio puede ser aceptable bajo revisión del área de ingeniería de PEMEX, pero el bronce es el estándar de especificación por defecto en las NRF.
+
+**¿La boquilla PX-200 puede usarse tanto con agua como con espuma AFFF sin cambiar componentes?**
+
+Sí. El cuerpo de bronce fundido y el diseño de la boquilla son compatibles con agua, mezcla agua-espuma AFFF y soluciones de espuma hasta 6 % de concentración. No requiere modificación ni cambio de piezas al transicionar entre agua y espuma. Después de cada uso con espuma AFFF, se recomienda enjuague con agua limpia durante al menos 2 minutos para prevenir depósitos de concentrado en las partes internas.
+
+**¿Las boquillas PX-200 para proceso de licitación PEMEX deben tener contenido nacional certificado?**
+
+Sí. PEMEX exige en muchos de sus procesos de licitación un porcentaje mínimo de contenido nacional conforme a las disposiciones de la Ley de Petróleos Mexicanos. La boquilla PX-200 es de fabricación 100 % mexicana y cuenta con certificado de origen nacional verificable, lo que la califica automáticamente para cumplir el requisito de contenido nacional en contratos marco y licitaciones directas de PEMEX.

@@ -1,6 +1,6 @@
 ---
-title: "Boquilla Certificada UL 1971 NFPA para Sistemas Fijos"
-description: "Boquilla certificada UL 1971 para sistemas fijos de protección contra incendios. Flujo fijo calibrado, entrada roscada NPT, documentación para inspecciones NFPA."
+title: "Boquilla Fixed System UL-50 UL 1971 NFPA 15 16 | Elkhart Brass | Sistemas Fijos México"
+description: "Boquilla fija Elkhart Brass UL-50 certificada UL 1971. 50-100 GPM, factor K preciso, bronce NPT. NFPA 15 agua-spray, NFPA 16 espuma-agua. Sistemas fijos México."
 categoria: "boquillas"
 subcategoria: "certificada"
 imagen: "/img/productos/boquilla-certificada-ul-listed-detalle-selector-05.avif"
@@ -78,3 +78,28 @@ La **boquilla Fixed System UL-50 de Elkhart Brass** es una boquilla de flujo fij
 | **NRF-005-PEMEX** | PEMEX | Protección contra incendio en instalaciones PEMEX; acepta boquillas UL 1971 en sistemas fijos |
 
 Gama de México es distribuidor autorizado de Elkhart Brass en México y suministra la Fixed System UL-50 con ficha técnica completa, curvas de rendimiento (flujo vs. presión), patrón de distribución a distintas alturas, factor K certificado, declaración de listado UL 1971 y datos para inclusión en la memoria de cálculo hidráulico del sistema, respaldando al ingeniero de diseño y al contratista de instalación durante todo el proceso de aceptación.
+
+## Productos Relacionados
+
+- [Boquilla Certificada Dual UL/FM Select-O-Flow XD](/productos/boquilla-certificada-dual-ul-fm) — boquilla de manguera manual UL 401/FM para complementar el sistema fijo con intervención de brigada
+- [Toma Siamesa FDC 4A Clappered](/productos/toma-siamesa-fdc-4a-clappered) — conexión del departamento de bomberos para alimentar el sistema fijo donde se instala esta boquilla
+- [Válvula Compuerta OSY 4" Ranurada](/productos/valvula-compuerta-osy-4-ranurada) — válvula de control del sistema de tuberías que alimenta las boquillas fijas
+- [Monitor FM Refinerías](/productos/monitor-fm-refinerias) — monitor fijo certificado FM para complementar la protección fija de área en instalaciones industriales
+
+## Preguntas Frecuentes
+
+**¿Cuál es la diferencia entre UL 401 (boquilla manual) y UL 1971 (boquilla fija)?**
+
+UL 401 aplica a boquillas portátiles de manguera para uso manual en ataque directo. UL 1971 regula específicamente boquillas para instalación permanente en sistemas automáticos fijos (deluge, preacción, agua-spray, espuma-agua). Las pruebas de UL 1971 incluyen verificación del factor K, geometría del patrón de distribución a distintas alturas y resistencia mecánica para montaje permanente en tubería. Los dos listados no son intercambiables en los cálculos hidráulicos de NFPA 15 o NFPA 16.
+
+**¿Qué significa el "factor K" de la boquilla y para qué se usa en el diseño del sistema?**
+
+El factor K es la constante de flujo de la boquilla, que relaciona el caudal descargado con la presión en la entrada. La fórmula es Q = K√P, donde Q es el flujo en GPM y P la presión en PSI. Con el factor K certificado de cada boquilla, el ingeniero de diseño puede calcular con precisión el caudal total del sistema, la presión mínima requerida en cada punto y el dimensionamiento de la bomba y tuberías conforme a NFPA 15 o NFPA 16. Sin el factor K certificado, el diseño hidráulico no puede completarse.
+
+**¿Puedo especificar esta boquilla en un sistema deluge bajo NFPA 15 para protección de transformadores eléctricos?**
+
+Sí. La boquilla Fixed System UL-50 es uno de los tipos de boquilla especificados en NFPA 15 para sistemas de agua-spray en protección de transformadores de potencia, reactores y equipos eléctricos de alto valor. El diseño hidráulico debe determinarse por un ingeniero certificado en protección contra incendios que calcule la densidad de aplicación requerida, el factor K seleccionado y el espaciado de boquillas conforme a los requisitos de NFPA 15 para el tipo de equipo a proteger.
+
+**¿La boquilla UL-50 requiere mantenimiento periódico al estar instalada permanentemente en tubería?**
+
+Las boquillas de flujo fijo instaladas en sistemas de tubería seca (no activadas rutinariamente) requieren inspección visual anual según NFPA 25 para verificar obstrucciones, corrosión superficial y estado del asiento. En sistemas con agua permanente (wet pipe), se recomienda también verificar que no haya depósitos calcáreos o biológicos en el orificio. Las boquillas dañadas físicamente deben reemplazarse completas —no deben repararse— para garantizar el factor K original.
