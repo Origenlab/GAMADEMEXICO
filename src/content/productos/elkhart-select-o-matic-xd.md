@@ -20,45 +20,48 @@ galeria:
   - "/img/boquillas-contra-incendios/elkhart-select-o-matic-xd-fondo-gris.avif"
 ---
 
-## Select-O-Matic® XD™ — Cuando la presión del sistema no es predecible
+La Boquilla Select-O-Matic® XD™ de Elkhart Brass es una boquilla automática de línea de mano con rango de flujo de 70 a 200 GPM que ajusta hidráulicamente su apertura interna ante variaciones de presión, manteniendo comportamiento predecible del chorro sin intervención del operador, con presión nominal de 100 PSI, certificada NFPA 1964 y UL Listed. Su mecanismo automático compensa los cambios de presión que ocurren cuando se abren o cierran líneas simultáneas en sistemas complejos, en standpipes con variación de presión entre pisos, o en unidades con múltiples mangueras activas. Está disponible en conexiones de 1.5" y 2.5" NH y es la opción correcta cuando el sistema hidráulico no garantiza presión constante en todos los puntos de operación.
 
-El problema con las boquillas de flujo fijo en sistemas complejos no es la boquilla: es que el sistema rara vez entrega exactamente la presión de diseño en todos los puntos al mismo tiempo.
+## Especificaciones Técnicas
 
-Cuando una unidad está operando con cuatro líneas simultáneas y dos se cierran de repente, la presión en las líneas activas sube. Con una boquilla de flujo fijo, eso significa más velocidad de chorro, más alcance, pero el flujo teóricamente constante puede derivar. Con la Select-O-Matic® XD™, el mecanismo automático interno ajusta la apertura para mantener la presión de boquilla en el rango óptimo — el operador recibe un comportamiento predecible aunque la red esté funcionando en condiciones variables.
-
-### Especificaciones técnicas
-
-| Parámetro | Valor |
-|---|---|
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Elkhart Brass |
+| Modelo | Select-O-Matic® XD™ |
+| Tipo | Boquilla automática de flujo autorregulado |
 | Rango de flujo | 70 a 200 GPM (ajuste automático) |
 | Presión de boquilla nominal | 100 PSI |
-| Mecanismo | Automático — ajuste hidráulico interno |
-| Patrones | Chorro directo, niebla, niebla amplia (0° a 100°) |
-| Conexión | 1½" o 2½" NH |
+| Mecanismo | Ajuste hidráulico interno automático |
+| Patrones de descarga | Chorro directo, niebla, niebla amplia (0° a 100°) |
+| Conexión | 1.5" NH o 2.5" NH |
 | Material | Aluminio anodizado con internos de bronce |
-| Certificación | NFPA 1964, UL Listed |
+| Certificaciones | NFPA 1964, UL Listed |
 
-### Automática vs. fija vs. seleccionable — cuál elegir
+## Características Principales
 
-**Boquilla de flujo fijo (Chief XD®):** sistema hidráulico estable, presión de diseño conocida y consistente, operadores que trabajan con los mismos rangos siempre. La opción más simple y confiable cuando la hidráulica está controlada.
+- Mecanismo hidráulico automático que ajusta la apertura interna ante variaciones de presión, manteniendo comportamiento de chorro predecible sin acción del operador
+- Compensación de presión en sistemas con múltiples líneas: cuando una línea cierra y la presión en las activas sube, la boquilla se ajusta para mantener el patrón correcto
+- Rango de flujo de 70 a 200 GPM con presión nominal de 100 PSI, cubriendo las necesidades de ataque interior y rescate en edificios residenciales e industriales
+- Patrones de descarga seleccionables desde chorro directo hasta niebla amplia de 100°, adaptables al tipo de incendio y técnica de ataque del operador
+- Internos de bronce que mantienen tolerancias precisas del mecanismo automático tras años de uso en condiciones de campo con agua con sedimento
+- Disponible en conexiones 1.5" y 2.5" NH para cubrir líneas de primera intervención y líneas maestras de ataque
+- Aluminio anodizado exterior resistente a impactos y corrosión para uso intensivo en operaciones de combate estructural
+- Certificaciones NFPA 1964 y UL Listed con documentación disponible para proyectos con requisitos de aseguradora
 
-**Boquilla automática (Select-O-Matic® XD™):** sistema con variaciones de presión frecuentes — múltiples líneas que abren y cierran, variaciones en la velocidad de la bomba, presión de red inconsistente. La boquilla compensa lo que el sistema no puede garantizar.
+## Aplicaciones
 
-**Boquilla seleccionable (Phantom® XD™):** sistema bien calibrado donde el operador necesita elegir entre flujos predeterminados para distintos escenarios de intervención. Más sofisticada que la automática, pero requiere un sistema hidráulico que soporte los flujos seleccionados.
+- Brigadas que operan en distintos tipos de escenario — edificios residenciales, bodegas industriales, hospitales — donde la presión del sistema varía y se necesita comportamiento consistente de la boquilla
+- Sistemas de standpipe en edificios donde la presión en la toma de piso varía significativamente entre el piso 3 y el piso 18 por la diferencia de altura
+- Unidades de bomberos que operan frecuentemente con múltiples líneas simultáneas donde abrir o cerrar una línea afecta la presión en las demás
+- Instalaciones con variaciones de velocidad en bomba de incendios que producen fluctuaciones de presión difíciles de predecir por el operador
+- Cuerpos de bomberos municipales que necesitan una boquilla que funcione bien en distintos escenarios sin recalibrar el sistema hidráulico del vehículo
 
-### Cuándo la Select-O-Matic® XD™ es la respuesta correcta
+## Normas Aplicables
 
-Brigadas que responden en distintos tipos de escenario — un día un edificio residencial, otro día una bodega industrial — y necesitan que la boquilla funcione bien en ambos contextos sin recalibrar el sistema hidráulico del vehículo.
+- **NFPA 1964** — Standard for Spray Nozzles: certificación y requisitos de desempeño para boquillas automáticas de mano
+- **UL 401** — Standard for Portable Fire Extinguishing Equipment: aplica a boquillas de línea de mano para combate estructural
+- **NFPA 1963** — Standard for Fire Hose Connections: roscas NH/NST para conexión al sistema de mangueras
+- **NFPA 14** — Standard for the Installation of Standpipe and Hose Systems: boquillas para sistemas de standpipe donde la presión varía por piso
+- **NOM-002-STPS-2010** — Condiciones de seguridad, prevención y protección contra incendios en centros de trabajo
 
-Sistemas de standpipe en edificios donde la presión en la toma de piso varía significativamente entre el piso 3 y el piso 18.
-
-Unidades que operan frecuentemente con múltiples líneas simultáneas donde la apertura o cierre de una línea afecta la presión en las demás.
-
-### Normativa aplicable
-- **NFPA 1964** — Standard for Spray Nozzles
-- **NFPA 14** — Standpipe and Hose Systems
-- **NOM-002-STPS** — Protección contra incendios
-
-### Stock y entrega — Gama de México
-
-La Select-O-Matic® XD™ está disponible en bodega en CDMX y Querétaro, en conexiones de 1½" y 2½". La cotización incluye ficha técnica del fabricante y certificado NFPA 1964 vigente. Para pedidos de evaluación técnica — equipar una unidad piloto antes de comprometer un lote completo — coordinamos la entrega de muestra con asesoría técnica.
+Gama de México es distribuidor autorizado Elkhart Brass en México. La Select-O-Matic® XD™ está disponible en bodega en CDMX y Querétaro en conexiones de 1.5" y 2.5". Para pedidos de evaluación técnica antes de comprometer un lote completo, coordinamos entrega de muestra con asesoría técnica sin costo adicional.

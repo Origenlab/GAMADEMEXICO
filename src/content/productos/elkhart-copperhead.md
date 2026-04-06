@@ -21,51 +21,49 @@ galeria:
   - "/img/monitores-contra-incendios/elkhart-copperhead-fondo-gris.avif"
 ---
 
-## Monitor Copperhead® — Para instalaciones donde el mantenimiento no es una opción fácil
+El Monitor Copperhead® de Elkhart Brass es un monitor industrial de caudal hasta 2,500 GPM a 100 PSI, fabricado en bronce naval resistente a corrosión, con diseño de entrada al ras (flush inlet) y certificaciones FM Approved y CE Certified, desarrollado específicamente para instalaciones donde los monitores pueden pasar meses inactivos entre activaciones reales y deben funcionar sin falla cuando ocurre la emergencia. La certificación FM Approved — requerimiento contractual para instalaciones que reportan a aseguradoras FM Global — valida el diseño bajo condiciones que simulan vibración, cambios de temperatura extremos, exposición a agentes químicos y periodos prolongados de inactividad, criterios más exigentes que los de la certificación UL. Es el monitor de referencia para refinerías, terminales de almacenamiento de hidrocarburos, plantas petroquímicas y parques de tanques PEMEX y CFE.
 
-En una refinería o terminal de almacenamiento, un monitor contra incendios puede pasar meses sin activarse. Cuando se activa, tiene que funcionar. El problema es que muchos monitores que lucen bien en especificaciones de papel acumulan corrosión, depósitos minerales y fricción mecánica durante esos meses de inactividad.
+## Especificaciones Técnicas
 
-El Copperhead® está diseñado para ese escenario: ambientes corrosivos, intervalos largos entre pruebas de operación, y la expectativa de que cuando haya una emergencia real, el equipo responde.
-
-FM Approved significa que Factory Mutual — el asegurador de referencia en la industria petrolera y petroquímica — validó el diseño bajo sus estándares propios, que son más exigentes que UL en aplicaciones industriales de alto riesgo.
-
-### Especificaciones técnicas
-
-| Parámetro | Valor |
-|---|---|
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Elkhart Brass |
+| Modelo | Copperhead® |
+| Tipo | Monitor industrial fijo o portátil |
 | Caudal máximo | 2,500 GPM a 100 PSI |
 | Certificación principal | FM Approved |
 | Certificación adicional | CE Certified |
 | Material | Bronce naval resistente a corrosión |
-| Diseño | Flush inlet (entrada al ras) |
-| Mantenimiento | Diseño libre de mantenimiento |
-| Compatibilidad | Agua, AFFF, FFFP, agua-espuma |
+| Diseño de entrada | Flush inlet (entrada al ras) |
+| Mantenimiento requerido | Diseño libre de mantenimiento |
+| Compatibilidad de fluido | Agua, AFFF, FFFP, agua-espuma |
+| Norma de referencia | NFPA 15 |
 
-### Qué significa FM Approved en contexto industrial
+## Características Principales
 
-Factory Mutual evalúa equipos bajo condiciones que simulan los escenarios de falla más críticos de la industria pesada. Un equipo FM Approved no solo tiene que funcionar en condiciones normales: tiene que funcionar después de estar expuesto a vibración, cambios de temperatura, corrosión por agentes químicos y periodos prolongados de inactividad.
+- FM Approved: certificación de Factory Mutual que valida el diseño bajo condiciones de vibración, temperatura extrema, corrosión química y periodos prolongados de inactividad, superando los criterios de UL para aplicaciones industriales de alto riesgo
+- Diseño libre de mantenimiento: el bronce naval del Copperhead® resiste la corrosión galvánica, los depósitos minerales y la fricción mecánica que acumulan otros monitores durante meses de inactividad en ambientes industriales
+- Bronce naval con resistencia superior a ácidos débiles, solventes, vapores de hidrocarburos y ambientes de alta humedad presentes en refinerías y plantas petroquímicas
+- Diseño flush inlet que elimina obstrucciones en la trayectoria del flujo y simplifica la instalación en colectores de tuberías de la planta
+- Caudal de hasta 2,500 GPM a 100 PSI para cubrir las distancias de separación requeridas por NFPA 30 en parques de tanques y las especificaciones de diseño de PEMEX y CFE
+- Compatibilidad con agua, AFFF, FFFP y mezclas agua-espuma para protección integral de instalaciones con riesgo de incendio de líquidos inflamables
+- CE Certified: cumple los requisitos de la Directiva de Equipos de Presión de la Unión Europea, facilitando especificación en proyectos con normativa internacional
+- Documentación técnica completa para licitaciones públicas: ficha técnica oficial, certificado FM vigente, hoja de datos CE y referencias normativas NFPA
 
-Para instalaciones que reportan a aseguradoras FM Global — que es la mayoría de las refinerías y terminales de almacenamiento en México que cuentan con cobertura de alto valor —, la especificación FM Approved no es una recomendación: es un requisito contractual.
+## Aplicaciones
 
-### Aplicaciones industriales específicas
+- Protección de unidades de proceso, racks de piping y casas de bombas en refinerías y plantas petroquímicas con riesgo de hidrocarburo bajo presión
+- Protección perimetral de parques de tanques en terminales de almacenamiento de combustibles con cobertura de las distancias de separación definidas por NFPA 30
+- Áreas de carga y descarga de hidrocarburos en terminales marítimas y terrestres donde el riesgo de derrame con ignición requiere alta capacidad de extinción inmediata
+- Plantas de industria química y farmacéutica con agentes corrosivos donde los materiales estándar de monitores se degradan en meses de exposición
+- Licitaciones públicas PEMEX, CFE y municipios donde la documentación técnica FM Approved, CE y NFPA es un requisito del proceso de compra
 
-**Refinerías y plantas petroquímicas:** protección de unidades de proceso, racks de piping, casas de bombas y áreas de carga/descarga donde el riesgo es hidrocarburo líquido o gaseoso bajo presión.
+## Normas Aplicables
 
-**Terminales de almacenamiento de combustibles:** protección perimetral de parques de tanques. El Copperhead® en configuración de alto caudal cubre las distancias de separación requeridas por NFPA 30 y las especificaciones típicas de PEMEX y CFE.
+- **NFPA 15** — Standard for Water Spray Fixed Systems for Fire Protection: sistemas fijos de agua donde se especifica el Copperhead®
+- **NFPA 30** — Flammable and Combustible Liquids Code: protección de parques de tanques y áreas de almacenamiento de combustibles
+- **NFPA 11** — Standard for Low-, Medium-, and High-Expansion Foam: operación con espuma AFFF y FFFP en terminales de hidrocarburos
+- **FM Data Sheet 4-2N** — Water Spray Systems (referencia FM Global): estándar del asegurador para sistemas con monitores en la industria petrolera
+- **NOM-002-STPS-2010** — Condiciones de seguridad, prevención y protección contra incendios en centros de trabajo
 
-**Industria química y farmacéutica:** entornos con agentes corrosivos donde los materiales estándar degradan en meses. El bronce naval del Copperhead® resiste ácidos débiles, solventes y ambientes con alta humedad.
-
-**Parques de tanques PEMEX y CFE:** el proceso de compras en estas instituciones requiere documentación técnica completa — certific FM, CE, hojas de datos del fabricante. Gama de México entrega todo el paquete documental con cada equipo.
-
-### Normativa aplicable
-- **NFPA 15** — Water Spray Fixed Systems for Fire Protection
-- **NFPA 30** — Flammable and Combustible Liquids Code
-- **NFPA 11** — Foam Systems (cuando se usa con espuma)
-- **FM Data Sheet 4-2N** — Water Spray Systems (referencia FM Global)
-- **NOM-022-STPS** — Estática, electricidad, protección en instalaciones petroleras
-
-### Stock y entrega — Gama de México
-
-El Copperhead® está disponible en bodega en CDMX y Querétaro. Para proyectos de ingeniería que requieren especificación técnica formal, Gama de México proporciona: ficha técnica oficial Elkhart Brass, certificado FM vigente, hoja de datos CE y referencia a normativa NFPA aplicable.
-
-Para licitaciones públicas (PEMEX, CFE, municipios): preparamos el paquete técnico completo que exige la documentación oficial de compras. Consulta con nuestro equipo técnico al 55 6529 8240 o a ventas@gamademexico.com.
+Gama de México es distribuidor autorizado Elkhart Brass en México. El Copperhead® está disponible en bodega en CDMX y Querétaro. Para proyectos de ingeniería formal y licitaciones públicas, entregamos el paquete técnico completo: ficha técnica oficial Elkhart Brass, certificado FM vigente, hoja de datos CE y referencia a normativa NFPA aplicable. Contacto: 55 6529 8240 o ventas@gamademexico.com.

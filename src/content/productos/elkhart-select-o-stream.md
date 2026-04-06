@@ -19,43 +19,50 @@ galeria:
   - "/img/boquillas-contra-incendios/elkhart-select-o-stream-fondo-gris.avif"
 ---
 
-## Boquilla Select-O-Stream™ — Flujo seleccionable para caudales medios
+La Boquilla Select-O-Stream™ de Elkhart Brass es una boquilla master stream de flujo seleccionable en cinco posiciones de 350 a 1,250 GPM, con presión de operación de 80–100 PSI, alcance efectivo hasta 50 metros en chorro recto y entrada de 2.5" NH, certificada UL Listed. Está optimizada para el rango de caudal medio de la mayoría de las bombas en unidades nacionales de bomberos (750–1,250 GPM) y para monitores de 2.5" como el Sidewinder™, Stinger 2.0™ y Spitfire™ donde el flujo no alcanza los 2,000 GPM de la X-Stream™. El collar rotatorio con posiciones detent proporciona retroalimentación táctil que permite al operador confirmar el flujo seleccionado incluso con guantes de combate puestos y visibilidad limitada.
 
-La Select-O-Stream™ es la hermana menor de la X-Stream™, optimizada para el rango de 350 a 1,250 GPM. Es la boquilla master stream que se monta sobre monitores de 2½" — Sidewinder™, Stinger 2.0™, Spitfire™ — donde el caudal no llega a los 2,000 GPM pero se necesita la misma flexibilidad de ajuste.
+## Especificaciones Técnicas
 
-Lo que hace valiosa a la Select-O-Stream™ es la simplicidad de selección. Un collar rotatorio con posiciones detent marca cada flujo nominal. El operador gira, siente el click, y sabe exactamente cuántos GPM está entregando. En medio de un incendio, con guantes puestos y visibilidad limitada, esa retroalimentación táctil importa más de lo que parece.
-
-### Especificaciones técnicas
-
-| Parámetro | Valor |
-|---|---|
-| Tipo | Master stream, flujo seleccionable |
-| Rango de flujo | 350, 500, 750, 1,000, 1,250 GPM |
-| Presión de operación | 80-100 PSI |
-| Patrón | Chorro recto a niebla ancha |
+| Característica | Especificación |
+|----------------|----------------|
+| Marca | Elkhart Brass |
+| Modelo | Select-O-Stream™ |
+| Tipo | Boquilla master stream de flujo seleccionable |
+| Flujos seleccionables | 350, 500, 750, 1,000, 1,250 GPM |
+| Presión de operación | 80–100 PSI |
+| Patrón de descarga | Chorro recto a niebla ancha |
 | Alcance efectivo | Hasta 50 metros en chorro recto |
 | Material | Aluminio anodizado |
-| Entrada | 2½" NH |
+| Conexión de entrada | 2.5" NH |
+| Compatibilidad de fluido | Agua, AFFF |
+| Selector de flujo | Collar rotatorio con posiciones detent |
 | Certificaciones | UL Listed |
-| Compatibilidad | Agua, AFFF |
 
-### Aplicaciones principales
+## Características Principales
 
-**Deck guns en unidades de bomberos:** la mayoría de las bombas de unidades nacionales entregan entre 750 y 1,250 GPM. La Select-O-Stream™ cubre ese rango exacto. El capitán ajusta el flujo según la presión disponible y el tipo de incendio — no necesita cargar boquillas intercambiables.
+- Flujo seleccionable en cinco posiciones (350–1,250 GPM) mediante collar rotatorio con posiciones detent que proporciona retroalimentación táctil confirmando el flujo seleccionado
+- Optimizada para el rango de caudal de la mayoría de las bombas en unidades nacionales de bomberos, cubriendo sin cambio de equipo desde operaciones de ataque hasta protección de exposiciones
+- Compatible con monitores Sidewinder™, Stinger 2.0™ y Spitfire™ de Elkhart Brass: la combinación monitor + boquilla diseñada específicamente para el rango de 2.5"
+- Patrón continuo desde chorro recto de máximo alcance hasta niebla ancha para protección del operador, seleccionable en campo según el escenario
+- Compatibilidad con AFFF para aplicaciones en incendios de líquidos inflamables donde se requiere capacidad de espuma a caudales medios
+- Aluminio anodizado resistente a corrosión en ambientes con vapores de hidrocarburos, sal marina y condiciones de intemperie prolongada
+- Entrada de 2.5" NH estándar que conecta directamente a monitores, deck guns y tendidos de manguera maestra sin adaptadores
+- Certificación UL Listed con certificado de conformidad disponible para proyectos con requisitos documentales de aseguradora
 
-**Monitores portátiles:** cuando se monta un monitor portable sobre base de hidrante, el caudal disponible depende de la presión del hidrante en ese momento. La Select-O-Stream™ se adapta a lo que hay.
+## Aplicaciones
 
-**Sistemas fijos de caudal medio:** en aplicaciones industriales donde el análisis hidráulico arroja necesidades de 500-1,000 GPM por punto de protección, la Select-O-Stream™ sobre un monitor fijo tipo Spitfire™ es una combinación eficiente y económica.
+- Deck guns en unidades de bomberos con bombas de 750–1,250 GPM donde la Select-O-Stream™ cubre el rango exacto sin boquillas intercambiables
+- Monitores portátiles sobre base de hidrante donde el caudal disponible varía según la presión del hidrante en el momento de la operación
+- Sistemas fijos de protección industrial de caudal medio (500–1,000 GPM por punto) sobre monitores Spitfire™ en bodegas y plantas de proceso
+- Protección de patios de maniobras, áreas de carga y descarga de combustibles y almacenes con riesgo de incendio de rápida propagación
+- Operaciones de espuma AFFF en incendios de charco de combustible en instalaciones sin sistemas de aspersión fija
 
-### Diferencia con la Select-O-Matic XD
+## Normas Aplicables
 
-La Select-O-Matic XD es para líneas de mano (handline) de 1½" y 2½" con flujos de 50-350 GPM. La Select-O-Stream™ es para aplicaciones master stream con flujos de 350-1,250 GPM. No se intercambian — cada una está dimensionada para su aplicación.
+- **NFPA 1964** — Standard for Spray Nozzles: certificación y requisitos de desempeño para boquillas de agua contra incendios
+- **UL 401** — Standard for Portable Fire Extinguishing Equipment: aplica a boquillas de aplicación manual y sobre monitor
+- **NFPA 1963** — Standard for Fire Hose Connections: roscas NH/NST para la conexión de entrada de la boquilla
+- **NFPA 1901** — Standard for Automotive Fire Apparatus: especificaciones de boquillas master stream para deck guns en unidades
+- **NOM-002-STPS-2010** — Condiciones de seguridad, prevención y protección contra incendios en centros de trabajo
 
-### Normativa aplicable
-- **NFPA 1964** — Standard for Spray Nozzles
-- **NFPA 1901** — Standard for Automotive Fire Apparatus
-- **NOM-002-STPS** — Condiciones de seguridad contra incendios
-
-### Stock y entrega — Gama de México
-
-Entrega en 2-3 semanas en configuraciones estándar. Se recomienda cotizar junto con el monitor para asegurar compatibilidad de roscas y flujo óptimo.
+Gama de México es distribuidor autorizado Elkhart Brass en México. La Select-O-Stream™ se recomienda cotizar junto con el monitor para asegurar compatibilidad de roscas, flujo óptimo y presión de operación del sistema completo. Entrega en 2–3 semanas en configuraciones estándar, con ficha técnica oficial y certificado UL vigente.
