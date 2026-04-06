@@ -1,6 +1,6 @@
 ---
-title: "Adaptador Swivel Giratorio NH 2.5\" Bronce"
-description: "Adaptador swivel giratorio NH 2.5\" que evita torsión de manguera. Bronce fundido con rotación libre 360°. Presión 300 PSI."
+title: "Adaptador Swivel Giratorio NH 2.5\" Bronce S-327 360° | Elkhart Brass UL FM | México"
+description: "Adaptador swivel giratorio NH 2.5\" bronce Elkhart Brass S-327. Rotación 360° bajo presión. 300 PSI. UL Listed FM Approved. Hidrantes, camiones autobomba México."
 categoria: "conexiones-herrajes"
 subcategoria: "adaptadores"
 imagen: "/img/conexiones-herrajes/adaptador-swivel-2-5-frontal.avif"
@@ -59,6 +59,27 @@ El adaptador swivel se especifica en cualquier punto de la línea de manguera do
 - **NFPA 1901** — Standard for Automotive Fire Apparatus: aplica cuando el adaptador swivel se instala en salidas de vehículos de emergencia donde el movimiento relativo entre la toma del carro y la manguera tendida es inherente a la operación.
 - **NFPA 14** — Standard for the Installation of Standpipe and Hose Systems: rige la especificación de conexiones en sistemas de tuberías verticales donde el movimiento de la manguera de ataque pueda transmitir torsión a las salidas fijas del sistema.
 - **NOM-002-STPS-2010** — Condiciones de seguridad contra incendios en los centros de trabajo: norma oficial mexicana que establece los requisitos operativos de los componentes del sistema contra incendio en instalaciones industriales, incluyendo la protección de mangueras y conexiones contra daño mecánico.
+
+## Productos Relacionados
+
+- [Adaptador Reducción NH 2.5" a 1.5" Bronce R-327](/productos/adaptador-bronce-reduccion-2-5-1-5) — complementa el swivel en la transición a línea de ataque 1.5"
+- [Hidrante de Banqueta NH](/productos/hidrante-banqueta) — toma fija donde se instala el swivel para proteger la rosca del hidrante
+- [Manguera Blindex 2.5" × 30m](/productos/manguera-blindex-2-5-30m) — manguera de suministro 2.5" NH que se beneficia del swivel en el punto de conexión
+- [Monitor Cuello Cisne](/productos/monitor-cuello-cisne) — monitor que requiere swivel en su base para girar con la manguera de alimentación
+
+## Preguntas Frecuentes
+
+**¿En qué punto de la línea se instala el adaptador swivel?**
+Se instala en el punto de conexión fijo: entre la toma fija del hidrante (o la salida del camión autobomba) y el primer tramo de manguera móvil. El objetivo es que todo movimiento rotacional de la manguera —sea por reposicionamiento del tendido o por el desplazamiento del personal— quede absorbido en el adaptador sin transmitirse a la rosca fija del hidrante ni al cabezal del vehículo.
+
+**¿El mecanismo swivel puede fallar bajo presión alta y provocar fuga?**
+No en condiciones de operación normal. Los sellos PTFE de baja fricción del modelo S-327 están diseñados para mantener hermeticidad a 300 PSI (presión de trabajo) y hasta 1,000 PSI (presión de prueba hidrostática). Los rodamientos de acero inoxidable garantizan que el mecanismo no se trabe bajo presión. La inspección anual del estado de los sellos y la sustitución preventiva cada 5 años son las únicas medidas de mantenimiento recomendadas.
+
+**¿Es compatible el swivel S-327 con mangueras Storz si se usa en combinación con un adaptador NH–Storz?**
+Sí. El swivel S-327 tiene entrada NH hembra y salida NH macho; si aguas abajo de la salida NH macho se instala un adaptador NH–Storz, la manguera Storz puede acoplarse con normalidad y el conjunto swivel + adaptador NH–Storz provee tanto la conexión rápida Storz como la rotación libre en el punto fijo.
+
+**¿Es posible usar el swivel como adaptador permanente instalado en el hidrante?**
+Sí, es una de sus aplicaciones más comunes en instalaciones industriales de alta frecuencia de uso. Al instalarlo permanentemente en la toma del hidrante, cada conexión de manguera es más rápida y segura. Se recomienda inspeccionarlo anualmente para verificar que el mecanismo de rotación sigue siendo libre y que no hay corrosión en el punto de unión con la rosca del hidrante.
 
 ---
 

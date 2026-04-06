@@ -1,6 +1,6 @@
 ---
-title: "Boquilla Certificada Dual UL/FM Premium 60-250 GPM"
-description: "Boquilla contra incendio con doble certificación UL 401 y FM Approved. Elkhart Brass Select-O-Flow XD, entrada 1.5\" o 2.5\" NST, documentación completa para máxima aceptación."
+title: "Boquilla Select-O-Flow XD Certified SFL-XDC UL401 FM 60-250 GPM | Elkhart Brass | México"
+description: "Boquilla Elkhart Brass SFL-XDC triple certificación UL 401 FM Approved cUL. 60-250 GPM, 5 posiciones, aluminio Elk-O-Lite. Instalaciones FM Global México."
 categoria: "boquillas"
 subcategoria: "certificada"
 imagen: "/img/productos/boquilla-certificada-fm-ul-contra-incendios-bronce-fondo-blanco-01.avif"
@@ -77,3 +77,24 @@ La doble certificación **UL 401 / FM Approved** no es redundante: cada organism
 | **NOM-002-STPS-2010** | STPS México | Norma de condiciones de seguridad en centros de trabajo; acepta equipos UL/FM listados |
 
 Gama de México es distribuidor autorizado de Elkhart Brass en México y proporciona la documentación original de certificaciones UL 401, FM Approved y cUL con cada unidad, incluyendo declaración de conformidad NFPA 1964, resultados de pruebas de fábrica, curva de rendimiento calibrada y manual de operación trilingüe (EN/ES/FR).
+
+## Productos Relacionados
+
+- [Boquilla Certificada FM Approved Industrial](/productos/boquilla-certificada-fm-approved-industrial) — alternativa FM para instalaciones industriales de proceso con requisitos de mayor caudal
+- [Boquilla Certificada NFPA 1964 Bomberos](/productos/boquilla-certificada-nfpa-1964-bomberos) — opción certificada NFPA para brigadas con presupuesto sin requisito FM
+- [Manguera Blindex 2.5" × 30m NST](/productos/manguera-blindex-2-5-30m) — manguera de suministro 2.5" NST para conectar con la entrada 2.5" de esta boquilla
+- [Adaptador NH a Storz 2.5" Bronce D-327-S](/productos/adaptador-bronce-nh-storz-2-5) — adaptador para integrar la boquilla a sistemas con mangueras Storz existentes
+
+## Preguntas Frecuentes
+
+**¿Por qué elegir la certificación FM Approved en lugar de solo UL 401 para una planta industrial?**
+Si la póliza de seguro de su planta es con FM Global, el uso de equipos con FM Approved activo puede ser una condición contractual para mantener la cobertura y acceder a primas preferenciales. FM Global aplica criterios de prueba más rigurosos que UL en ciertos aspectos de robustez mecánica. Si su aseguradora no es FM, UL 401 solo puede ser suficiente; consúltelo antes de especificar.
+
+**¿El interlock positivo del selector de 5 posiciones impide ajustes en campo durante el combate?**
+No. El interlock impide detener el selector en posiciones intermedias (lo que causaría flujo irregular y pérdida de control del patrón de descarga), pero permite cambiar entre cualquiera de las 5 posiciones definidas mientras la boquilla está en uso y bajo presión. El operador selecciona la posición giratoria necesaria con una mano sin interrumpir el flujo.
+
+**¿La documentación de certificación incluida con la boquilla es suficiente para una auditoría de aseguradora FM?**
+Gama de México entrega con cada unidad la hoja de producto FM con número de aprobación activo, el certificado UL 401 con número de listado, la declaración de conformidad NFPA 1964, los resultados de pruebas de fábrica y la curva de rendimiento calibrada. Este paquete cubre los documentos que FM Global solicita en auditoría para verificar la especificación correcta del equipo.
+
+**¿Cuál es la vida útil de la boquilla SFL-XDC y cada cuánto debe inspeccionarse?**
+Elkhart Brass no establece una vida útil fija; el componente puede durar décadas con mantenimiento adecuado. La NFPA 1962 (Standard for the Care, Use, Inspection, Service Testing, and Replacement of Fire Hose, Couplings, Nozzles, and Nozzle Shut-Off Valves Used for Fire Attack) recomienda inspección anual de flujo e integridad. El selector de posiciones y el shut-off de palanca deben lubricarse cada 2 años con grasa de silicona compatible con aluminio.

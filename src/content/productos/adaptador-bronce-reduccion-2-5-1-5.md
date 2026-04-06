@@ -1,6 +1,6 @@
 ---
-title: "Adaptador Reducción NH 2.5\" a 1.5\" Bronce"
-description: "Adaptador de reducción NH 2.5\" hembra a 1.5\" macho. Bronce fundido para transición de diámetros. Presión 300 PSI. UL Listed."
+title: "Adaptador Reducción NH 2.5\" a 1.5\" Bronce R-327 UL FM | Elkhart Brass | México"
+description: "Adaptador reducción NH 2.5\" hembra a 1.5\" macho bronce Elkhart Brass R-327. 300 PSI, prueba 1000 PSI. UL FM. Standpipe, gabinetes y líneas de ataque México."
 categoria: "conexiones-herrajes"
 subcategoria: "adaptadores"
 imagen: "/img/conexiones-herrajes/adaptador-reduccion-2-5-1-5-frontal.avif"
@@ -59,6 +59,27 @@ La reducción de 2.5" a 1.5" se especifica cuando el sistema de distribución op
 - **NFPA 1901** — Standard for Automotive Fire Apparatus: aplica cuando el adaptador se utiliza como pieza de reducción en salidas de camiones autobomba que derivan líneas de 2.5" hacia mangueras de ataque de 1.5".
 - **NFPA 14** — Standard for the Installation of Standpipe and Hose Systems: rige la especificación de reducciones en sistemas de tuberías verticales, incluyendo los requisitos de presión y compatibilidad dimensional para salidas que sirven tanto a 2.5" como a 1.5".
 - **NOM-002-STPS-2010** — Condiciones de seguridad contra incendios en los centros de trabajo: norma oficial mexicana que exige la correcta especificación de todos los componentes del sistema contra incendio, incluyendo las piezas de reducción de diámetro en líneas de ataque.
+
+## Productos Relacionados
+
+- [Adaptador Doble Hembra NH 1.5" Bronce F-327](/productos/adaptador-bronce-doble-hembra-1-5) — para resolver interfaz macho-macho en las líneas de 1.5" de ataque
+- [Manguera Blindex 1.5" × 15m](/productos/manguera-blindex-1-5-15m) — manguera de ataque 1.5" NH que se conecta a la salida de este adaptador
+- [Boquilla Tipo Pistola Elkhart](/productos/boquilla-tipo-pistola) — boquilla de ataque 1.5" NH compatible con la salida del adaptador R-327
+- [Gabinete de Manguera Empotrado](/productos/gabinete-empotrado) — gabinete clase II con alimentación 2.5" que utiliza este adaptador para la salida 1.5"
+
+## Preguntas Frecuentes
+
+**¿Por qué reducir de 2.5" a 1.5" y no usar directamente manguera de 2.5" en ataque manual?**
+La manguera de 2.5" con agua a presión es rígida y pesada: requiere dos o tres personas para maniobrarla en ataque manual. La de 1.5" puede ser desplazada por uno o dos bomberos, lo que agiliza la penetración en edificios y espacios confinados. La línea de suministro de 2.5" mantiene el caudal y la presión disponibles; el adaptador R-327 realiza la transición de diámetro en un solo componente sin pérdida de presión significativa.
+
+**¿La reducción de diámetro en el adaptador R-327 genera pérdida de presión relevante?**
+El interior pulido del cuerpo de bronce y el perfil aerodinámico de la transición minimizan la caída de presión en el cambio de sección. En condiciones normales de operación (100-150 PSI en la línea principal), la pérdida de presión en el adaptador es marginal —inferior a 2-3 PSI— y no compromete la presión disponible en la boquilla de 1.5".
+
+**¿El adaptador R-327 es compatible con los gabinetes de manguera estándar instalados en edificios?**
+Sí, siempre que el gabinete tenga alimentación de 2.5" NH y la dotación sea manguera de 1.5" NH. Esta configuración corresponde a los gabinetes Clase III de NFPA 14 (salidas tanto de 2.5" como de 1.5"), donde el adaptador de reducción permite servir la línea de 1.5" desde la toma principal de 2.5" sin instalar una salida separada.
+
+**¿El swivel en la entrada 2.5" es funcional bajo presión plena o solo facilita la instalación?**
+El swivel está diseñado para rotar libremente bajo la presión de trabajo de 300 PSI, no solo durante la instalación. Esto permite al operador reorientar la manguera de suministro una vez que el sistema está presurizado sin necesidad de cerrar el flujo, facilitando el ajuste de la dirección del tendido durante el combate.
 
 ---
 
