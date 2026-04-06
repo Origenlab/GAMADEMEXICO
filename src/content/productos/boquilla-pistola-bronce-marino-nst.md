@@ -1,6 +1,6 @@
 ---
-title: "Boquilla Tipo Pistola Bronce Marino 40-125 GPM"
-description: "Boquilla contra incendio tipo pistola en bronce marino para ambientes costeros y offshore. Entrada 1.5\" NST, resistente a agua salada, selector 4 posiciones 40-125 GPM."
+title: "Boquilla SFL-BG Marine C95800 SOLAS NFPA 1964 40-125 GPM | Elkhart Brass | Offshore México"
+description: "Boquilla Elkhart Brass SFL-BG Marine bronce marino C95800. NFPA 1964 SOLAS. 40-125 GPM, cierre herradura. Buques, plataformas offshore y terminales costeras México."
 categoria: "boquillas"
 subcategoria: "tipo-pistola"
 imagen: "/img/productos/boquilla-tipo-pistola-contra-incendios-camiones-fondo-14.avif"
@@ -70,5 +70,26 @@ La **boquilla Elkhart Brass SFL-BG Marine** está fabricada íntegramente en **b
 - **IMO MSC.1/Circ.1369** — Directrices revisadas para sistemas de lucha contra incendios a bordo de buques: referencia de la Organización Marítima Internacional para equipos portátiles de combate de incendio en embarcaciones.
 - **UL 401** — *Standard for Hose Nozzles for Fire-Fighting Service*: norma de referencia para la evaluación de resistencia estructural, hermeticidad y rendimiento de boquillas de manguera contra incendio.
 - **NOM-002-STPS-2010** — *Condiciones de seguridad contra incendios en los centros de trabajo*: establece los requisitos de equipo contra incendio en instalaciones industriales en México; aplicable a terminales portuarias y plantas costeras sujetas a la regulación de la STPS.
+
+## Productos Relacionados
+
+- [Boquilla Marine USCG-150 Triple Cert USCG SOLAS MED](/productos/boquilla-certificada-uscg-maritima) — boquilla con certificación USCG/SOLAS/MED para instalaciones bajo jurisdicción USCG
+- [Boquilla Industrial MIB-250 Bronce Marino C95800 SOLAS](/productos/boquilla-industrial-bronce-marino-offshore) — versión de mayor caudal 95-250 GPM para plataformas con redes de 2.5"
+- [Manguera Blindex Storz Refinería 2.5"](/productos/manguera-blindex-storz-refineria) — manguera de alta presión para sistemas de brigada en instalaciones costeras y offshore
+- [Adaptador Swivel Giratorio NH 2.5" S-327](/productos/adaptador-bronce-swivel-2-5) — swivel para puntos de conexión fijos en cubierta donde la manguera se mueve continuamente
+
+## Preguntas Frecuentes
+
+**¿Por qué elegir la SFL-BG Marine sobre una boquilla de aluminio estándar en entornos costeros?**
+En ambientes marinos con exposición a agua salada y atmósfera de cloruros, una boquilla de aluminio fundido estándar puede presentar corrosión galvánica visible en 6-18 meses, especialmente en los puntos de contacto bimetálico entre el cuerpo y los tornillos o el swivel. El bronce marino C95800 forma una capa pasivante de óxido de aluminio que resiste la corrosión por cloruros durante décadas. El mayor costo inicial se recupera rápidamente al evitar los reemplazos frecuentes y el riesgo de falla de material durante una emergencia.
+
+**¿El mecanismo de herradura (Horseshoe Handle) es operacionalmente diferente al palanca convencional?**
+La herradura (*Horseshoe Handle*) es un mecanismo de apertura/cierre en forma de U que se acciona girándola hacia adelante o hacia atrás con la mano del pulgar. Permite apertura y cierre completo con una sola mano sin cambiar el agarre del pistol grip, lo que es crítico en cubierta de buque donde el operador necesita sujetarse o mantener el equilibrio con la otra mano. El palanca convencional requiere el movimiento de ambas manos para algunos operadores. En condiciones de cubierta mojada y movimiento, la herradura ofrece mayor seguridad operativa.
+
+**¿La boquilla SFL-BG Marine requiere enjuague con agua dulce después de cada uso con agua de mar?**
+A diferencia de las boquillas de aluminio, el bronce marino C95800 no requiere enjuague obligatorio con agua dulce —puede permanecer mojado con agua de mar sin riesgo de corrosión acelerada. Sin embargo, es una buena práctica enjuagar con agua dulce después de cada uso para eliminar depósitos de sal en el mecanismo selector y el swivel, preservando la suavidad de operación. Si el sistema de la embarcación usa agua de mar como agente extintor, el enjuague periódico (mensual) es suficiente para mantenimiento preventivo.
+
+**¿La boquilla SFL-BG Marine es compatible con los acoplamientos NST estándar de los bomberos mexicanos?**
+Sí. La entrada 1½" NST (National Standard Thread) es el estándar predominante en mangueras de incendio en México, EE.UU. y América Latina. Es compatible con todas las mangueras NST de 1½" en el mercado y con los adaptadores y conexiones NST disponibles. Si el sistema del buque o la plataforma usa mangueras con acoplamiento Storz, se requiere un adaptador NST-Storz —Gama de México tiene en inventario la línea completa de adaptadores Elkhart Brass para esta conversión.
 
 Gama de México es **distribuidor autorizado** de Elkhart Brass con presencia nacional y bodegas en **CDMX y Querétaro**. Solicite cotización de la boquilla SFL-BG Marine con ficha técnica oficial, documentación de cumplimiento NFPA 1964 / SOLAS y asesoría técnica para proyectos en ambientes marinos y *offshore*.

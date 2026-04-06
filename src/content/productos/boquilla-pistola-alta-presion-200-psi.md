@@ -1,6 +1,6 @@
 ---
-title: "Boquilla Tipo Pistola Alta Presión 200 PSI Bronce"
-description: "Boquilla contra incendio tipo pistola de alta presión 200 PSI para brigadas industriales. Bronce fundido, entrada 1.5\" NST, flujo 30-95 GPM, ideal para espuma AFFF."
+title: "Boquilla SFL-HP Alta Presión 200 PSI AFFF Bronce 30-95 GPM | Elkhart Brass NFPA 1964 | México"
+description: "Boquilla Elkhart Brass SFL-HP alta presión 200 PSI bronce fundido. NFPA 1964 NFPA 11. 30-95 GPM, compatible AFFF. Refinerías, terminales y plataformas México."
 categoria: "boquillas"
 subcategoria: "tipo-pistola"
 imagen: "/img/productos/boquilla-tipo-pistola-contra-incendios-alta-presion-19.avif"
@@ -70,5 +70,26 @@ La **boquilla Elkhart Brass SFL-HP** (*High Pressure*) es una boquilla de flujo 
 - **UL 401** — *Standard for Hose Nozzles for Fire-Fighting Service*: norma de referencia para evaluación de resistencia estructural, hermeticidad y rendimiento bajo ciclos de presión de boquillas de manguera.
 - **NOM-002-STPS-2010** — *Condiciones de seguridad contra incendios en los centros de trabajo*: norma mexicana que define los requisitos mínimos de equipo contra incendio en instalaciones industriales; el uso de boquillas certificadas NFPA 1964 y NFPA 11 es plenamente compatible con su cumplimiento.
 - **API 2021** — *Management of Atmospheric Storage Tank Fires*: guía de la industria petrolera que referencia los equipos de ataque manual, incluidas boquillas de alta presión, para el control de incendios en tanques de almacenamiento.
+
+## Productos Relacionados
+
+- [Boquilla Industrial Foam Master 3060 AFFF UL 162](/productos/boquilla-industrial-espuma-afff) — boquilla especializada para espuma con mayor rango de flujo y certificación UL 162 para instalaciones HPR
+- [Boquilla Certificada PEMEX PX-200 NRF-PEMEX](/productos/boquilla-certificada-pemex-petroleo) — boquilla con certificación NRF-PEMEX para brigadas en refinerías y terminales de PEMEX
+- [Manguera Blindex Premium PEMEX 2.5"](/productos/manguera-blindex-premium-pemex) — manguera certificada PEMEX para operar con esta boquilla en sistemas de brigada de refinería
+- [Adaptador NH a Storz 2.5" Bronce D-327-S](/productos/adaptador-bronce-nh-storz-2-5) — adaptador para integrar la red NH de la refinería con mangueras Storz del sistema
+
+## Preguntas Frecuentes
+
+**¿Por qué se necesita una boquilla de alta presión (200 PSI) en refinerías y plataformas?**
+Las redes de protección contra incendios en refinerías y plataformas offshore frecuentemente operan a presiones mayores a 150 PSI para garantizar caudal suficiente en los puntos más alejados de la bomba. Las boquillas estándar (100-150 PSI máximo) pueden sufrir daño estructural o pérdida de sellado interno a estas presiones. La SFL-HP está probada hasta 200 PSI (14 BAR), lo que la hace compatible con los sistemas de alta presión sin riesgo de falla durante el combate.
+
+**¿La compatibilidad con AFFF significa que la boquilla ya mezcla el concentrado o solo lo aplica?**
+La boquilla SFL-HP solo aplica la mezcla espuma-agua que ya llega proporcionada desde el sistema. No mezcla concentrado: para eso se requiere un proporcionador externo (inline eductor, around-the-pump proportioner o balanced pressure). La compatibilidad de la boquilla con AFFF garantiza que sus materiales internos (bronce, EPDM) no son degradados por los tensoactivos del concentrado y que la geometría de descarga genera el patrón adecuado para que la espuma se deposite sin romperse sobre la superficie del combustible.
+
+**¿El bronce fundido de la SFL-HP resiste el agua de mar en plataformas offshore?**
+El bronce fundido estándar (C83600 o similar) tiene resistencia moderada al agua de mar. En aplicaciones offshore con exposición permanente al ambiente marino (atmósfera salina, rociado de agua de mar), se recomienda evaluar la boquilla Marine Industrial MIB-250 en aleación C95800, que tiene resistencia superior a los cloruros para uso en cubierta de plataformas y embarcaciones. La SFL-HP es más adecuada para instalaciones terrestres de refinería en zonas costeras donde la exposición no es continua.
+
+**¿Qué diferencia operativa tiene la SFL-HP frente a la boquilla PX-200 PEMEX?**
+La principal diferencia es la certificación: la PX-200 tiene declaración de cumplimiento NRF-005-PEMEX y certificado de origen nacional obligatorio para licitaciones PEMEX. La SFL-HP es un producto Elkhart Brass de fabricación en EE.UU. con certificación NFPA 1964. Ambas son compatibles con AFFF y tienen rangos de flujo similares, pero si el proceso de adquisición requiere NRF-PEMEX y contenido nacional, debe especificar la PX-200. Para proyectos privados sin requisito NRF, la SFL-HP de Elkhart Brass es una opción de calidad premium.
 
 Gama de México es **distribuidor autorizado** de Elkhart Brass con cobertura nacional y bodegas en **CDMX y Querétaro**. Solicite cotización de la boquilla SFL-HP con ficha técnica oficial, certificado de cumplimiento NFPA 1964 / NFPA 11 y asesoría técnica especializada en protección de riesgos industriales con agentes espumantes.

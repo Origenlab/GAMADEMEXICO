@@ -1,6 +1,6 @@
 ---
-title: "Boquilla Tipo Pistola Forestal Wildland 10-60 GPM"
-description: "Boquilla contra incendio tipo pistola para operaciones forestales y wildland. Aluminio ligero, entrada 1\" NPSH, flujo 10-60 GPM, diseño compacto para brigadas forestales."
+title: "Boquilla Wildland Series 1\" NPSH 0.8 kg 10-60 GPM USDA Forest | Elkhart Brass NFPA 1964 | México"
+description: "Boquilla Elkhart Brass Wildland Series 1\" NPSH aluminio forjado anodizado. 10-60 GPM, 0.8 kg. NFPA 1964 USDA Forest. Brigadas CONAFOR y wildland México."
 categoria: "boquillas"
 subcategoria: "tipo-pistola"
 imagen: "/img/productos/boquilla-tipo-pistola-contra-incendios-vista-lateral-05.avif"
@@ -70,5 +70,26 @@ La **boquilla Elkhart Brass Wildland Series** es una boquilla tipo pistola de pe
 - **USDA Forest Service Equipment Development Center** — Especificación de boquillas forestales: el modelo cumple con los estándares de rendimiento y construcción del Servicio Forestal de los EUA, referencia internacional para equipamiento de combate de incendios forestales.
 - **NOM-002-STPS-2010** — *Condiciones de seguridad contra incendios en los centros de trabajo*: aplicable a instalaciones industriales con riesgo de incendio en zonas de interfaz o con áreas verdes adyacentes; el uso de boquillas certificadas NFPA 1964 es compatible con el cumplimiento de esta norma.
 - **NOM-021-SEMARNAT-2015** — Norma de referencia en operaciones de manejo del fuego en terrenos forestales bajo jurisdicción de SEMARNAT y CONAFOR en México.
+
+## Productos Relacionados
+
+- [Boquilla Tipo Pistola Nacional NPG-125 NOM](/productos/boquilla-pistola-nacional-economica) — boquilla económica 1.5" NST para brigadas internas con riesgo de interfaz urbano-forestal
+- [Manguera Forestal 1" × 15m](/productos/manguera-forestal-1-15m) — manguera forestal 1" NPSH diseñada para conectarse a la entrada de esta boquilla
+- [Manguera Forestal Kit Brigada](/productos/manguera-forestal-kit-brigada) — kit completo de mangueras forestales para brigadas CONAFOR con boquilla incluida
+- [Manguera Forestal Resistente Abrasión](/productos/manguera-forestal-resistente-abrasion) — manguera forestal de alta resistencia para terreno accidentado donde se usa esta boquilla
+
+## Preguntas Frecuentes
+
+**¿Cuál es la diferencia entre la rosca NPSH y la NST/NH en boquillas forestales?**
+NPSH (National Pipe Straight Hose thread) es el estándar de rosca para mangueras forestales de 1" utilizado por el USDA Forest Service y adoptado por CONAFOR para equipos de combate en incendios forestales. NST/NH (National Hose) es el estándar industrial para mangueras de 1.5" y 2.5" en sistemas de hidrantes y brigadas estructurales. Son incompatibles entre sí directamente; para conectar equipo forestal (1" NPSH) a un hidrante industrial (NST), se requiere un adaptador de conversión.
+
+**¿Cuánto peso puede ahorrar el brigadista usando la Wildland Series frente a una boquilla industrial convencional?**
+La Wildland Series pesa 0.8 kg. Una boquilla tipo pistola industrial de 1.5" de aluminio forjado pesa entre 1.6 y 2.5 kg. El ahorro es de 0.8 a 1.7 kg por boquilla. En brigadas forestales donde el brigadista carga además mochila de agua (20 L = 20 kg), herramientas manuales y equipo personal, cada kilo ahorrado en equipo reduce la fatiga acumulada durante turnos de 8-12 horas en terreno accidentado. El diseño ultraligero no compromete la resistencia: el aluminio forjado anodizado duro tiene resistencia mecánica superior al aluminio fundido utilizado en boquillas de mayor peso.
+
+**¿La boquilla Wildland Series puede usarse con mochilas de bomba (backpack pump) de 20 litros?**
+Sí. Las mochilas de bomba (Indian tank, slip-on) generalmente presuriza a 40-80 PSI con una presión máxima de 100 PSI. La Wildland Series opera eficazmente en el rango de 40-125 PSI, y en la posición de 10 GPM produce un chorro concentrado eficiente para atacar puntos calientes desde una mochila de bomba sin desperdiciar agua. Este es uno de los usos más comunes de esta boquilla en brigadas comunitarias de CONAFOR con recursos de agua limitados en campo.
+
+**¿La aprobación del USDA Forest Service es reconocida por CONAFOR para equipamiento de brigadas en México?**
+CONAFOR (Comisión Nacional Forestal) utiliza las especificaciones del USDA Forest Service como referencia técnica para el equipamiento de brigadas en México, dado que no existe una norma oficial mexicana de equipamiento forestal equivalente en alcance técnico. Los equipos con aprobación USDA Forest Service son generalmente aceptados en los procesos de adquisición de CONAFOR como equivalente técnico internacional. Para licitaciones gubernamentales formales, puede requerirse declaración del fabricante de cumplimiento con los estándares técnicos de referencia del USDA.
 
 Gama de México es **distribuidor autorizado** de Elkhart Brass para la República Mexicana, con inventario disponible en bodegas en **CDMX y Querétaro**. Solicite cotización de la boquilla Wildland Series con ficha técnica, certificado NFPA 1964 / USDA Forest Service y asesoría para equipamiento de brigadas forestales y equipos de primera respuesta rural.

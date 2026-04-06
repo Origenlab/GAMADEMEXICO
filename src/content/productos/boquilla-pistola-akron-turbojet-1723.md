@@ -1,6 +1,6 @@
 ---
-title: "Boquilla Tipo Pistola Akron Turbojet 1723 95-200 GPM"
-description: "Boquilla contra incendio tipo pistola Akron Brass Turbojet 1723 con 4 posiciones de flujo constante. Entrada 1.5\" NST, cuerpo Pyrolite extruido, garantía 10 años."
+title: "Boquilla Turbojet 1723 Flujo Constante 95-200 GPM Pyrolite | Akron Brass NFPA 1964 | México"
+description: "Boquilla Akron Brass Turbojet 1723 flujo constante 95-200 GPM. NFPA 1964, Pyrolite extruido, 4 posiciones, garantía 10 años. Ataque estructural brigadas México."
 categoria: "boquillas"
 subcategoria: "tipo-pistola"
 imagen: "/img/productos/boquilla-tipo-pistola-contra-incendios-certificada-fm-15.avif"
@@ -70,5 +70,26 @@ La **boquilla Akron Brass Turbojet Style 1723** es una boquilla de flujo constan
 - **NOM-002-STPS-2010** — *Condiciones de seguridad contra incendios en los centros de trabajo*: establece los requisitos mínimos de equipo de protección y combate de incendios en instalaciones industriales y comerciales en México; el uso de boquillas certificadas según NFPA 1964 es compatible con el cumplimiento de esta norma.
 - **NFPA 1901** — *Standard for Automotive Fire Apparatus*: referencia para equipamiento de boquillas en unidades automotrices de bomberos donde se especifican boquillas de flujo constante de rango medio.
 - **NFPA 13** — *Standard for the Installation of Sprinkler Systems*: norma de referencia cuando la boquilla se integra como complemento de ataque manual a sistemas automáticos en instalaciones industriales.
+
+## Productos Relacionados
+
+- [Boquilla Tipo Pistola Elkhart Phantom XD](/productos/boquilla-tipo-pistola) — boquilla Elkhart de flujo seleccionable como alternativa al Turbojet para brigadas con requisito UL/FM
+- [Boquilla TFT Handline Select-O-Stream 95-300 GPM](/productos/boquilla-pistola-tft-handline-95-300) — alternativa Task Force Tips de mayor rango de flujo hasta 300 GPM
+- [Manguera Blindex 1.5" × 15m NST](/productos/manguera-blindex-1-5-15m) — manguera de ataque 1.5" NST para conectar a la entrada de esta boquilla
+- [Adaptador Reducción NH 2.5" a 1.5" Bronce R-327](/productos/adaptador-bronce-reduccion-2-5-1-5) — para adaptar línea de suministro 2.5" a la entrada NST 1.5" de esta boquilla
+
+## Preguntas Frecuentes
+
+**¿Qué ventaja tiene una boquilla de "flujo constante" sobre una de "presión constante"?**
+Una boquilla de flujo constante (constant gallonage) mantiene el caudal predefinido independientemente de las variaciones de presión en el sistema (dentro de su rango), lo que simplifica el cálculo de la tasa de aplicación y la gestión del suministro de agua. Una boquilla de presión constante (automatic) ajusta el orificio para mantener la presión fija, variando el caudal. El flujo constante es preferido en brigadas industriales y municipales donde el diseño hidráulico del sistema está basado en caudales definidos y se necesita predictibilidad operativa.
+
+**¿El material Pyrolite extruido es tan duradero como el aluminio forjado en uso industrial?**
+Pyrolite es un compuesto polimérico de ingeniería de alto rendimiento desarrollado por Akron Brass. Ofrece resistencia al impacto superior al aluminio fundido y comparable al aluminio forjado, con mejor absorción de energía ante golpes bruscos. Su principal ventaja sobre el metal es la ausencia de corrosión: en ambientes húmedos, con sal o con vapores ácidos, el Pyrolite no se corroe ni forma óxido que pueda contaminar el empaque o el mecanismo. La desventaja es una menor conductividad térmica, lo que puede ser relevante en exposición directa a llamas —escenario donde el aluminio o el bronce son preferibles.
+
+**¿La garantía de 10 años de Akron Brass cubre defectos de fabricación o también desgaste por uso?**
+La garantía de Akron Brass de 10 años cubre defectos de fabricación y materiales —no el desgaste normal por uso o daño por negligencia. Específicamente, cubre fallas estructurales del cuerpo Pyrolite, mecanismos de selector y swivel que fallen bajo condiciones normales de uso, y defectos en la rosca de entrada. Los empaques y los dientes de flujo se consideran componentes de consumo y se reemplazan por mantenimiento, no por garantía. Gama de México gestiona los reclamos de garantía directamente con Akron Brass.
+
+**¿La capacidad de "flush" de la Turbojet 1723 puede usarse en campo sin interrumpir la operación?**
+Sí. La función de flush permite expulsar sedimentos, tierra y objetos pequeños que puedan haber ingresado a la boquilla durante el despliegue o por agua sucia del sistema, sin necesidad de cerrar la boquilla ni interrumpir el flujo de agua. Se activa girando el selector a la posición de flush mientras la boquilla está abierta, lo que expulsa los materiales extraños con el caudal en curso. Esta función es especialmente valiosa en operaciones forestales o en sistemas con agua de pozo que pueden traer partículas en suspensión.
 
 Gama de México es **distribuidor autorizado** de Akron Brass para la República Mexicana, con inventario disponible en bodegas en **CDMX y Querétaro**. Cotice la boquilla Turbojet 1723 con entrega inmediata; incluimos hoja técnica oficial, certificado de cumplimiento NFPA 1964 y soporte técnico posventa en español.
