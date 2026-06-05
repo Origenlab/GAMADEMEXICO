@@ -34,8 +34,8 @@ const tieneContenidoDerecho = parrafo1 || parrafo2;
 
   {tieneContenidoDerecho && (
     <div class="section-header__right">
-      {parrafo1 && <p>{parrafo1}</p>}
-      {parrafo2 && <p>{parrafo2}</p>}
+      {parrafo1 && <p set:html={parrafo1} />}
+      {parrafo2 && <p set:html={parrafo2} />}
     </div>
   )}
 </div>
