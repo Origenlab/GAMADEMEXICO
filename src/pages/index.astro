@@ -5,12 +5,21 @@ import ServiceCard from '../components/ServiceCard.astro';
 import CategoryCard from '../components/CategoryCard.astro';
 import Faq from '../components/Faq.astro';
 import BlogRecent from '../components/blog/BlogRecent.astro';
+import { generateSrcset } from '../lib/images';
 import {
   buildOrganizationSchema,
   buildLocalBusinessSchema,
   buildWebSiteSchema,
   buildFAQSchema,
 } from '../lib/seo';
+
+// Giros del directorio certificado (cards con imagen real)
+const directorioGiros = [
+  { label: 'Hoteles', href: '/empresas-certificadas/giro/hotel', img: '/img/directorio/directorio-hotel-sistema-contra-incendios.avif', alt: 'Hoteles con sistemas contra incendios certificados por Gama de México' },
+  { label: 'Restaurantes', href: '/empresas-certificadas/giro/restaurante', img: '/img/directorio/directorio-restaurante-sistema-contra-incendios.avif', alt: 'Restaurantes con protección contra incendios verificada' },
+  { label: 'Oficinas', href: '/empresas-certificadas/giro/oficina', img: '/img/directorio/directorio-oficina-sistema-contra-incendios.avif', alt: 'Oficinas y corporativos con sistemas contra incendios certificados' },
+  { label: 'Industrias', href: '/empresas-certificadas/giro/industria', img: '/img/directorio/directorio-industria-sistema-contra-incendios.avif', alt: 'Plantas industriales con sistemas contra incendios certificados' },
+];
 
 // FAQ data (usada en el HTML y en el schema)
 const faqItems = [
@@ -479,26 +488,20 @@ const structuredData = [
           </div>
         </div>
         <div class="directorio-promo__stats">
-          <div class="directorio-stat">
-            <span class="directorio-stat__icon">🏨</span>
-            <span class="directorio-stat__label">Hoteles</span>
-            <a href="/empresas-certificadas/giro/hotel" class="directorio-stat__link">Ver certificados →</a>
-          </div>
-          <div class="directorio-stat">
-            <span class="directorio-stat__icon">🍽️</span>
-            <span class="directorio-stat__label">Restaurantes</span>
-            <a href="/empresas-certificadas/giro/restaurante" class="directorio-stat__link">Ver certificados →</a>
-          </div>
-          <div class="directorio-stat">
-            <span class="directorio-stat__icon">🏢</span>
-            <span class="directorio-stat__label">Oficinas</span>
-            <a href="/empresas-certificadas/giro/oficina" class="directorio-stat__link">Ver certificados →</a>
-          </div>
-          <div class="directorio-stat">
-            <span class="directorio-stat__icon">🏭</span>
-            <span class="directorio-stat__label">Industrias</span>
-            <a href="/empresas-certificadas/giro/industria" class="directorio-stat__link">Ver certificados →</a>
-          </div>
+          {directorioGiros.map((giro) => {
+            const responsive = generateSrcset(giro.img, { widths: [320, 480, 640], sizes: '(max-width: 768px) 45vw, 220px', quality: 78 });
+            return (
+              <a href={giro.href} class="directorio-giro">
+                <div class="directorio-giro__media">
+                  <img src={responsive.src} srcset={responsive.srcset} sizes={responsive.sizes} alt={giro.alt} width="320" height="200" loading="lazy" decoding="async" />
+                </div>
+                <div class="directorio-giro__body">
+                  <span class="directorio-giro__label">{giro.label}</span>
+                  <span class="directorio-giro__link">Ver certificados <span aria-hidden="true">&rarr;</span></span>
+                </div>
+              </a>
+            );
+          })}
         </div>
       </div>
     </div>
@@ -634,48 +637,70 @@ const structuredData = [
     gap: var(--spacing-md, 1rem);
   }
 
-  .directorio-stat {
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    border-radius: var(--border-radius-lg, 12px);
-    padding: var(--spacing-lg, 1.5rem);
-    text-align: center;
-    transition: background-color 0.2s, transform 0.2s;
-  }
-
-  .directorio-stat:hover {
-    background: rgba(255, 255, 255, 0.12);
-    transform: translateY(-2px);
-  }
-
-  .directorio-stat__icon {
-    display: block;
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .directorio-stat__label {
-    display: block;
-    font-size: 1rem;
-    font-weight: 700;
-    color: white;
-    margin-bottom: 0.5rem;
-  }
-
-  .directorio-stat__link {
-    font-size: 0.8rem;
-    color: var(--color-primary, #c8102e);
+  /* Cards de giro con imagen real (patrón de card del sitio) */
+  .directorio-giro {
+    display: flex;
+    flex-direction: column;
+    background: var(--color-white);
+    border-radius: var(--border-radius-lg, 14px);
+    overflow: hidden;
     text-decoration: none;
-    font-weight: 600;
-    background: rgba(200, 16, 46, 0.2);
-    padding: 0.25rem 0.6rem;
-    border-radius: 4px;
-    display: inline-block;
-    transition: background-color 0.2s;
+    box-shadow: var(--shadow-md);
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
   }
 
-  .directorio-stat__link:hover {
-    background: rgba(200, 16, 46, 0.35);
+  .directorio-giro:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-xl);
+  }
+
+  .directorio-giro__media {
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    background: var(--color-accent);
+  }
+
+  .directorio-giro__media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform var(--transition-slow);
+  }
+
+  .directorio-giro:hover .directorio-giro__media img {
+    transform: scale(1.06);
+  }
+
+  .directorio-giro__body {
+    padding: var(--spacing-md);
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  .directorio-giro__label {
+    font-size: var(--font-size-base);
+    font-weight: 700;
+    color: var(--color-secondary);
+    line-height: 1.2;
+  }
+
+  .directorio-giro__link {
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    color: var(--color-primary);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+  }
+
+  .directorio-giro__link span {
+    transition: transform var(--transition-fast);
+  }
+
+  .directorio-giro:hover .directorio-giro__link span {
+    transform: translateX(3px);
   }
 
   /* ===== SEO CONTENT — rediseño full-width con estructura ===== */
