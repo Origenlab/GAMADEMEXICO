@@ -66,7 +66,7 @@ const structuredData = [
   description="Distribuidor autorizado Elkhart Brass en México. Monitores, boquillas, válvulas y mangueras certificadas UL/FM. Stock inmediato. Cotización en 24 horas."
   activePage="inicio"
   structuredData={structuredData}
-  showLeadCapture={true}
+  showLeadCapture={false}
   heroTitle="Equipos Contra Incendios Certificados en México"
   heroIntro="Distribuidor autorizado Elkhart Brass. Monitores, boquillas, válvulas y mangueras con certificación UL/FM para plantas industriales, refinerías y constructoras en toda la República."
   heroBadge="Distribuidor Autorizado Elkhart Brass"
@@ -516,16 +516,57 @@ const structuredData = [
     background="white"
   />
 
-  <!-- FAQ -->
-  <section class="faq" id="faq" aria-labelledby="faq-title">
+  <!-- FAQ + COTIZACIÓN POR WHATSAPP -->
+  <section class="faq-contact" id="faq" aria-labelledby="faq-title">
     <div class="container">
       <SectionHeader
         titulo="Preguntas Frecuentes sobre Equipos Contra Incendios"
-        subtitulo="Resolvemos las dudas más comunes sobre cotización, tipos de equipos, envíos y certificaciones"
+        subtitulo="Resolvemos las dudas más comunes sobre cotización, tipos de equipos, envíos y certificaciones. ¿La tuya no está? Cotiza directo por WhatsApp."
         idTitulo="faq-title"
-        parrafo1="Las preguntas que más nos hacen por WhatsApp y teléfono, resueltas directo. Si la tuya no está aquí, escríbenos al 55 6529 8240 y te respondemos en menos de 24 horas."
       />
-      <Faq items={faqItems} id="faq" />
+      <div class="faq-contact__grid">
+        <div class="faq-contact__faq">
+          <Faq items={faqItems} id="faq" />
+        </div>
+
+        <aside class="faq-contact__aside" id="cotizar" aria-label="Cotización por WhatsApp">
+          <div class="quote-card">
+            <span class="quote-card__badge">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884"/></svg>
+              Cotiza por WhatsApp
+            </span>
+            <h3 class="quote-card__title">Cotiza tu equipo en minutos</h3>
+            <p class="quote-card__sub">Cuéntanos qué necesitas y te asesoramos sin costo. Respuesta en menos de 24 horas.</p>
+
+            <form id="cotizar-form" class="quote-form" aria-label="Formulario de cotización por WhatsApp">
+              <input type="text" id="lead-nombre" name="nombre" class="quote-form__input" placeholder="Nombre completo" required autocomplete="name" aria-label="Nombre completo">
+              <input type="text" id="lead-contacto" name="contacto" class="quote-form__input" placeholder="Teléfono o correo" required autocomplete="tel" aria-label="Teléfono o correo electrónico">
+              <select id="lead-equipo" name="tipo_equipo" class="quote-form__select" required aria-label="Tipo de equipo que necesitas">
+                <option value="" disabled selected>¿Qué equipo necesitas?</option>
+                <option value="Monitores">Monitores</option>
+                <option value="Boquillas">Boquillas</option>
+                <option value="Mangueras">Mangueras</option>
+                <option value="Válvulas">Válvulas</option>
+                <option value="Conexiones y herrajes">Conexiones y herrajes</option>
+                <option value="Gabinetes e hidrantes">Gabinetes e hidrantes</option>
+                <option value="Varios equipos">Varios equipos</option>
+                <option value="Otro">Otro (especificar)</option>
+              </select>
+              <button type="submit" class="btn btn--primary quote-form__submit">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884"/></svg>
+                Enviar por WhatsApp
+              </button>
+            </form>
+
+            <ul class="quote-card__trust">
+              <li>Sin compromiso</li>
+              <li>Atención personalizada</li>
+              <li>Envío a todo México</li>
+            </ul>
+            <p class="quote-card__alt">O escríbenos directo: <a href="https://wa.me/5215565298240" target="_blank" rel="noopener">55 6529 8240</a> · <a href="/contacto">más canales</a></p>
+          </div>
+        </aside>
+      </div>
     </div>
   </section>
 
@@ -898,6 +939,143 @@ const structuredData = [
   @media (min-width: 1024px) {
     .seo-content__grid {
       grid-template-columns: minmax(0, 1fr) 420px;
+    }
+  }
+
+  /* ===== FAQ + COTIZACIÓN — módulo de dos columnas ===== */
+  .faq-contact {
+    padding: var(--spacing-3xl) 0;
+  }
+
+  .faq-contact__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-2xl);
+    align-items: start;
+  }
+
+  .quote-card {
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-top: 4px solid var(--color-primary);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-lg);
+    padding: var(--spacing-lg);
+  }
+
+  .quote-card__badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #128C4A;
+    background: rgba(37, 211, 102, 0.12);
+    padding: 0.4rem 0.8rem;
+    border-radius: 999px;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .quote-card__badge svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .quote-card__title {
+    font-size: 1.3rem;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: var(--color-secondary);
+    margin: 0 0 0.45rem;
+  }
+
+  .quote-card__sub {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
+    line-height: 1.55;
+    margin: 0 0 var(--spacing-md);
+  }
+
+  .quote-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .quote-form__input,
+  .quote-form__select {
+    width: 100%;
+    padding: 0.85rem var(--spacing-sm);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    background: var(--color-white);
+    color: var(--color-text);
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+  }
+
+  .quote-form__input:focus,
+  .quote-form__select:focus {
+    border-color: var(--color-primary);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(196, 30, 58, 0.15);
+  }
+
+  .quote-form__submit {
+    width: 100%;
+    gap: 0.5rem;
+  }
+
+  .quote-form__submit svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .quote-card__trust {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 var(--spacing-sm);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1rem;
+  }
+
+  .quote-card__trust li {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-light);
+  }
+
+  .quote-card__trust li::before {
+    content: "\2713";
+    color: var(--color-primary);
+    font-weight: 700;
+    margin-right: 0.3rem;
+  }
+
+  .quote-card__alt {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-light);
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  .quote-card__alt a {
+    color: var(--color-primary);
+    font-weight: 600;
+  }
+
+  @media (min-width: 1024px) {
+    .faq-contact__grid {
+      grid-template-columns: 1fr 400px;
+    }
+
+    .faq-contact__aside {
+      position: sticky;
+      top: calc(var(--header-height) + 1rem);
     }
   }
 </style>
