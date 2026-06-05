@@ -67,7 +67,7 @@ Esta configuración se especifica para combate estructural porque las mangueras 
 - [Conexión Wye B-97-B Bronce 2.5"×2.5" NH](/productos/conexion-wye-bronce-2-5) — versión en bronce con dos salidas 2.5" para cuando se requiere dividir la línea maestra sin reducir el diámetro
 - [Conexión Wye WYE-25 Nacional 2.5" NH](/productos/conexion-wye-economica-nacional) — alternativa económica de fabricación mexicana con NOM-002 cuando no se requiere certificación UL/FM
 - [Adaptador de Reducción NH 2.5" a 1.5" Bronce R-327](/productos/adaptador-bronce-reduccion-2-5-1-5) — alternativa de reducción de diámetro en un solo punto cuando solo se necesita una salida de 1.5" en lugar de dos
-- [Manguera Blindex 1.5" × 30m](/productos/manguera-blindex-1-5-30m) — manguera de ataque 1.5" NH para conectar a las salidas del Wye B-100-A en operaciones de combate estructural
+- [Manguera Blindex 1.5" × 30m](/productos/manguera-blindex-1-5-15m) — manguera de ataque 1.5" NH para conectar a las salidas del Wye B-100-A en operaciones de combate estructural
 
 ## Preguntas Frecuentes
 

@@ -72,7 +72,7 @@ El chiflón Elkhart Brass modelo 205-BA incorpora un mecanismo de ajuste continu
 - [Chiflón 205-A Aluminio Ligero 1.5" NH 75-125 GPM](/productos/chiflon-aluminio-ligero-1-5) — alternativa más ligera para operaciones prolongadas donde el peso total del equipo es crítico
 - [Chiflón Chief XD 1.5" NH 160-200 GPM Forjado](/productos/chiflon-chief-xd-1-5) — versión de mayor caudal con mango bale para brigadas de alto rendimiento con presión reducida
 - [Chiflón 205-B-25 Tres Pasos 2.5" NH 150-250 GPM](/productos/chiflon-205b-2-5) — versión de mayor diámetro para cuando se requiere caudal superior a los 125 GPM máximos del 205-BA
-- [Manguera Blindex 1.5" × 30m](/productos/manguera-blindex-1-5-30m) — manguera de ataque 1.5" NH para líneas de avance de mayor longitud con el chiflón 205-BA
+- [Manguera Blindex 1.5" × 30m](/productos/manguera-blindex-1-5-15m) — manguera de ataque 1.5" NH para líneas de avance de mayor longitud con el chiflón 205-BA
 
 ## Preguntas Frecuentes
 

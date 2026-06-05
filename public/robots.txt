@@ -7,7 +7,6 @@ Allow: /
 Disallow: /404
 Disallow: /404.html
 Disallow: /api/
-Disallow: /_astro/
 Crawl-delay: 1
 
 # Bots específicos de motores de búsqueda principales

@@ -3,11 +3,19 @@ import TopBar from '../components/TopBar.astro';
 import Header from '../components/Header.astro';
 import Breadcrumb from '../components/Breadcrumb.astro';
 import Hero from '../components/Hero.astro';
+import TrustBar from '../components/TrustBar.astro';
 import CtaCatalogo from '../components/CtaCatalogo.astro';
 import LeadCapture from '../components/LeadCapture.astro';
 import Footer from '../components/Footer.astro';
 import WhatsAppBubble from '../components/WhatsAppBubble.astro';
 import '../styles/global.css';
+import '../styles/professional.css';
+// Fuente Inter auto-hospedada (sin petición externa a Google Fonts)
+import '@fontsource/inter/400.css';
+import '@fontsource/inter/500.css';
+import '@fontsource/inter/600.css';
+import '@fontsource/inter/700.css';
+import '@fontsource/inter/800.css';
 import { SITE_URL, SITE_NAME, OG_IMAGE_DEFAULT, GEO, BRAND_COLOR } from '../lib/config';
 import { getPageCtaContent } from '../lib/pageCta';
 import { toAbsoluteImageUrl } from '../lib/images';
@@ -73,6 +81,7 @@ const hasHeroContent = Astro.slots.has('hero-content');
 const shouldShowHero = showHero && heroTitle;
 const pageTitle = heroTitle || title.split('|')[0].trim();
 const heroCta = getPageCtaContent(pathname, pageTitle);
+const CDN_BASE = (import.meta.env.PUBLIC_EWWW_CDN_BASE ?? '').trim().replace(/\/+$/, '');
 ---
 
 <!DOCTYPE html>
@@ -122,9 +131,9 @@ const heroCta = getPageCtaContent(pathname, pageTitle);
   <link rel="manifest" href="/site.webmanifest">
   <meta name="theme-color" content={BRAND_COLOR}>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Preconnect al CDN de imágenes (ExactDN). La fuente Inter va auto-hospedada. -->
+  {CDN_BASE && <link rel="preconnect" href={CDN_BASE} crossorigin />}
+  {CDN_BASE && <link rel="dns-prefetch" href={CDN_BASE} />}
 
   {structuredData.map((data) => (
     <script type="application/ld+json" set:html={JSON.stringify(data)} />
@@ -154,17 +163,21 @@ const heroCta = getPageCtaContent(pathname, pageTitle);
     })();
   </script>
 
-  <!-- TruConversion for gamademexico.com -->
-  <script type="text/javascript">
-    var _tip = _tip || [];
-    (function(d,s,id){
-      var js, tjs = d.getElementsByTagName(s)[0];
-      if(d.getElementById(id)) { return; }
-      js = d.createElement(s); js.id = id;
-      js.async = true;
-      js.src = d.location.protocol + '//app.truconversion.com/ti-js/62721/6efb8.js';
-      tjs.parentNode.insertBefore(js, tjs);
-    }(document, 'script', 'ti-js'));
+  <!-- TruConversion — cargado tras 'load' + idle para no bloquear el render -->
+  <script is:inline>
+    (function(){
+      window._tip = window._tip || [];
+      function load(){
+        if (document.getElementById('ti-js')) return;
+        var js = document.createElement('script');
+        js.id = 'ti-js'; js.async = true;
+        js.src = location.protocol + '//app.truconversion.com/ti-js/62721/6efb8.js';
+        document.head.appendChild(js);
+      }
+      function schedule(){ (window.requestIdleCallback || function(f){ setTimeout(f, 2000); })(load); }
+      if (document.readyState === 'complete') schedule();
+      else window.addEventListener('load', schedule, { once: true });
+    })();
   </script>
 </head>
 
@@ -203,6 +216,7 @@ const heroCta = getPageCtaContent(pathname, pageTitle);
       mostrarContenidoDerecho={heroShowRightContent}
     />
   )}
+  {shouldShowHero && <TrustBar />}
   {shouldShowHero && (
     <CtaCatalogo
       titulo={heroCta.titulo}

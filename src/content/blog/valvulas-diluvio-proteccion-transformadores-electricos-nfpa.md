@@ -66,7 +66,7 @@ La mayoría de los sistemas modernos de protección de transformadores utilizan 
 
 La válvula de diluvio opera mediante un diafragma flexible o un émbolo que, bajo presión de la cámara de actuación, mantiene el obturador cerrado contra el asiento. La presión en la cámara es igual o levemente superior a la presión de suministro. Cuando el sistema de detección ordena la apertura, una válvula piloto libera la presión de la cámara de actuación. Sin la presión de retención, la presión del suministro empuja el obturador hacia arriba, abre el paso y el agua fluye hacia la tubería de distribución.
 
-El mantenimiento de la cámara de actuación es crítico precisamente porque es la parte del sistema que trabaja bajo presión continua. La acumulación de sedimentos, los depósitos calcáreos o la corrosión del diafragma pueden hacer que la válvula no abra cuando el detector la ordena, que tarde más de lo calculado en abrir, o en casos extremos que se active sin señal del detector. Las tres fallas son inaceptables y se previenen con el programa de inspección que establece [NFPA 25](/blog/valvulas-control-sistemas-incendios-tipos-supervision).
+El mantenimiento de la cámara de actuación es crítico precisamente porque es la parte del sistema que trabaja bajo presión continua. La acumulación de sedimentos, los depósitos calcáreos o la corrosión del diafragma pueden hacer que la válvula no abra cuando el detector la ordena, que tarde más de lo calculado en abrir, o en casos extremos que se active sin señal del detector. Las tres fallas son inaceptables y se previenen con el programa de inspección que establece [NFPA 25](/blog/valvulas-contra-incendios/valvulas-control-sistemas-incendios-tipos-supervision).
 
 ---
 
@@ -119,7 +119,7 @@ Para instalaciones en zonas industriales de México, especialmente en entornos c
 - **Hierro dúctil**: Mayor resistencia mecánica, mejor para sistemas con alta presión o golpe de ariete frecuente
 - **Bronce o latón**: Cuerpos pequeños (hasta 2"), excelente resistencia a la corrosión en ambientes húmedos
 
-La [certificación UL/FM](/blog/certificaciones-ul-fm-equipos-contra-incendios-importancia) de la válvula es un requisito para proyectos que deben cumplir con especificaciones de aseguradoras internacionales. Verificar que el número de archivo UL o FM esté vigente antes de la compra.
+La [certificación UL/FM](/blog/monitores-contra-incendios/certificaciones-ul-fm-equipos-contra-incendios-importancia) de la válvula es un requisito para proyectos que deben cumplir con especificaciones de aseguradoras internacionales. Verificar que el número de archivo UL o FM esté vigente antes de la compra.
 
 ### Integración con el Sistema de Detección
 
@@ -147,7 +147,7 @@ La prueba anual de activación completa es el punto donde más sistemas fallan. 
 
 ### Registro Documental
 
-Todo mantenimiento de válvulas de diluvio debe quedar documentado con fecha, nombre del técnico, resultado de la inspección y acciones tomadas. Esta documentación es requerida por [NFPA 25](/blog/valvulas-control-sistemas-incendios-tipos-supervision) y es la evidencia principal durante auditorías de protección civil, revisiones de seguros y certificaciones ISO. Un sistema bien mantenido sin documentación equivale a un sistema sin mantenimiento para efectos de cumplimiento normativo.
+Todo mantenimiento de válvulas de diluvio debe quedar documentado con fecha, nombre del técnico, resultado de la inspección y acciones tomadas. Esta documentación es requerida por [NFPA 25](/blog/valvulas-contra-incendios/valvulas-control-sistemas-incendios-tipos-supervision) y es la evidencia principal durante auditorías de protección civil, revisiones de seguros y certificaciones ISO. Un sistema bien mantenido sin documentación equivale a un sistema sin mantenimiento para efectos de cumplimiento normativo.
 
 ---
 
@@ -164,7 +164,7 @@ Las instalaciones industriales de Nuevo León, Coahuila, Chihuahua y Tamaulipas 
 La Ciudad de México, Estado de México, Querétaro, Guanajuato y Jalisco tienen la mayor concentración de instalaciones industriales con transformadores de poder que requieren protección activa. Ofrecemos servicio de asesoría técnica in-situ para proyectos de nueva instalación y actualización de sistemas existentes.
 
 **Zona Petrolera (Golfo):**
-Veracruz, Tabasco y Campeche concentran la infraestructura petroquímica y de refinación más importante del país. Mantenemos inventario de válvulas de diluvio certificadas FM Approved para proyectos en instalaciones de PEMEX y proveedores del sector energético. Los sistemas de protección en esta región frecuentemente combinan agua pulverizada con espuma AFFF, lo que requiere [válvulas de diluvio especializadas](/blog/valvulas-diluvio-espuma-industria-petroquimica-nfpa-16) para doble servicio.
+Veracruz, Tabasco y Campeche concentran la infraestructura petroquímica y de refinación más importante del país. Mantenemos inventario de válvulas de diluvio certificadas FM Approved para proyectos en instalaciones de PEMEX y proveedores del sector energético. Los sistemas de protección en esta región frecuentemente combinan agua pulverizada con espuma AFFF, lo que requiere [válvulas de diluvio especializadas](/blog/valvulas-contra-incendios/valvulas-diluvio-espuma-industria-petroquimica-nfpa-16) para doble servicio.
 
 **Zona Sur y Sureste:**
 Atendemos instalaciones de generación eléctrica y transmisión en estados del sur con tiempos de entrega de 3-5 días hábiles. Para proyectos urgentes, coordinamos envíos con courier especializado para garantizar disponibilidad del equipo en el cronograma de instalación.
@@ -191,7 +191,7 @@ Sí. Las válvulas de diluvio tienen una cámara de actuación que debe mantener
 
 ### ¿Se puede usar una válvula de diluvio para espuma en lugar de agua?
 
-Sí, existen válvulas de diluvio diseñadas para sistemas de espuma en instalaciones petroquímicas y de almacenamiento de hidrocarburos. El cuerpo y los sellos deben ser compatibles con los concentrados de espuma AFFF o AR-AFFF. Para aplicaciones con espuma, el sistema incluye proporcionador de espuma entre la bomba y la válvula, y las boquillas de descarga son diferentes a las de agua pulverizada estándar. Ver nuestra [guía de válvulas de diluvio para industria petroquímica](/blog/valvulas-diluvio-espuma-industria-petroquimica-nfpa-16) para detalles específicos.
+Sí, existen válvulas de diluvio diseñadas para sistemas de espuma en instalaciones petroquímicas y de almacenamiento de hidrocarburos. El cuerpo y los sellos deben ser compatibles con los concentrados de espuma AFFF o AR-AFFF. Para aplicaciones con espuma, el sistema incluye proporcionador de espuma entre la bomba y la válvula, y las boquillas de descarga son diferentes a las de agua pulverizada estándar. Ver nuestra [guía de válvulas de diluvio para industria petroquímica](/blog/valvulas-contra-incendios/valvulas-diluvio-espuma-industria-petroquimica-nfpa-16) para detalles específicos.
 
 ---
 
@@ -207,13 +207,13 @@ Contáctenos para asesoría técnica en su proyecto de protección de subestacio
 
 ### Válvulas de Diluvio y Control
 - [Válvulas de Diluvio y Espuma](/valvulas-contra-incendios) - Para sistemas de agua pulverizada y espuma
-- [Válvulas de Control y Supervisión](/blog/valvulas-control-sistemas-incendios-tipos-supervision) - Guía completa de selección
-- [Válvulas OS&Y para Subestaciones](/blog/valvulas-compuerta-osy-sprinklers-nfpa-13-mexico) - Control de suministro principal
-- [Válvulas Check y Retención](/blog/valvulas-check-retencion-sistemas-sprinkler-nfpa-13) - Prevención de retorno
+- [Válvulas de Control y Supervisión](/blog/valvulas-contra-incendios/valvulas-control-sistemas-incendios-tipos-supervision) - Guía completa de selección
+- [Válvulas OS&Y para Subestaciones](/blog/valvulas-contra-incendios/valvulas-compuerta-osy-sprinklers-nfpa-13-mexico) - Control de suministro principal
+- [Válvulas Check y Retención](/blog/valvulas-contra-incendios/valvulas-check-retencion-sistemas-sprinkler-nfpa-13) - Prevención de retorno
 
 ### Sistemas Complementarios
 - [Monitores Contra Incendios](/monitores-contra-incendios) - Para respaldo móvil en subestaciones
 - [Mangueras Contra Incendios](/mangueras-contra-incendios) - Para acceso manual de brigada interna
 - [Conexiones y Herrajes](/conexiones-herrajes-contra-incendios) - Coples, adaptadores y tomas siamesas
-- [Sistemas de Rociadores NFPA 13](/blog/sistemas-rociadores-automaticos-nfpa-13-mexico) - Para edificios de control adyacentes
-- [Gabinetes e Hidrantes](/gabinetes-hidrantes) - Estaciones de intervención en subestaciones
+- [Sistemas de Rociadores NFPA 13](/blog/valvulas-contra-incendios/sistemas-rociadores-automaticos-nfpa-13-mexico) - Para edificios de control adyacentes
+- [Gabinetes e Hidrantes](/gabinetes-hidrantes-contra-incendios) - Estaciones de intervención en subestaciones

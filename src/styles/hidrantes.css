@@ -93,7 +93,7 @@
 
   .map-placeholder__note {
     font-size: 0.85rem;
-    color: #999;
+    color: #5f6368;
     margin-top: 0.5rem;
   }
 
@@ -130,7 +130,7 @@
     border-radius: 4px;
   }
 
-  .legend-color--rojo { background: #c8102e; }
+  .legend-color--rojo { background: #C41E3A; }
   .legend-color--amarillo { background: #ffc107; }
   .legend-color--verde { background: #4caf50; }
   .legend-color--azul { background: #2196f3; }
@@ -162,7 +162,7 @@
   }
 
   .state-card:hover {
-    border-color: #c8102e;
+    border-color: #C41E3A;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   }
@@ -181,7 +181,7 @@
   }
 
   .state-card__count {
-    background: #c8102e;
+    background: #C41E3A;
     color: white;
     padding: 0.25rem 0.6rem;
     border-radius: 12px;
@@ -201,7 +201,7 @@
   }
 
   .stat-mini--green { color: #2e7d32; }
-  .stat-mini--gray { color: #888; }
+  .stat-mini--gray { color: #5f6368; }
 
   .state-card__cities {
     font-size: 0.85rem;
@@ -240,7 +240,7 @@
     height: 100%;
   }
 
-  .color-card--rojo .hydrant-icon { color: #c8102e; }
+  .color-card--rojo .hydrant-icon { color: #C41E3A; }
   .color-card--amarillo .hydrant-icon { color: #ffc107; }
   .color-card--verde .hydrant-icon { color: #4caf50; }
   .color-card--azul .hydrant-icon { color: #2196f3; }
@@ -305,7 +305,7 @@
     font-family: monospace;
   }
 
-  .id-badge--rojo { background: #ffebee; color: #c8102e; }
+  .id-badge--rojo { background: #ffebee; color: #C41E3A; }
   .id-badge--amarillo { background: #fff8e1; color: #f57c00; }
   .id-badge--verde { background: #e8f5e9; color: #2e7d32; }
   .id-badge--azul { background: #e3f2fd; color: #1565c0; }
@@ -319,7 +319,7 @@
 
   .col-location span {
     font-size: 0.8rem;
-    color: #888;
+    color: #5f6368;
   }
 
   .col-type {
@@ -404,7 +404,7 @@
 
   .report-benefits li::before {
     content: '✓';
-    background: #c8102e;
+    background: #C41E3A;
     width: 24px;
     height: 24px;
     border-radius: 50%;
@@ -519,7 +519,7 @@
   }
 
   .breadcrumb__item a {
-    color: #c8102e;
+    color: #C41E3A;
     text-decoration: none;
   }
 
@@ -565,7 +565,7 @@
   .badge--publico { background: #e3f2fd; color: #1565c0; }
   .badge--privado { background: #f3e5f5; color: #7b1fa2; }
 
-  .badge--color-rojo { background: #ffebee; color: #c8102e; }
+  .badge--color-rojo { background: #ffebee; color: #C41E3A; }
   .badge--color-amarillo { background: #fff8e1; color: #f57c00; }
   .badge--color-verde { background: #e8f5e9; color: #2e7d32; }
   .badge--color-azul { background: #e3f2fd; color: #1565c0; }
@@ -588,7 +588,7 @@
 
   .header-location svg {
     flex-shrink: 0;
-    color: #c8102e;
+    color: #C41E3A;
   }
 
   .header-location strong {
@@ -606,7 +606,7 @@
 
   .header-location .cp {
     font-size: 0.85rem;
-    color: #888;
+    color: #5f6368;
     margin-top: 0.25rem;
   }
 
@@ -662,11 +662,11 @@
   .hydrant-marker .hydrant-icon {
     width: 100%;
     height: 100%;
-    color: var(--hydrant-color, #c8102e);
+    color: var(--hydrant-color, #C41E3A);
   }
 
   .map-link {
-    color: #c8102e;
+    color: #C41E3A;
     text-decoration: none;
     font-weight: 600;
     font-size: 0.9rem;
@@ -725,7 +725,7 @@
   .spec-card__label {
     display: block;
     font-size: 0.85rem;
-    color: #888;
+    color: #5f6368;
     margin-bottom: 0.25rem;
   }
 
@@ -786,7 +786,7 @@
 
   .timeline-date {
     font-size: 0.85rem;
-    color: #888;
+    color: #5f6368;
   }
 
   .timeline-title {
@@ -842,7 +842,7 @@
   }
 
   .nearby-card:hover {
-    border-color: #c8102e;
+    border-color: #C41E3A;
     transform: translateY(-2px);
   }
 
@@ -861,7 +861,7 @@
     font-family: monospace;
   }
 
-  .id-badge--rojo { background: #ffebee; color: #c8102e; }
+  .id-badge--rojo { background: #ffebee; color: #C41E3A; }
   .id-badge--amarillo { background: #fff8e1; color: #f57c00; }
   .id-badge--verde { background: #e8f5e9; color: #2e7d32; }
   .id-badge--azul { background: #e3f2fd; color: #1565c0; }
@@ -886,7 +886,7 @@
 
   .nearby-card__colonia {
     font-size: 0.8rem;
-    color: #888;
+    color: #5f6368;
   }
 
   .view-all {
@@ -944,7 +944,7 @@
   }
 
   .report-option input {
-    accent-color: #c8102e;
+    accent-color: #C41E3A;
   }
 
   .report-option span {
@@ -1020,7 +1020,7 @@
   }
 
   .breadcrumb__item a {
-    color: #c8102e;
+    color: #C41E3A;
     text-decoration: none;
   }
 
@@ -1050,7 +1050,7 @@
   }
 
   .city-card:hover {
-    border-color: #c8102e;
+    border-color: #C41E3A;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   }
 
@@ -1068,7 +1068,7 @@
   }
 
   .city-card__count {
-    background: #c8102e;
+    background: #C41E3A;
     color: white;
     padding: 0.25rem 0.6rem;
     border-radius: 12px;
@@ -1088,7 +1088,7 @@
   }
 
   .stat--green { color: #2e7d32; }
-  .stat--gray { color: #888; }
+  .stat--gray { color: #5f6368; }
 
   .city-card__list {
     list-style: none;
@@ -1115,7 +1115,7 @@
   }
 
   .city-card__list a:hover {
-    color: #c8102e;
+    color: #C41E3A;
   }
 
   .status-dot {
@@ -1133,7 +1133,7 @@
     display: block;
     margin-top: 0.75rem;
     font-size: 0.8rem;
-    color: #888;
+    color: #5f6368;
   }
 
   /* All Section */
@@ -1177,7 +1177,7 @@
 
   .filter-group select:focus {
     outline: none;
-    border-color: #c8102e;
+    border-color: #C41E3A;
   }
 
   .hidrantes-grid {
@@ -1214,7 +1214,7 @@
     font-family: monospace;
   }
 
-  .id-badge--rojo { background: #ffebee; color: #c8102e; }
+  .id-badge--rojo { background: #ffebee; color: #C41E3A; }
   .id-badge--amarillo { background: #fff8e1; color: #f57c00; }
   .id-badge--verde { background: #e8f5e9; color: #2e7d32; }
   .id-badge--azul { background: #e3f2fd; color: #1565c0; }
@@ -1238,7 +1238,7 @@
 
   .hidrante-card__location svg {
     flex-shrink: 0;
-    color: #c8102e;
+    color: #C41E3A;
     margin-top: 2px;
   }
 
@@ -1268,7 +1268,7 @@
 
   .spec__label {
     font-size: 0.75rem;
-    color: #888;
+    color: #5f6368;
   }
 
   .spec__value {
@@ -1283,7 +1283,7 @@
     padding: 0.75rem;
     background: #f8f9fa;
     border-radius: 8px;
-    color: #c8102e;
+    color: #C41E3A;
     text-decoration: none;
     font-weight: 600;
     font-size: 0.9rem;

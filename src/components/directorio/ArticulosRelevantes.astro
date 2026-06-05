@@ -9,6 +9,7 @@
 
 import { getCollection } from 'astro:content';
 import BlogCard from '../blog/BlogCard.astro';
+import { CATEGORY_SLUGS } from '../../lib/blogHelpers';
 
 interface Props {
   sistemas?: string[];  // Sistemas de la empresa para relevancia
@@ -135,7 +136,7 @@ const postsSeleccionados = postsConRelevancia.slice(0, limit).map(p => p.post);
 
 // Determinar enlace "Ver todos" basado en categoría más común
 const categoriaComun = postsSeleccionados[0]?.data.categoria || 'normativas';
-const viewAllLink = `/blog/${categoriaComun}`;
+const viewAllLink = `/blog/${CATEGORY_SLUGS[categoriaComun] || categoriaComun}`;
 ---
 
 {postsSeleccionados.length > 0 && (

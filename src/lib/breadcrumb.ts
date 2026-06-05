@@ -130,7 +130,20 @@ export interface BreadcrumbItem {
   name: string;
   path: string;
   isActive: boolean;
+  /** true cuando el path es un segmento agrupador sin página propia (no se enlaza) */
+  noLink?: boolean;
 }
+
+// Rutas intermedias que NO tienen página índice propia: se muestran como
+// texto en el breadcrumb (no como enlace) para evitar 404 internos.
+const NON_NAVIGABLE_PATHS = new Set<string>([
+  '/productos',
+  '/blog/tag',
+  '/blog/categoria',
+  '/empresas-certificadas/estado',
+  '/empresas-certificadas/giro',
+  '/hidrantes/estado',
+]);
 
 export function generateBreadcrumbs(pathname: string, pageTitle?: string): BreadcrumbItem[] {
   // Limpiar pathname
@@ -189,7 +202,8 @@ export function generateBreadcrumbs(pathname: string, pageTitle?: string): Bread
       breadcrumbs.push({
         name,
         path: currentPath,
-        isActive: isLast
+        isActive: isLast,
+        noLink: !isLast && NON_NAVIGABLE_PATHS.has(currentPath)
       });
     }
   });

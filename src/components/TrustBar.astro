@@ -1,0 +1,112 @@
+---
+// TrustBar — Franja de credibilidad/certificaciones bajo el hero.
+// Texto only (sin logos de marca) para evitar uso indebido de marcas registradas.
+const items = [
+  { titulo: 'Certificación UL', sub: 'Underwriters Laboratories' },
+  { titulo: 'FM Approved', sub: 'Factory Mutual' },
+  { titulo: 'Normas NFPA', sub: '13 · 14 · 24' },
+  { titulo: 'Distribuidor Autorizado', sub: 'Elkhart Brass' },
+  { titulo: 'Cumple NOM-002-STPS', sub: 'Protección civil' },
+];
+---
+
+<section class="trustbar" aria-label="Certificaciones y respaldo">
+  <div class="container">
+    <ul class="trustbar__list">
+      {items.map((item) => (
+        <li class="trustbar__item">
+          <span class="trustbar__icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2 4 5v6c0 5 3.4 8.5 8 11 4.6-2.5 8-6 8-11V5l-8-3Z"/>
+              <path d="m9 12 2 2 4-4"/>
+            </svg>
+          </span>
+          <span class="trustbar__text">
+            <span class="trustbar__title">{item.titulo}</span>
+            <span class="trustbar__sub">{item.sub}</span>
+          </span>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>
+
+<style>
+  .trustbar {
+    background: var(--color-white);
+    border-bottom: 1px solid var(--color-border);
+    padding: 1rem 0;
+  }
+
+  .trustbar__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .trustbar__item {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    min-width: 0;
+  }
+
+  .trustbar__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    color: var(--color-primary);
+    background: rgba(196, 30, 58, 0.08);
+  }
+
+  .trustbar__text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+    min-width: 0;
+  }
+
+  .trustbar__title {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--color-secondary);
+    letter-spacing: -0.01em;
+  }
+
+  .trustbar__sub {
+    font-size: 0.75rem;
+    color: var(--color-text-light);
+  }
+
+  /* Tablet: 3 columnas */
+  @media (min-width: 640px) {
+    .trustbar__list {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  /* Desktop: fila única, distribuida y con separadores */
+  @media (min-width: 1024px) {
+    .trustbar {
+      padding: 1.1rem 0;
+    }
+
+    .trustbar__list {
+      display: flex;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+
+    .trustbar__item + .trustbar__item {
+      padding-left: 1.5rem;
+      border-left: 1px solid var(--color-border);
+    }
+  }
+</style>

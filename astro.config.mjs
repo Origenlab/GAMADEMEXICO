@@ -24,6 +24,13 @@ export default defineConfig({
     // Sin trailing slash para URLs limpias
     trailingSlash: 'never',
 
+    // Prefetch de navegación: precarga enlaces internos al pasar el cursor
+    // (y en tap en móvil) para navegación casi instantánea entre páginas.
+    prefetch: {
+          prefetchAll: true,
+          defaultStrategy: 'hover',
+    },
+
     // Configuración de build optimizada
     build: {
           format: 'file',

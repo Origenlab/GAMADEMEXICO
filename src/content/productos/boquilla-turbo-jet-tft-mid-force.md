@@ -76,7 +76,7 @@ La **boquilla Task Force Tips Mid-Force** es una boquilla automática de flujo v
 - [Boquilla SM-LP50 Select-O-Matic Baja Presión 50 PSI](/productos/boquilla-turbo-jet-baja-presion-50psi) — alternativa Elkhart Brass dedicada exclusivamente a operaciones de baja presión con mecanismo de resorte externo
 - [Boquilla TFT Handline H-VPG-IF Automática 95-300 GPM](/productos/boquilla-pistola-tft-handline-95-300) — versión de mayor caudal de la línea automática TFT para incendios de alta energía
 - [Boquilla Turbo Jet SM-30FG 75-325 GPM](/productos/boquilla-turbo-jet-sm30-75-325) — alternativa Elkhart Brass de alto caudal para operaciones donde se requiere más de 200 GPM
-- [Manguera Blindex 1.5" × 30m](/productos/manguera-blindex-1-5-30m) — manguera de ataque 1.5" NH para líneas de avance con la Mid-Force en ataques interiores prolongados
+- [Manguera Blindex 1.5" × 30m](/productos/manguera-blindex-1-5-15m) — manguera de ataque 1.5" NH para líneas de avance con la Mid-Force en ataques interiores prolongados
 
 ## Preguntas Frecuentes
 

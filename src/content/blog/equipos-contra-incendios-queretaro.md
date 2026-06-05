@@ -28,7 +28,7 @@ canonical: "https://gamademexico.com/blog/equipos-contra-incendios/equipos-contr
 noindex: false
 ---
 
-El corredor industrial de Querétaro concentra plantas de BMW, General Electric, Alstom (antes Bombardier), Safran, ITP Aero y decenas de proveedores Tier 1 del sector automotriz. Todas operan bajo estándares corporativos que exigen equipos contra incendios con certificación UL Listed o FM Approved verificable. Y todas comparten un problema operativo: cuando necesitan una [válvula OS&Y](/valvulas/compuerta) de reemplazo para el arreglo de bombeo o una [boquilla](/boquillas/) certificada para la brigada, el equipo tiene que llegar rápido. No la próxima semana. Hoy.
+El corredor industrial de Querétaro concentra plantas de BMW, General Electric, Alstom (antes Bombardier), Safran, ITP Aero y decenas de proveedores Tier 1 del sector automotriz. Todas operan bajo estándares corporativos que exigen equipos contra incendios con certificación UL Listed o FM Approved verificable. Y todas comparten un problema operativo: cuando necesitan una [válvula OS&Y](/valvulas/compuerta) de reemplazo para el arreglo de bombeo o una [boquilla](/boquillas-contra-incendios) certificada para la brigada, el equipo tiene que llegar rápido. No la próxima semana. Hoy.
 
 Gama de México tiene sucursal física en Querétaro, en Av. Constituyentes 120, C.P. 76030. No es un centro de distribución remoto ni una bodega de tránsito. Es una sucursal con inventario local, mostrador técnico y personal que conoce las plantas de la zona porque las ha visitado. Eso cambia la ecuación de abastecimiento para cualquier planta entre El Marqués y San Juan del Río.
 
@@ -36,21 +36,21 @@ Gama de México tiene sucursal física en Querétaro, en Av. Constituyentes 120,
 
 La diferencia entre tener un proveedor en otra ciudad y tener una sucursal a veinte minutos de tu planta se mide en días de paro. Cuando una válvula de seccionamiento falla durante una prueba de flujo y el sistema queda fuera de servicio, la planta necesita el reemplazo antes de que la aseguradora emita una observación por impairment. Cuando la auditoría corporativa detecta que las boquillas de los gabinetes no tienen certificación UL y pide el cambio inmediato, el coordinador EHS necesita las boquillas en la mano, no una promesa de envío.
 
-Desde la sucursal de Av. Constituyentes se despachan [válvulas de compuerta OS&Y](/valvulas/compuerta), [válvulas mariposa](/valvulas/mariposa) y [válvulas check](/valvulas/retencion) con certificación FM Approved en diámetros de 2.5 a 12 pulgadas. Se despachan [monitores](/monitores/) Elkhart Brass para protección de hangares aeroespaciales y patios de almacenamiento. Se despachan [mangueras](/mangueras/) certificadas NFPA 1961, [boquillas](/boquillas/) de niebla y chorro, [conexiones](/conexiones-herrajes/) Storz y NST y todo el herraje que un sistema contra incendios industrial requiere. El ingeniero de planta viene, revisa el equipo físicamente, verifica las placas de certificación y se lo lleva el mismo día.
+Desde la sucursal de Av. Constituyentes se despachan [válvulas de compuerta OS&Y](/valvulas/compuerta), [válvulas mariposa](/valvulas/mariposa) y [válvulas check](/valvulas/retencion) con certificación FM Approved en diámetros de 2.5 a 12 pulgadas. Se despachan [monitores](/monitores-contra-incendios) Elkhart Brass para protección de hangares aeroespaciales y patios de almacenamiento. Se despachan [mangueras](/mangueras-contra-incendios) certificadas NFPA 1961, [boquillas](/boquillas-contra-incendios) de niebla y chorro, [conexiones](/conexiones-herrajes-contra-incendios) Storz y NST y todo el herraje que un sistema contra incendios industrial requiere. El ingeniero de planta viene, revisa el equipo físicamente, verifica las placas de certificación y se lo lleva el mismo día.
 
 ## Cobertura del corredor industrial completo
 
 La ubicación en Av. Constituyentes permite atender con entrega directa todo el corredor industrial Querétaro-San Luis Potosí. Las plantas del Parque Industrial Bernardo Quintana, las naves de El Marqués, las instalaciones de Corregidora y las fábricas del corredor hacia San Juan del Río están dentro del radio de servicio directo. La planta de BMW en San José Chiapa, Puebla, se abastece desde esta misma sucursal porque la logística es más eficiente que cualquier alternativa desde la Ciudad de México.
 
-Para Safran e ITP Aero, donde los hangares requieren [monitores](/monitores/) de alto caudal con certificación dual UL/FM, el inventario local elimina los tiempos de importación que otros proveedores manejan bajo pedido. Para los Tier 1 automotrices, donde las auditorías OEM exigen trazabilidad de cada componente, la sucursal genera factura, certificado y ficha técnica en el momento de la compra.
+Para Safran e ITP Aero, donde los hangares requieren [monitores](/monitores-contra-incendios) de alto caudal con certificación dual UL/FM, el inventario local elimina los tiempos de importación que otros proveedores manejan bajo pedido. Para los Tier 1 automotrices, donde las auditorías OEM exigen trazabilidad de cada componente, la sucursal genera factura, certificado y ficha técnica en el momento de la compra.
 
 ## Equipos por sector industrial
 
 Las plantas automotrices requieren [válvulas OS&Y](/valvulas/compuerta) FM Approved para los cuartos de bombas que alimentan rociadores en naves de soldadura, estampado y pintura. Las auditorías de BMW, General Electric y los Tier 1 no aceptan válvulas sin certificación verificable en el directorio FM. Desde la sucursal se entregan válvulas Elkhart Brass en hierro dúctil con FM Approved en los diámetros que estas plantas especifican.
 
-Los hangares aeroespaciales necesitan [monitores contra incendios](/monitores/) capaces de cubrir áreas amplias con caudales de 500 a 1,250 GPM. Los monitores tipo corazón con rotación de 360 grados están en inventario en la sucursal.
+Los hangares aeroespaciales necesitan [monitores contra incendios](/monitores-contra-incendios) capaces de cubrir áreas amplias con caudales de 500 a 1,250 GPM. Los monitores tipo corazón con rotación de 360 grados están en inventario en la sucursal.
 
-La industria alimentaria de la zona necesita [mangueras](/mangueras/) para gabinetes y [boquillas](/boquillas/) para brigadas que cumplan NOM-002-STPS sin interferir con certificaciones de inocuidad.
+La industria alimentaria de la zona necesita [mangueras](/mangueras-contra-incendios) para gabinetes y [boquillas](/boquillas-contra-incendios) para brigadas que cumplan NOM-002-STPS sin interferir con certificaciones de inocuidad.
 
 ## Soporte técnico presencial
 

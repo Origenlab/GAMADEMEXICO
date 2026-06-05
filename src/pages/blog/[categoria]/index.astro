@@ -232,7 +232,7 @@ const breadcrumbSchema = buildBreadcrumbSchema([
   heroPrimaryText="Solicitar Asesoría"
   heroPrimaryLink="#cotizar"
   heroSecondaryText="Ver Equipos"
-  heroSecondaryLink={`/${category === 'gabinetes-hidrantes' ? 'gabinetes-hidrantes' : category + '-contra-incendios'}`}
+  heroSecondaryLink={`/${categorySlug === 'equipos-contra-incendios' ? 'equipos' : categorySlug}`}
   heroShowRightContent={true}
   structuredData={[breadcrumbSchema]}
 >

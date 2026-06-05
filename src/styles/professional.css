@@ -1,0 +1,192 @@
+/* ==========================================================================
+   CAPA DE PULIDO PROFESIONAL — Gama de México
+   Aditiva: se carga después de global.css y refina la presentación
+   sin modificar el HTML. Pensada para look B2B premium.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   HERO — fondo sofisticado con acentos de marca y rejilla de ingeniería
+   -------------------------------------------------------------------------- */
+.hero-section {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(1100px 480px at 100% -10%, rgba(196, 30, 58, 0.07), transparent 60%),
+    radial-gradient(900px 600px at -10% 115%, rgba(26, 26, 46, 0.06), transparent 55%),
+    linear-gradient(180deg, #ffffff 0%, var(--color-accent) 100%);
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(26, 26, 46, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(26, 26, 46, 0.045) 1px, transparent 1px);
+  background-size: 46px 46px;
+  -webkit-mask-image: radial-gradient(circle at 60% 0%, #000 0%, transparent 72%);
+  mask-image: radial-gradient(circle at 60% 0%, #000 0%, transparent 72%);
+}
+
+.hero-section__inner {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-section__title {
+  letter-spacing: -0.02em;
+}
+
+/* Badge tipo píldora con punto de estado */
+.hero-section__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  background: var(--color-white);
+  border: 1px solid rgba(196, 30, 58, 0.22);
+  color: var(--color-primary);
+  border-radius: 999px;
+  padding: 0.45rem 1rem 0.45rem 0.9rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.hero-section__badge::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(196, 30, 58, 0.18);
+}
+
+/* Métricas con separador y número destacado */
+.hero-section__metrics {
+  gap: 0;
+}
+
+.hero-section__metric {
+  padding: 0 1.75rem;
+}
+
+.hero-section__metric:first-child {
+  padding-left: 0;
+}
+
+.hero-section__metric + .hero-section__metric {
+  border-left: 1px solid var(--color-border);
+}
+
+.hero-section__metric-value {
+  color: var(--color-primary);
+  font-size: 1.6rem;
+  letter-spacing: -0.01em;
+}
+
+/* --------------------------------------------------------------------------
+   ENCABEZADOS DE SECCIÓN — acento profesional bajo el título
+   -------------------------------------------------------------------------- */
+.section-header__title {
+  letter-spacing: -0.02em;
+}
+
+.section-header:not(.section-header--two-col) .section-header__title {
+  display: inline-block;
+}
+
+.section-header__title::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 4px;
+  margin-top: 0.9rem;
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-primary-dark));
+}
+
+.section-header:not(.section-header--two-col) .section-header__title::after {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* --------------------------------------------------------------------------
+   TARJETAS — línea de acento superior que aparece al pasar el cursor
+   -------------------------------------------------------------------------- */
+.category-card,
+.service-card {
+  position: relative;
+}
+
+.category-card::after,
+.service-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-primary-dark));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--transition-base);
+  z-index: 2;
+}
+
+.category-card:hover::after,
+.service-card:hover::after {
+  transform: scaleX(1);
+}
+
+/* --------------------------------------------------------------------------
+   BLOQUES DE CONFIANZA — tarjetas elevadas en lugar de banda plana
+   -------------------------------------------------------------------------- */
+.trust__item {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-left: 3px solid var(--color-primary);
+  border-radius: 0 var(--border-radius-lg) var(--border-radius-lg) 0;
+  box-shadow: var(--shadow-sm);
+  padding: var(--spacing-lg);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.trust__item:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+/* --------------------------------------------------------------------------
+   BOTONES — micro-ajuste tipográfico
+   -------------------------------------------------------------------------- */
+.btn {
+  letter-spacing: 0.01em;
+}
+
+/* --------------------------------------------------------------------------
+   FOOTER — acento bajo los títulos de columna
+   -------------------------------------------------------------------------- */
+.footer__title {
+  position: relative;
+  padding-bottom: 0.6rem;
+}
+
+.footer__title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 32px;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--color-primary);
+}
+
+/* --------------------------------------------------------------------------
+   SELECCIÓN Y FOCO — coherentes con la marca
+   -------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  .category-card::after,
+  .service-card::after {
+    transition: none;
+  }
+}

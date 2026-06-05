@@ -35,6 +35,7 @@
       hamburger.setAttribute('aria-expanded', 'true');
       mobileNav.classList.add('mobile-nav--active');
       mobileNav.setAttribute('aria-hidden', 'false');
+      mobileNav.removeAttribute('inert');
       mobileOverlay.classList.add('mobile-overlay--active');
       mobileOverlay.setAttribute('aria-hidden', 'false');
       document.body.style.overflow = 'hidden';
@@ -49,6 +50,7 @@
       hamburger.setAttribute('aria-expanded', 'false');
       mobileNav.classList.remove('mobile-nav--active');
       mobileNav.setAttribute('aria-hidden', 'true');
+      mobileNav.setAttribute('inert', '');
       mobileOverlay.classList.remove('mobile-overlay--active');
       mobileOverlay.setAttribute('aria-hidden', 'true');
       document.body.style.overflow = '';

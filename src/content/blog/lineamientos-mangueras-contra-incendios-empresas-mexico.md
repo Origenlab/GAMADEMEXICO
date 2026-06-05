@@ -121,7 +121,7 @@ No se debe instalar una línea con adaptaciones improvisadas ni piezas sin traza
 
 ### 3. Integración con gabinetes y estaciones de manguera
 
-En aplicaciones interiores, la manguera debe quedar configurada en [gabinetes e hidrantes](/gabinetes-hidrantes) con geometría de enrollado que evite dobleces permanentes. Además, se recomienda validar radio de curvatura mínimo, accesibilidad de válvula y tiempo de despliegue por brigadista en simulación real.
+En aplicaciones interiores, la manguera debe quedar configurada en [gabinetes e hidrantes](/gabinetes-hidrantes-contra-incendios) con geometría de enrollado que evite dobleces permanentes. Además, se recomienda validar radio de curvatura mínimo, accesibilidad de válvula y tiempo de despliegue por brigadista en simulación real.
 
 ### 4. Prueba de aceptación en sitio (SAT)
 

@@ -75,7 +75,7 @@ La **boquilla Akron Brass Turbojet Style 1720** es una boquilla de flujo constan
 - [Boquilla Turbo Jet Baja Presión 50 PSI 60-125 GPM](/productos/boquilla-turbo-jet-baja-presion-50psi) — alternativa de baja presión Elkhart Brass para ataque interior con menor reacción de línea
 - [Boquilla Tipo Pistola Phantom XD 15-250 GPM](/productos/boquilla-tipo-pistola) — boquilla Elkhart Brass XD con rango extendido y selector interlock para mayor flexibilidad operativa
 - [Boquilla Pistola Akron TurboJet 1723 95-200 GPM](/productos/boquilla-pistola-akron-turbojet-1723) — versión de flujo constante Akron Brass para líneas de mayor caudal con el mismo material Pyrolite
-- [Manguera Blindex 1.5" × 30m](/productos/manguera-blindex-1-5-30m) — manguera de ataque 1.5" NST para conectar con el Turbojet 1720 en operaciones de primera entrada
+- [Manguera Blindex 1.5" × 30m](/productos/manguera-blindex-1-5-15m) — manguera de ataque 1.5" NST para conectar con el Turbojet 1720 en operaciones de primera entrada
 
 ## Preguntas Frecuentes
 

@@ -72,7 +72,7 @@ El chiflón Elkhart Brass Chief XD representa la evolución de alto rendimiento 
 - [Chiflón 205-A Aluminio Ligero 1.5" NH 75-125 GPM](/productos/chiflon-aluminio-ligero-1-5) — versión ligera de la misma familia para operaciones de menor caudal donde la ergonomía es prioritaria
 - [Chiflón 205-B-25 Tres Pasos 2.5" NH 150-250 GPM](/productos/chiflon-205b-2-5) — versión de diámetro mayor para cuando se requiere caudal superior al máximo de 200 GPM del Chief XD
 - [Chiflón Niebla Ajustable 205-BA 1.5" NH 95-125 GPM](/productos/chiflon-niebla-ajustable-1-5) — alternativa con ajuste continuo de ángulo de niebla 15-90° para mayor versatilidad de patrón
-- [Manguera Blindex 1.5" × 30m](/productos/manguera-blindex-1-5-30m) — manguera de ataque 1.5" NH para líneas largas con el Chief XD en operaciones de gran escala
+- [Manguera Blindex 1.5" × 30m](/productos/manguera-blindex-1-5-15m) — manguera de ataque 1.5" NH para líneas largas con el Chief XD en operaciones de gran escala
 
 ## Preguntas Frecuentes
 

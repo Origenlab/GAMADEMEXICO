@@ -37,7 +37,7 @@ Esta guía está diseñada para responsables de seguridad, HSE/EHS, gerentes de 
 
 > **Nota importante:** Los requisitos específicos pueden variar según estado, municipio y giro de tu empresa. Confirma siempre con tu autoridad local de Protección Civil y con tu responsable de seguridad e higiene.
 
-![Sistema de mangueras contra incendios industrial instalado en planta de producción](/img/productos/manguera-blindex-1-5-30m-industrial.avif)
+![Sistema de mangueras contra incendios industrial instalado en planta de producción](/img/productos/manguera-blindex-1-5-15m-industrial.avif)
 *Sistema de mangueras contra incendios correctamente instalado: acceso libre, señalización visible y componentes completos. Este nivel de instalación es lo que valida tu Programa Interno.*
 
 ---

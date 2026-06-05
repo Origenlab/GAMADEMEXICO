@@ -90,8 +90,8 @@ Las operaciones mineras a cielo abierto y en galería enfrentan riesgos de incen
 
 La estrategia recomendada para instalaciones mineras es un inventario diferenciado:
 
-- **Zona de proceso y talleres**: [Manguera de doble forro Millhose](/mangueras-contra-incendios/manguera-millhose) o [Blindex](/mangueras-contra-incendios/manguera-blindex) en diámetros de 1.5" y 2.5", almacenada en [gabinetes estándar](/gabinetes-hidrantes)
-- **Zona perimetral y accesos**: [Manguera forestal](/mangueras-contra-incendios/manguera-forestal-amarilla-alta-vis) en 1.5", en portarrollos o maletas de rápida movilización
+- **Zona de proceso y talleres**: [Manguera de doble forro Millhose](/blog/tag/manguera-millhose) o [Blindex](/mangueras/blindex) en diámetros de 1.5" y 2.5", almacenada en [gabinetes estándar](/gabinetes-hidrantes-contra-incendios)
+- **Zona perimetral y accesos**: [Manguera forestal](/productos/manguera-forestal-amarilla-alta-vis) en 1.5", en portarrollos o maletas de rápida movilización
 - **Vehículos de emergencia**: Tramos forestales de 30m montados en enrolladores en pick-ups o camionetas para respuesta móvil
 
 ### Protección de Campamentos y Zonas de Operación Remota
@@ -155,13 +155,13 @@ El error más frecuente en brigadas con presupuesto limitado es guardar la mangu
 
 ### Envíos a Todo México
 
-En Gama de México entendemos que las brigadas forestales y los equipos de emergencia industrial no pueden esperar semanas para recibir su inventario de mangueras. Nuestra red logística permite entregar [mangueras forestales](/mangueras-contra-incendios/manguera-forestal-amarilla-alta-vis) y complementos de sistema en cualquier punto de la República Mexicana con tiempos de respuesta competitivos.
+En Gama de México entendemos que las brigadas forestales y los equipos de emergencia industrial no pueden esperar semanas para recibir su inventario de mangueras. Nuestra red logística permite entregar [mangueras forestales](/productos/manguera-forestal-amarilla-alta-vis) y complementos de sistema en cualquier punto de la República Mexicana con tiempos de respuesta competitivos.
 
 **Zona Norte:**
 Atendemos de forma regular a brigadas forestales en Chihuahua, Sonora, Durango, Sinaloa y Coahuila, regiones con alta incidencia de incendios forestales estacionales. Las instalaciones mineras en Sonora, Coahuila y Zacatecas reciben atención prioritaria con disponibilidad de inventario para entrega inmediata.
 
 **Zona Centro y Bajío:**
-Jalisco, Michoacán, Estado de México, Guerrero y los estados del Eje Volcánico Transversal concentran la mayor incidencia de incendios forestales del centro del país. Mantenemos stock de [mangueras forestales de 1.5 pulgadas](/mangueras-contra-incendios/manguera-forestal-1-5-30m) para respuesta de 24-48 horas a organizaciones gubernamentales y privadas en esta región.
+Jalisco, Michoacán, Estado de México, Guerrero y los estados del Eje Volcánico Transversal concentran la mayor incidencia de incendios forestales del centro del país. Mantenemos stock de [mangueras forestales de 1.5 pulgadas](/mangueras/forestal) para respuesta de 24-48 horas a organizaciones gubernamentales y privadas en esta región.
 
 **Zona Sur y Golfo:**
 Oaxaca, Chiapas, Guerrero y Veracruz tienen ecosistemas con alta susceptibilidad a incendios en temporada seca. Atendemos solicitudes de protección civil estatal, municipios y empresas forestales con entregas de 3-5 días hábiles.
@@ -179,7 +179,7 @@ Para programas de equipamiento de brigadas, licitaciones de gobierno o proyectos
 
 ### ¿Cuál es la diferencia entre manguera forestal y manguera industrial de doble forro?
 
-La manguera forestal tiene un solo forro de construcción más ligera (150-200 PSI de presión de trabajo vs 300 PSI del doble forro industrial) y está diseñada para portabilidad máxima. Un tramo de 30m de manguera forestal de 1.5 pulgadas pesa entre 7 y 9 kg, aproximadamente la mitad que una manguera de doble forro equivalente. Esta diferencia de peso es crítica en operaciones donde la brigada transporta el equipo a pie durante kilómetros en terreno accidentado. Para instalaciones fijas con conexión a red hidráulica, la manguera de doble forro como la [Millhose](/mangueras-contra-incendios/manguera-millhose) es la opción correcta.
+La manguera forestal tiene un solo forro de construcción más ligera (150-200 PSI de presión de trabajo vs 300 PSI del doble forro industrial) y está diseñada para portabilidad máxima. Un tramo de 30m de manguera forestal de 1.5 pulgadas pesa entre 7 y 9 kg, aproximadamente la mitad que una manguera de doble forro equivalente. Esta diferencia de peso es crítica en operaciones donde la brigada transporta el equipo a pie durante kilómetros en terreno accidentado. Para instalaciones fijas con conexión a red hidráulica, la manguera de doble forro como la [Millhose](/blog/tag/manguera-millhose) es la opción correcta.
 
 ### ¿Qué presión de trabajo tienen las mangueras forestales?
 
@@ -191,7 +191,7 @@ La alta visibilidad en campo es una medida de seguridad operacional. En condicio
 
 ### ¿Las mangueras forestales son compatibles con soluciones espumantes?
 
-Depende del liner. Las mangueras forestales estándar con liner de EPDM son compatibles con agua y agentes mojantes de base no fluorada. Para uso con espuma [AFFF](/blog/espuma-afff-contra-incendios-aplicaciones-industriales-mexico) o concentrados fluorados, el liner debe ser de caucho nitrilo (NBR). Verificar siempre la ficha técnica del fabricante antes de usar cualquier aditivo químico. El error de usar liner de EPDM con concentrados fluorados no produce falla inmediata, sino degradación progresiva que compromete la integridad en operaciones futuras.
+Depende del liner. Las mangueras forestales estándar con liner de EPDM son compatibles con agua y agentes mojantes de base no fluorada. Para uso con espuma [AFFF](/blog/boquillas-contra-incendios/espuma-afff-contra-incendios-aplicaciones-industriales-mexico) o concentrados fluorados, el liner debe ser de caucho nitrilo (NBR). Verificar siempre la ficha técnica del fabricante antes de usar cualquier aditivo químico. El error de usar liner de EPDM con concentrados fluorados no produce falla inmediata, sino degradación progresiva que compromete la integridad en operaciones futuras.
 
 ### ¿Cuántos tramos de manguera necesita una brigada forestal básica?
 
@@ -210,17 +210,17 @@ Contáctenos para recibir asesoría técnica específica para su operación, ya 
 ## Productos Destacados
 
 ### Mangueras Forestales y de Primera Intervención
-- [Manguera Forestal Amarilla Alta Visibilidad](/mangueras-contra-incendios/manguera-forestal-amarilla-alta-vis) - 1.5", 30m, acoples aluminio
-- [Manguera Forestal Estándar 1.5"](/mangueras-contra-incendios/manguera-forestal-1-5-30m) - Para brigadas y primera respuesta
+- [Manguera Forestal Amarilla Alta Visibilidad](/productos/manguera-forestal-amarilla-alta-vis) - 1.5", 30m, acoples aluminio
+- [Manguera Forestal Estándar 1.5"](/mangueras/forestal) - Para brigadas y primera respuesta
 
 ### Mangueras Industriales Complementarias
-- [Manguera Millhose 1.5"](/mangueras-contra-incendios/manguera-millhose) - Doble forro, 300 PSI, gabinetes interiores
-- [Manguera Blindex 2.5"](/mangueras-contra-incendios/manguera-blindex-2-5-30m) - Alta resistencia, zonas industriales de riesgo
+- [Manguera Millhose 1.5"](/blog/tag/manguera-millhose) - Doble forro, 300 PSI, gabinetes interiores
+- [Manguera Blindex 2.5"](/productos/manguera-blindex-2-5-30m) - Alta resistencia, zonas industriales de riesgo
 
 ### Conexiones y Accesorios de Campo
-- [Adaptadores y Conexiones](/conexiones-herrajes-contra-incendios/adaptadores-bronce) - Compatibilidad NST/Storz
-- [Conexiones Wye 1.5"](/conexiones-herrajes-contra-incendios/conexion-wye) - División de líneas para ataque paralelo
-- [Coples y Reducciones](/conexiones-herrajes-contra-incendios/coples-reducciones) - Adaptación entre diámetros
+- [Adaptadores y Conexiones](/conexiones/adaptadores) - Compatibilidad NST/Storz
+- [Conexiones Wye 1.5"](/conexiones/wye) - División de líneas para ataque paralelo
+- [Coples y Reducciones](/conexiones/coples) - Adaptación entre diámetros
 
 ### Equipos Complementarios
 - [Boquillas Contra Incendios](/boquillas-contra-incendios) - Boquillas forestales de patrón variable

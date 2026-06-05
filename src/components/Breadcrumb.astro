@@ -27,6 +27,8 @@ const showBreadcrumb = breadcrumbs.length > 1;
           >
             {item.isActive ? (
               <span itemprop="name" aria-current="page">{item.name}</span>
+            ) : item.noLink ? (
+              <span itemprop="name">{item.name}</span>
             ) : (
               <a href={item.path} class="breadcrumb__link" itemprop="item">
                 <span itemprop="name">{item.name}</span>

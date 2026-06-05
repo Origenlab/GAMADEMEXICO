@@ -24,9 +24,9 @@
   --font-size-xs: 13px;
   --font-size-lg: 18px;
   --font-size-xl: 24px;
-  --font-size-2xl: 32px;
-  --font-size-3xl: 40px;
-  --font-size-4xl: 48px;
+  --font-size-2xl: clamp(1.75rem, 1.4rem + 1.6vw, 2rem);
+  --font-size-3xl: clamp(2rem, 1.5rem + 2.2vw, 2.5rem);
+  --font-size-4xl: clamp(2.25rem, 1.6rem + 3vw, 3rem);
   --line-height-base: 1.6;
   --line-height-tight: 1.25;
   --spacing-xs: 0.5rem;
@@ -34,8 +34,8 @@
   --spacing-md: 1.5rem;
   --spacing-lg: 2rem;
   --spacing-xl: 3rem;
-  --spacing-2xl: 4rem;
-  --spacing-3xl: 6rem;
+  --spacing-2xl: clamp(2.5rem, 1.6rem + 3.5vw, 4rem);
+  --spacing-3xl: clamp(3rem, 1.8rem + 5vw, 6rem);
   --border-radius: 8px;
   --border-radius-sm: 4px;
   --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -45,7 +45,14 @@
   --transition-slow: 350ms ease;
   --header-height: 80px;
   --topbar-height: 40px;
-  --max-width: 1400px;
+  --max-width: 1760px;
+  --max-width-text: 1100px;
+  --container-padding: clamp(1.25rem, 3.5vw, 4rem);
+  --border-radius-lg: 14px;
+  --border-radius-xl: 20px;
+  --line-height-relaxed: 1.75;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06), 0 2px 8px rgba(0, 0, 0, 0.04);
+  --shadow-xl: 0 18px 50px rgba(16, 16, 40, 0.16);
 }
 
 *,
@@ -149,7 +156,12 @@ select {
   width: 100%;
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 0 var(--spacing-md);
+  padding: 0 var(--container-padding);
+}
+
+/* Variante angosta para bloques de lectura largos dentro de container ancho */
+.container--narrow {
+  max-width: var(--max-width-text);
 }
 
 /* ========================================
@@ -164,7 +176,7 @@ select {
   width: 100%;
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 var(--container-padding);
   display: grid;
   grid-template-columns: 1fr;
   gap: 2.5rem;
@@ -291,10 +303,20 @@ select {
   border: 2px solid var(--color-primary);
 }
 
+.btn {
+  transition: background-color var(--transition-base), border-color var(--transition-base), transform var(--transition-fast), box-shadow var(--transition-base);
+}
+
+.btn--primary {
+  box-shadow: 0 2px 8px rgba(196, 30, 58, 0.22);
+}
+
 .btn--primary:hover,
 .btn--primary:focus-visible {
   background-color: var(--color-primary-dark);
   border-color: var(--color-primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(196, 30, 58, 0.3);
 }
 
 .btn--outline {
@@ -358,7 +380,8 @@ select {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.04);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(16, 16, 40, 0.06);
 }
 
 .service-card__image {
@@ -445,7 +468,8 @@ select {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.04);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(16, 16, 40, 0.06);
 }
 
 .category-card__image {
@@ -1094,6 +1118,22 @@ select {
   }
 }
 
+/* Pantallas grandes: aprovechar el ancho con grids más densos */
+@media (min-width: 1600px) {
+  .services__grid,
+  .categories__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .products__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .trust__testimonials {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media print {
   *,
   *::before,
@@ -1215,7 +1255,7 @@ select {
 }
 
 /* ==========================================================================
-   PERFORMANCE: sin animaciones en cards e imagenes
+   INTERACCIÓN: hover profesional en tarjetas (sin animaciones de entrada)
    ========================================================================== */
 
 .service-card,
@@ -1225,23 +1265,52 @@ select {
 .related-card,
 .complementary__card {
   animation: none !important;
-  transition: none !important;
+  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
+  will-change: transform;
 }
 
 .service-card:hover,
 .category-card:hover,
 .product-card:hover,
 .subcategory-product-card:hover,
-.related-card:hover,
+.related-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-xl);
+}
+
 .complementary__card:hover {
-  transform: none !important;
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-xl);
+  border-color: var(--color-primary);
+}
+
+.product-card:hover {
+  border-color: var(--color-primary);
+}
+
+/* Zoom sutil de la imagen al pasar el cursor */
+.service-card__image,
+.category-card__image,
+.product-card__image {
+  overflow: hidden;
+}
+
+.service-card__image > img,
+.category-card__image > img,
+.product-card__image > img {
+  transition: transform var(--transition-slow);
+}
+
+.service-card:hover .service-card__image > img,
+.category-card:hover .category-card__image > img,
+.product-card:hover .product-card__image > img {
+  transform: scale(1.05);
 }
 
 img,
 picture,
 figure {
   animation: none !important;
-  transition: none !important;
 }
 
 /* ── Sticky CTA Mobile ── */
@@ -1288,4 +1357,78 @@ figure {
   }
   /* Hide WA bubble when sticky CTA is visible on mobile */
   .wa-bubble { display: none !important; }
+}
+
+/* ==========================================================================
+   HOMOLOGACIÓN GLOBAL — mismo diseño/estructura en todas las páginas
+   (este archivo se carga en todo el sitio vía Base.astro)
+   ========================================================================== */
+
+/* 1) Densidad en pantallas grandes: aprovechar el ancho completo
+      Los grids que tope­an en 3 columnas pasan a 4; los de 2 pasan a 3. */
+@media (min-width: 1600px) {
+  .related-services__grid,
+  .product-gallery__grid,
+  .tech-info__grid,
+  .featured-grid,
+  .location-grid,
+  .giro-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .empresas-grid,
+  .cities-grid,
+  .values-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* 2) Hover homologado para tarjetas de listado/enlace en todo el sitio */
+.location-card,
+.city-card,
+.hidrante-card,
+.state-card,
+.nearby-card,
+.feature-card,
+.value-card,
+.spec-card {
+  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
+}
+
+.location-card:hover,
+.city-card:hover,
+.hidrante-card:hover,
+.state-card:hover,
+.nearby-card:hover,
+.feature-card:hover,
+.value-card:hover,
+.spec-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-xl);
+  border-color: var(--color-primary);
+}
+
+/* 3) Blindaje móvil: nada debe provocar scroll horizontal */
+img,
+table,
+pre,
+iframe,
+video {
+  max-width: 100%;
+}
+
+/* Tablas largas de contenido (fichas de empresas) hacen scroll propio en móvil */
+@media (max-width: 640px) {
+  .content-wrapper table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Listas tipo grid vuelven a una columna para legibilidad */
+  .content-wrapper ul,
+  .content-wrapper ol {
+    grid-template-columns: 1fr;
+  }
 }

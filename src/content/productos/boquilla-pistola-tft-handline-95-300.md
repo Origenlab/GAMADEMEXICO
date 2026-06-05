@@ -77,7 +77,7 @@ La **boquilla Task Force Tips Handline H-VPG-IF** es una boquilla automática de
 - [Boquilla Tipo Pistola Phantom XD 15-250 GPM](/productos/boquilla-tipo-pistola) — boquilla Elkhart Brass de flujo seleccionable para operaciones donde se prefiere flujo fijo sobre automático
 - [Boquilla Certificada NFPA 1964 para Bomberos TFT](/productos/boquilla-certificada-nfpa-1964-bomberos) — referencia de la línea TFT certificada NFPA 1964 para licitaciones municipales
 - [Boquilla Turbo Jet SM30 75-325 GPM](/productos/boquilla-turbo-jet-sm30-75-325) — boquilla de largo alcance TFT para operaciones exteriores y master stream
-- [Manguera Blindex 1.5" × 30m](/productos/manguera-blindex-1-5-30m) — manguera de ataque 1.5" NPSH compatible con la entrada del H-VPG-IF
+- [Manguera Blindex 1.5" × 30m](/productos/manguera-blindex-1-5-15m) — manguera de ataque 1.5" NPSH compatible con la entrada del H-VPG-IF
 
 ## Preguntas Frecuentes
 
