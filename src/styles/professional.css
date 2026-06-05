@@ -110,6 +110,55 @@
 }
 
 /* --------------------------------------------------------------------------
+   TÍTULOS DE MÓDULO HOMOLOGADOS — patrón manual usado en páginas internas
+   (.section-header > .section-title + .section-subtitle). Igual al componente.
+   -------------------------------------------------------------------------- */
+.section-header {
+  margin-bottom: var(--spacing-xl);
+  text-align: center;
+}
+
+.section-title {
+  display: block;
+  text-align: center;
+  font-size: var(--font-size-2xl);
+  font-weight: 800;
+  line-height: var(--line-height-tight);
+  letter-spacing: -0.02em;
+  color: var(--color-secondary);
+  margin: 0 0 var(--spacing-lg);
+}
+
+/* Dentro del wrapper, el espaciado lo dan el wrapper y el subtítulo */
+.section-header .section-title {
+  margin-bottom: 0;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 4px;
+  margin: 0.9rem auto 0;
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-primary-dark));
+}
+
+.section-subtitle {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  color: var(--color-text-light);
+  max-width: 760px;
+  margin: 0.85rem auto 0;
+}
+
+@media (min-width: 1024px) {
+  .section-title {
+    font-size: var(--font-size-3xl);
+  }
+}
+
+/* --------------------------------------------------------------------------
    TARJETAS — línea de acento superior que aparece al pasar el cursor
    -------------------------------------------------------------------------- */
 .category-card,
