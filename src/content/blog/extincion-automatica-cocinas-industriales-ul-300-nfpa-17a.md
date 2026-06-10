@@ -21,6 +21,7 @@ schema:
       - q: "¿Cada cuánto se le da mantenimiento al sistema de cocina?"
         a: "NFPA 17A exige inspección semestral por personal calificado: verificar carga del tanque, boquillas sin obstrucción por grasa, cable fusible sin deterioro, mecanismo de disparo funcional (automático y manual), válvula de corte de gas operativa, y cobertura de boquillas acorde a la configuración actual de equipos de cocción. Después de CADA activación, recarga completa antes de volver a servicio."
 description: "Sistemas de extinción automática para cocinas industriales y restaurantes conforme a UL 300 y NFPA 17A: cómo funcionan, por qué fallan y qué exige la norma."
+fecha: "2026-03-11"
 categoria: "boquillas"
 autor:
   nombre: "Equipo Gama de México"

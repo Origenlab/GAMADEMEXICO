@@ -1,0 +1,214 @@
+---
+// =============================================================================
+// Ruta dinámica de subcategorías de producto (refactor 2026)
+// Reemplaza 33 páginas estáticas (~8,500 líneas, ~85% duplicadas) por un único
+// template alimentado por src/data/subcategorias/ (capa de datos tipada).
+// URLs generadas: /boquillas/certificada, /monitores/ul-listed, etc.
+// — idénticas a las anteriores, sin redirects.
+// =============================================================================
+import Layout from '../../layouts/Base.astro';
+import '../../styles/subcategory.css';
+import { getCollection } from 'astro:content';
+import SubcategoryProductCard from '../../components/SubcategoryProductCard.astro';
+import ProductSidebar from '../../components/ProductSidebar.astro';
+import RelatedProductsGrid from '../../components/RelatedProductsGrid.astro';
+import CotizacionForm from '../../components/CotizacionForm.astro';
+import Faq from '../../components/Faq.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import { buildProductCategorySchema, buildBreadcrumbSchema, buildFAQSchema, buildOrganizationSchema } from '../../lib/seo';
+import { SUBCATEGORIAS } from '../../data/subcategorias';
+import type { SubcategoryDef } from '../../data/subcategorias';
+
+export async function getStaticPaths() {
+  return SUBCATEGORIAS.map((def) => ({
+    params: { seccion: def.seccion, subcategoria: def.slug },
+    props: { def },
+  }));
+}
+
+interface Props {
+  def: SubcategoryDef;
+}
+
+const { def } = Astro.props;
+
+// 1. Productos de la categoría, ordenados
+const todosProductos = (
+  await getCollection('productos', ({ data }) => data.categoria === def.categoria)
+).sort((a, b) => a.data.orden - b.data.orden);
+
+// 2. Productos de esta subcategoría (OR entre subcategorías; AND opcional por id)
+const productos = todosProductos.filter(
+  (p) =>
+    def.filter.subcategorias.includes(p.data.subcategoria ?? '') &&
+    (!def.filter.idIncludes || def.filter.idIncludes.some((frag) => p.id.includes(frag)))
+);
+
+// 3. Resto de la categoría para la sección de relacionados
+const otrosProductos = todosProductos.filter((p) => !productos.includes(p));
+
+// 4. Navegación lateral: el item activo se deriva del slug (no se duplica en datos)
+const sidebarNav = def.sidebar.subcategorias.map((s) => ({
+  ...s,
+  activo: s.slug === def.slug,
+}));
+
+// 5. Datos estructurados (Organization + Product + Breadcrumb + FAQ)
+const structuredData = [
+  buildOrganizationSchema(),
+  buildProductCategorySchema({
+    name: def.schema.name,
+    description: def.schema.description,
+    image: def.schema.image,
+    url: def.schema.url,
+    category: def.schema.category,
+    brand: def.schema.brand,
+  }),
+  buildBreadcrumbSchema(def.breadcrumb),
+  buildFAQSchema(def.faqs),
+];
+---
+
+<Layout
+  structuredData={structuredData}
+  title={def.meta.title}
+  description={def.meta.description}
+  activePage="equipos"
+  heroTitle={def.hero.title}
+  heroIntro={def.hero.intro}
+  heroBadge={def.hero.badge}
+  heroMetrics={def.hero.metrics}
+  heroPrimaryText={def.hero.primaryText}
+  heroPrimaryLink={def.hero.primaryLink}
+  heroSecondaryText={def.hero.secondaryText}
+  heroSecondaryLink={def.hero.secondaryLink}
+  heroShowRightContent={true}
+>
+
+  <!-- HERO CONTENT (HTML propio extraído de las páginas originales) -->
+  <Fragment slot="hero-content" set:html={def.hero.contentHtml} />
+
+  <!-- BREADCRUMB -->
+  <Breadcrumb />
+
+  <!-- MAIN CONTENT WITH SIDEBAR -->
+  <section class="subcat-content">
+    <div class="container">
+      <div class="subcat-layout">
+
+        <!-- MAIN CONTENT (LEFT) -->
+        <main class="subcat-main">
+
+          <!-- CATALOG HEADER -->
+          <!-- id="catalogo": ancla del CTA primario del hero. 22 de las 33 páginas
+               originales la omitían (ancla rota); aquí se incluye siempre. -->
+          <div class="catalog-header" id="catalogo">
+            <div class="catalog-header__text">
+              <h2 class="catalog-header__title">{def.catalog.title}</h2>
+              <p class="catalog-header__desc">{def.catalog.desc}</p>
+            </div>
+            <div class="catalog-header__count">
+              <span class="catalog-header__number">{productos.length}</span>
+              <span class="catalog-header__label">producto{productos.length !== 1 ? 's' : ''}</span>
+            </div>
+          </div>
+
+          <!-- PRODUCTS GRID -->
+          <div class="categories__grid">
+            {productos.map((producto) => (
+              <SubcategoryProductCard
+                title={producto.data.title}
+                description={producto.data.description}
+                brand={producto.data.marca}
+                image={producto.data.imagen}
+                productSlug={producto.id}
+                flow={producto.data.flujo}
+                material={producto.data.material}
+                certifications={producto.data.certificaciones}
+              />
+            ))}
+          </div>
+
+          {def.empty && productos.length === 0 && (
+            <div class="catalog-empty">
+              <div class="catalog-empty__icon">🔍</div>
+              <h3 class="catalog-empty__title">{def.empty.title}</h3>
+              <p class="catalog-empty__text">{def.empty.text}</p>
+              <a href="#cotizar" class="btn btn--primary">{def.empty.buttonText}</a>
+            </div>
+          )}
+
+          <!-- TECHNICAL INFO -->
+          <div class="tech-info">
+            <h3 class="tech-info__title">{def.techInfo.title}</h3>
+            <div class="tech-info__grid">
+              {def.techInfo.items.map((item) => (
+                <div class="tech-info__item">
+                  <span class="tech-info__label">{item.label}</span>
+                  <span class="tech-info__value">{item.value}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {def.ctaFinal && (
+            <div class="subcat-cta-final">
+              <div class="subcat-cta-final__content">
+                <h3 class="subcat-cta-final__title">{def.ctaFinal.title}</h3>
+                <p class="subcat-cta-final__desc">{def.ctaFinal.desc}</p>
+              </div>
+              <a href="#cotizar" class="btn btn--primary">{def.ctaFinal.buttonText}</a>
+            </div>
+          )}
+
+        </main>
+
+        <!-- SIDEBAR (RIGHT) -->
+        <ProductSidebar
+          navTitulo={def.sidebar.navTitulo}
+          subcategorias={sidebarNav}
+          baseUrl={def.sidebar.baseUrl}
+          backLinkHref={def.sidebar.backLinkHref}
+          backLinkTexto={def.sidebar.backLinkTexto}
+          certificaciones={def.sidebar.certificaciones}
+          marcas={def.sidebar.marcas}
+          aplicaciones={def.sidebar.aplicaciones}
+          productosRelacionados={def.sidebar.productosRelacionados}
+        />
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RELATED PRODUCTS -->
+  <RelatedProductsGrid
+    titulo={def.related.titulo}
+    subtitulo={def.related.subtitulo}
+    productos={otrosProductos}
+    maxProductos={def.related.maxProductos ?? 3}
+    verTodosLink={def.related.verTodosLink}
+    verTodosTexto={def.related.verTodosTexto}
+  />
+
+  <CotizacionForm
+    titulo={def.cotizacion.titulo}
+    tipoEquipo={def.cotizacion.tipoEquipo}
+    pagina={def.cotizacion.pagina}
+  />
+
+  <!-- FAQ -->
+  <section class="faq-section" id="faq" aria-labelledby="faq-title">
+    <div class="container">
+      <h2 id="faq-title" class="section-title">Preguntas Frecuentes</h2>
+      <Faq items={def.faqs} id="faq" />
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  .faq-section {
+    padding: var(--spacing-2xl, 4rem) 0;
+    background: var(--color-surface, #fff);
+  }
+</style>

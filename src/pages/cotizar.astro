@@ -1,7 +1,6 @@
 ---
 import Layout from '../layouts/Base.astro';
 import '../styles/contacto.css';
-import LeadCapture from '../components/LeadCapture.astro';
 import Faq from '../components/Faq.astro';
 import Breadcrumb from '../components/Breadcrumb.astro';
 import { buildOrganizationSchema, buildServiceSchema, buildFAQSchema, buildBreadcrumbSchema } from '../lib/seo';
@@ -156,12 +155,12 @@ const structuredData = [
           <script is:inline>
             document.getElementById('cotizacion-form').addEventListener('submit', function(e) {
               e.preventDefault();
-              const nombre = (document.getElementById('nombre') as HTMLInputElement).value;
-              const empresa = (document.getElementById('empresa') as HTMLInputElement).value;
-              const telefono = (document.getElementById('telefono') as HTMLInputElement).value;
-              const estado = (document.getElementById('estado') as HTMLSelectElement).value;
-              const equipo = (document.getElementById('equipo') as HTMLSelectElement).value;
-              const descripcion = (document.getElementById('descripcion') as HTMLTextAreaElement).value;
+              const nombre = (document.getElementById('nombre')).value;
+              const empresa = (document.getElementById('empresa')).value;
+              const telefono = (document.getElementById('telefono')).value;
+              const estado = (document.getElementById('estado')).value;
+              const equipo = (document.getElementById('equipo')).value;
+              const descripcion = (document.getElementById('descripcion')).value;
               
               const msg = `*Solicitud de Cotización - Gama de México*\n\n` +
                 `👤 Nombre: ${nombre}\n` +

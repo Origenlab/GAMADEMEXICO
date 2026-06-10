@@ -13,6 +13,7 @@ schema:
       - q: "¿Los bomberos de Monterrey usan Storz o NST?"
         a: "Los Bomberos de Nuevo León operan con conexiones Storz en la mayoría de su equipo moderno. Verificar con la estación que cubre tu zona industrial. Si tu sistema es NST, tener adaptadores Storz-NST en cada hidrante exterior. Si es Storz, verificar compatibilidad directa."
 description: "Equipos contra incendios certificados UL/FM en Monterrey. Monitores, boquillas, mangueras y válvulas Elkhart Brass para industria regiomontana."
+fecha: "2026-03-19"
 categoria: "equipos-contra-incendios"
 autor:
   nombre: "Equipo Gama de México"

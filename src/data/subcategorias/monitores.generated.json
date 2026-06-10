@@ -1,0 +1,1622 @@
+[
+  {
+    "seccion": "monitores",
+    "slug": "certificado-fm",
+    "categoria": "monitores",
+    "filter": {
+      "subcategorias": [
+        "certificado-fm"
+      ]
+    },
+    "meta": {
+      "title": "Monitor Certificado FM Approved | Refinerías y Plantas México",
+      "description": "Monitores contra incendio certificados FM Approved. Cumplen FM 1421, NFPA 11 y 15. Para refinerías, petroquímicas y terminales de almacenamiento. Distribuidor Elkhart Brass México."
+    },
+    "hero": {
+      "title": "Monitor Certificado FM",
+      "intro": "Monitores contra incendio con certificación FM Approved (Factory Mutual), el estándar más exigente de la industria para equipos de protección activa. Requeridos por aseguradoras internacionales y especificados en proyectos de alto riesgo como refinerías, plantas químicas y terminales de almacenamiento.",
+      "badge": "Monitores Contra Incendios",
+      "metrics": [
+        {
+          "valor": "FM",
+          "texto": "Factory Mutual"
+        },
+        {
+          "valor": "1421",
+          "texto": "Estándar FM"
+        },
+        {
+          "valor": "NFPA",
+          "texto": "Cumplimiento"
+        }
+      ],
+      "primaryText": "Ver Catálogo",
+      "primaryLink": "#catalogo",
+      "secondaryText": "Solicitar Cotización",
+      "secondaryLink": "#cotizar",
+      "contentHtml": "<p>La certificación <strong>FM Approved</strong> (Factory Mutual) representa el nivel más alto de validación para equipos contra incendios a nivel mundial. Los monitores con esta certificación han sido sometidos a pruebas exhaustivas de rendimiento, durabilidad y confiabilidad según el estándar FM 1421, garantizando su funcionamiento en las condiciones más críticas. Esta certificación es requisito obligatorio para muchas aseguradoras internacionales y proyectos industriales de alto riesgo.</p>\n    <p><strong>Gama de México</strong> es distribuidor autorizado de monitores certificados FM de Elkhart Brass, reconocidos globalmente por su calidad y trazabilidad. Cada equipo incluye documentación completa de certificación para cumplimiento normativo y auditorías. Asesoramos en la selección del modelo correcto según los requerimientos específicos de tu póliza de seguro, normativa NFPA aplicable y condiciones operativas del proyecto.</p>"
+    },
+    "schema": {
+      "name": "Monitor Contra Incendios Certificado FM Approved",
+      "description": "Monitor contra incendios con certificación FM Approved para industria petroquímica y refinería. Elkhart Brass original.",
+      "image": "/img/monitores-contra-incendios/monitor-certificado-fm-contra-incendios-angulo-derecho-07.avif",
+      "url": "/monitores/certificado-fm",
+      "category": "Monitores Contra Incendios",
+      "brand": "Elkhart Brass",
+      "reviewAuthor": "Ing. Carlos Mendoza",
+      "reviewBody": "Excelente calidad y respaldo técnico de Gama de México. Equipos certificados con entrega puntual.",
+      "reviewDate": "2025-03-15",
+      "ratingCount": 32,
+      "reviewCount": 32
+    },
+    "breadcrumb": [
+      {
+        "name": "Inicio",
+        "url": "/"
+      },
+      {
+        "name": "Equipos",
+        "url": "/equipos"
+      },
+      {
+        "name": "Monitores Contra Incendios",
+        "url": "/monitores-contra-incendios"
+      }
+    ],
+    "catalog": {
+      "title": "Catálogo de Monitores Certificados FM",
+      "desc": "Selecciona el producto que mejor se adapte a tu proyecto industrial"
+    },
+    "empty": {
+      "title": "Próximamente más opciones",
+      "text": "Estamos agregando más productos de monitores certificados FM. Mientras tanto, solicita una cotización personalizada.",
+      "buttonText": "Solicitar Cotización"
+    },
+    "techInfo": {
+      "title": "Especificaciones Técnicas Generales",
+      "items": [
+        {
+          "label": "Caudal típico",
+          "value": "500 - 2,000 GPM"
+        },
+        {
+          "label": "Presión de trabajo",
+          "value": "200 - 300 PSI"
+        },
+        {
+          "label": "Rotación horizontal",
+          "value": "360° completos"
+        },
+        {
+          "label": "Ajuste vertical",
+          "value": "-45° a +90°"
+        },
+        {
+          "label": "Conexiones",
+          "value": "2.5\" y 3\" NPT/NH"
+        },
+        {
+          "label": "Materiales",
+          "value": "Bronce, Acero inox."
+        }
+      ]
+    },
+    "sidebar": {
+      "navTitulo": "Tipos de Monitores",
+      "baseUrl": "/monitores",
+      "backLinkHref": "/monitores-contra-incendios",
+      "backLinkTexto": "Ver todos los monitores",
+      "certificaciones": [
+        {
+          "siglas": "FM",
+          "nombre": "Factory Mutual"
+        },
+        {
+          "siglas": "UL",
+          "nombre": "UL Listed"
+        },
+        {
+          "siglas": "NOM",
+          "nombre": "NOM-002-STPS"
+        }
+      ],
+      "marcas": [
+        "Elkhart Brass",
+        "Akron Brass",
+        "Task Force Tips",
+        "POK"
+      ],
+      "aplicaciones": [
+        "Refinerías",
+        "Plantas petroquímicas",
+        "Terminales de almacenamiento",
+        "Industria automotriz",
+        "Proyectos con requerimientos FM"
+      ],
+      "productosRelacionados": [
+        {
+          "href": "/boquillas-contra-incendios",
+          "nombre": "Boquillas Contra Incendios"
+        },
+        {
+          "href": "/mangueras-contra-incendios",
+          "nombre": "Mangueras Contra Incendios"
+        },
+        {
+          "href": "/valvulas-contra-incendios",
+          "nombre": "Válvulas Contra Incendios"
+        },
+        {
+          "href": "/conexiones-herrajes-contra-incendios",
+          "nombre": "Conexiones y Herrajes"
+        }
+      ],
+      "subcategorias": [
+        {
+          "slug": "tipo-corazon",
+          "nombre": "Monitor Tipo Corazón",
+          "descripcion": "Protección perimetral 360°"
+        },
+        {
+          "slug": "cuello-cisne",
+          "nombre": "Monitor Cuello de Cisne",
+          "descripcion": "Protección de tanques elevados"
+        },
+        {
+          "slug": "certificado-fm",
+          "nombre": "Monitor Certificado FM",
+          "descripcion": "Aprobación Factory Mutual"
+        },
+        {
+          "slug": "ul-listed",
+          "nombre": "Monitor UL Listed",
+          "descripcion": "Certificación Underwriters Labs"
+        },
+        {
+          "slug": "manuales",
+          "nombre": "Monitores Manuales",
+          "descripcion": "Vulcan, Stinger, RAM XD"
+        },
+        {
+          "slug": "electricos",
+          "nombre": "Monitores Eléctricos",
+          "descripcion": "EXM2, Control Remoto"
+        },
+        {
+          "slug": "industriales",
+          "nombre": "Monitores Industriales",
+          "descripcion": "FM Approved para industria"
+        }
+      ]
+    },
+    "related": {
+      "titulo": "Otros Tipos de Monitores",
+      "subtitulo": "Explora más opciones según tu aplicación específica",
+      "maxProductos": 3,
+      "verTodosLink": "/monitores-contra-incendios",
+      "verTodosTexto": "Ver todos los monitores"
+    },
+    "cotizacion": {
+      "titulo": "Cotiza Monitores Certificados FM",
+      "tipoEquipo": "Monitores",
+      "pagina": "Monitores Certificados FM"
+    },
+    "faqs": [
+      {
+        "pregunta": "¿Qué significa que un monitor tenga certificación FM Approved?",
+        "respuesta": "FM Approved significa que el monitor fue ensayado y certificado por Factory Mutual Research, una de las organizaciones de certificación más rigurosas del sector asegurador industrial. La certificación FM garantiza que el equipo cumple con requisitos de diseño, materiales, rendimiento hidráulico y confiabilidad bajo condiciones extremas de operación. Los monitores pasan pruebas de flujo, resistencia mecánica, durabilidad en ambientes corrosivos y compatibilidad con agentes espumantes."
+      },
+      {
+        "pregunta": "¿Qué industrias exigen equipos con certificación FM?",
+        "respuesta": "La certificación FM es requerida principalmente por aseguradoras industriales en refinerías, petroquímicas, terminales de almacenamiento, plantas de gas natural, fábricas de pintura, aeropuertos y bodegas de materiales inflamables. También es requisito frecuente en proyectos con inversión extranjera directa donde el estándar de seguridad exigido es el norteamericano. Plantas GM, BMW, Toyota y otras automotrices en México frecuentemente especifican FM en sus sistemas de protección."
+      },
+      {
+        "pregunta": "¿Qué documentación entregan con los monitores certificados FM?",
+        "respuesta": "Con cada monitor FM entregamos: hoja de datos técnicos oficial Elkhart Brass, certificado de origen, carta de autenticidad como distribuidor autorizado, número de referencia del catálogo FM y guía de instalación. Esta documentación es suficiente para respaldos ante aseguradoras y verificaciones de protección civil industrial."
+      },
+      {
+        "pregunta": "¿Cuál es la diferencia entre FM Approved y UL Listed en monitores?",
+        "respuesta": "FM Approved es la certificación de Factory Mutual, organización de origen asegurador que evalúa el equipo desde la perspectiva de la protección de la propiedad asegurada. UL Listed es la certificación de Underwriters Laboratories, un laboratorio de pruebas independiente que certifica seguridad y desempeño bajo estándares propios. Muchas aseguradoras industriales (especialmente en petroquímica) exigen FM; las normas de construcción locales y protección civil suelen aceptar UL. Los monitores con certificación dual FM+UL cubren ambos frentes."
+      },
+      {
+        "pregunta": "¿Los monitores FM Approved requieren instalación certificada?",
+        "respuesta": "La certificación FM es del equipo, no del instalador. Sin embargo, para que la certificación sea válida ante la aseguradora, la instalación debe seguir los criterios del FM Global Property Loss Prevention Data Sheet (DS 4-4N para monitores) y la documentación de diseño debe reflejar que el sistema fue instalado conforme a esos criterios. Recomendamos coordinación con el ingeniero de riesgos de tu aseguradora desde la etapa de diseño."
+      },
+      {
+        "pregunta": "¿Puedo instalar un monitor FM Approved en un sistema existente no certificado?",
+        "respuesta": "Sí, puedes instalar un monitor FM Approved en un sistema existente. El monitor en sí llevará la certificación FM, lo que mejora el nivel de certificación del sistema. Sin embargo, si tu aseguradora requiere que el sistema completo sea FM, también deberán revisarse válvulas, boquillas y la red de suministro. Asesoramos en el proceso de actualización gradual para alcanzar el nivel requerido por tu póliza."
+      }
+    ]
+  },
+  {
+    "seccion": "monitores",
+    "slug": "cuello-cisne",
+    "categoria": "monitores",
+    "filter": {
+      "subcategorias": [
+        "cuello-cisne"
+      ]
+    },
+    "meta": {
+      "title": "Monitor Cuello de Cisne Contra Incendios | Tanques y Refinerías México",
+      "description": "Monitor cuello de cisne para protección de tanques, refinerías y terminales. Proyección -45° a +90°, caudal hasta 2,000 GPM. Elkhart Brass FM/UL. Cotización México."
+    },
+    "hero": {
+      "title": "Monitor Cuello de Cisne",
+      "intro": "Monitores fijos para protección de tanques de almacenamiento, refinerías y terminales de almacenamiento. El brazo curvo del cuello de cisne permite proyección descendente desde -45° hasta +90°, cubriendo superficies de tanques verticales que los monitores convencionales no pueden alcanzar. Distribuidor autorizado Elkhart Brass México — modelos certificados FM Approved y UL Listed, cumplimiento NFPA 11, 15 y API 2030.",
+      "badge": "Monitores Contra Incendios",
+      "metrics": [
+        {
+          "valor": "360°",
+          "texto": "Giro horizontal"
+        },
+        {
+          "valor": "90°",
+          "texto": "Ángulo de descarga"
+        },
+        {
+          "valor": "1,000",
+          "texto": "GPM capacidad"
+        }
+      ],
+      "primaryText": "Ver Catálogo",
+      "primaryLink": "#catalogo",
+      "secondaryText": "Solicitar Cotización",
+      "secondaryLink": "#cotizar",
+      "contentHtml": "<p>El <strong>monitor cuello de cisne</strong> es la solución especializada para protección de tanques de almacenamiento de hidrocarburos y estructuras elevadas. Su diseño con cuello extendido y curvado permite posicionar la descarga en ángulos que los monitores convencionales no alcanzan, dirigiendo el flujo de agua o espuma hacia la superficie del tanque para enfriamiento perimetral o hacia puntos específicos en caso de incendio en el sello del techo flotante.</p>\n    <p>En <strong>Gama de México</strong> suministramos monitores cuello de cisne de Elkhart Brass y ARMECO con capacidades desde 500 hasta 1,000 GPM. Fabricados en bronce fundido resistente a la intemperie y ambientes corrosivos, estos equipos cumplen con NFPA 11 y NFPA 15. Asesoramos en el dimensionamiento según el diámetro del tanque, tipo de producto almacenado y requerimientos de la aseguradora para refinerías, terminales de almacenamiento y plantas petroquímicas.</p>"
+    },
+    "schema": {
+      "name": "Monitor Cuello de Cisne Contra Incendios",
+      "description": "Monitor cuello de cisne para tanques y superficies elevadas. Giro -45° a +90°. Caudal 500-2,000 GPM. Certificación FM/UL.",
+      "image": "/img/monitores-contra-incendios/monitor-certificado-fm-contra-incendios-angulo-derecho-07.avif",
+      "url": "/monitores/cuello-cisne",
+      "category": "Monitores Contra Incendios",
+      "brand": "Elkhart Brass",
+      "reviewAuthor": "Ing. Carlos Mendoza",
+      "reviewBody": "Excelente calidad y respaldo técnico de Gama de México. Equipos certificados con entrega puntual.",
+      "reviewDate": "2025-03-15",
+      "ratingCount": 32,
+      "reviewCount": 32
+    },
+    "breadcrumb": [
+      {
+        "name": "Inicio",
+        "url": "/"
+      },
+      {
+        "name": "Equipos",
+        "url": "/equipos"
+      },
+      {
+        "name": "Monitores Contra Incendios",
+        "url": "/monitores-contra-incendios"
+      }
+    ],
+    "catalog": {
+      "title": "Catálogo de Monitor Fijo Tipo Cuello de Cisne",
+      "desc": "Selecciona el producto que mejor se adapte a tu proyecto industrial"
+    },
+    "empty": {
+      "title": "Próximamente más opciones",
+      "text": "Estamos agregando más productos de monitores cuello de cisne de diferentes marcas. Mientras tanto, solicita una cotización personalizada.",
+      "buttonText": "Solicitar Cotización"
+    },
+    "techInfo": {
+      "title": "Especificaciones Técnicas Generales",
+      "items": [
+        {
+          "label": "Caudal típico",
+          "value": "500 - 2,000 GPM"
+        },
+        {
+          "label": "Elevación",
+          "value": "10 - 111 pies"
+        },
+        {
+          "label": "Presión de trabajo",
+          "value": "150 - 200 PSI"
+        },
+        {
+          "label": "Control",
+          "value": "Desde nivel piso"
+        },
+        {
+          "label": "Tipos",
+          "value": "Autosoportado/Soportado"
+        },
+        {
+          "label": "Materiales",
+          "value": "Acero, Galvanizado"
+        }
+      ]
+    },
+    "sidebar": {
+      "navTitulo": "Tipos de Monitores",
+      "baseUrl": "/monitores",
+      "backLinkHref": "/monitores-contra-incendios",
+      "backLinkTexto": "Ver todos los monitores",
+      "certificaciones": [
+        {
+          "siglas": "FM",
+          "nombre": "Factory Mutual"
+        },
+        {
+          "siglas": "UL",
+          "nombre": "UL Listed"
+        },
+        {
+          "siglas": "NOM",
+          "nombre": "NOM-002-STPS"
+        }
+      ],
+      "marcas": [
+        "Elkhart Brass",
+        "Akron Brass",
+        "Task Force Tips",
+        "POK"
+      ],
+      "aplicaciones": [
+        "Refinerías",
+        "Plantas petroquímicas",
+        "Terminales de almacenamiento",
+        "Tanques elevados",
+        "Muelles y puertos"
+      ],
+      "productosRelacionados": [
+        {
+          "href": "/boquillas-contra-incendios",
+          "nombre": "Boquillas Contra Incendios"
+        },
+        {
+          "href": "/mangueras-contra-incendios",
+          "nombre": "Mangueras Contra Incendios"
+        },
+        {
+          "href": "/valvulas-contra-incendios",
+          "nombre": "Válvulas Contra Incendios"
+        },
+        {
+          "href": "/conexiones-herrajes-contra-incendios",
+          "nombre": "Conexiones y Herrajes"
+        }
+      ],
+      "subcategorias": [
+        {
+          "slug": "tipo-corazon",
+          "nombre": "Monitor Tipo Corazón",
+          "descripcion": "Protección perimetral 360°"
+        },
+        {
+          "slug": "cuello-cisne",
+          "nombre": "Monitor Cuello de Cisne",
+          "descripcion": "Protección de tanques elevados"
+        },
+        {
+          "slug": "certificado-fm",
+          "nombre": "Monitor Certificado FM",
+          "descripcion": "Aprobación Factory Mutual"
+        },
+        {
+          "slug": "ul-listed",
+          "nombre": "Monitor UL Listed",
+          "descripcion": "Certificación Underwriters Labs"
+        },
+        {
+          "slug": "manuales",
+          "nombre": "Monitores Manuales",
+          "descripcion": "Vulcan, Stinger, RAM XD"
+        },
+        {
+          "slug": "electricos",
+          "nombre": "Monitores Eléctricos",
+          "descripcion": "EXM2, Control Remoto"
+        },
+        {
+          "slug": "industriales",
+          "nombre": "Monitores Industriales",
+          "descripcion": "FM Approved para industria"
+        }
+      ]
+    },
+    "related": {
+      "titulo": "Otros Tipos de Monitores",
+      "subtitulo": "Explora más opciones según tu aplicación específica",
+      "maxProductos": 3,
+      "verTodosLink": "/monitores-contra-incendios",
+      "verTodosTexto": "Ver todos los monitores"
+    },
+    "cotizacion": {
+      "titulo": "Cotiza Monitores Cuello de Cisne",
+      "tipoEquipo": "Monitores",
+      "pagina": "Monitores Cuello de Cisne"
+    },
+    "faqs": [
+      {
+        "pregunta": "¿Para qué tipo de instalaciones se recomienda el monitor cuello de cisne?",
+        "respuesta": "El monitor cuello de cisne está diseñado para aplicaciones donde el agua debe proyectarse hacia abajo sobre superficies elevadas: techos de tanques de almacenamiento, sistemas de enfriamiento en refinerías, muelles de carga con estructuras en altura y plantas donde la geometría impide el uso de monitores convencionales. Su forma articulada permite coberturas de ángulo negativo imposibles con monitores tipo corazón."
+      },
+      {
+        "pregunta": "¿Cuál es la diferencia entre el monitor cuello de cisne y el tipo corazón?",
+        "respuesta": "El monitor cuello de cisne tiene un brazo curvo que permite proyección descendente y un rango de elevación de -45° a +90°, ideal para tanques y superficies elevadas. El monitor tipo corazón tiene rotación horizontal completa de 360° para protección perimetral en planta. La elección depende del tipo de riesgo y la geometría de la instalación. Para una refinería con tanques de techo flotante se usa cuello de cisne; para protección de perímetro horizontal se usa tipo corazón."
+      },
+      {
+        "pregunta": "¿Los monitores cuello de cisne están certificados FM o UL?",
+        "respuesta": "Sí. Distribuimos monitores cuello de cisne de Elkhart Brass con certificación FM Approved y UL Listed. Estos monitores cumplen con NFPA 11 y 15 para sistemas de espuma y agua. Proporcionamos documentación técnica completa para verificaciones de protección civil y aseguradoras industriales."
+      },
+      {
+        "pregunta": "¿Qué normas aplican a la protección de tanques con monitores cuello de cisne?",
+        "respuesta": "Para protección de tanques de almacenamiento con monitores cuello de cisne aplican principalmente: NFPA 11 (sistemas de espuma para tanques), NFPA 15 (sistemas de agua para riesgos especiales), API 2030 (aplicación de espuma en tanques de petróleo) y la norma FM 1421 para instalaciones que requieren aprobación de Factory Mutual. La selección del modelo, caudal y tipo de boquilla se determina según el diámetro del tanque y el tipo de producto almacenado."
+      },
+      {
+        "pregunta": "¿Cuál es el caudal típico para enfriamiento de tanques con monitor cuello de cisne?",
+        "respuesta": "El caudal necesario para enfriamiento de tanques se calcula según NFPA 15 con una densidad mínima de 0.10 GPM/pie² sobre la superficie del tanque. Para tanques de 30 metros de diámetro, esto representa caudales de 600 a 1,200 GPM por monitor. Los modelos cuello de cisne Elkhart Brass que distribuimos están disponibles en rangos de 500 a 2,000 GPM para cubrir instalaciones de cualquier escala."
+      },
+      {
+        "pregunta": "¿El monitor cuello de cisne puede operar en posición autosoportada?",
+        "respuesta": "Existen dos configuraciones: autosoportada (self-supporting) donde el monitor se instala directamente sobre la tubería de suministro sin estructura adicional, y soportada (supported) donde el cuerpo se fija a una estructura metálica y la tubería viene independiente. La versión autosoportada simplifica la instalación pero requiere que la tubería de suministro esté diseñada para absorber los esfuerzos de reacción del chorro. Asesoramos en la selección según las condiciones de tu instalación."
+      }
+    ]
+  },
+  {
+    "seccion": "monitores",
+    "slug": "electricos",
+    "categoria": "monitores",
+    "filter": {
+      "subcategorias": [
+        "monitores-electricos"
+      ]
+    },
+    "meta": {
+      "title": "Monitores Eléctricos EXM2 — Control Remoto Zona Clasificada | México",
+      "description": "Monitores eléctricos Elkhart Brass EXM2 con control remoto por joystick. UL Clase I División 2 para atmósferas explosivas. Integración SCADA. Distribuidor México."
+    },
+    "hero": {
+      "title": "Monitores Eléctricos EXM2",
+      "intro": "Monitores con actuadores electricos y sistema de control EXM2 para operacion remota. Certificados UL Clase I Division 2 para zonas clasificadas. Se integran con sistemas SCADA y paneles de control de planta.",
+      "badge": "Monitores Contra Incendios",
+      "metrics": [
+        {
+          "valor": "EXM2",
+          "texto": "Sistema de control"
+        },
+        {
+          "valor": "360°",
+          "texto": "Control remoto"
+        },
+        {
+          "valor": "UL",
+          "texto": "Clase I Div 2"
+        }
+      ],
+      "primaryText": "Ver Catálogo",
+      "primaryLink": "#catalogo",
+      "secondaryText": "Solicitar Cotización",
+      "secondaryLink": "#cotizar",
+      "contentHtml": "<p>Los <strong>monitores electricos</strong> Elkhart Brass combinan la capacidad de descarga de un monitor industrial con operacion a distancia mediante el sistema de control EXM2. Los actuadores mueven el monitor en horizontal y vertical desde un joystick o panel de control, sin que ningun operador tenga que estar junto al equipo durante la emergencia.</p>\n    <p>En <strong>Gama de Mexico</strong> distribuimos monitores electricos Elkhart Brass con certificacion UL Clase I Division 2, aptos para refineras, terminales de almacenamiento de gas, plantas petroquimicas y cualquier instalacion donde la operacion manual represente riesgo para el personal. Los integramos con sistemas SCADA, PLC y paneles de control existentes.</p>"
+    },
+    "schema": {
+      "name": "Monitores Electricos EXM2 Contra Incendios",
+      "description": "Monitores electricos Elkhart Brass con sistema de control EXM2. Operacion remota, UL Clase I Division 2 para zonas clasificadas. Distribuidor Mexico.",
+      "image": "/img/monitores-contra-incendios/elkhart-vulcan-mon-01.avif",
+      "url": "/monitores/electricos",
+      "category": "Monitores Contra Incendios",
+      "brand": "Elkhart Brass",
+      "reviewAuthor": "Ing. Luis Ramirez",
+      "reviewBody": "El sistema EXM2 funciona impecable en nuestra terminal de gas. Gama de Mexico nos apoyo con la integracion al SCADA existente.",
+      "reviewDate": "2025-08-20",
+      "ratingCount": 22,
+      "reviewCount": 22
+    },
+    "breadcrumb": [
+      {
+        "name": "Inicio",
+        "url": "/"
+      },
+      {
+        "name": "Equipos",
+        "url": "/equipos"
+      },
+      {
+        "name": "Monitores Contra Incendios",
+        "url": "/monitores-contra-incendios"
+      },
+      {
+        "name": "Monitores Eléctricos",
+        "url": "/monitores/electricos"
+      }
+    ],
+    "catalog": {
+      "title": "Monitores Electricos con Control Remoto",
+      "desc": "Monitores Elkhart Brass con sistema EXM2 para operacion a distancia"
+    },
+    "empty": {
+      "title": "Proximamente mas opciones",
+      "text": "Estamos agregando fichas de monitores electricos Elkhart Brass. Mientras tanto, solicita una cotizacion personalizada con especificaciones tecnicas.",
+      "buttonText": "Solicitar Cotización"
+    },
+    "techInfo": {
+      "title": "Especificaciones del Sistema EXM2",
+      "items": [
+        {
+          "label": "Control",
+          "value": "Joystick / SCADA"
+        },
+        {
+          "label": "Certificacion",
+          "value": "UL Clase I Div 2"
+        },
+        {
+          "label": "Rotacion",
+          "value": "360° horizontal"
+        },
+        {
+          "label": "Elevacion",
+          "value": "-45° a +90°"
+        },
+        {
+          "label": "Caudal",
+          "value": "Hasta 2,000 GPM"
+        },
+        {
+          "label": "Alimentacion",
+          "value": "24 VDC / 120 VAC"
+        }
+      ]
+    },
+    "sidebar": {
+      "navTitulo": "Tipos de Monitores",
+      "baseUrl": "/monitores",
+      "backLinkHref": "/monitores-contra-incendios",
+      "backLinkTexto": "Ver todos los monitores",
+      "certificaciones": [
+        {
+          "siglas": "FM",
+          "nombre": "Factory Mutual"
+        },
+        {
+          "siglas": "UL",
+          "nombre": "UL Listed"
+        },
+        {
+          "siglas": "NOM",
+          "nombre": "NOM-002-STPS"
+        }
+      ],
+      "marcas": [
+        "Elkhart Brass",
+        "Akron Brass",
+        "Task Force Tips",
+        "POK"
+      ],
+      "aplicaciones": [
+        "Refinerías",
+        "Terminales de gas",
+        "Plantas petroquímicas",
+        "Zonas clasificadas",
+        "Plataformas offshore",
+        "Terminales de almacenamiento"
+      ],
+      "productosRelacionados": [
+        {
+          "href": "/boquillas-contra-incendios",
+          "nombre": "Boquillas Contra Incendios"
+        },
+        {
+          "href": "/mangueras-contra-incendios",
+          "nombre": "Mangueras Contra Incendios"
+        },
+        {
+          "href": "/valvulas-contra-incendios",
+          "nombre": "Válvulas Contra Incendios"
+        },
+        {
+          "href": "/conexiones-herrajes-contra-incendios",
+          "nombre": "Conexiones y Herrajes"
+        }
+      ],
+      "subcategorias": [
+        {
+          "slug": "tipo-corazon",
+          "nombre": "Monitor Tipo Corazón",
+          "descripcion": "Protección perimetral 360°"
+        },
+        {
+          "slug": "cuello-cisne",
+          "nombre": "Monitor Cuello de Cisne",
+          "descripcion": "Protección de tanques elevados"
+        },
+        {
+          "slug": "certificado-fm",
+          "nombre": "Monitor Certificado FM",
+          "descripcion": "Aprobación Factory Mutual"
+        },
+        {
+          "slug": "ul-listed",
+          "nombre": "Monitor UL Listed",
+          "descripcion": "Certificación Underwriters Labs"
+        },
+        {
+          "slug": "manuales",
+          "nombre": "Monitores Manuales",
+          "descripcion": "Vulcan, Stinger, RAM XD"
+        },
+        {
+          "slug": "electricos",
+          "nombre": "Monitores Eléctricos",
+          "descripcion": "EXM2, Control Remoto"
+        },
+        {
+          "slug": "industriales",
+          "nombre": "Monitores Industriales",
+          "descripcion": "FM Approved, Copperhead"
+        }
+      ]
+    },
+    "related": {
+      "titulo": "Otros Tipos de Monitores",
+      "subtitulo": "Monitores manuales e industriales para distintas aplicaciones",
+      "maxProductos": 3,
+      "verTodosLink": "/monitores-contra-incendios",
+      "verTodosTexto": "Ver todos los monitores"
+    },
+    "cotizacion": {
+      "titulo": "Cotiza Monitores Eléctricos",
+      "tipoEquipo": "Monitores",
+      "pagina": "Monitores Eléctricos EXM2"
+    },
+    "faqs": [
+      {
+        "pregunta": "¿Qué ventaja tiene un monitor eléctrico sobre uno manual?",
+        "respuesta": "El monitor eléctrico permite operación a distancia mediante actuadores y joystick, eliminando la necesidad de que un operador esté físicamente junto al equipo durante la descarga. Esto es crítico en plantas petroquímicas, terminales de gas y zonas clasificadas donde la exposición del personal al fuego, calor radiante o atmósferas explosivas representa un riesgo inaceptable."
+      },
+      {
+        "pregunta": "¿El sistema EXM2 de Elkhart Brass funciona en zonas clasificadas?",
+        "respuesta": "Sí. El sistema de control EXM2 de Elkhart Brass cuenta con certificación UL Clase I División 2 para operación en atmósferas potencialmente explosivas. Los actuadores están sellados y los componentes eléctricos cumplen con los requisitos de NFPA 70 (NEC) para instalaciones en áreas peligrosas."
+      },
+      {
+        "pregunta": "¿Qué mantenimiento requiere un monitor eléctrico?",
+        "respuesta": "El mantenimiento sigue los lineamientos de NFPA 25 para sistemas fijos de protección contra incendios. Incluye pruebas funcionales trimestrales del sistema de control, verificación de actuadores y respuesta del joystick, inspección de sellos y conexiones eléctricas, y prueba de flujo anual. Gama de México ofrece contratos de mantenimiento preventivo para monitores eléctricos instalados."
+      },
+      {
+        "pregunta": "¿Se puede integrar el monitor eléctrico EXM2 con sistemas SCADA?",
+        "respuesta": "Sí. El sistema EXM2 de Elkhart Brass puede integrarse con sistemas SCADA, paneles de control de planta y sistemas de gestión de emergencias a través de señales digitales y analógicas estándar. La integración permite activación automática ante señal de detector, control desde sala de control y retroalimentación de posición al sistema central. Para proyectos de integración SCADA, coordinamos el proceso con el equipo de automatización del cliente."
+      },
+      {
+        "pregunta": "¿Cuál es el alcance de proyección de un monitor eléctrico?",
+        "respuesta": "El alcance depende del modelo, caudal y presión de operación. Los monitores eléctricos Elkhart Brass tipo corazón a 750 GPM y 100 PSI alcanzan proyecciones horizontales de 50 a 80 metros con boquilla de chorro sólido. Con boquilla de niebla el alcance se reduce pero la cobertura de superficie es mayor. Diseñamos el sistema según las dimensiones del área a proteger y los criterios de densidad de aplicación de NFPA 15 o 11."
+      },
+      {
+        "pregunta": "¿Qué pasa si falla la energía eléctrica durante un incendio?",
+        "respuesta": "Los sistemas de monitors eléctricos bien diseñados tienen energía de respaldo (UPS o generador) que mantiene operativo el sistema de control durante al menos 30 minutos. Además, los monitores EXM2 tienen un modo de operación manual de emergencia que permite controlar el equipo localmente en caso de falla del sistema eléctrico. Esta redundancia es parte del diseño recomendado para instalaciones críticas según NFPA 72 y FM."
+      }
+    ]
+  },
+  {
+    "seccion": "monitores",
+    "slug": "industriales",
+    "categoria": "monitores",
+    "filter": {
+      "subcategorias": [
+        "monitores-industriales"
+      ]
+    },
+    "meta": {
+      "title": "Monitores Industriales FM Approved | Refinerías y Petroquímica",
+      "description": "Monitores industriales FM Approved Elkhart Brass: Copperhead hasta 2,500 GPM. Para refinerías, PEMEX, CFE y terminales de almacenamiento. Bajo mantenimiento. México."
+    },
+    "hero": {
+      "title": "Monitores Industriales",
+      "intro": "Monitores fijos FM Approved para instalaciones de alto riesgo: refinerías, plantas petroquímicas, terminales de almacenamiento y generación eléctrica. Construcción resistente a corrosión, bajo mantenimiento, caudales de hasta 2,500 GPM. Cumplimiento NFPA 15, FM 1421 y NOM-002-STPS.",
+      "badge": "Monitores Contra Incendios",
+      "metrics": [
+        {
+          "valor": "FM",
+          "texto": "Factory Mutual"
+        },
+        {
+          "valor": "2,500",
+          "texto": "GPM máximo"
+        },
+        {
+          "valor": "NFPA 15",
+          "texto": "Cumplimiento"
+        }
+      ],
+      "primaryText": "Ver Catálogo",
+      "primaryLink": "#catalogo",
+      "secondaryText": "Solicitar Cotización",
+      "secondaryLink": "#cotizar",
+      "contentHtml": "<p>Los <strong>monitores industriales</strong> Elkhart Brass están diseñados para entornos donde la corrosión, las temperaturas extremas y la exposición continua a la intemperie destruirían un monitor convencional. El Copperhead, su modelo insignia para aplicaciones industriales, opera sin mantenimiento durante años gracias a su construcción sellada y materiales resistentes a ambientes químicos.</p>\n    <p>En <strong>Gama de México</strong> suministramos monitores industriales FM Approved para proyectos de PEMEX, CFE, terminales privadas de almacenamiento y plantas petroquímicas. Asesoramos en la selección del modelo correcto según el caudal requerido, tipo de riesgo, agente extintor y requisitos de la aseguradora. Entregamos con documentación FM completa para verificación de protección civil.</p>"
+    },
+    "schema": {
+      "name": "Monitores Industriales FM Approved Contra Incendios",
+      "description": "Monitores industriales FM Approved Elkhart Brass para refinerias y petroquimica. Copperhead bajo mantenimiento, hasta 2,500 GPM. Distribuidor Mexico.",
+      "image": "/img/monitores-contra-incendios/elkhart-copperhead-mon-01.avif",
+      "url": "/monitores/industriales",
+      "category": "Monitores Contra Incendios",
+      "brand": "Elkhart Brass",
+      "reviewAuthor": "Ing. Fernando Torres",
+      "reviewBody": "Instalamos Copperhead en nuestra terminal de almacenamiento. Tres anos sin mantenimiento correctivo. Gama de Mexico cumplio con los tiempos de entrega.",
+      "reviewDate": "2025-05-12",
+      "ratingCount": 25,
+      "reviewCount": 25
+    },
+    "breadcrumb": [
+      {
+        "name": "Inicio",
+        "url": "/"
+      },
+      {
+        "name": "Equipos",
+        "url": "/equipos"
+      },
+      {
+        "name": "Monitores Contra Incendios",
+        "url": "/monitores-contra-incendios"
+      },
+      {
+        "name": "Monitores Industriales",
+        "url": "/monitores/industriales"
+      }
+    ],
+    "catalog": {
+      "title": "Monitores Industriales FM Approved",
+      "desc": "Monitores Elkhart Brass para refinerías, petroquímica y terminales de almacenamiento"
+    },
+    "empty": {
+      "title": "Próximamente más opciones",
+      "text": "Estamos agregando fichas de monitores industriales. Solicita cotización con especificaciones para tu proyecto.",
+      "buttonText": "Solicitar Cotización"
+    },
+    "techInfo": {
+      "title": "Especificaciones Técnicas Generales",
+      "items": [
+        {
+          "label": "Caudal",
+          "value": "500 - 2,500 GPM"
+        },
+        {
+          "label": "Certificación",
+          "value": "FM Approved"
+        },
+        {
+          "label": "Presión",
+          "value": "100 - 175 PSI"
+        },
+        {
+          "label": "Material",
+          "value": "Aluminio / Bronce naval"
+        },
+        {
+          "label": "Mantenimiento",
+          "value": "Diseño bajo mant."
+        },
+        {
+          "label": "Norma",
+          "value": "NFPA 15 / NFPA 25"
+        }
+      ]
+    },
+    "sidebar": {
+      "navTitulo": "Tipos de Monitores",
+      "baseUrl": "/monitores",
+      "backLinkHref": "/monitores-contra-incendios",
+      "backLinkTexto": "Ver todos los monitores",
+      "certificaciones": [
+        {
+          "siglas": "FM",
+          "nombre": "Factory Mutual"
+        },
+        {
+          "siglas": "UL",
+          "nombre": "UL Listed"
+        },
+        {
+          "siglas": "NOM",
+          "nombre": "NOM-002-STPS"
+        }
+      ],
+      "marcas": [
+        "Elkhart Brass",
+        "Akron Brass",
+        "Task Force Tips",
+        "POK"
+      ],
+      "aplicaciones": [
+        "Refinerías (PEMEX)",
+        "Plantas petroquímicas",
+        "Terminales de almacenamiento",
+        "Generación eléctrica (CFE)",
+        "Hangares de aviación",
+        "Muelles industriales"
+      ],
+      "productosRelacionados": [
+        {
+          "href": "/boquillas-contra-incendios",
+          "nombre": "Boquillas Contra Incendios"
+        },
+        {
+          "href": "/mangueras-contra-incendios",
+          "nombre": "Mangueras Contra Incendios"
+        },
+        {
+          "href": "/valvulas-contra-incendios",
+          "nombre": "Válvulas Contra Incendios"
+        },
+        {
+          "href": "/conexiones-herrajes-contra-incendios",
+          "nombre": "Conexiones y Herrajes"
+        }
+      ],
+      "subcategorias": [
+        {
+          "slug": "tipo-corazon",
+          "nombre": "Monitor Tipo Corazón",
+          "descripcion": "Protección perimetral 360°"
+        },
+        {
+          "slug": "cuello-cisne",
+          "nombre": "Monitor Cuello de Cisne",
+          "descripcion": "Protección de tanques elevados"
+        },
+        {
+          "slug": "certificado-fm",
+          "nombre": "Monitor Certificado FM",
+          "descripcion": "Aprobación Factory Mutual"
+        },
+        {
+          "slug": "ul-listed",
+          "nombre": "Monitor UL Listed",
+          "descripcion": "Certificación Underwriters Labs"
+        },
+        {
+          "slug": "manuales",
+          "nombre": "Monitores Manuales",
+          "descripcion": "Vulcan, Stinger, RAM XD"
+        },
+        {
+          "slug": "electricos",
+          "nombre": "Monitores Eléctricos",
+          "descripcion": "EXM2, Control Remoto"
+        },
+        {
+          "slug": "industriales",
+          "nombre": "Monitores Industriales",
+          "descripcion": "FM Approved, Copperhead"
+        }
+      ]
+    },
+    "related": {
+      "titulo": "Otros Tipos de Monitores",
+      "subtitulo": "Monitores manuales y eléctricos para distintas aplicaciones",
+      "maxProductos": 3,
+      "verTodosLink": "/monitores-contra-incendios",
+      "verTodosTexto": "Ver todos los monitores"
+    },
+    "cotizacion": {
+      "titulo": "Cotiza Monitores Industriales",
+      "tipoEquipo": "Monitores",
+      "pagina": "Monitores Industriales FM"
+    },
+    "faqs": [
+      {
+        "pregunta": "¿Qué significa que un monitor sea FM Approved?",
+        "respuesta": "FM Approved indica que el monitor fue probado y aprobado por Factory Mutual, una de las aseguradoras industriales más exigentes del mundo. La aprobación FM verifica que el equipo cumple con los estándares de desempeño bajo condiciones reales de incendio, incluyendo resistencia a corrosión, presión de trabajo y caudal mínimo. Las aseguradoras industriales en México y el mundo exigen equipos FM Approved para reducir primas y validar sistemas de protección."
+      },
+      {
+        "pregunta": "¿En qué industrias se instalan monitores industriales?",
+        "respuesta": "Los monitores industriales FM Approved se instalan en refinerías, plantas petroquímicas, terminales de almacenamiento de hidrocarburos, plantas de generación eléctrica (CFE), instalaciones de PEMEX y empresas privadas del sector energético. También se usan en hangares de aviación, muelles industriales y almacenes de materiales peligrosos. El monitor Copperhead de Elkhart Brass está diseñado específicamente para estos entornos corrosivos y de alto riesgo."
+      },
+      {
+        "pregunta": "¿Qué mantenimiento requiere un monitor industrial según NFPA 25?",
+        "respuesta": "NFPA 25 establece inspección visual trimestral, prueba funcional semestral (movimiento completo horizontal y vertical) y prueba de flujo anual. El mantenimiento incluye lubricación de mecanismos, verificación de sellos y juntas, limpieza de orificios de la boquilla y revisión de la base de montaje. Gama de México ofrece contratos de mantenimiento preventivo para monitores industriales instalados en México."
+      },
+      {
+        "pregunta": "¿Qué ventaja tiene el Copperhead de Elkhart Brass frente a otros monitores industriales?",
+        "respuesta": "El Copperhead está construido en aleación de aluminio marino con acabado anodizado duro y mecanismos sellados que eliminan la necesidad de lubricación periódica. Su diseño \"low maintenance\" reduce los costos de operación en instalaciones donde acceder al monitor para mantenimiento es costoso o implica parar procesos industriales. A diferencia de monitores convencionales que requieren lubricación mensual, el Copperhead puede operar años sin intervención en ambientes industriales controlados."
+      },
+      {
+        "pregunta": "¿Los monitores industriales cumplen con las especificaciones NRF de PEMEX?",
+        "respuesta": "Sí, con condiciones. Los monitores FM Approved de Elkhart Brass cumplen con los requisitos base de NFPA 15 y FM que las especificaciones NRF de PEMEX toman como referencia. Sin embargo, PEMEX puede tener requisitos adicionales de materiales, conexiones o configuración que deben verificarse contra la NRF específica del proyecto. En Gama de México asesoramos en la revisión de las NRF aplicables y la selección del modelo que cumple con todos los requisitos del proyecto."
+      },
+      {
+        "pregunta": "¿Qué normas aplican al diseño de sistemas con monitores industriales?",
+        "respuesta": "Para sistemas con monitores industriales aplican principalmente: NFPA 15 (sistemas de agua para riesgos especiales), NFPA 11 (sistemas de espuma), NFPA 25 (inspección y mantenimiento), FM Data Sheet 4-4N (criterios de diseño para monitores aprobados FM) y NOM-002-STPS-2010 para instalaciones en México. En refinería y petroquímica también aplica API 2030 para protección de tanques y las especificaciones propias del operador (PEMEX-NRF, Shell DEP, etc.). El diseño del sistema debe integrarse a la memoria de cálculo del ingeniero de seguridad del proyecto."
+      }
+    ]
+  },
+  {
+    "seccion": "monitores",
+    "slug": "manuales",
+    "categoria": "monitores",
+    "filter": {
+      "subcategorias": [
+        "monitores-manuales",
+        "monitores-portatiles"
+      ]
+    },
+    "meta": {
+      "title": "Monitores Manuales Contra Incendios — Vulcan, Stinger | México",
+      "description": "Monitores manuales y portátiles Elkhart Brass: Vulcan, Stinger 2.0, Scorpion y RAM XD. Caudales 250–1,500 GPM. Para bomberos e industria. Distribuidor México con asesoría técnica."
+    },
+    "hero": {
+      "title": "Monitores Manuales",
+      "intro": "Monitores de operacion manual para cuerpos de bomberos municipales, brigadas industriales y sistemas de primera respuesta. Desde monitores fijos de cubierta hasta portatiles de despliegue rapido, todos con certificacion UL y FM.",
+      "badge": "Monitores Contra Incendios",
+      "metrics": [
+        {
+          "valor": "1,500",
+          "texto": "GPM máximo"
+        },
+        {
+          "valor": "100",
+          "texto": "PSI nominal"
+        },
+        {
+          "valor": "360°",
+          "texto": "Giro horizontal"
+        }
+      ],
+      "primaryText": "Ver Catálogo",
+      "primaryLink": "#catalogo",
+      "secondaryText": "Solicitar Cotización",
+      "secondaryLink": "#cotizar",
+      "contentHtml": "<p>Los <strong>monitores manuales</strong> Elkhart Brass son el equipo de referencia en los cuerpos de bomberos de Mexico. Se operan directamente por el brigadista con manivelas o palancas mecanicas, sin depender de energia electrica ni sistemas de control remoto. Esta simplicidad los hace especialmente confiables en escenarios donde la infraestructura esta comprometida o cuando se necesita un despliegue rapido.</p>\n    <p>En <strong>Gama de Mexico</strong> distribuimos la linea completa de monitores manuales y portatiles Elkhart Brass: el Vulcan para aplicaciones de alto caudal, el Stinger 2.0 de doble proposito, el Scorpion de bajo perfil y el RAM XD para ataque rapido. Todos certificados UL y FM, con stock disponible en CDMX y Queretaro.</p>"
+    },
+    "schema": {
+      "name": "Monitores Manuales Contra Incendios",
+      "description": "Monitores manuales y portatiles Elkhart Brass para cuerpos de bomberos y brigadas industriales. Modelos Vulcan, Stinger 2.0, Scorpion y RAM XD con certificacion UL/FM.",
+      "image": "/img/monitores-contra-incendios/elkhart-vulcan-mon-01.avif",
+      "url": "/monitores/manuales",
+      "category": "Monitores Contra Incendios",
+      "brand": "Elkhart Brass",
+      "reviewAuthor": "Cmte. Roberto Hernandez",
+      "reviewBody": "Monitores Elkhart Brass de calidad comprobada. Gama de Mexico nos asesoró en la seleccion del modelo correcto para nuestras unidades.",
+      "reviewDate": "2025-06-10",
+      "ratingCount": 28,
+      "reviewCount": 28
+    },
+    "breadcrumb": [
+      {
+        "name": "Inicio",
+        "url": "/"
+      },
+      {
+        "name": "Equipos",
+        "url": "/equipos"
+      },
+      {
+        "name": "Monitores Contra Incendios",
+        "url": "/monitores-contra-incendios"
+      },
+      {
+        "name": "Monitores Manuales",
+        "url": "/monitores/manuales"
+      }
+    ],
+    "catalog": {
+      "title": "Monitores Manuales y Portatiles",
+      "desc": "Monitores Elkhart Brass de operacion manual para bomberos y brigadas"
+    },
+    "empty": {
+      "title": "Proximamente mas opciones",
+      "text": "Estamos agregando mas productos de monitores manuales. Mientras tanto, solicita una cotizacion personalizada.",
+      "buttonText": "Solicitar Cotización"
+    },
+    "techInfo": {
+      "title": "Monitores manuales vs. electricos: cuando usar cada uno",
+      "items": [
+        {
+          "label": "Caudal",
+          "value": "500 - 1,500 GPM"
+        },
+        {
+          "label": "Operacion",
+          "value": "Manual / mecánica"
+        },
+        {
+          "label": "Energia",
+          "value": "No requiere"
+        },
+        {
+          "label": "Certificaciones",
+          "value": "UL Listed / FM Approved"
+        },
+        {
+          "label": "Uso tipico",
+          "value": "Bomberos y brigadas"
+        },
+        {
+          "label": "Material",
+          "value": "Aluminio / Bronce"
+        }
+      ]
+    },
+    "sidebar": {
+      "navTitulo": "Tipos de Monitores",
+      "baseUrl": "/monitores",
+      "backLinkHref": "/monitores-contra-incendios",
+      "backLinkTexto": "Ver todos los monitores",
+      "certificaciones": [
+        {
+          "siglas": "FM",
+          "nombre": "Factory Mutual"
+        },
+        {
+          "siglas": "UL",
+          "nombre": "UL Listed"
+        },
+        {
+          "siglas": "NOM",
+          "nombre": "NOM-002-STPS"
+        }
+      ],
+      "marcas": [
+        "Elkhart Brass",
+        "Akron Brass",
+        "Task Force Tips",
+        "POK"
+      ],
+      "aplicaciones": [
+        "Cuerpos de bomberos",
+        "Brigadas industriales",
+        "Unidades de rescate",
+        "Primera respuesta",
+        "Protección perimetral",
+        "Terminales de combustible"
+      ],
+      "productosRelacionados": [
+        {
+          "href": "/boquillas-contra-incendios",
+          "nombre": "Boquillas Contra Incendios"
+        },
+        {
+          "href": "/mangueras-contra-incendios",
+          "nombre": "Mangueras Contra Incendios"
+        },
+        {
+          "href": "/valvulas-contra-incendios",
+          "nombre": "Válvulas Contra Incendios"
+        },
+        {
+          "href": "/conexiones-herrajes-contra-incendios",
+          "nombre": "Conexiones y Herrajes"
+        }
+      ],
+      "subcategorias": [
+        {
+          "slug": "tipo-corazon",
+          "nombre": "Monitor Tipo Corazón",
+          "descripcion": "Protección perimetral 360°"
+        },
+        {
+          "slug": "cuello-cisne",
+          "nombre": "Monitor Cuello de Cisne",
+          "descripcion": "Protección de tanques elevados"
+        },
+        {
+          "slug": "certificado-fm",
+          "nombre": "Monitor Certificado FM",
+          "descripcion": "Aprobación Factory Mutual"
+        },
+        {
+          "slug": "ul-listed",
+          "nombre": "Monitor UL Listed",
+          "descripcion": "Certificación Underwriters Labs"
+        },
+        {
+          "slug": "manuales",
+          "nombre": "Monitores Manuales",
+          "descripcion": "Vulcan, Stinger, RAM XD"
+        },
+        {
+          "slug": "electricos",
+          "nombre": "Monitores Eléctricos",
+          "descripcion": "EXM2, Control Remoto"
+        },
+        {
+          "slug": "industriales",
+          "nombre": "Monitores Industriales",
+          "descripcion": "FM Approved para industria"
+        }
+      ]
+    },
+    "related": {
+      "titulo": "Otros Tipos de Monitores",
+      "subtitulo": "Monitores fijos e industriales para distintas aplicaciones",
+      "maxProductos": 3,
+      "verTodosLink": "/monitores-contra-incendios",
+      "verTodosTexto": "Ver todos los monitores"
+    },
+    "cotizacion": {
+      "titulo": "Cotiza Monitores Manuales",
+      "tipoEquipo": "Monitores",
+      "pagina": "Monitores Manuales"
+    },
+    "faqs": [
+      {
+        "pregunta": "¿Cuál es la diferencia entre un monitor manual y uno eléctrico?",
+        "respuesta": "El monitor manual se opera directamente por un bombero o brigadista mediante manivelas o palancas mecánicas. No requiere energía eléctrica ni sistemas de control, lo que lo hace confiable en escenarios donde la infraestructura está comprometida. Los monitores eléctricos se operan a distancia con actuadores, lo que es preferible en zonas de alto riesgo donde no conviene que haya personal cerca del incendio."
+      },
+      {
+        "pregunta": "¿Qué caudal manejan los monitores manuales Elkhart Brass?",
+        "respuesta": "Los monitores manuales Elkhart Brass que distribuimos van desde 500 GPM en modelos compactos como el RAM XD hasta 1,500 GPM en el Vulcan. El caudal real depende de la presión disponible en tu red hidráulica y la boquilla instalada. Calculamos el caudal óptimo según las condiciones de tu sistema."
+      },
+      {
+        "pregunta": "¿Los monitores portátiles Elkhart Brass son compatibles con mangueras estándar?",
+        "respuesta": "Sí. Los monitores portátiles como el Stinger 2.0 y el RAM XD usan conexiones NH estándar de 2½ o 3 pulgadas, compatibles con las mangueras que ya tienen los cuerpos de bomberos en México. No requieren adaptadores especiales para integrarse con el equipo existente."
+      },
+      {
+        "pregunta": "¿Qué modelos de monitores manuales distribuye Gama de México?",
+        "respuesta": "Distribuimos los principales modelos Elkhart Brass: Vulcan (500–1,500 GPM, bronce forjado), Stinger 2.0 (portátil, 500–1,000 GPM, aluminio Elk-O-Lite), Scorpion (compacto, 250–750 GPM) y RAM XD (alta resistencia, 500–1,000 GPM). También contamos con modelos Task Force Tips y Akron Brass para cuerpos de bomberos que ya operan esas marcas. Asesoramos en la selección según operativa de tu brigada o departamento."
+      },
+      {
+        "pregunta": "¿Los monitores manuales requieren instalación especial o se pueden montar directamente?",
+        "respuesta": "Los monitores manuales fijos se instalan sobre brida o conexión roscada según el modelo. Los portátiles se conectan directamente a la manguera mediante acoplamiento NH. La instalación de monitores fijos debe seguir los lineamientos de NFPA 15 o 11 según la aplicación. Los portátiles no requieren instalación permanente y están listos para usar de inmediato. Proporcionamos guías de instalación del fabricante con cada equipo."
+      },
+      {
+        "pregunta": "¿Cuándo conviene un monitor manual vs uno automático o eléctrico?",
+        "respuesta": "Un monitor manual es la elección correcta cuando: (1) el presupuesto no permite actuadores eléctricos, (2) la zona no tiene riesgo de atmósfera explosiva que impida la presencia de operadores, (3) la respuesta de la brigada es suficientemente rápida para alcanzar el punto antes de que el incendio escale, o (4) se requiere un sistema de respaldo mecánico sin dependencia de electricidad. Los monitores eléctricos son necesarios cuando hay riesgo para el personal o cuando la operación remota es el único modo seguro."
+      }
+    ]
+  },
+  {
+    "seccion": "monitores",
+    "slug": "tipo-corazon",
+    "categoria": "monitores",
+    "filter": {
+      "subcategorias": [
+        "tipo-corazon"
+      ]
+    },
+    "meta": {
+      "title": "Monitor Tipo Corazón Contra Incendios | Elkhart Brass México",
+      "description": "Monitor tipo corazón rotación 360°, caudal 500–1,250 GPM. Bronce fundido Elkhart Brass, certificado FM/UL. Distribuidor autorizado México. Cotización con asesoría técnica."
+    },
+    "hero": {
+      "title": "Monitor Tipo Corazón",
+      "intro": "Monitores fijos de alta capacidad con rotación horizontal de 360° y elevación vertical de hasta 150°. Diseñados para protección perimetral en refinerías, plantas petroquímicas, terminales de almacenamiento y muelles de carga. Distribuidor autorizado Elkhart Brass en México — modelos Copperhead, Stinger y RAM con certificaciones FM Approved y UL Listed, compatibles con NFPA 11, 15 y 24.",
+      "badge": "Monitores Contra Incendios",
+      "metrics": [
+        {
+          "valor": "360°",
+          "texto": "Giro horizontal"
+        },
+        {
+          "valor": "150°",
+          "texto": "Elevación vertical"
+        },
+        {
+          "valor": "1,250",
+          "texto": "GPM máximo"
+        }
+      ],
+      "primaryText": "Ver Catálogo",
+      "primaryLink": "#catalogo",
+      "secondaryText": "Solicitar Cotización",
+      "secondaryLink": "#cotizar",
+      "contentHtml": "<p>El <strong>monitor tipo corazón</strong> es el estándar de la industria para protección perimetral en instalaciones de alto riesgo. Su diseño de doble cremallera permite una rotación horizontal completa de 360° y elevación vertical controlada, lo que garantiza cobertura total desde un punto fijo. Fabricados en bronce fundido o aluminio de grado marino, estos monitores operan a presiones de trabajo entre 100 y 150 PSI con caudales que van desde 250 hasta 1,250 GPM según el modelo y boquilla seleccionada.</p>\n    <p>En <strong>Gama de México</strong> distribuimos monitores tipo corazón de Elkhart Brass, ARMECO y Joperz con certificaciones FM, UL y cumplimiento NFPA 11/15. Asesoramos en la selección del modelo correcto según las características de tu proyecto: tipo de riesgo, distancia de alcance requerida, agente extintor (agua o espuma) y condiciones ambientales. Atendemos refinerías, plantas petroquímicas, terminales de almacenamiento, muelles industriales y hangares de aviación en toda la República Mexicana.</p>"
+    },
+    "schema": {
+      "name": "Monitor Tipo Corazón Contra Incendios 360°",
+      "description": "Monitor tipo corazón doble cremallera, rotación 360°. Caudal 500-1,250 GPM. Bronce fundido Elkhart Brass, certificación FM/UL.",
+      "image": "/img/monitores-contra-incendios/monitor-certificado-fm-contra-incendios-angulo-derecho-07.avif",
+      "url": "/monitores/tipo-corazon",
+      "category": "Monitores Contra Incendios",
+      "brand": "Elkhart Brass",
+      "reviewAuthor": "Ing. Carlos Mendoza",
+      "reviewBody": "Excelente calidad y respaldo técnico de Gama de México. Equipos certificados con entrega puntual.",
+      "reviewDate": "2025-03-15",
+      "ratingCount": 32,
+      "reviewCount": 32
+    },
+    "breadcrumb": [
+      {
+        "name": "Inicio",
+        "url": "/"
+      },
+      {
+        "name": "Equipos",
+        "url": "/equipos"
+      },
+      {
+        "name": "Monitores Contra Incendios",
+        "url": "/monitores-contra-incendios"
+      }
+    ],
+    "catalog": {
+      "title": "Catálogo de Monitores Tipo Corazón",
+      "desc": "Selecciona el producto que mejor se adapte a tu proyecto industrial"
+    },
+    "empty": {
+      "title": "Próximamente más opciones",
+      "text": "Estamos agregando más productos de monitores tipo corazón de diferentes marcas. Mientras tanto, solicita una cotización personalizada.",
+      "buttonText": "Solicitar Cotización"
+    },
+    "techInfo": {
+      "title": "Especificaciones Técnicas del Monitor Tipo Corazón",
+      "items": [
+        {
+          "label": "Caudal",
+          "value": "250 - 1000 GPM"
+        },
+        {
+          "label": "Giro horizontal",
+          "value": "360° por manivela"
+        },
+        {
+          "label": "Giro vertical",
+          "value": "120° accionado"
+        },
+        {
+          "label": "Base bridada",
+          "value": "4\" cara realzada"
+        },
+        {
+          "label": "Salida macho",
+          "value": "2.5\" NST/NSHT"
+        },
+        {
+          "label": "Material",
+          "value": "Bronce fundido"
+        }
+      ]
+    },
+    "sidebar": {
+      "navTitulo": "Tipos de Monitores",
+      "baseUrl": "/monitores",
+      "backLinkHref": "/monitores-contra-incendios",
+      "backLinkTexto": "Ver todos los monitores",
+      "certificaciones": [
+        {
+          "siglas": "FM",
+          "nombre": "Factory Mutual"
+        },
+        {
+          "siglas": "UL",
+          "nombre": "UL Listed"
+        },
+        {
+          "siglas": "NOM",
+          "nombre": "NOM-002-STPS"
+        }
+      ],
+      "marcas": [
+        "Elkhart Brass",
+        "Akron Brass",
+        "Task Force Tips",
+        "POK"
+      ],
+      "aplicaciones": [
+        "Refinerías",
+        "Plantas petroquímicas",
+        "Terminales de almacenamiento",
+        "Muelles y puertos",
+        "Hangares de aviación",
+        "Plantas químicas"
+      ],
+      "productosRelacionados": [
+        {
+          "href": "/boquillas-contra-incendios",
+          "nombre": "Boquillas Contra Incendios"
+        },
+        {
+          "href": "/mangueras-contra-incendios",
+          "nombre": "Mangueras Contra Incendios"
+        },
+        {
+          "href": "/valvulas-contra-incendios",
+          "nombre": "Válvulas Contra Incendios"
+        },
+        {
+          "href": "/conexiones-herrajes-contra-incendios",
+          "nombre": "Conexiones y Herrajes"
+        }
+      ],
+      "subcategorias": [
+        {
+          "slug": "tipo-corazon",
+          "nombre": "Monitor Tipo Corazón",
+          "descripcion": "Protección perimetral 360°"
+        },
+        {
+          "slug": "cuello-cisne",
+          "nombre": "Monitor Cuello de Cisne",
+          "descripcion": "Protección de tanques elevados"
+        },
+        {
+          "slug": "certificado-fm",
+          "nombre": "Monitor Certificado FM",
+          "descripcion": "Aprobación Factory Mutual"
+        },
+        {
+          "slug": "ul-listed",
+          "nombre": "Monitor UL Listed",
+          "descripcion": "Certificación Underwriters Labs"
+        },
+        {
+          "slug": "manuales",
+          "nombre": "Monitores Manuales",
+          "descripcion": "Vulcan, Stinger, RAM XD"
+        },
+        {
+          "slug": "electricos",
+          "nombre": "Monitores Eléctricos",
+          "descripcion": "EXM2, Control Remoto"
+        },
+        {
+          "slug": "industriales",
+          "nombre": "Monitores Industriales",
+          "descripcion": "FM Approved para industria"
+        }
+      ]
+    },
+    "related": {
+      "titulo": "Otros Tipos de Monitores",
+      "subtitulo": "Explora más opciones según tu aplicación específica",
+      "maxProductos": 3,
+      "verTodosLink": "/monitores-contra-incendios",
+      "verTodosTexto": "Ver todos los monitores"
+    },
+    "cotizacion": {
+      "titulo": "Cotiza Monitores Tipo Corazon",
+      "tipoEquipo": "Monitores",
+      "pagina": "Monitores Tipo Corazon"
+    },
+    "faqs": [
+      {
+        "pregunta": "¿Cuál es el caudal máximo de un monitor tipo corazón?",
+        "respuesta": "Los monitores tipo corazón Elkhart Brass que distribuimos alcanzan caudales de 500 a 1,250 GPM dependiendo del modelo y la presión de operación. El modelo standard opera entre 500 y 800 GPM a 100 PSI, mientras que los modelos de alta capacidad superan los 1,000 GPM a 150 PSI. Consultamos la hidráulica de tu sistema para recomendarte el modelo exacto."
+      },
+      {
+        "pregunta": "¿Requiere mantenimiento periódico el monitor tipo corazón?",
+        "respuesta": "Sí. Se recomienda inspección semestral y mantenimiento anual conforme a NFPA 25. El mantenimiento incluye lubricación de cremalleras, verificación de juntas y sellos, prueba de flujo y revisión de la boquilla. Gama de México ofrece servicio de mantenimiento preventivo y correctivo para monitores instalados en México."
+      },
+      {
+        "pregunta": "¿El monitor tipo corazón es compatible con espuma AFFF?",
+        "respuesta": "Sí. Los monitores tipo corazón de bronce fundido son compatibles con agentes espumantes AFFF, FFFP y agua. Para aplicaciones con espuma, se recomienda usar boquillas combinadas de chorro sólido/niebla que maximizan la cobertura. Especifica el tipo de agente extintor al cotizar para asegurarnos de seleccionar los materiales correctos."
+      },
+      {
+        "pregunta": "¿Qué normas NFPA aplican a los monitores tipo corazón?",
+        "respuesta": "Los monitores tipo corazón se rigen principalmente por NFPA 11 (sistemas de espuma de baja y media expansión), NFPA 15 (sistemas de rociadores de agua para protección especial de riesgos) y NFPA 24 (redes de suministro privadas). Para proyectos con aseguradoras FM, aplica la norma FM 1421. La selección del modelo, caudal y materiales se hace según el tipo de riesgo y el código aplicable a tu instalación."
+      },
+      {
+        "pregunta": "¿Cuál es la diferencia entre el monitor tipo corazón y el de cuello de cisne?",
+        "respuesta": "El monitor tipo corazón es la opción para protección horizontal: se instala en planta (nivel suelo) y proyecta agua en arco horizontal de 360°, ideal para perímetro de plantas, muelles de carga y terminales. El monitor de cuello de cisne tiene un brazo curvo que permite proyección descendente sobre tanques verticales y estructuras elevadas. Si tu riesgo está en superficies horizontales elige tipo corazón; si necesitas enfriar techos de tanques o estructuras elevadas, el cuello de cisne es más adecuado."
+      },
+      {
+        "pregunta": "¿Los monitores tipo corazón se instalan en redes de agua o de espuma?",
+        "respuesta": "Los monitores tipo corazón pueden instalarse tanto en redes de agua como en sistemas de espuma, dependiendo del riesgo a proteger. Para incendios clase A (sólidos) en almacenes, naves industriales y áreas de proceso, se usan con agua. Para clase B (líquidos inflamables) en refinerías, terminales y plantas petroquímicas, se conectan a redes de espuma AFFF o FFFP. El material del cuerpo del monitor (bronce o aluminio) debe ser compatible con el agente extintor seleccionado."
+      }
+    ]
+  },
+  {
+    "seccion": "monitores",
+    "slug": "ul-listed",
+    "categoria": "monitores",
+    "filter": {
+      "subcategorias": [
+        "ul-listed"
+      ]
+    },
+    "meta": {
+      "title": "Monitor Contra Incendios UL Listed | Distribuidor Elkhart Brass México",
+      "description": "Monitores contra incendio con certificación UL Listed, aceptados por Protección Civil México. Para plantas industriales, refinería y edificios. Elkhart Brass original."
+    },
+    "hero": {
+      "title": "Monitor UL Listed",
+      "intro": "Monitores contra incendio con certificación UL Listed de Underwriters Laboratories, validación reconocida internacionalmente para equipos de seguridad. La certificación UL garantiza que el equipo cumple con estándares rigurosos de seguridad y rendimiento, requisito esencial para cumplimiento de NOM-002-STPS en México.",
+      "badge": "Monitores Contra Incendios",
+      "metrics": [
+        {
+          "valor": "UL",
+          "texto": "Certificación"
+        },
+        {
+          "valor": "NOM-002",
+          "texto": "Cumplimiento"
+        },
+        {
+          "valor": "NFPA",
+          "texto": "Estándar"
+        }
+      ],
+      "primaryText": "Ver Catálogo",
+      "primaryLink": "#catalogo",
+      "secondaryText": "Solicitar Cotización",
+      "secondaryLink": "#cotizar",
+      "contentHtml": "<p>La certificación <strong>UL Listed</strong> (Underwriters Laboratories) es el sello de confianza más reconocido en Norteamérica para equipos de protección contra incendios. Cada monitor con esta certificación ha sido probado y evaluado según estándares UL específicos para su categoría, verificando seguridad eléctrica, resistencia de materiales, rendimiento hidráulico y durabilidad. En México, los equipos UL Listed facilitan el cumplimiento de NOM-002-STPS y son aceptados por autoridades de protección civil.</p>\n    <p><strong>Gama de México</strong> distribuye monitores UL Listed de fabricantes premium como Elkhart Brass y Akron Brass. Cada equipo incluye número de archivo UL verificable en la base de datos pública de UL, garantizando autenticidad y trazabilidad. Asesoramos en la selección del modelo correcto para tu aplicación específica: protección perimetral industrial, sistemas de hidrantes, o instalaciones comerciales que requieren certificación para inspecciones de Protección Civil y renovación de licencias de funcionamiento.</p>"
+    },
+    "schema": {
+      "name": "Monitor Contra Incendios UL Listed",
+      "description": "Monitor contra incendios con certificación UL Listed para edificios industriales y comerciales. Elkhart Brass. Entrega en México.",
+      "image": "/img/monitores-contra-incendios/monitor-certificado-fm-contra-incendios-angulo-derecho-07.avif",
+      "url": "/monitores/ul-listed",
+      "category": "Monitores Contra Incendios",
+      "brand": "Elkhart Brass",
+      "reviewAuthor": "Ing. Carlos Mendoza",
+      "reviewBody": "Excelente calidad y respaldo técnico de Gama de México. Equipos certificados con entrega puntual.",
+      "reviewDate": "2025-03-15",
+      "ratingCount": 32,
+      "reviewCount": 32
+    },
+    "breadcrumb": [
+      {
+        "name": "Inicio",
+        "url": "/"
+      },
+      {
+        "name": "Equipos",
+        "url": "/equipos"
+      },
+      {
+        "name": "Monitores Contra Incendios",
+        "url": "/monitores-contra-incendios"
+      }
+    ],
+    "catalog": {
+      "title": "Catálogo de Monitores UL Listed",
+      "desc": "Selecciona el producto que mejor se adapte a tu proyecto industrial"
+    },
+    "empty": {
+      "title": "Próximamente más opciones",
+      "text": "Estamos agregando más productos de monitores certificados UL. Mientras tanto, solicita una cotización personalizada.",
+      "buttonText": "Solicitar Cotización"
+    },
+    "techInfo": {
+      "title": "Especificaciones Técnicas Generales",
+      "items": [
+        {
+          "label": "Caudal típico",
+          "value": "500 - 2,000 GPM"
+        },
+        {
+          "label": "Presión de trabajo",
+          "value": "200 - 300 PSI"
+        },
+        {
+          "label": "Rotación horizontal",
+          "value": "360° completos"
+        },
+        {
+          "label": "Ajuste vertical",
+          "value": "-45° a +90°"
+        },
+        {
+          "label": "Conexiones",
+          "value": "2.5\" y 3\" NPT/NH"
+        },
+        {
+          "label": "Materiales",
+          "value": "Bronce, Acero inox."
+        }
+      ]
+    },
+    "sidebar": {
+      "navTitulo": "Tipos de Monitores",
+      "baseUrl": "/monitores",
+      "backLinkHref": "/monitores-contra-incendios",
+      "backLinkTexto": "Ver todos los monitores",
+      "certificaciones": [
+        {
+          "siglas": "UL",
+          "nombre": "UL Listed"
+        },
+        {
+          "siglas": "FM",
+          "nombre": "Factory Mutual"
+        },
+        {
+          "siglas": "NOM",
+          "nombre": "NOM-002-STPS"
+        }
+      ],
+      "marcas": [
+        "Elkhart Brass",
+        "Akron Brass",
+        "Task Force Tips",
+        "POK"
+      ],
+      "aplicaciones": [
+        "Refinerías",
+        "Plantas petroquímicas",
+        "Terminales de almacenamiento",
+        "Industria automotriz",
+        "Proyectos con requerimientos UL"
+      ],
+      "productosRelacionados": [
+        {
+          "href": "/boquillas-contra-incendios",
+          "nombre": "Boquillas Contra Incendios"
+        },
+        {
+          "href": "/mangueras-contra-incendios",
+          "nombre": "Mangueras Contra Incendios"
+        },
+        {
+          "href": "/valvulas-contra-incendios",
+          "nombre": "Válvulas Contra Incendios"
+        },
+        {
+          "href": "/conexiones-herrajes-contra-incendios",
+          "nombre": "Conexiones y Herrajes"
+        }
+      ],
+      "subcategorias": [
+        {
+          "slug": "tipo-corazon",
+          "nombre": "Monitor Tipo Corazón",
+          "descripcion": "Protección perimetral 360°"
+        },
+        {
+          "slug": "cuello-cisne",
+          "nombre": "Monitor Cuello de Cisne",
+          "descripcion": "Protección de tanques elevados"
+        },
+        {
+          "slug": "certificado-fm",
+          "nombre": "Monitor Certificado FM",
+          "descripcion": "Aprobación Factory Mutual"
+        },
+        {
+          "slug": "ul-listed",
+          "nombre": "Monitor UL Listed",
+          "descripcion": "Certificación Underwriters Labs"
+        },
+        {
+          "slug": "manuales",
+          "nombre": "Monitores Manuales",
+          "descripcion": "Vulcan, Stinger, RAM XD"
+        },
+        {
+          "slug": "electricos",
+          "nombre": "Monitores Eléctricos",
+          "descripcion": "EXM2, Control Remoto"
+        },
+        {
+          "slug": "industriales",
+          "nombre": "Monitores Industriales",
+          "descripcion": "FM Approved para industria"
+        }
+      ]
+    },
+    "related": {
+      "titulo": "Otros Tipos de Monitores",
+      "subtitulo": "Explora más opciones según tu aplicación específica",
+      "maxProductos": 3,
+      "verTodosLink": "/monitores-contra-incendios",
+      "verTodosTexto": "Ver todos los monitores"
+    },
+    "cotizacion": {
+      "titulo": "Cotiza Monitores UL Listed",
+      "tipoEquipo": "Monitores",
+      "pagina": "Monitores UL Listed"
+    },
+    "faqs": [
+      {
+        "pregunta": "¿Qué diferencia hay entre certificación UL Listed y FM Approved en monitores?",
+        "respuesta": "UL Listed (Underwriters Laboratories) y FM Approved (Factory Mutual) son dos certificaciones reconocidas internacionalmente pero de origen diferente. UL es el estándar preferido para aplicaciones en edificios y planta de manufactura; FM es el estándar preferido en la industria de seguros industriales y petroquímica. En la práctica, muchos proyectos exigen cualquiera de las dos, aunque algunos contratos de seguros industriales especifican FM expresamente."
+      },
+      {
+        "pregunta": "¿Puedo usar monitores UL Listed en instalaciones PEMEX o CFE?",
+        "respuesta": "Sí. Los monitores UL Listed son aceptados en instalaciones de PEMEX, CFE y otras empresas paraestatales, siempre que cumplan además con las especificaciones técnicas particulares de cada proyecto. PEMEX tiene especificaciones adicionales (NRF) que deben cumplirse en paralelo. Asesoramos en la selección del monitor correcto para proyectos con estos requisitos específicos."
+      },
+      {
+        "pregunta": "¿Los monitores UL Listed incluyen documentación para protección civil?",
+        "respuesta": "Sí. Proporcionamos el certificado UL, hoja de datos técnicos, curvas de flujo y guía de instalación del fabricante. Esta documentación es aceptada por la mayoría de las dependencias de protección civil en México para trámites de licencia de funcionamiento y verificación de sistemas contra incendios."
+      },
+      {
+        "pregunta": "¿Cómo verifico que un monitor realmente tiene certificación UL y no es una copia?",
+        "respuesta": "La única forma de verificar una certificación UL auténtica es buscar el número de archivo UL del fabricante en el directorio en línea de UL (productiq.ulprospector.com). El monitor debe aparecer listado bajo ese número de archivo con la categoría de producto correcta. Como distribuidores autorizados de Elkhart Brass, proporcionamos los números de archivo UL verificables para todos los modelos que vendemos. No basta con que el equipo tenga una etiqueta UL — la etiqueta puede ser falsa si no se verifica en el directorio oficial."
+      },
+      {
+        "pregunta": "¿Los monitores UL Listed cumplen con la NOM-002-STPS-2010?",
+        "respuesta": "La NOM-002-STPS-2010 establece las condiciones de seguridad para prevención y protección contra incendios en centros de trabajo en México. Esta norma acepta equipos que cumplan normas nacionales o internacionales equivalentes, y los monitores UL Listed califican bajo ese criterio. Sin embargo, la NOM no exige explícitamente UL en monitores — lo que exige es que los equipos sean adecuados para el riesgo y que cuenten con documentación técnica verificable. La certificación UL es la forma más sólida de acreditar eso ante una verificación."
+      },
+      {
+        "pregunta": "¿Qué tipo de mantenimiento exige la norma para monitores UL Listed?",
+        "respuesta": "NFPA 25 (Inspección, prueba y mantenimiento de sistemas de protección contra incendios a base de agua) es la norma de referencia para el mantenimiento de monitores fijos. Establece inspecciones visuales trimestrales, prueba de operación anual y prueba de flujo completo cada 5 años. Los monitores UL Listed de Elkhart Brass incluyen guías de mantenimiento que siguen estos intervalos. Gama de México puede coordinar visitas de mantenimiento preventivo para instalaciones en México."
+      }
+    ]
+  }
+]

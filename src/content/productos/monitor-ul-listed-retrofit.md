@@ -1,6 +1,6 @@
 ---
 title: "Monitor UL Listed Retrofit - Actualización de Sistemas Existentes"
-description: "Monitor contra incendio certificado UL Listed diseñado para retrofit de instalaciones existentes. Compatibilidad con bridas estándar, sin modificación de tubería. Actualización de sistemas antiguos a norma actual."
+description: "Monitor contra incendio certificado UL Listed diseñado para retrofit de instalaciones existentes. Compatibilidad con bridas estándar, sin modificación de tubería."
 categoria: "monitores"
 subcategoria: "ul-listed"
 imagen: "/img/monitores-contra-incendios/monitor-ul-listed-contra-incendios-perfil-completo-08.avif"

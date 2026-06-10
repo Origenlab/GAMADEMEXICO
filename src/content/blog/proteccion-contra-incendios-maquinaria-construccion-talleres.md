@@ -11,13 +11,14 @@ schema:
       - q: "¿Qué riesgos de incendio tiene un taller de maquinaria pesada?"
         a: "Aceite hidráulico a presión (se atomiza al fugarse y se enciende al contacto con superficies calientes), solventes de limpieza, corte y soldadura (chispas sobre pisos con aceite acumulado), baterías de equipos pesados (cortocircuito con corrientes de cientos de amperes), y neumáticos almacenados (carga combustible extrema, fuego difícil de extinguir)."
 description: "Guía técnica de sistemas contra incendios para talleres de maquinaria de construcción. Normatividad NFPA 30A, riesgos de hidrocarburos y equipos certificados."
+fecha: "2026-02-26"
 categoria: "monitores"
 autor:
   nombre: "Ing. Alejandro Vega Domínguez"
   cargo: "Especialista en Protección de Instalaciones Industriales"
 imagen: "/img/blog/mantenimiento-equipos-contra-incendios-tecnico-industrial.avif"
 imagenAlt: "Protección contra incendios en maquinaria y talleres"
-tags: ["maquinaria pesada", "construcción", "talleres", "hidrocarburos", "NFPA 30A", "monitores", "protección industrial"]
+tags: ["maquinaria pesada", "construcción", "talleres", "hidrocarburos", "NFPA 30A", "monitores contra incendios", "protección industrial"]
 destacado: true
 tiempoLectura: 24
 draft: false

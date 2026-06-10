@@ -275,9 +275,10 @@ const breadcrumbSchema = {
   const cards = grid?.querySelectorAll('.hidrante-card');
   const resultsCount = document.getElementById('results-count');
 
-  const filterStatus = document.getElementById('filter-status') as HTMLSelectElement;
-  const filterType = document.getElementById('filter-type') as HTMLSelectElement;
-  const filterCity = document.getElementById('filter-city') as HTMLSelectElement;
+  // Sin aserciones de tipo: este script es is:inline y se valida como JavaScript plano.
+  const filterStatus = document.getElementById('filter-status');
+  const filterType = document.getElementById('filter-type');
+  const filterCity = document.getElementById('filter-city');
 
   function applyFilters() {
     const status = filterStatus?.value;
@@ -295,10 +296,10 @@ const breadcrumbSchema = {
       const matchesCity = city === 'all' || cardCity === city;
 
       if (matchesStatus && matchesType && matchesCity) {
-        (card as HTMLElement).style.display = '';
+        card.style.display = '';
         visibleCount++;
       } else {
-        (card as HTMLElement).style.display = 'none';
+        card.style.display = 'none';
       }
     });
 

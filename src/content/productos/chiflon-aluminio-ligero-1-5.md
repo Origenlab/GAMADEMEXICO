@@ -1,6 +1,6 @@
 ---
-title: "Chiflón 205-A Aluminio Ligero 1.5\" NH 75-125 GPM UL 401 | Elkhart Brass Elk-O-Lite | México"
-description: "Chiflón 205-A aluminio Elk-O-Lite forjado 1.5\" NH 75-125 GPM 100 PSI UL 401 NFPA 1964 Elkhart Brass. 40% menos peso, anodizado duro negro. Brigadas y bomberos México."
+title: "Chiflón 205-A Aluminio Ligero 1.5\" NH 75-125 GPM UL 401"
+description: "Chiflón 205-A aluminio Elk-O-Lite forjado 1.5\" NH 75-125 GPM 100 PSI UL 401 NFPA 1964 Elkhart Brass. 40% menos peso, anodizado duro negro."
 categoria: "conexiones-herrajes"
 subcategoria: "chiflones"
 imagen: "/img/conexiones-herrajes/chiflon-aluminio-1-5-frontal.avif"

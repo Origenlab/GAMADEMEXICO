@@ -1,6 +1,6 @@
 ---
-title: "Conexión Wye B-100-A 2.5\"×1.5\" NH Elk-O-Lite UL FM | Elkhart Brass | México"
-description: "Conexión Wye B-100-A Elkhart Brass 2.5\" entrada dos salidas 1.5\" NH aluminio Elk-O-Lite 200 PSI UL Listed FM Approved. Válvulas bola traba positiva. Bomberos industria México."
+title: "Conexión Wye B-100-A 2.5\"×1.5\" NH Elk-O-Lite UL FM | Elkhart Brass"
+description: "Conexión Wye B-100-A Elkhart Brass 2.5\" entrada dos salidas 1.5\" NH aluminio Elk-O-Lite 200 PSI UL Listed FM Approved. Válvulas bola traba positiva."
 categoria: "conexiones-herrajes"
 subcategoria: "wye"
 imagen: "/img/conexiones-herrajes/conexion-wye-b100a-frontal.avif"

@@ -1,6 +1,6 @@
 ---
 title: "Estación de Manguera"
-description: "Estación de manguera con carrete oscilante 180° y despliegue automático. Manguera 1.5\" x 30m, boquilla ajustable cromada. Compatible con Class II y III según NFPA 14."
+description: "Estación de manguera con carrete oscilante 180° y despliegue automático. Manguera 1.5\" x 30m, boquilla ajustable cromada."
 categoria: "gabinetes-hidrantes"
 subcategoria: "estaciones"
 imagen: "/img/gabinetes-hidrantes/gabinete-manguera-producto-frontal.avif"

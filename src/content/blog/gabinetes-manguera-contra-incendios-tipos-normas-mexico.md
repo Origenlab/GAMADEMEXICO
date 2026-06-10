@@ -19,6 +19,7 @@ schema:
       - q: "¿Qué altura debe tener un gabinete contra incendios?"
         a: "El eje de la válvula angular entre 0.9m y 1.5m del piso. Este rango permite operar la válvula de pie sin agacharse ni estirarse. El espacio libre frente al gabinete debe ser mínimo 1 metro para desplegar la manguera sin obstáculos."
 description: "Tipos de gabinetes contra incendios en México, normas NOM-002-STPS, equipos incluidos, distancias de instalación y errores que generan observaciones."
+fecha: "2026-03-11"
 categoria: "gabinetes-hidrantes"
 autor:
   nombre: "Equipo Gama de México"

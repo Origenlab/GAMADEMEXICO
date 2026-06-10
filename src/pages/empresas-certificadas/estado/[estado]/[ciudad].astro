@@ -406,10 +406,11 @@ const breadcrumbSchema = {
       // Filtrar empresas
       empresaCards?.forEach(card => {
         const cardGiro = card.getAttribute('data-giro');
+        // Sin aserciones de tipo: script is:inline se valida como JavaScript plano.
         if (giro === 'all' || cardGiro === giro) {
-          (card as HTMLElement).style.display = '';
+          card.style.display = '';
         } else {
-          (card as HTMLElement).style.display = 'none';
+          card.style.display = 'none';
         }
       });
     });

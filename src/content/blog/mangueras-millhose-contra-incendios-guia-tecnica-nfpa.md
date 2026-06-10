@@ -11,13 +11,14 @@ schema:
       - q: "¿Qué es una manguera Millhose?"
         a: "Es una manguera de single jacket (una capa textil) diseñada para gabinetes de manguera Clase II conforme a NFPA 14. Más ligera y compacta que la doble jacket, ideal para uso por personal no profesional en edificios de oficinas, hoteles, hospitales y centros comerciales. Presión de trabajo típica de 200-250 PSI."
 description: "Mangueras Millhose doble jacket vs Blindex: diámetros, presiones de trabajo, prueba hidrostática y NFPA 14 México."
+fecha: "2026-03-11"
 categoria: "mangueras"
 autor:
   nombre: "Ing. Roberto Hernández"
   cargo: "Director Técnico"
 imagen: "/img/mangueras-contra-incendios/manguera-blindex-1-5-15m-detalle.avif"
 imagenAlt: "Detalle de construcción de manguera contra incendios doble jacket para edificios"
-tags: ["mangueras contra incendios", "manguera millhose", "NFPA 14", "doble jacket", "UL Listed", "gabinetes", "México"]
+tags: ["mangueras contra incendios", "manguera millhose", "NFPA 14", "doble jacket", "UL Listed", "gabinetes contra incendios", "México"]
 destacado: false
 draft: false
 productosRelacionados: ["manguera-millhose", "manguera-millhose-1-5-15m", "manguera-millhose-2-5-15m", "manguera-millhose-2-5-30m", "manguera-blindex", "estacion-manguera"]

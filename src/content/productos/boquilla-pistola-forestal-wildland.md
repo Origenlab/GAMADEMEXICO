@@ -1,5 +1,5 @@
 ---
-title: "Boquilla Wildland Series 1\" NPSH 0.8 kg 10-60 GPM USDA Forest | Elkhart Brass NFPA 1964 | México"
+title: "Boquilla Wildland Series 1\" NPSH 0.8 kg 10-60 GPM USDA Forest"
 description: "Boquilla Elkhart Brass Wildland Series 1\" NPSH aluminio forjado anodizado. 10-60 GPM, 0.8 kg. NFPA 1964 USDA Forest. Brigadas CONAFOR y wildland México."
 categoria: "boquillas"
 subcategoria: "tipo-pistola"

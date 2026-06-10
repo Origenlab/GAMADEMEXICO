@@ -1,0 +1,1371 @@
+[
+  {
+    "seccion": "boquillas",
+    "slug": "certificada",
+    "categoria": "boquillas",
+    "filter": {
+      "subcategorias": [
+        "certificada"
+      ]
+    },
+    "meta": {
+      "title": "Boquilla Certificada UL Listed FM Approved Elkhart Brass | Protección Civil México",
+      "description": "Boquilla contra incendio certificada UL Listed y FM Approved. 250 GPM, bronce fundido, documentación verificable. Requerida por aseguradoras y Protección Civil en México. Elkhart Brass, Akron Brass."
+    },
+    "hero": {
+      "title": "Boquilla Certificada UL/FM",
+      "intro": "Boquillas contra incendio con certificación UL Listed y FM Approved de Elkhart Brass y Akron Brass. Hasta 250 GPM en bronce fundido. Con documentación verificable de certificación. Requeridas por aseguradoras internacionales y Protección Civil en proyectos industriales, hospitalarios y comerciales en México.",
+      "badge": "Boquillas Contra Incendios",
+      "metrics": [
+        {
+          "valor": "UL/FM",
+          "texto": "Doble certificación"
+        },
+        {
+          "valor": "250",
+          "texto": "GPM máximo"
+        },
+        {
+          "valor": "100",
+          "texto": "PSI operación"
+        }
+      ],
+      "primaryText": "Ver Catálogo",
+      "primaryLink": "#catalogo",
+      "secondaryText": "Solicitar Cotización",
+      "secondaryLink": "#cotizar",
+      "contentHtml": "<p>Las <strong>boquillas certificadas UL/FM</strong> son equipos validados por los laboratorios más exigentes de la industria: Underwriters Laboratories (UL) y Factory Mutual (FM). Esta doble certificación garantiza que cada boquilla ha sido sometida a pruebas de rendimiento hidráulico, resistencia de materiales y durabilidad bajo condiciones extremas. Son requisito obligatorio para proyectos que requieren cumplimiento de NFPA, NOM-002-STPS y pólizas de seguro con aseguradoras internacionales.</p>\n    <p>En <strong>Gama de México</strong> distribuimos boquillas certificadas de Elkhart Brass, Akron Brass y Task Force Tips con documentación completa de certificación. Cada equipo incluye número de listado verificable en las bases de datos públicas de UL y FM. Asesoramos en la selección del modelo correcto según tu aplicación: sistemas de hidrantes para edificios comerciales, gabinetes contra incendio, brigadas industriales o equipamiento para cuerpos de bomberos municipales.</p>"
+    },
+    "schema": {
+      "name": "Boquilla Contra Incendios Certificada FM/UL",
+      "description": "Boquilla contra incendios certificada FM Approved y UL Listed. Elkhart Brass original con documentación técnica para aseguradoras.",
+      "image": "/img/boquillas-contra-incendios/boquilla-certificada-dual-ul-fm-csw-lb-documentos.avif",
+      "url": "/boquillas/certificada",
+      "category": "Boquillas Contra Incendios",
+      "brand": "Elkhart Brass",
+      "reviewAuthor": "Ing. Carlos Mendoza",
+      "reviewBody": "Excelente calidad y respaldo técnico de Gama de México. Equipos certificados con entrega puntual.",
+      "reviewDate": "2025-03-15",
+      "ratingCount": 32,
+      "reviewCount": 32
+    },
+    "breadcrumb": [
+      {
+        "name": "Inicio",
+        "url": "/"
+      },
+      {
+        "name": "Equipos",
+        "url": "/equipos"
+      },
+      {
+        "name": "Boquillas Contra Incendios",
+        "url": "/boquillas-contra-incendios"
+      }
+    ],
+    "catalog": {
+      "title": "Catálogo de Boquillas Certificadas",
+      "desc": "Selecciona el producto que mejor se adapte a tu operación"
+    },
+    "empty": {
+      "title": "Próximamente más opciones",
+      "text": "Estamos agregando más productos de boquillas certificadas de diferentes marcas. Mientras tanto, solicita una cotización personalizada.",
+      "buttonText": "Solicitar Cotización"
+    },
+    "techInfo": {
+      "title": "Especificaciones Técnicas Generales",
+      "items": [
+        {
+          "label": "Patrón",
+          "value": "Chorro directo"
+        },
+        {
+          "label": "Caudal máximo",
+          "value": "250 GPM"
+        },
+        {
+          "label": "Material",
+          "value": "Bronce fundido"
+        },
+        {
+          "label": "Control",
+          "value": "Selector de caudal"
+        },
+        {
+          "label": "Aplicación",
+          "value": "Manguera / Monitor"
+        },
+        {
+          "label": "Usuario",
+          "value": "Bomberos / Hidrantes"
+        }
+      ]
+    },
+    "ctaFinal": {
+      "title": "¿No encuentras el modelo que necesitas?",
+      "desc": "Tenemos acceso al catálogo completo de Elkhart Brass. Contáctanos para opciones adicionales y configuraciones especiales.",
+      "buttonText": "Solicitar Cotización"
+    },
+    "sidebar": {
+      "navTitulo": "Tipos de Boquillas",
+      "baseUrl": "/boquillas",
+      "backLinkHref": "/boquillas-contra-incendios",
+      "backLinkTexto": "Ver todas las boquillas",
+      "certificaciones": [
+        {
+          "siglas": "FM",
+          "nombre": "Factory Mutual"
+        },
+        {
+          "siglas": "UL",
+          "nombre": "UL Listed"
+        },
+        {
+          "siglas": "NOM",
+          "nombre": "NOM-002-STPS"
+        }
+      ],
+      "marcas": [
+        "Elkhart Brass",
+        "Akron Brass",
+        "Task Force Tips",
+        "POK"
+      ],
+      "aplicaciones": [
+        "Brigadas industriales",
+        "Cuerpos de bomberos",
+        "Plantas petroquímicas",
+        "Proyectos con requerimientos FM/UL"
+      ],
+      "productosRelacionados": [
+        {
+          "href": "/monitores-contra-incendios",
+          "nombre": "Monitores Contra Incendios"
+        },
+        {
+          "href": "/mangueras-contra-incendios",
+          "nombre": "Mangueras Contra Incendios"
+        },
+        {
+          "href": "/valvulas-contra-incendios",
+          "nombre": "Válvulas Contra Incendios"
+        },
+        {
+          "href": "/conexiones-herrajes-contra-incendios",
+          "nombre": "Conexiones y Herrajes"
+        }
+      ],
+      "subcategorias": [
+        {
+          "slug": "tipo-pistola",
+          "nombre": "Boquilla Tipo Pistola",
+          "descripcion": "Control ergonómico seleccionable"
+        },
+        {
+          "slug": "turbo-jet",
+          "nombre": "Boquilla Turbo Jet",
+          "descripcion": "Máximo alcance y penetración"
+        },
+        {
+          "slug": "industrial",
+          "nombre": "Boquilla Industrial",
+          "descripcion": "Alto caudal para industria"
+        },
+        {
+          "slug": "certificada",
+          "nombre": "Boquilla Certificada",
+          "descripcion": "Certificación UL/FM"
+        },
+        {
+          "slug": "handline",
+          "nombre": "Boquillas Handline XD",
+          "descripcion": "Chief XD, Phantom XD"
+        },
+        {
+          "slug": "master-stream",
+          "nombre": "Master Stream",
+          "descripcion": "X-Stream, gran caudal"
+        }
+      ]
+    },
+    "related": {
+      "titulo": "Otras Boquillas Contra Incendios",
+      "subtitulo": "Explora más opciones para tu sistema de protección",
+      "maxProductos": 3,
+      "verTodosLink": "/boquillas-contra-incendios",
+      "verTodosTexto": "Ver todas las boquillas"
+    },
+    "cotizacion": {
+      "titulo": "Cotiza Boquillas Certificadas",
+      "tipoEquipo": "Boquillas",
+      "pagina": "Boquillas Certificadas"
+    },
+    "faqs": [
+      {
+        "pregunta": "¿Por qué es importante que una boquilla tenga certificación FM o UL?",
+        "respuesta": "Las certificaciones FM Approved y UL Listed garantizan que la boquilla fue ensayada bajo condiciones de operación reales y cumple con los estándares de caudal, alcance y confiabilidad definidos por organismos independientes. En instalaciones industriales, las aseguradoras y las autoridades de protección civil pueden exigir equipos certificados. Usar boquillas sin certificación puede invalidar el seguro de la instalación."
+      },
+      {
+        "pregunta": "¿Qué proyectos requieren específicamente boquillas certificadas FM/UL?",
+        "respuesta": "Los proyectos que habitualmente exigen certificación FM o UL incluyen: terminales de almacenamiento de hidrocarburos, plantas petroquímicas, refinerías, instalaciones PEMEX y CFE, hospitales, centros de datos, hoteles internacionales y proyectos de inversión extranjera. La especificación técnica del proyecto o el contrato de seguro industrial define cuál certificación es requerida."
+      },
+      {
+        "pregunta": "¿Las boquillas certificadas FM/UL tienen mayor costo?",
+        "respuesta": "Sí, generalmente tienen un sobrecosto del 15-30% respecto a boquillas no certificadas equivalentes. Sin embargo, este costo se justifica porque asegura el cumplimiento normativo, facilita los trámites ante protección civil y mantiene la validez del seguro industrial. En instalaciones de alto riesgo, la diferencia de precio es mínima comparada con el costo de un siniestro o la invalidación de una póliza."
+      },
+      {
+        "pregunta": "¿Qué significa que una boquilla sea UL Listed o FM Approved?",
+        "respuesta": "UL Listed significa que Underwriters Laboratories (UL) evaluó el producto y verificó que cumple con las normas aplicables de rendimiento, materiales y seguridad. FM Approved significa que FM Global (Factory Mutual) realizó sus propias pruebas independientes y aprobó el producto para uso en instalaciones aseguradas por FM. Ambas certificaciones son reconocidas internacionalmente, aunque FM es preferida por aseguradoras industriales de alto riesgo y UL es más común en proyectos comerciales y gubernamentales. Gama de México entrega los documentos de certificación con cada equipo."
+      },
+      {
+        "pregunta": "¿Cómo se verifica la autenticidad de una certificación UL o FM en una boquilla?",
+        "respuesta": "Cada boquilla UL Listed incluye el número de listado UL que puede verificarse en el portal público iQ de UL (iq.ulprospector.com). Las boquillas FM Approved incluyen el número de aprobación verificable en el directorio de productos aprobados de FM Global (approvalguide.fmglobal.com). Adicionalmente, Gama de México entrega con cada pedido la documentación técnica oficial del fabricante que incluye el número de certificación y los parámetros de prueba. Si un proveedor no puede proporcionar esta documentación, el equipo probablemente no está genuinamente certificado."
+      },
+      {
+        "pregunta": "¿Qué documentación necesita Protección Civil para aceptar boquillas certificadas?",
+        "respuesta": "Para la aprobación de proyectos contra incendio ante la Dirección General de Protección Civil o autoridades estatales en México, generalmente se requiere: ficha técnica del fabricante con especificaciones hidráulicas, copia del certificado UL o FM con número de listado vigente, memoria de cálculo hidráulico firmada por DRO o perito, y en algunos casos carta de garantía del distribuidor autorizado. Gama de México proporciona todos estos documentos como parte del soporte técnico a proyectos, facilitando la obtención del visto bueno de Protección Civil."
+      }
+    ]
+  },
+  {
+    "seccion": "boquillas",
+    "slug": "handline",
+    "categoria": "boquillas",
+    "filter": {
+      "subcategorias": [
+        "boquillas-handline"
+      ]
+    },
+    "meta": {
+      "title": "Boquillas Handline XD Elkhart Brass | Chief XD Phantom XD NFPA 1964 | Bomberos México",
+      "description": "Boquillas handline XD Elkhart Brass: Chief XD flujo fijo (95-300 GPM), Phantom XD seleccionable, Select-O-Matic XD automática. Certificadas NFPA 1964. Compatibles CAFS. Distribuidor autorizado México."
+    },
+    "hero": {
+      "title": "Boquillas Handline XD",
+      "intro": "Línea completa de boquillas handline XD Elkhart Brass: Chief XD (flujo fijo 95-300 GPM), Phantom XD (seleccionable) y Select-O-Matic XD (automática). Todas certificadas NFPA 1964. Compatibles con CAFS. Conexión NH estándar 1½ y 2½ pulgadas. Distribuidor autorizado para cuerpos de bomberos y brigadas industriales en México.",
+      "badge": "Boquillas Contra Incendios",
+      "metrics": [
+        {
+          "valor": "95-300",
+          "texto": "GPM rango"
+        },
+        {
+          "valor": "NFPA",
+          "texto": "1964 certificada"
+        },
+        {
+          "valor": "100",
+          "texto": "PSI nominal"
+        }
+      ],
+      "primaryText": "Ver Catálogo",
+      "primaryLink": "#catalogo",
+      "secondaryText": "Solicitar Cotización",
+      "secondaryLink": "#cotizar",
+      "contentHtml": "<p>Las <strong>boquillas handline XD</strong> de Elkhart Brass son la línea de boquillas de ataque manual que usan los cuerpos de bomberos más exigentes. La serie XD incluye tres tipos de control de flujo — fijo (Chief XD), seleccionable (Phantom XD) y automático (Select-O-Matic XD) — para que cada departamento elija el tipo de boquilla que mejor se adapta a su doctrina operativa y experiencia del personal.</p>\n    <p>En <strong>Gama de México</strong> distribuimos la línea completa de boquillas handline XD con stock permanente en CDMX y Querétaro. Asesoramos a cuerpos de bomberos, brigadas industriales y protección civil en la selección del tipo de boquilla correcto según el caudal disponible, diámetro de manguera y tipo de emergencia.</p>"
+    },
+    "schema": {
+      "name": "Boquillas Handline XD Elkhart Brass",
+      "description": "Boquillas handline XD Elkhart Brass: Chief XD, Phantom XD, Select-O-Matic XD. Certificadas NFPA 1964. Flujo fijo, seleccionable y automático. México.",
+      "image": "/img/boquillas-contra-incendios/elkhart-chief-xd-boq-01.avif",
+      "url": "/boquillas/handline",
+      "category": "Boquillas Contra Incendios",
+      "brand": "Elkhart Brass",
+      "reviewAuthor": "Cmte. Jorge Navarro",
+      "reviewBody": "Las Chief XD son las boquillas que usamos en nuestras unidades. Gama de México nos surte con stock inmediato en CDMX.",
+      "reviewDate": "2025-07-08",
+      "ratingCount": 30,
+      "reviewCount": 30
+    },
+    "breadcrumb": [
+      {
+        "name": "Inicio",
+        "url": "/"
+      },
+      {
+        "name": "Equipos",
+        "url": "/equipos"
+      },
+      {
+        "name": "Boquillas Contra Incendios",
+        "url": "/boquillas-contra-incendios"
+      },
+      {
+        "name": "Boquillas Handline XD",
+        "url": "/boquillas/handline"
+      }
+    ],
+    "catalog": {
+      "title": "Boquillas Handline XD Elkhart Brass",
+      "desc": "Boquillas de ataque manual certificadas NFPA 1964"
+    },
+    "empty": {
+      "title": "Próximamente más opciones",
+      "text": "Estamos agregando más boquillas handline. Solicita cotización con especificaciones.",
+      "buttonText": "Solicitar Cotización"
+    },
+    "techInfo": {
+      "title": "Comparativa de Boquillas Handline XD",
+      "items": [
+        {
+          "label": "Chief XD",
+          "value": "Flujo fijo"
+        },
+        {
+          "label": "Phantom XD",
+          "value": "Flujo seleccionable"
+        },
+        {
+          "label": "Select-O-Matic XD",
+          "value": "Flujo automático"
+        },
+        {
+          "label": "Presión nominal",
+          "value": "100 PSI"
+        },
+        {
+          "label": "Conexiones",
+          "value": "1½\" y 2½\" NH"
+        },
+        {
+          "label": "Certificación",
+          "value": "NFPA 1964"
+        }
+      ]
+    },
+    "sidebar": {
+      "navTitulo": "Tipos de Boquillas",
+      "baseUrl": "/boquillas",
+      "backLinkHref": "/boquillas-contra-incendios",
+      "backLinkTexto": "Ver todas las boquillas",
+      "certificaciones": [
+        {
+          "siglas": "FM",
+          "nombre": "Factory Mutual"
+        },
+        {
+          "siglas": "UL",
+          "nombre": "UL Listed"
+        },
+        {
+          "siglas": "NOM",
+          "nombre": "NOM-002-STPS"
+        }
+      ],
+      "marcas": [
+        "Elkhart Brass",
+        "Akron Brass",
+        "Task Force Tips",
+        "POK"
+      ],
+      "aplicaciones": [
+        "Cuerpos de bomberos",
+        "Brigadas industriales",
+        "Protección civil",
+        "Aeropuertos",
+        "Plantas petroquímicas"
+      ],
+      "productosRelacionados": [
+        {
+          "href": "/gabinetes-hidrantes-contra-incendios",
+          "nombre": "Gabinetes e Hidrantes"
+        },
+        {
+          "href": "/mangueras-contra-incendios",
+          "nombre": "Mangueras Contra Incendios"
+        },
+        {
+          "href": "/valvulas-contra-incendios",
+          "nombre": "Válvulas Contra Incendios"
+        },
+        {
+          "href": "/conexiones-herrajes-contra-incendios",
+          "nombre": "Conexiones y Herrajes"
+        }
+      ],
+      "subcategorias": [
+        {
+          "slug": "tipo-pistola",
+          "nombre": "Boquilla Tipo Pistola",
+          "descripcion": "Control ergonómico seleccionable"
+        },
+        {
+          "slug": "turbo-jet",
+          "nombre": "Boquilla Turbo Jet",
+          "descripcion": "Máximo alcance y penetración"
+        },
+        {
+          "slug": "industrial",
+          "nombre": "Boquilla Industrial",
+          "descripcion": "Alto caudal para industria"
+        },
+        {
+          "slug": "certificada",
+          "nombre": "Boquilla Certificada",
+          "descripcion": "Certificación UL/FM"
+        },
+        {
+          "slug": "handline",
+          "nombre": "Boquillas Handline XD",
+          "descripcion": "Chief XD, Phantom XD"
+        },
+        {
+          "slug": "master-stream",
+          "nombre": "Master Stream",
+          "descripcion": "X-Stream, gran caudal"
+        }
+      ]
+    },
+    "related": {
+      "titulo": "Otras Boquillas Contra Incendios",
+      "subtitulo": "Boquillas industriales, turbo jet y certificadas",
+      "maxProductos": 3,
+      "verTodosLink": "/boquillas-contra-incendios",
+      "verTodosTexto": "Ver todas las boquillas"
+    },
+    "cotizacion": {
+      "titulo": "Cotiza Boquillas Handline XD",
+      "tipoEquipo": "Boquillas",
+      "pagina": "Boquillas Handline XD"
+    },
+    "faqs": [
+      {
+        "pregunta": "¿Qué diferencia hay entre la Chief XD, Phantom XD y Select-O-Matic XD?",
+        "respuesta": "La Chief XD es de flujo fijo: eliges el caudal al comprarla (95, 150, 200 o 300 GPM) y ese flujo no cambia en campo. La Phantom XD es de flujo seleccionable: el operador rota un selector para elegir entre varios caudales preconfigurados según el escenario. La Select-O-Matic XD es automática: ajusta el flujo sola cuando la presión del sistema cambia, manteniendo siempre la presión óptima en la boquilla sin intervención del bombero."
+      },
+      {
+        "pregunta": "¿Las boquillas XD de Elkhart Brass cumplen con NFPA 1964?",
+        "respuesta": "Sí. Toda la línea XD de Elkhart Brass — Chief XD, Phantom XD y Select-O-Matic XD — está certificada conforme a NFPA 1964, que es el estándar para boquillas de ataque manual para cuerpos de bomberos. La certificación garantiza patrones de descarga uniformes, resistencia a impactos y presión de operación dentro de los rangos establecidos."
+      },
+      {
+        "pregunta": "¿Las boquillas handline XD son compatibles con las mangueras que ya tenemos?",
+        "respuesta": "Sí. Las boquillas handline XD usan conexiones NH (National Hose) estándar en diámetros de 1½ y 2½ pulgadas, que son las roscas que usan los cuerpos de bomberos en México. No necesitas adaptadores ni cambiar tus mangueras para usar las boquillas Elkhart Brass XD."
+      },
+      {
+        "pregunta": "¿Qué ventajas ergonómicas ofrecen las boquillas handline XD para uso prolongado?",
+        "respuesta": "Las boquillas handline XD de Elkhart Brass están diseñadas con empuñadura de pistola con agarre antideslizante que reduce la fatiga durante operaciones extendidas. El mecanismo de apertura/cierre requiere menor fuerza que boquillas convencionales, lo que es crítico cuando el operador lleva ya varios minutos combatiendo un incendio. El diseño balanceado distribuye el peso hacia la mano de agarre, reduciendo la torsión de muñeca causada por la reacción del chorro. Para brigadas industriales que realizan guardias largas, estas características marcan la diferencia en el desempeño del operador."
+      },
+      {
+        "pregunta": "¿Las boquillas handline XD tienen opciones de control de flujo para diferentes escenarios?",
+        "respuesta": "Sí. La línea XD ofrece tres modos de control de flujo para adaptarse a diferentes doctrinas operativas. La Chief XD entrega flujo fijo sin posibilidad de error del operador, ideal para brigadas con entrenamiento básico. La Phantom XD permite al bombero seleccionar entre 3 a 6 caudales según el tamaño del incendio y el abastecimiento disponible. La Select-O-Matic XD es la opción más avanzada: compensa automáticamente las variaciones de presión en el sistema, manteniendo el caudal nominal incluso cuando la presión de la bomba fluctúa. Los tres modelos incluyen cierre total (shut-off) y patrón ajustable de chorro a niebla."
+      },
+      {
+        "pregunta": "¿Las boquillas handline XD son compatibles con sistemas CAFS (Compressed Air Foam Systems)?",
+        "respuesta": "Sí. Elkhart Brass ofrece versiones de la línea XD compatibles con CAFS (sistemas de espuma con aire comprimido). Estos sistemas mezclan agua, concentrado de espuma y aire comprimido para generar una espuma húmeda o seca con alta capacidad de adherencia. Para uso con CAFS se recomienda la Chief XD o Phantom XD en configuración de flujo fijo, ya que los sistemas de flujo automático pueden tener comportamientos no predecibles con mezclas de aire y agua. Gama de México asesora en la compatibilidad entre la boquilla, el proporcionador y el compresor de aire de tu sistema."
+      }
+    ]
+  },
+  {
+    "seccion": "boquillas",
+    "slug": "industrial",
+    "categoria": "boquillas",
+    "filter": {
+      "subcategorias": [
+        "industrial"
+      ]
+    },
+    "meta": {
+      "title": "Boquilla Industrial 500+ GPM Bronce Inoxidable | NFPA 15 UL | Refinería México",
+      "description": "Boquilla industrial Elkhart Brass 500+ GPM en bronce o acero inoxidable 316. Certificada UL 401, cumple NFPA 15. Resistente a ambientes corrosivos. Para refinerías, petroquímicas y plantas PEMEX en México."
+    },
+    "hero": {
+      "title": "Boquilla Industrial",
+      "intro": "Boquillas industriales Elkhart Brass de 500+ GPM en bronce naval o acero inoxidable 316. Certificadas UL 401, conformes con NFPA 15. Resistentes a ambientes corrosivos y compatibles con AFFF. Para refinerías, plantas petroquímicas, instalaciones PEMEX y sistemas fijos de diluvio en México.",
+      "badge": "Boquillas Contra Incendios",
+      "metrics": [
+        {
+          "valor": "500+",
+          "texto": "GPM capacidad"
+        },
+        {
+          "valor": "150",
+          "texto": "PSI máxima"
+        },
+        {
+          "valor": "Inox/Bronce",
+          "texto": "Materiales"
+        }
+      ],
+      "primaryText": "Ver Catálogo",
+      "primaryLink": "#catalogo",
+      "secondaryText": "Solicitar Cotización",
+      "secondaryLink": "#cotizar",
+      "contentHtml": "<p>Las <strong>boquillas industriales</strong> están diseñadas para entregar caudales superiores a los 500 GPM en aplicaciones donde las boquillas manuales convencionales resultan insuficientes. Fabricadas en acero inoxidable 316, bronce naval o latón de alta resistencia, estos equipos soportan operación continua bajo condiciones extremas de temperatura, presión y ambientes corrosivos. Su diseño permite configuraciones de chorro sólido para máximo alcance o patrones de pulverización para enfriamiento de superficies.</p>\n    <p><strong>Gama de México</strong> suministra boquillas industriales para integración en sistemas fijos de protección, monitores de alto caudal y aplicaciones especiales en refinerías, plantas petroquímicas, acereras y centrales de generación. Asesoramos en la selección del material, tipo de conexión y patrón de descarga según las características específicas de tu proceso industrial y los requerimientos de tu póliza de seguro.</p>"
+    },
+    "schema": {
+      "name": "Boquilla Industrial Contra Incendios",
+      "description": "Boquilla industrial bronce alta resistencia. Hasta 200+ PSI, compatible AFFF. Para plantas petroquímicas y terminales de almacenamiento.",
+      "image": "/img/boquillas-contra-incendios/boquilla-certificada-dual-ul-fm-csw-lb-documentos.avif",
+      "url": "/boquillas/industrial",
+      "category": "Boquillas Contra Incendios",
+      "brand": "Elkhart Brass",
+      "reviewAuthor": "Ing. Carlos Mendoza",
+      "reviewBody": "Excelente calidad y respaldo técnico de Gama de México. Equipos certificados con entrega puntual.",
+      "reviewDate": "2025-03-15",
+      "ratingCount": 32,
+      "reviewCount": 32
+    },
+    "breadcrumb": [
+      {
+        "name": "Inicio",
+        "url": "/"
+      },
+      {
+        "name": "Equipos",
+        "url": "/equipos"
+      },
+      {
+        "name": "Boquillas Contra Incendios",
+        "url": "/boquillas-contra-incendios"
+      }
+    ],
+    "catalog": {
+      "title": "Catálogo de Boquillas Industriales",
+      "desc": "Selecciona el producto que mejor se adapte a tu operación"
+    },
+    "empty": {
+      "title": "Próximamente más opciones",
+      "text": "Estamos agregando más productos de boquillas industriales de diferentes marcas. Mientras tanto, solicita una cotización personalizada.",
+      "buttonText": "Solicitar Cotización"
+    },
+    "techInfo": {
+      "title": "Especificaciones Técnicas Generales",
+      "items": [
+        {
+          "label": "Presión",
+          "value": "Alta presión industrial"
+        },
+        {
+          "label": "Patrón",
+          "value": "Chiflón / Pulverización"
+        },
+        {
+          "label": "Material",
+          "value": "Acero inoxidable / Latón"
+        },
+        {
+          "label": "Flujo",
+          "value": "Alto GPM industrial"
+        },
+        {
+          "label": "Certificación",
+          "value": "UL 401 A/B/C"
+        },
+        {
+          "label": "Aplicación",
+          "value": "Industrial severa"
+        }
+      ]
+    },
+    "ctaFinal": {
+      "title": "¿No encuentras el modelo que necesitas?",
+      "desc": "Tenemos acceso al catálogo completo de Elkhart Brass. Contáctanos para opciones adicionales y configuraciones especiales.",
+      "buttonText": "Solicitar Cotización"
+    },
+    "sidebar": {
+      "navTitulo": "Tipos de Boquillas",
+      "baseUrl": "/boquillas",
+      "backLinkHref": "/boquillas-contra-incendios",
+      "backLinkTexto": "Ver todas las boquillas",
+      "certificaciones": [
+        {
+          "siglas": "FM",
+          "nombre": "Factory Mutual"
+        },
+        {
+          "siglas": "UL",
+          "nombre": "UL Listed"
+        },
+        {
+          "siglas": "NOM",
+          "nombre": "NOM-002-STPS"
+        }
+      ],
+      "marcas": [
+        "Elkhart Brass",
+        "Akron Brass",
+        "Task Force Tips",
+        "POK"
+      ],
+      "aplicaciones": [
+        "Industria manufacturera",
+        "Plantas químicas",
+        "Almacenes industriales",
+        "Parques industriales"
+      ],
+      "productosRelacionados": [
+        {
+          "href": "/monitores-contra-incendios",
+          "nombre": "Monitores Contra Incendios"
+        },
+        {
+          "href": "/mangueras-contra-incendios",
+          "nombre": "Mangueras Contra Incendios"
+        },
+        {
+          "href": "/valvulas-contra-incendios",
+          "nombre": "Válvulas Contra Incendios"
+        },
+        {
+          "href": "/conexiones-herrajes-contra-incendios",
+          "nombre": "Conexiones y Herrajes"
+        }
+      ],
+      "subcategorias": [
+        {
+          "slug": "tipo-pistola",
+          "nombre": "Boquilla Tipo Pistola",
+          "descripcion": "Control ergonómico seleccionable"
+        },
+        {
+          "slug": "turbo-jet",
+          "nombre": "Boquilla Turbo Jet",
+          "descripcion": "Máximo alcance y penetración"
+        },
+        {
+          "slug": "industrial",
+          "nombre": "Boquilla Industrial",
+          "descripcion": "Alto caudal para industria"
+        },
+        {
+          "slug": "certificada",
+          "nombre": "Boquilla Certificada",
+          "descripcion": "Certificación UL/FM"
+        },
+        {
+          "slug": "handline",
+          "nombre": "Boquillas Handline XD",
+          "descripcion": "Chief XD, Phantom XD"
+        },
+        {
+          "slug": "master-stream",
+          "nombre": "Master Stream",
+          "descripcion": "X-Stream, gran caudal"
+        }
+      ]
+    },
+    "related": {
+      "titulo": "Otras Boquillas Contra Incendios",
+      "subtitulo": "Explora más opciones para tu sistema de protección",
+      "maxProductos": 3,
+      "verTodosLink": "/boquillas-contra-incendios",
+      "verTodosTexto": "Ver todas las boquillas"
+    },
+    "cotizacion": {
+      "titulo": "Cotiza Boquillas Industriales",
+      "tipoEquipo": "Boquillas",
+      "pagina": "Boquillas Industriales"
+    },
+    "faqs": [
+      {
+        "pregunta": "¿Cuál es la diferencia entre una boquilla industrial y una boquilla estándar?",
+        "respuesta": "Las boquillas industriales están fabricadas en bronce de alta calidad con mayor resistencia a la corrosión y a agentes químicos. Su diseño tolera presiones de trabajo más altas (hasta 200 PSI) y caudales superiores a 200 GPM. Son la elección correcta para sistemas fijos de protección en plantas con ambientes corrosivos, temperaturas extremas o riesgo de contacto con hidrocarburos."
+      },
+      {
+        "pregunta": "¿Las boquillas industriales son compatibles con agentes espumantes?",
+        "respuesta": "Sí. Las boquillas industriales de bronce son compatibles con agua, AFFF, FFFP y otros agentes espumantes acuosos. Para aplicaciones con foam, recomendamos boquillas con selector de patrón que permiten alternar entre chorro sólido para proyección a distancia y niebla para generación de espuma en la zona de descarga."
+      },
+      {
+        "pregunta": "¿Qué mantenimiento requieren las boquillas industriales?",
+        "respuesta": "Se recomienda inspección semestral y prueba de flujo anual conforme a NFPA 25. El mantenimiento incluye limpieza interna, verificación del selector de patrón, revisión de juntas y prueba de estanqueidad. En ambientes corrosivos (costa, petroquímica) se recomienda inspección trimestral. Gama de México ofrece servicio de mantenimiento de boquillas en toda la República Mexicana."
+      },
+      {
+        "pregunta": "¿Qué aplicaciones de alto flujo requieren boquillas industriales de 500 GPM o más?",
+        "respuesta": "Las boquillas industriales de 500 GPM o más son necesarias en aplicaciones como: protección perimetral de tanques de almacenamiento de hidrocarburos, cortinas de agua en cargaderos de buques o pipas, sistemas de diluvio para enfriamiento de esferas de gas LP, monitores de espuma en terminales PEMEX, y sistemas de protección de reactores en plantas petroquímicas. En todos estos casos, la norma NFPA 15 (sistemas de agua pulverizada) o NFPA 11 (espuma) define los caudales mínimos y la densidad de aplicación requeridos."
+      },
+      {
+        "pregunta": "¿Las boquillas industriales cumplen con NFPA 15 para sistemas de agua pulverizada?",
+        "respuesta": "Sí. Las boquillas industriales que distribuye Gama de México son compatibles con sistemas diseñados bajo NFPA 15. Esta norma rige los sistemas fijos de agua pulverizada para protección de equipos industriales y estructuras. Especifica la densidad de aplicación (GPM/ft²), la distribución del patrón de descarga y los materiales permitidos según el riesgo. Para cumplir con NFPA 15, las boquillas deben estar listadas UL o aprobadas FM y su instalación debe ser respaldada por un ingeniero de protección contra incendios."
+      },
+      {
+        "pregunta": "¿Qué especificaciones NRF de PEMEX aplican para boquillas en instalaciones de hidrocarburos?",
+        "respuesta": "PEMEX emite Normas de Referencia (NRF) que complementan y en algunos casos superan los requisitos de NFPA para instalaciones petroleras en México. Las boquillas utilizadas en refinerías, terminales y plataformas PEMEX deben cumplir con las especificaciones de materiales (generalmente bronce o acero inoxidable 316), presión de trabajo, certificación UL o FM, y trazabilidad de fabricante. Gama de México tiene experiencia en suministro de boquillas para proyectos PEMEX y CFE, incluyendo la documentación técnica y de certificación requerida para aprobación de proyectos."
+      }
+    ]
+  },
+  {
+    "seccion": "boquillas",
+    "slug": "master-stream",
+    "categoria": "boquillas",
+    "filter": {
+      "subcategorias": [
+        "boquillas-master-stream"
+      ]
+    },
+    "meta": {
+      "title": "Boquillas Master Stream X-Stream Elkhart Brass | 500-2000 GPM Monitores | NFPA 15 México",
+      "description": "Boquillas master stream X-Stream Elkhart Brass para monitores industriales y deck gun. 500-2,000 GPM, alcance 100m+. Compatibles AFFF/FFFP. Cumple NFPA 15. Refinerías, terminales y petroquímicas en México."
+    },
+    "hero": {
+      "title": "Boquillas Master Stream",
+      "intro": "Boquillas master stream X-Stream de Elkhart Brass para monitores fijos, portátiles y deck gun. Caudales de 500 a 2,000 GPM con alcance hasta 100+ metros. Conformes con NFPA 15. Compatibles con AFFF y FFFP. Para protección perimetral de tanques, refinerías y terminales de almacenamiento en México.",
+      "badge": "Boquillas Contra Incendios",
+      "metrics": [
+        {
+          "valor": "2,000",
+          "texto": "GPM máximo"
+        },
+        {
+          "valor": "X-Stream",
+          "texto": "Línea Elkhart"
+        },
+        {
+          "valor": "AFFF",
+          "texto": "Compatible espuma"
+        }
+      ],
+      "primaryText": "Ver Catálogo",
+      "primaryLink": "#catalogo",
+      "secondaryText": "Solicitar Cotización",
+      "secondaryLink": "#cotizar",
+      "contentHtml": "<p>Las <strong>boquillas master stream</strong> son el componente que define el rendimiento de un monitor contra incendios. A diferencia de las boquillas handline que opera un bombero con manguera, las master stream se montan directamente en monitores fijos o portátiles y manejan caudales que superan los 500 GPM — hasta 2,000 GPM en los modelos industriales.</p>\n    <p>En <strong>Gama de México</strong> distribuimos la línea X-Stream de Elkhart Brass, diseñada para integrarse con los monitores Vulcan, Copperhead y la serie EXM2. Asesoramos en la selección de la boquilla correcta según el caudal requerido, presión disponible, tipo de agente extintor y patrón de descarga necesario para tu aplicación específica.</p>"
+    },
+    "schema": {
+      "name": "Boquillas Master Stream Elkhart Brass",
+      "description": "Boquillas master stream X-Stream Elkhart Brass para monitores industriales. 500-2,000 GPM. Chorro sólido y niebla. Distribuidor México.",
+      "image": "/img/boquillas-contra-incendios/elkhart-chief-xd-boq-01.avif",
+      "url": "/boquillas/master-stream",
+      "category": "Boquillas Contra Incendios",
+      "brand": "Elkhart Brass",
+      "reviewAuthor": "Ing. Ricardo Solis",
+      "reviewBody": "Las X-Stream funcionan perfecto en nuestros monitores de terminal. Gama de México nos ayudó a seleccionar el patrón correcto.",
+      "reviewDate": "2025-09-05",
+      "ratingCount": 18,
+      "reviewCount": 18
+    },
+    "breadcrumb": [
+      {
+        "name": "Inicio",
+        "url": "/"
+      },
+      {
+        "name": "Equipos",
+        "url": "/equipos"
+      },
+      {
+        "name": "Boquillas Contra Incendios",
+        "url": "/boquillas-contra-incendios"
+      },
+      {
+        "name": "Master Stream",
+        "url": "/boquillas/master-stream"
+      }
+    ],
+    "catalog": {
+      "title": "Boquillas Master Stream para Monitores",
+      "desc": "Boquillas de gran caudal X-Stream de Elkhart Brass"
+    },
+    "empty": {
+      "title": "Próximamente más opciones",
+      "text": "Estamos agregando fichas de boquillas master stream. Solicita cotización con especificaciones de tu monitor.",
+      "buttonText": "Solicitar Cotización"
+    },
+    "techInfo": {
+      "title": "Especificaciones Técnicas Generales",
+      "items": [
+        {
+          "label": "Caudal",
+          "value": "500 - 2,000 GPM"
+        },
+        {
+          "label": "Presión",
+          "value": "80 - 150 PSI"
+        },
+        {
+          "label": "Patrones",
+          "value": "Chorro / Niebla"
+        },
+        {
+          "label": "Montaje",
+          "value": "Monitores fijos"
+        },
+        {
+          "label": "Material",
+          "value": "Aluminio / Bronce"
+        },
+        {
+          "label": "Agente",
+          "value": "Agua / AFFF / FFFP"
+        }
+      ]
+    },
+    "sidebar": {
+      "navTitulo": "Tipos de Boquillas",
+      "baseUrl": "/boquillas",
+      "backLinkHref": "/boquillas-contra-incendios",
+      "backLinkTexto": "Ver todas las boquillas",
+      "certificaciones": [
+        {
+          "siglas": "FM",
+          "nombre": "Factory Mutual"
+        },
+        {
+          "siglas": "UL",
+          "nombre": "UL Listed"
+        },
+        {
+          "siglas": "NOM",
+          "nombre": "NOM-002-STPS"
+        }
+      ],
+      "marcas": [
+        "Elkhart Brass",
+        "Akron Brass",
+        "Task Force Tips",
+        "POK"
+      ],
+      "aplicaciones": [
+        "Monitores industriales",
+        "Protección perimetral",
+        "Terminales de almacenamiento",
+        "Refinerías",
+        "Hangares de aviación"
+      ],
+      "productosRelacionados": [
+        {
+          "href": "/monitores-contra-incendios",
+          "nombre": "Monitores Contra Incendios"
+        },
+        {
+          "href": "/mangueras-contra-incendios",
+          "nombre": "Mangueras Contra Incendios"
+        },
+        {
+          "href": "/valvulas-contra-incendios",
+          "nombre": "Válvulas Contra Incendios"
+        },
+        {
+          "href": "/conexiones-herrajes-contra-incendios",
+          "nombre": "Conexiones y Herrajes"
+        }
+      ],
+      "subcategorias": [
+        {
+          "slug": "tipo-pistola",
+          "nombre": "Boquilla Tipo Pistola",
+          "descripcion": "Control ergonómico seleccionable"
+        },
+        {
+          "slug": "turbo-jet",
+          "nombre": "Boquilla Turbo Jet",
+          "descripcion": "Máximo alcance y penetración"
+        },
+        {
+          "slug": "industrial",
+          "nombre": "Boquilla Industrial",
+          "descripcion": "Alto caudal para industria"
+        },
+        {
+          "slug": "certificada",
+          "nombre": "Boquilla Certificada",
+          "descripcion": "Certificación UL/FM"
+        },
+        {
+          "slug": "handline",
+          "nombre": "Boquillas Handline XD",
+          "descripcion": "Chief XD, Phantom XD"
+        },
+        {
+          "slug": "master-stream",
+          "nombre": "Master Stream",
+          "descripcion": "X-Stream, gran caudal"
+        }
+      ]
+    },
+    "related": {
+      "titulo": "Otras Boquillas Contra Incendios",
+      "subtitulo": "Boquillas handline, industriales y certificadas",
+      "maxProductos": 3,
+      "verTodosLink": "/boquillas-contra-incendios",
+      "verTodosTexto": "Ver todas las boquillas"
+    },
+    "cotizacion": {
+      "titulo": "Cotiza Boquillas Master Stream",
+      "tipoEquipo": "Boquillas",
+      "pagina": "Boquillas Master Stream"
+    },
+    "faqs": [
+      {
+        "pregunta": "¿Qué es una boquilla master stream?",
+        "respuesta": "Una boquilla master stream es una boquilla de gran caudal diseñada para montarse en monitores fijos o portátiles, no para operación manual con manguera. Manejan flujos de 500 a 2,000 GPM o más, y se usan para ataque defensivo en incendios de gran magnitud, protección perimetral de tanques y enfriamiento de estructuras. Son el complemento indispensable de los monitores industriales."
+      },
+      {
+        "pregunta": "¿Qué boquillas master stream maneja Elkhart Brass?",
+        "respuesta": "Elkhart Brass fabrica la línea X-Stream de boquillas master stream, disponibles en configuraciones de chorro sólido, niebla y combinadas. Los modelos varían según el caudal requerido (500 a 2,000 GPM) y el tipo de monitor donde se instalan. Gama de México asesora en la selección del modelo correcto según tu monitor y sistema hidráulico."
+      },
+      {
+        "pregunta": "¿Las boquillas master stream son compatibles con espuma AFFF?",
+        "respuesta": "Sí. Las boquillas master stream Elkhart Brass son compatibles con agua, espuma AFFF y FFFP. Para aplicaciones con espuma, se recomienda usar modelos con patrones de descarga que maximicen la expansión de la espuma sobre la superficie del combustible. Verificamos la compatibilidad del modelo con tu sistema de proporción antes de cotizar."
+      },
+      {
+        "pregunta": "¿Para qué aplicaciones industriales de alto flujo se usan las boquillas master stream?",
+        "respuesta": "Las boquillas master stream de 500 a 2,000 GPM son el estándar para: protección perimetral de parques de tanques de hidrocarburos, cortinas de agua en cargaderos y muelles, deck guns en camiones de bomberos de respuesta a grandes incendios, torres de enfriamiento en reactores petroquímicos, y sistemas fijos de diluvio bajo NFPA 15. También se usan en sistemas de espuma de alta expansión para hangares de aviación bajo NFPA 11. En todas estas aplicaciones, la selección correcta del patrón de descarga (chorro sólido para alcance o niebla para enfriamiento) define la efectividad de la protección."
+      },
+      {
+        "pregunta": "¿Cómo se integran las boquillas master stream con monitores industriales?",
+        "respuesta": "Las boquillas master stream X-Stream de Elkhart Brass están diseñadas para integrarse directamente con los monitores de la misma marca: Vulcan, Copperhead y la serie EXM2, mediante conexiones estándar de 2.5\", 3\" y 4\" NHT o bridadas. La selección de la boquilla debe coincidir con el caudal nominal del monitor y la presión de diseño del sistema hidráulico. Una boquilla subdimensionada generará velocidades de salida insuficientes; una sobredimensionada puede provocar cavitación. Gama de México verifica la curva hidráulica del sistema completo antes de confirmar la selección de boquilla y monitor."
+      },
+      {
+        "pregunta": "¿Qué alcance y cobertura logran las boquillas master stream en deck gun o monitor portátil?",
+        "respuesta": "En configuración de chorro sólido, las boquillas master stream X-Stream de Elkhart Brass a 500 GPM y 100 PSI alcanzan distancias horizontales de 80 a 100 metros, suficientes para ataque defensivo desde fuera de la zona de peligro. En configuración de niebla (30°-90°), el alcance se reduce pero la cobertura de área aumenta para enfriamiento de superficies. Los deck guns montados en camión de bomberos con caudal de 1,000 GPM pueden cubrir hasta 150 metros de alcance. Gama de México proporciona las tablas de rendimiento hidráulico de cada modelo para que el ingeniero de diseño pueda calcular el posicionamiento correcto de los monitores."
+      }
+    ]
+  },
+  {
+    "seccion": "boquillas",
+    "slug": "tipo-pistola",
+    "categoria": "boquillas",
+    "filter": {
+      "subcategorias": [
+        "tipo-pistola"
+      ]
+    },
+    "meta": {
+      "title": "Boquilla Tipo Pistola Elkhart Brass | 15-250 GPM Seleccionable | Brigadas Industriales México",
+      "description": "Boquilla tipo pistola Elkhart Brass y Akron Brass con galonaje seleccionable 15-250 GPM. Certificadas UL/FM, cumple NFPA 1964. Compatible AFFF. Para brigadas industriales, bomberos y plantas petroquímicas en México."
+    },
+    "hero": {
+      "title": "Boquilla Tipo Pistola",
+      "intro": "Boquillas tipo pistola Elkhart Brass y Akron Brass con galonaje seleccionable de 15 a 250 GPM. Certificadas UL/FM y conformes a NFPA 1964. Diseño ergonómico para ataque inicial, enfriamiento y protección perimetral en brigadas industriales, cuerpos de bomberos y plantas petroquímicas en México.",
+      "badge": "Boquillas Contra Incendios",
+      "metrics": [
+        {
+          "valor": "15-250",
+          "texto": "GPM seleccionable"
+        },
+        {
+          "valor": "Chorro/Niebla",
+          "texto": "Patrón ajustable"
+        },
+        {
+          "valor": "75-100",
+          "texto": "PSI de operación"
+        }
+      ],
+      "primaryText": "Ver Catálogo",
+      "primaryLink": "#catalogo",
+      "secondaryText": "Solicitar Cotización",
+      "secondaryLink": "#cotizar",
+      "contentHtml": "<p>La <strong>boquilla tipo pistola</strong> es el equipo de control manual más versátil para operaciones de combate y supresión de incendios. Su diseño ergonómico con empuñadura tipo pistola permite al operador ajustar el caudal (GPM) y el patrón de descarga —desde chorro sólido hasta niebla de protección— sin soltar la manguera. Fabricadas en aluminio forjado anodizado o bronce, estas boquillas incluyen mecanismo de interlock que previene cambios accidentales de flujo durante la operación.</p>\n    <p><strong>Gama de México</strong> distribuye boquillas tipo pistola de Elkhart Brass, Akron Brass y Task Force Tips con certificaciones UL y FM. Asesoramos en la selección del modelo según tu aplicación: caudales de 15 a 250 GPM, entradas de 1.5\" o 2.5\" NHT, y configuraciones especiales para espuma. Atendemos cuerpos de bomberos, brigadas industriales, protección civil, aeropuertos y plantas petroquímicas en toda la República Mexicana.</p>"
+    },
+    "schema": {
+      "name": "Boquilla Tipo Pistola Contra Incendios",
+      "description": "Boquilla tipo pistola chorro sólido y niebla. 125-200 GPM a 100 PSI. Bronce Elkhart Brass para brigadas industriales México.",
+      "image": "/img/boquillas-contra-incendios/boquilla-certificada-dual-ul-fm-csw-lb-documentos.avif",
+      "url": "/boquillas/tipo-pistola",
+      "category": "Boquillas Contra Incendios",
+      "brand": "Elkhart Brass",
+      "reviewAuthor": "Ing. Carlos Mendoza",
+      "reviewBody": "Excelente calidad y respaldo técnico de Gama de México. Equipos certificados con entrega puntual.",
+      "reviewDate": "2025-03-15",
+      "ratingCount": 32,
+      "reviewCount": 32
+    },
+    "breadcrumb": [
+      {
+        "name": "Inicio",
+        "url": "/"
+      },
+      {
+        "name": "Equipos",
+        "url": "/equipos"
+      },
+      {
+        "name": "Boquillas Contra Incendios",
+        "url": "/boquillas-contra-incendios"
+      }
+    ],
+    "catalog": {
+      "title": "Catálogo de Boquillas Tipo Pistola",
+      "desc": "Selecciona el producto que mejor se adapte a tu operación"
+    },
+    "empty": {
+      "title": "Próximamente más opciones",
+      "text": "Estamos agregando más productos de boquillas tipo pistola de diferentes marcas. Mientras tanto, solicita una cotización personalizada.",
+      "buttonText": "Solicitar Cotización"
+    },
+    "techInfo": {
+      "title": "Especificaciones Técnicas Generales",
+      "items": [
+        {
+          "label": "Caudal típico",
+          "value": "15 - 250 GPM"
+        },
+        {
+          "label": "Presión de trabajo",
+          "value": "75 - 100 PSI"
+        },
+        {
+          "label": "Patrones",
+          "value": "Chorro, 30°, 90°"
+        },
+        {
+          "label": "Entradas",
+          "value": "1.5\" y 2.5\" NHT"
+        },
+        {
+          "label": "Ajustes de flujo",
+          "value": "4 a 6 posiciones"
+        },
+        {
+          "label": "Materiales",
+          "value": "Aluminio forjado"
+        }
+      ]
+    },
+    "ctaFinal": {
+      "title": "¿No encuentras el modelo que necesitas?",
+      "desc": "Tenemos acceso al catálogo completo de Elkhart Brass. Contáctanos para opciones adicionales y configuraciones especiales.",
+      "buttonText": "Solicitar Cotización"
+    },
+    "sidebar": {
+      "navTitulo": "Tipos de Boquillas",
+      "baseUrl": "/boquillas",
+      "backLinkHref": "/boquillas-contra-incendios",
+      "backLinkTexto": "Ver todas las boquillas",
+      "certificaciones": [
+        {
+          "siglas": "FM",
+          "nombre": "Factory Mutual"
+        },
+        {
+          "siglas": "UL",
+          "nombre": "UL Listed"
+        },
+        {
+          "siglas": "NOM",
+          "nombre": "NOM-002-STPS"
+        }
+      ],
+      "marcas": [
+        "Elkhart Brass",
+        "Akron Brass",
+        "Task Force Tips",
+        "POK"
+      ],
+      "aplicaciones": [
+        "Brigadas industriales",
+        "Cuerpos de bomberos",
+        "Plantas petroquímicas",
+        "Refinerías",
+        "Terminales de almacenamiento"
+      ],
+      "productosRelacionados": [
+        {
+          "href": "/gabinetes-hidrantes-contra-incendios",
+          "nombre": "Gabinetes e Hidrantes"
+        },
+        {
+          "href": "/mangueras-contra-incendios",
+          "nombre": "Mangueras Contra Incendios"
+        },
+        {
+          "href": "/valvulas-contra-incendios",
+          "nombre": "Válvulas Contra Incendios"
+        },
+        {
+          "href": "/conexiones-herrajes-contra-incendios",
+          "nombre": "Conexiones y Herrajes"
+        }
+      ],
+      "subcategorias": [
+        {
+          "slug": "tipo-pistola",
+          "nombre": "Boquilla Tipo Pistola",
+          "descripcion": "Control ergonómico seleccionable"
+        },
+        {
+          "slug": "turbo-jet",
+          "nombre": "Boquilla Turbo Jet",
+          "descripcion": "Máximo alcance y penetración"
+        },
+        {
+          "slug": "industrial",
+          "nombre": "Boquilla Industrial",
+          "descripcion": "Alto caudal para industria"
+        },
+        {
+          "slug": "certificada",
+          "nombre": "Boquilla Certificada",
+          "descripcion": "Certificación UL/FM"
+        },
+        {
+          "slug": "handline",
+          "nombre": "Boquillas Handline XD",
+          "descripcion": "Chief XD, Phantom XD"
+        },
+        {
+          "slug": "master-stream",
+          "nombre": "Master Stream",
+          "descripcion": "X-Stream, gran caudal"
+        }
+      ]
+    },
+    "related": {
+      "titulo": "Otras Boquillas Contra Incendios",
+      "subtitulo": "Explora más opciones para tu sistema de protección",
+      "maxProductos": 3,
+      "verTodosLink": "/boquillas-contra-incendios",
+      "verTodosTexto": "Ver todas las boquillas"
+    },
+    "cotizacion": {
+      "titulo": "Cotiza Boquillas Tipo Pistola",
+      "tipoEquipo": "Boquillas",
+      "pagina": "Boquillas Tipo Pistola"
+    },
+    "faqs": [
+      {
+        "pregunta": "¿Para qué se usa una boquilla tipo pistola contra incendios?",
+        "respuesta": "La boquilla tipo pistola es el equipo estándar para brigadas de emergencia, bomberos industriales y sistemas portátiles de protección. Su diseño permite operar con una sola mano y ajustar el patrón de descarga entre chorro sólido, niebla gruesa y niebla fina. Es la boquilla más versátil para control de incendios en edificios, planta industrial y emergencias móviles."
+      },
+      {
+        "pregunta": "¿Cuál es la presión de operación de las boquillas tipo pistola Elkhart Brass?",
+        "respuesta": "Las boquillas tipo pistola Elkhart Brass están diseñadas para operar entre 75 y 125 PSI (5.2 a 8.6 bar). A 100 PSI, el caudal estándar es de 125, 150 o 200 GPM según el modelo. La presión óptima para un alcance máximo con chorro sólido es de 100 PSI en la entrada de la boquilla."
+      },
+      {
+        "pregunta": "¿Las boquillas tipo pistola son compatibles con mangueras de 1.5\" y 2.5\"?",
+        "respuesta": "Sí. Manejamos boquillas tipo pistola con acoples NH (National Hose) en diámetros de 1.5\" y 2.5\", que son los estándares para mangueras de extinción. Para mangueras de otros diámetros o roscas no estándar, disponemos de adaptadores de bronce que permiten la conexión. Confirma el diámetro y tipo de rosca de tu manguera al solicitar cotización."
+      },
+      {
+        "pregunta": "¿Qué exige la norma NFPA 1964 para boquillas tipo pistola?",
+        "respuesta": "La NFPA 1964 es el estándar que define los requisitos de diseño, rendimiento y prueba para boquillas de extinción de incendios. Establece parámetros mínimos de caudal, uniformidad del patrón de niebla, resistencia a impactos y marcado del equipo. Las boquillas tipo pistola que distribuye Gama de México cumplen con NFPA 1964, lo que garantiza que cada unidad entrega el caudal nominal declarado dentro de la tolerancia permitida y que el patrón de descarga cumple con los ángulos de cobertura requeridos."
+      },
+      {
+        "pregunta": "¿Cuál es la diferencia entre galonaje seleccionable y galonaje fijo en boquillas tipo pistola?",
+        "respuesta": "En una boquilla de galonaje fijo, el caudal está determinado por el orificio interno y solo puede modificarse cambiando la presión de entrada. En una boquilla de galonaje seleccionable, el operador gira un selector para elegir entre 3 a 6 caudales predefinidos (por ejemplo: 30, 60, 95, 125, 150 y 200 GPM) sin cambiar la boquilla ni la presión del sistema. Las boquillas seleccionables son preferidas por brigadas que atienden escenarios variados, ya que permiten adaptar el caudal al tipo de incendio y al suministro disponible."
+      },
+      {
+        "pregunta": "¿Las boquillas tipo pistola son compatibles con agentes espumantes AFFF?",
+        "respuesta": "Sí. Las boquillas tipo pistola fabricadas en aluminio anodizado o bronce son compatibles con agua, AFFF (Aqueous Film Forming Foam) y FFFP. Para aplicaciones con espuma, se recomienda usar el patrón de niebla gruesa (90°) que mejora la expansión y cobertura del agente sobre la superficie del combustible. Es importante verificar que las juntas internas y el selector sean resistentes a los concentrados de espuma. Gama de México asesora en la selección del modelo correcto para cada agente extintor."
+      }
+    ]
+  },
+  {
+    "seccion": "boquillas",
+    "slug": "turbo-jet",
+    "categoria": "boquillas",
+    "filter": {
+      "subcategorias": [
+        "turbo-jet"
+      ]
+    },
+    "meta": {
+      "title": "Boquilla Turbo Jet Akron Brass Elkhart | 60-200 GPM Alcance 60m+ | Petroquímica México",
+      "description": "Boquilla Turbo Jet Akron Brass y Elkhart Brass. 60-200 GPM a 100 PSI, alcance 60m+, niebla rotatoria. Certificación UL. Aluminio o bronce para refinería y petroquímica. Distribuidor autorizado México."
+    },
+    "hero": {
+      "title": "Boquilla Turbo Jet",
+      "intro": "Boquillas Turbo Jet Akron Brass y Elkhart Brass con alcance efectivo superior a 60 metros. Caudales de 60 a 200 GPM a 100 PSI. Certificación UL. Disponibles en aluminio anodizado o bronce naval para refinería y petroquímica. Conformes con NFPA 14 para sistemas standpipe en México.",
+      "badge": "Boquillas Contra Incendios",
+      "metrics": [
+        {
+          "valor": "60m+",
+          "texto": "Alcance efectivo"
+        },
+        {
+          "valor": "200",
+          "texto": "GPM máximo"
+        },
+        {
+          "valor": "100",
+          "texto": "PSI operación"
+        }
+      ],
+      "primaryText": "Ver Catálogo",
+      "primaryLink": "#catalogo",
+      "secondaryText": "Solicitar Cotización",
+      "secondaryLink": "#cotizar",
+      "contentHtml": "<p>La <strong>boquilla Turbo Jet</strong> utiliza tecnología de turbina interna que imparte rotación al flujo de agua, generando un chorro altamente cohesivo con mínima dispersión. Este diseño permite alcances efectivos superiores a 60 metros manteniendo la capacidad de penetración necesaria para combatir incendios estructurales desde distancias seguras. El patrón de descarga es ajustable desde chorro sólido hasta niebla de protección mediante rotación del cabezal.</p>\n    <p><strong>Gama de México</strong> distribuye boquillas Turbo Jet de Akron Brass y Elkhart Brass, líderes mundiales en tecnología de boquillas de combate. Estos equipos son la elección preferida de cuerpos de bomberos profesionales, brigadas industriales de alto rendimiento y unidades de rescate que requieren versatilidad y alcance superior. Disponibles en configuraciones de 1.5\" y 2.5\" NHT con caudales seleccionables y certificación UL.</p>"
+    },
+    "schema": {
+      "name": "Boquilla Turbo-Jet Contra Incendios",
+      "description": "Boquilla turbo-jet niebla rotatoria para control en espacios confinados. 60-200 GPM. Ideal petroquímica y brigadas industriales.",
+      "image": "/img/boquillas-contra-incendios/boquilla-certificada-dual-ul-fm-csw-lb-documentos.avif",
+      "url": "/boquillas/turbo-jet",
+      "category": "Boquillas Contra Incendios",
+      "brand": "Elkhart Brass",
+      "reviewAuthor": "Ing. Carlos Mendoza",
+      "reviewBody": "Excelente calidad y respaldo técnico de Gama de México. Equipos certificados con entrega puntual.",
+      "reviewDate": "2025-03-15",
+      "ratingCount": 32,
+      "reviewCount": 32
+    },
+    "breadcrumb": [
+      {
+        "name": "Inicio",
+        "url": "/"
+      },
+      {
+        "name": "Equipos",
+        "url": "/equipos"
+      },
+      {
+        "name": "Boquillas Contra Incendios",
+        "url": "/boquillas-contra-incendios"
+      }
+    ],
+    "catalog": {
+      "title": "Catálogo de Boquillas Turbo Jet",
+      "desc": "Selecciona el producto que mejor se adapte a tu operación"
+    },
+    "empty": {
+      "title": "Próximamente más opciones",
+      "text": "Estamos agregando más productos de boquillas turbo jet de diferentes marcas. Mientras tanto, solicita una cotización personalizada.",
+      "buttonText": "Solicitar Cotización"
+    },
+    "techInfo": {
+      "title": "Especificaciones Técnicas Generales",
+      "items": [
+        {
+          "label": "Caudal típico",
+          "value": "60 - 325 GPM"
+        },
+        {
+          "label": "Presión de trabajo",
+          "value": "75 - 100 PSI"
+        },
+        {
+          "label": "Ajuste",
+          "value": "Automático"
+        },
+        {
+          "label": "Entradas",
+          "value": "1.5\" y 2.5\" NHT"
+        },
+        {
+          "label": "Tecnología",
+          "value": "Resorte externo"
+        },
+        {
+          "label": "Materiales",
+          "value": "Aluminio forjado"
+        }
+      ]
+    },
+    "ctaFinal": {
+      "title": "¿No encuentras el modelo que necesitas?",
+      "desc": "Tenemos acceso al catálogo completo de Elkhart Brass. Contáctanos para opciones adicionales y configuraciones especiales.",
+      "buttonText": "Solicitar Cotización"
+    },
+    "sidebar": {
+      "navTitulo": "Tipos de Boquillas",
+      "baseUrl": "/boquillas",
+      "backLinkHref": "/boquillas-contra-incendios",
+      "backLinkTexto": "Ver todas las boquillas",
+      "certificaciones": [
+        {
+          "siglas": "FM",
+          "nombre": "Factory Mutual"
+        },
+        {
+          "siglas": "UL",
+          "nombre": "UL Listed"
+        },
+        {
+          "siglas": "NOM",
+          "nombre": "NOM-002-STPS"
+        }
+      ],
+      "marcas": [
+        "Elkhart Brass",
+        "Akron Brass",
+        "Task Force Tips",
+        "POK"
+      ],
+      "aplicaciones": [
+        "Cuerpos de bomberos",
+        "Brigadas industriales",
+        "Refinerías",
+        "Aplicaciones de alto alcance"
+      ],
+      "productosRelacionados": [
+        {
+          "href": "/monitores-contra-incendios",
+          "nombre": "Monitores Contra Incendios"
+        },
+        {
+          "href": "/mangueras-contra-incendios",
+          "nombre": "Mangueras Contra Incendios"
+        },
+        {
+          "href": "/valvulas-contra-incendios",
+          "nombre": "Válvulas Contra Incendios"
+        },
+        {
+          "href": "/conexiones-herrajes-contra-incendios",
+          "nombre": "Conexiones y Herrajes"
+        }
+      ],
+      "subcategorias": [
+        {
+          "slug": "tipo-pistola",
+          "nombre": "Boquilla Tipo Pistola",
+          "descripcion": "Control ergonómico seleccionable"
+        },
+        {
+          "slug": "turbo-jet",
+          "nombre": "Boquilla Turbo Jet",
+          "descripcion": "Máximo alcance y penetración"
+        },
+        {
+          "slug": "industrial",
+          "nombre": "Boquilla Industrial",
+          "descripcion": "Alto caudal para industria"
+        },
+        {
+          "slug": "certificada",
+          "nombre": "Boquilla Certificada",
+          "descripcion": "Certificación UL/FM"
+        },
+        {
+          "slug": "handline",
+          "nombre": "Boquillas Handline XD",
+          "descripcion": "Chief XD, Phantom XD"
+        },
+        {
+          "slug": "master-stream",
+          "nombre": "Master Stream",
+          "descripcion": "X-Stream, gran caudal"
+        }
+      ]
+    },
+    "related": {
+      "titulo": "Otras Boquillas Contra Incendios",
+      "subtitulo": "Explora más opciones para tu sistema de protección",
+      "maxProductos": 3,
+      "verTodosLink": "/boquillas-contra-incendios",
+      "verTodosTexto": "Ver todas las boquillas"
+    },
+    "cotizacion": {
+      "titulo": "Cotiza Boquillas Turbo Jet",
+      "tipoEquipo": "Boquillas",
+      "pagina": "Boquillas Turbo Jet"
+    },
+    "faqs": [
+      {
+        "pregunta": "¿Qué ventaja tiene la boquilla turbo-jet sobre la boquilla tipo pistola?",
+        "respuesta": "La boquilla turbo-jet genera un patrón de niebla rotatoria que maximiza la eficiencia de absorción de calor con menor volumen de agua. Esto la hace superior para control de incendios en espacios confinados y para protección de personal en aproximación al fuego. La boquilla tipo pistola es más versátil para uso general; la turbo-jet está optimizada para situaciones de alta temperatura y riesgo de quemadura por radiación."
+      },
+      {
+        "pregunta": "¿Qué caudal maneja una boquilla turbo-jet estándar?",
+        "respuesta": "Las boquillas turbo-jet Akron y Elkhart Brass que distribuimos operan con caudales de 60 a 200 GPM a 100 PSI, dependiendo del modelo. El modelo más solicitado es el de 95 GPM a 100 PSI, que equilibra alcance, cobertura y consumo de agua. Para caudales superiores a 200 GPM se recomiendan boquillas de monitor en lugar de boquillas manuales."
+      },
+      {
+        "pregunta": "¿Para qué sectores se usan más las boquillas turbo-jet?",
+        "respuesta": "Las boquillas turbo-jet son muy utilizadas en brigadas de la industria petroquímica, siderúrgica y de manufactura pesada donde el riesgo de quemadura por radiación es alto. También se usan en cuerpos de bomberos industriales de terminales portuarias y aeropuertos. Son el estándar en vehículos de rescate de aeronaves (ARFF) donde la eficiencia con agua es crítica."
+      },
+      {
+        "pregunta": "¿Cuál es la presión óptima de una boquilla turbo-jet para alcance máximo?",
+        "respuesta": "La presión óptima de operación para la mayoría de las boquillas turbo-jet es de 100 PSI en la entrada de la boquilla. A esta presión se logra el equilibrio entre alcance del chorro, cohesión del patrón y control por parte del operador. Reducir la presión por debajo de 75 PSI deteriora el patrón rotatorio y disminuye el alcance efectivo. Exceder los 125 PSI genera retroceso excesivo y puede comprometer la ergonomía. Para sistemas de abastecimiento de agua con presión variable, se recomienda instalar una válvula reguladora de presión aguas arriba."
+      },
+      {
+        "pregunta": "¿Las boquillas turbo-jet aplican en sistemas de gabinetes bajo NFPA 14?",
+        "respuesta": "Las boquillas turbo-jet de 1.5\" y 2.5\" son compatibles con sistemas de gabinetes y mangueras para standpipe bajo NFPA 14. Esta norma aplica a edificios de múltiples pisos, hoteles, centros comerciales y plantas industriales que requieren mangueras de ataque en cada piso. La turbo-jet es especialmente útil en standpipes de clase II y III donde la eficiencia del agente es crítica y el operador puede ser personal no bombero. Gama de México verifica la compatibilidad con el diseño hidráulico de cada sistema."
+      },
+      {
+        "pregunta": "¿Qué material conviene para una boquilla turbo-jet: aluminio o bronce?",
+        "respuesta": "La elección depende del ambiente de operación. El aluminio forjado anodizado es más ligero (ideal para bomberos que cargan la boquilla en guardia larga) y es el estándar en cuerpos de bomberos. El bronce es preferido en ambientes corrosivos como plantas petroquímicas, plantas costeras o instalaciones expuestas a vapor con químicos, ya que resiste mejor la corrosión galvánica y la degradación por hidrocarburos. Para brigadas industriales en refinería o petroquímica, Gama de México recomienda boquillas turbo-jet en bronce naval con juntas de EPDM."
+      }
+    ]
+  }
+]

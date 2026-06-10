@@ -13,13 +13,14 @@ schema:
       - q: "¿Un centro comercial necesita rociadores automáticos?"
         a: "Sí. En CDMX, el Reglamento de Construcción los exige para centros comerciales mayores a 2,500m². NFPA 13 define la densidad de rociadores según la clasificación de riesgo de cada zona: áreas de venta (riesgo ordinario), bodegas de tiendas (riesgo alto), food court/cocinas (requieren sistema de cocina UL 300 adicional)."
 description: "Normativa para hoteles en México: sprinklers, gabinetes cada 30m, hidrantes privados, inspección y costos estimados."
+fecha: "2026-03-11"
 categoria: "monitores"
 autor:
   nombre: "Ing. Roberto Hernández"
   cargo: "Director Técnico"
 imagen: "/img/blog/sistema-contra-incendios-hotel-centro-comercial-mexico.avif"
 imagenAlt: "Sistema contra incendios en hotel y centro comercial México"
-tags: ["hoteles", "centros comerciales", "NOM-002-STPS", "sprinklers", "protección civil", "sistemas contra incendios México"]
+tags: ["hoteles", "centros comerciales", "NOM-002-STPS", "rociadores automáticos", "protección civil", "sistemas contra incendios"]
 destacado: false
 draft: false
 productosRelacionados: ["gabinete-30me", "gabinete-empotrado", "hidrante-banqueta", "monitor-corazon-una-cremallera", "valvula-compuerta-osy-4-ranurada", "manguera-millhose"]

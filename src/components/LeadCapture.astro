@@ -11,8 +11,10 @@
       <span class="lead-capture__bullet">Precios competitivos y envío a todo México</span>
     </div>
     <form class="lead-capture__form" id="cotizar-form" aria-label="Formulario de cotización por WhatsApp">
-      <input type="text" class="lead-capture__input" id="lead-nombre" name="nombre" placeholder="Nombre completo" required aria-label="Nombre completo" autocomplete="name">
-      <input type="text" class="lead-capture__input" id="lead-contacto" name="contacto" placeholder="Teléfono o Email" required aria-label="Teléfono o correo electrónico" autocomplete="tel">
+      <label class="sr-only" for="lead-nombre">Nombre completo</label>
+      <input type="text" class="lead-capture__input" id="lead-nombre" name="nombre" placeholder="Nombre completo" required autocomplete="name">
+      <label class="sr-only" for="lead-contacto">Teléfono o correo electrónico</label>
+      <input type="text" class="lead-capture__input" id="lead-contacto" name="contacto" placeholder="Teléfono o Email" required autocomplete="tel">
       <select class="lead-capture__select" id="lead-equipo" name="tipo_equipo" required aria-label="Tipo de equipo que necesitas">
         <option value="" disabled selected>Tipo de equipo</option>
         <option value="Monitores">Monitores</option>

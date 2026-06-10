@@ -1,6 +1,6 @@
 ---
 title: "Monitor FM Approved para Refinerías - Protección de Proceso"
-description: "Monitor contra incendio certificado FM Approved diseñado para refinerías y plantas de proceso. Protección de unidades de cracking, torres de destilación y parques de tanques. Compatible con sistemas de diluvio."
+description: "Monitor contra incendio certificado FM Approved diseñado para refinerías y plantas de proceso."
 categoria: "monitores"
 subcategoria: "certificado-fm"
 imagen: "/img/monitores-contra-incendios/monitor-certificado-fm-contra-incendios-parque-industrial-12.avif"

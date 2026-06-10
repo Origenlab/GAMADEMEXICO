@@ -1,6 +1,6 @@
 ---
 title: "Monitor Tipo Corazón 966-M002 Doble Cremallera"
-description: "Monitor contra incendios modelo 966-M002 tipo corazón de doble cremallera. Giro horizontal 360° y vertical 102°, accionado por volante. Construcción en bronce fundido."
+description: "Monitor contra incendios modelo 966-M002 tipo corazón de doble cremallera. Giro horizontal 360° y vertical 102°, accionado por volante."
 categoria: "monitores"
 subcategoria: "tipo-corazon"
 imagen: "/img/monitores-contra-incendios/monitor-tipo-corazon-contra-incendios-industrial-frontal-02.avif"

@@ -13,6 +13,7 @@ schema:
       - q: "¿En qué situaciones necesito un cuello de cisne?"
         a: "Cuando la altura libre es limitada y el monitor tipo corazón no cabe: debajo de estructuras industriales, en plataformas elevadas, en hangares de aviación. También cuando se necesita menor resistencia al viento (ambientes costeros expuestos). En todos los demás casos, el tipo corazón es la opción más versátil."
 description: "Compara monitor tipo corazón y cuello de cisne según caudal, altura, maniobra y aplicación para elegir la configuración correcta en tu sistema."
+fecha: "2026-03-19"
 categoria: "monitores"
 tags: ["monitor tipo corazón", "monitor cuello de cisne", "monitores contra incendios", "Elkhart Brass", "ingeniería contra incendios"]
 imagen: "/img/blog/monitor-tipo-corazon-vs-cuello-de-cisne.avif"

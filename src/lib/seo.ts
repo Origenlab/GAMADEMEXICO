@@ -209,32 +209,11 @@ interface ProductCategorySchemaInput {
 }
 
 export function buildProductCategorySchema(product: ProductCategorySchemaInput) {
-  // Construir array de reviews (soporta legacy single review o nuevo array)
-  const reviewItems: ProductCategoryReview[] = product.reviews
-    ? product.reviews
-    : product.reviewAuthor && product.reviewBody
-      ? [{ author: product.reviewAuthor, body: product.reviewBody, date: product.reviewDate }]
-      : [];
-
-  const reviewSchemas = reviewItems.map((r) => ({
-    '@type': 'Review' as const,
-    reviewRating: {
-      '@type': 'Rating' as const,
-      ratingValue: '5',
-      bestRating: '5',
-    },
-    author: {
-      '@type': 'Person' as const,
-      name: r.author,
-    },
-    datePublished: r.date || '2025-01-15',
-    reviewBody: r.body,
-    publisher: {
-      '@type': 'Organization' as const,
-      name: SITE_NAME,
-    },
-  }));
-
+  // NOTA (auditoría 2026): se eliminaron aggregateRating, review y los rangos
+  // de precio ficticios (lowPrice 1 / highPrice 999999). Google penaliza datos
+  // estructurados fabricados (reseñas inventadas, ratings sin fuente real).
+  // Si en el futuro existen reseñas REALES verificables (Google Business,
+  // plataforma de reviews), reintroducirlas desde esa fuente de datos.
   return {
     '@context': 'https://schema.org',
     '@type': 'Product',
@@ -252,27 +231,15 @@ export function buildProductCategorySchema(product: ProductCategorySchemaInput) 
     },
     category: product.category,
     offers: {
-      '@type': 'AggregateOffer',
+      '@type': 'Offer',
       availability: 'https://schema.org/InStock',
       priceCurrency: 'MXN',
-      lowPrice: '1',
-      highPrice: '999999',
-      offerCount: '50',
       seller: {
         '@type': 'Organization',
         name: SITE_NAME,
         url: SITE_URL,
       },
     },
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: '4.9',
-      bestRating: '5',
-      worstRating: '1',
-      ratingCount: String(product.ratingCount || 48),
-      reviewCount: String(product.reviewCount || 48),
-    },
-    review: reviewSchemas.length === 1 ? reviewSchemas[0] : reviewSchemas,
   };
 }
 

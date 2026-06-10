@@ -1,5 +1,5 @@
 ---
-title: "Tapón Rocker Lug NH 2.5\" Bronce P-17 UL Listed | Elkhart Brass | México"
+title: "Tapón Rocker Lug NH 2.5\" Bronce P-17 UL Listed | Elkhart Brass"
 description: "Tapones rocker lug y caps NH 2.5\" bronce Elkhart Brass P-17. UL Listed. 175-500 PSI. Cadena retención 9\". Hidrantes, gabinetes y camiones bomberos México."
 categoria: "conexiones-herrajes"
 subcategoria: "accesorios"

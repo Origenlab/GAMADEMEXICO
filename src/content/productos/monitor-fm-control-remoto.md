@@ -1,6 +1,6 @@
 ---
 title: "Monitor FM Approved con Control Remoto - Operación a Distancia"
-description: "Monitor contra incendio certificado FM Approved con sistema de control remoto eléctrico. Operación segura desde sala de control o estación remota. Protección del personal de brigada en emergencias."
+description: "Monitor contra incendio certificado FM Approved con sistema de control remoto eléctrico. Operación segura desde sala de control o estación remota."
 categoria: "monitores"
 subcategoria: "certificado-fm"
 imagen: "/img/monitores-contra-incendios/monitor-certificado-fm-contra-incendios-estacion-bomberos-03.avif"

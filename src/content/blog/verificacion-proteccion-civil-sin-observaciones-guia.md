@@ -13,8 +13,9 @@ schema:
       - q: "¿Cuáles son las observaciones más comunes en protección civil?"
         a: "Extintores con recarga vencida, brigada con nombres de personas que ya no trabajan ahí, plano de evacuación que no corresponde con la distribución actual, gabinetes sin llave de operación o con manguera inaccesible, señalización deteriorada o cubierta por pintura, y falta de actas de simulacros con evidencia fotográfica."
 description: "Guía práctica para preparar documentos, equipos y evidencias antes de una verificación de protección civil y reducir observaciones evitables."
+fecha: "2026-03-19"
 categoria: "monitores"
-tags: ["verificación de protección civil", "NOM-002-STPS", "equipos contra incendios", "UL FM", "seguridad industrial"]
+tags: ["inspección protección civil", "NOM-002-STPS", "equipos contra incendios", "UL FM", "seguridad industrial"]
 imagen: "/img/blog/verificacion-proteccion-civil-sin-observaciones.avif"
 imagenAlt: "Inspector revisando equipo contra incendios y documentación técnica en una instalación industrial"
 autor:

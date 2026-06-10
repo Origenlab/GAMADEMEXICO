@@ -1,0 +1,891 @@
+[
+  {
+    "seccion": "gabinetes",
+    "slug": "empotrado",
+    "categoria": "gabinetes-hidrantes",
+    "filter": {
+      "subcategorias": [
+        "gabinetes"
+      ],
+      "idIncludes": [
+        "empotrado",
+        "semiempotrado",
+        "arquitectonico",
+        "inoxidable"
+      ]
+    },
+    "meta": {
+      "title": "Gabinete Empotrado Flush Manguera NOM-003-SEGOB | Venta México",
+      "description": "Gabinete empotrado al ras del muro para manguera 30m. Acero cal. 16 o inoxidable T430, puerta vidrio rompible. NOM-002-STPS, NOM-003-SEGOB. Hospitales, hoteles. México."
+    },
+    "hero": {
+      "title": "Gabinete Empotrado",
+      "intro": "Los gabinetes empotrados se instalan dentro del muro quedando al ras con la superficie, ofreciendo una solución estética sin sacrificar funcionalidad. Fabricados en acero laminado o inoxidable T430, son la opción preferida para hospitales, hoteles de lujo, edificios corporativos y espacios donde la arquitectura es prioritaria.",
+      "badge": "Gabinetes Contra Incendios",
+      "metrics": [
+        {
+          "valor": "Al ras",
+          "texto": "Instalación empotrada"
+        },
+        {
+          "valor": "T430",
+          "texto": "Inoxidable opcional"
+        },
+        {
+          "valor": "NOM",
+          "texto": "Certificado"
+        }
+      ],
+      "primaryText": "Ver Catálogo",
+      "primaryLink": "#catalogo",
+      "secondaryText": "Solicitar Cotización",
+      "secondaryLink": "#cotizar",
+      "contentHtml": "<p>El <strong>gabinete empotrado</strong> está diseñado para proyectos donde la estética arquitectónica es tan importante como la seguridad contra incendios. Al instalarse dentro de una cavidad en el muro con una ceja de 5/8\" para tablaroca, el gabinete queda completamente al ras con la superficie, eliminando obstrucciones en pasillos y preservando la línea de diseño del espacio. Cumple íntegramente con <strong>NOM-002-STPS-2010</strong> y <strong>NFPA 14</strong>.</p>\n    <p>En <strong>Gama de México</strong> ofrecemos gabinetes empotrados en tres acabados: pintura electrostática roja (estándar normativo), pintura blanca (para integración con muros claros) y acero inoxidable T430 pulido #4 (para áreas de alta estética como lobbies y hospitales). Cada gabinete incluye puerta con vidrio templado de 3mm, bisagra continua de 180 grados para apertura completa y cerradura de cilindro. Asesoramos en la especificación correcta según el proyecto arquitectónico y los requerimientos de Protección Civil.</p>"
+    },
+    "schema": {
+      "name": "Gabinete Empotrado Contra Incendios",
+      "description": "Gabinete empotrado flush para sistemas de mangueras en edificios. NOM-002-STPS. Medidas estándar. Envíos México.",
+      "image": "/img/gabinetes-hidrantes/gabinete-30m-abierto.avif",
+      "url": "/gabinetes/empotrado",
+      "category": "Gabinetes e Hidrantes Contra Incendios",
+      "brand": "Elkhart Brass",
+      "reviewAuthor": "Ing. Carlos Mendoza",
+      "reviewBody": "Excelente calidad y respaldo técnico de Gama de México. Equipos certificados con entrega puntual.",
+      "reviewDate": "2025-03-15",
+      "ratingCount": 32,
+      "reviewCount": 32
+    },
+    "breadcrumb": [
+      {
+        "name": "Inicio",
+        "url": "/"
+      },
+      {
+        "name": "Equipos",
+        "url": "/equipos"
+      },
+      {
+        "name": "Gabinetes e Hidrantes",
+        "url": "/gabinetes-hidrantes-contra-incendios"
+      }
+    ],
+    "catalog": {
+      "title": "Catálogo de Gabinetes Empotrados",
+      "desc": "Gabinetes para instalación al ras del muro con acabados premium"
+    },
+    "empty": {
+      "title": "Próximamente más opciones",
+      "text": "Estamos agregando más gabinetes empotrados de diferentes acabados. Mientras tanto, solicita una cotización personalizada.",
+      "buttonText": "Solicitar Cotización"
+    },
+    "techInfo": {
+      "title": "Especificaciones Técnicas del Gabinete Empotrado",
+      "items": [
+        {
+          "label": "Dimensiones",
+          "value": "24\" x 30\" x 5.5\""
+        },
+        {
+          "label": "Ceja tablaroca",
+          "value": "5/8\" perimetral"
+        },
+        {
+          "label": "Vidrio puerta",
+          "value": "Templado 3mm"
+        },
+        {
+          "label": "Bisagra",
+          "value": "Continua 180 grados"
+        },
+        {
+          "label": "Calibre puerta",
+          "value": "Calibre 16"
+        },
+        {
+          "label": "Acabados",
+          "value": "Rojo, blanco, inox"
+        }
+      ]
+    },
+    "ctaFinal": {
+      "title": "¿Proyecto arquitectónico con requerimientos especiales?",
+      "desc": "Fabricamos gabinetes empotrados en dimensiones especiales, acabados personalizados y configuraciones a medida para proyectos de hospitales, hoteles y edificios corporativos.",
+      "buttonText": "Solicitar Cotización Especial"
+    },
+    "sidebar": {
+      "navTitulo": "Tipos de Gabinetes",
+      "baseUrl": "/gabinetes",
+      "backLinkHref": "/gabinetes-hidrantes-contra-incendios",
+      "backLinkTexto": "Ver todos los gabinetes",
+      "certificaciones": [
+        {
+          "siglas": "NOM",
+          "nombre": "NOM-002-STPS-2010"
+        },
+        {
+          "siglas": "NFPA",
+          "nombre": "NFPA 14 Standpipe"
+        },
+        {
+          "siglas": "UL",
+          "nombre": "UL Listed"
+        }
+      ],
+      "marcas": [
+        "Potter Roemer",
+        "JL Industries",
+        "Larsen's",
+        "Guardian",
+        "Elkhart Brass"
+      ],
+      "aplicaciones": [
+        "Hospitales y clínicas",
+        "Hoteles de lujo",
+        "Edificios corporativos",
+        "Centros comerciales premium",
+        "Lobbies y recepciones",
+        "Pasillos de alta estética"
+      ],
+      "productosRelacionados": [
+        {
+          "href": "/mangueras-contra-incendios",
+          "nombre": "Mangueras Contra Incendios"
+        },
+        {
+          "href": "/boquillas-contra-incendios",
+          "nombre": "Boquillas Contra Incendios"
+        },
+        {
+          "href": "/valvulas-contra-incendios",
+          "nombre": "Válvulas Contra Incendios"
+        },
+        {
+          "href": "/gabinetes-hidrantes-contra-incendios",
+          "nombre": "Gabinetes e Hidrantes"
+        }
+      ],
+      "subcategorias": [
+        {
+          "slug": "tipo-30me",
+          "nombre": "Gabinete Tipo 30ME",
+          "descripcion": "Gabinete completo con manguera 30m"
+        },
+        {
+          "slug": "empotrado",
+          "nombre": "Gabinete Empotrado",
+          "descripcion": "Instalación al ras del muro"
+        },
+        {
+          "slug": "hidrantes",
+          "nombre": "Hidrantes",
+          "descripcion": "Tomas exteriores hierro dúctil"
+        },
+        {
+          "slug": "estaciones",
+          "nombre": "Estaciones de Manguera",
+          "descripcion": "Carrete oscilante 180 grados"
+        }
+      ]
+    },
+    "related": {
+      "titulo": "Otros Gabinetes e Hidrantes",
+      "subtitulo": "Explora más opciones para tu sistema de protección contra incendios",
+      "maxProductos": 3,
+      "verTodosLink": "/gabinetes-hidrantes-contra-incendios",
+      "verTodosTexto": "Ver todos los gabinetes"
+    },
+    "cotizacion": {
+      "titulo": "Cotiza Gabinetes Empotrados",
+      "tipoEquipo": "Gabinetes",
+      "pagina": "Gabinetes Empotrados"
+    },
+    "faqs": [
+      {
+        "pregunta": "¿Cuál es la diferencia entre un gabinete empotrado y uno de sobreponer?",
+        "respuesta": "El gabinete empotrado (flush-mounted) se instala dentro del muro con la puerta al ras de la pared, lo que lo hace menos obstructivo y con mejor estética. El gabinete de sobreponer se monta en la superficie del muro y sobresale varios centímetros. El gabinete empotrado requiere una abertura en el muro durante la construcción o remodelación; el de sobreponer puede instalarse en cualquier momento sin modificar el muro."
+      },
+      {
+        "pregunta": "¿Qué requisitos establece NOM-003-SEGOB para gabinetes empotrados?",
+        "respuesta": "NOM-003-SEGOB-2011 establece que los gabinetes de manguera contra incendio, sean empotrados o de sobreponer, deben fabricarse con acero laminado de calibre 22 mínimo, pintura electroestática roja o blanca, puerta con vidrio rompible de 3mm y señalización visible con letras de 5cm. Para gabinetes empotrados, el marco perimetral (ceja) debe sobresalir de la pared para cubrir el corte del muro. La norma aplica tanto para muros de tablaroca como de mampostería."
+      },
+      {
+        "pregunta": "¿Cómo se instala un gabinete empotrado en tablaroca versus mampostería?",
+        "respuesta": "En tablaroca (drywall), el nicho se forma durante la construcción del muro dejando el espacio exacto entre los postes metálicos; el gabinete tiene una ceja de 5/8\" que cubre la orilla del corte. En mampostería (block o ladrillo), el nicho requiere corte de la pared con amoladora y refuerzo del marco con anclas de expansión. La instalación en mampostería es más costosa y requiere que el nicho esté perfectamente a plomo y nivel para que la puerta cierre correctamente."
+      },
+      {
+        "pregunta": "¿Qué dimensiones de nicho se necesitan para instalar un gabinete empotrado?",
+        "respuesta": "El nicho estándar para un gabinete de manguera de 30 metros es de aproximadamente 60 cm de ancho × 75 cm de alto × 20 cm de profundidad. Las dimensiones exactas varían según el fabricante y el modelo. Es fundamental coordinar las dimensiones del gabinete con el arquitecto o contratista de construcción para que el nicho quede con las medidas correctas antes de terminar el muro. Gama de México proporciona planos de instalación con cada gabinete."
+      },
+      {
+        "pregunta": "¿Qué tipos de puerta están disponibles para gabinetes empotrados?",
+        "respuesta": "Los gabinetes empotrados pueden tener puerta de vidrio sencillo rompible (estándar normativo), puerta de panel metálico pintado (para instalaciones donde el vidrio podría romperse accidentalmente), o puerta de vidrio templado en lugares de alto tráfico (aunque el vidrio templado dificulta el acceso en emergencia). En edificios de lujo se ofrece puerta con marco de aluminio anodizado o acero inoxidable T430 pulido que se integra con la arquitectura del espacio."
+      },
+      {
+        "pregunta": "¿Los gabinetes empotrados requieren protección especial contra humedad?",
+        "respuesta": "Sí. El nicho del gabinete debe estar sellado con materiales resistentes a la humedad para evitar la corrosión del gabinete metálico y el deterioro de la manguera. En zonas con alta humedad relativa, se recomienda un acabado epóxico o pintura anticorrosiva en el interior del nicho y el uso de mangueras con recubrimiento resistente a la humedad. Los gabinetes de acero inoxidable T430 son la mejor opción para instalaciones en zonas costeras o con humedad muy alta."
+      }
+    ]
+  },
+  {
+    "seccion": "gabinetes",
+    "slug": "estaciones",
+    "categoria": "gabinetes-hidrantes",
+    "filter": {
+      "subcategorias": [
+        "estaciones"
+      ]
+    },
+    "meta": {
+      "title": "Estaciones de Manguera Carrete Oscilante NFPA 14 | Gama de México",
+      "description": "Estaciones de manguera con carrete oscilante 180° para respuesta rápida. Manguera 1.5\"×30m, válvula angular bronce. NFPA 14 Clase II/III, NOM-002-STPS. Plantas industriales México."
+    },
+    "hero": {
+      "title": "Estaciones de Manguera",
+      "intro": "Soluciones de respuesta rápida montadas en pared para instalaciones industriales y comerciales, completas con manguera y boquilla.",
+      "badge": "Gabinetes e Hidrantes",
+      "metrics": [
+        {
+          "value": "180°",
+          "label": "Oscilación"
+        },
+        {
+          "value": "30m",
+          "label": "Manguera"
+        },
+        {
+          "value": "100 PSI",
+          "label": "Presión"
+        }
+      ],
+      "primaryText": "Solicitar Cotización",
+      "primaryLink": "#cotizar",
+      "secondaryText": "Ver Catálogo",
+      "secondaryLink": "#catalogo",
+      "contentHtml": "<p>Las estaciones de manguera con carrete oscilante representan la solución ideal para respuesta inmediata ante emergencias de incendio en instalaciones industriales y comerciales. Estos sistemas montados en pared integran manguera de alta presión, boquilla cromada y mecanismo de despliegue automático, permitiendo una operación rápida incluso por personal sin entrenamiento especializado. Su diseño compacto y funcional cumple con los requerimientos de sistemas standpipe Clase II y III según NFPA 14.</p>\n    <p>Nuestras estaciones de manguera están fabricadas con materiales de primera calidad, incluyendo carretes de acero con recubrimiento anticorrosivo y mangueras de poliéster con forro de hule sintético. La oscilación de 180 grados proporciona cobertura amplia sin necesidad de desplazar el equipo, mientras que la válvula integrada permite control preciso del flujo. Ideales para bodegas, estacionamientos, plantas industriales y edificios comerciales que requieren protección confiable contra incendios.</p>"
+    },
+    "schema": {
+      "name": "Estaciones de Mangueras Contra Incendios",
+      "description": "Estaciones de mangueras para plantas industriales y exteriores. Válvula angular bronce, soporte y manguera. México.",
+      "image": "/img/gabinetes-hidrantes/gabinete-30m-abierto.avif",
+      "url": "/gabinetes/estaciones",
+      "category": "Gabinetes e Hidrantes Contra Incendios",
+      "brand": "Elkhart Brass",
+      "reviewAuthor": "Ing. Carlos Mendoza",
+      "reviewBody": "Excelente calidad y respaldo técnico de Gama de México. Equipos certificados con entrega puntual.",
+      "reviewDate": "2025-03-15",
+      "ratingCount": 32,
+      "reviewCount": 32
+    },
+    "breadcrumb": [
+      {
+        "name": "Inicio",
+        "url": "/"
+      },
+      {
+        "name": "Equipos",
+        "url": "/equipos"
+      },
+      {
+        "name": "Gabinetes e Hidrantes",
+        "url": "/gabinetes-hidrantes-contra-incendios"
+      }
+    ],
+    "catalog": {
+      "title": "Catálogo de Estaciones de Manguera",
+      "desc": "Selecciona el modelo que mejor se adapte a tu instalación"
+    },
+    "empty": {
+      "title": "Próximamente más opciones",
+      "text": "Estamos agregando más estaciones de diferentes configuraciones. Solicita una cotización personalizada.",
+      "buttonText": "Solicitar Cotización"
+    },
+    "techInfo": {
+      "title": "Especificaciones Técnicas de Estaciones",
+      "items": [
+        {
+          "label": "Conexión entrada",
+          "value": "1.5\" NST/NH"
+        },
+        {
+          "label": "Manguera",
+          "value": "1.5\" x 30m"
+        },
+        {
+          "label": "Presión máxima",
+          "value": "100 PSI salida"
+        },
+        {
+          "label": "Diámetro carrete",
+          "value": "18\""
+        },
+        {
+          "label": "Oscilación",
+          "value": "180°"
+        },
+        {
+          "label": "Cobertura",
+          "value": "39.7m radio"
+        }
+      ]
+    },
+    "ctaFinal": {
+      "title": "¿Necesitas asesoría para tu sistema standpipe?",
+      "desc": "Te ayudamos a calcular la cantidad de estaciones necesarias según NFPA 14 y las dimensiones de tu edificio.",
+      "buttonText": "Solicitar Asesoría"
+    },
+    "sidebar": {
+      "navTitulo": "Tipos de Gabinetes",
+      "baseUrl": "/gabinetes",
+      "backLinkHref": "/gabinetes-hidrantes-contra-incendios",
+      "backLinkTexto": "Ver todos los gabinetes",
+      "certificaciones": [
+        {
+          "siglas": "FM",
+          "nombre": "Factory Mutual"
+        },
+        {
+          "siglas": "UL",
+          "nombre": "UL Listed"
+        },
+        {
+          "siglas": "NOM",
+          "nombre": "NOM-002-STPS"
+        }
+      ],
+      "marcas": [
+        "Potter Roemer",
+        "JL Industries",
+        "Larsen's",
+        "Guardian"
+      ],
+      "aplicaciones": [
+        "Estaciones de manguera",
+        "Puntos de respuesta rápida",
+        "Industria pesada",
+        "Áreas de alto riesgo"
+      ],
+      "productosRelacionados": [
+        {
+          "href": "/boquillas-contra-incendios",
+          "nombre": "Boquillas Contra Incendios"
+        },
+        {
+          "href": "/mangueras-contra-incendios",
+          "nombre": "Mangueras Contra Incendios"
+        },
+        {
+          "href": "/valvulas-contra-incendios",
+          "nombre": "Válvulas Contra Incendios"
+        },
+        {
+          "href": "/conexiones-herrajes-contra-incendios",
+          "nombre": "Conexiones y Herrajes"
+        }
+      ],
+      "subcategorias": [
+        {
+          "slug": "tipo-30me",
+          "nombre": "Gabinete Tipo 30ME",
+          "descripcion": "Gabinete completo con manguera 30m"
+        },
+        {
+          "slug": "empotrado",
+          "nombre": "Gabinete Empotrado",
+          "descripcion": "Instalación al ras del muro"
+        },
+        {
+          "slug": "hidrantes",
+          "nombre": "Hidrantes",
+          "descripcion": "Tomas exteriores hierro dúctil"
+        },
+        {
+          "slug": "estaciones",
+          "nombre": "Estaciones de Manguera",
+          "descripcion": "Carrete oscilante 180 grados"
+        }
+      ]
+    },
+    "related": {
+      "titulo": "Otros Gabinetes y Estaciones",
+      "subtitulo": "Explora más opciones para tu sistema de protección",
+      "maxProductos": 3,
+      "verTodosLink": "/gabinetes-hidrantes-contra-incendios",
+      "verTodosTexto": "Ver todos los gabinetes"
+    },
+    "cotizacion": {
+      "titulo": "Cotiza Estaciones",
+      "tipoEquipo": "Gabinetes e hidrantes",
+      "pagina": "Gabinetes Estaciones"
+    },
+    "faqs": [
+      {
+        "pregunta": "¿Qué es una estación de mangueras y en qué se diferencia del gabinete?",
+        "respuesta": "Una estación de mangueras (hose station) es un punto de conexión de manguera sin gabinete cerrado, usado en aplicaciones industriales y exteriores donde la accesibilidad rápida es prioritaria sobre la estética. Incluye una válvula angular o de bola, soporte de manguera y en algunos casos la manguera pre-conectada. Se usa en plantas industriales, muelles, estacionamientos y patios de maniobras."
+      },
+      {
+        "pregunta": "¿Qué requiere NFPA 14 en un paquete completo de estación de mangueras (fire station)?",
+        "respuesta": "NFPA 14 sección 7.3 especifica que un punto de conexión completo para sistemas standpipe debe incluir: válvula de salida del diámetro correcto (1.5\" para Clase II y III, 2.5\" para Clase I), manguera certificada de longitud adecuada, boquilla aprobada, y señalización del tipo de sistema. Para Clase III, la estación debe incluir tanto una salida de 2.5\" para bomberos como una de 1.5\" con manguera para uso del personal del edificio en primera respuesta."
+      },
+      {
+        "pregunta": "¿Qué inspecciones visuales requiere NFPA 14 para estaciones de manguera?",
+        "respuesta": "NFPA 14 y NFPA 25 establecen que las estaciones de manguera deben inspeccionarse visualmente cada tres meses para verificar: que la manguera esté en su lugar sin daño visible, que la boquilla y la válvula estén presentes y operables, que el soporte esté en buen estado, y que la señalización sea legible. Además, una inspección anual incluye prueba de funcionamiento de la válvula y verificación de presión en el sistema. Las estaciones exteriores deben verificarse más frecuentemente en temporada de lluvias."
+      },
+      {
+        "pregunta": "¿Las estaciones de mangueras exteriores requieren protección especial?",
+        "respuesta": "Sí. En instalaciones exteriores expuestas a la intemperie, se utilizan cubiertas de aluminio o acero inoxidable, y las válvulas y herrajes deben ser de bronce de grado naval. En zonas con riesgo de heladas, se instalan válvulas de drenaje automático para evitar que el agua congele en la tubería de la estación. Se recomienda también señalización con material retroreflectante visible de noche."
+      },
+      {
+        "pregunta": "¿Cuántas estaciones de mangueras se necesitan en una planta industrial?",
+        "respuesta": "El número y ubicación de estaciones de mangueras se calcula mediante análisis hidráulico conforme a NFPA 24 o NFPA 14, considerando el área a proteger, el tipo de riesgo, la presión y caudal disponibles, y la distancia máxima de alcance de la manguera. Como regla general, cada estación debe cubrir un radio de 30 metros con la manguera extendida. Gama de México asesora en el diseño del sistema completo."
+      },
+      {
+        "pregunta": "¿Cuál es la ventaja del carrete oscilante de 180° en estaciones de manguera?",
+        "respuesta": "El carrete oscilante de 180° permite desplegar la manguera en cualquier dirección dentro del semicírculo frente a la estación sin tener que jalar y reorganizar la manguera. Esto reduce el tiempo de respuesta y evita que la manguera se enrede durante el despliegue en emergencia. A diferencia de los soportes fijos (rack) donde la manguera debe extraerse completamente antes de usarse, el carrete oscilante permite al operador ir hacia el riesgo mientras la manguera se desenrolla automáticamente del carrete."
+      }
+    ]
+  },
+  {
+    "seccion": "gabinetes",
+    "slug": "hidrantes",
+    "categoria": "gabinetes-hidrantes",
+    "filter": {
+      "subcategorias": [
+        "hidrantes"
+      ]
+    },
+    "meta": {
+      "title": "Hidrantes de Banqueta Hierro Dúctil NFPA 24 | Gama de México",
+      "description": "Hidrantes de banqueta hierro dúctil ASTM A-536, 250-350 PSI, UL 246, AWWA C502/C503. Barril seco y húmedo para instalaciones privadas. NFPA 24. Envío nacional México."
+    },
+    "hero": {
+      "title": "Hidrantes Contra Incendio",
+      "intro": "Hidrantes de banqueta para uso industrial y municipal, disponibles en configuraciones de barril seco y húmedo con certificaciones UL y FM.",
+      "badge": "Gabinetes e Hidrantes",
+      "metrics": [
+        {
+          "value": "350 PSI",
+          "label": "Presión Max"
+        },
+        {
+          "value": "UL/FM",
+          "label": "Certificado"
+        },
+        {
+          "value": "AWWA",
+          "label": "Norma"
+        }
+      ],
+      "primaryText": "Solicitar Cotización",
+      "primaryLink": "#cotizar",
+      "secondaryText": "Ver Catálogo",
+      "secondaryLink": "#catalogo",
+      "contentHtml": "<p>Los hidrantes contra incendio son componentes críticos en la infraestructura de protección contra incendios para aplicaciones industriales y municipales. Fabricados en hierro dúctil ASTM A-536 con salidas de bronce ASTM B-62, nuestros hidrantes ofrecen la resistencia y durabilidad necesarias para servicio continuo en condiciones exigentes. Disponibles en configuraciones de barril seco para climas fríos y barril húmedo para instalaciones donde el congelamiento no es preocupación, con presiones de trabajo de 250 a 350 PSI.</p>\n    <p>Cada hidrante cuenta con certificaciones UL 246, AWWA C502/C503 y NSF 61, garantizando cumplimiento con los estándares más estrictos de la industria. El recubrimiento epóxico interior y exterior proporciona protección superior contra la corrosión, mientras que el vástago de acero inoxidable asegura operación confiable a lo largo de los años. Ideales para redes de agua municipales, parques industriales, refinerías, plantas químicas y cualquier instalación que requiera acceso a agua de alta presión para combate de incendios.</p>"
+    },
+    "schema": {
+      "name": "Hidrantes Contra Incendios para Instalaciones Privadas",
+      "description": "Hidrantes de banqueta y muro para instalaciones privadas. NFPA 24. Bronce y fierro fundido. Cotización México.",
+      "image": "/img/gabinetes-hidrantes/gabinete-30m-abierto.avif",
+      "url": "/gabinetes/hidrantes",
+      "category": "Gabinetes e Hidrantes Contra Incendios",
+      "brand": "Elkhart Brass",
+      "reviewAuthor": "Ing. Carlos Mendoza",
+      "reviewBody": "Excelente calidad y respaldo técnico de Gama de México. Equipos certificados con entrega puntual.",
+      "reviewDate": "2025-03-15",
+      "ratingCount": 32,
+      "reviewCount": 32
+    },
+    "breadcrumb": [
+      {
+        "name": "Inicio",
+        "url": "/"
+      },
+      {
+        "name": "Equipos",
+        "url": "/equipos"
+      },
+      {
+        "name": "Gabinetes e Hidrantes",
+        "url": "/gabinetes-hidrantes-contra-incendios"
+      }
+    ],
+    "catalog": {
+      "title": "Catálogo de Hidrantes de Banqueta",
+      "desc": "Selecciona el modelo que mejor se adapte a tu instalación"
+    },
+    "empty": {
+      "title": "Próximamente más opciones",
+      "text": "Estamos agregando más hidrantes de diferentes configuraciones. Solicita una cotización personalizada.",
+      "buttonText": "Solicitar Cotización"
+    },
+    "techInfo": {
+      "title": "Especificaciones Técnicas de Hidrantes",
+      "items": [
+        {
+          "label": "Presión trabajo",
+          "value": "250-350 PSI"
+        },
+        {
+          "label": "Salidas 2.5\"",
+          "value": "2 x NST (7.5 TPI)"
+        },
+        {
+          "label": "Salida bomba",
+          "value": "4.5\" NST (4 TPI)"
+        },
+        {
+          "label": "Entrada",
+          "value": "6\" ANSI B16.1"
+        },
+        {
+          "label": "Cuerpo",
+          "value": "Hierro dúctil"
+        },
+        {
+          "label": "Recubrimiento",
+          "value": "Epóxico"
+        }
+      ]
+    },
+    "ctaFinal": {
+      "title": "¿Necesitas hidrantes para un proyecto municipal?",
+      "desc": "Ofrecemos volumen para proyectos de redes de agua municipales e industriales con certificaciones completas.",
+      "buttonText": "Solicitar Cotización Mayoreo"
+    },
+    "sidebar": {
+      "navTitulo": "Tipos de Gabinetes",
+      "baseUrl": "/gabinetes",
+      "backLinkHref": "/gabinetes-hidrantes-contra-incendios",
+      "backLinkTexto": "Ver todos los gabinetes",
+      "certificaciones": [
+        {
+          "siglas": "FM",
+          "nombre": "Factory Mutual"
+        },
+        {
+          "siglas": "UL",
+          "nombre": "UL Listed"
+        },
+        {
+          "siglas": "NOM",
+          "nombre": "NOM-002-STPS"
+        }
+      ],
+      "marcas": [
+        "Potter Roemer",
+        "JL Industries",
+        "Kennedy",
+        "Mueller"
+      ],
+      "aplicaciones": [
+        "Hidrantes de pared",
+        "Tomas de agua",
+        "Redes contra incendio",
+        "Instalaciones industriales"
+      ],
+      "productosRelacionados": [
+        {
+          "href": "/boquillas-contra-incendios",
+          "nombre": "Boquillas Contra Incendios"
+        },
+        {
+          "href": "/mangueras-contra-incendios",
+          "nombre": "Mangueras Contra Incendios"
+        },
+        {
+          "href": "/valvulas-contra-incendios",
+          "nombre": "Válvulas Contra Incendios"
+        },
+        {
+          "href": "/conexiones-herrajes-contra-incendios",
+          "nombre": "Conexiones y Herrajes"
+        }
+      ],
+      "subcategorias": [
+        {
+          "slug": "tipo-30me",
+          "nombre": "Gabinete Tipo 30ME",
+          "descripcion": "Gabinete completo con manguera 30m"
+        },
+        {
+          "slug": "empotrado",
+          "nombre": "Gabinete Empotrado",
+          "descripcion": "Instalación al ras del muro"
+        },
+        {
+          "slug": "hidrantes",
+          "nombre": "Hidrantes",
+          "descripcion": "Tomas exteriores hierro dúctil"
+        },
+        {
+          "slug": "estaciones",
+          "nombre": "Estaciones de Manguera",
+          "descripcion": "Carrete oscilante 180 grados"
+        }
+      ]
+    },
+    "related": {
+      "titulo": "Otros Gabinetes y Estaciones",
+      "subtitulo": "Explora más opciones para tu sistema de protección",
+      "maxProductos": 3,
+      "verTodosLink": "/gabinetes-hidrantes-contra-incendios",
+      "verTodosTexto": "Ver todos los gabinetes"
+    },
+    "cotizacion": {
+      "titulo": "Cotiza Hidrantes",
+      "tipoEquipo": "Gabinetes e hidrantes",
+      "pagina": "Gabinetes Hidrantes"
+    },
+    "faqs": [
+      {
+        "pregunta": "¿Cuál es la diferencia entre un hidrante de banqueta y un hidrante de muro?",
+        "respuesta": "El hidrante de banqueta (pillar hydrant) se instala en el exterior, al ras del suelo, con sus bocas de conexión a 60-90 cm de altura, para uso de los bomberos desde la calle. El hidrante de muro (wall hydrant) se instala empotrado en la fachada de un edificio o barda, protegiendo la conexión del tráfico. Ambos tipos se conectan a la red de agua contra incendios y funcionan como puntos de abastecimiento para camiones y líneas de ataque."
+      },
+      {
+        "pregunta": "¿Qué requisitos establece NFPA 14 para los gabinetes de hidrante en edificios comerciales?",
+        "respuesta": "NFPA 14 sección 7.3 establece que cada gabinete de hidrante interior (hose cabinet) debe contener manguera del tamaño correcto para el tipo de standpipe (1.5\" para Clase II y III), una boquilla aprobada y una válvula angular. El gabinete debe estar señalizado y ubicado de forma que cualquier punto del piso quede a no más de 30 metros de una conexión de manguera. En sistemas Clase I, las salidas de 2.5\" no requieren gabinete, pero sí tapas protectoras."
+      },
+      {
+        "pregunta": "¿Qué presión y caudal debe tener un hidrante para cumplir con NFPA 24?",
+        "respuesta": "NFPA 24 establece que los hidrantes en sistemas privados deben proveer al menos 250 GPM a 20 PSI de presión residual en el hidrante más desfavorable del sistema. Para sistemas de múltiples hidrantes operando simultáneamente, la demanda puede superar los 1,000 GPM. El diseño hidráulico del sistema determina el diámetro de la tubería principal necesario para cumplir estos parámetros."
+      },
+      {
+        "pregunta": "¿Cuál es el contenido estándar de un gabinete de hidrante según NFPA?",
+        "respuesta": "Un gabinete de hidrante completo para edificios comerciales debe incluir: manguera certificada de 1.5\" o 2.5\" según el tipo de standpipe, boquilla aprobada (tipo pistola de tres posiciones o ajustable de niebla), válvula angular de bronce, soporte portamanguera (rack oscilante o carrete), y señalización clara. NFPA 14 permite que los gabinetes Clase II tengan mangueras de 1.5\" preconectadas para uso por personal del edificio (no solo bomberos), lo que facilita la primera respuesta."
+      },
+      {
+        "pregunta": "¿Qué consideraciones de instalación aplican para hidrantes exteriores en México?",
+        "respuesta": "En México, los hidrantes exteriores privados deben cumplir con NFPA 24 para sistemas de distribución y con las especificaciones del cuerpo de bomberos local para la compatibilidad de roscas. La mayoría de municipios usan roscas NST de 2.5\" para las salidas de manguera, aunque algunos sistemas más antiguos tienen roscas BSP (British Standard Pipe) que requieren adaptadores. Los hidrantes deben señalizarse con colores que indiquen la presión disponible según NFPA 291 (azul, verde, naranja o rojo)."
+      },
+      {
+        "pregunta": "¿Los hidrantes privados requieren prueba periódica según NFPA 25?",
+        "respuesta": "Sí. Conforme a NFPA 25, los hidrantes privados deben inspeccionarse visualmente cada 3 años como mínimo, y someterse a prueba de flujo para verificar condición operativa. En zonas sísmicas o con suelos expansivos, se recomienda inspección anual. La prueba incluye apertura y cierre del hidrante, verificación de drenaje automático y medición de presión y caudal de descarga. Los resultados deben documentarse para el historial del sistema."
+      }
+    ]
+  },
+  {
+    "seccion": "gabinetes",
+    "slug": "tipo-30me",
+    "categoria": "gabinetes-hidrantes",
+    "filter": {
+      "subcategorias": [
+        "gabinetes"
+      ],
+      "idIncludes": [
+        "30me",
+        "30m-",
+        "sobrepuesto"
+      ]
+    },
+    "meta": {
+      "title": "Gabinete Tipo 30ME NOM-002-STPS Manguera 30m | Venta México",
+      "description": "Gabinete tipo 30ME completo: manguera 30m 300 PSI, válvula angular bronce 1.5\", boquilla 3 pasos, espacio extintor. Acero cal. 22, NOM-002-STPS, NOM-003-SEGOB. Cotización México."
+    },
+    "hero": {
+      "title": "Gabinete Tipo 30ME",
+      "intro": "El gabinete tipo 30ME es el estándar de la industria para protección contra incendios en edificios comerciales e industriales. Integra manguera de 30 metros, válvula angular de bronce, boquilla de tres posiciones y espacio para extintor portátil, cumpliendo con NOM-002-STPS-2010 y NFPA 14.",
+      "badge": "Gabinetes Contra Incendios",
+      "metrics": [
+        {
+          "valor": "30m",
+          "texto": "Manguera incluida"
+        },
+        {
+          "valor": "300 PSI",
+          "texto": "Presión trabajo"
+        },
+        {
+          "valor": "NOM",
+          "texto": "Certificado"
+        }
+      ],
+      "primaryText": "Ver Catálogo",
+      "primaryLink": "#catalogo",
+      "secondaryText": "Solicitar Cotización",
+      "secondaryLink": "#cotizar",
+      "contentHtml": "<p>El <strong>gabinete tipo 30ME</strong> representa la solución más completa para primera respuesta contra incendios en edificaciones. Su denominación \"30ME\" indica que incluye <strong>manguera de 30 metros</strong> y espacio para <strong>extintor portátil</strong>, proporcionando capacidad dual de combate de incendios desde un solo punto de instalación. El diseño cumple con la normativa mexicana <strong>NOM-002-STPS-2010</strong> y los estándares internacionales <strong>NFPA 14</strong> para sistemas standpipe.</p>\n    <p>En <strong>Gama de México</strong> ofrecemos gabinetes tipo 30ME fabricados en acero calibre 22 con acabado electrostático rojo seguridad. Cada gabinete incluye manguera de doble forro con coples de bronce NST, válvula angular de bronce de 1.5\", boquilla de tres posiciones (chorro sólido, neblina y cerrado), rack portamanguera oscilante y espacio para extintor de 4.5 o 6 kg. Atendemos proyectos en hoteles, hospitales, oficinas, centros comerciales, bodegas e instalaciones industriales en toda la República Mexicana.</p>"
+    },
+    "schema": {
+      "name": "Gabinete Contra Incendios Tipo 30ME",
+      "description": "Gabinete tipo 30ME completo con manguera 30m, boquilla y válvula. NOM-002-STPS. Stock permanente México.",
+      "image": "/img/gabinetes-hidrantes/gabinete-30m-abierto.avif",
+      "url": "/gabinetes/tipo-30me",
+      "category": "Gabinetes e Hidrantes Contra Incendios",
+      "brand": "Elkhart Brass",
+      "reviewAuthor": "Ing. Carlos Mendoza",
+      "reviewBody": "Excelente calidad y respaldo técnico de Gama de México. Equipos certificados con entrega puntual.",
+      "reviewDate": "2025-03-15",
+      "ratingCount": 32,
+      "reviewCount": 32
+    },
+    "breadcrumb": [
+      {
+        "name": "Inicio",
+        "url": "/"
+      },
+      {
+        "name": "Equipos",
+        "url": "/equipos"
+      },
+      {
+        "name": "Gabinetes e Hidrantes",
+        "url": "/gabinetes-hidrantes-contra-incendios"
+      }
+    ],
+    "catalog": {
+      "title": "Catálogo de Gabinetes Tipo 30ME",
+      "desc": "Gabinetes completos con manguera, válvula, boquilla y espacio para extintor"
+    },
+    "empty": {
+      "title": "Próximamente más opciones",
+      "text": "Estamos agregando más gabinetes tipo 30ME de diferentes configuraciones. Mientras tanto, solicita una cotización personalizada.",
+      "buttonText": "Solicitar Cotización"
+    },
+    "techInfo": {
+      "title": "Especificaciones Técnicas del Gabinete Tipo 30ME",
+      "items": [
+        {
+          "label": "Dimensiones",
+          "value": "88 x 85 x 21 cm"
+        },
+        {
+          "label": "Manguera",
+          "value": "1.5\" x 30m, 300 PSI"
+        },
+        {
+          "label": "Válvula angular",
+          "value": "Bronce 1.5\" NPT/NST"
+        },
+        {
+          "label": "Boquilla",
+          "value": "Tres posiciones"
+        },
+        {
+          "label": "Calibre acero",
+          "value": "Calibre 22"
+        },
+        {
+          "label": "Extintor",
+          "value": "4.5 o 6 kg"
+        }
+      ]
+    },
+    "ctaFinal": {
+      "title": "¿Necesitas gabinetes para un proyecto de construcción?",
+      "desc": "Ofrecemos precios especiales por volumen para desarrolladores, constructoras y proyectos de remodelación. Incluimos asesoría en la ubicación según NOM-002-STPS.",
+      "buttonText": "Solicitar Cotización por Volumen"
+    },
+    "sidebar": {
+      "navTitulo": "Tipos de Gabinetes",
+      "baseUrl": "/gabinetes",
+      "backLinkHref": "/gabinetes-hidrantes-contra-incendios",
+      "backLinkTexto": "Ver todos los gabinetes",
+      "certificaciones": [
+        {
+          "siglas": "NOM",
+          "nombre": "NOM-002-STPS-2010"
+        },
+        {
+          "siglas": "NFPA",
+          "nombre": "NFPA 14 Standpipe"
+        },
+        {
+          "siglas": "UL",
+          "nombre": "UL Listed"
+        }
+      ],
+      "marcas": [
+        "Potter Roemer",
+        "JL Industries",
+        "Larsen's",
+        "Guardian",
+        "Nacional"
+      ],
+      "aplicaciones": [
+        "Edificios de oficinas",
+        "Hoteles y hospitales",
+        "Centros comerciales",
+        "Plantas industriales",
+        "Escuelas y universidades",
+        "Bodegas y almacenes"
+      ],
+      "productosRelacionados": [
+        {
+          "href": "/mangueras-contra-incendios",
+          "nombre": "Mangueras Contra Incendios"
+        },
+        {
+          "href": "/boquillas-contra-incendios",
+          "nombre": "Boquillas Contra Incendios"
+        },
+        {
+          "href": "/valvulas-contra-incendios",
+          "nombre": "Válvulas Contra Incendios"
+        },
+        {
+          "href": "/gabinetes-hidrantes-contra-incendios",
+          "nombre": "Gabinetes e Hidrantes"
+        }
+      ],
+      "subcategorias": [
+        {
+          "slug": "tipo-30me",
+          "nombre": "Gabinete Tipo 30ME",
+          "descripcion": "Gabinete completo con manguera 30m"
+        },
+        {
+          "slug": "empotrado",
+          "nombre": "Gabinete Empotrado",
+          "descripcion": "Instalación al ras del muro"
+        },
+        {
+          "slug": "hidrantes",
+          "nombre": "Hidrantes",
+          "descripcion": "Tomas exteriores hierro dúctil"
+        },
+        {
+          "slug": "estaciones",
+          "nombre": "Estaciones de Manguera",
+          "descripcion": "Carrete oscilante 180 grados"
+        }
+      ]
+    },
+    "related": {
+      "titulo": "Otros Gabinetes e Hidrantes",
+      "subtitulo": "Explora más opciones para tu sistema de protección contra incendios",
+      "maxProductos": 3,
+      "verTodosLink": "/gabinetes-hidrantes-contra-incendios",
+      "verTodosTexto": "Ver todos los gabinetes"
+    },
+    "cotizacion": {
+      "titulo": "Cotiza Gabinetes Tipo 30ME",
+      "tipoEquipo": "Gabinetes",
+      "pagina": "Gabinetes Tipo 30ME"
+    },
+    "faqs": [
+      {
+        "pregunta": "¿Qué es el gabinete tipo 30ME y qué incluye?",
+        "respuesta": "El gabinete tipo 30ME es el estándar de gabinete contra incendios más utilizado en México, definido por la NOM-002-STPS. Incluye: manguera de 30 metros de longitud (de ahí el \"30\") con boquilla tipo pistola, válvula de cierre angular y soporte giratorio de manguera. El número de materiales (ME) indica que es para materiales ordinarios clase A. Se instala en edificios de oficinas, comercios, bodegas y plantas industriales."
+      },
+      {
+        "pregunta": "¿Qué establece NOM-003-SEGOB-2011 sobre los gabinetes contra incendio?",
+        "respuesta": "NOM-003-SEGOB-2011 es la norma que regula los equipos de seguridad contra incendios y establece los requisitos de fabricación, materiales y marcado para gabinetes contra incendio en México. Complementa a NOM-002-STPS que regula la instalación y uso. La norma establece que los gabinetes deben fabricarse de acero laminado calibre 22 mínimo, con pintura electroestática roja, puerta con vidrio de 3mm mínimo y señalización con texto \"EXTINTOR\" o \"MANGUERA CONTRA INCENDIO\" en letras de 5 cm de altura."
+      },
+      {
+        "pregunta": "¿Qué tipo de vidrio requiere la puerta del gabinete tipo 30ME?",
+        "respuesta": "La puerta del gabinete tipo 30ME debe tener vidrio rompible que permita acceso rápido en emergencia. NOM-003-SEGOB establece vidrio sencillo de 3mm (el vidrio estándar de ventanas), que se rompe fácilmente con el puño o una herramienta de emergencia. No se debe usar vidrio templado ni laminado en la puerta, ya que estos son mucho más difíciles de romper en una emergencia. Algunos modelos usan acrílico rompible como alternativa al vidrio."
+      },
+      {
+        "pregunta": "¿Dónde se instala un gabinete tipo 30ME según NOM-002-STPS?",
+        "respuesta": "Se instala en lugares accesibles y visibles para que cualquier persona pueda usarlo en emergencia. La NOM-002-STPS establece que la distancia máxima desde cualquier punto del área protegida hasta el gabinete debe ser menor a 30 metros (la longitud de la manguera). Se coloca a una altura de entre 0.90 m y 1.50 m del centro del gabinete al piso para facilitar su operación. Debe estar libre de obstrucciones en un radio de 1 metro."
+      },
+      {
+        "pregunta": "¿Qué contenido completo establece NFPA 14 para un gabinete de manguera?",
+        "respuesta": "NFPA 14 sección 7.3 establece que un gabinete de manguera (hose cabinet) para sistemas standpipe debe contener: manguera certificada del diámetro correspondiente al tipo de sistema (1.5\" para Clase II y III), boquilla aprobada, y en Clase I una válvula de 2.5\". La manguera debe estar en soporte que permita despliegue inmediato sin enredos. En México, NOM-002-STPS complementa estos requisitos para brigadas industriales, añadiendo la opción de extintor en el mismo gabinete."
+      },
+      {
+        "pregunta": "¿El gabinete tipo 30ME requiere mantenimiento periódico?",
+        "respuesta": "Sí. Conforme a NOM-002-STPS y NFPA 25, el gabinete requiere inspección mensual visual y mantenimiento semestral que incluye: prueba de la válvula angular, verificación del estado de la manguera (sin grietas, hongos ni deterioro), prueba de la boquilla y verificación del soporte. El mantenimiento anual incluye presurización de la manguera a 300 PSI para prueba hidrostática. Las empresas con más de 15 trabajadores deben llevar registro de estos mantenimientos ante la STPS."
+      }
+    ]
+  }
+]

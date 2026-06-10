@@ -1,5 +1,5 @@
 ---
-title: "Boquilla Mining MHD-500 MSHA 150-500 GPM Aluminio 356-T6 | Task Force Tips | Minería México"
+title: "Boquilla Mining MHD-500 MSHA 150-500 GPM Aluminio 356-T6"
 description: "Boquilla Task Force Tips MHD-500 minería pesada. MSHA Part 18/33 NFPA 1964. 150-500 GPM, bumper goma, aluminio 356-T6. Minas carbón, cobre y metales México."
 categoria: "boquillas"
 subcategoria: "industrial"

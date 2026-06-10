@@ -1,6 +1,7 @@
 ---
-title: "Traje Estructural para Bombero: Guía Completa de Selección, Certificaciones y Venta en México"
-description: "Guía técnica completa sobre trajes estructurales para bomberos: componentes, certificaciones NFPA 1971, tipos, comparativa y factores de selección para cuerpos de bomberos y brigadas industriales en México."
+title: "Traje Estructural para Bombero: Guía de Selección y Venta en México"
+description: "Guía sobre trajes estructurales para bomberos: componentes, certificación NFPA 1971, tipos y criterios de selección para brigadas industriales en México."
+fecha: "2026-06-08"
 categoria: "equipos-bomberos"
 autor:
   nombre: "Ing. Carlos Mendoza Ruiz"
@@ -8,7 +9,7 @@ autor:
 imagen: "/img/blog/traje-estructural-bombero-combate-mexico.avif"
 imagenAlt: "Traje estructural para bombero certificado NFPA 1971 en México"
 imagenOg: "/img/blog/traje-estructural-bombero-combate-mexico.avif"
-tags: ["traje estructural para bombero", "trajes para bomberos", "equipo de protección para bomberos", "venta de trajes para bomberos", "traje de combate contra incendios", "equipo certificado para bomberos", "NFPA 1971", "protección personal bomberos México", "proveedores de equipos para bomberos en México"]
+tags: ["traje estructural para bombero", "trajes para bomberos", "equipo de protección para bomberos", "traje de combate contra incendios", "equipo certificado para bomberos", "NFPA 1971", "proveedores de equipos para bomberos"]
 destacado: true
 draft: false
 tiempoLectura: 18

@@ -13,13 +13,14 @@ schema:
       - q: "¿Es mejor comprar equipos nacionales o importados?"
         a: "Depende del componente. Gabinetes y soportes pueden ser nacionales sin problema. Boquillas, monitores y válvulas de control deben tener certificación internacional (UL/FM) independientemente del origen. Lo importante no es dónde se fabrica sino que tenga certificación verificable de un laboratorio reconocido."
 description: "Criterios reales para seleccionar proveedores de equipos contra incendios certificados: cómo verificar certificaciones, qué documentación exigir y errores comunes."
+fecha: "2026-02-26"
 categoria: "valvulas"
 autor:
   nombre: "Equipo Gama de México"
   cargo: "Asesoría Técnica"
 imagen: "/img/blog/mantenimiento-equipos-contra-incendios-tecnico-industrial.avif"
 imagenAlt: "Técnico seleccionando equipos contra incendios certificados"
-tags: ["proveedores equipos contra incendios", "certificaciones", "NOM-154-SCFI", "equipos certificados"]
+tags: ["proveedores de equipos contra incendios", "certificaciones", "NOM-154-SCFI", "equipos certificados"]
 destacado: true
 tiempoLectura: 14
 draft: false

@@ -1,6 +1,6 @@
 ---
-title: "Boquilla FM Approved Industrial 1725 Akron 95-200 GPM | Akron Brass | México"
-description: "Boquilla FM Approved Industrial Akron Brass Style 1725. 95-200 GPM, 4 posiciones, aluminio anodizado duro. Documentación FM para auditorías HPR. Plantas industriales México."
+title: "Boquilla FM Approved Industrial 1725 Akron 95-200 GPM | Akron Brass"
+description: "Boquilla FM Approved Industrial Akron Brass Style 1725. 95-200 GPM, 4 posiciones, aluminio anodizado duro. Documentación FM para auditorías HPR."
 categoria: "boquillas"
 subcategoria: "certificada"
 imagen: "/img/productos/boquilla-certificada-fm-approved-emergencia-nocturna-lluvia-02.avif"

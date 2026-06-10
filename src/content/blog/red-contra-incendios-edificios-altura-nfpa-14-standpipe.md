@@ -13,6 +13,7 @@ schema:
       - q: "¿Cuáles son los tipos de standpipe?"
         a: "Clase I: conexiones de 2.5 pulgadas para bomberos profesionales (no para público). Clase II: conexiones de 1.5 pulgadas en gabinetes para ocupantes del edificio. Clase III: ambas conexiones — 2.5 para bomberos + 1.5 en gabinete para primera intervención. Clase III es el más completo y recomendado para edificios de uso mixto."
 description: "Sistemas de tubería vertical standpipe para edificios de gran altura en México. NFPA 14, clasificación, componentes y conexiones de manguera."
+fecha: "2026-03-11"
 categoria: "mangueras"
 autor:
   nombre: "Ing. Carlos Mendoza"

@@ -11,13 +11,14 @@ schema:
       - q: "¿Qué tipos de conexiones se usan en sistemas contra incendios?"
         a: "Roscadas NST/NH (estándar en México para bomberos y gabinetes), Storz (encastre rápido simétrico, dominante en industria y ciudades grandes), ranuradas Victaulic (unión mecánica para tubería, instalación sin soldadura), bridadas (conexiones permanentes de alta presión en cuartos de bomba). La compatibilidad entre sistemas se resuelve con adaptadores."
 description: "Tomas siamesas, wyes, reducciones y herrajes para sistemas contra incendios: función, ubicación, materiales y errores de instalación más comunes en México."
+fecha: "2026-03-11"
 categoria: "conexiones-herrajes"
 autor:
   nombre: "Equipo Gama de México"
   cargo: "Asesoría Técnica"
 imagen: "/img/blog/adaptadores-herrajes-bronce-contra-incendios-profesional.avif"
 imagenAlt: "Conexiones y herrajes para sistemas contra incendios"
-tags: ["conexiones", "herrajes", "NFPA 1963", "toma siamesa", "wye", "bronce aluminio"]
+tags: ["conexiones contra incendios", "herrajes", "NFPA 1963", "toma siamesa", "wye", "bronce aluminio"]
 destacado: false
 draft: false
 productosRelacionados: ["conexion-wye", "conexion-wye-bronce-2-5", "adaptadores-bronce", "adaptador-bronce-nh-storz-2-5"]

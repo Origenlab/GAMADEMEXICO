@@ -55,7 +55,7 @@ const toSidebarLink = (entry: typeof allPosts[number]) => ({
 
 const sidebarCategoryPosts = allPosts
   .filter((entry) => entry.id !== post.id && entry.data.categoria === post.data.categoria)
-  .sort((a, b) => new Date(b.data.fecha).getTime() - new Date(a.data.fecha).getTime())
+  .sort((a, b) => new Date(b.data.fecha ?? '1970-01-01').getTime() - new Date(a.data.fecha ?? '1970-01-01').getTime())
   .slice(0, 5)
   .map(toSidebarLink);
 
@@ -67,7 +67,7 @@ const sidebarFeaturedPosts = allPosts
     if (Boolean(b.data.destacado) !== Boolean(a.data.destacado)) {
       return Number(Boolean(b.data.destacado)) - Number(Boolean(a.data.destacado));
     }
-    return new Date(b.data.fecha).getTime() - new Date(a.data.fecha).getTime();
+    return new Date(b.data.fecha ?? '1970-01-01').getTime() - new Date(a.data.fecha ?? '1970-01-01').getTime();
   })
   .map(toSidebarLink)
   .filter((entry) => !sidebarCategoryPostUrls.has(entry.href))
@@ -77,7 +77,7 @@ const sidebarFeaturedPostUrls = new Set(sidebarFeaturedPosts.map((entry) => entr
 
 const sidebarRecentPosts = allPosts
   .filter((entry) => entry.id !== post.id)
-  .sort((a, b) => new Date(b.data.fecha).getTime() - new Date(a.data.fecha).getTime())
+  .sort((a, b) => new Date(b.data.fecha ?? '1970-01-01').getTime() - new Date(a.data.fecha ?? '1970-01-01').getTime())
   .map(toSidebarLink)
   .filter((entry) => !sidebarCategoryPostUrls.has(entry.href) && !sidebarFeaturedPostUrls.has(entry.href))
   .slice(0, 6);

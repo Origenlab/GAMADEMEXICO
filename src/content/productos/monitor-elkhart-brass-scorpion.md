@@ -1,6 +1,6 @@
 ---
 title: "Monitor Elkhart Brass Scorpion 2500 GPM"
-description: "Monitor contra incendio Elkhart Brass Scorpion de alto volumen. Caudal hasta 2,500 GPM con turbulencia mínima. Varillas de acero inoxidable. El más confiable para extinción de alto volumen."
+description: "Monitor contra incendio Elkhart Brass Scorpion de alto volumen. Caudal hasta 2,500 GPM con turbulencia mínima. Varillas de acero inoxidable."
 categoria: "monitores"
 subcategoria: "certificado-fm"
 imagen: "/img/monitores-contra-incendios/monitor-elkhart-brass-scorpion-2500gpm-vista-frontal.avif"

@@ -13,13 +13,14 @@ schema:
       - q: "¿Cada cuánto se debe hacer la prueba hidrostática?"
         a: "Anualmente conforme a NFPA 1962. También después de cada uso en incendio real, después de reparación de acoples, y cuando se detecte daño visible durante inspección. La prueba anual es la ÚNICA forma de verificar que la manguera soportará presión real — la inspección visual no detecta degradación interna."
 description: "Protocolo de prueba hidrostática para mangueras contra incendios según NFPA 1962: frecuencia, equipo requerido, criterios de aprobación y registros técnicos."
+fecha: "2026-03-11"
 categoria: "mangueras"
 autor:
   nombre: "Ing. Roberto Hernández"
   cargo: "Director Técnico en Sistemas Contra Incendios"
 imagen: "/img/blog/mangueras-contra-incendios-prueba-hidraulica-laboratorio.avif"
 imagenAlt: "Prueba hidrostática de mangueras contra incendios en laboratorio"
-tags: ["prueba hidrostática", "NFPA 1962", "mangueras incendios", "inspección mangueras", "mantenimiento preventivo", "certificación mangueras", "protección incendios"]
+tags: ["prueba hidrostática", "NFPA 1962", "mangueras contra incendios", "inspección mangueras", "mantenimiento preventivo", "certificación mangueras", "protección contra incendios"]
 destacado: false
 draft: false
 tiempoLectura: 12

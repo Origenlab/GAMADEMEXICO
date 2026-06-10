@@ -1,6 +1,6 @@
 ---
-title: "Chiflón CHF-15 Tres Pasos 1.5\" NH 60-100 GPM NOM-002 | Nacional México | Fabricación Mexicana"
-description: "Chiflón CHF-15 tres pasos 1.5\" NH bronce fundido 60-100 GPM 100 PSI NOM-002-STPS fabricación mexicana. Económico, disponibilidad inmediata. Brigadas industriales México."
+title: "Chiflón CHF-15 Tres Pasos 1.5\" NH 60-100 GPM NOM-002"
+description: "Chiflón CHF-15 tres pasos 1.5\" NH bronce fundido 60-100 GPM 100 PSI NOM-002-STPS fabricación mexicana. Económico, disponibilidad inmediata."
 categoria: "conexiones-herrajes"
 subcategoria: "chiflones"
 imagen: "/img/conexiones-herrajes/chiflon-nacional-frontal.avif"

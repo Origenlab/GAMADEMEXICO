@@ -1,6 +1,6 @@
 ---
-title: "Boquilla Foam Master 3060 AFFF AR-AFFF UL 162 FM 60-200 GPM | Akron Brass | México"
-description: "Boquilla Akron Brass Foam Master 3060 espuma AFFF AR-AFFF. UL 162 FM NFPA 11. 60-200 GPM, bronce niquelado. Tanques hidrocarburos, refinerías y hangares aviación México."
+title: "Boquilla Foam Master 3060 AFFF AR-AFFF UL 162 FM 60-200 GPM"
+description: "Boquilla Akron Brass Foam Master 3060 espuma AFFF AR-AFFF. UL 162 FM NFPA 11. 60-200 GPM, bronce niquelado."
 categoria: "boquillas"
 subcategoria: "industrial"
 imagen: "/img/productos/boquilla-industrial-contra-incendios-nave-bodega-07.avif"

@@ -1,6 +1,6 @@
 ---
-title: "Boquilla SM-LP50 Baja Presión 50 PSI 60-125 GPM NFPA 1964 | Elkhart Brass | México"
-description: "Boquilla automática SM-LP50 Select-O-Matic 50 PSI 60-125 GPM aluminio Elk-O-Lite NFPA 1964. Reacción 50% menor, resorte externo. Ataque interior y espacios confinados México."
+title: "Boquilla SM-LP50 Baja Presión 50 PSI 60-125 GPM NFPA 1964"
+description: "Boquilla automática SM-LP50 Select-O-Matic 50 PSI 60-125 GPM aluminio Elk-O-Lite NFPA 1964. Reacción 50% menor, resorte externo."
 categoria: "boquillas"
 subcategoria: "turbo-jet"
 imagen: "/img/productos/boquilla-turbo-jet-contra-incendios-vista-frontal-16.avif"

@@ -13,6 +13,7 @@ schema:
       - q: "¿Qué particularidades tiene la protección contra incendios en el Bajío?"
         a: "Plantas de corporativos internacionales (aeronáutica, automotriz alemana y japonesa) con estándares FM Global. Muchas exigen certificación dual UL/FM. El crecimiento acelerado de parques industriales genera demanda constante de equipos para proyectos nuevos y ampliaciones que deben cumplir desde el primer día."
 description: "Equipos contra incendios UL/FM en Querétaro. Sucursal en Av. Constituyentes con stock. Monitores, válvulas y mangueras Elkhart Brass."
+fecha: "2026-03-19"
 categoria: "equipos-contra-incendios"
 autor:
   nombre: "Equipo Gama de México"

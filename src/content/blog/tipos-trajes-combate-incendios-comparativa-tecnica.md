@@ -1,6 +1,7 @@
 ---
-title: "Tipos de Trajes de Combate contra Incendios: Comparativa Técnica Completa y Guía de Aplicación"
-description: "Comparativa técnica detallada de todos los tipos de trajes para combate de incendios: estructural, aproximación, forestal, rescate y HAZMAT. Normas NFPA, materiales, aplicaciones y criterios de selección en México."
+title: "Tipos de Trajes de Combate contra Incendios: Comparativa Técnica"
+description: "Comparativa técnica de trajes para combate de incendios: estructural, aproximación, forestal y HAZMAT. Normas NFPA, materiales y selección en México."
+fecha: "2026-06-08"
 categoria: "equipos-bomberos"
 autor:
   nombre: "Ing. Mario Domínguez Fuentes"
@@ -8,7 +9,7 @@ autor:
 imagen: "/img/blog/tipos-trajes-combate-incendios-comparativa-mexico.avif"
 imagenAlt: "Comparativa técnica de tipos de trajes para combate de incendios certificados NFPA"
 imagenOg: "/img/blog/tipos-trajes-combate-incendios-comparativa-mexico.avif"
-tags: ["tipos de trajes para bomberos", "traje estructural para bombero", "trajes de aproximación", "traje forestal bomberos", "traje de combate contra incendios", "comparativa trajes bomberos", "equipo de protección para bomberos", "NFPA 1971", "NFPA 1976", "NFPA 1977", "equipos para bomberos México", "traje certificado bombero"]
+tags: ["tipos de trajes para bomberos", "traje estructural para bombero", "trajes de aproximación", "traje forestal bomberos", "traje de combate contra incendios", "comparativa trajes bomberos", "equipo de protección para bomberos", "NFPA 1971", "NFPA 1976", "NFPA 1977", "equipos para bomberos", "traje certificado bombero"]
 destacado: true
 draft: false
 tiempoLectura: 22

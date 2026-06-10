@@ -1,6 +1,6 @@
 ---
 title: "Monitor Cuello de Cisne Bronce Marino - Resistencia Extrema"
-description: "Monitor contra incendio cuello de cisne fabricado en bronce fundido de alta densidad. Resistente a corrosión marina, agua salada y ambientes industriales agresivos. Vida útil superior a 25 años."
+description: "Monitor contra incendio cuello de cisne fabricado en bronce fundido de alta densidad. Resistente a corrosión marina, agua salada y ambientes industriales agresivos."
 categoria: "monitores"
 subcategoria: "cuello-cisne"
 imagen: "/img/monitores-contra-incendios/monitor-cuello-cisne-contra-incendios-perspectiva-frontal-05.avif"

@@ -1,6 +1,6 @@
 ---
-title: "Chiflón 205-B-C Químicos 1.5\" NH 95-125 GPM UL 401 FM NFPA 1964 | Elkhart Brass | México"
-description: "Chiflón 205-B-C Elkhart Brass 1.5\" NH bronce 95-125 GPM UL 401 FM Approved NFPA 1964. Clase B solventes, AFFF compatible, anillos uretano hidrocarburo. Petroquímica México."
+title: "Chiflón 205-B-C Químicos 1.5\" NH 95-125 GPM UL 401 FM NFPA 1964"
+description: "Chiflón 205-B-C Elkhart Brass 1.5\" NH bronce 95-125 GPM UL 401 FM Approved NFPA 1964. Clase B solventes, AFFF compatible, anillos uretano hidrocarburo."
 categoria: "conexiones-herrajes"
 subcategoria: "chiflones"
 imagen: "/img/conexiones-herrajes/chiflon-quimicos-ul401-frontal.avif"

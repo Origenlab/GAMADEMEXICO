@@ -30,6 +30,7 @@
     let isMenuOpen = false;
 
     function openMenu() {
+      if (!hamburger || !mobileNav || !mobileOverlay) return;
       isMenuOpen = true;
       hamburger.classList.add('hamburger--active');
       hamburger.setAttribute('aria-expanded', 'true');
@@ -45,6 +46,7 @@
     }
 
     function closeMenu() {
+      if (!hamburger || !mobileNav || !mobileOverlay) return;
       isMenuOpen = false;
       hamburger.classList.remove('hamburger--active');
       hamburger.setAttribute('aria-expanded', 'false');
@@ -156,14 +158,15 @@
 
     faqButtons.forEach(function (btn) {
       btn.addEventListener('click', function () {
-        const isExpanded = this.getAttribute('aria-expanded') === 'true';
+        // `btn` en lugar de `this` (el listener se registra sobre el propio botón).
+        const isExpanded = btn.getAttribute('aria-expanded') === 'true';
 
         faqButtons.forEach(function (otherBtn) {
           setFaqState(otherBtn, false);
         });
 
         if (!isExpanded) {
-          setFaqState(this, true);
+          setFaqState(btn, true);
         }
       });
     });
@@ -219,7 +222,8 @@
 
   document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
     anchor.addEventListener('click', function (e) {
-      const targetId = (this as HTMLAnchorElement).getAttribute('href');
+      // `anchor` en lugar de `this` (el listener se registra sobre el propio enlace).
+      const targetId = anchor.getAttribute('href');
       if (!targetId || targetId === '#') return;
 
       if (scrollToHashTarget(targetId)) {

@@ -1,5 +1,5 @@
 ---
-title: "Adaptador Bronce NH a NPT 2.5\" M-327 UL FM | Elkhart Brass | Distribuidor México"
+title: "Adaptador Bronce NH a NPT 2.5\" M-327 UL FM | Elkhart Brass"
 description: "Adaptadores bronce Elkhart Brass NH-NPT-Storz 2.5\" para sistemas contra incendio. M-327 300 PSI, prueba 1000 PSI. UL Listed FM NOM-002. Inventario México."
 categoria: "conexiones-herrajes"
 subcategoria: "adaptadores"

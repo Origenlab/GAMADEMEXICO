@@ -13,6 +13,7 @@ schema:
       - q: "¿Cómo sé si mi equipo contra incendios necesita reemplazo?"
         a: "Señales: falla en prueba hidrostática, mecanismos trabados que no responden a mantenimiento, corrosión que compromete integridad estructural, componentes descontinuados sin repuestos disponibles, o cambio en el riesgo de la instalación que hace el equipo actual insuficiente."
 description: "Aprende cuándo reemplazar mangueras, válvulas, boquillas y otros equipos contra incendios para evitar fallas, fugas y riesgos operativos."
+fecha: "2026-03-19"
 categoria: "valvulas"
 tags: ["reposición de equipos contra incendios", "NFPA 25", "mangueras contra incendios", "válvulas contra incendios", "mantenimiento industrial"]
 imagen: "/img/blog/reposicion-equipos-contra-incendios-mantenimiento.avif"

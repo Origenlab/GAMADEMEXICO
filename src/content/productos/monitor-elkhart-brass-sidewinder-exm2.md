@@ -1,6 +1,6 @@
 ---
 title: "Monitor Elkhart Brass Sidewinder EXM2"
-description: "Monitor contra incendio Elkhart Brass Sidewinder EXM2 compacto y duradero. Ideal para minería, construcción e incendios forestales. Modelos estándar y servicio pesado."
+description: "Monitor contra incendio Elkhart Brass Sidewinder EXM2 compacto y duradero. Ideal para minería, construcción e incendios forestales."
 categoria: "monitores"
 subcategoria: "certificado-fm"
 imagen: "/img/monitores-contra-incendios/monitor-elkhart-brass-sidewinder-exm2-angulo-derecho.avif"

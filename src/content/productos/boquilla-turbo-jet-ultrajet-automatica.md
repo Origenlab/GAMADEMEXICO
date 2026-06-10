@@ -1,6 +1,6 @@
 ---
-title: "Boquilla UltraJet 4820 Akron 150-350 GPM Solid Bore 2.5\" NFPA 1964 | Akron Brass | México"
-description: "Boquilla UltraJet 4820 Akron Brass 150-350 GPM solid bore + niebla 90° NFPA 1964. Presión constante 2.5\" NST, garantía 10 años. Líneas blitz attack industrial México."
+title: "Boquilla UltraJet 4820 Akron 150-350 GPM Solid Bore 2.5\" NFPA 1964"
+description: "Boquilla UltraJet 4820 Akron Brass 150-350 GPM solid bore + niebla 90° NFPA 1964. Presión constante 2.5\" NST, garantía 10 años."
 categoria: "boquillas"
 subcategoria: "turbo-jet"
 imagen: "/img/productos/boquilla-turbo-jet-contra-incendios-humo-fuego-12.avif"

@@ -1,6 +1,7 @@
 ---
 title: "Mantenimiento de Válvulas Contra Incendios NFPA 25"
 description: "Mantenimiento de válvulas contra incendios NFPA 25: frecuencias de inspección, prueba de operación, y por qué una válvula sin mantenimiento puede trabarse cerrada."
+fecha: "2026-03-11"
 fechaActualizacion: "2026-03-19"
 schema:
   - type: "Article"

@@ -1,6 +1,6 @@
 ---
 title: "Monitor Cuello de Cisne Multipropósito - Agua y Espuma AFFF"
-description: "Monitor contra incendio cuello de cisne versátil compatible con agua, espuma AFFF y FFFP. Múltiples configuraciones de boquilla, adaptable a diferentes escenarios de emergencia. Rango de flujo 250-1,000 GPM."
+description: "Monitor contra incendio cuello de cisne versátil compatible con agua, espuma AFFF y FFFP."
 categoria: "monitores"
 subcategoria: "cuello-cisne"
 imagen: "/img/monitores-contra-incendios/monitor-cuello-cisne-contra-incendios-vista-completa-07.avif"

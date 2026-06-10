@@ -1,6 +1,6 @@
 ---
-title: "Boquilla NOM Series N-125 NOM-002-STPS 60-125 GPM | Fabricación Mexicana | STPS"
-description: "Boquilla NOM Series N-125 fabricación mexicana. NOM-002-STPS-2010 NMX-S-061-SCFI. 60-125 GPM. Documentación en español para inspecciones STPS. Precio accesible México."
+title: "Boquilla NOM Series N-125 NOM-002-STPS 60-125 GPM"
+description: "Boquilla NOM Series N-125 fabricación mexicana. NOM-002-STPS-2010 NMX-S-061-SCFI. 60-125 GPM. Documentación en español para inspecciones STPS."
 categoria: "boquillas"
 subcategoria: "certificada"
 imagen: "/img/productos/boquilla-certificada-nfpa-1964-bronce-profesional-04.avif"

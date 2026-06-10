@@ -1,6 +1,6 @@
 ---
 title: "Monitor Cuello de Cisne con Freno de Seguridad - Operación Controlada"
-description: "Monitor contra incendio cuello de cisne con sistema de freno manual de seguridad. Previene movimientos accidentales, bloqueo positivo en posición. Operación segura para el personal de brigada."
+description: "Monitor contra incendio cuello de cisne con sistema de freno manual de seguridad. Previene movimientos accidentales, bloqueo positivo en posición."
 categoria: "monitores"
 subcategoria: "cuello-cisne"
 imagen: "/img/monitores-contra-incendios/monitor-cuello-cisne-contra-incendios-perfil-09.avif"

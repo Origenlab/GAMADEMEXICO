@@ -1,5 +1,5 @@
 ---
-title: "Boquilla Select-O-Flow XD Certified SFL-XDC UL401 FM 60-250 GPM | Elkhart Brass | México"
+title: "Boquilla Select-O-Flow XD Certified SFL-XDC UL401 FM 60-250 GPM"
 description: "Boquilla Elkhart Brass SFL-XDC triple certificación UL 401 FM Approved cUL. 60-250 GPM, 5 posiciones, aluminio Elk-O-Lite. Instalaciones FM Global México."
 categoria: "boquillas"
 subcategoria: "certificada"

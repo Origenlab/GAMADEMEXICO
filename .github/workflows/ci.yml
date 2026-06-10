@@ -1,0 +1,35 @@
+name: CI
+
+# Validación en cada push y PR: tipos, contenido y build completo.
+# Evita regresiones como el build roto por categoría inválida (auditoría 2026).
+on:
+  push:
+    branches-ignore: [main] # main ya compila en deploy.yml
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Type check (astro check)
+        run: npm run check
+
+      - name: Validar contenido del blog
+        run: npm run content:blog:check
+
+      - name: Build
+        run: npm run build
+        env:
+          PUBLIC_EWWW_CDN_BASE: https://egsev2ykn2x.exactdn.com

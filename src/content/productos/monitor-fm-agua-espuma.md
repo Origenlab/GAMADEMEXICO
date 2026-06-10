@@ -1,6 +1,6 @@
 ---
 title: "Monitor FM Approved Agua/Espuma - Sistema Dual Certificado"
-description: "Monitor contra incendio certificado FM Approved compatible con agua y espuma AFFF/AR-AFFF. Cambio rápido entre agentes, proporcionador integrado opcional. Protección versátil para hidrocarburos y sólidos."
+description: "Monitor contra incendio certificado FM Approved compatible con agua y espuma AFFF/AR-AFFF. Cambio rápido entre agentes, proporcionador integrado opcional."
 categoria: "monitores"
 subcategoria: "certificado-fm"
 imagen: "/img/monitores-contra-incendios/monitor-certificado-fm-contra-incendios-tres-cuartos-06.avif"

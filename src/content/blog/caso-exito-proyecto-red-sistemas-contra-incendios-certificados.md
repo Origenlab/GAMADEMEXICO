@@ -11,6 +11,7 @@ schema:
       - q: "¿Por qué especificar equipos certificados desde el diseño?"
         a: "Cambiar equipo después de instalado por no cumplir certificación cuesta 3-5 veces más que especificarlo correctamente desde el inicio. La aseguradora puede rechazar el sistema completo si un componente no tiene la certificación requerida. Especificar 'o equivalente' en la licitación requiere definir qué hace equivalente a un equipo — la certificación es el criterio objetivo."
 description: "Cómo se especifican equipos contra incendios certificados UL y FM en proyectos industriales reales: criterios, errores comunes y lecciones de implementación."
+fecha: "2026-02-26"
 categoria: "gabinetes-hidrantes"
 autor:
   nombre: "Equipo Gama de México"

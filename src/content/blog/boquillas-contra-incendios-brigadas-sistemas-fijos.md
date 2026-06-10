@@ -13,6 +13,7 @@ schema:
       - q: "¿Las boquillas de sistemas fijos son diferentes a las de brigada?"
         a: "Sí. Las de sistemas fijos (monitores, rociadores abiertos, deluge) se diseñan para caudal específico a presión específica sin intervención humana. No necesitan selección de patrón ni ergonomía manual. Se especifican por el cálculo hidráulico del sistema, no por la capacidad del operador."
 description: "Cómo seleccionar boquillas contra incendios para brigadas industriales y sistemas fijos: criterios de caudal, presión, patrón y compatibilidad con monitores."
+fecha: "2026-02-16"
 categoria: "boquillas"
 autor:
   nombre: "Equipo Gama de México"

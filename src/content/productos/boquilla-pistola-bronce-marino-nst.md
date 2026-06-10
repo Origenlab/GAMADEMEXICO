@@ -1,5 +1,5 @@
 ---
-title: "Boquilla SFL-BG Marine C95800 SOLAS NFPA 1964 40-125 GPM | Elkhart Brass | Offshore México"
+title: "Boquilla SFL-BG Marine C95800 SOLAS NFPA 1964 40-125 GPM"
 description: "Boquilla Elkhart Brass SFL-BG Marine bronce marino C95800. NFPA 1964 SOLAS. 40-125 GPM, cierre herradura. Buques, plataformas offshore y terminales costeras México."
 categoria: "boquillas"
 subcategoria: "tipo-pistola"

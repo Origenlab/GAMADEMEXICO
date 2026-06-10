@@ -11,13 +11,14 @@ schema:
       - q: "¿Qué diferencia tiene una manguera forestal de una industrial?"
         a: "La forestal es single jacket (una capa textil), más ligera (se carga en terreno irregular), menor presión de trabajo (200-250 PSI vs 300 PSI industrial), y diámetro menor (generalmente 1 pulgada). Prioriza peso y portabilidad sobre presión máxima porque en incendios forestales el equipo se transporta a pie."
 description: "Especificaciones técnicas de mangueras forestales wildland según NFPA 1977: materiales livianos, diferencias con estructural y uso en brigadas forestales de México."
+fecha: "2026-03-11"
 categoria: "mangueras"
 autor:
   nombre: "Ing. Roberto Hernández"
   cargo: "Director Técnico en Sistemas Contra Incendios"
 imagen: "/img/blog/manguera-forestal-brigada-incendio-bosque-mexico.avif"
 imagenAlt: "Brigada forestal desplegando manguera en bosque de México"
-tags: ["manguera forestal", "wildland hose", "NFPA 1977", "incendios forestales", "brigadas forestales", "CONAFOR", "manguera ligera"]
+tags: ["mangueras forestales", "wildland hose", "NFPA 1977", "incendios forestales", "brigadas forestales", "CONAFOR", "manguera ligera"]
 destacado: false
 draft: false
 tiempoLectura: 11

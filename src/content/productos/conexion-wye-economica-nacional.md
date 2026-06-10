@@ -1,6 +1,6 @@
 ---
-title: "Conexión Wye WYE-25 Nacional 2.5\" NH 175 PSI NOM-002 | Fabricación Mexicana | México"
-description: "Conexión Wye WYE-25 aluminio fundido 2.5\"×2.5\" NH 175 PSI NOM-002-STPS fabricación mexicana. Válvulas bola latón, disponibilidad inmediata. Brigadas industriales México."
+title: "Conexión Wye WYE-25 Nacional 2.5\" NH 175 PSI NOM-002"
+description: "Conexión Wye WYE-25 aluminio fundido 2.5\"×2.5\" NH 175 PSI NOM-002-STPS fabricación mexicana. Válvulas bola latón, disponibilidad inmediata."
 categoria: "conexiones-herrajes"
 subcategoria: "wye"
 imagen: "/img/conexiones-herrajes/conexion-wye-nacional-frontal.avif"

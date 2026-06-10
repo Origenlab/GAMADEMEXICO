@@ -1,6 +1,7 @@
 ---
-title: "Trajes de Aproximación para Bomberos: Protección de Alto Rendimiento en la Industria Petrolera y de Gas"
-description: "Guía técnica sobre trajes de aproximación para bomberos: diferencias con trajes estructurales, certificación NFPA 1976, materiales aluminizados, aplicaciones en refinería, petroquímica y gas. Venta en México."
+title: "Trajes de Aproximación para Bomberos: Industria Petrolera y Gas"
+description: "Trajes de aproximación para bomberos: diferencias con estructurales, certificación NFPA 1976, materiales aluminizados y usos en refinería. Venta en México."
+fecha: "2026-06-08"
 categoria: "equipos-bomberos"
 autor:
   nombre: "Ing. Alejandro Torres Medina"
@@ -8,7 +9,7 @@ autor:
 imagen: "/img/blog/traje-aproximacion-bombero-refineria-mexico.avif"
 imagenAlt: "Traje de aproximación aluminizado para bombero en instalación petrolera México"
 imagenOg: "/img/blog/traje-aproximacion-bombero-refineria-mexico.avif"
-tags: ["trajes de aproximación", "traje de proximidad bombero", "equipo para bomberos industria petrolera", "trajes para bomberos refinería", "NFPA 1976", "traje aluminizado bombero", "protección térmica alta radiación", "equipo contra incendios industria gas", "equipos para bomberos México", "venta trajes de aproximación México"]
+tags: ["trajes de aproximación", "traje de proximidad bombero", "equipo para bomberos industria petrolera", "trajes para bomberos refinería", "NFPA 1976", "traje aluminizado bombero", "protección térmica alta radiación", "equipo contra incendios industria gas", "equipos para bomberos", "venta trajes de aproximación México"]
 destacado: true
 draft: false
 tiempoLectura: 19

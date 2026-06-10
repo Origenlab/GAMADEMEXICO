@@ -1,6 +1,7 @@
 ---
 title: "Válvulas Compuerta, Globo y Angular: Cuándo Usar Cada Una"
 description: "Compuerta vs globo vs angular: cuándo usar cada válvula en sistemas contra incendios, pérdida de carga real de cada tipo y errores de especificación comunes."
+fecha: "2026-03-19"
 fechaActualizacion: "2026-03-19"
 schema:
   - type: "Article"

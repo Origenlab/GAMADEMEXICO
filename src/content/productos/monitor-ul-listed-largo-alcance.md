@@ -1,6 +1,6 @@
 ---
 title: "Monitor UL Listed Largo Alcance - 75 Metros de Cobertura"
-description: "Monitor contra incendio certificado UL Listed con alcance efectivo de 75 metros. Boquilla de chorro sólido de alta presión. Ideal para protección de grandes áreas, parques de tanques y distancias extensas."
+description: "Monitor contra incendio certificado UL Listed con alcance efectivo de 75 metros. Boquilla de chorro sólido de alta presión."
 categoria: "monitores"
 subcategoria: "ul-listed"
 imagen: "/img/monitores-contra-incendios/monitor-ul-listed-contra-incendios-ambiente-operativo-09.avif"

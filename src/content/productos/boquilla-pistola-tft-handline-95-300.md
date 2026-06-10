@@ -1,5 +1,5 @@
 ---
-title: "Boquilla TFT Handline H-VPG-IF Automática 95-300 GPM NFPA 1964 | Task Force Tips | México"
+title: "Boquilla TFT Handline H-VPG-IF Automática 95-300 GPM NFPA 1964"
 description: "Boquilla automática TFT Handline H-VPG-IF presión constante 100 PSI 95-300 GPM aluminio anodizado NFPA 1964. Long Grip, AFFF compatible. Brigadas y bomberos México."
 categoria: "boquillas"
 subcategoria: "tipo-pistola"

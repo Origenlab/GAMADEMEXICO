@@ -1,5 +1,5 @@
 ---
-title: "Boquilla SFL-HP Alta Presión 200 PSI AFFF Bronce 30-95 GPM | Elkhart Brass NFPA 1964 | México"
+title: "Boquilla SFL-HP Alta Presión 200 PSI AFFF Bronce 30-95 GPM"
 description: "Boquilla Elkhart Brass SFL-HP alta presión 200 PSI bronce fundido. NFPA 1964 NFPA 11. 30-95 GPM, compatible AFFF. Refinerías, terminales y plataformas México."
 categoria: "boquillas"
 subcategoria: "tipo-pistola"

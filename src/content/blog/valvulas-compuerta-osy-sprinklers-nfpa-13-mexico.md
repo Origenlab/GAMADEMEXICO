@@ -1,6 +1,7 @@
 ---
 title: "Válvulas OS&Y para Sprinklers: NFPA 13 y Selección México"
 description: "Válvulas OS&Y para rociadores: por qué NFPA 13 las exige, cómo verificar posición a distancia, diferencia vs mariposa y certificación UL/FM en México."
+fecha: "2026-03-11"
 fechaActualizacion: "2026-03-19"
 schema:
   - type: "Article"
@@ -21,7 +22,7 @@ autor:
   cargo: "Director Técnico"
 imagen: "/img/blog/valvula-compuerta-osy-sistema-rociadores-industrial.avif"
 imagenAlt: "Válvula de compuerta OS&Y para sistema de rociadores industrial"
-tags: ["válvulas OS&Y", "NFPA 13", "sprinklers", "válvulas contra incendios", "UL Listed", "FM Approved", "México"]
+tags: ["válvulas OS&Y", "NFPA 13", "rociadores automáticos", "válvulas contra incendios", "UL Listed", "FM Approved", "México"]
 destacado: false
 draft: false
 productosRelacionados: ["valvula-compuerta-osy", "valvula-compuerta-osy-4-ranurada", "valvula-compuerta-osy-6-ranurada", "valvula-compuerta-osy-6-bridada", "valvula-mariposa"]

@@ -1,6 +1,6 @@
 ---
 title: "Monitor Scorpion® Elkhart Brass | Monitor Manual Bajo Perfil"
-description: "Monitor Scorpion® de Elkhart Brass. Perfil bajo, aluminio ligero, hasta 1,250 GPM. Ideal donde el espacio es limitado. UL Listed, FM Approved. Distribuidor en México."
+description: "Monitor Scorpion® de Elkhart Brass. Perfil bajo, aluminio ligero, hasta 1,250 GPM. Ideal donde el espacio es limitado. UL Listed, FM Approved."
 categoria: "monitores"
 subcategoria: "monitores-manuales"
 marca: "Elkhart Brass"

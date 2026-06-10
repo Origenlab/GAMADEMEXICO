@@ -1,6 +1,6 @@
 ---
-title: "Chiflón 205-B Tres Pasos 1.5\" NH 75-125 GPM UL 401 NFPA 1964 | Elkhart Brass | México"
-description: "Chiflón 205-B tres pasos 1.5\" NH bronce fundido 75-125 GPM 100 PSI UL 401 NFPA 1964 Elkhart Brass. Cerrado/niebla 60°/chorro directo, anillos uretano. Brigadas México."
+title: "Chiflón 205-B Tres Pasos 1.5\" NH 75-125 GPM UL 401 NFPA 1964"
+description: "Chiflón 205-B tres pasos 1.5\" NH bronce fundido 75-125 GPM 100 PSI UL 401 NFPA 1964 Elkhart Brass. Cerrado/niebla 60°/chorro directo, anillos uretano."
 categoria: "conexiones-herrajes"
 subcategoria: "chiflones"
 imagen: "/img/conexiones-herrajes/chiflon-205b-1-5-frontal.avif"

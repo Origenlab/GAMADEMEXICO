@@ -1,6 +1,7 @@
 ---
 title: "Válvulas de Control Contra Incendios: Supervisión"
 description: "Supervisión eléctrica de válvulas contra incendios: tamper switches, NFPA 72, por qué una válvula cerrada invalida todo el sistema de rociadores."
+fecha: "2026-03-11"
 fechaActualizacion: "2026-03-19"
 schema:
   - type: "Article"
@@ -21,7 +22,7 @@ autor:
   cargo: "Director Técnico en Sistemas Contra Incendios"
 imagen: "/img/blog/valvulas-contra-incendios-nfpa-sala-control-industrial.avif"
 imagenAlt: "Sistema de válvulas de control contra incendios con supervisión"
-tags: ["válvulas control", "OS&Y", "válvula mariposa", "NFPA 72", "NFPA 25", "supervisión eléctrica", "sistemas incendios"]
+tags: ["válvulas de control", "OS&Y", "válvula mariposa", "NFPA 72", "NFPA 25", "supervisión eléctrica", "sistemas contra incendios"]
 destacado: false
 draft: false
 tiempoLectura: 13

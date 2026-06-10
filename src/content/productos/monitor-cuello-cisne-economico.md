@@ -1,6 +1,6 @@
 ---
 title: "Monitor Cuello de Cisne Industrial - Precio Competitivo México"
-description: "Monitor contra incendio cuello de cisne fabricación nacional con excelente relación precio-calidad. Bajo costo de mantenimiento, refacciones disponibles en México. Ideal para presupuestos ajustados."
+description: "Monitor contra incendio cuello de cisne fabricación nacional con excelente relación precio-calidad. Bajo costo de mantenimiento, refacciones disponibles en México."
 categoria: "monitores"
 subcategoria: "cuello-cisne"
 imagen: "/img/monitores-contra-incendios/monitor-cuello-cisne-contra-incendios-fondo-blanco-20.avif"

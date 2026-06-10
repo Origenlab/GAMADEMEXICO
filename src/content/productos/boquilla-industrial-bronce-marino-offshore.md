@@ -1,5 +1,5 @@
 ---
-title: "Boquilla Marine Industrial MIB-250 C95800 SOLAS USCG 95-250 GPM | Elkhart Brass | Offshore México"
+title: "Boquilla Marine Industrial MIB-250 C95800 SOLAS USCG 95-250 GPM"
 description: "Boquilla Elkhart Brass MIB-250 bronce marino C95800. SOLAS II-2 USCG 46 CFR. 95-250 GPM, 4 posiciones. Plataformas offshore, buques y terminales portuarias México."
 categoria: "boquillas"
 subcategoria: "industrial"

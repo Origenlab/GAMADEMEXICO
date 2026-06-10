@@ -13,6 +13,7 @@ schema:
       - q: "¿Qué son las pruebas FAT y SAT en boquillas contra incendios?"
         a: "FAT (Factory Acceptance Test): prueba en fábrica antes del envío — verificar que la boquilla entrega caudal nominal a presión especificada, que el patrón corresponde y que los mecanismos operan. SAT (Site Acceptance Test): prueba en sitio después de instalación — verificar lo mismo pero con las condiciones hidráulicas reales del sistema, no con banco de pruebas."
 description: "Guía profesional para boquillas contra incendios en proyectos industriales: selección hidráulica, cumplimiento técnico, pruebas de aceptación y operación segura."
+fecha: "2026-02-16"
 categoria: "boquillas"
 autor:
   nombre: "Ing. Alejandro Méndez"
@@ -20,7 +21,7 @@ autor:
 imagen: "/img/blog/auditoria-equipos-contra-incendios-sala-juntas-corporativa.avif"
 imagenAlt: "Ingeniería de boquillas contra incendios proyectos industriales"
 imagenOg: "/img/productos/boquilla-tipo-pistola-contra-incendios-nfpa-certificada-31.avif"
-tags: ["boquillas contra incendios", "ingeniería contra incendios", "boquillas industriales", "NFPA 1964", "sistemas contra incendios", "especificación técnica", "brigadas industriales", "NOM-002-STPS-2010"]
+tags: ["boquillas contra incendios", "ingeniería contra incendios", "boquillas industriales", "NFPA 1964", "sistemas contra incendios", "especificación técnica", "brigadas industriales", "NOM-002-STPS"]
 destacado: true
 draft: false
 tiempoLectura: 20

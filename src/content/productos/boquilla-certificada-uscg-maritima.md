@@ -1,5 +1,5 @@
 ---
-title: "Boquilla Marine USCG-150 USCG SOLAS MED C95800 60-150 GPM | Elkhart Brass | México"
+title: "Boquilla Marine USCG-150 USCG SOLAS MED C95800 60-150 GPM"
 description: "Boquilla Elkhart Brass Marine USCG-150 bronce marino C95800. Triple cert USCG SOLAS MED. 60-150 GPM. Buques, plataformas offshore y marina mercante México."
 categoria: "boquillas"
 subcategoria: "certificada"

@@ -1,6 +1,7 @@
 ---
 title: "Válvulas Check en Sprinklers: NFPA 13"
 description: "Válvulas check para sprinklers: swing vs disco vs bola, por qué fallan silenciosamente, pérdida de carga real y mantenimiento que evita retroflujo en incendio."
+fecha: "2026-03-11"
 fechaActualizacion: "2026-03-19"
 schema:
   - type: "Article"
@@ -21,7 +22,7 @@ autor:
   cargo: "Director Técnico en Sistemas Contra Incendios"
 imagen: "/img/blog/blog-normativa-nfpa-valvulas.avif"
 imagenAlt: "Normativa NFPA para válvulas contra incendios en sistemas de protección activa"
-tags: ["válvulas check", "NFPA 13", "sistemas sprinkler", "válvula retención", "UL FM", "mantenimiento válvulas", "protección incendios"]
+tags: ["válvulas check", "NFPA 13", "rociadores automáticos", "válvula retención", "UL FM", "mantenimiento válvulas", "protección contra incendios"]
 destacado: false
 draft: false
 tiempoLectura: 12

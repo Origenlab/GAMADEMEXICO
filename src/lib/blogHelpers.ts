@@ -17,6 +17,8 @@ export const CATEGORY_LABELS: Record<string, string> = {
   'valvulas': 'Válvulas',
   'conexiones-herrajes': 'Conexiones y Herrajes',
   'gabinetes-hidrantes': 'Gabinetes e Hidrantes',
+  'equipos-contra-incendios': 'Equipos Contra Incendios',
+  'equipos-bomberos': 'Equipos para Bomberos',
 };
 
 // -----------------------------------------------------------------------------
@@ -29,6 +31,8 @@ export const CATEGORY_SLUGS: Record<string, string> = {
   'valvulas': 'valvulas-contra-incendios',
   'conexiones-herrajes': 'conexiones-herrajes-contra-incendios',
   'gabinetes-hidrantes': 'gabinetes-hidrantes-contra-incendios',
+  'equipos-contra-incendios': 'equipos-contra-incendios',
+  'equipos-bomberos': 'equipos-bomberos',
 };
 
 // Mapeo inverso: de slug URL a categoría interna
@@ -39,6 +43,8 @@ export const SLUG_TO_CATEGORY: Record<string, string> = {
   'valvulas-contra-incendios': 'valvulas',
   'conexiones-herrajes-contra-incendios': 'conexiones-herrajes',
   'gabinetes-hidrantes-contra-incendios': 'gabinetes-hidrantes',
+  'equipos-contra-incendios': 'equipos-contra-incendios',
+  'equipos-bomberos': 'equipos-bomberos',
 };
 
 // -----------------------------------------------------------------------------
@@ -130,7 +136,9 @@ export function getRelatedPosts(
       if (b.score !== a.score) {
         return b.score - a.score;
       }
-      return new Date(b.post.data.fecha).getTime() - new Date(a.post.data.fecha).getTime();
+      // `fecha` es opcional en el schema: usar epoch como fallback estable
+      // para que los posts sin fecha queden al final del orden descendente.
+      return new Date(b.post.data.fecha ?? '1970-01-01').getTime() - new Date(a.post.data.fecha ?? '1970-01-01').getTime();
     });
 
   return scoredPosts.slice(0, limit).map((item) => item.post);
@@ -153,7 +161,8 @@ export function getPostsByCategory(posts: BlogPost[]): Map<string, BlogPost[]> {
 
   // Ordenar posts dentro de cada categoría por fecha
   categoryMap.forEach((posts, category) => {
-    posts.sort((a, b) => new Date(b.data.fecha).getTime() - new Date(a.data.fecha).getTime());
+    // `fecha` opcional en el schema: fallback a epoch para un orden determinista.
+    posts.sort((a, b) => new Date(b.data.fecha ?? '1970-01-01').getTime() - new Date(a.data.fecha ?? '1970-01-01').getTime());
     categoryMap.set(category, posts);
   });
 

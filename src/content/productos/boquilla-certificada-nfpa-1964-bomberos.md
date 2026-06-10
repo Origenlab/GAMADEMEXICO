@@ -1,5 +1,5 @@
 ---
-title: "Boquilla Certified Series 1964 TFT 30-200 GPM ISO 9001 | Task Force Tips | México"
+title: "Boquilla Certified Series 1964 TFT 30-200 GPM ISO 9001"
 description: "Boquilla Task Force Tips Certified Series 1964. 30-200 GPM, 5 posiciones táctiles, aluminio forjado ISO 9001. NFPA 1964 para bomberos e industria México."
 categoria: "boquillas"
 subcategoria: "certificada"

@@ -1,5 +1,5 @@
 ---
-title: "Boquilla Chief XD Flujo Fijo UL 401 FM Approved 150-250 GPM | Elkhart Brass | México"
+title: "Boquilla Chief XD Flujo Fijo UL 401 FM Approved 150-250 GPM"
 description: "Boquilla Elkhart Brass Chief XD flujo fijo UL 401 FM Approved. 150-250 GPM preestablecido, aluminio Elk-O-Lite XD, marcado láser. Instalaciones certificadas México."
 categoria: "boquillas"
 subcategoria: "certificada"

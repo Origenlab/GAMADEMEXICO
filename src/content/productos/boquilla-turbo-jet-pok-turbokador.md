@@ -1,5 +1,5 @@
 ---
-title: "Boquilla Turbokador 500 POK 30-125 GPM EN 15182-2 NFPA 1964 | POK Francia | México"
+title: "Boquilla Turbokador 500 POK 30-125 GPM EN 15182-2 NFPA 1964"
 description: "Boquilla Turbokador 500 POK 30-125 GPM aluminio anodizado EN 15182-2 NFPA 1964. Válvula integrada 5 posiciones, doble presión 43-87 PSI, Storz 52 disponible. México."
 categoria: "boquillas"
 subcategoria: "turbo-jet"

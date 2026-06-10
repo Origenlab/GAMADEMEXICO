@@ -1,6 +1,7 @@
 ---
 title: "Inspección de Protección Civil: Qué Revisan en Equipos"
 description: "Qué revisa protección civil en una inspección de equipos contra incendios: documentos, equipo, errores comunes y cómo preparar tu empresa en México."
+fecha: "2026-02-17"
 categoria: "gabinetes-hidrantes"
 autor:
   nombre: "Equipo Gama de México"

@@ -1,5 +1,5 @@
 ---
-title: "Boquilla Industrial SS-316L ATEX IIC 60-150 GPM NPT | Elkhart Brass | Plantas Químicas México"
+title: "Boquilla Industrial SS-316L ATEX IIC 60-150 GPM NPT | Elkhart Brass"
 description: "Boquilla Elkhart Brass SS-316 acero inoxidable 316L con molibdeno. ATEX II 2G IIC. 60-150 GPM, 150 PSI. Plantas químicas, farmacéuticas y petroquímicas México."
 categoria: "boquillas"
 subcategoria: "industrial"

@@ -13,6 +13,7 @@ schema:
       - q: "¿En qué industrias se usan monitores contra incendios?"
         a: "Petroquímica (tanques de almacenamiento, racks de tubería), terminales de combustible, hangares de aviación, puertos y muelles, plantas de generación eléctrica, bodegas logísticas de gran escala, minería a cielo abierto, plantas de papel y celulosa. En general, cualquier instalación donde el incendio puede superar la capacidad de mangueras portátiles."
 description: "Guía técnica sobre tipos de monitores contra incendio y sus aplicaciones en petroquímica, minería, energía y manufactura. Criterios NFPA y NOM para México."
+fecha: "2026-03-15"
 categoria: "monitores"
 autor:
   nombre: "Ing. Roberto Hernández"
@@ -20,7 +21,7 @@ autor:
 imagen: "/img/blog/monitor-contra-incendios-refineria-industrial-mexico.avif"
 imagenAlt: "Monitor contra incendios instalado en refinería industrial en México"
 imagenOg: "/img/monitores-contra-incendios/monitor-certificado-fm-contra-incendios-angulo-frontal-14.avif"
-tags: ["monitores contra incendio industrial", "monitor contra incendios tipos", "aplicaciones industriales monitores", "NFPA 15", "NOM-002-STPS-2010", "protección contra incendios petroquímica", "monitores contra incendio México"]
+tags: ["monitor contra incendios industrial", "monitor contra incendios tipos", "aplicaciones industriales monitores", "NFPA 15", "NOM-002-STPS", "protección contra incendios petroquímica", "monitores contra incendios"]
 destacado: true
 draft: false
 tiempoLectura: 14

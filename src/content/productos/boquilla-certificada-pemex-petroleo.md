@@ -1,5 +1,5 @@
 ---
-title: "Boquilla PEMEX Series PX-200 NRF-005 AFFF 95-200 GPM | Bronce | Sector Petrolero México"
+title: "Boquilla PEMEX Series PX-200 NRF-005 AFFF 95-200 GPM | Bronce"
 description: "Boquilla PEMEX Series PX-200 bronce fundido. NRF-005/015-PEMEX NFPA 1964 API 2030. 95-200 GPM, compatible AFFF. Refinerías, terminales y plataformas México."
 categoria: "boquillas"
 subcategoria: "certificada"

@@ -1,6 +1,6 @@
 ---
 title: "Monitor Tipo Corazón Una Cremallera ARMECO"
-description: "Monitor contra incendio estacionario tipo corazón de una cremallera. Giro horizontal 360° con freno manual, giro vertical 120° con volante. Bronce fundido, normas PEMEX y NFPA."
+description: "Monitor contra incendio estacionario tipo corazón de una cremallera. Giro horizontal 360° con freno manual, giro vertical 120° con volante."
 categoria: "monitores"
 subcategoria: "tipo-corazon"
 imagen: "/img/monitores-contra-incendios/monitor-tipo-corazon-contra-incendios-industrial-perfil-09.avif"

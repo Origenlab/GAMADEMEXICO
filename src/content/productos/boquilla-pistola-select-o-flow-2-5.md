@@ -1,6 +1,6 @@
 ---
-title: "Boquilla Select-O-Flow DSF-G 2.5\" 125-250 GPM NFPA 1964 | Elkhart Brass | México"
-description: "Boquilla Select-O-Flow DSF-G 2.5\" NST bronce satinado XD Elkhart Brass. 3 posiciones 125-175-250 GPM 100 PSI herradura de cierre NFPA 1964. Incendios industriales México."
+title: "Boquilla Select-O-Flow DSF-G 2.5\" 125-250 GPM NFPA 1964"
+description: "Boquilla Select-O-Flow DSF-G 2.5\" NST bronce satinado XD Elkhart Brass. 3 posiciones 125-175-250 GPM 100 PSI herradura de cierre NFPA 1964."
 categoria: "boquillas"
 subcategoria: "tipo-pistola"
 imagen: "/img/productos/boquilla-tipo-pistola-contra-incendios-ul-listed-32.avif"

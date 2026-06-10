@@ -1,5 +1,5 @@
 ---
-title: "Adaptador NH a Storz 2.5\" Bronce D-327-S UL FM | Elkhart Brass | México"
+title: "Adaptador NH a Storz 2.5\" Bronce D-327-S UL FM | Elkhart Brass"
 description: "Adaptador NH/NST a Storz 2.5\" bronce forjado Elkhart Brass D-327-S. 300 PSI, prueba 1000 PSI. UL Listed FM Approved. Modernización red NH a Storz México."
 categoria: "conexiones-herrajes"
 subcategoria: "adaptadores"

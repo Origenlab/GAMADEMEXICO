@@ -13,13 +13,14 @@ schema:
       - q: "¿Qué pasa si un monitor no se mueve cuando intento operarlo?"
         a: "Vástago de giro trabado por corrosión o depósitos calcáreos. No forzar — se puede dañar el mecanismo. Aplicar penetrante, esperar, intentar movimiento gradual. Si no cede, requiere desmontaje y servicio profesional. La causa es falta de operación mensual y lubricación — la corrosión trabaja sin oposición en mecanismos inmóviles."
 description: "Aprende a mantener tus monitores contra incendios en óptimas condiciones. Programa de inspección, lubricación y pruebas para garantizar funcionamiento confiable."
+fecha: "2026-02-14"
 categoria: "monitores"
 autor:
   nombre: "Ing. Roberto Martínez"
   cargo: "Gerente de Servicio Técnico"
 imagen: "/img/monitores-contra-incendios/monitor-corazon-una-cremallera-vistas-multiples.avif"
 imagenAlt: "Monitor contra incendios tipo corazón con vistas de mantenimiento"
-tags: ["monitores", "mantenimiento", "inspección", "Elkhart Brass", "NFPA 25"]
+tags: ["monitores contra incendios", "mantenimiento", "inspección", "Elkhart Brass", "NFPA 25"]
 destacado: false
 draft: false
 productosRelacionados: ["monitor-tipo-corazon-4000", "monitor-cuello-cisne-3000"]

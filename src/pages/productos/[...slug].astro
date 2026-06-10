@@ -161,6 +161,7 @@ const heroMetrics = [
   structuredData={structuredData}
   title={`${producto.data.title} | Gama de México`}
   description={producto.data.description}
+  ogImage={producto.data.imagen}
   activePage="equipos"
   heroTitle={producto.data.modelo || producto.data.title}
   heroBadge={`${producto.data.marca} | ${categoriaNombre}`}
@@ -200,6 +201,7 @@ const heroMetrics = [
                     width="800"
                     height="600"
                     loading="eager"
+                    fetchpriority="high"
                     decoding="async"
                   />
                 </div>

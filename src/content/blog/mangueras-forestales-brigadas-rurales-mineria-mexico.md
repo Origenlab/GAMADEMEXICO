@@ -9,7 +9,7 @@ autor:
   cargo: "Especialista en Protección Contra Incendios Forestales"
 imagen: "/img/productos/manguera-forestal-amarilla-alta-vis.avif"
 imagenAlt: "Manguera forestal amarilla alta visibilidad para brigadas contra incendios en México"
-tags: ["mangueras forestales", "brigadas contra incendios", "incendios de vegetación", "manguera forestal México", "NFPA 1961"]
+tags: ["mangueras forestales", "brigadas contra incendios", "incendios de vegetación", "NFPA 1961"]
 destacado: false
 tiempoLectura: 11
 draft: false

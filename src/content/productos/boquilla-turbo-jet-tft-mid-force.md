@@ -1,6 +1,6 @@
 ---
-title: "Boquilla Mid-Force TFT 70-200 GPM Dual Presión 50/100 PSI NFPA 1964 | Task Force Tips | México"
-description: "Boquilla automática Mid-Force TFT 70-200 GPM dual presión 50/100 PSI aluminio reforzado NFPA 1964. Auto-ajuste continuo, modo interior/exterior seleccionable. Bomberos México."
+title: "Boquilla Mid-Force TFT 70-200 GPM Dual Presión 50/100 PSI NFPA 1964"
+description: "Boquilla automática Mid-Force TFT 70-200 GPM dual presión 50/100 PSI aluminio reforzado NFPA 1964. Auto-ajuste continuo, modo interior/exterior seleccionable."
 categoria: "boquillas"
 subcategoria: "turbo-jet"
 imagen: "/img/productos/boquilla-turbo-jet-contra-incendios-angulo-superior-14.avif"

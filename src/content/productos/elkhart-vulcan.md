@@ -1,6 +1,6 @@
 ---
 title: "Monitor Vulcan™ Elkhart Brass | Distribuidor Autorizado México"
-description: "Monitor manual Vulcan™ de Elkhart Brass. Paso hidráulico elíptico 3-3/8 pulgadas, hasta 1,500 GPM. UL Listed, FM Approved. Stock en CDMX y Querétaro. Asesoría técnica gratuita."
+description: "Monitor manual Vulcan™ de Elkhart Brass. Paso hidráulico elíptico 3-3/8 pulgadas, hasta 1,500 GPM. UL Listed, FM Approved. Stock en CDMX y Querétaro."
 categoria: "monitores"
 subcategoria: "monitores-manuales"
 marca: "Elkhart Brass"

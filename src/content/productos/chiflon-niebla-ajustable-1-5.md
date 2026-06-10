@@ -1,6 +1,6 @@
 ---
-title: "Chiflón 205-BA Niebla Ajustable 15-90° 1.5\" NH UL 401 NFPA 1964 | Elkhart Brass | México"
-description: "Chiflón 205-BA niebla ajustable 15-90° 1.5\" NH bronce fundido 95-125 GPM UL 401 NFPA 1964 Elkhart Brass. Ajuste continuo de patrón sin detener flujo. Brigadas industriales México."
+title: "Chiflón 205-BA Niebla Ajustable 15-90° 1.5\" NH UL 401 NFPA 1964"
+description: "Chiflón 205-BA niebla ajustable 15-90° 1.5\" NH bronce fundido 95-125 GPM UL 401 NFPA 1964 Elkhart Brass. Ajuste continuo de patrón sin detener flujo."
 categoria: "conexiones-herrajes"
 subcategoria: "chiflones"
 imagen: "/img/conexiones-herrajes/chiflon-niebla-ajustable-frontal.avif"

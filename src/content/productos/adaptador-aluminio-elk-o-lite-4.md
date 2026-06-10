@@ -1,5 +1,5 @@
 ---
-title: "Adaptador NH a Storz 4\" Aluminio Elk-O-Lite D-327-L | Elkhart Brass UL FM | México"
+title: "Adaptador NH a Storz 4\" Aluminio Elk-O-Lite D-327-L"
 description: "Adaptador NH a Storz 4\" aluminio Elk-O-Lite forjado Elkhart Brass D-327-L. 60% más ligero. 250 PSI. UL Listed FM Approved. Plantas industriales México."
 categoria: "conexiones-herrajes"
 subcategoria: "adaptadores"

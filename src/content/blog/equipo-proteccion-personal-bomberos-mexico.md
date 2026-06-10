@@ -1,6 +1,7 @@
 ---
-title: "Equipo de Protección Personal para Bomberos en México: Guía Técnica Completa 2025"
-description: "Guía técnica completa sobre equipo de protección personal para bomberos: traje estructural, casco, botas, guantes, SCBA, cinturón de seguridad y normas NFPA vigentes para corporaciones en México."
+title: "Equipo de Protección Personal para Bomberos en México: Guía 2025"
+description: "Equipo de protección personal para bomberos: traje estructural, casco, botas, guantes, SCBA y normas NFPA vigentes para corporaciones en México."
+fecha: "2026-06-08"
 categoria: "equipos-bomberos"
 autor:
   nombre: "Ing. Patricia Vargas Solís"
@@ -8,7 +9,7 @@ autor:
 imagen: "/img/blog/equipo-proteccion-personal-bomberos-completo.avif"
 imagenAlt: "Equipo de protección personal completo para bombero certificado NFPA México"
 imagenOg: "/img/blog/equipo-proteccion-personal-bomberos-completo.avif"
-tags: ["equipo de protección personal para bomberos", "equipo para bomberos", "EPP bomberos", "equipos para bomberos México", "casco para bombero", "botas para bombero", "guantes para bombero", "SCBA bomberos", "equipo certificado para bomberos", "protección personal bomberos", "proveedores equipos bomberos México"]
+tags: ["equipo de protección para bomberos", "equipos para bomberos", "casco para bombero", "botas para bombero", "guantes para bombero", "SCBA bomberos", "equipo certificado para bomberos", "proveedores de equipos para bomberos"]
 destacado: true
 draft: false
 tiempoLectura: 20

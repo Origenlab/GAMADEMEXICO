@@ -13,6 +13,7 @@ schema:
       - q: "¿Qué equipos contra incendios exige la aseguradora?"
         a: "Depende del riesgo asegurado y la aseguradora. FM Global exige equipos FM Approved con mantenimiento documentado NFPA 25. Aseguradoras locales generalmente piden equipos certificados (UL o equivalente), bitácoras de mantenimiento y brigada capacitada. El corredor de seguros puede especificar los requisitos exactos de la póliza."
 description: "Qué equipos contra incendios exigen las aseguradoras industriales en México. Certificaciones, mantenimiento y documentación para pólizas."
+fecha: "2026-03-11"
 categoria: "valvulas"
 autor:
   nombre: "Ing. Roberto Méndez"

@@ -13,6 +13,7 @@ schema:
       - q: "¿Es obligatorio el plan de emergencia contra incendios?"
         a: "Sí. NOM-002-STPS lo exige para todos los centros de trabajo en México sin excepción. No hay mínimo de empleados ni exención por giro. El plan debe ser específico para tu instalación (no genérico), estar actualizado con la distribución actual de la planta y ser verificable mediante simulacros documentados."
 description: "Cómo elaborar un plan de emergencia contra incendios conforme a NOM-002-STPS. Brigadas, simulacros, equipos y documentación requerida en México."
+fecha: "2026-03-11"
 categoria: "mangueras"
 autor:
   nombre: "Lic. Ana Torres"

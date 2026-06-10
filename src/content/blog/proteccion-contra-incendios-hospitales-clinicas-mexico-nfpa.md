@@ -13,6 +13,7 @@ schema:
       - q: "¿Qué sistema de extinción necesita un hospital?"
         a: "Rociadores automáticos en todo el edificio (NFPA 13), gabinetes de manguera Clase III en cada piso (NFPA 14), sistema de detección y alarma con zonificación por piso y por ala (NFPA 72), extinción automática en cocina (UL 300), y supresión especial en áreas con gases medicinales (oxígeno es comburente que intensifica cualquier fuego)."
 description: "Sistemas de protección contra incendios para hospitales, clínicas y centros de salud en México. NFPA 99, rociadores, gabinetes y equipos requeridos."
+fecha: "2026-03-11"
 categoria: "gabinetes-hidrantes"
 autor:
   nombre: "Ing. Carlos Mendoza"

@@ -1,5 +1,5 @@
 ---
-title: "Monitor Sidewinder™ Manual Elkhart Brass | Distribuidor Autorizado México"
+title: "Monitor Sidewinder™ Manual Elkhart Brass"
 description: "Monitor manual Sidewinder™ de Elkhart Brass. Diseño compacto con giro de 360° y flujo hasta 1,250 GPM. UL Listed, FM Approved. Stock en CDMX y Querétaro."
 categoria: "monitores"
 subcategoria: "monitores-manuales"

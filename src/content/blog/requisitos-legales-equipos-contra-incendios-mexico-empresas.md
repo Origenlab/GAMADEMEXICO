@@ -13,13 +13,14 @@ schema:
       - q: "¿Las multas por no tener equipo contra incendios son por empresa o por infracción?"
         a: "Por infracción individual. Cada extintor vencido, cada gabinete deficiente, cada falta de señalización es una infracción separada con multa independiente. Una empresa con 15 deficiencias no recibe una multa grande sino 15 multas que sumadas pueden ser mucho más costosas de lo que hubiera costado prevenir."
 description: "Conoce qué exige la ley en México para equipos contra incendios: diagnóstico, plan, bitácoras, capacitación y mantenimiento para mantener tu empresa en regla."
+fecha: "2026-02-17"
 categoria: "gabinetes-hidrantes"
 autor:
   nombre: "Ing. Roberto Hernández"
   cargo: "Consultor Senior en Protección Contra Incendios y Cumplimiento Normativo"
 imagen: "/img/blog/inspeccion-proteccion-civil-empresa-industrial-mexico.avif"
 imagenAlt: "Requisitos legales equipos contra incendios empresas México"
-tags: ["requisitos legales contra incendios", "equipos contra incendios en México", "cumplimiento protección civil", "NOM-002-STPS-2010", "RFSSST", "mantenimiento de equipos contra incendios", "bitácoras de seguridad", "capacitación de brigadas", "extintores para empresas", "gabinetes e hidrantes", "auditoría de seguridad industrial", "cumplimiento normativo empresarial"]
+tags: ["requisitos legales contra incendios", "equipos contra incendios", "cumplimiento protección civil", "NOM-002-STPS", "RFSSST", "mantenimiento de equipos contra incendios", "bitácoras de seguridad", "capacitación de brigadas", "extintores para empresas", "gabinetes e hidrantes", "auditoría de seguridad industrial", "cumplimiento normativo empresarial"]
 destacado: true
 draft: false
 tiempoLectura: 24

@@ -13,13 +13,14 @@ schema:
       - q: "¿Todas las válvulas contra incendios necesitan certificación?"
         a: "Las que están en el camino del flujo de agua del sistema de protección, sí. NFPA 13 exige que las válvulas de control principales sean UL Listed o FM Approved. Las válvulas de drenaje y prueba no requieren la misma certificación pero deben ser compatibles con las presiones del sistema."
 description: "Todo lo que necesitas saber sobre normativas NFPA para válvulas contra incendios: tipos, instalación, pruebas y mantenimiento según estándares."
+fecha: "2026-02-14"
 categoria: "valvulas"
 autor:
   nombre: "Ing. Carlos Ramírez"
   cargo: "Especialista en Normatividad"
 imagen: "/img/blog/valvulas-contra-incendios-nfpa-sala-control-industrial.avif"
 imagenAlt: "Válvulas contra incendios en sala de control industrial NFPA"
-tags: ["NFPA 13", "NFPA 25", "válvulas", "normatividad", "cumplimiento"]
+tags: ["NFPA 13", "NFPA 25", "válvulas contra incendios", "normatividad", "cumplimiento normativo"]
 destacado: true
 draft: false
 productosRelacionados: ["valvula-compuerta-osy-4", "valvula-mariposa-6"]

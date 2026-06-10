@@ -1,5 +1,5 @@
 ---
-title: "Adaptador Doble Macho NH 2.5\" Bronce M-327-A UL FM | Elkhart Brass | México"
+title: "Adaptador Doble Macho NH 2.5\" Bronce M-327-A UL FM | Elkhart Brass"
 description: "Adaptador doble macho NH/NST 2.5\" bronce fundido Elkhart Brass M-327-A. 300 PSI, prueba 1000 PSI. UL Listed FM. Para camiones autobomba e hidrantes México."
 categoria: "conexiones-herrajes"
 subcategoria: "adaptadores"

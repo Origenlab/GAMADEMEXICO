@@ -28,7 +28,9 @@ const {
 } = Astro.props;
 
 const whatsappNumber = "5215565298240";
-const formId = `cotizar-form-${Math.random().toString(36).substr(2, 9)}`;
+// Id determinista derivado de la página: builds reproducibles (antes Math.random
+// generaba HTML distinto en cada build, rompiendo caché y diffs — auditoría 2026)
+const formId = `cotizar-form-${(pagina || 'general').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}`;
 ---
 
 <section class="cotizacion-form" id="cotizar" aria-labelledby="cotizacion-title">
@@ -50,35 +52,41 @@ const formId = `cotizar-form-${Math.random().toString(36).substr(2, 9)}`;
       data-whatsapp={whatsappNumber}
       aria-label="Formulario de cotización por WhatsApp"
     >
+      <label class="sr-only" for={`${formId}-nombre`}>Nombre completo</label>
       <input
         type="text"
         class="cotizacion-form__input"
+        id={`${formId}-nombre`}
         name="nombre"
         placeholder="Nombre completo"
         required
-        aria-label="Nombre completo"
         autocomplete="name"
       />
 
+      <label class="sr-only" for={`${formId}-contacto`}>Teléfono o correo electrónico</label>
       <input
         type="text"
         class="cotizacion-form__input"
+        id={`${formId}-contacto`}
         name="contacto"
         placeholder="Teléfono o Email"
         required
-        aria-label="Teléfono o correo electrónico"
         autocomplete="tel"
       />
 
       {/* Si hay producto preseleccionado, mostrar campo de cantidad. Si no, mostrar dropdown */}
       {producto ? (
-        <input
-          type="text"
-          class="cotizacion-form__input"
-          name="cantidad"
-          placeholder="Cantidad requerida (opcional)"
-          aria-label="Cantidad requerida"
-        />
+        <>
+          <label class="sr-only" for={`${formId}-cantidad`}>Cantidad requerida</label>
+          <input
+            type="text"
+            class="cotizacion-form__input"
+            id={`${formId}-cantidad`}
+            name="cantidad"
+            placeholder="Cantidad requerida (opcional)"
+            inputmode="numeric"
+          />
+        </>
       ) : (
         <select
           class="cotizacion-form__select"
@@ -240,12 +248,13 @@ const formId = `cotizar-form-${Math.random().toString(36).substr(2, 9)}`;
     document.querySelectorAll('.cotizacion-form__form').forEach((form) => {
       form.addEventListener('submit', (e) => {
         e.preventDefault();
-        const f = e.target as HTMLFormElement;
+        // Script is:inline = JS plano: sin aserciones `as` de TypeScript
+        const f = e.target;
 
-        const nombre = (f.querySelector('[name="nombre"]') as HTMLInputElement)?.value.trim() || '';
-        const contacto = (f.querySelector('[name="contacto"]') as HTMLInputElement)?.value.trim() || '';
-        const cantidad = (f.querySelector('[name="cantidad"]') as HTMLInputElement)?.value.trim() || '';
-        const tipoEquipo = (f.querySelector('[name="tipo_equipo"]') as HTMLSelectElement)?.value || '';
+        const nombre = (f.querySelector('[name="nombre"]')?.value || '').trim();
+        const contacto = (f.querySelector('[name="contacto"]')?.value || '').trim();
+        const cantidad = (f.querySelector('[name="cantidad"]')?.value || '').trim();
+        const tipoEquipo = f.querySelector('[name="tipo_equipo"]')?.value || '';
 
         const productoData = f.dataset.producto;
         const tipoEquipoData = f.dataset.tipoEquipo;

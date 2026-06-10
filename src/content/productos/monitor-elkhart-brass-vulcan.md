@@ -1,6 +1,6 @@
 ---
 title: "Monitor Elkhart Brass Vulcan - Nula Pérdida de Fricción"
-description: "Monitor contra incendio Elkhart Brass Vulcan con nula pérdida de fricción. Canal elíptico con guía interna de 3 3/8\". Solo 16\" de espacio requerido. Ideal para plataformas aéreas y espacios reducidos."
+description: "Monitor contra incendio Elkhart Brass Vulcan con nula pérdida de fricción. Canal elíptico con guía interna de 3 3/8\". Solo 16\" de espacio requerido."
 categoria: "monitores"
 subcategoria: "ul-listed"
 imagen: "/img/monitores-contra-incendios/monitor-ul-listed-contra-incendios-ambiente-bomberos-22.avif"

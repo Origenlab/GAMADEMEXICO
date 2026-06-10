@@ -1,5 +1,5 @@
 ---
-title: "Cap Storz CS-25 Protección 2.5\" Aluminio Cable Inox UL Listed | Elkhart Brass | México"
+title: "Cap Storz CS-25 Protección 2.5\" Aluminio Cable Inox UL Listed"
 description: "Cap Storz CS-25 Elkhart Brass protección 2.5\" aluminio anodizado 250 PSI cable inox 16\" UL Listed. Cierre cuarto vuelta EPDM. Mangueras y adaptadores Storz México."
 categoria: "conexiones-herrajes"
 subcategoria: "accesorios"

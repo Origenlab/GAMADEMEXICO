@@ -11,6 +11,7 @@ schema:
       - q: "¿Qué sistema contra incendios necesita una nave industrial?"
         a: "Depende de la carga combustible y la altura. Naves con racks de almacenamiento alto (6m+): rociadores ESFR diseñados para protección de alto apilamiento. Naves con proceso industrial: gabinetes de manguera + extintores + rociadores estándar. Naves con líquidos inflamables: además de lo anterior, monitores y/o sistemas de espuma."
 description: "Guía completa de protección contra incendios para naves industriales, bodegas y centros de distribución en México. NOM-002-STPS, NFPA y equipos recomendados."
+fecha: "2026-03-11"
 categoria: "mangueras"
 autor:
   nombre: "Ing. Fernando Castillo"

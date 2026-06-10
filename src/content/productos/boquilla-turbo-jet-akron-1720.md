@@ -1,6 +1,6 @@
 ---
-title: "Boquilla Turbojet 1720 Flujo Constante 30-125 GPM NFPA 1964 | Akron Brass | México"
-description: "Boquilla Turbojet Style 1720 Akron Brass 4 posiciones 30-60-95-125 GPM 100 PSI Pyrolite extruido NFPA 1964. Garantía 10 años, función flush. Bomberos e industria México."
+title: "Boquilla Turbojet 1720 Flujo Constante 30-125 GPM NFPA 1964"
+description: "Boquilla Turbojet Style 1720 Akron Brass 4 posiciones 30-60-95-125 GPM 100 PSI Pyrolite extruido NFPA 1964. Garantía 10 años, función flush."
 categoria: "boquillas"
 subcategoria: "turbo-jet"
 imagen: "/img/productos/boquilla-turbo-jet-contra-incendios-emergencia-nocturna-11.avif"

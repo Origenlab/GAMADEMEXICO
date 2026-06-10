@@ -113,7 +113,7 @@ export async function getStaticPaths() {
     const categorySlug = CATEGORY_SLUGS[category] || category;
     const categoryPosts = posts
       .filter((p) => p.data.categoria === category)
-      .sort((a, b) => new Date(b.data.fecha).getTime() - new Date(a.data.fecha).getTime());
+      .sort((a, b) => new Date(b.data.fecha ?? '1970-01-01').getTime() - new Date(a.data.fecha ?? '1970-01-01').getTime());
 
     return {
       params: { categoria: categorySlug },
@@ -165,14 +165,14 @@ const sidebarFeaturedPosts = allPosts
     if (Boolean(b.data.destacado) !== Boolean(a.data.destacado)) {
       return Number(Boolean(b.data.destacado)) - Number(Boolean(a.data.destacado));
     }
-    return new Date(b.data.fecha).getTime() - new Date(a.data.fecha).getTime();
+    return new Date(b.data.fecha ?? '1970-01-01').getTime() - new Date(a.data.fecha ?? '1970-01-01').getTime();
   })
   .map(toSidebarLink)
   .filter((entry) => !sidebarCategoryPostUrls.has(entry.href))
   .slice(0, 4);
 
 const sidebarRecentPosts = allPosts
-  .sort((a, b) => new Date(b.data.fecha).getTime() - new Date(a.data.fecha).getTime())
+  .sort((a, b) => new Date(b.data.fecha ?? '1970-01-01').getTime() - new Date(a.data.fecha ?? '1970-01-01').getTime())
   .map(toSidebarLink)
   .filter((entry) => !sidebarCategoryPostUrls.has(entry.href))
   .slice(0, 6);

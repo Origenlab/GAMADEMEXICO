@@ -15,13 +15,14 @@ schema:
       - q: "¿Estandarizar significa poner la misma boquilla en todos lados?"
         a: "No. Significa estandarizar el CRITERIO, no el producto. El estándar define qué tipo de boquilla por nivel de riesgo, qué certificación mínima, qué rango de presión/caudal, qué estándar de conexión (NST o Storz) y qué documentación debe acompañar cada equipo. Dentro de ese marco, cada planta selecciona la configuración que corresponde a su riesgo específico."
 description: "Cómo estandarizar boquillas contra incendios en plantas industriales multisede: criterios de selección por zona, compatibilidad y errores de especificación."
+fecha: "2026-02-16"
 categoria: "boquillas"
 autor:
   nombre: "Equipo Gama de México"
   cargo: "Asesoría Técnica"
 imagen: "/img/blog/auditoria-equipos-contra-incendios-sala-juntas-corporativa.avif"
 imagenAlt: "Estandarización de boquillas contra incendios en instalación industrial"
-tags: ["boquillas contra incendios", "estandarización", "ingeniería contra incendios", "sistemas fijos contra incendios"]
+tags: ["boquillas contra incendios", "estandarización", "ingeniería contra incendios", "sistemas fijos"]
 destacado: true
 draft: false
 tiempoLectura: 14

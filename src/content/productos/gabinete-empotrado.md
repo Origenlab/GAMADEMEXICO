@@ -1,6 +1,6 @@
 ---
 title: "Gabinete Empotrado"
-description: "Gabinete contra incendios empotrado que se instala dentro del muro al ras con la superficie. Ideal para pasillos y áreas de alta estética. Acero laminado o inoxidable T430."
+description: "Gabinete contra incendios empotrado que se instala dentro del muro al ras con la superficie. Ideal para pasillos y áreas de alta estética."
 categoria: "gabinetes-hidrantes"
 subcategoria: "gabinetes"
 imagen: "/img/gabinetes-hidrantes/gabinete-manguera-lobby-corporativo.avif"

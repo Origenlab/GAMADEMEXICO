@@ -1,6 +1,6 @@
 ---
 title: "Monitor Tipo Corazón Doble Cremallera ARMECO"
-description: "Monitor contra incendio tipo corazón de doble cremallera con control preciso mediante dos volantes. Giro horizontal 360° y vertical 120°. Bronce fundido certificado PEMEX."
+description: "Monitor contra incendio tipo corazón de doble cremallera con control preciso mediante dos volantes. Giro horizontal 360° y vertical 120°."
 categoria: "monitores"
 subcategoria: "tipo-corazon"
 imagen: "/img/monitores-contra-incendios/monitor-tipo-corazon-contra-incendios-industrial-perspectiva-04.avif"

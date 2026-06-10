@@ -13,6 +13,7 @@ schema:
       - q: "¿Protección civil puede sancionar por boquillas sin certificación?"
         a: "Puede generar observaciones por equipos que no demuestran cumplimiento con estándares reconocidos. Si la inspección solicita ficha técnica y certificación del fabricante y no puedes presentarla, es una observación documentable. Acumulada con otras deficiencias, puede escalar a condicionante o multa."
 description: "Qué exige la ley mexicana para boquillas contra incendios en centros de trabajo: NOM-002-STPS, protección civil, brigadas y lo que realmente revisa el inspector."
+fecha: "2026-02-16"
 categoria: "boquillas"
 autor:
   nombre: "Equipo Gama de México"

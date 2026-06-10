@@ -9,7 +9,7 @@ autor:
   cargo: "Asesoría Técnica"
 imagen: "/img/blog/gabinete-contra-incendios-instalacion-edificio-mexico.avif"
 imagenAlt: "Hidrante contra incendios instalado en predio industrial México"
-tags: ["hidrantes contra incendios", "NFPA 24", "hidrante privado", "hidrante de banqueta", "presión hidrante"]
+tags: ["hidrantes", "NFPA 24", "hidrantes privados", "hidrante de banqueta", "presión hidrante"]
 destacado: false
 draft: false
 productosRelacionados: ["hidrante-banqueta", "hidrante-banqueta-350psi", "hidrante-banqueta-4-salidas", "hidrante-banqueta-trafico", "llave-hidrante-pentagonal"]

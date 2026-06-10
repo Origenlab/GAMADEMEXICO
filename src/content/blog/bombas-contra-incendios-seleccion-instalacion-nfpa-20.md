@@ -1,6 +1,7 @@
 ---
 title: "Bombas Contra Incendios y NFPA 20: Selección Real"
 description: "Bombas contra incendios NFPA 20: horizontal vs vertical, NPSH que nadie calcula, bomba jockey y errores de succión que se descubren en la prueba de aceptación."
+fecha: "2026-03-11"
 schema:
   - type: "Article"
     headline: "Bombas Contra Incendios y NFPA 20: Selección Real"

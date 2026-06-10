@@ -1,6 +1,7 @@
 ---
 title: "Válvula de Alarma en Rociadores: Prueba NFPA 25"
 description: "Válvula de alarma en rociadores: cómo funciona, por qué suena sin incendio, prueba trimestral NFPA 25 y errores que desactivan la alarma sin que nadie lo sepa."
+fecha: "2026-03-11"
 fechaActualizacion: "2026-03-19"
 schema:
   - type: "Article"
@@ -21,7 +22,7 @@ autor:
   cargo: "Director Técnico en Sistemas Contra Incendios"
 imagen: "/img/blog/valvulas-contra-incendios-nfpa-sala-control-industrial.avif"
 imagenAlt: "Válvula de alarma para rociadores contra incendios NFPA 25"
-tags: ["válvula de alarma", "rociadores", "NFPA 25", "gong hidráulico", "tubería húmeda", "tubería seca", "sprinkler systems"]
+tags: ["válvula de alarma", "rociadores automáticos", "NFPA 25", "gong hidráulico", "tubería húmeda", "tubería seca"]
 destacado: false
 draft: false
 tiempoLectura: 13

@@ -4,8 +4,13 @@ import { glob } from 'astro/loaders';
 const productos = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/productos' }),
   schema: z.object({
-    title: z.string(),
-    description: z.string(),
+    // Límites SEO (auditoría 2026): Google trunca titles >~70 y descriptions >~165
+    title: z.string()
+      .min(15, 'Título muy corto para SEO')
+      .max(70, 'Título muy largo: se trunca en resultados de búsqueda'),
+    description: z.string()
+      .min(80, 'Descripción muy corta para meta description')
+      .max(165, 'Descripción muy larga: Google la trunca'),
     categoria: z.enum([
       'monitores',
       'boquillas',
@@ -15,7 +20,8 @@ const productos = defineCollection({
       'gabinetes-hidrantes',
     ]),
     subcategoria: z.string().optional(),
-    imagen: z.string().optional(),
+    // Obligatoria: los 225 productos la definen; evita OG/cards rotos (auditoría 2026)
+    imagen: z.string().startsWith('/img/', 'La ruta debe iniciar con /img/'),
     galeria: z.array(z.string()).optional(),
     certificaciones: z.array(z.string()).optional(),
     flujo: z.string().optional(),
@@ -55,6 +61,7 @@ const blog = defineCollection({
       'conexiones-herrajes',
       'gabinetes-hidrantes',
       'equipos-contra-incendios',
+      'equipos-bomberos',
     ]).default('monitores'),
 
     // --- Tags ---
@@ -70,9 +77,9 @@ const blog = defineCollection({
       }),
     ]).default('Equipo Técnico Gama de México'),
 
-    // --- Imágenes ---
-    imagen: z.string().optional(),
-    imagenAlt: z.string().optional(),
+    // --- Imágenes (obligatorias: los 84 posts las definen; auditoría 2026) ---
+    imagen: z.string().startsWith('/img/', 'La ruta debe iniciar con /img/'),
+    imagenAlt: z.string().min(10, 'Alt descriptivo de mínimo 10 caracteres'),
     imagenOg: z.string().optional(), // 1200x630 para redes sociales
 
     // --- Características del artículo ---

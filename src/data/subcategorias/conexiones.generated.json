@@ -1,0 +1,1846 @@
+[
+  {
+    "seccion": "conexiones",
+    "slug": "accesorios",
+    "categoria": "conexiones-herrajes",
+    "filter": {
+      "subcategorias": [
+        "accesorios"
+      ]
+    },
+    "meta": {
+      "title": "Accesorios y Herrajes Contra Incendios Elkhart Brass | NFPA 25 México",
+      "description": "Tapones, caps con cadena, niples, llaves pentagonales y soportes de manguera para sistemas contra incendio. Bronce UL Listed, NH y Storz. NFPA 25. Distribuidor México."
+    },
+    "hero": {
+      "title": "Accesorios y Herrajes",
+      "intro": "Componentes complementarios esenciales para sistemas contra incendio: tapones protectores, caps con cadena, niples de extensión, llaves de hidrante y soportes de manguera. Fabricados en bronce fundido o aluminio de alta resistencia para servicio exterior e interior.",
+      "badge": "Conexiones y Herrajes",
+      "metrics": [
+        {
+          "valor": "Bronce/Alum",
+          "texto": "Materiales"
+        },
+        {
+          "valor": "300",
+          "texto": "PSI máxima"
+        },
+        {
+          "valor": "UL",
+          "texto": "Certificación"
+        }
+      ],
+      "primaryText": "Ver Catálogo",
+      "primaryLink": "#catalogo",
+      "secondaryText": "Solicitar Cotización",
+      "secondaryLink": "#cotizar",
+      "contentHtml": "<p>Los <strong>accesorios y herrajes</strong> son componentes frecuentemente pasados por alto pero fundamentales para la operación y mantenimiento de sistemas contra incendio. Incluyen tapones protectores que evitan la entrada de suciedad, caps con cadena de seguridad para tomas siamesas, niples de extensión, llaves pentagonales para hidrantes y soportes de pared para almacenamiento de mangueras.</p>\n    <p><strong>Gama de México</strong> mantiene inventario de accesorios Elkhart Brass en bronce fundido certificado UL y aluminio para aplicaciones donde el peso es crítico. Suministramos kits completos para gabinetes, juegos de tapones y cadenas para siamesas, y llaves de hidrante. Todos nuestros herrajes cumplen con NFPA para compatibilidad con sistemas existentes.</p>"
+    },
+    "schema": {
+      "name": "Accesorios y Herrajes para Mangueras Contra Incendios",
+      "description": "Accesorios completos para sistemas de mangueras: llaves, soportes, tapas y herrajes de bronce. NOM y NFPA. México.",
+      "image": "/img/conexiones-herrajes/adaptador-aluminio-elk-o-lite-4-frontal.avif",
+      "url": "/conexiones/accesorios",
+      "category": "Conexiones y Herrajes Contra Incendios",
+      "brand": "Elkhart Brass",
+      "reviewAuthor": "Ing. Carlos Mendoza",
+      "reviewBody": "Excelente calidad y respaldo técnico de Gama de México. Equipos certificados con entrega puntual.",
+      "reviewDate": "2025-03-15",
+      "ratingCount": 32,
+      "reviewCount": 32
+    },
+    "breadcrumb": [
+      {
+        "name": "Inicio",
+        "url": "/"
+      },
+      {
+        "name": "Equipos",
+        "url": "/equipos"
+      },
+      {
+        "name": "Conexiones y Herrajes",
+        "url": "/conexiones-herrajes-contra-incendios"
+      }
+    ],
+    "catalog": {
+      "title": "Catálogo de Accesorios y Herrajes",
+      "desc": "Selecciona el modelo que mejor se adapte a tu instalación"
+    },
+    "empty": {
+      "title": "Próximamente más opciones",
+      "text": "Estamos agregando más accesorios y herrajes. Solicita una cotización personalizada.",
+      "buttonText": "Solicitar Cotización"
+    },
+    "techInfo": {
+      "title": "Especificaciones Técnicas de Accesorios",
+      "items": [
+        {
+          "label": "Presión de trabajo",
+          "value": "175–500 PSI"
+        },
+        {
+          "label": "Certificación",
+          "value": "UL Listed"
+        },
+        {
+          "label": "Diámetros",
+          "value": "1.5\" a 2.5\" NH"
+        },
+        {
+          "label": "Tipos",
+          "value": "Tapones, caps, niples, llaves"
+        },
+        {
+          "label": "Cadenas",
+          "value": "9\" y 16\" acero"
+        },
+        {
+          "label": "Material",
+          "value": "Bronce / Aluminio"
+        }
+      ]
+    },
+    "ctaFinal": {
+      "title": "¿No encuentras la configuración que necesitas?",
+      "desc": "Tenemos acceso al catálogo completo de Elkhart Brass. Contáctanos para accesorios especiales, kits personalizados o herrajes en materiales específicos.",
+      "buttonText": "Solicitar Cotización Especial"
+    },
+    "sidebar": {
+      "navTitulo": "Tipos de Conexiones",
+      "baseUrl": "/conexiones",
+      "backLinkHref": "/conexiones-herrajes-contra-incendios",
+      "backLinkTexto": "Ver todas las conexiones",
+      "certificaciones": [
+        {
+          "siglas": "FM",
+          "nombre": "Factory Mutual"
+        },
+        {
+          "siglas": "UL",
+          "nombre": "UL Listed"
+        },
+        {
+          "siglas": "NOM",
+          "nombre": "NOM-002-STPS"
+        }
+      ],
+      "marcas": [
+        "Dixon",
+        "Elkhart Brass",
+        "Harrington",
+        "Action Coupling"
+      ],
+      "aplicaciones": [
+        "Complementos de sistemas",
+        "Herrajes de manguera",
+        "Accesorios de gabinete",
+        "Mantenimiento de equipos"
+      ],
+      "productosRelacionados": [
+        {
+          "href": "/gabinetes-hidrantes-contra-incendios",
+          "nombre": "Gabinetes e Hidrantes"
+        },
+        {
+          "href": "/mangueras-contra-incendios",
+          "nombre": "Mangueras Contra Incendios"
+        },
+        {
+          "href": "/valvulas-contra-incendios",
+          "nombre": "Válvulas Contra Incendios"
+        },
+        {
+          "href": "/boquillas-contra-incendios",
+          "nombre": "Boquillas Contra Incendios"
+        }
+      ],
+      "subcategorias": [
+        {
+          "slug": "adaptadores",
+          "nombre": "Adaptadores de Bronce",
+          "descripcion": "Conversión entre roscas NH, NPT, Storz"
+        },
+        {
+          "slug": "wye",
+          "nombre": "Conexión Y (Wye)",
+          "descripcion": "Derivación en dos salidas"
+        },
+        {
+          "slug": "siamesa",
+          "nombre": "Toma Siamesa FDC",
+          "descripcion": "Conexión para bomberos"
+        },
+        {
+          "slug": "coples",
+          "nombre": "Coples y Reducciones",
+          "descripcion": "Conexión rápida Storz"
+        },
+        {
+          "slug": "chiflones",
+          "nombre": "Chiflones de Tres Pasos",
+          "descripcion": "Control de patrón de descarga"
+        },
+        {
+          "slug": "accesorios",
+          "nombre": "Accesorios y Herrajes",
+          "descripcion": "Tapones, caps, niples"
+        }
+      ]
+    },
+    "related": {
+      "titulo": "Otras Conexiones y Herrajes",
+      "subtitulo": "Explora más opciones para tu sistema contra incendios",
+      "maxProductos": 3,
+      "verTodosLink": "/conexiones-herrajes-contra-incendios",
+      "verTodosTexto": "Ver todas las conexiones"
+    },
+    "cotizacion": {
+      "titulo": "Cotiza Accesorios",
+      "tipoEquipo": "Conexiones y herrajes",
+      "pagina": "Conexiones Accesorios"
+    },
+    "faqs": [
+      {
+        "pregunta": "¿Qué accesorios de herraje se necesitan para completar un sistema de mangueras contra incendios?",
+        "respuesta": "Un sistema de mangueras completo incluye: chiflón de entrada (para conectar al hidrante), mangueras certificadas, cople intermedio si se necesita extensión, adaptadores de compatibilidad si hay diferentes tipos de rosca en el sistema, llave de manguera para apriete correcto, y soporte o carro portamanguera. Para gabinetes de edificio también se requiere soporte de manguera enrollable o doblada y gabinete certificado."
+      },
+      {
+        "pregunta": "¿Qué mantenimiento requieren los tapones y caps de tomas siamesas según NFPA?",
+        "respuesta": "NFPA 25 sección 6.3 establece que las tapas (caps) de las tomas siamesas deben inspeccionarse trimestralmente para verificar que estén presentes, sin daño y accesibles. Los tapones deben retirarse, lubricarse las roscas y reinstalarse durante el mantenimiento anual para asegurar que puedan retirarse fácilmente en emergencia. Las cadenas de sujeción deben estar intactas para evitar pérdida de los tapones. Si los tapones tienen señal de vandalismo o daño por impacto, reemplazar inmediatamente."
+      },
+      {
+        "pregunta": "¿Cuál es la diferencia entre un tapón Storz y un tapón NH para tomas siamesas?",
+        "respuesta": "Un tapón NH (National Hose) es roscado y se instala girando; es el estándar más común en México para bocas de 1.5\" y 2.5\". Un tapón Storz es de un cuarto de vuelta, sin roscas, compatible con coples Storz. No son intercambiables: si la toma siamesa tiene bocas Storz, se requieren tapones Storz, y viceversa. Es fundamental verificar el tipo de boca en el campo antes de pedir refacciones para no comprar accesorios incompatibles."
+      },
+      {
+        "pregunta": "¿Qué es una llave de manguera y es obligatoria?",
+        "respuesta": "La llave de manguera es una herramienta de aluminio o bronce que facilita el apriete y afloje de las conexiones de manguera sin dañar las roscas. Si bien no está listada como equipo obligatorio en todas las normas, la NFPA 25 recomienda su uso en el mantenimiento de sistemas de mangueras para evitar daños en las roscas. Su costo es mínimo comparado con el costo de reponer una manguera o chiflón dañado."
+      },
+      {
+        "pregunta": "¿Qué accesorios son compatibles con conexiones Storz versus NH?",
+        "respuesta": "Los accesorios Storz y NH no son directamente compatibles: los tapones, reduciones, adaptadores y coples son específicos para cada tipo de rosca. Sin embargo, existen adaptadores de conversión Storz a NH y viceversa que permiten mezclar ambos sistemas. Para inventario de mantenimiento, es importante identificar correctamente el tipo de rosca de cada equipo en la instalación (Storz o NH) para pedir los accesorios correctos. Gama de México asesora en la identificación y selección de accesorios compatibles."
+      },
+      {
+        "pregunta": "¿Los herrajes y accesorios de bronce requieren algún mantenimiento especial?",
+        "respuesta": "Los herrajes de bronce fundido son prácticamente de mantenimiento nulo en condiciones normales. La inspección anual recomendada incluye: verificación visual de corrosión o deformaciones, prueba de funcionamiento de válvulas de control, verificación de tapas de protección en bocas de hidrante no utilizadas y revisión de la correcta identificación de cada accesorio. En ambientes costeros, lavar con agua limpia después de exposición a agua salada."
+      }
+    ]
+  },
+  {
+    "seccion": "conexiones",
+    "slug": "adaptadores",
+    "categoria": "conexiones-herrajes",
+    "filter": {
+      "subcategorias": [
+        "adaptadores"
+      ]
+    },
+    "meta": {
+      "title": "Adaptadores de Bronce NH NPT Storz Elkhart Brass | Gama de México",
+      "description": "Adaptadores de bronce NH, NPT y Storz para sistemas contra incendio. Reducción 2.5\" a 1.5\", swivel, macho-hembra. 300 PSI, UL/FM. Distribuidor autorizado Elkhart Brass México."
+    },
+    "hero": {
+      "title": "Adaptadores de Bronce",
+      "intro": "Adaptadores para conversión entre diferentes tipos de rosca y sistemas de conexión en equipos contra incendio. Permiten la interoperabilidad entre equipos con roscas NH (National Hose), NPT (National Pipe Thread) y acoples Storz de conexión rápida.",
+      "badge": "Conexiones y Herrajes",
+      "metrics": [
+        {
+          "valor": "NH/NPT/Storz",
+          "texto": "Tipos de rosca"
+        },
+        {
+          "valor": "300",
+          "texto": "PSI máxima"
+        },
+        {
+          "valor": "UL/FM",
+          "texto": "Certificación"
+        }
+      ],
+      "primaryText": "Ver Catálogo",
+      "primaryLink": "#catalogo",
+      "secondaryText": "Solicitar Cotización",
+      "secondaryLink": "#cotizar",
+      "contentHtml": "<p>Los <strong>adaptadores de bronce</strong> son piezas de transición que permiten conectar equipos con diferentes tipos de rosca. Son esenciales cuando se integran componentes de distintos fabricantes o se conectan mangueras de bomberos a sistemas de edificios. Disponibles en configuraciones macho-macho, hembra-hembra, macho-hembra y con swivel giratorio para evitar torsión de mangueras.</p>\n    <p><strong>Gama de México</strong> ofrece adaptadores Elkhart Brass certificados UL/FM en bronce fundido. Manejamos conversiones entre roscas NH (1.5\" y 2.5\"), NPT (desde 1/2\" hasta 4\"), Storz (65mm y 100mm) y conexiones especiales. Cada adaptador está probado a 500 PSI para garantizar integridad bajo presión de servicio.</p>"
+    },
+    "schema": {
+      "name": "Adaptadores de Bronce para Mangueras Contra Incendios",
+      "description": "Adaptadores de bronce NST, BSP y Storz para sistemas contra incendios. Cambio de diámetro y tipo de rosca. México.",
+      "image": "/img/conexiones-herrajes/adaptador-aluminio-elk-o-lite-4-frontal.avif",
+      "url": "/conexiones/adaptadores",
+      "category": "Conexiones y Herrajes Contra Incendios",
+      "brand": "Elkhart Brass",
+      "reviewAuthor": "Ing. Carlos Mendoza",
+      "reviewBody": "Excelente calidad y respaldo técnico de Gama de México. Equipos certificados con entrega puntual.",
+      "reviewDate": "2025-03-15",
+      "ratingCount": 32,
+      "reviewCount": 32
+    },
+    "breadcrumb": [
+      {
+        "name": "Inicio",
+        "url": "/"
+      },
+      {
+        "name": "Equipos",
+        "url": "/equipos"
+      },
+      {
+        "name": "Conexiones y Herrajes",
+        "url": "/conexiones-herrajes-contra-incendios"
+      }
+    ],
+    "catalog": {
+      "title": "Catálogo de Adaptadores de Bronce",
+      "desc": "Selecciona el modelo que mejor se adapte a tu instalación"
+    },
+    "empty": {
+      "title": "Próximamente más opciones",
+      "text": "Estamos agregando más adaptadores de diferentes marcas. Solicita una cotización personalizada.",
+      "buttonText": "Solicitar Cotización"
+    },
+    "techInfo": {
+      "title": "Especificaciones Técnicas de Adaptadores",
+      "items": [
+        {
+          "label": "Presión de trabajo",
+          "value": "250-300 PSI"
+        },
+        {
+          "label": "Presión de prueba",
+          "value": "1,000 PSI"
+        },
+        {
+          "label": "Diámetros",
+          "value": "1\" a 6\""
+        },
+        {
+          "label": "Roscas",
+          "value": "NH, NPT, Storz"
+        },
+        {
+          "label": "Temperatura",
+          "value": "-65°F a 250°F"
+        },
+        {
+          "label": "Material",
+          "value": "Bronce / Aluminio"
+        }
+      ]
+    },
+    "ctaFinal": {
+      "title": "¿No encuentras la configuración que necesitas?",
+      "desc": "Tenemos acceso al catálogo completo de Elkhart Brass. Contáctanos para adaptadores en roscas especiales o configuraciones personalizadas.",
+      "buttonText": "Solicitar Cotización Especial"
+    },
+    "sidebar": {
+      "navTitulo": "Tipos de Conexiones",
+      "baseUrl": "/conexiones",
+      "backLinkHref": "/conexiones-herrajes-contra-incendios",
+      "backLinkTexto": "Ver todas las conexiones",
+      "certificaciones": [
+        {
+          "siglas": "FM",
+          "nombre": "Factory Mutual"
+        },
+        {
+          "siglas": "UL",
+          "nombre": "UL Listed"
+        },
+        {
+          "siglas": "NOM",
+          "nombre": "NOM-002-STPS"
+        }
+      ],
+      "marcas": [
+        "Dixon",
+        "Elkhart Brass",
+        "Harrington",
+        "Action Coupling"
+      ],
+      "aplicaciones": [
+        "Conexión de mangueras",
+        "Adaptación entre roscas",
+        "Sistemas contra incendio",
+        "Hidrantes y gabinetes"
+      ],
+      "productosRelacionados": [
+        {
+          "href": "/gabinetes-hidrantes-contra-incendios",
+          "nombre": "Gabinetes e Hidrantes"
+        },
+        {
+          "href": "/mangueras-contra-incendios",
+          "nombre": "Mangueras Contra Incendios"
+        },
+        {
+          "href": "/valvulas-contra-incendios",
+          "nombre": "Válvulas Contra Incendios"
+        },
+        {
+          "href": "/boquillas-contra-incendios",
+          "nombre": "Boquillas Contra Incendios"
+        }
+      ],
+      "subcategorias": [
+        {
+          "slug": "adaptadores",
+          "nombre": "Adaptadores de Bronce",
+          "descripcion": "Conversión entre roscas NH, NPT, Storz"
+        },
+        {
+          "slug": "wye",
+          "nombre": "Conexión Y (Wye)",
+          "descripcion": "Derivación en dos salidas"
+        },
+        {
+          "slug": "siamesa",
+          "nombre": "Toma Siamesa FDC",
+          "descripcion": "Conexión para bomberos"
+        },
+        {
+          "slug": "coples",
+          "nombre": "Coples y Reducciones",
+          "descripcion": "Conexión rápida Storz"
+        },
+        {
+          "slug": "chiflones",
+          "nombre": "Chiflones de Tres Pasos",
+          "descripcion": "Control de patrón de descarga"
+        },
+        {
+          "slug": "accesorios",
+          "nombre": "Accesorios y Herrajes",
+          "descripcion": "Tapones, caps, niples"
+        }
+      ]
+    },
+    "related": {
+      "titulo": "Otras Conexiones y Herrajes",
+      "subtitulo": "Explora más opciones para tu sistema contra incendios",
+      "maxProductos": 3,
+      "verTodosLink": "/conexiones-herrajes-contra-incendios",
+      "verTodosTexto": "Ver todas las conexiones"
+    },
+    "cotizacion": {
+      "titulo": "Cotiza Adaptadores",
+      "tipoEquipo": "Conexiones y herrajes",
+      "pagina": "Conexiones Adaptadores"
+    },
+    "faqs": [
+      {
+        "pregunta": "¿Para qué sirven los adaptadores de bronce en sistemas contra incendios?",
+        "respuesta": "Los adaptadores de bronce permiten conectar mangueras, boquillas y accesorios con diferentes diámetros o tipos de rosca. Son esenciales cuando se amplía o rehabilita un sistema contra incendios y los nuevos equipos no son directamente compatibles con las conexiones existentes. También se usan para conectar equipos de diferentes fabricantes o países con estándares de rosca distintos."
+      },
+      {
+        "pregunta": "¿Cuál es la diferencia entre rosca NH y rosca NPT?",
+        "respuesta": "La rosca NH (National Hose) es un estándar de rosca de paso grueso diseñado específicamente para mangueras contra incendios; permite conexión y desconexión rápida bajo presión. La rosca NPT (National Pipe Thread) es el estándar para tuberías de plomería e instalaciones fijas, con conicidad 1:16 que sella por interferencia metálica. Un adaptador NH a NPT es necesario cuando se conecta una manguera de bomberos a una instalación fija con rosca de tubería. NFPA 1963 regula los estándares de rosca para mangueras en Estados Unidos, y México adopta los mismos diámetros."
+      },
+      {
+        "pregunta": "¿Cuándo se necesita un adaptador Storz?",
+        "respuesta": "Los adaptadores Storz son necesarios cuando un sistema tiene conexiones de acople simétrico tipo Storz (comunes en equipos europeos y algunos modernos de bomberos) y se necesita conectarlos a mangueras o hidrantes con rosca NH estándar en México. Los Storz son acoples de un cuarto de vuelta sin diferencia macho/hembra, muy usados en aeropuertos, plantas petroquímicas y cuerpos de bomberos con equipos europeos. Gama de México ofrece adaptadores Storz a NH en diámetros 65mm (2.5\") y 100mm (4\")."
+      },
+      {
+        "pregunta": "¿Cuál es la diferencia entre un adaptador reductor e incrementador?",
+        "respuesta": "Un adaptador reductor va de un diámetro mayor a uno menor; por ejemplo, de 2.5\" a 1.5\" para conectar una manguera de gabinete a una toma de hidrante exterior. Un adaptador incrementador va de menor a mayor; se usa cuando se quiere conectar una manguera de 1.5\" a una fuente de 2.5\" para aprovechar mayor caudal. Ambos están disponibles en configuraciones macho-hembra, hembra-hembra (sexo) o con swivel giratorio para evitar torsión de manguera."
+      },
+      {
+        "pregunta": "¿Qué material de adaptador se recomienda en ambientes corrosivos?",
+        "respuesta": "En ambientes con alta salinidad (zonas costeras), exposición a cloro (plantas de tratamiento de agua) o productos químicos ácidos, se recomienda bronce de aluminio (aleación C95400) o bronce naval (C46400), que tienen mayor resistencia a la corrosión por cloruros que el bronce estándar. Evitar mezclar aluminio con bronce en el mismo acoplamiento (par galvánico) en ambientes marinos. Para industria petroquímica, consultar compatibilidad química del material con el medio antes de seleccionar."
+      },
+      {
+        "pregunta": "¿Los adaptadores requieren mantenimiento o reemplazo periódico?",
+        "respuesta": "Los adaptadores de bronce bien seleccionados y correctamente instalados son prácticamente de por vida en condiciones normales. El mantenimiento principal es la inspección visual anual para detectar corrosión, deformación de roscas o fugas. En sistemas que se prueban regularmente, verificar la correcta tensión del acoplamiento después de cada prueba. Reemplazar si hay fisuras, corrosión profunda o daño en las roscas. NFPA 25 establece los criterios de inspección y reemplazo de conexiones en sistemas de mangueras."
+      }
+    ]
+  },
+  {
+    "seccion": "conexiones",
+    "slug": "chiflones",
+    "categoria": "conexiones-herrajes",
+    "filter": {
+      "subcategorias": [
+        "chiflones"
+      ]
+    },
+    "meta": {
+      "title": "Chiflones de Tres Pasos Neblina y Chorro Elkhart Brass | UL 401 México",
+      "description": "Chiflones de tres pasos (cerrado, neblina, chorro) para gabinetes contra incendio y brigadas. 30–250 GPM, bronce o aluminio, UL 401, NFPA 1964, NOM-002-STPS. Gama de México."
+    },
+    "hero": {
+      "title": "Chiflones de Tres Pasos",
+      "intro": "Boquillas de control manual con tres posiciones de operación: cerrado, neblina y chorro directo. Diseñados para gabinetes contra incendio y brigadas de primera respuesta que requieren control básico pero efectivo del patrón de descarga.",
+      "badge": "Conexiones y Herrajes",
+      "metrics": [
+        {
+          "valor": "3",
+          "texto": "Posiciones"
+        },
+        {
+          "valor": "UL 401",
+          "texto": "Certificación"
+        },
+        {
+          "valor": "100",
+          "texto": "GPM máx."
+        }
+      ],
+      "primaryText": "Ver Catálogo",
+      "primaryLink": "#catalogo",
+      "secondaryText": "Solicitar Cotización",
+      "secondaryLink": "#cotizar",
+      "contentHtml": "<p>Los <strong>chiflones de tres pasos</strong> son boquillas de control manual que permiten alternar entre posición cerrada, patrón de neblina y chorro directo mediante un simple giro del cabezal. Son la solución ideal para gabinetes contra incendio en edificios comerciales, hospitales e industrias donde el personal de brigada necesita una herramienta intuitiva y confiable sin la complejidad de boquillas automáticas.</p>\n    <p><strong>Gama de México</strong> distribuye chiflones certificados UL 401 de Elkhart Brass, fabricados en bronce cromado resistente a la corrosión. Estos dispositivos ofrecen flujos de 30 a 100 GPM dependiendo del modelo y presión de operación, con diseño ergonómico que facilita el agarre incluso con guantes. Ideales para complementar sistemas de manguera de 1-1/2\" en instalaciones que cumplen NOM-002-STPS.</p>"
+    },
+    "schema": {
+      "name": "Chiflones de Manguera Contra Incendios",
+      "description": "Chiflones de bronce para mangueras contra incendios. 1.5\" y 2.5\" NST. Aluminio y bronce. Stock permanente México.",
+      "image": "/img/conexiones-herrajes/adaptador-aluminio-elk-o-lite-4-frontal.avif",
+      "url": "/conexiones/chiflones",
+      "category": "Conexiones y Herrajes Contra Incendios",
+      "brand": "Elkhart Brass",
+      "reviewAuthor": "Ing. Carlos Mendoza",
+      "reviewBody": "Excelente calidad y respaldo técnico de Gama de México. Equipos certificados con entrega puntual.",
+      "reviewDate": "2025-03-15",
+      "ratingCount": 32,
+      "reviewCount": 32
+    },
+    "breadcrumb": [
+      {
+        "name": "Inicio",
+        "url": "/"
+      },
+      {
+        "name": "Equipos",
+        "url": "/equipos"
+      },
+      {
+        "name": "Conexiones y Herrajes",
+        "url": "/conexiones-herrajes-contra-incendios"
+      }
+    ],
+    "catalog": {
+      "title": "Catálogo de Chiflones de Tres Pasos",
+      "desc": "Selecciona el modelo que mejor se adapte a tu instalación"
+    },
+    "empty": {
+      "title": "Próximamente más opciones",
+      "text": "Estamos agregando más chiflones de diferentes configuraciones. Solicita una cotización personalizada.",
+      "buttonText": "Solicitar Cotización"
+    },
+    "techInfo": {
+      "title": "Especificaciones Técnicas de Chiflones",
+      "items": [
+        {
+          "label": "Presión de trabajo",
+          "value": "100 PSI nominal"
+        },
+        {
+          "label": "Certificación",
+          "value": "UL 401 / NFPA 1964"
+        },
+        {
+          "label": "Flujo",
+          "value": "30–250 GPM"
+        },
+        {
+          "label": "Posiciones",
+          "value": "3 (cerrado, neblina, chorro)"
+        },
+        {
+          "label": "Conexión",
+          "value": "1\" a 2.5\" NH"
+        },
+        {
+          "label": "Material",
+          "value": "Bronce / Aluminio"
+        }
+      ]
+    },
+    "ctaFinal": {
+      "title": "¿No encuentras la configuración que necesitas?",
+      "desc": "Tenemos acceso al catálogo completo de Elkhart Brass. Contáctanos para chiflones en configuraciones especiales, flujos personalizados o conexiones no estándar.",
+      "buttonText": "Solicitar Cotización Especial"
+    },
+    "sidebar": {
+      "navTitulo": "Tipos de Conexiones",
+      "baseUrl": "/conexiones",
+      "backLinkHref": "/conexiones-herrajes-contra-incendios",
+      "backLinkTexto": "Ver todas las conexiones",
+      "certificaciones": [
+        {
+          "siglas": "FM",
+          "nombre": "Factory Mutual"
+        },
+        {
+          "siglas": "UL",
+          "nombre": "UL Listed"
+        },
+        {
+          "siglas": "NOM",
+          "nombre": "NOM-002-STPS"
+        }
+      ],
+      "marcas": [
+        "Dixon",
+        "Elkhart Brass",
+        "Harrington",
+        "Action Coupling"
+      ],
+      "aplicaciones": [
+        "Descarga de agua",
+        "Aplicaciones industriales",
+        "Limpieza de áreas",
+        "Gabinetes contra incendio"
+      ],
+      "productosRelacionados": [
+        {
+          "href": "/gabinetes-hidrantes-contra-incendios",
+          "nombre": "Gabinetes e Hidrantes"
+        },
+        {
+          "href": "/mangueras-contra-incendios",
+          "nombre": "Mangueras Contra Incendios"
+        },
+        {
+          "href": "/valvulas-contra-incendios",
+          "nombre": "Válvulas Contra Incendios"
+        },
+        {
+          "href": "/boquillas-contra-incendios",
+          "nombre": "Boquillas Contra Incendios"
+        }
+      ],
+      "subcategorias": [
+        {
+          "slug": "adaptadores",
+          "nombre": "Adaptadores de Bronce",
+          "descripcion": "Conversión entre roscas NH, NPT, Storz"
+        },
+        {
+          "slug": "wye",
+          "nombre": "Conexión Y (Wye)",
+          "descripcion": "Derivación en dos salidas"
+        },
+        {
+          "slug": "siamesa",
+          "nombre": "Toma Siamesa FDC",
+          "descripcion": "Conexión para bomberos"
+        },
+        {
+          "slug": "coples",
+          "nombre": "Coples y Reducciones",
+          "descripcion": "Conexión rápida Storz"
+        },
+        {
+          "slug": "chiflones",
+          "nombre": "Chiflones de Tres Pasos",
+          "descripcion": "Control de patrón de descarga"
+        },
+        {
+          "slug": "accesorios",
+          "nombre": "Accesorios y Herrajes",
+          "descripcion": "Tapones, caps, niples"
+        }
+      ]
+    },
+    "related": {
+      "titulo": "Otras Conexiones y Herrajes",
+      "subtitulo": "Explora más opciones para tu sistema contra incendios",
+      "maxProductos": 3,
+      "verTodosLink": "/conexiones-herrajes-contra-incendios",
+      "verTodosTexto": "Ver todas las conexiones"
+    },
+    "cotizacion": {
+      "titulo": "Cotiza Chiflones",
+      "tipoEquipo": "Conexiones y herrajes",
+      "pagina": "Conexiones Chiflones"
+    },
+    "faqs": [
+      {
+        "pregunta": "¿Qué es un chiflón de tres pasos y para qué se usa?",
+        "respuesta": "El chiflón de tres pasos (también llamado boquilla de tres posiciones) es la boquilla terminal de una manguera contra incendios que permite seleccionar entre tres modos: cerrado, neblina y chorro directo. Es la boquilla estándar para gabinetes contra incendio en edificios conforme a NOM-002-STPS y es adecuado para brigadas de primera respuesta que necesitan control básico del patrón de descarga sin la complejidad de boquillas combinadas automáticas."
+      },
+      {
+        "pregunta": "¿Cuál es la diferencia entre una boquilla de chorro recto y una boquilla de niebla?",
+        "respuesta": "Una boquilla de chorro recto (straight bore o smooth bore) produce un sólido chorro de agua de mayor alcance, ideal para incendios de clase A en exteriores o cuando se necesita penetración en material ardiente. Una boquilla de niebla (fog nozzle) dispersa el agua en gotitas finas que absorben más calor por unidad de volumen, ideal para espacios confinados y control de gases calientes. Los chiflones de tres pasos ofrecen ambos modos. Para extinción forestal o combate estructural en México, la selección depende del tipo y tamaño del incendio."
+      },
+      {
+        "pregunta": "¿Qué norma regula las boquillas contra incendios según NFPA?",
+        "respuesta": "NFPA 1964 es la norma que establece los requisitos para boquillas (spray nozzles, shut-off nozzles y drive-type nozzles) usadas en sistemas contra incendios. Establece criterios de flujo, presión, patrón de descarga y resistencia estructural. UL 401 certifica boquillas de manguera para gabinetes y uso general en Estados Unidos y México. Los chiflones Elkhart Brass distribuidos por Gama de México cumplen con UL 401 y NFPA 1964."
+      },
+      {
+        "pregunta": "¿Cuánto alcance tiene un chiflón a diferentes presiones?",
+        "respuesta": "El alcance efectivo de un chiflón de chorro directo varía con la presión y el diámetro del orificio. A 100 PSI con un chiflón de 1.5\" NH, un chorro sólido puede alcanzar hasta 20-25 metros de distancia horizontal. A 50 PSI (presión mínima en gabinetes), el alcance disminuye a 12-15 metros. Para la selección correcta, se recomienda verificar que la presión residual en la boquilla sea suficiente para cubrir el área protegida según el diseño del sistema."
+      },
+      {
+        "pregunta": "¿Qué material es mejor para chiflones: aluminio o bronce?",
+        "respuesta": "Para uso general en edificios e industria, el bronce es el material preferido por su mayor resistencia a la corrosión, especialmente en ambientes costeros o industriales. El aluminio es más ligero y económico, siendo adecuado para brigadas móviles y equipos portátiles donde el peso es prioritario. En sistemas fijos permanentes instalados en exteriores o ambientes húmedos, siempre recomendamos bronce."
+      },
+      {
+        "pregunta": "¿Cómo se determina el tamaño correcto del chiflón?",
+        "respuesta": "El tamaño del chiflón debe coincidir exactamente con el diámetro de la manguera y el tipo de rosca del acoplamiento. Los tamaños más comunes en México son 1.5\" NH para mangueras de gabinete y 2.5\" NH para hidrantes exteriores. Es fundamental verificar la compatibilidad de roscas antes de adquirir, ya que existen diferentes estándares (NH, NST, BSP) según el país y la época de instalación del sistema."
+      }
+    ]
+  },
+  {
+    "seccion": "conexiones",
+    "slug": "coples",
+    "categoria": "conexiones-herrajes",
+    "filter": {
+      "subcategorias": [
+        "coples"
+      ]
+    },
+    "meta": {
+      "title": "Coples Storz y NH NFPA 1963 Aluminio y Bronce | Gama de México",
+      "description": "Coples Storz cuarto de vuelta y NH/NST para mangueras contra incendio. Aluminio o bronce, 1.5\" a 5\", NFPA 1963, UL/FM. Reemplazo o instalación nueva. Distribuidor México."
+    },
+    "hero": {
+      "title": "Coples Storz y Reducciones",
+      "intro": "Acoples de conexión rápida tipo Storz que permiten unir mangueras con un simple cuarto de vuelta, reduciendo hasta 50% el tiempo de despliegue en emergencias. Sistema simétrico que elimina la distinción macho/hembra para conexiones más rápidas.",
+      "badge": "Conexiones y Herrajes",
+      "metrics": [
+        {
+          "valor": "1/4",
+          "texto": "Vuelta conexión"
+        },
+        {
+          "valor": "50%",
+          "texto": "Más rápido"
+        },
+        {
+          "valor": "Al/Br",
+          "texto": "Materiales"
+        }
+      ],
+      "primaryText": "Ver Catálogo",
+      "primaryLink": "#catalogo",
+      "secondaryText": "Solicitar Cotización",
+      "secondaryLink": "#cotizar",
+      "contentHtml": "<p>Los <strong>coples Storz</strong> son el estándar internacional para conexión rápida de mangueras contra incendio. Su diseño simétrico permite que cualquier cople se conecte con otro sin importar la orientación, eliminando los segundos críticos que se pierden buscando el extremo macho o hembra. El mecanismo de cuarto de vuelta asegura una conexión hermética que resiste presiones de hasta 300 PSI sin fugas.</p>\n    <p><strong>Gama de México</strong> ofrece coples Storz en aluminio forjado para aplicaciones de peso ligero y en bronce fundido para instalaciones permanentes. Disponibles en diámetros de 1.5\" a 5\", con adaptadores para conversión desde roscas NH y NPT. Las reducciones swivel permiten conectar mangueras de diferentes calibres manteniendo la flexibilidad del sistema sin puntos de torsión.</p>"
+    },
+    "schema": {
+      "name": "Coples de Manguera Contra Incendios",
+      "description": "Coples de aluminio y bronce para unión de mangueras contra incendios. 1.5\" y 2.5\" NST. Envíos a toda la República.",
+      "image": "/img/conexiones-herrajes/adaptador-aluminio-elk-o-lite-4-frontal.avif",
+      "url": "/conexiones/coples",
+      "category": "Conexiones y Herrajes Contra Incendios",
+      "brand": "Elkhart Brass",
+      "reviewAuthor": "Ing. Carlos Mendoza",
+      "reviewBody": "Excelente calidad y respaldo técnico de Gama de México. Equipos certificados con entrega puntual.",
+      "reviewDate": "2025-03-15",
+      "ratingCount": 32,
+      "reviewCount": 32
+    },
+    "breadcrumb": [
+      {
+        "name": "Inicio",
+        "url": "/"
+      },
+      {
+        "name": "Equipos",
+        "url": "/equipos"
+      },
+      {
+        "name": "Conexiones y Herrajes",
+        "url": "/conexiones-herrajes-contra-incendios"
+      }
+    ],
+    "catalog": {
+      "title": "Catálogo de Coples Storz y Reducciones",
+      "desc": "Selecciona el modelo que mejor se adapte a tu instalación"
+    },
+    "empty": {
+      "title": "Próximamente más opciones",
+      "text": "Estamos agregando más coples y reducciones de diferentes configuraciones. Solicita una cotización personalizada.",
+      "buttonText": "Solicitar Cotización"
+    },
+    "techInfo": {
+      "title": "Especificaciones Técnicas de Coples Storz",
+      "items": [
+        {
+          "label": "Presión de trabajo",
+          "value": "250-300 PSI"
+        },
+        {
+          "label": "Conexión",
+          "value": "Cuarto de vuelta"
+        },
+        {
+          "label": "Diámetros",
+          "value": "1.5\" a 5\""
+        },
+        {
+          "label": "Diseño",
+          "value": "Simétrico (asexuado)"
+        },
+        {
+          "label": "Empaque",
+          "value": "EPDM alta resistencia"
+        },
+        {
+          "label": "Material",
+          "value": "Aluminio / Bronce"
+        }
+      ]
+    },
+    "ctaFinal": {
+      "title": "¿No encuentras la configuración que necesitas?",
+      "desc": "Tenemos acceso al catálogo completo de Elkhart Brass. Contáctanos para coples Storz en diámetros especiales o reducciones personalizadas.",
+      "buttonText": "Solicitar Cotización Especial"
+    },
+    "sidebar": {
+      "navTitulo": "Tipos de Conexiones",
+      "baseUrl": "/conexiones",
+      "backLinkHref": "/conexiones-herrajes-contra-incendios",
+      "backLinkTexto": "Ver todas las conexiones",
+      "certificaciones": [
+        {
+          "siglas": "FM",
+          "nombre": "Factory Mutual"
+        },
+        {
+          "siglas": "UL",
+          "nombre": "UL Listed"
+        },
+        {
+          "siglas": "NOM",
+          "nombre": "NOM-002-STPS"
+        }
+      ],
+      "marcas": [
+        "Dixon",
+        "Elkhart Brass",
+        "Harrington",
+        "Action Coupling"
+      ],
+      "aplicaciones": [
+        "Unión de mangueras",
+        "Conexiones rápidas",
+        "Sistemas portátiles",
+        "Brigadas industriales"
+      ],
+      "productosRelacionados": [
+        {
+          "href": "/gabinetes-hidrantes-contra-incendios",
+          "nombre": "Gabinetes e Hidrantes"
+        },
+        {
+          "href": "/mangueras-contra-incendios",
+          "nombre": "Mangueras Contra Incendios"
+        },
+        {
+          "href": "/valvulas-contra-incendios",
+          "nombre": "Válvulas Contra Incendios"
+        },
+        {
+          "href": "/boquillas-contra-incendios",
+          "nombre": "Boquillas Contra Incendios"
+        }
+      ],
+      "subcategorias": [
+        {
+          "slug": "adaptadores",
+          "nombre": "Adaptadores de Bronce",
+          "descripcion": "Conversión entre roscas NH, NPT, Storz"
+        },
+        {
+          "slug": "wye",
+          "nombre": "Conexión Y (Wye)",
+          "descripcion": "Derivación en dos salidas"
+        },
+        {
+          "slug": "siamesa",
+          "nombre": "Toma Siamesa FDC",
+          "descripcion": "Conexión para bomberos"
+        },
+        {
+          "slug": "coples",
+          "nombre": "Coples y Reducciones",
+          "descripcion": "Conexión rápida Storz"
+        },
+        {
+          "slug": "chiflones",
+          "nombre": "Chiflones de Tres Pasos",
+          "descripcion": "Control de patrón de descarga"
+        },
+        {
+          "slug": "accesorios",
+          "nombre": "Accesorios y Herrajes",
+          "descripcion": "Tapones, caps, niples"
+        }
+      ]
+    },
+    "related": {
+      "titulo": "Otras Conexiones y Herrajes",
+      "subtitulo": "Explora más opciones para tu sistema contra incendios",
+      "maxProductos": 3,
+      "verTodosLink": "/conexiones-herrajes-contra-incendios",
+      "verTodosTexto": "Ver todas las conexiones"
+    },
+    "cotizacion": {
+      "titulo": "Cotiza Coples",
+      "tipoEquipo": "Conexiones y herrajes",
+      "pagina": "Conexiones Coples"
+    },
+    "faqs": [
+      {
+        "pregunta": "¿Qué es un cople de manguera y cuándo se usa?",
+        "respuesta": "El cople es el accesorio que permite unir dos secciones de manguera en línea para extender el alcance del sistema. Se usa cuando la longitud de una manguera no es suficiente para cubrir la distancia al riesgo más alejado o para reparar una manguera dañada uniendo dos segmentos en buen estado. Los coples estándar tienen rosca NST y están disponibles en aluminio y bronce."
+      },
+      {
+        "pregunta": "¿Cuál es la diferencia entre un cople rígido y un cople Storz?",
+        "respuesta": "Un cople rígido (NH/NST) tiene una parte macho y una hembra que se unen mediante roscado giratorio; requiere varios giros para conectar y desconectar. Un cople Storz es simétrico (sin distinción macho/hembra) y se conecta con un simple cuarto de vuelta, haciendo la conexión mucho más rápida. Los coples Storz son el estándar en Europa y se están adoptando en México para operaciones de bomberos que requieren velocidad de despliegue. En instalaciones permanentes de edificios, los coples NH/NST son más comunes."
+      },
+      {
+        "pregunta": "¿Qué establece NFPA 1963 sobre los estándares de coples de manguera?",
+        "respuesta": "NFPA 1963 es la norma que establece los estándares para conexiones de mangueras contra incendios en Estados Unidos, adoptada como referencia en México. Define dimensiones de rosca NH, resistencia mínima a la presión (probados a 600 PSI), materiales aceptables y requisitos de marcado. Los coples deben mantener hermeticidad desde 0 PSI hasta la presión de prueba sin fugas. En México, NOM-154-SCFI también regula dimensiones de roscas NST para equipos de extinción."
+      },
+      {
+        "pregunta": "¿Cuántos coples se pueden usar en serie en una línea de mangueras?",
+        "respuesta": "Técnicamente no hay un límite fijo en el número de coples por línea, pero cada unión añade pérdida de carga y es un punto potencial de falla bajo presión. NFPA 25 recomienda minimizar las conexiones. En la práctica, para tendidos de más de 60 metros se evalúa la hidráulica para asegurar que la presión residual en la boquilla sea suficiente. Asesoramos en el diseño del tendido."
+      },
+      {
+        "pregunta": "¿Cuál es el torque correcto de apriete para coples de manguera?",
+        "respuesta": "Los coples de manguera NST no deben apretarse con herramientas de impacto ni con torque excesivo, ya que las roscas son relativamente gruesas y suaves (7.5 TPI en 2.5\") y pueden deformarse. El apriete correcto es \"a mano más un cuarto de vuelta\" con llave de manguera para asegurar el sello del empaque. Un apriete excesivo comprime el empaque EPDM más de lo necesario, generando dificultades en la desconexión bajo presión y acortando la vida del empaque. Los empaques deben revisarse y reemplazarse en el mantenimiento anual."
+      },
+      {
+        "pregunta": "¿Los coples de aluminio son compatibles con mangueras de bronce?",
+        "respuesta": "Sí, son físicamente compatibles si el tipo de rosca coincide. Sin embargo, en ambientes marinos o con alta concentración de cloruros, la mezcla de metales diferentes (aluminio y bronce) puede provocar corrosión galvánica en las roscas. Para instalaciones permanentes en costas o industria química, se recomienda usar coples y chiflones del mismo material para evitar este efecto."
+      }
+    ]
+  },
+  {
+    "seccion": "conexiones",
+    "slug": "siamesa",
+    "categoria": "conexiones-herrajes",
+    "filter": {
+      "subcategorias": [
+        "siamesa"
+      ]
+    },
+    "meta": {
+      "title": "Toma Siamesa FDC Clappered 2×2.5\" NH | NFPA 13/14 México",
+      "description": "Toma siamesa FDC para rociadores y standpipe. Modelos plain y clappered con check valves, 2×2.5\" NH, bronce cromado. NFPA 13, 14. Elkhart Brass UL/FM. Distribuidor México."
+    },
+    "hero": {
+      "title": "Toma Siamesa FDC",
+      "intro": "Conexión para el Departamento de Bomberos (Fire Department Connection) que permite a las unidades de emergencia inyectar agua al sistema de rociadores o tuberías verticales del edificio. Componente obligatorio según NFPA 14 para edificios con sistemas de protección contra incendios.",
+      "badge": "Conexiones y Herrajes",
+      "metrics": [
+        {
+          "valor": "NFPA 14",
+          "texto": "Normativa"
+        },
+        {
+          "valor": "2x2.5\"",
+          "texto": "Entradas NH"
+        },
+        {
+          "valor": "UL/FM",
+          "texto": "Certificación"
+        }
+      ],
+      "primaryText": "Ver Catálogo",
+      "primaryLink": "#catalogo",
+      "secondaryText": "Solicitar Cotización",
+      "secondaryLink": "#cotizar",
+      "contentHtml": "<p>La <strong>toma siamesa FDC</strong> (Fire Department Connection) es el punto de conexión donde los bomberos conectan sus mangueras para suplementar o presurizar el sistema contra incendios del edificio. Disponible en configuraciones plain (sin válvulas), clappered (con clapetas anti-retorno) y con válvula de alivio para proteger el sistema de sobrepresiones. Las entradas estándar de 2-1/2\" NH permiten conexión directa desde las líneas de ataque.</p>\n    <p><strong>Gama de México</strong> suministra tomas siamesas Elkhart Brass certificadas UL/FM en bronce fundido con acabado cromado o pintado. Ofrecemos modelos de pared, empotrados y de piso según los requerimientos arquitectónicos del proyecto. Cada unidad cumple NFPA 14 e incluye tapones y cadenas para protección contra vandalismo y acumulación de escombros.</p>"
+    },
+    "schema": {
+      "name": "Toma Siamesa FDC Contra Incendios",
+      "description": "Toma siamesa FDC de bronce para rociadores y standpipe. 2 bocas 2.5\" NST. NFPA 13 y 14. Envíos nacionales México.",
+      "image": "/img/conexiones-herrajes/adaptador-aluminio-elk-o-lite-4-frontal.avif",
+      "url": "/conexiones/siamesa",
+      "category": "Conexiones y Herrajes Contra Incendios",
+      "brand": "Elkhart Brass",
+      "reviewAuthor": "Ing. Carlos Mendoza",
+      "reviewBody": "Excelente calidad y respaldo técnico de Gama de México. Equipos certificados con entrega puntual.",
+      "reviewDate": "2025-03-15",
+      "ratingCount": 32,
+      "reviewCount": 32
+    },
+    "breadcrumb": [
+      {
+        "name": "Inicio",
+        "url": "/"
+      },
+      {
+        "name": "Equipos",
+        "url": "/equipos"
+      },
+      {
+        "name": "Conexiones y Herrajes",
+        "url": "/conexiones-herrajes-contra-incendios"
+      }
+    ],
+    "catalog": {
+      "title": "Catálogo de Toma Siamesa FDC",
+      "desc": "Selecciona el modelo que mejor se adapte a tu instalación"
+    },
+    "empty": {
+      "title": "Próximamente más opciones",
+      "text": "Estamos agregando más tomas siamesas de diferentes configuraciones. Solicita una cotización personalizada.",
+      "buttonText": "Solicitar Cotización"
+    },
+    "techInfo": {
+      "title": "Especificaciones Técnicas de Toma Siamesa FDC",
+      "items": [
+        {
+          "label": "Presión de trabajo",
+          "value": "175-300 PSI"
+        },
+        {
+          "label": "Presión de prueba",
+          "value": "500 PSI"
+        },
+        {
+          "label": "Entradas",
+          "value": "2x 2.5\" NH"
+        },
+        {
+          "label": "Normativa",
+          "value": "NFPA 14"
+        },
+        {
+          "label": "Certificación",
+          "value": "UL/FM"
+        },
+        {
+          "label": "Material",
+          "value": "Bronce / Acero Inox"
+        }
+      ]
+    },
+    "ctaFinal": {
+      "title": "¿No encuentras la configuración que necesitas?",
+      "desc": "Tenemos acceso al catálogo completo de Elkhart Brass. Contáctanos para tomas siamesas con configuraciones especiales o acabados personalizados.",
+      "buttonText": "Solicitar Cotización Especial"
+    },
+    "sidebar": {
+      "navTitulo": "Tipos de Conexiones",
+      "baseUrl": "/conexiones",
+      "backLinkHref": "/conexiones-herrajes-contra-incendios",
+      "backLinkTexto": "Ver todas las conexiones",
+      "certificaciones": [
+        {
+          "siglas": "FM",
+          "nombre": "Factory Mutual"
+        },
+        {
+          "siglas": "UL",
+          "nombre": "UL Listed"
+        },
+        {
+          "siglas": "NOM",
+          "nombre": "NOM-002-STPS"
+        }
+      ],
+      "marcas": [
+        "Dixon",
+        "Elkhart Brass",
+        "Harrington",
+        "Potter Roemer"
+      ],
+      "aplicaciones": [
+        "Tomas siamesas para bomberos",
+        "Alimentación de rociadores",
+        "Edificios comerciales",
+        "Conexión de autobombas"
+      ],
+      "productosRelacionados": [
+        {
+          "href": "/gabinetes-hidrantes-contra-incendios",
+          "nombre": "Gabinetes e Hidrantes"
+        },
+        {
+          "href": "/mangueras-contra-incendios",
+          "nombre": "Mangueras Contra Incendios"
+        },
+        {
+          "href": "/valvulas-contra-incendios",
+          "nombre": "Válvulas Contra Incendios"
+        },
+        {
+          "href": "/boquillas-contra-incendios",
+          "nombre": "Boquillas Contra Incendios"
+        }
+      ],
+      "subcategorias": [
+        {
+          "slug": "adaptadores",
+          "nombre": "Adaptadores de Bronce",
+          "descripcion": "Conversión entre roscas NH, NPT, Storz"
+        },
+        {
+          "slug": "wye",
+          "nombre": "Conexión Y (Wye)",
+          "descripcion": "Derivación en dos salidas"
+        },
+        {
+          "slug": "siamesa",
+          "nombre": "Toma Siamesa FDC",
+          "descripcion": "Conexión para bomberos"
+        },
+        {
+          "slug": "coples",
+          "nombre": "Coples y Reducciones",
+          "descripcion": "Conexión rápida Storz"
+        },
+        {
+          "slug": "chiflones",
+          "nombre": "Chiflones de Tres Pasos",
+          "descripcion": "Control de patrón de descarga"
+        },
+        {
+          "slug": "accesorios",
+          "nombre": "Accesorios y Herrajes",
+          "descripcion": "Tapones, caps, niples"
+        }
+      ]
+    },
+    "related": {
+      "titulo": "Otras Conexiones y Herrajes",
+      "subtitulo": "Explora más opciones para tu sistema contra incendios",
+      "maxProductos": 3,
+      "verTodosLink": "/conexiones-herrajes-contra-incendios",
+      "verTodosTexto": "Ver todas las conexiones"
+    },
+    "cotizacion": {
+      "titulo": "Cotiza Conexiones Siamesa",
+      "tipoEquipo": "Conexiones y herrajes",
+      "pagina": "Conexiones Siamesa"
+    },
+    "faqs": [
+      {
+        "pregunta": "¿Qué es una toma siamesa y para qué sirve?",
+        "respuesta": "La toma siamesa (FDC - Fire Department Connection) es la conexión exterior de un edificio que permite a los bomberos inyectar agua adicional al sistema de rociadores o standpipe del edificio desde su camión cisterna. Es un componente obligatorio en edificios con sistemas automáticos de rociadores conforme a NFPA 13 y en sistemas de standpipe tipo I y III conforme a NFPA 14. Sin toma siamesa, los bomberos no pueden reforzar la presión interna del sistema."
+      },
+      {
+        "pregunta": "¿Qué requisitos establece NFPA 13 para las conexiones FDC?",
+        "respuesta": "NFPA 13 sección 12.3 establece que todo sistema de rociadores debe tener al menos una conexión FDC con un mínimo de dos bocas de 2.5\" NH. La sección indica que la FDC debe estar en un lugar accesible para el departamento de bomberos, a no más de 100 pies (30 m) de una toma de hidrante. La tubería de la FDC debe conectarse al sistema de rociadores aguas abajo de la válvula de control principal para que los bomberos puedan presurizar el sistema incluso con la válvula cerrada."
+      },
+      {
+        "pregunta": "¿Para qué sirve el check valve (clapeta) dentro de la siamesa?",
+        "respuesta": "Las clapetas internas (check valves) en una siamesa clappered se abren hacia adentro con la presión del agua cuando los bomberos bombean, y se cierran automáticamente cuando se desconecta la manguera. Esto evita que el agua del sistema del edificio salga por las bocas de la siamesa y que entre suciedad o insectos cuando el sistema no está en uso. Las siamesas sin clapetas (plain) requieren que el operador controle el flujo manualmente desde la bomba."
+      },
+      {
+        "pregunta": "¿Cuántas bocas tiene una toma siamesa estándar?",
+        "respuesta": "La toma siamesa más común para edificios tiene dos bocas de 2.5\" NST (por eso se llama siamesa - dos entradas). Para edificios de gran altura o instalaciones industriales con sistemas de alto caudal, se usan siamesas de tres o cuatro bocas o siamesas en Y con bocas de 4\" o 5\". El tamaño correcto lo define el ingeniero de protección contra incendios basándose en el caudal del sistema y los recursos del cuerpo de bomberos local."
+      },
+      {
+        "pregunta": "¿Cuál es la diferencia entre una siamesa con conexión Storz y una con rosca NH?",
+        "respuesta": "Las siamesas con rosca NH (National Hose) son el estándar en México y Estados Unidos: dos bocas roscadas de 2.5\". Las siamesas con acople Storz usan el sistema simétrico de cuarto de vuelta sin distinción macho/hembra, más rápido de conectar en emergencia. Algunos cuerpos de bomberos modernos en México están adoptando Storz para sus mangueras de gran diámetro (4\"-5\"). Si el cuerpo de bomberos local usa Storz, se puede instalar una siamesa con bocas Storz o adaptar con un convertidor."
+      },
+      {
+        "pregunta": "¿Dónde se instala la toma siamesa en un edificio?",
+        "respuesta": "La toma siamesa se instala en la fachada exterior del edificio, entre 60 cm y 1.20 m del nivel del piso, en un lugar visible y accesible para los vehículos de bomberos. NFPA 13 y 14 especifican que debe estar identificada con letras de no menos de 1\" de altura indicando el tipo de sistema al que conecta (SPRINKLER, STANDPIPE). NFPA 291 define el código de colores: rojo para sistemas de alta presión, verde para presión normal. Debe estar protegida de daños mecánicos y libre de obstáculos en un radio de 1 metro."
+      }
+    ]
+  },
+  {
+    "seccion": "conexiones",
+    "slug": "siamesas-elkhart",
+    "categoria": "conexiones-herrajes",
+    "filter": {
+      "subcategorias": [
+        "tomas-siamesas"
+      ]
+    },
+    "meta": {
+      "title": "Siamesas FDC Clappered y Valved Elkhart Brass | NFPA 13/14 México",
+      "description": "Tomas siamesas FDC Elkhart Brass clappered y valved. Bronce cromado, 2 y 3 bocas 2½\" NST, NFPA 13 sección 12, NFPA 14, UL Listed. Distribuidor autorizado México."
+    },
+    "hero": {
+      "title": "Siamesas Elkhart Brass",
+      "intro": "Tomas siamesas FDC de Elkhart Brass en configuraciones clappered (automática) y valved (manual). Bronce cromado, bronce natural y aluminio. Bocas de 2½ pulgadas NST en modelos de 2 y 3 entradas.",
+      "badge": "Conexiones y Herrajes",
+      "metrics": [
+        {
+          "valor": "2½\"",
+          "texto": "NST estándar"
+        },
+        {
+          "valor": "NFPA",
+          "texto": "13 / 14 / 20"
+        },
+        {
+          "valor": "Bronce",
+          "texto": "Cromado / Natural"
+        }
+      ],
+      "primaryText": "Ver Catálogo",
+      "primaryLink": "#catalogo",
+      "secondaryText": "Solicitar Cotización",
+      "secondaryLink": "#cotizar",
+      "contentHtml": "<p>Las <strong>tomas siamesas Elkhart Brass</strong> son conexiones FDC (Fire Department Connection) de alta calidad para sistemas de rociadores y standpipe. Disponibles en configuraciones clappered — con check valves automáticos que se abren y cierran con la presión — y valved, con válvulas de cierre manual para mayor control operativo.</p>\n    <p>En <strong>Gama de México</strong> distribuimos siamesas Elkhart Brass en bronce cromado para fachadas de edificios, bronce natural para instalaciones industriales y aluminio ligero. Asesoramos en la selección del modelo correcto según el tipo de sistema (rociadores NFPA 13, standpipe NFPA 14) y los requisitos del proyecto.</p>"
+    },
+    "schema": {
+      "name": "Tomas Siamesas Clappered y Valved Elkhart Brass",
+      "description": "Tomas siamesas Elkhart Brass clappered y valved. Bronce cromado, 2 y 3 bocas, NFPA 13/14. Distribuidor México.",
+      "image": "/img/conexiones-herrajes/adaptador-aluminio-elk-o-lite-4-frontal.avif",
+      "url": "/conexiones/siamesas-elkhart",
+      "category": "Conexiones y Herrajes Contra Incendios",
+      "brand": "Elkhart Brass",
+      "reviewAuthor": "Arq. Patricia Gómez",
+      "reviewBody": "Las siamesas cromadas Elkhart Brass quedan muy bien en fachada. Gama de México nos entregó a tiempo para la entrega del edificio.",
+      "reviewDate": "2025-04-20",
+      "ratingCount": 20,
+      "reviewCount": 20
+    },
+    "breadcrumb": [
+      {
+        "name": "Inicio",
+        "url": "/"
+      },
+      {
+        "name": "Equipos",
+        "url": "/equipos"
+      },
+      {
+        "name": "Conexiones y Herrajes",
+        "url": "/conexiones-herrajes-contra-incendios"
+      },
+      {
+        "name": "Siamesas Elkhart Brass",
+        "url": "/conexiones/siamesas-elkhart"
+      }
+    ],
+    "catalog": {
+      "title": "Siamesas Elkhart Brass",
+      "desc": "Tomas siamesas clappered y valved para sistemas contra incendios"
+    },
+    "empty": {
+      "title": "Próximamente más opciones",
+      "text": "Estamos agregando fichas de siamesas Elkhart Brass. Solicita cotización con las especificaciones de tu proyecto.",
+      "buttonText": "Solicitar Cotización"
+    },
+    "techInfo": {
+      "title": "Especificaciones Técnicas",
+      "items": [
+        {
+          "label": "Bocas",
+          "value": "2 o 3 × 2½\" NST"
+        },
+        {
+          "label": "Tipos",
+          "value": "Clappered / Valved"
+        },
+        {
+          "label": "Material",
+          "value": "Bronce cromado"
+        },
+        {
+          "label": "Presión",
+          "value": "300 PSI prueba"
+        },
+        {
+          "label": "Norma",
+          "value": "NFPA 13 / 14"
+        },
+        {
+          "label": "Instalación",
+          "value": "Fachada / Muro"
+        }
+      ]
+    },
+    "sidebar": {
+      "navTitulo": "Tipos de Conexiones",
+      "baseUrl": "/conexiones",
+      "backLinkHref": "/conexiones-herrajes-contra-incendios",
+      "backLinkTexto": "Ver todas las conexiones",
+      "certificaciones": [
+        {
+          "siglas": "UL",
+          "nombre": "UL Listed"
+        },
+        {
+          "siglas": "FM",
+          "nombre": "Factory Mutual"
+        },
+        {
+          "siglas": "NOM",
+          "nombre": "NOM-002-STPS"
+        }
+      ],
+      "marcas": [
+        "Elkhart Brass",
+        "Dixon",
+        "Harrington",
+        "POK"
+      ],
+      "aplicaciones": [
+        "Edificios comerciales",
+        "Torres residenciales",
+        "Naves industriales",
+        "Centros comerciales",
+        "Hospitales"
+      ],
+      "productosRelacionados": [
+        {
+          "href": "/monitores-contra-incendios",
+          "nombre": "Monitores Contra Incendios"
+        },
+        {
+          "href": "/boquillas-contra-incendios",
+          "nombre": "Boquillas Contra Incendios"
+        },
+        {
+          "href": "/valvulas-contra-incendios",
+          "nombre": "Válvulas Contra Incendios"
+        },
+        {
+          "href": "/mangueras-contra-incendios",
+          "nombre": "Mangueras Contra Incendios"
+        }
+      ],
+      "subcategorias": [
+        {
+          "slug": "adaptadores",
+          "nombre": "Adaptadores de Bronce",
+          "descripcion": "Conversión entre roscas NH, NPT, Storz"
+        },
+        {
+          "slug": "wye",
+          "nombre": "Conexión Y (Wye)",
+          "descripcion": "Derivación en dos salidas"
+        },
+        {
+          "slug": "siamesa",
+          "nombre": "Toma Siamesa FDC",
+          "descripcion": "Conexión para bomberos"
+        },
+        {
+          "slug": "coples",
+          "nombre": "Coples y Reducciones",
+          "descripcion": "Conexión rápida Storz"
+        },
+        {
+          "slug": "chiflones",
+          "nombre": "Chiflones de Tres Pasos",
+          "descripcion": "Control de patrón de descarga"
+        },
+        {
+          "slug": "accesorios",
+          "nombre": "Accesorios y Herrajes",
+          "descripcion": "Tapones, caps, niples"
+        },
+        {
+          "slug": "siamesas-elkhart",
+          "nombre": "Siamesas Elkhart Brass",
+          "descripcion": "Clappered y Valved"
+        },
+        {
+          "slug": "wye-elkhart",
+          "nombre": "Wye Elkhart Brass",
+          "descripcion": "Gated y Plain"
+        }
+      ]
+    },
+    "related": {
+      "titulo": "Otras Conexiones y Herrajes",
+      "subtitulo": "Adaptadores, wyes y accesorios para sistemas contra incendios",
+      "maxProductos": 3,
+      "verTodosLink": "/conexiones-herrajes-contra-incendios",
+      "verTodosTexto": "Ver todas las conexiones"
+    },
+    "cotizacion": {
+      "titulo": "Cotiza Siamesas Elkhart Brass",
+      "tipoEquipo": "Conexiones y herrajes",
+      "pagina": "Siamesas Elkhart Brass"
+    },
+    "faqs": [
+      {
+        "pregunta": "¿Qué diferencia hay entre una siamesa clappered y una valved?",
+        "respuesta": "La siamesa clappered tiene clapetas internas (check valves) que se abren con la presión del agua y se cierran automáticamente cuando el bombero desconecta la manguera. Esto evita que el agua del sistema salga por las bocas. La siamesa valved tiene válvulas de cierre manual en cada boca, lo que permite mayor control pero requiere operación activa. La mayoría de instalaciones en México usan siamesas clappered por su funcionamiento automático."
+      },
+      {
+        "pregunta": "¿Qué requisitos establece NFPA 13 sección 12 para las siamesas FDC Elkhart?",
+        "respuesta": "NFPA 13 sección 12.3 establece que las FDC deben: ser listadas (UL/FM), tener mínimo dos bocas de 2.5\" NH, instalarse entre 18\" y 48\" de altura respecto al piso terminado, y estar ubicadas de forma que los bomberos puedan conectar sus mangueras sin obstáculos. Las siamesas Elkhart Brass Series 500 y 600 cumplen todos estos requisitos. Además, la FDC debe estar señalizada indicando el sistema que alimenta (ROCIADORES, STANDPIPE o AMBOS)."
+      },
+      {
+        "pregunta": "¿Las siamesas Elkhart Brass cumplen con NFPA 13 y 14?",
+        "respuesta": "Sí. Las tomas siamesas Elkhart Brass cumplen con los requisitos de NFPA 13 (rociadores), NFPA 14 (standpipe) y NFPA 20 (bombas contra incendio) para conexiones del departamento de bomberos (FDC). Están disponibles en configuraciones de 2 y 3 bocas con conexiones de 2½ pulgadas NST estándar, y cuentan con certificación UL Listed y FM Approved."
+      },
+      {
+        "pregunta": "¿Qué tipos de conexiones están disponibles en siamesas Elkhart Brass?",
+        "respuesta": "Elkhart Brass ofrece siamesas con bocas en rosca NH (National Hose) estándar de 2.5\", el tipo más común en México y Estados Unidos. También están disponibles modelos con bocas Storz para cuerpos de bomberos que han migrado a ese sistema de acople rápido. Existen versiones con salida de 4\" o 5\" para sistemas de alto caudal. El cuerpo puede ser de montaje en pared (wall type) o de poste (post type) según los requerimientos de la instalación."
+      },
+      {
+        "pregunta": "¿Qué materiales están disponibles para las siamesas Elkhart Brass?",
+        "respuesta": "Elkhart Brass fabrica siamesas en bronce cromado para fachadas de edificios, bronce natural para instalaciones industriales y aluminio para aplicaciones donde el peso es un factor. El acabado cromado resiste la intemperie y mantiene la estética de la fachada. Para ambientes marinos o químicos, se recomienda bronce con recubrimiento epóxico especial."
+      },
+      {
+        "pregunta": "¿Cómo se distingue una siamesa FDC de rociadores versus una de standpipe?",
+        "respuesta": "Visualmente son similares, pero se distinguen por su etiqueta o letrero permanente grabado o fundido en el cuerpo. Una siamesa de rociadores dice \"SPRINKLER\" o \"AUTO SPKR\". Una de standpipe dice \"STANDPIPE\". Si alimenta ambos sistemas, dice \"SPRINKLER AND STANDPIPE\". NFPA 13 y 14 exigen esta identificación con letras de mínimo 1 pulgada de altura. En México, también se recomienda agregar una placa en español para facilitar la acción de los bomberos locales en una emergencia."
+      }
+    ]
+  },
+  {
+    "seccion": "conexiones",
+    "slug": "wye-elkhart",
+    "categoria": "conexiones-herrajes",
+    "filter": {
+      "subcategorias": [
+        "distribuidores-wye"
+      ]
+    },
+    "meta": {
+      "title": "Wye Gated y Plain Elkhart Brass 2.5\" NH | Distribuidores México",
+      "description": "Distribuidores wye Elkhart Brass: gated con válvulas independientes y plain. Bronce y aluminio, conexiones 2½\" y 1½\" NH, 200 PSI trabajo / 400 PSI prueba. Operaciones de bomberos México."
+    },
+    "hero": {
+      "title": "Wye Elkhart Brass",
+      "intro": "Distribuidores wye de Elkhart Brass en configuraciones gated (con válvulas de cierre) y plain (sin válvulas). Bronce y aluminio de alta resistencia. Presión de trabajo 200 PSI, prueba hidrostática 400 PSI.",
+      "badge": "Conexiones y Herrajes",
+      "metrics": [
+        {
+          "valor": "200",
+          "texto": "PSI trabajo"
+        },
+        {
+          "valor": "2½\"",
+          "texto": "NH estándar"
+        },
+        {
+          "valor": "Gated",
+          "texto": "Válvulas indep."
+        }
+      ],
+      "primaryText": "Ver Catálogo",
+      "primaryLink": "#catalogo",
+      "secondaryText": "Solicitar Cotización",
+      "secondaryLink": "#cotizar",
+      "contentHtml": "<p>Los <strong>distribuidores wye Elkhart Brass</strong> dividen un suministro de agua en dos líneas independientes para que dos equipos operen desde una sola toma. Los modelos gated incluyen válvulas de cierre de cuarto de vuelta en cada salida para controlar el flujo por línea; los modelos plain operan con ambas salidas abiertas permanentemente.</p>\n    <p>En <strong>Gama de México</strong> distribuimos wyes Elkhart Brass en bronce fundido y aluminio con conexiones NH estándar. Configuraciones de 2½\" a dos salidas de 1½\" para operaciones de bomberos, y de 2½\" a dos salidas de 2½\" para aplicaciones industriales de alto caudal. Todos probados a 400 PSI.</p>"
+    },
+    "schema": {
+      "name": "Distribuidores Wye Gated y Plain Elkhart Brass",
+      "description": "Distribuidores wye Elkhart Brass gated y plain. Bronce y aluminio, 2½\" a 1½\" NST. Presión 200 PSI. Distribuidor México.",
+      "image": "/img/conexiones-herrajes/adaptador-aluminio-elk-o-lite-4-frontal.avif",
+      "url": "/conexiones/wye-elkhart",
+      "category": "Conexiones y Herrajes Contra Incendios",
+      "brand": "Elkhart Brass",
+      "reviewAuthor": "Cmte. Miguel Angel Ruiz",
+      "reviewBody": "Los wyes Elkhart Brass aguantan el uso rudo del campo. Llevamos tres años usándolos y no hemos tenido una sola falla.",
+      "reviewDate": "2025-06-15",
+      "ratingCount": 22,
+      "reviewCount": 22
+    },
+    "breadcrumb": [
+      {
+        "name": "Inicio",
+        "url": "/"
+      },
+      {
+        "name": "Equipos",
+        "url": "/equipos"
+      },
+      {
+        "name": "Conexiones y Herrajes",
+        "url": "/conexiones-herrajes-contra-incendios"
+      },
+      {
+        "name": "Wye Elkhart Brass",
+        "url": "/conexiones/wye-elkhart"
+      }
+    ],
+    "catalog": {
+      "title": "Distribuidores Wye Elkhart Brass",
+      "desc": "Wyes gated y plain para operaciones de bomberos e industria"
+    },
+    "empty": {
+      "title": "Próximamente más opciones",
+      "text": "Estamos agregando fichas de wyes Elkhart Brass. Solicita cotización con las especificaciones de tu operación.",
+      "buttonText": "Solicitar Cotización"
+    },
+    "techInfo": {
+      "title": "Especificaciones Técnicas",
+      "items": [
+        {
+          "label": "Presión trabajo",
+          "value": "200 PSI"
+        },
+        {
+          "label": "Prueba",
+          "value": "400 PSI"
+        },
+        {
+          "label": "Entrada",
+          "value": "2½\" NH"
+        },
+        {
+          "label": "Salidas",
+          "value": "2 × 1½\" o 2½\""
+        },
+        {
+          "label": "Material",
+          "value": "Bronce / Aluminio"
+        },
+        {
+          "label": "Válvulas",
+          "value": "Gated / Plain"
+        }
+      ]
+    },
+    "sidebar": {
+      "navTitulo": "Tipos de Conexiones",
+      "baseUrl": "/conexiones",
+      "backLinkHref": "/conexiones-herrajes-contra-incendios",
+      "backLinkTexto": "Ver todas las conexiones",
+      "certificaciones": [
+        {
+          "siglas": "UL",
+          "nombre": "UL Listed"
+        },
+        {
+          "siglas": "FM",
+          "nombre": "Factory Mutual"
+        },
+        {
+          "siglas": "NOM",
+          "nombre": "NOM-002-STPS"
+        }
+      ],
+      "marcas": [
+        "Elkhart Brass",
+        "Dixon",
+        "Harrington",
+        "POK"
+      ],
+      "aplicaciones": [
+        "Cuerpos de bomberos",
+        "Brigadas industriales",
+        "Protección civil",
+        "Instalaciones fijas",
+        "Primera respuesta"
+      ],
+      "productosRelacionados": [
+        {
+          "href": "/monitores-contra-incendios",
+          "nombre": "Monitores Contra Incendios"
+        },
+        {
+          "href": "/boquillas-contra-incendios",
+          "nombre": "Boquillas Contra Incendios"
+        },
+        {
+          "href": "/mangueras-contra-incendios",
+          "nombre": "Mangueras Contra Incendios"
+        },
+        {
+          "href": "/valvulas-contra-incendios",
+          "nombre": "Válvulas Contra Incendios"
+        }
+      ],
+      "subcategorias": [
+        {
+          "slug": "adaptadores",
+          "nombre": "Adaptadores de Bronce",
+          "descripcion": "Conversión entre roscas NH, NPT, Storz"
+        },
+        {
+          "slug": "wye",
+          "nombre": "Conexión Y (Wye)",
+          "descripcion": "Derivación en dos salidas"
+        },
+        {
+          "slug": "siamesa",
+          "nombre": "Toma Siamesa FDC",
+          "descripcion": "Conexión para bomberos"
+        },
+        {
+          "slug": "coples",
+          "nombre": "Coples y Reducciones",
+          "descripcion": "Conexión rápida Storz"
+        },
+        {
+          "slug": "chiflones",
+          "nombre": "Chiflones de Tres Pasos",
+          "descripcion": "Control de patrón de descarga"
+        },
+        {
+          "slug": "accesorios",
+          "nombre": "Accesorios y Herrajes",
+          "descripcion": "Tapones, caps, niples"
+        },
+        {
+          "slug": "siamesas-elkhart",
+          "nombre": "Siamesas Elkhart Brass",
+          "descripcion": "Clappered y Valved"
+        },
+        {
+          "slug": "wye-elkhart",
+          "nombre": "Wye Elkhart Brass",
+          "descripcion": "Gated y Plain"
+        }
+      ]
+    },
+    "related": {
+      "titulo": "Otras Conexiones y Herrajes",
+      "subtitulo": "Siamesas, adaptadores y accesorios para sistemas contra incendios",
+      "maxProductos": 3,
+      "verTodosLink": "/conexiones-herrajes-contra-incendios",
+      "verTodosTexto": "Ver todas las conexiones"
+    },
+    "cotizacion": {
+      "titulo": "Cotiza Wyes Elkhart Brass",
+      "tipoEquipo": "Conexiones y herrajes",
+      "pagina": "Wye Elkhart Brass"
+    },
+    "faqs": [
+      {
+        "pregunta": "¿Qué diferencia hay entre un wye gated y uno plain?",
+        "respuesta": "El wye gated tiene válvulas de cierre independientes (gate valves) en cada salida, lo que permite controlar el flujo de cada línea por separado sin afectar a la otra. El wye plain no tiene válvulas — las dos salidas están abiertas permanentemente. Para operaciones de bomberos donde se necesita controlar el flujo por línea, el gated es el estándar. El plain se usa en instalaciones fijas donde ambas salidas siempre operan simultáneamente."
+      },
+      {
+        "pregunta": "¿Cómo se usan los wyes Elkhart Brass en operaciones con camiones cisterna?",
+        "respuesta": "En operaciones con tanques cisterna (tanker operations), el wye gated permite conectar dos líneas de ataque desde una sola salida del camión o de una manguera de suministro, maximizando el uso del agua disponible. El operador puede abrir una salida a la vez o ambas según la demanda táctica. Los wyes de aluminio son preferidos para aplicaciones móviles por su menor peso, mientras que el bronce se usa para instalaciones semifijas o permanentes en plantas industriales."
+      },
+      {
+        "pregunta": "¿Qué presión de trabajo soportan los wyes Elkhart Brass?",
+        "respuesta": "Los distribuidores wye Elkhart Brass están diseñados para presiones de trabajo de 200 PSI y se prueban hidrostáticamente a 400 PSI. Esto los hace compatibles con cualquier sistema municipal o industrial de suministro de agua contra incendios. Los materiales — bronce o aluminio — resisten la corrosión y el desgaste por uso frecuente en operaciones de campo."
+      },
+      {
+        "pregunta": "¿Cuál es el diseño \"flow-through\" de los wyes Elkhart Brass?",
+        "respuesta": "El diseño flow-through de Elkhart Brass optimiza el interior del cuerpo del wye para minimizar la turbulencia y la caída de presión cuando el agua pasa a través. Esto significa que hay menos energía hidráulica perdida en la bifurcación en comparación con diseños más básicos. En operaciones donde la presión disponible es limitada (como en redes municipales de baja presión), este diseño permite mantener presiones de trabajo adecuadas en las líneas de ataque."
+      },
+      {
+        "pregunta": "¿Los wyes Elkhart Brass son compatibles con conexiones NH mexicanas?",
+        "respuesta": "Sí. Los distribuidores wye Elkhart Brass usan roscas NH (National Hose) estándar, que es la misma rosca que usan los cuerpos de bomberos y los hidrantes en México. Disponibles en configuraciones de 2½\" a dos salidas de 1½\" y de 2½\" a dos salidas de 2½\". No requieren adaptadores para conectarse a las mangueras del parque de equipos existente."
+      },
+      {
+        "pregunta": "¿Cuál es la vida útil de un wye Elkhart Brass en uso de campo?",
+        "respuesta": "Los wyes Elkhart Brass fabricados en bronce fundido o aluminio forjado tienen una vida útil prácticamente indefinida cuando reciben mantenimiento adecuado. Las válvulas de bola deben lubricarse anualmente con grasa resistente al agua para mantener el giro suave. Los empaques de las conexiones NH deben inspeccionarse después de cada uso y reemplazarse si muestran cortes, deformaciones o dureza excesiva. Elkhart Brass tiene más de 125 años fabricando equipo de bomberos, con disponibilidad garantizada de refacciones."
+      }
+    ]
+  },
+  {
+    "seccion": "conexiones",
+    "slug": "wye",
+    "categoria": "conexiones-herrajes",
+    "filter": {
+      "subcategorias": [
+        "wye"
+      ]
+    },
+    "meta": {
+      "title": "Conexión Y Wye Gated y Plain Elkhart Brass | NFPA 14 México",
+      "description": "Conexión Y (Wye) gated y plain Elkhart Brass para sistemas standpipe NFPA 14. Modelos B-97-A y B-100-A, 2.5\" a 2×1.5\" NH, 300 PSI, UL/FM. Distribuidor México."
+    },
+    "hero": {
+      "title": "Conexión Y (Wye)",
+      "intro": "Bifurcadores que permiten dividir una línea de manguera en dos salidas independientes, cada una con válvula de bola para control individual del flujo. Esenciales para operaciones de combate de incendios que requieren múltiples líneas de ataque desde una sola fuente de agua.",
+      "badge": "Conexiones y Herrajes",
+      "metrics": [
+        {
+          "valor": "2",
+          "texto": "Salidas"
+        },
+        {
+          "valor": "1/4 vuelta",
+          "texto": "Válvulas"
+        },
+        {
+          "valor": "UL/FM",
+          "texto": "Certificación"
+        }
+      ],
+      "primaryText": "Ver Catálogo",
+      "primaryLink": "#catalogo",
+      "secondaryText": "Solicitar Cotización",
+      "secondaryLink": "#cotizar",
+      "contentHtml": "<p>Las <strong>conexiones Y (Wye)</strong> son dispositivos de bifurcación que dividen una línea de suministro en dos salidas independientes. Cada salida incorpora una válvula de bola de cuarto de vuelta que permite abrir o cerrar el flujo instantáneamente, facilitando el control táctico durante operaciones de combate. Los modelos B-97-A y B-100-A de Elkhart Brass son el estándar de la industria para aplicaciones de bomberos e industriales.</p>\n    <p><strong>Gama de México</strong> ofrece conexiones Wye en bronce fundido y aluminio forjado, con configuraciones de entrada/salida en roscas NH de 2-1/2\" x 1-1/2\" y 2-1/2\" x 2-1/2\". Las válvulas de bola están diseñadas para operar a presiones de hasta 300 PSI con mínima caída de presión. Certificación UL/FM garantiza rendimiento confiable en las condiciones más exigentes de emergencia.</p>"
+    },
+    "schema": {
+      "name": "Conexión Y (Wye) para Mangueras Contra Incendios",
+      "description": "Conexión Y de bronce y aluminio para dividir suministro en dos líneas. 2.5\" a dos salidas 1.5\" NST. Brigadas México.",
+      "image": "/img/conexiones-herrajes/adaptador-aluminio-elk-o-lite-4-frontal.avif",
+      "url": "/conexiones/wye",
+      "category": "Conexiones y Herrajes Contra Incendios",
+      "brand": "Elkhart Brass",
+      "reviewAuthor": "Ing. Carlos Mendoza",
+      "reviewBody": "Excelente calidad y respaldo técnico de Gama de México. Equipos certificados con entrega puntual.",
+      "reviewDate": "2025-03-15",
+      "ratingCount": 32,
+      "reviewCount": 32
+    },
+    "breadcrumb": [
+      {
+        "name": "Inicio",
+        "url": "/"
+      },
+      {
+        "name": "Equipos",
+        "url": "/equipos"
+      },
+      {
+        "name": "Conexiones y Herrajes",
+        "url": "/conexiones-herrajes-contra-incendios"
+      }
+    ],
+    "catalog": {
+      "title": "Catálogo de Conexiones Y (Wye)",
+      "desc": "Selecciona el modelo que mejor se adapte a tu instalación"
+    },
+    "empty": {
+      "title": "Próximamente más opciones",
+      "text": "Estamos agregando más conexiones Wye de diferentes configuraciones. Solicita una cotización personalizada.",
+      "buttonText": "Solicitar Cotización"
+    },
+    "techInfo": {
+      "title": "Especificaciones Técnicas de Conexiones Y (Wye)",
+      "items": [
+        {
+          "label": "Presión de trabajo",
+          "value": "300 PSI"
+        },
+        {
+          "label": "Válvulas",
+          "value": "Bola 1/4 de vuelta"
+        },
+        {
+          "label": "Entrada",
+          "value": "2.5\" NH hembra"
+        },
+        {
+          "label": "Salidas",
+          "value": "2x 1.5\" o 2.5\" NH"
+        },
+        {
+          "label": "Certificación",
+          "value": "UL Listed / FM"
+        },
+        {
+          "label": "Material",
+          "value": "Bronce / Aluminio"
+        }
+      ]
+    },
+    "ctaFinal": {
+      "title": "¿No encuentras la configuración que necesitas?",
+      "desc": "Tenemos acceso al catálogo completo de Elkhart Brass. Contáctanos para conexiones Wye en configuraciones especiales o diámetros no estándar.",
+      "buttonText": "Solicitar Cotización Especial"
+    },
+    "sidebar": {
+      "navTitulo": "Tipos de Conexiones",
+      "baseUrl": "/conexiones",
+      "backLinkHref": "/conexiones-herrajes-contra-incendios",
+      "backLinkTexto": "Ver todas las conexiones",
+      "certificaciones": [
+        {
+          "siglas": "FM",
+          "nombre": "Factory Mutual"
+        },
+        {
+          "siglas": "UL",
+          "nombre": "UL Listed"
+        },
+        {
+          "siglas": "NOM",
+          "nombre": "NOM-002-STPS"
+        }
+      ],
+      "marcas": [
+        "Dixon",
+        "Elkhart Brass",
+        "Harrington",
+        "Action Coupling"
+      ],
+      "aplicaciones": [
+        "División de líneas",
+        "Operaciones de bomberos",
+        "Sistemas de rociadores",
+        "Redes contra incendio"
+      ],
+      "productosRelacionados": [
+        {
+          "href": "/gabinetes-hidrantes-contra-incendios",
+          "nombre": "Gabinetes e Hidrantes"
+        },
+        {
+          "href": "/mangueras-contra-incendios",
+          "nombre": "Mangueras Contra Incendios"
+        },
+        {
+          "href": "/valvulas-contra-incendios",
+          "nombre": "Válvulas Contra Incendios"
+        },
+        {
+          "href": "/boquillas-contra-incendios",
+          "nombre": "Boquillas Contra Incendios"
+        }
+      ],
+      "subcategorias": [
+        {
+          "slug": "adaptadores",
+          "nombre": "Adaptadores de Bronce",
+          "descripcion": "Conversión entre roscas NH, NPT, Storz"
+        },
+        {
+          "slug": "wye",
+          "nombre": "Conexión Y (Wye)",
+          "descripcion": "Derivación en dos salidas"
+        },
+        {
+          "slug": "siamesa",
+          "nombre": "Toma Siamesa FDC",
+          "descripcion": "Conexión para bomberos"
+        },
+        {
+          "slug": "coples",
+          "nombre": "Coples y Reducciones",
+          "descripcion": "Conexión rápida Storz"
+        },
+        {
+          "slug": "chiflones",
+          "nombre": "Chiflones de Tres Pasos",
+          "descripcion": "Control de patrón de descarga"
+        },
+        {
+          "slug": "accesorios",
+          "nombre": "Accesorios y Herrajes",
+          "descripcion": "Tapones, caps, niples"
+        }
+      ]
+    },
+    "related": {
+      "titulo": "Otras Conexiones y Herrajes",
+      "subtitulo": "Explora más opciones para tu sistema contra incendios",
+      "maxProductos": 3,
+      "verTodosLink": "/conexiones-herrajes-contra-incendios",
+      "verTodosTexto": "Ver todas las conexiones"
+    },
+    "cotizacion": {
+      "titulo": "Cotiza Conexiones Wye",
+      "tipoEquipo": "Conexiones y herrajes",
+      "pagina": "Conexiones Wye"
+    },
+    "faqs": [
+      {
+        "pregunta": "¿Para qué se usa una conexión Y (Wye) en sistemas contra incendios?",
+        "respuesta": "La conexión Y divide un suministro de agua de una sola manguera en dos salidas independientes, permitiendo que dos equipos (boquillas o mangueras) operen simultáneamente desde una sola toma de hidrante. Es usada por brigadas de bomberos cuando se necesita atacar un incendio desde dos frentes con una sola conexión al hidrante, o cuando se necesita una línea de ataque y una línea de enfriamiento simultáneamente."
+      },
+      {
+        "pregunta": "¿Cómo aplica la conexión Wye en sistemas standpipe según NFPA 14?",
+        "respuesta": "NFPA 14 contempla el uso de conexiones Wye en salidas de sistemas standpipe Clase III para permitir que el personal de bomberos conecte simultáneamente dos líneas de manguera de 1.5\" a una sola salida de 2.5\". Esto es especialmente útil en pisos de edificios altos donde el espacio limita el número de salidas standpipe. La conexión Wye debe estar listada (UL/FM) y ser compatible con las roscas NH del sistema."
+      },
+      {
+        "pregunta": "¿Cuál es la diferencia entre un Wye con válvulas y uno sin válvulas?",
+        "respuesta": "El Wye con válvulas (gated wye) tiene una válvula de cierre de cuarto de vuelta en cada salida, lo que permite controlar el caudal por línea de forma independiente o conectar/desconectar una manguera sin afectar la otra. El Wye plain (sin válvulas) tiene ambas salidas permanentemente abiertas y solo puede controlarse desde la fuente aguas arriba. Para operaciones de bomberos, el gated es el estándar; el plain se usa en instalaciones fijas donde ambas líneas operan siempre juntas."
+      },
+      {
+        "pregunta": "¿Cuál es el diámetro estándar de una conexión Y?",
+        "respuesta": "La conexión Y estándar para bomberos tiene entrada de 2.5\" NST y dos salidas de 1.5\" NST, que es la configuración más común para hidrantes municipales. También existen versiones de 2.5\" a dos salidas de 2.5\" para operaciones industriales de alto caudal. Disponemos de conexiones Y en aluminio y bronce según la aplicación y el tipo de ambiente."
+      },
+      {
+        "pregunta": "¿Cómo se calcula la pérdida de presión en una conexión Wye?",
+        "respuesta": "La pérdida de presión en un Wye se calcula usando el coeficiente de flujo (Cv) del dispositivo y el caudal total que pasa por él. Los fabricantes como Elkhart Brass publican tablas de pérdida de carga para cada modelo a distintos caudales. Como referencia, un Wye de bronce de 2.5\" bien diseñado tiene una pérdida de aproximadamente 2-5 PSI a 250 GPM totales. Al dividir el flujo en dos salidas iguales, la pérdida por cada salida es menor que en una sola línea, lo que puede ser ventajoso en instalaciones con presión limitada."
+      },
+      {
+        "pregunta": "¿La conexión Y tiene válvulas de cierre independientes en cada salida?",
+        "respuesta": "Sí. Las conexiones Y profesionales tienen una válvula de cierre de cuarto de vuelta en cada salida, lo que permite controlar el caudal en cada línea de forma independiente. Esto es fundamental para ajustar el flujo según las necesidades del ataque y para conectar o desconectar una línea sin interrumpir la otra. Es el estándar para operaciones de bomberos industriales y cumple con los requerimientos de NFPA 14 para sistemas standpipe."
+      }
+    ]
+  }
+]

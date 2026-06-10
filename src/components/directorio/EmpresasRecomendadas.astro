@@ -218,7 +218,8 @@ empresasConScore.forEach(({ empresa }) => {
       <div class="empresas-recomendadas__grid">
         {empresasAMostrar.map((empresa) => {
           const sistemasComunes = empresaActual.tipoSistema.filter(s =>
-            empresa.data.tipoSistema.includes(s)
+            // some() en lugar de includes() para comparar string con el enum del schema
+            empresa.data.tipoSistema.some((t) => t === s)
           );
 
           return (

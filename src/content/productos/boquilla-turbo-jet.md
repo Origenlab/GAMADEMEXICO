@@ -1,6 +1,6 @@
 ---
-title: "Boquilla SM-20FG XD Select-O-Matic 60-200 GPM NFPA 1964 | Elkhart Brass | México"
-description: "Boquilla automática SM-20FG XD Elkhart Brass 60-200 GPM 75/100 PSI aluminio Elk-O-Lite NFPA 1964. Resorte externo patentado, cero lubricación, flush integrado. Bomberos México."
+title: "Boquilla SM-20FG XD Select-O-Matic 60-200 GPM NFPA 1964"
+description: "Boquilla automática SM-20FG XD Elkhart Brass 60-200 GPM 75/100 PSI aluminio Elk-O-Lite NFPA 1964. Resorte externo patentado, cero lubricación, flush integrado."
 categoria: "boquillas"
 subcategoria: "turbo-jet"
 imagen: "/img/productos/boquilla-turbo-jet-contra-incendios-nocturna-lluvia-01.avif"

@@ -1,6 +1,6 @@
 ---
 title: "Monitor Cuello de Cisne Certificado PEMEX - Norma NRF-015"
-description: "Monitor contra incendio cuello de cisne con certificación PEMEX bajo especificación NRF-015. Cumple NFPA 15, NFPA 24 y normas de Protección Civil. Documentación completa para auditorías."
+description: "Monitor contra incendio cuello de cisne con certificación PEMEX bajo especificación NRF-015. Cumple NFPA 15, NFPA 24 y normas de Protección Civil."
 categoria: "monitores"
 subcategoria: "cuello-cisne"
 imagen: "/img/monitores-contra-incendios/monitor-cuello-cisne-contra-incendios-tres-cuartos-derecha-03.avif"

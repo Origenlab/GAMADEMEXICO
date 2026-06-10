@@ -1,5 +1,5 @@
 ---
-title: "Boquilla Fixed System UL-50 UL 1971 NFPA 15 16 | Elkhart Brass | Sistemas Fijos México"
+title: "Boquilla Fixed System UL-50 UL 1971 NFPA 15 16 | Elkhart Brass"
 description: "Boquilla fija Elkhart Brass UL-50 certificada UL 1971. 50-100 GPM, factor K preciso, bronce NPT. NFPA 15 agua-spray, NFPA 16 espuma-agua. Sistemas fijos México."
 categoria: "boquillas"
 subcategoria: "certificada"

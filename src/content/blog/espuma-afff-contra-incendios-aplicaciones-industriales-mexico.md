@@ -19,6 +19,7 @@ schema:
       - q: "¿La espuma AFFF se está prohibiendo?"
         a: "Los AFFF con PFOS ya están restringidos en muchos países por contaminación ambiental persistente. La transición va hacia espumas fluorine-free (F3) que son biodegradables. En México aún no hay prohibición formal pero las plantas que exportan a Europa o EE.UU. ya están migrando. La recomendación es planificar la transición y no acumular inventario de AFFF convencional."
 description: "Cómo funcionan los sistemas de espuma AFFF, dónde se aplican, qué componentes requieren y por qué la transición a espumas libres de flúor cambia la ingeniería."
+fecha: "2026-03-11"
 categoria: "boquillas"
 autor:
   nombre: "Equipo Gama de México"

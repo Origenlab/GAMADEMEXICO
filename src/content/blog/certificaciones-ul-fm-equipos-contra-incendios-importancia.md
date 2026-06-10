@@ -9,7 +9,7 @@ autor:
   cargo: "Asesoría Técnica"
 imagen: "/img/blog/auditoria-equipos-contra-incendios-sala-juntas-corporativa.avif"
 imagenAlt: "Auditoría de certificaciones de equipos contra incendios"
-tags: ["certificaciones UL FM", "UL Listed", "FM Approved", "equipos contra incendios", "aseguradoras contra incendios"]
+tags: ["UL FM", "UL Listed", "FM Approved", "equipos contra incendios", "aseguradoras contra incendios"]
 destacado: false
 canonical: "https://gamademexico.com/blog/monitores/certificaciones-ul-fm-equipos-contra-incendios-importancia"
 noindex: false

@@ -1,6 +1,7 @@
 ---
 title: "Monitores Contra Incendios en México"
 description: "Conoce cómo seleccionar monitores contra incendios industriales, cumplir normas y comprar con asesoría experta, disponibilidad y envíos a todo México."
+fecha: "2026-02-16"
 categoria: "monitores"
 autor:
   nombre: "Ing. Roberto Hernández"
@@ -8,7 +9,7 @@ autor:
 imagen: "/img/blog/monitor-contra-incendios-refineria-industrial-mexico.avif"
 imagenAlt: "Venta de monitores contra incendios en México"
 imagenOg: "/img/monitores-contra-incendios/monitor-tipo-corazon-contra-incendios-industrial-angulo-frontal-19.avif"
-tags: ["monitores contra incendios", "monitor contra incendios industrial", "venta de monitores contra incendios en México", "equipos contra incendios industriales", "sistemas contra incendios", "protección contra incendios industrial", "proveedor de equipos contra incendios", "monitores de agua contra incendios"]
+tags: ["monitores contra incendios", "monitor contra incendios industrial", "equipos contra incendios industriales", "sistemas contra incendios", "protección contra incendios industrial", "proveedores de equipos contra incendios"]
 destacado: true
 draft: true
 tiempoLectura: 15

@@ -1,5 +1,5 @@
 ---
-title: "Chiflón 205-B-10 Industrial 1\" NH 30-60 GPM UL 401 NOM-002 | Elkhart Brass | México"
+title: "Chiflón 205-B-10 Industrial 1\" NH 30-60 GPM UL 401 NOM-002"
 description: "Chiflón 205-B-10 tres pasos 1\" NH bronce fundido 30-60 GPM 100 PSI UL 401 NOM-002-STPS Elkhart Brass. Compacto para gabinetes. Primer intervención interior México."
 categoria: "conexiones-herrajes"
 subcategoria: "chiflones"

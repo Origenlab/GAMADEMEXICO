@@ -1,5 +1,5 @@
 ---
-title: "Cap Protección C-17 2.5\" NH Bronce Cadena 9\" UL Listed | Elkhart Brass | México"
+title: "Cap Protección C-17 2.5\" NH Bronce Cadena 9\" UL Listed"
 description: "Cap de protección C-17 Elkhart Brass 2.5\" NH bronce fundido 175 PSI cadena 9\" UL Listed NOM-002. Tomas siamesas, hidrantes y gabinetes contra incendio México."
 categoria: "conexiones-herrajes"
 subcategoria: "accesorios"

@@ -1,13 +1,14 @@
 ---
 title: "Conexiones Storz para Sistemas Contra Incendios"
 description: "Conexiones Storz para sistemas contra incendios en México: cómo funcionan, por qué reemplazaron a las roscas, tamaños DN65 a DN100 y errores de compatibilidad."
+fecha: "2026-03-11"
 categoria: "conexiones-herrajes"
 autor:
   nombre: "Equipo Gama de México"
   cargo: "Asesoría Técnica"
 imagen: "/img/blog/adaptadores-herrajes-bronce-contra-incendios-profesional.avif"
 imagenAlt: "Conexiones Storz para sistemas contra incendios"
-tags: ["conexiones Storz", "NFPA 1963", "acoplamientos contra incendios", "mangueras contra incendios", "compatibilidad Storz NST"]
+tags: ["conexiones Storz", "NFPA 1963", "conexiones contra incendios", "mangueras contra incendios", "compatibilidad Storz NST"]
 destacado: false
 draft: false
 tiempoLectura: 16

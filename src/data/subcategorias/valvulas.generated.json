@@ -1,0 +1,874 @@
+[
+  {
+    "seccion": "valvulas",
+    "slug": "compuerta",
+    "categoria": "valvulas",
+    "filter": {
+      "subcategorias": [
+        "compuerta"
+      ]
+    },
+    "meta": {
+      "title": "Válvula de Compuerta OS&Y UL/FM para Rociadores NFPA 13 | Gama de México",
+      "description": "Válvula de compuerta OS&Y bridada con vástago exterior visible para sistemas de rociadores. 175-350 PSI, hierro dúctil y bronce, certificación UL 262 y FM 1120. Con tamper switch. Distribuidores en México."
+    },
+    "hero": {
+      "title": "Válvula de Compuerta OS&Y",
+      "intro": "Válvulas de compuerta con vástago exterior y yugo (Outside Screw & Yoke) para aislamiento en líneas principales de sistemas contra incendio. El diseño OS&Y permite verificación visual instantánea del estado de apertura, requisito fundamental para cumplimiento de NFPA 25.",
+      "badge": "Válvulas Contra Incendios",
+      "metrics": [
+        {
+          "valor": "350",
+          "texto": "PSI máxima"
+        },
+        {
+          "valor": "2\"-12\"",
+          "texto": "Diámetros"
+        },
+        {
+          "valor": "UL/FM",
+          "texto": "Certificación"
+        }
+      ],
+      "primaryText": "Ver Catálogo",
+      "primaryLink": "#catalogo",
+      "secondaryText": "Solicitar Cotización",
+      "secondaryLink": "#cotizar",
+      "contentHtml": "<p>La <strong>válvula de compuerta OS&Y</strong> (Outside Screw & Yoke) es el componente estándar para aislamiento en sistemas contra incendio según NFPA 13, 14 y 20. Su diseño con vástago exterior permite verificar visualmente si la válvula está abierta o cerrada sin necesidad de girarla, característica crítica para inspecciones de rutina y respuesta a emergencias. La posición del vástago también facilita la instalación de interruptores de supervisión para monitoreo remoto.</p>\n    <p><strong>Gama de México</strong> suministra válvulas OS&Y bridadas en hierro dúctil y bronce con certificación UL/FM en diámetros de 2\" a 12\". Cada válvula incluye bridas perforadas según ANSI B16.1 Clase 125 o 250 según aplicación. Asesoramos en la selección del modelo correcto considerando presión de trabajo, material compatible con el medio y requerimientos de supervisión electrónica para sistemas monitoreados.</p>"
+    },
+    "schema": {
+      "name": "Válvula de Compuerta OS&Y Contra Incendios",
+      "description": "Válvula de compuerta OS&Y para sistemas de rociadores. NFPA 13. Bronce y fierro nodular. Con tamper switch. Envíos México.",
+      "image": "/img/valvulas-contra-incendios/valvula-check-swing-bridada-contra-incendios-ambiente-bombas-27.avif",
+      "url": "/valvulas/compuerta",
+      "category": "Válvulas Contra Incendios",
+      "brand": "Elkhart Brass",
+      "reviewAuthor": "Ing. Carlos Mendoza",
+      "reviewBody": "Excelente calidad y respaldo técnico de Gama de México. Equipos certificados con entrega puntual.",
+      "reviewDate": "2025-03-15",
+      "ratingCount": 32,
+      "reviewCount": 32
+    },
+    "breadcrumb": [
+      {
+        "name": "Inicio",
+        "url": "/"
+      },
+      {
+        "name": "Equipos",
+        "url": "/equipos"
+      },
+      {
+        "name": "Válvulas Contra Incendios",
+        "url": "/valvulas-contra-incendios"
+      }
+    ],
+    "catalog": {
+      "title": "Catálogo de Válvulas de Compuerta OS&Y",
+      "desc": "Selecciona el modelo que mejor se adapte a tu sistema contra incendios"
+    },
+    "empty": {
+      "title": "Próximamente más opciones",
+      "text": "Estamos agregando más válvulas de compuerta OS&Y de diferentes marcas y especificaciones. Mientras tanto, solicita una cotización personalizada.",
+      "buttonText": "Solicitar Cotización"
+    },
+    "techInfo": {
+      "title": "Especificaciones Técnicas de Válvulas de Compuerta OS&Y",
+      "items": [
+        {
+          "label": "Presión de trabajo",
+          "value": "175-350 PSI"
+        },
+        {
+          "label": "Presión de prueba",
+          "value": "4x presión trabajo"
+        },
+        {
+          "label": "Diámetros disponibles",
+          "value": "2.5\" a 12\""
+        },
+        {
+          "label": "Rotación vástago",
+          "value": "90° sello hermético"
+        },
+        {
+          "label": "Recubrimiento",
+          "value": "Epóxico AWWA C550"
+        },
+        {
+          "label": "Certificaciones",
+          "value": "UL 262, FM 1120/1130"
+        }
+      ]
+    },
+    "ctaFinal": {
+      "title": "¿No encuentras el diámetro o configuración que necesitas?",
+      "desc": "Tenemos acceso al catálogo completo de Elkhart Brass. Contáctanos para válvulas en diámetros especiales, conexiones bridadas, ranuradas o combinaciones.",
+      "buttonText": "Solicitar Cotización Especial"
+    },
+    "sidebar": {
+      "navTitulo": "Tipos de Válvulas",
+      "baseUrl": "/valvulas",
+      "backLinkHref": "/valvulas-contra-incendios",
+      "backLinkTexto": "Ver todas las válvulas",
+      "certificaciones": [
+        {
+          "siglas": "FM",
+          "nombre": "Factory Mutual"
+        },
+        {
+          "siglas": "UL",
+          "nombre": "UL Listed"
+        },
+        {
+          "siglas": "NOM",
+          "nombre": "NOM-002-STPS"
+        }
+      ],
+      "marcas": [
+        "Nibco",
+        "Kennedy",
+        "Milwaukee",
+        "Apollo"
+      ],
+      "aplicaciones": [
+        "Redes hidráulicas",
+        "Sistemas contra incendio",
+        "Plantas industriales",
+        "Control de flujo principal"
+      ],
+      "productosRelacionados": [
+        {
+          "href": "/gabinetes-hidrantes-contra-incendios",
+          "nombre": "Gabinetes e Hidrantes"
+        },
+        {
+          "href": "/mangueras-contra-incendios",
+          "nombre": "Mangueras Contra Incendios"
+        },
+        {
+          "href": "/boquillas-contra-incendios",
+          "nombre": "Boquillas Contra Incendios"
+        },
+        {
+          "href": "/conexiones-herrajes-contra-incendios",
+          "nombre": "Conexiones y Herrajes"
+        }
+      ],
+      "subcategorias": [
+        {
+          "slug": "compuerta",
+          "nombre": "Válvula de Compuerta OS&Y",
+          "descripcion": "Aislamiento en líneas principales"
+        },
+        {
+          "slug": "globo",
+          "nombre": "Válvula de Globo",
+          "descripcion": "Control preciso de presión"
+        },
+        {
+          "slug": "retencion",
+          "nombre": "Válvula de Retención",
+          "descripcion": "Prevención de reflujo"
+        },
+        {
+          "slug": "mariposa",
+          "nombre": "Válvula Mariposa",
+          "descripcion": "Apertura rápida 90°"
+        }
+      ]
+    },
+    "related": {
+      "titulo": "Otras Válvulas Contra Incendios",
+      "subtitulo": "Explora más opciones para tu sistema de protección",
+      "maxProductos": 3,
+      "verTodosLink": "/valvulas-contra-incendios",
+      "verTodosTexto": "Ver todas las válvulas"
+    },
+    "cotizacion": {
+      "titulo": "Cotiza Válvulas de Compuerta",
+      "tipoEquipo": "Válvulas",
+      "pagina": "Válvulas de Compuerta"
+    },
+    "faqs": [
+      {
+        "pregunta": "¿Para qué se usa una válvula de compuerta en sistemas contra incendios?",
+        "respuesta": "La válvula de compuerta OS&Y (vástago exterior) es el control principal de tuberías en sistemas de rociadores, hidrantes y redes contra incendios. Su vástago exterior indica visualmente si la válvula está abierta o cerrada, lo cual es un requisito de NFPA 13 para sistemas de rociadores. Permite aislar secciones del sistema para mantenimiento sin detener toda la instalación."
+      },
+      {
+        "pregunta": "¿Qué es una válvula OS&Y y por qué se exige en rociadores?",
+        "respuesta": "OS&Y significa Outside Screw and Yoke (vástago exterior). NFPA 13 exige válvulas OS&Y en la conexión entre el suministro de agua y el sistema de rociadores porque su posición (abierto/cerrado) es visible de inmediato sin necesidad de abrir y cerrar para verificar. Esto reduce el riesgo de dejar el sistema sin agua accidentalmente."
+      },
+      {
+        "pregunta": "¿Las válvulas de compuerta requieren supervisión eléctrica?",
+        "respuesta": "En sistemas automáticos de rociadores, NFPA 13 y NFPA 72 requieren supervisión eléctrica de las válvulas de control para generar una señal de alarma si la válvula se cierra accidentalmente. Esto se logra con un tamper switch (interruptor de posición) instalado en la válvula OS&Y. Distribuimos válvulas con tamper switch integrado o adaptable según el sistema de supervisión del proyecto."
+      },
+      {
+        "pregunta": "¿Con qué frecuencia exige NFPA 25 inspeccionar la válvula OS&Y?",
+        "respuesta": "NFPA 25 \"Standard for the Inspection, Testing, and Maintenance of Water-Based Fire Protection Systems\" requiere inspección visual semanal o mensual de todas las válvulas de control para verificar que estén en posición abierta y no presenten daños. Adicionalmente, se requiere prueba de operación anual que consiste en abrir y cerrar completamente la válvula para confirmar que opera sin obstrucciones. El registro de estas inspecciones debe mantenerse en el archivo del sistema."
+      },
+      {
+        "pregunta": "¿Cómo se instala un tamper switch en una válvula OS&Y existente?",
+        "respuesta": "La mayoría de las válvulas OS&Y tienen una ranura o adaptador en el vástago que permite instalar un tamper switch de posición sin desmontar la válvula. El interruptor detecta el movimiento del vástago y envía señal de supervisión al panel de alarma cuando la válvula se mueve de la posición abierta. Gama de México suministra tamper switches compatibles con los principales fabricantes de válvulas y puede asesorar en la integración con paneles de alarma NOTIFIER, EST, Hochiki y otros."
+      },
+      {
+        "pregunta": "¿Cuál es la diferencia entre válvula OS&Y y válvula PIV (Post Indicator Valve) para sistemas de rociadores?",
+        "respuesta": "La válvula OS&Y se instala dentro del cuarto de bombas o en interiores, con el vástago visible y accesible. La válvula PIV (Post Indicator Valve) se instala en el exterior del edificio, sobresale del suelo y tiene una ventana indicadora que muestra \"OPEN\" o \"SHUT\" desde lejos. Ambas son aceptadas por NFPA 13 como válvulas de control supervisadas; la elección depende de la ubicación de la acometida de agua y los requerimientos del proyecto."
+      }
+    ]
+  },
+  {
+    "seccion": "valvulas",
+    "slug": "globo",
+    "categoria": "valvulas",
+    "filter": {
+      "subcategorias": [
+        "globo"
+      ]
+    },
+    "meta": {
+      "title": "Válvula de Globo Angular y Recta para Sistemas NFPA 13 | Gama de México",
+      "description": "Válvula de globo en bronce para control de flujo y drenajes de prueba en sistemas contra incendio. Patrones angular y recto, 300 PSI WOG, conexión roscada NPT. Certificada UL/FM. Envíos a todo México."
+    },
+    "hero": {
+      "title": "Válvula de Globo",
+      "intro": "Válvulas de globo para regulación precisa de flujo y presión en sistemas contra incendio. Su diseño con asiento cónico permite ajuste fino del caudal, ideal para líneas de prueba, drenajes y aplicaciones donde se requiere control gradual en lugar de apertura total.",
+      "badge": "Válvulas Contra Incendios",
+      "metrics": [
+        {
+          "valor": "300",
+          "texto": "PSI máxima"
+        },
+        {
+          "valor": "Angular/Recto",
+          "texto": "Patrones"
+        },
+        {
+          "valor": "UL/FM",
+          "texto": "Certificación"
+        }
+      ],
+      "primaryText": "Ver Catálogo",
+      "primaryLink": "#catalogo",
+      "secondaryText": "Solicitar Cotización",
+      "secondaryLink": "#cotizar",
+      "contentHtml": "<p>La <strong>válvula de globo</strong> utiliza un disco móvil que asienta sobre un anillo cónico para regular el flujo con precisión. A diferencia de las válvulas de compuerta que solo ofrecen apertura total o cierre, las válvulas de globo permiten posiciones intermedias estables para control de caudal. Disponibles en patrón recto para instalación en línea y patrón angular (45° o 90°) para cambios de dirección que también funcionan como punto de regulación.</p>\n    <p><strong>Gama de México</strong> distribuye válvulas de globo certificadas UL/FM en hierro fundido, bronce y acero inoxidable para aplicaciones específicas. Manejamos conexiones roscadas NPT, bridadas ANSI y ranuradas Victaulic en diámetros de 1/2\" a 6\". Ideales para conexiones de manguera en gabinetes, líneas de prueba de rociadores, drenajes de sistema y puntos de control en cuartos de bombas.</p>"
+    },
+    "schema": {
+      "name": "Válvula de Globo para Sistemas Contra Incendios",
+      "description": "Válvula de globo angular y recta para control de flujo en sistemas contra incendios. Bronce. Drenajes de prueba NFPA 13.",
+      "image": "/img/valvulas-contra-incendios/valvula-check-swing-bridada-contra-incendios-ambiente-bombas-27.avif",
+      "url": "/valvulas/globo",
+      "category": "Válvulas Contra Incendios",
+      "brand": "Elkhart Brass",
+      "reviewAuthor": "Ing. Carlos Mendoza",
+      "reviewBody": "Excelente calidad y respaldo técnico de Gama de México. Equipos certificados con entrega puntual.",
+      "reviewDate": "2025-03-15",
+      "ratingCount": 32,
+      "reviewCount": 32
+    },
+    "breadcrumb": [
+      {
+        "name": "Inicio",
+        "url": "/"
+      },
+      {
+        "name": "Equipos",
+        "url": "/equipos"
+      },
+      {
+        "name": "Válvulas Contra Incendios",
+        "url": "/valvulas-contra-incendios"
+      }
+    ],
+    "catalog": {
+      "title": "Catálogo de Válvulas de Globo",
+      "desc": "Selecciona el modelo que mejor se adapte a tu sistema contra incendios"
+    },
+    "empty": {
+      "title": "Próximamente más opciones",
+      "text": "Estamos agregando más válvulas de globo de diferentes marcas y especificaciones. Mientras tanto, solicita una cotización personalizada.",
+      "buttonText": "Solicitar Cotización"
+    },
+    "techInfo": {
+      "title": "Especificaciones Técnicas de Válvulas de Globo",
+      "items": [
+        {
+          "label": "Presión de trabajo",
+          "value": "Hasta 300 PSI"
+        },
+        {
+          "label": "Presión industrial",
+          "value": "Hasta 2,500 PSI"
+        },
+        {
+          "label": "Diámetros disponibles",
+          "value": "0.5\" a 2\""
+        },
+        {
+          "label": "Patrones",
+          "value": "Angular y Recto"
+        },
+        {
+          "label": "Material cuerpo",
+          "value": "Bronce / Latón forjado"
+        },
+        {
+          "label": "Conexión",
+          "value": "Roscada NPT"
+        }
+      ]
+    },
+    "ctaFinal": {
+      "title": "¿No encuentras el diámetro o patrón que necesitas?",
+      "desc": "Tenemos acceso al catálogo completo de Elkhart Brass. Contáctanos para válvulas en configuraciones especiales o alta presión industrial.",
+      "buttonText": "Solicitar Cotización Especial"
+    },
+    "sidebar": {
+      "navTitulo": "Tipos de Válvulas",
+      "baseUrl": "/valvulas",
+      "backLinkHref": "/valvulas-contra-incendios",
+      "backLinkTexto": "Ver todas las válvulas",
+      "certificaciones": [
+        {
+          "siglas": "FM",
+          "nombre": "Factory Mutual"
+        },
+        {
+          "siglas": "UL",
+          "nombre": "UL Listed"
+        },
+        {
+          "siglas": "NOM",
+          "nombre": "NOM-002-STPS"
+        }
+      ],
+      "marcas": [
+        "Nibco",
+        "Kennedy",
+        "Milwaukee",
+        "Apollo"
+      ],
+      "aplicaciones": [
+        "Regulación de caudal",
+        "Sistemas de hidrantes",
+        "Plantas industriales",
+        "Control de presión"
+      ],
+      "productosRelacionados": [
+        {
+          "href": "/gabinetes-hidrantes-contra-incendios",
+          "nombre": "Gabinetes e Hidrantes"
+        },
+        {
+          "href": "/mangueras-contra-incendios",
+          "nombre": "Mangueras Contra Incendios"
+        },
+        {
+          "href": "/boquillas-contra-incendios",
+          "nombre": "Boquillas Contra Incendios"
+        },
+        {
+          "href": "/conexiones-herrajes-contra-incendios",
+          "nombre": "Conexiones y Herrajes"
+        }
+      ],
+      "subcategorias": [
+        {
+          "slug": "compuerta",
+          "nombre": "Válvula de Compuerta OS&Y",
+          "descripcion": "Aislamiento en líneas principales"
+        },
+        {
+          "slug": "globo",
+          "nombre": "Válvula de Globo",
+          "descripcion": "Control preciso de presión"
+        },
+        {
+          "slug": "retencion",
+          "nombre": "Válvula de Retención",
+          "descripcion": "Prevención de reflujo"
+        },
+        {
+          "slug": "mariposa",
+          "nombre": "Válvula Mariposa",
+          "descripcion": "Apertura rápida 90°"
+        }
+      ]
+    },
+    "related": {
+      "titulo": "Otras Válvulas Contra Incendios",
+      "subtitulo": "Explora más opciones para tu sistema de protección",
+      "maxProductos": 3,
+      "verTodosLink": "/valvulas-contra-incendios",
+      "verTodosTexto": "Ver todas las válvulas"
+    },
+    "cotizacion": {
+      "titulo": "Cotiza Válvulas de Globo",
+      "tipoEquipo": "Válvulas",
+      "pagina": "Válvulas de Globo"
+    },
+    "faqs": [
+      {
+        "pregunta": "¿Para qué se usa una válvula de globo en sistemas contra incendios?",
+        "respuesta": "La válvula de globo (angular o recta) se usa principalmente para control de flujo y regulación de presión en líneas de menor diámetro. En sistemas contra incendios es común en conexiones de manómetro, drenajes de prueba, líneas de prueba de caudal y ramas de tuberías donde se requiere control preciso de la apertura. No es recomendada como válvula principal de control por su mayor pérdida de carga comparada con la válvula mariposa."
+      },
+      {
+        "pregunta": "¿La válvula de globo angular se puede usar para drenaje de rociadores?",
+        "respuesta": "Sí. La válvula de globo angular es el tipo más usado para los drenajes de prueba de caudal (inspector's test valve) en sistemas de rociadores conforme a NFPA 13. Su diseño de 90° facilita la conexión directa al tubo de descarga vertical. Distribuimos válvulas de globo angular en bronce de 3/4\" y 1\" que cumplen con este requisito."
+      },
+      {
+        "pregunta": "¿Cuál es la presión máxima de trabajo de sus válvulas de globo?",
+        "respuesta": "Las válvulas de globo de bronce que distribuimos tienen presión máxima de trabajo (WOG) de 300 PSI para los tamaños de 1/2\" a 2\". Para sistemas de alta presión superiores a 175 PSI se recomienda verificar que la válvula sea de clase 300 o superior. Todas las válvulas incluyen hoja de datos técnicos con las especificaciones de presión y temperatura."
+      },
+      {
+        "pregunta": "¿Cuál es la diferencia entre válvula de globo para control de flujo y para aislamiento?",
+        "respuesta": "La válvula de globo es eficiente para regulación de flujo en posiciones intermedias de apertura, donde su asiento cónico ofrece control preciso y estable. Para aislamiento (apertura total o cierre total), se prefieren válvulas de compuerta OS&Y o válvulas mariposa que ofrecen menor pérdida de carga en posición abierta. La válvula de globo genera hasta 3 veces más pérdida de carga que una válvula de compuerta del mismo diámetro en posición completamente abierta, lo cual debe considerarse en el cálculo hidráulico del sistema."
+      },
+      {
+        "pregunta": "¿Qué aplicaciones de NFPA 13 requieren válvula de globo?",
+        "respuesta": "NFPA 13 especifica válvulas de globo angular de 3/4\" o 1\" para: la válvula de prueba del inspector (inspector's test valve) al final de cada sección de rociadores, drenajes auxiliares en tramos donde el agua no puede vaciarse por gravedad, y conexiones de manómetro en la cámara de prueba del rociador piloto en sistemas de pre-acción y diluvio. En estas aplicaciones, el patrón angular facilita la descarga hacia abajo sin accesorios adicionales."
+      },
+      {
+        "pregunta": "¿Cómo afecta la orientación de instalación al desempeño de la válvula de globo?",
+        "respuesta": "La válvula de globo recta debe instalarse con el flujo en la dirección indicada por la flecha en el cuerpo para garantizar el funcionamiento correcto del asiento y evitar desgaste prematuro del disco. El patrón angular (90°) puede instalarse con el flujo entrando por cualquiera de los dos puertos, pero siempre debe verificarse que la dirección de flujo sea hacia el asiento y no en sentido contrario, lo que causaría cierre prematuro o daño al vástago."
+      }
+    ]
+  },
+  {
+    "seccion": "valvulas",
+    "slug": "mariposa",
+    "categoria": "valvulas",
+    "filter": {
+      "subcategorias": [
+        "mariposa"
+      ]
+    },
+    "meta": {
+      "title": "Válvula Mariposa con Tamper Switch para Rociadores NFPA 13 | Gama de México",
+      "description": "Válvula mariposa indicadora con supervisión integrada para sistemas de rociadores. 175-300 PSI, asiento EPDM, disco inoxidable, conexión wafer y ranurada Victaulic. Certificada UL/FM. Distribuidores México."
+    },
+    "hero": {
+      "title": "Válvula Mariposa",
+      "intro": "Válvulas mariposa indicadoras para control de flujo en sistemas contra incendio de gran diámetro. Su diseño compacto con disco giratorio 90° permite apertura rápida y mínima pérdida de presión, ideal para líneas principales donde el espacio es limitado.",
+      "badge": "Válvulas Contra Incendios",
+      "metrics": [
+        {
+          "valor": "90°",
+          "texto": "Apertura rápida"
+        },
+        {
+          "valor": "2\"-12\"",
+          "texto": "Diámetros"
+        },
+        {
+          "valor": "300",
+          "texto": "PSI máxima"
+        }
+      ],
+      "primaryText": "Ver Catálogo",
+      "primaryLink": "#catalogo",
+      "secondaryText": "Solicitar Cotización",
+      "secondaryLink": "#cotizar",
+      "contentHtml": "<p>La <strong>válvula mariposa</strong> utiliza un disco circular que gira 90° sobre un eje central para controlar el flujo. Su diseño wafer o lug ocupa significativamente menos espacio que las válvulas de compuerta equivalentes, reduciendo costos de instalación y facilitando el mantenimiento en cuartos de bombas con espacio limitado. El indicador visual de posición permite verificar el estado de la válvula sin necesidad de operar el volante.</p>\n    <p><strong>Gama de México</strong> suministra válvulas mariposa certificadas UL/FM con cuerpo de hierro dúctil, disco de acero inoxidable y asiento de EPDM o NBR según aplicación. Disponibles con actuador de palanca para operación manual rápida o reductor de engranajes para diámetros mayores a 6\". Incluimos opciones con interruptor de supervisión integrado para monitoreo remoto según NFPA 72.</p>"
+    },
+    "schema": {
+      "name": "Válvula Mariposa con Supervisión Contra Incendios",
+      "description": "Válvula mariposa con tamper switch para sistemas de rociadores NFPA 13. Wafer y ranurada. Bronce y hierro. México.",
+      "image": "/img/valvulas-contra-incendios/valvula-check-swing-bridada-contra-incendios-ambiente-bombas-27.avif",
+      "url": "/valvulas/mariposa",
+      "category": "Válvulas Contra Incendios",
+      "brand": "Elkhart Brass",
+      "reviewAuthor": "Ing. Carlos Mendoza",
+      "reviewBody": "Excelente calidad y respaldo técnico de Gama de México. Equipos certificados con entrega puntual.",
+      "reviewDate": "2025-03-15",
+      "ratingCount": 32,
+      "reviewCount": 32
+    },
+    "breadcrumb": [
+      {
+        "name": "Inicio",
+        "url": "/"
+      },
+      {
+        "name": "Equipos",
+        "url": "/equipos"
+      },
+      {
+        "name": "Válvulas Contra Incendios",
+        "url": "/valvulas-contra-incendios"
+      }
+    ],
+    "catalog": {
+      "title": "Catálogo de Válvulas Mariposa Indicadoras",
+      "desc": "Selecciona el modelo que mejor se adapte a tu sistema contra incendios"
+    },
+    "empty": {
+      "title": "Próximamente más opciones",
+      "text": "Estamos agregando más válvulas mariposa de diferentes marcas y especificaciones. Mientras tanto, solicita una cotización personalizada.",
+      "buttonText": "Solicitar Cotización"
+    },
+    "techInfo": {
+      "title": "Especificaciones Técnicas de Válvulas Mariposa",
+      "items": [
+        {
+          "label": "Presión de trabajo",
+          "value": "175-300 PSI"
+        },
+        {
+          "label": "Presión de prueba",
+          "value": "2x presión trabajo"
+        },
+        {
+          "label": "Diámetros disponibles",
+          "value": "2\" a 12\""
+        },
+        {
+          "label": "Rotación",
+          "value": "90° apertura rápida"
+        },
+        {
+          "label": "Sello",
+          "value": "Bubble-tight EPDM"
+        },
+        {
+          "label": "Supervisión",
+          "value": "Switch tamper integrado"
+        }
+      ]
+    },
+    "ctaFinal": {
+      "title": "¿No encuentras el diámetro o conexión que necesitas?",
+      "desc": "Tenemos acceso al catálogo completo de Elkhart Brass. Contáctanos para válvulas en configuración wafer, ranurada, bridada o diámetros especiales.",
+      "buttonText": "Solicitar Cotización Especial"
+    },
+    "sidebar": {
+      "navTitulo": "Tipos de Válvulas",
+      "baseUrl": "/valvulas",
+      "backLinkHref": "/valvulas-contra-incendios",
+      "backLinkTexto": "Ver todas las válvulas",
+      "certificaciones": [
+        {
+          "siglas": "FM",
+          "nombre": "Factory Mutual"
+        },
+        {
+          "siglas": "UL",
+          "nombre": "UL Listed"
+        },
+        {
+          "siglas": "NOM",
+          "nombre": "NOM-002-STPS"
+        }
+      ],
+      "marcas": [
+        "Nibco",
+        "Kennedy",
+        "Milwaukee",
+        "Apollo"
+      ],
+      "aplicaciones": [
+        "Sistemas de gran caudal",
+        "Redes contra incendio",
+        "Control de flujo rápido",
+        "Instalaciones industriales"
+      ],
+      "productosRelacionados": [
+        {
+          "href": "/gabinetes-hidrantes-contra-incendios",
+          "nombre": "Gabinetes e Hidrantes"
+        },
+        {
+          "href": "/mangueras-contra-incendios",
+          "nombre": "Mangueras Contra Incendios"
+        },
+        {
+          "href": "/boquillas-contra-incendios",
+          "nombre": "Boquillas Contra Incendios"
+        },
+        {
+          "href": "/conexiones-herrajes-contra-incendios",
+          "nombre": "Conexiones y Herrajes"
+        }
+      ],
+      "subcategorias": [
+        {
+          "slug": "compuerta",
+          "nombre": "Válvula de Compuerta OS&Y",
+          "descripcion": "Aislamiento en líneas principales"
+        },
+        {
+          "slug": "globo",
+          "nombre": "Válvula de Globo",
+          "descripcion": "Control preciso de presión"
+        },
+        {
+          "slug": "retencion",
+          "nombre": "Válvula de Retención",
+          "descripcion": "Prevención de reflujo"
+        },
+        {
+          "slug": "mariposa",
+          "nombre": "Válvula Mariposa",
+          "descripcion": "Apertura rápida 90°"
+        }
+      ]
+    },
+    "related": {
+      "titulo": "Otras Válvulas Contra Incendios",
+      "subtitulo": "Explora más opciones para tu sistema de protección",
+      "maxProductos": 3,
+      "verTodosLink": "/valvulas-contra-incendios",
+      "verTodosTexto": "Ver todas las válvulas"
+    },
+    "cotizacion": {
+      "titulo": "Cotiza Válvulas Mariposa",
+      "tipoEquipo": "Válvulas",
+      "pagina": "Válvulas Mariposa"
+    },
+    "faqs": [
+      {
+        "pregunta": "¿Cuál es la ventaja de la válvula mariposa sobre la válvula de compuerta?",
+        "respuesta": "La válvula mariposa tiene menor pérdida de carga en posición abierta, es más compacta y liviana, y tiene un menor costo que la válvula de compuerta en diámetros superiores a 3\". Para sistemas de rociadores, la válvula mariposa con supervisión (tamper switch) es aceptada por NFPA 13 como alternativa a la válvula OS&Y. Su cuarto de vuelta de operación facilita la apertura y cierre rápido."
+      },
+      {
+        "pregunta": "¿Qué es una válvula mariposa con supervisión y cuándo se requiere?",
+        "respuesta": "Una válvula mariposa con supervisión incluye un tamper switch eléctrico que envía señal al panel de alarma si la válvula se cierra más del 20%. NFPA 13 y 72 requieren supervisión en todas las válvulas de control de sistemas automáticos de rociadores. Distribuimos válvulas mariposa con supervisión integrada para montaje wafer, ranurado y bridado en diámetros de 2\" a 12\"."
+      },
+      {
+        "pregunta": "¿Las válvulas mariposa son aptas para montaje en tuberías de acero ranurado (Victaulic)?",
+        "respuesta": "Sí. Distribuimos válvulas mariposa de extremos ranurados compatibles con acoplamientos Victaulic y similares, que son el estándar más común en sistemas de rociadores nuevos por su facilidad de instalación. También disponemos de versiones wafer (entre bridas) y bridadas según el tipo de sistema y el diámetro requerido."
+      },
+      {
+        "pregunta": "¿Cuándo se requiere actuador de engranaje en lugar de palanca en una válvula mariposa?",
+        "respuesta": "Los actuadores de engranaje (gear operator) se requieren en válvulas mariposa de 6\" en adelante, donde la fuerza necesaria para operar el disco a plena presión supera la capacidad ergonómica de una palanca manual. En diámetros menores (2\" a 4\") la palanca de cuarto de vuelta es suficiente. NFPA 13 no especifica el tipo de actuador, pero requiere que la válvula pueda operarse completamente por una persona sin herramientas especiales."
+      },
+      {
+        "pregunta": "¿Qué valor de Cv tiene una válvula mariposa para cálculo hidráulico?",
+        "respuesta": "El coeficiente de flujo Cv de una válvula mariposa varía según el fabricante y el diámetro. Como referencia, una válvula mariposa de 4\" totalmente abierta tiene un Cv aproximado de 400-500, mientras que una de 6\" tiene Cv de 900-1,200. Estos valores deben considerarse en el cálculo hidráulico del sistema según NFPA 13 para verificar que la pérdida de carga en la válvula no compromete la presión residual en los rociadores más desfavorables. Gama de México puede proporcionar las curvas Cv específicas de los modelos disponibles."
+      },
+      {
+        "pregunta": "¿Cuáles son los requisitos de NFPA 13 para supervisión de válvulas mariposa en rociadores?",
+        "respuesta": "NFPA 13 sección 8.16 requiere que todas las válvulas de control en sistemas automáticos de rociadores estén supervisadas eléctricamente o con llave supervisada. Las válvulas mariposa con tamper switch integrado cumplen el requisito de supervisión eléctrica y deben conectarse al sistema de detección de incendios para enviar señal de problemas cuando la válvula se cierra parcialmente. La señal de supervisión debe ir al panel de alarma y puede transmitirse a la estación central de monitoreo para cumplir con NFPA 72."
+      }
+    ]
+  },
+  {
+    "seccion": "valvulas",
+    "slug": "retencion",
+    "categoria": "valvulas",
+    "filter": {
+      "subcategorias": [
+        "retencion"
+      ]
+    },
+    "meta": {
+      "title": "Válvula de Retención Check UL 312 para Bombas Contra Incendio | Gama de México",
+      "description": "Válvula de retención check tipo columpio y disco para sistemas contra incendio. Prevención de reflujo, 175-350 PSI, hierro dúctil y bronce, certificación UL 312 y FM. Cumple NFPA 13 y 25. México."
+    },
+    "hero": {
+      "title": "Válvula de Retención",
+      "intro": "Válvulas check para prevención de reflujo en sistemas contra incendio. Su mecanismo de clapeta o disco permite el flujo en una sola dirección, protegiendo bombas, medidores y equipos sensibles del contraflujo que puede ocurrir por diferencias de presión.",
+      "badge": "Válvulas Contra Incendios",
+      "metrics": [
+        {
+          "valor": "350",
+          "texto": "PSI máxima"
+        },
+        {
+          "valor": "Columpio/Disco",
+          "texto": "Tipos"
+        },
+        {
+          "valor": "UL 312",
+          "texto": "Certificación"
+        }
+      ],
+      "primaryText": "Ver Catálogo",
+      "primaryLink": "#catalogo",
+      "secondaryText": "Solicitar Cotización",
+      "secondaryLink": "#cotizar",
+      "contentHtml": "<p>La <strong>válvula de retención</strong> (check valve) es componente esencial en sistemas contra incendio para prevenir el reflujo de agua que puede dañar bombas, contaminar suministros o causar lecturas erróneas en medidores de flujo. Disponibles en configuración de columpio (swing check) para flujo horizontal o disco con resorte (spring check) para instalación en cualquier orientación. El cierre automático por gravedad o resorte garantiza protección inmediata ante caídas de presión.</p>\n    <p><strong>Gama de México</strong> distribuye válvulas de retención certificadas UL 312 y FM en hierro dúctil, bronce y acero inoxidable. Ofrecemos conexiones bridadas, roscadas y ranuradas en diámetros de 2\" a 12\". Aplicaciones típicas incluyen: descarga de bombas contra incendio, conexión de siamesas, retorno de sistemas de prueba y protección de líneas de suministro municipal.</p>"
+    },
+    "schema": {
+      "name": "Válvula de Retención para Sistemas Contra Incendios",
+      "description": "Válvula de retención check para sistemas contra incendios. Prevención de retroceso. Bronce y hierro. NFPA 13 y 25. México.",
+      "image": "/img/valvulas-contra-incendios/valvula-check-swing-bridada-contra-incendios-ambiente-bombas-27.avif",
+      "url": "/valvulas/retencion",
+      "category": "Válvulas Contra Incendios",
+      "brand": "Elkhart Brass",
+      "reviewAuthor": "Ing. Carlos Mendoza",
+      "reviewBody": "Excelente calidad y respaldo técnico de Gama de México. Equipos certificados con entrega puntual.",
+      "reviewDate": "2025-03-15",
+      "ratingCount": 32,
+      "reviewCount": 32
+    },
+    "breadcrumb": [
+      {
+        "name": "Inicio",
+        "url": "/"
+      },
+      {
+        "name": "Equipos",
+        "url": "/equipos"
+      },
+      {
+        "name": "Válvulas Contra Incendios",
+        "url": "/valvulas-contra-incendios"
+      }
+    ],
+    "catalog": {
+      "title": "Catálogo de Válvulas de Retención Check",
+      "desc": "Selecciona el modelo que mejor se adapte a tu sistema contra incendios"
+    },
+    "empty": {
+      "title": "Próximamente más opciones",
+      "text": "Estamos agregando más válvulas de retención de diferentes marcas y especificaciones. Mientras tanto, solicita una cotización personalizada.",
+      "buttonText": "Solicitar Cotización"
+    },
+    "techInfo": {
+      "title": "Especificaciones Técnicas de Válvulas de Retención",
+      "items": [
+        {
+          "label": "Presión de trabajo",
+          "value": "175-350 PSI"
+        },
+        {
+          "label": "Relación prueba",
+          "value": "2:1"
+        },
+        {
+          "label": "Diámetros disponibles",
+          "value": "2\" a 12\""
+        },
+        {
+          "label": "Tipo",
+          "value": "Columpio (Swing)"
+        },
+        {
+          "label": "Material cuerpo",
+          "value": "Hierro fundido / dúctil"
+        },
+        {
+          "label": "Instalación",
+          "value": "Horizontal o vertical"
+        }
+      ]
+    },
+    "ctaFinal": {
+      "title": "¿No encuentras el diámetro o configuración que necesitas?",
+      "desc": "Tenemos acceso al catálogo completo de Elkhart Brass. Contáctanos para válvulas con puertos de manómetro, asientos especiales o diámetros grandes.",
+      "buttonText": "Solicitar Cotización Especial"
+    },
+    "sidebar": {
+      "navTitulo": "Tipos de Válvulas",
+      "baseUrl": "/valvulas",
+      "backLinkHref": "/valvulas-contra-incendios",
+      "backLinkTexto": "Ver todas las válvulas",
+      "certificaciones": [
+        {
+          "siglas": "FM",
+          "nombre": "Factory Mutual"
+        },
+        {
+          "siglas": "UL",
+          "nombre": "UL Listed"
+        },
+        {
+          "siglas": "NOM",
+          "nombre": "NOM-002-STPS"
+        }
+      ],
+      "marcas": [
+        "Nibco",
+        "Kennedy",
+        "Milwaukee",
+        "Apollo"
+      ],
+      "aplicaciones": [
+        "Prevención de reflujo",
+        "Sistemas de bombeo",
+        "Redes contra incendio",
+        "Protección de equipos"
+      ],
+      "productosRelacionados": [
+        {
+          "href": "/gabinetes-hidrantes-contra-incendios",
+          "nombre": "Gabinetes e Hidrantes"
+        },
+        {
+          "href": "/mangueras-contra-incendios",
+          "nombre": "Mangueras Contra Incendios"
+        },
+        {
+          "href": "/boquillas-contra-incendios",
+          "nombre": "Boquillas Contra Incendios"
+        },
+        {
+          "href": "/conexiones-herrajes-contra-incendios",
+          "nombre": "Conexiones y Herrajes"
+        }
+      ],
+      "subcategorias": [
+        {
+          "slug": "compuerta",
+          "nombre": "Válvula de Compuerta OS&Y",
+          "descripcion": "Aislamiento en líneas principales"
+        },
+        {
+          "slug": "globo",
+          "nombre": "Válvula de Globo",
+          "descripcion": "Control preciso de presión"
+        },
+        {
+          "slug": "retencion",
+          "nombre": "Válvula de Retención",
+          "descripcion": "Prevención de reflujo"
+        },
+        {
+          "slug": "mariposa",
+          "nombre": "Válvula Mariposa",
+          "descripcion": "Apertura rápida 90°"
+        }
+      ]
+    },
+    "related": {
+      "titulo": "Otras Válvulas Contra Incendios",
+      "subtitulo": "Explora más opciones para tu sistema de protección",
+      "maxProductos": 3,
+      "verTodosLink": "/valvulas-contra-incendios",
+      "verTodosTexto": "Ver todas las válvulas"
+    },
+    "cotizacion": {
+      "titulo": "Cotiza Válvulas de Retención",
+      "tipoEquipo": "Válvulas",
+      "pagina": "Válvulas de Retención"
+    },
+    "faqs": [
+      {
+        "pregunta": "¿Para qué se usa una válvula de retención en sistemas contra incendios?",
+        "respuesta": "La válvula de retención (check valve) permite el flujo de agua en una sola dirección. En sistemas contra incendios se instala para evitar el retorno de agua desde el sistema al suministro municipal (prevención de contaminación), para mantener la presión en sistemas de agua a presión (pre-acción y diluvio) y en la descarga de bombas para evitar el flujo inverso cuando la bomba para."
+      },
+      {
+        "pregunta": "¿Qué tipo de válvula de retención se usa en el suministro municipal?",
+        "respuesta": "Para la conexión entre el suministro municipal de agua y un sistema contra incendios, NFPA 13 requiere un ensamble de prevención de retroceso (backflow preventer) que puede incluir una válvula de retención de doble check o un reductor de presión con check. El tipo específico depende del nivel de riesgo definido por la autoridad local del agua. Asesoramos en la selección e instalación de estos dispositivos."
+      },
+      {
+        "pregunta": "¿Con qué frecuencia se debe probar una válvula de retención?",
+        "respuesta": "Conforme a NFPA 25, las válvulas de retención en sistemas contra incendios se deben probar anualmente para verificar que cierran correctamente y no presentan fugas inversas. Los ensambles de prevención de retroceso conectados al suministro municipal tienen requisitos adicionales de prueba definidos por la autoridad local del agua, generalmente también anuales."
+      },
+      {
+        "pregunta": "¿Cuál es la diferencia entre válvula de retención tipo columpio y tipo disco wafer?",
+        "respuesta": "La válvula de retención tipo columpio (swing check) tiene una clapeta que gira sobre un pasador y se usa principalmente en instalaciones horizontales o verticales con flujo hacia arriba. La válvula de disco (wafer check o tilting disc check) es más compacta, se instala entre bridas y puede funcionar en cualquier orientación. Para descarga de bombas contra incendio se prefiere la de disco con resorte porque cierra más rápido evitando el golpe de ariete al parar la bomba."
+      },
+      {
+        "pregunta": "¿Cómo se instalan las válvulas de retención según los requisitos NFPA?",
+        "respuesta": "NFPA 13 y NFPA 20 establecen que las válvulas de retención en líneas de descarga de bombas deben instalarse con flujo en la dirección correcta (indicada por la flecha en el cuerpo) y accesibles para inspección y mantenimiento. En instalaciones verticales, la válvula de columpio debe colocarse con el pasador de la clapeta horizontal para permitir el cierre por gravedad. No se permite la instalación en tramos invertidos donde la gravedad impediría el cierre de la clapeta."
+      },
+      {
+        "pregunta": "¿Qué presión de trabajo tienen las válvulas de retención para sistemas de rociadores?",
+        "respuesta": "Las válvulas de retención certificadas UL 312 que distribuimos tienen presiones de trabajo de 175 PSI para sistemas estándar y 350 PSI para sistemas de alta presión. La presión de prueba hidrostática es 2 veces la presión de trabajo. Para sistemas en edificios de gran altura donde la presión estática puede superar 175 PSI, se deben usar válvulas de retención clase 300 o especificar el modelo correcto con el fabricante. Gama de México asesora en la selección según los parámetros hidráulicos del proyecto."
+      }
+    ]
+  }
+]

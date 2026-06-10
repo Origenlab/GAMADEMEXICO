@@ -1,6 +1,6 @@
 ---
 title: "Monitor UL Listed Económico - Certificación al Mejor Precio"
-description: "Monitor contra incendio certificado UL Listed con la mejor relación precio-certificación del mercado. Calidad comprobada a precio accesible. Ideal para proyectos con presupuesto ajustado que requieren certificación."
+description: "Monitor contra incendio certificado UL Listed con la mejor relación precio-certificación del mercado. Calidad comprobada a precio accesible."
 categoria: "monitores"
 subcategoria: "ul-listed"
 imagen: "/img/monitores-contra-incendios/monitor-ul-listed-contra-incendios-perspectiva-lateral-03.avif"

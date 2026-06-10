@@ -1,6 +1,6 @@
 ---
-title: "Conexión Wye B-97-B Bronce 2.5\"×2.5\" NH 200 PSI UL FM | Elkhart Brass | México"
-description: "Conexión Wye B-97-B Elkhart Brass bronce fundido 2.5\"×2.5\" NH 200 PSI UL Listed FM Approved. Dos salidas 2.5\" válvulas bola bronce. Instalaciones marinas y costeras México."
+title: "Conexión Wye B-97-B Bronce 2.5\"×2.5\" NH 200 PSI UL FM"
+description: "Conexión Wye B-97-B Elkhart Brass bronce fundido 2.5\"×2.5\" NH 200 PSI UL Listed FM Approved. Dos salidas 2.5\" válvulas bola bronce."
 categoria: "conexiones-herrajes"
 subcategoria: "wye"
 imagen: "/img/conexiones-herrajes/conexion-wye-bronce-2-5-frontal.avif"

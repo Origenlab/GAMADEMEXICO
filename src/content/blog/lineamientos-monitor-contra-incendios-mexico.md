@@ -9,7 +9,7 @@ autor:
   cargo: "Asesoría Técnica"
 imagen: "/img/blog/monitor-contra-incendios-refineria-industrial-mexico.avif"
 imagenAlt: "Monitor contra incendios operando en refinería industrial en México"
-tags: ["monitores contra incendios", "NOM-002-STPS", "NFPA 15", "instalación monitores", "protección industrial México"]
+tags: ["monitores contra incendios", "NOM-002-STPS", "NFPA 15", "instalación monitores", "protección industrial"]
 destacado: true
 draft: false
 tiempoLectura: 20

@@ -1,6 +1,7 @@
 ---
-title: "Venta de Trajes para Bomberos en México: Cómo Elegir un Proveedor Certificado y No Cometer Errores Costosos"
-description: "Guía comercial y técnica para comprar trajes para bomberos en México: qué exigir al proveedor, cómo verificar certificaciones, errores frecuentes, comparativa de opciones y por qué la calidad certificada salva vidas."
+title: "Venta de Trajes para Bomberos en México: Elige Proveedor Certificado"
+description: "Cómo comprar trajes para bomberos en México: qué exigir al proveedor, cómo verificar certificaciones NFPA y errores costosos que debes evitar."
+fecha: "2026-06-08"
 categoria: "equipos-bomberos"
 autor:
   nombre: "Lic. Fernanda Ríos Castellanos"
@@ -8,7 +9,7 @@ autor:
 imagen: "/img/blog/venta-trajes-bomberos-proveedor-certificado-mexico.avif"
 imagenAlt: "Venta de trajes para bomberos certificados NFPA en México - proveedor especializado"
 imagenOg: "/img/blog/venta-trajes-bomberos-proveedor-certificado-mexico.avif"
-tags: ["venta de trajes para bomberos", "trajes para bomberos México", "proveedor de equipos para bomberos", "proveedores de equipos para bomberos en México", "comprar trajes para bomberos", "equipo certificado para bomberos", "equipo de protección para bomberos México", "licitación equipos bomberos", "precio traje para bombero México"]
+tags: ["trajes para bomberos", "proveedores de equipos para bomberos", "equipo certificado para bomberos", "equipo de protección para bomberos", "licitación equipos bomberos", "precio traje para bombero México"]
 destacado: true
 draft: false
 tiempoLectura: 17

@@ -23,7 +23,7 @@ export async function getStaticPaths() {
       tag,
       posts: posts
         .filter((p) => p.data.tags?.includes(tag))
-        .sort((a, b) => new Date(b.data.fecha).getTime() - new Date(a.data.fecha).getTime()),
+        .sort((a, b) => new Date(b.data.fecha ?? '1970-01-01').getTime() - new Date(a.data.fecha ?? '1970-01-01').getTime()),
     },
   }));
 }
@@ -47,7 +47,7 @@ const sidebarFeaturedPosts = allPosts
     if (Boolean(b.data.destacado) !== Boolean(a.data.destacado)) {
       return Number(Boolean(b.data.destacado)) - Number(Boolean(a.data.destacado));
     }
-    return new Date(b.data.fecha).getTime() - new Date(a.data.fecha).getTime();
+    return new Date(b.data.fecha ?? '1970-01-01').getTime() - new Date(a.data.fecha ?? '1970-01-01').getTime();
   })
   .map(toSidebarLink)
   .filter((entry) => !sidebarTagUrls.has(entry.href))

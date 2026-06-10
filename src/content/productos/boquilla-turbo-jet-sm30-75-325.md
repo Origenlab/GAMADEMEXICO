@@ -1,6 +1,6 @@
 ---
-title: "Boquilla SM-30FG Select-O-Matic 75-325 GPM NFPA 1964 XD | Elkhart Brass | México"
-description: "Boquilla SM-30FG Select-O-Matic 75-325 GPM 100 PSI aluminio Elk-O-Lite NFPA 1964 XD Elkhart Brass. Resorte externo, horseshoe handle, flush integrado. Brigadas industriales México."
+title: "Boquilla SM-30FG Select-O-Matic 75-325 GPM NFPA 1964 XD"
+description: "Boquilla SM-30FG Select-O-Matic 75-325 GPM 100 PSI aluminio Elk-O-Lite NFPA 1964 XD Elkhart Brass. Resorte externo, horseshoe handle, flush integrado."
 categoria: "boquillas"
 subcategoria: "turbo-jet"
 imagen: "/img/productos/boquilla-turbo-jet-contra-incendios-selector-flujo-06.avif"

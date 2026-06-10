@@ -112,7 +112,7 @@ const CDN_BASE = (import.meta.env.PUBLIC_EWWW_CDN_BASE ?? '').trim().replace(/\/
   <meta property="og:image" content={ogImageUrl}>
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:type" content={ogImageUrl.endsWith('.avif') ? 'image/avif' : ogImageUrl.endsWith('.webp') ? 'image/webp' : ogImageUrl.endsWith('.png') ? 'image/png' : 'image/jpeg'}>
   <meta property="og:image:alt" content={`Equipos contra incendios ${SITE_NAME}: monitores, boquillas, mangueras, válvulas y gabinetes`}>
   <meta property="og:site_name" content={SITE_NAME}>
   <meta property="og:locale" content="es_MX">

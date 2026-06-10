@@ -1,6 +1,6 @@
 ---
 title: "Monitor UL Listed con Volantes de Seguridad - Operación Ergonómica"
-description: "Monitor contra incendio certificado UL Listed con volantes de operación ergonómicos. Diseño que reduce fatiga del operador, frenos de bloqueo positivo. Seguridad del personal de brigada durante emergencias."
+description: "Monitor contra incendio certificado UL Listed con volantes de operación ergonómicos. Diseño que reduce fatiga del operador, frenos de bloqueo positivo."
 categoria: "monitores"
 subcategoria: "ul-listed"
 imagen: "/img/monitores-contra-incendios/monitor-ul-listed-contra-incendios-detalle-volantes-11.avif"

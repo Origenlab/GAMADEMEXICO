@@ -15,13 +15,14 @@ schema:
       - q: "¿Los rociadores pueden activarse accidentalmente?"
         a: "Es extremadamente raro. El elemento fusible requiere temperaturas sostenidas de 68°C+ para romperse. Un día caluroso, vapor de cocina o un calentador normal no alcanzan esa temperatura. Las activaciones accidentales generalmente son por daño mecánico (golpe con montacargas, impacto durante construcción) no por calor ambiental."
 description: "Guía técnica completa sobre sistemas de rociadores automáticos conforme a NFPA 13. Diseño, componentes, válvulas y normativa aplicable en México."
+fecha: "2026-03-11"
 categoria: "valvulas"
 autor:
   nombre: "Ing. Roberto Méndez"
   cargo: "Ingeniero en Protección Contra Incendios"
 imagen: "/img/blog/valvulas-contra-incendios-nfpa-sala-control-industrial.avif"
 imagenAlt: "Sistema de rociadores automáticos contra incendios NFPA 13"
-tags: ["rociadores automáticos", "NFPA 13", "sprinklers", "válvulas contra incendios", "protección automática", "diseño hidráulico"]
+tags: ["rociadores automáticos", "NFPA 13", "válvulas contra incendios", "protección automática", "diseño hidráulico"]
 destacado: false
 canonical: "https://gamademexico.com/blog/valvulas/sistemas-rociadores-automaticos-nfpa-13-mexico"
 noindex: false

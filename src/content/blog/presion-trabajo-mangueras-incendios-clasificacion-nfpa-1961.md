@@ -13,13 +13,14 @@ schema:
       - q: "¿Qué pasa si la presión del sistema excede la de la manguera?"
         a: "La manguera puede deformarse (hincharse como globo), fugar por los acoples, o reventar en el punto más débil — generalmente un doblez permanente o una zona de abrasión. Un reventón a 200+ PSI es una emergencia por sí misma: la manguera descontrolada puede causar lesiones graves al operador."
 description: "Clasificación de mangueras por presión de trabajo según NFPA 1961: tipos 100, 150 y 250 psi, pruebas hidrostáticas y vida útil en instalaciones industriales México."
+fecha: "2026-03-11"
 categoria: "mangueras"
 autor:
   nombre: "Ing. Roberto Hernández"
   cargo: "Director Técnico en Sistemas Contra Incendios"
 imagen: "/img/blog/mangueras-contra-incendios-prueba-hidraulica-laboratorio.avif"
 imagenAlt: "Clasificación de presión de trabajo de mangueras NFPA 1961"
-tags: ["NFPA 1961", "presión de trabajo mangueras", "mangueras incendios", "clasificación mangueras", "prueba hidrostática", "vida útil manguera", "protección industrial"]
+tags: ["NFPA 1961", "presión de trabajo mangueras", "mangueras contra incendios", "clasificación mangueras", "prueba hidrostática", "vida útil mangueras", "protección industrial"]
 destacado: false
 draft: false
 tiempoLectura: 12

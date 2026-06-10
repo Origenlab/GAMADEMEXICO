@@ -166,8 +166,7 @@ function hashSlug(slug: string): number {
 }
 
 const slugHash = hashSlug(empresa.data.slug);
-const ratingCount = (slugHash % 31) + 15; // 15-45 reseñas
-const ratingValue = [4.8, 4.9, 5.0, 4.7, 4.9][slugHash % 5];
+// (auditoría 2026) ratingCount/ratingValue fabricados eliminados del JSON-LD
 
 // Reviews por giro — nombres y textos variados
 const reviewsByGiro: Record<string, Array<{ author: string; role: string; body: string }>> = {
@@ -371,14 +370,9 @@ const businessSchema = {
   ...(empresa.data.telefono && { "telephone": empresa.data.telefono }),
   ...(empresa.data.email && { "email": empresa.data.email }),
   "url": empresa.data.website || `https://gamademexico.com/empresas-certificadas/${empresa.data.slug}`,
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": String(ratingValue),
-    "bestRating": "5",
-    "worstRating": "1",
-    "ratingCount": String(ratingCount)
-  },
-  "review": selectedReviews
+  // NOTA (auditoría 2026): se eliminaron aggregateRating y review — eran datos
+  // generados por hash del slug (ratings 4.7-5.0 y reseñas con autores ficticios)
+  // sobre negocios de terceros. Riesgo de penalización Google y riesgo legal.
 };
 
 // FAQPage Schema

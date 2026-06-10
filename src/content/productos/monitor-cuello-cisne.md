@@ -1,6 +1,6 @@
 ---
 title: "Monitor Cuello de Cisne - Bronce Fundido 250-1000 GPM"
-description: "Monitor contra incendio tipo cuello de cisne en bronce fundido libre de porosidades. Giro vertical 120° con palanca, giro horizontal 360° con freno manual. Base bridada 4\", salida 2½\" NST. Presión máxima 300 PSI."
+description: "Monitor contra incendio tipo cuello de cisne en bronce fundido libre de porosidades. Giro vertical 120° con palanca, giro horizontal 360° con freno manual."
 categoria: "monitores"
 subcategoria: "cuello-cisne"
 imagen: "/img/monitores-contra-incendios/monitor-cuello-cisne-contra-incendios-lateral-derecha-01.avif"

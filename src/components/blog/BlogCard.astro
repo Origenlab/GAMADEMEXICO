@@ -11,7 +11,9 @@ interface Props {
   title: string;
   description: string;
   slug: string;
-  fecha: string;
+  // Opcional: la colección permite posts sin fecha (schema z.string().optional());
+  // el componente ya maneja el caso falsy más abajo.
+  fecha?: string;
   categoria: string;
   autor?: string | { nombre: string; cargo?: string };
   imagen?: string;
@@ -59,6 +61,8 @@ const fechaFormateada = fecha ? formatDateSpanish(fecha) : null;
         class="blog-card__image"
         src={imageUrl}
         alt={imagenAlt || title}
+        width="640"
+        height="360"
         loading="lazy"
         decoding="async"
         srcset={imageResponsiveData.srcset}

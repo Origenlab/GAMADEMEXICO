@@ -1,5 +1,5 @@
 ---
-title: "Boquilla Select-O-Stream™ Master Stream Elkhart Brass | Distribuidor México"
+title: "Boquilla Select-O-Stream™ Master Stream Elkhart Brass"
 description: "Boquilla master stream Select-O-Stream™ de Elkhart Brass. Flujo seleccionable 350-1,250 GPM, patrón automático. Para monitores y deck guns. UL Listed."
 categoria: "boquillas"
 subcategoria: "boquillas-master-stream"

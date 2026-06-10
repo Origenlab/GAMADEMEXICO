@@ -13,6 +13,7 @@ schema:
       - q: "¿Cada cuánto se inspecciona la toma siamesa?"
         a: "NFPA 25 exige inspección trimestral: verificar que las tapas están en su lugar y se retiran sin esfuerzo, que las roscas o acoples Storz están limpios y sin daño, que la válvula check interna (clapper) sella correctamente, que no hay obstrucciones visibles dentro de las bocas, y que la señalización identifica qué sistema alimenta la siamesa."
 description: "Guía completa sobre tomas siamesas FDC para edificios. Instalación, mantenimiento, tipos y normativa NFPA 13 y 14 aplicable en México."
+fecha: "2026-03-11"
 categoria: "conexiones-herrajes"
 autor:
   nombre: "Ing. Roberto Méndez"

@@ -1,6 +1,6 @@
 ---
 title: "Hidrante de Banqueta"
-description: "Hidrante de banqueta en hierro dúctil ASTM A-536 con salidas de bronce. Dos salidas de 2.5\" y una de 4.5\" para bomba. Presión 250-350 PSI. Certificado UL 246 y AWWA C502/C503."
+description: "Hidrante de banqueta en hierro dúctil ASTM A-536 con salidas de bronce. Dos salidas de 2.5\" y una de 4.5\" para bomba. Presión 250-350 PSI."
 categoria: "gabinetes-hidrantes"
 subcategoria: "hidrantes"
 imagen: "/img/gabinetes-hidrantes/hidrante-banqueta-frontal.avif"

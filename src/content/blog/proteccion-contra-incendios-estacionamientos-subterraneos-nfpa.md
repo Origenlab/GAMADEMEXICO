@@ -13,6 +13,7 @@ schema:
       - q: "¿Necesitan rociadores los estacionamientos subterráneos?"
         a: "En CDMX, el Reglamento de Construcción los exige en estacionamientos subterráneos de edificios de más de 25m de altura. NFPA 88A los recomienda para todos los estacionamientos cerrados. Con la proliferación de autos eléctricos cuyas baterías de litio arden de forma sostenida y difícil de extinguir, los rociadores son cada vez más críticos."
 description: "Sistemas de protección contra incendios para estacionamientos subterráneos en México. Ventilación, rociadores, hidrantes y normativa NFPA."
+fecha: "2026-03-11"
 categoria: "gabinetes-hidrantes"
 autor:
   nombre: "Ing. Roberto Méndez"

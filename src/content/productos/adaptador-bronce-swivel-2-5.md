@@ -1,5 +1,5 @@
 ---
-title: "Adaptador Swivel Giratorio NH 2.5\" Bronce S-327 360° | Elkhart Brass UL FM | México"
+title: "Adaptador Swivel Giratorio NH 2.5\" Bronce S-327 360°"
 description: "Adaptador swivel giratorio NH 2.5\" bronce Elkhart Brass S-327. Rotación 360° bajo presión. 300 PSI. UL Listed FM Approved. Hidrantes, camiones autobomba México."
 categoria: "conexiones-herrajes"
 subcategoria: "adaptadores"

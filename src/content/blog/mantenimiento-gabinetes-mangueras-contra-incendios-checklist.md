@@ -13,6 +13,7 @@ schema:
       - q: "¿Cada cuánto se prueba la manguera del gabinete?"
         a: "Inspección visual mensual. Rotación de dobleces semestral (NFPA 1962). Prueba hidrostática anual al 110% de la presión de servicio durante 3 minutos. Si la manguera falla la prueba, no regresa al gabinete. Si pasa, se registra en bitácora con fecha y responsable."
 description: "Checklist de mantenimiento para gabinetes contra incendios y mangueras. Inspección mensual, prueba hidrostática y frecuencias NFPA 25."
+fecha: "2026-03-11"
 categoria: "gabinetes-hidrantes"
 autor:
   nombre: "Ing. Carlos Mendoza"

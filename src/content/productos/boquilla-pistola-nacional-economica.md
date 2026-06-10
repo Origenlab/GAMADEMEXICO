@@ -1,6 +1,6 @@
 ---
-title: "Boquilla Tipo Pistola NPG-125 NOM-002-STPS NFPA 1964 60-125 GPM | Nacional Mexicana | México"
-description: "Boquilla tipo pistola NPG-125 fabricación mexicana. NOM-002-STPS-2010 NFPA 1964. 60-125 GPM, aluminio fundido. Brigadas internas, municipios y plantas manufactura México."
+title: "Boquilla Tipo Pistola NPG-125 NOM-002-STPS NFPA 1964 60-125 GPM"
+description: "Boquilla tipo pistola NPG-125 fabricación mexicana. NOM-002-STPS-2010 NFPA 1964. 60-125 GPM, aluminio fundido."
 categoria: "boquillas"
 subcategoria: "tipo-pistola"
 imagen: "/img/productos/boquilla-tipo-pistola-contra-incendios-emergencia-27.avif"

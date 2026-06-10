@@ -1,6 +1,6 @@
 ---
-title: "Chiflón Chief XD 1.5\" NH 160-200 GPM 50-75 PSI UL 401 | Elkhart Brass Forjado | México"
-description: "Chiflón Chief XD 1.5\" NH aluminio forjado 160-200 GPM 50-75 PSI UL 401 NFPA 1964 Elkhart Brass. Mango bale metálico, alto caudal baja presión. Brigadas profesionales México."
+title: "Chiflón Chief XD 1.5\" NH 160-200 GPM 50-75 PSI UL 401"
+description: "Chiflón Chief XD 1.5\" NH aluminio forjado 160-200 GPM 50-75 PSI UL 401 NFPA 1964 Elkhart Brass. Mango bale metálico, alto caudal baja presión."
 categoria: "conexiones-herrajes"
 subcategoria: "chiflones"
 imagen: "/img/conexiones-herrajes/chiflon-chief-xd-1-5-frontal.avif"

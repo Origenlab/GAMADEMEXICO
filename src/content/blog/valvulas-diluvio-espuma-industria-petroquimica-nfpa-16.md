@@ -1,6 +1,7 @@
 ---
 title: "Válvulas Diluvio en Petroquímica: NFPA 11 y 16"
 description: "Válvulas diluvio para sistemas de espuma en petroquímica: cómo funcionan, por qué fallan y qué exigen NFPA 11 y NFPA 16 en tanques de hidrocarburos."
+fecha: "2026-03-11"
 fechaActualizacion: "2026-03-19"
 schema:
   - type: "Article"
@@ -21,7 +22,7 @@ autor:
   cargo: "Director Técnico en Sistemas Contra Incendios"
 imagen: "/img/blog/valvula-compuerta-osy-sistema-rociadores-industrial.avif"
 imagenAlt: "Válvula de diluvio y espuma para industria petroquímica NFPA 16"
-tags: ["válvulas diluvio", "sistemas espuma", "NFPA 11", "NFPA 16", "petroquímica México", "tanques hidrocarburos", "deluge valve"]
+tags: ["válvulas de diluvio", "sistemas espuma", "NFPA 11", "NFPA 16", "petroquímica México", "tanques hidrocarburos", "deluge valve"]
 destacado: false
 draft: false
 tiempoLectura: 14

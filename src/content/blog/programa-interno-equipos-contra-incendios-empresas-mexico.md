@@ -13,13 +13,14 @@ schema:
       - q: "¿Cada cuánto se actualiza el programa interno?"
         a: "Cada vez que cambia algo: se agrega o retira equipo, cambia la distribución de planta, se incorporan nuevos procesos con riesgos diferentes, rotan los brigadistas designados. En la práctica, revisar al menos anualmente. Un programa con información de hace 5 años es peor que no tener programa porque genera falsa confianza."
 description: "Cómo estructurar tu Programa Interno de Protección Civil y cumplir con equipos contra incendios en México. Guía técnica completa."
+fecha: "2026-02-17"
 categoria: "gabinetes-hidrantes"
 autor:
   nombre: "Ing. Roberto Hernández"
   cargo: "Consultor Senior en Protección Contra Incendios y Cumplimiento Normativo"
 imagen: "/img/blog/inspeccion-proteccion-civil-empresa-industrial-mexico.avif"
 imagenAlt: "Programa interno de equipos contra incendios empresas México"
-tags: ["programa interno protección civil", "equipos contra incendios empresas", "NOM-002-STPS-2010", "cumplimiento protección civil", "mantenimiento equipos", "brigadas emergencia", "auditoría seguridad", "gabinetes contra incendios"]
+tags: ["programa interno protección civil", "equipos contra incendios empresas", "NOM-002-STPS", "cumplimiento protección civil", "mantenimiento de equipos contra incendios", "brigadas de emergencia", "auditoría seguridad", "gabinetes contra incendios"]
 destacado: true
 draft: false
 tiempoLectura: 20

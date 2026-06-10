@@ -13,6 +13,7 @@ schema:
       - q: "¿Qué normas de protección contra incendios aplican en Jalisco?"
         a: "NOM-002-STPS a nivel federal. El Reglamento de Protección Civil del Estado de Jalisco y la normativa municipal de Guadalajara agregan requisitos locales. El H. Cuerpo de Bomberos de Guadalajara trabaja principalmente con conexiones Storz — verificar compatibilidad antes de especificar hidrantes."
 description: "Equipos contra incendios certificados UL/FM en Guadalajara. Monitores, boquillas, mangueras y válvulas para industria farmacéutica y electrónica."
+fecha: "2026-03-19"
 categoria: "equipos-contra-incendios"
 autor:
   nombre: "Equipo Gama de México"

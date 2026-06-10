@@ -1,6 +1,6 @@
 ---
-title: "Boquilla Phantom XD 15-250 GPM NFPA 1964 Elk-O-Lite | Elkhart Brass | México"
-description: "Boquilla Phantom XD Elkhart Brass 15-250 GPM aluminio forjado Elk-O-Lite NFPA 1964. Selector 4-6 posiciones interlock positivo, marcado láser, XD. Bomberos y brigadas México."
+title: "Boquilla Phantom XD 15-250 GPM NFPA 1964 Elk-O-Lite | Elkhart Brass"
+description: "Boquilla Phantom XD Elkhart Brass 15-250 GPM aluminio forjado Elk-O-Lite NFPA 1964. Selector 4-6 posiciones interlock positivo, marcado láser, XD."
 categoria: "boquillas"
 subcategoria: "tipo-pistola"
 imagen: "/img/productos/boquilla-tipo-pistola-contra-incendios-estacion-bomberos-01.avif"
