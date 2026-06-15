@@ -6,9 +6,9 @@ categoria: "equipos-bomberos"
 autor:
   nombre: "Ing. Carlos Mendoza Ruiz"
   cargo: "Especialista en Equipos de Protección Personal contra Incendios"
-imagen: "/img/blog/traje-estructural-bombero-combate-mexico.avif"
-imagenAlt: "Traje estructural para bombero certificado NFPA 1971 en México"
-imagenOg: "/img/blog/traje-estructural-bombero-combate-mexico.avif"
+imagen: "/img/blog/reposicion-equipos-contra-incendios-mantenimiento.avif"
+imagenAlt: "Técnico en reposición de equipos de protección contra incendios certificados en México"
+imagenOg: "/img/blog/reposicion-equipos-contra-incendios-mantenimiento.avif"
 tags: ["traje estructural para bombero", "trajes para bomberos", "equipo de protección para bomberos", "traje de combate contra incendios", "equipo certificado para bomberos", "NFPA 1971", "proveedores de equipos para bomberos"]
 destacado: true
 draft: false
@@ -23,7 +23,7 @@ Cuando un bombero entra a un edificio en llamas, el único elemento que separa s
 
 En Gama de México acompañamos a cuerpos de bomberos municipales, brigadas industriales, departamentos de seguridad en instalaciones de alto riesgo y responsables de protección civil en la selección, especificación y adquisición de **trajes para bomberos** que cumplen con los estándares más exigentes del mercado. Este artículo reúne la información técnica y comercial que necesitas para tomar la mejor decisión al comprar **equipo de protección para bomberos** en México.
 
-![Bombero con traje estructural NFPA 1971 en posición de combate contra incendio estructural](/img/blog/traje-estructural-bombero-combate-mexico.avif)
+![Bombero con traje estructural NFPA 1971 en posición de combate contra incendio estructural](/img/blog/reposicion-equipos-contra-incendios-mantenimiento.avif)
 *Traje estructural de combate diseñado para operaciones en interiores con exposición directa a llamas, gases calientes y radiación térmica intensa.*
 
 ## ¿Qué es un Traje Estructural para Bombero?

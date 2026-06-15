@@ -6,9 +6,9 @@ categoria: "equipos-bomberos"
 autor:
   nombre: "Lic. Fernanda Ríos Castellanos"
   cargo: "Consultora en Adquisiciones de Equipos de Seguridad Industrial"
-imagen: "/img/blog/venta-trajes-bomberos-proveedor-certificado-mexico.avif"
-imagenAlt: "Venta de trajes para bomberos certificados NFPA en México - proveedor especializado"
-imagenOg: "/img/blog/venta-trajes-bomberos-proveedor-certificado-mexico.avif"
+imagen: "/img/blog/gama-mexico-equipo-instalacion-certificacion-elkhart-brass.avif"
+imagenAlt: "Equipo Gama de México instalando sistemas contra incendios con certificación Elkhart Brass"
+imagenOg: "/img/blog/gama-mexico-equipo-instalacion-certificacion-elkhart-brass.avif"
 tags: ["trajes para bomberos", "proveedores de equipos para bomberos", "equipo certificado para bomberos", "equipo de protección para bomberos", "licitación equipos bomberos", "precio traje para bombero México"]
 destacado: true
 draft: false
@@ -25,7 +25,7 @@ La diferencia entre estos dos tipos de proveedores no siempre es visible en la p
 
 Este artículo te da las herramientas para distinguir entre ambos tipos de proveedores, los criterios correctos para evaluar cualquier propuesta de **venta de trajes para bomberos en México**, y las preguntas que debes hacer antes de firmar cualquier orden de compra.
 
-![Proveedor especializado de trajes para bomberos certificados en México](/img/blog/venta-trajes-bomberos-proveedor-certificado-mexico.avif)
+![Proveedor especializado de trajes para bomberos certificados en México](/img/blog/gama-mexico-equipo-instalacion-certificacion-elkhart-brass.avif)
 *La compra de trajes para bomberos requiere un proveedor que pueda presentar certificaciones verificables de tercera parte y ofrecer asesoría técnica real sobre el equipo que ofrece.*
 
 ## Por Qué la Elección del Proveedor es Tan Importante Como la Elección del Traje

@@ -6,9 +6,9 @@ categoria: "equipos-bomberos"
 autor:
   nombre: "Ing. Patricia Vargas Solís"
   cargo: "Consultora en Seguridad Industrial y Equipos de Protección para Emergencias"
-imagen: "/img/blog/equipo-proteccion-personal-bomberos-completo.avif"
-imagenAlt: "Equipo de protección personal completo para bombero certificado NFPA México"
-imagenOg: "/img/blog/equipo-proteccion-personal-bomberos-completo.avif"
+imagen: "/img/blog/brigada-industrial-entrenamiento-contra-incendios.avif"
+imagenAlt: "Brigada industrial en entrenamiento de protección contra incendios con equipo certificado NFPA"
+imagenOg: "/img/blog/brigada-industrial-entrenamiento-contra-incendios.avif"
 tags: ["equipo de protección para bomberos", "equipos para bomberos", "casco para bombero", "botas para bombero", "guantes para bombero", "SCBA bomberos", "equipo certificado para bomberos", "proveedores de equipos para bomberos"]
 destacado: true
 draft: false
@@ -23,7 +23,7 @@ El **equipo de protección personal para bomberos** —frecuentemente abreviado 
 
 En México, los cuerpos de bomberos municipales, las brigadas contraincendios industriales y los equipos de protección civil enfrentan el reto de adquirir **equipo certificado para bomberos** que cumpla simultáneamente con las normas internacionales de referencia, los requisitos de las entidades contratantes y los presupuestos disponibles. Este artículo es una guía técnica completa sobre cada componente del EPP de un bombero, sus certificaciones, sus criterios de selección y los factores que determinan el rendimiento del sistema en condiciones de operación real.
 
-![Equipo de protección personal completo para bombero: traje estructural, casco, guantes, botas y SCBA](/img/blog/equipo-proteccion-personal-bomberos-completo.avif)
+![Equipo de protección personal completo para bombero: traje estructural, casco, guantes, botas y SCBA](/img/blog/brigada-industrial-entrenamiento-contra-incendios.avif)
 *Sistema completo de EPP para bombero de combate estructural: cada componente protege una zona específica del cuerpo y debe ser compatible con los demás elementos del conjunto.*
 
 ## El Sistema de EPP para Bombero: Visión Integral

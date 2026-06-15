@@ -6,9 +6,9 @@ categoria: "equipos-bomberos"
 autor:
   nombre: "Ing. Alejandro Torres Medina"
   cargo: "Especialista en Protección contra Incendios en Industria de Hidrocarburos"
-imagen: "/img/blog/traje-aproximacion-bombero-refineria-mexico.avif"
-imagenAlt: "Traje de aproximación aluminizado para bombero en instalación petrolera México"
-imagenOg: "/img/blog/traje-aproximacion-bombero-refineria-mexico.avif"
+imagen: "/img/blog/monitor-contra-incendios-refineria-industrial-mexico.avif"
+imagenAlt: "Monitor contra incendios en refinería industrial — protección en industria petrolera México"
+imagenOg: "/img/blog/monitor-contra-incendios-refineria-industrial-mexico.avif"
 tags: ["trajes de aproximación", "traje de proximidad bombero", "equipo para bomberos industria petrolera", "trajes para bomberos refinería", "NFPA 1976", "traje aluminizado bombero", "protección térmica alta radiación", "equipo contra incendios industria gas", "equipos para bomberos", "venta trajes de aproximación México"]
 destacado: true
 draft: false
@@ -23,7 +23,7 @@ En los patios de tanques de una terminal de almacenamiento, en las unidades de d
 
 En Gama de México especificamos, suministramos y damos soporte técnico para **trajes de aproximación para bomberos** en la industria petrolera, petroquímica, química, de generación de energía y en cualquier instalación donde la presencia de hidrocarburos u otros combustibles de alta energía represente un escenario de radiación térmica intensa. Este artículo es la guía técnica más completa disponible sobre este tipo de equipo en el mercado mexicano.
 
-![Bombero con traje de aproximación aluminizado operando cerca de incendio de hidrocarburos](/img/blog/traje-aproximacion-bombero-refineria-mexico.avif)
+![Bombero con traje de aproximación aluminizado operando cerca de incendio de hidrocarburos](/img/blog/monitor-contra-incendios-refineria-industrial-mexico.avif)
 *Traje de aproximación aluminizado certificado NFPA 1976, diseñado para operar en entornos de alta radiación térmica como incendios de hidrocarburos en instalaciones industriales.*
 
 ## ¿Qué es un Traje de Aproximación para Bombero?

@@ -333,8 +333,16 @@ import fs from 'node:fs';
 const galeriaDir = `public/img/directorio/empresas/galeria`;
 const hasGaleria = fs.existsSync(`${galeriaDir}/${slug}-1.avif`);
 
-const galeriaImgs = hasGaleria
-  ? Array.from({length: 8}, (_, i) => `${galeriaBase}-${i + 1}.avif`)
+// Contar exactamente cuántas fotos existen para no generar paths de imágenes inexistentes
+let galeriaCount = 0;
+if (hasGaleria) {
+  while (fs.existsSync(`${galeriaDir}/${slug}-${galeriaCount + 1}.avif`)) {
+    galeriaCount++;
+  }
+}
+
+const galeriaImgs = galeriaCount > 0
+  ? Array.from({length: galeriaCount}, (_, i) => `${galeriaBase}-${i + 1}.avif`)
   : fallbackImgs;
 
 const galeriaAlts = [
@@ -409,11 +417,16 @@ const formatDate = (dateStr: string) => {
 const titleFull = `${empresa.data.nombre} | Contra Incendios ${empresa.data.ciudad}`;
 const titleShort = `${empresa.data.nombre} | Contra Incendios`;
 const pageTitle = titleFull.length <= 60 ? titleFull : (titleShort.length <= 60 ? titleShort : `${empresa.data.nombre.slice(0, 35)}... | Contra Incendios`);
+
+// Meta description truncada a 155 chars para evitar que Google la corte en SERP
+const rawDesc = empresa.data.descripcion
+  || `${empresa.data.nombre} cuenta con sistema de protección contra incendios certificado por Gama de México en ${empresa.data.ciudad}, ${empresa.data.estado}. Verificación de ${empresa.data.tipoSistema.length} sistemas activos.`;
+const pageDesc = rawDesc.length > 155 ? rawDesc.slice(0, 152).trimEnd() + '...' : rawDesc;
 ---
 
 <Layout
   title={pageTitle}
-  description={empresa.data.descripcion || `${empresa.data.nombre} cuenta con sistema de protección contra incendios certificado por Gama de México en ${empresa.data.ciudad}, ${empresa.data.estado}. Verificación de ${empresa.data.tipoSistema.length} sistemas activos.`}
+  description={pageDesc}
   activePage="directorio"
   heroTitle={empresa.data.nombre}
   heroIntro={`Sistema de protección contra incendios certificado en ${empresa.data.ciudad}, ${empresa.data.estado}. ${empresa.data.tipoSistema.length} sistemas verificados por Gama de México.`}
@@ -446,7 +459,7 @@ const pageTitle = titleFull.length <= 60 ? titleFull : (titleShort.length <= 60 
     )}
     {empresa.data.website && (
       <div class="empresa-contacto">
-        <a href={empresa.data.website} target="_blank" rel="noopener noreferrer">Sitio web</a>
+        <a href={empresa.data.website} target="_blank" rel="noopener noreferrer nofollow external">Sitio web</a>
       </div>
     )}
   </Fragment>

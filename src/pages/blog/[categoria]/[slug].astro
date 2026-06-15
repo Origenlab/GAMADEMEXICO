@@ -90,6 +90,8 @@ const tocItems = extractTableOfContents(headings);
 
 // Calcular tiempo de lectura si no está definido
 const readingTime = post.data.tiempoLectura || calculateReadingTime(post.body || '');
+const rawBlogTitle = `${post.data.title} | Blog Gama de México`;
+const pageBlogTitle = rawBlogTitle.length <= 70 ? rawBlogTitle : post.data.title;
 
 // Nombre de categoría
 const categoryLabel = CATEGORY_LABELS[post.data.categoria] || post.data.categoria;
@@ -175,7 +177,7 @@ const breadcrumbSchema = buildBreadcrumbSchema([
 ---
 
 <Layout
-  title={`${post.data.title} | Blog Gama de México`}
+  title={pageBlogTitle}
   description={post.data.description}
   ogImage={post.data.imagenOg || post.data.imagen}
   canonical={post.data.canonical}

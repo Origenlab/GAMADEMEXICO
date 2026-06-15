@@ -6,9 +6,9 @@ categoria: "equipos-bomberos"
 autor:
   nombre: "Ing. Mario Domínguez Fuentes"
   cargo: "Ingeniero en Protección contra Incendios y Gestión de Emergencias"
-imagen: "/img/blog/tipos-trajes-combate-incendios-comparativa-mexico.avif"
-imagenAlt: "Comparativa técnica de tipos de trajes para combate de incendios certificados NFPA"
-imagenOg: "/img/blog/tipos-trajes-combate-incendios-comparativa-mexico.avif"
+imagen: "/img/blog/mantenimiento-equipos-contra-incendios-tecnico-industrial.avif"
+imagenAlt: "Técnico industrial revisando equipos de protección contra incendios certificados NFPA en México"
+imagenOg: "/img/blog/mantenimiento-equipos-contra-incendios-tecnico-industrial.avif"
 tags: ["tipos de trajes para bomberos", "traje estructural para bombero", "trajes de aproximación", "traje forestal bomberos", "traje de combate contra incendios", "comparativa trajes bomberos", "equipo de protección para bomberos", "NFPA 1971", "NFPA 1976", "NFPA 1977", "equipos para bomberos", "traje certificado bombero"]
 destacado: true
 draft: false
@@ -23,7 +23,7 @@ No existe un único tipo de traje para bombero que sea óptimo para todos los es
 
 La correcta selección del tipo de **traje de combate contra incendios** comienza con una comprensión clara de los diferentes tipos disponibles, las normas que los rigen, los entornos para los que fueron diseñados y los parámetros técnicos que los diferencian. Este artículo es la guía de referencia más completa disponible en México para esa decisión.
 
-![Comparativa visual de tipos de trajes para combate de incendios: estructural, aproximación y forestal](/img/blog/tipos-trajes-combate-incendios-comparativa-mexico.avif)
+![Comparativa visual de tipos de trajes para combate de incendios: estructural, aproximación y forestal](/img/blog/mantenimiento-equipos-contra-incendios-tecnico-industrial.avif)
 *Los distintos tipos de trajes para combate de incendios tienen diseños, materiales y normas de certificación específicos para sus entornos de aplicación.*
 
 ## El Marco Conceptual: Por Qué Existen Diferentes Tipos de Trajes

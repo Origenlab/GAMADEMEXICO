@@ -155,7 +155,7 @@ const ciudadSlug = createSlug(empresa.ciudad);
     <a
       href={`https://www.google.com/maps/search/?api=1&query=${empresa.latitud},${empresa.longitud}`}
       target="_blank"
-      rel="noopener noreferrer"
+      rel="noopener noreferrer nofollow external"
       class="map-preview"
     >
       <span class="map-preview__icon">
@@ -198,7 +198,7 @@ const ciudadSlug = createSlug(empresa.ciudad);
           </a>
         )}
         {empresa.website && (
-          <a href={empresa.website} target="_blank" rel="noopener noreferrer" class="contact-link">
+          <a href={empresa.website} target="_blank" rel="noopener noreferrer nofollow external" class="contact-link">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <circle cx="12" cy="12" r="10"/>
               <line x1="2" y1="12" x2="22" y2="12"/>

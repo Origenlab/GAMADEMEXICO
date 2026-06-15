@@ -122,11 +122,14 @@ const breadcrumbSchema = {
     { "@type": "ListItem", "position": 3, "name": estadoNombre }
   ]
 };
+
+const rawDescEstado = `${empresas.length} empresas con sistemas contra incendios certificados en ${estadoNombre}. Hoteles, restaurantes, oficinas y almacenes protegidos por Gama de México en ${Object.keys(empresasPorCiudad).length} ciudades.`;
+const pageDescEstado = rawDescEstado.length > 155 ? rawDescEstado.slice(0, 152).trimEnd() + '...' : rawDescEstado;
 ---
 
 <Layout
-  title={`Empresas con Sistemas Contra Incendios Certificados en ${estadoNombre} | Directorio`}
-  description={`${empresas.length} empresas con sistemas contra incendios certificados en ${estadoNombre}. Hoteles, restaurantes, oficinas y almacenes protegidos por Gama de México en ${Object.keys(empresasPorCiudad).length} ciudades.`}
+  title={`Empresas Certificadas en ${estadoNombre} | Gama México`}
+  description={pageDescEstado}
   activePage="directorio"
   heroTitle={`Empresas con Sistemas Contra Incendios Certificados en ${estadoNombre}`}
   heroIntro={`Directorio de ${empresas.length} hoteles, restaurantes, oficinas y almacenes con sistemas de protección contra incendios certificados en ${estadoNombre}. Verificados por Gama de México.`}

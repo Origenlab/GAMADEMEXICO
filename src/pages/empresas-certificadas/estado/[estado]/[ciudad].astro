@@ -180,11 +180,14 @@ const breadcrumbSchema = {
     { "@type": "ListItem", "position": 4, "name": ciudadNombre }
   ]
 };
+
+const rawDescCiudad = `${empresas.length} empresas con sistemas contra incendios certificados en ${ciudadNombre}, ${estadoNombre}. Hoteles, restaurantes, oficinas y almacenes verificados por Gama de México.`;
+const pageDescCiudad = rawDescCiudad.length > 155 ? rawDescCiudad.slice(0, 152).trimEnd() + '...' : rawDescCiudad;
 ---
 
 <Layout
-  title={`Empresas con Sistemas Contra Incendios en ${ciudadNombre}, ${estadoNombre} | Directorio Certificado`}
-  description={`Directorio de ${empresas.length} empresas con sistemas contra incendios certificados en ${ciudadNombre}, ${estadoNombre}. Hoteles, restaurantes, oficinas y almacenes verificados por Gama de México con rociadores, hidrantes y detección de humo.`}
+  title={`Empresas Certificadas en ${ciudadNombre}, ${estadoNombre}`}
+  description={pageDescCiudad}
   activePage="directorio"
   heroTitle={`Empresas Certificadas en ${ciudadNombre}, ${estadoNombre}`}
   heroIntro={`Directorio completo de ${empresas.length} empresas con sistemas de protección contra incendios verificados en ${ciudadNombre}. Consulta hoteles, restaurantes, oficinas y almacenes con certificación vigente de rociadores automáticos, red de hidrantes y sistemas de detección.`}

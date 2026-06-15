@@ -73,6 +73,9 @@ const breadcrumbSchema = {
   ]
 };
 
+const rawDescHidrante = `Información del hidrante ${hidrante.data.id} en ${hidrante.data.ubicacionDescripcion}, ${hidrante.data.ciudad}. Estado: ${estadoLabels[hidrante.data.estadoOperativo]}. Tipo: ${hidrante.data.tipo}.`;
+const pageDescHidrante = rawDescHidrante.length > 155 ? rawDescHidrante.slice(0, 152).trimEnd() + '...' : rawDescHidrante;
+
 // Obtener hidrantes cercanos (misma ciudad)
 const todosHidrantes = await getCollection('hidrantes');
 const hidrantesCercanos = todosHidrantes
@@ -82,7 +85,7 @@ const hidrantesCercanos = todosHidrantes
 
 <Layout
   title={`Hidrante ${hidrante.data.id} | ${hidrante.data.ciudad}, ${hidrante.data.estado}`}
-  description={`Información del hidrante ${hidrante.data.id} en ${hidrante.data.ubicacionDescripcion}, ${hidrante.data.ciudad}. Estado: ${estadoLabels[hidrante.data.estadoOperativo]}. Tipo: ${hidrante.data.tipo}.`}
+  description={pageDescHidrante}
   activePage="hidrantes"
   showHero={false}
   structuredData={[placeSchema, breadcrumbSchema]}
@@ -164,7 +167,7 @@ const hidrantesCercanos = todosHidrantes
               <a
                 href={`https://www.google.com/maps/search/?api=1&query=${hidrante.data.latitud},${hidrante.data.longitud}`}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener noreferrer nofollow external"
                 class="map-link"
               >
                 Ver en Google Maps →
@@ -176,7 +179,7 @@ const hidrantesCercanos = todosHidrantes
             <a
               href={`https://www.google.com/maps/dir/?api=1&destination=${hidrante.data.latitud},${hidrante.data.longitud}`}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener noreferrer nofollow external"
               class="btn btn--primary btn--block"
             >
               🧭 Cómo llegar

@@ -88,11 +88,14 @@ const breadcrumbSchema = {
     { "@type": "ListItem", "position": 3, "name": estadoNombre }
   ]
 };
+
+const rawDescHidrantesEstado = `${hidrantes.length} hidrantes contra incendios en ${estadoNombre}. Consulta ubicación, estado operativo y características. ${operativos} operativos, ${publicos} públicos.`;
+const pageDescHidrantesEstado = rawDescHidrantesEstado.length > 155 ? rawDescHidrantesEstado.slice(0, 152).trimEnd() + '...' : rawDescHidrantesEstado;
 ---
 
 <Layout
   title={`Hidrantes en ${estadoNombre} | Mapa de Hidrantes Contra Incendios`}
-  description={`${hidrantes.length} hidrantes contra incendios en ${estadoNombre}. Consulta ubicación, estado operativo y características. ${operativos} operativos, ${publicos} públicos.`}
+  description={pageDescHidrantesEstado}
   activePage="hidrantes"
   heroTitle={`Hidrantes en ${estadoNombre}`}
   heroIntro={`Directorio de ${hidrantes.length} hidrantes contra incendios registrados en ${estadoNombre}. Consulta ubicación exacta, estado operativo y especificaciones técnicas.`}

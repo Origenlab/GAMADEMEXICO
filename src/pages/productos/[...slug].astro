@@ -155,12 +155,22 @@ const heroMetrics = [
   { valor: producto.data.material?.split('/')[0]?.trim() || 'Aluminio', texto: 'Material' },
   { valor: producto.data.certificaciones?.[0] || 'UL Listed', texto: 'Certificación' },
 ];
+
+/* ── SEO: título ≤70 chars y descripción ≤160 chars ── */
+const tituloBase = producto.data.title.split(' | ')[0].trim();
+const sufijoMarca = ' | Gama de México';
+const seoTitle =
+  (tituloBase + sufijoMarca).length <= 70 ? tituloBase + sufijoMarca : tituloBase;
+const seoDescription =
+  producto.data.description.length <= 160
+    ? producto.data.description
+    : producto.data.description.slice(0, 157).replace(/\s+\S*$/, '').trim() + '…';
 ---
 
 <Layout
   structuredData={structuredData}
-  title={`${producto.data.title} | Gama de México`}
-  description={producto.data.description}
+  title={seoTitle}
+  description={seoDescription}
   ogImage={producto.data.imagen}
   activePage="equipos"
   heroTitle={producto.data.modelo || producto.data.title}

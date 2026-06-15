@@ -115,12 +115,15 @@
 /acoples-conexiones-contra-incendios  /conexiones-herrajes-contra-incendios  301
 
 # =============================================================================
-# GRUPO F — Secciones del Blog sin página (4 errores)
-# Slugs cortos → slugs largos correctos
+# GRUPO F — Slugs cortos de blog → slugs largos canónicos
 # =============================================================================
-/blog/conexiones-herrajes-contra-incendios  /blog  301
+# NOTA: /blog/conexiones-herrajes-contra-incendios ES UNA PÁGINA REAL — no redirigir
 /blog/boquillas  /blog/boquillas-contra-incendios  301
 /blog/mangueras  /blog/mangueras-contra-incendios  301
+/blog/monitores  /blog/monitores-contra-incendios  301
+/blog/valvulas  /blog/valvulas-contra-incendios  301
+/blog/gabinetes-hidrantes  /blog/gabinetes-hidrantes-contra-incendios  301
+/blog/conexiones-herrajes  /blog/conexiones-herrajes-contra-incendios  301
 
 # =============================================================================
 # GRUPO G — Directorio y filtros (2 errores)
