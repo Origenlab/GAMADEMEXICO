@@ -12,7 +12,6 @@ latitud: 19.4895
 longitud: -99.1582
 telefono: "55 4820 6173"
 email: "contacto@mantenimientodeextintores.com"
-website: ""
 tipoSistema:
   - extintores
   - gabinetes
