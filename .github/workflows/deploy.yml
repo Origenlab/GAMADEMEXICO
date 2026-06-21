@@ -18,7 +18,7 @@ jobs:
         with:
           node-version: 22
       - run: npm ci || npm install
-      - run: npx astro check || true
+      - run: npx astro check
       - run: npm run build
       - name: Ensure Pages project exists
         env:
