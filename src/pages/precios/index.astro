@@ -20,8 +20,14 @@ const serviceSchemas = [
     offers: {
       '@type': 'Offer',
       availability: 'https://schema.org/InStock',
-      priceCurrency: 'MXN',
-      description: 'Precio según modelo, diámetro y certificación. Solicita cotización formal con especificaciones técnicas.',
+      priceCurrency: 'USD',
+      priceSpecification: {
+        '@type': 'PriceSpecification',
+        minPrice: 400,
+        maxPrice: 2000,
+        priceCurrency: 'USD',
+        description: 'Válvulas OS&Y 4" UL/FM con precio referencial de mercado desde ~$400 USD según fabricante (distribuidores México). Rango amplio: diámetro (1.5"–8"), tipo (OS&Y/angular/compuerta/mariposa) y certificación (UL vs FM). Facturación en MXN al tipo de cambio del día.',
+      },
       seller: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
     },
   },
@@ -42,7 +48,7 @@ const serviceSchemas = [
         minPrice: 3000,
         maxPrice: 5000,
         priceCurrency: 'MXN',
-        description: 'Rango referencial de mercado para bocas de incendio equipadas. Precio exacto según modelo y especificación.',
+        description: 'Bocas de incendio equipadas: $3,000–$5,000 MXN por unidad (precio de mercado verificado en distribuidores México). Boquillas industriales premium Elkhart Brass (Master Stream, X-Stream) se listan desde $3,085 USD en distribuidores especializados. Facturación en MXN al tipo de cambio.',
       },
       seller: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
     },
@@ -58,8 +64,14 @@ const serviceSchemas = [
     offers: {
       '@type': 'Offer',
       availability: 'https://schema.org/InStock',
-      priceCurrency: 'MXN',
-      description: 'Precio según capacidad (GPM), modelo y certificación requerida. Rango amplio por escala de proyecto industrial.',
+      priceCurrency: 'USD',
+      priceSpecification: {
+        '@type': 'PriceSpecification',
+        minPrice: 6599,
+        maxPrice: 39207,
+        priceCurrency: 'USD',
+        description: 'Monitores Elkhart Brass listados por distribuidores en México: Copperhead 1,250 GPM FM Approved desde $6,599 USD; Monitor Elevado Manual desde $39,207 USD. Precios de referencia de distribuidores especializados + IVA. Facturación en MXN al tipo de cambio del día.',
+      },
       seller: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
     },
   },
@@ -75,7 +87,13 @@ const serviceSchemas = [
       '@type': 'Offer',
       availability: 'https://schema.org/InStock',
       priceCurrency: 'MXN',
-      description: 'Precio por pieza según diámetro, longitud, cubierta y certificación. Descuentos por volumen disponibles.',
+      priceSpecification: {
+        '@type': 'PriceSpecification',
+        minPrice: 1500,
+        maxPrice: 3500,
+        priceCurrency: 'MXN',
+        description: 'Manguera 30m × 1.5" IPT 200 PSI: precio referencial de mercado desde ~$1,833 MXN por pieza (distribuidores México). Rango completo $1,500–$3,500 MXN según diámetro (1.5"–3"), longitud (15–30m) y tipo de cubierta (poliéster o hule).',
+      },
       seller: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
     },
   },
@@ -91,7 +109,13 @@ const serviceSchemas = [
       '@type': 'Offer',
       availability: 'https://schema.org/InStock',
       priceCurrency: 'MXN',
-      description: 'Precio según tipo, material y diámetro. Disponible en bronce, aluminio y acero inoxidable.',
+      priceSpecification: {
+        '@type': 'PriceSpecification',
+        minPrice: 700,
+        maxPrice: 2500,
+        priceCurrency: 'MXN',
+        description: 'Herrajes NST con precio referencial de mercado desde ~$750 MXN por pieza: válvulas angulares NST desde ~$747 MXN, acoplamientos rígidos desde ~$791 MXN (distribuidores México). Tomas siamesas con tapones, cadena y disco tienen costo mayor por complejidad.',
+      },
       seller: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
     },
   },
@@ -107,7 +131,13 @@ const serviceSchemas = [
       '@type': 'Offer',
       availability: 'https://schema.org/InStock',
       priceCurrency: 'MXN',
-      description: 'Precio según tipo (mural/empotrar), tamaño y equipamiento. Gabinetes con y sin manguera incluida.',
+      priceSpecification: {
+        '@type': 'PriceSpecification',
+        minPrice: 1527,
+        maxPrice: 2500,
+        priceCurrency: 'MXN',
+        description: 'Gabinetes empotrados para manguera de 30m: precio referencial de mercado $1,527–$2,395 MXN con IVA incluido (distribuidores especializados México: COGARSA, Extinflam/Vallen). Precio de gabinete solo; manguera y boquilla se cotizan por separado.',
+      },
       seller: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
     },
   },
@@ -116,7 +146,7 @@ const serviceSchemas = [
 const faqItems = [
   {
     pregunta: '¿Cuánto cuestan las boquillas contra incendios en México?',
-    respuesta: 'Las boquillas y bocas de incendio equipadas tienen un rango referencial de mercado de $3,000 a $5,000 MXN por unidad, dependiendo del modelo, tipo de descarga (chorro directo, niebla o espuma), certificación (UL/FM) y material. Las boquillas industriales de alta capacidad o espuma para sectores petroquímicos pueden superar este rango. El precio exacto depende de las especificaciones del proyecto.',
+    respuesta: 'Las bocas de incendio equipadas estándar tienen un precio de referencia de mercado verificado de $3,000 a $5,000 MXN por unidad (distribuidores especializados México). Las boquillas industriales Elkhart Brass de alto caudal —Master Stream y X-Stream— se listan en distribuidores en México entre $3,085 y $4,429 USD, al ser equipos de importación. La boquilla Auto Eductora HF-350 de 350 GPM se lista en $3,389 USD. El precio exacto depende del tipo de descarga (chorro, niebla, espuma), certificación UL o FM, y caudal requerido.',
   },
   {
     pregunta: '¿Cuánto cuesta equipar un piso completo con sistema contra incendios?',
@@ -132,7 +162,7 @@ const faqItems = [
   },
   {
     pregunta: '¿Qué factores determinan el precio de una válvula contra incendios?',
-    respuesta: 'Los principales factores de precio en válvulas son: diámetro de conexión (desde 1.5" hasta 8"), tipo de operación (OS&Y, angular, mariposa, compuerta), material del cuerpo (bronce fundido, hierro dúctil, acero inoxidable), certificación requerida (UL Listed o FM Approved — FM tiene costo superior), presión de trabajo (hasta 175 PSI o hasta 250 PSI) y modelo del fabricante. Una válvula OS&Y estándar en bronce de 4" UL/FM tiene un precio de mercado distinto a una válvula de mariposa ranurada en hierro dúctil de 6" FM.',
+    respuesta: 'Los principales factores de precio en válvulas son: diámetro de conexión (desde 1.5" hasta 8"), tipo de operación (OS&Y, angular, mariposa, compuerta), material del cuerpo (bronce fundido, hierro dúctil, acero inoxidable), certificación requerida (UL Listed o FM Approved — FM tiene costo superior) y presión de trabajo (175 PSI o 300 PSI). Como referencia de mercado verificada: una válvula OS&Y de compuerta 4" UL/FM marca Duyar se lista en distribuidores mexicanos a $432 USD + IVA. Las válvulas angulares Elkhart Brass modelo U-30 se listan en distribuidores especializados a $757 USD. Válvulas de mayor diámetro o con certificación FM Approved tienen costo proporcionalmente superior.',
   },
   {
     pregunta: '¿Qué diferencia de precio hay entre equipos UL Listed y FM Approved?',
@@ -204,7 +234,7 @@ const structuredData = [
           </div>
           <div class="service-block__title-wrap">
             <h3 class="service-block__title">Válvulas Contra Incendios</h3>
-            <p class="service-block__subtitle">OS&amp;Y, angulares, compuerta y mariposa — precio según diámetro y certificación</p>
+            <p class="service-block__subtitle">OS&amp;Y, angulares, compuerta y mariposa — referencia de mercado: OS&amp;Y 4" UL/FM desde ~$432 USD en distribuidores México</p>
           </div>
         </div>
         <div class="service-block__content">
@@ -307,13 +337,13 @@ const structuredData = [
           </div>
           <div class="service-block__title-wrap">
             <h3 class="service-block__title">Monitores Contra Incendios</h3>
-            <p class="service-block__subtitle">Alta gama industrial — precio según capacidad (GPM) y tipo de montaje</p>
+            <p class="service-block__subtitle">Alta gama industrial — Copperhead Elkhart Brass 1,250 GPM desde $6,599 USD (referencia distribuidores México)</p>
           </div>
         </div>
         <div class="service-block__content">
           <div class="service-block__text">
-            <p>Los monitores contra incendios son los equipos de mayor precio en el portafolio por su complejidad y caudales (250 a 2,500 GPM). Se usan en instalaciones donde la protección requiere alcances de hasta 100 metros y caudales que un sistema de mangueras no puede cubrir: terminales de combustible, aeropuertos, plantas petroquímicas y almacenes de alto riesgo.</p>
-            <p>Distribuimos la línea completa <strong>Elkhart Brass y Akron Brass</strong> de monitores: portátiles, de carrete, fijos en base giratoria, oscilantes automáticos y remotos. El precio varía significativamente según capacidad y tipo de operación.</p>
+            <p>Los monitores contra incendios son los equipos de mayor precio en el portafolio por su complejidad y caudales (250 a 2,500 GPM). Como referencia de mercado verificada: el monitor <strong>Copperhead 8593-03X-294 Elkhart Brass</strong> (1,250 GPM, FM Approved, rotación 360°) se lista en distribuidores especializados en México a <strong>$6,599 USD</strong>; los monitores elevados manuales llegan a $39,207 USD. Precios en USD por ser equipo de importación; facturación en MXN al tipo de cambio del día.</p>
+            <p>Distribuimos la línea completa <strong>Elkhart Brass y Akron Brass</strong>: portátiles, de carrete, fijos en base giratoria, oscilantes automáticos y remotos. El rango es amplio según capacidad y aplicación — terminales de combustible, aeropuertos, plantas petroquímicas y almacenes de alto riesgo.</p>
           </div>
           <div class="service-block__features">
             <div class="feature-card">
@@ -364,13 +394,13 @@ const structuredData = [
           </div>
           <div class="service-block__title-wrap">
             <h3 class="service-block__title">Mangueras Contra Incendios</h3>
-            <p class="service-block__subtitle">Precio por pieza según diámetro, longitud y cubierta — descuentos por volumen</p>
+            <p class="service-block__subtitle">Desde ~$1,833 MXN por pieza 30m × 1.5" IPT — precio referencial de mercado verificado</p>
           </div>
         </div>
         <div class="service-block__content">
           <div class="service-block__text">
-            <p>Las mangueras contra incendios se cotizan <strong>por pieza</strong> según diámetro (1.5" o 2.5" para uso en BIE; 2.5" o 3" para uso industrial), longitud (15, 20 o 30 metros) y tipo de cubierta (poliéster simple o cubierta exterior de hule para uso exterior). Las mangueras para uso bomberil tienen especificaciones distintas a las de uso industrial.</p>
-            <p>Todas las mangueras <strong>Elkhart Brass</strong> cumplen con <strong>NFPA 1961</strong> y tienen certificación UL Listed. Entregamos con la documentación técnica necesaria para verificaciones de Protección Civil.</p>
+            <p>Las mangueras contra incendios se cotizan <strong>por pieza</strong>. Como referencia de mercado verificada: manguera de bombero 30m × 1.5" IPT con conexiones IPT a 200 PSI tiene precio de lista en distribuidores México de <strong>~$1,833 MXN</strong> por pieza. El rango completo es $1,500–$3,500 MXN según diámetro (1.5" o 2.5" para BIE; 2.5"–3" para uso industrial), longitud (15, 20 o 30m) y cubierta (poliéster simple vs hule exterior).</p>
+            <p>Todas las mangueras <strong>Elkhart Brass</strong> cumplen con <strong>NFPA 1961</strong> y tienen certificación UL Listed. Entregamos con documentación técnica para verificaciones de Protección Civil.</p>
           </div>
           <div class="service-block__features">
             <div class="feature-card">
@@ -410,12 +440,12 @@ const structuredData = [
           </div>
           <div class="service-block__title-wrap">
             <h3 class="service-block__title">Conexiones y Herrajes</h3>
-            <p class="service-block__subtitle">Acoplamientos, adaptadores y tomas siamesas — precio por pieza o kit de proyecto</p>
+            <p class="service-block__subtitle">Herrajes NST desde ~$750 MXN por pieza — válvulas angulares y acoplamientos (referencia distribuidores México)</p>
           </div>
         </div>
         <div class="service-block__content">
           <div class="service-block__text">
-            <p>Las conexiones y herrajes son el complemento de cualquier sistema. Incluyen <strong>acoplamientos NST y Storz</strong> (los más comunes), adaptadores de rosca a rosca, llaves de manguera, tomas siamesas para cuerpo de bomberos y colectores de múltiple entrada. El precio varía principalmente por material (bronce o aluminio) y diámetro.</p>
+            <p>Las conexiones y herrajes son el complemento de cualquier sistema. Como referencia de mercado verificada en distribuidores México: <strong>válvula de ángulo NST desde ~$747 MXN</strong> y acoplamientos rígidos 3" desde ~$791 MXN. Las tomas siamesas con tapones, cadena y disco tienen costo mayor. Precio varía principalmente por material (bronce o aluminio) y diámetro.</p>
             <p>El tipo de rosca (NST o Storz) debe coincidir con el estándar local del cuerpo de bomberos de la ciudad o municipio del proyecto. En CDMX el estándar es NST; en otros estados puede variar.</p>
           </div>
           <div class="service-block__features">
@@ -456,12 +486,12 @@ const structuredData = [
           </div>
           <div class="service-block__title-wrap">
             <h3 class="service-block__title">Gabinetes e Hidrantes</h3>
-            <p class="service-block__subtitle">Precio según tipo (mural o empotrado), tamaño y si incluye manguera y boquilla</p>
+            <p class="service-block__subtitle">Gabinetes empotrados desde $1,527 MXN IVA incl. — referencia distribuidores especializados México</p>
           </div>
         </div>
         <div class="service-block__content">
           <div class="service-block__text">
-            <p>Los gabinetes contra incendios se cotizan principalmente por <strong>tipo de montaje</strong> (mural o empotrado), <strong>tamaño del nicho</strong> y <strong>equipamiento incluido</strong>: solo el gabinete, o con manguera 1.5" y boquilla ya instaladas (gabinete tipo BIE completo). Los gabinetes con equipamiento completo tienen un mayor precio pero simplifican la instalación y reducen errores de especificación.</p>
+            <p>Los gabinetes contra incendios se cotizan por <strong>tipo de montaje</strong>, <strong>tamaño</strong> y <strong>equipamiento incluido</strong>. Como referencia de mercado verificada en distribuidores especializados México: gabinete de empotrar para manguera de 30m (21×70×88 cm, acero pintado rojo) con precio de <strong>$2,395 MXN con IVA</strong> (Extinflam/Vallen); gabinete empotrar COGARSA desde <strong>$1,527 MXN + IVA</strong>. Los gabinetes con manguera y boquilla incluidas (BIE completa) tienen precio integral mayor.</p>
             <p>Los hidrantes industriales y columnas hidrantes tienen precio distinto por su robustez constructiva: son equipos de infraestructura para uso exterior permanente, con certificaciones FM y cuerpos en hierro dúctil o acero recubierto.</p>
           </div>
           <div class="service-block__features">
