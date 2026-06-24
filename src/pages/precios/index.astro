@@ -1,0 +1,834 @@
+---
+import Layout from '../../layouts/Base.astro';
+import '../../styles/services-shared.css';
+import Faq from '../../components/Faq.astro';
+import SectionHeader from '../../components/SectionHeader.astro';
+import LeadCapture from '../../components/LeadCapture.astro';
+import { buildOrganizationSchema, buildFAQSchema, buildBreadcrumbSchema } from '../../lib/seo';
+import { SITE_NAME, SITE_URL, WHATSAPP_NUMBER } from '../../lib/config';
+
+// Schemas Service + Offer por categoría (precio B2B a cotizar; rangos de referencia de mercado donde disponibles)
+const serviceSchemas = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: 'Válvulas Contra Incendios',
+    description: 'Válvulas OS&Y, angulares, de compuerta y de control certificadas UL/FM para sistemas contra incendios en México. Distribución autorizada Elkhart Brass y Potter Roemer.',
+    url: `${SITE_URL}/valvulas-contra-incendios`,
+    provider: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+    areaServed: { '@type': 'Country', name: 'México' },
+    offers: {
+      '@type': 'Offer',
+      availability: 'https://schema.org/InStock',
+      priceCurrency: 'MXN',
+      description: 'Precio según modelo, diámetro y certificación. Solicita cotización formal con especificaciones técnicas.',
+      seller: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+    },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: 'Boquillas y Bocas de Incendio',
+    description: 'Boquillas de chorro, niebla y espuma certificadas UL/FM. Bocas de incendio equipadas para sistemas contra incendios industriales y comerciales en México.',
+    url: `${SITE_URL}/boquillas-contra-incendios`,
+    provider: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+    areaServed: { '@type': 'Country', name: 'México' },
+    offers: {
+      '@type': 'Offer',
+      availability: 'https://schema.org/InStock',
+      priceCurrency: 'MXN',
+      priceSpecification: {
+        '@type': 'PriceSpecification',
+        minPrice: 3000,
+        maxPrice: 5000,
+        priceCurrency: 'MXN',
+        description: 'Rango referencial de mercado para bocas de incendio equipadas. Precio exacto según modelo y especificación.',
+      },
+      seller: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+    },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: 'Monitores Contra Incendios',
+    description: 'Monitores fijos y portátiles de alta capacidad (250 a 2500 GPM) certificados UL/FM. Modelos manuales y oscilantes para industria pesada, aeropuertos y terminales de combustible.',
+    url: `${SITE_URL}/monitores-contra-incendios`,
+    provider: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+    areaServed: { '@type': 'Country', name: 'México' },
+    offers: {
+      '@type': 'Offer',
+      availability: 'https://schema.org/InStock',
+      priceCurrency: 'MXN',
+      description: 'Precio según capacidad (GPM), modelo y certificación requerida. Rango amplio por escala de proyecto industrial.',
+      seller: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+    },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: 'Mangueras Contra Incendios',
+    description: 'Mangueras certificadas UL/FM en diámetros 1.5" a 3", cubiertas de poliéster y caucho NBR. Para uso industrial, comercial y uso bomberil conforme NFPA 1961.',
+    url: `${SITE_URL}/mangueras-contra-incendios`,
+    provider: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+    areaServed: { '@type': 'Country', name: 'México' },
+    offers: {
+      '@type': 'Offer',
+      availability: 'https://schema.org/InStock',
+      priceCurrency: 'MXN',
+      description: 'Precio por pieza según diámetro, longitud, cubierta y certificación. Descuentos por volumen disponibles.',
+      seller: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+    },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: 'Conexiones y Herrajes Contra Incendios',
+    description: 'Acoplamientos NST y Storz, adaptadores, llaves de manguera, tomas siamesas y accesorios certificados UL/FM para sistemas contra incendios en México.',
+    url: `${SITE_URL}/conexiones-herrajes-contra-incendios`,
+    provider: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+    areaServed: { '@type': 'Country', name: 'México' },
+    offers: {
+      '@type': 'Offer',
+      availability: 'https://schema.org/InStock',
+      priceCurrency: 'MXN',
+      description: 'Precio según tipo, material y diámetro. Disponible en bronce, aluminio y acero inoxidable.',
+      seller: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+    },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: 'Gabinetes e Hidrantes Contra Incendios',
+    description: 'Gabinetes murales y de empotrar, hidrantes industriales y columnas hidrantes certificados UL/FM para edificios comerciales, industriales y plantas.',
+    url: `${SITE_URL}/gabinetes-hidrantes-contra-incendios`,
+    provider: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+    areaServed: { '@type': 'Country', name: 'México' },
+    offers: {
+      '@type': 'Offer',
+      availability: 'https://schema.org/InStock',
+      priceCurrency: 'MXN',
+      description: 'Precio según tipo (mural/empotrar), tamaño y equipamiento. Gabinetes con y sin manguera incluida.',
+      seller: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+    },
+  },
+];
+
+const faqItems = [
+  {
+    pregunta: '¿Cuánto cuestan las boquillas contra incendios en México?',
+    respuesta: 'Las boquillas y bocas de incendio equipadas tienen un rango referencial de mercado de $3,000 a $5,000 MXN por unidad, dependiendo del modelo, tipo de descarga (chorro directo, niebla o espuma), certificación (UL/FM) y material. Las boquillas industriales de alta capacidad o espuma para sectores petroquímicos pueden superar este rango. El precio exacto depende de las especificaciones del proyecto.',
+  },
+  {
+    pregunta: '¿Cuánto cuesta equipar un piso completo con sistema contra incendios?',
+    respuesta: 'Según referencias del mercado en México, el costo de equipamiento por piso para un sistema contra incendios (sin instalación) empieza desde $6,500 MXN para configuraciones básicas. El costo real varía significativamente según el área del piso, tipo de riesgo (NFPA ligero, ordinario o extra), certificaciones requeridas por aseguradora, número de bocas de incendio, válvulas de control y tipo de mangueras. Solicita cotización con los planos del proyecto para un presupuesto preciso.',
+  },
+  {
+    pregunta: '¿Los equipos Elkhart Brass se cotizan en pesos o dólares?',
+    respuesta: 'Los equipos Elkhart Brass son producto de importación con precio base en dólares americanos (USD). Sin embargo, cotizamos y facturamos en pesos mexicanos (MXN) al tipo de cambio del día. Las cotizaciones tienen una vigencia de 15 a 30 días dada la variación cambiaria. Para proyectos de largo plazo, recomendamos confirmar la orden dentro del período de vigencia para fijar el precio en MXN.',
+  },
+  {
+    pregunta: '¿Los precios de los equipos incluyen IVA?',
+    respuesta: 'No. Todos los precios de lista y cotizaciones se expresan sin IVA. El IVA (16%) se agrega en la factura CFDI 4.0 como concepto separado. En la cotización formal siempre desglosamos: precio unitario, subtotal, IVA y total con IVA para transparencia completa ante cualquier comité de compras o proceso de licitación.',
+  },
+  {
+    pregunta: '¿Qué factores determinan el precio de una válvula contra incendios?',
+    respuesta: 'Los principales factores de precio en válvulas son: diámetro de conexión (desde 1.5" hasta 8"), tipo de operación (OS&Y, angular, mariposa, compuerta), material del cuerpo (bronce fundido, hierro dúctil, acero inoxidable), certificación requerida (UL Listed o FM Approved — FM tiene costo superior), presión de trabajo (hasta 175 PSI o hasta 250 PSI) y modelo del fabricante. Una válvula OS&Y estándar en bronce de 4" UL/FM tiene un precio de mercado distinto a una válvula de mariposa ranurada en hierro dúctil de 6" FM.',
+  },
+  {
+    pregunta: '¿Qué diferencia de precio hay entre equipos UL Listed y FM Approved?',
+    respuesta: 'Los equipos con certificación FM Approved generalmente tienen un costo entre 10% y 30% superior a los certificados solo UL Listed. Esto refleja el proceso de certificación FM, que es más estricto y está orientado a instalaciones de riesgo extra (petroquímicas, terminales de combustible, almacenes de alto valor). Para instalaciones comerciales estándar que requieren solo UL, el costo es menor. La certificación requerida depende de la aseguradora y el tipo de riesgo del proyecto.',
+  },
+  {
+    pregunta: '¿Hacen descuentos por volumen o para proyectos grandes?',
+    respuesta: 'Sí. Manejamos precios diferenciados para compras de 10 piezas o más en la misma categoría, para proyectos de gran escala y para clientes con pedidos recurrentes. Para proyectos de 50 piezas o más, asignamos un ejecutivo de cuenta con condiciones especiales. Para distribuidores que revenden o integran equipos en sus proyectos, existen condiciones de mayorista. En todos los casos, indica el volumen en tu solicitud para que el asesor incluya las condiciones de precio correctas.',
+  },
+  {
+    pregunta: '¿Tienen financiamiento o crédito para la compra de equipos?',
+    respuesta: 'Para clientes empresariales con volumen regular ofrecemos crédito a 30 días previa apertura de cuenta. Para proyectos de mayor envergadura evaluamos esquemas a 60 días. Requerimos información fiscal (constancia SAT, referencias comerciales) para la apertura de crédito. Los pagos se realizan por transferencia bancaria, depósito o tarjeta empresarial. El crédito aplica para clientes recurrentes; las primeras órdenes generalmente requieren pago anticipado.',
+  },
+];
+
+const structuredData = [
+  buildOrganizationSchema(),
+  ...serviceSchemas,
+  buildFAQSchema(faqItems),
+  buildBreadcrumbSchema([
+    { name: 'Inicio', url: '/' },
+    { name: 'Precios', url: '/precios' },
+  ]),
+];
+---
+
+<Layout
+  title="Precios de Equipos Contra Incendios | Gama de México"
+  description="Precios referenciales de válvulas, boquillas, monitores, mangueras, conexiones y gabinetes contra incendios en México. Cotización formal en menos de 24 horas con especificaciones UL/FM."
+  activePage="servicios"
+  structuredData={structuredData}
+  ogImage="/img/og-gama-mexico-equipos-contra-incendios.jpg"
+  heroTitle="Precios de Equipos Contra Incendios en México"
+  heroIntro="Todos los equipos son a cotizar según especificaciones del proyecto. Recibe cotización formal con precios actualizados, disponibilidad real y documentación técnica en menos de 24 horas."
+  heroBadge="Precios y Cotización"
+  heroMetrics={[
+    { valor: '<24h', texto: 'Respuesta garantizada' },
+    { valor: 'UL/FM', texto: 'Equipos certificados' },
+    { valor: 'MXN', texto: 'Cotización en pesos' },
+  ]}
+  heroPrimaryText="Solicitar Cotización"
+  heroPrimaryLink={`https://wa.me/${WHATSAPP_NUMBER}?text=Hola,%20necesito%20cotización%20de%20equipos%20contra%20incendios`}
+  heroSecondaryText="Ver Catálogo"
+  heroSecondaryLink="/equipos"
+  heroShowRightContent={true}
+  showLeadCapture={false}
+>
+  <Fragment slot="hero-content">
+    <p>Como distribuidores autorizados de <strong>Elkhart Brass</strong> en México, suministramos equipos con certificación FM Approved y UL Listed para proyectos industriales, comerciales y de gobierno. Todos los precios son a cotizar: el costo varía según modelo, especificación técnica y volumen.</p>
+    <p>En esta página encontrarás información sobre los factores que determinan el precio de cada categoría de equipo, preguntas frecuentes de costo y cómo solicitar tu cotización formal en menos de 24 horas.</p>
+  </Fragment>
+
+  <!-- CATEGORÍAS DE EQUIPO -->
+  <section class="service-sections" id="categorias" aria-labelledby="categorias-title">
+    <div class="container">
+      <SectionHeader
+        titulo="Categorías de Equipo y Factores de Precio"
+        subtitulo="El costo de cada equipo depende del modelo, certificación y especificación técnica de tu proyecto"
+        idTitulo="categorias-title"
+        parrafo1="No publicamos lista de precios fijos porque los equipos Elkhart Brass se cotizan según especificaciones exactas: diámetro, presión de trabajo, material del cuerpo, tipo de rosca (NST o Storz), certificación requerida (UL o FM) y cantidad. Dos válvulas del mismo tipo pueden tener precios muy distintos si una es de bronce 4'' UL y la otra es de hierro dúctil 6'' FM."
+        parrafo2="A continuación explicamos los factores de precio de cada categoría para que puedas preparar mejor tu solicitud de cotización."
+      />
+
+      <!-- VÁLVULAS -->
+      <div class="service-block" id="valvulas">
+        <div class="service-block__header">
+          <div class="service-block__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+          </div>
+          <div class="service-block__title-wrap">
+            <h3 class="service-block__title">Válvulas Contra Incendios</h3>
+            <p class="service-block__subtitle">OS&amp;Y, angulares, compuerta y mariposa — precio según diámetro y certificación</p>
+          </div>
+        </div>
+        <div class="service-block__content">
+          <div class="service-block__text">
+            <p>Las válvulas contra incendios tienen el mayor rango de precios del portafolio porque existen docenas de modelos. La diferencia principal de costo está en el <strong>diámetro (1.5" a 8")</strong>, el <strong>tipo de válvula</strong> (OS&amp;Y para supervisión, angular para boca de incendio, compuerta para línea principal) y la <strong>certificación</strong> (UL Listed o FM Approved).</p>
+            <p>Distribuimos válvulas <strong>Elkhart Brass y Potter Roemer</strong> con stock permanente en CDMX y Querétaro. Para proyectos con licitación, entregamos documentación técnica completa con la cotización.</p>
+          </div>
+          <div class="service-block__features">
+            <div class="feature-card">
+              <h4 class="feature-card__title">Válvulas OS&amp;Y</h4>
+              <p class="feature-card__desc">Para control supervisado con señal al panel. Diámetros 2.5" a 6". Precio varía por diámetro y certificación.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Válvulas Angulares</h4>
+              <p class="feature-card__desc">Para bocas de incendio equipadas (BIE). 1.5" y 2.5" en bronce. Certificadas UL/FM.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Válvulas Compuerta</h4>
+              <p class="feature-card__desc">Para líneas principales de distribución. Desde 2" hasta 8". Bridadas o ranuradas.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Válvulas Mariposa</h4>
+              <p class="feature-card__desc">Para instalaciones con espacio reducido. Ranuradas y bridadas. Certificadas FM en modelos industriales.</p>
+            </div>
+          </div>
+          <div class="service-block__list">
+            <h4 class="service-block__list-title">Factores que determinan el precio:</h4>
+            <ul class="check-list">
+              <li class="check-list__item">Diámetro nominal (1.5" a 8") — el factor de mayor impacto</li>
+              <li class="check-list__item">Tipo de conexión: roscada, bridada o ranurada (Victaulic)</li>
+              <li class="check-list__item">Certificación: UL Listed vs FM Approved (FM tiene costo superior)</li>
+              <li class="check-list__item">Material del cuerpo: bronce, hierro dúctil o acero inoxidable</li>
+              <li class="check-list__item">Presión de trabajo: hasta 175 PSI o hasta 300 PSI</li>
+              <li class="check-list__item">Incluye supervisión eléctrica (tamper switch)</li>
+            </ul>
+          </div>
+          <div class="service-block__cta">
+            <p class="service-block__cta-text">¿Tienes el diámetro y modelo requerido?</p>
+            <a
+              href={`https://wa.me/${WHATSAPP_NUMBER}?text=Hola,%20necesito%20cotización%20de%20válvulas%20contra%20incendios`}
+              class="btn btn--primary btn--sm"
+              target="_blank"
+              rel="noopener nofollow external"
+            >Cotizar válvulas</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- BOQUILLAS -->
+      <div class="service-block" id="boquillas">
+        <div class="service-block__header">
+          <div class="service-block__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 8-6 4 6 4V8Z"/><rect x="2" y="6" width="14" height="12" rx="2" ry="2"/></svg>
+          </div>
+          <div class="service-block__title-wrap">
+            <h3 class="service-block__title">Boquillas y Bocas de Incendio</h3>
+            <p class="service-block__subtitle">Desde $3,000 MXN — precio de referencia de mercado por unidad equipada</p>
+          </div>
+        </div>
+        <div class="service-block__content">
+          <div class="service-block__text">
+            <p>Las boquillas y bocas de incendio tienen un rango de mercado referencial de <strong>$3,000 a $5,000 MXN por unidad</strong> para modelos equipados estándar (boca de incendio con manguera y boquilla 1.5" UL). Las boquillas de espuma para instalaciones industriales o de alto riesgo tienen un costo considerablemente mayor por sus especificaciones técnicas adicionales.</p>
+            <p>Todos los modelos <strong>Elkhart Brass</strong> incluyen documentación técnica, certificado de conformidad UL/FM y fichas de instalación. Para bocas de incendio equipadas (BIE), indicar si el precio debe incluir gabinete y manguera o solo la boquilla.</p>
+          </div>
+          <div class="service-block__features">
+            <div class="feature-card feature-card--highlight">
+              <h4 class="feature-card__title">Boquillas de Chorro</h4>
+              <p class="feature-card__desc">Chorro sólido y niebla combinada. Para uso general en bocas de incendio equipadas. Estándar NST.</p>
+            </div>
+            <div class="feature-card feature-card--highlight">
+              <h4 class="feature-card__title">Boquillas Automáticas</h4>
+              <p class="feature-card__desc">Apertura automática por temperatura para sistemas automáticos. Certificadas UL. Mayor costo por componente sensible.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Boquillas de Espuma</h4>
+              <p class="feature-card__desc">Para sistemas de espuma (NFPA 11). Aplicación petroquímica y almacenes. Precio superior por especialización.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Boquillas Monitores</h4>
+              <p class="feature-card__desc">Boquillas de alto caudal para monitores fijos y portátiles. Configuración de caudal ajustable en obra.</p>
+            </div>
+          </div>
+          <div class="service-block__cta">
+            <p class="service-block__cta-text">¿Cuántas boquillas necesitas y de qué tipo?</p>
+            <a
+              href={`https://wa.me/${WHATSAPP_NUMBER}?text=Hola,%20necesito%20cotización%20de%20boquillas%20contra%20incendios`}
+              class="btn btn--primary btn--sm"
+              target="_blank"
+              rel="noopener nofollow external"
+            >Cotizar boquillas</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- MONITORES -->
+      <div class="service-block" id="monitores">
+        <div class="service-block__header">
+          <div class="service-block__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/><path d="M12 8v8M8 12h8"/></svg>
+          </div>
+          <div class="service-block__title-wrap">
+            <h3 class="service-block__title">Monitores Contra Incendios</h3>
+            <p class="service-block__subtitle">Alta gama industrial — precio según capacidad (GPM) y tipo de montaje</p>
+          </div>
+        </div>
+        <div class="service-block__content">
+          <div class="service-block__text">
+            <p>Los monitores contra incendios son los equipos de mayor precio en el portafolio por su complejidad y caudales (250 a 2,500 GPM). Se usan en instalaciones donde la protección requiere alcances de hasta 100 metros y caudales que un sistema de mangueras no puede cubrir: terminales de combustible, aeropuertos, plantas petroquímicas y almacenes de alto riesgo.</p>
+            <p>Distribuimos la línea completa <strong>Elkhart Brass y Akron Brass</strong> de monitores: portátiles, de carrete, fijos en base giratoria, oscilantes automáticos y remotos. El precio varía significativamente según capacidad y tipo de operación.</p>
+          </div>
+          <div class="service-block__features">
+            <div class="feature-card">
+              <h4 class="feature-card__title">Monitores Portátiles</h4>
+              <p class="feature-card__desc">250 a 500 GPM. Para uso en brigada y emergencia. Conexión NST estándar. Precio de entrada en la categoría.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Monitores Fijos Manuales</h4>
+              <p class="feature-card__desc">500 a 1,250 GPM. Montaje en base giratoria o carrete. Para protección perimetral fija.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Monitores Oscilantes</h4>
+              <p class="feature-card__desc">1,000 a 2,500 GPM. Movimiento automático por motor. Ideal para cobertura amplia sin operador.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Monitores de Espuma</h4>
+              <p class="feature-card__desc">Con generador de espuma integrado. Para terminales de combustible y áreas NFPA 11. Mayor precio por componentes adicionales.</p>
+            </div>
+          </div>
+          <div class="service-block__list">
+            <h4 class="service-block__list-title">Información necesaria para cotizar monitores:</h4>
+            <ul class="check-list">
+              <li class="check-list__item">Capacidad requerida (GPM o litros por minuto)</li>
+              <li class="check-list__item">Tipo: portátil, de carrete, fijo o con control remoto</li>
+              <li class="check-list__item">Presión disponible en la red (PSI)</li>
+              <li class="check-list__item">Tipo de agente: agua, espuma o agua-espuma</li>
+              <li class="check-list__item">Certificación requerida: UL Listed o FM Approved</li>
+              <li class="check-list__item">Normativa aplicable (NFPA 15, 11, 25)</li>
+            </ul>
+          </div>
+          <div class="service-block__cta">
+            <p class="service-block__cta-text">¿Tienes la memoria de cálculo o el caudal requerido?</p>
+            <a
+              href={`https://wa.me/${WHATSAPP_NUMBER}?text=Hola,%20necesito%20cotización%20de%20monitores%20contra%20incendios`}
+              class="btn btn--primary btn--sm"
+              target="_blank"
+              rel="noopener nofollow external"
+            >Cotizar monitores</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- MANGUERAS -->
+      <div class="service-block" id="mangueras">
+        <div class="service-block__header">
+          <div class="service-block__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7c0-1.1.9-2 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"/><path d="M8 7v10M16 7v10"/></svg>
+          </div>
+          <div class="service-block__title-wrap">
+            <h3 class="service-block__title">Mangueras Contra Incendios</h3>
+            <p class="service-block__subtitle">Precio por pieza según diámetro, longitud y cubierta — descuentos por volumen</p>
+          </div>
+        </div>
+        <div class="service-block__content">
+          <div class="service-block__text">
+            <p>Las mangueras contra incendios se cotizan <strong>por pieza</strong> según diámetro (1.5" o 2.5" para uso en BIE; 2.5" o 3" para uso industrial), longitud (15, 20 o 30 metros) y tipo de cubierta (poliéster simple o cubierta exterior de hule para uso exterior). Las mangueras para uso bomberil tienen especificaciones distintas a las de uso industrial.</p>
+            <p>Todas las mangueras <strong>Elkhart Brass</strong> cumplen con <strong>NFPA 1961</strong> y tienen certificación UL Listed. Entregamos con la documentación técnica necesaria para verificaciones de Protección Civil.</p>
+          </div>
+          <div class="service-block__features">
+            <div class="feature-card">
+              <h4 class="feature-card__title">Mangueras 1.5"</h4>
+              <p class="feature-card__desc">Para bocas de incendio equipadas (BIE) en edificios. Longitudes de 15 y 20 metros. Cubierta poliéster.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Mangueras 2.5"</h4>
+              <p class="feature-card__desc">Para uso industrial y conexión a hidrante. 20 y 30 metros. Cubierta de hule para exteriores disponible.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Mangueras 3"</h4>
+              <p class="feature-card__desc">Para suministro de agua de gran caudal en plantas industriales y terminales. Conforme NFPA 1961.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Cubierta de Hule</h4>
+              <p class="feature-card__desc">Mayor costo pero mayor durabilidad en exteriores. Recomendada donde hay exposición a aceites, químicos o alta abrasión.</p>
+            </div>
+          </div>
+          <div class="service-block__cta">
+            <p class="service-block__cta-text">¿Cuántas mangueras necesitas y de qué diámetro?</p>
+            <a
+              href={`https://wa.me/${WHATSAPP_NUMBER}?text=Hola,%20necesito%20cotización%20de%20mangueras%20contra%20incendios`}
+              class="btn btn--primary btn--sm"
+              target="_blank"
+              rel="noopener nofollow external"
+            >Cotizar mangueras</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONEXIONES Y HERRAJES -->
+      <div class="service-block" id="conexiones">
+        <div class="service-block__header">
+          <div class="service-block__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <div class="service-block__title-wrap">
+            <h3 class="service-block__title">Conexiones y Herrajes</h3>
+            <p class="service-block__subtitle">Acoplamientos, adaptadores y tomas siamesas — precio por pieza o kit de proyecto</p>
+          </div>
+        </div>
+        <div class="service-block__content">
+          <div class="service-block__text">
+            <p>Las conexiones y herrajes son el complemento de cualquier sistema. Incluyen <strong>acoplamientos NST y Storz</strong> (los más comunes), adaptadores de rosca a rosca, llaves de manguera, tomas siamesas para cuerpo de bomberos y colectores de múltiple entrada. El precio varía principalmente por material (bronce o aluminio) y diámetro.</p>
+            <p>El tipo de rosca (NST o Storz) debe coincidir con el estándar local del cuerpo de bomberos de la ciudad o municipio del proyecto. En CDMX el estándar es NST; en otros estados puede variar.</p>
+          </div>
+          <div class="service-block__features">
+            <div class="feature-card">
+              <h4 class="feature-card__title">Acoplamientos NST</h4>
+              <p class="feature-card__desc">Estándar nacional en México. Disponibles en aluminio y bronce en diámetros 1.5", 2.5" y 3".</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Acoplamientos Storz</h4>
+              <p class="feature-card__desc">Conexión simétrica de cierre rápido. Común en industria pesada y operaciones donde se requiere conexión rápida.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Tomas Siamesas</h4>
+              <p class="feature-card__desc">Para alimentación de agua del cuerpo de bomberos. 2 entradas 2.5" NST y 1 salida 4" o 6". Precio de gama media-alta.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Adaptadores y Llaves</h4>
+              <p class="feature-card__desc">Adaptadores NST-NPT, reductores, tapones ciegos y llaves de espiga. Precio bajo por pieza, pero en cantidad impacta el presupuesto.</p>
+            </div>
+          </div>
+          <div class="service-block__cta">
+            <p class="service-block__cta-text">¿Tienes el listado de conexiones del proyecto?</p>
+            <a
+              href={`https://wa.me/${WHATSAPP_NUMBER}?text=Hola,%20necesito%20cotización%20de%20conexiones%20y%20herrajes%20contra%20incendios`}
+              class="btn btn--primary btn--sm"
+              target="_blank"
+              rel="noopener nofollow external"
+            >Cotizar conexiones</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- GABINETES E HIDRANTES -->
+      <div class="service-block" id="gabinetes">
+        <div class="service-block__header">
+          <div class="service-block__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <div class="service-block__title-wrap">
+            <h3 class="service-block__title">Gabinetes e Hidrantes</h3>
+            <p class="service-block__subtitle">Precio según tipo (mural o empotrado), tamaño y si incluye manguera y boquilla</p>
+          </div>
+        </div>
+        <div class="service-block__content">
+          <div class="service-block__text">
+            <p>Los gabinetes contra incendios se cotizan principalmente por <strong>tipo de montaje</strong> (mural o empotrado), <strong>tamaño del nicho</strong> y <strong>equipamiento incluido</strong>: solo el gabinete, o con manguera 1.5" y boquilla ya instaladas (gabinete tipo BIE completo). Los gabinetes con equipamiento completo tienen un mayor precio pero simplifican la instalación y reducen errores de especificación.</p>
+            <p>Los hidrantes industriales y columnas hidrantes tienen precio distinto por su robustez constructiva: son equipos de infraestructura para uso exterior permanente, con certificaciones FM y cuerpos en hierro dúctil o acero recubierto.</p>
+          </div>
+          <div class="service-block__features">
+            <div class="feature-card">
+              <h4 class="feature-card__title">Gabinetes Murales</h4>
+              <p class="feature-card__desc">Montaje sobre pared. Acceso frontal. Para instalaciones donde no se puede empotrar. Acero pintado o inox.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Gabinetes Empotrados</h4>
+              <p class="feature-card__desc">Nicho en pared. Acabado integrado a la arquitectura. Estándar en edificios de oficinas y hoteles.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">Hidrantes Industriales</h4>
+              <p class="feature-card__desc">Columna hidrante exterior en hierro dúctil. Para plantas industriales, parques logísticos y perimetral exterior. FM Approved.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="feature-card__title">BIE Completa</h4>
+              <p class="feature-card__desc">Gabinete + válvula angular + manguera 1.5"×20m + boquilla. Todo certificado. Precio integral por kit.</p>
+            </div>
+          </div>
+          <div class="service-block__cta">
+            <p class="service-block__cta-text">¿Necesitas gabinetes completos o solo el gabinete?</p>
+            <a
+              href={`https://wa.me/${WHATSAPP_NUMBER}?text=Hola,%20necesito%20cotización%20de%20gabinetes%20e%20hidrantes%20contra%20incendios`}
+              class="btn btn--primary btn--sm"
+              target="_blank"
+              rel="noopener nofollow external"
+            >Cotizar gabinetes</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FACTORES DE PRECIO -->
+  <section class="process" aria-labelledby="factores-title">
+    <div class="container">
+      <SectionHeader
+        titulo="Factores que Determinan el Precio"
+        subtitulo="Por qué los equipos contra incendios no tienen precio fijo de catálogo"
+        idTitulo="factores-title"
+        parrafo1="Los equipos contra incendios son componentes de ingeniería certificados para condiciones específicas. El precio de un equipo con certificación FM Approved para 300 PSI en hierro dúctil no es comparable al de un equipo UL Listed para 175 PSI en bronce, aunque ambos sean válvulas del mismo diámetro."
+        parrafo2="Estos cuatro factores son los que más impactan el precio de cualquier equipo. Tenerlos claros al momento de cotizar reduce los tiempos de respuesta y evita requerir una segunda ronda de cotización."
+      />
+      <div class="process__steps">
+        <div class="process__step">
+          <div class="process__number" aria-hidden="true">1</div>
+          <h3 class="process__step-title">Certificación</h3>
+          <p class="process__step-desc">UL Listed (más común) o FM Approved (industria de alto riesgo). FM tiene costo entre 10% y 30% superior por el rigor del proceso de certificación.</p>
+        </div>
+        <div class="process__step">
+          <div class="process__number" aria-hidden="true">2</div>
+          <h3 class="process__step-title">Especificación</h3>
+          <p class="process__step-desc">Diámetro, presión de trabajo, tipo de conexión (NST, Storz, NPT, bridada) y material del cuerpo. Cada variante tiene un precio de catálogo diferente.</p>
+        </div>
+        <div class="process__step">
+          <div class="process__number" aria-hidden="true">3</div>
+          <h3 class="process__step-title">Tipo de cambio</h3>
+          <p class="process__step-desc">Los equipos Elkhart Brass son importados y se cotizan en USD. El precio en MXN fluctúa con el tipo de cambio. Las cotizaciones tienen vigencia de 15 a 30 días.</p>
+        </div>
+        <div class="process__step">
+          <div class="process__number" aria-hidden="true">4</div>
+          <h3 class="process__step-title">Volumen</h3>
+          <p class="process__step-desc">Compras de 10 piezas o más de la misma categoría califican para precios de volumen. Proyectos de 50+ piezas tienen condiciones de mayorista con ejecutivo de cuenta asignado.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTORES -->
+  <section class="sectors" aria-labelledby="sectores-title">
+    <div class="container">
+      <SectionHeader
+        titulo="¿Qué Tipo de Proyecto Tienes?"
+        subtitulo="El sector define las certificaciones requeridas y el rango de presupuesto"
+        idTitulo="sectores-title"
+        parrafo1="No es lo mismo equipar una boca de incendio en un edificio de oficinas que proteger una terminal de almacenamiento de combustible. El sector del proyecto determina qué normativas aplican, qué certificaciones son obligatorias y, en consecuencia, qué rango de precios esperar."
+        parrafo2="Dinos el sector y tipo de instalación y te orientamos sobre qué equipos aplican y cuál es el nivel de inversión esperado para tu proyecto."
+      />
+      <div class="sectors__grid">
+        <div class="sector-card">
+          <div class="sector-card__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg>
+          </div>
+          <h3 class="sector-card__title">Edificios Comerciales</h3>
+          <p class="sector-card__desc">Oficinas, hoteles, centros comerciales. UL Listed estándar. Equipos de riesgo ordinario. Rango de precio intermedio.</p>
+        </div>
+        <div class="sector-card">
+          <div class="sector-card__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          </div>
+          <h3 class="sector-card__title">Industria Manufacturera</h3>
+          <p class="sector-card__desc">Plantas, bodegas, líneas de producción. UL/FM según aseguradora. Mayor capacidad de caudal y presión. Rango de precio medio-alto.</p>
+        </div>
+        <div class="sector-card">
+          <div class="sector-card__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/></svg>
+          </div>
+          <h3 class="sector-card__title">Petroquímica y Energía</h3>
+          <p class="sector-card__desc">Refinerías, terminales de combustible, plantas de energía. FM Approved obligatorio. Monitores de gran capacidad y espuma. Rango de precio alto.</p>
+        </div>
+        <div class="sector-card">
+          <div class="sector-card__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h3 class="sector-card__title">Residencial y Mixto</h3>
+          <p class="sector-card__desc">Condominios, desarrollos habitacionales. BIEs completas 1.5", válvulas OS&Y y gabinetes empotrados. Rango de precio estándar.</p>
+        </div>
+        <div class="sector-card">
+          <div class="sector-card__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/><path d="M12 11v6M9 14h6"/></svg>
+          </div>
+          <h3 class="sector-card__title">Gobierno y Licitaciones</h3>
+          <p class="sector-card__desc">Hospitales, dependencias públicas, PEMEX, CFE. Cotizaciones formales para CompraNet. Documentación completa incluida.</p>
+        </div>
+        <div class="sector-card">
+          <div class="sector-card__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+          </div>
+          <h3 class="sector-card__title">Constructoras e Instaladores</h3>
+          <p class="sector-card__desc">Proyectos multi-piso, desarrollos comerciales. Compras por volumen, precios de mayorista y ejecutivo de cuenta asignado.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST -->
+  <section class="trust" aria-labelledby="trust-title">
+    <div class="container">
+      <SectionHeader
+        titulo="Por Qué Cotizar con Gama de México"
+        subtitulo="Distribuidores autorizados Elkhart Brass — precio directo sin intermediarios"
+        idTitulo="trust-title"
+        parrafo1="Como distribuidores autorizados de Elkhart Brass en México, obtienes precio directo de distribuidor autorizado, no de revendedor. Esto significa mejor precio, documentación original del fabricante y garantía real de los equipos."
+        parrafo2="Respondemos cotizaciones en menos de 24 horas con precio actualizado, disponibilidad real en nuestro stock de CDMX y Querétaro, especificaciones técnicas completas y documentación para licitaciones o comités de compras."
+      />
+      <div class="trust__grid">
+        <div class="trust__item">
+          <h3 class="trust__item-title">Precio directo de distribuidor</h3>
+          <p class="trust__item-desc">Sin intermediarios. Distribuidor autorizado Elkhart Brass en México para precio y condiciones directas.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Cotización en 24 horas</h3>
+          <p class="trust__item-desc">Respuesta garantizada con precio actualizado, disponibilidad y tiempos de entrega confirmados.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Descuentos por volumen</h3>
+          <p class="trust__item-desc">Escala de descuentos desde 10 piezas. Condiciones de mayorista para proyectos grandes y compradores recurrentes.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Stock en CDMX y Querétaro</h3>
+          <p class="trust__item-desc">Entrega el mismo día o al día siguiente para equipos disponibles en nuestros almacenes.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Documentación completa</h3>
+          <p class="trust__item-desc">Fichas técnicas, certificados UL/FM, CFDI 4.0 y documentación para licitaciones incluida.</p>
+        </div>
+        <div class="trust__item">
+          <h3 class="trust__item-title">Crédito empresarial</h3>
+          <p class="trust__item-desc">Crédito a 30 días para clientes con volumen regular. Evaluación rápida con información fiscal.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEAD CAPTURE -->
+  <LeadCapture />
+
+  <!-- FAQ -->
+  <section class="faq" id="faq" aria-labelledby="faq-precios-title">
+    <div class="container">
+      <SectionHeader
+        titulo="Preguntas Frecuentes sobre Precios"
+        subtitulo="Respuestas directas sobre costos, certificaciones y proceso de cotización"
+        idTitulo="faq-precios-title"
+        parrafo1="Estas son las preguntas más comunes que recibimos sobre precios antes de que un cliente solicite su primera cotización. Si tu duda no aparece aquí, escríbenos al WhatsApp y te respondemos en menos de 24 horas."
+        parrafo2=""
+      />
+      <Faq items={faqItems} id="faq-precios" />
+    </div>
+  </section>
+
+  <!-- PÁGINAS RELACIONADAS -->
+  <section class="related-services" aria-labelledby="relacionadas-title">
+    <div class="container">
+      <SectionHeader
+        titulo="Páginas Relacionadas"
+        subtitulo="Más información para tu proyecto de protección contra incendios"
+        idTitulo="relacionadas-title"
+        parrafo1=""
+        parrafo2=""
+      />
+      <div class="related-services__grid">
+        <div class="related-service">
+          <h3 class="related-service__title">Solicitar Cotización</h3>
+          <p class="related-service__desc">Formulario de cotización directo con envío por WhatsApp. Respuesta garantizada en menos de 24 horas.</p>
+          <a href="/cotizar" class="related-service__link">Ir a cotizar →</a>
+        </div>
+        <div class="related-service">
+          <h3 class="related-service__title">Asesoría Técnica</h3>
+          <p class="related-service__desc">Orientación gratuita para seleccionar los equipos correctos según tus requerimientos y normativas.</p>
+          <a href="/servicios/asesoria" class="related-service__link">Ver servicio →</a>
+        </div>
+        <div class="related-service">
+          <h3 class="related-service__title">Cotizaciones Corporativas</h3>
+          <p class="related-service__desc">Precios por volumen, documentación para licitaciones y crédito empresarial.</p>
+          <a href="/servicios/cotizaciones" class="related-service__link">Ver servicio →</a>
+        </div>
+        <div class="related-service">
+          <h3 class="related-service__title">Catálogo de Equipos</h3>
+          <p class="related-service__desc">Explora el catálogo completo de válvulas, boquillas, monitores, mangueras, conexiones y gabinetes.</p>
+          <a href="/equipos" class="related-service__link">Ver catálogo →</a>
+        </div>
+        <div class="related-service">
+          <h3 class="related-service__title">Logística y Envíos</h3>
+          <p class="related-service__desc">Entregas a toda la República Mexicana con embalaje especializado y seguimiento.</p>
+          <a href="/servicios/envios" class="related-service__link">Ver servicio →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta-section" aria-labelledby="cta-precios-title">
+    <div class="container">
+      <div class="cta-section__content">
+        <h2 id="cta-precios-title" class="cta-section__title">¿Listo para recibir tu cotización?</h2>
+        <p class="cta-section__text">Escríbenos con las especificaciones de tu proyecto y recibe cotización formal con precios actualizados en menos de 24 horas.</p>
+        <div class="cta-section__buttons">
+          <a
+            href={`https://wa.me/${WHATSAPP_NUMBER}?text=Hola,%20necesito%20cotización%20de%20equipos%20contra%20incendios`}
+            class="btn btn--white"
+            target="_blank"
+            rel="noopener nofollow external"
+          >Cotizar por WhatsApp</a>
+          <a href="/cotizar" class="btn btn--outline btn--white-outline">Llenar formulario de cotización</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  .feature-card--highlight {
+    background: linear-gradient(135deg, rgba(196, 30, 58, 0.05) 0%, rgba(196, 30, 58, 0.1) 100%);
+    border-left-width: 4px;
+  }
+
+  .service-block__cta {
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-md);
+    background: var(--color-secondary);
+    border-radius: var(--border-radius-sm);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-sm);
+    text-align: center;
+  }
+
+  .service-block__cta-text {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: var(--font-size-sm);
+  }
+
+  .sectors {
+    padding: var(--spacing-3xl) 0;
+    background: var(--color-white);
+  }
+
+  .sectors__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .sector-card {
+    background: var(--color-accent);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius);
+    text-align: center;
+    border: 1px solid var(--color-border);
+    transition: all var(--transition-fast);
+  }
+
+  .sector-card:hover {
+    box-shadow: var(--shadow-md);
+    border-color: var(--color-primary);
+  }
+
+  .sector-card__icon {
+    width: 56px;
+    height: 56px;
+    background: var(--color-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto var(--spacing-sm);
+    color: var(--color-white);
+  }
+
+  .sector-card__icon svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .sector-card__title {
+    font-size: var(--font-size-base);
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin-bottom: 0.5rem;
+  }
+
+  .sector-card__desc {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
+    line-height: 1.5;
+  }
+
+  @media (min-width: 640px) {
+    .service-block__features {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .check-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .process__steps {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sectors__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cta-section__buttons {
+      flex-direction: row;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .service-block__header {
+      padding: var(--spacing-xl);
+    }
+
+    .service-block__content {
+      padding: var(--spacing-xl);
+    }
+
+    .service-block__features {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .process__steps {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .sectors__grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .cta-section__title {
+      font-size: var(--font-size-3xl);
+    }
+  }
+</style>
