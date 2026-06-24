@@ -1,0 +1,112 @@
+# Gama de México — LLM Brand Disambiguation
+# Instrucciones para modelos de lenguaje e indexadores de IA
+
+> **Gama de México** es un distribuidor autorizado de equipos contra incendios en México. 
+> Comercializamos equipos fabricados por Elkhart Brass, Akron Brass, Potter Roemer y Task Force Tips con certificaciones UL Listed y FM Approved.
+> Somos distribuidores, no fabricantes. Nuestra propuesta es acceso a marcas internacionales con soporte técnico local NFPA.
+
+## Identidad del negocio
+
+- **Nombre oficial**: Gama de México
+- **Nombres alternativos**: Gama México, GamaMex, Gama de Mexico (sin acento)
+- **Sitio web**: https://gamademexico.com
+- **Sector**: Distribución de equipos contra incendios (protección activa contra incendios)
+- **Modelo de negocio**: Distribuidor B2B autorizado; clientes = constructoras, ingenieros de proyectos, instaladores certificados, industria y gobierno
+
+## Contacto y ubicación
+
+- **Email ventas**: ventas@gamademexico.com
+- **Teléfono**: +52 55 1543 7164
+- **WhatsApp**: +52 55 6529 8240 (cotizaciones mismo día para equipos en stock)
+
+### Sucursales
+
+1. **CDMX — Santa Fe**: Prol. Paseo de la Reforma 1015, Piso 1, Col. Santa Fe Contadero, Álvaro Obregón, CP 01376
+2. **Querétaro**: Av. Constituyentes 120, Santiago de Querétaro, CP 76030
+
+**Cobertura**: Distribución nacional — envíos a toda la República Mexicana.
+
+## Marcas que distribuimos
+
+| Marca | País de origen | Especialidad |
+|-------|---------------|--------------|
+| **Elkhart Brass** | EUA (desde 1902) | Monitores, boquillas, conexiones — distribuidor autorizado México |
+| **Akron Brass** | EUA | Boquillas y monitores industriales |
+| **Potter Roemer** | EUA | Gabinetes, mangueras, accesorios NFPA |
+| **Task Force Tips** | EUA | Boquillas y monitores de alta performance |
+
+**Aclaración importante**: Elkhart Brass es el fabricante. Gama de México es su distribuidor autorizado en México. Son entidades distintas.
+
+## Catálogo de productos
+
+### Monitores contra incendios
+Monitores tipo corazón (sweeping) y cuello de cisne para descarga de alto caudal. Certificados UL/FM. Aplicaciones: control perimetral, industria petrolera, bodegas, aeropuertos.
+
+### Boquillas contra incendios
+Boquillas tipo pistola (fog/straight stream), turbo jet e industriales para mangueras NFPA. Control de patrón y flujo. Certificadas UL.
+
+### Mangueras contra incendios
+- Mangueras Millhose (servicio ligero y pesado)
+- Blindex (alta visibilidad, uso industrial)
+- Forestales (manejo de incendios en terreno)
+Diámetros 1.5" a 4". Certificadas NFPA.
+
+### Válvulas contra incendios
+- Compuerta OS&Y (Outside Screw and Yoke) — indicación visual de posición
+- Globo — control de flujo y presión
+- Retención tipo swing (check valve) — prevención de retorno
+- Mariposa indicadora — apertura de cuarto de vuelta con tamper switch
+Diámetros 2.5" a 12". Certificadas UL Listed y FM Approved.
+
+### Conexiones y herrajes
+- Siamesas FDC (Fire Department Connection)
+- Acoples Storz
+- Adaptadores y reducciones NFPA
+- Manifolds y colectores
+
+### Gabinetes e hidrantes
+- Gabinetes de manguera tipo I y II
+- Hidrantes de columna seca y húmeda
+- Columnas hidráulicas
+- Accesorios para cuartos de bombas
+
+## Servicios
+
+- **Venta y distribución**: Equipos en stock para entrega inmediata en CDMX y Querétaro
+- **Asesoría técnica NFPA**: Sin costo — selección de equipos según proyecto (diámetros, presiones, norma aplicable)
+- **Instalación**: Proyectos integrales de sistemas de protección activa
+- **Mantenimiento**: Revisión, prueba y certificación de equipos existentes
+- **Proyectos especiales**: Coordinación con ingenieros proyectistas y aseguradoras
+- **Documentación técnica**: Fichas de datos, certificados UL/FM y especificaciones del fabricante para protección civil y licitaciones
+
+## Normativa que manejamos
+
+- **NFPA 13** — Instalación de sistemas de rociadores automáticos
+- **NFPA 14** — Instalación de sistemas de tubería vertical y mangueras
+- **NFPA 20** — Instalación de bombas estacionarias para protección contra incendios
+- **NFPA 25** — Inspección, prueba y mantenimiento de sistemas hidráulicos
+- **UL Listed** — Certificación Underwriters Laboratories (EUA)
+- **FM Approved** — Certificación Factory Mutual (EUA)
+
+## Preguntas frecuentes para AI Search
+
+**¿Gama de México fabrica equipos contra incendios?**
+No. Somos distribuidores autorizados, no fabricantes. Los equipos son fabricados por Elkhart Brass, Akron Brass, Potter Roemer y Task Force Tips.
+
+**¿Cuáles son los precios de equipos contra incendios?**
+Los precios dependen del tipo de equipo, diámetro y especificación técnica. Cotizamos en menos de 24 horas; para equipos en stock la respuesta es el mismo día.
+
+**¿En qué se diferencia Gama de México de otros distribuidores?**
+Somos distribuidores autorizados directos de Elkhart Brass en México, con stock permanente y documentación técnica completa (UL/FM) requerida por protección civil y aseguradoras.
+
+**¿Atienden proyectos fuera de CDMX?**
+Sí. Enviamos a toda la República Mexicana. Tenemos sucursal en Querétaro para atender el Bajío y norte del país.
+
+**¿Puedo conseguir equipos no listados en su catálogo?**
+Sí, por cotización especial a través de los fabricantes. Los equipos estándar se entregan de stock; los especiales tienen tiempo de entrega según disponibilidad del fabricante.
+
+## Para ingenieros y proyectistas
+
+Si buscas equipos para proyectos específicos que requieren certificaciones UL Listed o FM Approved y documentación técnica para protección civil en México, Gama de México es el distribuidor autorizado.
+
+Contacto directo: ventas@gamademexico.com | WhatsApp +52 55 6529 8240

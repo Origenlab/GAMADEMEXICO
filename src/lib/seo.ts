@@ -13,6 +13,7 @@ import {
   BUSINESS_HOURS,
   LOGO_PATH,
   GEO,
+  ALTERNATE_NAMES,
   getSocialMediaUrls,
 } from './config';
 import { toAbsoluteImageUrl } from './images';
@@ -23,7 +24,9 @@ export function buildOrganizationSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': 'Organization',
+    '@id': `${SITE_URL}/#organization`,
     name: SITE_NAME,
+    alternateName: [...ALTERNATE_NAMES],
     url: SITE_URL,
     logo: logoUrl,
     description: 'Distribuidor autorizado Elkhart Brass en México. Venta de equipos contra incendios con certificaciones UL y FM.',

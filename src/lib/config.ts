@@ -8,6 +8,12 @@ export const SITE_NAME = 'Gama de México';
 export const SITE_URL = 'https://gamademexico.com';
 export const SITE_DESCRIPTION = 'Distribuidor autorizado Elkhart Brass en México. Venta de equipos contra incendios con certificaciones UL y FM.';
 export const SITE_TAGLINE = 'Equipos contra incendios';
+// Nombres alternativos para schema.org alternateName y llms.txt (AI Search / GEO)
+export const ALTERNATE_NAMES = [
+  'Gama México',
+  'GamaMex',
+  'Gama de Mexico',
+] as const;
 
 // -- Contacto --
 export const PHONE_PRIMARY = '+525515437164';
