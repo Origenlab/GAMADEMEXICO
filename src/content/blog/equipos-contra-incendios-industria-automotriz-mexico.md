@@ -76,3 +76,22 @@ Los fabricantes automotrices que operan en México, ya sean americanos, europeos
 Para un ingeniero de seguridad que especifica equipos para una planta automotriz en México, eso significa que la selección de cada componente debe considerar no solo el cumplimiento normativo mexicano sino la satisfacción del estándar corporativo más exigente. Un equipo que cumple con NOM-002-STPS pero no tiene FM Approved no pasa la auditoría corporativa. Un [monitor](/monitores-contra-incendios) que tiene UL Listed pero no FM Approved puede no satisfacer el requisito de la aseguradora. Y un sistema que fue diseñado sin considerar el estándar corporativo del OEM va a requerir modificaciones costosas cuando el auditor lo revise.
 
 En [Gama de México](/equipos) distribuimos los componentes del sistema de protección contra incendios que las plantas automotrices requieren: [válvulas](/valvulas-contra-incendios) FM Approved para arreglo de bombeo, [monitores](/monitores-contra-incendios) con certificación dual UL/FM para protección perimetral, [boquillas](/boquillas-contra-incendios) certificadas para brigadas internas, [mangueras](/mangueras-contra-incendios) certificadas NFPA 1961 para gabinetes y estaciones de ataque, y [conexiones](/conexiones-herrajes-contra-incendios) de bronce compatibles con los estándares de la instalación. Si estás especificando equipo para una planta nueva, actualizando un sistema existente o preparando la documentación para una auditoría corporativa, desde [**/cotizar**](/cotizar) lo trabajamos con el nivel de exigencia que la industria automotriz requiere.
+
+---
+
+## Interlinking recomendado Gama de México
+
+Para facilitar tu navegación técnica y comercial dentro del sitio, revisa estas rutas estratégicas:
+
+- [Catálogo de Mangueras contra incendios](/mangueras-contra-incendios)
+- [Guías del blog sobre mangueras contra incendios](/blog/mangueras-contra-incendios)
+- [Todos los equipos contra incendios](/equipos)
+- [Asesoría técnica especializada](/servicios/asesoria)
+- [Solicitar cotización empresarial](/servicios/cotizaciones)
+- [Artículo recomendado 1](/blog/mangueras-contra-incendios/lineamientos-mangueras-contra-incendios-empresas-mexico)
+- [Artículo recomendado 2](/blog/mangueras-contra-incendios/como-elegir-manguera-contra-incendios)
+
+## Imagen técnica de referencia
+
+![Protección contra incendios en planta automotriz industrial](/img/blog/brigada-industrial-entrenamiento-contra-incendios.avif)
+*Descripción técnica: referencia visual del equipo y su aplicación en proyectos de protección contra incendios en México.*

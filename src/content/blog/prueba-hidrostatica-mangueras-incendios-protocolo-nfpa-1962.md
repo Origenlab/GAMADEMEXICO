@@ -284,3 +284,22 @@ Si bien la NOM-002-STPS-2010 no especifica el protocolo de prueba hidrostática 
 La prueba hidrostática conforme a NFPA 1962 es un procedimiento de seguridad no negociable para toda instalación que cuente con mangueras contra incendios. El costo de realizar la prueba anual es insignificante comparado con el riesgo de una falla durante una emergencia real. El protocolo es claro: presurizar, mantener, observar, registrar. Si pasa, la manguera continúa en servicio. Si falla, se retira o se repara el acoplamiento si el cuerpo está íntegro.
 
 Un programa disciplinado de pruebas, con registros completos y trazables, es la base del cumplimiento normativo en México y la garantía de que el sistema de mangueras funcionará cuando se necesite. Gama de México provee servicios de prueba hidrostática y equipamiento de prueba certificado para instalaciones industriales en todo el territorio mexicano.
+
+---
+
+## Interlinking recomendado Gama de México
+
+Para facilitar tu navegación técnica y comercial dentro del sitio, revisa estas rutas estratégicas:
+
+- [Catálogo de Mangueras contra incendios](/mangueras-contra-incendios)
+- [Guías del blog sobre mangueras contra incendios](/blog/mangueras-contra-incendios)
+- [Todos los equipos contra incendios](/equipos)
+- [Asesoría técnica especializada](/servicios/asesoria)
+- [Solicitar cotización empresarial](/servicios/cotizaciones)
+- [Artículo recomendado 1](/blog/mangueras-contra-incendios/lineamientos-mangueras-contra-incendios-empresas-mexico)
+- [Artículo recomendado 2](/blog/mangueras-contra-incendios/como-elegir-manguera-contra-incendios)
+
+## Imagen técnica de referencia
+
+![Prueba hidrostática de mangueras contra incendios en laboratorio](/img/blog/mangueras-contra-incendios-prueba-hidraulica-laboratorio.avif)
+*Descripción técnica: referencia visual del equipo y su aplicación en proyectos de protección contra incendios en México.*

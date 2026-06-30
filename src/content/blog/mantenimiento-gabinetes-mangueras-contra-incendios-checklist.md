@@ -124,3 +124,22 @@ Sí. Tenemos cobertura logística en toda la República Mexicana. Los envíos de
 ### ¿Proporcionan capacitación sobre los equipos?
 
 Sí. Ofrecemos capacitación técnica sobre la instalación, operación y mantenimiento de los equipos que suministramos. La capacitación puede ser presencial en tus instalaciones o por videollamada, sin costo adicional para pedidos de volumen.
+
+---
+
+## Interlinking recomendado Gama de México
+
+Para facilitar tu navegación técnica y comercial dentro del sitio, revisa estas rutas estratégicas:
+
+- [Catálogo de Gabinetes e hidrantes contra incendios](/gabinetes-hidrantes-contra-incendios)
+- [Guías del blog sobre gabinetes e hidrantes contra incendios](/blog/gabinetes-hidrantes-contra-incendios)
+- [Todos los equipos contra incendios](/equipos)
+- [Asesoría técnica especializada](/servicios/asesoria)
+- [Solicitar cotización empresarial](/servicios/cotizaciones)
+- [Artículo recomendado 1](/blog/gabinetes-hidrantes-contra-incendios/requisitos-legales-equipos-contra-incendios-mexico-empresas)
+- [Artículo recomendado 2](/blog/gabinetes-hidrantes-contra-incendios/inspeccion-proteccion-civil-equipos-contra-incendios-empresas-mexico)
+
+## Imagen técnica de referencia
+
+![Mantenimiento de gabinete contra incendios con manguera](/img/blog/mantenimiento-equipos-contra-incendios-tecnico-industrial.avif)
+*Descripción técnica: referencia visual del equipo y su aplicación en proyectos de protección contra incendios en México.*

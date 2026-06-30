@@ -90,3 +90,22 @@ Los cuartos limpios ISO 7 e ISO 8 requieren gabinetes con acabado que no genere 
 ### ¿Gama de México puede asesorar en el diseño del sistema o solo vende equipos?
 
 El equipo técnico participa en la especificación de componentes: validación de presiones y caudales en punto de descarga, selección de boquillas por escenario de riesgo, compatibilidad de válvulas con el arreglo hidráulico existente y documentación para auditorías. El diseño del sistema de rociadores y la ingeniería de detalle corresponden al ingeniero de proyecto o la firma de ingeniería responsable.
+
+---
+
+## Interlinking recomendado Gama de México
+
+Para facilitar tu navegación técnica y comercial dentro del sitio, revisa estas rutas estratégicas:
+
+- [Catálogo de equipos contra incendios](/equipos)
+- [Guías del blog sobre equipos contra incendios](/blog)
+- [Todos los equipos contra incendios](/equipos)
+- [Asesoría técnica especializada](/servicios/asesoria)
+- [Solicitar cotización empresarial](/servicios/cotizaciones)
+- [Artículo recomendado 1](/blog)
+- [Artículo recomendado 2](/equipos)
+
+## Imagen técnica de referencia
+
+![Equipos contra incendios certificados para industria en Guadalajara Jalisco](/img/boquillas-contra-incendios/boquilla-tipo-pistola-contra-incendios-estacion-bomberos-01.avif)
+*Descripción técnica: referencia visual del equipo y su aplicación en proyectos de protección contra incendios en México.*

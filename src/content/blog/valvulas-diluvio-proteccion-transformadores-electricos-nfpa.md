@@ -217,3 +217,22 @@ Contáctenos para asesoría técnica en su proyecto de protección de subestacio
 - [Conexiones y Herrajes](/conexiones-herrajes-contra-incendios) - Coples, adaptadores y tomas siamesas
 - [Sistemas de Rociadores NFPA 13](/blog/valvulas-contra-incendios/sistemas-rociadores-automaticos-nfpa-13-mexico) - Para edificios de control adyacentes
 - [Gabinetes e Hidrantes](/gabinetes-hidrantes-contra-incendios) - Estaciones de intervención en subestaciones
+
+---
+
+## Interlinking recomendado Gama de México
+
+Para facilitar tu navegación técnica y comercial dentro del sitio, revisa estas rutas estratégicas:
+
+- [Catálogo de Válvulas contra incendios](/valvulas-contra-incendios)
+- [Guías del blog sobre válvulas contra incendios](/blog/valvulas-contra-incendios)
+- [Todos los equipos contra incendios](/equipos)
+- [Asesoría técnica especializada](/servicios/asesoria)
+- [Solicitar cotización empresarial](/servicios/cotizaciones)
+- [Artículo recomendado 1](/blog/valvulas-contra-incendios/normativa-nfpa-valvulas-contra-incendios)
+- [Artículo recomendado 2](/servicios/mantenimiento)
+
+## Imagen técnica de referencia
+
+![Válvula de diluvio para sistema de protección contra incendios en transformadores eléctricos](/img/productos/valvula-diluvio.avif)
+*Descripción técnica: referencia visual del equipo y su aplicación en proyectos de protección contra incendios en México.*

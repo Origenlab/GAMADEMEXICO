@@ -286,3 +286,22 @@ Muchas instalaciones industriales en México usan agua de pozo con alto contenid
 Las válvulas check son componentes pequeños con un impacto enorme en la integridad y el funcionamiento de los sistemas sprinkler. La selección correcta del tipo (swing para la mayoría de las aplicaciones, wafer para espacios limitados, bola para líneas piloto), el dimensionamiento hidráulico adecuado, la exigencia de certificación UL/FM y un programa de mantenimiento disciplinado conforme a NFPA 25 son los factores que garantizan la confiabilidad del sistema a lo largo del tiempo.
 
 Para proyectos industriales en México, Gama de México provee válvulas check certificadas UL/FM de los principales fabricantes, con asesoría técnica de selección hidráulica y soporte para programas de mantenimiento conforme a NFPA 25.
+
+---
+
+## Interlinking recomendado Gama de México
+
+Para facilitar tu navegación técnica y comercial dentro del sitio, revisa estas rutas estratégicas:
+
+- [Catálogo de Válvulas contra incendios](/valvulas-contra-incendios)
+- [Guías del blog sobre válvulas contra incendios](/blog/valvulas-contra-incendios)
+- [Todos los equipos contra incendios](/equipos)
+- [Asesoría técnica especializada](/servicios/asesoria)
+- [Solicitar cotización empresarial](/servicios/cotizaciones)
+- [Artículo recomendado 1](/blog/valvulas-contra-incendios/normativa-nfpa-valvulas-contra-incendios)
+- [Artículo recomendado 2](/servicios/mantenimiento)
+
+## Imagen técnica de referencia
+
+![Normativa NFPA para válvulas contra incendios en sistemas de protección activa](/img/blog/blog-normativa-nfpa-valvulas.avif)
+*Descripción técnica: referencia visual del equipo y su aplicación en proyectos de protección contra incendios en México.*

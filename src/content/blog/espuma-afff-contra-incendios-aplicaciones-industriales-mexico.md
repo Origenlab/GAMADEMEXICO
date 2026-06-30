@@ -83,3 +83,22 @@ Lo que la práctica agrega a lo que NFPA 11 establece es el conocimiento de que 
 También es crítico que después de cualquier prueba o uso real, el sistema de espuma se limpie completamente. Los residuos de concentrado que quedan en la tubería, en el proporcionador y en las boquillas pueden secarse, solidificarse y bloquear el flujo la siguiente vez que el sistema se active. El protocolo de lavado post-descarga, con agua limpia fluyendo a través de todo el sistema hasta que no queden residuos de concentrado, es tan parte del mantenimiento como la inspección visual de los componentes.
 
 En [Gama de México](/equipos) distribuimos los componentes del sistema de aplicación de espuma que la ingeniería del proyecto requiere: [monitores contra incendios](/monitores-contra-incendios) con configuración para boquillas de aspiración de espuma, [boquillas](/boquillas-contra-incendios) compatibles con soluciones de AFFF y espumas F3, [válvulas](/valvulas-contra-incendios) certificadas para el arreglo de distribución del sistema y [conexiones](/conexiones-herrajes-contra-incendios) de materiales compatibles con los concentrados utilizados. Si estás diseñando un sistema de espuma nuevo, evaluando la transición de AFFF a espumas libres de flúor o necesitas verificar la condición de un sistema existente, desde [**/cotizar**](/cotizar) lo revisamos con el nivel técnico que este tipo de sistema exige.
+
+---
+
+## Interlinking recomendado Gama de México
+
+Para facilitar tu navegación técnica y comercial dentro del sitio, revisa estas rutas estratégicas:
+
+- [Catálogo de Boquillas contra incendios](/boquillas-contra-incendios)
+- [Guías del blog sobre boquillas contra incendios](/blog/boquillas-contra-incendios)
+- [Todos los equipos contra incendios](/equipos)
+- [Asesoría técnica especializada](/servicios/asesoria)
+- [Solicitar cotización empresarial](/servicios/cotizaciones)
+- [Artículo recomendado 1](/blog/boquillas-contra-incendios/ingenieria-boquillas-contra-incendios-proyectos-industriales)
+- [Artículo recomendado 2](/blog/boquillas-contra-incendios/cumplimiento-legal-boquillas-contra-incendios-mexico-2026)
+
+## Imagen técnica de referencia
+
+![Sistema de espuma AFFF en instalación industrial](/img/blog/monitor-contra-incendios-refineria-industrial-mexico.avif)
+*Descripción técnica: referencia visual del equipo y su aplicación en proyectos de protección contra incendios en México.*

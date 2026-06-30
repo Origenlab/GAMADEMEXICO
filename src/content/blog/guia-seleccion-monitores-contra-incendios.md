@@ -118,3 +118,22 @@ La inspección visual semanal verifica que el monitor está en su posición desi
 La prueba de flujo anual es la verificación definitiva. Se abre la válvula de alimentación, se presuriza el monitor a su presión de operación y se verifica que el caudal, el alcance y el patrón de descarga corresponden con las especificaciones. Se opera el monitor en todo su rango de movimiento bajo presión. Se verifica que la cremallera mantiene la elevación contra la fuerza de reacción. Y se inspeccionan las conexiones y la base buscando fugas, vibraciones o movimiento que indique que los anclajes están aflojados.
 
 En [Gama de México](/monitores-contra-incendios) distribuimos [monitores tipo corazón](/monitores/tipo-corazon) con cremallera simple y doble, [monitores cuello de cisne](/monitores/cuello-cisne) para espacios con altura restringida, [monitores certificados FM Approved](/monitores/certificado-fm) para instalaciones con requisitos de aseguradora y [monitores UL Listed](/monitores/ul-listed) para cumplimiento de códigos de construcción. Si necesitas determinar el tipo, caudal y ubicación de monitores para tu planta, o verificar que los que tienes entregan el desempeño que tu análisis de riesgo requiere, desde [**/cotizar**](/cotizar) lo trabajamos con el cálculo hidráulico y el criterio de ingeniería que una decisión de esta magnitud necesita.
+
+---
+
+## Interlinking recomendado Gama de México
+
+Para facilitar tu navegación técnica y comercial dentro del sitio, revisa estas rutas estratégicas:
+
+- [Catálogo de Monitores contra incendios](/monitores-contra-incendios)
+- [Guías del blog sobre monitores contra incendios](/blog/monitores-contra-incendios)
+- [Todos los equipos contra incendios](/equipos)
+- [Asesoría técnica especializada](/servicios/asesoria)
+- [Solicitar cotización empresarial](/servicios/cotizaciones)
+- [Artículo recomendado 1](/blog/monitores-contra-incendios/manual-tecnico-monitores-contra-incendios-empresas)
+- [Artículo recomendado 2](/blog/monitores-contra-incendios/auditoria-monitores-contra-incendios-empresas-mexico)
+
+## Imagen técnica de referencia
+
+![Monitor contra incendios tipo corazón en instalación industrial](/img/monitores-contra-incendios/monitor-tipo-corazon-contra-incendios-industrial-angulo-frontal-19.avif)
+*Descripción técnica: referencia visual del equipo y su aplicación en proyectos de protección contra incendios en México.*

@@ -88,3 +88,22 @@ En estas instalaciones, el colector no es un componente pasivo. Es un componente
 NFPA 25 establece los intervalos de inspección para los componentes del sistema de distribución. Para colectores y manifolds, la inspección trimestral debe verificar que todas las [válvulas](/valvulas-contra-incendios) de seccionamiento están en posición correcta, que los indicadores de posición funcionan y son legibles, que no hay fugas visibles en uniones, bridas o empaques, y que los soportes estructurales están en buen estado. La prueba anual de flujo debe verificar que cada zona alimentada por el colector recibe el caudal y la presión de diseño. Y cada cinco años, la inspección debe incluir limpieza interna del colector y medición de espesores de pared en los puntos críticos: codos, derivaciones y cambios de diámetro donde la erosión y la corrosión tienden a concentrarse.
 
 En [Gama de México](/conexiones-herrajes-contra-incendios) distribuimos los componentes que integran el arreglo de colectores y manifolds: [válvulas de compuerta OS&Y](/valvulas/compuerta) para seccionamiento, [válvulas de retención](/valvulas/retencion) para prevención de recirculación, [válvulas mariposa](/valvulas/mariposa) con supervisión eléctrica, [conexiones](/conexiones-herrajes-contra-incendios) de bronce y accesorios certificados para la presión y el servicio que cada proyecto requiere. Si estás en la etapa de diseño de un cuarto de bombas o necesitas revisar el arreglo de distribución de una instalación existente, desde [**/cotizar**](/cotizar) lo trabajamos con los criterios de ingeniería que NFPA 20 y NFPA 25 exigen.
+
+---
+
+## Interlinking recomendado Gama de México
+
+Para facilitar tu navegación técnica y comercial dentro del sitio, revisa estas rutas estratégicas:
+
+- [Catálogo de Conexiones y herrajes contra incendios](/conexiones-herrajes-contra-incendios)
+- [Guías del blog sobre conexiones y herrajes contra incendios](/blog/conexiones-herrajes-contra-incendios)
+- [Todos los equipos contra incendios](/equipos)
+- [Asesoría técnica especializada](/servicios/asesoria)
+- [Solicitar cotización empresarial](/servicios/cotizaciones)
+- [Artículo recomendado 1](/conexiones-herrajes-contra-incendios)
+- [Artículo recomendado 2](/servicios/asesoria)
+
+## Imagen técnica de referencia
+
+![Colector de distribución de agua contra incendios en cuarto de bombas](/img/blog/adaptadores-herrajes-bronce-contra-incendios-profesional.avif)
+*Descripción técnica: referencia visual del equipo y su aplicación en proyectos de protección contra incendios en México.*

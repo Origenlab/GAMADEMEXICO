@@ -272,3 +272,22 @@ La correcta selección de la manguera de ataque — single jacket o doble jacket
 Para instalaciones industriales en México, la manguera doble jacket de 2.5" clase 150 psi con forro NBR es el estándar de facto para sistemas standpipe clase I, con variaciones hacia clase 250 psi en petroquímica y clase 100/150 psi en edificios comerciales de baja presión.
 
 Gama de México suministra mangueras de ataque Elkhart Brass certificadas NFPA 1961 en todos los diámetros y clases de presión, con asesoría técnica para la correcta especificación en cada tipo de proyecto industrial mexicano.
+
+---
+
+## Interlinking recomendado Gama de México
+
+Para facilitar tu navegación técnica y comercial dentro del sitio, revisa estas rutas estratégicas:
+
+- [Catálogo de Mangueras contra incendios](/mangueras-contra-incendios)
+- [Guías del blog sobre mangueras contra incendios](/blog/mangueras-contra-incendios)
+- [Todos los equipos contra incendios](/equipos)
+- [Asesoría técnica especializada](/servicios/asesoria)
+- [Solicitar cotización empresarial](/servicios/cotizaciones)
+- [Artículo recomendado 1](/blog/mangueras-contra-incendios/lineamientos-mangueras-contra-incendios-empresas-mexico)
+- [Artículo recomendado 2](/blog/mangueras-contra-incendios/como-elegir-manguera-contra-incendios)
+
+## Imagen técnica de referencia
+
+![Manguera de ataque contra incendios en operación industrial](/img/blog/manguera-forestal-brigada-incendio-bosque-mexico.avif)
+*Descripción técnica: referencia visual del equipo y su aplicación en proyectos de protección contra incendios en México.*

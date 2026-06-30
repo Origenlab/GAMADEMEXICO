@@ -127,3 +127,22 @@ El segundo error es no verificar la presión disponible en el punto de descarga.
 El tercer error es instalar turbo jet donde la brigada solo está capacitada para tipo pistola. Equipo que nadie sabe operar no es equipo de protección. Es un riesgo adicional para el operador que intenta usarlo sin entender la fuerza de reacción y las técnicas de control que requiere.
 
 En [Gama de México](/boquillas-contra-incendios) distribuimos boquillas contra incendios [tipo pistola](/boquillas/tipo-pistola), [turbo jet](/boquillas/turbo-jet), [certificadas UL](/boquillas-contra-incendios), [certificadas dual UL/FM](/boquillas-contra-incendios) e [industriales](/boquillas-contra-incendios) para todo el espectro de riesgos que una instalación puede presentar. Si necesitas determinar qué tipo y caudal de boquilla corresponde a cada zona de tu planta, verificar que las boquillas actuales entregan el desempeño que tu sistema requiere o especificar el equipo para un proyecto nuevo, desde [**/cotizar**](/cotizar) lo revisamos con el análisis de riesgo y el cálculo hidráulico que cada zona necesita.
+
+---
+
+## Interlinking recomendado Gama de México
+
+Para facilitar tu navegación técnica y comercial dentro del sitio, revisa estas rutas estratégicas:
+
+- [Catálogo de Boquillas contra incendios](/boquillas-contra-incendios)
+- [Guías del blog sobre boquillas contra incendios](/blog/boquillas-contra-incendios)
+- [Todos los equipos contra incendios](/equipos)
+- [Asesoría técnica especializada](/servicios/asesoria)
+- [Solicitar cotización empresarial](/servicios/cotizaciones)
+- [Artículo recomendado 1](/blog/boquillas-contra-incendios/ingenieria-boquillas-contra-incendios-proyectos-industriales)
+- [Artículo recomendado 2](/blog/boquillas-contra-incendios/cumplimiento-legal-boquillas-contra-incendios-mexico-2026)
+
+## Imagen técnica de referencia
+
+![Boquilla contra incendios turbo jet de alto rendimiento](/img/productos/boquilla-turbo-jet-frontal.avif)
+*Descripción técnica: referencia visual del equipo y su aplicación en proyectos de protección contra incendios en México.*

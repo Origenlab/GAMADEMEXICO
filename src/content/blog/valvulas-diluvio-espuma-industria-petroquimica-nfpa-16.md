@@ -308,3 +308,22 @@ Las válvulas diluvio son el componente de control más crítico en los sistemas
 El cumplimiento de **NFPA 11** para sistemas de espuma, **NFPA 16** para sistemas combinados espuma/agua, y **NFPA 25** para el programa de mantenimiento son los pilares técnicos que garantizan la confiabilidad de estos sistemas. Las condiciones ambientales de México (corrosión costera, altas temperaturas, sismicidad) añaden requisitos adicionales que deben considerarse en la selección y el mantenimiento.
 
 Gama de México suministra válvulas diluvio certificadas UL/FM para sistemas de espuma y agua pulverizada, con soporte técnico para diseño, instalación y mantenimiento en refinerías, plantas petroquímicas y terminales de almacenamiento en todo el territorio mexicano.
+
+---
+
+## Interlinking recomendado Gama de México
+
+Para facilitar tu navegación técnica y comercial dentro del sitio, revisa estas rutas estratégicas:
+
+- [Catálogo de Válvulas contra incendios](/valvulas-contra-incendios)
+- [Guías del blog sobre válvulas contra incendios](/blog/valvulas-contra-incendios)
+- [Todos los equipos contra incendios](/equipos)
+- [Asesoría técnica especializada](/servicios/asesoria)
+- [Solicitar cotización empresarial](/servicios/cotizaciones)
+- [Artículo recomendado 1](/blog/valvulas-contra-incendios/normativa-nfpa-valvulas-contra-incendios)
+- [Artículo recomendado 2](/servicios/mantenimiento)
+
+## Imagen técnica de referencia
+
+![Válvula de diluvio y espuma para industria petroquímica NFPA 16](/img/blog/valvula-compuerta-osy-sistema-rociadores-industrial.avif)
+*Descripción técnica: referencia visual del equipo y su aplicación en proyectos de protección contra incendios en México.*

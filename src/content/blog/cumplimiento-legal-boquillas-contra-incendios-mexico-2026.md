@@ -83,3 +83,22 @@ El cumplimiento legal en boquillas contra incendios en México se construye en t
 Cubrir los tres niveles no es complicado ni caro comparado con las consecuencias de no hacerlo. Lo que sí requiere es que la selección de la boquilla se haga con criterio técnico desde el principio, no como una compra de último momento que se justifica después.
 
 En [Gama de México](/boquillas-contra-incendios) distribuimos [boquillas certificadas](/boquillas-contra-incendios) UL Listed, FM Approved y con certificación dual para brigadas y sistemas fijos, con la documentación de trazabilidad que cada nivel de cumplimiento requiere. Si necesitas validar que tu instalación cumple tanto con la normatividad mexicana como con los requisitos de tu aseguradora, desde [**/cotizar**](/cotizar) lo revisamos con criterio técnico y legal.
+
+---
+
+## Interlinking recomendado Gama de México
+
+Para facilitar tu navegación técnica y comercial dentro del sitio, revisa estas rutas estratégicas:
+
+- [Catálogo de Boquillas contra incendios](/boquillas-contra-incendios)
+- [Guías del blog sobre boquillas contra incendios](/blog/boquillas-contra-incendios)
+- [Todos los equipos contra incendios](/equipos)
+- [Asesoría técnica especializada](/servicios/asesoria)
+- [Solicitar cotización empresarial](/servicios/cotizaciones)
+- [Artículo recomendado 1](/blog/boquillas-contra-incendios/ingenieria-boquillas-contra-incendios-proyectos-industriales)
+- [Artículo recomendado 2](/blog/boquillas-contra-incendios/cumplimiento-legal-boquillas-contra-incendios-mexico-2026)
+
+## Imagen técnica de referencia
+
+![Inspección de protección civil en empresa industrial](/img/blog/inspeccion-proteccion-civil-empresa-industrial-mexico.avif)
+*Descripción técnica: referencia visual del equipo y su aplicación en proyectos de protección contra incendios en México.*

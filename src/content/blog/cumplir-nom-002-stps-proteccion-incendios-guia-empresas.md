@@ -99,3 +99,22 @@ Cumplir una vez no es cumplir. El cumplimiento es un estado permanente que requi
 Ese programa, ejecutado con constancia y documentado con rigor, es lo que convierte un centro de trabajo vulnerable en uno preparado. No es complicado. No es caro. Lo que sí es, con frecuencia, es ignorado hasta que la inspección aparece y el costo de no haberlo hecho se vuelve inmediato y tangible.
 
 En [Gama de México](/gabinetes-hidrantes-contra-incendios) distribuimos [gabinetes de manguera](/gabinetes-hidrantes-contra-incendios) equipados, [hidrantes](/gabinetes/hidrantes), [válvulas](/valvulas-contra-incendios) de control, [boquillas](/boquillas-contra-incendios) certificadas y todos los componentes que el sistema de protección contra incendios de tu centro de trabajo necesita para cumplir con la NOM-002-STPS y con los estándares NFPA aplicables. Si necesitas evaluar el estado de cumplimiento de tu instalación o especificar los equipos para un proyecto nuevo, desde [**/cotizar**](/cotizar) lo revisamos con criterio técnico y normativo.
+
+---
+
+## Interlinking recomendado Gama de México
+
+Para facilitar tu navegación técnica y comercial dentro del sitio, revisa estas rutas estratégicas:
+
+- [Catálogo de Gabinetes e hidrantes contra incendios](/gabinetes-hidrantes-contra-incendios)
+- [Guías del blog sobre gabinetes e hidrantes contra incendios](/blog/gabinetes-hidrantes-contra-incendios)
+- [Todos los equipos contra incendios](/equipos)
+- [Asesoría técnica especializada](/servicios/asesoria)
+- [Solicitar cotización empresarial](/servicios/cotizaciones)
+- [Artículo recomendado 1](/blog/gabinetes-hidrantes-contra-incendios/requisitos-legales-equipos-contra-incendios-mexico-empresas)
+- [Artículo recomendado 2](/blog/gabinetes-hidrantes-contra-incendios/inspeccion-proteccion-civil-equipos-contra-incendios-empresas-mexico)
+
+## Imagen técnica de referencia
+
+![Inspección de cumplimiento NOM-002-STPS en empresa industrial](/img/blog/inspeccion-proteccion-civil-empresa-industrial-mexico.avif)
+*Descripción técnica: referencia visual del equipo y su aplicación en proyectos de protección contra incendios en México.*

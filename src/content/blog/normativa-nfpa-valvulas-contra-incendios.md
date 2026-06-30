@@ -180,3 +180,17 @@ Las válvulas de bola pueden usarse en ciertas aplicaciones si cuentan con certi
 
 ![Válvula de compuerta OS&Y para sistemas contra incendios certificados](/img/valvulas-contra-incendios/valvula-compuerta-osy-ranurada-contra-incendios-fondo-blanco-01.avif)
 *Descripción técnica: [válvula OS&Y](/valvulas/compuerta) con vástago exterior visible para verificación de posición en sistemas contra incendios.*
+
+---
+
+## Interlinking recomendado Gama de México
+
+Para facilitar tu navegación técnica y comercial dentro del sitio, revisa estas rutas estratégicas:
+
+- [Catálogo de Válvulas contra incendios](/valvulas-contra-incendios)
+- [Guías del blog sobre válvulas contra incendios](/blog/valvulas-contra-incendios)
+- [Todos los equipos contra incendios](/equipos)
+- [Asesoría técnica especializada](/servicios/asesoria)
+- [Solicitar cotización empresarial](/servicios/cotizaciones)
+- [Artículo recomendado 1](/blog/valvulas-contra-incendios/normativa-nfpa-valvulas-contra-incendios)
+- [Artículo recomendado 2](/servicios/mantenimiento)

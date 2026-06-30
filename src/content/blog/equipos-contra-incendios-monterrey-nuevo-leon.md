@@ -82,3 +82,22 @@ Como mínimo, la NOM-002-STPS para la normatividad mexicana. Si tu planta opera 
 **Manejan volúmenes para proyectos completos de red contra incendios?**
 
 Suministramos desde componentes individuales hasta el equipo completo para proyectos de red de hidrantes, arreglos de bombeo y estaciones de manguera. Para proyectos de escala, trabajamos con cotización técnica que incluye lista de materiales detallada, fichas de certificación por componente y coordinación de entregas alineadas al programa de instalación. Desde [**/cotizar**](/cotizar) iniciamos el proceso.
+
+---
+
+## Interlinking recomendado Gama de México
+
+Para facilitar tu navegación técnica y comercial dentro del sitio, revisa estas rutas estratégicas:
+
+- [Catálogo de equipos contra incendios](/equipos)
+- [Guías del blog sobre equipos contra incendios](/blog)
+- [Todos los equipos contra incendios](/equipos)
+- [Asesoría técnica especializada](/servicios/asesoria)
+- [Solicitar cotización empresarial](/servicios/cotizaciones)
+- [Artículo recomendado 1](/blog)
+- [Artículo recomendado 2](/equipos)
+
+## Imagen técnica de referencia
+
+![Equipos contra incendios certificados para industria en Monterrey Nuevo León](/img/monitores-contra-incendios/monitor-tipo-corazon-contra-incendios-industrial-tres-cuartos-10.avif)
+*Descripción técnica: referencia visual del equipo y su aplicación en proyectos de protección contra incendios en México.*

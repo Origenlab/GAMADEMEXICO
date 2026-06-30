@@ -98,3 +98,22 @@ NFPA 1962 establece prueba hidrostática anual para ambas mangueras en servicio 
 Sí, y en muchas plantas es la configuración óptima. Millhose en los gabinetes de áreas administrativas y de manufactura ligera, Blindex en las estaciones de brigada de áreas de proceso con riesgo químico o térmico. Lo que no se debe hacer es mezclarlas sin documentar cuál está en cada ubicación, porque las presiones de prueba son diferentes y el programa de mantenimiento debe reflejar esa diferencia.
 
 En [Gama de México](/mangueras-contra-incendios) distribuimos ambas líneas con certificación NFPA 1961, acoples NST o Storz según el estándar de tu instalación, y fichas técnicas con trazabilidad de lote para auditorías. Si necesitas definir qué manguera va en cada punto de tu sistema o evaluar la compatibilidad de tu inventario actual con el riesgo real de tu planta, desde [**/cotizar**](/cotizar) lo resolvemos con datos.
+
+---
+
+## Interlinking recomendado Gama de México
+
+Para facilitar tu navegación técnica y comercial dentro del sitio, revisa estas rutas estratégicas:
+
+- [Catálogo de Mangueras contra incendios](/mangueras-contra-incendios)
+- [Guías del blog sobre mangueras contra incendios](/blog/mangueras-contra-incendios)
+- [Todos los equipos contra incendios](/equipos)
+- [Asesoría técnica especializada](/servicios/asesoria)
+- [Solicitar cotización empresarial](/servicios/cotizaciones)
+- [Artículo recomendado 1](/blog/mangueras-contra-incendios/lineamientos-mangueras-contra-incendios-empresas-mexico)
+- [Artículo recomendado 2](/blog/mangueras-contra-incendios/como-elegir-manguera-contra-incendios)
+
+## Imagen técnica de referencia
+
+![Mangueras contra incendios Millhose y Blindex en comparación](/img/mangueras-contra-incendios/manguera-forestal-contra-incendios-vista-lateral-06.avif)
+*Descripción técnica: referencia visual del equipo y su aplicación en proyectos de protección contra incendios en México.*

@@ -67,3 +67,22 @@ En [Gama de México](/conexiones-herrajes-contra-incendios) distribuimos adaptad
 
 - [Las conexiones storz](/blog/conexiones-herrajes-contra-incendios/guia-tecnica-conexiones-storz-sistemas-contra-incendios-mexico)
 - [La guía general de conexiones y herrajes](/blog/conexiones-herrajes-contra-incendios/conexiones-herrajes-sistemas-contra-incendios-tipos-nfpa)
+
+---
+
+## Interlinking recomendado Gama de México
+
+Para facilitar tu navegación técnica y comercial dentro del sitio, revisa estas rutas estratégicas:
+
+- [Catálogo de Conexiones y herrajes contra incendios](/conexiones-herrajes-contra-incendios)
+- [Guías del blog sobre conexiones y herrajes contra incendios](/blog/conexiones-herrajes-contra-incendios)
+- [Todos los equipos contra incendios](/equipos)
+- [Asesoría técnica especializada](/servicios/asesoria)
+- [Solicitar cotización empresarial](/servicios/cotizaciones)
+- [Artículo recomendado 1](/conexiones-herrajes-contra-incendios)
+- [Artículo recomendado 2](/servicios/asesoria)
+
+## Imagen técnica de referencia
+
+![Adaptadores de bronce Storz-NST para mangueras contra incendios](/img/blog/adaptadores-herrajes-bronce-contra-incendios-profesional.avif)
+*Descripción técnica: referencia visual del equipo y su aplicación en proyectos de protección contra incendios en México.*

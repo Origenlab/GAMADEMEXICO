@@ -117,3 +117,22 @@ Cuando el inspector de protección civil llega a tu planta y revisa el sistema d
 Si no tienes bitácora, es una observación. Si el hidrante no abre o abre con fugas, es una observación. Si no tienes cálculo hidráulico, es una observación. Y cada observación puede convertirse en una condicionante que te obliga a corregir antes de renovar tu dictamen de protección civil. En el peor caso, si la aseguradora audita y encuentra que los hidrantes no funcionan, la cobertura del siniestro puede cuestionarse argumentando que el asegurado no mantuvo los sistemas de protección en condición operativa.
 
 En [Gama de México](/gabinetes-hidrantes-contra-incendios) distribuimos [hidrantes](/gabinetes-hidrantes-contra-incendios) de hierro fundido para presiones de hasta 350 PSI, con bocas Storz y roscadas NST, en versión de barril húmedo y seco. También distribuimos las [llaves de operación](/conexiones-herrajes-contra-incendios), [adaptadores](/conexiones-herrajes-contra-incendios) Storz-NST y [válvulas OS&Y](/valvulas-contra-incendios) de seccionamiento que complementan la instalación completa. Si necesitas diseñar la distribución de hidrantes para tu planta, verificar el estado de los que ya tienes o preparar la documentación para una inspección, desde [**/cotizar**](/cotizar) lo revisamos con los criterios de NFPA 24 y NFPA 25 que la normativa y tu aseguradora exigen.
+
+---
+
+## Interlinking recomendado Gama de México
+
+Para facilitar tu navegación técnica y comercial dentro del sitio, revisa estas rutas estratégicas:
+
+- [Catálogo de Gabinetes e hidrantes contra incendios](/gabinetes-hidrantes-contra-incendios)
+- [Guías del blog sobre gabinetes e hidrantes contra incendios](/blog/gabinetes-hidrantes-contra-incendios)
+- [Todos los equipos contra incendios](/equipos)
+- [Asesoría técnica especializada](/servicios/asesoria)
+- [Solicitar cotización empresarial](/servicios/cotizaciones)
+- [Artículo recomendado 1](/blog/gabinetes-hidrantes-contra-incendios/requisitos-legales-equipos-contra-incendios-mexico-empresas)
+- [Artículo recomendado 2](/blog/gabinetes-hidrantes-contra-incendios/inspeccion-proteccion-civil-equipos-contra-incendios-empresas-mexico)
+
+## Imagen técnica de referencia
+
+![Hidrante contra incendios instalado en predio industrial México](/img/blog/gabinete-contra-incendios-instalacion-edificio-mexico.avif)
+*Descripción técnica: referencia visual del equipo y su aplicación en proyectos de protección contra incendios en México.*
