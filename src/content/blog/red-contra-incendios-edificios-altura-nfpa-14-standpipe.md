@@ -125,3 +125,22 @@ Sí. Tenemos cobertura logística en toda la República Mexicana. Los envíos de
 ### ¿Proporcionan capacitación sobre los equipos?
 
 Sí. Ofrecemos capacitación técnica sobre la instalación, operación y mantenimiento de los equipos que suministramos. La capacitación puede ser presencial en tus instalaciones o por videollamada, sin costo adicional para pedidos de volumen.
+
+---
+
+## Interlinking recomendado Gama de México
+
+Para facilitar tu navegación técnica y comercial dentro del sitio, revisa estas rutas estratégicas:
+
+- [Catálogo de Mangueras contra incendios](/mangueras-contra-incendios)
+- [Guías del blog sobre mangueras contra incendios](/blog/mangueras-contra-incendios)
+- [Todos los equipos contra incendios](/equipos)
+- [Asesoría técnica especializada](/servicios/asesoria)
+- [Solicitar cotización empresarial](/servicios/cotizaciones)
+- [Artículo recomendado 1](/blog/mangueras-contra-incendios/lineamientos-mangueras-contra-incendios-empresas-mexico)
+- [Artículo recomendado 2](/blog/mangueras-contra-incendios/como-elegir-manguera-contra-incendios)
+
+## Imagen técnica de referencia
+
+![Red contra incendios en edificio de gran altura NFPA 14](/img/blog/gabinete-contra-incendios-instalacion-edificio-mexico.avif)
+*Descripción técnica: referencia visual del equipo y su aplicación en proyectos de protección contra incendios en México.*

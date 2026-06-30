@@ -93,3 +93,22 @@ La forma correcta de elegir una manguera contra incendios sigue una lógica que 
 Saltar esos pasos y comprar por precio, por disponibilidad o por costumbre es la receta para terminar con un inventario de mangueras que cumple en papel pero que no resuelve el escenario real de la instalación. Y cuando el escenario real se presenta, la manguera que no corresponde no avisa; simplemente no funciona como se esperaba.
 
 En [Gama de México](/mangueras-contra-incendios) distribuimos mangueras certificadas NFPA 1961 en las construcciones, diámetros y longitudes que cada aplicación requiere, con acoples NST o Storz según el estándar de la instalación y documentación de trazabilidad para auditorías. Si necesitas definir la manguera correcta para tu sistema o revisar la compatibilidad de tu inventario actual con las condiciones reales de tu planta, desde [**/cotizar**](/cotizar) lo aterrizamos con los datos técnicos que la selección necesita.
+
+---
+
+## Interlinking recomendado Gama de México
+
+Para facilitar tu navegación técnica y comercial dentro del sitio, revisa estas rutas estratégicas:
+
+- [Catálogo de Mangueras contra incendios](/mangueras-contra-incendios)
+- [Guías del blog sobre mangueras contra incendios](/blog/mangueras-contra-incendios)
+- [Todos los equipos contra incendios](/equipos)
+- [Asesoría técnica especializada](/servicios/asesoria)
+- [Solicitar cotización empresarial](/servicios/cotizaciones)
+- [Artículo recomendado 1](/blog/mangueras-contra-incendios/lineamientos-mangueras-contra-incendios-empresas-mexico)
+- [Artículo recomendado 2](/blog/mangueras-contra-incendios/como-elegir-manguera-contra-incendios)
+
+## Imagen técnica de referencia
+
+![Manguera contra incendios Blindex 2.5 pulgadas certificada NFPA](/img/productos/manguera-blindex-2-5-30m-frontal.avif)
+*Descripción técnica: referencia visual del equipo y su aplicación en proyectos de protección contra incendios en México.*

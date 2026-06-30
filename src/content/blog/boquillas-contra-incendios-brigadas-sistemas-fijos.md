@@ -76,3 +76,22 @@ NFPA 1964 define los requisitos de diseño, desempeño y prueba para boquillas d
 El mantenimiento periódico de las boquillas es mecánicamente simple pero operativamente necesario. La corrosión ambiental, especialmente en plantas costeras o con atmósferas industriales cargadas de contaminantes, puede afectar el cuerpo y los mecanismos internos. Los sellos se endurecen con el tiempo. El mecanismo de apertura y cierre se puede trabar si no se ejercita regularmente. Una inspección visual mensual y una prueba funcional trimestral en instalaciones industriales con condiciones ambientales severas son mucho más razonables que el mínimo anual que indica la norma. El costo de esa rutina es mínimo comparado con el de descubrir que la boquilla no opera correctamente el día que se necesita.
 
 En [Gama de México](/boquillas-contra-incendios) distribuimos [boquillas tipo pistola](/boquillas/tipo-pistola), [turbo jet](/boquillas/turbo-jet), industriales y certificadas UL/FM para brigadas y sistemas fijos en toda la República. Si necesitas validar que la boquilla instalada corresponde con el riesgo, la presión disponible y la estrategia operativa de tu instalación, desde [**/cotizar**](/cotizar) lo revisamos con datos del sistema y criterio de ingeniería.
+
+---
+
+## Interlinking recomendado Gama de México
+
+Para facilitar tu navegación técnica y comercial dentro del sitio, revisa estas rutas estratégicas:
+
+- [Catálogo de Boquillas contra incendios](/boquillas-contra-incendios)
+- [Guías del blog sobre boquillas contra incendios](/blog/boquillas-contra-incendios)
+- [Todos los equipos contra incendios](/equipos)
+- [Asesoría técnica especializada](/servicios/asesoria)
+- [Solicitar cotización empresarial](/servicios/cotizaciones)
+- [Artículo recomendado 1](/blog/boquillas-contra-incendios/ingenieria-boquillas-contra-incendios-proyectos-industriales)
+- [Artículo recomendado 2](/blog/boquillas-contra-incendios/cumplimiento-legal-boquillas-contra-incendios-mexico-2026)
+
+## Imagen técnica de referencia
+
+![Comparativa de tipos de boquillas contra incendios para brigadas y sistemas fijos](/img/blog/blog-comparativa-boquillas-tipos.avif)
+*Descripción técnica: referencia visual del equipo y su aplicación en proyectos de protección contra incendios en México.*

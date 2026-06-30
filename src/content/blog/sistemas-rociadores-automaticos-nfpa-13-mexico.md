@@ -154,3 +154,22 @@ La NOM-002-STPS establece los requisitos de protección contra incendios en cent
 ### ¿Cada cuánto se debe probar el sistema de rociadores?
 
 Conforme a NFPA 25, las pruebas principales son: interruptores de flujo cada trimestre, prueba de flujo del sistema cada año, y prueba hidrostática de tuberías cada 5 años para sistemas de más de 50 años. Las inspecciones visuales de válvulas son semanales.
+
+---
+
+## Interlinking recomendado Gama de México
+
+Para facilitar tu navegación técnica y comercial dentro del sitio, revisa estas rutas estratégicas:
+
+- [Catálogo de Válvulas contra incendios](/valvulas-contra-incendios)
+- [Guías del blog sobre válvulas contra incendios](/blog/valvulas-contra-incendios)
+- [Todos los equipos contra incendios](/equipos)
+- [Asesoría técnica especializada](/servicios/asesoria)
+- [Solicitar cotización empresarial](/servicios/cotizaciones)
+- [Artículo recomendado 1](/blog/valvulas-contra-incendios/normativa-nfpa-valvulas-contra-incendios)
+- [Artículo recomendado 2](/servicios/mantenimiento)
+
+## Imagen técnica de referencia
+
+![Sistema de rociadores automáticos contra incendios NFPA 13](/img/blog/valvulas-contra-incendios-nfpa-sala-control-industrial.avif)
+*Descripción técnica: referencia visual del equipo y su aplicación en proyectos de protección contra incendios en México.*

@@ -124,3 +124,22 @@ Sí. Tenemos cobertura logística en toda la República Mexicana. Los envíos de
 ### ¿Proporcionan capacitación sobre los equipos?
 
 Sí. Ofrecemos capacitación técnica sobre la instalación, operación y mantenimiento de los equipos que suministramos. La capacitación puede ser presencial en tus instalaciones o por videollamada, sin costo adicional para pedidos de volumen.
+
+---
+
+## Interlinking recomendado Gama de México
+
+Para facilitar tu navegación técnica y comercial dentro del sitio, revisa estas rutas estratégicas:
+
+- [Catálogo de Conexiones y herrajes contra incendios](/conexiones-herrajes-contra-incendios)
+- [Guías del blog sobre conexiones y herrajes contra incendios](/blog/conexiones-herrajes-contra-incendios)
+- [Todos los equipos contra incendios](/equipos)
+- [Asesoría técnica especializada](/servicios/asesoria)
+- [Solicitar cotización empresarial](/servicios/cotizaciones)
+- [Artículo recomendado 1](/conexiones-herrajes-contra-incendios)
+- [Artículo recomendado 2](/servicios/asesoria)
+
+## Imagen técnica de referencia
+
+![Toma siamesa FDC de bronce instalada en edificio](/img/blog/adaptadores-herrajes-bronce-contra-incendios-profesional.avif)
+*Descripción técnica: referencia visual del equipo y su aplicación en proyectos de protección contra incendios en México.*

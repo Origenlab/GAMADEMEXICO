@@ -282,3 +282,22 @@ Las válvulas de control son los guardianes silenciosos de la integridad hidráu
 El programa de inspección, prueba y mantenimiento conforme a NFPA 25 — con verificación semanal visual, prueba trimestral del switch de supervisión e inspección anual completa — es la garantía de que estas válvulas estarán abiertas y funcionales cuando el sistema se active en una emergencia real.
 
 Gama de México suministra válvulas de control certificadas UL/FM para sistemas contra incendios, con soporte técnico en supervisión eléctrica y programas de mantenimiento para proyectos industriales en todo México.
+
+---
+
+## Interlinking recomendado Gama de México
+
+Para facilitar tu navegación técnica y comercial dentro del sitio, revisa estas rutas estratégicas:
+
+- [Catálogo de Válvulas contra incendios](/valvulas-contra-incendios)
+- [Guías del blog sobre válvulas contra incendios](/blog/valvulas-contra-incendios)
+- [Todos los equipos contra incendios](/equipos)
+- [Asesoría técnica especializada](/servicios/asesoria)
+- [Solicitar cotización empresarial](/servicios/cotizaciones)
+- [Artículo recomendado 1](/blog/valvulas-contra-incendios/normativa-nfpa-valvulas-contra-incendios)
+- [Artículo recomendado 2](/servicios/mantenimiento)
+
+## Imagen técnica de referencia
+
+![Sistema de válvulas de control contra incendios con supervisión](/img/blog/valvulas-contra-incendios-nfpa-sala-control-industrial.avif)
+*Descripción técnica: referencia visual del equipo y su aplicación en proyectos de protección contra incendios en México.*

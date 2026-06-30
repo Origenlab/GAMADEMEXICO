@@ -106,3 +106,22 @@ Los adaptadores deben estar correctamente identificados con el tamaño de cada e
 La falta de adaptadores de transición accesibles no es solo un riesgo operativo. Es una responsabilidad legal. Si un incendio causa daños porque los bomberos no pudieron conectarse al sistema privado por incompatibilidad de conexiones y la instalación no tenía adaptadores disponibles, el responsable del inmueble va a tener que explicar por qué no se previó algo tan básico y tan económico.
 
 En [Gama de México](/conexiones-herrajes-contra-incendios) distribuimos conexiones Storz en aluminio y bronce naval en todos los tamaños estándar para el mercado mexicano, desde DN50 hasta DN100. También distribuimos [adaptadores Storz-NST](/conexiones-herrajes-contra-incendios), reducciones entre tamaños, tapas ciegas y empaques de reemplazo. Si necesitas especificar las conexiones para un proyecto nuevo, verificar la compatibilidad de las existentes con los bomberos de tu zona o reemplazar conexiones deterioradas, desde [**/cotizar**](/cotizar) lo revisamos con las especificaciones de NFPA 1963 y la realidad operativa de tu instalación.
+
+---
+
+## Interlinking recomendado Gama de México
+
+Para facilitar tu navegación técnica y comercial dentro del sitio, revisa estas rutas estratégicas:
+
+- [Catálogo de Conexiones y herrajes contra incendios](/conexiones-herrajes-contra-incendios)
+- [Guías del blog sobre conexiones y herrajes contra incendios](/blog/conexiones-herrajes-contra-incendios)
+- [Todos los equipos contra incendios](/equipos)
+- [Asesoría técnica especializada](/servicios/asesoria)
+- [Solicitar cotización empresarial](/servicios/cotizaciones)
+- [Artículo recomendado 1](/conexiones-herrajes-contra-incendios)
+- [Artículo recomendado 2](/servicios/asesoria)
+
+## Imagen técnica de referencia
+
+![Conexiones Storz para sistemas contra incendios](/img/blog/adaptadores-herrajes-bronce-contra-incendios-profesional.avif)
+*Descripción técnica: referencia visual del equipo y su aplicación en proyectos de protección contra incendios en México.*

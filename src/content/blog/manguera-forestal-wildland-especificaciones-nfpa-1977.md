@@ -251,3 +251,22 @@ Las mangueras forestales requieren cuidados específicos por su construcción m�
 La manguera forestal wildland, con su construcción ultraligera, su diámetro reducido y su diseño para trabajo en terreno, es una herramienta especializada que no puede sustituirse con mangueras de ataque estructural en el contexto del combate a incendios forestales en México. CONAFOR y las brigadas estatales dependen de este equipamiento para defender millones de hectáreas de recursos forestales cada año.
 
 Para organizaciones e industrias que operan en zonas de interfaz urbano-forestal en México, la incorporación de mangueras forestales clase 1 o clase 2 conforme a NFPA 1977, junto con bombas portátiles y adaptadores de interfaz estructural-forestal, es una inversión que puede ser crítica durante la temporada de incendios. Gama de México asesora en la selección y suministro de este equipamiento especializado para proyectos en todo el país.
+
+---
+
+## Interlinking recomendado Gama de México
+
+Para facilitar tu navegación técnica y comercial dentro del sitio, revisa estas rutas estratégicas:
+
+- [Catálogo de Mangueras contra incendios](/mangueras-contra-incendios)
+- [Guías del blog sobre mangueras contra incendios](/blog/mangueras-contra-incendios)
+- [Todos los equipos contra incendios](/equipos)
+- [Asesoría técnica especializada](/servicios/asesoria)
+- [Solicitar cotización empresarial](/servicios/cotizaciones)
+- [Artículo recomendado 1](/blog/mangueras-contra-incendios/lineamientos-mangueras-contra-incendios-empresas-mexico)
+- [Artículo recomendado 2](/blog/mangueras-contra-incendios/como-elegir-manguera-contra-incendios)
+
+## Imagen técnica de referencia
+
+![Brigada forestal desplegando manguera en bosque de México](/img/blog/manguera-forestal-brigada-incendio-bosque-mexico.avif)
+*Descripción técnica: referencia visual del equipo y su aplicación en proyectos de protección contra incendios en México.*

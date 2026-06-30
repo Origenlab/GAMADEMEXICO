@@ -64,3 +64,22 @@ Una boquilla de bronce bien mantenida puede durar de quince a veinticinco años 
 La regla práctica es simple: si la boquilla opera correctamente en la prueba funcional, sigue en servicio. Si muestra cualquier anomalía en caudal, patrón, mecanismo o integridad del cuerpo, sale de servicio hasta que se diagnostique y se corrija. El costo de una boquilla nueva es insignificante comparado con el costo de una que falla durante un evento real.
 
 En [Gama de México](/boquillas-contra-incendios) distribuimos boquillas tipo pistola y turbo jet con certificación UL, FM o dual, en los caudales y configuraciones que cada aplicación requiere. Si necesitas definir qué boquilla corresponde a cada punto de tu instalación, validar compatibilidad con tu sistema hidráulico o preparar la documentación para una auditoría, desde [**/cotizar**](/cotizar) lo trabajamos con datos técnicos reales y no con suposiciones de catálogo.
+
+---
+
+## Interlinking recomendado Gama de México
+
+Para facilitar tu navegación técnica y comercial dentro del sitio, revisa estas rutas estratégicas:
+
+- [Catálogo de Boquillas contra incendios](/boquillas-contra-incendios)
+- [Guías del blog sobre boquillas contra incendios](/blog/boquillas-contra-incendios)
+- [Todos los equipos contra incendios](/equipos)
+- [Asesoría técnica especializada](/servicios/asesoria)
+- [Solicitar cotización empresarial](/servicios/cotizaciones)
+- [Artículo recomendado 1](/blog/boquillas-contra-incendios/ingenieria-boquillas-contra-incendios-proyectos-industriales)
+- [Artículo recomendado 2](/blog/boquillas-contra-incendios/cumplimiento-legal-boquillas-contra-incendios-mexico-2026)
+
+## Imagen técnica de referencia
+
+![Boquillas contra incendios turbo-jet y tipo pistola comparación](/img/blog/boquillas-contra-incendios-tipos-seleccion-tecnica.avif)
+*Descripción técnica: referencia visual del equipo y su aplicación en proyectos de protección contra incendios en México.*

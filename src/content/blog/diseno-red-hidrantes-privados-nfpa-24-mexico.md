@@ -93,3 +93,22 @@ La prueba de flujo no es un trámite para el expediente. Es la verificación de 
 NFPA 25 establece los intervalos de inspección, prueba y mantenimiento para redes de hidrantes privados. La inspección trimestral debe verificar que los hidrantes sean accesibles, que las tapas y cadenas estén en su lugar, que no haya daño visible y que las válvulas de seccionamiento estén en posición correcta. La prueba anual debe incluir el flujo de cada hidrante para verificar que opera correctamente, la verificación de drenaje y la inspección del mecanismo de operación. Cada cinco años, NFPA 25 recomienda una inspección más profunda que puede incluir la evaluación de la condición interna de la tubería.
 
 En [Gama de México](/gabinetes-hidrantes-contra-incendios) distribuimos los componentes que integran la red de hidrantes privados: [válvulas de compuerta OS&Y](/valvulas/compuerta) para seccionamiento, [válvulas de retención](/valvulas/retencion) para protección de flujo inverso, [válvulas mariposa](/valvulas/mariposa) con supervisión, [conexiones](/conexiones-herrajes-contra-incendios) de bronce para las derivaciones y [adaptadores](/conexiones-herrajes-contra-incendios) de transición para compatibilidad con el cuerpo de bomberos local. Si estás en la etapa de diseño de una red privada o necesitas evaluar la condición y capacidad de una red existente, desde [**/cotizar**](/cotizar) lo trabajamos con los criterios de NFPA 24 y NFPA 25.
+
+---
+
+## Interlinking recomendado Gama de México
+
+Para facilitar tu navegación técnica y comercial dentro del sitio, revisa estas rutas estratégicas:
+
+- [Catálogo de Gabinetes e hidrantes contra incendios](/gabinetes-hidrantes-contra-incendios)
+- [Guías del blog sobre gabinetes e hidrantes contra incendios](/blog/gabinetes-hidrantes-contra-incendios)
+- [Todos los equipos contra incendios](/equipos)
+- [Asesoría técnica especializada](/servicios/asesoria)
+- [Solicitar cotización empresarial](/servicios/cotizaciones)
+- [Artículo recomendado 1](/blog/gabinetes-hidrantes-contra-incendios/requisitos-legales-equipos-contra-incendios-mexico-empresas)
+- [Artículo recomendado 2](/blog/gabinetes-hidrantes-contra-incendios/inspeccion-proteccion-civil-equipos-contra-incendios-empresas-mexico)
+
+## Imagen técnica de referencia
+
+![Red de hidrantes privados contra incendios en planta industrial](/img/blog/monitor-contra-incendios-refineria-industrial-mexico.avif)
+*Descripción técnica: referencia visual del equipo y su aplicación en proyectos de protección contra incendios en México.*

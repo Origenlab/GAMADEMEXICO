@@ -97,3 +97,22 @@ El cálculo hidráulico no es solo un ejercicio de verificación. También es la
 Cuando el cálculo hidráulico se hace bien, cada componente del sistema tiene una razón técnica para ser del tamaño, el material y la configuración que es. Cuando no se hace, la selección se basa en costumbre, en disponibilidad o en el criterio del contratista, y cualquiera de esas bases puede resultar en un sistema que no cumple cuando más importa.
 
 En [Gama de México](/equipos) distribuimos los componentes hidráulicos que la ingeniería del sistema requiere: [válvulas](/valvulas-contra-incendios) dimensionadas para la pérdida de carga correcta, [monitores](/monitores-contra-incendios) verificados al punto de operación real de la red, [boquillas](/boquillas-contra-incendios) seleccionadas a la presión dinámica disponible y [conexiones](/conexiones-herrajes-contra-incendios) que no introducen restricciones innecesarias en el flujo. Si estás en la etapa de cálculo o de revisión de un sistema existente y necesitas validar que los componentes corresponden con la hidráulica real del proyecto, desde [**/cotizar**](/cotizar) lo revisamos con datos, no con suposiciones.
+
+---
+
+## Interlinking recomendado Gama de México
+
+Para facilitar tu navegación técnica y comercial dentro del sitio, revisa estas rutas estratégicas:
+
+- [Catálogo de Válvulas contra incendios](/valvulas-contra-incendios)
+- [Guías del blog sobre válvulas contra incendios](/blog/valvulas-contra-incendios)
+- [Todos los equipos contra incendios](/equipos)
+- [Asesoría técnica especializada](/servicios/asesoria)
+- [Solicitar cotización empresarial](/servicios/cotizaciones)
+- [Artículo recomendado 1](/blog/valvulas-contra-incendios/normativa-nfpa-valvulas-contra-incendios)
+- [Artículo recomendado 2](/servicios/mantenimiento)
+
+## Imagen técnica de referencia
+
+![Cálculo hidráulico de sistema contra incendios industrial](/img/blog/valvula-compuerta-osy-sistema-rociadores-industrial.avif)
+*Descripción técnica: referencia visual del equipo y su aplicación en proyectos de protección contra incendios en México.*

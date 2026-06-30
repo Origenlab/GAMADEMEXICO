@@ -102,3 +102,22 @@ La turbo jet requiere capacitación diferente porque la dinámica es diferente. 
 Si tu planta tiene turbo jet en los gabinetes pero la brigada solo se ha capacitado con tipo pistola, tienes equipo que nadie sabe operar. Y equipo que nadie sabe operar no es equipo de protección. Es inventario.
 
 En [Gama de México](/boquillas-contra-incendios) distribuimos [boquillas tipo pistola](/boquillas/tipo-pistola) certificadas UL para gabinetes de manguera y brigadas de primera intervención, [boquillas turbo jet](/boquillas/turbo-jet) para áreas de alto riesgo que requieren caudal superior, y [boquillas con certificación dual UL/FM](/boquillas-contra-incendios) para instalaciones con requisitos de aseguradora. Si necesitas determinar qué tipo y caudal de boquilla corresponde a cada zona de tu planta, desde [**/cotizar**](/cotizar) lo revisamos con el análisis de riesgo y el criterio de ingeniería que esta selección requiere.
+
+---
+
+## Interlinking recomendado Gama de México
+
+Para facilitar tu navegación técnica y comercial dentro del sitio, revisa estas rutas estratégicas:
+
+- [Catálogo de Boquillas contra incendios](/boquillas-contra-incendios)
+- [Guías del blog sobre boquillas contra incendios](/blog/boquillas-contra-incendios)
+- [Todos los equipos contra incendios](/equipos)
+- [Asesoría técnica especializada](/servicios/asesoria)
+- [Solicitar cotización empresarial](/servicios/cotizaciones)
+- [Artículo recomendado 1](/blog/boquillas-contra-incendios/ingenieria-boquillas-contra-incendios-proyectos-industriales)
+- [Artículo recomendado 2](/blog/boquillas-contra-incendios/cumplimiento-legal-boquillas-contra-incendios-mexico-2026)
+
+## Imagen técnica de referencia
+
+![Boquilla tipo pistola contra incendios en operación](/img/boquillas-contra-incendios/boquilla-tipo-pistola-contra-incendios-estacion-bomberos-01.avif)
+*Descripción técnica: referencia visual del equipo y su aplicación en proyectos de protección contra incendios en México.*

@@ -101,3 +101,22 @@ Porque la válvula de compuerta no regula caudal. Debe operar totalmente abierta
 NFPA 13 requiere que toda válvula de control en un sistema de rociadores sea supervisada eléctricamente o asegurada en posición abierta y sujeta a inspección semanal. En la práctica, la supervisión eléctrica mediante tamper switch es el método que la mayoría de las AHJ (Authority Having Jurisdiction) aceptan. Sin tamper switch, la válvula mariposa no cumple con el requisito de supervisión y genera una observación en cualquier auditoría de protección civil o inspección de aseguradora.
 
 En [Gama de México](/valvulas-contra-incendios) distribuimos válvulas OS&Y, globo, angular, check y mariposa con tamper switch en los diámetros y presiones que cada posición del sistema requiere. Si necesitas validar qué tipo de válvula corresponde a cada punto de tu red contra incendio, desde [**/cotizar**](/cotizar) lo aterrizamos con el cálculo hidráulico y la norma aplicable.
+
+---
+
+## Interlinking recomendado Gama de México
+
+Para facilitar tu navegación técnica y comercial dentro del sitio, revisa estas rutas estratégicas:
+
+- [Catálogo de Válvulas contra incendios](/valvulas-contra-incendios)
+- [Guías del blog sobre válvulas contra incendios](/blog/valvulas-contra-incendios)
+- [Todos los equipos contra incendios](/equipos)
+- [Asesoría técnica especializada](/servicios/asesoria)
+- [Solicitar cotización empresarial](/servicios/cotizaciones)
+- [Artículo recomendado 1](/blog/valvulas-contra-incendios/normativa-nfpa-valvulas-contra-incendios)
+- [Artículo recomendado 2](/servicios/mantenimiento)
+
+## Imagen técnica de referencia
+
+![Válvulas contra incendio OS&Y y check en sistema industrial](/img/valvulas-contra-incendios/valvula-check-swing-bridada-contra-incendios-hierro-ductil-16.avif)
+*Descripción técnica: referencia visual del equipo y su aplicación en proyectos de protección contra incendios en México.*

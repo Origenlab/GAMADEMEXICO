@@ -83,3 +83,22 @@ Lo que he encontrado en la práctica es que la inspección mensual se hace de fo
 El costo de un programa de mantenimiento disciplinado es insignificante comparado con el costo de una observación de protección civil, una multa o, mucho peor, un gabinete que no funciona cuando alguien lo necesita para proteger una ruta de evacuación o controlar un fuego incipiente mientras llegan los bomberos.
 
 En [Gama de México](/gabinetes-hidrantes-contra-incendios) distribuimos gabinetes tipo 30ME completos en configuración empotrada, sobrepuesta y semiempotrada, con [mangueras](/mangueras-contra-incendios) certificadas NFPA, [boquillas tipo pistola](/boquillas/tipo-pistola), válvulas angulares de bronce y todos los accesorios de instalación y mantenimiento. Si necesitas calcular la cantidad y ubicación de gabinetes para tu instalación, verificar el estado de los que ya tienes o preparar la documentación para una inspección de protección civil, desde [**/cotizar**](/cotizar) lo revisamos con los criterios de NOM-002-STPS y NFPA 14.
+
+---
+
+## Interlinking recomendado Gama de México
+
+Para facilitar tu navegación técnica y comercial dentro del sitio, revisa estas rutas estratégicas:
+
+- [Catálogo de Gabinetes e hidrantes contra incendios](/gabinetes-hidrantes-contra-incendios)
+- [Guías del blog sobre gabinetes e hidrantes contra incendios](/blog/gabinetes-hidrantes-contra-incendios)
+- [Todos los equipos contra incendios](/equipos)
+- [Asesoría técnica especializada](/servicios/asesoria)
+- [Solicitar cotización empresarial](/servicios/cotizaciones)
+- [Artículo recomendado 1](/blog/gabinetes-hidrantes-contra-incendios/requisitos-legales-equipos-contra-incendios-mexico-empresas)
+- [Artículo recomendado 2](/blog/gabinetes-hidrantes-contra-incendios/inspeccion-proteccion-civil-equipos-contra-incendios-empresas-mexico)
+
+## Imagen técnica de referencia
+
+![Gabinete contra incendios instalado en edificio](/img/blog/gabinete-contra-incendios-instalacion-edificio-mexico.avif)
+*Descripción técnica: referencia visual del equipo y su aplicación en proyectos de protección contra incendios en México.*

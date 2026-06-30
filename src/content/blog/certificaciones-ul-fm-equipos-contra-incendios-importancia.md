@@ -92,3 +92,22 @@ La forma correcta de verificar una certificación UL es a través del directorio
 En la práctica de especificación en México, la recomendación es directa. Si el proyecto tiene requisitos de aseguradora, revisar con la póliza qué marca de certificación exige. Si la ingeniería del proyecto define un estándar, verificar que el equipo cumpla exactamente con ese estándar y no con uno "equivalente" que luego no se pueda defender. Si el proyecto no tiene un requisito explícito pero se trata de una instalación industrial seria, contar con equipo certificado UL, FM o ambos sigue siendo la opción más inteligente porque da trazabilidad, reduce riesgo documental y mejora la posición del responsable frente a cualquier revisión futura.
 
 En [Gama de México](/equipos) trabajamos con equipos que cuentan con certificación verificable. [Monitores](/monitores-contra-incendios), [válvulas](/valvulas-contra-incendios), [boquillas](/boquillas-contra-incendios), [mangueras](/mangueras-contra-incendios) y [conexiones](/conexiones-herrajes-contra-incendios) con respaldo UL, FM o dual, según lo que el proyecto necesite. Si estás en la etapa de especificación y necesitas confirmar qué certificación corresponde a tu instalación, lo más útil es partir del requisito real del proyecto y no de una suposición genérica. Desde [**/cotizar**](/cotizar) te ayudamos a aterrizar esa decisión con documentación clara y soporte técnico.
+
+---
+
+## Interlinking recomendado Gama de México
+
+Para facilitar tu navegación técnica y comercial dentro del sitio, revisa estas rutas estratégicas:
+
+- [Catálogo de Monitores contra incendios](/monitores-contra-incendios)
+- [Guías del blog sobre monitores contra incendios](/blog/monitores-contra-incendios)
+- [Todos los equipos contra incendios](/equipos)
+- [Asesoría técnica especializada](/servicios/asesoria)
+- [Solicitar cotización empresarial](/servicios/cotizaciones)
+- [Artículo recomendado 1](/blog/monitores-contra-incendios/manual-tecnico-monitores-contra-incendios-empresas)
+- [Artículo recomendado 2](/blog/monitores-contra-incendios/auditoria-monitores-contra-incendios-empresas-mexico)
+
+## Imagen técnica de referencia
+
+![Auditoría de certificaciones de equipos contra incendios](/img/blog/auditoria-equipos-contra-incendios-sala-juntas-corporativa.avif)
+*Descripción técnica: referencia visual del equipo y su aplicación en proyectos de protección contra incendios en México.*

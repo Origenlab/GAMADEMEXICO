@@ -88,3 +88,22 @@ En refinerías y terminales de combustibles, el cuello de cisne suele destacar c
 En proyectos bien llevados, la selección debería seguir un orden lógico. Primero se define el riesgo: tanque, dársena, patio, transformador, manifold, edificio crítico o equipo de proceso. Después se define el objetivo del monitor: enfriamiento, supresión, aplicación de espuma, protección de exposición o ataque a un punto concreto. Luego se cruzan caudal, presión y altura necesaria. Solo ahí entra la decisión de geometría: corazón o cuello de cisne. Si se salta ese orden, se termina eligiendo primero la forma y después tratando de justificar que sirve. Y eso rara vez termina bien.
 
 En [Gama de México](/cotizar) ayudamos a aterrizar la especificación de monitores según la instalación real. Si necesitas comparar [tipo corazón](/monitores/tipo-corazon) y [cuello de cisne](/monitores/cuello-cisne) para tu proyecto, lo correcto es partir del riesgo, del caudal disponible y de la geometría del punto de protección. Con esos datos, la decisión se vuelve técnica y no comercial.
+
+---
+
+## Interlinking recomendado Gama de México
+
+Para facilitar tu navegación técnica y comercial dentro del sitio, revisa estas rutas estratégicas:
+
+- [Catálogo de Monitores contra incendios](/monitores-contra-incendios)
+- [Guías del blog sobre monitores contra incendios](/blog/monitores-contra-incendios)
+- [Todos los equipos contra incendios](/equipos)
+- [Asesoría técnica especializada](/servicios/asesoria)
+- [Solicitar cotización empresarial](/servicios/cotizaciones)
+- [Artículo recomendado 1](/blog/monitores-contra-incendios/manual-tecnico-monitores-contra-incendios-empresas)
+- [Artículo recomendado 2](/blog/monitores-contra-incendios/auditoria-monitores-contra-incendios-empresas-mexico)
+
+## Imagen técnica de referencia
+
+![Comparativa entre monitor contra incendios tipo corazón y monitor cuello de cisne](/img/blog/monitor-tipo-corazon-vs-cuello-de-cisne.avif)
+*Descripción técnica: referencia visual del equipo y su aplicación en proyectos de protección contra incendios en México.*

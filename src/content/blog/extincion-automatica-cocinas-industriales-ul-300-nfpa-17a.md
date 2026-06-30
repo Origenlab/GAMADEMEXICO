@@ -96,3 +96,22 @@ NFPA 17A exige inspección semestral del sistema por personal calificado. Esa in
 En la práctica, la limpieza de la campana extractora y los ductos de extracción es tan importante como el mantenimiento del sistema de supresión. La grasa que se acumula en la campana y en los ductos es combustible sólido que puede encenderse y propagar el fuego a zonas que el sistema de supresión de la cocina no cubre. NFPA 96 establece frecuencias de limpieza de campanas según el tipo de cocción y el volumen de operación, y esas frecuencias deben cumplirse independientemente del sistema de supresión instalado.
 
 En [Gama de México](/equipos) distribuimos los componentes del sistema de protección contra incendios que complementan la protección de cocinas: [gabinetes de manguera](/gabinetes-hidrantes-contra-incendios) para primera intervención en áreas adyacentes, [boquillas tipo pistola](/boquillas/tipo-pistola) para brigadas internas, [extintores clase K](/equipos) de agente húmedo como respaldo portátil del sistema automático, y [válvulas](/valvulas-contra-incendios) para la integración del sistema con la red contra incendios del edificio. Si necesitas evaluar la protección de la cocina de tu hotel, restaurante, hospital o comedor industrial, desde [**/cotizar**](/cotizar) lo revisamos con el criterio técnico que UL 300 y NFPA 17A exigen.
+
+---
+
+## Interlinking recomendado Gama de México
+
+Para facilitar tu navegación técnica y comercial dentro del sitio, revisa estas rutas estratégicas:
+
+- [Catálogo de Boquillas contra incendios](/boquillas-contra-incendios)
+- [Guías del blog sobre boquillas contra incendios](/blog/boquillas-contra-incendios)
+- [Todos los equipos contra incendios](/equipos)
+- [Asesoría técnica especializada](/servicios/asesoria)
+- [Solicitar cotización empresarial](/servicios/cotizaciones)
+- [Artículo recomendado 1](/blog/boquillas-contra-incendios/ingenieria-boquillas-contra-incendios-proyectos-industriales)
+- [Artículo recomendado 2](/blog/boquillas-contra-incendios/cumplimiento-legal-boquillas-contra-incendios-mexico-2026)
+
+## Imagen técnica de referencia
+
+![Sistema de extinción automática en cocina industrial](/img/blog/sistema-contra-incendios-hotel-centro-comercial-mexico.avif)
+*Descripción técnica: referencia visual del equipo y su aplicación en proyectos de protección contra incendios en México.*

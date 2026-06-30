@@ -124,3 +124,22 @@ Sí. Tenemos cobertura logística en toda la República Mexicana. Los envíos de
 ### ¿Proporcionan capacitación sobre los equipos?
 
 Sí. Ofrecemos capacitación técnica sobre la instalación, operación y mantenimiento de los equipos que suministramos. La capacitación puede ser presencial en tus instalaciones o por videollamada, sin costo adicional para pedidos de volumen.
+
+---
+
+## Interlinking recomendado Gama de México
+
+Para facilitar tu navegación técnica y comercial dentro del sitio, revisa estas rutas estratégicas:
+
+- [Catálogo de Válvulas contra incendios](/valvulas-contra-incendios)
+- [Guías del blog sobre válvulas contra incendios](/blog/valvulas-contra-incendios)
+- [Todos los equipos contra incendios](/equipos)
+- [Asesoría técnica especializada](/servicios/asesoria)
+- [Solicitar cotización empresarial](/servicios/cotizaciones)
+- [Artículo recomendado 1](/blog/valvulas-contra-incendios/normativa-nfpa-valvulas-contra-incendios)
+- [Artículo recomendado 2](/servicios/mantenimiento)
+
+## Imagen técnica de referencia
+
+![Sistema de protección contra incendios en centro de datos](/img/blog/valvulas-contra-incendios-nfpa-sala-control-industrial.avif)
+*Descripción técnica: referencia visual del equipo y su aplicación en proyectos de protección contra incendios en México.*
