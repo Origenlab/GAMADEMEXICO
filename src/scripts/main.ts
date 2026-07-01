@@ -23,116 +23,120 @@
 
   // ── Mobile menu ──
   const hamburger = document.getElementById('hamburger');
-  const mobileNav = document.getElementById('mobile-nav');
+  const mobileNav  = document.getElementById('mobile-nav');
   const mobileOverlay = document.getElementById('mobile-overlay');
 
   if (hamburger && mobileNav && mobileOverlay) {
     let isMenuOpen = false;
 
-    function openMenu() {
-      if (!hamburger || !mobileNav || !mobileOverlay) return;
-      isMenuOpen = true;
-      hamburger.classList.add('hamburger--active');
-      hamburger.setAttribute('aria-expanded', 'true');
-      mobileNav.classList.add('mobile-nav--active');
-      mobileNav.setAttribute('aria-hidden', 'false');
-      mobileNav.removeAttribute('inert');
-      mobileOverlay.classList.add('mobile-overlay--active');
-      mobileOverlay.setAttribute('aria-hidden', 'false');
-      document.body.style.overflow = 'hidden';
+    // ── Submenu helpers ──
+    // Selects all accordion toggles generically — works with any items defined in navigation.ts.
+    const submenuToggles = mobileNav.querySelectorAll<HTMLButtonElement>('[id^="mobile-toggle-"]');
 
-      const firstLink = mobileNav.querySelector('a, button') as HTMLElement | null;
-      if (firstLink) firstLink.focus();
+    function getSubmenuPanel(btn: HTMLButtonElement): HTMLElement | null {
+      const id = btn.getAttribute('aria-controls');
+      return id ? document.getElementById(id) : null;
+    }
+
+    function closeSubmenu(btn: HTMLButtonElement) {
+      const panel = getSubmenuPanel(btn);
+      const arrow = btn.querySelector<HTMLElement>('.mobile-nav__arrow');
+      btn.setAttribute('aria-expanded', 'false');
+      panel?.classList.remove('mobile-nav__submenu--open');
+      // inert hides the panel from keyboard/AT while it's collapsed
+      if (panel) panel.setAttribute('inert', '');
+      if (arrow) arrow.classList.remove('mobile-nav__arrow--open');
+    }
+
+    function openSubmenu(btn: HTMLButtonElement) {
+      const panel = getSubmenuPanel(btn);
+      const arrow = btn.querySelector<HTMLElement>('.mobile-nav__arrow');
+      btn.setAttribute('aria-expanded', 'true');
+      panel?.classList.add('mobile-nav__submenu--open');
+      if (panel) panel.removeAttribute('inert');
+      if (arrow) arrow.classList.add('mobile-nav__arrow--open');
+    }
+
+    // Initialize: all submenus collapsed + inert
+    submenuToggles.forEach((btn) => closeSubmenu(btn));
+
+    // Accordion toggle — opening one closes all others
+    submenuToggles.forEach((btn) => {
+      btn.addEventListener('click', function () {
+        const isOpen = btn.getAttribute('aria-expanded') === 'true';
+        submenuToggles.forEach(closeSubmenu);
+        if (!isOpen) openSubmenu(btn);
+      });
+    });
+
+    // ── Menu open/close ──
+    function openMenu() {
+      isMenuOpen = true;
+      hamburger!.classList.add('hamburger--active');
+      hamburger!.setAttribute('aria-expanded', 'true');
+      mobileNav!.classList.add('mobile-nav--active');
+      mobileNav!.setAttribute('aria-hidden', 'false');
+      mobileNav!.removeAttribute('inert');
+      mobileOverlay!.classList.add('mobile-overlay--active');
+      mobileOverlay!.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+      // Focus first interactive element
+      const firstFocusable = mobileNav!.querySelector<HTMLElement>('a, button');
+      firstFocusable?.focus();
     }
 
     function closeMenu() {
-      if (!hamburger || !mobileNav || !mobileOverlay) return;
       isMenuOpen = false;
-      hamburger.classList.remove('hamburger--active');
-      hamburger.setAttribute('aria-expanded', 'false');
-      mobileNav.classList.remove('mobile-nav--active');
-      mobileNav.setAttribute('aria-hidden', 'true');
-      mobileNav.setAttribute('inert', '');
-      mobileOverlay.classList.remove('mobile-overlay--active');
-      mobileOverlay.setAttribute('aria-hidden', 'true');
+      // Reset all submenus on close so menu reopens clean
+      submenuToggles.forEach(closeSubmenu);
+      hamburger!.classList.remove('hamburger--active');
+      hamburger!.setAttribute('aria-expanded', 'false');
+      mobileNav!.classList.remove('mobile-nav--active');
+      mobileNav!.setAttribute('aria-hidden', 'true');
+      mobileNav!.setAttribute('inert', '');
+      mobileOverlay!.classList.remove('mobile-overlay--active');
+      mobileOverlay!.setAttribute('aria-hidden', 'true');
       document.body.style.overflow = '';
-      hamburger.focus();
+      hamburger!.focus();
     }
 
     hamburger.addEventListener('click', function () {
-      if (isMenuOpen) {
-        closeMenu();
-      } else {
-        openMenu();
-      }
+      if (isMenuOpen) { closeMenu(); } else { openMenu(); }
     });
 
     mobileOverlay.addEventListener('click', closeMenu);
 
     document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape' && isMenuOpen) {
-        closeMenu();
-      }
+      if (e.key === 'Escape' && isMenuOpen) closeMenu();
     });
 
-    // ── Focus trap in mobile nav ──
+    // ── Focus trap ──
+    // Excludes elements inside [inert] panels (collapsed submenus).
     mobileNav.addEventListener('keydown', function (e) {
       if (e.key !== 'Tab') return;
-      const focusable = mobileNav.querySelectorAll(
-        'a, button, input, select, textarea, [tabindex]:not([tabindex="-1"])'
-      ) as NodeListOf<HTMLElement>;
+      const focusable = Array.from(
+        mobileNav!.querySelectorAll<HTMLElement>(
+          'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])'
+        )
+      ).filter((el) => !el.closest('[inert]'));
+
       if (focusable.length === 0) return;
       const first = focusable[0];
-      const last = focusable[focusable.length - 1];
+      const last  = focusable[focusable.length - 1];
 
-      if (e.shiftKey) {
-        if (document.activeElement === first) {
-          e.preventDefault();
-          last.focus();
-        }
-      } else {
-        if (document.activeElement === last) {
-          e.preventDefault();
-          first.focus();
-        }
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
       }
     });
 
-    // ── Close mobile menu on anchor clicks ──
-    const mobileLinks = mobileNav.querySelectorAll('a[href^="#"]');
-    mobileLinks.forEach(function (link) {
-      link.addEventListener('click', function () {
-        closeMenu();
-      });
+    // ── Close on anchor click (smooth-scroll targets) ──
+    mobileNav.querySelectorAll('a[href^="#"]').forEach(function (link) {
+      link.addEventListener('click', closeMenu);
     });
-
-    // ── Mobile submenu toggle — Equipos ──
-    const toggleEquipos = document.getElementById('mobile-toggle-equipos');
-    if (toggleEquipos) {
-      toggleEquipos.addEventListener('click', function () {
-        const submenu = document.getElementById('mobile-submenu-equipos');
-        const arrow = this.querySelector('.mobile-nav__arrow') as HTMLElement | null;
-        const isOpen = this.getAttribute('aria-expanded') === 'true';
-
-        this.setAttribute('aria-expanded', String(!isOpen));
-        submenu?.classList.toggle('mobile-nav__submenu--open');
-        if (arrow) arrow.classList.toggle('mobile-nav__arrow--open');
-      });
-    }
-
-    // ── Mobile submenu toggle — Servicios ──
-    const toggleServicios = document.getElementById('mobile-toggle-servicios');
-    if (toggleServicios) {
-      toggleServicios.addEventListener('click', function () {
-        const submenu = document.getElementById('mobile-submenu-servicios');
-        const arrow = this.querySelector('.mobile-nav__arrow') as HTMLElement | null;
-        const isOpen = this.getAttribute('aria-expanded') === 'true';
-
-        this.setAttribute('aria-expanded', String(!isOpen));
-        submenu?.classList.toggle('mobile-nav__submenu--open');
-        if (arrow) arrow.classList.toggle('mobile-nav__arrow--open');
-      });
-    }
   }
 
   // ── FAQ accordion ──
@@ -158,7 +162,6 @@
 
     faqButtons.forEach(function (btn) {
       btn.addEventListener('click', function () {
-        // `btn` en lugar de `this` (el listener se registra sobre el propio botón).
         const isExpanded = btn.getAttribute('aria-expanded') === 'true';
 
         faqButtons.forEach(function (otherBtn) {
@@ -178,10 +181,10 @@
     cotizarForm.addEventListener('submit', function (e) {
       e.preventDefault();
 
-      const nombre = (document.getElementById('lead-nombre') as HTMLInputElement)?.value.trim();
+      const nombre   = (document.getElementById('lead-nombre')   as HTMLInputElement)?.value.trim();
       const contacto = (document.getElementById('lead-contacto') as HTMLInputElement)?.value.trim();
-      const equipo =
-        (document.getElementById('lead-equipo') as HTMLSelectElement)?.value ||
+      const equipo   =
+        (document.getElementById('lead-equipo')   as HTMLSelectElement)?.value ||
         (document.getElementById('lead-servicio') as HTMLSelectElement)?.value;
 
       if (!nombre || !contacto || !equipo) return;
@@ -222,7 +225,6 @@
 
   document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
     anchor.addEventListener('click', function (e) {
-      // `anchor` en lugar de `this` (el listener se registra sobre el propio enlace).
       const targetId = anchor.getAttribute('href');
       if (!targetId || targetId === '#') return;
 

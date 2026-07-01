@@ -232,7 +232,8 @@ const CDN_BASE = (import.meta.env.PUBLIC_EWWW_CDN_BASE ?? '').trim().replace(/\/
     />
   )}
 
-  <main id="main-content" role="main">
+  {/* tabindex="-1" makes the element programmatically focusable so the skip link works in Safari */}
+  <main id="main-content" tabindex="-1">
     <slot />
   </main>
 

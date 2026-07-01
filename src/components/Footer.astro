@@ -53,8 +53,8 @@ const currentYear = new Date().getFullYear();
         </div>
 
         <!-- Columna 2: Productos -->
-        <div class="footer__col">
-          <h3 class="footer__title">Productos</h3>
+        <nav class="footer__col" aria-labelledby="footer-nav-productos">
+          <h3 class="footer__title" id="footer-nav-productos">Productos</h3>
           <ul class="footer__list">
             <li><a href="/monitores-contra-incendios" class="footer__link">Monitores</a></li>
             <li><a href="/boquillas-contra-incendios" class="footer__link">Boquillas</a></li>
@@ -63,31 +63,34 @@ const currentYear = new Date().getFullYear();
             <li><a href="/conexiones-herrajes-contra-incendios" class="footer__link">Conexiones y herrajes</a></li>
             <li><a href="/gabinetes-hidrantes-contra-incendios" class="footer__link">Gabinetes e hidrantes</a></li>
           </ul>
-        </div>
+        </nav>
 
         <!-- Columna 3: Servicios y Directorio -->
         <div class="footer__col">
-          <h3 class="footer__title">Servicios</h3>
-          <ul class="footer__list">
-            <li><a href="/servicios/garantia" class="footer__link">Garantía y Respaldo</a></li>
-            <li><a href="/servicios/asesoria" class="footer__link">Asesoría Técnica</a></li>
-            <li><a href="/servicios/empresas" class="footer__link">Atención a Empresas</a></li>
-            <li><a href="/servicios/cotizaciones" class="footer__link">Cotizaciones Corporativas</a></li>
-            <li><a href="/nosotros" class="footer__link">Nosotros</a></li>
-            <li><a href="/contacto" class="footer__link">Contacto</a></li>
-          </ul>
-
-          <h3 class="footer__title footer__title--spaced">Directorio Certificado</h3>
-          <ul class="footer__list">
-            <li><a href="/empresas-certificadas" class="footer__link">Empresas Certificadas</a></li>
-            <li><a href="/empresas-certificadas#giros" class="footer__link">Por Tipo de Negocio</a></li>
-            <li><a href="/empresas-certificadas#estados" class="footer__link">Por Estado</a></li>
-          </ul>
+          <nav aria-labelledby="footer-nav-servicios">
+            <h3 class="footer__title" id="footer-nav-servicios">Servicios</h3>
+            <ul class="footer__list">
+              <li><a href="/servicios/garantia" class="footer__link">Garantía y Respaldo</a></li>
+              <li><a href="/servicios/asesoria" class="footer__link">Asesoría Técnica</a></li>
+              <li><a href="/servicios/empresas" class="footer__link">Atención a Empresas</a></li>
+              <li><a href="/servicios/cotizaciones" class="footer__link">Cotizaciones Corporativas</a></li>
+              <li><a href="/nosotros" class="footer__link">Nosotros</a></li>
+              <li><a href="/contacto" class="footer__link">Contacto</a></li>
+            </ul>
+          </nav>
+          <nav aria-labelledby="footer-nav-directorio">
+            <h3 class="footer__title footer__title--spaced" id="footer-nav-directorio">Directorio Certificado</h3>
+            <ul class="footer__list">
+              <li><a href="/empresas-certificadas" class="footer__link">Empresas Certificadas</a></li>
+              <li><a href="/empresas-certificadas#giros" class="footer__link">Por Tipo de Negocio</a></li>
+              <li><a href="/empresas-certificadas#estados" class="footer__link">Por Estado</a></li>
+            </ul>
+          </nav>
         </div>
 
         <!-- Columna 4: Blog -->
-        <div class="footer__col">
-          <h3 class="footer__title">Blog Técnico</h3>
+        <nav class="footer__col" aria-labelledby="footer-nav-blog">
+          <h3 class="footer__title" id="footer-nav-blog">Blog Técnico</h3>
           <ul class="footer__list">
             <li><a href="/blog" class="footer__link">Todos los Artículos</a></li>
             <li><a href="/blog/monitores-contra-incendios" class="footer__link">Monitores</a></li>
@@ -95,7 +98,7 @@ const currentYear = new Date().getFullYear();
             <li><a href="/blog/mangueras-contra-incendios" class="footer__link">Mangueras</a></li>
             <li><a href="/blog/valvulas-contra-incendios" class="footer__link">Válvulas</a></li>
           </ul>
-        </div>
+        </nav>
 
         <!-- Columna 4: Sucursales -->
         <div class="footer__col">
