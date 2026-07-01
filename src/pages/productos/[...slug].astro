@@ -95,26 +95,26 @@ function generarFaqProducto(data: typeof producto.data): { pregunta: string; res
 
   if (data.categoria === 'monitores') {
     return [
-      { pregunta: `¿Que certificaciones tiene el ${nombre}?`, respuesta: `El ${nombre} de ${marca} cuenta con certificaciones ${certs}. Estas certificaciones garantizan que el equipo cumple con los estandares internacionales para sistemas fijos de proteccion contra incendios. Gama de Mexico entrega documentacion de certificacion con cada equipo.` },
-      { pregunta: `¿Cual es el caudal del ${nombre}?`, respuesta: `El ${nombre} opera con un caudal de ${flujo || 'hasta 1,250 GPM a 100 PSI'}. El caudal real depende de la presion disponible en tu sistema hidraulico y la boquilla seleccionada. Contactanos para calcular el caudal optimo segun tu instalacion.` },
-      { pregunta: `¿Puedo usar el ${nombre} con espuma AFFF?`, respuesta: `Si. Los monitores ${marca} con construccion en ${material || 'bronce fundido / aluminio'} son compatibles con agua, espuma AFFF y FFFP. Para aplicaciones con espuma se recomienda verificar la compatibilidad de la boquilla seleccionada con el agente espumante.` },
-      { pregunta: `¿Gama de Mexico da servicio de instalacion para el ${nombre}?`, respuesta: `Si. Gama de Mexico ofrece asesoria tecnica para la seleccion, instalacion y mantenimiento de monitores ${marca} en toda la Republica Mexicana. Contamos con stock en CDMX y Queretaro para entregas rapidas.` },
+      { pregunta: `¿Qué certificaciones tiene el ${nombre}?`, respuesta: `El ${nombre} de ${marca} cuenta con certificaciones ${certs}. Estas certificaciones garantizan que el equipo cumple con los estándares internacionales para sistemas fijos de protección contra incendios. Gama de México entrega documentación de certificación con cada equipo.` },
+      { pregunta: `¿Cuál es el caudal del ${nombre}?`, respuesta: `El ${nombre} opera con un caudal de ${flujo || 'hasta 1,250 GPM a 100 PSI'}. El caudal real depende de la presión disponible en tu sistema hidráulico y la boquilla seleccionada. Contáctanos para calcular el caudal óptimo según tu instalación.` },
+      { pregunta: `¿Puedo usar el ${nombre} con espuma AFFF?`, respuesta: `Sí. Los monitores ${marca} con construcción en ${material || 'bronce fundido / aluminio'} son compatibles con agua, espuma AFFF y FFFP. Para aplicaciones con espuma se recomienda verificar la compatibilidad de la boquilla seleccionada con el agente espumante.` },
+      { pregunta: `¿Gama de México da servicio de instalación para el ${nombre}?`, respuesta: `Sí. Gama de México ofrece asesoría técnica para la selección, instalación y mantenimiento de monitores ${marca} en toda la República Mexicana. Contamos con stock en CDMX y Querétaro para entregas rápidas.` },
     ];
   }
 
   if (data.categoria === 'boquillas') {
     return [
-      { pregunta: `¿Que certificaciones tiene la ${nombre}?`, respuesta: `La ${nombre} de ${marca} cuenta con certificaciones ${certs}. Cumple con los estandares NFPA 1964 para boquillas de combate de incendios. Gama de Mexico entrega documentacion de conformidad con cada equipo.` },
-      { pregunta: `¿Cual es el rango de flujo de la ${nombre}?`, respuesta: `La ${nombre} opera en un rango de ${flujo || '95 a 300 GPM'}. El flujo disponible depende del modelo y la configuracion seleccionada. Contactanos para determinar el modelo adecuado segun tu sistema hidraulico.` },
-      { pregunta: `¿La ${nombre} es compatible con mis mangueras actuales?`, respuesta: `La ${nombre} tiene conexion NH estandar, compatible con mangueras de 1½ o 2½ pulgadas segun el modelo. ${marca} fabrica adaptadores para conexiones no estandar. Verificamos compatibilidad antes de cotizar.` },
-      { pregunta: `¿Tienen stock de la ${nombre} en Mexico?`, respuesta: `Si. Gama de Mexico mantiene inventario de boquillas ${marca} en nuestras bodegas de CDMX y Queretaro. Los modelos de alta demanda como la ${nombre} se mantienen en stock permanente. Entregas en 24-48 horas en zona metropolitana.` },
+      { pregunta: `¿Qué certificaciones tiene la ${nombre}?`, respuesta: `La ${nombre} de ${marca} cuenta con certificaciones ${certs}. Cumple con los estándares NFPA 1964 para boquillas de combate de incendios. Gama de México entrega documentación de conformidad con cada equipo.` },
+      { pregunta: `¿Cuál es el rango de flujo de la ${nombre}?`, respuesta: `La ${nombre} opera en un rango de ${flujo || '95 a 300 GPM'}. El flujo disponible depende del modelo y la configuración seleccionada. Contáctanos para determinar el modelo adecuado según tu sistema hidráulico.` },
+      { pregunta: `¿La ${nombre} es compatible con mis mangueras actuales?`, respuesta: `La ${nombre} tiene conexión NH estándar, compatible con mangueras de 1½ o 2½ pulgadas según el modelo. ${marca} fabrica adaptadores para conexiones no estándar. Verificamos compatibilidad antes de cotizar.` },
+      { pregunta: `¿Tienen stock de la ${nombre} en México?`, respuesta: `Sí. Gama de México mantiene inventario de boquillas ${marca} en nuestras bodegas de CDMX y Querétaro. Los modelos de alta demanda como la ${nombre} se mantienen en stock permanente. Entregas en 24-48 horas en zona metropolitana.` },
     ];
   }
 
   return [
-    { pregunta: `¿El ${nombre} tiene certificaciones internacionales?`, respuesta: `Si. El ${nombre} de ${marca} cuenta con certificaciones ${certs}. Gama de Mexico entrega toda la documentacion de certificacion con cada equipo vendido.` },
-    { pregunta: `¿Hacen envios a toda la Republica?`, respuesta: `Si. Gama de Mexico envia a toda la Republica Mexicana. Contamos con bodegas en CDMX y Queretaro. Los tiempos de entrega varian segun ubicacion y disponibilidad del producto.` },
-    { pregunta: `¿Ofrecen asesoria tecnica para seleccionar el ${nombre} correcto?`, respuesta: `Si. Nuestro equipo tecnico te ayuda a seleccionar el modelo y configuracion correcta del ${nombre} segun los requerimientos de tu proyecto. La asesoria no tiene costo.` },
+    { pregunta: `¿El ${nombre} tiene certificaciones internacionales?`, respuesta: `Sí. El ${nombre} de ${marca} cuenta con certificaciones ${certs}. Gama de México entrega toda la documentación de certificación con cada equipo vendido.` },
+    { pregunta: `¿Hacen envíos a toda la República?`, respuesta: `Sí. Gama de México envía a toda la República Mexicana. Contamos con bodegas en CDMX y Querétaro. Los tiempos de entrega varían según ubicación y disponibilidad del producto.` },
+    { pregunta: `¿Ofrecen asesoría técnica para seleccionar el ${nombre} correcto?`, respuesta: `Sí. Nuestro equipo técnico te ayuda a seleccionar el modelo y configuración correcta del ${nombre} según los requerimientos de tu proyecto. La asesoría no tiene costo.` },
   ];
 }
 
@@ -172,6 +172,7 @@ const seoDescription =
   title={seoTitle}
   description={seoDescription}
   ogImage={producto.data.imagen}
+  noindex={!producto.data.indexable}
   activePage="equipos"
   heroTitle={producto.data.modelo || producto.data.title}
   heroBadge={`${producto.data.marca} | ${categoriaNombre}`}

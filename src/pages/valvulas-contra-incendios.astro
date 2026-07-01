@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Base.astro';
+import SectionHeader from '../components/SectionHeader.astro';
 import { getCollection } from 'astro:content';
 import Faq from '../components/Faq.astro';
 import { getBackgroundImageUrl } from '../lib/images';
@@ -81,7 +82,17 @@ const structuredData = [
   structuredData={structuredData}
   ogImage="/img/categorias/hero-valvulas-contra-incendios-tecnico.avif"
   heroTitle="Válvulas Contra Incendios"
-  heroBadge="Equipos Contra Incendios"
+  heroIntro="Válvulas OS&Y, globo, retención y mariposa certificadas UL y FM para sistemas NFPA 13, 14 y 20. Hierro dúctil y bronce. Documentación completa para aseguradoras y Protección Civil."
+  heroBadge="Válvulas Contra Incendios"
+  heroMetrics={[
+    { valor: "UL/FM", texto: "Certificaciones" },
+    { valor: "350", texto: "PSI máximo" },
+    { valor: "4 tipos", texto: "Válvulas disponibles" },
+  ]}
+  heroPrimaryText="Ver Catálogo"
+  heroPrimaryLink="#valvulas"
+  heroSecondaryText="Solicitar Cotización"
+  heroSecondaryLink="#cotizar"
   heroShowRightContent={true}
 
   showLeadCapture={true}
@@ -91,22 +102,14 @@ const structuredData = [
     <p>Cada válvula cumple con los estándares NFPA 13, 14 y 20, garantizando operación confiable en condiciones de emergencia. Te asesoramos en la selección del tipo, diámetro y especificación correcta según el diseño hidráulico de tu proyecto y requisitos de aseguradoras.</p>
   </Fragment>
 
-  <!-- BREADCRUMB -->
-  <nav class="breadcrumb" aria-label="Navegación de migas de pan">
-    <div class="container">
-      <ol class="breadcrumb__list">
-        <li class="breadcrumb__item"><a href="/" class="breadcrumb__link">Inicio</a></li>
-        <li class="breadcrumb__item"><a href="/equipos" class="breadcrumb__link">Equipos</a></li>
-        <li class="breadcrumb__item breadcrumb__item--active" aria-current="page">Válvulas Contra Incendios</li>
-      </ol>
-    </div>
-  </nav><!-- PRODUCTOS DINAMICOS -->
+  <!-- PRODUCTOS DINAMICOS -->
   <section class="categories" id="valvulas">
     <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Tipo de Válvula Contra Incendio con Certificación UL Industrial</h2>
-        <p class="section-subtitle">Catálogo de válvulas sistema contra incendio con certificación NFPA para control y protección</p>
-      </div>
+      <SectionHeader
+        titulo="Tipo de Válvula Contra Incendio con Certificación UL Industrial"
+        subtitulo="Catálogo de válvulas sistema contra incendio con certificación NFPA para control y protección"
+        idTitulo="valvulas-title"
+      />
       <div class="categories__grid">
         {productos.map((producto) => (
           <article class="category-card">
@@ -139,9 +142,11 @@ const structuredData = [
   <!-- DETALLES DE PRODUCTOS -->
   <section class="service-details" aria-labelledby="service-details-title">
     <div class="container">
-      <div class="section-header">
-        <h2 id="service-details-title" class="section-title">Especificaciones Técnicas por Tipo de Válvula Sistema Industrial</h2>
-      </div>
+      <SectionHeader
+        titulo="Especificaciones Técnicas por Tipo de Válvula Sistema Industrial"
+        subtitulo="Conoce las características y aplicaciones de cada configuración certificada UL/FM"
+        idTitulo="service-details-title"
+      />
 
       <div class="service-detail" id="detalle-compuerta">
         <div class="service-detail__content">
@@ -229,10 +234,11 @@ const structuredData = [
   <!-- TRUST -->
   <section class="trust" aria-labelledby="trust-title">
     <div class="container">
-      <div class="section-header">
-        <h2 id="trust-title" class="section-title">Por Qué Comprar Válvulas Contra Incendio con Certificación UL NFPA</h2>
-        <p class="section-subtitle">Sistema industrial, control, protección y mantenimiento que ningún otro proveedor te ofrece</p>
-      </div>
+      <SectionHeader
+        titulo="Por Qué Comprar Válvulas Contra Incendio con Certificación UL NFPA"
+        subtitulo="Sistema industrial, control, protección y mantenimiento que ningún otro proveedor te ofrece"
+        idTitulo="trust-title"
+      />
       <div class="trust__grid">
         <div class="trust__item">
           <h3 class="trust__item-title">Certificaciones UL y FM Listed</h3>
@@ -294,10 +300,11 @@ const structuredData = [
   <!-- EQUIPOS COMPLEMENTARIOS - CROSS-LINKING SEO -->
   <section class="complementary" aria-labelledby="complementary-title">
     <div class="container">
-      <div class="section-header">
-        <h2 id="complementary-title" class="section-title">Equipos Complementarios para tu Sistema Contra Incendios</h2>
-        <p class="section-subtitle">Las válvulas son solo una parte del sistema. Completa tu instalación con equipos certificados</p>
-      </div>
+      <SectionHeader
+        titulo="Equipos Complementarios para tu Sistema Contra Incendios"
+        subtitulo="Las válvulas son solo una parte del sistema. Completa tu instalación con equipos certificados"
+        idTitulo="complementary-title"
+      />
       <div class="complementary__grid">
         <a href="/monitores-contra-incendios" class="complementary__card">
           <div class="complementary__icon">🎯</div>
@@ -342,10 +349,11 @@ const structuredData = [
   <!-- FAQ -->
   <section class="faq" id="faq" aria-labelledby="faq-title">
     <div class="container">
-      <div class="section-header">
-        <h2 id="faq-title" class="section-title">Preguntas Frecuentes sobre Válvulas Contra Incendios</h2>
-        <p class="section-subtitle">Resolvemos las dudas más comunes sobre tipos, especificaciones, certificaciones y aplicaciones</p>
-      </div>
+      <SectionHeader
+        titulo="Preguntas Frecuentes sobre Válvulas Contra Incendios"
+        subtitulo="Resolvemos las dudas más comunes sobre tipos, especificaciones, certificaciones y aplicaciones"
+        idTitulo="faq-title"
+      />
       <Faq items={faqItems} id="faq" />
     </div>
   </section>
