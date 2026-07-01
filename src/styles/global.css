@@ -1438,6 +1438,3 @@ video {
     font-size: 16px !important;
   }
 }
-
-/* Mobile-first overhaul — cargado al final para ganar cascada */
-@import './mobile.css';
