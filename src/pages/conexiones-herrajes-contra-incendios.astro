@@ -6,6 +6,7 @@ import Faq from '../components/Faq.astro';
 import { getBackgroundImageUrl } from '../lib/images';
 import {
   buildProductCategorySchema,
+  buildItemListSchema,
   buildFAQSchema,
   buildBreadcrumbSchema,
   buildOrganizationSchema,
@@ -65,7 +66,17 @@ const structuredData = [
     image: '/img/conexiones-herrajes-contra-incendios/toma-siamesa-fdc-bronce-contra-incendios-bomberos-dos-bocas-01.avif',
     url: '/conexiones-herrajes-contra-incendios',
     category: 'Conexiones y Herrajes Contra Incendios',
-    brand: 'Elkhart Brass'  }),
+    brand: 'Elkhart Brass',
+  }),
+  buildItemListSchema(
+    productos.map((p) => ({
+      name: p.data.title,
+      url: `/productos/${p.id}`,
+      ...(p.data.imagen && { image: p.data.imagen }),
+      ...(p.data.description && { description: p.data.description }),
+    })),
+    'Conexiones y Herrajes Contra Incendios',
+  ),
   buildBreadcrumbSchema([
     { name: 'Inicio', url: '/' },
     { name: 'Equipos', url: '/equipos' },
@@ -81,7 +92,7 @@ const structuredData = [
   activePage="equipos"
   structuredData={structuredData}
   ogImage="/img/categorias/conexiones-herrajes-hero.avif"
-  heroTitle="Conexiones y Herrajes"
+  heroTitle="Conexiones y Herrajes Contra Incendios en Bronce"
   heroIntro="Adaptadores NH/NPT/Storz, tomas siamesas FDC, conexiones Y con válvula y coples de acoplamiento rápido. Bronce forjado certificado UL/FM para sistemas NFPA 13, 14 y 24."
   heroMetrics={[
     { valor: "UL/FM", texto: "Certificadas" },

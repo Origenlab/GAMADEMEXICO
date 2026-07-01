@@ -6,6 +6,7 @@ import Faq from '../components/Faq.astro';
 import { getBackgroundImageUrl } from '../lib/images';
 import {
   buildProductCategorySchema,
+  buildItemListSchema,
   buildFAQSchema,
   buildBreadcrumbSchema,
   buildOrganizationSchema,
@@ -65,7 +66,17 @@ const structuredData = [
     image: '/img/mangueras-contra-incendios/manguera-forestal-contra-incendios-vista-lateral-06.avif',
     url: '/mangueras-contra-incendios',
     category: 'Mangueras Contra Incendios',
-    brand: 'Gama de México'  }),
+    brand: 'Gama de México',
+  }),
+  buildItemListSchema(
+    productos.map((p) => ({
+      name: p.data.title,
+      url: `/productos/${p.id}`,
+      ...(p.data.imagen && { image: p.data.imagen }),
+      ...(p.data.description && { description: p.data.description }),
+    })),
+    'Mangueras Contra Incendios',
+  ),
   buildBreadcrumbSchema([
     { name: 'Inicio', url: '/' },
     { name: 'Equipos', url: '/equipos' },
@@ -81,7 +92,7 @@ const structuredData = [
   activePage="equipos"
   structuredData={structuredData}
   ogImage="/img/categorias/hero-mangueras-contra-incendios-premium.avif"
-  heroTitle="Mangueras Contra Incendios"
+  heroTitle="Mangueras Contra Incendios Certificadas NFPA 1961"
   heroIntro="Mangueras certificadas NFPA 1961 para gabinetes, bomberos e industria. Millhose, Blindex, succión y forestal. 250-300 PSI con documentación técnica completa para Protección Civil."
   heroBadge="Mangueras Contra Incendios"
   heroMetrics={[

@@ -279,6 +279,62 @@ export function buildServiceSchema(service: ServiceSchemaInput) {
   return schema;
 }
 
+// -- ItemList Schema (catálogos de productos dentro de una categoría) --
+interface ItemListEntry {
+  name: string;
+  url: string;
+  image?: string;
+  description?: string;
+}
+
+export function buildItemListSchema(items: ItemListEntry[], listName?: string) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    ...(listName && { name: listName }),
+    numberOfItems: items.length,
+    itemListElement: items.map((item, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: item.name,
+      url: item.url.startsWith('http') ? item.url : `${SITE_URL}${item.url}`,
+      ...(item.image && { image: toAbsoluteImageUrl(item.image, SITE_URL) }),
+      ...(item.description && { description: item.description }),
+    })),
+  };
+}
+
+// -- CollectionPage Schema (página hub de categorías, ej. /equipos) --
+interface CollectionPageSchemaInput {
+  name: string;
+  description: string;
+  url: string;
+  image?: string;
+  items: { name: string; url: string; image?: string }[];
+}
+
+export function buildCollectionPageSchema(input: CollectionPageSchemaInput) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: input.name,
+    description: input.description,
+    url: input.url.startsWith('http') ? input.url : `${SITE_URL}${input.url}`,
+    ...(input.image && { image: toAbsoluteImageUrl(input.image, SITE_URL) }),
+    mainEntity: {
+      '@type': 'ItemList',
+      numberOfItems: input.items.length,
+      itemListElement: input.items.map((item, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        name: item.name,
+        url: item.url.startsWith('http') ? item.url : `${SITE_URL}${item.url}`,
+        ...(item.image && { image: toAbsoluteImageUrl(item.image, SITE_URL) }),
+      })),
+    },
+  };
+}
+
 // -- FAQ Schema --
 interface FAQItem {
   pregunta: string;

@@ -6,6 +6,7 @@ import Faq from '../components/Faq.astro';
 import { getBackgroundImageUrl } from '../lib/images';
 import {
   buildProductCategorySchema,
+  buildItemListSchema,
   buildFAQSchema,
   buildBreadcrumbSchema,
   buildOrganizationSchema,
@@ -65,7 +66,17 @@ const structuredData = [
     image: '/img/valvulas-contra-incendios/valvula-check-swing-bridada-contra-incendios-hierro-ductil-16.avif',
     url: '/valvulas-contra-incendios',
     category: 'Válvulas Contra Incendios',
-    brand: 'Elkhart Brass'  }),
+    brand: 'Elkhart Brass',
+  }),
+  buildItemListSchema(
+    productos.map((p) => ({
+      name: p.data.title,
+      url: `/productos/${p.id}`,
+      ...(p.data.imagen && { image: p.data.imagen }),
+      ...(p.data.description && { description: p.data.description }),
+    })),
+    'Válvulas Contra Incendios',
+  ),
   buildBreadcrumbSchema([
     { name: 'Inicio', url: '/' },
     { name: 'Equipos', url: '/equipos' },
@@ -81,7 +92,7 @@ const structuredData = [
   activePage="equipos"
   structuredData={structuredData}
   ogImage="/img/categorias/hero-valvulas-contra-incendios-tecnico.avif"
-  heroTitle="Válvulas Contra Incendios"
+  heroTitle="Válvulas Contra Incendios Certificadas UL/FM"
   heroIntro="Válvulas OS&Y, globo, retención y mariposa certificadas UL y FM para sistemas NFPA 13, 14 y 20. Hierro dúctil y bronce. Documentación completa para aseguradoras y Protección Civil."
   heroBadge="Válvulas Contra Incendios"
   heroMetrics={[

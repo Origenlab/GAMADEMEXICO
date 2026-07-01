@@ -6,6 +6,7 @@ import Faq from '../components/Faq.astro';
 import { getBackgroundImageUrl } from '../lib/images';
 import {
   buildProductCategorySchema,
+  buildItemListSchema,
   buildFAQSchema,
   buildBreadcrumbSchema,
   buildOrganizationSchema,
@@ -65,7 +66,17 @@ const structuredData = [
     image: '/img/gabinetes-hidrantes-contra-incendios/gabinete-contra-incendios-tipo-30me-manguera-chiflon-01.avif',
     url: '/gabinetes-hidrantes-contra-incendios',
     category: 'Gabinetes e Hidrantes Contra Incendios',
-    brand: 'Gama de México'  }),
+    brand: 'Gama de México',
+  }),
+  buildItemListSchema(
+    productos.map((p) => ({
+      name: p.data.title,
+      url: `/productos/${p.id}`,
+      ...(p.data.imagen && { image: p.data.imagen }),
+      ...(p.data.description && { description: p.data.description }),
+    })),
+    'Gabinetes e Hidrantes Contra Incendios',
+  ),
   buildBreadcrumbSchema([
     { name: 'Inicio', url: '/' },
     { name: 'Equipos', url: '/equipos' },

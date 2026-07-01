@@ -6,6 +6,7 @@ import Testimonial from '../components/Testimonial.astro';
 import Faq from '../components/Faq.astro';
 import {
   buildOrganizationSchema,
+  buildCollectionPageSchema,
   buildFAQSchema,
   buildBreadcrumbSchema,
 } from '../lib/seo';
@@ -173,6 +174,17 @@ const faqItems = [
 
 const structuredData = [
   buildOrganizationSchema(),
+  buildCollectionPageSchema({
+    name: 'Equipos Contra Incendios Certificados UL/FM',
+    description: 'Catálogo completo de equipos contra incendios: monitores, boquillas, mangueras, válvulas, conexiones y gabinetes certificados UL/FM. Distribuidor autorizado Elkhart Brass en México.',
+    url: '/equipos',
+    image: '/img/monitores-contra-incendios/monitor-tipo-corazon-contra-incendios-industrial-tres-cuartos-10.avif',
+    items: categorias.map((c) => ({
+      name: c.titulo,
+      url: c.enlace,
+      image: c.imagen,
+    })),
+  }),
   buildBreadcrumbSchema([
     { name: 'Inicio', url: '/' },
     { name: 'Equipos Contra Incendios', url: '/equipos' },

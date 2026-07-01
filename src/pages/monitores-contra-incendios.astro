@@ -6,6 +6,7 @@ import { getBackgroundImageUrl } from '../lib/images';
 import Faq from '../components/Faq.astro';
 import {
   buildProductCategorySchema,
+  buildItemListSchema,
   buildFAQSchema,
   buildBreadcrumbSchema,
   buildOrganizationSchema,
@@ -65,7 +66,17 @@ const structuredData = [
     image: '/img/monitores-contra-incendios/monitor-tipo-corazon-contra-incendios-industrial-tres-cuartos-10.avif',
     url: '/monitores-contra-incendios',
     category: 'Monitores Contra Incendios',
-    brand: 'Elkhart Brass'  }),
+    brand: 'Elkhart Brass',
+  }),
+  buildItemListSchema(
+    productos.map((p) => ({
+      name: p.data.title,
+      url: `/productos/${p.id}`,
+      ...(p.data.imagen && { image: p.data.imagen }),
+      ...(p.data.description && { description: p.data.description }),
+    })),
+    'Monitores Contra Incendios',
+  ),
   buildBreadcrumbSchema([
     { name: 'Inicio', url: '/' },
     { name: 'Equipos', url: '/equipos' },
