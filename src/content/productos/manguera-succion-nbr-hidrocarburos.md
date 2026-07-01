@@ -17,6 +17,7 @@ marca: "Nacional"
 modelo: "SUC-400-3-NBR"
 precioReferencia: "$4,250.00 MXN + IVA"
 destacado: false
+indexable: true
 orden: 21
 ---
 

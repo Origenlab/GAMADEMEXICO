@@ -13,6 +13,7 @@ certificaciones:
 flujo: "Según diámetro de salida (4\" o 6\")"
 material: "Bronce fundido UNS C84400"
 destacado: false
+indexable: true
 orden: 52
 galeria:
   - "/img/conexiones-herrajes-contra-incendios/toma-siamesa-bronce-dos-bocas-frontal.avif"

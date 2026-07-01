@@ -17,6 +17,7 @@ marca: "Industrial"
 modelo: "Fixed Flow Foam Monitor"
 precioReferencia: "Solicitar cotización"
 destacado: true
+indexable: true
 orden: 5
 ---
 

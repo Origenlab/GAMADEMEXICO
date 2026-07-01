@@ -17,6 +17,7 @@ marca: "American AVK"
 modelo: "HID-4S-250"
 precioReferencia: "$19,800.00 MXN + IVA"
 destacado: false
+indexable: true
 orden: 7
 ---
 

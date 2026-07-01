@@ -17,6 +17,7 @@ marca: "American AVK"
 modelo: "HID-BS-250"
 precioReferencia: "$15,800.00 MXN + IVA"
 destacado: false
+indexable: true
 orden: 4
 ---
 

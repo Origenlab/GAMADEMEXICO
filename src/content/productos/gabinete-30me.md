@@ -17,6 +17,7 @@ marca: "Nacional"
 modelo: "GAB-30ME"
 precioReferencia: "$4,850.00 MXN + IVA"
 destacado: true
+indexable: true
 orden: 1
 ---
 

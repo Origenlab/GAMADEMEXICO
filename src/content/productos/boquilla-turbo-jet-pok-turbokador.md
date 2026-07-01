@@ -17,6 +17,7 @@ marca: "POK"
 modelo: "Turbokador 500"
 precioReferencia: "$525.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 16
 ---
 

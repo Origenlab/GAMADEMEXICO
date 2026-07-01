@@ -17,6 +17,7 @@ marca: "Akron Brass"
 modelo: "UltraJet 4820"
 precioReferencia: "$685.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 13
 ---
 

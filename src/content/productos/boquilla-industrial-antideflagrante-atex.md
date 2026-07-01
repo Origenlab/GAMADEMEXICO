@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "ATEX Industrial"
 precioReferencia: "$725.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 24
 ---
 

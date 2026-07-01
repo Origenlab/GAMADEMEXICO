@@ -17,6 +17,7 @@ marca: "Nacional"
 modelo: "GAB-DC-30E"
 precioReferencia: "$5,850.00 MXN + IVA"
 destacado: false
+indexable: true
 orden: 6
 ---
 

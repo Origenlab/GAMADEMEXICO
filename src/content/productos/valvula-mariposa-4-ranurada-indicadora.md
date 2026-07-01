@@ -17,6 +17,7 @@ marca: "Mueller"
 modelo: "GD-3510-4N"
 precioReferencia: "$2,650.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 29
 ---
 

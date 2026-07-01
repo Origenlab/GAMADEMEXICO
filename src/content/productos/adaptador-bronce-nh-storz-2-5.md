@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "D-327-S"
 precioReferencia: "$245.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 2
 ---
 

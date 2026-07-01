@@ -12,6 +12,7 @@ certificaciones:
 flujo: "Hasta 1,250 GPM a 100 PSI"
 material: "Aleación de aluminio anodizado"
 destacado: true
+indexable: true
 orden: 12
 galeria:
   - "/img/monitores-contra-incendios/elkhart-sidewinder-exm2-fondo-blanco.avif"

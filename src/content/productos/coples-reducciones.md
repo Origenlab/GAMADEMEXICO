@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "S-25"
 precioReferencia: "$145.00 USD + IVA"
 destacado: true
+indexable: true
 orden: 25
 ---
 

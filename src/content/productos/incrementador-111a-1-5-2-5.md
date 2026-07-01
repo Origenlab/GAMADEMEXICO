@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "111A"
 precioReferencia: "$145.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 30
 ---
 

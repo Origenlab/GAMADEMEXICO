@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "294-11"
 precioReferencia: "Solicitar cotización"
 destacado: true
+indexable: true
 orden: 7
 ---
 

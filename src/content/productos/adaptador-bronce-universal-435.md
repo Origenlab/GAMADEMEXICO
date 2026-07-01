@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "435"
 precioReferencia: "$385.00 USD + IVA"
 destacado: true
+indexable: true
 orden: 3
 ---
 

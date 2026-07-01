@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "4-A"
 precioReferencia: "$685.00 USD + IVA"
 destacado: true
+indexable: true
 orden: 18
 ---
 

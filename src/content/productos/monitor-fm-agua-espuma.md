@@ -17,6 +17,7 @@ marca: "Stang Industries"
 modelo: "FM-AE-001"
 precioReferencia: "Solicitar cotización"
 destacado: true
+indexable: true
 orden: 27
 ---
 

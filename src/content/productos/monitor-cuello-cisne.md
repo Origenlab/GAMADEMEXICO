@@ -17,6 +17,7 @@ marca: "ARMECO"
 modelo: "Cuello de Cisne"
 precioReferencia: "Solicitar cotización"
 destacado: true
+indexable: true
 orden: 12
 ---
 

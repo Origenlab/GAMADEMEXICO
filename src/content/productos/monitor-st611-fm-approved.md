@@ -17,6 +17,7 @@ marca: "Stang Industries"
 modelo: "ST611"
 precioReferencia: "Solicitar cotización"
 destacado: true
+indexable: true
 orden: 4
 ---
 

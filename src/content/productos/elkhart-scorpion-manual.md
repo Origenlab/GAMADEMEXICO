@@ -13,6 +13,7 @@ certificaciones:
 flujo: "Hasta 1,250 GPM a 100 PSI"
 material: "Aluminio anodizado — bajo perfil"
 destacado: false
+indexable: true
 orden: 30
 galeria:
   - "/img/monitores-contra-incendios/elkhart-scorpion-manual-mon-01.avif"

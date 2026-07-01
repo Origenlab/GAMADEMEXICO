@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "Marine Industrial"
 precioReferencia: "$745.00 USD + IVA"
 destacado: true
+indexable: true
 orden: 18
 ---
 

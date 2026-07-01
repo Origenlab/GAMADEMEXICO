@@ -17,6 +17,7 @@ marca: "Nacional"
 modelo: "FOR-150-30-ABR"
 precioReferencia: "$2,650.00 MXN + IVA"
 destacado: true
+indexable: true
 orden: 30
 ---
 

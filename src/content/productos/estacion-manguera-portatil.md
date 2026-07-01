@@ -17,6 +17,7 @@ marca: "Nacional"
 modelo: "EST-PORT-30"
 precioReferencia: "$6,850.00 MXN + IVA"
 destacado: false
+indexable: true
 orden: 11
 ---
 

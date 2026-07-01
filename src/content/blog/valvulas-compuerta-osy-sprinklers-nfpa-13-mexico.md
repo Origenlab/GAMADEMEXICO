@@ -27,6 +27,8 @@ destacado: false
 draft: false
 productosRelacionados: ["valvula-compuerta-osy", "valvula-compuerta-osy-4-ranurada", "valvula-compuerta-osy-6-ranurada", "valvula-compuerta-osy-6-bridada", "valvula-mariposa"]
 tiempoLectura: 8
+canonical: "https://gamademexico.com/blog/valvulas/valvulas-compuerta-osy-sprinklers-nfpa-13-mexico"
+noindex: false
 ---
 
 En todo sistema de rociadores automáticos (sprinklers), la válvula de control principal es el componente más crítico desde el punto de vista de la seguridad operacional. Si esta válvula está cerrada —por error, por mantenimiento no documentado o por sabotaje— el sistema de rociadores es inútil. Por eso, la NFPA 13 no solo exige una válvula de control en cada sistema: exige un tipo específico que **indique visualmente su posición** sin necesidad de instrumentos. Esa válvula es la **OS&Y**.

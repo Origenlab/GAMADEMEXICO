@@ -17,6 +17,7 @@ marca: "Kennedy"
 modelo: "KS-FIG-4G"
 precioReferencia: "$4,250.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 6
 ---
 

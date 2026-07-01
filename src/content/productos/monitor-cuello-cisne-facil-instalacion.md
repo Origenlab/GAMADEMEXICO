@@ -17,6 +17,7 @@ marca: "ARMECO"
 modelo: "CC-BD-150"
 precioReferencia: "Solicitar cotización"
 destacado: false
+indexable: true
 orden: 16
 ---
 

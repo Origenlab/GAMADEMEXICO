@@ -17,6 +17,7 @@ marca: "Nacional"
 modelo: "SUC-400-3-COL"
 precioReferencia: "$4,150.00 MXN + IVA"
 destacado: true
+indexable: true
 orden: 23
 ---
 

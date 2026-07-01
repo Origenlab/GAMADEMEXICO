@@ -17,6 +17,7 @@ marca: "Task Force Tips"
 modelo: "Mid-Force"
 precioReferencia: "$565.00 USD + IVA"
 destacado: true
+indexable: true
 orden: 12
 ---
 

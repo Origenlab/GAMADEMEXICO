@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "101A"
 precioReferencia: "$165.00 USD + IVA"
 destacado: true
+indexable: true
 orden: 28
 ---
 

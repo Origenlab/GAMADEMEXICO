@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "Phantom XD"
 precioReferencia: "$485.00 USD + IVA"
 destacado: true
+indexable: true
 orden: 1
 ---
 

@@ -12,6 +12,7 @@ certificaciones:
 flujo: "95 a 300 GPM (según modelo)"
 material: "Aluminio anodizado de alta resistencia"
 destacado: true
+indexable: true
 orden: 10
 galeria:
   - "/img/boquillas-contra-incendios/elkhart-chief-xd-fondo-blanco.avif"

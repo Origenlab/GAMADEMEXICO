@@ -17,6 +17,7 @@ marca: "Task Force Tips"
 modelo: "H-VPG-IF"
 precioReferencia: "$545.00 USD + IVA"
 destacado: true
+indexable: true
 orden: 4
 ---
 

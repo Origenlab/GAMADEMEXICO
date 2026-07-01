@@ -17,6 +17,7 @@ marca: "Nacional"
 modelo: "SUC-400-3-PVC"
 precioReferencia: "$1,250.00 MXN + IVA"
 destacado: false
+indexable: true
 orden: 22
 ---
 

@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "L-205-B"
 precioReferencia: "$385.00 USD + IVA"
 destacado: true
+indexable: true
 orden: 17
 ---
 

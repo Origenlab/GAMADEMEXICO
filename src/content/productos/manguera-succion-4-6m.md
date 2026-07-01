@@ -17,6 +17,7 @@ marca: "Nacional"
 modelo: "SUC-400-6"
 precioReferencia: "$6,250.00 MXN + IVA"
 destacado: false
+indexable: true
 orden: 20
 ---
 

@@ -21,6 +21,9 @@ autor:
 imagen: "/img/monitores-contra-incendios/monitor-corazon-una-cremallera-vistas-multiples.avif"
 imagenAlt: "Monitor contra incendios tipo corazón con vistas de mantenimiento"
 tags: ["monitores contra incendios", "mantenimiento", "inspección", "Elkhart Brass", "NFPA 25"]
+tiempoLectura: 5
+canonical: "https://gamademexico.com/blog/monitores/mantenimiento-monitores-contra-incendios"
+noindex: false
 destacado: false
 draft: false
 productosRelacionados: ["monitor-tipo-corazon-4000", "monitor-cuello-cisne-3000"]

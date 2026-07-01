@@ -17,6 +17,7 @@ marca: "Nibco"
 modelo: "GD-4765-3N"
 precioReferencia: "$2,250.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 28
 ---
 

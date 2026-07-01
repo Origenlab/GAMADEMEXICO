@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "Premium Series 150"
 precioReferencia: "$4,850.00 MXN + IVA"
 destacado: true
+indexable: true
 orden: 8
 ---
 

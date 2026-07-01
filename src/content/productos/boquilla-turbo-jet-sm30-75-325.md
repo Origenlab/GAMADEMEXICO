@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "SM-30FG"
 precioReferencia: "$585.00 USD + IVA"
 destacado: true
+indexable: true
 orden: 10
 ---
 

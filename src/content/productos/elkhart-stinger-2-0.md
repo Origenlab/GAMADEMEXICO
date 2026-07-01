@@ -13,6 +13,7 @@ certificaciones:
 flujo: "Hasta 1,000 GPM"
 material: "Aluminio de grado marino"
 destacado: true
+indexable: true
 orden: 20
 galeria:
   - "/img/monitores-contra-incendios/elkhart-stinger-2-0-fondo-blanco.avif"

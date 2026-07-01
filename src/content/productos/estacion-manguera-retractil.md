@@ -17,6 +17,7 @@ marca: "Nacional"
 modelo: "EST-RET-25"
 precioReferencia: "$5,650.00 MXN + IVA"
 destacado: false
+indexable: true
 orden: 10
 ---
 

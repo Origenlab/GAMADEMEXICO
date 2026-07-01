@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "FM-STD-001"
 precioReferencia: "Solicitar cotización"
 destacado: false
+indexable: true
 orden: 33
 ---
 

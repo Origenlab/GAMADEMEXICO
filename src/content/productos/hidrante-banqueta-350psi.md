@@ -17,6 +17,7 @@ marca: "Mueller"
 modelo: "HID-HP-350"
 precioReferencia: "$18,500.00 MXN + IVA"
 destacado: true
+indexable: true
 orden: 3
 ---
 

@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "KIT-GAB"
 precioReferencia: "$285.00 USD + IVA"
 destacado: true
+indexable: true
 orden: 48
 ---
 

@@ -17,6 +17,7 @@ marca: "ARMECO"
 modelo: "CC-PEMEX-015"
 precioReferencia: "Solicitar cotización"
 destacado: true
+indexable: true
 orden: 41
 ---
 

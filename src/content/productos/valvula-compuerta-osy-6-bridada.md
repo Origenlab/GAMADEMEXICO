@@ -17,6 +17,7 @@ marca: "Mueller"
 modelo: "A-2362"
 precioReferencia: "$6,450.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 2
 ---
 

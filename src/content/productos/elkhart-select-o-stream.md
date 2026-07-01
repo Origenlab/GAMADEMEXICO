@@ -11,6 +11,7 @@ certificaciones:
 flujo: "350-1,250 GPM (seleccionable)"
 material: "Aluminio anodizado"
 destacado: false
+indexable: true
 orden: 32
 galeria:
   - "/img/boquillas-contra-incendios/elkhart-select-o-stream-fondo-blanco.avif"

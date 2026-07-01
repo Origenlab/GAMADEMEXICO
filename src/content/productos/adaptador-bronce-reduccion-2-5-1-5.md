@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "R-327"
 precioReferencia: "$165.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 8
 ---
 

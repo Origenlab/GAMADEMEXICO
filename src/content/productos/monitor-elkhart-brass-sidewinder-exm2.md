@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "Sidewinder EXM2"
 precioReferencia: "Solicitar cotización"
 destacado: true
+indexable: true
 orden: 3
 ---
 

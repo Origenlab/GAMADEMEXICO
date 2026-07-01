@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "B-100-A"
 precioReferencia: "$1,150.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 10
 ---
 

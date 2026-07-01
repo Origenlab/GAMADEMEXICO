@@ -17,6 +17,7 @@ marca: "Nacional"
 modelo: "MH-250-30"
 precioReferencia: "$3,850.00 MXN + IVA"
 destacado: true
+indexable: true
 orden: 2
 ---
 

@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "C-50"
 precioReferencia: "$85.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 43
 ---
 

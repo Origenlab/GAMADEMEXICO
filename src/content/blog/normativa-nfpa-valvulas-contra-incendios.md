@@ -21,6 +21,9 @@ autor:
 imagen: "/img/blog/valvulas-contra-incendios-nfpa-sala-control-industrial.avif"
 imagenAlt: "Válvulas contra incendios en sala de control industrial NFPA"
 tags: ["NFPA 13", "NFPA 25", "válvulas contra incendios", "normatividad", "cumplimiento normativo"]
+tiempoLectura: 5
+canonical: "https://gamademexico.com/blog/valvulas/normativa-nfpa-valvulas-contra-incendios"
+noindex: false
 destacado: true
 draft: false
 productosRelacionados: ["valvula-compuerta-osy-4", "valvula-mariposa-6"]

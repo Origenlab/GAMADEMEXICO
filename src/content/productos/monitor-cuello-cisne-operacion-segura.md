@@ -17,6 +17,7 @@ marca: "ARMECO"
 modelo: "CC-SEG-001"
 precioReferencia: "Solicitar cotización"
 destacado: false
+indexable: true
 orden: 18
 ---
 

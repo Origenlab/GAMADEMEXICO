@@ -17,6 +17,7 @@ marca: "Nacional"
 modelo: "GAB-30M-SP"
 precioReferencia: "$4,250.00 MXN + IVA"
 destacado: false
+indexable: true
 orden: 2
 ---
 

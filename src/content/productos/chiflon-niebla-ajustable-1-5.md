@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "205-BA"
 precioReferencia: "$365.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 39
 ---
 

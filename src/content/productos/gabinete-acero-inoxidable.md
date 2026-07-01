@@ -17,6 +17,7 @@ marca: "Nacional"
 modelo: "GAB-INOX-30"
 precioReferencia: "$8,950.00 MXN + IVA"
 destacado: true
+indexable: true
 orden: 4
 ---
 

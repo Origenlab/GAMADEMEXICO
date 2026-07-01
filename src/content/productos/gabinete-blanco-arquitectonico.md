@@ -17,6 +17,7 @@ marca: "Nacional"
 modelo: "GAB-ARQ-30B"
 precioReferencia: "$5,150.00 MXN + IVA"
 destacado: false
+indexable: true
 orden: 8
 ---
 

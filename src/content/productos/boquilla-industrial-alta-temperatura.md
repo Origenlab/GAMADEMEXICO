@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "HT-500 Industrial"
 precioReferencia: "$685.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 20
 ---
 

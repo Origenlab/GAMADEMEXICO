@@ -17,6 +17,7 @@ marca: "ARMECO"
 modelo: "TC-TAL-001"
 precioReferencia: "Solicitar cotización"
 destacado: true
+indexable: true
 orden: 20
 ---
 

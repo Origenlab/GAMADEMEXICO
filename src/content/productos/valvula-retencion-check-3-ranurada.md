@@ -17,6 +17,7 @@ marca: "Nibco"
 modelo: "G-918-W-3"
 precioReferencia: "$2,150.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 20
 ---
 

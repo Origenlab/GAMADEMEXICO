@@ -17,6 +17,7 @@ marca: "Nacional"
 modelo: "SUC-250-3"
 precioReferencia: "$1,850.00 MXN + IVA"
 destacado: false
+indexable: true
 orden: 19
 ---
 

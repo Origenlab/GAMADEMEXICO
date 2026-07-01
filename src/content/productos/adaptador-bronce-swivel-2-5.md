@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "S-327"
 precioReferencia: "$215.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 7
 ---
 

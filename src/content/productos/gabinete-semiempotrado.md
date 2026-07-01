@@ -17,6 +17,7 @@ marca: "Nacional"
 modelo: "GAB-SE-30"
 precioReferencia: "$4,650.00 MXN + IVA"
 destacado: false
+indexable: true
 orden: 7
 ---
 

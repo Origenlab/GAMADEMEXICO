@@ -17,6 +17,7 @@ marca: "Akron Brass"
 modelo: "FM Industrial 1725"
 precioReferencia: "$485.00 USD + IVA"
 destacado: true
+indexable: true
 orden: 26
 ---
 

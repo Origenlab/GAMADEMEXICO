@@ -17,6 +17,7 @@ marca: "Mueller"
 modelo: "A-2362-G-3"
 precioReferencia: "$3,650.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 5
 ---
 

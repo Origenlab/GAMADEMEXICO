@@ -18,6 +18,7 @@ marca: "Elkhart Brass"
 modelo: "EST-MAN-180"
 precioReferencia: "$5,200.00 MXN + IVA"
 destacado: false
+indexable: true
 orden: 4
 ---
 

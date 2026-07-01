@@ -17,6 +17,7 @@ marca: "Stang Industries"
 modelo: "ST-FM-2000"
 precioReferencia: "Solicitar cotización"
 destacado: true
+indexable: true
 orden: 22
 ---
 

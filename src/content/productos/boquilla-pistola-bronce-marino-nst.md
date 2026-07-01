@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "SFL-BG Marine"
 precioReferencia: "$625.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 7
 ---
 

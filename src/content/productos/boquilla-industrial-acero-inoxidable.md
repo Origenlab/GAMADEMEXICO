@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "SS-316 Industrial"
 precioReferencia: "$895.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 19
 ---
 

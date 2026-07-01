@@ -17,6 +17,7 @@ marca: "Kennedy"
 modelo: "KC-8500"
 precioReferencia: "$7,250.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 19
 ---
 

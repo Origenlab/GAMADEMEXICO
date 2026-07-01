@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "F-327"
 precioReferencia: "$125.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 4
 ---
 

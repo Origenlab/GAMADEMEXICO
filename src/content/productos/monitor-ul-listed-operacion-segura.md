@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "UL-SEG-ERG"
 precioReferencia: "Solicitar cotización"
 destacado: false
+indexable: true
 orden: 34
 ---
 

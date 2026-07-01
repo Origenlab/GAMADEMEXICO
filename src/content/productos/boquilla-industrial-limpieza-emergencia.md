@@ -17,6 +17,7 @@ marca: "Nacional"
 modelo: "Multi-Uso Industrial"
 precioReferencia: "$225.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 23
 ---
 

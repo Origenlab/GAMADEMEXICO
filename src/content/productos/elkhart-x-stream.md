@@ -12,6 +12,7 @@ certificaciones:
 flujo: "500-2,000 GPM (seleccionable)"
 material: "Aluminio anodizado"
 destacado: true
+indexable: true
 orden: 30
 galeria:
   - "/img/boquillas-contra-incendios/elkhart-x-stream-fondo-blanco.avif"

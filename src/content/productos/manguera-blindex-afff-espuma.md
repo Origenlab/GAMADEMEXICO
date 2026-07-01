@@ -17,6 +17,7 @@ marca: "Nacional"
 modelo: "BX-250-30-AFFF"
 precioReferencia: "$7,850.00 MXN + IVA"
 destacado: false
+indexable: true
 orden: 15
 ---
 

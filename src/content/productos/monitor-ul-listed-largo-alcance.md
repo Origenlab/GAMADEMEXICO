@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "UL-LA-750"
 precioReferencia: "Solicitar cotización"
 destacado: true
+indexable: true
 orden: 28
 ---
 

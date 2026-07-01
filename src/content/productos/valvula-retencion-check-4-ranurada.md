@@ -17,6 +17,7 @@ marca: "Mueller"
 modelo: "G-2880-4"
 precioReferencia: "$2,850.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 21
 ---
 

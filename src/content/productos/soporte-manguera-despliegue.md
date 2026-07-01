@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "HR-25"
 precioReferencia: "$75.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 47
 ---
 

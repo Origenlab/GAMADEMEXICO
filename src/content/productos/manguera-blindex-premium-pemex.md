@@ -17,6 +17,7 @@ marca: "Nacional"
 modelo: "BX-250-30-PMX"
 precioReferencia: "$8,450.00 MXN + IVA"
 destacado: true
+indexable: true
 orden: 16
 ---
 

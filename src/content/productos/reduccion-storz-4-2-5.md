@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "SR-40-25"
 precioReferencia: "$265.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 31
 ---
 

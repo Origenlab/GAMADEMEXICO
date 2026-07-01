@@ -17,6 +17,7 @@ marca: "Task Force Tips"
 modelo: "Certified Series 1964"
 precioReferencia: "$495.00 USD + IVA"
 destacado: true
+indexable: true
 orden: 29
 ---
 

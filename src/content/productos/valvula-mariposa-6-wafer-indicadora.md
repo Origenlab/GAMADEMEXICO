@@ -17,6 +17,7 @@ marca: "Mueller"
 modelo: "WD-3510-6N"
 precioReferencia: "$3,650.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 26
 ---
 

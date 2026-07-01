@@ -17,6 +17,7 @@ marca: "Akron Brass"
 modelo: "Foam Master 3060"
 precioReferencia: "$565.00 USD + IVA"
 destacado: true
+indexable: true
 orden: 21
 ---
 

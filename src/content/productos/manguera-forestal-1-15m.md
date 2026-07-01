@@ -17,6 +17,7 @@ marca: "Nacional"
 modelo: "FOR-100-15"
 precioReferencia: "$850.00 MXN + IVA"
 destacado: false
+indexable: true
 orden: 26
 ---
 

@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "GAB-EMP-24"
 precioReferencia: "$3,950.00 MXN + IVA"
 destacado: false
+indexable: true
 orden: 3
 ---
 

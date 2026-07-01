@@ -17,6 +17,7 @@ marca: "Akron Brass"
 modelo: "Turbojet 1723"
 precioReferencia: "$520.00 USD + IVA"
 destacado: true
+indexable: true
 orden: 3
 ---
 

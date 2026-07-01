@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "9702"
 precioReferencia: "$945.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 19
 ---
 

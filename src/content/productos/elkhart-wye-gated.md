@@ -12,6 +12,7 @@ certificaciones:
 flujo: "Según configuración de salidas"
 material: "Bronce fundido"
 destacado: true
+indexable: true
 orden: 55
 galeria:
   - "/img/conexiones-herrajes-contra-incendios/wye-gated-elkhart-01.avif"

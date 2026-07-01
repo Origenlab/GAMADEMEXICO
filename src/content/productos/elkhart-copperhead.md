@@ -13,6 +13,7 @@ certificaciones:
 flujo: "Hasta 2,500 GPM a 100 PSI"
 material: "Bronce naval resistente a corrosión"
 destacado: true
+indexable: true
 orden: 10
 galeria:
   - "/img/monitores-contra-incendios/elkhart-copperhead-fondo-blanco.avif"

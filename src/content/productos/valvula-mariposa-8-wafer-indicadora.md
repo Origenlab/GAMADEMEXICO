@@ -17,6 +17,7 @@ marca: "Kennedy"
 modelo: "KBF-8-175"
 precioReferencia: "$4,850.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 27
 ---
 

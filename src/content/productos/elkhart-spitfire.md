@@ -11,6 +11,7 @@ certificaciones:
 flujo: "Hasta 1,000 GPM a 100 PSI"
 material: "Bronce / aluminio (según modelo)"
 destacado: false
+indexable: true
 orden: 22
 galeria:
   - "/img/monitores-contra-incendios/elkhart-spitfire-fondo-blanco.avif"

@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "UL-STD-001"
 precioReferencia: "Solicitar cotización"
 destacado: false
+indexable: true
 orden: 14
 ---
 

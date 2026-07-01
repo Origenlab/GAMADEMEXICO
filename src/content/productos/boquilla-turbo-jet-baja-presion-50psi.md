@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "SM-LP50"
 precioReferencia: "$495.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 14
 ---
 

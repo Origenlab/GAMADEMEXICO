@@ -17,6 +17,7 @@ marca: "Mueller"
 modelo: "B-20105"
 precioReferencia: "$520.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 14
 ---
 

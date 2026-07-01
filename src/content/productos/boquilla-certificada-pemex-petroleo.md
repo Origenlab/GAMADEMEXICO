@@ -17,6 +17,7 @@ marca: "Nacional"
 modelo: "PEMEX Series PX-200"
 precioReferencia: "$445.00 USD + IVA"
 destacado: true
+indexable: true
 orden: 30
 ---
 

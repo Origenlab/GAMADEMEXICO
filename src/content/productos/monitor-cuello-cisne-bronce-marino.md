@@ -17,6 +17,7 @@ marca: "ARMECO"
 modelo: "CC-BM-001"
 precioReferencia: "Solicitar cotización"
 destacado: false
+indexable: true
 orden: 40
 ---
 

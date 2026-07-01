@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "Chief XD"
 precioReferencia: "$425.00 USD + IVA"
 destacado: true
+indexable: true
 orden: 25
 ---
 

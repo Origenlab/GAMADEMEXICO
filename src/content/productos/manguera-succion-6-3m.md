@@ -17,6 +17,7 @@ marca: "Nacional"
 modelo: "SUC-600-3"
 precioReferencia: "$5,850.00 MXN + IVA"
 destacado: true
+indexable: true
 orden: 18
 ---
 

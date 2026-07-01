@@ -17,6 +17,7 @@ marca: "Nacional"
 modelo: "EST-15M-90"
 precioReferencia: "$4,150.00 MXN + IVA"
 destacado: false
+indexable: true
 orden: 7
 ---
 

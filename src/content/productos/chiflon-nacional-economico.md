@@ -17,6 +17,7 @@ marca: "Nacional"
 modelo: "CHF-15"
 precioReferencia: "$145.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 40
 ---
 

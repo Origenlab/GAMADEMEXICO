@@ -17,6 +17,7 @@ marca: "Nacional"
 modelo: "MH-150-30-NBR"
 precioReferencia: "$2,850.00 MXN + IVA"
 destacado: false
+indexable: true
 orden: 5
 ---
 

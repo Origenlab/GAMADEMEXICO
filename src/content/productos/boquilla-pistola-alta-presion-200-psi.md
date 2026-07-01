@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "SFL-HP"
 precioReferencia: "$465.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 5
 ---
 

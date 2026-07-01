@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "SM-20FG XD"
 precioReferencia: "$545.00 USD + IVA"
 destacado: true
+indexable: true
 orden: 9
 ---
 

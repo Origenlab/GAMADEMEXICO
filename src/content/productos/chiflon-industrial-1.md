@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "205-B-10"
 precioReferencia: "$185.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 37
 ---
 

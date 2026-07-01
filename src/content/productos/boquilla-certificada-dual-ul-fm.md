@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "Select-O-Flow XD Certified"
 precioReferencia: "$565.00 USD + IVA"
 destacado: true
+indexable: true
 orden: 31
 ---
 

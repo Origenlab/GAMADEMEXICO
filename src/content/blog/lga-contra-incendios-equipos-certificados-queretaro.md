@@ -14,6 +14,9 @@ description: "Conoce a LGA Contra Incendios, empresa líder en equipos y sistema
 fecha: "2026-02-26"
 categoria: "gabinetes-hidrantes"
 tags: ["empresas verificadas", "protección contra incendios", "Querétaro", "extintores", "equipos certificados", "NFPA"]
+tiempoLectura: 11
+canonical: "https://gamademexico.com/blog/gabinetes-hidrantes/lga-contra-incendios-equipos-certificados-queretaro"
+noindex: false
 autor:
   nombre: "Equipo Editorial Gama de México"
   cargo: "Contenido Corporativo"

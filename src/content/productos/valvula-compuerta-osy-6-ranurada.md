@@ -17,6 +17,7 @@ marca: "Nibco"
 modelo: "G-617-O-6"
 precioReferencia: "$5,850.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 7
 ---
 

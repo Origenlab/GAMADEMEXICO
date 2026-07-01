@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "M-327-A"
 precioReferencia: "$145.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 5
 ---
 

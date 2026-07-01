@@ -17,6 +17,7 @@ marca: "Task Force Tips"
 modelo: "Mining Heavy Duty"
 precioReferencia: "$785.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 22
 ---
 

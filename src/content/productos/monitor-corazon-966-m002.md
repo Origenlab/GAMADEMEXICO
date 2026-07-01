@@ -17,6 +17,7 @@ marca: "Nacional"
 modelo: "966-M002"
 precioReferencia: "Desde $307.00 USD + IVA"
 destacado: true
+indexable: true
 orden: 10
 ---
 

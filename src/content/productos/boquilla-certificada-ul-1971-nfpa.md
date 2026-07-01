@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "Fixed System UL-50"
 precioReferencia: "$285.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 27
 ---
 

@@ -17,6 +17,7 @@ marca: "Nacional"
 modelo: "EST-GAB-30"
 precioReferencia: "$7,250.00 MXN + IVA"
 destacado: false
+indexable: true
 orden: 6
 ---
 

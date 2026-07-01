@@ -11,6 +11,7 @@ certificaciones:
 flujo: "150-350 GPM (según orificio)"
 material: "Latón cromado / aluminio"
 destacado: false
+indexable: true
 orden: 35
 galeria:
   - "/img/boquillas-contra-incendios/elkhart-xd-smooth-bore-fondo-blanco.avif"

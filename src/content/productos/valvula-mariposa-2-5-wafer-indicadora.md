@@ -17,6 +17,7 @@ marca: "Nibco"
 modelo: "WD-4765-25N"
 precioReferencia: "$1,850.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 30
 ---
 

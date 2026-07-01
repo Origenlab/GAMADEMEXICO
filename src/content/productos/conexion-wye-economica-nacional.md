@@ -17,6 +17,7 @@ marca: "Nacional"
 modelo: "WYE-25"
 precioReferencia: "$650.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 16
 ---
 

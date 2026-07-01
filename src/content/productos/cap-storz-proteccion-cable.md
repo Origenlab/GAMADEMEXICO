@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "CS-25"
 precioReferencia: "$65.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 46
 ---
 

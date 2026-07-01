@@ -13,6 +13,7 @@ certificaciones:
 flujo: "Según diámetro de salida (4\" o 6\")"
 material: "Bronce fundido UNS C84400"
 destacado: true
+indexable: true
 orden: 50
 galeria:
   - "/img/conexiones-herrajes-contra-incendios/siamesa-clappered-elkhart-01.avif"

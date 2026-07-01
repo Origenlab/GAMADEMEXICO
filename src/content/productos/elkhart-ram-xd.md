@@ -13,6 +13,7 @@ certificaciones:
 flujo: "Hasta 500 GPM"
 material: "Aluminio de aviación / alta resistencia"
 destacado: false
+indexable: true
 orden: 40
 galeria:
   - "/img/monitores-contra-incendios/elkhart-ram-xd-mon-01.avif"

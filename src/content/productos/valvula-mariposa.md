@@ -17,6 +17,7 @@ marca: "Nibco"
 modelo: "WD-3510-8N"
 precioReferencia: "$2,850.00 USD + IVA"
 destacado: true
+indexable: true
 orden: 25
 ---
 

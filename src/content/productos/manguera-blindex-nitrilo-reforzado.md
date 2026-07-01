@@ -17,6 +17,7 @@ marca: "Nacional"
 modelo: "BX-150-30-NR"
 precioReferencia: "$5,450.00 MXN + IVA"
 destacado: false
+indexable: true
 orden: 13
 ---
 

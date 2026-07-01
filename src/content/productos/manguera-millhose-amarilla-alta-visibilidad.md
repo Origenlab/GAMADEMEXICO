@@ -17,6 +17,7 @@ marca: "Nacional"
 modelo: "MH-250-30-YLW"
 precioReferencia: "$4,150.00 MXN + IVA"
 destacado: false
+indexable: true
 orden: 7
 ---
 

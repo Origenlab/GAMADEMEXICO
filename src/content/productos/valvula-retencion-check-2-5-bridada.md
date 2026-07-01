@@ -17,6 +17,7 @@ marca: "Nibco"
 modelo: "F-918-W-25"
 precioReferencia: "$1,950.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 22
 ---
 

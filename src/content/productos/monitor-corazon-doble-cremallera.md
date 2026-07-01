@@ -17,6 +17,7 @@ marca: "ARMECO"
 modelo: "ARMECO-2C"
 precioReferencia: "$1,205.00 USD + IVA"
 destacado: true
+indexable: true
 orden: 9
 ---
 

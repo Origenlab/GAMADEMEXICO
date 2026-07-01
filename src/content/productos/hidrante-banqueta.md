@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "HID-BAN-250"
 precioReferencia: "$12,500.00 MXN + IVA"
 destacado: true
+indexable: true
 orden: 2
 ---
 

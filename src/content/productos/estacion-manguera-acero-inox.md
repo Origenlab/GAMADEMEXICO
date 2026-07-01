@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "EST-INOX-30"
 precioReferencia: "$12,500.00 MXN + IVA"
 destacado: true
+indexable: true
 orden: 8
 ---
 

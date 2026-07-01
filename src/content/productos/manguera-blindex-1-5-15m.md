@@ -17,6 +17,7 @@ marca: "Nacional"
 modelo: "BX-150-15"
 precioReferencia: "$2,750.00 MXN + IVA"
 destacado: false
+indexable: true
 orden: 11
 ---
 

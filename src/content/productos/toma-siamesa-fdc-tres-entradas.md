@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "6-A"
 precioReferencia: "$985.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 23
 ---
 

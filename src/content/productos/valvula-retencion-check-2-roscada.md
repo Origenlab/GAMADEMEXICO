@@ -17,6 +17,7 @@ marca: "Kennedy"
 modelo: "BC-2000"
 precioReferencia: "$850.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 23
 ---
 

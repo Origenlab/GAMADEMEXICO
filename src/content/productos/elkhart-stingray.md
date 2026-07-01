@@ -12,6 +12,7 @@ certificaciones:
 flujo: "Hasta 2,000 GPM a 100 PSI"
 material: "Bronce macizo"
 destacado: false
+indexable: true
 orden: 20
 galeria:
   - "/img/monitores-contra-incendios/elkhart-stingray-fondo-blanco.avif"

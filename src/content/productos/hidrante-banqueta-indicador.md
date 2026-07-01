@@ -17,6 +17,7 @@ marca: "Mueller"
 modelo: "HID-IND-250"
 precioReferencia: "$13,800.00 MXN + IVA"
 destacado: false
+indexable: true
 orden: 8
 ---
 

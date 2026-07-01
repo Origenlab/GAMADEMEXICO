@@ -17,6 +17,7 @@ marca: "Nibco"
 modelo: "F-617-O"
 precioReferencia: "$4,850.00 USD + IVA"
 destacado: true
+indexable: true
 orden: 1
 ---
 

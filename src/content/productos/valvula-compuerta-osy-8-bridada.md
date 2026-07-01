@@ -17,6 +17,7 @@ marca: "Kennedy"
 modelo: "KS-FIG-8"
 precioReferencia: "$8,750.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 3
 ---
 

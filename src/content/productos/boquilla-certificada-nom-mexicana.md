@@ -17,6 +17,7 @@ marca: "Nacional"
 modelo: "NOM Series N-125"
 precioReferencia: "$195.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 32
 ---
 

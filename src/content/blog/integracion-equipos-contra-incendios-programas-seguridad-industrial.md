@@ -21,6 +21,8 @@ imagenAlt: "Brigada industrial en entrenamiento de emergencia contra incendios"
 tags: ["seguridad industrial", "protección contra incendios", "NOM-002-STPS", "equipo de protección para bomberos", "gestión de riesgos", "brigadas", "NFPA"]
 destacado: true
 tiempoLectura: 25
+canonical: "https://gamademexico.com/blog/monitores/integracion-equipos-contra-incendios-programas-seguridad-industrial"
+noindex: false
 draft: false
 productosRelacionados: ["monitor-tipo-corazon", "boquilla-turbo-jet", "manguera-industrial", "gabinete-brigada"]
 ---

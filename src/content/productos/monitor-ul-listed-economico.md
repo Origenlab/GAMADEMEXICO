@@ -17,6 +17,7 @@ marca: "Industrial"
 modelo: "UL-ECO-500"
 precioReferencia: "Precio competitivo - Solicitar cotización"
 destacado: false
+indexable: true
 orden: 32
 ---
 

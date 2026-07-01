@@ -17,6 +17,7 @@ marca: "ARMECO"
 modelo: "TC-MX-001"
 precioReferencia: "Precio competitivo - Solicitar cotización"
 destacado: false
+indexable: true
 orden: 21
 ---
 

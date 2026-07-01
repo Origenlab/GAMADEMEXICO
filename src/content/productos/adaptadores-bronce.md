@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "M-327"
 precioReferencia: "$185.00 USD + IVA"
 destacado: true
+indexable: true
 orden: 1
 ---
 

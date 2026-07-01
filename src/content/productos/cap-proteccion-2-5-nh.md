@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "C-17"
 precioReferencia: "$48.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 42
 ---
 

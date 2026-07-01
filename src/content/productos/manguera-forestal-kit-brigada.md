@@ -17,6 +17,7 @@ marca: "Nacional"
 modelo: "FOR-KIT-90"
 precioReferencia: "$8,500.00 MXN + IVA"
 destacado: true
+indexable: true
 orden: 31
 ---
 

@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "Vulcan"
 precioReferencia: "Solicitar cotización"
 destacado: true
+indexable: true
 orden: 2
 ---
 

@@ -17,6 +17,7 @@ marca: "ARMECO"
 modelo: "CC-MP-001"
 precioReferencia: "Solicitar cotización"
 destacado: true
+indexable: true
 orden: 19
 ---
 

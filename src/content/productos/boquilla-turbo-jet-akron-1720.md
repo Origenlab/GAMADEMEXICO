@@ -17,6 +17,7 @@ marca: "Akron Brass"
 modelo: "Turbojet 1720"
 precioReferencia: "$465.00 USD + IVA"
 destacado: true
+indexable: true
 orden: 11
 ---
 

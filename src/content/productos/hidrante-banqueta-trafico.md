@@ -17,6 +17,7 @@ marca: "Mueller"
 modelo: "HID-TRF-250"
 precioReferencia: "$14,200.00 MXN + IVA"
 destacado: false
+indexable: true
 orden: 5
 ---
 

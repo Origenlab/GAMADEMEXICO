@@ -17,6 +17,7 @@ marca: "Mueller"
 modelo: "HID-SMART-250"
 precioReferencia: "$22,500.00 MXN + IVA"
 destacado: true
+indexable: true
 orden: 6
 ---
 

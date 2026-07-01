@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "Marine USCG-150"
 precioReferencia: "$595.00 USD + IVA"
 destacado: true
+indexable: true
 orden: 28
 ---
 

@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "P-17"
 precioReferencia: "$45.00 USD + IVA"
 destacado: true
+indexable: true
 orden: 41
 ---
 

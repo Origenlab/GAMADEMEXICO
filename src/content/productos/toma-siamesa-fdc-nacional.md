@@ -17,6 +17,7 @@ marca: "Nacional"
 modelo: "FDC-25"
 precioReferencia: "$285.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 24
 ---
 

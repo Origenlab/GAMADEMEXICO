@@ -16,12 +16,15 @@ description: "Aprende cuándo reemplazar mangueras, válvulas, boquillas y otros
 fecha: "2026-03-19"
 categoria: "valvulas"
 tags: ["reposición de equipos contra incendios", "NFPA 25", "mangueras contra incendios", "válvulas contra incendios", "mantenimiento industrial"]
+tiempoLectura: 10
+canonical: "https://gamademexico.com/blog/valvulas/reposicion-equipos-contra-incendios-cuando-reemplazar"
 imagen: "/img/blog/reposicion-equipos-contra-incendios-mantenimiento.avif"
 imagenAlt: "Técnico revisando mangueras, válvulas y boquillas contra incendios durante inspección"
 autor:
   nombre: "Equipo Gama de México"
   cargo: "Asesoría Técnica"
 destacado: false
+draft: false
 noindex: false
 ---
 

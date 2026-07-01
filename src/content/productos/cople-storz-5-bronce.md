@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "S-50-B"
 precioReferencia: "$485.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 27
 ---
 

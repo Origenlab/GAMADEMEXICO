@@ -17,6 +17,7 @@ marca: "Nacional"
 modelo: "MH-250-30-STZ"
 precioReferencia: "$4,250.00 MXN + IVA"
 destacado: true
+indexable: true
 orden: 6
 ---
 

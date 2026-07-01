@@ -17,6 +17,7 @@ marca: "Stang Industries"
 modelo: "FM-RC-001"
 precioReferencia: "Solicitar cotización"
 destacado: true
+indexable: true
 orden: 26
 ---
 

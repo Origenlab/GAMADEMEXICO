@@ -16,12 +16,15 @@ description: "Compara monitor tipo corazón y cuello de cisne según caudal, alt
 fecha: "2026-03-19"
 categoria: "monitores"
 tags: ["monitor tipo corazón", "monitor cuello de cisne", "monitores contra incendios", "Elkhart Brass", "ingeniería contra incendios"]
+tiempoLectura: 10
+canonical: "https://gamademexico.com/blog/monitores/monitor-tipo-corazon-vs-cuello-cisne-comparativa"
 imagen: "/img/blog/monitor-tipo-corazon-vs-cuello-de-cisne.avif"
 imagenAlt: "Comparativa entre monitor contra incendios tipo corazón y monitor cuello de cisne"
 autor:
   nombre: "Equipo Gama de México"
   cargo: "Asesoría Técnica"
 destacado: false
+draft: false
 noindex: false
 ---
 

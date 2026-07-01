@@ -17,6 +17,7 @@ marca: "Task Force Tips"
 modelo: "Master Stream 1250"
 precioReferencia: "$1,850.00 USD + IVA"
 destacado: true
+indexable: true
 orden: 15
 ---
 

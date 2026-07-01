@@ -17,6 +17,7 @@ marca: "ARMECO"
 modelo: "CC-ECO-MX"
 precioReferencia: "Solicitar cotización competitiva"
 destacado: false
+indexable: true
 orden: 17
 ---
 

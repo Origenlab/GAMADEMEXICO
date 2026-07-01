@@ -17,6 +17,7 @@ marca: "Industrial"
 modelo: "FM-SS316L"
 precioReferencia: "Solicitar cotización"
 destacado: true
+indexable: true
 orden: 23
 ---
 

@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "EST-DOBLE-30"
 precioReferencia: "$9,850.00 MXN + IVA"
 destacado: false
+indexable: true
 orden: 9
 ---
 

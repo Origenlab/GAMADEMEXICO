@@ -17,6 +17,7 @@ marca: "Mueller"
 modelo: "B-20135"
 precioReferencia: "$1,250.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 11
 ---
 

@@ -13,6 +13,7 @@ certificaciones:
 flujo: "Hasta 1,500 GPM a 100 PSI"
 material: "Aleación de aluminio anodizado"
 destacado: true
+indexable: true
 orden: 10
 galeria:
   - "/img/monitores-contra-incendios/elkhart-vulcan-fondo-blanco.avif"

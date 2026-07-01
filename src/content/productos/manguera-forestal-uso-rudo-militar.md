@@ -17,6 +17,7 @@ marca: "Nacional"
 modelo: "FOR-150-30-MIL"
 precioReferencia: "$3,250.00 MXN + IVA"
 destacado: false
+indexable: true
 orden: 32
 ---
 

@@ -17,6 +17,7 @@ marca: "Nibco"
 modelo: "T-235-Y-125"
 precioReferencia: "$1,150.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 15
 ---
 

@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "HK-5"
 precioReferencia: "$145.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 45
 ---
 

@@ -12,6 +12,7 @@ certificaciones:
 flujo: "70 a 200 GPM — ajuste automático según presión"
 material: "Aluminio con internos de bronce"
 destacado: false
+indexable: true
 orden: 20
 galeria:
   - "/img/boquillas-contra-incendios/elkhart-select-o-matic-xd-fondo-blanco.avif"

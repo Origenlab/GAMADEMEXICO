@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "B-97-S"
 precioReferencia: "$1,650.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 11
 ---
 

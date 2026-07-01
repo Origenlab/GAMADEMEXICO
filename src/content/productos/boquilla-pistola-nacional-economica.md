@@ -17,6 +17,7 @@ marca: "Nacional"
 modelo: "NPG-125"
 precioReferencia: "$185.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 8
 ---
 

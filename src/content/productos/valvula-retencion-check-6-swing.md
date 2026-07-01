@@ -17,6 +17,7 @@ marca: "Mueller"
 modelo: "F-2880-6"
 precioReferencia: "$4,850.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 18
 ---
 

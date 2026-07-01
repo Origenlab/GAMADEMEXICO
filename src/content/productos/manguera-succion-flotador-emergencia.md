@@ -17,6 +17,7 @@ marca: "Nacional"
 modelo: "SUC-400-3-FLT"
 precioReferencia: "$4,650.00 MXN + IVA"
 destacado: false
+indexable: true
 orden: 24
 ---
 

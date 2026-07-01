@@ -17,6 +17,7 @@ marca: "Kennedy"
 modelo: "KG-2B-125"
 precioReferencia: "$2,450.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 13
 ---
 

@@ -17,6 +17,7 @@ marca: "Nacional"
 modelo: "GAB-15M-CP"
 precioReferencia: "$3,450.00 MXN + IVA"
 destacado: false
+indexable: true
 orden: 3
 ---
 

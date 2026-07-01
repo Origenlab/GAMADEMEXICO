@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "102A"
 precioReferencia: "$135.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 29
 ---
 

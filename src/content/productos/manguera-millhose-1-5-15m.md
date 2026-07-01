@@ -17,6 +17,7 @@ marca: "Nacional"
 modelo: "MH-150-15"
 precioReferencia: "$1,350.00 MXN + IVA"
 destacado: false
+indexable: true
 orden: 3
 ---
 

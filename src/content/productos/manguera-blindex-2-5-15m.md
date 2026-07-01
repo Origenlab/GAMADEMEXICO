@@ -17,6 +17,7 @@ marca: "Nacional"
 modelo: "BX-250-15"
 precioReferencia: "$4,150.00 MXN + IVA"
 destacado: false
+indexable: true
 orden: 12
 ---
 

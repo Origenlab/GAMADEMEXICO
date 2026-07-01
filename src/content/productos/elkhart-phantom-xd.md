@@ -13,6 +13,7 @@ certificaciones:
 flujo: "95 a 200 GPM (flujos seleccionables)"
 material: "Aleación de aluminio / Bronce naval"
 destacado: false
+indexable: true
 orden: 50
 galeria:
   - "/img/boquillas-contra-incendios/elkhart-phantom-xd-fondo-blanco.avif"

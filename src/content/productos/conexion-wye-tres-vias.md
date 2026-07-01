@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "B-103-A"
 precioReferencia: "$1,850.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 13
 ---
 

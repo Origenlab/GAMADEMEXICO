@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "UL-MAR-316"
 precioReferencia: "Solicitar cotización"
 destacado: true
+indexable: true
 orden: 30
 ---
 

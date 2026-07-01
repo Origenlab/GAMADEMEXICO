@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "EST-AUTO-180"
 precioReferencia: "$6,450.00 MXN + IVA"
 destacado: true
+indexable: true
 orden: 5
 ---
 

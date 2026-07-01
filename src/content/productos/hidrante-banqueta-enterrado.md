@@ -17,6 +17,7 @@ marca: "National"
 modelo: "HID-FLUSH-250"
 precioReferencia: "$16,500.00 MXN + IVA"
 destacado: false
+indexable: true
 orden: 9
 ---
 

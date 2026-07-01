@@ -17,6 +17,7 @@ marca: "Joperz"
 modelo: "I-102"
 precioReferencia: "Solicitar cotización"
 destacado: true
+indexable: true
 orden: 11
 ---
 

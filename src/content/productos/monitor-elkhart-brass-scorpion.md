@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "Scorpion"
 precioReferencia: "Solicitar cotización"
 destacado: true
+indexable: true
 orden: 1
 ---
 

@@ -17,6 +17,7 @@ marca: "Elkhart Brass"
 modelo: "Wildland Series"
 precioReferencia: "$285.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 6
 ---
 

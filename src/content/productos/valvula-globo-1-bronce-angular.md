@@ -17,6 +17,7 @@ marca: "Nibco"
 modelo: "T-235-AP"
 precioReferencia: "$980.00 USD + IVA"
 destacado: false
+indexable: true
 orden: 10
 ---
 

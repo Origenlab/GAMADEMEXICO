@@ -17,6 +17,7 @@ marca: "Nacional"
 modelo: "FOR-150-30-YLW"
 precioReferencia: "$2,050.00 MXN + IVA"
 destacado: false
+indexable: true
 orden: 28
 ---
 

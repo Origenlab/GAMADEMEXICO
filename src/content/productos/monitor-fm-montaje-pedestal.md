@@ -17,6 +17,7 @@ marca: "Stang Industries"
 modelo: "FM-PED-001"
 precioReferencia: "Solicitar cotización"
 destacado: false
+indexable: true
 orden: 25
 ---
 
