@@ -96,9 +96,18 @@ const structuredData = [
   activePage="equipos"
   structuredData={structuredData}
   ogImage="/img/categorias/gabinetes-hidrantes-hero.avif"
-  heroTitle="Gabinetes e Hidrantes"
-  heroBadge="Equipos Contra Incendios"
+  heroTitle="Gabinetes e Hidrantes Contra Incendios"
   heroIntro="Gabinetes tipo 30ME, empotrados, estaciones de manguera con carrete oscilante e hidrantes de banqueta. Cumplimiento NOM-002-STPS-2010 y NFPA 14. Documentación completa para Protección Civil."
+  heroBadge="Gabinetes e Hidrantes"
+  heroMetrics={[
+    { valor: "NOM-002", texto: "Cumplimiento STPS" },
+    { valor: "NFPA 14", texto: "Norma de diseño" },
+    { valor: "UL 246", texto: "Certificación hidrantes" },
+  ]}
+  heroPrimaryText="Ver Catálogo"
+  heroPrimaryLink="#gabinetes"
+  heroSecondaryText="Solicitar Cotización"
+  heroSecondaryLink="#cotizar"
   heroShowRightContent={true}
 
   showLeadCapture={true}
@@ -149,9 +158,11 @@ const structuredData = [
   <!-- SERVICE DETAILS -->
   <section class="service-details" aria-labelledby="service-details-title">
     <div class="container">
-      <div class="section-header">
-        <h2 id="service-details-title" class="section-title">Detalle de Cada Gabinete Incendio Hidrante y Equipo</h2>
-      </div>
+      <SectionHeader
+        titulo="Detalle de Cada Gabinete Incendio Hidrante y Equipo"
+        subtitulo="Especificaciones técnicas y aplicaciones de cada modelo certificado"
+        idTitulo="service-details-title"
+      />
 
       <div class="service-detail" id="detalle-30me">
         <div class="service-detail__content">
@@ -239,10 +250,11 @@ const structuredData = [
   <!-- TRUST -->
   <section class="trust" aria-labelledby="trust-title">
     <div class="container">
-      <div class="section-header">
-        <h2 id="trust-title" class="section-title">Por Qué Comprar Gabinetes e Hidrantes en Gama de México</h2>
-        <p class="section-subtitle">Calidad certificada, inventario disponible y asesoría técnica especializada</p>
-      </div>
+      <SectionHeader
+        titulo="Por Qué Comprar Gabinetes e Hidrantes en Gama de México"
+        subtitulo="Calidad certificada, inventario disponible y asesoría técnica especializada"
+        idTitulo="trust-title"
+      />
       <div class="trust__grid">
         <div class="trust__item">
           <h3 class="trust__item-title">Certificaciones NOM y NFPA</h3>
@@ -418,10 +430,11 @@ const structuredData = [
   <!-- EQUIPOS COMPLEMENTARIOS - CROSS-LINKING SEO -->
   <section class="complementary" aria-labelledby="complementary-title">
     <div class="container">
-      <div class="section-header">
-        <h2 id="complementary-title" class="section-title">Equipos para Completar tu Sistema de Gabinetes</h2>
-        <p class="section-subtitle">Los gabinetes requieren mangueras, boquillas y válvulas de calidad para máxima efectividad</p>
-      </div>
+      <SectionHeader
+        titulo="Equipos para Completar tu Sistema de Gabinetes"
+        subtitulo="Los gabinetes requieren mangueras, boquillas y válvulas de calidad para máxima efectividad"
+        idTitulo="complementary-title"
+      />
       <div class="complementary__grid">
         <a href="/mangueras-contra-incendios" class="complementary__card">
           <div class="complementary__icon">🔴</div>
@@ -478,10 +491,11 @@ const structuredData = [
   <!-- FAQ -->
   <section class="faq" id="faq" aria-labelledby="faq-title">
     <div class="container">
-      <div class="section-header">
-        <h2 id="faq-title" class="section-title">Preguntas Frecuentes sobre Gabinetes e Hidrantes</h2>
-        <p class="section-subtitle">Resolvemos las dudas más comunes sobre tipos, normativas y mantenimiento</p>
-      </div>
+      <SectionHeader
+        titulo="Preguntas Frecuentes sobre Gabinetes e Hidrantes"
+        subtitulo="Resolvemos las dudas más comunes sobre tipos, normativas y mantenimiento"
+        idTitulo="faq-title"
+      />
       <Faq items={faqItems} id="faq" />
     </div>
   </section>

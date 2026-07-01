@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Base.astro';
-import Breadcrumb from '../components/Breadcrumb.astro';
+import SectionHeader from '../components/SectionHeader.astro';
 import { getCollection } from 'astro:content';
 import Faq from '../components/Faq.astro';
 import { getBackgroundImageUrl } from '../lib/images';
@@ -113,13 +113,14 @@ const structuredData = [
     <p>Todos nuestros herrajes cuentan con certificación UL y FM, garantizando compatibilidad universal y operación confiable bajo presión. Como distribuidor autorizado Elkhart Brass, proporcionamos productos originales con documentación completa para auditorías y cumplimiento normativo.</p>
   </Fragment>
 
-  <Breadcrumb /><!-- PRODUCTOS DINAMICOS -->
+  <!-- PRODUCTOS DINAMICOS -->
   <section class="categories" id="conexiones">
     <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Tipos de Herraje Accesorio y Conexiones Bronce Incendio</h2>
-        <p class="section-subtitle">Selecciona un tipo de herraje o conexión manguera para conocer especificaciones técnicas y solicitar cotización</p>
-      </div>
+      <SectionHeader
+        titulo="Tipos de Herraje Accesorio y Conexiones Bronce Incendio"
+        subtitulo="Selecciona un tipo de herraje o conexión manguera para conocer especificaciones técnicas y solicitar cotización"
+        idTitulo="conexiones-title"
+      />
       <div class="categories__grid">
         {productos.map((producto) => (
           <article class="category-card">
@@ -152,9 +153,11 @@ const structuredData = [
   <!-- SERVICE DETAILS -->
   <section class="service-details" aria-labelledby="service-details-title">
     <div class="container">
-      <div class="section-header">
-        <h2 id="service-details-title" class="section-title">Detalle de Cada Herraje Accesorio y Conexión Bronce</h2>
-      </div>
+      <SectionHeader
+        titulo="Detalle de Cada Herraje Accesorio y Conexión Bronce"
+        subtitulo="Especificaciones técnicas y aplicaciones de cada tipo de conexión certificada UL/FM"
+        idTitulo="service-details-title"
+      />
 
       <div class="service-detail" id="detalle-adaptadores">
         <div class="service-detail__content">
@@ -282,10 +285,11 @@ const structuredData = [
   <!-- TRUST -->
   <section class="trust" aria-labelledby="trust-title">
     <div class="container">
-      <div class="section-header">
-        <h2 id="trust-title" class="section-title">Por Qué Comprar Herraje Accesorio y Conexiones Bronce Incendio</h2>
-        <p class="section-subtitle">Calidad certificada, inventario disponible y asesoría técnica especializada</p>
-      </div>
+      <SectionHeader
+        titulo="Por Qué Comprar Herraje Accesorio y Conexiones Bronce Incendio"
+        subtitulo="Calidad certificada, inventario disponible y asesoría técnica especializada"
+        idTitulo="trust-title"
+      />
       <div class="trust__grid">
         <div class="trust__item">
           <h3 class="trust__item-title">Certificaciones UL y FM Listed</h3>
@@ -463,10 +467,11 @@ const structuredData = [
   <!-- EQUIPOS COMPLEMENTARIOS - CROSS-LINKING SEO -->
   <section class="complementary" aria-labelledby="complementary-title">
     <div class="container">
-      <div class="section-header">
-        <h2 id="complementary-title" class="section-title">Equipos que Conectan con Nuestros Herrajes</h2>
-        <p class="section-subtitle">Las conexiones integran mangueras, válvulas y monitores en un sistema completo</p>
-      </div>
+      <SectionHeader
+        titulo="Equipos que Conectan con Nuestros Herrajes"
+        subtitulo="Las conexiones integran mangueras, válvulas y monitores en un sistema completo"
+        idTitulo="complementary-title"
+      />
       <div class="complementary__grid">
         <a href="/mangueras-contra-incendios" class="complementary__card">
           <div class="complementary__icon">🔴</div>
@@ -523,10 +528,11 @@ const structuredData = [
   <!-- FAQ -->
   <section class="faq" id="faq" aria-labelledby="faq-title">
     <div class="container">
-      <div class="section-header">
-        <h2 id="faq-title" class="section-title">Preguntas Frecuentes sobre Herraje Accesorio y Conexiones Bronce</h2>
-        <p class="section-subtitle">Resolvemos las dudas más comunes sobre tipos, certificaciones y compatibilidad</p>
-      </div>
+      <SectionHeader
+        titulo="Preguntas Frecuentes sobre Herraje Accesorio y Conexiones Bronce"
+        subtitulo="Resolvemos las dudas más comunes sobre tipos, certificaciones y compatibilidad"
+        idTitulo="faq-title"
+      />
       <Faq items={faqItems} id="faq" />
     </div>
   </section>

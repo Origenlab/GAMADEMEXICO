@@ -2,7 +2,7 @@
 // SectionHeader component - Encabezado de sección con dos columnas
 interface Props {
   titulo: string;
-  subtitulo: string;
+  subtitulo?: string;
   enlaceTexto?: string;
   enlaceUrl?: string;
   parrafo1?: string;
@@ -26,7 +26,7 @@ const tieneContenidoDerecho = parrafo1 || parrafo2;
 <div class={`section-header ${tieneContenidoDerecho ? 'section-header--two-col' : ''}`}>
   <div class="section-header__left">
     <h2 id={idTitulo} class="section-header__title">{titulo}</h2>
-    <p class="section-header__subtitle">{subtitulo}</p>
+    {subtitulo && <p class="section-header__subtitle">{subtitulo}</p>}
     {enlaceTexto && enlaceUrl && (
       <a href={enlaceUrl} class="section-header__link">{enlaceTexto} &rarr;</a>
     )}

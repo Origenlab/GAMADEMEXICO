@@ -12,9 +12,17 @@ import {
 } from '../lib/seo';
 
 const productos = (await getCollection('productos', ({ data }) => data.categoria === 'boquillas')).sort((a, b) => a.data.orden - b.data.orden);
-const cdnImage = (path: string) =>
+const cardImage = (path?: string) =>
+  path
+    ? getBackgroundImageUrl(path, {
+        width: 960,
+        quality: 78,
+        strip: 'all',
+      })
+    : undefined;
+const detailImage = (path: string) =>
   getBackgroundImageUrl(path, {
-    width: 960,
+    width: 1280,
     quality: 80,
     strip: 'all',
   });
@@ -119,74 +127,30 @@ const structuredData = [
         parrafo2="Trabajamos con plantas industriales, bomberos municipales, firmas de ingeniería e instaladores que necesitan equipo con ficha técnica completa — no boquillas genéricas sin respaldo."
       />
       <div class="categories__grid">
-        <article class="category-card">
-          <div class="category-card__image" role="img" aria-label="Boquilla Tipo Pistola" style={`background-image: url('${cdnImage('/img/boquillas-contra-incendios/boquilla-tipo-pistola-contra-incendios-estacion-bomberos-01.avif')}'); background-size: cover; background-position: center;`}></div>
-          <div class="category-card__body">
-            <h3 class="category-card__title">Boquilla Tipo Pistola</h3>
-            <p class="category-card__sub">Chiflón de 3 pasos con selector de flujo ajustable de 15 a 250 GPM</p>
-            <ul class="category-card__products">
-              <li class="category-card__product">Chiflón 3 pasos: chorro, niebla, cortina</li>
-              <li class="category-card__product">Selector de flujo: 15 - 250 GPM</li>
-              <li class="category-card__product">Certificaciones: UL, FM</li>
-              <li class="category-card__product">Multimarca disponible</li>
-            </ul>
-            <div class="category-card__ctas">
-              <a href="/boquillas/tipo-pistola" class="btn btn--primary btn--sm">Ver catálogo</a>
-              <a href="#cotizar" class="btn btn--outline btn--sm">Cotizar</a>
+        {productos.map((producto) => (
+          <article class="category-card">
+            <div
+              class="category-card__image"
+              role="img"
+              aria-label={producto.data.title}
+              style={producto.data.imagen ? `background-image: url('${cardImage(producto.data.imagen)}'); background-size: cover; background-position: center;` : undefined}
+            ></div>
+            <div class="category-card__body">
+              <h3 class="category-card__title">{producto.data.title}</h3>
+              <p class="category-card__sub">{producto.data.description}</p>
+              <ul class="category-card__products">
+                {producto.data.material && <li class="category-card__product">{producto.data.material}</li>}
+                {producto.data.flujo && <li class="category-card__product">{producto.data.flujo}</li>}
+                {producto.data.certificaciones && producto.data.certificaciones.length > 0 && <li class="category-card__product">Certificaciones: {producto.data.certificaciones.join(', ')}</li>}
+                <li class="category-card__product">Marca: {producto.data.marca}</li>
+              </ul>
+              <div class="category-card__ctas">
+                <a href={`/productos/${producto.id}`} class="btn btn--primary btn--sm">Ver especificaciones</a>
+                <a href="#cotizar" class="btn btn--outline btn--sm">Cotizar</a>
+              </div>
             </div>
-          </div>
-        </article>
-        <article class="category-card">
-          <div class="category-card__image" role="img" aria-label="Boquilla Turbo Jet" style={`background-image: url('${cdnImage('/img/boquillas-contra-incendios/boquilla-turbo-jet-frontal.avif')}'); background-size: cover; background-position: center;`}></div>
-          <div class="category-card__body">
-            <h3 class="category-card__title">Boquilla Turbo Jet</h3>
-            <p class="category-card__sub">Ajuste automático de presión con caudal de 60 a 325 GPM</p>
-            <ul class="category-card__products">
-              <li class="category-card__product">Presión constante automática</li>
-              <li class="category-card__product">Caudal: 60 - 325 GPM</li>
-              <li class="category-card__product">Certificaciones: UL, FM</li>
-              <li class="category-card__product">Patrones de agua regulables</li>
-            </ul>
-            <div class="category-card__ctas">
-              <a href="/boquillas/turbo-jet" class="btn btn--primary btn--sm">Ver catálogo</a>
-              <a href="#cotizar" class="btn btn--outline btn--sm">Cotizar</a>
-            </div>
-          </div>
-        </article>
-        <article class="category-card">
-          <div class="category-card__image" role="img" aria-label="Boquilla Industrial" style={`background-image: url('${cdnImage('/img/boquillas-contra-incendios/boquilla-industrial-bronce-marino-npsh-2-pulgadas-frontal.avif')}'); background-size: cover; background-position: center;`}></div>
-          <div class="category-card__body">
-            <h3 class="category-card__title">Boquilla Industrial</h3>
-            <p class="category-card__sub">Bronce fundido para ambientes corrosivos y aplicaciones severas</p>
-            <ul class="category-card__products">
-              <li class="category-card__product">Bronce fundido anti-corrosión</li>
-              <li class="category-card__product">UL 401 Class A/B/C</li>
-              <li class="category-card__product">Resistencia a vapores químicos</li>
-              <li class="category-card__product">Cierre total con neopreno</li>
-            </ul>
-            <div class="category-card__ctas">
-              <a href="/boquillas/industrial" class="btn btn--primary btn--sm">Ver catálogo</a>
-              <a href="#cotizar" class="btn btn--outline btn--sm">Cotizar</a>
-            </div>
-          </div>
-        </article>
-        <article class="category-card">
-          <div class="category-card__image" role="img" aria-label="Boquilla Certificada" style={`background-image: url('${cdnImage('/img/boquillas-contra-incendios/boquilla-pistola-select-o-flow-frontal.avif')}'); background-size: cover; background-position: center;`}></div>
-          <div class="category-card__body">
-            <h3 class="category-card__title">Boquilla Certificada UL/FM</h3>
-            <p class="category-card__sub">Doble certificación para proyectos con requisitos normativos estrictos</p>
-            <ul class="category-card__products">
-              <li class="category-card__product">Certificación UL y FM</li>
-              <li class="category-card__product">Cumple NFPA 1964</li>
-              <li class="category-card__product">Marcado láser permanente</li>
-              <li class="category-card__product">Documentación completa</li>
-            </ul>
-            <div class="category-card__ctas">
-              <a href="/boquillas/certificada" class="btn btn--primary btn--sm">Ver catálogo</a>
-              <a href="#cotizar" class="btn btn--outline btn--sm">Cotizar</a>
-            </div>
-          </div>
-        </article>
+          </article>
+        ))}
       </div>
     </div>
   </section>
@@ -217,7 +181,7 @@ const structuredData = [
             <a href="#cotizar" class="btn btn--outline">Cotizar</a>
           </div>
         </div>
-        <div class="service-detail__image" role="img" aria-label="Boquilla tipo pistola contra incendios profesional" style={`background-image: url('${cdnImage('/img/boquillas-contra-incendios/boquilla-tipo-pistola-contra-incendios-certificada-fm-15.avif')}'); background-size: cover; background-position: center;`}></div>
+        <div class="service-detail__image" role="img" aria-label="Boquilla tipo pistola contra incendios profesional" style={`background-image: url('${detailImage('/img/boquillas-contra-incendios/boquilla-tipo-pistola-contra-incendios-certificada-fm-15.avif')}'); background-size: cover; background-position: center;`}></div>
       </div>
 
       <div class="service-detail" id="detalle-turbo-jet">
@@ -237,7 +201,7 @@ const structuredData = [
             <a href="#cotizar" class="btn btn--outline">Cotizar</a>
           </div>
         </div>
-        <div class="service-detail__image" role="img" aria-label="Boquilla turbo jet Select-O-Matic XD Elkhart Brass" style={`background-image: url('${cdnImage('/img/boquillas-contra-incendios/boquilla-turbo-jet-lateral.avif')}'); background-size: cover; background-position: center;`}></div>
+        <div class="service-detail__image" role="img" aria-label="Boquilla turbo jet Select-O-Matic XD Elkhart Brass" style={`background-image: url('${detailImage('/img/boquillas-contra-incendios/boquilla-turbo-jet-lateral.avif')}'); background-size: cover; background-position: center;`}></div>
       </div>
 
       <div class="service-detail" id="detalle-industrial">
@@ -257,7 +221,7 @@ const structuredData = [
             <a href="#cotizar" class="btn btn--outline">Cotizar</a>
           </div>
         </div>
-        <div class="service-detail__image" role="img" aria-label="Boquilla industrial serie 205-B Elkhart Brass" style={`background-image: url('${cdnImage('/img/boquillas-contra-incendios/boquilla-industrial-bronce-marino-npsh-2-pulgadas-lateral.avif')}'); background-size: cover; background-position: center;`}></div>
+        <div class="service-detail__image" role="img" aria-label="Boquilla industrial serie 205-B Elkhart Brass" style={`background-image: url('${detailImage('/img/boquillas-contra-incendios/boquilla-industrial-bronce-marino-npsh-2-pulgadas-lateral.avif')}'); background-size: cover; background-position: center;`}></div>
       </div>
 
       <div class="service-detail" id="detalle-certificada">
@@ -277,7 +241,7 @@ const structuredData = [
             <a href="#cotizar" class="btn btn--outline">Cotizar</a>
           </div>
         </div>
-        <div class="service-detail__image" role="img" aria-label="Boquilla certificada Chief XD Elkhart Brass" style={`background-image: url('${cdnImage('/img/boquillas-contra-incendios/boquilla-pistola-select-o-flow-lateral.avif')}'); background-size: cover; background-position: center;`}></div>
+        <div class="service-detail__image" role="img" aria-label="Boquilla certificada Chief XD Elkhart Brass" style={`background-image: url('${detailImage('/img/boquillas-contra-incendios/boquilla-pistola-select-o-flow-lateral.avif')}'); background-size: cover; background-position: center;`}></div>
       </div>
 
     </div>

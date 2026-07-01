@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Base.astro';
+import SectionHeader from '../components/SectionHeader.astro';
 import { getCollection } from 'astro:content';
 import Faq from '../components/Faq.astro';
 import { getBackgroundImageUrl } from '../lib/images';
@@ -96,7 +97,17 @@ const structuredData = [
   structuredData={structuredData}
   ogImage="/img/categorias/hero-mangueras-contra-incendios-premium.avif"
   heroTitle="Mangueras Contra Incendios"
-  heroBadge="Equipos Contra Incendios"
+  heroIntro="Mangueras certificadas NFPA 1961 para gabinetes, bomberos e industria. Millhose, Blindex, succión y forestal. 250-300 PSI con documentación técnica completa para Protección Civil."
+  heroBadge="Mangueras Contra Incendios"
+  heroMetrics={[
+    { valor: "NFPA 1961", texto: "Certificación" },
+    { valor: "300", texto: "PSI de trabajo" },
+    { valor: "30 m", texto: "Rollos disponibles" },
+  ]}
+  heroPrimaryText="Ver Catálogo"
+  heroPrimaryLink="#mangueras"
+  heroSecondaryText="Solicitar Cotización"
+  heroSecondaryLink="#cotizar"
   heroShowRightContent={true}
 
   showLeadCapture={true}
@@ -106,22 +117,14 @@ const structuredData = [
     <p>Todas nuestras mangueras soportan presiones de trabajo de 250 a 300 PSI y están disponibles en diámetros de 1.5 y 2.5 pulgadas. Te apoyamos en la selección del tipo correcto según condiciones ambientales, presión del sistema y normativa aplicable a tu proyecto.</p>
   </Fragment>
 
-  <!-- BREADCRUMB -->
-  <nav class="breadcrumb" aria-label="Navegación de migas de pan">
+  <!-- PRODUCTOS DINAMICOS -->
+  <section class="categories" id="mangueras">
     <div class="container">
-      <ol class="breadcrumb__list">
-        <li class="breadcrumb__item"><a href="/" class="breadcrumb__link">Inicio</a></li>
-        <li class="breadcrumb__item"><a href="/equipos" class="breadcrumb__link">Equipos</a></li>
-        <li class="breadcrumb__item breadcrumb__item--active" aria-current="page">Mangueras Contra Incendios</li>
-      </ol>
-    </div>
-  </nav><!-- PRODUCTOS DINAMICOS -->
-  <section class="categories" id="mangueras" aria-labelledby="products-title">
-    <div class="container">
-      <div class="section-header">
-        <h2 id="products-title" class="section-title">Tipos de Mangueras Contra Incendios</h2>
-        <p class="section-subtitle">Selecciona un tipo de manguera para conocer especificaciones técnicas y cotizar precios y disponibilidad</p>
-      </div>
+      <SectionHeader
+        titulo="Tipos de Mangueras Contra Incendios"
+        subtitulo="Selecciona un tipo de manguera para conocer especificaciones técnicas y cotizar precios y disponibilidad"
+        idTitulo="mangueras-title"
+      />
       <div class="categories__grid">
         {productos.map((producto) => (
           <article class="category-card">
@@ -135,10 +138,10 @@ const structuredData = [
               <h3 class="category-card__title">{producto.data.title}</h3>
               <p class="category-card__sub">{producto.data.description}</p>
               <ul class="category-card__products">
-                {producto.data.material && <li>{producto.data.material}</li>}
-                {producto.data.flujo && <li>{producto.data.flujo}</li>}
-                {producto.data.certificaciones && producto.data.certificaciones.length > 0 && <li>Certificaciones: {producto.data.certificaciones.join(', ')}</li>}
-                <li>Marca: {producto.data.marca}</li>
+                {producto.data.material && <li class="category-card__product">{producto.data.material}</li>}
+                {producto.data.flujo && <li class="category-card__product">{producto.data.flujo}</li>}
+                {producto.data.certificaciones && producto.data.certificaciones.length > 0 && <li class="category-card__product">Certificaciones: {producto.data.certificaciones.join(', ')}</li>}
+                <li class="category-card__product">Marca: {producto.data.marca}</li>
               </ul>
               <div class="category-card__ctas">
                 <a href={`/productos/${producto.id}`} class="btn btn--primary btn--sm">Ver especificaciones</a>
@@ -154,9 +157,11 @@ const structuredData = [
   <!-- PRODUCT DETAILS -->
   <section class="service-details" aria-labelledby="service-details-title">
     <div class="container">
-      <div class="section-header">
-        <h2 id="service-details-title" class="section-title">Detalle de Cada Tipo de Manguera Contra Incendios</h2>
-      </div>
+      <SectionHeader
+        titulo="Detalle de Cada Tipo de Manguera Contra Incendios"
+        subtitulo="Conoce las características técnicas y aplicaciones de cada modelo"
+        idTitulo="service-details-title"
+      />
 
       <div class="service-detail" id="detalle-millhose">
         <div class="service-detail__content">
@@ -244,10 +249,11 @@ const structuredData = [
   <!-- TRUST -->
   <section class="trust" aria-labelledby="trust-title">
     <div class="container">
-      <div class="section-header">
-        <h2 id="trust-title" class="section-title">Por Qué Comprar Mangueras Contra Incendios en Gama de México</h2>
-        <p class="section-subtitle">Calidad certificada, inventario disponible y asesoría técnica especializada</p>
-      </div>
+      <SectionHeader
+        titulo="Por Qué Comprar Mangueras Contra Incendios en Gama de México"
+        subtitulo="Calidad certificada, inventario disponible y asesoría técnica especializada"
+        idTitulo="trust-title"
+      />
       <div class="trust__grid">
         <div class="trust__item">
           <h3 class="trust__item-title">Certificación NFPA 1961</h3>
@@ -424,10 +430,11 @@ const structuredData = [
   <!-- EQUIPOS COMPLEMENTARIOS - CROSS-LINKING SEO -->
   <section class="complementary" aria-labelledby="complementary-title">
     <div class="container">
-      <div class="section-header">
-        <h2 id="complementary-title" class="section-title">Equipos Complementarios para tus Mangueras</h2>
-        <p class="section-subtitle">Completa tu sistema con boquillas, conexiones y gabinetes certificados</p>
-      </div>
+      <SectionHeader
+        titulo="Equipos Complementarios para tus Mangueras"
+        subtitulo="Completa tu sistema con boquillas, conexiones y gabinetes certificados"
+        idTitulo="complementary-title"
+      />
       <div class="complementary__grid">
         <a href="/boquillas-contra-incendios" class="complementary__card">
           <div class="complementary__icon">💧</div>
@@ -484,10 +491,11 @@ const structuredData = [
   <!-- FAQ -->
   <section class="faq" id="faq" aria-labelledby="faq-title">
     <div class="container">
-      <div class="section-header">
-        <h2 id="faq-title" class="section-title">Preguntas Frecuentes sobre Manguera Contra Incendio Gabinete Bombero Industrial</h2>
-        <p class="section-subtitle">Resolvemos las dudas más comunes sobre mangueras 250 PSI, conexiones, accesorios e hidrante</p>
-      </div>
+      <SectionHeader
+        titulo="Preguntas Frecuentes sobre Manguera Contra Incendio Gabinete Bombero Industrial"
+        subtitulo="Resolvemos las dudas más comunes sobre mangueras 250 PSI, conexiones, accesorios e hidrante"
+        idTitulo="faq-title"
+      />
       <Faq items={faqItems} id="faq" />
     </div>
   </section>
