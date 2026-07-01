@@ -1,5 +1,7 @@
 ---
 import { getOptimizedImageUrl } from '../lib/images';
+import { NAV_ITEMS, isDropdown } from '../data/navigation';
+import type { NavItemDropdown, NavLink } from '../data/navigation';
 
 interface Props {
   activePage?: string;
@@ -11,6 +13,24 @@ const logoUrl = getOptimizedImageUrl('/img/gama-de-mexico.avif', {
   quality: 82,
   strip: 'all',
 });
+
+// Modificadores CSS del mega-menu por ruta (servicios → 'services', blog → 'blog')
+const MEGA_MENU_MODIFIER: Record<string, string> = {
+  '/servicios': 'services',
+  '/blog': 'blog',
+};
+
+/**
+ * Para el mobile nav: busca un enlace "ver todos" que apunte a la raíz del item.
+ * Si ninguna subcategoría lo tiene, usa el primaryLink del CTA.
+ * Equipos → undefined (cada subcategoría va a su propia página, no a /equipos).
+ */
+function getMobileViewAll(item: NavItemDropdown): NavLink | undefined {
+  for (const sub of item.subcategories) {
+    if (sub.viewAll?.href === item.href) return sub.viewAll;
+  }
+  return item.cta?.primaryLink;
+}
 ---
 
 <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
@@ -35,150 +55,58 @@ const logoUrl = getOptimizedImageUrl('/img/gama-de-mexico.avif', {
 
     <nav class="nav-desktop" role="navigation" aria-label="Navegación principal">
       <ul class="nav-desktop__list">
-        <li class="nav-desktop__item">
-          <a href="/equipos" class={`nav-desktop__link ${activePage === 'equipos' ? 'nav-desktop__link--active' : ''}`} aria-haspopup="true" aria-expanded="false">
-            Equipos y Accesorios <span class="nav-desktop__arrow" aria-hidden="true">&#9660;</span>
-          </a>
-
-          <div class="mega-menu" role="menu" aria-label="Catálogo de equipos">
-            <div class="mega-menu__category">
-              <h3 class="mega-menu__title">Monitores</h3>
-              <ul class="mega-menu__list">
-                <li><a href="/monitores/tipo-corazon" class="mega-menu__link" role="menuitem">Monitor tipo corazón</a></li>
-                <li><a href="/monitores/cuello-cisne" class="mega-menu__link" role="menuitem">Monitor tipo cuello de cisne</a></li>
-                <li><a href="/monitores/certificado-fm" class="mega-menu__link" role="menuitem">Monitor certificado FM</a></li>
-                <li><a href="/monitores/ul-listed" class="mega-menu__link" role="menuitem">Monitor UL Listed</a></li>
-              </ul>
-              <a href="/monitores-contra-incendios" class="mega-menu__view-all">Ver todos &rarr;</a>
-            </div>
-
-            <div class="mega-menu__category">
-              <h3 class="mega-menu__title">Boquillas</h3>
-              <ul class="mega-menu__list">
-                <li><a href="/boquillas/tipo-pistola" class="mega-menu__link" role="menuitem">Boquilla tipo pistola</a></li>
-                <li><a href="/boquillas/turbo-jet" class="mega-menu__link" role="menuitem">Boquilla turbo jet</a></li>
-                <li><a href="/boquillas/industrial" class="mega-menu__link" role="menuitem">Boquilla industrial</a></li>
-                <li><a href="/boquillas/certificada" class="mega-menu__link" role="menuitem">Boquilla certificada</a></li>
-              </ul>
-              <a href="/boquillas-contra-incendios" class="mega-menu__view-all">Ver todos &rarr;</a>
-            </div>
-
-            <div class="mega-menu__category">
-              <h3 class="mega-menu__title">Mangueras</h3>
-              <ul class="mega-menu__list">
-                <li><a href="/mangueras/millhose" class="mega-menu__link" role="menuitem">Manguera Millhose</a></li>
-                <li><a href="/mangueras/blindex" class="mega-menu__link" role="menuitem">Manguera Blindex</a></li>
-                <li><a href="/mangueras/succion" class="mega-menu__link" role="menuitem">Manguera de succión</a></li>
-                <li><a href="/mangueras/forestal" class="mega-menu__link" role="menuitem">Manguera forestal</a></li>
-              </ul>
-              <a href="/mangueras-contra-incendios" class="mega-menu__view-all">Ver todos &rarr;</a>
-            </div>
-
-            <div class="mega-menu__category">
-              <h3 class="mega-menu__title">Válvulas</h3>
-              <ul class="mega-menu__list">
-                <li><a href="/valvulas/compuerta" class="mega-menu__link" role="menuitem">Válvula de compuerta OS&Y</a></li>
-                <li><a href="/valvulas/globo" class="mega-menu__link" role="menuitem">Válvula de globo</a></li>
-                <li><a href="/valvulas/retencion" class="mega-menu__link" role="menuitem">Válvula de retención</a></li>
-                <li><a href="/valvulas/mariposa" class="mega-menu__link" role="menuitem">Válvula mariposa</a></li>
-              </ul>
-              <a href="/valvulas-contra-incendios" class="mega-menu__view-all">Ver todos &rarr;</a>
-            </div>
-
-            <div class="mega-menu__category">
-              <h3 class="mega-menu__title">Conexiones y Herrajes</h3>
-              <ul class="mega-menu__list">
-                <li><a href="/conexiones/adaptadores" class="mega-menu__link" role="menuitem">Adaptadores de bronce</a></li>
-                <li><a href="/conexiones/wye" class="mega-menu__link" role="menuitem">Conexión Y (Wye)</a></li>
-                <li><a href="/conexiones/siamesa" class="mega-menu__link" role="menuitem">Toma siamesa FDC</a></li>
-                <li><a href="/conexiones/coples" class="mega-menu__link" role="menuitem">Coples y reducciones</a></li>
-                <li><a href="/conexiones/chiflones" class="mega-menu__link" role="menuitem">Chiflones de tres pasos</a></li>
-                <li><a href="/conexiones/accesorios" class="mega-menu__link" role="menuitem">Accesorios y herrajes</a></li>
-              </ul>
-              <a href="/conexiones-herrajes-contra-incendios" class="mega-menu__view-all">Ver todos &rarr;</a>
-            </div>
-
-            <div class="mega-menu__category">
-              <h3 class="mega-menu__title">Gabinetes e Hidrantes</h3>
-              <ul class="mega-menu__list">
-                <li><a href="/gabinetes/tipo-30me" class="mega-menu__link" role="menuitem">Gabinete tipo 30ME</a></li>
-                <li><a href="/gabinetes/hidrantes" class="mega-menu__link" role="menuitem">Hidrantes</a></li>
-                <li><a href="/gabinetes/empotrado" class="mega-menu__link" role="menuitem">Gabinete empotrado</a></li>
-                <li><a href="/gabinetes/estaciones" class="mega-menu__link" role="menuitem">Estaciones de manguera</a></li>
-              </ul>
-              <a href="/gabinetes-hidrantes-contra-incendios" class="mega-menu__view-all">Ver todos &rarr;</a>
-            </div>
-          </div>
-        </li>
-        <li class="nav-desktop__item">
-          <a href="/servicios" class={`nav-desktop__link ${activePage === 'servicios' ? 'nav-desktop__link--active' : ''}`} aria-haspopup="true" aria-expanded="false">
-            Servicios <span class="nav-desktop__arrow" aria-hidden="true">&#9660;</span>
-          </a>
-
-          <div class="mega-menu mega-menu--services" role="menu" aria-label="Servicios especializados">
-            <div class="mega-menu__category">
-              <h3 class="mega-menu__title">Asesoría y Soporte</h3>
-              <ul class="mega-menu__list">
-                <li><a href="/servicios/garantia" class="mega-menu__link" role="menuitem">Garantía y Respaldo Técnico</a></li>
-                <li><a href="/servicios/asesoria" class="mega-menu__link" role="menuitem">Asesoría Técnica Especializada</a></li>
-                <li><a href="/servicios/empresas" class="mega-menu__link" role="menuitem">Atención a Empresas y Proyectos</a></li>
-              </ul>
-            </div>
-
-            <div class="mega-menu__category">
-              <h3 class="mega-menu__title">Suministro y Logística</h3>
-              <ul class="mega-menu__list">
-                <li><a href="/servicios/mantenimiento" class="mega-menu__link" role="menuitem">Suministro para Mantenimiento</a></li>
-                <li><a href="/servicios/envios" class="mega-menu__link" role="menuitem">Logística y Envíos Nacionales</a></li>
-                <li><a href="/servicios/cotizaciones" class="mega-menu__link" role="menuitem">Cotizaciones Corporativas</a></li>
-              </ul>
-            </div>
-
-            <div class="mega-menu__category mega-menu__category--cta">
-              <h3 class="mega-menu__title">¿Necesitas ayuda?</h3>
-              <p class="mega-menu__desc">Nuestro equipo de asesores técnicos está listo para ayudarte a seleccionar los equipos correctos para tu proyecto.</p>
-              <a href="/servicios" class="btn btn--primary btn--sm">Ver todos los servicios</a>
-              <a href="https://wa.me/5215565298240" class="mega-menu__whatsapp" target="_blank" rel="noopener nofollow external">WhatsApp: 55 6529 8240</a>
-            </div>
-          </div>
-        </li>
-        <li class="nav-desktop__item">
-          <a href="/blog" class={`nav-desktop__link ${activePage === 'blog' ? 'nav-desktop__link--active' : ''}`} aria-haspopup="true" aria-expanded="false">
-            Blog <span class="nav-desktop__arrow" aria-hidden="true">&#9660;</span>
-          </a>
-
-          <div class="mega-menu mega-menu--blog" role="menu" aria-label="Blog técnico">
-            <div class="mega-menu__category">
-              <h3 class="mega-menu__title">Por Producto</h3>
-              <ul class="mega-menu__list">
-                <li><a href="/blog/monitores-contra-incendios" class="mega-menu__link" role="menuitem">Monitores</a></li>
-                <li><a href="/blog/boquillas-contra-incendios" class="mega-menu__link" role="menuitem">Boquillas</a></li>
-                <li><a href="/blog/mangueras-contra-incendios" class="mega-menu__link" role="menuitem">Mangueras</a></li>
-                <li><a href="/blog/valvulas-contra-incendios" class="mega-menu__link" role="menuitem">Válvulas</a></li>
-              </ul>
-              <a href="/blog" class="mega-menu__view-all">Ver todos los artículos &rarr;</a>
-            </div>
-
-            <div class="mega-menu__category">
-              <h3 class="mega-menu__title">Más Categorías</h3>
-              <ul class="mega-menu__list">
-                <li><a href="/blog/gabinetes-hidrantes-contra-incendios" class="mega-menu__link" role="menuitem">Gabinetes e Hidrantes</a></li>
-              </ul>
-            </div>
-
-            <div class="mega-menu__category mega-menu__category--cta">
-              <h3 class="mega-menu__title">Recursos Técnicos</h3>
-              <p class="mega-menu__desc">Artículos escritos por ingenieros especializados en protección contra incendios con más de 30 años de experiencia.</p>
-              <a href="/blog" class="btn btn--primary btn--sm">Explorar Blog</a>
-            </div>
-          </div>
-        </li>
-        <li class="nav-desktop__item">
-          <a href="/nosotros" class="nav-desktop__link">Nosotros</a>
-        </li>
-        <li class="nav-desktop__item">
-          <a href="/contacto" class="nav-desktop__link">Contacto</a>
-        </li>
+        {NAV_ITEMS.map((item) => {
+          const slug = item.href.slice(1);
+          if (isDropdown(item)) {
+            const modifier = MEGA_MENU_MODIFIER[item.href];
+            const megaClass = `mega-menu${modifier ? ` mega-menu--${modifier}` : ''}`;
+            return (
+              <li class="nav-desktop__item">
+                <a
+                  href={item.href}
+                  class={`nav-desktop__link${activePage === slug ? ' nav-desktop__link--active' : ''}`}
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  {item.label} <span class="nav-desktop__arrow" aria-hidden="true">&#9660;</span>
+                </a>
+                <div class={megaClass} role="menu" aria-label={item.label}>
+                  {item.subcategories.map((sub) => (
+                    <div class="mega-menu__category">
+                      <h3 class="mega-menu__title">{sub.title}</h3>
+                      <ul class="mega-menu__list">
+                        {sub.links.map((link) => (
+                          <li><a href={link.href} class="mega-menu__link" role="menuitem">{link.label}</a></li>
+                        ))}
+                      </ul>
+                      {sub.viewAll && (
+                        <a href={sub.viewAll.href} class="mega-menu__view-all">{sub.viewAll.label} &rarr;</a>
+                      )}
+                    </div>
+                  ))}
+                  {item.cta && (
+                    <div class="mega-menu__category mega-menu__category--cta">
+                      <h3 class="mega-menu__title">{item.cta.title}</h3>
+                      <p class="mega-menu__desc">{item.cta.description}</p>
+                      <a href={item.cta.primaryLink.href} class="btn btn--primary btn--sm">{item.cta.primaryLink.label}</a>
+                      {item.cta.secondaryHref && (
+                        <a href={item.cta.secondaryHref} class="mega-menu__whatsapp" target="_blank" rel="noopener nofollow external">
+                          {item.cta.secondaryLabel}
+                        </a>
+                      )}
+                    </div>
+                  )}
+                </div>
+              </li>
+            );
+          } else {
+            return (
+              <li class="nav-desktop__item">
+                <a href={item.href} class="nav-desktop__link">{item.label}</a>
+              </li>
+            );
+          }
+        })}
       </ul>
     </nav>
 
@@ -196,99 +124,50 @@ const logoUrl = getOptimizedImageUrl('/img/gama-de-mexico.avif', {
 
 <nav class="mobile-nav" id="mobile-nav" role="navigation" aria-label="Navegación móvil" aria-hidden="true" inert>
   <ul>
-    <li class="mobile-nav__item">
-      <button class="mobile-nav__link" aria-expanded="false" aria-controls="mobile-submenu-equipos" id="mobile-toggle-equipos">
-        Equipos y Accesorios <span class="mobile-nav__arrow" aria-hidden="true">&#9660;</span>
-      </button>
-      <div class="mobile-nav__submenu" id="mobile-submenu-equipos" role="region" aria-labelledby="mobile-toggle-equipos">
-        <div class="mobile-nav__subcategory">
-          <div class="mobile-nav__subtitle">Monitores</div>
-          <a href="/monitores/tipo-corazon" class="mobile-nav__sublink">Monitor tipo corazón</a>
-          <a href="/monitores/cuello-cisne" class="mobile-nav__sublink">Monitor tipo cuello de cisne</a>
-          <a href="/monitores/certificado-fm" class="mobile-nav__sublink">Monitor certificado FM</a>
-          <a href="/monitores/ul-listed" class="mobile-nav__sublink">Monitor UL Listed</a>
-        </div>
-        <div class="mobile-nav__subcategory">
-          <div class="mobile-nav__subtitle">Boquillas</div>
-          <a href="/boquillas/tipo-pistola" class="mobile-nav__sublink">Boquilla tipo pistola</a>
-          <a href="/boquillas/turbo-jet" class="mobile-nav__sublink">Boquilla turbo jet</a>
-          <a href="/boquillas/industrial" class="mobile-nav__sublink">Boquilla industrial</a>
-          <a href="/boquillas/certificada" class="mobile-nav__sublink">Boquilla certificada</a>
-        </div>
-        <div class="mobile-nav__subcategory">
-          <div class="mobile-nav__subtitle">Mangueras</div>
-          <a href="/mangueras/millhose" class="mobile-nav__sublink">Manguera Millhose</a>
-          <a href="/mangueras/blindex" class="mobile-nav__sublink">Manguera Blindex</a>
-          <a href="/mangueras/succion" class="mobile-nav__sublink">Manguera de succión</a>
-          <a href="/mangueras/forestal" class="mobile-nav__sublink">Manguera forestal</a>
-        </div>
-        <div class="mobile-nav__subcategory">
-          <div class="mobile-nav__subtitle">Válvulas</div>
-          <a href="/valvulas/compuerta" class="mobile-nav__sublink">Válvula de compuerta OS&Y</a>
-          <a href="/valvulas/globo" class="mobile-nav__sublink">Válvula de globo</a>
-          <a href="/valvulas/retencion" class="mobile-nav__sublink">Válvula de retención</a>
-          <a href="/valvulas/mariposa" class="mobile-nav__sublink">Válvula mariposa</a>
-        </div>
-        <div class="mobile-nav__subcategory">
-          <div class="mobile-nav__subtitle">Conexiones y Herrajes</div>
-          <a href="/conexiones/adaptadores" class="mobile-nav__sublink">Adaptadores de bronce</a>
-          <a href="/conexiones/wye" class="mobile-nav__sublink">Conexión Y (Wye)</a>
-          <a href="/conexiones/siamesa" class="mobile-nav__sublink">Toma siamesa FDC</a>
-          <a href="/conexiones/coples" class="mobile-nav__sublink">Coples y reducciones</a>
-          <a href="/conexiones/chiflones" class="mobile-nav__sublink">Chiflones de tres pasos</a>
-          <a href="/conexiones/accesorios" class="mobile-nav__sublink">Accesorios y herrajes</a>
-        </div>
-        <div class="mobile-nav__subcategory">
-          <div class="mobile-nav__subtitle">Gabinetes e Hidrantes</div>
-          <a href="/gabinetes/tipo-30me" class="mobile-nav__sublink">Gabinete tipo 30ME</a>
-          <a href="/gabinetes/hidrantes" class="mobile-nav__sublink">Hidrantes</a>
-          <a href="/gabinetes/empotrado" class="mobile-nav__sublink">Gabinete empotrado</a>
-          <a href="/gabinetes/estaciones" class="mobile-nav__sublink">Estaciones de manguera</a>
-        </div>
-      </div>
-    </li>
-    <li class="mobile-nav__item">
-      <button class="mobile-nav__link" aria-expanded="false" aria-controls="mobile-submenu-servicios" id="mobile-toggle-servicios">
-        Servicios <span class="mobile-nav__arrow" aria-hidden="true">&#9660;</span>
-      </button>
-      <div class="mobile-nav__submenu" id="mobile-submenu-servicios" role="region" aria-labelledby="mobile-toggle-servicios">
-        <div class="mobile-nav__subcategory">
-          <div class="mobile-nav__subtitle">Asesoría y Soporte</div>
-          <a href="/servicios/garantia" class="mobile-nav__sublink">Garantía y Respaldo Técnico</a>
-          <a href="/servicios/asesoria" class="mobile-nav__sublink">Asesoría Técnica Especializada</a>
-          <a href="/servicios/empresas" class="mobile-nav__sublink">Atención a Empresas y Proyectos</a>
-        </div>
-        <div class="mobile-nav__subcategory">
-          <div class="mobile-nav__subtitle">Suministro y Logística</div>
-          <a href="/servicios/mantenimiento" class="mobile-nav__sublink">Suministro para Mantenimiento</a>
-          <a href="/servicios/envios" class="mobile-nav__sublink">Logística y Envíos Nacionales</a>
-          <a href="/servicios/cotizaciones" class="mobile-nav__sublink">Cotizaciones Corporativas</a>
-        </div>
-        <a href="/servicios" class="mobile-nav__sublink mobile-nav__sublink--all">Ver todos los servicios &rarr;</a>
-      </div>
-    </li>
-    <li class="mobile-nav__item">
-      <button class="mobile-nav__link" aria-expanded="false" aria-controls="mobile-submenu-blog" id="mobile-toggle-blog">
-        Blog <span class="mobile-nav__arrow" aria-hidden="true">&#9660;</span>
-      </button>
-      <div class="mobile-nav__submenu" id="mobile-submenu-blog" role="region" aria-labelledby="mobile-toggle-blog">
-        <div class="mobile-nav__subcategory">
-          <div class="mobile-nav__subtitle">Por Producto</div>
-          <a href="/blog/monitores-contra-incendios" class="mobile-nav__sublink">Monitores</a>
-          <a href="/blog/boquillas-contra-incendios" class="mobile-nav__sublink">Boquillas</a>
-          <a href="/blog/mangueras-contra-incendios" class="mobile-nav__sublink">Mangueras</a>
-          <a href="/blog/valvulas-contra-incendios" class="mobile-nav__sublink">Válvulas</a>
-          <a href="/blog/gabinetes-hidrantes-contra-incendios" class="mobile-nav__sublink">Gabinetes e Hidrantes</a>
-        </div>
-        <a href="/blog" class="mobile-nav__sublink mobile-nav__sublink--all">Ver todos los artículos &rarr;</a>
-      </div>
-    </li>
-    <li class="mobile-nav__item">
-      <a href="/nosotros" class="mobile-nav__link">Nosotros</a>
-    </li>
-    <li class="mobile-nav__item">
-      <a href="/contacto" class="mobile-nav__link">Contacto</a>
-    </li>
+    {NAV_ITEMS.map((item) => {
+      const slug = item.href.slice(1);
+      if (isDropdown(item)) {
+        const mobileViewAll = getMobileViewAll(item);
+        return (
+          <li class="mobile-nav__item">
+            <button
+              class="mobile-nav__link"
+              aria-expanded="false"
+              aria-controls={`mobile-submenu-${slug}`}
+              id={`mobile-toggle-${slug}`}
+            >
+              {item.label} <span class="mobile-nav__arrow" aria-hidden="true">&#9660;</span>
+            </button>
+            <div
+              class="mobile-nav__submenu"
+              id={`mobile-submenu-${slug}`}
+              role="region"
+              aria-labelledby={`mobile-toggle-${slug}`}
+            >
+              {item.subcategories.map((sub) => (
+                <div class="mobile-nav__subcategory">
+                  <div class="mobile-nav__subtitle">{sub.title}</div>
+                  {sub.links.map((link) => (
+                    <a href={link.href} class="mobile-nav__sublink">{link.label}</a>
+                  ))}
+                </div>
+              ))}
+              {mobileViewAll && (
+                <a href={mobileViewAll.href} class="mobile-nav__sublink mobile-nav__sublink--all">
+                  {mobileViewAll.label} &rarr;
+                </a>
+              )}
+            </div>
+          </li>
+        );
+      } else {
+        return (
+          <li class="mobile-nav__item">
+            <a href={item.href} class="mobile-nav__link">{item.label}</a>
+          </li>
+        );
+      }
+    })}
   </ul>
   <div class="mobile-nav__cta">
     <a href="https://wa.me/5215565298240" class="btn btn--primary" target="_blank" rel="noopener nofollow external" aria-label="Cotizar por WhatsApp">Cotizar por WhatsApp</a>
@@ -451,16 +330,16 @@ const logoUrl = getOptimizedImageUrl('/img/gama-de-mexico.avif', {
     color: var(--color-primary-dark);
   }
 
-  /* Mega Menu - Services variant */
+  /* Mega Menu - Services variant (2 subcats + CTA = 3 cols) */
   .mega-menu--services {
     grid-template-columns: 1fr 1fr 1.2fr;
     min-width: 680px;
   }
 
-  /* Mega Menu - Blog variant */
+  /* Mega Menu - Blog variant (1 subcat + CTA = 2 cols) */
   .mega-menu--blog {
-    grid-template-columns: 1fr 1fr 1.2fr;
-    min-width: 620px;
+    grid-template-columns: 1fr 1.2fr;
+    min-width: 480px;
   }
 
   .mega-menu__category--cta {

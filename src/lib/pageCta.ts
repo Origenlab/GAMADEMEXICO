@@ -63,7 +63,7 @@ function getSectionDefaults(pathname: string): Omit<PageCtaContent, 'titulo'> {
     return {
       subtitulo:
         'Definimos caudal, alcance y certificación para protección perimetral en plantas, terminales y zonas de proceso.',
-      textoBoton: 'Solicitar Cotización',
+      textoBoton: 'Cotizar Monitor',
       enlace: '#cotizar',
     };
   }
@@ -72,7 +72,7 @@ function getSectionDefaults(pathname: string): Omit<PageCtaContent, 'titulo'> {
     return {
       subtitulo:
         'Te ayudamos a seleccionar patrón, presión y caudal para asegurar desempeño operativo en condiciones reales.',
-      textoBoton: 'Solicitar Cotización',
+      textoBoton: 'Cotizar Boquilla',
       enlace: '#cotizar',
     };
   }
@@ -81,7 +81,7 @@ function getSectionDefaults(pathname: string): Omit<PageCtaContent, 'titulo'> {
     return {
       subtitulo:
         'Seleccionamos diámetro, presión y tipo de manguera para compatibilidad total con tu red contra incendio.',
-      textoBoton: 'Solicitar Cotización',
+      textoBoton: 'Cotizar Manguera',
       enlace: '#cotizar',
     };
   }
@@ -90,7 +90,7 @@ function getSectionDefaults(pathname: string): Omit<PageCtaContent, 'titulo'> {
     return {
       subtitulo:
         'Configura correctamente seccionamiento, control y retención de flujo para operación segura y cumplimiento técnico.',
-      textoBoton: 'Solicitar Cotización',
+      textoBoton: 'Cotizar Válvula',
       enlace: '#cotizar',
     };
   }
@@ -99,7 +99,7 @@ function getSectionDefaults(pathname: string): Omit<PageCtaContent, 'titulo'> {
     return {
       subtitulo:
         'Asegura compatibilidad de roscas, diámetros y conexiones para mantener continuidad y seguridad en la red.',
-      textoBoton: 'Solicitar Cotización',
+      textoBoton: 'Consultar Compatibilidad',
       enlace: '#cotizar',
     };
   }
@@ -108,7 +108,7 @@ function getSectionDefaults(pathname: string): Omit<PageCtaContent, 'titulo'> {
     return {
       subtitulo:
         'Integra gabinetes, hidrantes y estaciones con configuraciones listas para operación en sitio y cumplimiento normativo.',
-      textoBoton: 'Solicitar Cotización',
+      textoBoton: 'Cotizar Gabinete',
       enlace: '#cotizar',
     };
   }
@@ -136,4 +136,26 @@ export function getPageCtaContent(pathname: string, pageTitle: string): PageCtaC
     textoBoton: defaults.textoBoton,
     enlace: defaults.enlace,
   };
+}
+
+// =============================================================================
+// Variaciones de CTA para WhatsApp — evita repetir el mismo texto en todas partes
+// Úsalas en componentes de producto, blog y categoría de forma rotativa.
+// =============================================================================
+
+export const WHATSAPP_CTA_VARIANTS = [
+  'Solicitar cotización técnica',
+  'Hablar con un asesor',
+  'Consultar disponibilidad',
+  'Enviar requerimiento técnico',
+  'Cotizar equipos contra incendios',
+] as const;
+
+/**
+ * Devuelve una variante de CTA basada en el pathname para evitar repetición.
+ * Determinista: la misma ruta siempre devuelve la misma variante.
+ */
+export function getWhatsAppCtaVariant(pathname: string): string {
+  const hash = pathname.split('').reduce((acc, c) => acc + c.charCodeAt(0), 0);
+  return WHATSAPP_CTA_VARIANTS[hash % WHATSAPP_CTA_VARIANTS.length];
 }

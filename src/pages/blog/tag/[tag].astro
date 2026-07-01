@@ -120,6 +120,10 @@ const breadcrumbSchema = buildBreadcrumbSchema([
   { name: 'Blog', url: '/blog' },
   { name: `Etiqueta: ${tag}`, url: `/blog/tag/${slugifyTag(tag)}` },
 ]);
+
+// Tags con < 3 artículos = thin content: no indexar
+// Solo indexar si hay 3+ artículos con contenido real
+const shouldIndex = posts.length >= 3;
 ---
 
 <Layout
@@ -132,7 +136,8 @@ const breadcrumbSchema = buildBreadcrumbSchema([
   heroPrimaryLink="#cotizar"
   heroSecondaryText="Ver Todos"
   heroSecondaryLink="/blog"
-  structuredData={[breadcrumbSchema]}
+  structuredData={shouldIndex ? [breadcrumbSchema] : []}
+  noindex={!shouldIndex}
 >
   <BlogGrid
     posts={posts}

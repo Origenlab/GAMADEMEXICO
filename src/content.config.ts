@@ -11,6 +11,9 @@ const productos = defineCollection({
     description: z.string()
       .min(80, 'Descripción muy corta para meta description')
       .max(165, 'Descripción muy larga: Google la trunca'),
+    // H1 separado del title — permite títulos H1 más largos que el meta title
+    // Si se omite, se usa el title (backward compatible)
+    h1: z.string().optional(),
     categoria: z.enum([
       'monitores',
       'boquillas',
@@ -28,8 +31,14 @@ const productos = defineCollection({
     material: z.string().optional(),
     marca: z.string().default('Elkhart Brass'),
     modelo: z.string().optional(),
+    sku: z.string().optional(),
     precioReferencia: z.string().optional(),
+    aplicaciones: z.array(z.string()).default([]),
+    productosRelacionados: z.array(z.string()).default([]),
+    articulosRelacionados: z.array(z.string()).default([]),
     destacado: z.boolean().default(false),
+    // Control editorial: false = noindex (para productos incompletos o sin stock)
+    indexable: z.boolean().default(true),
     orden: z.number().default(0),
   }),
 });
@@ -82,13 +91,26 @@ const blog = defineCollection({
     imagenAlt: z.string().min(10, 'Alt descriptivo de mínimo 10 caracteres'),
     imagenOg: z.string().optional(), // 1200x630 para redes sociales
 
+    // --- H1 separado del title (backward compatible — usa title si se omite) ---
+    h1: z.string().optional(),
+
     // --- Características del artículo ---
     destacado: z.boolean().default(false),
     draft: z.boolean().default(false),
 
+    // --- Tipo editorial (define intención de búsqueda del artículo) ---
+    tipo: z.enum([
+      'informativo',
+      'tecnico',
+      'normativo',
+      'comercial',
+      'guia',
+      'comparativa',
+    ]).optional(),
+
     // --- Contenido relacionado ---
-    productosRelacionados: z.array(z.string()).optional(), // slugs de productos
-    articulosRelacionados: z.array(z.string()).optional(), // slugs de artículos
+    productosRelacionados: z.array(z.string()).default([]), // slugs de productos
+    articulosRelacionados: z.array(z.string()).default([]), // slugs de artículos
 
     // --- SEO Avanzado ---
     canonical: z.string().url().optional(),
