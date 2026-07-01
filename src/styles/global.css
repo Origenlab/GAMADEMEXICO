@@ -9,14 +9,9 @@
   --color-border: #DDDDDD;
   --color-star: #E8A317;
   --footer-text-90: rgba(255, 255, 255, 0.9);
-  --footer-text-85: rgba(255, 255, 255, 0.85);
-  --footer-text-80: rgba(255, 255, 255, 0.8);
   --footer-text-70: rgba(255, 255, 255, 0.7);
-  --footer-text-60: rgba(255, 255, 255, 0.6);
-  --footer-text-40: rgba(255, 255, 255, 0.4);
-  --footer-text-35: rgba(255, 255, 255, 0.35);
+  --footer-text-50: rgba(255, 255, 255, 0.5);
   --footer-text-30: rgba(255, 255, 255, 0.3);
-  --footer-text-15: rgba(255, 255, 255, 0.15);
   --footer-border: rgba(255, 255, 255, 0.08);
   --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-size-base: 16px;
@@ -304,7 +299,7 @@ select {
   font-size: var(--font-size-base);
   font-weight: 600;
   border-radius: var(--border-radius);
-  transition: all var(--transition-base);
+  transition: background-color var(--transition-base), border-color var(--transition-base), transform var(--transition-fast), box-shadow var(--transition-base);
   text-align: center;
   line-height: 1;
   gap: 0.5rem;
@@ -314,13 +309,6 @@ select {
   background-color: var(--color-primary);
   color: var(--color-white);
   border: 2px solid var(--color-primary);
-}
-
-.btn {
-  transition: background-color var(--transition-base), border-color var(--transition-base), transform var(--transition-fast), box-shadow var(--transition-base);
-}
-
-.btn--primary {
   box-shadow: 0 2px 8px rgba(196, 30, 58, 0.22);
 }
 
@@ -1145,6 +1133,21 @@ select {
   .trust__testimonials {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .related-services__grid,
+  .product-gallery__grid,
+  .tech-info__grid,
+  .featured-grid,
+  .location-grid,
+  .giro-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .empresas-grid,
+  .cities-grid,
+  .values-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media print {
@@ -1377,26 +1380,7 @@ figure {
    (este archivo se carga en todo el sitio vía Base.astro)
    ========================================================================== */
 
-/* 1) Densidad en pantallas grandes: aprovechar el ancho completo
-      Los grids que tope­an en 3 columnas pasan a 4; los de 2 pasan a 3. */
-@media (min-width: 1600px) {
-  .related-services__grid,
-  .product-gallery__grid,
-  .tech-info__grid,
-  .featured-grid,
-  .location-grid,
-  .giro-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  .empresas-grid,
-  .cities-grid,
-  .values-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-/* 2) Hover homologado para tarjetas de listado/enlace en todo el sitio */
+/* Hover homologado para tarjetas de listado/enlace en todo el sitio */
 .location-card,
 .city-card,
 .hidrante-card,
@@ -1443,5 +1427,14 @@ video {
   .content-wrapper ul,
   .content-wrapper ol {
     grid-template-columns: 1fr;
+  }
+}
+
+/* iOS Safari zoom prevention: inputs < 16px disparan auto-zoom al enfocar */
+@media (max-width: 767px) {
+  input,
+  select,
+  textarea {
+    font-size: 16px !important;
   }
 }
