@@ -1,0 +1,447 @@
+/* ==========================================================================
+   GAMA DE MÉXICO — mobile.css
+   Overhaul responsive profesional · Breakpoints: 1024 / 768 / 640 / 480 / 380
+   Cargado AL FINAL de global.css vía @import para ganar la cascada.
+   El uso de !important en selectores críticos es intencional: hojas
+   con estilos de componente (Header.astro <style>, SectionHeader, etc.)
+   tienen alta especificidad y se cargan después; !important es la única
+   forma de garantizar consistencia sin tocar cada componente.
+   ========================================================================== */
+
+/* ==========================================================================
+   1. TOKENS RESPONSIVE — :root por breakpoint
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+  :root {
+    --header-height: 72px;
+    --container-padding: clamp(1rem, 3vw, 2rem);
+    --spacing-2xl: 2.5rem;
+    --spacing-3xl: 3.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --header-height: 68px;
+    --container-padding: 1.25rem;
+    --spacing-2xl: 2rem;
+    --spacing-3xl: 3rem;
+  }
+}
+
+@media (max-width: 640px) {
+  :root {
+    --topbar-height: 32px;
+    --header-height: 64px;
+    --container-padding: 1rem;
+    --spacing-xl: 2rem;
+    --spacing-2xl: 1.75rem;
+    --spacing-3xl: 2.5rem;
+    --font-size-lg: 17px;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --container-padding: 0.875rem;
+    --spacing-xl: 1.75rem;
+    --spacing-2xl: 1.5rem;
+    --spacing-3xl: 2rem;
+  }
+}
+
+@media (max-width: 380px) {
+  :root {
+    --header-height: 60px;
+    --container-padding: 0.75rem;
+  }
+}
+
+/* ==========================================================================
+   2. CONTAINER Y SECCIONES — fluido sin scroll horizontal
+   ========================================================================== */
+
+@media (max-width: 768px) {
+  .container {
+    padding-left: var(--container-padding) !important;
+    padding-right: var(--container-padding) !important;
+  }
+
+  section {
+    padding-top: var(--spacing-2xl);
+    padding-bottom: var(--spacing-2xl);
+  }
+}
+
+@media (max-width: 480px) {
+  section {
+    padding-top: var(--spacing-xl);
+    padding-bottom: var(--spacing-xl);
+  }
+}
+
+/* ==========================================================================
+   3. HERO — stack vertical en móvil
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+  .hero-section {
+    padding-top: calc(var(--topbar-height, 40px) + var(--header-height, 72px) + 1.5rem) !important;
+    padding-bottom: 3.5rem !important;
+  }
+
+  .hero-section--two-cols .hero-section__inner {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding-top: calc(var(--topbar-height, 40px) + var(--header-height, 68px) + 1rem) !important;
+    padding-bottom: 3rem !important;
+  }
+
+  .hero-section__title {
+    font-size: clamp(1.6rem, 6vw, 2.2rem) !important;
+  }
+
+  .hero-section__metrics {
+    gap: 1.25rem;
+    flex-wrap: wrap;
+  }
+
+  .hero-section__metric-value {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-section {
+    padding-top: calc(var(--topbar-height, 32px) + var(--header-height, 64px) + 0.75rem) !important;
+    padding-bottom: 2.5rem !important;
+  }
+
+  .hero-section__inner {
+    gap: 1.5rem !important;
+  }
+
+  .hero-section__title {
+    font-size: clamp(1.5rem, 7vw, 2rem) !important;
+  }
+
+  .hero-section__intro {
+    font-size: 1rem !important;
+  }
+
+  .hero-section__ctas {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .hero-section__ctas .btn {
+    width: 100% !important;
+    justify-content: center !important;
+    min-height: 48px;
+  }
+
+  .hero-section__metrics {
+    gap: 1rem;
+    padding-top: 1rem;
+  }
+
+  .hero-section__right {
+    display: none !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section__title {
+    font-size: clamp(1.4rem, 7.5vw, 1.75rem) !important;
+  }
+
+  .hero-section__badge {
+    font-size: 0.7rem;
+  }
+}
+
+/* ==========================================================================
+   4. GRIDS DE CATÁLOGO — 1 columna en móvil
+   ========================================================================== */
+
+@media (max-width: 767px) {
+  .categories__grid,
+  .services__grid,
+  .products__grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .trust__grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .trust__testimonials {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .category-card__ctas {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .category-card__ctas .btn {
+    width: 100%;
+    justify-content: center;
+    min-height: 44px;
+  }
+}
+
+/* ==========================================================================
+   5. SERVICE DETAILS — stack vertical en móvil
+   ========================================================================== */
+
+@media (max-width: 1023px) {
+  .service-detail {
+    grid-template-columns: 1fr !important;
+  }
+
+  .service-detail__image {
+    order: -1;
+    min-height: 220px;
+  }
+}
+
+@media (max-width: 640px) {
+  .service-detail__image {
+    min-height: 180px;
+  }
+}
+
+/* ==========================================================================
+   6. SECTION HEADER — compacto en móvil
+   ========================================================================== */
+
+@media (max-width: 767px) {
+  .section-header {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+  }
+
+  .section-header__right {
+    display: none !important;
+  }
+
+  .section-header__title {
+    font-size: clamp(1.35rem, 5vw, 1.75rem) !important;
+  }
+}
+
+/* ==========================================================================
+   7. FORMULARIOS — iOS 16px no-zoom + touch targets
+   ========================================================================== */
+
+@media (max-width: 767px) {
+  .lead-capture__input,
+  .lead-capture__select,
+  .form-input,
+  .form-select,
+  .form-textarea,
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="search"],
+  select,
+  textarea {
+    font-size: 16px !important;
+    min-height: 48px;
+  }
+
+  .lead-capture__form {
+    grid-template-columns: 1fr !important;
+  }
+
+  .lead-capture__submit {
+    grid-column: 1 / -1 !important;
+    width: 100% !important;
+    min-height: 52px;
+  }
+
+  .lead-capture__bullets {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+}
+
+/* ==========================================================================
+   8. BOTONES — touch targets mínimo 44px
+   ========================================================================== */
+
+@media (max-width: 767px) {
+  .btn {
+    min-height: 44px;
+  }
+
+  .btn--sm {
+    min-height: 40px;
+    padding: 0.625rem 1rem;
+  }
+}
+
+/* ==========================================================================
+   9. FAQ — padding reducido
+   ========================================================================== */
+
+@media (max-width: 640px) {
+  .faq__question {
+    padding: 1rem !important;
+    font-size: 0.9375rem !important;
+    gap: 0.5rem;
+  }
+
+  .faq__answer {
+    padding: 0 1rem 1rem !important;
+  }
+}
+
+/* ==========================================================================
+   10. FOOTER — apila columnas en móvil
+   ========================================================================== */
+
+@media (max-width: 1023px) {
+  .footer__main > div,
+  .footer__columns {
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
+
+@media (max-width: 639px) {
+  .footer__main > div,
+  .footer__columns {
+    grid-template-columns: 1fr !important;
+  }
+
+  .footer__cta-inner {
+    flex-direction: column !important;
+    gap: 1.25rem !important;
+    text-align: center;
+  }
+
+  .footer__cta-actions {
+    flex-direction: column !important;
+    width: 100%;
+  }
+
+  .footer__cta-btn {
+    width: 100% !important;
+    text-align: center;
+    justify-content: center;
+    min-height: 48px;
+  }
+}
+
+/* ==========================================================================
+   11. STICKY CTA MOBILE — ya visible vía JS; ajuste de tamaño en XS
+   ========================================================================== */
+
+@media (max-width: 380px) {
+  .sticky-cta__wa,
+  .sticky-cta__cotizar {
+    font-size: 0.8rem;
+    padding: 0.625rem 0.75rem;
+  }
+}
+
+/* ==========================================================================
+   12. WHATSAPP BUBBLE — circular sin label en móvil
+   ========================================================================== */
+
+@media (max-width: 767px) {
+  .wa-bubble {
+    display: none !important; /* sustituido por sticky-cta-mobile */
+  }
+}
+
+/* ==========================================================================
+   13. BREADCRUMB — compacto y con overflow elegante
+   ========================================================================== */
+
+@media (max-width: 640px) {
+  .breadcrumb {
+    font-size: 0.8125rem !important;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+  }
+
+  .breadcrumb__item:not(:last-child):not(:nth-last-child(2)) {
+    display: none; /* muestra solo padre inmediato + actual */
+  }
+}
+
+/* ==========================================================================
+   14. SAFE-AREA iOS (notch / Dynamic Island)
+   ========================================================================== */
+
+@supports (padding: max(0px)) {
+  .container {
+    padding-left: max(var(--container-padding, 1rem), env(safe-area-inset-left));
+    padding-right: max(var(--container-padding, 1rem), env(safe-area-inset-right));
+  }
+
+  .sticky-cta-mobile {
+    padding-bottom: max(0.75rem, env(safe-area-inset-bottom));
+  }
+}
+
+/* ==========================================================================
+   15. OVERFLOW PROTECTION — blindaje horizontal en todos los viewports
+   ========================================================================== */
+
+@media (max-width: 768px) {
+  body,
+  .container,
+  main,
+  section,
+  article,
+  header,
+  footer {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  img,
+  video,
+  iframe,
+  table,
+  pre {
+    max-width: 100% !important;
+  }
+}
+
+/* ==========================================================================
+   16. TOPBAR — reducir o colapsar en móvil
+   ========================================================================== */
+
+@media (max-width: 640px) {
+  .topbar {
+    height: 32px !important;
+    min-height: 32px;
+  }
+
+  .topbar__phone,
+  .topbar__links a:not(:first-child) {
+    display: none !important; /* en XS solo muestra uno */
+  }
+}
+
+@media (max-width: 380px) {
+  .topbar {
+    display: none !important; /* en pantallas muy pequeñas, elimina el topbar */
+  }
+
+  :root {
+    --topbar-height: 0px;
+  }
+}

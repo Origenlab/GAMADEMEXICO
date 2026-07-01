@@ -95,7 +95,7 @@ const CDN_BASE = (import.meta.env.PUBLIC_EWWW_CDN_BASE ?? '').trim().replace(/\/
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
   <title>{title}</title>
   <meta name="description" content={metaDescription}>
@@ -146,6 +146,28 @@ const CDN_BASE = (import.meta.env.PUBLIC_EWWW_CDN_BASE ?? '').trim().replace(/\/
   ))}
 
   <slot name="head" />
+
+  <!-- Tokens responsive de header/topbar — garantizan que el hero calcule
+       el padding-top correcto a cada viewport sin depender de clamp() sólo. -->
+  <style is:global>
+    @media (max-width: 1024px) {
+      :root {
+        --header-height: 72px;
+      }
+    }
+    @media (max-width: 640px) {
+      :root {
+        --topbar-height: 32px;
+        --header-height: 64px;
+      }
+    }
+    @media (max-width: 380px) {
+      :root {
+        --topbar-height: 0px;
+        --header-height: 60px;
+      }
+    }
+  </style>
 
   <!-- Rybbit Analytics -->
   <script src="https://app.rybbit.io/api/script.js" data-site-id="7e67c404e911" defer></script>
