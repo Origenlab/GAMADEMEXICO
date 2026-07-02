@@ -146,3 +146,60 @@
 /equipos-contra-incendios/conexiones*  /conexiones-herrajes-contra-incendios  301
 /equipos-contra-incendios/gabinetes*  /gabinetes-hidrantes-contra-incendios  301
 /equipos-contra-incendios  /equipos  301
+
+# =============================================================================
+# EMPRESAS CERTIFICADAS — Slugs anónimos (FASE 1 · 2026-07-01)
+# Redirección 301 de slugs con nombres de marca → slugs genéricos anónimos
+# =============================================================================
+/empresas-certificadas/aeropuerto-guadalajara-jalisco /empresas-certificadas/aeropuerto-clase-a-jalisco 301
+/empresas-certificadas/aeropuerto-internacional-cancun /empresas-certificadas/aeropuerto-alta-demanda-quintana-roo 301
+/empresas-certificadas/almacen-liverpool-tepeyac /empresas-certificadas/centro-distribucion-retail-cdmx 301
+/empresas-certificadas/almacen-logistics-tlalnepantla /empresas-certificadas/centro-logistico-edomex 301
+/empresas-certificadas/amazon-fulfillment-tepotzotlan /empresas-certificadas/centro-cumplimiento-ecommerce-edomex 301
+/empresas-certificadas/bmw-planta-san-luis-potosi /empresas-certificadas/planta-automotriz-premium-san-luis-potosi 301
+/empresas-certificadas/centro-comercial-antea-queretaro /empresas-certificadas/centro-comercial-lifestyle-queretaro 301
+/empresas-certificadas/centro-comercial-santa-fe /empresas-certificadas/centro-comercial-clase-a-santa-fe-cdmx 301
+/empresas-certificadas/centro-medico-abc-santa-fe /empresas-certificadas/hospital-privado-especialidades-santa-fe-cdmx 301
+/empresas-certificadas/cerveceria-modelo-zacatecas /empresas-certificadas/planta-cervecera-industrial-zacatecas 301
+/empresas-certificadas/cintermex-centro-convenciones-monterrey /empresas-certificadas/centro-convenciones-internacional-monterrey 301
+/empresas-certificadas/constellation-brands-nava-coahuila /empresas-certificadas/planta-cervecera-exportacion-coahuila 301
+/empresas-certificadas/corporativo-santa-fe-torre-1 /empresas-certificadas/torre-corporativa-clase-a-santa-fe-cdmx 301
+/empresas-certificadas/corporativo-televisa-chapultepec /empresas-certificadas/corporativo-media-entretenimiento-cdmx 301
+/empresas-certificadas/costco-satelite-naucalpan /empresas-certificadas/tienda-club-membresia-edomex 301
+/empresas-certificadas/general-motors-silao-complex /empresas-certificadas/complejo-automotriz-internacional-guanajuato 301
+/empresas-certificadas/grand-hyatt-ciudad-mexico /empresas-certificadas/hotel-5-estrellas-corporativo-cdmx 301
+/empresas-certificadas/grand-velas-riviera-maya /empresas-certificadas/resort-todo-incluido-ultra-lujo-riviera-maya 301
+/empresas-certificadas/hilton-reforma-ciudad-mexico /empresas-certificadas/hotel-negocios-internacional-reforma-cdmx 301
+/empresas-certificadas/hospital-abc-observatorio /empresas-certificadas/hospital-privado-nivel-iii-cdmx-poniente 301
+/empresas-certificadas/hospital-angeles-pedregal /empresas-certificadas/hospital-privado-especialidades-pedregal-cdmx 301
+/empresas-certificadas/hospital-medica-sur-tlalpan /empresas-certificadas/hospital-alta-especialidad-tlalpan-cdmx 301
+/empresas-certificadas/hospital-san-javier-guadalajara /empresas-certificadas/hospital-privado-especialidades-guadalajara 301
+/empresas-certificadas/hospital-zambrano-hellion-monterrey /empresas-certificadas/hospital-universitario-privado-monterrey 301
+/empresas-certificadas/hotel-fiesta-americana-reforma /empresas-certificadas/hotel-negocios-aaa-reforma-cdmx 301
+/empresas-certificadas/hotel-four-seasons-reforma /empresas-certificadas/hotel-gran-turismo-reforma-cdmx 301
+/empresas-certificadas/hotel-intercontinental-presidente /empresas-certificadas/hotel-historico-5-estrellas-polanco-cdmx 301
+/empresas-certificadas/hotel-jw-marriott-polanco /empresas-certificadas/hotel-5-estrellas-lujo-polanco-cdmx 301
+/empresas-certificadas/hotel-riu-palace-cancun /empresas-certificadas/hotel-resort-internacional-cancun 301
+/empresas-certificadas/hotel-st-regis-ciudad-mexico /empresas-certificadas/hotel-lujo-boutique-reforma-cdmx 301
+/empresas-certificadas/hotel-w-polanco /empresas-certificadas/hotel-diseno-contemporaneo-polanco-cdmx 301
+/empresas-certificadas/liverpool-perisur-cdmx /empresas-certificadas/tienda-departamental-anchor-sur-cdmx 301
+/empresas-certificadas/mantenimiento-extintores-cdmx /empresas-certificadas/empresa-mantenimiento-extintores-cdmx 301
+/empresas-certificadas/mazda-motor-manufacturing-salamanca /empresas-certificadas/planta-automotriz-oem-guanajuato 301
+/empresas-certificadas/planta-bimbo-azcapotzalco /empresas-certificadas/planta-manufactura-alimentaria-cdmx 301
+/empresas-certificadas/planta-cemex-tula-hidalgo /empresas-certificadas/planta-cementera-industrial-hidalgo 301
+/empresas-certificadas/planta-kia-motors-pesqueria /empresas-certificadas/planta-automotriz-internacional-nuevo-leon 301
+/empresas-certificadas/planta-nestle-lagos-moreno /empresas-certificadas/planta-agroindustrial-internacional-jalisco 301
+/empresas-certificadas/planta-volkswagen-puebla /empresas-certificadas/planta-automotriz-tier1-puebla 301
+/empresas-certificadas/proyectored-cdmx /empresas-certificadas/empresa-servicios-seguridad-cdmx 301
+/empresas-certificadas/refineria-pemex-tula-hidalgo /empresas-certificadas/refineria-petroquimica-nacional-hidalgo 301
+/empresas-certificadas/restaurante-el-cardenal-palmas /empresas-certificadas/restaurante-cocina-mexicana-cdmx 301
+/empresas-certificadas/restaurante-pujol-polanco /empresas-certificadas/restaurante-fine-dining-polanco-cdmx 301
+/empresas-certificadas/restaurante-quintonil-polanco /empresas-certificadas/restaurante-alta-cocina-contemporanea-cdmx 301
+/empresas-certificadas/sonora-grill-prime-santa-fe /empresas-certificadas/restaurante-premium-carnes-santa-fe-cdmx 301
+/empresas-certificadas/tec-monterrey-santa-fe /empresas-certificadas/universidad-privada-campus-cdmx 301
+/empresas-certificadas/torre-bbva-reforma /empresas-certificadas/torre-corporativa-bancaria-reforma-cdmx 301
+/empresas-certificadas/torre-mayor-corporativo /empresas-certificadas/torre-corporativa-premium-reforma-cdmx 301
+/empresas-certificadas/torre-reforma-corporativo /empresas-certificadas/torre-oficinas-boutique-reforma-cdmx 301
+/empresas-certificadas/toyota-motor-manufacturing-guanajuato /empresas-certificadas/planta-automotriz-japonesa-oem-guanajuato 301
+/empresas-certificadas/universidad-anahuac-norte /empresas-certificadas/universidad-privada-edomex 301
+/empresas-certificadas/universidad-iberoamericana /empresas-certificadas/universidad-privada-jesuita-cdmx 301
