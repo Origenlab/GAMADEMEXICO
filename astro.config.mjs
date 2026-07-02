@@ -30,11 +30,13 @@ export default defineConfig({
     // Sin trailing slash para URLs limpias
     trailingSlash: 'never',
 
-    // Prefetch de navegación: precarga enlaces internos al pasar el cursor
-    // (y en tap en móvil) para navegación casi instantánea entre páginas.
+    // Prefetch de navegación: precarga enlaces visibles en viewport (FASE 2 · 2026-07-01).
+    // prefetchAll: true fue desactivado — con 722 páginas prefetcheaba todo el sitio
+    // al cargar, incrementando el consumo de datos en mobile innecesariamente.
+    // defaultStrategy: 'viewport' prefetchea solo los links que entran al viewport.
     prefetch: {
-          prefetchAll: true,
-          defaultStrategy: 'hover',
+          prefetchAll: false,
+          defaultStrategy: 'viewport',
     },
 
     // Configuración de build optimizada
