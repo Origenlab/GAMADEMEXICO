@@ -97,17 +97,15 @@ export function buildLocalBusinessSchema() {
 }
 
 // -- WebSite Schema (homepage) --
+// potentialAction / SearchAction eliminado (FASE 1 · 2026-07-01):
+// el endpoint /equipos?q= no existe → schema falso → riesgo de penalización Google.
+// Reactivar cuando se implemente Pagefind o búsqueda real.
 export function buildWebSiteSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: SITE_NAME,
     url: SITE_URL,
-    potentialAction: {
-      '@type': 'SearchAction',
-      target: `${SITE_URL}/equipos?q={search_term_string}`,
-      'query-input': 'required name=search_term_string',
-    },
   };
 }
 
