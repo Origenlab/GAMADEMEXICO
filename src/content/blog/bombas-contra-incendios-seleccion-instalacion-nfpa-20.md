@@ -15,7 +15,8 @@ schema:
         a: "Net Positive Suction Head — la presión disponible en la entrada de la bomba. Si la NPSH disponible es menor que la requerida por la bomba, ocurre cavitación: burbujas de vapor que implosionan dentro del impulsor, destruyendo los álabes y reduciendo caudal. Es la causa #1 de fallas prematuras en bombas contra incendios."
       - q: "¿Para qué sirve la bomba jockey?"
         a: "Mantiene la presión en la red sin que la bomba principal arranque por cada pequeña fuga o fluctuación. Si la bomba principal arrancara cada vez que la presión baja 2 PSI por una microfuga, el desgaste sería excesivo. La jockey compensa pérdidas menores. Si la jockey no puede mantener la presión, la caída activa la bomba principal."
-categoria: "valvulas"
+categoria: "gabinetes-hidrantes"
+tipo: "tecnico"
 autor:
   nombre: "Equipo Gama de México"
   cargo: "Asesoría Técnica"

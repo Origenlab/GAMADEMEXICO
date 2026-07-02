@@ -14,7 +14,8 @@ schema:
         a: "Sí. NOM-002-STPS lo exige para todos los centros de trabajo en México sin excepción. No hay mínimo de empleados ni exención por giro. El plan debe ser específico para tu instalación (no genérico), estar actualizado con la distribución actual de la planta y ser verificable mediante simulacros documentados."
 description: "Plan de emergencia contra incendios NOM-002-STPS: cómo elaborarlo. Brigadas, simulacros, equipos y documentación para protección civil en México."
 fecha: "2026-03-11"
-categoria: "mangueras"
+categoria: "gabinetes-hidrantes"
+tipo: "normativo"
 autor:
   nombre: "Lic. Ana Torres"
   cargo: "Coordinadora de Normatividad y Cumplimiento"

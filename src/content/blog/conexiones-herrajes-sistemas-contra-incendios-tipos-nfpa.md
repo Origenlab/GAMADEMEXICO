@@ -13,6 +13,7 @@ schema:
 description: "Conexiones y herrajes en sistemas contra incendios: tomas siamesas, wyes, reducciones, materiales y errores de instalación más comunes en México."
 fecha: "2026-03-11"
 categoria: "conexiones-herrajes"
+tipo: "informativo"
 autor:
   nombre: "Equipo Gama de México"
   cargo: "Asesoría Técnica"

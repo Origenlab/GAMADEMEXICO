@@ -14,7 +14,8 @@ schema:
         a: "PEMEX y CFE generalmente exigen FM Approved. IMSS y hospitales públicos piden UL Listed como mínimo. Las licitaciones especifican marca de referencia 'o equivalente' — el equivalente debe demostrar certificaciones al mismo nivel. Sin certificación verificable, la propuesta se descalifica técnicamente."
 description: "Licitaciones gobierno para equipos contra incendios en México: cómo participar, requisitos, especificaciones técnicas y documentación requerida."
 fecha: "2026-03-11"
-categoria: "monitores"
+categoria: "equipos-contra-incendios"
+tipo: "comercial"
 autor:
   nombre: "Lic. Ana Torres"
   cargo: "Coordinadora de Normatividad y Cumplimiento"

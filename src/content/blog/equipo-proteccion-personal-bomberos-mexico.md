@@ -3,6 +3,7 @@ title: "Equipo de Protección Personal para Bomberos en México: Guía 2025"
 description: "Equipo de protección personal para bomberos: traje estructural, casco, botas, guantes, SCBA y normas NFPA vigentes para corporaciones en México."
 fecha: "2026-06-08"
 categoria: "equipos-bomberos"
+tipo: "guia"
 autor:
   nombre: "Ing. Patricia Vargas Solís"
   cargo: "Consultora en Seguridad Industrial y Equipos de Protección para Emergencias"
@@ -15,7 +16,6 @@ draft: false
 tiempoLectura: 20
 productosRelacionados: []
 articulosRelacionados: ["traje-estructural-bombero-guia-completa-mexico", "trajes-aproximacion-bomberos-industria-petroleo-gas", "venta-trajes-bomberos-mexico-como-elegir-proveedor-certificado"]
-canonical: "https://gamademexico.com/blog/equipos-bomberos/equipo-proteccion-personal-bomberos-mexico"
 noindex: false
 ---
 

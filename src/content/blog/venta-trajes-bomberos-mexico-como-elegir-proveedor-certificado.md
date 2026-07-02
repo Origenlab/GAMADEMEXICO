@@ -3,6 +3,7 @@ title: "Venta de Trajes para Bomberos en México: Elige Proveedor Certificado"
 description: "Venta de trajes para bomberos en México: cómo elegir proveedor certificado, qué exigir, cómo verificar certificaciones NFPA y errores que debes evitar."
 fecha: "2026-06-08"
 categoria: "equipos-bomberos"
+tipo: "comercial"
 autor:
   nombre: "Lic. Fernanda Ríos Castellanos"
   cargo: "Consultora en Adquisiciones de Equipos de Seguridad Industrial"
@@ -15,7 +16,6 @@ draft: false
 tiempoLectura: 17
 productosRelacionados: []
 articulosRelacionados: ["traje-estructural-bombero-guia-completa-mexico", "equipo-proteccion-personal-bomberos-mexico", "tipos-trajes-combate-incendios-comparativa-tecnica"]
-canonical: "https://gamademexico.com/blog/equipos-bomberos/venta-trajes-bomberos-mexico-como-elegir-proveedor-certificado"
 noindex: false
 ---
 

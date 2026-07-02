@@ -17,6 +17,7 @@ schema:
       - q: "¿Puedo dar mantenimiento a las válvulas yo mismo?"
         a: "La inspección visual semanal sí — verificar posición abierta, tamper funcional, sin fugas visibles. La operación anual y la inspección interna deben hacerlas técnicos con experiencia en sistemas contra incendios, documentando resultados en bitácora conforme a NFPA 25 para que la aseguradora y protección civil la acepten."
 categoria: "valvulas"
+tipo: "guia"
 autor:
   nombre: "Ing. Fernando Castillo"
   cargo: "Especialista en Protección Industrial"

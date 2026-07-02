@@ -15,6 +15,7 @@ schema:
 description: "Prueba hidrostática de mangueras contra incendios: protocolo NFPA 1962, frecuencia, equipo requerido, criterios de aprobación y registros técnicos."
 fecha: "2026-03-11"
 categoria: "mangueras"
+tipo: "tecnico"
 autor:
   nombre: "Ing. Roberto Hernández"
   cargo: "Director Técnico en Sistemas Contra Incendios"

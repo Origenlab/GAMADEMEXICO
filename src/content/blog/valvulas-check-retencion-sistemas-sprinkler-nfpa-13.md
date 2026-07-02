@@ -17,6 +17,7 @@ schema:
       - q: "¿Cómo sé si mi válvula check está fallando?"
         a: "Síntomas: presión del sistema que cae lentamente cuando la bomba se apaga (retroflujo), bomba jockey que arranca con frecuencia excesiva (compensa fugas por check defectuoso), o ruido de golpeteo en la tubería cuando la bomba cicla (disco de la check rebotando). NFPA 25 exige inspección interna cada 5 años."
 categoria: "valvulas"
+tipo: "tecnico"
 autor:
   nombre: "Ing. Roberto Hernández"
   cargo: "Director Técnico en Sistemas Contra Incendios"

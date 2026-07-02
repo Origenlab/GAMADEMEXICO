@@ -13,6 +13,7 @@ schema:
 description: "Manguera forestal wildland NFPA 1977 en México: materiales livianos, diferencias con manguera estructural y criterios para brigadas forestales."
 fecha: "2026-03-11"
 categoria: "mangueras"
+tipo: "normativo"
 autor:
   nombre: "Ing. Roberto Hernández"
   cargo: "Director Técnico en Sistemas Contra Incendios"

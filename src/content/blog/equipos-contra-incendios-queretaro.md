@@ -15,6 +15,7 @@ schema:
 description: "Equipos contra incendios UL/FM en Querétaro. Sucursal en Av. Constituyentes con stock. Monitores, válvulas y mangueras Elkhart Brass."
 fecha: "2026-03-19"
 categoria: "equipos-contra-incendios"
+tipo: "comercial"
 autor:
   nombre: "Equipo Gama de México"
   cargo: "Asesoría Técnica"
@@ -25,7 +26,6 @@ destacado: false
 tiempoLectura: 8
 draft: false
 productosRelacionados: ["valvula-compuerta-osy-4in", "monitor-tipo-corazon-1250gpm"]
-canonical: "https://gamademexico.com/blog/equipos-contra-incendios/equipos-contra-incendios-queretaro"
 noindex: false
 ---
 

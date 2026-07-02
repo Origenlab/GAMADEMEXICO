@@ -23,6 +23,7 @@ schema:
 description: "Extinción automática en cocinas industriales UL 300 y NFPA 17A: cómo funcionan los sistemas, por qué fallan y qué exige la norma en México."
 fecha: "2026-03-11"
 categoria: "boquillas"
+tipo: "normativo"
 autor:
   nombre: "Equipo Gama de México"
   cargo: "Asesoría Técnica"

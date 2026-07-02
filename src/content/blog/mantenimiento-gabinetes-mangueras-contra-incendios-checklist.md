@@ -15,6 +15,7 @@ schema:
 description: "Mantenimiento de gabinetes y mangueras contra incendios: checklist completo de inspección mensual, prueba hidrostática y frecuencias NFPA 25."
 fecha: "2026-03-11"
 categoria: "gabinetes-hidrantes"
+tipo: "guia"
 autor:
   nombre: "Ing. Carlos Mendoza"
   cargo: "Director Técnico Gama de México"

@@ -13,6 +13,7 @@ schema:
 description: "Manguera Millhose vs Blindex: diferencias de construcción, presiones de trabajo, prueba y aplicaciones industriales vs brigadas contra incendios."
 fecha: "2026-03-19"
 categoria: "mangueras"
+tipo: "comparativa"
 autor:
   nombre: "Equipo Gama de México"
   cargo: "Asesoría Técnica"

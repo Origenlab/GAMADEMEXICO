@@ -3,6 +3,7 @@ title: "Trajes de Aproximación para Bomberos: Industria Petrolera y Gas"
 description: "Trajes de aproximación para bomberos: diferencias con estructurales, certificación NFPA 1976, materiales aluminizados y usos en refinería. Venta en México."
 fecha: "2026-06-08"
 categoria: "equipos-bomberos"
+tipo: "tecnico"
 autor:
   nombre: "Ing. Alejandro Torres Medina"
   cargo: "Especialista en Protección contra Incendios en Industria de Hidrocarburos"
@@ -15,7 +16,6 @@ draft: false
 tiempoLectura: 19
 productosRelacionados: []
 articulosRelacionados: ["traje-estructural-bombero-guia-completa-mexico", "equipo-proteccion-personal-bomberos-mexico", "tipos-trajes-combate-incendios-comparativa-tecnica"]
-canonical: "https://gamademexico.com/blog/equipos-bomberos/trajes-aproximacion-bomberos-industria-petroleo-gas"
 noindex: false
 ---
 

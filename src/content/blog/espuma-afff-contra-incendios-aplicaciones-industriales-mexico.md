@@ -21,6 +21,7 @@ schema:
 description: "Espuma AFFF contra incendios: cómo funcionan los sistemas, aplicaciones industriales, componentes y transición a espumas libres de flúor en México."
 fecha: "2026-03-11"
 categoria: "boquillas"
+tipo: "tecnico"
 autor:
   nombre: "Equipo Gama de México"
   cargo: "Asesoría Técnica"

@@ -15,6 +15,7 @@ schema:
 description: "Protección contra incendios en hospitales México: NFPA 99, rociadores, gabinetes y equipos requeridos para clínicas y centros de salud."
 fecha: "2026-03-11"
 categoria: "gabinetes-hidrantes"
+tipo: "informativo"
 autor:
   nombre: "Ing. Carlos Mendoza"
   cargo: "Director Técnico Gama de México"

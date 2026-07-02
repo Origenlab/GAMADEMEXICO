@@ -4,6 +4,7 @@ description: "Cómo elegir mangueras contra incendios por presión, forro y cons
 fecha: "2025-02-14"
 fechaActualizacion: "2026-03-19"
 categoria: "mangueras"
+tipo: "guia"
 autor:
   nombre: "Equipo Gama de México"
   cargo: "Asesoría Técnica"

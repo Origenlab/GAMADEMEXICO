@@ -14,7 +14,8 @@ schema:
         a: "Clase I: conexiones de 2.5 pulgadas para bomberos profesionales (no para público). Clase II: conexiones de 1.5 pulgadas en gabinetes para ocupantes del edificio. Clase III: ambas conexiones — 2.5 para bomberos + 1.5 en gabinete para primera intervención. Clase III es el más completo y recomendado para edificios de uso mixto."
 description: "Standpipe NFPA 14: red contra incendios en altura. Tubería vertical para edificios, clasificación, componentes y conexiones de manguera en México."
 fecha: "2026-03-11"
-categoria: "mangueras"
+categoria: "gabinetes-hidrantes"
+tipo: "tecnico"
 autor:
   nombre: "Ing. Carlos Mendoza"
   cargo: "Director Técnico Gama de México"

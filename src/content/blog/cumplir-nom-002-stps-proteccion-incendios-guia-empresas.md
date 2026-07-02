@@ -4,6 +4,7 @@ description: "Cómo cumplir la NOM-002-STPS en tu empresa: clasificación de rie
 fecha: "2026-02-14"
 fechaActualizacion: "2026-03-19"
 categoria: "gabinetes-hidrantes"
+tipo: "normativo"
 autor:
   nombre: "Equipo Gama de México"
   cargo: "Asesoría Técnica"

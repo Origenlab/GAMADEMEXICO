@@ -4,6 +4,7 @@ description: "Lineamientos para monitores contra incendios en México: NOM-002-S
 fecha: "2026-02-16"
 fechaActualizacion: "2026-03-19"
 categoria: "monitores"
+tipo: "normativo"
 autor:
   nombre: "Equipo Gama de México"
   cargo: "Asesoría Técnica"

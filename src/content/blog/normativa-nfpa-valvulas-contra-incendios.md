@@ -15,6 +15,7 @@ schema:
 description: "Normas NFPA para válvulas contra incendios: tipos, requisitos de instalación, pruebas de aceptación y mantenimiento según NFPA 13, 25 y FM en México."
 fecha: "2026-02-14"
 categoria: "valvulas"
+tipo: "normativo"
 autor:
   nombre: "Ing. Carlos Ramírez"
   cargo: "Especialista en Normatividad"

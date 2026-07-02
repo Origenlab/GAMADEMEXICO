@@ -15,6 +15,7 @@ schema:
 description: "Equipos contra incendios certificados UL/FM en Monterrey. Monitores, boquillas, mangueras y válvulas Elkhart Brass para industria regiomontana."
 fecha: "2026-03-19"
 categoria: "equipos-contra-incendios"
+tipo: "comercial"
 autor:
   nombre: "Equipo Gama de México"
   cargo: "Asesoría Técnica"
@@ -25,7 +26,6 @@ destacado: false
 tiempoLectura: 8
 draft: false
 productosRelacionados: ["monitor-tipo-corazon-1250gpm", "valvula-compuerta-osy-4in"]
-canonical: "https://gamademexico.com/blog/equipos-contra-incendios/equipos-contra-incendios-monterrey-nuevo-leon"
 noindex: false
 ---
 

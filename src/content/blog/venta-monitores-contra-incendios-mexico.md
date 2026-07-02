@@ -3,6 +3,7 @@ title: "Monitores Contra Incendios en México"
 description: "Monitores contra incendios en México: selección, normas NFPA, stock disponible y envíos a todo el país. Asesoría técnica experta Elkhart Brass."
 fecha: "2026-02-16"
 categoria: "monitores"
+tipo: "comercial"
 autor:
   nombre: "Ing. Roberto Hernández"
   cargo: "Director Técnico en Sistemas Contra Incendios"
@@ -11,11 +12,10 @@ imagenAlt: "Venta de monitores contra incendios en México"
 imagenOg: "/img/monitores-contra-incendios/monitor-tipo-corazon-contra-incendios-industrial-angulo-frontal-19.avif"
 tags: ["monitores contra incendios", "monitor contra incendios industrial", "equipos contra incendios industriales", "sistemas contra incendios", "protección contra incendios industrial", "proveedores de equipos contra incendios"]
 destacado: true
-draft: true
+draft: false
 tiempoLectura: 15
 productosRelacionados: ["monitor-corazon-una-cremallera", "monitor-cuello-cisne", "monitor-certificado-fm", "monitor-ul-listed", "monitor-fm-control-remoto"]
 articulosRelacionados: ["guia-seleccion-monitores-contra-incendios", "mantenimiento-monitores-contra-incendios"]
-canonical: "https://gamademexico.com/blog/monitores-contra-incendios/venta-monitores-contra-incendios-mexico"
 noindex: false
 ---
 

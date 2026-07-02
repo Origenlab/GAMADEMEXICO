@@ -17,6 +17,7 @@ schema:
       - q: "¿Qué diferencia hay entre accionamiento neumático y eléctrico en válvulas diluvio?"
         a: "El neumático usa presión de aire de una línea piloto: cuando el detector funde o la señal libera la presión, la válvula abre mecánicamente. No necesita electricidad — funciona aunque el fuego haya quemado el cableado. El eléctrico usa un solenoide: más preciso en control pero depende de alimentación eléctrica que puede fallar en un incendio."
 categoria: "valvulas"
+tipo: "tecnico"
 autor:
   nombre: "Ing. Roberto Hernández"
   cargo: "Director Técnico en Sistemas Contra Incendios"

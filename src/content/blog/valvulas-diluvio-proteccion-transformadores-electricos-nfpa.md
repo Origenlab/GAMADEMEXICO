@@ -4,6 +4,7 @@ description: "Válvulas de diluvio para transformadores en México: especificaci
 fecha: "2026-04-01"
 fechaActualizacion: "2026-04-01"
 categoria: "valvulas"
+tipo: "tecnico"
 autor:
   nombre: "Ing. Patricia Gutiérrez Solís"
   cargo: "Especialista en Normatividad NFPA"

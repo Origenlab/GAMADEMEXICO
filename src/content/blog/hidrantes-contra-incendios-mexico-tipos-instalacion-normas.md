@@ -4,6 +4,7 @@ description: "Hidrantes contra incendios: banqueta vs privado, presión real vs 
 fecha: "2025-03-06"
 fechaActualizacion: "2026-03-19"
 categoria: "gabinetes-hidrantes"
+tipo: "informativo"
 autor:
   nombre: "Equipo Gama de México"
   cargo: "Asesoría Técnica"

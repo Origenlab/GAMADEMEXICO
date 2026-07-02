@@ -13,6 +13,7 @@ schema:
 description: "LGA Contra Incendios en Querétaro: empresa líder en equipos y sistemas de protección con certificaciones NFPA y NOM. Asesoría técnica especializada."
 fecha: "2026-02-26"
 categoria: "gabinetes-hidrantes"
+tipo: "comercial"
 tags: ["empresas verificadas", "protección contra incendios", "Querétaro", "extintores", "equipos certificados", "NFPA"]
 tiempoLectura: 11
 noindex: false

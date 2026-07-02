@@ -14,6 +14,7 @@ import {
   LOGO_PATH,
   GEO,
   ALTERNATE_NAMES,
+  FOUNDING_DATE,
   getSocialMediaUrls,
 } from './config';
 import { toAbsoluteImageUrl } from './images';
@@ -47,6 +48,7 @@ export function buildOrganizationSchema() {
       areaServed: 'MX',
       availableLanguage: 'Spanish',
     },
+    foundingDate: FOUNDING_DATE,
     // Redes sociales configuradas en config.ts (SOCIAL_MEDIA)
     sameAs: getSocialMediaUrls(),
   };

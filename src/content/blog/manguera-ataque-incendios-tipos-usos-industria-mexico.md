@@ -13,6 +13,7 @@ schema:
 description: "Mangueras de ataque contra incendios: doble jacket, single jacket, diámetros 1.5 a 2.5 pulgadas y aplicaciones en manufactura y petroquímica en México."
 fecha: "2026-03-11"
 categoria: "mangueras"
+tipo: "tecnico"
 autor:
   nombre: "Ing. Roberto Hernández"
   cargo: "Director Técnico en Sistemas Contra Incendios"

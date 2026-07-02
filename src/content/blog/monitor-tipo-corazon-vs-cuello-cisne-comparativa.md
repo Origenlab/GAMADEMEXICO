@@ -15,6 +15,7 @@ schema:
 description: "Monitor corazón vs cuello de cisne: comparativa de caudal, altura de instalación, maniobra y aplicación para elegir la configuración correcta en México."
 fecha: "2026-03-19"
 categoria: "monitores"
+tipo: "comparativa"
 tags: ["monitor tipo corazón", "monitor cuello de cisne", "monitores contra incendios", "Elkhart Brass", "ingeniería contra incendios"]
 tiempoLectura: 10
 imagen: "/img/blog/monitor-tipo-corazon-vs-cuello-de-cisne.avif"

@@ -14,7 +14,8 @@ schema:
         a: "Depende del tamaño y criticidad. Agentes limpios (FM-200, Novec 1230) para salas pequeñas de alta criticidad donde cada minuto de downtime cuesta miles de dólares. Rociadores preacción para data centers grandes donde el costo de agente limpio sería prohibitivo. Muchas instalaciones combinan ambos: agente limpio en la sala de servidores y rociadores en áreas de soporte."
 description: "Protección contra incendios en data centers: sistemas pre-acción, agentes limpios, detección temprana y NFPA 75/76 para centros de datos en México."
 fecha: "2026-03-11"
-categoria: "valvulas"
+categoria: "equipos-contra-incendios"
+tipo: "informativo"
 autor:
   nombre: "Ing. Roberto Méndez"
   cargo: "Ingeniero en Protección Contra Incendios"

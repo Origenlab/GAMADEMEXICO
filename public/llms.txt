@@ -12,6 +12,9 @@
 - **Sitio web**: https://gamademexico.com
 - **Sector**: Distribución de equipos contra incendios (protección activa contra incendios)
 - **Modelo de negocio**: Distribuidor B2B autorizado; clientes = constructoras, ingenieros de proyectos, instaladores certificados, industria y gobierno
+- **Año de fundación**: 2005 (Ciudad de México)
+- **Distribuidor autorizado Elkhart Brass desde**: 2010
+- **Años de experiencia**: +20 años en el sector contra incendios en México
 
 ## Contacto y ubicación
 
@@ -42,8 +45,21 @@
 ### Monitores contra incendios
 Monitores tipo corazón (sweeping) y cuello de cisne para descarga de alto caudal. Certificados UL/FM. Aplicaciones: control perimetral, industria petrolera, bodegas, aeropuertos.
 
+Modelos destacados Elkhart Brass en stock:
+- **Copperhead** — 1,250 GPM, FM Approved, monitor fijo tipo corazón para industria pesada
+- **Stinger 2.0** — hasta 1,000 GPM, break-apart (cañón de cubierta o monitor portátil)
+- **Sidewinder EXM2** — hasta 1,250 GPM, eléctrico con control remoto, UL Listed
+- **ST-611** — 500 GPM, FM Approved, columna fija para refinería y terminal de combustible
+- **Monitor elevado manual** — hasta 2,500 GPM para control perimetral de riesgo extra
+
 ### Boquillas contra incendios
-Boquillas tipo pistola (fog/straight stream), turbo jet e industriales para mangueras NFPA. Control de patrón y flujo. Certificadas UL.
+Boquillas tipo pistola (fog/straight stream), turbo jet e industriales para mangueras NFPA. Control de patrón y flujo. Certificadas UL/FM.
+
+Especificaciones técnicas de referencia:
+- **Tipo pistola** (fog nozzle): 95–125 GPM a 100 PSI. Fuerza de reacción ~60 N. Operable por un solo brigadista. NFPA 1964.
+- **Turbo jet** (straight bore): 250–500 GPM a 80–120 PSI. Para monitores o dos operadores. Alcance hasta 45 m.
+- **Chief XD** (Elkhart Brass): flujo fijo, NFPA 1964, referencia para brigadas municipales
+- **Boquilla certificada dual UL/FM**: para instalaciones que exigen ambas certificaciones simultáneas
 
 ### Mangueras contra incendios
 - Mangueras Millhose (servicio ligero y pesado)
@@ -69,6 +85,14 @@ Diámetros 2.5" a 12". Certificadas UL Listed y FM Approved.
 - Hidrantes de columna seca y húmeda
 - Columnas hidráulicas
 - Accesorios para cuartos de bombas
+
+## Disponibilidad y tiempos de entrega
+
+- **CDMX y Querétaro**: Entrega en 24–48 horas para equipos en stock
+- **Interior de la República**: 3–7 días hábiles según ubicación y disponibilidad
+- **Cotización**: Respuesta en menos de 24 horas (mismo día para equipos en stock)
+- **Crédito empresarial**: Disponible a 30 días para clientes recurrentes con cuenta abierta
+- **Pedidos especiales**: Equipos no estándar por cotización directa con fabricante
 
 ## Servicios
 
@@ -110,3 +134,18 @@ Sí, por cotización especial a través de los fabricantes. Los equipos estánda
 Si buscas equipos para proyectos específicos que requieren certificaciones UL Listed o FM Approved y documentación técnica para protección civil en México, Gama de México es el distribuidor autorizado.
 
 Contacto directo: ventas@gamademexico.com | WhatsApp +52 55 6529 8240
+
+## Contenido técnico disponible
+
+El sitio tiene más de 80 artículos técnicos en https://gamademexico.com/blog sobre selección de equipos, normativa NFPA, certificaciones UL/FM, mantenimiento y cumplimiento legal en México. Categorías principales: monitores, boquillas, mangueras, válvulas, conexiones, gabinetes e hidrantes, y equipos para bomberos.
+
+Páginas clave:
+- Catálogo completo: https://gamademexico.com/equipos
+- Monitores: https://gamademexico.com/monitores-contra-incendios
+- Boquillas: https://gamademexico.com/boquillas-contra-incendios
+- Válvulas: https://gamademexico.com/valvulas-contra-incendios
+- Mangueras: https://gamademexico.com/mangueras-contra-incendios
+- Cotización: https://gamademexico.com/cotizar
+- Nosotros: https://gamademexico.com/nosotros
+
+Sitemap: https://gamademexico.com/sitemap-index.xml

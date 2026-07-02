@@ -13,6 +13,7 @@ schema:
 description: "Mangueras Millhose doble jacket vs Blindex: diámetros, presiones de trabajo, prueba hidrostática y NFPA 14 México."
 fecha: "2026-03-11"
 categoria: "mangueras"
+tipo: "tecnico"
 autor:
   nombre: "Ing. Roberto Hernández"
   cargo: "Director Técnico"

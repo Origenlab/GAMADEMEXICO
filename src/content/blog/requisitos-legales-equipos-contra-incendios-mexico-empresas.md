@@ -15,6 +15,7 @@ schema:
 description: "Requisitos legales de equipos contra incendios en México: diagnóstico de riesgo, plan, bitácoras, capacitación y mantenimiento para cumplimiento ante STPS."
 fecha: "2026-02-17"
 categoria: "gabinetes-hidrantes"
+tipo: "normativo"
 autor:
   nombre: "Ing. Roberto Hernández"
   cargo: "Consultor Senior en Protección Contra Incendios y Cumplimiento Normativo"
@@ -26,7 +27,6 @@ draft: false
 tiempoLectura: 24
 productosRelacionados: ["gabinete-30me", "hidrante-banqueta", "manguera-millhose", "valvula-compuerta-osy", "boquilla-certificada", "monitor-certificado-fm"]
 articulosRelacionados: ["cumplimiento-legal-boquillas-contra-incendios-mexico-2026", "lineamientos-mangueras-contra-incendios-empresas-mexico", "lineamientos-monitor-contra-incendios-mexico"]
-canonical: "https://gamademexico.com/blog/gabinetes-hidrantes-contra-incendios/requisitos-legales-equipos-contra-incendios-mexico-empresas"
 noindex: false
 ---
 

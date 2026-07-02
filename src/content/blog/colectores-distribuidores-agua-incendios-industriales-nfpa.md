@@ -4,6 +4,7 @@ description: "Colectores y distribuidores para sistemas contra incendios industr
 fecha: "2026-03-01"
 fechaActualizacion: "2026-03-19"
 categoria: "conexiones-herrajes"
+tipo: "tecnico"
 autor:
   nombre: "Equipo Gama de México"
   cargo: "Asesoría Técnica"

@@ -14,7 +14,8 @@ schema:
         a: "Depende del riesgo asegurado y la aseguradora. FM Global exige equipos FM Approved con mantenimiento documentado NFPA 25. Aseguradoras locales generalmente piden equipos certificados (UL o equivalente), bitácoras de mantenimiento y brigada capacitada. El corredor de seguros puede especificar los requisitos exactos de la póliza."
 description: "Seguro industrial: requisitos de equipos contra incendios para aseguradoras. Certificaciones UL/FM, mantenimiento y documentación para pólizas en México."
 fecha: "2026-03-11"
-categoria: "valvulas"
+categoria: "gabinetes-hidrantes"
+tipo: "normativo"
 autor:
   nombre: "Ing. Roberto Méndez"
   cargo: "Ingeniero en Protección Contra Incendios"

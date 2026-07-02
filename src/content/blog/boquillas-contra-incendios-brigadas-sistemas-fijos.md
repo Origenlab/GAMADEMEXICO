@@ -15,6 +15,7 @@ schema:
 description: "Boquillas contra incendios para brigadas industriales y sistemas fijos: criterios de caudal, presión, patrón de descarga y compatibilidad con monitores."
 fecha: "2026-02-16"
 categoria: "boquillas"
+tipo: "informativo"
 autor:
   nombre: "Equipo Gama de México"
   cargo: "Asesoría Técnica"

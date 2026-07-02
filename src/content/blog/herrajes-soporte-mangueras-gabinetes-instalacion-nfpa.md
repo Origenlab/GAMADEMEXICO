@@ -4,6 +4,7 @@ description: "Herrajes para mangueras y gabinetes contra incendios: porta-mangue
 fecha: "2026-03-12"
 fechaActualizacion: "2026-03-19"
 categoria: "conexiones-herrajes"
+tipo: "tecnico"
 autor:
   nombre: "Equipo Gama de México"
   cargo: "Asesoría Técnica"

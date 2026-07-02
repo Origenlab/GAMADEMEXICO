@@ -14,7 +14,8 @@ schema:
         a: "Extintores con recarga vencida, brigada con nombres de personas que ya no trabajan ahí, plano de evacuación que no corresponde con la distribución actual, gabinetes sin llave de operación o con manguera inaccesible, señalización deteriorada o cubierta por pintura, y falta de actas de simulacros con evidencia fotográfica."
 description: "Verificación de protección civil sin observaciones: cómo preparar documentos, equipos y evidencias para reducir observaciones evitables en México."
 fecha: "2026-03-19"
-categoria: "monitores"
+categoria: "gabinetes-hidrantes"
+tipo: "normativo"
 tags: ["inspección protección civil", "NOM-002-STPS", "equipos contra incendios", "UL FM", "seguridad industrial"]
 tiempoLectura: 10
 imagen: "/img/blog/verificacion-proteccion-civil-sin-observaciones.avif"

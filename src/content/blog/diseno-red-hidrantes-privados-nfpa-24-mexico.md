@@ -4,6 +4,7 @@ description: "Diseño de red de hidrantes privados NFPA 24 en México: anillo vs
 fecha: "2026-02-14"
 fechaActualizacion: "2026-03-19"
 categoria: "gabinetes-hidrantes"
+tipo: "tecnico"
 autor:
   nombre: "Equipo Gama de México"
   cargo: "Asesoría Técnica"

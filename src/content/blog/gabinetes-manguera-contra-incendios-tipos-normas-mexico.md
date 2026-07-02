@@ -21,6 +21,7 @@ schema:
 description: "Gabinetes de manguera contra incendios: tipos, normas NOM-002-STPS, equipos incluidos, distancias de instalación y errores que generan observaciones."
 fecha: "2026-03-11"
 categoria: "gabinetes-hidrantes"
+tipo: "informativo"
 autor:
   nombre: "Equipo Gama de México"
   cargo: "Asesoría Técnica"

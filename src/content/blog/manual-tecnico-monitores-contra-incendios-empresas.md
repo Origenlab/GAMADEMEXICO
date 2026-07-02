@@ -3,6 +3,7 @@ title: "Manual Técnico de Monitores Contra Incendios"
 description: "Manual técnico de monitores contra incendios: diseño, instalación, operación y mantenimiento con matrices y checklist funcionales para empresas en México."
 fecha: "2026-02-16"
 categoria: "monitores"
+tipo: "tecnico"
 autor:
   nombre: "Ing. Roberto Hernández"
   cargo: "Director Técnico en Sistemas Contra Incendios"
@@ -15,7 +16,6 @@ draft: false
 tiempoLectura: 19
 productosRelacionados: ["monitor-corazon-una-cremallera", "monitor-cuello-cisne", "monitor-certificado-fm", "monitor-ul-listed", "monitor-fm-control-remoto"]
 articulosRelacionados: ["lineamientos-monitor-contra-incendios-mexico", "auditoria-monitores-contra-incendios-empresas-mexico", "mantenimiento-monitores-contra-incendios"]
-canonical: "https://gamademexico.com/blog/monitores-contra-incendios/manual-tecnico-monitores-contra-incendios-empresas"
 noindex: false
 ---
 

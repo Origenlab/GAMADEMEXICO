@@ -15,6 +15,7 @@ schema:
 description: "Programa interno de protección civil y equipos: cómo estructurarlo y cumplir con la normativa de equipos contra incendios en México."
 fecha: "2026-02-17"
 categoria: "gabinetes-hidrantes"
+tipo: "normativo"
 autor:
   nombre: "Ing. Roberto Hernández"
   cargo: "Consultor Senior en Protección Contra Incendios y Cumplimiento Normativo"
@@ -26,7 +27,6 @@ draft: false
 tiempoLectura: 20
 productosRelacionados: ["gabinete-30me", "estacion-manguera", "hidrante-banqueta", "manguera-blindex", "boquilla-certificada", "valvula-compuerta-osy"]
 articulosRelacionados: ["requisitos-legales-equipos-contra-incendios-mexico-empresas", "inspeccion-proteccion-civil-equipos-contra-incendios-empresas-mexico", "lineamientos-mangueras-contra-incendios-empresas-mexico"]
-canonical: "https://gamademexico.com/blog/gabinetes-hidrantes-contra-incendios/programa-interno-equipos-contra-incendios-empresas-mexico"
 noindex: false
 ---
 

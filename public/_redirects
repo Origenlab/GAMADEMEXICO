@@ -203,3 +203,38 @@
 /empresas-certificadas/toyota-motor-manufacturing-guanajuato /empresas-certificadas/planta-automotriz-japonesa-oem-guanajuato 301
 /empresas-certificadas/universidad-anahuac-norte /empresas-certificadas/universidad-privada-edomex 301
 /empresas-certificadas/universidad-iberoamericana /empresas-certificadas/universidad-privada-jesuita-cdmx 301
+
+# =============================================================================
+# RECLASIFICACIÓN BLOG — Artículos movidos entre categorías (2026-07-01)
+# Razón: alineación semántica → artículos de sistemas/normativa a gabinetes-hidrantes,
+#        artículos cross-topic/general a equipos-contra-incendios
+# =============================================================================
+
+# valvulas → gabinetes-hidrantes
+/blog/valvulas-contra-incendios/bombas-contra-incendios-seleccion-instalacion-nfpa-20 /blog/gabinetes-hidrantes-contra-incendios/bombas-contra-incendios-seleccion-instalacion-nfpa-20 301
+/blog/valvulas-contra-incendios/sistemas-rociadores-automaticos-nfpa-13-mexico /blog/gabinetes-hidrantes-contra-incendios/sistemas-rociadores-automaticos-nfpa-13-mexico 301
+/blog/valvulas-contra-incendios/calculo-hidraulico-sistemas-contra-incendios-guia-ingenieros /blog/gabinetes-hidrantes-contra-incendios/calculo-hidraulico-sistemas-contra-incendios-guia-ingenieros 301
+/blog/valvulas-contra-incendios/seguro-industrial-equipos-contra-incendios-requisitos-aseguradoras /blog/gabinetes-hidrantes-contra-incendios/seguro-industrial-equipos-contra-incendios-requisitos-aseguradoras 301
+
+# monitores → gabinetes-hidrantes
+/blog/monitores-contra-incendios/detector-humo-calor-sistemas-deteccion-incendios-nfpa-72 /blog/gabinetes-hidrantes-contra-incendios/detector-humo-calor-sistemas-deteccion-incendios-nfpa-72 301
+/blog/monitores-contra-incendios/verificacion-proteccion-civil-sin-observaciones-guia /blog/gabinetes-hidrantes-contra-incendios/verificacion-proteccion-civil-sin-observaciones-guia 301
+
+# mangueras → gabinetes-hidrantes
+/blog/mangueras-contra-incendios/red-contra-incendios-edificios-altura-nfpa-14-standpipe /blog/gabinetes-hidrantes-contra-incendios/red-contra-incendios-edificios-altura-nfpa-14-standpipe 301
+/blog/mangueras-contra-incendios/plan-emergencia-contra-incendios-empresa-nom-002-guia /blog/gabinetes-hidrantes-contra-incendios/plan-emergencia-contra-incendios-empresa-nom-002-guia 301
+
+# monitores → equipos-contra-incendios
+/blog/monitores-contra-incendios/integracion-equipos-contra-incendios-programas-seguridad-industrial /blog/equipos-contra-incendios/integracion-equipos-contra-incendios-programas-seguridad-industrial 301
+/blog/monitores-contra-incendios/licitaciones-gobierno-equipos-contra-incendios-mexico /blog/equipos-contra-incendios/licitaciones-gobierno-equipos-contra-incendios-mexico 301
+/blog/monitores-contra-incendios/proteccion-contra-incendios-maquinaria-construccion-talleres /blog/equipos-contra-incendios/proteccion-contra-incendios-maquinaria-construccion-talleres 301
+/blog/monitores-contra-incendios/sistemas-contra-incendios-hoteles-centros-comerciales-mexico /blog/equipos-contra-incendios/sistemas-contra-incendios-hoteles-centros-comerciales-mexico 301
+
+# valvulas → equipos-contra-incendios
+/blog/valvulas-contra-incendios/empresas-mantenimiento-extintores-proveedores-equipos-certificados /blog/equipos-contra-incendios/empresas-mantenimiento-extintores-proveedores-equipos-certificados 301
+/blog/valvulas-contra-incendios/reposicion-equipos-contra-incendios-cuando-reemplazar /blog/equipos-contra-incendios/reposicion-equipos-contra-incendios-cuando-reemplazar 301
+/blog/valvulas-contra-incendios/proteccion-contra-incendios-data-centers-centros-datos-mexico /blog/equipos-contra-incendios/proteccion-contra-incendios-data-centers-centros-datos-mexico 301
+
+# mangueras → equipos-contra-incendios
+/blog/mangueras-contra-incendios/equipos-contra-incendios-industria-automotriz-mexico /blog/equipos-contra-incendios/equipos-contra-incendios-industria-automotriz-mexico 301
+/blog/mangueras-contra-incendios/proteccion-contra-incendios-naves-industriales-bodegas-mexico /blog/equipos-contra-incendios/proteccion-contra-incendios-naves-industriales-bodegas-mexico 301

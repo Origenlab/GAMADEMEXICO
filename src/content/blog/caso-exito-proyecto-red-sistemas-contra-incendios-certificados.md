@@ -13,6 +13,7 @@ schema:
 description: "Especificación de equipos certificados UL y FM en proyectos industriales reales: criterios de selección, errores comunes y lecciones de implementación."
 fecha: "2026-02-26"
 categoria: "gabinetes-hidrantes"
+tipo: "comercial"
 autor:
   nombre: "Equipo Gama de México"
   cargo: "Asesoría Técnica"

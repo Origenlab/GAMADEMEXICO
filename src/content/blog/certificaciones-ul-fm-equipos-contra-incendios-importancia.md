@@ -4,6 +4,7 @@ description: "Certificaciones UL y FM en equipos contra incendios: UL Listed vs 
 fecha: "2026-03-01"
 fechaActualizacion: "2026-03-19"
 categoria: "monitores"
+tipo: "normativo"
 autor:
   nombre: "Equipo Gama de México"
   cargo: "Asesoría Técnica"

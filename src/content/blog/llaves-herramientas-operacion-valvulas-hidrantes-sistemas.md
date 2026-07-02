@@ -3,6 +3,7 @@ title: "Llaves y Herramientas para Válvulas e Hidrantes"
 description: "Llaves de hidrante, llaves de manguera y herramientas para operar válvulas contra incendios: tipos, por qué faltan cuando se necesitan y cómo evitarlo."
 fecha: "2026-03-11"
 categoria: "conexiones-herrajes"
+tipo: "tecnico"
 autor:
   nombre: "Equipo Gama de México"
   cargo: "Asesoría Técnica"

@@ -12,7 +12,8 @@ schema:
         a: "Depende de la carga combustible y la altura. Naves con racks de almacenamiento alto (6m+): rociadores ESFR diseñados para protección de alto apilamiento. Naves con proceso industrial: gabinetes de manguera + extintores + rociadores estándar. Naves con líquidos inflamables: además de lo anterior, monitores y/o sistemas de espuma."
 description: "Protección contra incendios en naves y bodegas: NOM-002-STPS, NFPA, equipos recomendados para naves industriales y centros de distribución en México."
 fecha: "2026-03-11"
-categoria: "mangueras"
+categoria: "equipos-contra-incendios"
+tipo: "informativo"
 autor:
   nombre: "Ing. Fernando Castillo"
   cargo: "Especialista en Protección Industrial"

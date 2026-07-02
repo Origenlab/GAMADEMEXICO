@@ -26,7 +26,7 @@ const CATEGORY_META: Record<string, {
   metrics: Array<{ valor: string; texto: string }>;
 }> = {
   monitores: {
-    title: 'Guías Técnicas de Monitores Contra Incendios',
+    title: 'Monitores Contra Incendios | Artículos y Guías Técnicas',
     description: 'Artículos profesionales sobre selección, instalación y mantenimiento de monitores contra incendios. Normatividad NFPA 15, certificaciones FM/UL y mejores prácticas.',
     heroContent: [
       'Nuestros artículos sobre <strong>monitores contra incendios</strong> cubren desde la selección técnica según caudal y alcance, hasta procedimientos de mantenimiento preventivo conforme a NFPA 25. Contenido desarrollado por ingenieros con experiencia en instalaciones industriales, petroquímicas y de almacenamiento.',
@@ -39,8 +39,8 @@ const CATEGORY_META: Record<string, {
     ],
   },
   boquillas: {
-    title: 'Guías Técnicas de Boquillas Contra Incendios',
-    description: 'Artículos sobre boquillas contra incendios: tipos, selección por GPM, patrones de descarga y certificaciones. Guías para brigadas y profesionales.',
+    title: 'Boquillas Contra Incendios | Artículos y Guías Técnicas',
+    description: 'Artículos sobre boquillas contra incendios: tipos, selección por GPM, patrones de descarga y certificaciones. Guías para brigadas industriales y profesionales.',
     heroContent: [
       'Artículos técnicos sobre <strong>boquillas contra incendios</strong> para brigadas industriales, bomberos y responsables de seguridad. Desde boquillas tipo pistola hasta turbo jet, cubrimos selección por caudal, patrones de descarga y compatibilidad con mangueras.',
       'Conoce las diferencias entre boquillas de chorro sólido, niebla y espuma, entiende los rangos de operación en GPM y aprende a seleccionar el equipo correcto según el tipo de riesgo. Contenido basado en normatividad NFPA y especificaciones de fabricantes certificados.',
@@ -52,8 +52,8 @@ const CATEGORY_META: Record<string, {
     ],
   },
   mangueras: {
-    title: 'Guías Técnicas de Mangueras Contra Incendios',
-    description: 'Todo sobre mangueras contra incendios: tipos, selección, cuidado y normativa NFPA 1961. Guías para mantenimiento y pruebas hidrostáticas.',
+    title: 'Mangueras Contra Incendios | Artículos y Guías Técnicas',
+    description: 'Todo sobre mangueras contra incendios: tipos, diámetros, selección y normativa NFPA 1961. Guías para mantenimiento, pruebas hidrostáticas e inspección en México.',
     heroContent: [
       'Guías completas sobre <strong>mangueras contra incendios</strong>: desde la selección por diámetro y presión de trabajo, hasta procedimientos de prueba hidrostática conforme a NFPA 1962. Contenido para responsables de mantenimiento y brigadas industriales.',
       'Aprende las diferencias entre mangueras de chaqueta simple, doble forro y Blindex, conoce los criterios de almacenamiento y enrollado, y domina las inspecciones periódicas. Artículos prácticos con enfoque en cumplimiento normativo y vida útil del equipo.',
@@ -65,7 +65,7 @@ const CATEGORY_META: Record<string, {
     ],
   },
   valvulas: {
-    title: 'Guías Técnicas de Válvulas Contra Incendios',
+    title: 'Válvulas Contra Incendios | Artículos y Guías Técnicas',
     description: 'Artículos sobre válvulas para sistemas contra incendios: OS&Y, mariposa, retención y globe. Instalación, mantenimiento y certificaciones.',
     heroContent: [
       'Artículos técnicos sobre <strong>válvulas contra incendios</strong> para sistemas de rociadores, standpipes y redes hidráulicas. Cubrimos válvulas OS&Y, mariposa con supervisión, retención y globe conforme a NFPA 13 y NFPA 25.',
@@ -78,8 +78,8 @@ const CATEGORY_META: Record<string, {
     ],
   },
   'conexiones-herrajes': {
-    title: 'Guías Técnicas de Conexiones y Herrajes',
-    description: 'Artículos sobre conexiones contra incendios: adaptadores, siamesas FDC, coples Storz, Wye y herrajes de bronce para sistemas hidráulicos.',
+    title: 'Conexiones y Herrajes Contra Incendios | Artículos Técnicos',
+    description: 'Artículos sobre conexiones contra incendios: adaptadores NST/NH, siamesas FDC, coples Storz, Wye y herrajes de bronce NFPA para sistemas hidráulicos en México.',
     heroContent: [
       'Guías técnicas sobre <strong>conexiones y herrajes</strong> para sistemas contra incendios: adaptadores NST/NH, coples Storz, tomas siamesas FDC, conexiones Y y reducciones. Contenido para instaladores y personal de mantenimiento.',
       'Aprende sobre compatibilidad de roscas, materiales adecuados según aplicación, y procedimientos de instalación conforme a NFPA 14. Artículos prácticos con especificaciones técnicas y mejores prácticas de la industria.',
@@ -91,8 +91,8 @@ const CATEGORY_META: Record<string, {
     ],
   },
   'gabinetes-hidrantes': {
-    title: 'Guías Técnicas de Gabinetes e Hidrantes',
-    description: 'Todo sobre gabinetes contra incendios e hidrantes: tipos, instalación, normativa NFPA 14 y equipamiento completo para edificios.',
+    title: 'Gabinetes e Hidrantes Contra Incendios | Artículos Técnicos',
+    description: 'Todo sobre gabinetes contra incendios e hidrantes: tipos, instalación, normativa NFPA 14, NOM-002-STPS y equipamiento completo para edificios e industria en México.',
     heroContent: [
       'Artículos sobre <strong>gabinetes e hidrantes</strong> contra incendios: desde gabinetes tipo 30ME hasta hidrantes de banqueta y poste. Cubrimos requisitos de instalación, equipamiento y mantenimiento conforme a NFPA 14.',
       'Conoce las especificaciones de gabinetes para edificios comerciales e industriales, requisitos de accesibilidad, componentes obligatorios y procedimientos de inspección. Guías para arquitectos, instaladores y responsables de seguridad.',
@@ -101,6 +101,32 @@ const CATEGORY_META: Record<string, {
       { valor: 'NFPA 14', texto: 'Standpipes' },
       { valor: 'Clase I/II/III', texto: 'Clasificación' },
       { valor: 'NOM', texto: 'Cumplimiento MX' },
+    ],
+  },
+  'equipos-contra-incendios': {
+    title: 'Equipos Contra Incendios | Artículos y Guías Técnicas',
+    description: 'Artículos sobre equipos contra incendios: monitores, boquillas, mangueras, válvulas y conexiones. Guías con normativas NFPA, certificaciones UL/FM y NOM-002-STPS.',
+    heroContent: [
+      'Artículos sobre <strong>equipos contra incendios</strong>: monitores, boquillas, mangueras, válvulas y conexiones certificadas. Cobertura de normativas NFPA 13, 14 y 15 para proyectos industriales, comerciales y hospitalarios en México.',
+      'Guías para ingenieros de proyectos, responsables de seguridad e instaladores certificados. Contenido técnico sobre especificación de equipos UL/FM, cumplimiento normativo NOM y documentación para Protección Civil.',
+    ],
+    metrics: [
+      { valor: 'NFPA 13/14', texto: 'Normativas' },
+      { valor: 'UL/FM', texto: 'Certificaciones' },
+      { valor: 'NOM', texto: 'Cumplimiento MX' },
+    ],
+  },
+  'equipos-bomberos': {
+    title: 'Equipos para Bomberos | Artículos y Guías Técnicas',
+    description: 'Artículos sobre equipos para bomberos: boquillas Turbo Jet, mangueras de ataque y protección personal. Normativas NFPA y especificaciones UL Listed para brigadas.',
+    heroContent: [
+      'Artículos técnicos sobre <strong>equipos para bomberos</strong>: boquillas Turbo Jet y tipo pistola, mangueras de ataque, equipos de protección personal y herramientas de rescate conforme a normativas NFPA para cuerpos de bomberos y brigadas de emergencia en México.',
+      'Guías sobre selección, mantenimiento y uso de equipos para bomberos. Contenido práctico para jefes de brigada, instructores y responsables de dotación con enfoque en certificaciones UL y cumplimiento normativo.',
+    ],
+    metrics: [
+      { valor: 'NFPA 1964', texto: 'Boquillas' },
+      { valor: 'NFPA 1961', texto: 'Mangueras' },
+      { valor: 'UL Listed', texto: 'Certificación' },
     ],
   },
 };

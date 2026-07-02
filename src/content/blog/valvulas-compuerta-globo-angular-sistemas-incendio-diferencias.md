@@ -17,6 +17,7 @@ schema:
       - q: "¿Por qué el gabinete de manguera usa válvula angular?"
         a: "Porque la tubería llega por la pared (horizontal) y la manguera sale hacia adelante (perpendicular). La válvula angular hace el cambio de dirección de 90° y funciona como válvula de control al mismo tiempo, eliminando la necesidad de un codo más una válvula separada. Ahorra espacio dentro del gabinete."
 categoria: "valvulas"
+tipo: "comparativa"
 autor:
   nombre: "Equipo Gama de México"
   cargo: "Asesoría Técnica"

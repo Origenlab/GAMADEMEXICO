@@ -3,6 +3,7 @@ title: "Tipos de Trajes de Combate contra Incendios: Comparativa Técnica"
 description: "Tipos de trajes de combate contra incendios: comparativa de estructural, aproximación, forestal y HAZMAT. Normas NFPA, materiales y selección en México."
 fecha: "2026-06-08"
 categoria: "equipos-bomberos"
+tipo: "comparativa"
 autor:
   nombre: "Ing. Mario Domínguez Fuentes"
   cargo: "Ingeniero en Protección contra Incendios y Gestión de Emergencias"
@@ -15,7 +16,6 @@ draft: false
 tiempoLectura: 22
 productosRelacionados: []
 articulosRelacionados: ["traje-estructural-bombero-guia-completa-mexico", "trajes-aproximacion-bomberos-industria-petroleo-gas", "equipo-proteccion-personal-bomberos-mexico"]
-canonical: "https://gamademexico.com/blog/equipos-bomberos/tipos-trajes-combate-incendios-comparativa-tecnica"
 noindex: false
 ---
 

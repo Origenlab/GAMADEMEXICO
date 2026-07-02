@@ -15,6 +15,7 @@ schema:
 description: "Boquillas contra incendios en proyectos industriales: selección hidráulica, cumplimiento técnico, pruebas de aceptación y operación segura en México."
 fecha: "2026-02-16"
 categoria: "boquillas"
+tipo: "tecnico"
 autor:
   nombre: "Ing. Alejandro Méndez"
   cargo: "Consultor Senior en Ingeniería de Protección Contra Incendios"
@@ -27,7 +28,6 @@ draft: false
 tiempoLectura: 20
 productosRelacionados: ["boquilla-tipo-pistola", "boquilla-turbo-jet", "boquilla-industrial", "boquilla-certificada", "boquilla-certificada-dual-ul-fm"]
 articulosRelacionados: ["guia-completa-boquillas-contra-incendios", "boquillas-contra-incendios-brigadas-sistemas-fijos", "manual-tecnico-monitores-contra-incendios-empresas"]
-canonical: "https://gamademexico.com/blog/boquillas-contra-incendios/ingenieria-boquillas-contra-incendios-proyectos-industriales"
 noindex: false
 ---
 

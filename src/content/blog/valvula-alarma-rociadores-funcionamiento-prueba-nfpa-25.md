@@ -17,6 +17,7 @@ schema:
       - q: "¿Cada cuánto se prueba la válvula de alarma?"
         a: "NFPA 25 exige prueba trimestral del gong hidráulico mediante la válvula de prueba (inspector's test). Inspección visual semanal. Prueba completa con flujo anual. La prueba trimestral verifica que la alarma suena cuando hay flujo — si no suena, un rociador puede activarse en incendio real sin que nadie lo sepa."
 categoria: "valvulas"
+tipo: "tecnico"
 autor:
   nombre: "Ing. Roberto Hernández"
   cargo: "Director Técnico en Sistemas Contra Incendios"

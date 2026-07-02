@@ -15,6 +15,7 @@ schema:
 description: "Presión de trabajo en mangueras NFPA 1961: clasificación en tipos 100, 150 y 250 PSI, pruebas hidrostáticas y vida útil en instalaciones industriales."
 fecha: "2026-03-11"
 categoria: "mangueras"
+tipo: "tecnico"
 autor:
   nombre: "Ing. Roberto Hernández"
   cargo: "Director Técnico en Sistemas Contra Incendios"

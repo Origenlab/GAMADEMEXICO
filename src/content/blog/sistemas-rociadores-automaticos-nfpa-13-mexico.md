@@ -16,7 +16,8 @@ schema:
         a: "Es extremadamente raro. El elemento fusible requiere temperaturas sostenidas de 68°C+ para romperse. Un día caluroso, vapor de cocina o un calentador normal no alcanzan esa temperatura. Las activaciones accidentales generalmente son por daño mecánico (golpe con montacargas, impacto durante construcción) no por calor ambiental."
 description: "Rociadores automáticos NFPA 13: diseño de sistemas, componentes, válvulas y normativa aplicable en México. Guía técnica completa para ingenieros."
 fecha: "2026-03-11"
-categoria: "valvulas"
+categoria: "gabinetes-hidrantes"
+tipo: "tecnico"
 autor:
   nombre: "Ing. Roberto Méndez"
   cargo: "Ingeniero en Protección Contra Incendios"

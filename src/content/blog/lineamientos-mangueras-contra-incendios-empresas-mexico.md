@@ -13,6 +13,7 @@ schema:
 description: "Mangueras contra incendios en empresas: criterios NFPA y NOM-002-STPS para selección, instalación, pruebas hidrostáticas y operación segura en México."
 fecha: "2026-02-16"
 categoria: "mangueras"
+tipo: "normativo"
 autor:
   nombre: "Ing. Mariana Ortega"
   cargo: "Especialista Senior en Ingeniería y Cumplimiento Contra Incendios"
@@ -25,7 +26,6 @@ draft: false
 tiempoLectura: 24
 productosRelacionados: ["manguera-millhose-2-5-30m", "manguera-blindex-premium-pemex", "manguera-forestal-kit-brigada", "manguera-succion-4-6m", "manguera-millhose-storz-2-5"]
 articulosRelacionados: ["como-elegir-manguera-contra-incendios", "lineamientos-monitor-contra-incendios-mexico", "manual-tecnico-monitores-contra-incendios-empresas"]
-canonical: "https://gamademexico.com/blog/mangueras-contra-incendios/lineamientos-mangueras-contra-incendios-empresas-mexico"
 noindex: false
 ---
 

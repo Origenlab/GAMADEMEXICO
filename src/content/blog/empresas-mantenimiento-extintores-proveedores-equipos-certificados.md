@@ -14,7 +14,8 @@ schema:
         a: "Depende del componente. Gabinetes y soportes pueden ser nacionales sin problema. Boquillas, monitores y válvulas de control deben tener certificación internacional (UL/FM) independientemente del origen. Lo importante no es dónde se fabrica sino que tenga certificación verificable de un laboratorio reconocido."
 description: "Selección de proveedores de equipos contra incendios: cómo verificar certificaciones UL/FM, qué documentación exigir y errores comunes en México."
 fecha: "2026-02-26"
-categoria: "valvulas"
+categoria: "equipos-contra-incendios"
+tipo: "comercial"
 autor:
   nombre: "Equipo Gama de México"
   cargo: "Asesoría Técnica"

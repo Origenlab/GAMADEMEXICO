@@ -17,6 +17,7 @@ schema:
 description: "Estandarización de boquillas contra incendios en plantas industriales multisede: criterios por zona, compatibilidad de caudal y errores de especificación."
 fecha: "2026-02-16"
 categoria: "boquillas"
+tipo: "normativo"
 autor:
   nombre: "Equipo Gama de México"
   cargo: "Asesoría Técnica"

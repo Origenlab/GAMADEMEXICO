@@ -15,6 +15,7 @@ schema:
 description: "Toma siamesa FDC: instalación, mantenimiento, tipos y normativa NFPA 13 y 14 para edificios industriales, comerciales y de uso mixto en México."
 fecha: "2026-03-11"
 categoria: "conexiones-herrajes"
+tipo: "tecnico"
 autor:
   nombre: "Ing. Roberto Méndez"
   cargo: "Ingeniero en Protección Contra Incendios"

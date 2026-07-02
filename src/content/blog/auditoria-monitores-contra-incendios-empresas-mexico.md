@@ -15,6 +15,7 @@ schema:
 description: "Auditoría de monitores contra incendios en empresas: qué revisar, errores comunes, criterios técnicos y preparación para protección civil en México."
 fecha: "2026-02-16"
 categoria: "monitores"
+tipo: "guia"
 autor:
   nombre: "Equipo Gama de México"
   cargo: "Asesoría Técnica"

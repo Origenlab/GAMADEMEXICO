@@ -17,6 +17,7 @@ schema:
       - q: "¿Puedo cerrar una válvula del sistema contra incendios para mantenimiento?"
         a: "Sí, pero con procedimiento documentado: notificar al panel de alarma, colocar vigilancia de incendios (ronda cada hora o más frecuente), limitar el tiempo de cierre al mínimo necesario y restaurar la posición abierta inmediatamente al terminar. NFPA 25 requiere que cada cierre se registre con fecha, hora, motivo y responsable."
 categoria: "valvulas"
+tipo: "tecnico"
 autor:
   nombre: "Ing. Roberto Hernández"
   cargo: "Director Técnico en Sistemas Contra Incendios"

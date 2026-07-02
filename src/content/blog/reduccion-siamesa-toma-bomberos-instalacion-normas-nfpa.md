@@ -15,6 +15,7 @@ schema:
 description: "Reducción siamesa y toma bomberos NFPA 14: criterios de instalación, tipos, mantenimiento y especificaciones para instalaciones industriales en México."
 fecha: "2026-03-11"
 categoria: "conexiones-herrajes"
+tipo: "normativo"
 autor:
   nombre: "Ing. Roberto Hernández"
   cargo: "Director Técnico en Sistemas Contra Incendios"

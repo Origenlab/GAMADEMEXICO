@@ -17,6 +17,7 @@ schema:
       - q: "¿Necesita certificación UL o FM la válvula OS&Y?"
         a: "Para sistemas de rociadores conforme a NFPA 13, sí. Debe ser UL Listed como mínimo. Si la aseguradora es FM Global, FM Approved. La certificación verifica que la válvula sella correctamente, soporta la presión de trabajo y el mecanismo de indicación de posición funciona de forma confiable."
 categoria: "valvulas"
+tipo: "tecnico"
 autor:
   nombre: "Ing. Roberto Hernández"
   cargo: "Director Técnico"

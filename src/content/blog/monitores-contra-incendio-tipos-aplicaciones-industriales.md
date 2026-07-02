@@ -15,6 +15,7 @@ schema:
 description: "Monitores contra incendio: tipos y aplicaciones en petroquímica, minería, energía y manufactura. Criterios de selección NFPA y NOM para México."
 fecha: "2026-03-15"
 categoria: "monitores"
+tipo: "informativo"
 autor:
   nombre: "Ing. Roberto Hernández"
   cargo: "Director Técnico en Sistemas Contra Incendios"
@@ -27,7 +28,6 @@ draft: false
 tiempoLectura: 14
 productosRelacionados: ["monitor-corazon-una-cremallera", "monitor-cuello-cisne", "monitor-certificado-fm", "monitor-ul-listed", "monitor-fm-control-remoto"]
 articulosRelacionados: ["auditoria-monitores-contra-incendios-empresas-mexico", "guia-seleccion-monitores-contra-incendios", "mantenimiento-monitores-contra-incendios"]
-canonical: "https://gamademexico.com/blog/monitores-contra-incendios/monitores-contra-incendio-tipos-aplicaciones-industriales"
 noindex: false
 ---
 

@@ -4,6 +4,7 @@ description: "Boquillas contra incendios: tipos de descarga, selección por ries
 fecha: "2025-02-14"
 fechaActualizacion: "2026-03-19"
 categoria: "boquillas"
+tipo: "guia"
 autor:
   nombre: "Equipo Gama de México"
   cargo: "Asesoría Técnica"

@@ -12,7 +12,8 @@ schema:
         a: "Cabina de pintura (overspray en ductos como combustible sólido), soldadura (chispas a 5m sobre charcos de aceite), almacén de plásticos y espumas (carga combustible que supera Extra Hazard), y área de prueba de motores (combustible + calor + escape). Cada zona requiere protección específica diferente."
 description: "Equipos contra incendios en la industria automotriz: riesgos por área, equipos por proceso, cabinas de pintura, soldadura y almacenamiento según NFPA y FM."
 fecha: "2026-03-11"
-categoria: "mangueras"
+categoria: "equipos-contra-incendios"
+tipo: "informativo"
 autor:
   nombre: "Equipo Gama de México"
   cargo: "Asesoría Técnica"

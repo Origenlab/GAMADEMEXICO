@@ -3,6 +3,7 @@ title: "Traje Estructural para Bombero: Guía de Selección y Venta en México"
 description: "Traje estructural para bombero: componentes, certificación NFPA 1971, tipos y criterios de selección para brigadas industriales. Venta autorizada México."
 fecha: "2026-06-08"
 categoria: "equipos-bomberos"
+tipo: "guia"
 autor:
   nombre: "Ing. Carlos Mendoza Ruiz"
   cargo: "Especialista en Equipos de Protección Personal contra Incendios"
@@ -15,7 +16,6 @@ draft: false
 tiempoLectura: 18
 productosRelacionados: []
 articulosRelacionados: ["equipo-proteccion-personal-bomberos-mexico", "tipos-trajes-combate-incendios-comparativa-tecnica", "venta-trajes-bomberos-mexico-como-elegir-proveedor-certificado"]
-canonical: "https://gamademexico.com/blog/equipos-bomberos/traje-estructural-bombero-guia-completa-mexico"
 noindex: false
 ---
 

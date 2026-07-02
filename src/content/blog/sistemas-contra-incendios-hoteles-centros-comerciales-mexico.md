@@ -14,7 +14,8 @@ schema:
         a: "Sí. En CDMX, el Reglamento de Construcción los exige para centros comerciales mayores a 2,500m². NFPA 13 define la densidad de rociadores según la clasificación de riesgo de cada zona: áreas de venta (riesgo ordinario), bodegas de tiendas (riesgo alto), food court/cocinas (requieren sistema de cocina UL 300 adicional)."
 description: "Sistemas contra incendios para hoteles y centros comerciales: sprinklers, gabinetes cada 30m, hidrantes privados e inspección NFPA requerida en México."
 fecha: "2026-03-11"
-categoria: "monitores"
+categoria: "equipos-contra-incendios"
+tipo: "informativo"
 autor:
   nombre: "Ing. Roberto Hernández"
   cargo: "Director Técnico"

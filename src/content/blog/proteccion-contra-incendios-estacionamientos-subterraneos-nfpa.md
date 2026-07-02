@@ -15,6 +15,7 @@ schema:
 description: "Incendios en estacionamientos subterráneos: protección con ventilación, rociadores, hidrantes y normativa NFPA. Guía técnica para diseñadores en México."
 fecha: "2026-03-11"
 categoria: "gabinetes-hidrantes"
+tipo: "tecnico"
 autor:
   nombre: "Ing. Roberto Méndez"
   cargo: "Ingeniero en Protección Contra Incendios"

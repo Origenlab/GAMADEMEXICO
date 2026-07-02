@@ -15,6 +15,7 @@ schema:
 description: "Mantenimiento de monitores contra incendios: programa de inspección, lubricación y pruebas para garantizar funcionamiento confiable según NFPA 25."
 fecha: "2026-02-14"
 categoria: "monitores"
+tipo: "guia"
 autor:
   nombre: "Ing. Roberto Martínez"
   cargo: "Gerente de Servicio Técnico"

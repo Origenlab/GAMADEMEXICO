@@ -15,6 +15,7 @@ schema:
 description: "Cumplimiento legal de boquillas contra incendios en México: NOM-002-STPS, protección civil, brigadas y lo que realmente revisa el inspector en 2026."
 fecha: "2026-02-16"
 categoria: "boquillas"
+tipo: "normativo"
 autor:
   nombre: "Equipo Gama de México"
   cargo: "Asesoría Técnica"

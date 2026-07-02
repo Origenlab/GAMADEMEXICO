@@ -3,6 +3,7 @@ title: "Manual Maestro de Auditoría para Boquillas Contra Incendios"
 description: "Manual maestro de auditoría para boquillas contra incendios: requisitos técnicos, control documental, pruebas FAT/SAT y cumplimiento operativo en México."
 fecha: "2026-02-16"
 categoria: "boquillas"
+tipo: "guia"
 autor:
   nombre: "Ing. Mariana Ortega"
   cargo: "Especialista Senior en Auditoría de Sistemas Contra Incendios"
@@ -11,11 +12,10 @@ imagenAlt: "Manual de auditoría de boquillas contra incendios"
 imagenOg: "/img/productos/boquilla-industrial-contra-incendios-vista-explosionada-11.avif"
 tags: ["manual de auditoría boquillas contra incendios", "boquillas contra incendios", "auditoría interna", "sistemas contra incendios", "brigadas industriales", "cumplimiento técnico", "equipos contra incendios industriales", "protección contra incendios industrial"]
 destacado: true
-draft: true
+draft: false
 tiempoLectura: 22
 productosRelacionados: ["boquilla-certificada", "boquilla-certificada-dual-ul-fm", "boquilla-tipo-pistola", "boquilla-turbo-jet", "boquilla-industrial"]
 articulosRelacionados: ["estandar-corporativo-boquillas-contra-incendios-industria", "cumplimiento-legal-boquillas-contra-incendios-mexico-2026", "ingenieria-boquillas-contra-incendios-proyectos-industriales"]
-canonical: "https://gamademexico.com/blog/boquillas-contra-incendios/manual-maestro-auditoria-boquillas-contra-incendios"
 noindex: false
 ---
 

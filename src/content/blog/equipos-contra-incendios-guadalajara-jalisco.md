@@ -15,6 +15,7 @@ schema:
 description: "Equipos contra incendios certificados UL/FM en Guadalajara. Monitores, boquillas, mangueras y válvulas para industria farmacéutica y electrónica."
 fecha: "2026-03-19"
 categoria: "equipos-contra-incendios"
+tipo: "comercial"
 autor:
   nombre: "Equipo Gama de México"
   cargo: "Asesoría Técnica"
@@ -25,7 +26,6 @@ destacado: false
 tiempoLectura: 8
 draft: false
 productosRelacionados: ["boquilla-tipo-pistola-150gpm", "manguera-blindex-2-5-30m"]
-canonical: "https://gamademexico.com/blog/equipos-contra-incendios/equipos-contra-incendios-guadalajara-jalisco"
 noindex: false
 ---
 

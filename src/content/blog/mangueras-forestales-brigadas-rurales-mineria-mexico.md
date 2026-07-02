@@ -4,6 +4,7 @@ description: "Mangueras forestales: guía técnica para brigadas rurales y miner
 fecha: "2026-04-01"
 fechaActualizacion: "2026-04-01"
 categoria: "mangueras"
+tipo: "guia"
 autor:
   nombre: "Ing. Carlos Mendoza Reyes"
   cargo: "Especialista en Protección Contra Incendios Forestales"
