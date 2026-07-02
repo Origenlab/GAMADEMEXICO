@@ -233,57 +233,61 @@ const selectedReviews = giroReviews.slice(0, reviewCount).map((r, i) => {
   };
 });
 
-// FAQs por giro + sistemas
+// FAQs por giro — sin referencias a datos de empresa específica
+const nSistemas = empresa.data.tipoSistema.length;
+const listaSistemas = empresa.data.tipoSistema.map(s => sistemaInfo[s]?.label || s).join(', ');
+const anio = empresa.data.anioProyecto || 'reciente';
+
 const faqsByGiro: Record<string, Array<{ q: string; a: string }>> = {
   hotel: [
-    { q: `¿Qué sistemas contra incendios tiene ${empresa.data.nombre}?`, a: `${empresa.data.nombre} cuenta con ${empresa.data.tipoSistema.length} sistemas certificados: ${empresa.data.tipoSistema.map(s => sistemaInfo[s]?.label || s).join(', ')}. Todos verificados por Gama de México conforme a normativas NFPA y NOM-002-STPS.` },
-    { q: `¿La certificación de ${empresa.data.nombre} está vigente?`, a: empresa.data.certificacionVigente ? `Sí. La certificación fue emitida el ${empresa.data.fechaCertificacion} y se encuentra vigente. La verificación la realizó ${empresa.data.certificadoPor}.` : `La certificación fue emitida el ${empresa.data.fechaCertificacion}. Se recomienda contactar a Gama de México para verificar el estatus actual.` },
-    { q: '¿Cómo contactar a Gama de México para certificar mi hotel?', a: 'Puedes solicitar una visita técnica a través del formulario en esta página o llamando al 55 6529 8240. Un ingeniero especializado evaluará tu instalación y te entregará un diagnóstico con las mejoras necesarias para cumplir con protección civil y NFPA.' },
+    { q: `¿Qué sistemas contra incendios incluye este proyecto hotelero?`, a: `Este proyecto hotelero cuenta con ${nSistemas} sistemas verificados por Gama de México: ${listaSistemas}. Todos conforme a normativas NFPA y NOM-002-STPS.` },
+    { q: `¿Los sistemas de este hotel están activos?`, a: `Sí. Los ${nSistemas} sistemas instalados en este proyecto están verificados y en operación. Gama de México realizó la verificación técnica de todos los componentes conforme a NFPA y NOM-002-STPS.` },
+    { q: '¿Cómo contactar a Gama de México para proteger mi hotel?', a: 'Puedes solicitar una visita técnica a través del formulario en esta página o llamando al 55 6529 8240. Un ingeniero especializado evaluará tu instalación y te entregará un diagnóstico con las mejoras necesarias para cumplir con protección civil y NFPA.' },
   ],
   restaurante: [
-    { q: `¿${empresa.data.nombre} tiene sistema tipo K para cocina?`, a: empresa.data.tipoSistema.includes('extintores') ? `Sí, ${empresa.data.nombre} cuenta con extintores certificados que incluyen tipo K para áreas de cocina y preparación de alimentos, conforme a NFPA 10 y NOM-002-STPS.` : `${empresa.data.nombre} tiene ${empresa.data.tipoSistema.length} sistemas instalados. Para detalles sobre protección en cocinas comerciales, consulta con Gama de México.` },
-    { q: `¿${empresa.data.nombre} pasa inspección de protección civil?`, a: `${empresa.data.nombre} cuenta con sistemas verificados por Gama de México que cumplen con NOM-002-STPS y requerimientos de protección civil. La certificación fue emitida el ${empresa.data.fechaCertificacion}.` },
+    { q: `¿Este restaurante tiene sistema tipo K para cocina?`, a: empresa.data.tipoSistema.includes('extintores') ? `Sí, este proyecto incluye extintores certificados con tipo K para áreas de cocina y preparación de alimentos, conforme a NFPA 10 y NOM-002-STPS.` : `Este proyecto cuenta con ${nSistemas} sistemas instalados. Para detalles sobre protección en cocinas comerciales, consulta con Gama de México.` },
+    { q: `¿El restaurante pasa inspección de protección civil?`, a: `Los sistemas instalados en este proyecto están verificados por Gama de México y cumplen con NOM-002-STPS y los requerimientos de protección civil. El proyecto fue apoyado por Gama de México en ${anio}.` },
     { q: '¿Con qué frecuencia se debe dar mantenimiento a los sistemas contra incendios?', a: 'Los extintores requieren revisión semestral y recarga anual. Los detectores de humo se prueban trimestralmente. Los gabinetes y mangueras se inspeccionan cada 6 meses. Gama de México ofrece contratos de mantenimiento que cubren todos estos intervalos.' },
   ],
   industria: [
-    { q: `¿Los sistemas de ${empresa.data.nombre} cumplen NFPA?`, a: `Sí. Los ${empresa.data.tipoSistema.length} sistemas instalados en ${empresa.data.nombre} están diseñados e instalados conforme a normas NFPA aplicables (NFPA 13, 14, 72, entre otras) y verificados por Gama de México. Los equipos son certificados UL y FM.` },
-    { q: `¿${empresa.data.nombre} tiene monitores contra incendios certificados?`, a: empresa.data.tipoSistema.includes('red-hidrantes') ? `Sí, la red de hidrantes de ${empresa.data.nombre} incluye equipos certificados UL/FM con válvulas Elkhart Brass, mangueras y boquillas de chorro/niebla ajustables.` : `${empresa.data.nombre} cuenta con ${empresa.data.tipoSistema.length} sistemas de protección. Para información sobre monitores industriales, contacta a Gama de México.` },
+    { q: `¿Los sistemas de esta planta cumplen NFPA?`, a: `Sí. Los ${nSistemas} sistemas instalados están diseñados conforme a normas NFPA aplicables (NFPA 13, 14, 72, entre otras) y verificados por Gama de México. Los equipos son certificados UL y FM.` },
+    { q: `¿Esta instalación industrial tiene monitores contra incendios certificados?`, a: empresa.data.tipoSistema.includes('red-hidrantes') ? `Sí, la red de hidrantes de este proyecto incluye equipos certificados UL/FM con válvulas Elkhart Brass, mangueras y boquillas de chorro/niebla ajustables.` : `Este proyecto cuenta con ${nSistemas} sistemas de protección. Para información sobre monitores industriales, contacta a Gama de México.` },
     { q: '¿Con qué frecuencia se hace mantenimiento a los sistemas industriales?', a: 'Los sistemas de rociadores se inspeccionan trimestralmente y se prueban anualmente conforme a NFPA 25. Las bombas contra incendios se prueban semanalmente (sin carga) y anualmente (con carga). Gama de México programa el mantenimiento según los intervalos que marca cada norma NFPA aplicable.' },
   ],
   almacen: [
-    { q: `¿Qué tipo de rociadores tiene ${empresa.data.nombre}?`, a: empresa.data.tipoSistema.includes('rociadores-automaticos') ? `${empresa.data.nombre} tiene rociadores automáticos certificados UL/FM de respuesta rápida, diseñados para almacenes conforme a NFPA 13. La densidad de descarga se calculó según la clasificación de mercancía y altura de almacenamiento.` : `${empresa.data.nombre} cuenta con ${empresa.data.tipoSistema.length} sistemas de protección verificados. Consulta los detalles de cada sistema en esta misma página.` },
-    { q: `¿La aseguradora acepta la certificación de ${empresa.data.nombre}?`, a: `Los sistemas de ${empresa.data.nombre} están certificados con equipos UL y FM, que son los estándares que reconocen las aseguradoras en México. Gama de México entrega un certificado digital y carpeta técnica que respaldan la instalación.` },
+    { q: `¿Qué tipo de rociadores tiene este almacén?`, a: empresa.data.tipoSistema.includes('rociadores-automaticos') ? `Este proyecto tiene rociadores automáticos certificados UL/FM de respuesta rápida, diseñados para almacenes conforme a NFPA 13. La densidad de descarga se calculó según la clasificación de mercancía y altura de almacenamiento.` : `Este proyecto cuenta con ${nSistemas} sistemas de protección verificados. Consulta los detalles de cada sistema en esta misma página.` },
+    { q: `¿Las aseguradoras aceptan la verificación de Gama de México?`, a: `Los sistemas instalados utilizan equipos certificados UL y FM, que son los estándares que reconocen las aseguradoras en México. Gama de México entrega un certificado digital y carpeta técnica que respaldan la instalación.` },
     { q: '¿Cómo solicito la certificación para mi almacén?', a: 'Contacta a Gama de México al 55 6529 8240 o usa el formulario de esta página. Un ingeniero visitará tu almacén, evaluará la clasificación de mercancía y altura de estiba, y te entregará un proyecto conforme a NFPA 13 y NOM-002-STPS.' },
   ],
   hospital: [
-    { q: `¿Qué sistemas especiales tiene ${empresa.data.nombre}?`, a: `${empresa.data.nombre} cuenta con ${empresa.data.tipoSistema.length} sistemas certificados, incluyendo ${empresa.data.tipoSistema.map(s => sistemaInfo[s]?.label || s).join(', ')}. Los sistemas fueron diseñados para áreas hospitalarias donde la continuidad operacional es prioritaria.` },
-    { q: '¿Los sistemas cumplen con COFEPRIS y protección civil?', a: `Los sistemas instalados en ${empresa.data.nombre} cumplen con NOM-002-STPS, NFPA y los requerimientos de COFEPRIS para establecimientos de salud. La certificación fue emitida por ${empresa.data.certificadoPor}.` },
-    { q: '¿Cómo se certifica un hospital en protección contra incendios?', a: 'Gama de México realiza un diagnóstico de las áreas críticas (quirófanos, terapia intensiva, laboratorios, centro de datos) y diseña la protección conforme a NFPA y NOM. La instalación se programa para no interrumpir la operación hospitalaria.' },
+    { q: `¿Qué sistemas especiales incluye este proyecto hospitalario?`, a: `Este proyecto hospitalario cuenta con ${nSistemas} sistemas verificados, incluyendo ${listaSistemas}. Los sistemas fueron diseñados para áreas hospitalarias donde la continuidad operacional es prioritaria.` },
+    { q: '¿Los sistemas cumplen con COFEPRIS y protección civil?', a: `Los sistemas instalados en este proyecto cumplen con NOM-002-STPS, NFPA y los requerimientos de COFEPRIS para establecimientos de salud. Todos verificados por Gama de México.` },
+    { q: '¿Cómo se protege un hospital contra incendios?', a: 'Gama de México realiza un diagnóstico de las áreas críticas (quirófanos, terapia intensiva, laboratorios, centro de datos) y diseña la protección conforme a NFPA y NOM. La instalación se programa para no interrumpir la operación hospitalaria.' },
   ],
   oficina: [
-    { q: `¿Qué sistemas contra incendios tiene ${empresa.data.nombre}?`, a: `${empresa.data.nombre} tiene ${empresa.data.tipoSistema.length} sistemas verificados: ${empresa.data.tipoSistema.map(s => sistemaInfo[s]?.label || s).join(', ')}. La instalación cumple con NFPA y NOM-002-STPS para ocupación de oficinas.` },
-    { q: '¿Los detectores de humo cubren todos los pisos?', a: empresa.data.tipoSistema.includes('deteccion-alarma') ? `Sí, el sistema de detección y alarma instalado en ${empresa.data.nombre} cubre todas las áreas con detectores fotoeléctricos, estaciones manuales y sirenas de notificación conforme a NFPA 72.` : `${empresa.data.nombre} cuenta con ${empresa.data.tipoSistema.length} sistemas certificados. Para detalles sobre detección en oficinas, contacta a Gama de México.` },
+    { q: `¿Qué sistemas contra incendios tiene este edificio corporativo?`, a: `Este proyecto de oficinas tiene ${nSistemas} sistemas verificados: ${listaSistemas}. La instalación cumple con NFPA y NOM-002-STPS para ocupación de oficinas.` },
+    { q: '¿Los detectores de humo cubren todos los pisos?', a: empresa.data.tipoSistema.includes('deteccion-alarma') ? `Sí, el sistema de detección y alarma instalado cubre todas las áreas con detectores fotoeléctricos, estaciones manuales y sirenas de notificación conforme a NFPA 72.` : `Este proyecto cuenta con ${nSistemas} sistemas certificados. Para detalles sobre detección en oficinas, contacta a Gama de México.` },
     { q: '¿Cómo contactar a Gama de México para certificar mi oficina?', a: 'Usa el formulario en esta página o llama al 55 6529 8240. Un ingeniero evaluará tu edificio y te entregará el proyecto con los sistemas necesarios para cumplir protección civil y obtener tu certificación.' },
   ],
   escuela: [
-    { q: `¿Qué protección contra incendios tiene ${empresa.data.nombre}?`, a: `${empresa.data.nombre} cuenta con ${empresa.data.tipoSistema.length} sistemas certificados: ${empresa.data.tipoSistema.map(s => sistemaInfo[s]?.label || s).join(', ')}. Los sistemas están diseñados para instituciones educativas con alta ocupación.` },
-    { q: '¿La escuela cumple con protección civil para el ciclo escolar?', a: `${empresa.data.nombre} tiene certificación emitida el ${empresa.data.fechaCertificacion} por ${empresa.data.certificadoPor}. Los sistemas verificados cumplen con NOM-002-STPS y los requisitos de protección civil para instituciones educativas.` },
+    { q: `¿Qué protección contra incendios tiene esta institución educativa?`, a: `Este proyecto educativo cuenta con ${nSistemas} sistemas verificados: ${listaSistemas}. Los sistemas están diseñados para instituciones con alta ocupación.` },
+    { q: '¿La institución cumple con protección civil para el ciclo escolar?', a: `Los sistemas instalados en este proyecto están verificados por Gama de México y cumplen con NOM-002-STPS y los requisitos de protección civil para instituciones educativas.` },
     { q: '¿Gama de México capacita al personal de la escuela?', a: 'Sí. Gama de México ofrece capacitación en uso de extintores, evacuación y primeros auxilios para personal docente y administrativo. La capacitación se programa en horarios que no interrumpan las actividades escolares.' },
   ],
   comercio: [
-    { q: `¿Qué sistemas contra incendios tiene ${empresa.data.nombre}?`, a: `${empresa.data.nombre} tiene ${empresa.data.tipoSistema.length} sistemas certificados: ${empresa.data.tipoSistema.map(s => sistemaInfo[s]?.label || s).join(', ')}. Todos verificados conforme a NFPA y NOM-002-STPS para establecimientos comerciales.` },
-    { q: `¿${empresa.data.nombre} tiene certificación vigente?`, a: empresa.data.certificacionVigente ? `Sí. La certificación se encuentra vigente, emitida el ${empresa.data.fechaCertificacion} por ${empresa.data.certificadoPor}. Los equipos son certificados UL y FM.` : `La certificación fue emitida el ${empresa.data.fechaCertificacion}. Se recomienda contactar a Gama de México para verificar el estatus actual y programar reinspección.` },
+    { q: `¿Qué sistemas contra incendios tiene este establecimiento comercial?`, a: `Este proyecto comercial tiene ${nSistemas} sistemas verificados: ${listaSistemas}. Todos conforme a NFPA y NOM-002-STPS para establecimientos comerciales.` },
+    { q: `¿Los sistemas de este establecimiento están activos?`, a: `Sí. Los ${nSistemas} sistemas instalados están verificados y en operación. Gama de México entregó el certificado digital y la carpeta técnica requerida por la aseguradora.` },
     { q: '¿Cómo obtengo la certificación para mi tienda o local comercial?', a: 'Contacta a Gama de México al 55 6529 8240. Un ingeniero evaluará tu local, te indicará los sistemas que necesitas para cumplir con protección civil y te entregará una cotización. La instalación se puede hacer fuera de horario comercial.' },
   ],
   residencial: [
-    { q: `¿Qué protección tiene ${empresa.data.nombre}?`, a: `${empresa.data.nombre} cuenta con ${empresa.data.tipoSistema.length} sistemas certificados: ${empresa.data.tipoSistema.map(s => sistemaInfo[s]?.label || s).join(', ')}. Los sistemas cumplen con normativas aplicables a uso residencial.` },
+    { q: `¿Qué protección tiene este desarrollo residencial?`, a: `Este proyecto residencial cuenta con ${nSistemas} sistemas verificados: ${listaSistemas}. Los sistemas cumplen con normativas aplicables a uso residencial.` },
     { q: '¿Los condominios requieren sistema contra incendios?', a: 'Sí. Los desarrollos residenciales con más de 3 niveles o estacionamiento subterráneo requieren sistemas de detección, gabinetes contra incendio y señalización conforme a NOM-002-STPS y el reglamento de construcción local.' },
     { q: '¿Cómo certifico mi condominio o desarrollo residencial?', a: 'Gama de México evalúa la instalación existente, identifica qué falta o está fuera de norma, y entrega un proyecto para cumplir los requerimientos. Llama al 55 6529 8240 o usa el formulario en esta página.' },
   ],
   otro: [
-    { q: `¿Qué sistemas tiene ${empresa.data.nombre}?`, a: `${empresa.data.nombre} cuenta con ${empresa.data.tipoSistema.length} sistemas certificados: ${empresa.data.tipoSistema.map(s => sistemaInfo[s]?.label || s).join(', ')}. Todos verificados por ${empresa.data.certificadoPor}.` },
-    { q: `¿La certificación de ${empresa.data.nombre} está vigente?`, a: empresa.data.certificacionVigente ? `Sí. Certificación vigente emitida el ${empresa.data.fechaCertificacion} por ${empresa.data.certificadoPor}.` : `La certificación fue emitida el ${empresa.data.fechaCertificacion}. Contacta a Gama de México para verificar el estatus actual.` },
-    { q: '¿Cómo solicito la certificación de mi empresa?', a: 'Contacta a Gama de México al 55 6529 8240 o envía el formulario en esta página. Un ingeniero visitará tu instalación y te entregará un diagnóstico con los sistemas necesarios.' },
+    { q: `¿Qué sistemas incluye este proyecto?`, a: `Este proyecto cuenta con ${nSistemas} sistemas verificados: ${listaSistemas}. Todos verificados por Gama de México conforme a NFPA y NOM-002-STPS.` },
+    { q: `¿Los sistemas de este proyecto están activos?`, a: `Sí. Los sistemas instalados en este proyecto están verificados y operativos. Gama de México realizó la verificación técnica en ${anio}.` },
+    { q: '¿Cómo solicito la verificación de mi empresa?', a: 'Contacta a Gama de México al 55 6529 8240 o envía el formulario en esta página. Un ingeniero visitará tu instalación y te entregará un diagnóstico con los sistemas necesarios.' },
   ],
 };
 
@@ -346,41 +350,39 @@ const galeriaImgs = galeriaCount > 0
   : fallbackImgs;
 
 const galeriaAlts = [
-  `Fachada principal de ${empresa.data.nombre} en ${empresa.data.ciudad}`,
-  `Recepción de ${empresa.data.nombre} — sistema contra incendios certificado`,
-  `Área de operaciones de ${empresa.data.nombre} con protección contra incendios`,
-  `Gabinete contra incendio certificado en ${empresa.data.nombre}`,
-  `Señalización de emergencia en ${empresa.data.nombre}, ${empresa.data.ciudad}`,
-  `Área técnica con sistemas de protección en ${empresa.data.nombre}`,
-  `Exterior de ${empresa.data.nombre} — certificado por Gama de México`,
-  `Vista panorámica de ${empresa.data.nombre} en ${empresa.data.estado}`,
+  `${giroLabels[empresa.data.giro]} en ${empresa.data.ciudad} — sistema contra incendios instalado por Gama de México`,
+  `Área interior con protección contra incendios verificada por Gama de México`,
+  `Sistemas de protección activos en ${empresa.data.sector || giroLabels[empresa.data.giro]} — ${empresa.data.estado}`,
+  `Gabinete contra incendio certificado — proyecto apoyado por Gama de México`,
+  `Señalización de emergencia conforme a NOM — ${empresa.data.ciudad}, ${empresa.data.estado}`,
+  `Área técnica con sistemas de protección contra incendios NFPA`,
+  `Instalación de sistemas contra incendios apoyada por Gama de México`,
+  `Vista general de instalación con protección activa — ${empresa.data.estado}`,
 ];
 
-// Schema.org LocalBusiness
+// Schema.org Service — sin identificar empresa tercera (FASE 1 · 2026-07-01)
+// Se usa Service en lugar de LocalBusiness porque el sujeto es el servicio prestado
+// por Gama de México, no la empresa cliente (que es anónima).
 const businessSchema = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": empresa.data.nombre,
-  "description": empresa.data.descripcion || `${empresa.data.nombre} cuenta con sistema de protección contra incendios certificado por Gama de México.`,
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": empresa.data.direccion,
-    "addressLocality": empresa.data.ciudad,
-    "addressRegion": empresa.data.estado,
-    "postalCode": empresa.data.codigoPostal,
-    "addressCountry": "MX"
+  "@type": "Service",
+  "name": `Instalación Sistema Contra Incendios — ${empresa.data.sector || giroLabels[empresa.data.giro]}`,
+  "description": empresa.data.descripcion || `Proyecto de protección contra incendios en ${empresa.data.giro} ubicado en ${empresa.data.ciudad}, ${empresa.data.estado}. ${empresa.data.tipoSistema.length} sistemas instalados y verificados por Gama de México conforme a NFPA y NOM-002-STPS.`,
+  "serviceType": "Protección Contra Incendios",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Gama de México",
+    "url": "https://gamademexico.com"
   },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": empresa.data.latitud,
-    "longitude": empresa.data.longitud
+  "areaServed": {
+    "@type": "State",
+    "name": empresa.data.estado,
+    "containedInPlace": {
+      "@type": "Country",
+      "name": "México"
+    }
   },
-  ...(empresa.data.telefono && { "telephone": empresa.data.telefono }),
-  ...(empresa.data.email && { "email": empresa.data.email }),
-  "url": empresa.data.website || `https://gamademexico.com/empresas-certificadas/${empresa.data.slug}`,
-  // NOTA (auditoría 2026): se eliminaron aggregateRating y review — eran datos
-  // generados por hash del slug (ratings 4.7-5.0 y reseñas con autores ficticios)
-  // sobre negocios de terceros. Riesgo de penalización Google y riesgo legal.
+  "url": `https://gamademexico.com/empresas-certificadas/${empresa.data.slug}`,
 };
 
 // FAQPage Schema
@@ -408,19 +410,14 @@ const breadcrumbSchema = {
   ]
 };
 
-// Formatear fecha
-const formatDate = (dateStr: string) => {
-  return new Date(dateStr).toLocaleDateString('es-MX', { day: 'numeric', month: 'long', year: 'numeric' });
-};
-
 // Title optimizado a ≤60 chars
 const titleFull = `${empresa.data.nombre} | Contra Incendios ${empresa.data.ciudad}`;
 const titleShort = `${empresa.data.nombre} | Contra Incendios`;
 const pageTitle = titleFull.length <= 60 ? titleFull : (titleShort.length <= 60 ? titleShort : `${empresa.data.nombre.slice(0, 35)}... | Contra Incendios`);
 
-// Meta description truncada a 155 chars para evitar que Google la corte en SERP
+// Meta description truncada a 155 chars
 const rawDesc = empresa.data.descripcion
-  || `${empresa.data.nombre} cuenta con sistema de protección contra incendios certificado por Gama de México en ${empresa.data.ciudad}, ${empresa.data.estado}. Verificación de ${empresa.data.tipoSistema.length} sistemas activos.`;
+  || `Proyecto de protección contra incendios apoyado por Gama de México en ${empresa.data.ciudad}, ${empresa.data.estado}. ${empresa.data.tipoSistema.length} sistemas verificados: ${empresa.data.tipoSistema.map(s => sistemaInfo[s]?.label || s).join(', ')}.`;
 const pageDesc = rawDesc.length > 155 ? rawDesc.slice(0, 152).trimEnd() + '...' : rawDesc;
 ---
 
@@ -429,39 +426,25 @@ const pageDesc = rawDesc.length > 155 ? rawDesc.slice(0, 152).trimEnd() + '...' 
   description={pageDesc}
   activePage="directorio"
   heroTitle={empresa.data.nombre}
-  heroIntro={`Sistema de protección contra incendios certificado en ${empresa.data.ciudad}, ${empresa.data.estado}. ${empresa.data.tipoSistema.length} sistemas verificados por Gama de México.`}
-  heroBadge={empresa.data.certificacionVigente ? 'Certificación Vigente' : 'Certificación Vencida'}
+  heroIntro={`Proyecto de protección contra incendios apoyado por Gama de México en ${empresa.data.ciudad}, ${empresa.data.estado}. ${empresa.data.tipoSistema.length} sistemas verificados conforme a NFPA y NOM-002-STPS.`}
+  heroBadge={empresa.data.sector || giroLabels[empresa.data.giro]}
   heroMetrics={[
-    { valor: String(empresa.data.tipoSistema.length), texto: 'Sistemas certificados' },
-    { valor: formatDate(empresa.data.fechaCertificacion).split(' ')[2], texto: 'Año certificación' },
-    { valor: giroLabels[empresa.data.giro], texto: 'Tipo de negocio' }
+    { valor: String(empresa.data.tipoSistema.length), texto: 'Sistemas instalados' },
+    { valor: empresa.data.anioProyecto || '2024', texto: 'Año del proyecto' },
+    { valor: giroLabels[empresa.data.giro], texto: 'Sector' }
   ]}
-  heroPrimaryText="Ver ubicación en mapa"
-  heroPrimaryLink={`https://www.google.com/maps/search/?api=1&query=${empresa.data.latitud},${empresa.data.longitud}`}
-  heroSecondaryText="Solicitar certificación"
-  heroSecondaryLink="#cotizar"
+  heroPrimaryText="Solicitar proyecto similar"
+  heroPrimaryLink="#cotizar"
+  heroSecondaryText="Ver catálogo de equipos"
+  heroSecondaryLink="/equipos"
   heroShowRightContent={true}
   structuredData={[businessSchema, breadcrumbSchema, faqSchema]}
 >
 
   <!-- HERO CONTENT -->
   <Fragment slot="hero-content">
-    <p><strong>{empresa.data.nombre}</strong> cuenta con un sistema integral de protección contra incendios verificado por Gama de México. La instalación incluye {empresa.data.tipoSistema.map(s => sistemaInfo[s]?.label || s).join(', ')}, todos certificados conforme a normativas NFPA, NOM-002-STPS y requerimientos de protección civil.</p>
+    <p>Proyecto de protección contra incendios apoyado por Gama de México en <strong>{empresa.data.ciudad}, {empresa.data.estado}</strong>. La instalación incluye {empresa.data.tipoSistema.map(s => sistemaInfo[s]?.label || s).join(', ')}, todos verificados conforme a normativas NFPA, NOM-002-STPS y requerimientos de protección civil.</p>
     {empresa.data.descripcion && <p>{empresa.data.descripcion}</p>}
-    <div class="empresa-ubicacion">
-      <strong>{empresa.data.direccion}</strong><br/>
-      {empresa.data.colonia}, {empresa.data.ciudad}, {empresa.data.estado} C.P. {empresa.data.codigoPostal}
-    </div>
-    {empresa.data.telefono && (
-      <div class="empresa-contacto">
-        <a href={`tel:${empresa.data.telefono}`}>{empresa.data.telefono}</a>
-      </div>
-    )}
-    {empresa.data.website && (
-      <div class="empresa-contacto">
-        <a href={empresa.data.website} target="_blank" rel="noopener noreferrer nofollow external">Sitio web</a>
-      </div>
-    )}
   </Fragment>
 
   <!-- Contenido Principal con Sidebar -->

@@ -156,11 +156,8 @@ const heroMetrics = [
   { valor: producto.data.certificaciones?.[0] || 'UL Listed', texto: 'Certificación' },
 ];
 
-/* ── SEO: título ≤70 chars y descripción ≤160 chars ── */
-const tituloBase = producto.data.title.split(' | ')[0].trim();
-const sufijoMarca = ' | Gama de México';
-const seoTitle =
-  (tituloBase + sufijoMarca).length <= 70 ? tituloBase + sufijoMarca : tituloBase;
+/* ── SEO: título sin marca — keyword primero siempre ── */
+const seoTitle = producto.data.title.split(' | ')[0].trim();
 const seoDescription =
   producto.data.description.length <= 160
     ? producto.data.description

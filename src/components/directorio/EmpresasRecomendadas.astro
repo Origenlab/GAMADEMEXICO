@@ -111,17 +111,12 @@ const calcularSimilitud = (empresa: any) => {
     score += 8;
   }
 
-  // 6. Empresa verificada (3 puntos)
-  if (data.verificado) {
-    score += 3;
+  // 6. Proyecto integral (8 puntos — más valor que instalación simple)
+  if (data.tipoProyecto === 'proyecto-integral') {
+    score += 8;
   }
 
-  // 7. Certificación vigente (5 puntos)
-  if (data.certificacionVigente) {
-    score += 5;
-  }
-
-  // 8. Cantidad de sistemas (más completa = más relevante)
+  // 7. Cantidad de sistemas (más completa = más relevante)
   score += Math.min(data.tipoSistema.length, 5);
 
   return score;
@@ -274,8 +269,8 @@ empresasConScore.forEach(({ empresa }) => {
               </div>
 
               <footer class="empresa-card-enhanced__footer">
-                <span class={`cert-status ${empresa.data.certificacionVigente ? 'cert-status--active' : 'cert-status--expired'}`}>
-                  {empresa.data.certificacionVigente ? 'Certificación vigente' : 'Vencida'}
+                <span class="cert-status cert-status--active">
+                  Proyecto apoyado
                 </span>
                 <a href={`/empresas-certificadas/${empresa.data.slug}`} class="empresa-card-enhanced__link">
                   Ver detalles →

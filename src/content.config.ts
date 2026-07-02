@@ -135,17 +135,20 @@ const categorias = defineCollection({
 });
 
 // =============================================================================
-// Empresas Certificadas - Directorio SEO de empresas con sistemas contra incendios
+// Empresas Certificadas — Casos de estudio anónimos (reestructurado FASE 1 · 2026-07-01)
+// Sin datos de identidad: sin razón social real, sin dirección, sin contacto.
+// Framing: "empresas que hemos apoyado" por sector + estado.
 // =============================================================================
 const empresasCertificadas = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/empresas-certificadas' }),
   schema: z.object({
-    // --- Información básica ---
-    nombre: z.string(),
+    // --- Identificación anónima ---
+    nombre: z.string(),           // e.g. "Planta Automotriz Premium OEM — San Luis Potosí"
     slug: z.string(),
     descripcion: z.string().optional(),
 
-    // --- Categoría del negocio ---
+    // --- Sector y giro ---
+    sector: z.string().optional(), // e.g. "Industria Automotriz"
     giro: z.enum([
       'hotel',
       'restaurante',
@@ -159,19 +162,9 @@ const empresasCertificadas = defineCollection({
       'otro'
     ]),
 
-    // --- Ubicación ---
-    direccion: z.string(),
-    colonia: z.string(),
+    // --- Ubicación (solo ciudad y estado — sin dirección específica) ---
     ciudad: z.string(),
     estado: z.string(),
-    codigoPostal: z.string(),
-    latitud: z.number(),
-    longitud: z.number(),
-
-    // --- Contacto ---
-    telefono: z.string().optional(),
-    email: z.string().email().optional(),
-    website: z.string().url().optional(),
 
     // --- Sistema contra incendios ---
     tipoSistema: z.array(z.enum([
@@ -186,11 +179,16 @@ const empresasCertificadas = defineCollection({
       'senalizacion'
     ])),
 
-    // --- Certificación ---
-    fechaCertificacion: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
-    fechaVencimiento: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).optional(),
-    certificacionVigente: z.boolean().default(true),
-    certificadoPor: z.string().default('Gama de México'),
+    // --- Tipo y año de proyecto ---
+    tipoProyecto: z.enum([
+      'instalacion',
+      'auditoria',
+      'mantenimiento',
+      'proyecto-integral',
+      'consultoria',
+    ]).default('instalacion'),
+    // z.coerce.string: acepta tanto "2024" (string) como 2024 (number) en YAML
+    anioProyecto: z.coerce.string().optional(),
 
     // --- Media ---
     imagen: z.string().optional(),
@@ -198,10 +196,7 @@ const empresasCertificadas = defineCollection({
 
     // --- SEO ---
     destacado: z.boolean().default(false),
-    verificado: z.boolean().default(false),
-
-    // --- Metadata ---
-    fechaRegistro: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).optional(),
+    noindex: z.boolean().default(false),
   }),
 });
 

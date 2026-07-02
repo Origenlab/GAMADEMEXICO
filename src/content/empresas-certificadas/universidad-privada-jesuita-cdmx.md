@@ -1,0 +1,56 @@
+---
+nombre: Universidad Privada Jesuita — CDMX
+slug: "universidad-privada-jesuita-cdmx"
+sector: Educación Superior
+giro: escuela
+ciudad: Ciudad de México
+estado: Ciudad de México
+tipoSistema:
+  - rociadores-automaticos
+  - red-hidrantes
+  - deteccion-alarma
+  - gabinetes
+  - senalizacion
+  - fm200
+  - co2
+tipoProyecto: instalacion
+anioProyecto: 2024
+imagen: "/img/directorio/empresas/universidad-iberoamericana.avif"
+destacado: false
+noindex: false
+---
+
+## Sistema de Protección Contra Incendios Certificado
+
+La la universidad es una de las instituciones de educación superior más prestigiosas del país. Su extenso campus requiere un sistema de protección contra incendios adaptado a las diversas necesidades de cada tipo de edificio.
+
+### Sistemas Instalados
+
+- **Rociadores automáticos** en todos los edificios académicos, administrativos y deportivos
+- **Red de hidrantes exterior** con 25 tomas distribuidas en el campus
+- **Sistema de detección centralizado** con más de 5,000 dispositivos monitoreados
+- **Sistema FM-200** en centros de cómputo, biblioteca y archivo histórico
+- **Sistema CO2** en laboratorios de química y talleres industriales
+- **120 gabinetes contra incendio** en edificios principales
+
+### Áreas Especiales Protegidas
+
+- **Biblioteca Francisco Xavier Clavigero**: Sistema de detección temprana para protección del acervo
+- **Laboratorios de Química e Ingeniería**: Supresión especializada para materiales peligrosos
+- **Auditorio José Sánchez Villaseñor**: Rociadores de respuesta rápida y sistema de voceo
+- **Centro de Diseño y Manufactura**: Protección para equipos CNC y materiales combustibles
+- **Residencias Estudiantiles**: Detectores en cada habitación con alarma centralizada
+
+### Plan de Emergencia Universitario
+
+- Brigadas de emergencia en cada edificio con personal capacitado
+- Simulacros semestrales con participación de comunidad universitaria
+- Coordinación con bomberos de CDMX para respuesta rápida
+- Sistema de notificación masiva por SMS y app universitaria
+
+### Certificaciones
+
+- Certificación Protección Civil CDMX para instituciones educativas
+- Cumplimiento SEP en materia de seguridad escolar
+- NFPA 1 (Fire Code) y NFPA 10 (Extintores Portátiles)
+- Acreditación FIMPES en infraestructura y seguridad
