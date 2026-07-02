@@ -215,6 +215,13 @@ export function buildProductCategorySchema(product: ProductCategorySchemaInput) 
   // estructurados fabricados (reseñas inventadas, ratings sin fuente real).
   // Si en el futuro existen reseñas REALES verificables (Google Business,
   // plataforma de reviews), reintroducirlas desde esa fuente de datos.
+  //
+  // NOTA (auditoría 2026 — FASE 3): se elimina el bloque `offers` porque:
+  // 1. Una página de CATEGORÍA no tiene un precio único — es un conjunto de productos.
+  // 2. Offer sin `price` es error de validación en Google Rich Results Test.
+  // 3. Las páginas de categoría ya emiten ItemList (via buildItemListSchema) que
+  //    representa correctamente el catálogo. Un Product sin offers no califica para
+  //    Shopping rich results, pero sí comunica la entidad a parsers y AI.
   return {
     '@context': 'https://schema.org',
     '@type': 'Product',
@@ -231,16 +238,6 @@ export function buildProductCategorySchema(product: ProductCategorySchemaInput) 
       name: product.brand || 'Elkhart Brass',
     },
     category: product.category,
-    offers: {
-      '@type': 'Offer',
-      availability: 'https://schema.org/InStock',
-      priceCurrency: 'MXN',
-      seller: {
-        '@type': 'Organization',
-        name: SITE_NAME,
-        url: SITE_URL,
-      },
-    },
   };
 }
 

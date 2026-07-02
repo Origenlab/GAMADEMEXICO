@@ -5,143 +5,16 @@ import Faq from '../../components/Faq.astro';
 import SectionHeader from '../../components/SectionHeader.astro';
 import LeadCapture from '../../components/LeadCapture.astro';
 import { buildOrganizationSchema, buildFAQSchema, buildBreadcrumbSchema } from '../../lib/seo';
-import { SITE_NAME, SITE_URL, WHATSAPP_NUMBER } from '../../lib/config';
+import { WHATSAPP_NUMBER } from '../../lib/config';
 
-// Schemas Service + Offer por categoría (precio B2B a cotizar; rangos de referencia de mercado donde disponibles)
-const serviceSchemas = [
-  {
-    '@context': 'https://schema.org',
-    '@type': 'Service',
-    name: 'Válvulas Contra Incendios',
-    description: 'Válvulas OS&Y, angulares, de compuerta y de control certificadas UL/FM para sistemas contra incendios en México. Distribución autorizada Elkhart Brass y Potter Roemer.',
-    url: `${SITE_URL}/valvulas-contra-incendios`,
-    provider: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
-    areaServed: { '@type': 'Country', name: 'México' },
-    offers: {
-      '@type': 'Offer',
-      availability: 'https://schema.org/InStock',
-      priceCurrency: 'USD',
-      priceSpecification: {
-        '@type': 'PriceSpecification',
-        minPrice: 400,
-        maxPrice: 2000,
-        priceCurrency: 'USD',
-        description: 'Válvulas OS&Y 4" UL/FM con precio referencial de mercado desde ~$400 USD según fabricante (distribuidores México). Rango amplio: diámetro (1.5"–8"), tipo (OS&Y/angular/compuerta/mariposa) y certificación (UL vs FM). Facturación en MXN al tipo de cambio del día.',
-      },
-      seller: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
-    },
-  },
-  {
-    '@context': 'https://schema.org',
-    '@type': 'Service',
-    name: 'Boquillas y Bocas de Incendio',
-    description: 'Boquillas de chorro, niebla y espuma certificadas UL/FM. Bocas de incendio equipadas para sistemas contra incendios industriales y comerciales en México.',
-    url: `${SITE_URL}/boquillas-contra-incendios`,
-    provider: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
-    areaServed: { '@type': 'Country', name: 'México' },
-    offers: {
-      '@type': 'Offer',
-      availability: 'https://schema.org/InStock',
-      priceCurrency: 'MXN',
-      priceSpecification: {
-        '@type': 'PriceSpecification',
-        minPrice: 3000,
-        maxPrice: 5000,
-        priceCurrency: 'MXN',
-        description: 'Bocas de incendio equipadas: $3,000–$5,000 MXN por unidad (precio de mercado verificado en distribuidores México). Boquillas industriales premium Elkhart Brass (Master Stream, X-Stream) se listan desde $3,085 USD en distribuidores especializados. Facturación en MXN al tipo de cambio.',
-      },
-      seller: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
-    },
-  },
-  {
-    '@context': 'https://schema.org',
-    '@type': 'Service',
-    name: 'Monitores Contra Incendios',
-    description: 'Monitores fijos y portátiles de alta capacidad (250 a 2500 GPM) certificados UL/FM. Modelos manuales y oscilantes para industria pesada, aeropuertos y terminales de combustible.',
-    url: `${SITE_URL}/monitores-contra-incendios`,
-    provider: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
-    areaServed: { '@type': 'Country', name: 'México' },
-    offers: {
-      '@type': 'Offer',
-      availability: 'https://schema.org/InStock',
-      priceCurrency: 'USD',
-      priceSpecification: {
-        '@type': 'PriceSpecification',
-        minPrice: 6599,
-        maxPrice: 39207,
-        priceCurrency: 'USD',
-        description: 'Monitores Elkhart Brass listados por distribuidores en México: Copperhead 1,250 GPM FM Approved desde $6,599 USD; Monitor Elevado Manual desde $39,207 USD. Precios de referencia de distribuidores especializados + IVA. Facturación en MXN al tipo de cambio del día.',
-      },
-      seller: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
-    },
-  },
-  {
-    '@context': 'https://schema.org',
-    '@type': 'Service',
-    name: 'Mangueras Contra Incendios',
-    description: 'Mangueras certificadas UL/FM en diámetros 1.5" a 3", cubiertas de poliéster y caucho NBR. Para uso industrial, comercial y uso bomberil conforme NFPA 1961.',
-    url: `${SITE_URL}/mangueras-contra-incendios`,
-    provider: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
-    areaServed: { '@type': 'Country', name: 'México' },
-    offers: {
-      '@type': 'Offer',
-      availability: 'https://schema.org/InStock',
-      priceCurrency: 'MXN',
-      priceSpecification: {
-        '@type': 'PriceSpecification',
-        minPrice: 1500,
-        maxPrice: 3500,
-        priceCurrency: 'MXN',
-        description: 'Manguera 30m × 1.5" IPT 200 PSI: precio referencial de mercado desde ~$1,833 MXN por pieza (distribuidores México). Rango completo $1,500–$3,500 MXN según diámetro (1.5"–3"), longitud (15–30m) y tipo de cubierta (poliéster o hule).',
-      },
-      seller: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
-    },
-  },
-  {
-    '@context': 'https://schema.org',
-    '@type': 'Service',
-    name: 'Conexiones y Herrajes Contra Incendios',
-    description: 'Acoplamientos NST y Storz, adaptadores, llaves de manguera, tomas siamesas y accesorios certificados UL/FM para sistemas contra incendios en México.',
-    url: `${SITE_URL}/conexiones-herrajes-contra-incendios`,
-    provider: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
-    areaServed: { '@type': 'Country', name: 'México' },
-    offers: {
-      '@type': 'Offer',
-      availability: 'https://schema.org/InStock',
-      priceCurrency: 'MXN',
-      priceSpecification: {
-        '@type': 'PriceSpecification',
-        minPrice: 700,
-        maxPrice: 2500,
-        priceCurrency: 'MXN',
-        description: 'Herrajes NST con precio referencial de mercado desde ~$750 MXN por pieza: válvulas angulares NST desde ~$747 MXN, acoplamientos rígidos desde ~$791 MXN (distribuidores México). Tomas siamesas con tapones, cadena y disco tienen costo mayor por complejidad.',
-      },
-      seller: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
-    },
-  },
-  {
-    '@context': 'https://schema.org',
-    '@type': 'Service',
-    name: 'Gabinetes e Hidrantes Contra Incendios',
-    description: 'Gabinetes murales y de empotrar, hidrantes industriales y columnas hidrantes certificados UL/FM para edificios comerciales, industriales y plantas.',
-    url: `${SITE_URL}/gabinetes-hidrantes-contra-incendios`,
-    provider: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
-    areaServed: { '@type': 'Country', name: 'México' },
-    offers: {
-      '@type': 'Offer',
-      availability: 'https://schema.org/InStock',
-      priceCurrency: 'MXN',
-      priceSpecification: {
-        '@type': 'PriceSpecification',
-        minPrice: 1527,
-        maxPrice: 2500,
-        priceCurrency: 'MXN',
-        description: 'Gabinetes empotrados para manguera de 30m: precio referencial de mercado $1,527–$2,395 MXN con IVA incluido (distribuidores especializados México: COGARSA, Extinflam/Vallen). Precio de gabinete solo; manguera y boquilla se cotizan por separado.',
-      },
-      seller: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
-    },
-  },
-];
+// NOTA (auditoría 2026 — FASE 3): se eliminó el array serviceSchemas que usaba
+// offers.priceSpecification con rangos de precios de OTROS distribuidores, marcados
+// como availability: InStock de Gama de México — señal falsa en schema.
+// Razones: (1) precios externos ≠ precios propios; (2) Offer/InStock sin precio propio
+// verificado es engañoso para Google; (3) el FAQ ya contiene la misma información
+// de referencia de precios de forma honesta y legible.
+// La página ahora emite: Organization + FAQ + Breadcrumb. Correcto para página
+// informativa de "precios a cotizar".
 
 const faqItems = [
   {
@@ -180,7 +53,6 @@ const faqItems = [
 
 const structuredData = [
   buildOrganizationSchema(),
-  ...serviceSchemas,
   buildFAQSchema(faqItems),
   buildBreadcrumbSchema([
     { name: 'Inicio', url: '/' },
