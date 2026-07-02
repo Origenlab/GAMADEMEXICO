@@ -22,7 +22,6 @@ imagen: "/img/blog/gabinete-contra-incendios-instalacion-edificio-mexico.avif"
 imagenAlt: "Red contra incendios en edificio de gran altura NFPA 14"
 tags: ["mangueras contra incendios", "brigadas industriales", "protección contra incendios", "México"]
 destacado: false
-canonical: "https://gamademexico.com/blog/mangueras/red-contra-incendios-edificios-altura-nfpa-14-standpipe"
 noindex: false
 tiempoLectura: 14
 draft: false

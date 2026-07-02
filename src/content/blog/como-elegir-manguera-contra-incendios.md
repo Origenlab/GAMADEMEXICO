@@ -14,7 +14,6 @@ destacado: true
 tiempoLectura: 18
 draft: false
 productosRelacionados: ["manguera-millhose-1-5-30m", "manguera-blindex-2-5-30m", "manguera-forestal-1-5-30m"]
-canonical: "https://gamademexico.com/blog/mangueras/como-elegir-manguera-contra-incendios"
 noindex: false
 schema:
   - type: "Article"

@@ -24,7 +24,6 @@ tags: ["prueba hidrostática", "NFPA 1962", "mangueras contra incendios", "inspe
 destacado: false
 draft: false
 tiempoLectura: 12
-canonical: "https://gamademexico.com/blog/mangueras/prueba-hidrostatica-mangueras-incendios-protocolo-nfpa-1962"
 noindex: false
 ---
 

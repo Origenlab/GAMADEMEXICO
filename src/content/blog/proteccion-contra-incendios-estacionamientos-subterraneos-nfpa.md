@@ -22,7 +22,6 @@ imagen: "/img/blog/gabinete-contra-incendios-instalacion-edificio-mexico.avif"
 imagenAlt: "Sistema de protección contra incendios en estacionamiento subterráneo"
 tags: ["gabinetes contra incendios", "hidrantes", "NOM-002-STPS", "protección contra incendios"]
 destacado: false
-canonical: "https://gamademexico.com/blog/gabinetes-hidrantes/proteccion-contra-incendios-estacionamientos-subterraneos-nfpa"
 noindex: false
 tiempoLectura: 14
 draft: false

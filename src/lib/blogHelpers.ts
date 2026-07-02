@@ -48,6 +48,18 @@ export const SLUG_TO_CATEGORY: Record<string, string> = {
 };
 
 // -----------------------------------------------------------------------------
+// Generar URL canónica correcta para un post del blog
+// Usa CATEGORY_SLUGS para el segmento de categoría (igual que getStaticPaths).
+// Ejemplo: getBlogCanonical('valvulas', 'mi-post') →
+//          'https://gamademexico.com/blog/valvulas-contra-incendios/mi-post'
+// -----------------------------------------------------------------------------
+export function getBlogCanonical(categoria: string, slug: string): string {
+  const SITE_URL = 'https://gamademexico.com';
+  const categorySlug = CATEGORY_SLUGS[categoria] || categoria;
+  return `${SITE_URL}/blog/${categorySlug}/${slug}`;
+}
+
+// -----------------------------------------------------------------------------
 // Calcular tiempo de lectura
 // -----------------------------------------------------------------------------
 export function calculateReadingTime(content: string): number {

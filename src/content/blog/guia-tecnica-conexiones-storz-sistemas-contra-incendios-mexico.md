@@ -12,7 +12,6 @@ tags: ["conexiones Storz", "NFPA 1963", "conexiones contra incendios", "manguera
 destacado: false
 draft: false
 tiempoLectura: 16
-canonical: "https://gamademexico.com/blog/conexiones-herrajes/guia-tecnica-conexiones-storz-sistemas-contra-incendios-mexico"
 noindex: false
 schema:
   - type: "Article"

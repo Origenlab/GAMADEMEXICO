@@ -23,7 +23,6 @@ imagen: "/img/blog/valvula-compuerta-osy-sistema-rociadores-industrial.avif"
 imagenAlt: "Bomba contra incendios con válvulas de control industrial"
 tags: ["bombas contra incendios", "NFPA 20", "válvulas de control", "sistema de bombeo", "protección contra incendios"]
 destacado: false
-canonical: "https://gamademexico.com/blog/valvulas/bombas-contra-incendios-seleccion-instalacion-nfpa-20"
 noindex: false
 tiempoLectura: 15
 draft: false

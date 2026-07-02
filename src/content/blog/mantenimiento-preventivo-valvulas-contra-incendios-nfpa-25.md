@@ -24,7 +24,6 @@ imagen: "/img/blog/mantenimiento-equipos-contra-incendios-tecnico-industrial.avi
 imagenAlt: "Técnico realizando mantenimiento preventivo de válvulas contra incendios"
 tags: ["válvulas contra incendios", "NFPA", "protección industrial", "México"]
 destacado: false
-canonical: "https://gamademexico.com/blog/valvulas/mantenimiento-preventivo-valvulas-contra-incendios-nfpa-25"
 noindex: false
 tiempoLectura: 14
 draft: false

@@ -13,7 +13,6 @@ tags: ["almacenamiento mangueras", "mantenimiento mangueras", "vida útil mangue
 destacado: false
 draft: false
 tiempoLectura: 16
-canonical: "https://gamademexico.com/blog/mangueras/almacenamiento-mantenimiento-mangueras-incendios-vida-util"
 noindex: false
 productosRelacionados: ["manguera-millhose", "manguera-blindex"]
 schema:

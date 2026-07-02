@@ -21,7 +21,6 @@ imagenAlt: "Protección contra incendios en maquinaria y talleres"
 tags: ["maquinaria pesada", "construcción", "talleres", "hidrocarburos", "NFPA 30A", "monitores contra incendios", "protección industrial"]
 destacado: true
 tiempoLectura: 24
-canonical: "https://gamademexico.com/blog/monitores/proteccion-contra-incendios-maquinaria-construccion-talleres"
 noindex: false
 draft: false
 productosRelacionados: ["monitor-tipo-corazon", "manguera-industrial", "valvula-compuerta", "gabinete-industrial"]

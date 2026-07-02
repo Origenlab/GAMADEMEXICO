@@ -13,7 +13,6 @@ tags: ["adaptadores mangueras", "acoplamientos Storz NST", "NFPA 1963", "conexio
 destacado: false
 draft: false
 tiempoLectura: 16
-canonical: "https://gamademexico.com/blog/conexiones-herrajes/adaptadores-acoplamientos-mangueras-contra-incendios-tipos"
 noindex: false
 productosRelacionados: []
 schema:

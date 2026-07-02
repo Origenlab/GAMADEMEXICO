@@ -14,7 +14,6 @@ destacado: false
 draft: false
 productosRelacionados: ["hidrante-banqueta", "hidrante-banqueta-350psi", "hidrante-banqueta-4-salidas", "hidrante-banqueta-trafico", "llave-hidrante-pentagonal"]
 tiempoLectura: 18
-canonical: "https://gamademexico.com/blog/gabinetes-hidrantes/hidrantes-contra-incendios-mexico-tipos-instalacion-normas"
 noindex: false
 schema:
   - type: "Article"

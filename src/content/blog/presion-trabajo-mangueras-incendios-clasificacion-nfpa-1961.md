@@ -24,7 +24,6 @@ tags: ["NFPA 1961", "presión de trabajo mangueras", "mangueras contra incendios
 destacado: false
 draft: false
 tiempoLectura: 12
-canonical: "https://gamademexico.com/blog/mangueras/presion-trabajo-mangueras-incendios-clasificacion-nfpa-1961"
 noindex: false
 ---
 

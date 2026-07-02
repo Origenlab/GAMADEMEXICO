@@ -22,7 +22,6 @@ imagen: "/img/blog/inspeccion-proteccion-civil-empresa-industrial-mexico.avif"
 imagenAlt: "Plan de emergencia contra incendios en empresa industrial"
 tags: ["mangueras contra incendios", "brigadas industriales", "protección contra incendios", "México"]
 destacado: false
-canonical: "https://gamademexico.com/blog/mangueras/plan-emergencia-contra-incendios-empresa-nom-002-guia"
 noindex: false
 tiempoLectura: 14
 draft: false

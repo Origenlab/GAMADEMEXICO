@@ -14,7 +14,6 @@ destacado: false
 tiempoLectura: 12
 draft: false
 productosRelacionados: ["valvulas-diluvio-espuma-industria"]
-canonical: "https://gamademexico.com/blog/valvulas/valvulas-diluvio-proteccion-transformadores-electricos-nfpa"
 noindex: false
 schema:
   - type: "Article"

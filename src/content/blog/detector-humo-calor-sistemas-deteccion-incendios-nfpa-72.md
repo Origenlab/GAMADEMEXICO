@@ -11,7 +11,6 @@ imagen: "/img/blog/valvulas-contra-incendios-nfpa-sala-control-industrial.avif"
 imagenAlt: "Panel de sistema de detección de incendios en planta industrial"
 tags: ["detectores de humo", "detectores de calor", "NFPA 72", "sistemas de alarma", "detección de incendios"]
 destacado: false
-canonical: "https://gamademexico.com/blog/monitores/detector-humo-calor-sistemas-deteccion-incendios-nfpa-72"
 noindex: false
 tiempoLectura: 16
 draft: false

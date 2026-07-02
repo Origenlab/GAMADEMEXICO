@@ -14,7 +14,6 @@ destacado: true
 draft: false
 tiempoLectura: 20
 productosRelacionados: ["monitor-corazon-una-cremallera", "monitor-cuello-cisne", "monitor-certificado-fm", "monitor-ul-listed", "monitor-fm-control-remoto"]
-canonical: "https://gamademexico.com/blog/monitores/lineamientos-monitor-contra-incendios-mexico"
 noindex: false
 schema:
   - type: "Article"

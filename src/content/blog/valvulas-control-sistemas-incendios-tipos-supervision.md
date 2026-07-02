@@ -26,7 +26,6 @@ tags: ["válvulas de control", "OS&Y", "válvula mariposa", "NFPA 72", "NFPA 25"
 destacado: false
 draft: false
 tiempoLectura: 13
-canonical: "https://gamademexico.com/blog/valvulas/valvulas-control-sistemas-incendios-tipos-supervision"
 noindex: false
 ---
 

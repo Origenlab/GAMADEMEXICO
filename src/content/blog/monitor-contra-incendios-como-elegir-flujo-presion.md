@@ -13,7 +13,6 @@ destacado: false
 tiempoLectura: 10
 draft: true
 productosRelacionados: ["monitor-tipo-corazon-1250gpm", "monitor-cuello-cisne-2000gpm"]
-canonical: "https://gamademexico.com/blog/monitores/monitor-contra-incendios-como-elegir-flujo-presion"
 noindex: false
 ---
 

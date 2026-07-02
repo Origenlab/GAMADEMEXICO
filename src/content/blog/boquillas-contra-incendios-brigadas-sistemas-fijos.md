@@ -25,7 +25,6 @@ destacado: true
 draft: false
 tiempoLectura: 14
 productosRelacionados: ["boquilla-tipo-pistola", "boquilla-turbo-jet", "boquilla-industrial", "boquilla-certificada"]
-canonical: "https://gamademexico.com/blog/boquillas/boquillas-contra-incendios-brigadas-sistemas-fijos"
 noindex: false
 ---
 

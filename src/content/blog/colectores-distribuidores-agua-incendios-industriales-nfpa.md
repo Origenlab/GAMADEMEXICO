@@ -13,7 +13,6 @@ tags: ["colectores contra incendios", "manifold distribución", "cuarto de bomba
 destacado: false
 draft: false
 tiempoLectura: 16
-canonical: "https://gamademexico.com/blog/conexiones-herrajes/colectores-distribuidores-agua-incendios-industriales-nfpa"
 noindex: false
 productosRelacionados: ["valvula-compuerta-osy", "valvula-retencion", "valvula-mariposa"]
 schema:

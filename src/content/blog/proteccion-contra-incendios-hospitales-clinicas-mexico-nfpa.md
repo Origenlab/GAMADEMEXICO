@@ -22,7 +22,6 @@ imagen: "/img/blog/sistema-contra-incendios-hotel-centro-comercial-mexico.avif"
 imagenAlt: "Sistema de protección contra incendios en hospital México"
 tags: ["gabinetes contra incendios", "hidrantes", "NOM-002-STPS", "protección contra incendios"]
 destacado: false
-canonical: "https://gamademexico.com/blog/gabinetes-hidrantes/proteccion-contra-incendios-hospitales-clinicas-mexico-nfpa"
 noindex: false
 tiempoLectura: 14
 draft: false

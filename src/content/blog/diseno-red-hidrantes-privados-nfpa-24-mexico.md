@@ -11,7 +11,6 @@ imagen: "/img/blog/monitor-contra-incendios-refineria-industrial-mexico.avif"
 imagenAlt: "Red de hidrantes privados contra incendios en planta industrial"
 tags: ["hidrantes privados", "NFPA 24", "red contra incendios", "diseño hidráulico", "protección industrial"]
 destacado: false
-canonical: "https://gamademexico.com/blog/gabinetes-hidrantes/diseno-red-hidrantes-privados-nfpa-24-mexico"
 noindex: false
 tiempoLectura: 18
 draft: false

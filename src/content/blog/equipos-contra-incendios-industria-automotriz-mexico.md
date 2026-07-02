@@ -20,7 +20,6 @@ imagen: "/img/blog/brigada-industrial-entrenamiento-contra-incendios.avif"
 imagenAlt: "Protección contra incendios en planta automotriz industrial"
 tags: ["industria automotriz", "protección contra incendios", "NFPA 33", "cabinas de pintura", "soldadura"]
 destacado: false
-canonical: "https://gamademexico.com/blog/mangueras/equipos-contra-incendios-industria-automotriz-mexico"
 noindex: false
 tiempoLectura: 16
 draft: false

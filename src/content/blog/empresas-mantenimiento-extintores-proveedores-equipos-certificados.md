@@ -25,7 +25,6 @@ destacado: true
 tiempoLectura: 14
 draft: false
 productosRelacionados: ["valvula-angular", "manguera-certificada", "boquilla-tipo-pistola", "conexiones-bronce"]
-canonical: "https://gamademexico.com/blog/valvulas/empresas-mantenimiento-extintores-proveedores-equipos-certificados"
 noindex: false
 ---
 

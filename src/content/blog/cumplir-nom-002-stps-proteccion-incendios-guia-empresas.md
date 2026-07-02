@@ -14,7 +14,6 @@ destacado: true
 draft: false
 productosRelacionados: ["gabinete-30me", "manguera-millhose", "valvula-compuerta-osy", "boquilla-certificada-dual-ul-fm"]
 tiempoLectura: 18
-canonical: "https://gamademexico.com/blog/gabinetes-hidrantes/cumplir-nom-002-stps-proteccion-incendios-guia-empresas"
 noindex: false
 schema:
   - type: "Article"

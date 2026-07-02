@@ -14,7 +14,6 @@ destacado: false
 tiempoLectura: 11
 draft: false
 productosRelacionados: ["manguera-forestal-amarilla-alta-vis", "manguera-forestal-1-5-30m", "manguera-millhose-1-5-30m"]
-canonical: "https://gamademexico.com/blog/mangueras/mangueras-forestales-brigadas-rurales-mineria-mexico"
 noindex: false
 schema:
   - type: "Article"

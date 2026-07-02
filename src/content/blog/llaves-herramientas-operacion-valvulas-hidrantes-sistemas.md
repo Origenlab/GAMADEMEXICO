@@ -12,7 +12,6 @@ tags: ["llaves hidrantes", "herramientas válvulas", "llave de capucha", "llave 
 destacado: false
 draft: false
 tiempoLectura: 16
-canonical: "https://gamademexico.com/blog/conexiones-herrajes/llaves-herramientas-operacion-valvulas-hidrantes-sistemas"
 noindex: false
 schema:
   - type: "Article"

@@ -11,7 +11,6 @@ imagen: "/img/blog/valvula-compuerta-osy-sistema-rociadores-industrial.avif"
 imagenAlt: "Cálculo hidráulico de sistema contra incendios industrial"
 tags: ["cálculo hidráulico", "Hazen-Williams", "sistemas contra incendios", "pérdidas por fricción", "ingeniería contra incendios"]
 destacado: false
-canonical: "https://gamademexico.com/blog/valvulas/calculo-hidraulico-sistemas-contra-incendios-guia-ingenieros"
 noindex: false
 tiempoLectura: 18
 draft: false

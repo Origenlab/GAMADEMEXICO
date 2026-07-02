@@ -23,7 +23,6 @@ destacado: false
 draft: false
 productosRelacionados: ["manguera-millhose", "manguera-millhose-1-5-15m", "manguera-millhose-2-5-15m", "manguera-millhose-2-5-30m", "manguera-blindex", "estacion-manguera"]
 tiempoLectura: 8
-canonical: "https://gamademexico.com/blog/mangueras/mangueras-millhose-contra-incendios-guia-tecnica-nfpa"
 noindex: false
 ---
 

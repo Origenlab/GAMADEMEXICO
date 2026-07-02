@@ -13,7 +13,6 @@ destacado: false
 tiempoLectura: 18
 draft: false
 productosRelacionados: ["boquilla-tipo-pistola", "boquilla-turbo-jet", "boquilla-certificada", "boquilla-certificada-dual-ul-fm"]
-canonical: "https://gamademexico.com/blog/boquillas/diferencia-boquilla-pistola-turbojet-incendios"
 noindex: false
 schema:
   - type: "Article"

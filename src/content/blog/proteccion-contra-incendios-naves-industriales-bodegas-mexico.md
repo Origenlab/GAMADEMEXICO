@@ -20,7 +20,6 @@ imagen: "/img/blog/brigada-industrial-entrenamiento-contra-incendios.avif"
 imagenAlt: "Protección contra incendios en nave industrial México"
 tags: ["naves industriales", "bodegas", "protección contra incendios", "NOM-002-STPS", "NFPA", "centros de distribución"]
 destacado: false
-canonical: "https://gamademexico.com/blog/mangueras/proteccion-contra-incendios-naves-industriales-bodegas-mexico"
 noindex: false
 tiempoLectura: 16
 draft: false

@@ -22,7 +22,6 @@ imagen: "/img/blog/valvulas-contra-incendios-nfpa-sala-control-industrial.avif"
 imagenAlt: "Sistema de protección contra incendios en centro de datos"
 tags: ["válvulas contra incendios", "NFPA", "protección industrial", "México"]
 destacado: false
-canonical: "https://gamademexico.com/blog/valvulas/proteccion-contra-incendios-data-centers-centros-datos-mexico"
 noindex: false
 tiempoLectura: 14
 draft: false

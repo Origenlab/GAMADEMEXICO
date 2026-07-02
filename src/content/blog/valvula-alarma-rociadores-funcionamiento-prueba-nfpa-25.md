@@ -26,7 +26,6 @@ tags: ["válvula de alarma", "rociadores automáticos", "NFPA 25", "gong hidráu
 destacado: false
 draft: false
 tiempoLectura: 13
-canonical: "https://gamademexico.com/blog/valvulas/valvula-alarma-rociadores-funcionamiento-prueba-nfpa-25"
 noindex: false
 ---
 

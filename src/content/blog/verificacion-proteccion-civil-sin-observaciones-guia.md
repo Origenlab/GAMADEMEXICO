@@ -17,7 +17,6 @@ fecha: "2026-03-19"
 categoria: "monitores"
 tags: ["inspección protección civil", "NOM-002-STPS", "equipos contra incendios", "UL FM", "seguridad industrial"]
 tiempoLectura: 10
-canonical: "https://gamademexico.com/blog/monitores/verificacion-proteccion-civil-sin-observaciones-guia"
 imagen: "/img/blog/verificacion-proteccion-civil-sin-observaciones.avif"
 imagenAlt: "Inspector revisando equipo contra incendios y documentación técnica en una instalación industrial"
 autor:

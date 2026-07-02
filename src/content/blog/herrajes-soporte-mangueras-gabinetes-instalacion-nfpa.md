@@ -13,7 +13,6 @@ tags: ["herrajes contra incendios", "soportes mangueras", "gabinetes contra ince
 destacado: false
 draft: false
 tiempoLectura: 16
-canonical: "https://gamademexico.com/blog/conexiones-herrajes/herrajes-soporte-mangueras-gabinetes-instalacion-nfpa"
 noindex: false
 schema:
   - type: "Article"

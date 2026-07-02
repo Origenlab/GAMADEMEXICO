@@ -23,7 +23,6 @@ destacado: false
 tiempoLectura: 9
 draft: false
 productosRelacionados: ["manguera-millhose-1-5-30m", "manguera-blindex-2-5-30m"]
-canonical: "https://gamademexico.com/blog/mangueras/manguera-millhose-blindex-diferencias-industrial"
 noindex: false
 ---
 

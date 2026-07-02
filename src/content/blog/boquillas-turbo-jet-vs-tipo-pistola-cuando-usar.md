@@ -13,7 +13,6 @@ destacado: false
 draft: true
 productosRelacionados: ["boquilla-pistola-akron-turbojet-1723", "boquilla-certificada-dual-ul-fm", "boquilla-certificada-nfpa-1964-bomberos", "boquilla-industrial"]
 tiempoLectura: 14
-canonical: "https://gamademexico.com/blog/boquillas/boquillas-turbo-jet-vs-tipo-pistola-cuando-usar"
 noindex: false
 ---
 

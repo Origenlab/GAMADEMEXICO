@@ -24,7 +24,6 @@ tags: ["hoteles", "centros comerciales", "NOM-002-STPS", "rociadores automático
 destacado: false
 draft: false
 productosRelacionados: ["gabinete-30me", "gabinete-empotrado", "hidrante-banqueta", "monitor-corazon-una-cremallera", "valvula-compuerta-osy-4-ranurada", "manguera-millhose"]
-canonical: "https://gamademexico.com/blog/monitores/sistemas-contra-incendios-hoteles-centros-comerciales-mexico"
 noindex: false
 tiempoLectura: 9
 ---

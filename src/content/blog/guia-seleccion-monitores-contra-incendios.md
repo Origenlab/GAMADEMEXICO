@@ -13,7 +13,6 @@ destacado: true
 draft: false
 productosRelacionados: ["monitor-corazon-una-cremallera", "monitor-cuello-cisne", "monitor-certificado-fm", "monitor-ul-listed"]
 tiempoLectura: 20
-canonical: "https://gamademexico.com/blog/monitores/guia-seleccion-monitores-contra-incendios"
 noindex: false
 schema:
   - type: "Article"

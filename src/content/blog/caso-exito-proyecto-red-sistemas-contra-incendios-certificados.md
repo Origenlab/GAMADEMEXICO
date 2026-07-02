@@ -23,7 +23,6 @@ destacado: true
 tiempoLectura: 14
 draft: false
 productosRelacionados: []
-canonical: "https://gamademexico.com/blog/gabinetes-hidrantes/caso-exito-proyecto-red-sistemas-contra-incendios-certificados"
 noindex: false
 ---
 

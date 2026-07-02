@@ -26,7 +26,6 @@ tags: ["válvulas check", "NFPA 13", "rociadores automáticos", "válvula retenc
 destacado: false
 draft: false
 tiempoLectura: 12
-canonical: "https://gamademexico.com/blog/valvulas/valvulas-check-retencion-sistemas-sprinkler-nfpa-13"
 noindex: false
 ---
 

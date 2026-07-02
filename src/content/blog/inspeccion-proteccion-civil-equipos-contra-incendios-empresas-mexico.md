@@ -13,7 +13,6 @@ destacado: true
 draft: false
 tiempoLectura: 20
 productosRelacionados: ["gabinete-30me", "hidrante-banqueta", "estacion-manguera", "manguera-millhose", "boquilla-certificada", "valvula-compuerta-osy"]
-canonical: "https://gamademexico.com/blog/gabinetes-hidrantes/inspeccion-proteccion-civil-equipos-contra-incendios-empresas-mexico"
 noindex: false
 schema:
   - type: "Article"

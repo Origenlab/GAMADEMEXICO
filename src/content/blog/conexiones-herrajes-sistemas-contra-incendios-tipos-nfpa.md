@@ -23,7 +23,6 @@ destacado: false
 draft: false
 productosRelacionados: ["conexion-wye", "conexion-wye-bronce-2-5", "adaptadores-bronce", "adaptador-bronce-nh-storz-2-5"]
 tiempoLectura: 14
-canonical: "https://gamademexico.com/blog/conexiones-herrajes/conexiones-herrajes-sistemas-contra-incendios-tipos-nfpa"
 noindex: false
 ---
 

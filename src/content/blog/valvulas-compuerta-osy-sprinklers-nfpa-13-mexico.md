@@ -27,7 +27,6 @@ destacado: false
 draft: false
 productosRelacionados: ["valvula-compuerta-osy", "valvula-compuerta-osy-4-ranurada", "valvula-compuerta-osy-6-ranurada", "valvula-compuerta-osy-6-bridada", "valvula-mariposa"]
 tiempoLectura: 8
-canonical: "https://gamademexico.com/blog/valvulas/valvulas-compuerta-osy-sprinklers-nfpa-13-mexico"
 noindex: false
 ---
 

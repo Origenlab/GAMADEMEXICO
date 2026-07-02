@@ -22,7 +22,6 @@ tags: ["manguera de ataque", "doble jacket", "single jacket", "NFPA 1961", "mang
 destacado: false
 draft: false
 tiempoLectura: 12
-canonical: "https://gamademexico.com/blog/mangueras/manguera-ataque-incendios-tipos-usos-industria-mexico"
 noindex: false
 ---
 

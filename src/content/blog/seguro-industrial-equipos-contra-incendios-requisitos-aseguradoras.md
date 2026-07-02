@@ -22,7 +22,6 @@ imagen: "/img/blog/auditoria-equipos-contra-incendios-sala-juntas-corporativa.av
 imagenAlt: "Requisitos de aseguradoras para equipos contra incendios industriales"
 tags: ["válvulas contra incendios", "NFPA", "protección industrial", "México"]
 destacado: false
-canonical: "https://gamademexico.com/blog/valvulas/seguro-industrial-equipos-contra-incendios-requisitos-aseguradoras"
 noindex: false
 tiempoLectura: 14
 draft: false

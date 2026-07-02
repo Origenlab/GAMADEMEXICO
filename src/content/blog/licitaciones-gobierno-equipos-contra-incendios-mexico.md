@@ -22,7 +22,6 @@ imagen: "/img/blog/inspeccion-proteccion-civil-empresa-industrial-mexico.avif"
 imagenAlt: "Licitaciones gubernamentales de equipos contra incendios México"
 tags: ["monitores contra incendios", "equipos certificados", "protección industrial", "México"]
 destacado: false
-canonical: "https://gamademexico.com/blog/monitores/licitaciones-gobierno-equipos-contra-incendios-mexico"
 noindex: false
 tiempoLectura: 14
 draft: false

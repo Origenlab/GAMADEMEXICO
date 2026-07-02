@@ -25,7 +25,6 @@ destacado: true
 draft: false
 tiempoLectura: 14
 productosRelacionados: ["monitor-corazon-una-cremallera", "monitor-cuello-cisne", "monitor-certificado-fm", "monitor-ul-listed"]
-canonical: "https://gamademexico.com/blog/monitores/auditoria-monitores-contra-incendios-empresas-mexico"
 noindex: false
 ---
 

@@ -27,7 +27,6 @@ destacado: false
 tiempoLectura: 10
 draft: false
 productosRelacionados: ["valvula-compuerta-osy-4in", "valvula-globo-2-5in"]
-canonical: "https://gamademexico.com/blog/valvulas/valvulas-compuerta-globo-angular-sistemas-incendio-diferencias"
 noindex: false
 ---
 

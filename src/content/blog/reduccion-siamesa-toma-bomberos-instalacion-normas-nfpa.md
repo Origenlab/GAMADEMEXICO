@@ -24,7 +24,6 @@ tags: ["reducción siamesa", "toma bomberos", "NFPA 14", "standpipe", "toma siam
 destacado: false
 draft: false
 tiempoLectura: 11
-canonical: "https://gamademexico.com/blog/conexiones-herrajes/reduccion-siamesa-toma-bomberos-instalacion-normas-nfpa"
 noindex: false
 ---
 

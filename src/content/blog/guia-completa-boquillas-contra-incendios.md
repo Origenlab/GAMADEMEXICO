@@ -14,7 +14,6 @@ destacado: true
 tiempoLectura: 20
 draft: false
 productosRelacionados: ["boquilla-tipo-pistola", "boquilla-turbo-jet", "boquilla-industrial", "boquilla-certificada", "boquilla-certificada-dual-ul-fm"]
-canonical: "https://gamademexico.com/blog/boquillas/guia-completa-boquillas-contra-incendios"
 noindex: false
 schema:
   - type: "Article"

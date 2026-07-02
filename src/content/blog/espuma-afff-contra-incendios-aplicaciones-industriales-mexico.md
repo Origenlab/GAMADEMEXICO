@@ -28,7 +28,6 @@ imagen: "/img/blog/monitor-contra-incendios-refineria-industrial-mexico.avif"
 imagenAlt: "Sistema de espuma AFFF en instalación industrial"
 tags: ["espuma AFFF", "NFPA 11", "protección contra incendios", "petroquímica", "espuma contra incendios"]
 destacado: false
-canonical: "https://gamademexico.com/blog/boquillas/espuma-afff-contra-incendios-aplicaciones-industriales-mexico"
 noindex: false
 tiempoLectura: 16
 draft: false

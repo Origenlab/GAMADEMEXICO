@@ -25,7 +25,6 @@ destacado: true
 draft: false
 tiempoLectura: 14
 productosRelacionados: ["boquilla-certificada", "boquilla-tipo-pistola", "boquilla-turbo-jet", "boquilla-industrial"]
-canonical: "https://gamademexico.com/blog/boquillas/cumplimiento-legal-boquillas-contra-incendios-mexico-2026"
 noindex: false
 ---
 

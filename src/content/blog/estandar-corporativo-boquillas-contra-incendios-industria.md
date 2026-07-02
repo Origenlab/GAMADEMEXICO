@@ -27,7 +27,6 @@ destacado: true
 draft: false
 tiempoLectura: 14
 productosRelacionados: ["boquilla-certificada", "boquilla-certificada-dual-ul-fm", "boquilla-tipo-pistola", "boquilla-turbo-jet", "boquilla-industrial"]
-canonical: "https://gamademexico.com/blog/boquillas/estandar-corporativo-boquillas-contra-incendios-industria"
 noindex: false
 ---
 

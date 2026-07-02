@@ -30,7 +30,6 @@ imagen: "/img/blog/sistema-contra-incendios-hotel-centro-comercial-mexico.avif"
 imagenAlt: "Sistema de extinción automática en cocina industrial"
 tags: ["extinción automática cocinas", "UL 300", "NFPA 17A", "cocinas industriales", "agente húmedo"]
 destacado: false
-canonical: "https://gamademexico.com/blog/boquillas/extincion-automatica-cocinas-industriales-ul-300-nfpa-17a"
 noindex: false
 tiempoLectura: 16
 draft: false

@@ -22,7 +22,6 @@ imagen: "/img/blog/mantenimiento-equipos-contra-incendios-tecnico-industrial.avi
 imagenAlt: "Mantenimiento de gabinete contra incendios con manguera"
 tags: ["gabinetes contra incendios", "hidrantes", "NOM-002-STPS", "protección contra incendios"]
 destacado: false
-canonical: "https://gamademexico.com/blog/gabinetes-hidrantes/mantenimiento-gabinetes-mangueras-contra-incendios-checklist"
 noindex: false
 tiempoLectura: 14
 draft: false

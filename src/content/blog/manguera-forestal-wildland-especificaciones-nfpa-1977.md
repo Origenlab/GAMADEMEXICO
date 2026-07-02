@@ -22,7 +22,6 @@ tags: ["mangueras forestales", "wildland hose", "NFPA 1977", "incendios forestal
 destacado: false
 draft: false
 tiempoLectura: 11
-canonical: "https://gamademexico.com/blog/mangueras/manguera-forestal-wildland-especificaciones-nfpa-1977"
 noindex: false
 ---
 

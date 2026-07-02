@@ -26,7 +26,6 @@ tags: ["válvulas de diluvio", "sistemas espuma", "NFPA 11", "NFPA 16", "petroqu
 destacado: false
 draft: false
 tiempoLectura: 14
-canonical: "https://gamademexico.com/blog/valvulas/valvulas-diluvio-espuma-industria-petroquimica-nfpa-16"
 noindex: false
 ---
 

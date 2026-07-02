@@ -31,7 +31,6 @@ destacado: false
 draft: false
 productosRelacionados: ["gabinete-30me", "gabinete-30m-sobrepuesto", "gabinete-empotrado", "gabinete-semiempotrado"]
 tiempoLectura: 14
-canonical: "https://gamademexico.com/blog/gabinetes-hidrantes/gabinetes-manguera-contra-incendios-tipos-normas-mexico"
 noindex: false
 ---
 

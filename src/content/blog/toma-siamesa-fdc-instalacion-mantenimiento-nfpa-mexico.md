@@ -22,7 +22,6 @@ imagen: "/img/blog/adaptadores-herrajes-bronce-contra-incendios-profesional.avif
 imagenAlt: "Toma siamesa FDC de bronce instalada en edificio"
 tags: ["conexiones contra incendios", "herrajes", "toma siamesa", "NFPA"]
 destacado: false
-canonical: "https://gamademexico.com/blog/conexiones-herrajes/toma-siamesa-fdc-instalacion-mantenimiento-nfpa-mexico"
 noindex: false
 tiempoLectura: 14
 draft: false

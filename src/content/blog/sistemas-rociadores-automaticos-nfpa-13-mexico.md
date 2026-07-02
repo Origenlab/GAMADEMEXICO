@@ -24,7 +24,6 @@ imagen: "/img/blog/valvulas-contra-incendios-nfpa-sala-control-industrial.avif"
 imagenAlt: "Sistema de rociadores automáticos contra incendios NFPA 13"
 tags: ["rociadores automáticos", "NFPA 13", "válvulas contra incendios", "protección automática", "diseño hidráulico"]
 destacado: false
-canonical: "https://gamademexico.com/blog/valvulas/sistemas-rociadores-automaticos-nfpa-13-mexico"
 noindex: false
 tiempoLectura: 18
 draft: false
