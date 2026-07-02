@@ -1,6 +1,6 @@
 ---
 title: "Boquilla Industrial L-205-B Niebla Eléctrica UL 401 Clase ABC 75-125"
-description: "Boquilla Elkhart Brass L-205-B niebla eléctrica bronce macizo. UL 401 Clase A B C. 75-125 GPM, segura 250 kV. Distribuidor Elkhart Brass en México. Stock"
+description: "Boquilla Elkhart Brass L-205-B niebla eléctrica bronce macizo. UL 401 Clase A B C. 75-125 GPM, segura 250 kV. Distribuidor Elkhart Brass en México."
 categoria: "boquillas"
 subcategoria: "industrial"
 imagen: "/img/productos/boquilla-industrial-contra-incendios-bronce-frontal-01.avif"

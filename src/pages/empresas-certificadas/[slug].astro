@@ -424,6 +424,7 @@ const pageDesc = rawDesc.length > 155 ? rawDesc.slice(0, 152).trimEnd() + '...' 
 <Layout
   title={pageTitle}
   description={pageDesc}
+  noindex={true}
   activePage="directorio"
   heroTitle={empresa.data.nombre}
   heroIntro={`Proyecto de protección contra incendios apoyado por Gama de México en ${empresa.data.ciudad}, ${empresa.data.estado}. ${empresa.data.tipoSistema.length} sistemas verificados conforme a NFPA y NOM-002-STPS.`}

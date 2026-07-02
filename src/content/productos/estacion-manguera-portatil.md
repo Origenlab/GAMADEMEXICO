@@ -1,6 +1,6 @@
 ---
 title: "Estación de Manguera Portátil con Ruedas"
-description: "Estación de manguera portátil sobre ruedas. Carrete móvil con manguera 30m para áreas extensas o sin instalación fija. Stock en México. Envíos a 32"
+description: "Estación de manguera portátil sobre ruedas. Carrete móvil con manguera 30m para áreas extensas o sin instalación fija. Stock en México."
 categoria: "gabinetes-hidrantes"
 subcategoria: "estaciones"
 imagen: "/img/gabinetes-hidrantes/gabinete-manguera-estadio-tribuna.avif"

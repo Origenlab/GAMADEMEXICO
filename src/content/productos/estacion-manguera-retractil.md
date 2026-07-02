@@ -1,6 +1,6 @@
 ---
 title: "Estación de Manguera Retráctil con Resorte"
-description: "Estación de manguera con retracción automática por resorte. La manguera se recoge sola al soltar. Fácil mantenimiento post-uso. Stock en México. Envíos a"
+description: "Estación de manguera con retracción automática por resorte. La manguera se recoge sola al soltar. Fácil mantenimiento post-uso. Stock en México."
 categoria: "gabinetes-hidrantes"
 subcategoria: "estaciones"
 imagen: "/img/gabinetes-hidrantes/gabinete-manguera-hospital-pasillo.avif"

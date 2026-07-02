@@ -1,6 +1,6 @@
 ---
 title: "Válvula Retención Check 3\" Ranurada UL/FM"
-description: "Válvula check retención 3\" extremos ranurados para sistemas Victaulic. Swing check, EPDM. 175 PSI. Certificada UL 312 y FM. UL/FM. Distribuidor"
+description: "Válvula check retención 3\" extremos ranurados para sistemas Victaulic. Swing check, EPDM. 175 PSI. Certificada UL 312 y FM. UL/FM."
 categoria: "valvulas"
 subcategoria: "retencion"
 imagen: "/img/valvulas-contra-incendios/valvula-check-swing-bridada-contra-incendios-producto-catalogo-21.avif"

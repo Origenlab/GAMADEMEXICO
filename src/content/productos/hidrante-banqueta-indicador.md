@@ -1,6 +1,6 @@
 ---
 title: "Hidrante de Banqueta con Indicador de Posición"
-description: "Hidrante de banqueta con indicador visual de posición abierto/cerrado. Verificación rápida del estado sin herramientas. Distribuidor autorizado. Stock en"
+description: "Hidrante de banqueta con indicador visual de posición abierto/cerrado. Verificación rápida del estado sin herramientas. Distribuidor autorizado."
 categoria: "gabinetes-hidrantes"
 subcategoria: "hidrantes"
 imagen: "/img/gabinetes-hidrantes/hidrante-indicador-frontal.avif"

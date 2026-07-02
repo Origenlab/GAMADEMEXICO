@@ -1,6 +1,6 @@
 ---
 title: "Válvula Mariposa 4\" Ranurada Indicadora UL/FM"
-description: "Válvula mariposa indicadora 4\" ranurada con supervisión eléctrica. Gear operator, sello EPDM. 175 PSI. Certificada UL/FM 1112. UL/FM. Distribuidor"
+description: "Válvula mariposa indicadora 4\" ranurada con supervisión eléctrica. Gear operator, sello EPDM. 175 PSI. Certificada UL/FM 1112. UL/FM."
 categoria: "valvulas"
 subcategoria: "mariposa"
 imagen: "/img/valvulas-contra-incendios/valvula-mariposa-indicadora-contra-incendios-aplicacion-industrial-29.avif"

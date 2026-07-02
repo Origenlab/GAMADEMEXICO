@@ -1,6 +1,6 @@
 ---
 title: "Válvula Globo 1.5\" Bronce Patrón Recto UL/FM"
-description: "Válvula de globo 1.5\" bronce patrón recto para control preciso de flujo. Asiento EPDM renovable. 300 PSI. Certificada UL y FM. UL/FM. Distribuidor"
+description: "Válvula de globo 1.5\" bronce patrón recto para control preciso de flujo. Asiento EPDM renovable. 300 PSI. Certificada UL y FM. UL/FM."
 categoria: "valvulas"
 subcategoria: "globo"
 imagen: "/img/valvulas-contra-incendios/valvula-globo-bridada-acero-inoxidable-contra-incendios-petroquimica-16.avif"

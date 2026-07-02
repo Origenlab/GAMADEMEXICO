@@ -1,6 +1,6 @@
 ---
 title: "Estación de Manguera en Gabinete Cerrado"
-description: "Estación de manguera con carrete en gabinete metálico cerrado. Protección contra polvo y vandalismo. Puerta con vidrio templado. Stock en México. Envíos a"
+description: "Estación de manguera con carrete en gabinete metálico cerrado. Protección contra polvo y vandalismo. Puerta con vidrio templado. Stock en México."
 categoria: "gabinetes-hidrantes"
 subcategoria: "estaciones"
 imagen: "/img/gabinetes-hidrantes/gabinete-manguera-producto-abierto.avif"

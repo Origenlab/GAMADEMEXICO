@@ -1,6 +1,6 @@
 ---
 title: "Toma Siamesa FDC Nacional Económica"
-description: "Toma siamesa FDC de fabricación nacional. Dos entradas 2.5\" NH. Bronce fundido. Precio económico. NOM-002-STPS. Distribuidor autorizado en México. Stock"
+description: "Toma siamesa FDC de fabricación nacional. Dos entradas 2.5\" NH. Bronce fundido. Precio económico. NOM-002-STPS. Distribuidor autorizado en México."
 categoria: "conexiones-herrajes"
 subcategoria: "siamesa"
 imagen: "/img/conexiones-herrajes/toma-siamesa-nacional-frontal.avif"

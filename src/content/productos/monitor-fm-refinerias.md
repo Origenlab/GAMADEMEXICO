@@ -1,6 +1,6 @@
 ---
 title: "Monitor FM Approved para Refinerías - Protección de Proceso"
-description: "Monitor contra incendio certificado FM Approved diseñado para refinerías y plantas de proceso. Distribuidor autorizado Elkhart Brass en México. Stock"
+description: "Monitor contra incendio certificado FM Approved diseñado para refinerías y plantas de proceso. Distribuidor autorizado Elkhart Brass en México."
 categoria: "monitores"
 subcategoria: "certificado-fm"
 imagen: "/img/monitores-contra-incendios/monitor-certificado-fm-contra-incendios-parque-industrial-12.avif"

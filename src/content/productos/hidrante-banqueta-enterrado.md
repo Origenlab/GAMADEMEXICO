@@ -1,6 +1,6 @@
 ---
 title: "Hidrante de Banqueta Enterrado Flush Mount"
-description: "Hidrante de banqueta enterrado a nivel de piso con tapa removible. Diseño discreto para plazas, parques y áreas peatonales. Distribuidor autorizado. Stock"
+description: "Hidrante de banqueta enterrado a nivel de piso con tapa removible. Diseño discreto para plazas, parques y áreas peatonales. Distribuidor autorizado."
 categoria: "gabinetes-hidrantes"
 subcategoria: "hidrantes"
 imagen: "/img/gabinetes-hidrantes/hidrante-enterrado-tapa.avif"

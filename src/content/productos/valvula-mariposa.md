@@ -1,6 +1,6 @@
 ---
 title: "Válvula Mariposa Indicadora 4\" Wafer UL/FM"
-description: "Válvula mariposa indicadora 4\" wafer con switch tamper. Apertura 90°, sello bubble-tight. 175 PSI. Certificada UL y FM 1112. UL/FM. Distribuidor"
+description: "Válvula mariposa indicadora 4\" wafer con switch tamper. Apertura 90°, sello bubble-tight. 175 PSI. Certificada UL y FM 1112. UL/FM."
 categoria: "valvulas"
 subcategoria: "mariposa"
 imagen: "/img/valvulas-contra-incendios/valvula-mariposa-indicadora-contra-incendios-tamper-switch-fondo-blanco-01.avif"

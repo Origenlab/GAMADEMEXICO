@@ -1,6 +1,6 @@
 ---
 title: "Hidrante de Banqueta 4 Salidas Alto Caudal"
-description: "Hidrante de banqueta con 4 salidas de 2.5\" para máximo caudal. Diseñado para zonas industriales y áreas de alto riesgo. Distribuidor autorizado. Stock en"
+description: "Hidrante de banqueta con 4 salidas de 2.5\" para máximo caudal. Diseñado para zonas industriales y áreas de alto riesgo. Distribuidor autorizado."
 categoria: "gabinetes-hidrantes"
 subcategoria: "hidrantes"
 imagen: "/img/gabinetes-hidrantes/hidrante-4salidas-frontal.avif"

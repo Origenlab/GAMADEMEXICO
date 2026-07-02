@@ -1,6 +1,6 @@
 ---
 title: "Monitor Sidewinder™ EXM2 Eléctrico Elkhart Brass | Distribuidor México"
-description: "Monitor eléctrico Sidewinder™ EXM2 de Elkhart Brass. Control remoto, flujo hasta 1,250 GPM, operación a distancia segura. UL Listed. Stock CDMX y"
+description: "Monitor eléctrico Sidewinder™ EXM2 de Elkhart Brass. Control remoto, flujo hasta 1,250 GPM, operación a distancia segura. UL Listed."
 categoria: "monitores"
 subcategoria: "monitores-electricos"
 marca: "Elkhart Brass"

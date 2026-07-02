@@ -1,6 +1,6 @@
 ---
 title: "Gabinete Doble Compartimento Manguera y Extintor"
-description: "Gabinete contra incendios con compartimento separado para extintor de 6kg. Manguera 30m en sección principal. Diseño integral. Stock en México. Envíos a"
+description: "Gabinete contra incendios con compartimento separado para extintor de 6kg. Manguera 30m en sección principal. Diseño integral. Stock en México."
 categoria: "gabinetes-hidrantes"
 subcategoria: "gabinetes"
 imagen: "/img/gabinetes-hidrantes/gabinete-manguera-nave-industrial.avif"
