@@ -1,6 +1,6 @@
 ---
 title: "Monitores Contra Incendios en México"
-description: "Conoce cómo seleccionar monitores contra incendios industriales, cumplir normas y comprar con asesoría experta, disponibilidad y envíos a todo México."
+description: "Monitores contra incendios en México: selección, normas NFPA, stock disponible y envíos a todo el país. Asesoría técnica experta Elkhart Brass."
 fecha: "2026-02-16"
 categoria: "monitores"
 autor:

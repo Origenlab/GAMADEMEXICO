@@ -1,6 +1,6 @@
 ---
 title: "Boquillas Contra Incendios: Tipos y Selección"
-description: "Tipos de boquillas contra incendios, cómo elegir por riesgo y caudal, certificaciones UL y FM, y errores que comprometen la protección. Guía para ingenieros."
+description: "Boquillas contra incendios: tipos de descarga, selección por riesgo y caudal, certificaciones UL y FM, y errores que comprometen la protección en México."
 fecha: "2025-02-14"
 fechaActualizacion: "2026-03-19"
 categoria: "boquillas"

@@ -1,6 +1,6 @@
 ---
 title: "Conexión Y (Wye) con Flush Inlet 2.5\" Elkhart"
-description: "Conexión Y con válvula de purga (flush) en entrada. Limpieza de línea sin desconectar. Aluminio Elk-O-Lite. UL/FM."
+description: "Conexión Y con válvula de purga (flush) en entrada. Limpieza de línea sin desconectar. Aluminio Elk-O-Lite. UL/FM. Distribuidor autorizado en México."
 categoria: "conexiones-herrajes"
 subcategoria: "wye"
 imagen: "/img/conexiones-herrajes/conexion-wye-flush-frontal.avif"

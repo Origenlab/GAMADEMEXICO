@@ -1,6 +1,6 @@
 ---
 title: "Herrajes para Mangueras y Gabinetes Contra Incendios"
-description: "Herrajes para mangueras y gabinetes contra incendios: porta-mangueras, bisagras, abrazaderas y errores de instalación que generan observaciones en inspecciones."
+description: "Herrajes para mangueras y gabinetes contra incendios: porta-mangueras, bisagras, abrazaderas y errores de instalación que generan observaciones en México."
 fecha: "2026-03-12"
 fechaActualizacion: "2026-03-19"
 categoria: "conexiones-herrajes"

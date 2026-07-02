@@ -1,6 +1,6 @@
 ---
 title: "Boquilla Turbojet 1723 Flujo Constante 95-200 GPM Pyrolite"
-description: "Boquilla Akron Brass Turbojet 1723 flujo constante 95-200 GPM. NFPA 1964, Pyrolite extruido, 4 posiciones, garantía 10 años. Ataque estructural brigadas México."
+description: "Boquilla Akron Brass Turbojet 1723 flujo constante 95-200 GPM. NFPA 1964, Pyrolite extruido, 4 posiciones, garantía 10 años. Ataque estructural brigadas"
 categoria: "boquillas"
 subcategoria: "tipo-pistola"
 imagen: "/img/productos/boquilla-tipo-pistola-contra-incendios-certificada-fm-15.avif"

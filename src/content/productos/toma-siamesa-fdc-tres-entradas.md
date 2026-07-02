@@ -1,6 +1,6 @@
 ---
 title: "Toma Siamesa FDC Tres Entradas 2.5\" NH"
-description: "Toma siamesa FDC con tres entradas 2.5\" NH para alto caudal. Capacidad 1,500 GPM total. Válvulas clapper. UL/FM NFPA 14."
+description: "Toma siamesa FDC con tres entradas 2.5\" NH para alto caudal. Capacidad 1,500 GPM total. Válvulas clapper. UL/FM NFPA 14. Distribuidor autorizado en"
 categoria: "conexiones-herrajes"
 subcategoria: "siamesa"
 imagen: "/img/conexiones-herrajes/toma-siamesa-tres-entradas-frontal.avif"

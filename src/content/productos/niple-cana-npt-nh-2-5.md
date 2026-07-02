@@ -1,6 +1,6 @@
 ---
 title: "Niple Caña NPT a NH 2.5\" Bronce"
-description: "Niple caña de bronce para conversión NPT a NH 2.5\". Cuerpo hexagonal. Presión 1,200 PSI. Para instalaciones de tubería."
+description: "Niple caña de bronce para conversión NPT a NH 2.5\". Cuerpo hexagonal. Presión 1,200 PSI. Para instalaciones de tubería. Distribuidor autorizado en"
 categoria: "conexiones-herrajes"
 subcategoria: "accesorios"
 imagen: "/img/conexiones-herrajes/niple-cana-npt-nh-2-5-frontal.avif"

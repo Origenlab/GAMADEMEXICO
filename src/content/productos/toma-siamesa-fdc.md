@@ -1,6 +1,6 @@
 ---
 title: "Toma Siamesa FDC 2-A Plain 2.5\" Elkhart Brass"
-description: "Toma siamesa FDC modelo 2-A plain con dos entradas 2.5\" NH. Bronce fundido sin clapper. Conexión bomberos NFPA 14. UL/FM."
+description: "Toma siamesa FDC modelo 2-A plain con dos entradas 2.5\" NH. Bronce fundido sin clapper. Conexión bomberos NFPA 14. UL/FM. Distribuidor autorizado en"
 categoria: "conexiones-herrajes"
 subcategoria: "siamesa"
 imagen: "/img/conexiones-herrajes/toma-siamesa-2a-plain-frontal.avif"

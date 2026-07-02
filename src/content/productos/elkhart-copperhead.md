@@ -1,6 +1,6 @@
 ---
 title: "Monitor Copperhead® Elkhart Brass | Monitor Industrial FM Approved"
-description: "Monitor industrial Copperhead® de Elkhart Brass. FM Approved, bajo mantenimiento, entornos corrosivos. Hasta 2,500 GPM."
+description: "Monitor industrial Copperhead® de Elkhart Brass. FM Approved, bajo mantenimiento, entornos corrosivos. Hasta 2,500 GPM. Distribuidor autorizado Elkhart"
 categoria: "monitores"
 subcategoria: "monitores-industriales"
 marca: "Elkhart Brass"

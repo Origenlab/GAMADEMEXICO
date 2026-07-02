@@ -12,7 +12,7 @@ schema:
         a: "NFPA 1961 clasifica por presión de servicio: doble jacket estándar = 300 PSI servicio / 450 PSI prueba / 900+ PSI ruptura. Single jacket = 200-250 PSI servicio. La presión del sistema debe ser MENOR que la presión de servicio de la manguera, incluyendo picos transitorios por golpe de ariete."
       - q: "¿Qué pasa si la presión del sistema excede la de la manguera?"
         a: "La manguera puede deformarse (hincharse como globo), fugar por los acoples, o reventar en el punto más débil — generalmente un doblez permanente o una zona de abrasión. Un reventón a 200+ PSI es una emergencia por sí misma: la manguera descontrolada puede causar lesiones graves al operador."
-description: "Clasificación de mangueras por presión de trabajo según NFPA 1961: tipos 100, 150 y 250 psi, pruebas hidrostáticas y vida útil en instalaciones industriales México."
+description: "Presión de trabajo en mangueras NFPA 1961: clasificación en tipos 100, 150 y 250 PSI, pruebas hidrostáticas y vida útil en instalaciones industriales."
 fecha: "2026-03-11"
 categoria: "mangueras"
 autor:

@@ -1,6 +1,6 @@
 ---
 title: "Conexión Y (Wye) Tres Vías 2.5\" Elkhart"
-description: "Conexión Y de tres vías con entrada 2.5\" y tres salidas 1.5\" NH. Válvulas de bola independientes. Aluminio Elk-O-Lite."
+description: "Conexión Y de tres vías con entrada 2.5\" y tres salidas 1.5\" NH. Válvulas de bola independientes. Aluminio Elk-O-Lite. Distribuidor autorizado en"
 categoria: "conexiones-herrajes"
 subcategoria: "wye"
 imagen: "/img/conexiones-herrajes/conexion-wye-tres-vias-frontal.avif"

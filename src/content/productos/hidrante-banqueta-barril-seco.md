@@ -1,6 +1,6 @@
 ---
 title: "Hidrante de Banqueta Barril Seco Anti-Heladas"
-description: "Hidrante de banqueta tipo barril seco para zonas con riesgo de heladas. Drenaje automático, válvula principal bajo tierra."
+description: "Hidrante de banqueta tipo barril seco para zonas con riesgo de heladas. Drenaje automático, válvula principal bajo tierra. Distribuidor autorizado. Stock"
 categoria: "gabinetes-hidrantes"
 subcategoria: "hidrantes"
 imagen: "/img/gabinetes-hidrantes/hidrante-barril-seco.avif"

@@ -1,6 +1,6 @@
 ---
 title: "Monitor Tipo Corazón Fabricación Mexicana - Contenido Nacional"
-description: "Monitor contra incendio tipo corazón 100% fabricación mexicana. Cumple requisitos de contenido nacional para licitaciones."
+description: "Monitor contra incendio tipo corazón 100% fabricación mexicana. Cumple requisitos de contenido nacional para licitaciones. Distribuidor autorizado Elkhart"
 categoria: "monitores"
 subcategoria: "tipo-corazon"
 imagen: "/img/monitores-contra-incendios/monitor-tipo-corazon-contra-incendios-industrial-tres-cuartos-10.avif"

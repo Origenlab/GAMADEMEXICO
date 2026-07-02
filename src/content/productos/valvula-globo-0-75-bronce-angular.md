@@ -1,6 +1,6 @@
 ---
 title: "Válvula Globo 3/4\" Bronce Angular UL Listed"
-description: "Válvula de globo 3/4\" bronce patrón angular para derivaciones y drenajes. Asiento renovable. 300 PSI. Certificada UL Listed."
+description: "Válvula de globo 3/4\" bronce patrón angular para derivaciones y drenajes. Asiento renovable. 300 PSI. Certificada UL Listed. UL/FM. Distribuidor"
 categoria: "valvulas"
 subcategoria: "globo"
 imagen: "/img/valvulas-contra-incendios/valvula-globo-bridada-acero-inoxidable-contra-incendios-producto-catalogo-11.avif"

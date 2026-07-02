@@ -1,6 +1,6 @@
 ---
 title: "Manguera Millhose Doble Forro 1.5\" x 30m NFPA 1961"
-description: "Manguera contra incendio Millhose doble forro poliéster 1.5\" x 30 metros. Presión 300 PSI, revestimiento EPDM, certificada NFPA 1961 para gabinetes tipo 30ME."
+description: "Manguera contra incendio Millhose doble forro poliéster 1.5\" x 30 metros. Presión 300 PSI, revestimiento EPDM, certificada NFPA 1961 para gabinetes tipo"
 categoria: "mangueras"
 subcategoria: "millhose"
 imagen: "/img/productos/manguera-millhose-1-5-30m-frontal.avif"

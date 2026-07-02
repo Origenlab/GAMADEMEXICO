@@ -12,7 +12,7 @@ schema:
         a: "NOM-002-STPS exige equipos proporcionales al riesgo pero no especifica marcas ni certificaciones. En la práctica, protección civil y las aseguradoras exigen certificación UL Listed o FM Approved como evidencia de que el equipo cumple. Sin certificación verificable, la boquilla es legalmente un componente sin respaldo técnico documentable."
       - q: "¿Protección civil puede sancionar por boquillas sin certificación?"
         a: "Puede generar observaciones por equipos que no demuestran cumplimiento con estándares reconocidos. Si la inspección solicita ficha técnica y certificación del fabricante y no puedes presentarla, es una observación documentable. Acumulada con otras deficiencias, puede escalar a condicionante o multa."
-description: "Qué exige la ley mexicana para boquillas contra incendios en centros de trabajo: NOM-002-STPS, protección civil, brigadas y lo que realmente revisa el inspector."
+description: "Cumplimiento legal de boquillas contra incendios en México: NOM-002-STPS, protección civil, brigadas y lo que realmente revisa el inspector en 2026."
 fecha: "2026-02-16"
 categoria: "boquillas"
 autor:

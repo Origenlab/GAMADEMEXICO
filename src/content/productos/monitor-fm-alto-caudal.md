@@ -1,6 +1,6 @@
 ---
 title: "Monitor FM Approved Alto Caudal - 2,000 GPM Máximo"
-description: "Monitor contra incendio certificado FM Approved con capacidad de hasta 2,000 GPM. Alcance de 80 metros en chorro sólido."
+description: "Monitor contra incendio certificado FM Approved con capacidad de hasta 2,000 GPM. Alcance de 80 metros en chorro sólido. Distribuidor autorizado Elkhart"
 categoria: "monitores"
 subcategoria: "certificado-fm"
 imagen: "/img/monitores-contra-incendios/monitor-certificado-fm-contra-incendios-camion-fondo-05.avif"

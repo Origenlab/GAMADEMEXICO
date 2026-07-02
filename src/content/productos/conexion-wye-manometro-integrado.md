@@ -1,6 +1,6 @@
 ---
 title: "Conexión Y (Wye) con Manómetro 2.5\" Elkhart"
-description: "Conexión Y con manómetro de presión integrado. Entrada 2.5\" NH, dos salidas 2.5\". Monitoreo de presión en tiempo real."
+description: "Conexión Y con manómetro de presión integrado. Entrada 2.5\" NH, dos salidas 2.5\". Monitoreo de presión en tiempo real. Distribuidor autorizado en"
 categoria: "conexiones-herrajes"
 subcategoria: "wye"
 imagen: "/img/conexiones-herrajes/conexion-wye-manometro-frontal.avif"

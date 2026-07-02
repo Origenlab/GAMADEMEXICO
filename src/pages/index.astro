@@ -5,7 +5,20 @@ import ServiceCard from '../components/ServiceCard.astro';
 import CategoryCard from '../components/CategoryCard.astro';
 import Faq from '../components/Faq.astro';
 import BlogRecent from '../components/blog/BlogRecent.astro';
-import { generateSrcset } from '../lib/images';
+import { generateSrcset, getOptimizedImageUrl } from '../lib/images';
+
+// Logos de clientes: 40×40 SVG — CDN para caching, sin params de compresión (son vectores)
+const clientLogos = {
+  proyectoRed:          getOptimizedImageUrl('/img/clientes/proyecto-red-logo.svg'),
+  mantenimientoExt:     getOptimizedImageUrl('/img/clientes/mantenimiento-extintores-logo.svg'),
+  equipoSeguridad:      getOptimizedImageUrl('/img/clientes/equipo-seguridad-industrial-logo.svg'),
+  maquinasConst:        getOptimizedImageUrl('/img/clientes/maquinas-construccion-logo.svg'),
+  calentadoresSolares:  getOptimizedImageUrl('/img/clientes/calentadores-solares-logo.svg'),
+  seguridadPrivada:     getOptimizedImageUrl('/img/clientes/seguridad-privada-mx-logo.svg'),
+  sanyoElevadores:      getOptimizedImageUrl('/img/clientes/sanyo-elevadores-logo.svg'),
+  lgaContraIncendios:   getOptimizedImageUrl('/img/clientes/lga-contra-incendios-logo.svg'),
+  seguridadCondominios: getOptimizedImageUrl('/img/clientes/seguridad-condominios-logo.svg'),
+};
 import {
   buildOrganizationSchema,
   buildLocalBusinessSchema,
@@ -283,7 +296,7 @@ const structuredData = [
           <p class="testimonial__text">"Gama de México nos asesoró de manera profesional para implementar nuestro sistema contra incendios con equipos certificados UL y FM. El proceso de cotización fue transparente, la entrega puntual y el seguimiento técnico excepcional. Como empresa de ingeniería, valoramos trabajar con proveedores que entienden la importancia de las certificaciones y la normatividad."</p>
           <div class="testimonial__author">
             <div class="testimonial__avatar testimonial__avatar--logo">
-              <img src="/img/clientes/proyecto-red-logo.svg" alt="Logo Proyecto Red" width="40" height="40" loading="lazy" />
+              <img src={clientLogos.proyectoRed} alt="Logo Proyecto Red" width="40" height="40" loading="lazy" />
             </div>
             <div class="testimonial__info">
               <span class="testimonial__name">Ing. Juan Carlos Rodríguez</span>
@@ -297,7 +310,7 @@ const structuredData = [
           <p class="testimonial__text">"Como empresa especializada en mantenimiento de extintores, requerimos proveedores que manejen equipos con certificaciones reales. Gama de México nos surte válvulas, mangueras y conexiones Elkhart Brass con documentación completa. Siempre tienen stock y la asesoría técnica es seria."</p>
           <div class="testimonial__author">
             <div class="testimonial__avatar testimonial__avatar--logo">
-              <img src="/img/clientes/mantenimiento-extintores-logo.svg" alt="Logo Mantenimiento de Extintores" width="40" height="40" loading="lazy" />
+              <img src={clientLogos.mantenimientoExt} alt="Logo Mantenimiento de Extintores" width="40" height="40" loading="lazy" />
             </div>
             <div class="testimonial__info">
               <span class="testimonial__name">Ing. Roberto Sánchez M.</span>
@@ -311,7 +324,7 @@ const structuredData = [
           <p class="testimonial__text">"Necesitábamos consolidar chiflones, adaptadores, coples y tomas siamesas con un solo proveedor. Gama de México tenía todo en inventario con certificaciones UL y FM. La cotización llegó el mismo día y el envío se coordinó sin contratiempos. Un aliado estratégico para nuestro negocio de seguridad industrial."</p>
           <div class="testimonial__author">
             <div class="testimonial__avatar testimonial__avatar--logo">
-              <img src="/img/clientes/equipo-seguridad-industrial-logo.svg" alt="Logo Equipo de Seguridad Industrial" width="40" height="40" loading="lazy" />
+              <img src={clientLogos.equipoSeguridad} alt="Logo Equipo de Seguridad Industrial" width="40" height="40" loading="lazy" />
             </div>
             <div class="testimonial__info">
               <span class="testimonial__name">Lic. Fernando García T.</span>
@@ -325,7 +338,7 @@ const structuredData = [
           <p class="testimonial__text">"En el sector de maquinaria de construcción, la seguridad contra incendios es crítica. Gama de México nos provee monitores y boquillas certificadas UL para nuestros talleres y patios de equipos. Excelente asesoría técnica y disponibilidad de productos Elkhart Brass."</p>
           <div class="testimonial__author">
             <div class="testimonial__avatar testimonial__avatar--logo">
-              <img src="/img/clientes/maquinas-construccion-logo.svg" alt="Logo Máquinas de Construcción" width="40" height="40" loading="lazy" />
+              <img src={clientLogos.maquinasConst} alt="Logo Máquinas de Construcción" width="40" height="40" loading="lazy" />
             </div>
             <div class="testimonial__info">
               <span class="testimonial__name">Ing. Arturo Méndez V.</span>
@@ -339,7 +352,7 @@ const structuredData = [
           <p class="testimonial__text">"Nuestras instalaciones de calentadores solares requieren sistemas de protección contra incendios confiables. Gama de México nos suministró gabinetes, válvulas y mangueras con toda la documentación para cumplir con protección civil. Servicio profesional y entregas puntuales."</p>
           <div class="testimonial__author">
             <div class="testimonial__avatar testimonial__avatar--logo">
-              <img src="/img/clientes/calentadores-solares-logo.svg" alt="Logo De Calentadores Solares" width="40" height="40" loading="lazy" />
+              <img src={clientLogos.calentadoresSolares} alt="Logo De Calentadores Solares" width="40" height="40" loading="lazy" />
             </div>
             <div class="testimonial__info">
               <span class="testimonial__name">Ing. Laura Martínez R.</span>
@@ -353,7 +366,7 @@ const structuredData = [
           <p class="testimonial__text">"En seguridad privada, la protección contra incendios es parte integral de nuestros servicios. Gama de México nos provee válvulas de compuerta, mangueras y equipos certificados con respaldo técnico real. Excelente relación comercial y tiempos de respuesta inmediatos."</p>
           <div class="testimonial__author">
             <div class="testimonial__avatar testimonial__avatar--logo">
-              <img src="/img/clientes/seguridad-privada-mx-logo.svg" alt="Logo Seguridad Privada MX" width="40" height="40" loading="lazy" />
+              <img src={clientLogos.seguridadPrivada} alt="Logo Seguridad Privada MX" width="40" height="40" loading="lazy" />
             </div>
             <div class="testimonial__info">
               <span class="testimonial__name">Lic. Carlos Ramírez H.</span>
@@ -367,7 +380,7 @@ const structuredData = [
           <p class="testimonial__text">"Para nuestros proyectos de elevadores y escaleras eléctricas, la normativa exige sistemas contra incendios certificados. Gama de México nos suministra gabinetes, mangueras y válvulas con documentación completa. Cotización corporativa detallada y entregas puntuales."</p>
           <div class="testimonial__author">
             <div class="testimonial__avatar testimonial__avatar--logo">
-              <img src="/img/clientes/sanyo-elevadores-logo.svg" alt="Logo Sanyo Elevadores y Escaleras" width="40" height="40" loading="lazy" />
+              <img src={clientLogos.sanyoElevadores} alt="Logo Sanyo Elevadores y Escaleras" width="40" height="40" loading="lazy" />
             </div>
             <div class="testimonial__info">
               <span class="testimonial__name">Ing. Miguel Tanaka S.</span>
@@ -381,7 +394,7 @@ const structuredData = [
           <p class="testimonial__text">"Como empresa especializada en sistemas contra incendios, trabajamos con Gama de México como nuestro proveedor principal de equipos Elkhart Brass. Monitores certificados, boquillas y válvulas siempre disponibles. Una alianza comercial sólida y confiable."</p>
           <div class="testimonial__author">
             <div class="testimonial__avatar testimonial__avatar--logo">
-              <img src="/img/clientes/lga-contra-incendios-logo.svg" alt="Logo LGA Contra Incendios" width="40" height="40" loading="lazy" />
+              <img src={clientLogos.lgaContraIncendios} alt="Logo LGA Contra Incendios" width="40" height="40" loading="lazy" />
             </div>
             <div class="testimonial__info">
               <span class="testimonial__name">Ing. Luis García A.</span>
@@ -395,7 +408,7 @@ const structuredData = [
           <p class="testimonial__text">"Administramos la seguridad de múltiples condominios y fraccionamientos. Gama de México nos equipa con gabinetes, extintores y sistemas contra incendios certificados. Excelente asesoría para cumplir con protección civil y total respaldo en cada proyecto."</p>
           <div class="testimonial__author">
             <div class="testimonial__avatar testimonial__avatar--logo">
-              <img src="/img/clientes/seguridad-condominios-logo.svg" alt="Logo Seguridad Privada Condominios" width="40" height="40" loading="lazy" />
+              <img src={clientLogos.seguridadCondominios} alt="Logo Seguridad Privada Condominios" width="40" height="40" loading="lazy" />
             </div>
             <div class="testimonial__info">
               <span class="testimonial__name">Lic. Patricia Navarro M.</span>

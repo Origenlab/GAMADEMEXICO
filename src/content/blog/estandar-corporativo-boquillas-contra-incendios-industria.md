@@ -14,7 +14,7 @@ schema:
         a: "Sin estándar, cada planta compra por su cuenta: 7 marcas en 9 plantas significa repuestos no intercambiables, 7 programas de mantenimiento diferentes, capacitación de brigada no transferible entre sitios y auditoría que requiere revisión desde cero en cada planta. La estandarización puede reducir costos de componentes en 20%+ solo por consolidación de compra."
       - q: "¿Estandarizar significa poner la misma boquilla en todos lados?"
         a: "No. Significa estandarizar el CRITERIO, no el producto. El estándar define qué tipo de boquilla por nivel de riesgo, qué certificación mínima, qué rango de presión/caudal, qué estándar de conexión (NST o Storz) y qué documentación debe acompañar cada equipo. Dentro de ese marco, cada planta selecciona la configuración que corresponde a su riesgo específico."
-description: "Cómo estandarizar boquillas contra incendios en plantas industriales multisede: criterios de selección por zona, compatibilidad y errores de especificación."
+description: "Estandarización de boquillas contra incendios en plantas industriales multisede: criterios por zona, compatibilidad de caudal y errores de especificación."
 fecha: "2026-02-16"
 categoria: "boquillas"
 autor:

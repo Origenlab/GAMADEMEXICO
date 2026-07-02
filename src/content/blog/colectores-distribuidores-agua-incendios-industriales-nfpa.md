@@ -1,6 +1,6 @@
 ---
 title: "Colectores y Distribuidores para Sistemas Contra Incendios"
-description: "Diseño de colectores y manifolds para sistemas contra incendios industriales: hidráulica del punto de distribución, balance de caudal y errores que causan fallas."
+description: "Colectores y distribuidores para sistemas contra incendios industriales: hidráulica, balance de caudal y errores de diseño que comprometen la protección."
 fecha: "2026-03-01"
 fechaActualizacion: "2026-03-19"
 categoria: "conexiones-herrajes"

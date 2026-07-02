@@ -1,6 +1,6 @@
 ---
 title: "Estación de Manguera Compacta 15 Metros"
-description: "Estación de manguera compacta con carrete para 15 metros. Diseño reducido para espacios limitados. Carrete oscilante 90°."
+description: "Estación de manguera compacta con carrete para 15 metros. Diseño reducido para espacios limitados. Carrete oscilante 90°. Stock en México. Envíos a 32"
 categoria: "gabinetes-hidrantes"
 subcategoria: "estaciones"
 imagen: "/img/gabinetes-hidrantes/gabinete-manguera-tienda-departamental.avif"

@@ -1,6 +1,6 @@
 ---
 title: "Cople Storz 5\" Bronce Gran Caudal"
-description: "Cople Storz 5\" de bronce fundido para líneas principales. Conexión rápida cuarto de vuelta. Presión 300 PSI. Máxima durabilidad."
+description: "Cople Storz 5\" de bronce fundido para líneas principales. Conexión rápida cuarto de vuelta. Presión 300 PSI. Máxima durabilidad. Distribuidor autorizado"
 categoria: "conexiones-herrajes"
 subcategoria: "coples"
 imagen: "/img/conexiones-herrajes/cople-storz-5-bronce-frontal.avif"

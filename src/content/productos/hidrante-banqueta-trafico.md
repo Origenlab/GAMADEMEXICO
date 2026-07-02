@@ -1,6 +1,6 @@
 ---
 title: "Hidrante de Banqueta Resistente a Tráfico"
-description: "Hidrante de banqueta con diseño resistente a impacto vehicular. Sección de ruptura controlada para proteger la red subterránea."
+description: "Hidrante de banqueta con diseño resistente a impacto vehicular. Sección de ruptura controlada para proteger la red subterránea. Distribuidor autorizado."
 categoria: "gabinetes-hidrantes"
 subcategoria: "hidrantes"
 imagen: "/img/gabinetes-hidrantes/hidrante-trafico-frontal.avif"

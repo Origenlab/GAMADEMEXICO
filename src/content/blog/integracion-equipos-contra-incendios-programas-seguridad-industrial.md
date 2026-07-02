@@ -10,7 +10,7 @@ schema:
     questions:
       - q: "¿Cómo integrar equipos contra incendios al programa de seguridad industrial?"
         a: "Los equipos contra incendios no son independientes del programa de seguridad — son parte de él. El programa debe incluir: inventario de equipos con ubicación y estado, calendario de mantenimiento integrado con NFPA 25, capacitación de brigada como parte del plan de capacitación, simulacros que prueben los equipos reales."
-description: "Análisis técnico sobre la integración de sistemas contra incendios en programas corporativos de seguridad industrial. Normatividad STPS y estrategias."
+description: "Equipos contra incendios en seguridad industrial: integración en programas corporativos, normatividad STPS y estrategias de cumplimiento en México."
 fecha: "2026-02-26"
 categoria: "monitores"
 autor:

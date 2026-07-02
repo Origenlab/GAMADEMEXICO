@@ -1,6 +1,6 @@
 ---
 title: "Boquilla Master Stream 1250 TFT 500-1250 GPM Monitor NFPA 1964"
-description: "Boquilla Master Stream 1250 TFT automática 500-1250 GPM 100 PSI aluminio fundido NFPA 1964. Entrada 3\" NST, alcance +75 m."
+description: "Boquilla Master Stream 1250 TFT automática 500-1250 GPM 100 PSI aluminio fundido NFPA 1964. Entrada 3\" NST, alcance +75 m. Distribuidor Elkhart Brass en"
 categoria: "boquillas"
 subcategoria: "turbo-jet"
 imagen: "/img/productos/boquilla-turbo-jet-contra-incendios-automatica-04.avif"

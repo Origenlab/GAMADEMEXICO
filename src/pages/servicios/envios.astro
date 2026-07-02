@@ -5,6 +5,12 @@ import Faq from '../../components/Faq.astro';
 import SectionHeader from '../../components/SectionHeader.astro';
 import LeadCapture from '../../components/LeadCapture.astro';
 import { buildOrganizationSchema, buildServiceSchema, buildFAQSchema, buildBreadcrumbSchema } from '../../lib/seo';
+import { getOptimizedImageUrl } from '../../lib/images';
+
+const serviceImages = {
+  carga:    getOptimizedImageUrl('/img/logistica-carga-valvulas-contra-incendios-camion.avif',      { width: 1408, quality: 82, strip: 'all' }),
+  nocturna: getOptimizedImageUrl('/img/logistica-nocturna-envio-equipos-contra-incendios.avif',     { width: 1408, quality: 82, strip: 'all' }),
+};
 
 const faqItems = [
   {
@@ -451,7 +457,7 @@ const structuredData = [
   <section class="service-image-section">
     <div class="container">
       <img
-        src="/img/logistica-carga-valvulas-contra-incendios-camion.avif"
+        src={serviceImages.carga}
         alt="Logística y envío de equipos contra incendios en camión a toda la República Mexicana"
         width="1408" height="768"
         loading="lazy" decoding="async"
@@ -464,7 +470,7 @@ const structuredData = [
   <!-- SERVICE IMAGES EXTRA -->
   <section class="service-image-section">
     <div class="container service-img-grid-auto">
-      <img src="/img/logistica-nocturna-envio-equipos-contra-incendios.avif" alt="Logística nocturna de envío de equipos contra incendios a toda la República" width="1408" height="768" loading="lazy" decoding="async" class="service-feature-img" />
+      <img src={serviceImages.nocturna} alt="Logística nocturna de envío de equipos contra incendios a toda la República" width="1408" height="768" loading="lazy" decoding="async" class="service-feature-img" />
 
     </div>
   </section>

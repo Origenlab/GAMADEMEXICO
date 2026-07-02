@@ -1,6 +1,6 @@
 ---
 title: "Kit Accesorios para Gabinete Contra Incendios"
-description: "Kit completo de accesorios para gabinete: tapón, cap, niple, llave y soporte. Todo lo necesario para equipar gabinete CI."
+description: "Kit completo de accesorios para gabinete: tapón, cap, niple, llave y soporte. Todo lo necesario para equipar gabinete CI. Stock en México. Envíos a 32"
 categoria: "conexiones-herrajes"
 subcategoria: "accesorios"
 imagen: "/img/conexiones-herrajes/kit-accesorios-gabinete-frontal.avif"

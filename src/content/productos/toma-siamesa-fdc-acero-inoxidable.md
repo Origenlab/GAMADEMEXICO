@@ -1,6 +1,6 @@
 ---
 title: "Toma Siamesa FDC Acero Inoxidable 316"
-description: "Toma siamesa FDC de acero inoxidable 316 para ambientes corrosivos. Dos entradas 2.5\" NH. Presión 600 PSI. Edificios altos."
+description: "Toma siamesa FDC de acero inoxidable 316 para ambientes corrosivos. Dos entradas 2.5\" NH. Presión 600 PSI. Edificios altos. Distribuidor autorizado en"
 categoria: "conexiones-herrajes"
 subcategoria: "siamesa"
 imagen: "/img/conexiones-herrajes/toma-siamesa-inox-316-frontal.avif"

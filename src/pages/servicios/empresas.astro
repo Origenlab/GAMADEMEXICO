@@ -5,6 +5,12 @@ import Faq from '../../components/Faq.astro';
 import SectionHeader from '../../components/SectionHeader.astro';
 import LeadCapture from '../../components/LeadCapture.astro';
 import { buildOrganizationSchema, buildServiceSchema, buildFAQSchema, buildBreadcrumbSchema } from '../../lib/seo';
+import { getOptimizedImageUrl } from '../../lib/images';
+
+const serviceImages = {
+  inventario:    getOptimizedImageUrl('/img/control-inventario-valvulas-siamesas-contra-incendios.avif',           { width: 1408, quality: 82, strip: 'all' }),
+  capacitacion:  getOptimizedImageUrl('/img/capacitacion-uso-boquilla-manguera-contra-incendios-industrial.avif', { width: 1408, quality: 82, strip: 'all' }),
+};
 
 const faqItems = [
   {
@@ -412,7 +418,7 @@ const structuredData = [
   <section class="service-image-section">
     <div class="container">
       <img
-        src="/img/control-inventario-valvulas-siamesas-contra-incendios.avif"
+        src={serviceImages.inventario}
         alt="Control de inventario de válvulas y conexiones contra incendios para empresas"
         width="1408" height="768"
         loading="lazy" decoding="async"
@@ -425,7 +431,7 @@ const structuredData = [
   <!-- SERVICE IMAGES EXTRA -->
   <section class="service-image-section">
     <div class="container service-img-grid-auto">
-      <img src="/img/capacitacion-uso-boquilla-manguera-contra-incendios-industrial.avif" alt="Capacitación en uso de boquilla y manguera contra incendios para brigadas industriales" width="1408" height="768" loading="lazy" decoding="async" class="service-feature-img" />
+      <img src={serviceImages.capacitacion} alt="Capacitación en uso de boquilla y manguera contra incendios para brigadas industriales" width="1408" height="768" loading="lazy" decoding="async" class="service-feature-img" />
 
     </div>
   </section>

@@ -1,6 +1,6 @@
 ---
 title: "Boquillas Turbo Jet vs Tipo Pistola: Cuándo Usar Cada Una"
-description: "Comparativa técnica entre boquillas turbo jet y tipo pistola: caudal, alcance, reacción, certificaciones y aplicaciones industriales reales en México."
+description: "Boquillas turbo jet vs tipo pistola: comparativa técnica de caudal, alcance, fuerza de reacción, certificaciones UL y aplicaciones industriales en México."
 fecha: "2026-03-11"
 categoria: "boquillas"
 autor:

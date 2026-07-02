@@ -1,6 +1,6 @@
 ---
 title: "Monitor Tipo Corazón Joperz I-102 Doble Volante"
-description: "Monitor Joperz I-102 tipo corazón de doble volante. Flujo hasta 1,000 GPM, presión de operación 100 PSI. Fabricado en bronce con resistencia a clima marítimo."
+description: "Monitor Joperz I-102 tipo corazón de doble volante. Flujo hasta 1,000 GPM, presión de operación 100 PSI. Fabricado en bronce con resistencia a clima"
 categoria: "monitores"
 subcategoria: "tipo-corazon"
 imagen: "/img/monitores-contra-incendios/monitor-tipo-corazon-contra-incendios-industrial-angulo-superior-05.avif"

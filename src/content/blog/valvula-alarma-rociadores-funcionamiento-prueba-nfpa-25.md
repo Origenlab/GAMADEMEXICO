@@ -1,6 +1,6 @@
 ---
 title: "Válvula de Alarma en Rociadores: Prueba NFPA 25"
-description: "Válvula de alarma en rociadores: cómo funciona, por qué suena sin incendio, prueba trimestral NFPA 25 y errores que desactivan la alarma sin que nadie lo sepa."
+description: "Válvula de alarma en rociadores NFPA 25: cómo funciona, por qué suena sin incendio, prueba trimestral y errores que desactivan la alarma silenciosamente."
 fecha: "2026-03-11"
 fechaActualizacion: "2026-03-19"
 schema:

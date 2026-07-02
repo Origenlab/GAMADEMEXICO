@@ -1,6 +1,6 @@
 ---
 title: "Monitor Stinger 2.0 Elkhart Brass | Deck Gun y Monitor Portátil"
-description: "Monitor Stinger 2.0 de Elkhart Brass. Diseño break-apart: cañón de cubierta o monitor portátil en segundos. Hasta 1,000 GPM. UL Listed. Stock en CDMX y Querétaro."
+description: "Monitor Stinger 2.0 de Elkhart Brass. Diseño break-apart: cañón de cubierta o monitor portátil en segundos. Hasta 1,000 GPM. UL Listed. Stock en CDMX y"
 categoria: "monitores"
 subcategoria: "monitores-manuales"
 marca: "Elkhart Brass"

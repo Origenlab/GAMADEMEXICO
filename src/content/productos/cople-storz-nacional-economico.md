@@ -1,6 +1,6 @@
 ---
 title: "Cople Storz 2.5\" Nacional Económico"
-description: "Cople Storz 2.5\" de fabricación nacional. Aluminio fundido. Conexión cuarto de vuelta. Precio económico. NOM-002-STPS."
+description: "Cople Storz 2.5\" de fabricación nacional. Aluminio fundido. Conexión cuarto de vuelta. Precio económico. NOM-002-STPS. Distribuidor autorizado en México."
 categoria: "conexiones-herrajes"
 subcategoria: "coples"
 imagen: "/img/conexiones-herrajes/cople-storz-nacional-frontal.avif"

@@ -1,6 +1,6 @@
 ---
 title: "Detectores de Humo y Calor: Cuál Elegir y Por Qué"
-description: "Detectores de humo fotoeléctricos vs ionización, detectores de calor fijos vs compensados: cuándo usar cada uno según NFPA 72 y errores que causan falsas alarmas."
+description: "Detectores de humo y calor: fotoeléctrico vs ionización, fijo vs compensado. Cuándo usar cada uno según NFPA 72 y errores que causan falsas alarmas."
 fecha: "2026-03-01"
 fechaActualizacion: "2026-03-19"
 categoria: "monitores"

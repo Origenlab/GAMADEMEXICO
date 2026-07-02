@@ -1,6 +1,6 @@
 ---
 title: "Diseño de Red de Hidrantes Privados NFPA 24 en México"
-description: "Cómo diseñar una red de hidrantes privados: anillo vs árbol, presión residual real, caudal simultáneo y errores que dejan hidrantes sin presión en emergencia."
+description: "Diseño de red de hidrantes privados NFPA 24 en México: anillo vs árbol, presión residual real, caudal simultáneo y errores que dejan hidrantes sin presión."
 fecha: "2026-02-14"
 fechaActualizacion: "2026-03-19"
 categoria: "gabinetes-hidrantes"

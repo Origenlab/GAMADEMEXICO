@@ -12,7 +12,7 @@ schema:
         a: "Se empieza por el análisis de riesgo de cada zona, no por el catálogo. Para cada zona: clasificar el riesgo (bajo/medio/alto), determinar el escenario de incendio de diseño, calcular la tasa de aplicación requerida (NFPA 15), verificar la presión disponible en el punto de descarga y entonces seleccionar la boquilla que entrega el caudal necesario a esa presión."
       - q: "¿Qué son las pruebas FAT y SAT en boquillas contra incendios?"
         a: "FAT (Factory Acceptance Test): prueba en fábrica antes del envío — verificar que la boquilla entrega caudal nominal a presión especificada, que el patrón corresponde y que los mecanismos operan. SAT (Site Acceptance Test): prueba en sitio después de instalación — verificar lo mismo pero con las condiciones hidráulicas reales del sistema, no con banco de pruebas."
-description: "Guía profesional para boquillas contra incendios en proyectos industriales: selección hidráulica, cumplimiento técnico, pruebas de aceptación y operación segura."
+description: "Boquillas contra incendios en proyectos industriales: selección hidráulica, cumplimiento técnico, pruebas de aceptación y operación segura en México."
 fecha: "2026-02-16"
 categoria: "boquillas"
 autor:

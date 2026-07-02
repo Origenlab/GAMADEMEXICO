@@ -1,6 +1,6 @@
 ---
 title: "Cómo Elegir la Manguera Contra Incendios Correcta"
-description: "Cómo elegir mangueras contra incendios por presión, forro y construcción: EPDM vs nitrilo, doble forro vs forestal, y errores que causan fallas bajo presión."
+description: "Cómo elegir mangueras contra incendios por presión, forro y construcción: EPDM vs nitrilo, doble forro vs forestal y errores que causan fallas."
 fecha: "2025-02-14"
 fechaActualizacion: "2026-03-19"
 categoria: "mangueras"

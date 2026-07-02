@@ -12,7 +12,7 @@ schema:
         a: "Antes de la visita: actualizar programa interno, verificar que extintores tengan recarga vigente, abrir todos los gabinetes confirmando que la manguera se despliega, tener bitácoras de mantenimiento completas, confirmar que la brigada actual coincide con el organigrama y que los planos de evacuación reflejan la distribución real."
       - q: "¿Cuáles son las observaciones más comunes en protección civil?"
         a: "Extintores con recarga vencida, brigada con nombres de personas que ya no trabajan ahí, plano de evacuación que no corresponde con la distribución actual, gabinetes sin llave de operación o con manguera inaccesible, señalización deteriorada o cubierta por pintura, y falta de actas de simulacros con evidencia fotográfica."
-description: "Guía práctica para preparar documentos, equipos y evidencias antes de una verificación de protección civil y reducir observaciones evitables."
+description: "Verificación de protección civil sin observaciones: cómo preparar documentos, equipos y evidencias para reducir observaciones evitables en México."
 fecha: "2026-03-19"
 categoria: "monitores"
 tags: ["inspección protección civil", "NOM-002-STPS", "equipos contra incendios", "UL FM", "seguridad industrial"]

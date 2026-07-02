@@ -1,6 +1,6 @@
 ---
 title: "Conexiones Storz para Sistemas Contra Incendios"
-description: "Conexiones Storz para sistemas contra incendios en México: cómo funcionan, por qué reemplazaron a las roscas, tamaños DN65 a DN100 y errores de compatibilidad."
+description: "Conexiones Storz para sistemas contra incendios: cómo funcionan, por qué reemplazaron roscas, tamaños DN65 a DN100 y errores de compatibilidad en México."
 fecha: "2026-03-11"
 categoria: "conexiones-herrajes"
 autor:

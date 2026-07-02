@@ -18,7 +18,7 @@ schema:
         a: "La manguera de 30m tiene radio efectivo de 27m (30m menos 3m de sobrante mínimo). Separación máxima entre gabinetes: 60m (NOM-002-STPS y NFPA 14). Las distancias se miden por recorrido REAL con la manguera, no en línea recta sobre el plano. Si hay obstáculos que obligan a rodear, se necesitan gabinetes adicionales."
       - q: "¿Qué altura debe tener un gabinete contra incendios?"
         a: "El eje de la válvula angular entre 0.9m y 1.5m del piso. Este rango permite operar la válvula de pie sin agacharse ni estirarse. El espacio libre frente al gabinete debe ser mínimo 1 metro para desplegar la manguera sin obstáculos."
-description: "Tipos de gabinetes contra incendios en México, normas NOM-002-STPS, equipos incluidos, distancias de instalación y errores que generan observaciones."
+description: "Gabinetes de manguera contra incendios: tipos, normas NOM-002-STPS, equipos incluidos, distancias de instalación y errores que generan observaciones."
 fecha: "2026-03-11"
 categoria: "gabinetes-hidrantes"
 autor:

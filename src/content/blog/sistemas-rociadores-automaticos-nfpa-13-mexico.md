@@ -14,7 +14,7 @@ schema:
         a: "Cada rociador tiene un elemento fusible (ampolla de vidrio o eslabón metálico) que se rompe a una temperatura específica (generalmente 68°C o 93°C). Solo se activa el rociador directamente sobre el fuego — no todos los rociadores al mismo tiempo. El agua descarga solo donde se necesita, minimizando daño por agua."
       - q: "¿Los rociadores pueden activarse accidentalmente?"
         a: "Es extremadamente raro. El elemento fusible requiere temperaturas sostenidas de 68°C+ para romperse. Un día caluroso, vapor de cocina o un calentador normal no alcanzan esa temperatura. Las activaciones accidentales generalmente son por daño mecánico (golpe con montacargas, impacto durante construcción) no por calor ambiental."
-description: "Guía técnica completa sobre sistemas de rociadores automáticos conforme a NFPA 13. Diseño, componentes, válvulas y normativa aplicable en México."
+description: "Rociadores automáticos NFPA 13: diseño de sistemas, componentes, válvulas y normativa aplicable en México. Guía técnica completa para ingenieros."
 fecha: "2026-03-11"
 categoria: "valvulas"
 autor:

@@ -1,6 +1,6 @@
 ---
 title: "Mangueras Forestales: Guía Técnica para Brigadas y Minería"
-description: "Guía técnica de mangueras forestales para brigadas rurales, incendios de vegetación y minería en México. Tipos, especificaciones NFPA y criterios de selección."
+description: "Mangueras forestales: guía técnica para brigadas rurales y minería en México. Tipos, especificaciones NFPA 1977 y criterios de selección."
 fecha: "2026-04-01"
 fechaActualizacion: "2026-04-01"
 categoria: "mangueras"

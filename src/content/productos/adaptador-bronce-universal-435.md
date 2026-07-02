@@ -1,6 +1,6 @@
 ---
 title: "Adaptador Universal Trinquete 435 Elk-O-Lite UL FM | Elkhart Brass"
-description: "Adaptador universal 435 aluminio Elk-O-Lite Elkhart Brass. Trinquete positivo NH/NPT/NPSH/British 2.5\". 300 PSI. UL FM. Interoperabilidad multimarca México."
+description: "Adaptador universal 435 aluminio Elk-O-Lite Elkhart Brass. Trinquete positivo NH/NPT/NPSH/British 2.5\". 300 PSI. UL FM. Interoperabilidad multimarca"
 categoria: "conexiones-herrajes"
 subcategoria: "adaptadores"
 imagen: "/img/conexiones-herrajes/adaptador-universal-435-frontal.avif"

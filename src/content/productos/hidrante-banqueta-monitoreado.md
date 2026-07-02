@@ -1,6 +1,6 @@
 ---
 title: "Hidrante de Banqueta con Monitoreo Electrónico"
-description: "Hidrante de banqueta con sensor de flujo y estado. Monitoreo remoto de apertura, caudal y manipulación. IoT para smart cities."
+description: "Hidrante de banqueta con sensor de flujo y estado. Monitoreo remoto de apertura, caudal y manipulación. IoT para smart cities. Distribuidor autorizado"
 categoria: "gabinetes-hidrantes"
 subcategoria: "hidrantes"
 imagen: "/img/gabinetes-hidrantes/hidrante-monitoreado-frontal.avif"

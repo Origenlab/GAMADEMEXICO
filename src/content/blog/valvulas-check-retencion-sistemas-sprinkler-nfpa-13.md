@@ -1,6 +1,6 @@
 ---
 title: "Válvulas Check en Sprinklers: NFPA 13"
-description: "Válvulas check para sprinklers: swing vs disco vs bola, por qué fallan silenciosamente, pérdida de carga real y mantenimiento que evita retroflujo en incendio."
+description: "Válvulas check para sprinklers NFPA 13: swing vs disco vs bola, por qué fallan silenciosamente, pérdida de carga real y mantenimiento antirretroflujo."
 fecha: "2026-03-11"
 fechaActualizacion: "2026-03-19"
 schema:

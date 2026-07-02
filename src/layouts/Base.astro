@@ -81,7 +81,8 @@ const metaDescription =
     ? description.slice(0, 157).replace(/\s+\S*$/, '').trim() + '…'
     : description;
 
-const pathname = Astro.url.pathname.replace(/\.html$/, '').replace(/\/$/, '') || '/';
+// build.format:'file' genera /index como pathname del home — convertirlo a /
+const pathname = Astro.url.pathname.replace(/\.html$/, '').replace(/\/index$/, '/').replace(/\/$/, '') || '/';
 const canonicalUrl = canonical || `${SITE_URL}${pathname}`;
 const ogImageUrl = ogImage ? toAbsoluteImageUrl(ogImage, SITE_URL) : toAbsoluteImageUrl(OG_IMAGE_DEFAULT, SITE_URL);
 const hasHeroContent = Astro.slots.has('hero-content');

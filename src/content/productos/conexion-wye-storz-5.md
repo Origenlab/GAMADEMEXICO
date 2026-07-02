@@ -1,6 +1,6 @@
 ---
 title: "Conexión Y (Wye) Storz 5\" con Válvulas"
-description: "Conexión Y con entrada Storz 5\" y dos salidas Storz 2.5\". Válvulas de bola integradas. Aluminio forjado. Despliegue rápido."
+description: "Conexión Y con entrada Storz 5\" y dos salidas Storz 2.5\". Válvulas de bola integradas. Aluminio forjado. Despliegue rápido. Distribuidor autorizado en"
 categoria: "conexiones-herrajes"
 subcategoria: "wye"
 imagen: "/img/conexiones-herrajes/conexion-wye-storz-5-frontal.avif"

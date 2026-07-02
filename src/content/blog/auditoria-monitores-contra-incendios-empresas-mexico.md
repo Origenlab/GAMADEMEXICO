@@ -12,7 +12,7 @@ schema:
         a: "Documentación del diseño (cálculo hidráulico original), certificación del equipo (FM/UL verificable), bitácora de mantenimiento (operación mensual, prueba de flujo anual), estado mecánico (giro, elevación, cremallera), integridad de la base de montaje y cobertura real vs diseño."
       - q: "¿Mi aseguradora puede auditar los monitores?"
         a: "Sí. FM Global y aseguradoras que adoptan estándares FM realizan inspecciones de ingeniería donde verifican que los monitores instalados corresponden con el cálculo de riesgo, que tienen certificación FM Approved, que la prueba de flujo anual muestra caudal y alcance conformes, y que la documentación está completa."
-description: "Cómo auditar monitores contra incendios en instalaciones industriales: qué revisar, errores comunes, criterios técnicos y cómo prepararse para protección civil."
+description: "Auditoría de monitores contra incendios en empresas: qué revisar, errores comunes, criterios técnicos y preparación para protección civil en México."
 fecha: "2026-02-16"
 categoria: "monitores"
 autor:

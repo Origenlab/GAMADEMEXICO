@@ -1,6 +1,6 @@
 ---
 title: "Boquilla Select-O-Matic® XD™ Elkhart Brass | Boquilla Automática"
-description: "Boquilla automática Select-O-Matic® XD™ de Elkhart Brass. Ajuste automático de flujo ante variaciones de presión. NFPA 1964. Para sistemas con múltiples líneas."
+description: "Boquilla automática Select-O-Matic® XD™ de Elkhart Brass. Ajuste automático de flujo ante variaciones de presión. NFPA 1964. Para sistemas con múltiples"
 categoria: "boquillas"
 subcategoria: "boquillas-handline"
 marca: "Elkhart Brass"

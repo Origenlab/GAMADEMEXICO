@@ -10,7 +10,7 @@ schema:
     questions:
       - q: "¿Qué tipos de conexiones se usan en sistemas contra incendios?"
         a: "Roscadas NST/NH (estándar en México para bomberos y gabinetes), Storz (encastre rápido simétrico, dominante en industria y ciudades grandes), ranuradas Victaulic (unión mecánica para tubería, instalación sin soldadura), bridadas (conexiones permanentes de alta presión en cuartos de bomba). La compatibilidad entre sistemas se resuelve con adaptadores."
-description: "Tomas siamesas, wyes, reducciones y herrajes para sistemas contra incendios: función, ubicación, materiales y errores de instalación más comunes en México."
+description: "Conexiones y herrajes en sistemas contra incendios: tomas siamesas, wyes, reducciones, materiales y errores de instalación más comunes en México."
 fecha: "2026-03-11"
 categoria: "conexiones-herrajes"
 autor:

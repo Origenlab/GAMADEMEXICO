@@ -1,6 +1,6 @@
 ---
 title: "Adaptador Doble Hembra NH 1.5\" Bronce F-327 UL FM | Elkhart Brass"
-description: "Adaptador doble hembra NH/NST 1.5\" bronce fundido Elkhart Brass F-327. 300 PSI trabajo, prueba 1000 PSI. UL Listed FM. Standpipe, gabinetes y brigadas México."
+description: "Adaptador doble hembra NH/NST 1.5\" bronce fundido Elkhart Brass F-327. 300 PSI trabajo, prueba 1000 PSI. UL Listed FM. Standpipe, gabinetes y brigadas"
 categoria: "conexiones-herrajes"
 subcategoria: "adaptadores"
 imagen: "/img/conexiones-herrajes/adaptador-doble-hembra-1-5-frontal.avif"

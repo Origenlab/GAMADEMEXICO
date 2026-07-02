@@ -1,6 +1,6 @@
 ---
 title: "Boquilla Multi-Uso MUI-150 Limpieza y Emergencia 50-150 GPM"
-description: "Boquilla MUI-150 aluminio anodizado fabricación mexicana. NFPA 1964 NOM-002-STPS. 50-150 GPM, función dual limpieza e incendios."
+description: "Boquilla MUI-150 aluminio anodizado fabricación mexicana. NFPA 1964 NOM-002-STPS. 50-150 GPM, función dual limpieza e incendios. Distribuidor Elkhart"
 categoria: "boquillas"
 subcategoria: "industrial"
 imagen: "/img/productos/boquilla-industrial-contra-incendios-emergencia-nocturna-03.avif"

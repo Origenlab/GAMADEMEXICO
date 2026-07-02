@@ -1,6 +1,6 @@
 ---
 title: "Toma Siamesa FDC Cromada Decorativa"
-description: "Toma siamesa FDC con acabado cromado decorativo. Dos entradas 2.5\" NH. Ideal para fachadas visibles. Bronce cromado. UL/FM."
+description: "Toma siamesa FDC con acabado cromado decorativo. Dos entradas 2.5\" NH. Ideal para fachadas visibles. Bronce cromado. UL/FM. Distribuidor autorizado en"
 categoria: "conexiones-herrajes"
 subcategoria: "siamesa"
 imagen: "/img/conexiones-herrajes/toma-siamesa-cromada-frontal.avif"

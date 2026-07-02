@@ -10,7 +10,7 @@ schema:
     questions:
       - q: "¿Qué es una manguera de ataque contra incendios?"
         a: "Es la manguera que se conecta directamente a la boquilla y se usa para dirigir agua al fuego. Se diferencia de la manguera de suministro (que alimenta el sistema desde la fuente). Las de ataque son de 1.5 a 2.5 pulgadas, flexibles, resistentes a la abrasión y diseñadas para ser manejadas por operadores bajo estrés."
-description: "Mangueras de ataque para incendios industriales: doble jacket, single jacket, diámetros 1.5 a 2.5 pulgadas, materiales y aplicaciones en manufactura y petroquímica."
+description: "Mangueras de ataque contra incendios: doble jacket, single jacket, diámetros 1.5 a 2.5 pulgadas y aplicaciones en manufactura y petroquímica en México."
 fecha: "2026-03-11"
 categoria: "mangueras"
 autor:

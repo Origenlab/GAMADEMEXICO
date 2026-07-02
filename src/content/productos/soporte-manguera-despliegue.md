@@ -1,6 +1,6 @@
 ---
 title: "Soporte de Manguera para Despliegue Rápido"
-description: "Soporte de bronce para despliegue rápido de manguera en gabinetes. Permite almacenamiento ordenado y extracción inmediata."
+description: "Soporte de bronce para despliegue rápido de manguera en gabinetes. Permite almacenamiento ordenado y extracción inmediata. Distribuidor autorizado en"
 categoria: "conexiones-herrajes"
 subcategoria: "accesorios"
 imagen: "/img/conexiones-herrajes/soporte-manguera-despliegue-frontal.avif"

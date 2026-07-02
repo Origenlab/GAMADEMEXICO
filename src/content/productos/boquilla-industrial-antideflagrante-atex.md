@@ -1,6 +1,6 @@
 ---
 title: "Boquilla ATEX AX-125 IIC T6 Zona 1/2 Bronce Libre Chispas"
-description: "Boquilla Elkhart Brass ATEX AX-125 bronce alumínico libre de chispas. ATEX II 2G IIC T6 Gb IECEx. 60-125 GPM."
+description: "Boquilla Elkhart Brass ATEX AX-125 bronce alumínico libre de chispas. ATEX II 2G IIC T6 Gb IECEx. 60-125 GPM. Distribuidor Elkhart Brass en México. Stock"
 categoria: "boquillas"
 subcategoria: "industrial"
 imagen: "/img/productos/boquilla-industrial-contra-incendios-ambiente-industrial-08.avif"

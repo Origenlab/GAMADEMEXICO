@@ -12,7 +12,7 @@ schema:
         a: "Depende del tamaño. Hoteles de más de 3 pisos: rociadores automáticos + gabinetes de manguera en cada piso + sistema de detección y alarma NFPA 72 + extinción automática en cocina (UL 300). Todos: extintores por NOM-002-STPS, señalización fotoluminiscente, brigada capacitada y simulacros documentados."
       - q: "¿Un centro comercial necesita rociadores automáticos?"
         a: "Sí. En CDMX, el Reglamento de Construcción los exige para centros comerciales mayores a 2,500m². NFPA 13 define la densidad de rociadores según la clasificación de riesgo de cada zona: áreas de venta (riesgo ordinario), bodegas de tiendas (riesgo alto), food court/cocinas (requieren sistema de cocina UL 300 adicional)."
-description: "Normativa para hoteles en México: sprinklers, gabinetes cada 30m, hidrantes privados, inspección y costos estimados."
+description: "Sistemas contra incendios para hoteles y centros comerciales: sprinklers, gabinetes cada 30m, hidrantes privados e inspección NFPA requerida en México."
 fecha: "2026-03-11"
 categoria: "monitores"
 autor:

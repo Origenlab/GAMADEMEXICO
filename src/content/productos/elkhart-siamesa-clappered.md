@@ -1,6 +1,6 @@
 ---
 title: "Toma Siamesa Clappered Elkhart Brass | Distribuidor Autorizado México"
-description: "Toma siamesa FDC con clappers internos Elkhart Brass. Bronce macizo, entradas 2½\" NST, salida 4\" o 6\". UL Listed. Evita contraflujo. Stock CDMX y Querétaro."
+description: "Toma siamesa FDC con clappers internos Elkhart Brass. Bronce macizo, entradas 2½\" NST, salida 4\" o 6\". UL Listed. Evita contraflujo. Stock CDMX y"
 categoria: "conexiones-herrajes"
 subcategoria: "siamesa"
 marca: "Elkhart Brass"

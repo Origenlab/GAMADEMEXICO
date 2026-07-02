@@ -1,6 +1,6 @@
 ---
 title: "Válvula Mariposa 2.5\" Wafer Indicadora UL/FM"
-description: "Válvula mariposa indicadora 2.5\" wafer compacta con switch tamper. Lever handle, sello EPDM. 175 PSI. Certificada UL/FM 1112."
+description: "Válvula mariposa indicadora 2.5\" wafer compacta con switch tamper. Lever handle, sello EPDM. 175 PSI. Certificada UL/FM 1112. UL/FM. Distribuidor"
 categoria: "valvulas"
 subcategoria: "mariposa"
 imagen: "/img/valvulas-contra-incendios/valvula-mariposa-indicadora-contra-incendios-ul-fm-certificada-03.avif"

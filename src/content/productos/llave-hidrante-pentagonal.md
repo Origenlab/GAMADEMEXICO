@@ -1,6 +1,6 @@
 ---
 title: "Llave para Hidrante Pentagonal Bronce"
-description: "Llave de bronce para operación de hidrantes con vastago pentagonal. Mango largo anti-retroceso. No produce chispa."
+description: "Llave de bronce para operación de hidrantes con vastago pentagonal. Mango largo anti-retroceso. No produce chispa. Distribuidor autorizado. Stock en"
 categoria: "conexiones-herrajes"
 subcategoria: "accesorios"
 imagen: "/img/conexiones-herrajes/llave-hidrante-pentagonal-frontal.avif"

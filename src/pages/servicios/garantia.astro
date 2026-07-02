@@ -4,6 +4,13 @@ import Faq from '../../components/Faq.astro';
 import SectionHeader from '../../components/SectionHeader.astro';
 import LeadCapture from '../../components/LeadCapture.astro';
 import { buildOrganizationSchema, buildServiceSchema, buildFAQSchema, buildBreadcrumbSchema } from '../../lib/seo';
+import { getOptimizedImageUrl } from '../../lib/images';
+
+const serviceImages = {
+  soporte:  getOptimizedImageUrl('/img/soporte-tecnico-postventa-equipos-contra-incendios.avif',    { width: 1408, quality: 82, strip: 'all' }),
+  video:    getOptimizedImageUrl('/img/soporte-postventa-videollamada-equipos-contra-incendios.avif', { width: 1408, quality: 82, strip: 'all' }),
+  remoto:   getOptimizedImageUrl('/img/soporte-tecnico-remoto-valvulas-contra-incendios.avif',       { width: 1408, quality: 82, strip: 'all' }),
+};
 
 const faqItems = [
   {
@@ -45,7 +52,7 @@ const structuredData = [
 ---
 
 <Layout
-  title="Garantía de Equipos Contra Incendios UL FM | Elkhart Brass México"
+  title="Garantía de Equipos Contra Incendios UL/FM | Política y Soporte"
   description="Garantía de equipos contra incendios Elkhart Brass UL/FM: certificados originales, soporte postventa y reclamaciones resueltas en menos de 24h."
   activePage="servicios"
   structuredData={structuredData}
@@ -429,7 +436,7 @@ const structuredData = [
   <section class="service-image-section">
     <div class="container">
       <img
-        src="/img/soporte-tecnico-postventa-equipos-contra-incendios.avif"
+        src={serviceImages.soporte}
         alt="Soporte técnico postventa para equipos contra incendios Gama de México"
         width="1408" height="768"
         loading="lazy" decoding="async"
@@ -442,8 +449,8 @@ const structuredData = [
   <!-- SERVICE IMAGES EXTRA -->
   <section class="service-image-section">
     <div class="container service-img-grid-auto">
-      <img src="/img/soporte-postventa-videollamada-equipos-contra-incendios.avif" alt="Soporte postventa por videollamada para equipos contra incendios" width="1408" height="768" loading="lazy" decoding="async" class="service-feature-img" />
-      <img src="/img/soporte-tecnico-remoto-valvulas-contra-incendios.avif" alt="Soporte técnico remoto para válvulas contra incendios" width="1408" height="768" loading="lazy" decoding="async" class="service-feature-img" />
+      <img src={serviceImages.video}  alt="Soporte postventa por videollamada para equipos contra incendios" width="1408" height="768" loading="lazy" decoding="async" class="service-feature-img" />
+      <img src={serviceImages.remoto} alt="Soporte técnico remoto para válvulas contra incendios" width="1408" height="768" loading="lazy" decoding="async" class="service-feature-img" />
 
     </div>
   </section>

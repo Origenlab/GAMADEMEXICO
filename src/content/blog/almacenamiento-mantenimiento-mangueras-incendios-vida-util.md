@@ -1,6 +1,6 @@
 ---
 title: "Almacenamiento y Mantenimiento de Mangueras Contra Incendios"
-description: "Cómo almacenar mangueras contra incendios sin que se degraden: UV, humedad, dobleces y prueba hidrostática NFPA 1962. Errores que acortan la vida útil."
+description: "Almacenamiento y mantenimiento de mangueras contra incendios. Degradación por UV, humedad y dobleces, prueba NFPA 1962 y errores que acortan la vida útil."
 fecha: "2026-03-01"
 fechaActualizacion: "2026-03-19"
 categoria: "mangueras"

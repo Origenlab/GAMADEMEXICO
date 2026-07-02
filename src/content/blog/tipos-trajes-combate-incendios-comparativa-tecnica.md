@@ -1,6 +1,6 @@
 ---
 title: "Tipos de Trajes de Combate contra Incendios: Comparativa Técnica"
-description: "Comparativa técnica de trajes para combate de incendios: estructural, aproximación, forestal y HAZMAT. Normas NFPA, materiales y selección en México."
+description: "Tipos de trajes de combate contra incendios: comparativa de estructural, aproximación, forestal y HAZMAT. Normas NFPA, materiales y selección en México."
 fecha: "2026-06-08"
 categoria: "equipos-bomberos"
 autor:

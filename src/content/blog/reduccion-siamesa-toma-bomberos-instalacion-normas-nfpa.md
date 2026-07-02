@@ -12,7 +12,7 @@ schema:
         a: "Es la conexión en la fachada del edificio donde los bomberos conectan sus mangueras para INYECTAR agua al sistema de rociadores o standpipes desde su camión cisterna. Funciona al revés de un hidrante: el hidrante ENTREGA agua hacia afuera, la siamesa RECIBE agua hacia adentro. Son complementarios, no equivalentes."
       - q: "¿Dónde debe instalarse la toma siamesa?"
         a: "En la fachada principal del edificio, a menos de 30 metros del punto de acceso de los bomberos, a una altura de 0.45-1.20m del piso, señalizada con letrero que indique qué sistema alimenta (rociadores, standpipe o combinado), y con tapas que protejan las bocas de suciedad pero que se retiren sin herramienta."
-description: "Criterios de instalación, tipos y mantenimiento de reducciones siamesas y tomas para bomberos según NFPA 14 en instalaciones industriales de México."
+description: "Reducción siamesa y toma bomberos NFPA 14: criterios de instalación, tipos, mantenimiento y especificaciones para instalaciones industriales en México."
 fecha: "2026-03-11"
 categoria: "conexiones-herrajes"
 autor:

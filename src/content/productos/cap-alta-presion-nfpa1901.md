@@ -1,6 +1,6 @@
 ---
 title: "Cap Alta Presión C-50 500 PSI 2.5\" NH NFPA 1901 UL Listed"
-description: "Cap de alta presión C-50 Elkhart Brass 500 PSI 2.5\" NH bronce fundido NFPA 1901 UL Listed. Mango largo palanca, sin cadena, EPDM. Vehículos de bomberos México."
+description: "Cap de alta presión C-50 Elkhart Brass 500 PSI 2.5\" NH bronce fundido NFPA 1901 UL Listed. Mango largo palanca, sin cadena, EPDM. Vehículos de bomberos"
 categoria: "conexiones-herrajes"
 subcategoria: "accesorios"
 imagen: "/img/conexiones-herrajes/cap-alta-presion-nfpa1901-frontal.avif"

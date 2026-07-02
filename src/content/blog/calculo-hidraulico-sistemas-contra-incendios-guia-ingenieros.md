@@ -1,6 +1,6 @@
 ---
 title: "Cálculo Hidráulico en Sistemas Contra Incendios"
-description: "Cálculo hidráulico para sistemas contra incendios: Hazen-Williams, pérdidas por fricción, coeficiente C real vs asumido, y errores que subdimensionan el sistema."
+description: "Cálculo hidráulico para sistemas contra incendios: Hazen-Williams, pérdidas por fricción, coeficiente C real vs asumido y errores que subdimensionan."
 fecha: "2026-03-01"
 fechaActualizacion: "2026-03-19"
 categoria: "valvulas"

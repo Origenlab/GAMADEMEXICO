@@ -1,6 +1,6 @@
 ---
 title: "Certificaciones UL y FM en Equipos Contra Incendios"
-description: "UL Listed vs FM Approved: qué evalúa cada certificación, cuándo exige cada una la aseguradora, y cómo verificar que tu equipo contra incendios sea legítimo."
+description: "Certificaciones UL y FM en equipos contra incendios: UL Listed vs FM Approved, qué evalúa cada una y cómo verificar que el equipo sea legítimo en México."
 fecha: "2026-03-01"
 fechaActualizacion: "2026-03-19"
 categoria: "monitores"

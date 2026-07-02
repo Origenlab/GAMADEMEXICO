@@ -20,7 +20,7 @@ schema:
         a: "Si el sistema descarga agente húmedo pero el quemador sigue encendido, la fuente de calor puede reiniciar el fuego después de que la capa de saponificación se rompa. El cierre de gas debe activarse SIMULTÁNEAMENTE con la descarga, no después. Sin cierre de gas integrado, el sistema puede extinguir el fuego momentáneamente y luego el fuego regresa sin agente para una segunda descarga."
       - q: "¿Cada cuánto se le da mantenimiento al sistema de cocina?"
         a: "NFPA 17A exige inspección semestral por personal calificado: verificar carga del tanque, boquillas sin obstrucción por grasa, cable fusible sin deterioro, mecanismo de disparo funcional (automático y manual), válvula de corte de gas operativa, y cobertura de boquillas acorde a la configuración actual de equipos de cocción. Después de CADA activación, recarga completa antes de volver a servicio."
-description: "Sistemas de extinción automática para cocinas industriales y restaurantes conforme a UL 300 y NFPA 17A: cómo funcionan, por qué fallan y qué exige la norma."
+description: "Extinción automática en cocinas industriales UL 300 y NFPA 17A: cómo funcionan los sistemas, por qué fallan y qué exige la norma en México."
 fecha: "2026-03-11"
 categoria: "boquillas"
 autor:

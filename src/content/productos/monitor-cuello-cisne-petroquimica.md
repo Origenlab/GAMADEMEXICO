@@ -1,6 +1,6 @@
 ---
 title: "Monitor Cuello de Cisne para Plantas Petroquímicas"
-description: "Monitor contra incendio cuello de cisne diseñado para enfriamiento de tanques esféricos y protección de áreas de proceso en refinerías y plantas petroquímicas."
+description: "Monitor contra incendio cuello de cisne diseñado para enfriamiento de tanques esféricos y protección de áreas de proceso en refinerías y plantas"
 categoria: "monitores"
 subcategoria: "cuello-cisne"
 imagen: "/img/monitores-contra-incendios/monitor-cuello-cisne-contra-incendios-planta-industrial-21.avif"

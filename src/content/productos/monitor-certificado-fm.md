@@ -1,6 +1,6 @@
 ---
 title: "Monitor Certificado FM"
-description: "Monitor aprobado por Factory Mutual bajo estándar FM 1421. Requisito para instalaciones industriales con seguros internacionales y clasificación de riesgo alto."
+description: "Monitor aprobado por Factory Mutual bajo estándar FM 1421. Requisito para instalaciones industriales con seguros internacionales y clasificación de riesgo"
 categoria: "monitores"
 subcategoria: "certificado-fm"
 imagen: "/img/monitores-contra-incendios/monitor-certificado-fm-contra-incendios-vista-urbana-01.avif"

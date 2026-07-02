@@ -1,6 +1,6 @@
 ---
 title: "Reducción Campana 102A 2.5\" x 1.5\" Elkhart"
-description: "Reducción estilo campana modelo 102A de 2.5\" a 1.5\" NH. Diseño aerodinámico. Aluminio Elk-O-Lite. UL/FM."
+description: "Reducción estilo campana modelo 102A de 2.5\" a 1.5\" NH. Diseño aerodinámico. Aluminio Elk-O-Lite. UL/FM. Distribuidor autorizado en México. Stock"
 categoria: "conexiones-herrajes"
 subcategoria: "coples"
 imagen: "/img/conexiones-herrajes/reduccion-campana-102a-frontal.avif"

@@ -1,6 +1,6 @@
 ---
 title: "Válvula Globo 1/2\" Bronce Patrón Recto UL"
-description: "Válvula de globo 1/2\" bronce patrón recto para control fino de presión y drenajes. 400 PSI trabajo. Certificada UL Listed."
+description: "Válvula de globo 1/2\" bronce patrón recto para control fino de presión y drenajes. 400 PSI trabajo. Certificada UL Listed. UL/FM. Distribuidor autorizado"
 categoria: "valvulas"
 subcategoria: "globo"
 imagen: "/img/valvulas-contra-incendios/valvula-globo-bridada-acero-inoxidable-contra-incendios-nave-tuberias-06.avif"

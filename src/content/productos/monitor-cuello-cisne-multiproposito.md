@@ -1,6 +1,6 @@
 ---
 title: "Monitor Cuello de Cisne Multipropósito - Agua y Espuma AFFF"
-description: "Monitor contra incendio cuello de cisne versátil compatible con agua, espuma AFFF y FFFP."
+description: "Monitor contra incendio cuello de cisne versátil compatible con agua, espuma AFFF y FFFP. Distribuidor autorizado Elkhart Brass en México. Stock"
 categoria: "monitores"
 subcategoria: "cuello-cisne"
 imagen: "/img/monitores-contra-incendios/monitor-cuello-cisne-contra-incendios-vista-completa-07.avif"

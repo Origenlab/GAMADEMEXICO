@@ -1,6 +1,6 @@
 ---
 title: "Reducción Swivel 101A 2.5\" x 1.5\" Elkhart"
-description: "Reducción swivel modelo 101A de 2.5\" a 1.5\" NH. Inlet giratorio evita torsión. Aluminio Elk-O-Lite. UL/FM."
+description: "Reducción swivel modelo 101A de 2.5\" a 1.5\" NH. Inlet giratorio evita torsión. Aluminio Elk-O-Lite. UL/FM. Distribuidor autorizado en México. Stock"
 categoria: "conexiones-herrajes"
 subcategoria: "coples"
 imagen: "/img/conexiones-herrajes/reduccion-swivel-101a-frontal.avif"

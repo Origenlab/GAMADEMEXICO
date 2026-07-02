@@ -1,6 +1,6 @@
 ---
 title: "Monitor Cobra™ EXM2 Eléctrico Elkhart Brass | Distribuidor México"
-description: "Monitor eléctrico Cobra™ EXM2 de Elkhart Brass. Alto caudal hasta 2,000 GPM, control remoto, diseño industrial pesado. UL Listed. Distribuidor autorizado CDMX."
+description: "Monitor eléctrico Cobra™ EXM2 de Elkhart Brass. Alto caudal hasta 2,000 GPM, control remoto, diseño industrial pesado. UL Listed. Distribuidor autorizado"
 categoria: "monitores"
 subcategoria: "monitores-electricos"
 marca: "Elkhart Brass"

@@ -12,7 +12,7 @@ schema:
         a: "Registrarse en CompraNet (compranet.hacienda.gob.mx). Monitorear licitaciones de PEMEX, CFE, IMSS, Sedena y gobiernos estatales. Tener RFC vigente, cumplir con requisitos técnicos del pliego (certificaciones UL/FM frecuentemente requeridas) y preparar documentación conforme a la Ley de Adquisiciones."
       - q: "¿Qué certificaciones piden las licitaciones de gobierno para equipos contra incendios?"
         a: "PEMEX y CFE generalmente exigen FM Approved. IMSS y hospitales públicos piden UL Listed como mínimo. Las licitaciones especifican marca de referencia 'o equivalente' — el equivalente debe demostrar certificaciones al mismo nivel. Sin certificación verificable, la propuesta se descalifica técnicamente."
-description: "Cómo participar en licitaciones gubernamentales de equipos contra incendios en México. Requisitos, especificaciones técnicas y documentación."
+description: "Licitaciones gobierno para equipos contra incendios en México: cómo participar, requisitos, especificaciones técnicas y documentación requerida."
 fecha: "2026-03-11"
 categoria: "monitores"
 autor:

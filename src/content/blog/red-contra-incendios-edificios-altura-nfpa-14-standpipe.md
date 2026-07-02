@@ -12,7 +12,7 @@ schema:
         a: "Un standpipe es una tubería vertical fija que sube por el edificio con conexiones de manguera en cada piso. NFPA 14 lo exige en edificios de más de 3 pisos o donde la distancia de recorrido de manguera excede los límites. Los bomberos conectan sus mangueras al standpipe en lugar de subir mangueras desde el camión."
       - q: "¿Cuáles son los tipos de standpipe?"
         a: "Clase I: conexiones de 2.5 pulgadas para bomberos profesionales (no para público). Clase II: conexiones de 1.5 pulgadas en gabinetes para ocupantes del edificio. Clase III: ambas conexiones — 2.5 para bomberos + 1.5 en gabinete para primera intervención. Clase III es el más completo y recomendado para edificios de uso mixto."
-description: "Sistemas de tubería vertical standpipe para edificios de gran altura en México. NFPA 14, clasificación, componentes y conexiones de manguera."
+description: "Standpipe NFPA 14: red contra incendios en altura. Tubería vertical para edificios, clasificación, componentes y conexiones de manguera en México."
 fecha: "2026-03-11"
 categoria: "mangueras"
 autor:

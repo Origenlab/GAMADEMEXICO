@@ -1,6 +1,6 @@
 ---
 title: "Incrementador 111A 1.5\" x 2.5\" Elkhart Brass"
-description: "Incrementador modelo 111A de 1.5\" a 2.5\" NH. Expande diámetro de línea. Aluminio Elk-O-Lite. UL/FM."
+description: "Incrementador modelo 111A de 1.5\" a 2.5\" NH. Expande diámetro de línea. Aluminio Elk-O-Lite. UL/FM. Distribuidor autorizado en México. Stock disponible."
 categoria: "conexiones-herrajes"
 subcategoria: "coples"
 imagen: "/img/conexiones-herrajes/incrementador-111a-frontal.avif"

@@ -1,6 +1,6 @@
 ---
 title: "Cople Storz 2.5\" Aluminio Cuarto de Vuelta"
-description: "Cople Storz 2.5\" de aluminio forjado. Conexión rápida cuarto de vuelta. Presión 300 PSI. Despliegue 50% más rápido. UL/FM."
+description: "Cople Storz 2.5\" de aluminio forjado. Conexión rápida cuarto de vuelta. Presión 300 PSI. Despliegue 50% más rápido. UL/FM. Distribuidor autorizado en"
 categoria: "conexiones-herrajes"
 subcategoria: "coples"
 imagen: "/img/conexiones-herrajes/cople-storz-2-5-aluminio-frontal.avif"

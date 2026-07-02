@@ -1,6 +1,6 @@
 ---
 title: "Reducción Storz 4\" x 2.5\" Aluminio"
-description: "Reducción Storz de 4\" a 2.5\" para transición de líneas. Conexión rápida cuarto de vuelta. Aluminio forjado. UL/FM."
+description: "Reducción Storz de 4\" a 2.5\" para transición de líneas. Conexión rápida cuarto de vuelta. Aluminio forjado. UL/FM. Distribuidor autorizado en México."
 categoria: "conexiones-herrajes"
 subcategoria: "coples"
 imagen: "/img/conexiones-herrajes/reduccion-storz-4-2-5-frontal.avif"

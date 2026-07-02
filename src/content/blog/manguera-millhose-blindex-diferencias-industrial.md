@@ -10,7 +10,7 @@ schema:
     questions:
       - q: "¿Cuál es la diferencia entre manguera Millhose y Blindex?"
         a: "Millhose: single jacket, más ligera, para gabinetes interiores de riesgo bajo-medio, presión de trabajo estándar. Blindex: doble jacket con cubierta externa reforzada, mayor resistencia a abrasión y temperaturas, para uso industrial pesado, brigadas de ataque directo y ambientes con exposición mecánica severa."
-description: "Diferencias técnicas entre mangueras Millhose y Blindex contra incendios. Construcción, presiones de trabajo y prueba, usos industriales vs brigadas."
+description: "Manguera Millhose vs Blindex: diferencias de construcción, presiones de trabajo, prueba y aplicaciones industriales vs brigadas contra incendios."
 fecha: "2026-03-19"
 categoria: "mangueras"
 autor:

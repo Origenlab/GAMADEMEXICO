@@ -1,6 +1,6 @@
 ---
 title: "Monitor RAM XD Elkhart Brass | Monitor Portátil Ataque Rápido"
-description: "Monitor RAM XD de Elkhart Brass para ataque rápido. Portátil, despliegue inmediato, hasta 500 GPM. Ideal para edificios de gran altura y operaciones industriales."
+description: "Monitor RAM XD de Elkhart Brass para ataque rápido. Portátil, despliegue inmediato, hasta 500 GPM. Ideal para edificios de gran altura y operaciones"
 categoria: "monitores"
 subcategoria: "monitores-manuales"
 marca: "Elkhart Brass"

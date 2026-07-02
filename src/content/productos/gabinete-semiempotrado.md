@@ -1,6 +1,6 @@
 ---
 title: "Gabinete Semiempotrado con Ceja Decorativa"
-description: "Gabinete contra incendios semiempotrado con ceja decorativa de 2 pulgadas. Instalación parcial en muro con acabado estético."
+description: "Gabinete contra incendios semiempotrado con ceja decorativa de 2 pulgadas. Instalación parcial en muro con acabado estético. Stock en México. Envíos a 32"
 categoria: "gabinetes-hidrantes"
 subcategoria: "gabinetes"
 imagen: "/img/gabinetes-hidrantes/gabinete-manguera-edificio-premium.avif"

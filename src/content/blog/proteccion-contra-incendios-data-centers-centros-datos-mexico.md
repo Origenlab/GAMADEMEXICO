@@ -12,7 +12,7 @@ schema:
         a: "Sí, y es más común de lo que se cree. NFPA 75 permite rociadores de agua como sistema de supresión en centros de datos. El daño por agua de un rociador activado es significativamente menor que el daño por fuego descontrolado. Los rociadores preacción (doble interlock) son los preferidos porque requieren dos señales para activarse."
       - q: "¿Qué sistema de extinción es mejor para un data center?"
         a: "Depende del tamaño y criticidad. Agentes limpios (FM-200, Novec 1230) para salas pequeñas de alta criticidad donde cada minuto de downtime cuesta miles de dólares. Rociadores preacción para data centers grandes donde el costo de agente limpio sería prohibitivo. Muchas instalaciones combinan ambos: agente limpio en la sala de servidores y rociadores en áreas de soporte."
-description: "Sistemas de protección contra incendios para centros de datos en México. Pre-acción, agentes limpios, detección temprana y NFPA 75/76."
+description: "Protección contra incendios en data centers: sistemas pre-acción, agentes limpios, detección temprana y NFPA 75/76 para centros de datos en México."
 fecha: "2026-03-11"
 categoria: "valvulas"
 autor:

@@ -1,6 +1,6 @@
 ---
 title: "Válvula Mariposa 6\" Ranurada Indicadora UL/FM"
-description: "Válvula mariposa indicadora 6\" extremos ranurados con gear operator y switch tamper. 175 PSI trabajo. Certificada UL/FM 1112."
+description: "Válvula mariposa indicadora 6\" extremos ranurados con gear operator y switch tamper. 175 PSI trabajo. Certificada UL/FM 1112. UL/FM. Distribuidor"
 categoria: "valvulas"
 subcategoria: "mariposa"
 imagen: "/img/valvulas-contra-incendios/valvula-mariposa-indicadora-contra-incendios-conexion-ranurada-16.avif"

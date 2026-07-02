@@ -1,6 +1,6 @@
 ---
 title: "Toma Siamesa FDC 4-A Clappered 2.5\" Elkhart"
-description: "Toma siamesa FDC modelo 4-A con válvulas clapper integradas. Dos entradas 2.5\" NH con check. Evita drenaje. UL/FM NFPA 14."
+description: "Toma siamesa FDC modelo 4-A con válvulas clapper integradas. Dos entradas 2.5\" NH con check. Evita drenaje. UL/FM NFPA 14. Distribuidor autorizado en"
 categoria: "conexiones-herrajes"
 subcategoria: "siamesa"
 imagen: "/img/conexiones-herrajes/toma-siamesa-4a-clappered-frontal.avif"

@@ -1,6 +1,6 @@
 ---
 title: "Adaptador Reducción NH 2.5\" a 1.5\" Bronce R-327 UL FM"
-description: "Adaptador reducción NH 2.5\" hembra a 1.5\" macho bronce Elkhart Brass R-327. 300 PSI, prueba 1000 PSI. UL FM. Standpipe, gabinetes y líneas de ataque México."
+description: "Adaptador reducción NH 2.5\" hembra a 1.5\" macho bronce Elkhart Brass R-327. 300 PSI, prueba 1000 PSI. UL FM. Standpipe, gabinetes y líneas de ataque"
 categoria: "conexiones-herrajes"
 subcategoria: "adaptadores"
 imagen: "/img/conexiones-herrajes/adaptador-reduccion-2-5-1-5-frontal.avif"

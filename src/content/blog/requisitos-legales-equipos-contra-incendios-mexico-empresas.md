@@ -12,7 +12,7 @@ schema:
         a: "Ley Federal del Trabajo (Art. 132, obligación del patrón), NOM-002-STPS-2010 (requisitos específicos por nivel de riesgo), leyes estatales de protección civil (varían por estado), reglamentos municipales de construcción (varían por municipio). No hay una sola ley — es la combinación de federal + estatal + municipal lo que define tus obligaciones."
       - q: "¿Las multas por no tener equipo contra incendios son por empresa o por infracción?"
         a: "Por infracción individual. Cada extintor vencido, cada gabinete deficiente, cada falta de señalización es una infracción separada con multa independiente. Una empresa con 15 deficiencias no recibe una multa grande sino 15 multas que sumadas pueden ser mucho más costosas de lo que hubiera costado prevenir."
-description: "Conoce qué exige la ley en México para equipos contra incendios: diagnóstico, plan, bitácoras, capacitación y mantenimiento para mantener tu empresa en regla."
+description: "Requisitos legales de equipos contra incendios en México: diagnóstico de riesgo, plan, bitácoras, capacitación y mantenimiento para cumplimiento ante STPS."
 fecha: "2026-02-17"
 categoria: "gabinetes-hidrantes"
 autor:

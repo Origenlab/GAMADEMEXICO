@@ -1,6 +1,6 @@
 ---
 title: "Monitores Contra Incendios: Cómo Elegir el Correcto"
-description: "Cómo seleccionar monitores contra incendios: tipo corazón vs cuello de cisne, caudales reales, fuerza de reacción y errores de especificación."
+description: "Monitores contra incendios: cómo elegir entre tipo corazón y cuello de cisne. Caudales reales, fuerza de reacción y errores de especificación en México."
 fecha: "2026-02-14"
 categoria: "monitores"
 autor:

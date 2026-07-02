@@ -1,6 +1,6 @@
 ---
 title: "Cople Storz 4\" Aluminio Gran Diámetro"
-description: "Cople Storz 4\" de aluminio forjado para líneas de suministro. Conexión rápida cuarto de vuelta. Presión 250 PSI. UL/FM."
+description: "Cople Storz 4\" de aluminio forjado para líneas de suministro. Conexión rápida cuarto de vuelta. Presión 250 PSI. UL/FM. Distribuidor autorizado en"
 categoria: "conexiones-herrajes"
 subcategoria: "coples"
 imagen: "/img/conexiones-herrajes/cople-storz-4-aluminio-frontal.avif"

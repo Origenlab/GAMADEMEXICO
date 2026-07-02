@@ -1,6 +1,6 @@
 ---
 title: "Boquilla Tipo Pistola vs Turbo Jet: Cuándo Usar Cada Una"
-description: "Diferencias reales entre boquillas tipo pistola y turbo jet: fuerza de reacción, caudales, patrones de descarga y errores de selección en brigadas industriales."
+description: "Boquilla tipo pistola vs turbo jet: diferencias de fuerza de reacción, caudales, patrones de descarga y criterios para brigadas industriales en México."
 fecha: "2026-03-19"
 categoria: "boquillas"
 autor:

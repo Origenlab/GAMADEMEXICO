@@ -1,6 +1,6 @@
 ---
 title: "Toma Siamesa FDC Storz 4\" Salida Única"
-description: "Toma siamesa FDC con dos entradas 2.5\" NH y salida Storz 4\". Conexión rápida cuarto de vuelta. UL/FM. Alto caudal."
+description: "Toma siamesa FDC con dos entradas 2.5\" NH y salida Storz 4\". Conexión rápida cuarto de vuelta. UL/FM. Alto caudal. Distribuidor autorizado en México."
 categoria: "conexiones-herrajes"
 subcategoria: "siamesa"
 imagen: "/img/conexiones-herrajes/toma-siamesa-storz-4-frontal.avif"

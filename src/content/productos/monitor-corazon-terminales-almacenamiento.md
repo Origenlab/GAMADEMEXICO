@@ -1,6 +1,6 @@
 ---
 title: "Monitor Tipo Corazón para Terminales de Almacenamiento"
-description: "Monitor contra incendio tipo corazón diseñado para protección de terminales de almacenamiento de hidrocarburos."
+description: "Monitor contra incendio tipo corazón diseñado para protección de terminales de almacenamiento de hidrocarburos. Distribuidor autorizado Elkhart Brass en"
 categoria: "monitores"
 subcategoria: "tipo-corazon"
 imagen: "/img/monitores-contra-incendios/monitor-tipo-corazon-contra-incendios-industrial-vista-completa-08.avif"

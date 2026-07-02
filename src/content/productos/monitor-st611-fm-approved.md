@@ -1,6 +1,6 @@
 ---
 title: "Monitor ST611 Certificado FM Approved - 1250 GPM"
-description: "Monitor contra incendio ST611 con certificación FM Approved. Doble hilera de bolillas de bronce, giro 360° horizontal y ±70° vertical. Operación con un solo volante."
+description: "Monitor contra incendio ST611 con certificación FM Approved. Doble hilera de bolillas de bronce, giro 360° horizontal y ±70° vertical. Operación con un"
 categoria: "monitores"
 subcategoria: "certificado-fm"
 imagen: "/img/monitores-contra-incendios/monitor-certificado-fm-contra-incendios-perspectiva-ciudad-02.avif"

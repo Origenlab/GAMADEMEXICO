@@ -1,6 +1,6 @@
 ---
 title: "Lineamientos para Monitores Contra Incendios en México"
-description: "Requisitos legales y técnicos para instalar monitores contra incendios en plantas industriales de México: NOM-002-STPS, NFPA 15, FM y criterios de ingeniería."
+description: "Lineamientos para monitores contra incendios en México: NOM-002-STPS, NFPA 15, FM y criterios de instalación en plantas industriales."
 fecha: "2026-02-16"
 fechaActualizacion: "2026-03-19"
 categoria: "monitores"

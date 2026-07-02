@@ -1,6 +1,6 @@
 ---
 title: "Válvulas de Control Contra Incendios: Supervisión"
-description: "Supervisión eléctrica de válvulas contra incendios: tamper switches, NFPA 72, por qué una válvula cerrada invalida todo el sistema de rociadores."
+description: "Válvulas de control contra incendios: supervisión eléctrica con tamper switches. NFPA 72 y por qué una válvula cerrada invalida el sistema de rociadores."
 fecha: "2026-03-11"
 fechaActualizacion: "2026-03-19"
 schema:

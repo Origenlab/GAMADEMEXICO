@@ -1,6 +1,6 @@
 ---
 title: "Cómo Cumplir la NOM-002-STPS en Tu Empresa"
-description: "NOM-002-STPS paso a paso: clasificación de riesgo, brigada, extintores, gabinetes, simulacros y errores que generan multas por infracción individual en México."
+description: "Cómo cumplir la NOM-002-STPS en tu empresa: clasificación de riesgo, brigada, extintores, gabinetes, simulacros y errores que generan multas en México."
 fecha: "2026-02-14"
 fechaActualizacion: "2026-03-19"
 categoria: "gabinetes-hidrantes"

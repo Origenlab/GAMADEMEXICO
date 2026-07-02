@@ -12,7 +12,7 @@ schema:
         a: "Ventilación limitada (el humo se acumula rápidamente y reduce visibilidad a cero), combustible concentrado (cada auto tiene 40-60 litros de gasolina + plásticos del interior + neumáticos), acceso restringido para bomberos (rampas estrechas, altura limitada para camiones), y la estructura de concreto actúa como horno que retiene calor."
       - q: "¿Necesitan rociadores los estacionamientos subterráneos?"
         a: "En CDMX, el Reglamento de Construcción los exige en estacionamientos subterráneos de edificios de más de 25m de altura. NFPA 88A los recomienda para todos los estacionamientos cerrados. Con la proliferación de autos eléctricos cuyas baterías de litio arden de forma sostenida y difícil de extinguir, los rociadores son cada vez más críticos."
-description: "Sistemas de protección contra incendios para estacionamientos subterráneos en México. Ventilación, rociadores, hidrantes y normativa NFPA."
+description: "Incendios en estacionamientos subterráneos: protección con ventilación, rociadores, hidrantes y normativa NFPA. Guía técnica para diseñadores en México."
 fecha: "2026-03-11"
 categoria: "gabinetes-hidrantes"
 autor:

@@ -1,6 +1,6 @@
 ---
 title: "Boquilla Industrial HT-500 Refractaria 500°F Bronce Silicon Bronze"
-description: "Boquilla Elkhart Brass HT-500 bronce alto silicio C65500. Operación hasta 500°F (260°C). PTFE+Viton+Inconel. 100-200 GPM. Acerías, fundiciones y hornos México."
+description: "Boquilla Elkhart Brass HT-500 bronce alto silicio C65500. Operación hasta 500°F (260°C). PTFE+Viton+Inconel. 100-200 GPM. Acerías, fundiciones y hornos"
 categoria: "boquillas"
 subcategoria: "industrial"
 imagen: "/img/productos/boquilla-industrial-contra-incendios-bronce-lateral-02.avif"

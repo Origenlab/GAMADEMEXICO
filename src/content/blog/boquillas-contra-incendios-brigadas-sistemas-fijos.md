@@ -12,7 +12,7 @@ schema:
         a: "Tipo pistola de 60-150 GPM con selección de patrón (chorro/niebla/cierre). Debe ser intuitiva porque el brigadista no es bombero profesional — opera bajo estrés con entrenamiento limitado. La fuerza de reacción a 95 GPM (~45 lb) permite operación por una persona. La turbo jet de 250+ GPM es para brigadas capacitadas de dos personas."
       - q: "¿Las boquillas de sistemas fijos son diferentes a las de brigada?"
         a: "Sí. Las de sistemas fijos (monitores, rociadores abiertos, deluge) se diseñan para caudal específico a presión específica sin intervención humana. No necesitan selección de patrón ni ergonomía manual. Se especifican por el cálculo hidráulico del sistema, no por la capacidad del operador."
-description: "Cómo seleccionar boquillas contra incendios para brigadas industriales y sistemas fijos: criterios de caudal, presión, patrón y compatibilidad con monitores."
+description: "Boquillas contra incendios para brigadas industriales y sistemas fijos: criterios de caudal, presión, patrón de descarga y compatibilidad con monitores."
 fecha: "2026-02-16"
 categoria: "boquillas"
 autor:
