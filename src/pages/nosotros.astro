@@ -22,6 +22,16 @@ import {
   buildFAQSchema,
   buildBreadcrumbSchema,
 } from '../lib/seo';
+import { getOptimizedImageUrl } from '../lib/images';
+
+// CR-08 (FASE 2 · 2026-07-01): CDN build-time para galería del equipo.
+// Reemplaza src="/img/..." directo por URLs pre-calculadas via ExactDN.
+const teamImages = {
+  equipo:     getOptimizedImageUrl('/img/equipo-gamademexico-profesional.avif',                         { width: 1408, quality: 82, strip: 'all' }),
+  asesores:   getOptimizedImageUrl('/img/equipo-gama-mexico-asesores-equipos-contra-incendios.avif',    { width: 1408, quality: 82, strip: 'all' }),
+  director:   getOptimizedImageUrl('/img/director-general-gama-mexico-valvula-elkhart-brass.avif',      { width: 1408, quality: 82, strip: 'all' }),
+  showroom:   getOptimizedImageUrl('/img/equipo-gama-mexico-director-showroom-certificaciones.avif',    { width: 1408, quality: 82, strip: 'all' }),
+};
 
 const faqItems = [
   {
@@ -95,7 +105,7 @@ const structuredData = [
 
 <Layout
   title="Distribuidores Autorizados de Equipos Contra Incendios en México"
-  description="Distribuidores autorizados Elkhart Brass desde 2010. +15 años suministrando equipos contra incendios certificados UL/FM a plantas industriales en México. Oficinas en CDMX y Querétaro."
+  description="Distribuidores autorizados Elkhart Brass en México desde 2010. +15 años en equipos contra incendios UL/FM para industria. Oficinas en CDMX y Querétaro."
   activePage="nosotros"
   structuredData={structuredData}
   heroTitle="Distribuidores Autorizados Elkhart Brass en México"
@@ -258,7 +268,7 @@ const structuredData = [
       <div class="team-gallery">
         <div class="team-gallery__item team-gallery__item--wide">
           <img
-            src="/img/equipo-gamademexico-profesional.avif"
+            src={teamImages.equipo}
             alt="Equipo profesional Gama de México especialistas en equipos contra incendios"
             width="1408" height="768"
             loading="lazy" decoding="async"
@@ -267,7 +277,7 @@ const structuredData = [
         </div>
         <div class="team-gallery__item">
           <img
-            src="/img/equipo-gama-mexico-asesores-equipos-contra-incendios.avif"
+            src={teamImages.asesores}
             alt="Asesores técnicos Gama de México especializados en protección contra incendios"
             width="1408" height="768"
             loading="lazy" decoding="async"
@@ -276,7 +286,7 @@ const structuredData = [
         </div>
         <div class="team-gallery__item">
           <img
-            src="/img/director-general-gama-mexico-valvula-elkhart-brass.avif"
+            src={teamImages.director}
             alt="Director General de Gama de México con válvula Elkhart Brass certificada"
             width="1408" height="768"
             loading="lazy" decoding="async"
@@ -285,7 +295,7 @@ const structuredData = [
         </div>
         <div class="team-gallery__item">
           <img
-            src="/img/equipo-gama-mexico-director-showroom-certificaciones.avif"
+            src={teamImages.showroom}
             alt="Director de Gama de México en showroom con certificaciones UL FM Elkhart Brass"
             width="1408" height="768"
             loading="lazy" decoding="async"

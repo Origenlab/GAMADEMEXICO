@@ -5,6 +5,19 @@ import Faq from '../../components/Faq.astro';
 import SectionHeader from '../../components/SectionHeader.astro';
 import LeadCapture from '../../components/LeadCapture.astro';
 import { buildOrganizationSchema, buildServiceSchema, buildFAQSchema, buildBreadcrumbSchema } from '../../lib/seo';
+import { getOptimizedImageUrl } from '../../lib/images';
+
+// CR-08 (FASE 2 · 2026-07-01): CDN build-time para imágenes de sección de servicio.
+const serviceImages = {
+  hero:         getOptimizedImageUrl('/img/asesor-ingenieria-sistema-proteccion-contra-incendios.avif',           { width: 1344, quality: 82, strip: 'all' }),
+  ingenieros:   getOptimizedImageUrl('/img/ingenieros-construccion-diseno-sistema-contra-incendios.avif',         { width: 1408, quality: 82, strip: 'all' }),
+  planos:       getOptimizedImageUrl('/img/asesor-planos-valvulas-contra-incendios-sala-juntas.avif',             { width: 1344, quality: 82, strip: 'all' }),
+  asesora:      getOptimizedImageUrl('/img/asesora-cotizacion-certificacion-valvulas-bronce.avif',                { width: 1408, quality: 82, strip: 'all' }),
+  evaluacion:   getOptimizedImageUrl('/img/evaluacion-riesgo-nom-002-nave-industrial.avif',                       { width: 1408, quality: 82, strip: 'all' }),
+  obra:         getOptimizedImageUrl('/img/ingenieros-obra-planos-gabinete-valvulas-contra-incendios.avif',       { width: 1408, quality: 82, strip: 'all' }),
+  proyecto:     getOptimizedImageUrl('/img/ingenieros-proyecto-sistema-proteccion-contra-incendios.avif',         { width: 1408, quality: 82, strip: 'all' }),
+  siamesa:      getOptimizedImageUrl('/img/asesor-proyecto-toma-siamesa-contra-incendios-cdmx.avif',              { width: 1408, quality: 82, strip: 'all' }),
+};
 
 const faqItems = [
   {
@@ -51,7 +64,7 @@ const structuredData = [
 
 <Layout
   title="Asesoría Técnica en Equipos Contra Incendios en México"
-  description="Asesoría técnica gratuita: evaluación de riesgo, normativas NOM/NFPA, especificación de equipos UL/FM y documentación para Protección Civil. Respuesta en 24h."
+  description="Asesoría técnica gratuita en equipos contra incendios. Evaluación de riesgo, normativas NOM/NFPA, especificación UL/FM y documentación Protección Civil."
   activePage="servicios"
   structuredData={structuredData}
   heroTitle="Asesoría Técnica"
@@ -418,7 +431,7 @@ const structuredData = [
   <section class="service-image-section">
     <div class="container">
       <img
-        src="/img/asesor-ingenieria-sistema-proteccion-contra-incendios.avif"
+        src={serviceImages.hero}
         alt="Asesor técnico de Gama de México revisando proyecto de sistema de protección contra incendios"
         width="1344" height="768"
         loading="lazy" decoding="async"
@@ -432,14 +445,14 @@ const structuredData = [
   <section class="service-image-section">
     <div class="container service-img-grid">
       <img
-        src="/img/ingenieros-construccion-diseno-sistema-contra-incendios.avif"
+        src={serviceImages.ingenieros}
         alt="Ingenieros diseñando sistema de protección contra incendios en construcción"
         width="1408" height="768"
         loading="lazy" decoding="async"
         class="service-feature-img"
       />
       <img
-        src="/img/asesor-planos-valvulas-contra-incendios-sala-juntas.avif"
+        src={serviceImages.planos}
         alt="Asesor técnico revisando planos de sistema contra incendios con válvulas"
         width="1344" height="768"
         loading="lazy" decoding="async"
@@ -452,12 +465,11 @@ const structuredData = [
   <!-- SERVICE IMAGES EXTRA -->
   <section class="service-image-section">
     <div class="container service-img-grid-auto">
-      <img src="/img/asesora-cotizacion-certificacion-valvulas-bronce.avif" alt="Asesora de cotización de válvulas de bronce certificadas contra incendios" width="1408" height="768" loading="lazy" decoding="async" class="service-feature-img" />
-      <img src="/img/evaluacion-riesgo-nom-002-nave-industrial.avif" alt="Evaluación de riesgo NOM-002 en nave industrial para protección contra incendios" width="1408" height="768" loading="lazy" decoding="async" class="service-feature-img" />
-      <img src="/img/ingenieros-obra-planos-gabinete-valvulas-contra-incendios.avif" alt="Ingenieros en obra revisando planos de gabinete y válvulas contra incendios" width="1408" height="768" loading="lazy" decoding="async" class="service-feature-img" />
-      <img src="/img/ingenieros-proyecto-sistema-proteccion-contra-incendios.avif" alt="Ingenieros en proyecto de sistema de protección contra incendios" width="1408" height="768" loading="lazy" decoding="async" class="service-feature-img" />
-      <img src="/img/asesor-proyecto-toma-siamesa-contra-incendios-cdmx.avif" alt="Asesor técnico revisando proyecto de toma siamesa contra incendios CDMX" width="1408" height="768" loading="lazy" decoding="async" class="service-feature-img" />
-
+      <img src={serviceImages.asesora}    alt="Asesora de cotización de válvulas de bronce certificadas contra incendios"    width="1408" height="768" loading="lazy" decoding="async" class="service-feature-img" />
+      <img src={serviceImages.evaluacion} alt="Evaluación de riesgo NOM-002 en nave industrial para protección contra incendios" width="1408" height="768" loading="lazy" decoding="async" class="service-feature-img" />
+      <img src={serviceImages.obra}       alt="Ingenieros en obra revisando planos de gabinete y válvulas contra incendios"   width="1408" height="768" loading="lazy" decoding="async" class="service-feature-img" />
+      <img src={serviceImages.proyecto}   alt="Ingenieros en proyecto de sistema de protección contra incendios"               width="1408" height="768" loading="lazy" decoding="async" class="service-feature-img" />
+      <img src={serviceImages.siamesa}    alt="Asesor técnico revisando proyecto de toma siamesa contra incendios CDMX"       width="1408" height="768" loading="lazy" decoding="async" class="service-feature-img" />
     </div>
   </section>
 

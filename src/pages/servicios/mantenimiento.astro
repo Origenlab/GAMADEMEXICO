@@ -5,6 +5,16 @@ import Faq from '../../components/Faq.astro';
 import SectionHeader from '../../components/SectionHeader.astro';
 import LeadCapture from '../../components/LeadCapture.astro';
 import { buildOrganizationSchema, buildServiceSchema, buildFAQSchema, buildBreadcrumbSchema } from '../../lib/seo';
+import { getOptimizedImageUrl } from '../../lib/images';
+
+// CR-08 (FASE 2 · 2026-07-01): CDN build-time para imágenes de sección de servicio.
+const serviceImages = {
+  hero:          getOptimizedImageUrl('/img/mantenimiento-preventivo-valvula-nom-002-contra-incendios.avif',        { width: 1408, quality: 82, strip: 'all' }),
+  inspeccion:    getOptimizedImageUrl('/img/tecnico-inspeccion-valvula-bronce-almacen-contra-incendios.avif',       { width: 1408, quality: 82, strip: 'all' }),
+  almacen:       getOptimizedImageUrl('/img/tecnico-almacen-valvula-bronce-certificada-ul-fm.avif',                { width: 1408, quality: 82, strip: 'all' }),
+  terminal:      getOptimizedImageUrl('/img/tecnico-mantenimiento-valvulas-terminal-almacenamiento.avif',           { width: 1408, quality: 82, strip: 'all' }),
+  verificacion:  getOptimizedImageUrl('/img/tecnico-verificacion-presion-sistema-contra-incendios-industrial.avif', { width: 1408, quality: 82, strip: 'all' }),
+};
 
 const faqItems = [
   {
@@ -47,7 +57,7 @@ const structuredData = [
 
 <Layout
   title="Mantenimiento de Sistemas Contra Incendios NFPA 25 en México"
-  description="Refacciones y equipos de reposición para mantenimiento conforme NFPA 25 y NOM-002-STPS. Válvulas, mangueras y conexiones con stock inmediato en México."
+  description="Mantenimiento de sistemas contra incendios NFPA 25 y NOM-002-STPS. Refacciones Elkhart Brass: válvulas, mangueras y conexiones con stock inmediato."
   activePage="servicios"
   structuredData={structuredData}
   heroTitle="Mantenimiento de Equipos"
@@ -420,7 +430,7 @@ const structuredData = [
   <section class="service-image-section">
     <div class="container">
       <img
-        src="/img/mantenimiento-preventivo-valvula-nom-002-contra-incendios.avif"
+        src={serviceImages.hero}
         alt="Técnico realizando mantenimiento preventivo de válvula contra incendios NOM-002"
         width="1408" height="768"
         loading="lazy" decoding="async"
@@ -433,11 +443,10 @@ const structuredData = [
   <!-- SERVICE IMAGES EXTRA -->
   <section class="service-image-section">
     <div class="container service-img-grid-auto">
-      <img src="/img/tecnico-inspeccion-valvula-bronce-almacen-contra-incendios.avif" alt="Técnico inspeccionando válvula de bronce en almacén contra incendios" width="1408" height="768" loading="lazy" decoding="async" class="service-feature-img" />
-      <img src="/img/tecnico-almacen-valvula-bronce-certificada-ul-fm.avif" alt="Técnico en almacén con válvula bronce certificada UL FM" width="1408" height="768" loading="lazy" decoding="async" class="service-feature-img" />
-      <img src="/img/tecnico-mantenimiento-valvulas-terminal-almacenamiento.avif" alt="Mantenimiento de válvulas en terminal de almacenamiento" width="1408" height="768" loading="lazy" decoding="async" class="service-feature-img" />
-      <img src="/img/tecnico-verificacion-presion-sistema-contra-incendios-industrial.avif" alt="Verificación de presión en sistema contra incendios industrial" width="1408" height="768" loading="lazy" decoding="async" class="service-feature-img" />
-
+      <img src={serviceImages.inspeccion}   alt="Técnico inspeccionando válvula de bronce en almacén contra incendios"    width="1408" height="768" loading="lazy" decoding="async" class="service-feature-img" />
+      <img src={serviceImages.almacen}      alt="Técnico en almacén con válvula bronce certificada UL FM"                  width="1408" height="768" loading="lazy" decoding="async" class="service-feature-img" />
+      <img src={serviceImages.terminal}     alt="Mantenimiento de válvulas en terminal de almacenamiento"                  width="1408" height="768" loading="lazy" decoding="async" class="service-feature-img" />
+      <img src={serviceImages.verificacion} alt="Verificación de presión en sistema contra incendios industrial"           width="1408" height="768" loading="lazy" decoding="async" class="service-feature-img" />
     </div>
   </section>
 
