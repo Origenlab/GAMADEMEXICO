@@ -162,9 +162,13 @@ const empresasCertificadas = defineCollection({
       'otro'
     ]),
 
-    // --- Ubicación (solo ciudad y estado — sin dirección específica) ---
+    // --- Ubicación ---
     ciudad: z.string(),
     estado: z.string(),
+    direccion: z.string().optional(),
+    codigoPostal: z.string().optional(),
+    latitud: z.number().optional(),
+    longitud: z.number().optional(),
 
     // --- Sistema contra incendios ---
     tipoSistema: z.array(z.enum([
@@ -193,6 +197,10 @@ const empresasCertificadas = defineCollection({
     // --- Media ---
     imagen: z.string().optional(),
     galeria: z.array(z.string()).optional(),
+
+    // --- Estado de verificación y vigencia ---
+    verificado: z.boolean().optional(),
+    certificacionVigente: z.boolean().optional(),
 
     // --- SEO ---
     destacado: z.boolean().default(false),
