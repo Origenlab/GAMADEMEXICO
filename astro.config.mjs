@@ -30,6 +30,37 @@ export default defineConfig({
     // Sin trailing slash para URLs limpias
     trailingSlash: 'never',
 
+    // ==========================================================================
+    // Redirects 301 — reclasificación de artículos del blog (2026-07-01)
+    // Cuando un artículo cambia de categoría, su URL cambia.
+    // Estos redirects preservan el juice SEO y evitan 404 en URLs indexadas.
+    // ==========================================================================
+    redirects: {
+      // bombas-contra-incendios: valvulas → gabinetes-hidrantes
+      '/blog/valvulas-contra-incendios/bombas-contra-incendios-seleccion-instalacion-nfpa-20':
+        '/blog/gabinetes-hidrantes-contra-incendios/bombas-contra-incendios-seleccion-instalacion-nfpa-20',
+
+      // detector-humo-calor: monitores → gabinetes-hidrantes
+      '/blog/monitores-contra-incendios/detector-humo-calor-sistemas-deteccion-incendios-nfpa-72':
+        '/blog/gabinetes-hidrantes-contra-incendios/detector-humo-calor-sistemas-deteccion-incendios-nfpa-72',
+
+      // equipos automotriz: mangueras → equipos-contra-incendios
+      '/blog/mangueras-contra-incendios/equipos-contra-incendios-industria-automotriz-mexico':
+        '/blog/equipos-contra-incendios/equipos-contra-incendios-industria-automotriz-mexico',
+
+      // plan-emergencia: mangueras → gabinetes-hidrantes
+      '/blog/mangueras-contra-incendios/plan-emergencia-contra-incendios-empresa-nom-002-guia':
+        '/blog/gabinetes-hidrantes-contra-incendios/plan-emergencia-contra-incendios-empresa-nom-002-guia',
+
+      // data-centers: valvulas → equipos-contra-incendios
+      '/blog/valvulas-contra-incendios/proteccion-contra-incendios-data-centers-centros-datos-mexico':
+        '/blog/equipos-contra-incendios/proteccion-contra-incendios-data-centers-centros-datos-mexico',
+
+      // mantenimiento-extintores: monitores → equipos-contra-incendios
+      '/blog/monitores-contra-incendios/empresas-mantenimiento-extintores-proveedores-equipos-certificados':
+        '/blog/equipos-contra-incendios/empresas-mantenimiento-extintores-proveedores-equipos-certificados',
+    },
+
     // Prefetch de navegación: precarga enlaces visibles en viewport (FASE 2 · 2026-07-01).
     // prefetchAll: true fue desactivado — con 722 páginas prefetcheaba todo el sitio
     // al cargar, incrementando el consumo de datos en mobile innecesariamente.

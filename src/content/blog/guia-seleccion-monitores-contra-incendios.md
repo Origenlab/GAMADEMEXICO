@@ -34,6 +34,20 @@ schema:
         a: "Corazón para la mayoría de aplicaciones: cremallera que bloquea elevación contra la fuerza de reacción, giro 360°, no requiere electricidad. Cuello de cisne para espacios con altura limitada, pero la curva genera pérdida de carga adicional y generalmente no tiene cremallera de bloqueo."
 ---
 
+Seleccionar un monitor contra incendios sin los criterios técnicos correctos resulta en un equipo sobredimensionado que no se puede mantener, o subdimensionado que no controla el incendio real. Esta guía cubre los factores determinantes: tipo, caudal, presión, fuerza de reacción y certificación — con criterios NFPA y casos de aplicación industrial en México.
+
+## Tabla de decisión rápida: ¿qué monitor necesito?
+
+| Escenario | Monitor recomendado | Caudal típico | Certificación |
+|---|---|---|---|
+| Refinería / petroquímica, tanques | Tipo corazón, control remoto | 500–2,000 GPM | FM Approved |
+| Hangar aeronáutico | Tipo corazón o portátil oscilante | 250–1,000 GPM | FM / UL |
+| Bodega logística > 5,000 m² | Tipo corazón manual o eléctrico | 250–500 GPM | UL Listed |
+| Planta de manufactura (proceso) | Cuello de cisne o corazón compacto | 150–500 GPM | UL Listed |
+| Puerto / muelle de carga | Portátil o cuello de cisne | 250–750 GPM | FM Approved |
+| Minería a cielo abierto | Portátil con carro | 250–500 GPM | UL Listed |
+| Brigada de emergencia (backup) | Portátil individual | 95–250 GPM | UL Listed |
+
 Un monitor contra incendios descarga en treinta segundos más agua de la que un gabinete de manguera entrega en diez minutos. Esa capacidad bruta de poner agua sobre el fuego es lo que hace que el monitor sea el equipo definitivo de protección en instalaciones donde un incendio puede crecer más rápido de lo que cualquier persona con una manguera de pulgada y media puede controlar. Refinerías, terminales de almacenamiento de combustible, plantas petroquímicas, parques de tanques, hangares de aviación, muelles de carga con materiales inflamables — en todos esos escenarios, el monitor no es un complemento del sistema contra incendios sino el componente central del ataque.
 
 Pero la capacidad bruta sin diseño inteligente es desperdicio de agua. Un monitor de tres mil GPM apuntando en la dirección incorrecta está poniendo noventa toneladas de agua por minuto en un lugar donde no hay fuego. Un monitor especificado para cien PSI pero alimentado con sesenta PSI está entregando un chorro que se desintegra a la mitad del alcance diseñado y cae como lluvia inofensiva sobre un fuego que necesita penetración directa. Y un monitor manual instalado a treinta metros de un tanque de doscientos mil litros de hidrocarburo está exigiendo que un operador se pare a treinta metros de un incendio de hidrocarburo para apuntar el chorro, lo cual es pedirle que se exponga a una radiación térmica que puede causarle quemaduras de segundo grado en menos de un minuto.
@@ -117,23 +131,17 @@ La inspección visual semanal verifica que el monitor está en su posición desi
 
 La prueba de flujo anual es la verificación definitiva. Se abre la válvula de alimentación, se presuriza el monitor a su presión de operación y se verifica que el caudal, el alcance y el patrón de descarga corresponden con las especificaciones. Se opera el monitor en todo su rango de movimiento bajo presión. Se verifica que la cremallera mantiene la elevación contra la fuerza de reacción. Y se inspeccionan las conexiones y la base buscando fugas, vibraciones o movimiento que indique que los anclajes están aflojados.
 
+## Los errores más comunes al especificar un monitor
+
+**Especificar por caudal sin calcular la fuerza de reacción.** Un monitor de 500 GPM a 100 psi genera más de 200 lb de fuerza de reacción. Sin un soporte de piso o montaje fijo adecuado, el operador no puede mantener la posición durante un incendio real.
+
+**Confundir FM y UL como equivalentes intercambiables.** FM Approved requiere un protocolo de prueba más extenso enfocado en pérdidas aseguradas. UL Listed verifica seguridad del equipo pero no desempeño en condiciones de incendio real. Las instalaciones con póliza FM Global deben usar equipos FM Approved.
+
+**Ignorar la presión disponible en la red.** Un monitor diseñado para 100 psi de trabajo a 500 GPM puede quedar a 40 GPM si la red entrega 30 psi. El diseño del sistema de bombeo y la hidráulica de la red determinan qué monitor es viable.
+
+**Seleccionar control manual cuando el riesgo requiere remoto.** En áreas con riesgo BLEVE (Boiling Liquid Expanding Vapor Explosion) — tanques de combustible, propano, amoniaco — el monitor debe operarse a distancia. Un operador manual dentro del radio de explosión no sobrevive.
+
 En [Gama de México](/monitores-contra-incendios) distribuimos [monitores tipo corazón](/monitores/tipo-corazon) con cremallera simple y doble, [monitores cuello de cisne](/monitores/cuello-cisne) para espacios con altura restringida, [monitores certificados FM Approved](/monitores/certificado-fm) para instalaciones con requisitos de aseguradora y [monitores UL Listed](/monitores/ul-listed) para cumplimiento de códigos de construcción. Si necesitas determinar el tipo, caudal y ubicación de monitores para tu planta, o verificar que los que tienes entregan el desempeño que tu análisis de riesgo requiere, desde [**/cotizar**](/cotizar) lo trabajamos con el cálculo hidráulico y el criterio de ingeniería que una decisión de esta magnitud necesita.
 
 ---
 
-## Interlinking recomendado Gama de México
-
-Para facilitar tu navegación técnica y comercial dentro del sitio, revisa estas rutas estratégicas:
-
-- [Catálogo de Monitores contra incendios](/monitores-contra-incendios)
-- [Guías del blog sobre monitores contra incendios](/blog/monitores-contra-incendios)
-- [Todos los equipos contra incendios](/equipos)
-- [Asesoría técnica especializada](/servicios/asesoria)
-- [Solicitar cotización empresarial](/servicios/cotizaciones)
-- [Artículo recomendado 1](/blog/monitores-contra-incendios/manual-tecnico-monitores-contra-incendios-empresas)
-- [Artículo recomendado 2](/blog/monitores-contra-incendios/auditoria-monitores-contra-incendios-empresas-mexico)
-
-## Imagen técnica de referencia
-
-![Monitor contra incendios tipo corazón en instalación industrial](/img/monitores-contra-incendios/monitor-tipo-corazon-contra-incendios-industrial-angulo-frontal-19.avif)
-*Descripción técnica: referencia visual del equipo y su aplicación en proyectos de protección contra incendios en México.*

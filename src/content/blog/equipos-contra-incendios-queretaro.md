@@ -95,19 +95,23 @@ Si tu planta está en el corredor industrial de Querétaro y necesitas equipos c
 
 ---
 
-## Interlinking recomendado Gama de México
 
-Para facilitar tu navegación técnica y comercial dentro del sitio, revisa estas rutas estratégicas:
+## Qué equipos tienen en stock permanente en Querétaro
 
-- [Catálogo de equipos contra incendios](/equipos)
-- [Guías del blog sobre equipos contra incendios](/blog)
-- [Todos los equipos contra incendios](/equipos)
-- [Asesoría técnica especializada](/servicios/asesoria)
-- [Solicitar cotización empresarial](/servicios/cotizaciones)
-- [Artículo recomendado 1](/blog)
-- [Artículo recomendado 2](/equipos)
+La sucursal mantiene inventario rotativo de los componentes de mayor demanda en el corredor industrial. La disponibilidad cubre los sistemas que las plantas aeronáuticas, automotrices y de alimentos utilizan con mayor frecuencia.
 
-## Imagen técnica de referencia
+En monitores, el inventario incluye modelos tipo corazón de 1.5" y 2.5" con certificación FM Approved, monitores cuello de cisne para instalaciones con espacio restringido, y monitores portátiles para brigadas industriales. En válvulas, hay existencia de válvulas OS&Y de bronce en diámetros 2" a 6", válvulas mariposa con supervisión eléctrica para sistemas supervisados, y válvulas check de bronce para prevención de retroflujo.
 
-![Equipos contra incendios certificados disponibles en sucursal Querétaro](/img/valvulas-contra-incendios/valvula-check-swing-bridada-contra-incendios-hierro-ductil-16.avif)
-*Descripción técnica: referencia visual del equipo y su aplicación en proyectos de protección contra incendios en México.*
+Para mangueras y conexiones, el inventario incluye mangueras Millhose certificadas NFPA 1961 en diámetros 1.5" y 2.5", boquillas tipo pistola con selector de patrón, conexiones Storz y NST para compatibilidad con brigadas municipales y corporativas, y gabinetes de manguera tipo 30ME en acero inoxidable y pintado.
+
+Los pedidos especiales fuera de inventario se gestionan desde CDMX con tiempo de entrega de 3 a 5 días hábiles para la zona metropolitana de Querétaro.
+
+## Requisitos de certificación en los parques industriales del Bajío
+
+El Bajío opera bajo un doble estándar que pocas regiones de México replican. Los corporativos de origen alemán, japonés y estadounidense que producen en Querétaro, Celaya, Irapuato y San Luis Potosí traen sus propias políticas de gestión de riesgo, que en muchos casos son más exigentes que la NOM-002-STPS.
+
+Las plantas con póliza FM Global requieren equipos FM Approved y mantenimiento documentado conforme a NFPA 25. Las plantas con póliza de aseguradoras locales aceptan UL Listed como mínimo. En ambos casos, la bitácora de mantenimiento con firma de técnico calificado es requisito de la póliza, no una recomendación.
+
+El corredor aeronáutico de Querétaro — Safran, Bombardier, Airbus — agrega la variable de protección de hangares conforme a NFPA 409, que exige sistemas de alta descarga para aeronaves de gran tamaño. La selección de monitores y boquillas en estos proyectos requiere cálculo hidráulico específico.
+
+Para plantas de la industria alimentaria (Nestlé, Lala, Bimbo tienen operaciones en la región), el cumplimiento de NOM-002-STPS convive con estándares FSMA y auditorías de aseguramiento de inocuidad que revisan la ausencia de contaminantes en los agentes supresores.

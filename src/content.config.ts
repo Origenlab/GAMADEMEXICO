@@ -118,6 +118,31 @@ const blog = defineCollection({
 
     // --- Metadatos calculados (opcionales, se pueden calcular en runtime) ---
     tiempoLectura: z.number().optional(), // minutos
+
+    // --- Schema estructurado del artículo (FAQPage, Article, etc.) ---
+    // Usado para inyectar structured data y renderizar bloques FAQ visibles.
+    // Formato: array de objetos con type + fields según tipo.
+    schema: z.array(
+      z.union([
+        // Article schema
+        z.object({
+          type: z.literal('Article'),
+          headline: z.string().optional(),
+          author: z.string().optional(),
+          dateModified: z.string().optional(),
+        }),
+        // FAQPage schema — questions se renderizan como bloque visible Y como structured data
+        z.object({
+          type: z.literal('FAQPage'),
+          questions: z.array(
+            z.object({
+              q: z.string(),
+              a: z.string(),
+            })
+          ),
+        }),
+      ])
+    ).optional(),
   }),
 });
 

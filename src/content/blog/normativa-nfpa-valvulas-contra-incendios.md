@@ -29,171 +29,90 @@ draft: false
 productosRelacionados: ["valvula-compuerta-osy-4", "valvula-mariposa-6"]
 ---
 
-Las válvulas son componentes críticos en sistemas contra incendios. La normativa NFPA establece requisitos específicos para su selección, instalación y mantenimiento para garantizar el funcionamiento confiable del sistema.
+En un sistema de protección contra incendios, la manguera, la boquilla y el rociador son los componentes visibles. La válvula es el componente invisible del que depende que todos los demás funcionen. Una válvula de control cerrada inadvertidamente — por mantenimiento sin reapertura confirmada, por vandalismo, por error de comisionamiento — inutiliza por completo todo el sistema aguas abajo. No importa que los rociadores estén en perfecto estado ni que la bomba arranque en tiempo: si la válvula está cerrada, el agua no llega.
 
-## Normativas NFPA Aplicables
+Esta es la razón por la que las normas NFPA dedican requisitos específicos, detallados y no negociables a las válvulas de control en cada tipo de sistema. No son recomendaciones: son condiciones de diseño, instalación, operación y mantenimiento sin las cuales el sistema no puede considerarse conforme ni confiable.
 
-### NFPA 13 - Instalación de Sistemas de Rociadores
+## Por qué las válvulas son el componente más regulado en NFPA
 
-Define requisitos para válvulas de control en sistemas de rociadores:
+El historial de incendios con víctimas y pérdidas catastróficas en instalaciones con sistemas de rociadores o standpipe muestra un patrón consistente: en la mayor parte de los casos en que el sistema falló en controlar el fuego, la causa raíz fue una válvula de control cerrada, no un rociador defectuoso ni una tubería rota. La NFPA documentó este patrón extensamente y lo convirtió en el fundamento técnico de los requisitos de supervisión eléctrica de válvulas.
 
-- **Válvulas de control principal:** OS&Y o indicadoras
-- **Ubicación:** Accesibles y señalizadas
-- **Supervisión:** Preferentemente con interruptores de posición
-- **Bloqueo:** Deben poder asegurarse en posición abierta
+Una válvula de control abierta es la condición de operación normal y permanente de cualquier sistema contra incendios. Cualquier desviación de esa condición —parcial o total— es una emergencia que debe generar alarma inmediata en el panel de control. No puede depender de que alguien pase físicamente a verificar la posición.
 
-### NFPA 14 - Sistemas de Tubería Vertical
+## NFPA 13: válvulas en sistemas de rociadores
 
-Establece requisitos para válvulas en sistemas de tubería vertical:
+NFPA 13 establece los requisitos para las válvulas de control en sistemas de rociadores automáticos. Los puntos críticos son:
 
-- **Válvulas de control:** Indicadoras tipo OS&Y
-- **Válvulas de retención:** Requeridas en conexiones FDC
-- **Válvulas de drenaje:** En puntos bajos del sistema
-- **Válvulas de alivio:** Según presión del sistema
+**Supervisión eléctrica obligatoria:** Toda válvula de control que suministre agua a rociadores debe contar con un tamper switch (interruptor de posición) conectado al panel de alarma. Si la válvula se mueve de la posición abierta más de dos vueltas (OS&Y) o más de unos pocos grados (mariposa con indicador), el tamper switch cierra el circuito y genera señal de supervisión al panel.
 
-### NFPA 25 - Inspección y Mantenimiento
+**Posición abierta como condición permanente:** Las válvulas de control de rociadores no se cierran excepto para mantenimiento planificado. El cierre requiere notificación previa al responsable del sistema, activación de guardia de incendios en el área desprotegida durante el período de cierre, y reapertura confirmada antes de retirar la guardia.
 
-Define programas de inspección periódica:
+**Acceso para inspección:** NFPA 13 exige que todas las válvulas de control sean accesibles sin remover obstáculos permanentes. No pueden instalarse en espacios confinados sin acceso, detrás de equipos fijos o en ubicaciones que requieran herramienta especial para llegar a ellas.
 
-## Tipos de Válvulas Según NFPA
+**Tipo de válvula:** Las válvulas OS&Y (Outside Screw and Yoke) son la referencia preferida porque el vástago exterior visible indica de manera inequívoca la posición: vástago extendido = abierta, vástago retraído = cerrada. Las válvulas de mariposa con indicador de posición certificado son igualmente aceptables. Las válvulas de bola sin indicador visible no son aceptables como válvulas de control principal en sistemas de rociadores.
 
-### Válvulas OS&Y (Outside Screw and Yoke)
+**Certificación requerida:** UL Listed o FM Approved para servicio contra incendios. No basta con que la válvula sea capaz de manejar la presión del sistema: debe haber sido probada y certificada específicamente para esta aplicación.
 
-La válvula preferida para control principal:
+## NFPA 14: válvulas en sistemas standpipe
 
-- **Característica:** Vástago visible indica posición
-- **Aplicación:** Control principal de sistemas
-- **Ventaja:** Fácil verificación visual de estado
-- **Certificación requerida:** UL Listed / FM Approved
+En sistemas de tubería vertical para edificios en altura, las válvulas de control tienen una función adicional: permiten aislar pisos individuales para mantenimiento sin necesitar apagar todo el sistema del edificio. NFPA 14 establece:
 
-### Válvulas de Mariposa
+**Válvulas de control por piso:** Cada piso debe contar con válvula de control que permita aislar las salidas de manguera de ese nivel. Deben ser accesibles sin llave especial para los bomberos, señalizadas con etiqueta permanente que indique el piso que controlan.
 
-Para aplicaciones de alto flujo:
+**Señalización visible:** Las válvulas de control del standpipe deben identificarse con señalización no removible que indique su función y el área que controlan. En caso de emergencia, un bombero que no conoce el edificio debe poder identificar y operar la válvula correcta en segundos.
 
-- **Característica:** Baja pérdida de presión
-- **Aplicación:** Líneas principales, bombas
-- **Requisito:** Indicador de posición visible
-- **Tamaños:** 2" a 12" comúnmente
+**Posición abierta bloqueada:** A diferencia de una válvula industrial ordinaria, las válvulas de control del standpipe deben estar aseguradas en posición abierta con candado o sello de alambre. El candado no impide la operación en emergencia (los bomberos tienen herramienta para cortarlo), pero documenta que nadie cerró la válvula inadvertidamente.
 
-### Válvulas de Retención (Check)
+**Válvulas de alivio:** En sistemas con presiones altas — comunes en edificios de más de 10 pisos donde la presión estática en los pisos bajos puede superar los 175 psi — NFPA 14 exige válvulas de alivio calibradas para descargar el exceso de presión y proteger las mangueras y las conexiones de los bomberos.
 
-Previenen reflujo en el sistema:
+## NFPA 20: válvulas en sistemas de bombeo
 
-- **Aplicación:** Conexiones FDC, bombas
-- **Tipos:** Swing check, wafer, duo-check
-- **Requisito:** Certificación UL/FM
+El cuarto de bombas contra incendios es el corazón hidráulico del sistema. NFPA 20 regula no solo las bombas sino también todas las válvulas que las rodean:
 
-### Válvulas de Globo
+**Válvulas de succión y descarga:** Cada bomba debe tener una válvula de control a la entrada (succión) y una a la salida (descarga). Ambas deben ser OS&Y o mariposa con indicador, certificadas, con tamper switch y aseguradas en posición abierta.
 
-Para control de flujo y drenaje:
+**Válvula de retención en descarga:** Se instala en la línea de descarga de cada bomba para evitar que el flujo retorne a través de la bomba cuando otra unidad está en operación. Es crítica en sistemas con bomba principal y bomba jockey: sin la válvula de retención, la bomba principal bombearía contra la bomba jockey.
 
-- **Aplicación:** Líneas de prueba, drenajes
-- **Característica:** Regulación precisa de flujo
+**Verificación en arranque semanal:** NFPA 25 (apoyando a NFPA 20) exige que las bombas contra incendios se arranquen y operen semanalmente durante un mínimo de 10 minutos. Durante este arranque, el técnico debe verificar que las válvulas de succión y descarga estén completamente abiertas y sin fugas, y que la presión de descarga corresponda a la curva de la bomba certificada.
 
-## Programa de Inspección Según NFPA 25
+**Válvulas de alivio de la bomba:** Las bombas de turbina vertical y algunas centrífugas requieren válvula de alivio en la descarga calibrada para la presión máxima de la bomba a cero flujo (churn pressure). Esta válvula protege la tubería y los rociadores de sobrepresión cuando la bomba opera sin demanda.
 
-### Inspección Semanal/Mensual
+## NFPA 25: mantenimiento de válvulas
 
-- Verificar válvulas de control en posición abierta
-- Revisar sellos y candados de posición
-- Inspeccionar indicadores de posición
+NFPA 25 es la norma que convierte los requisitos de diseño e instalación en un programa de vida útil del sistema. Para válvulas, establece un calendario escalonado de inspección y prueba:
 
-### Inspección Trimestral
+**Inspección visual semanal:** Verificar que las válvulas de control estén en posición abierta, que los candados o sellos estén intactos, que no haya fugas visibles en los empaques y que los indicadores de posición sean legibles. Esta inspección la puede realizar personal de mantenimiento del edificio sin necesidad de contratista especializado.
 
-- Operar válvulas parcialmente para verificar movimiento
-- Revisar empaques y buscar fugas
-- Verificar accesibilidad
+**Operación parcial trimestral:** Las válvulas OS&Y y de mariposa deben operarse parcialmente (un cuarto de vuelta o equivalente) para verificar que el mecanismo no esté trabado por corrosión o depósitos minerales. Se retorna a posición abierta inmediatamente.
 
-### Inspección Anual
+**Operación completa anual:** Cierre total y reapertura de cada válvula de control. Esta prueba debe coordinarse con el responsable del sistema, activando guardias de incendios en las áreas desprotegidas durante el tiempo de cierre. Los resultados se documentan: fecha, nombre del técnico, torque de operación si se mide, condición de los empaques.
 
-- Operación completa (cerrar y abrir)
-- Lubricación según fabricante
-- Documentación de estado
+**Inspección interna quinquenal:** Cada 5 años, las válvulas de control principales deben inspeccionarse internamente para verificar el estado del asiento, el disco y los sellos. En zonas con agua de alta dureza, los depósitos calcáreos pueden acumularse en el asiento e impedir el cierre o la apertura completa.
 
-### Prueba Quinquenal
+## Supervisión eléctrica de válvulas: cómo funciona un tamper switch
 
-- Inspección interna si aplica
-- Verificación de sellos y asientos
-- Prueba de flujo si es requerida
+El tamper switch (también llamado interruptor de posición o supervisión de válvula) es un dispositivo electromecánico que se acopla al eje de la válvula y monitorea su posición de manera continua. El principio de operación es el siguiente:
 
-## Requisitos de Instalación
+En posición normal (válvula abierta), el switch mantiene un circuito eléctrico cerrado hacia el panel de alarma — señal de supervisión normal. Cuando la válvula comienza a cerrarse, el eje gira lo suficiente para que el actuador del switch cambie de estado, abriendo el circuito. El panel interpreta esta señal como una condición de supervisión y genera una alarma diferenciada (distinta a la alarma de incendio) que debe atenderse de inmediato.
 
-1. **Accesibilidad:** Todas las válvulas accesibles para operación y mantenimiento
-2. **Señalización:** Identificación clara de función
-3. **Supervisión:** Interruptores de posición para monitoreo
-4. **Bloqueo:** Dispositivos para asegurar posición abierta
+**Por qué una alarma de tamper no debe ignorarse:** Es el error más frecuente en edificios con sistemas maduros. El personal de mantenimiento cierra una válvula para reparar una fuga, el panel genera alarma de tamper, y el vigilante del edificio la reconoce y silencia sin notificar al responsable del sistema. La válvula queda cerrada. Semanas después, se produce un incendio en el área desprotegida y el sistema no responde. Este escenario se repite en la literatura de pérdidas de NFPA con una frecuencia que justifica por sí sola el nivel de énfasis que la norma da a la supervisión.
 
-## Certificaciones Requeridas
+Toda alarma de tamper debe tratarse como una emergencia de seguridad: verificación física inmediata de la válvula, documentación de la causa del movimiento y confirmación de reapertura antes de restablecer la señal de supervisión normal en el panel.
 
-Para cumplir con NFPA, las válvulas deben contar con:
+## Tabla consolidada: norma, sistema, válvula y consecuencia de incumplimiento
 
-- **UL Listed:** Listado para servicio contra incendios
-- **FM Approved:** Aprobación Factory Mutual
-- **NSF:** Para sistemas de agua potable
+| Norma NFPA | Tipo de sistema | Tipo de válvula | Requisito principal | Consecuencia de incumplimiento |
+|---|---|---|---|---|
+| NFPA 13 | Rociadores | OS&Y o mariposa con indicador | Supervisión eléctrica (tamper switch), posición abierta permanente, UL/FM | Sistema sin protección aguas abajo; rechazo de siniestro |
+| NFPA 14 | Standpipe | OS&Y por piso, alivio en sistemas de alta presión | Señalización visible, posición abierta bloqueada, acceso sin obstáculos | Bomberos sin agua en el piso del incendio |
+| NFPA 20 | Bomba contra incendios | OS&Y succión y descarga, retención, alivio | Tamper switch, verificación en arranque semanal, calibración de alivio | Bomba inoperable; colapso del suministro hidráulico |
+| NFPA 25 | Todos los sistemas | Todas las válvulas de control | Inspección semanal, operación anual, inspección interna quinquenal | Incumplimiento normativo; póliza de seguro en riesgo |
+| NFPA 72 | Sistema de alarma | Tamper switch integrado al panel | Señal de supervisión diferenciada de alarma de incendio | Condición de cierre no detectada hasta emergencia real |
 
-## Documentación
+## Certificación UL y FM: por qué importa en válvulas
 
-Mantener registros de:
+Una válvula industrial estándar puede manejar la misma presión de trabajo que una válvula certificada UL/FM para protección contra incendios. La diferencia está en lo que se prueba durante la certificación: resistencia a la operación repetida bajo presión de prueba (1.5 veces la presión de trabajo), compatibilidad con agua potable y tratada, resistencia a la corrosión bajo condiciones de agua estancada, y capacidad de operación confiable después de años sin movimiento.
 
-- Fecha de instalación
-- Certificaciones
-- Inspecciones periódicas
-- Mantenimientos realizados
-- Reparaciones o reemplazos
+Las válvulas de protección contra incendios pasan meses o años sin operarse. Cuando se necesitan, deben funcionar en el primer intento. Los programas de certificación UL y FM están diseñados precisamente para garantizar esa confiabilidad a largo plazo bajo condiciones de desuso — algo que las normas de válvulas industriales convencionales no contemplan.
 
-## Conclusión
-
-El cumplimiento de las normativas NFPA para válvulas es esencial para la integridad del sistema contra incendios. Una válvula que falla puede dejar sin protección toda una instalación.
-
-¿Necesita asesoría sobre válvulas certificadas para su sistema? Nuestro equipo técnico puede ayudarle a seleccionar los componentes correctos según normatividad aplicable.
-
-
-
-
-
----
-
-### Lecturas relacionadas
-
-- [Mantenimiento preventivo de válvulas](/blog/valvulas-contra-incendios/mantenimiento-preventivo-valvulas-contra-incendios-nfpa-25)
-- [Válvulas os&y para rociadores NFPA 13](/blog/valvulas-contra-incendios/valvulas-compuerta-osy-sprinklers-nfpa-13-mexico)
-- [Supervisión de válvulas de control](/blog/valvulas-contra-incendios/valvulas-control-sistemas-incendios-tipos-supervision)
-
-## Preguntas frecuentes sobre válvulas NFPA
-
-### ¿Qué significa que una válvula sea "UL Listed" para servicio contra incendios?
-
-La certificación UL Listed indica que la válvula ha sido probada y evaluada por Underwriters Laboratories para cumplir con estándares de seguridad y rendimiento específicos para sistemas contra incendios. Esto incluye pruebas de resistencia a presión, durabilidad, funcionamiento correcto y compatibilidad con otros componentes del sistema.
-
-### ¿Por qué NFPA prefiere válvulas OS&Y sobre otros tipos para control principal?
-
-Las válvulas OS&Y (Outside Screw and Yoke) tienen el vástago visible externamente, lo que permite verificar visualmente si la válvula está abierta o cerrada sin necesidad de herramientas o inspección interna. Esto facilita las inspecciones de rutina y reduce el riesgo de que el sistema quede cerrado inadvertidamente.
-
-### ¿Cada cuánto debo operar completamente las válvulas de control?
-
-Según NFPA 25, las válvulas de control deben operarse completamente (cerrar y abrir) al menos una vez al año. Además, deben inspeccionarse visualmente de forma semanal o mensual para verificar que se encuentren en posición abierta y aseguradas correctamente.
-
-### ¿Necesito supervisión electrónica en todas las válvulas del sistema?
-
-NFPA recomienda supervisión electrónica (interruptores de posición) para válvulas de control principales, especialmente en sistemas donde el cierre inadvertido representaría un riesgo significativo. La supervisión permite monitorear remotamente el estado de las válvulas y generar alarmas si se detecta un cambio de posición.
-
-### ¿Puedo usar válvulas de bola en sistemas contra incendios?
-
-Las válvulas de bola pueden usarse en ciertas aplicaciones si cuentan con certificación UL/FM para servicio contra incendios. Sin embargo, NFPA generalmente prefiere válvulas OS&Y o de mariposa con indicador de posición visible para control principal porque ofrecen mejor verificación visual del estado.
-
-![Válvula de compuerta OS&Y para sistemas contra incendios certificados](/img/valvulas-contra-incendios/valvula-compuerta-osy-ranurada-contra-incendios-fondo-blanco-01.avif)
-*Descripción técnica: [válvula OS&Y](/valvulas/compuerta) con vástago exterior visible para verificación de posición en sistemas contra incendios.*
-
----
-
-## Interlinking recomendado Gama de México
-
-Para facilitar tu navegación técnica y comercial dentro del sitio, revisa estas rutas estratégicas:
-
-- [Catálogo de Válvulas contra incendios](/valvulas-contra-incendios)
-- [Guías del blog sobre válvulas contra incendios](/blog/valvulas-contra-incendios)
-- [Todos los equipos contra incendios](/equipos)
-- [Asesoría técnica especializada](/servicios/asesoria)
-- [Solicitar cotización empresarial](/servicios/cotizaciones)
-- [Artículo recomendado 1](/blog/valvulas-contra-incendios/normativa-nfpa-valvulas-contra-incendios)
-- [Artículo recomendado 2](/servicios/mantenimiento)
+Para especificaciones de válvulas OS&Y, mariposa con supervisión, válvulas de alivio y tamper switches para sistemas de rociadores, standpipe o cuartos de bomba bajo NFPA 13, 14 o 20, en Gama de México contamos con el catálogo de productos certificados UL/FM de Elkhart Brass y el respaldo técnico para asistirle en la selección correcta para cada aplicación. [Consulte con nuestro equipo de ingeniería](/servicios/cotizaciones).

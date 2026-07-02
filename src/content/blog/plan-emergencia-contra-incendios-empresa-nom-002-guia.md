@@ -29,118 +29,88 @@ draft: false
 productosRelacionados: []
 ---
 
-Cómo elaborar un plan de emergencia contra incendios conforme a NOM-002-STPS. Brigadas, simulacros, equipos y documentación requerida en México.
+Cuando protección civil inspecciona una empresa y el responsable entrega un "Plan de Emergencia", la primera pregunta es siempre la misma: ¿cuándo fue el último simulacro? Un plan sin evidencia de implementación —listas de asistencia, bitácora de brigada, registros de ejercicios prácticos— genera observación inmediata.
 
-En Gama de México, como distribuidores autorizados de Elkhart Brass con más de 15 años de experiencia en el mercado mexicano, proporcionamos equipos certificados UL y FM para todo tipo de instalaciones. Nuestra cobertura incluye Ciudad de México, Querétaro y envíos a toda la República Mexicana.
+Esta guía explica la diferencia entre los documentos que la norma exige, el proceso para elaborarlos y los errores que generan las observaciones más frecuentes en inspecciones de protección civil en México.
 
-## Importancia de la protección especializada
+## Plan de Emergencia, PIPC y brigada: qué es cada uno y cómo se relacionan
 
-La protección contra incendios no es un gasto, es una inversión en la continuidad de tu operación. Un incendio no controlado puede destruir años de trabajo, poner en riesgo vidas humanas y generar responsabilidades legales que superan con creces el costo de un sistema de protección adecuado.
+Los tres conceptos se confunden con frecuencia en el lenguaje cotidiano de las empresas, pero tienen funciones distintas dentro del marco normativo:
 
-En México, la normativa NOM-002-STPS-2010 establece los requisitos mínimos de protección contra incendios en centros de trabajo. Sin embargo, las mejores prácticas internacionales de NFPA proporcionan un nivel de protección significativamente superior que cada vez más aseguradoras y autoridades de protección civil exigen.
+**Plan de Emergencia Contra Incendios:** documento operativo que describe qué hace cada persona cuando se activa la alarma: procedimientos de evacuación, roles de brigadistas, rutas de escape, puntos de reunión, contactos de emergencia y pasos de ataque en fase incipiente.
 
-## Componentes del sistema de protección
+**Programa Interno de Protección Civil (PIPC):** documento estratégico exigido por la Ley General de Protección Civil y los reglamentos locales (cada estado tiene el suyo). Abarca todos los tipos de emergencia: incendio, sismo, inundación, derrames, fallas de infraestructura. El Plan de Emergencia es un componente del PIPC. Las empresas con riesgo alto o que manejan sustancias peligrosas están obligadas a registrar su PIPC ante la autoridad de protección civil local.
 
-### Detección y alarma
+**Brigada de emergencias:** el equipo humano que ejecuta el Plan. No es un documento: son personas con roles asignados (jefe de brigada, extinción, primeros auxilios, evacuación) capacitadas con ejercicios prácticos. Sin brigada entrenada, el Plan es solo papel.
 
-El sistema de detección es la primera capa de protección. Incluye detectores de humo, detectores de calor, estaciones manuales de alarma y panel de control central. La detección temprana permite la evacuación oportuna y la activación de los sistemas de supresión.
+La relación es: el PIPC define el marco → el Plan de Emergencia define los procedimientos de incendio → la brigada los ejecuta.
 
-### Supresión automática
+## Elementos obligatorios conforme a NOM-002-STPS-2010
 
-Los sistemas de supresión automática incluyen rociadores, sistemas de espuma, sistemas de agentes limpios y sistemas de CO2. La selección del sistema depende del tipo de riesgo, el área protegida y los requisitos normativos.
+La NOM-002-STPS-2010 — *Condiciones de seguridad — Prevención y protección contra incendios en los centros de trabajo* — establece en su numeral 5 los requisitos que debe cumplir todo centro de trabajo en México, independientemente de su tamaño o giro.
 
-### Supresión manual
+Los elementos documentales obligatorios son:
 
-Los equipos de supresión manual son la última línea de defensa:
-- [Gabinetes contra incendios](/gabinetes/tipo-30me) con manguera de 30 metros
-- [Hidrantes exteriores](/gabinetes/hidrantes) para brigadas y bomberos
-- [Boquillas tipo pistola](/boquillas/tipo-pistola) para control de incendios
-- [Mangueras millhose](/mangueras/millhose) certificadas NFPA
+**Evaluación del riesgo de incendio:** determinación del grado de riesgo (bajo, ordinario, alto) de acuerdo con el Apéndice A de la norma. Esta evaluación considera el tipo de materiales presentes, la carga de fuego, la altura del inmueble y el número de ocupantes. El grado de riesgo determina los equipos mínimos requeridos.
 
-### Válvulas de control
+**Rutas de evacuación:** señalizadas conforme a NOM-003-SEGOB-2002, con distancia máxima al punto de reunión no mayor a lo que permite recorrer en 3 minutos a paso rápido (aproximadamente 100-120 metros en plantas abiertas). Los pasillos de evacuación deben mantenerse despejados en todo momento; NOM-002 lo señala explícitamente como obligación del patrón.
 
-Las válvulas de control son el sistema nervioso de la red contra incendios:
-- [Válvulas de compuerta OS&Y](/valvulas/compuerta) para aislamiento de secciones
-- [Válvulas mariposa](/valvulas/mariposa) con supervisión eléctrica
-- [Válvulas de retención](/valvulas/retencion) para prevenir flujo inverso
+**Mapas de distribución:** planos actualizados que muestran la ubicación de equipos contra incendios, rutas de evacuación, puntos de reunión, ubicación de válvulas de cierre de gas y electricidad, y estaciones de alarma. Deben estar publicados en puntos visibles de la planta, no solo en el archivo del responsable de seguridad.
 
-## Normativa aplicable en México
+**Brigadas:** el numeral 7 de NOM-002 exige que el patrón organice brigadas contra incendios. La norma no establece un número mínimo de miembros por instalación, pero sí que los brigadistas deben recibir capacitación práctica (no solo teórica) en el manejo de los equipos de extinción disponibles en la planta.
 
-### NOM-002-STPS-2010
+**Simulacros:** mínimo dos simulacros de evacuación al año, con el primero previo aviso y el segundo sin aviso. El simulacro debe documentarse: fecha, hora, número de participantes, tiempo de evacuación total, observaciones y firmas de los responsables.
 
-Establece los requisitos mínimos para la prevención y protección contra incendios en centros de trabajo. Define la clasificación del grado de riesgo y los equipos mínimos requeridos según el tipo de actividad y la capacidad de personas.
+**Señalización:** conforme a NOM-003-SEGOB-2002 para equipos contra incendios, rutas de evacuación y zonas de riesgo. La señalización fotoluminiscente es obligatoria en áreas sin luz de emergencia.
 
-### Normas NFPA relevantes
+## Clasificación de la empresa por grado de riesgo
 
-- **NFPA 13:** Instalación de sistemas de rociadores automáticos
-- **NFPA 14:** Instalación de sistemas de tubería vertical (standpipe)
-- **NFPA 20:** Instalación de bombas estacionarias contra incendios
-- **NFPA 24:** Instalación de tuberías de servicio privado contra incendios
-- **NFPA 25:** Inspección, prueba y mantenimiento de sistemas de protección
-- **NFPA 72:** Sistema nacional de alarma y señalización contra incendios
+El grado de riesgo de incendio de la instalación se determina mediante el Apéndice A de NOM-002-STPS-2010, que asigna puntos según las características de la actividad productiva, los materiales presentes y las condiciones del inmueble. El resultado determina tres categorías:
 
-## Programa de mantenimiento
+**Riesgo bajo:** actividades de oficina, comercio minorista sin almacenamiento de inflamables, servicios. Requiere extintores mínimos tipo ABC, señalización básica y brigada elemental.
 
-Todo sistema de protección contra incendios requiere un programa de mantenimiento periódico conforme a NFPA 25:
+**Riesgo ordinario (medio):** manufactura liviana, almacenes generales, hoteles, hospitales. Requiere red de hidrantes o gabinetes contra incendios, sistema de alarma, brigada organizada y capacitada, y simulacros documentados.
 
-| Componente | Frecuencia | Actividad |
-|---|---|---|
-| Válvulas de control | Semanal | Inspección visual de posición |
-| Rociadores | Mensual | Inspección visual de obstrucciones |
-| Alarmas de flujo | Trimestral | Prueba de funcionamiento |
-| Mangueras | Semestral | Inspección visual de estado |
-| Válvulas de control | Anual | Prueba de operación completa |
-| Mangueras | Cada 5 años | Prueba hidrostática |
+**Riesgo alto:** industria química, petroquímica, manufactura de plásticos, almacenamiento de inflamables o explosivos, pintura industrial. Requiere sistemas automáticos de detección y supresión, brigada especializada, registro del PIPC ante protección civil y simulacros más frecuentes.
 
-## ¿Por qué elegir Gama de México?
+La clasificación la realiza el propio patrón mediante la evaluación del Apéndice A, pero protección civil puede cuestionarla si considera que la actividad real no corresponde al grado declarado. La subclasificación intencional es una práctica de riesgo elevado: si ocurre un siniestro y se determina que la empresa operaba con riesgo alto pero declaraba riesgo bajo, la responsabilidad patronal se agrava significativamente.
 
-1. **Distribuidores autorizados de Elkhart Brass** — productos originales con garantía de fábrica
-2. **Certificaciones UL y FM** — equipos que cumplen los estándares más exigentes
-3. **Asesoría técnica sin costo** — nuestro equipo de ingenieros te asesora en la selección correcta
-4. **Stock permanente** — disponibilidad inmediata en CDMX y Querétaro
-5. **Envíos nacionales** — cobertura logística en toda la República Mexicana
-6. **Documentación completa** — hojas técnicas, certificados y guías de instalación
+## Proceso paso a paso para elaborar e implementar el plan
 
-[Solicita una cotización personalizada →](/servicios/cotizaciones)
+El proceso correcto no comienza con redactar un documento. Comienza con un diagnóstico de campo:
 
+**Paso 1 — Diagnóstico de riesgo:** recorrido de la instalación con el Apéndice A de NOM-002 en mano. Identificar materiales combustibles e inflamables presentes, carga de fuego por área, equipos de calefacción o llama abierta, historial de conatos, estado actual de los equipos de extinción y condición de rutas de evacuación.
 
----
+**Paso 2 — Diseño del plan:** con base en el diagnóstico, redactar los procedimientos de evacuación para cada área, definir los roles de la brigada, trazar las rutas en el plano actualizado de la planta y elaborar el inventario de equipos con ubicación exacta.
 
-### Lecturas relacionadas
+**Paso 3 — Validación con protección civil:** en instalaciones con riesgo alto o con PIPC obligatorio, el plan debe presentarse ante la Unidad de Protección Civil municipal o estatal para revisión y registro. El tiempo de respuesta varía por jurisdicción (entre 15 y 60 días hábiles en la mayoría de los estados).
 
-- [Los requisitos de la nom-002-stps](/blog/gabinetes-hidrantes-contra-incendios/cumplir-nom-002-stps-proteccion-incendios-guia-empresas)
-- [El programa interno de protección civil](/blog/gabinetes-hidrantes-contra-incendios/programa-interno-equipos-contra-incendios-empresas-mexico)
-- [Qué revisa protección civil](/blog/gabinetes-hidrantes-contra-incendios/inspeccion-proteccion-civil-equipos-contra-incendios-empresas-mexico)
+**Paso 4 — Implementación:** capacitación de los brigadistas con ejercicios prácticos en el uso de extintores y gabinetes contra incendios, señalización instalada, mapas publicados y equipos en buen estado de mantenimiento.
 
-## Preguntas frecuentes
+**Paso 5 — Primer simulacro:** dentro de los 30 días siguientes a la implementación. Documentar el resultado con lista de asistencia, tiempo de evacuación y observaciones.
 
-### ¿Cuánto tiempo tarda la cotización?
+**Paso 6 — Actualización anual:** el plan debe revisarse cada vez que cambie la distribución física de la planta, cuando se incorporen nuevos materiales o procesos, y en todo caso al menos una vez al año.
 
-Respondemos cotizaciones en menos de 24 horas hábiles. Para proyectos que requieren asesoría técnica, programamos una llamada o videollamada con nuestro equipo de ingenieros sin costo adicional.
+## Tabla de referencia: grado de riesgo y requisitos mínimos
 
-### ¿Hacen envíos a todo México?
+| Grado de riesgo | Equipos mínimos exigidos | Frecuencia simulacros | Responsable legal |
+|---|---|---|---|
+| Bajo | Extintores tipo ABC cada 300 m², señalización NOM-003 | 2 por año (1 avisado, 1 sorpresa) | Patrón (Art. 7 NOM-002) |
+| Ordinario (medio) | Extintores + gabinetes o hidrantes internos, alarma de incendio | 2 por año mínimo | Patrón / Responsable de seguridad designado |
+| Alto | Extintores + red húmeda + detección automática + sistema de supresión | 4 por año mínimo, uno nocturno | Patrón + supervisor de brigada certificado |
 
-Sí. Tenemos cobertura logística en toda la República Mexicana. Los envíos desde CDMX y Querétaro llegan en 2-5 días hábiles según el destino. Para pedidos urgentes, contamos con opciones de envío express el mismo día.
+## Errores más comunes que generan observaciones en inspección
 
-### ¿Proporcionan capacitación sobre los equipos?
+Los siguientes son los motivos de observación más frecuentes en inspecciones de protección civil a instalaciones industriales y comerciales en México:
 
-Sí. Ofrecemos capacitación técnica sobre la instalación, operación y mantenimiento de los equipos que suministramos. La capacitación puede ser presencial en tus instalaciones o por videollamada, sin costo adicional para pedidos de volumen.
+**Plan genérico no adaptado a la instalación:** el inspector pide al responsable que señale en el plano la ruta de evacuación del área de producción norte, y la persona no puede hacerlo porque el documento es una plantilla descargada de internet con planos genéricos. Un plan que no refleja la planta real no es un plan.
 
----
+**Brigada en papel sin capacitación real:** la lista de brigadistas existe, pero ninguno de ellos ha operado un extintor en la última capacitación práctica. La norma exige capacitación práctica, y el inspector puede preguntar a cualquier brigadista cuándo fue el último ejercicio.
 
-## Interlinking recomendado Gama de México
+**Simulacros no documentados:** el responsable afirma que se realizó el simulacro en noviembre, pero no tiene la lista de asistencia, el registro de tiempo de evacuación ni la firma del responsable de la práctica.
 
-Para facilitar tu navegación técnica y comercial dentro del sitio, revisa estas rutas estratégicas:
+**Equipos fuera de mantenimiento:** el plan menciona 12 gabinetes contra incendios operativos, pero en el recorrido el inspector encuentra 3 con la puerta bloqueada por almacenamiento de materiales, 2 sin manguera y 1 con la válvula angular que no gira.
 
-- [Catálogo de Mangueras contra incendios](/mangueras-contra-incendios)
-- [Guías del blog sobre mangueras contra incendios](/blog/mangueras-contra-incendios)
-- [Todos los equipos contra incendios](/equipos)
-- [Asesoría técnica especializada](/servicios/asesoria)
-- [Solicitar cotización empresarial](/servicios/cotizaciones)
-- [Artículo recomendado 1](/blog/mangueras-contra-incendios/lineamientos-mangueras-contra-incendios-empresas-mexico)
-- [Artículo recomendado 2](/blog/mangueras-contra-incendios/como-elegir-manguera-contra-incendios)
+**Señalización faltante o incorrecta:** rutas de evacuación sin señales continuas (deben verse desde cualquier punto del trayecto), equipos sin señal de identificación o señales con símbolo incorrecto respecto a NOM-003-SEGOB-2002.
 
-## Imagen técnica de referencia
-
-![Plan de emergencia contra incendios en empresa industrial](/img/blog/inspeccion-proteccion-civil-empresa-industrial-mexico.avif)
-*Descripción técnica: referencia visual del equipo y su aplicación en proyectos de protección contra incendios en México.*
+Si tu empresa está iniciando la elaboración de su Plan de Emergencia o actualizando el existente, el punto de partida práctico es verificar que los equipos contra incendios instalados están en condición operativa y debidamente inventariados. En Gama de México podemos apoyarte con el inventario técnico de tus gabinetes, mangueras y boquillas, y con la reposición de componentes que no pasen la inspección. [Contáctanos para una asesoría técnica sin costo](/servicios/asesoria).

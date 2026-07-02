@@ -1,0 +1,77 @@
+---
+// =============================================================================
+// BlogQuickAnswer — Respuesta directa al inicio del artículo
+// Uso: artículos informativos, guías y comparativas donde el lector
+//      busca una respuesta concreta antes de leer el desarrollo.
+// GEO: este bloque es el candidato principal para extractos en IA y snippets.
+// =============================================================================
+
+interface Props {
+  pregunta: string;   // La pregunta que responde el artículo
+  respuesta: string;  // Respuesta directa en 2–4 líneas
+}
+
+const { pregunta, respuesta } = Astro.props;
+---
+
+<div class="blog-quick-answer" role="note" aria-label="Respuesta rápida">
+  <span class="blog-quick-answer__label">Respuesta rápida</span>
+  <p class="blog-quick-answer__question">{pregunta}</p>
+  <p class="blog-quick-answer__answer">{respuesta}</p>
+</div>
+
+<style>
+  .blog-quick-answer {
+    position: relative;
+    padding: var(--spacing-lg) var(--spacing-xl);
+    background: linear-gradient(135deg, color-mix(in srgb, var(--color-primary) 6%, white), white);
+    border: 2px solid var(--color-primary);
+    border-radius: var(--border-radius);
+    margin-bottom: var(--spacing-xl);
+    overflow: hidden;
+  }
+
+  .blog-quick-answer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--color-primary);
+  }
+
+  .blog-quick-answer__label {
+    display: inline-block;
+    padding: 0.2rem 0.625rem;
+    background: var(--color-primary);
+    color: white;
+    font-size: 0.6875rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .blog-quick-answer__question {
+    font-size: 1.0625rem;
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin: 0 0 var(--spacing-sm);
+    line-height: 1.4;
+  }
+
+  .blog-quick-answer__answer {
+    margin: 0;
+    color: var(--color-text);
+    font-size: 0.9375rem;
+    line-height: 1.75;
+  }
+
+  @media (max-width: 640px) {
+    .blog-quick-answer {
+      padding: var(--spacing-md) var(--spacing-lg);
+    }
+  }
+</style>

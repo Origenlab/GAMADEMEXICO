@@ -1,0 +1,142 @@
+---
+// =============================================================================
+// BlogFaqBlock — Bloque FAQ visible + elegible para rich results
+// Renderiza las preguntas del schema FAQPage del frontmatter del artículo.
+// Usar dentro de [slug].astro después del contenido principal.
+// =============================================================================
+
+interface FaqItem {
+  q: string;
+  a: string;
+}
+
+interface Props {
+  items: FaqItem[];
+}
+
+const { items } = Astro.props;
+---
+
+{items && items.length > 0 && (
+  <section class="blog-faq" aria-labelledby="faq-heading">
+    <div class="blog-faq__header">
+      <span class="blog-faq__badge">FAQ</span>
+      <h2 id="faq-heading" class="blog-faq__title">Preguntas Frecuentes</h2>
+    </div>
+    <dl class="blog-faq__list">
+      {items.map((item, index) => (
+        <div class="blog-faq__item" data-index={index}>
+          <dt class="blog-faq__question">
+            <span class="blog-faq__question-number">{index + 1}</span>
+            {item.q}
+          </dt>
+          <dd class="blog-faq__answer">{item.a}</dd>
+        </div>
+      ))}
+    </dl>
+  </section>
+)}
+
+<style>
+  .blog-faq {
+    margin: var(--spacing-2xl) 0;
+    border: 1px solid var(--color-border);
+    border-top: 4px solid var(--color-primary);
+    border-radius: var(--border-radius);
+    background: var(--color-white);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+  }
+
+  .blog-faq__header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-lg) var(--spacing-xl);
+    background: var(--color-accent);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .blog-faq__badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.25rem 0.625rem;
+    background: var(--color-primary);
+    color: white;
+    font-size: 0.6875rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    flex-shrink: 0;
+  }
+
+  .blog-faq__title {
+    margin: 0;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--color-secondary);
+    line-height: 1.3;
+  }
+
+  .blog-faq__list {
+    margin: 0;
+    padding: 0;
+  }
+
+  .blog-faq__item {
+    padding: var(--spacing-lg) var(--spacing-xl);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .blog-faq__item:last-child {
+    border-bottom: none;
+  }
+
+  .blog-faq__question {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    font-size: 0.9375rem;
+    font-weight: 700;
+    color: var(--color-secondary);
+    line-height: 1.5;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .blog-faq__question-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 1.625rem;
+    height: 1.625rem;
+    background: var(--color-accent);
+    border: 1px solid var(--color-border);
+    border-radius: 50%;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    flex-shrink: 0;
+    margin-top: 0.125rem;
+  }
+
+  .blog-faq__answer {
+    margin: 0;
+    padding-left: calc(1.625rem + 0.75rem);
+    color: var(--color-text);
+    font-size: 0.9375rem;
+    line-height: 1.8;
+  }
+
+  @media (max-width: 640px) {
+    .blog-faq__header,
+    .blog-faq__item {
+      padding: var(--spacing-md) var(--spacing-lg);
+    }
+
+    .blog-faq__answer {
+      padding-left: 0;
+    }
+  }
+</style>

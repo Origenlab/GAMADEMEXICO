@@ -218,14 +218,33 @@ Las inspecciones visuales y verificaciones de movimiento pueden realizarlas pers
 
 ---
 
-## Interlinking recomendado Gama de México
 
-Para facilitar tu navegación técnica y comercial dentro del sitio, revisa estas rutas estratégicas:
+## Tabla de frecuencias NFPA 25 por componente
 
-- [Catálogo de Monitores contra incendios](/monitores-contra-incendios)
-- [Guías del blog sobre monitores contra incendios](/blog/monitores-contra-incendios)
-- [Todos los equipos contra incendios](/equipos)
-- [Asesoría técnica especializada](/servicios/asesoria)
-- [Solicitar cotización empresarial](/servicios/cotizaciones)
-- [Artículo recomendado 1](/blog/monitores-contra-incendios/manual-tecnico-monitores-contra-incendios-empresas)
-- [Artículo recomendado 2](/blog/monitores-contra-incendios/auditoria-monitores-contra-incendios-empresas-mexico)
+La norma NFPA 25 establece intervalos mínimos de inspección, prueba y mantenimiento para monitores. Esta tabla consolida los requisitos de la edición 2023 para los componentes críticos de un monitor industrial:
+
+| Componente | Actividad | Frecuencia mínima | Referencia NFPA 25 |
+|---|---|---|---|
+| Torreta / cuerpo | Inspección visual de corrosión y daño físico | Trimestral | Cap. 13.2 |
+| Sellos y empaques | Verificación de fugas en posición cerrada | Semestral | Cap. 13.3 |
+| Cojinetes de giro horizontal | Lubricación y verificación de movimiento libre | Trimestral | Cap. 13.4 |
+| Mecanismo de elevación | Lubricación y verificación de bloqueo en posición | Trimestral | Cap. 13.4 |
+| Boquilla intercambiable | Verificación de patrón de descarga y condición del deflector | Semestral | Cap. 13.5 |
+| Válvula de bola de aislamiento | Operación completa (abrir/cerrar) | Anual | Cap. 13.6 |
+| Sistema completo | Prueba de flujo a presión de diseño | Anual | Cap. 13.7 |
+| Recubrimiento anticorrosivo | Revisión de integridad del acabado | Anual | Cap. 13.8 |
+| Reemplazo total de sellos y cojinetes | Reconstrucción parcial | Cada 5 años | Cap. 13.9 |
+
+La prueba de flujo anual debe ejecutarla un técnico con instrumento de medición de caudal (pitometro o medidor de ultrasonido) calibrado. Los resultados deben registrarse en bitácora con firma del responsable y archivarse durante el tiempo que exija la aseguradora (mínimo 5 años para pólizas FM Global).
+
+## Consecuencias operativas de un mantenimiento deficiente
+
+Un monitor fuera de servicio en el momento de una emergencia no es un equipo con mal mantenimiento. Es una promesa incumplida que puede tener consecuencias técnicas, legales y económicas concretas.
+
+En el plano técnico, los monitores con cojinetes degradados pierden capacidad de orientación precisa durante la descarga. Bajo presión de operación, la resistencia al movimiento obliga al operador a soltar el chorro mientras reorienta el equipo, creando intervalos sin cobertura. Los monitores con sellos deteriorados gotean permanentemente, contaminando el área de almacenamiento y generando condiciones de resbalamiento.
+
+En el plano normativo, la NOM-002-STPS-2010 establece que el equipo contra incendios debe mantenerse en condiciones de operación permanente. Una inspección de Protección Civil que encuentre monitores con movimiento restringido, sellos en fuga o boquillas obstruidas puede resultar en observaciones de cumplimiento o clausura preventiva de las instalaciones.
+
+En el plano económico, la mayoría de las pólizas de seguro de riesgo industrial incluyen una cláusula que excluye cobertura cuando el siniestro ocurre en instalaciones con equipos sin mantenimiento documentado conforme a NFPA 25. La bitácora de mantenimiento firmada por técnico calificado no es solo un registro operativo. Es el documento que activa o invalida la cobertura del seguro.
+
+El costo de un programa de mantenimiento anual para un parque de 10 monitores industriales es entre 8 y 15 veces menor que el deducible promedio de una póliza industrial en México. La ecuación no tiene ambigüedad.

@@ -11,7 +11,8 @@ import BlogAuthor from '../../../components/blog/BlogAuthor.astro';
 import BlogRelatedPosts from '../../../components/blog/BlogRelatedPosts.astro';
 import BlogCTA from '../../../components/blog/BlogCTA.astro';
 import CotizacionForm from '../../../components/CotizacionForm.astro';
-import { buildArticleSchema, buildBreadcrumbSchema } from '../../../lib/seo';
+import { buildArticleSchema, buildBreadcrumbSchema, buildFAQSchema } from '../../../lib/seo';
+import BlogFaqBlock from '../../../components/blog/BlogFaqBlock.astro';
 import { generateSrcset, getOptimizedImageUrl } from '../../../lib/images';
 import { CATEGORY_MAP } from '../../../lib/config';
 import { slugifyTag } from '../../../lib/blogHelpers';
@@ -173,6 +174,15 @@ const breadcrumbSchema = buildBreadcrumbSchema([
   { name: categoryLabel, url: `/blog/${categorySlug}` },
   { name: post.data.title, url: `/blog/${categorySlug}/${post.id}` },
 ]);
+
+// FAQ Schema + items para renderizado visible
+const faqBlock = post.data.schema?.find((s) => s.type === 'FAQPage') as
+  | { type: 'FAQPage'; questions: { q: string; a: string }[] }
+  | undefined;
+const faqItems = faqBlock?.questions ?? [];
+const faqSchema = faqItems.length > 0
+  ? buildFAQSchema(faqItems.map((item) => ({ pregunta: item.q, respuesta: item.a })))
+  : null;
 ---
 
 <Layout
@@ -193,7 +203,7 @@ const breadcrumbSchema = buildBreadcrumbSchema([
   heroSecondaryText="Ver más artículos"
   heroSecondaryLink={`/blog/${categorySlug}`}
   heroShowRightContent={true}
-  structuredData={[articleSchema, breadcrumbSchema]}
+  structuredData={[articleSchema, breadcrumbSchema, ...(faqSchema ? [faqSchema] : [])]}
 >
   <Fragment slot="hero-content">
     <p><strong>Por {authorName}</strong>, {authorCargo}. Este artículo forma parte de nuestra serie de guías técnicas sobre <strong>{categoryLabel.toLowerCase()}</strong>, desarrolladas para profesionales de seguridad, instaladores certificados y responsables de sistemas contra incendios.</p>
@@ -237,6 +247,11 @@ const breadcrumbSchema = buildBreadcrumbSchema([
           <div class="blog-article__content">
             <Content />
           </div>
+
+          <!-- FAQ Block — visible cuando el artículo tiene preguntas en frontmatter -->
+          {faqItems.length > 0 && (
+            <BlogFaqBlock items={faqItems} />
+          )}
 
           <section class="blog-article__strategic-links" aria-labelledby="strategic-links-title">
             <h2 id="strategic-links-title">Rutas estratégicas para tu proyecto</h2>
